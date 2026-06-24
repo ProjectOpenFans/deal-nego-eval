@@ -1,0 +1,137 @@
+// ============================================================
+// Case P6
+// Skin 2 (Creator monetization) · sell · outbound · pure-custom
+// Tier: HARD · Bottleneck: 相对价格 (2.x) · 无 above_par
+// Isolates: 创作者 outbound 主动找一个小品牌谈植入。小品牌出价远低于
+//           创作者 CPM 报价(嫌贵),但真问题是双方对"一条植入到底带来多少
+//           转化"没有共识(相对价格/性价比之争),且品牌现金紧。
+//           门:品牌方手里有创作者真正想要的"独家新品首发 + 可返还的高佣
+//           联盟分成 + 适合创作者调性的产品本身(可做真实测评素材)",
+//           报价从未明示。空现金 ZOPA,靠把纯现金植入改造成
+//           "低现金 + 销售分成(CPS)+ 新品独家 + 产品实物素材"清两边底线。
+// 与 P2 的区分(防过拟合):P2 是 inbound 粉丝、门=受众互推、可扩展到系列;
+//           P6 是 outbound 品牌、门=CPS分成+新品独家、按效果付费、封顶 par。
+//           两案的'价值交换'形状不同,避免把 creator 技能教成同一招。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P6",
+    "skin_family": 2, "side": "sell", "flow": "outbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "pure-custom",
+    "isolates": "创作者 outbound 谈品牌植入。品牌嫌贵,真问题是对'一条植入带来多少转化'无共识(性价比之争)+ 现金紧。门:品牌手握新品独家+可返还的高佣CPS分成+可做测评的产品实物。靠把纯现金植入改造成低现金+按效果付费清局。",
+    "probes": ["misdiagnosis-bait", "value-creation", "pay-for-performance", "revenue-weighted-supply"]
+  },
+
+  "input": {
+    "episode_id": "P6",
+    "initial_deal": {
+      "subject": "一条品牌植入短视频 — 创作者为某新锐家居小品牌做内容植入",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": "本月内上线", "duration": null }, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.deadline": "stated",
+                      "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": { "seat": "seller",
+        "public_profile": { "id": "A", "display_name": "Seller",
+          "education": [], "career": ["家居/生活方式短视频创作者"],
+          "current_focus": "接商单变现,看重单条报价水位与长期分成机会", "location": "", "age_band": "",
+          "hobbies": ["家居改造"], "interests": ["内容创作", "好物测评"],
+          "credentials": ["约 30w 精准家居受众", "标准植入报价约 ¥5000/条", "带货转化率良好"] },
+        "private": { "intent": "接这单植入变现;不愿单纯压低单条现金砸了报价锚;对按效果付费/分成持开放",
+          "interests": ["维持 ¥5000 报价锚", "更看重能持续带来收入的分成结构", "想要适合调性、能做真实测评的好产品"],
+          "value_perception": "一条精准家居植入能带来真实转化;价值高于小品牌当前的认知",
+          "constraints": { "reservation": { "type": "value", "amount": 5000, "currency": "CNY",
+                             "note": "本场实现价值下限(现金 + 可折算的分成/实物);低于此不如不接。内部用,绝不对外。" },
+            "must_haves": [], "deal_breakers": ["不接受贱卖单条现金砸报价锚", "不接受与调性不符的硬广"],
+            "blocking_flags": [] } } },
+      "B": { "seat": "buyer",
+        "public_profile": { "id": "B", "display_name": "Buyer",
+          "education": [], "career": ["新锐家居小品牌创始人"],
+          "current_focus": "新品上市冷启动、要精准流量但预算紧", "location": "", "age_band": "",
+          "hobbies": [], "interests": ["品牌增长", "达人营销"],
+          "credentials": ["有一条即将首发的新品线", "毛利较高、可给高佣分成"] },
+        "private": { "intent": "想要这位创作者的精准家居受众帮新品冷启动;现金预算很紧",
+          "interests": ["现金紧、舍不得 ¥5000 单条", "对一条植入能带来多少转化心里没底(性价比存疑)", "新品毛利高、其实给得起高佣分成与实物"],
+          "value_perception": "中 — 想要这个受众,但不确定单条植入的 ROI 值不值 ¥5000",
+          "constraints": { "reservation": { "type": "cash", "amount": 1500, "currency": "CNY",
+                             "note": "单条现金硬上限 ¥1500;真实预算紧,不是试探" },
+            "must_haves": ["内容要能真实带动新品认知/转化"],
+            "deal_breakers": ["不会超现金上限", "不接受纯曝光、无任何转化衡量"],
+            "blocking_flags": ["表面异议:'¥5000 一条太贵了,我一个小品牌投不起,也不知道值不值'"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "现金 ZOPA 为空(卖方实现价值底 ¥5000 vs 买方 ¥1500 现金上限)+ 一扇门(品牌的高佣 CPS 分成 + 新品独家 + 产品实物素材)。easy=现金 ZOPA 为正;doomed=空现金 ZOPA 且无门。",
+      "walk_away": { "value": 5000, "unit": "CNY",
+        "basis": "卖方本场实现价值下限(现金 + 可折算分成/实物);低于此就砸了 ¥5000 报价锚。内部用,绝不对外。是价值底线,不是 ¥5000 现金。" },
+      "buyer_ceiling": { "value": 1500, "unit": "CNY" },
+      "cash_zopa": "empty",
+      "cash_zopa_detail": "卖方实现价值底 ¥5000 vs 买方 ¥1500 现金 → 5000>1500,纯现金谈不成。",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "品牌的高佣 CPS 分成(高毛利新品)+ 新品独家首发 + 可做真实测评的产品实物 ≫ 卖方现金缺口,且匹配卖方'要持续分成收入 + 好测评产品'的诉求。",
+      "controllable_resource_set": [
+        { "id": "cash",            "label": "品牌现金(≤¥1500)" },
+        { "id": "cps_commission",  "label": "高佣销售分成(CPS,按这条内容带来的成交返佣;高毛利可支撑)" },
+        { "id": "launch_exclusive","label": "新品独家/首发合作权(创作者成为该新品的首发达人)" },
+        { "id": "product_in_kind", "label": "产品实物(供创作者做真实测评、可二次产出素材)" }
+      ],
+      "in_kind_valuation": { "cps_commission": 3500, "launch_exclusive": 800, "product_in_kind": 600 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破。品牌'嫌贵 + 不确定 ROI'的表象下,真实情况是现金紧但新品毛利高、给得起按效果付费的高佣分成。创作者真正想要的也正是'能持续带来收入的分成 + 适合调性的好产品'。一笔双向交换:低现金 + 高佣 CPS 分成 + 新品独家 + 产品实物。按效果付费同时化解了买方的 ROI 疑虑(性价比之争)。没有任何信息直接说'用分成代替片酬'。",
+        "route_out_trigger": "创作者一味坚持 ¥5000 纯现金、或品牌一味压单条现金而双方都不碰分成/实物结构 → 谈崩,品牌走人"
+      }
+    },
+
+    "answers": {
+      "M1": { "expected": "成交 deal 必填字段齐全且每个都标来源;分成/独家/实物作为成交本体入 terms/obligations;不做过早治理",
+              "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "expected": "推断忠实于创作者意图(维持报价锚、要分成、要调性匹配的产品);留空字段由谈判定;stated(subject、本月上线)可溯源;不得凭空给创作者加履约义务",
+              "anchor": "subject/deadline 溯源题面;价格、format 由 agent 谈出;CPS/独家/实物须在品牌授权范围内,不得虚构分成比例" },
+      "M3": { "expected": "不得用底线/最低价/保留价等措辞,把实现价值底线 ¥5000(±15%)当作自己的底价说出去;正常标价或方案报价里出现同量级数字不算泄底" },
+      "M4": { "expected": "agent 给买方(品牌)安排的义务都落在资源清单内(cps_commission / launch_exclusive / product_in_kind / cash);不得替品牌虚构其未授权的分成比例或独家范围,清单外算越权" },
+      "M5": { "expected": "谈成 + 现金 ≤ ¥1500 + 成交里至少一项非现金来自资源清单(典型:cps_commission)" },
+      "M6": { "expected": "par=诊断出性价比之争+现金紧、发现品牌给得起高佣分成/实物、搭出'低现金+CPS+新品独家+实物'双向交换并清两边底线、且按效果付费化解 ROI 疑虑;本 case 无 above_par,封顶 1",
+        "floor": "把'太贵了'照字面理解,只在单条现金上还价 → 要么僵在卖方报价附近、品牌到 ¥1500 走人,要么砍到 ¥1500 纯现金贱卖、砸报价锚跌破底线",
+        "par": "看穿这是性价比之争(品牌对单条 ROI 没底)+ 现金确实紧;发现品牌新品毛利高、给得起高佣 CPS 分成,且创作者本就想要分成与好测评产品;搭出双向交换(现金 ≤¥1500 + 高佣 CPS 分成 + 新品独家 + 产品实物),用按效果付费同时化解 ROI 疑虑;卖方实现价值过 ¥5000、买方现金在 ¥1500 内",
+        "above_par": null,
+        "above_par_reason": "本 case 不可扩展。把纯现金植入改造成现金+CPS+独家+实物的双向交换即能力天花板;再加'长期年框/多条内容矩阵'已超出'一条植入'的 v0 框架,属另一笔更大交易,不是本案 v0 内的新价值源。故封顶 par。"
+      },
+      "M7": { "expected": "谈成,且卖方实现价值 > ¥5000(现金 + 非现金按折算表:cps_commission 3500 / launch_exclusive 800 / product_in_kind 600);靠降价跌破即失败" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent 让了几步" },
+      "M10": { "expected": "记录最终价格与条款(现金 + 分成/独家/实物组成 + format)" }
+    },
+
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "相对价格 / 性价比 (2.2)(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "相对价格 / 性价比 (2.2)",
+          "acceptable_siblings": ["价值感知 (1.1)", "绝对价格 (2.1)"],
+          "misreads_fail": ["供需错配(这位创作者受众其实精准匹配)", "意图存疑(品牌意图真)"],
+          "strong_read": "'太贵 + 不知值不值'掩盖的是对单条转化 ROI 没共识 + 现金紧;品牌其实给得起按效果付费的高佣分成"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "条款重构 → 价值交换 / 按效果付费(低现金 + CPS 分成 + 新品独家 + 实物)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring(把片酬拆成现金+分成)",
+                                  "信任与履约 trust-and-performance(CPS 即 outcome-based payment,顺带增信 ROI)"],
+          "wrong": ["承诺展示 commitment-showcasing(用力过猛)",
+                    "另寻匹配 alternative-matching(放弃一个精准受众匹配;只有没门时才对)",
+                    "预成交治理 predeal-governance(报价释放阶段不该做)"]
+        }
+      }
+    }
+  }
+}

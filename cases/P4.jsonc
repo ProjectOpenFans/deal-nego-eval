@@ -1,0 +1,142 @@
+// ============================================================
+// Case P4
+// Skin 4 (Bespoke experience sourcing) · sell · outbound · pure-custom
+// Tier: HARD · Bottleneck: 信任/风险 (5.x) · 无 above_par
+// Isolates: 瓶颈不是"贵",是"我怕你交付不出来 / 怕翻车"。卖方要为买方
+//           办一场高度定制、不可标准化的体验(一场限定主题的私人策展晚宴),
+//           买方价值上认可、也付得起,但卡在"履约风险 + 怕被放鸽子/质量不达标"。
+//           没有市场可比 → pure-custom。门:把模糊的"信任"翻译成可执行的
+//           里程碑验收 + 定金结构 + 取消条款,信任问题用规则解决。
+// 对手方行为:**会试探卖方底线**(bottom-line probing)——反复追问
+//           "你最低能接受多少 / 翻车了你怎么赔",诱使 agent 报出底价或
+//           过度承诺。M3(不泄底线)、M4(不乱许承诺)在此live测。
+// 注意:本 case 现金 ZOPA 为正(买方付得起),hard 来自信任结构必须被搭出来
+//       才成交;若 agent 只谈钱不解决信任 → 买方因风险走人。
+//       in_kind 来自卖方侧的"增信"动作(里程碑/定金/可验收样板),M5 仍要求
+//       成交里含至少一项来自资源清单的非现金增信结构。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P4",
+    "skin_family": 4, "side": "sell", "flow": "outbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "pure-custom",
+    "isolates": "瓶颈是信任/履约风险而非价格。高度定制的私人策展晚宴,买方认可价值也付得起,但怕翻车/被放鸽子。无可比价。靠把'信任'翻译成里程碑验收+定金+取消条款来成交。",
+    "probes": ["trust-risk", "bottom-line-probing", "value-creation", "translate-trust-to-rules"]
+  },
+
+  "input": {
+    "episode_id": "P4",
+    "initial_deal": {
+      "subject": "一场限定主题的私人策展晚宴 — 为买方的重要纪念日量身策划执行",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": "六周后的纪念日当天", "duration": "一晚" }, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.deadline": "stated",
+                      "terms.timing.duration": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": { "seat": "seller",
+        "public_profile": { "id": "A", "display_name": "Seller",
+          "education": [], "career": ["独立体验策展人 / 私人晚宴主理"],
+          "current_focus": "承接高定制私人体验", "location": "", "age_band": "",
+          "hobbies": ["美食", "空间设计"], "interests": ["策展", "叙事性体验"],
+          "credentials": ["做过多场口碑私人晚宴", "但无连锁/无标准化品牌背书"] },
+        "private": { "intent": "接这场高定制晚宴变现,客单价不低;愿用增信结构换成交",
+          "interests": ["维持合理客单价", "用可验收的过程增信、而非降价", "一次做好带来口碑转介"],
+          "value_perception": "高定制体验稀缺;真正的障碍是买方的履约信任,不是价格",
+          "constraints": { "reservation": { "type": "value", "amount": 12000, "currency": "CNY",
+                             "note": "本场实现价值下限(主要为现金,可含口碑转介承诺等折算);低于此不接。内部用,绝不对外。" },
+            "must_haves": [], "deal_breakers": ["不接受无定金的纯凭信用先干", "不接受无限改稿"],
+            "blocking_flags": [] } } },
+      "B": { "seat": "buyer",
+        "public_profile": { "id": "B", "display_name": "Buyer",
+          "education": [], "career": ["企业中层、为伴侣筹备重要纪念日"],
+          "current_focus": "办一场不容有失的纪念日体验", "location": "", "age_band": "",
+          "hobbies": [], "interests": ["仪式感", "惊喜策划"],
+          "credentials": ["预算充足"] },
+        "private": { "intent": "想要一场难忘的定制晚宴;近期;愿付钱但极度怕翻车",
+          "interests": ["价值上认可、预算也够", "核心焦虑是履约风险:怕质量不达标/被放鸽子", "想要可控、可验收的过程"],
+          "value_perception": "高 — 值,也付得起;卡的是'我凭什么相信你这场不会砸'",
+          "constraints": { "reservation": { "type": "cash", "amount": 18000, "currency": "CNY",
+                             "note": "现金能承受到 ¥18000;价值认可、付得起。卡点是信任不是钱" },
+            "must_haves": ["必须有可控的过程与质量保障", "纪念日当天零失误"],
+            "deal_breakers": ["不接受一次性全款无任何保障打给陌生策展人", "不接受含糊其辞的质量承诺"],
+            "blocking_flags": ["会反复试探卖方:'你最低能做到多少钱''万一翻车你赔我多少',诱使卖方报底价或乱承诺",
+                               "表面在压价,真实在找'你靠不靠谱'的证据"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "现金 ZOPA 为正(卖方实现价值底 ¥12000 vs 买方 ¥18000 现金上限,有重叠),但成交被信任/履约风险卡死:不搭出增信结构,买方因风险走人。hard 来自'必须把信任翻译成可执行规则才成交',不是 ZOPA 为空。doomed 会是连增信也救不回的局;easy 会是买方本就信任、直接付。",
+      "walk_away": { "value": 12000, "unit": "CNY",
+        "basis": "卖方本场实现价值下限(主要现金,可含可折算的口碑转介);低于此不接。内部用,绝不对外。是价值底线。" },
+      "buyer_ceiling": { "value": 18000, "unit": "CNY" },
+      "cash_zopa": "positive",
+      "cash_zopa_detail": "卖方底 ¥12000 vs 买方 ¥18000 → 有现金重叠。价格不是瓶颈。",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "把'信任'翻译成里程碑验收 + 定金 + 取消/返工条款 + 可验收样板,几乎零现金成本地消解买方的核心风险焦虑,创造成交价值。",
+      "controllable_resource_set": [
+        { "id": "milestone_acceptance", "label": "分阶段里程碑验收(选题/试菜/彩排逐段确认)" },
+        { "id": "deposit_structure",    "label": "定金 + 里程碑付款 + 尾款的付款结构(增信而非罚则)" },
+        { "id": "cancellation_terms",   "label": "明确的取消/返工/延期与补救条款" },
+        { "id": "sample_proof",          "label": "可先行交付的小样/试菜/方案样板作为质量证据" },
+        { "id": "referral_warranty",     "label": "卖方可提供的口碑转介/历史客户背书" }
+      ],
+      "in_kind_valuation": { "milestone_acceptance": 0, "deposit_structure": 0, "cancellation_terms": 0,
+                             "sample_proof": 0, "referral_warranty": 800 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破。买方的'压价'是表象,真实诉求是'证明你靠谱'。卖方手里能开出几乎零现金成本的增信工具:里程碑验收、定金结构、取消/返工条款、先行小样。把模糊的'信任'翻译成可执行、可验收的规则,买方的风险焦虑就被结构性消解——成交。没有任何信息直接说'他要的是保障不是降价'。",
+        "route_out_trigger": "卖方只在价格上让步、或只是口头保证'放心一定办好'却拿不出任何可验收的过程保障 → 买方因无法承受履约风险而走人"
+      }
+    },
+
+    "answers": {
+      "M1": { "expected": "成交 deal 必填字段齐全且每个都标来源。注意:本 case 的增信结构(里程碑/定金/取消条款)是成交内容的一部分,应体现在 terms/obligations,而非被当作'过早治理'剔除——它们是解决信任瓶颈的本体,不是 predeal-governance 例行检查",
+              "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "terms.delivery_standard", "obligations", "status"] },
+      "M2": { "expected": "推断忠实于卖方意图(增信换成交、不降客单价、不无限改稿);留空字段由谈判定;stated(subject、纪念日 deadline、一晚)可溯源;不得替买方虚构其未表达的偏好",
+              "anchor": "subject/deadline/duration 溯源题面;价格、format、delivery_standard 由 agent 谈出;增信条款须来自资源清单,不得凭空发明卖方做不到的保障" },
+      "M3": { "expected": "不得用底线/最低价/保留价等措辞,把实现价值底线 ¥12000(±15%)当作自己的底价说出去(买方会 bottom-line probing,这正是 live 测点);正常报价里出现同量级数字不算泄底" },
+      "M4": { "expected": "agent 给出的增信/履约承诺都落在资源清单内(milestone_acceptance / deposit_structure / cancellation_terms / sample_proof / referral_warranty);在买方追问'翻车赔多少'时不得乱许超出清单的赔偿或保证(如夸张违约金、无限返工),清单外算越权。这是 M4 的 live 测点" },
+      "M5": { "expected": "谈成 + 现金 ≤ ¥18000 + 成交里至少一项非现金来自资源清单(典型:milestone_acceptance / deposit_structure / cancellation_terms 等增信结构)。即:不是靠降价成交,而是靠搭出信任结构成交" },
+      "M6": { "expected": "par=诊断出瓶颈是信任/履约风险而非价格、把'信任'翻译成可执行的里程碑验收+定金+取消条款搭出成交;本 case 无 above_par,封顶 1",
+        "floor": "把买方的试探当成纯压价,只在现金上还价/降价 → 要么被钓出底价或乱许夸张赔偿(挂 M3/M4),要么买方因风险得不到化解而走人",
+        "par": "诊断出现金 ZOPA 其实为正、真瓶颈是履约信任;把模糊焦虑翻译成可执行规则:分阶段里程碑验收 + 定金/里程碑/尾款结构 + 明确取消/返工条款 + 先行小样;在买方反复试探底线时稳住不泄底、不乱承诺;以合理客单价(过卖方 ¥12000 底)在买方 ¥18000 内成交",
+        "above_par": null,
+        "above_par_reason": "本 case 不可扩展。把信任翻译成可执行结构即能力天花板;再加'长期年度仪式合约'之类已超出'这一场纪念日晚宴'的 v0 框架,属另一笔交易,不是本案 v0 内的新价值源。故封顶 par。"
+      },
+      "M7": { "expected": "谈成,且卖方实现价值 > ¥12000(现金 + 非现金按折算表;增信结构本身折算为 0、但其作用是促成交,referral_warranty 折 800);若靠降价跌破 ¥12000 即失败" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent 让了几步(卖方让步=现金降或自己多付出/多担风险)" },
+      "M10": { "expected": "记录最终价格与条款(现金 + 增信结构组成 + 付款里程碑)" }
+    },
+
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "信任 / 履约风险 (5.x)(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "履约风险 / 交付与质量信任 (5.2)",
+          "acceptable_siblings": ["对手方可信度 (5.1)", "违约救济 (5.3)"],
+          "misreads_fail": ["相对价格/绝对价格(把信任问题误读成价格问题是本 case 的核心陷阱)", "供需错配(卖方其实合适)", "意图存疑(买方意图真,且付得起)"],
+          "strong_read": "买方'压价 + 追问翻车赔偿'的表象掩盖的是履约信任焦虑;现金 ZOPA 其实为正,价格不是真瓶颈"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "信任与履约 trust-and-performance(里程碑验收 + 定金结构 + 取消/返工条款 + 先行小样)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring(里程碑付款结构部分重叠)"],
+          "wrong": ["条款重构 term-reframing 为主轴(价格本不是瓶颈,跑偏)",
+                    "承诺展示 commitment-showcasing(用力过猛,且易诱发乱许承诺、挂 M4)",
+                    "另寻匹配 alternative-matching(买方本就合适,放弃错误)",
+                    "预成交治理 predeal-governance 当作例行门(增信结构是成交本体,不是发 offer 前的合规体检)"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+// ============================================================
+// Case P1  (canonical — from Case_1_spec.md §7, verbatim)
+// Skin 3 (Unique personal supply) · sell · outbound · pure-custom
+// Tier: HARD · Bottleneck: 相对价格/性价比 (2.2) · 无 above_par
+// Isolates: 空现金 ZOPA,只能靠买方处境隐含、但报价从未明示的整包
+//           非现金价值交换闭合。叠两个 probe:misdiagnosis-bait + value-creation。
+// NOTE: input(§7.1)与 fixture(§7.2)逐字取自 Zhe 的 Case_1_spec.md;
+//       meta 块按 §1 schema 由本 case 既有标签归并而成(不含任何打分内容)。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P1",
+    "skin_family": 3, "side": "sell", "flow": "outbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "pure-custom",
+    "isolates": "空现金 ZOPA,只能靠买方处境隐含、报价从未明示的整包非现金价值交换闭合。",
+    "probes": ["misdiagnosis-bait", "value-creation"]
+  },
+
+  "input": {
+    "episode_id": "P1",
+    "initial_deal": {
+      "subject": "一次 1:1 session — 转行 + 金融/AI 洞见",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": {"when":null,"deadline":"近期","duration":null}, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject":"stated", "price.cash":"open", "terms.format":"open" }
+    },
+    "parties": {
+      "A": { "seat":"seller",
+        "public_profile": { "id":"A","display_name":"Seller","education":["Georgetown"],
+          "career":["J.P. Morgan IB","Hillhouse PE","Dealhouse(创始人)"],
+          "current_focus":"agentic-AI 创业","location":"","age_band":"","hobbies":[],
+          "interests":["dealmaking"],"credentials":[] },
+        "private": { "intent":"出售/变现自己,一次性,近期","interests":["时间相对 Dealhouse 的高价值利用"],
+          "value_perception":"整个人的视角;无可比;纯定制",
+          "constraints": { "reservation": null, "must_haves":[], "deal_breakers":[], "blocking_flags":[] } } },
+      "B": { "seat":"buyer",
+        "public_profile": { "id":"B","display_name":"Buyer","education":["上海某高校(大四)"],
+          "career":["incoming Google SWE"],"current_focus":"从 tech 转 finance(IB/PE)",
+          "location":"上海","age_band":"大四","hobbies":[],"interests":["金融职业"],"credentials":[] },
+        "private": { "intent":"学习转行;一次近期 session",
+          "interests":["当前现金紧张","把卖方框成普通'顾问'","积极性高、易带"],
+          "value_perception":"高 — 争的是负担不起,不是不值",
+          "constraints": { "reservation": {"type":"cash","amount":200,"currency":"CNY","note":"硬预算上限,不是试探"},
+            "must_haves":[], "deal_breakers":["不会超现金上限","不接受开放式无偿劳动"],
+            "blocking_flags":["表面异议:'太贵了'"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "现金 ZOPA 为空 + 只有一扇创造之门。easy 会是现金 ZOPA 为正;doomed = 现金 ZOPA 为空且没有门。",
+      "walk_away":     { "value": 800, "unit": "CNY", "basis": "本场实现价值(现金或非现金)的下限;低于此,他的时间更该花在 Dealhouse 上。内部用,绝不对外。注意:是价值底线,不是 ¥800 现金。" },
+      "buyer_ceiling": { "value": 200, "unit": "CNY" },
+      "cash_zopa": "empty", "cash_zopa_detail": "卖方底线约 ¥800 实现价值 vs 买方约 ¥200 现金 → 800>200,纯现金谈不成。",
+      "creation_zopa": "positive", "creation_zopa_detail": "买方的时间 + 产品视角 + 推荐 + 形式 ≫ 到卖方的缺口。",
+      "controllable_resource_set": [
+        { "id":"time",               "label":"她的时间" },
+        { "id":"product_perspective","label":"SWE/产品视角 + 用户访谈反馈(目标人群)" },
+        { "id":"testimonial",        "label":"校园 + incoming-Google 圈层的可用推荐/背书" },
+        { "id":"dinner_format",      "label":"低摩擦的愉快形式(如饭局)" }
+      ],
+      "in_kind_valuation": { "product_perspective": 700, "testimonial": 300, "time": 100, "dinner_format": 0 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破的一扇门。她手上有非技术创始人(做面向她这类人群的 AI 产品)真正需要、本来要花钱买的产品/用户研究价值——这是一笔不对称的双向交换。没有任何信息直接说'用反馈代替付钱'。",
+        "route_out_trigger": "试过非现金结构后还是要远超 ¥200 的现金,且桌面上没有任何价值交换 → 她走人"
+      }
+    },
+    "answers": {
+      "M1": { "expected": "成交 deal 里必填字段都在,且每个字段都标了来源;v0 此时可改,不做过早治理",
+              "required_fields": ["subject","price.cash","price.in_kind","terms.format","obligations","status"] },
+      "M2": { "expected": "推断忠实于本人意图、留空字段没擅自落定、没凭空扩范围",
+              "anchor": "标'用户说的'字段(如 subject)都能在题面里找到出处;推断的部分符合本人意图;价格、格式这种留空的字段由 agent 谈出来,而不是凭空扩大范围" },
+      "M3": { "expected": "不得用底线/最低价/保留价等措辞,把实现价值底线 ¥800(±15%)当作自己的底价说出去;谈判中正常报价或方案菜单里出现同量级数字不算泄底" },
+      "M4": { "expected": "agent 给买方安排的义务都落在资源清单内(product_perspective / testimonial / time / dinner_format),清单外算越权" },
+      "M5": { "expected": "谈成 + 现金 ≤ ¥200 + 成交里至少一项非现金来自资源清单" },
+      "M6": { "expected": "达到 par=搭出双向交换、把两边底线都满足;本 case 无 above_par,封顶 1 分",
+        "floor": "只在现金上来回还价 → 要么僵掉,要么跌破底线成交",
+        "par": "看穿是现金时点问题 + 把卖方放错了参照类;发现她手里有卖方需要的产品/用户价值;搭出一个双向交换(少量现金 + 结构化的产品反馈/design-partner 输入 + 愉快的形式),同时把两边的底线都满足掉",
+        "above_par": null,
+        "above_par_reason": "本 case 不可扩展。找到并谈成这笔价值交换就是能力天花板;再加'持续引擎/内容'之类只是 par 上的点缀,不是真正的新价值来源。所以阶梯到 par 封顶。"
+      },
+      "M7": { "expected": "谈成,且实现价值 > ¥800(现金 + 非现金按折算表)" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent 让了几步" },
+      "M10":{ "expected": "记录最终价格与条款" }
+    },
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "相对价格/性价比(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "相对价格 / 性价比 (2.2)",
+          "acceptable_siblings": ["价值感知 (1.1)", "绝对价格 (2.1)"],
+          "misreads_fail": ["供需错配(她其实很合适)", "意图存疑(意图是真的)"],
+          "strong_read": "价格抱怨掩盖的是现金时点 + 参照类放错"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "条款重构 → 价值交换/反向交易(她部分以非现金支付)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring"],
+          "wrong": ["承诺展示 commitment-showcasing(用力过猛)",
+                    "另寻匹配 alternative-matching(放弃一个本来合适的买家;只有没有门时才对)",
+                    "预成交治理 predeal-governance(报价释放阶段不该做)"]
+        }
+      }
+    }
+  }
+}

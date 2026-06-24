@@ -1,0 +1,61 @@
+# macOS / filesystem
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / local tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.claude/settings.local.json
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# nego-eval local live-mode configuration
+nego-eval/eval.config.yaml
+nego-eval/eval.local.yaml
+
+# Runtime outputs
+/results/
+nego-eval/results/
+*.log
+
+# Local archives / exports
+*.zip
+*.tar
+*.tar.gz
+*.tgz

@@ -1,0 +1,136 @@
+// ============================================================
+// Case P3
+// Skin 3 (Unique personal supply) · BUY · outbound · semi-custom
+// Tier: HARD · Bottleneck: 价值感知 (1.1) · 无 above_par
+// Isolates: 买方视角(agent 坐买方 A 位)。卖方是一位资深but非顶流的
+//           配音演员,自报一个对标顶流的高价(参照类错位 → 价值感知分歧)。
+//           半定制:有一个模糊的市场区间可参照,但这位具体的人没有可比价。
+//           门:买方手里有卖方真正想要的"长期稳定的项目管线/署名作品集曝光",
+//           报价从未明示。空现金 ZOPA(卖方对标顶流要价 vs 买方预算),
+//           靠把一次性高价改造成"低单价 + 长期管线 + 作品集署名"清两边底线。
+// Note: buy-side → A.seat=buyer, walk_away 是买方现金上限语义;
+//       B(卖方 sim)的 reservation 是卖方的最低可接受单价。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P3",
+    "skin_family": 3, "side": "buy", "flow": "outbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "semi-custom",
+    "isolates": "买方视角。卖方(资深配音演员)按顶流参照系自报高价 → 价值感知分歧。半定制:有模糊市场区间但此人无可比价。门:买方能给卖方长期项目管线 + 作品集署名曝光,报价从未明示。",
+    "probes": ["misdiagnosis-bait", "value-creation", "wrong-reference-class", "buy-side"]
+  },
+
+  "input": {
+    "episode_id": "P3",
+    "initial_deal": {
+      "subject": "为一部独立动画短片招募主役配音 — 找这位资深配音演员",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": "一个月内进棚", "duration": null }, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.deadline": "stated",
+                      "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": { "seat": "buyer",
+        "public_profile": { "id": "A", "display_name": "Buyer",
+          "education": [], "career": ["独立动画工作室主理人"],
+          "current_focus": "做一部有发行计划的独立动画短片", "location": "", "age_band": "",
+          "hobbies": ["动画"], "interests": ["独立创作", "影视发行"],
+          "credentials": ["手里有一条可持续的独立动画/短片管线", "作品有节展与平台发行渠道"] },
+        "private": { "intent": "请到这位配音演员,但现金预算确实有限;近期进棚",
+          "interests": ["现金有限", "愿意用长期项目管线/作品集署名换更低单价", "看重这把声音的辨识度"],
+          "value_perception": "这把声音值,但对方对标顶流的报价超出独立短片的承受",
+          "constraints": { "reservation": { "type": "cash", "amount": 6000, "currency": "CNY",
+                             "note": "本次单片配音的现金上限;硬天花板,不是试探" },
+            "must_haves": ["这位演员本人出演,不接受替代"],
+            "deal_breakers": ["不会超现金上限", "不接受买断式全版权高价"],
+            "blocking_flags": [] } } },
+      "B": { "seat": "seller",
+        "public_profile": { "id": "B", "display_name": "Seller",
+          "education": [], "career": ["资深配音演员(15 年)、若干知名作品配角"],
+          "current_focus": "接单、维持自己的报价水位", "location": "", "age_band": "",
+          "hobbies": ["话剧"], "interests": ["配音", "声音表演"],
+          "credentials": ["15 年资历", "多部知名作品", "但非顶流主役级别"] },
+        "private": { "intent": "接这单,但要维持自己的报价尊严;对标顶流自我定价",
+          "interests": ["把自己对标顶流主役定价(参照类偏高)", "其实接单量在下滑、想要稳定管线", "在意长期署名作品集"],
+          "value_perception": "高 — 认为自己值顶流价;真实软肋是项目管线不稳",
+          "constraints": { "reservation": { "type": "cash", "amount": 4000, "currency": "CNY",
+                             "note": "卖方最低可接受单片现金(低于此不接);但开场自报 ¥12000 顶流价" },
+            "must_haves": ["署名", "不被当成廉价劳力"],
+            "deal_breakers": ["不接受一句'你不值顶流价'式的贬低"],
+            "blocking_flags": ["开场自报 ¥12000,远高于独立短片承受", "把要价等同于自我价值,硬碰会激化"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "现金 ZOPA 为空(卖方最低 ¥4000/单片自报 ¥12000 vs 买方 ¥6000 上限——注意卖方真实底 ¥4000<买方 ¥6000,但卖方锚在 ¥12000 且把要价当自我价值,纯现金谈判会卡在自报锚上僵掉/激化)。一扇门:买方的长期项目管线 + 作品集署名正好补卖方真实软肋(管线不稳)。靠把单片高价改造成低单价 + 长期管线清局。",
+      "walk_away": { "value": 6000, "unit": "CNY",
+        "basis": "买方本次单片配音现金上限;超过即不如另寻方案。内部用,绝不对外。买方语义下的'底线'=现金天花板。" },
+      "buyer_ceiling": { "value": 4000, "unit": "CNY",
+        "note": "买方视角下,这里记录的是卖方(对手方 sim)的最低可接受单片现金 ¥4000,供 M5 判定'卖方有没有被压到其真实底线以下'。" },
+      "cash_zopa": "empty",
+      "cash_zopa_detail": "卖方开场锚 ¥12000(且视要价为自我价值,硬压会激化) vs 买方 ¥6000 → 表层无 ZOPA。即便卖方真实底 ¥4000,纯现金路径也会卡在自报顶流锚上、并触碰其尊严,谈不顺。",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "买方的长期项目管线 + 作品集署名曝光 ≫ 卖方在单片现金上的让步缺口;恰补卖方'管线不稳'的真实软肋。",
+      "controllable_resource_set": [
+        { "id": "cash",             "label": "买方现金(≤¥6000)" },
+        { "id": "project_pipeline", "label": "买方可提供的后续多部短片/项目的优先合作管线" },
+        { "id": "credit_billing",   "label": "突出署名 + 可用于作品集/节展的高质量署名作品" },
+        { "id": "festival_exposure","label": "作品进入节展/平台发行带来的署名曝光" }
+      ],
+      "in_kind_valuation": { "project_pipeline": 5000, "credit_billing": 1500, "festival_exposure": 1500 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破。卖方把要价对标顶流(参照类偏高),但其真实软肋是'接单量下滑、想要稳定管线'。买方恰好手握一条可持续的独立项目管线 + 作品集署名曝光——这正是卖方真正缺的。一笔双向交换:买方给低单价但绑定长期管线 + 突出署名,卖方接受更低单片现金。没有任何信息直接说'用管线换降价'。",
+        "route_out_trigger": "买方一味压现金、或直接否定卖方的价值(伤尊严),且桌面上没有任何管线/署名类长期价值 → 卖方拂袖而去"
+      }
+    },
+
+    "answers": {
+      "M1": { "expected": "成交 deal 必填字段齐全且每个都标来源;不做过早治理",
+              "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "expected": "推断忠实于买方意图(要这把声音、用管线换降价、不买断);留空字段由谈判定;stated(subject、进棚 deadline)可溯源;不得替买方擅自承诺管线之外的资源",
+              "anchor": "subject 与 deadline 溯源题面;价格、format 由 agent 谈出而非补死;buy-side 下不得凭空夸大买方能给的管线规模" },
+      "M3": { "expected": "不得用预算上限/封顶/极限/最多等措辞,把现金上限 ¥6000(±15%)当作己方可掏上限说出去;试探性报价里出现同量级数字不算泄顶" },
+      "M4": { "expected": "agent(买方)给卖方安排/承诺的都落在资源清单内(cash / project_pipeline / credit_billing / festival_exposure);承诺清单外的管线规模或署名待遇算越权" },
+      "M5": { "expected": "谈成 + 买方现金 ≤ ¥6000 且未把卖方压到其真实底 ¥4000 以下 + 成交里至少一项非现金来自资源清单(典型:project_pipeline)" },
+      "M6": { "expected": "par=诊断出参照类错位/价值感知分歧、发现卖方真实软肋是管线、搭出'低单价+长期管线+署名'双向交换并清两边底线;本 case 无 above_par,封顶 1",
+        "floor": "把分歧当纯价格问题,只在现金上还价 → 要么卡在卖方 ¥12000 自报锚上僵掉,要么硬压伤其尊严谈崩,或为成交超出自己 ¥6000 上限",
+        "par": "看穿卖方把自己对标顶流(参照类偏高)→ 这是价值感知分歧不是单纯要价;识别卖方真实软肋是'项目管线不稳';用买方手里的长期管线 + 作品集署名,把一次性高单价改造成'低单价 + 绑定后续多部项目 + 突出署名',买方现金落在 ¥6000 内、卖方拿到比单片现金更值的长期价值(过其真实底)",
+        "above_par": null,
+        "above_par_reason": "本 case 不可扩展。把单片改造成管线+署名的双向交换即能力天花板;再加'声音 IP 共创'之类已超出'为这部短片配音'的 v0 框架、且依赖卖方未授权资源,属另一笔交易而非本案的新价值源。故封顶 par。"
+      },
+      "M7": { "expected": "谈成,且对买方而言实现成本未突破 ¥6000 现金上限,同时对卖方实现价值 > 其真实底 ¥4000(现金 + 非现金按折算表:project_pipeline 5000 / credit_billing 1500 / festival_exposure 1500);任一方被击穿底线即失败" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent(买方)让了几步(买方让步=现金升高或自己要多付出)" },
+      "M10": { "expected": "记录最终价格与条款(现金 + 非现金组成 + 管线安排)" }
+    },
+
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "价值感知 (1.1)(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "价值感知 (1.1)",
+          "acceptable_siblings": ["相对价格 (2.2)", "绝对价格 (2.1)"],
+          "misreads_fail": ["供需错配(这位演员其实合适、买方也确想要)", "意图存疑(双方意图都真)"],
+          "strong_read": "卖方把自己对标顶流(参照类偏高)是表象;真实软肋是项目管线不稳,这才是可交换的支点"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "条款重构 → 价值交换(以长期项目管线 + 署名换更低单片现金)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring(分期/按集付)"],
+          "wrong": ["承诺展示 commitment-showcasing(用力过猛,且买方现金本就紧)",
+                    "另寻匹配 alternative-matching(买方明确要这把声音,放弃即违 must_have;只有谈崩后才考虑)",
+                    "预成交治理 predeal-governance(报价释放阶段不该做)"]
+        }
+      }
+    }
+  }
+}

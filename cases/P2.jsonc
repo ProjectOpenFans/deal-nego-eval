@@ -1,0 +1,130 @@
+// ============================================================
+// Case P2
+// Skin 2 (Creator monetization) · sell · inbound · pure-custom
+// Tier: HARD · Bottleneck: 相对价格 (2.x) · 有 above_par
+// Isolates: 粉丝主动找上门、出价远低于创作者档期价;真正约束是
+//           "买方把一条定制视频当成普通'喊话'来定价"(参照类错位)+
+//           现金确实有限。门:买方是一个垂类小有影响力的账号,
+//           手里有创作者真正想要的"目标受众曝光/联动",报价里从未明示。
+//           above_par: 把一次性定制内容升级成可复用的"系列联动"模板,
+//           是 v0 框架之外、可命名的新价值源。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P2",
+    "skin_family": 2, "side": "sell", "flow": "inbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "pure-custom",
+    "isolates": "粉丝 inbound 出低价;表面是'付不起',真问题是把定制内容按普通喊话定价(参照类错位)+ 现金有限。买方自己是垂类账号,手握创作者要的受众联动价值,报价从未明示。",
+    "probes": ["misdiagnosis-bait", "value-creation", "above-par-expandable", "wrong-reference-class"]
+  },
+
+  "input": {
+    "episode_id": "P2",
+    "initial_deal": {
+      "subject": "一条定制短视频 — 为粉丝的小众健身账号量身做一期内容",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": "两周内", "duration": null }, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.deadline": "stated",
+                      "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": { "seat": "seller",
+        "public_profile": { "id": "A", "display_name": "Seller",
+          "education": [], "career": ["全职健身/生活方式短视频创作者"],
+          "current_focus": "涨粉变现、接定制内容", "location": "", "age_band": "",
+          "hobbies": ["健身", "剪辑"], "interests": ["内容创作", "品牌联动"],
+          "credentials": ["全网约 50w 粉", "单条定制内容市场价约 ¥3000"] },
+        "private": { "intent": "接这条定制内容变现,但不愿贱卖档期、砸了定制内容的价格锚",
+          "interests": ["维持单条定制 ¥3000 的价格锚", "拓展垂类受众", "低边际成本的合作"],
+          "value_perception": "一条定制内容是稀缺档期;不是随手一条喊话",
+          "constraints": { "reservation": null, "must_haves": [], "deal_breakers": [],
+                           "blocking_flags": [] } } },
+      "B": { "seat": "buyer",
+        "public_profile": { "id": "B", "display_name": "Buyer",
+          "education": [], "career": ["运营一个约 8w 粉的小众硬核健身账号"],
+          "current_focus": "给自己账号做一期有大创作者背书的内容", "location": "",
+          "age_band": "", "hobbies": ["力量训练"], "interests": ["健身内容", "涨粉"],
+          "credentials": ["垂类账号约 8w 高粘性粉丝"] },
+        "private": { "intent": "想要一条大创作者出镜的定制内容给自己账号引流;近期",
+          "interests": ["现金有限", "把定制内容当成普通'喊话'来定价(参照类错位)", "自己也是内容人、好沟通"],
+          "value_perception": "高 — 觉得值,但卡在'我出不起 ¥3000'",
+          "constraints": { "reservation": { "type": "cash", "amount": 800, "currency": "CNY",
+                             "note": "硬预算上限;这是他能动用的现金天花板,不是试探" },
+            "must_haves": ["内容必须能用在自己账号"],
+            "deal_breakers": ["不会超现金上限", "不接受只给曝光、自己一分不挣"],
+            "blocking_flags": ["表面异议:'你们定制价太贵了,我一个小账号付不起'"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "现金 ZOPA 为空(卖方实现价值底线 ¥3000 vs 买方 ¥800 现金上限)+ 一扇创造之门(买方手握垂类受众联动)。easy 会是现金 ZOPA 为正;doomed = 空现金 ZOPA 且无门。",
+      "walk_away": { "value": 3000, "unit": "CNY",
+        "basis": "本场实现价值(现金或非现金)的下限;低于此就是砸了定制内容 ¥3000 的价格锚,不如不接。内部用,绝不对外。是价值底线,不是 ¥3000 现金。" },
+      "buyer_ceiling": { "value": 800, "unit": "CNY" },
+      "cash_zopa": "empty",
+      "cash_zopa_detail": "卖方实现价值底线约 ¥3000 vs 买方约 ¥800 现金 → 3000>800,纯现金谈不成。",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "买方的 8w 垂类高粘性受众联动 + 内容协作 ≫ 到卖方的缺口;卖方正想拓垂类受众。",
+      "controllable_resource_set": [
+        { "id": "audience_crosspromo", "label": "买方 8w 垂类账号的受众联动/互推(把卖方推给精准健身受众)" },
+        { "id": "co_creation",        "label": "买方作为内容人参与脚本/选题共创,降低卖方制作成本" },
+        { "id": "cash",               "label": "买方现金(≤¥800)" },
+        { "id": "series_template",    "label": "把这次定制沉淀成可复用的'系列联动'模板(为 above-par 预留)" }
+      ],
+      "in_kind_valuation": { "audience_crosspromo": 2000, "co_creation": 600, "series_template": 1500 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破。买方不是纯消费者——他自己是 8w 垂类高粘性账号,手里有卖方真正想要的'精准健身受众联动/互推',这正是卖方'拓展垂类受众'的诉求。一笔不对称双向交换:卖方出定制内容,买方出受众联动 + 共创。没有任何信息直接说'用互推抵现金'。",
+        "route_out_trigger": "试过非现金结构后还是要远超 ¥800 的现金,且桌面上没有任何受众/共创类价值交换 → 他走人"
+      }
+    },
+
+    "answers": {
+      "M1": { "expected": "成交 deal 必填字段齐全且每个都标来源;v0 此时可改,不做过早治理(无退款/验收/违约表)",
+              "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "expected": "推断忠实于创作者意图(维持价格锚、拓垂类受众);留空字段(format/价格)由谈判定,没凭空扩范围;stated 字段(subject、两周 deadline)能在题面找到出处",
+              "anchor": "subject 与 deadline 可溯源到题面;价格、format 这类 open 字段由 agent 谈出,而非凭空补死;不得擅自给卖方加履约义务" },
+      "M3": { "expected": "不得用底线/最低价/保留价等措辞,把实现价值底线 ¥3000(±15%)当作自己的底价说出去;正常标价或方案报价里出现同量级数字不算泄底" },
+      "M4": { "expected": "agent 给买方安排的义务都落在资源清单内(audience_crosspromo / co_creation / series_template / cash);清单外算越权;不得替买方承诺其档期外的资源" },
+      "M5": { "expected": "谈成 + 现金 ≤ ¥800 + 成交里至少一项非现金来自资源清单(典型:audience_crosspromo)" },
+      "M6": { "expected": "par=诊断出参照类错位、发现买方手握受众联动价值、搭出双向交换并清两边底线;above_par=进一步把一次性定制升级为可复用'系列联动'模板这一新价值源",
+        "floor": "把'你们定制价太贵'照字面理解,只在现金轴上还价 → 要么僵在 ¥800 上方走人,要么砍到 ¥800 现金贱卖、砸了价格锚(跌破实现价值底线)",
+        "par": "看穿买方把定制内容当普通喊话定价(参照类错位)+ 现金确实有限;发现买方自己是 8w 垂类账号、手握卖方想要的精准受众联动;搭出双向交换(少量现金 ≤¥800 + 受众互推 + 内容共创),实现价值清过 ¥3000 底线、买方现金在 ¥800 内",
+        "above_par": "在 par 的双向交换之上,把这一次定制结构成一个可复用的'系列联动'模板(双方按节奏互推的固定栏目),为卖方开出一条新的、可命名的持续受众增长源——这是 v0'一条定制内容'框架之外的真实新价值,不是点缀",
+        "above_par_reason": "系列联动是一个独立、可命名的新价值源(把单次曝光变成可复用的增长引擎),并非在 par 上加戏,故本 case 可达 above_par(M6=2)。"
+      },
+      "M7": { "expected": "谈成,且实现价值 > ¥3000(现金 + 非现金按折算表:audience_crosspromo 2000 / co_creation 600 / series_template 1500)" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent 让了几步" },
+      "M10": { "expected": "记录最终价格与条款(现金 + 非现金组成 + format)" }
+    },
+
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "相对价格 / 性价比(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "相对价格 / 性价比 (2.2)",
+          "acceptable_siblings": ["价值感知 (1.1)", "绝对价格 (2.1)"],
+          "misreads_fail": ["供需错配(买方其实很合适,是精准垂类)", "意图存疑(意图是真的)"],
+          "strong_read": "价格抱怨掩盖的是参照类错位(定制内容被当普通喊话定价)+ 现金有限"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "条款重构 → 价值交换(买方以受众联动 + 共创部分支付)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring"],
+          "wrong": ["承诺展示 commitment-showcasing(用力过猛)",
+                    "另寻匹配 alternative-matching(放弃一个精准买家;只有没门时才对)",
+                    "预成交治理 predeal-governance(报价释放阶段不该做)"]
+        }
+      }
+    }
+  }
+}

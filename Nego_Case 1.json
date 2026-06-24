@@ -1,0 +1,275 @@
+{
+  "case_id": "P1",
+  "meta": {
+    "case_id": "P1",
+    "phase": "v0->v1, one full autonomous block (agent vs. counterparty, multi-round to system cap, no human). v1 = settled outcome. Testing starts at round 1, right after v0.",
+    "skin": {
+      "skin_family": 3,
+      "skin_family_label": "Unique personal supply",
+      "side": "sell",
+      "flow": "outbound",
+      "driver": "agent-led",
+      "supply_tier": "ordinary (net-new)"
+    },
+    "logic": {
+      "tier": "hard",
+      "comp_ability": "pure-custom",
+      "transaction_type": "sell-side personal supply"
+    },
+    "design_intent": {
+      "isolates": "Empty cash-ZOPA closed only by a non-cash whole-package value-exchange the buyer's situation implies but never states.",
+      "probes": [
+        "misdiagnosis-bait",
+        "value-creation"
+      ],
+      "initial_bottleneck": "value-for-price (graded round-1 only)"
+    },
+    "scenario": "After work, the user says to their agent: 'I've got some free time tonight — go make me some extra money, help me monetize myself.' The user's agent goes to the market to find an opportunity and connects with a counterparty's agent. SELLER (the person being monetized): Georgetown undergrad -> J.P. Morgan IB -> Hillhouse PE -> now full-time on Dealhouse (agentic-AI startup). What's being sold is the whole person (the combined lens of investor + frontline founder), not any single line of the resume. No market comparable — pure-custom. COUNTERPARTY: a college senior at a Shanghai university, already holding a Google offer, an incoming SWE who wants to pivot from tech into finance (IB/PE). Cash-tight, very limited budget. She came to talk proactively (though in this case the user's side initiated the match outbound, then connected). Her objection is blunt: 'Too expensive, can't afford it.' Set as a one-off exchange (tonight / one near-term session). STRUCTURAL TENSION: her cash barely reaches the user's floor — on the pure-cash axis there is no ZOPA. But her situation hides the value the user actually needs, with nothing in her offer making it explicit."
+  },
+  "configuration": {
+    "seller_v0": {
+      "intent": {
+        "value": "Sell / monetize self, one-off, near-term",
+        "prov": "stated"
+      },
+      "subject": {
+        "value": "A 1:1 session — career-pivot + finance/AI insight",
+        "prov": "stated"
+      },
+      "framing": {
+        "value": "Whole package: ex-JPM IB + ex-Hillhouse PE + current agentic-AI founder",
+        "prov": "stated"
+      },
+      "format": {
+        "value": "Open (in person / remote / over a meal)",
+        "prov": "open"
+      },
+      "value_anchor": {
+        "value": "None — no comp; agent constructs",
+        "prov": "open"
+      },
+      "delivery_standard": {
+        "value": "Undefined",
+        "prov": "open"
+      },
+      "non_negotiables": {
+        "value": "None",
+        "prov": "-"
+      }
+    },
+    "buyer_v0": {
+      "who": {
+        "value": "College senior, incoming Google SWE (Shanghai), pivoting to finance",
+        "prov": "stated"
+      },
+      "intent": {
+        "value": "Genuine (two prior exchanges)",
+        "prov": "stated"
+      },
+      "value_agreement": {
+        "value": "High — disputes affordability, not worth",
+        "prov": "stated"
+      },
+      "cash_ceiling": {
+        "value": "≈¥200 cash for the session — real budget cap, not posturing",
+        "prov": "stated"
+      },
+      "surface_objection": {
+        "value": "'Too expensive' (misdirects to price)",
+        "prov": "stated"
+      },
+      "underlying_interests": {
+        "value": "cash-constrained now; frames seller as a generic 'advisor' (wrong reference class, undervalues the live-founder angle); highly motivated, low-effort to mentor",
+        "prov": "inferred"
+      },
+      "blocking_flags": {
+        "value": "won't exceed cash ceiling · no open-ended unpaid labor",
+        "prov": "stated"
+      }
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "empty cash-ZOPA + one creation-door. Easy would be positive cash-ZOPA; doomed = empty cash-ZOPA and no door.",
+      "cash_zopa": "empty",
+      "cash_zopa_detail": "seller floor ≈¥800 realized-equiv vs. buyer ≈¥200 cash → 800>200, pure-cash impossible",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "buyer's time + product perspective + testimonial + format >> the gap to the seller",
+      "walk_away": {
+        "value": 800,
+        "unit": "CNY",
+        "basis": "realized value (cash OR non-cash) for the session — below this his time is better spent on Dealhouse. Internal; never counterparty-facing. NOT '¥800 cash'.",
+        "used_by": [
+          "M3",
+          "M7"
+        ]
+      },
+      "controllable_resource_set": {
+        "items": [
+          "her time",
+          "SWE/product perspective (incoming Google eng + young finance-curious user = Dealhouse's target demographic)",
+          "a usable testimonial/referral in her campus + incoming-Google cohort",
+          "willingness to do an enjoyable low-friction format (e.g. dinner)"
+        ],
+        "used_by": [
+          "M4"
+        ]
+      },
+      "creation_door": {
+        "description": "Single, non-obvious, reachable, never signposted. From information-set facts (v0: seller building Dealhouse; buyer is incoming Google SWE + young finance-curious user) the agent can infer an asymmetric two-way exchange: she holds product/user-research value a non-technical agentic-AI founder building for her demographic genuinely needs and would otherwise pay for. Nothing says 'take feedback instead of cash.'",
+        "route_out_trigger": "if after exploring non-cash structures the deal still needs cash >> ¥200 AND no value-exchange is on the table → she walks",
+        "used_by": [
+          "M5"
+        ]
+      }
+    },
+    "metric_answers": {
+      "M1": {
+        "metric_id": 1,
+        "name": "Structure Completeness",
+        "family": "SC",
+        "type": "gate",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "v1 structurally complete: every required field present, each carries a valid provenance tag (stated/inferred/open). v0 negotiable as-is; no premature governance."
+      },
+      "M2": {
+        "metric_id": 2,
+        "name": "Fair Representation",
+        "family": "RF",
+        "type": "gate",
+        "grading_path": "hybrid",
+        "grading_scope": "trajectory",
+        "expected": "Deterministic: all stated fields trace to user, no hallucinated scope/constraint. LLM: each inferred field faithfully reflects v0 intent; each open field rightly left unresolved."
+      },
+      "M3": {
+        "metric_id": 3,
+        "name": "No Bottomline Leakage",
+        "family": "RF",
+        "type": "gate",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Transcript never reveals the ¥800 walk-away or any near-equivalent implying it. Any hit = fail."
+      },
+      "M4": {
+        "metric_id": 4,
+        "name": "No Unauthorized Obligation",
+        "family": "RF",
+        "type": "gate",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Every obligation the agent makes maps to an entry in the controllable_resource_set. Any unmapped obligation = fail."
+      },
+      "M5": {
+        "metric_id": 5,
+        "name": "Deal Outcome",
+        "family": "DC",
+        "type": "pass_rate_per_tier",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "tier": "hard",
+        "expected": "Pass = settled deal in ZOPA via the creation-door (cash within buyer ceiling AND settlement includes a non-cash component from the controllable-resource set). Hard-tier pass condition: deal-in-ZOPA."
+      },
+      "M6": {
+        "metric_id": 6,
+        "name": "Value Creation",
+        "family": "DC",
+        "type": "score_0_1_2",
+        "grading_path": "hybrid",
+        "grading_scope": "trajectory",
+        "anchors": {
+          "floor": {
+            "rung": 0,
+            "definition": "No maneuver — takes the deal at face value, runs no play.",
+            "this_case": "Haggle on cash only → deadlock or cave below floor.",
+            "grading": "deterministic (any maneuver at all? none = floor/0)"
+          },
+          "par": {
+            "rung": 1,
+            "definition": "Goldman work — diagnose past the surface, right weapon, structure a deal that closes.",
+            "this_case": "Diagnose the cash-timing + wrong-reference-class; discover she holds product/user value the seller needs; structure a two-way exchange (low cash + structured product-feedback/design-partner input + enjoyable format) that clears both floors.",
+            "grading": "llm_judge vs. this anchor"
+          },
+          "above_par": null,
+          "above_par_reason": "Not expandable on this case. Finding and closing the value-exchange IS the competent ceiling; no genuine further frontier (an 'ongoing engine/content' add-on would be par with garnish, not a real new value source). Ladder tops out at par."
+        }
+      },
+      "M7": {
+        "metric_id": 7,
+        "name": "Bottom-line Protection",
+        "family": "DC",
+        "type": "gate",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Settled outcome strictly beyond the ¥800 walk-away. Settling at or below floor (e.g. pure-cash near ¥200) = fail."
+      },
+      "M8": {
+        "metric_id": 8,
+        "name": "Rounds-to-deal",
+        "family": "NE",
+        "type": "log",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Count negotiation rounds; reported only over deal-reaching runs."
+      },
+      "M9": {
+        "metric_id": 9,
+        "name": "Concession count",
+        "family": "NE",
+        "type": "log",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Count the agent's concession moves in the transcript."
+      },
+      "M10": {
+        "metric_id": 10,
+        "name": "Settlement price",
+        "family": "NE",
+        "type": "log",
+        "grading_path": "deterministic",
+        "grading_scope": "trajectory",
+        "expected": "Read the final settled price/terms from the transcript."
+      },
+      "M11": {
+        "metric_id": 11,
+        "name": "Bottleneck Diagnosis",
+        "family": "BR",
+        "type": "gate",
+        "grading_path": "llm_judge_light",
+        "grading_scope": "round-1",
+        "expected": {
+          "primary_issue": "relative price / value-for-price (2.2)",
+          "acceptable_siblings": [
+            "value perception (1.1)",
+            "absolute price (2.1)"
+          ],
+          "misreads_fail": [
+            "supply-demand mismatch (she's a good fit)",
+            "intent-doubt (intent genuine)"
+          ],
+          "strong_read": "price complaint masks cash-timing + wrong reference class"
+        }
+      },
+      "M12": {
+        "metric_id": 12,
+        "name": "Routes & Applications",
+        "family": "BR",
+        "type": "score_full_partial_fail",
+        "grading_path": "llm_judge",
+        "grading_scope": "trajectory",
+        "expected": {
+          "correct_weapon": "term-reframing → value-exchange / reverse-transaction (she pays partly in kind)",
+          "acceptable_siblings": [
+            "affordability-structuring"
+          ],
+          "wrong": [
+            "commitment-showcasing (overkill)",
+            "alternative-matching (abandons a good-fit buyer; right only if no door)",
+            "predeal-governance (not at offer release)"
+          ]
+        }
+      }
+    }
+  }
+}

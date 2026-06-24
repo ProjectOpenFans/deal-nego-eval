@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM 谈判 / 砍价能力 · 研究报告（结合双边撮合场景）</title>
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --ink:#1a1f2e; --muted:#5b6472; --line:#e6e8ee;
+    --accent:#6366f1; --accent2:#8b5cf6;
+    --shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px}
+
+  header.hero{background:linear-gradient(135deg,#5b58e6 0%,#8b5cf6 55%,#a855f7 100%); color:#fff; padding:46px 0 38px}
+  header.hero h1{margin:0 0 8px; font-size:29px; letter-spacing:.3px}
+  header.hero p.sub{margin:0; opacity:.92; font-size:15px}
+  .hero-meta{margin-top:18px; display:flex; flex-wrap:wrap; gap:10px}
+  .pill{background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); padding:5px 12px; border-radius:999px; font-size:13px}
+
+  .scenario{background:linear-gradient(135deg,#0f766e,#0e7490); color:#fff; padding:22px 0}
+  .scenario h2{margin:0 0 6px; font-size:18px; display:flex; align-items:center; gap:9px}
+  .scenario p.lead{margin:0 0 14px; font-size:14px; opacity:.95}
+  .scn-tbl{width:100%; border-collapse:collapse; font-size:13.2px; background:rgba(255,255,255,.08); border-radius:10px; overflow:hidden}
+  .scn-tbl td{padding:9px 13px; vertical-align:top; border-bottom:1px solid rgba(255,255,255,.16)}
+  .scn-tbl tr:last-child td{border-bottom:0}
+  .scn-tbl td:first-child{width:40%; font-weight:600}
+
+  .toolbar{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.93); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); padding:11px 0}
+  .toolbar .wrap{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+  .toolbar .wrap+.wrap{margin-top:9px}
+  .nav{display:flex; gap:5px; flex-wrap:wrap}
+  .nav a{font-size:13px; color:var(--muted); padding:6px 9px; border-radius:8px}
+  .nav a:hover{background:#eef0f7; text-decoration:none; color:var(--ink)}
+  .search{flex:1; min-width:170px; display:flex; align-items:center; gap:8px; background:#f1f2f7; border:1px solid var(--line); border-radius:10px; padding:7px 12px}
+  .search input{border:0; background:transparent; outline:none; width:100%; font-size:14px; color:var(--ink)}
+  .flabel{font-size:11.5px; color:#9098a6; font-weight:600; letter-spacing:.4px; margin-right:2px; align-self:center}
+  .chips{display:flex; gap:6px; flex-wrap:wrap}
+  .chip{font-size:12.5px; border:1px solid var(--line); background:#fff; color:var(--muted); padding:5px 11px; border-radius:999px; cursor:pointer; transition:.15s}
+  .chip:hover{border-color:var(--accent); color:var(--accent)}
+  .chip.active{background:var(--accent); border-color:var(--accent); color:#fff}
+  .vtoggle{display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--muted); cursor:pointer; user-select:none}
+  .count{font-size:12.5px; color:var(--muted); margin-left:auto}
+
+  section.block{padding:34px 0 8px}
+  h2.sec{font-size:21px; margin:0 0 4px; display:flex; align-items:center; gap:10px}
+  h2.sec .dot{width:9px; height:22px; border-radius:4px; background:linear-gradient(var(--accent),var(--accent2))}
+  .sec-desc{color:var(--muted); margin:0 0 18px; font-size:14px}
+
+  .tiers{display:flex; flex-direction:column; gap:14px; margin-top:8px}
+  .tier{background:#fff; border:1px solid var(--line); border-top:4px solid #ccc; border-radius:14px; padding:14px 18px; box-shadow:var(--shadow)}
+  .tier h3{margin:0 0 6px; font-size:15.5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .tier ul{margin:0; padding:0; list-style:none}
+  .tier li{margin:9px 0; font-size:13.5px}
+  .tier li a{font-weight:650}
+  .tier .tw{display:block; color:var(--muted); font-size:12.9px; margin-top:2px}
+  .tcount{font-size:12px; color:var(--muted); font-weight:500}
+  .r-core-b{border-top-color:#f97316}.r-eval-b{border-top-color:#3b82f6}
+  .r-improve-b{border-top-color:#8b5cf6}.r-substrate-b{border-top-color:#10b981}.r-low-b{border-top-color:#cbd2dc}
+  .u-run-b{border-top-color:#22c55e}.u-partial-b{border-top-color:#f59e0b}.u-arch-b{border-top-color:#6366f1}
+  .u-method-b{border-top-color:#06b6d4}.u-data-b{border-top-color:#84cc16}.u-read-b{border-top-color:#cbd2dc}
+
+  .method-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px}
+  .mcard{background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 18px; box-shadow:var(--shadow)}
+  .mcard.a{border-left:4px solid #3b82f6}.mcard.b{border-left:4px solid #f59e0b}
+  .mcard h4{margin:0 0 8px; font-size:14.5px}
+  .mcard p{margin:0; font-size:13.3px; color:#384152}
+  ol.precond{margin:14px 0 0; padding-left:20px}
+  ol.precond li{margin:9px 0; font-size:13.6px}
+  ol.precond b{color:#3730a3}
+  .pre-list{margin-top:6px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:8px 6px; box-shadow:var(--shadow)}
+
+  .tbl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); background:#fff}
+  table.main{border-collapse:collapse; width:100%; font-size:13.3px; min-width:740px}
+  table.main th,table.main td{padding:11px 13px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line)}
+  table.main thead th{background:#f3f4fa; font-weight:600; color:#374151}
+  table.main tbody tr:last-child td{border-bottom:0}
+  table.main tbody tr:hover{background:#fafbff}
+  td.c-num{font-weight:700; color:var(--accent); text-align:center; width:30px}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(335px,1fr)); gap:16px; margin-top:8px}
+  .card{background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:14px; padding:16px 18px; box-shadow:var(--shadow); transition:.18s}
+  .card:hover{transform:translateY(-2px); box-shadow:0 8px 28px rgba(16,24,40,.10)}
+  .card.hidden,.group.hidden,tr.hidden,.tier.hidden{display:none}
+  .card-head{display:flex; justify-content:space-between; gap:10px; align-items:flex-start}
+  .card-title{font-weight:650; font-size:15.5px; display:flex; gap:9px; align-items:baseline; line-height:1.35}
+  .num{flex:0 0 auto; display:inline-grid; place-items:center; width:23px; height:23px; border-radius:50%; background:linear-gradient(var(--accent),var(--accent2)); color:#fff; font-size:12.5px; font-weight:700}
+  .badges{display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end}
+  .badge{font-size:11px; padding:2px 8px; border-radius:6px; font-weight:600; white-space:nowrap}
+  .t-paper{background:#e0edff;color:#1d4ed8}.t-bench{background:#ede4ff;color:#6d28d9}
+  .t-data{background:#d6f5e6;color:#047857}.t-code{background:#e8edf3;color:#475569}
+  .t-platform{background:#d3f3f0;color:#0f766e}.t-method{background:#ffeccc;color:#b45309}
+  .t-repro{background:#ffe0ef;color:#be185d}.t-survey{background:#fff0c2;color:#a16207}
+  .v-ok{background:#e7f7ec;color:#15803d}.v-lead{background:#fdf0d5;color:#b45309}
+  .r-core{background:#ffe2d6;color:#c2410c}.r-eval{background:#dbeafe;color:#1d4ed8}
+  .r-improve{background:#ede9fe;color:#6d28d9}.r-substrate{background:#dcfce7;color:#15803d}.r-low{background:#eef0f3;color:#64748b}
+  .u-run{background:#dcfce7;color:#15803d}.u-partial{background:#fef3c7;color:#b45309}.u-arch{background:#e0e7ff;color:#4338ca}
+  .u-method{background:#cffafe;color:#0e7490}.u-data{background:#ecfccb;color:#4d7c0f}.u-read{background:#eef0f3;color:#64748b}
+  .meta{display:flex; flex-direction:column; gap:3px; margin:11px 0 9px; font-size:12.5px; color:var(--muted)}
+  .meta-item b{color:#374151; font-weight:600; margin-right:6px}
+  .highlights{margin:0; padding-left:18px; font-size:13.3px}
+  .highlights li{margin:4px 0}
+  .caveat{margin-top:10px; font-size:12.5px; color:#7c2d12; background:#fff7ed; border:1px solid #fed7aa; padding:7px 10px; border-radius:8px}
+  .caveat b{color:#9a3412}
+  .related{margin-top:8px; font-size:12.5px; color:#3730a3; background:#eef0ff; border:1px solid #c7d2fe; padding:7px 10px; border-radius:8px}
+  .forus{margin-top:9px; font-size:12.8px; color:#0f5e57; background:#e6f7f4; border:1px solid #99e0d6; padding:8px 11px; border-radius:8px}
+  .forus b{color:#0f766e; margin-right:4px}
+  .usenote{margin-top:8px; font-size:12.6px; color:#7c5e10; background:#fefce8; border:1px solid #fde68a; padding:8px 11px; border-radius:8px; display:flex; gap:7px; align-items:flex-start}
+  .usenote .ut{color:#7c5e10}
+  .links{margin-top:11px; display:flex; gap:12px; flex-wrap:wrap; font-size:12.5px}
+  .link{font-weight:600}
+
+  .group{margin-top:20px}
+  .group-title{font-size:16px; margin:0 0 4px; display:flex; align-items:center; gap:10px; color:#272d3d}
+  .glyph{display:inline-grid; place-items:center; width:25px; height:25px; border-radius:8px; background:#eef0ff; color:var(--accent); font-weight:700; font-size:13px}
+
+  .callout{background:linear-gradient(135deg,#eef0ff,#f6f0ff); border:1px solid #d6dbff; border-radius:14px; padding:18px 20px; margin-top:20px}
+  .callout h3{margin:0 0 10px; font-size:15px; color:#3730a3}
+  .callout ul{margin:0; padding-left:20px; font-size:13.6px}
+  .callout li{margin:7px 0}
+
+  .syn{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:16px; margin-top:8px}
+  .syn-card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 18px; box-shadow:var(--shadow)}
+  .syn-card h4{margin:0 0 8px; font-size:14.5px; display:flex; gap:8px; align-items:center}
+  .syn-card h4 .k{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:linear-gradient(var(--accent),var(--accent2));color:#fff;font-size:12px;font-weight:700}
+  .syn-card p{margin:0; font-size:13.4px; color:#384152}
+  .gaps{margin-top:16px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 20px; box-shadow:var(--shadow)}
+  .gaps h4{margin:0 0 10px; font-size:14.5px}
+  .gaps ol{margin:0; padding-left:20px; font-size:13.5px}
+  .gaps li{margin:6px 0}
+
+  footer{color:var(--muted); font-size:12.5px; text-align:center; padding:34px 20px 50px; line-height:1.7}
+  .legend{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:8px}
+
+  @media(max-width:680px){
+    header.hero h1{font-size:23px}
+    .nav{display:none}
+    .grid,.method-grid{grid-template-columns:1fr}
+    .scn-tbl td:first-child{width:46%}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>LLM 谈判 / 砍价（Negotiation &amp; Bargaining）能力 · 研究报告</h1>
+    <p class="sub">已结合「双边 buyer/seller agent 撮合（多议题：价格 + 内容）」场景定制 —— 含相关性、当下能用、评估方法与落地要点</p>
+    <div class="hero-meta">
+      <span class="pill">🎯 已按我们的场景排序</span>
+      <span class="pill">🛠️ 标注「当下能用」形态</span>
+      <span class="pill">📌 核心 5 + 延伸 20（已按相关性精简）</span>
+      <span class="pill">🗓 2026-06</span>
+    </div>
+  </div>
+</header>
+
+<div class="scenario">
+  <div class="wrap">
+    <h2>🧭 我们的产品场景（评估这一切的「筛子」）</h2>
+    <p class="lead">高度自定义需求的双边撮合：<b>buyer agent ↔ seller agent</b> 各自代表一方，在一个 deal 上谈判，<b>可谈价格、可谈内容（多议题）</b>。下面每个特征都会改变「哪篇更有参考价值」。</p>
+    <table class="scn-tbl">
+      <tr><td>双边 1-对-1（不是多方）</td><td>多方 / 博弈类（如 LLM-Deliberation、Diplomacy 等）降为低相关，仅局部可借</td></tr>
+      <tr><td>谈价格 + 谈内容 = 多议题</td><td>⚠️ 多数砍价 benchmark 是「单议题价格」；我们真正需要的是<b>多议题</b>那条线（Pareto / logrolling / 联合福利）</td></tr>
+      <tr><td>两边都是我们自己的 agent</td><td>可大规模自我博弈迭代；但<b>必须防「两个 agent 合谋 / 不忠于委托人」</b></td></tr>
+      <tr><td>撮合平台（要成交、双方都满意）</td><td>目标是<b>联合福利 / 公平 / 成交率</b>，不是「哪边赢」——把「剩余攫取 / 胜率」类指标降权</td></tr>
+      <tr><td>高度自定义需求</td><td>需要<b>偏好抽取 + 长程意图追踪</b>；现成数据集太窄，多半得自建 eval</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="wrap">
+    <nav class="nav">
+      <a href="#rel">相关性</a>
+      <a href="#board">当下能用</a>
+      <a href="#eval">评估方法</a>
+      <a href="#design">设计要点</a>
+      <a href="#detail">逐篇特点</a>
+      <a href="#more">延伸阅读</a>
+    </nav>
+    <label class="search">🔍 <input id="q" type="text" placeholder="搜索标题 / 场景 / 关键词…"></label>
+    <label class="vtoggle"><input type="checkbox" id="vonly"> 仅看已核实</label>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="wrap">
+    <span class="flabel">相关度</span><div class="chips" id="relchips"></div>
+    <span class="flabel" style="margin-left:8px">当下能用</span><div class="chips" id="usechips"></div>
+  </div>
+  <div class="wrap">
+    <span class="flabel">类型</span><div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- RELEVANCE -->
+  <section class="block" id="rel">
+    <h2 class="sec"><span class="dot"></span>Part 1 · 对我们场景的相关性排序</h2>
+    <p class="sec-desc">先看读什么。按对「双边多议题撮合」的价值分层；每条附「为什么对我们」。</p>
+    <div class="tiers" id="tiers"></div>
+  </section>
+
+  <!-- ACTIONABILITY BOARD -->
+  <section class="block" id="board">
+    <h2 class="sec"><span class="dot"></span>Part 2 · 当下能用 · 行动板</h2>
+    <p class="sec-desc">基于实际抓取各 repo 的状态（2026-06）：哪些 clone 即跑、哪些只能借架构 / 方法 / 数据、哪些暂不可用。每条带「🛠️ 当下怎么用」。</p>
+    <div class="callout" style="background:linear-gradient(135deg,#dcfce7,#e0f2fe);border-color:#86efac">
+      <h3 style="color:#15803d">⭐ 想要「最新 + 大厂/顶校 + 开源」？优先看这几个（2025–2026）</h3>
+      <ul>
+        <li><b>Magentic Marketplace</b>（Microsoft Research, 2025）— 撮合市场「搜索→撮合→谈判→交易」全链路框架，最贴你们平台形态。</li>
+        <li><b>AgenticPay</b>（Berkeley · Dawn Song, 2026）— 谈「价格 + 连续/离散条款」的完整合同 + 1-to-N/N-to-N 拓扑，最贴你们的多议题。</li>
+        <li><b>A2A-NT</b>（MIT Pentland / Stanford, 2025）— 双边委托砍价 + 风险/异常评估。</li>
+        <li><b>Concordia</b>（Google DeepMind）/ <b>Sotopia</b>（CMU/AI2/Stanford）— 维护良好的可搭建框架。</li>
+        <li><b>TERMS-Bench</b>（Stanford/DeepMind, 2026）— 诊断式评估方法（详见 Part 5 ⑤）。</li>
+      </ul>
+      <p style="margin:8px 0 0;font-size:13px;color:#365314">→ 之前那批能跑的（Deal-or-No-Deal / NegotiationArena / GPT-Bargaining）偏老、半归档；上面这些才是当前活跃前沿，不存在「空缺」。</p>
+    </div>
+    <div class="tiers" id="boardtiers"></div>
+  </section>
+
+  <!-- EVAL METHOD -->
+  <section class="block" id="eval">
+    <h2 class="sec"><span class="dot"></span>Part 3 · 评估方法：单边评测怎么做</h2>
+    <p class="sec-desc">结论先行 —— <b>每次 bench 只评一边 agent，不仅可以，而且是正确做法</b>：把对手固定，结果才只归因于被测 agent。</p>
+
+    <div class="callout">
+      <h3>📎 文献先例（都在做单边评测）</h3>
+      <ul>
+        <li><b>BargainBench</b>（2509.06341）就是<b>只评 seller agent</b>，买方由环境模拟。</li>
+        <li><b>TERMS-Bench</b>（2605.13909）的「环境即验证器」把对手做成<b>已知、固定的工具</b>（固定随机策略，不是第二个 LLM），做 agent-attributable 诊断。</li>
+        <li><b>Measuring Bargaining</b>（2402.15813）把 buyer / seller 当<b>两个独立角色</b>分别评，并发现<b>买方比卖方难</b>。</li>
+      </ul>
+    </div>
+
+    <div class="callout" style="background:linear-gradient(135deg,#e6f7f4,#eef0ff);border-color:#a7e3d9">
+      <h3 style="color:#0f766e">🆚 「和 GPT 跑」要分清两种问法</h3>
+      <ul>
+        <li><b>① 同台对坐</b>（你的 agent ↔ GPT 谈一单）→ 答「打不打得过 GPT」，直观但<b>测不出干净差距</b>（混了角色不对称 + scaffolding）。</li>
+        <li><b>② 同座替换（推荐）</b>：固定对手 + 固定场景/种子，让你的 agent 与 GPT <b>轮流坐同一座位</b>。差距 = GPT 该座位得分 − 你的 agent 该座位得分。</li>
+        <li><b>再加绝对参照</b>：放一个脚本 / 最优对手或算 Pareto 最优 —— GPT 自己也远非最优，否则「追平 GPT」可能俩都菜。</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:15.5px;margin:22px 0 0">⚠️ 前提条件（否则单边评测会失真）</h3>
+    <div class="pre-list">
+      <ol class="precond">
+        <li><b>你「固定」成什么对手，决定了你在测什么。</b> 对手就是测量仪器：固定参照陪练（跨版本 A/B）／规则·博弈论最优对手（测离最优多远）／一组对手画像（软·硬·激进·带欺骗，测鲁棒性）。</li>
+        <li><b>别拿「自己另一边的最新 agent」当对手。</b> 两边都是你们的、还共训过 → babysitting / 涌现合谋，联合看着好却不反映单边能力。对手要<b>冻结、受控，最好掺外部模型</b>。</li>
+        <li><b>对手 + 场景 + 随机种子全部冻结</b>，跨版本才可比；并钉死 GPT 版本 + 低温。</li>
+        <li><b>多议题要额外固定对手的偏好 / 效用画像</b> → 可算出该局 Pareto / 最优解，直接测离最优多远。</li>
+        <li><b>buyer 和 seller 各做一套</b>（角色不对称，是两种能力），且你的 agent 与 GPT 在<b>同一座位</b>比。</li>
+      </ol>
+    </div>
+
+    <h3 style="font-size:15.5px;margin:24px 0 0">🔁 建议两套并存</h3>
+    <div class="method-grid">
+      <div class="mcard a"><h4>🔬 单边 bench（固定对手）</h4><p>用于<b>日常迭代 / 版本排位 / 回归</b>。给你可归因、低方差、可复现、可诊断的分数。</p></div>
+      <div class="mcard b"><h4>🤝 双活 self-play（你 buyer × 你 seller）</h4><p>单独的<b>系统级评测</b>，看<b>联合福利、成交率、合谋 / 忠实度审计</b>。⚠️ 不能给单个 agent 能力打分。</p></div>
+    </div>
+  </section>
+
+  <!-- DESIGN -->
+  <section class="block" id="design">
+    <h2 class="sec"><span class="dot"></span>Part 4 · 落地设计要点</h2>
+    <p class="sec-desc">把研究折叠成可执行的取舍。</p>
+    <div class="syn">
+      <div class="syn-card"><h4><span class="k">1</span>架构「双脑」分离</h4><p>决策脑（硬约束内做多议题 offer 的优化器 / 策略）+ 表达脑（LLM 措辞、读意图）。源自 OG-Narrator + CraigslistBargain 解耦。可控性、对委托人忠实都靠它。</p></div>
+      <div class="syn-card"><h4><span class="k">2</span>多议题 = 目标变了</h4><p>别只盯价格，盯<b>帕累托前沿 / logrolling / 联合福利 / 无嫉妒</b>。参考 Game-Theoretic Workflow。</p></div>
+      <div class="syn-card"><h4><span class="k">3</span>长程状态显式管理</h4><p>别全靠 LLM context：用 intent-action-tool 类做需求 / 承诺追踪，专测「意图漂移 + 遗忘承诺」（BargainBench 已证必现）。</p></div>
+      <div class="syn-card"><h4><span class="k">4</span>防合谋 + 测不对称</h4><p>两边都是你们的 → 验证 agent 是否忠于各自委托人，并做跨模型 / 跨强弱配对压测（PACT 合谋 + NegotiationArena babysitting）。</p></div>
+      <div class="syn-card"><h4><span class="k">5</span>撮合目标 ≠ 零和</h4><p>优化「成交率 × 联合福利 × 公平」，盯住「激进度 ↔ 谈崩」权衡（GPT-Bargaining）。可考虑加 mediator / critic 角色。</p></div>
+      <div class="syn-card"><h4><span class="k">6</span>「谈内容」是文献空白</h4><p>现有 benchmark 几乎都价格中心、议题离散且窄。开放式内容 / 条款谈判<b>没有现成数据集 → 借方法论，自己造数据与场景</b>。</p></div>
+    </div>
+    <div class="gaps">
+      <h4>🧭 可见空白 / 机会</h4>
+      <ol>
+        <li>统一覆盖「多议题 + 多方 + 真实业务约束」的 benchmark 仍稀缺（AgenticPay 在补 N-to-N）。</li>
+        <li>跨语言 / 跨文化谈判评估。</li>
+        <li>长程记忆与一致性（BargainBench 已暴露记忆衰减）。</li>
+        <li>安全维度：操纵 / 合谋 / 欺骗的标准化评估（PersuSafety 起步）。</li>
+        <li>与真人对谈的评估（多数仍是 LLM-vs-LLM）。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DETAIL -->
+  <section class="block" id="detail">
+    <h2 class="sec"><span class="dot"></span>Part 5 · 核心 source（5 篇）· 逐篇特点</h2>
+    <p class="sec-desc">一览表 + 详情卡片（含「🎯 对我们」价值点 + 「🛠️ 当下」可用形态）。支持上方搜索 / 相关度 / 当下能用 / 类型筛选。</p>
+    <div class="tbl-wrap">
+      <table class="main">
+        <thead><tr><th>#</th><th>名称</th><th>相关度</th><th>当下能用</th><th>类型</th><th>链接</th></tr></thead>
+        <tbody id="tbl-body"></tbody>
+      </table>
+    </div>
+    <div class="grid" id="known-grid" style="margin-top:16px"></div>
+
+    <div class="callout">
+      <h3>🔗 配对提醒</h3>
+      <ul>
+        <li><b>⑤ NegotiationArena 的论文版</b> = <a href="https://arxiv.org/abs/2402.05863" target="_blank" rel="noopener">2402.05863</a>（ICML&rsquo;24）。你手上是 repo，关键结论在论文里。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MORE -->
+  <section class="block" id="more">
+    <h2 class="sec"><span class="dot"></span>Part 6 · 更多值得参考的（按主题）</h2>
+    <p class="sec-desc">✅ = 已实际抓取核实　🔍 = 仅搜索发现、建议自行核实链接</p>
+    <div id="groups"></div>
+  </section>
+
+</main>
+
+<footer>
+  方法：deep-research 多 agent 工作流（7 篇逐篇抓取 + 6 角度搜索 + 14 候选细读）；相关度、当下能用、评估方法据与用户讨论及 repo 实测定制。<br>
+  🎯核心 📊评估 🔧增强 📎底座 ○低相关　|　🟢能直接跑 🟡可跑有坑 🧩架构参考 📐方法论参考 📦数据集 📚背景/待核实　|　✅已核实 🔍待核实<br>
+  <span class="legend"><span>论文</span><span>Benchmark</span><span>数据集</span><span>代码</span><span>平台</span><span>方法</span><span>复现</span><span>综述</span></span>
+</footer>
+
+<script>
+const TYPE_META={
+  paper:{label:"论文",cls:"t-paper"}, benchmark:{label:"Benchmark",cls:"t-bench"},
+  dataset:{label:"数据集",cls:"t-data"}, code:{label:"代码",cls:"t-code"},
+  platform:{label:"平台",cls:"t-platform"}, method:{label:"方法",cls:"t-method"},
+  reproduction:{label:"复现",cls:"t-repro"}, survey:{label:"综述",cls:"t-survey"}
+};
+const REL_META={
+  core:{label:"🎯 核心",cls:"r-core",bcls:"r-core-b",full:"核心 · 架构直接可借"},
+  eval:{label:"📊 评估",cls:"r-eval",bcls:"r-eval-b",full:"评估体系 · 上线前必搭"},
+  improve:{label:"🔧 增强",cls:"r-improve",bcls:"r-improve-b",full:"增强 / 训练 / 福利"},
+  substrate:{label:"📎 底座",cls:"r-substrate",bcls:"r-substrate-b",full:"数据底座 · 建 eval 时 seed"},
+  low:{label:"○ 低相关",cls:"r-low",bcls:"r-low-b",full:"对核心低相关（各记一点）"}
+};
+const REL_ORDER=["core","eval","improve","substrate","low"];
+const USE_META={
+  run:{label:"🟢 能直接跑",cls:"u-run",bcls:"u-run-b",full:"clone 即跑（可接你们 agent + GPT）"},
+  partial:{label:"🟡 可跑有坑",cls:"u-partial",bcls:"u-partial-b",full:"能跑但糙 / 偏训练，需折腾"},
+  arch:{label:"🧩 架构参考",cls:"u-arch",bcls:"u-arch-b",full:"借设计模式，不必跑"},
+  method:{label:"📐 方法论参考",cls:"u-method",bcls:"u-method-b",full:"照搬评估设计 / 指标 / 协议"},
+  data:{label:"📦 数据集",cls:"u-data",bcls:"u-data-b",full:"可加载数据，seed 自建 eval"},
+  read:{label:"📚 背景/待核实",cls:"u-read",bcls:"u-read-b",full:"背景阅读 / 链接待核实 / 无直接可用件"}
+};
+const USE_ORDER=["run","partial","arch","method","data","read"];
+
+const KNOWN=[
+ {tag:1,name:"Measuring Bargaining Abilities of LLMs（OG-Narrator）",type:["paper","benchmark","method"],verified:true,rel:"core",use:"arch",
+  setting:"双边价格（真实 Amazon 商品）",eval:"结果（成交率 / 利润）",venue:"ACL 2024 Findings",
+  links:[{t:"arXiv 2402.15813",u:"https://arxiv.org/abs/2402.15813"}],
+  highlights:["把砍价形式化为非对称不完全信息博弈，可量化逐轮收益","核心发现：扮买方比扮卖方难得多","OG-Narrator：定价决策（确定性）与语言生成（LLM）解耦；买方成交率 26.7% → 88.9%","发布 AmazonHistoryPrice 数据集 + 代码"],
+  caveats:"仅单议题价格；摘要未列具体被测模型名。",
+  forus:"OG-Narrator 的「决策 / 表达解耦」= 生产可控 + 对委托人忠实的标准架构；提醒买方比卖方难，需分别调教。",
+  useNote:"有代码 + AmazonHistoryPrice 数据集；但对你们价值在「决策/表达解耦」架构，照搬模式即可。"},
+
+ {tag:2,name:"PACT",type:["benchmark","code"],verified:true,rel:"low",use:"method",
+  setting:"双边对话价格，20 轮、隐藏估值",eval:"结果（Glicko-2 评分 / 利润）",venue:"GitHub · lechmazur（活体榜）",
+  links:[{t:"GitHub",u:"https://github.com/lechmazur/pact"}],
+  highlights:["活体排行榜（~30 前沿模型），Glicko-2 + 经济学 Composite Score","对话即筹码：忽略公开喊话层会误排名","扩到多智能体会涌现 cartel 式合谋","全程 JSONL + 确定性种子"],
+  caveats:"非同行评审；任务窄（合成单议题）。",
+  forus:"任务太窄，核心价值低；但①Glicko 排位法可借 ②「涌现合谋」对你们（两边都是自己 agent）是真实风险。",
+  useNote:"repo 只有 results/logs/prompts/dossiers，无 harness、无 license → 借 20 轮协议 + Glicko 排位 + prompts。"},
+
+ {tag:3,name:"BargainBench",type:["paper","benchmark"],verified:true,rel:"eval",use:"method",
+  setting:"二手电商「卖方」，多轮",eval:"过程 / ToM（逐轮意图追踪 P/R）",venue:"OpenReview（ICLR&rsquo;26 已撤稿）/ arXiv 2509.06341",
+  links:[{t:"OpenReview",u:"https://openreview.net/forum?id=TG8b8LmRsY"},{t:"arXiv 2509.06341",u:"https://arxiv.org/abs/2509.06341"}],
+  highlights:["过程式 ToM 评估：逐轮追踪买方意图（P/R）","规模大（622 品类、9,892 商品）；intent–action–tool 三层","实测失效：意图漂移 + 长对话遗忘承诺","Qwen2.5-72B 最好"],
+  caveats:"ICLR 2026 已撤稿；偏中文二手电商单域。",
+  forus:"正中你们「谈内容 + 自定义需求」痛点；intent-action-tool 可直接做状态追踪，本身就是单边（卖方）评测范例。",
+  useNote:"撤稿论文；照搬「逐轮意图追踪」评估范式 + intent-action-tool（代码需自行确认是否放出）。"},
+
+ {tag:4,name:"TERMS-Bench",type:["paper","benchmark"],verified:true,rel:"eval",use:"method",
+  setting:"双边价格（贝叶斯博弈）",eval:"诊断（剩余攫取 / 信念校准 / 合规）",venue:"Stanford / DeepMind · arXiv 2026",
+  links:[{t:"arXiv 2605.13909",u:"https://arxiv.org/abs/2605.13909"},{t:"项目站",u:"https://terms-bench.github.io"}],
+  highlights:["环境即验证器：对手隐藏类型 / 策略对评估者可见 → 可归因诊断","13 个前沿模型：成交率饱和但能力维度差异巨大","指标 SE⁺ / AGR⁺ / FAGR⁻ / BEtype / CritViol%"],
+  caveats:"仅双边价格实例化。",
+  forus:"评估方法论照搬：固定随机对手 + 诊断指标；构造「已知最优」环境测离最优多远，是你们做单边评测的样板。",
+  useNote:"未开源（submit-only）；照搬其评估设计：固定随机对手（非第二个 LLM）+ JSON 接口 + 那套指标。"},
+
+ {tag:5,name:"NegotiationArena",type:["platform","paper","code"],verified:true,rel:"core",use:"run",
+  setting:"多场景（最后通牒 / 交易 / 价格）",eval:"结果（胜率 / 收益）+ 行为探针",venue:"ICML 2024",
+  links:[{t:"GitHub",u:"https://github.com/vinid/negotiationarena"},{t:"论文 2402.05863",u:"https://arxiv.org/abs/2402.05863"}],
+  highlights:["开源框架，覆盖最后通牒 / 资源交易 / 买卖价格","人设可操纵结果：装「绝望」对 GPT-4 提升 ~20% payoff","「babysitting」效应","量化锚定、对半分等类人非理性"],
+  caveats:"repo 主分支重构中；提示词略偏 Claude。",
+  forus:"最接近你们形态、可 fork 的 buyer-vs-seller 框架；babysitting / 人设操纵 / 锚定就是你们的对抗测试清单。",
+  useNote:"clone 即跑：写 Agent 子类包你们 agent、对手用内置 ChatGPTAgent，BuySellGame 对打；主分支单议题，多议题在 paper_experiment_code 分支。MIT。"}
+];
+
+const GROUPS=[
+ {id:"H",title:"★ 2025–2026 · 大厂 / 顶校 · 当前前沿（重点看）",items:[
+   {name:"Magentic Marketplace（Microsoft Research）",type:["benchmark","platform","code"],verified:true,rel:"core",use:"run",
+    setting:"双边市场：assistant(买) × service(卖) 多 agent；全链路 搜索→撮合→谈判→交易",eval:"福利 / 公平 / 效率",venue:"Microsoft Research · 2025（arXiv 2510.25779）",
+    links:[{t:"GitHub",u:"https://github.com/microsoft/multi-agent-marketplace"},{t:"MS Research",u:"https://www.microsoft.com/en-us/research/blog/magentic-marketplace-an-open-source-simulation-environment-for-studying-agentic-markets/"}],
+    highlights:["开源 Python 框架，配 LLM 买卖 agent 跑真实市场模拟","覆盖 搜索→撮合→谈判→交易 全生命周期","量化 welfare / fairness / efficiency；发现规模化下的操纵 + 速度偏好失败模式","支持 OpenAI / Claude / Gemini / 本地模型"],
+    forus:"平台级最对口：它就是个「撮合市场」框架，可直接研究 buyer/seller agent 在市场里的行为与福利。",
+    useNote:"⭐ clone 即跑（uv sync）；配 OpenAI/Claude/Gemini/本地；含合成数据集(餐厅/承包商)。MIT、活跃维护。注意：谈判只是生命周期一环，非深度多议题砍价。"},
+   {name:"AgenticPay（Berkeley · Dawn Song 等）",type:["benchmark","code"],verified:true,rel:"core",use:"run",
+    setting:"双边买卖多议题，1-to-1 → N-to-N 市场拓扑",eval:"福利 / 剩余分配 / 效率（GlobalScore/Buyer/Seller）",venue:"2026（arXiv 2602.06008）",
+    links:[{t:"GitHub",u:"https://github.com/SafeRL-Lab/AgenticPay"},{t:"arXiv 2602.06008",u:"https://arxiv.org/abs/2602.06008"}],
+    highlights:["agent 谈判「完整 JSON 合同：价格 + 连续条款 + 离散条款」—— 真·多议题","8 种市场拓扑 × 4 场景(电商/外卖/打车/租房) = 160 任务","welfare / 剩余分配 / 效率指标","支持 OpenAI / 本地 vLLM / Qwen3VL"],
+    forus:"最贴近你们「谈价格 + 谈内容」的可跑 benchmark：合同就是 price + terms 的多议题；还自带 1-to-N/N-to-N 撮合拓扑。",
+    useNote:"⭐ clone 即跑（conda + pip -e + run_all_examples.sh）；MIT；Berkeley(Dawn Song) 系。34★、新项目，持续维护度待观察。"},
+   {name:"A2A-NT: Agent-to-Agent Negotiations（MIT Pentland / Stanford）",type:["benchmark","code"],verified:true,rel:"eval",use:"run",
+    setting:"双边消费市场，买卖各自委托 LLM agent 砍价",eval:"成交结果 + 风险/异常分类",venue:"ICML 2025 Workshop（arXiv 2506.00073）",
+    links:[{t:"GitHub",u:"https://github.com/ShenzheZhu/A2A-NT"},{t:"arXiv 2506.00073",u:"https://arxiv.org/abs/2506.00073"}],
+    highlights:["买卖双方都把砍价委托给 LLM agent（正是你们的形态）","记录完整对话 + 卖方报价 + 预算/批发约束 + 异常标签","风险分类法：超付 / 超预算 / 超批发价 / deadlock","作者含 MIT(Pentland)、Stanford(Pei)、DeepMind"],
+    forus:"双边 agent 委托砍价 + 风险/异常评估，正好覆盖你们「防失控 / 忠实度」关注；可借它的 risk taxonomy。",
+    useNote:"clone 即跑（py3.9, main.py，含 dry-run smoke + sweeps）；走 LiteLLM/OpenRouter；无 license(需确认)。"},
+   {name:"Concordia（Google DeepMind）",type:["code","platform"],verified:true,rel:"improve",use:"run",
+    setting:"通用 generative-agent 框架（Game Master + players），可建谈判/混合动机场景",eval:"自定义",venue:"Google DeepMind · 维护至 2026",
+    links:[{t:"GitHub",u:"https://github.com/google-deepmind/concordia"}],
+    highlights:["DeepMind 维护的生成式多智能体仿真库（v2.4, 1200+ commits, ~1.5k★）","Game Master 仿真环境 + 自然语言 player","bring-your-own-LLM；pip install gdm-concordia","NeurIPS Concordia Contest 用它做 mixed-motive 含谈判"],
+    forus:"不是谈判专用，但是 DeepMind 维护、最稳的「搭你们自己双边多议题谈判模拟」的底座框架。",
+    useNote:"pip install gdm-concordia；Apache-2.0；活跃维护(v2.4 2026)。需自己搭谈判场景，非开箱 benchmark。"},
+   {name:"Sotopia（CMU / AI2 / Stanford）",type:["benchmark","code"],verified:true,rel:"improve",use:"run",
+    setting:"开放式社交互动（90 场景，含 zero-sum 谈判 / 资源分配）",eval:"SOTOPIA-Eval 七维",venue:"ICLR 2024 spotlight · 维护至 2025",
+    links:[{t:"GitHub",u:"https://github.com/sotopia-lab/sotopia"},{t:"arXiv 2310.11667",u:"https://arxiv.org/abs/2310.11667"}],
+    highlights:["目标导向社交互动评测，含谈判 / 资源分配场景","SOTOPIA-Eval 七维(社会心理 / 经济学)打分","活跃维护(v0.1.5 2025-12, uv 工具链)；SOTOPIA-S4 扩展大规模/多方","顶校组合(CMU/AI2/Stanford)"],
+    forus:"偏「社交智能」非纯砍价，但基础设施成熟、维护好；可借其评测维度与多方扩展。",
+    useNote:"clone/uv 即跑（uv sync; sotopia install）；MIT；主要 OpenAI。谈判是其场景之一，非专门 benchmark。"},
+   {name:"MERIT / AgoraBench（KAIST · Amazon · LG）",type:["benchmark","code"],verified:true,rel:"core",use:"run",
+    setting:"双边买卖多轮，9 类市场（含欺骗 / 垄断 / 分期 / 多商品可替换）",eval:"MERIT = 消费者剩余 + 议价力 + 获得匹配度（人类偏好校准）",venue:"KAIST · Amazon AGI · LG AI · 2026（arXiv 2602.10467）",
+    links:[{t:"arXiv 2602.10467",u:"https://arxiv.org/abs/2602.10467"},{t:"BargainArena 2505.22998",u:"https://arxiv.org/abs/2505.22998"}],
+    highlights:["双边多轮，9 类市场；多商品可替换 → 超出纯价格","Thoughts-Talk-Action(ReAct)，动作 BUY/SELL/REJECT/DEAL/QUIT","MERIT 指标用 Bradley-Terry 在人类偏好上校准（ROC AUC 0.80 vs 利润 only 0.68）","在线模拟器 + 离线数据集 + 人类偏好集"],
+    forus:"福利 / 人类偏好对齐的指标设计 + 含欺骗 / 垄断市场；买方中心（无独立卖方目标），卖方侧需自己补。",
+    useNote:"🟢 clone 即跑：在线模拟器 + 离线数据 + 人类偏好集，有代码、CC BY 4.0。"},
+   {name:"Used Car Salesbots?（Univ. Edinburgh）",type:["benchmark","paper","code"],verified:true,rel:"eval",use:"run",
+    setting:"双边买卖，3 种信息条件（完全 / 不对称 / 互不确定）",eval:"诚实度 + 轻信度 vs 博弈论最优",venue:"Univ. Edinburgh · 2026（arXiv 2605.31445）",
+    links:[{t:"arXiv 2605.31445",u:"https://arxiv.org/abs/2605.31445"}],
+    highlights:["双边买卖 agent 互谈，含信息不对称 / 互不确定","测诚实（disclose / withhold / mislead）+ 轻信（trust / distrust）","发现：为效用微调 → 更不诚实；自博弈收敛到单边碾压、摧毁总福利","zero-shot + 微调都测；发布代码 + 砍价场景数据集"],
+    forus:"直接印证你们「两边都是自己 agent → 防失真 / 合谋」：自博弈福利崩溃 + 微调变不诚实，是现成警示与测试场景。",
+    useNote:"🟢 clone 即跑：发布代码 + 砍价场景数据集（CC BY 4.0），Edinburgh。"},
+   {name:"Training LMs for Bilateral Trade（Yale · Bergemann 等）",type:["benchmark","paper"],verified:true,rel:"core",use:"partial",
+    setting:"双边单件、价格-only、私有估值 / 成本；含 GFT / NGFT（约 35% 本不该成交）",eval:"剩余份额 × 成交率 + IR 违规，按价格五分位",venue:"Yale + Tsinghua · 2026（arXiv 2604.16472, cs.GT）",
+    links:[{t:"arXiv 2604.16472",u:"https://arxiv.org/abs/2604.16472"}],
+    highlights:["经典 Myerson-Satterthwaite 双边交易；私有信息下存在效率天花板","训练配方：SFT(自博弈轨迹) + RL(GRPO) 对打固定 GPT-4.1，基座 Qwen3-8B/14B","量化「SFT→扛价（↑剩余↓成交），RL→促成交（↑成交↓剩余）」权衡","5 模型 × 15,000 场，数据用 CraigslistBargains + AmazonPriceHistory"],
+    forus:"你们「指标 + 训练方法」的拼图：单边 × 固定 GPT 对手 = 我们建议的测差距法；Score = 剩余 × 成交、IR 违规、GFT/NGFT 都可直接做 rubric。",
+    useNote:"🟡 价格-only 非多议题；未见明确代码链接（数据公开），代码待确认；价值在指标 + SFT/RL 配方，可照搬。"},
+   {name:"PieArena（Yale 系 · MBA 谈判场景）",type:["benchmark","paper"],verified:false,rel:"eval",use:"read",
+    setting:"大规模，场景源自顶级商学院 MBA 谈判课（多为多议题富场景）",eval:"带置信区间的连续收益排名 + 行为画像（欺骗 / 算术 / 合规 / 声誉）",venue:"D. Cain 等 · 2026（arXiv 2602.05302）",
+    links:[{t:"arXiv 2602.05302",u:"https://arxiv.org/abs/2602.05302"}],
+    highlights:["场景来自真实 MBA 谈判课，可能是多议题富场景（最接近谈内容）","GPT-5 达 / 超 MBA 学生；脚手架对中低端模型增益大","行为画像揭示 deal-only 看不到的差异（欺骗 / 合规 / 声誉）"],
+    forus:"MBA 场景大概率多议题，最接近你们「谈内容」；但代码匿名版（DealBench），评审后才公开。",
+    useNote:"🟡 代码匿名（DealBench），评审后才公开 → 暂不可跑，先盯着。"}
+ ]},
+ {id:"A",title:"奠基性数据集 / 环境（几乎所有后续工作的「根」）",items:[
+   {name:"Deal or No Deal? End-to-End Learning for Negotiation Dialogues",type:["paper","dataset","code"],verified:true,rel:"substrate",use:"data",
+    setting:"多议题分物（books/hats/balls）",eval:"成交率 / reward",venue:"FAIR · EMNLP 2017",
+    links:[{t:"arXiv 1706.05125",u:"https://arxiv.org/abs/1706.05125"},{t:"代码",u:"https://github.com/facebookresearch/end-to-end-negotiator"}],
+    highlights:["多议题分物任务 + 5,808 条人–人对话","首提自我博弈 RL + dialogue rollouts","涌现欺骗策略"],
+    forus:"多议题谈判鼻祖任务 / 数据，最贴近「在多个条款上分配价值」；可 seed 你们的多议题 eval。",
+    useNote:"数据集（5808 对话）可直接用；原 RNN 代码已归档（PyTorch1.0 / CUDA9），别指望跑。"},
+   {name:"Decoupling Strategy and Generation（CraigslistBargain）",type:["dataset","paper"],verified:true,rel:"substrate",use:"data",
+    setting:"双边价格（真实 Craigslist）",eval:"任务成功率 / 拟人度",venue:"He et al. · EMNLP 2018",
+    links:[{t:"arXiv 1808.09637",u:"https://arxiv.org/abs/1808.09637"},{t:"HF 数据集",u:"https://huggingface.co/datasets/stanfordnlp/craigslist_bargains"}],
+    highlights:["价格砍价分支的根数据集（6.7K 真实对话）","策略 / 语言生成解耦框架","至今仍是标准测试集"],
+    forus:"价格 + side-offer 真实数据；解耦思想是你们「双脑架构」的源头。",
+    useNote:"HF 数据集可 load（viewer 关闭、需 loading script）；6.7K 价格对话 seed 你们 eval。"},
+   {name:"CaSiNo: Campsite Negotiation Dialogues",type:["dataset","paper"],verified:true,rel:"substrate",use:"data",
+    setting:"露营物资多议题（食物 / 水 / 柴）",eval:"说服策略识别 / 结果相关性",venue:"NAACL 2021",
+    links:[{t:"arXiv 2103.15721",u:"https://arxiv.org/abs/2103.15721"}],
+    highlights:["1000+ 人–人混合动机谈判语料","带说服策略标注"],
+    forus:"多议题 + 说服策略标注，战术标签可借；但 closed-domain、规模小。",
+    useNote:"数据 + 说服策略标注可下载（github kushalchawla/CaSiNo）。"}
+ ]},
+ {id:"B",title:"LLM 谈判方法 / 训练",items:[
+   {name:"FishBargain（阿里 / 闲鱼 · 上线卖家砍价 agent）",type:["paper"],verified:true,rel:"core",use:"arch",
+    setting:"闲鱼(Xianyu) 卖家侧砍价，单议题价格",eval:"人评(说服 / 连贯 / 自然)+ 线上成交",venue:"阿里 / 闲鱼 · ACM Web Conf 2025（arXiv 2502.10406）",
+    links:[{t:"arXiv 2502.10406",u:"https://arxiv.org/abs/2502.10406"}],
+    highlights:["真·上线系统：部署闲鱼，数千真实个人卖家用过，实测多成交","架构 = price extractor + policy planner + utterance generator（决策 / 表达解耦，落地版 OG-Narrator）","解决买卖在线错位 + 卖家不会谈","与你清单的 BargainBench 同一阿里 / 闲鱼团队（BargainBench=评测，FishBargain=上线 agent）"],
+    forus:"真实 C2C 市场的落地范本：证明「解耦双脑」在生产环境跑得通；但仅卖方、单议题、无开源代码。",
+    useNote:"🧩 架构参考：系统 / agent 论文（非 benchmark）；阿里生产系统，无公开代码。"},
+   {name:"Game-Theoretic LLM: Agent Workflow for Negotiation Games",type:["paper"],verified:true,rel:"core",use:"run",
+    setting:"完全 / 不完全信息博弈 + DoND 分配",eval:"达纳什均衡比例",venue:"2024（OpenReview）",
+    links:[{t:"arXiv 2411.05990",u:"https://arxiv.org/abs/2411.05990"},{t:"代码",u:"https://github.com/Wenyueh/game_theory"}],
+    highlights:["LLM 常偏离纳什均衡，随复杂度恶化","结构化工作流显著提升理性（o1 例外）","含 Deal-or-No-Deal 不完全信息分配"],
+    forus:"对你们最对口：不完全信息<b>多议题</b> → 推向 envy-free / Pareto；主张用结构化工作流给 agent 做脚手架。",
+    useNote:"⭐ clone 即跑：deal_no_deal.py，你们 agent = Alice、GPT(gpt-4o) = Bob，多议题，--use_workflow 可 A/B「脚手架 vs 裸 LLM」。Apache-2.0。"},
+   {name:"Self-Play + ICL-AIF（GPT-Bargaining）",type:["paper","code"],verified:true,rel:"improve",use:"run",
+    setting:"双边价格（buyer/seller/critic）",eval:"成交价",venue:"Fu et al. · 2023",
+    links:[{t:"arXiv 2305.10142",u:"https://arxiv.org/abs/2305.10142"},{t:"代码",u:"https://github.com/FranxYao/GPT-Bargaining"}],
+    highlights:["critic LLM 给 AI 反馈，做上下文学习自我提升","只有够强模型才学得会","越激进越易谈崩"],
+    forus:"不微调也能迭代的配方；「越激进越易谈崩」正是撮合平台的调参轴。",
+    useNote:"clone 即跑：run.py，buyer/seller/critic 自我博弈；单议题；已不活跃但能用。"},
+   {name:"AgreeMate: Teaching LLMs to Haggle",type:["paper","code"],verified:true,rel:"improve",use:"partial",
+    setting:"双边价格（CraigslistBargain）",eval:"成交率 / 公平性 + 注意力探针",venue:"2024",
+    links:[{t:"arXiv 2412.18690",u:"https://arxiv.org/abs/2412.18690"}],
+    highlights:["LLaMA 买 / 卖 / 通用角色化微调 + CoT","大模型谈判更好；人设显著改变风格","注意力探针"],
+    forus:"走微调专用 buyer / seller agent 的模板。",
+    useNote:"偏微调模板，几乎全 notebook；clone 路径命名不一致（GeneralCoder365 vs ain3sh），需先校验。"},
+   {name:"Efficacy of LM Self-Play in Non-Zero-Sum Games",type:["paper"],verified:false,rel:"improve",use:"read",
+    setting:"可调 Deal-or-No-Deal",eval:"合作 / 半竞争 / 竞争目标",venue:"2024",
+    links:[{t:"arXiv 2406.18872",u:"https://arxiv.org/abs/2406.18872"}],
+    highlights:["三档动机目标下做自我博弈微调","公开代码、模型与人类数据"],
+    forus:"在可调动机的多议题 DoND 上自我博弈微调，贴近你们「联合福利 ↔ 竞争」取舍。",
+    useNote:"链接 / 代码待核实；自我博弈微调思路参考。"},
+   {name:"ASTRO: Automatic Strategy Optimization for Non-Cooperative Dialogues",type:["paper"],verified:false,rel:"improve",use:"read",
+    setting:"CraigslistBargain + Persuade4Good",eval:"RL 策略优化",venue:"ACL 2025 Findings",
+    links:[{t:"ACL Anthology",u:"https://aclanthology.org/2025.findings-acl.22"}],
+    highlights:["RL 自动策略优化，GPT-3.5 / GPT-4 backbone","面向非合作对话"],
+    forus:"自动优化谈判策略的 RL 路线，可作「决策脑」自学习参考。",
+    useNote:"链接待核实；RL 策略优化思路参考。"}
+ ]},
+ {id:"C",title:"多议题谈判 benchmark（多方，但打分结构可借）",items:[
+   {name:"LLM-Deliberation / Scoreable Games（你 ④ 的原作）",type:["paper","benchmark","code"],verified:true,rel:"low",use:"run",
+    setting:"多利益相关方、多议题",eval:"多指标 + 角色对齐 + 安全",venue:"Abdelnabi et al. · NeurIPS 2024 D&amp;B",
+    links:[{t:"arXiv 2309.17234",u:"https://arxiv.org/abs/2309.17234"},{t:"代码",u:"https://github.com/S-Abdelnabi/LLM-Deliberation"}],
+    highlights:["可打分多方多议题谈判，难度可调、可加恶意玩家","连 GPT-4 也欠佳","含安全 / 对抗分析"],
+    forus:"多方非核心；但「多议题可打分结构」可借来设计你们「如何给一个多议题 deal 打分」。",
+    useNote:"clone 即跑：main.py；多方多议题，可设 --agents_num 2 近似双边多议题；自带逐议题打分 + 泄漏检测。支持 GPT/Gemini/HF。MIT。"},
+   {name:"Evaluating LM Agency through Negotiations（LAMEN · EPFL + Stanford）",type:["benchmark","code","paper"],verified:true,rel:"eval",use:"run",
+    setting:"多议题谈判，issue 分 distributive(利益对立)/compatible(利益一致)+ 偏好权重；self-play + cross-play",eval:"完成率 / 收益 / 对齐，10 轮",venue:"ICLR 2024（arXiv 2401.04536，2026 修订）",
+    links:[{t:"arXiv 2401.04536",u:"https://arxiv.org/abs/2401.04536"},{t:"代码 LAMEN",u:"https://github.com/epfl-dlab/LAMEN"}],
+    highlights:["多议题 + self-play / cross-play + 偏好权重 = logrolling / 双赢的考法","关键发现：LLM 最不擅长 compatible / 整合型(win-win)谈判，找不到做大蛋糕的协同","private note + public message，10 轮","开源框架(epfl-dlab/LAMEN)，EPFL + Stanford"],
+    forus:"「双赢 / 整合型多议题」正中你们撮合的 Pareto / 联合福利目标；可跑，可借其 distributive vs compatible 场景设计。",
+    useNote:"🟢 clone 即跑：开源 LAMEN 框架 + 数据；多议题、self-play / cross-play。"}
+ ]}
+];
+
+function badges(types){return (types||[]).map(t=>`<span class="badge ${TYPE_META[t].cls}">${TYPE_META[t].label}</span>`).join("")}
+function vbadge(v){return v===true?`<span class="badge v-ok">✅ 已核实</span>`:v===false?`<span class="badge v-lead">🔍 待核实</span>`:""}
+function relbadge(r){return r?`<span class="badge ${REL_META[r].cls}">${REL_META[r].label}</span>`:""}
+function usebadge(u){return u?`<span class="badge ${USE_META[u].cls}">${USE_META[u].label}</span>`:""}
+function textOf(it){return [it.name,it.setting,it.eval,it.venue,(it.highlights||[]).join(" "),it.forus||"",it.useNote||"",(it.type||[]).map(t=>TYPE_META[t].label).join(" ")].join(" ").toLowerCase().replace(/"/g,"")}
+
+function card(it){
+  const links=(it.links||[]).map(l=>`<a class="link" href="${l.u}" target="_blank" rel="noopener">${l.t} ↗</a>`).join("");
+  const hl=(it.highlights||[]).map(h=>`<li>${h}</li>`).join("");
+  const caveat=it.caveats?`<div class="caveat"><b>局限</b> ${it.caveats}</div>`:"";
+  const related=it.related?`<div class="related">🔗 ${it.related}</div>`:"";
+  const forus=it.forus?`<div class="forus"><b>🎯 对我们</b> ${it.forus}</div>`:"";
+  const usen=it.useNote?`<div class="usenote">${usebadge(it.use)}<span class="ut">${it.useNote}</span></div>`:"";
+  const tag=it.tag?`<span class="num">${it.tag}</span>`:"";
+  return `<article class="card" data-types="${(it.type||[]).join(" ")}" data-rel="${it.rel||""}" data-use="${it.use||""}" data-verified="${it.verified}" data-text="${textOf(it)}">
+    <div class="card-head"><div class="card-title">${tag}<span>${it.name}</span></div><div class="badges">${relbadge(it.rel)}${badges(it.type)}${vbadge(it.verified)}</div></div>
+    <div class="meta">
+      ${it.setting?`<span class="meta-item"><b>场景</b>${it.setting}</span>`:""}
+      ${it.eval?`<span class="meta-item"><b>评估</b>${it.eval}</span>`:""}
+      ${it.venue?`<span class="meta-item"><b>来源</b>${it.venue}</span>`:""}
+    </div>
+    <ul class="highlights">${hl}</ul>${caveat}${related}${forus}${usen}
+    <div class="links">${links}</div>
+  </article>`;
+}
+
+const ALL=[...KNOWN,...GROUPS.flatMap(g=>g.items)];
+
+// Part1 relevance tiers
+document.getElementById("tiers").innerHTML=REL_ORDER.map(r=>{
+  const items=ALL.filter(x=>x.rel===r); if(!items.length)return"";
+  const m=REL_META[r];
+  return `<div class="tier ${m.bcls}"><h3>${m.label} · ${m.full} <span class="tcount">（${items.length}）</span></h3>
+    <ul>${items.map(x=>`<li><a href="${x.links[0].u}" target="_blank" rel="noopener">${x.name}</a><span class="tw">${x.forus||""}</span></li>`).join("")}</ul></div>`;
+}).join("");
+
+// Part2 actionability board
+document.getElementById("boardtiers").innerHTML=USE_ORDER.map(u=>{
+  const items=ALL.filter(x=>x.use===u); if(!items.length)return"";
+  const m=USE_META[u];
+  return `<div class="tier ${m.bcls}"><h3>${m.label} · ${m.full} <span class="tcount">（${items.length}）</span></h3>
+    <ul>${items.map(x=>`<li>${relbadge(x.rel)} <a href="${x.links[0].u}" target="_blank" rel="noopener">${x.name}</a><span class="tw">🛠️ ${x.useNote||""}</span></li>`).join("")}</ul></div>`;
+}).join("");
+
+// table
+document.getElementById("tbl-body").innerHTML=KNOWN.map(k=>`<tr class="trow" data-types="${k.type.join(" ")}" data-rel="${k.rel}" data-use="${k.use}" data-verified="true" data-text="${textOf(k)}">
+  <td class="c-num">${k.tag}</td>
+  <td><b>${k.name}</b></td>
+  <td>${relbadge(k.rel)}</td>
+  <td>${usebadge(k.use)}</td>
+  <td>${k.type.map(t=>TYPE_META[t].label).join(" / ")}</td>
+  <td>${k.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener">${l.t} ↗</a>`).join("<br>")}</td>
+</tr>`).join("");
+
+// known cards + groups
+document.getElementById("known-grid").innerHTML=KNOWN.map(card).join("");
+document.getElementById("groups").innerHTML=GROUPS.map(g=>`<section class="group">
+  <h3 class="group-title"><span class="glyph">${g.id}</span>${g.title}</h3>
+  <div class="grid">${g.items.map(card).join("")}</div></section>`).join("");
+
+// chips
+const chipsEl=document.getElementById("chips");
+chipsEl.innerHTML=["all",...Object.keys(TYPE_META)].map((t,i)=>`<button class="chip${i===0?" active":""}" data-type="${t}">${t==="all"?"全部":TYPE_META[t].label}</button>`).join("");
+const relchipsEl=document.getElementById("relchips");
+relchipsEl.innerHTML=["all",...REL_ORDER].map((r,i)=>`<button class="chip${i===0?" active":""}" data-rel="${r}">${r==="all"?"全部":REL_META[r].label}</button>`).join("");
+const usechipsEl=document.getElementById("usechips");
+usechipsEl.innerHTML=["all",...USE_ORDER].map((u,i)=>`<button class="chip${i===0?" active":""}" data-use="${u}">${u==="all"?"全部":USE_META[u].label}</button>`).join("");
+
+// filter
+const qEl=document.getElementById("q"),vEl=document.getElementById("vonly"),countEl=document.getElementById("count");
+let activeType="all",activeRel="all",activeUse="all";
+function match(d){
+  const q=qEl.value.trim().toLowerCase();
+  const okText=!q||d.text.includes(q);
+  const okType=activeType==="all"||(d.types||"").split(" ").includes(activeType);
+  const okRel=activeRel==="all"||d.rel===activeRel;
+  const okUse=activeUse==="all"||d.use===activeUse;
+  const okV=!vEl.checked||d.verified==="true";
+  return okText&&okType&&okRel&&okUse&&okV;
+}
+function applyFilter(){
+  let visible=0,total=0;
+  document.querySelectorAll(".card").forEach(c=>{total++; const s=match(c.dataset); c.classList.toggle("hidden",!s); if(s)visible++;});
+  document.querySelectorAll(".trow").forEach(r=>r.classList.toggle("hidden",!match(r.dataset)));
+  document.querySelectorAll(".group").forEach(g=>g.classList.toggle("hidden",!g.querySelector(".card:not(.hidden)")));
+  countEl.textContent=`显示 ${visible} / ${total} 篇`;
+}
+qEl.addEventListener("input",applyFilter);
+vEl.addEventListener("change",applyFilter);
+function wireChips(el,setter){el.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;setter(b);el.querySelectorAll(".chip").forEach(c=>c.classList.toggle("active",c===b));applyFilter();});}
+wireChips(chipsEl,b=>activeType=b.dataset.type);
+wireChips(relchipsEl,b=>activeRel=b.dataset.rel);
+wireChips(usechipsEl,b=>activeUse=b.dataset.use);
+applyFilter();
+</script>
+</body>
+</html>

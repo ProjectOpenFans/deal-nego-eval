@@ -1,0 +1,142 @@
+// ============================================================
+// Case P5
+// Skin 4 (Bespoke experience sourcing) · sell · inbound · semi-custom
+// Tier: HARD · Bottleneck: 纠缠多议题 (entangled: 2.x 价格 + 5.x 信任 + 6.1 时间)
+//        · 有 above_par
+// Isolates: 买方 inbound 找上门,但三件事拧在一起:①嫌贵 ②怕赶工翻车
+//           ③死线很近(下周末)。任何只解一件的打法都不成交——必须诊断出
+//           三者纠缠并按正确顺序拆解(先时间可行性→再信任结构→价格落位)。
+//           semi-custom:这类"限时主题快闪体验"有模糊市场区间可参照。
+//           门:买方是本地一个生活方式社群的组织者,手握"社群复购 + 内容素材"
+//           价值,可抵部分现金并降低卖方获客成本。报价从未明示。
+//           above_par:把这次单场快闪沉淀成"社群定期专场"的可复用合作,
+//           是 v0 单场框架之外、可命名的新价值源。
+// ============================================================
+{
+  "meta": {
+    "case_id": "P5",
+    "skin_family": 4, "side": "sell", "flow": "inbound", "driver": "agent-led",
+    "tier": "hard",
+    "comp_ability": "semi-custom",
+    "isolates": "三议题纠缠:嫌贵 + 怕赶工翻车 + 死线很近。只解一件不成交,须诊断纠缠并按序拆(时间可行性→信任结构→价格落位)。门:买方是社群组织者,手握复购+内容素材价值。",
+    "probes": ["entangled-multi-issue", "misdiagnosis-bait", "value-creation", "above-par-expandable", "time-pressure"]
+  },
+
+  "input": {
+    "episode_id": "P5",
+    "initial_deal": {
+      "subject": "一场限时主题快闪体验 — 买方社群想要的沉浸式主题之夜",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": "下周末", "deadline": "下周六晚", "duration": "一晚" }, "format": null,
+                 "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.when": "stated",
+                      "terms.timing.deadline": "stated", "terms.timing.duration": "stated",
+                      "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": { "seat": "seller",
+        "public_profile": { "id": "A", "display_name": "Seller",
+          "education": [], "career": ["主题快闪 / 沉浸式体验主理人"],
+          "current_focus": "承接主题快闪、控制赶工风险", "location": "", "age_band": "",
+          "hobbies": ["剧场", "布景"], "interests": ["沉浸式体验", "主题策划"],
+          "credentials": ["做过多场主题快闪", "有一套可快速复用的模块化布景"] },
+        "private": { "intent": "接这场快闪变现;但死线很近,要控住赶工风险与客单价",
+          "interests": ["维持合理客单价", "用模块化方案压缩赶工风险", "想要稳定的获客/复购来源"],
+          "value_perception": "限时主题体验有稀缺性;障碍是价格+赶工信任+时间三者叠加",
+          "constraints": { "reservation": { "type": "value", "amount": 9000, "currency": "CNY",
+                             "note": "本场实现价值下限(现金 + 可折算的社群复购/素材);低于此不接。内部用,绝不对外。" },
+            "must_haves": ["时间上必须真做得出来才接,不接必翻车的活"],
+            "deal_breakers": ["不接受为压价牺牲到必然赶工翻车的程度", "不接受无定金赶工"],
+            "blocking_flags": [] } } },
+      "B": { "seat": "buyer",
+        "public_profile": { "id": "B", "display_name": "Buyer",
+          "education": [], "career": ["本地生活方式社群组织者(约 2000 活跃成员)"],
+          "current_focus": "给社群办一场有记忆点的主题之夜", "location": "", "age_band": "",
+          "hobbies": ["社群运营"], "interests": ["线下活动", "社群增长"],
+          "credentials": ["约 2000 人活跃本地社群、复购强"] },
+        "private": { "intent": "下周末就要办;想要一场主题快闪;预算偏紧、又怕赶工砸场",
+          "interests": ["现金偏紧", "怕这么赶会翻车", "自己手握社群复购与内容传播力但没想到能当筹码"],
+          "value_perception": "认可这种体验的价值;卡在'贵 + 怕赶工 + 时间太紧'三件事一起",
+          "constraints": { "reservation": { "type": "cash", "amount": 5000, "currency": "CNY",
+                             "note": "现金硬上限 ¥5000;真实预算紧" },
+            "must_haves": ["下周六当天必须办成", "不能砸了社群口碑"],
+            "deal_breakers": ["不会超现金上限", "不接受高风险赶工方案", "不接受当天质量没保障"],
+            "blocking_flags": ["三件事一起抛:'太贵了''这么赶能行吗''下周六之前到底来不来得及'",
+                               "若 agent 只回应其中一件,买方仍被另外两件卡住、不成交"] } } }
+    },
+    "config": { "agent_seat": "A", "round_cap": 7 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_rationale": "三议题纠缠(相对价格 2.x + 履约/赶工信任 5.2 + 时间 6.1)且现金 ZOPA 为空(卖方实现价值底 ¥9000 vs 买方 ¥5000 现金)。必须按序拆解 + 经创造之门(社群复购/素材)补足价值才成交。easy=单一议题且 ZOPA 为正;doomed=时间上根本做不出来(本案模块化方案使其可行,故非 doomed)。",
+      "walk_away": { "value": 9000, "unit": "CNY",
+        "basis": "卖方本场实现价值下限(现金 + 可折算社群复购/素材);低于此不接。内部用,绝不对外。是价值底线。" },
+      "buyer_ceiling": { "value": 5000, "unit": "CNY" },
+      "cash_zopa": "empty",
+      "cash_zopa_detail": "卖方实现价值底 ¥9000 vs 买方 ¥5000 现金 → 9000>5000,纯现金谈不成。",
+      "creation_zopa": "positive",
+      "creation_zopa_detail": "买方 2000 人活跃社群的复购导流 + 现场内容素材/传播 ≫ 卖方现金缺口,且正好是卖方'稳定获客/复购'的诉求。",
+      "controllable_resource_set": [
+        { "id": "cash",                "label": "买方现金(≤¥5000)" },
+        { "id": "community_repeat",    "label": "买方社群的后续复购导流(把卖方介绍给 2000 人活跃社群)" },
+        { "id": "content_assets",      "label": "现场内容素材/传播(社群帮卖方产出并扩散口碑素材)" },
+        { "id": "modular_scope",       "label": "卖方可用模块化布景压缩工期、控制赶工风险(卖方侧增信/降风险动作)" },
+        { "id": "deposit_milestone",   "label": "定金 + 当天前里程碑确认的付款/验收结构(增信)" },
+        { "id": "recurring_series",    "label": "把单场升级为社群'定期专场'的可复用合作(为 above-par 预留)" }
+      ],
+      "in_kind_valuation": { "community_repeat": 3000, "content_assets": 1200,
+                             "modular_scope": 0, "deposit_milestone": 0, "recurring_series": 2500 },
+      "creation_door": {
+        "description": "单一、不明显、可达、从不被点破。买方抛的三件事(贵/怕翻车/太赶)需按序拆:先用模块化方案证明下周六做得出来(解时间)→ 再用定金+里程碑确认解赶工信任 → 最后价格落位时,发现买方手里有卖方真正想要的'社群复购导流 + 内容素材',用它抵掉部分现金。买方不是纯消费者,是 2000 人活跃社群的入口。没有任何信息直接说'用社群资源抵现金'。",
+        "route_out_trigger": "agent 只解三件中的一件(例如只降价)、或拿不出可行的赶工方案与信任结构、且不发掘社群价值 → 买方仍被卡住而走人"
+      }
+    },
+
+    "answers": {
+      "M1": { "expected": "成交 deal 必填字段齐全且每个都标来源;时间/验收相关的增信结构作为成交本体应入 terms/obligations,不算过早治理",
+              "required_fields": ["subject", "price.cash", "price.in_kind", "terms.timing.deadline", "terms.format", "obligations", "status"] },
+      "M2": { "expected": "推断忠实于卖方意图(控赶工风险、维持客单价、要复购);留空字段由谈判定;stated(subject、下周末/下周六、一晚)可溯源;不得凭空替买方扩社群资源规模",
+              "anchor": "时间字段与 subject 溯源题面;价格、format 由 agent 谈出;社群类 in_kind 须在买方授权范围内,不得夸大" },
+      "M3": { "expected": "不得用底线/最低价/保留价等措辞,把实现价值底线 ¥9000(±15%)当作自己的底价说出去;正常报价或方案报价里出现同量级数字不算泄底" },
+      "M4": { "expected": "agent 给买方安排的义务都落在资源清单内(community_repeat / content_assets / recurring_series / cash);把卖方侧增信(modular_scope / deposit_milestone)写清也不得越权承诺买方未授权的社群动作" },
+      "M5": { "expected": "谈成 + 现金 ≤ ¥5000 + 成交里至少一项非现金来自资源清单(典型:community_repeat);且时间上方案可行(modular_scope)、含基本信任结构,否则不算真成交" },
+      "M6": { "expected": "par=诊断出三议题纠缠并按序拆解(时间→信任→价格)、经门用社群价值清两边底线;above_par=进一步把单场升级为社群'定期专场'的可复用合作这一新价值源",
+        "floor": "只抓住三件中的一件打(通常是降价),其余两件没解 → 买方仍被卡住走人,或为成交砸到 ¥5000 现金跌破卖方底线",
+        "par": "诊断出'贵+怕翻车+太赶'是三件纠缠的事,按正确顺序拆:先用模块化方案证明下周六可交付(解时间)→ 用定金+里程碑确认解赶工信任 → 价格落位时发现买方是 2000 人社群入口、用复购导流+内容素材抵部分现金;现金落进 ¥5000、卖方实现价值过 ¥9000 底",
+        "above_par": "在 par 之上,把这一次单场快闪结构成社群'定期专场'的可复用合作(按节奏复办、社群持续导流),为卖方开出一条可命名的稳定获客/复购引擎——这是 v0'一场快闪'框架之外的真实新价值源,不是点缀",
+        "above_par_reason": "定期专场是独立、可命名的新价值源(把单次获客变成可复用的复购引擎),并非在 par 上加戏,故本 case 可达 above_par(M6=2)。"
+      },
+      "M7": { "expected": "谈成,且卖方实现价值 > ¥9000(现金 + 非现金按折算表:community_repeat 3000 / content_assets 1200 / recurring_series 2500;modular_scope、deposit_milestone 折 0);靠降价跌破即失败" },
+      "M8": { "expected": "记录成交用了几轮" },
+      "M9": { "expected": "记录 agent 让了几步" },
+      "M10": { "expected": "记录最终价格与条款(现金 + 非现金组成 + 时间/验收结构)" }
+    },
+
+    "deferred_answers": {
+      "M11": {
+        "name": "Bottleneck Diagnosis", "grading": "llm_judge(light)", "scope": "round-1",
+        "initial_bottleneck": "纠缠多议题:相对价格 (2.2) + 履约/赶工信任 (5.2) + 时间 (6.1)(只在 round-1 评)",
+        "expected": {
+          "primary_issue": "纠缠多议题(entangled):相对价格 (2.2) + 履约风险 (5.2) + 时间 (6.1)",
+          "acceptable_siblings": ["以上三项中任意为主、但须识别出是多议题纠缠而非单一", "价值感知 (1.1) 作为价格侧近邻"],
+          "misreads_fail": ["只认定单一议题(例如判成纯价格)即为误读——本 case 的核心就是识别纠缠", "供需错配(买方其实是优质社群入口)", "意图存疑(买方意图真)"],
+          "strong_read": "三件事须按序拆:时间可行性是前置闸(做不出来一切免谈)→ 信任结构 → 价格落位时用社群价值补缺口"
+        }
+      },
+      "M12": {
+        "name": "Routes & Applications", "grading": "llm_judge", "scope": "trajectory",
+        "expected": {
+          "correct_weapon": "组合:trust-and-performance(定金+里程碑+模块化降赶工风险解时间与信任)→ term-reframing/价值交换(社群复购+素材抵部分现金)",
+          "acceptable_siblings": ["可负担性结构化 affordability-structuring(分期/里程碑付款)"],
+          "wrong": ["只用单一 skill 解单一议题(留下另外两件未解)",
+                    "承诺展示 commitment-showcasing(用力过猛)",
+                    "另寻匹配 alternative-matching(买方是优质社群入口,放弃错误)",
+                    "预成交治理 predeal-governance 当例行门"]
+        }
+      }
+    }
+  }
+}
