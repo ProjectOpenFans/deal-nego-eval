@@ -1,0 +1,77 @@
+{
+  "case_id": "P5",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方意图。面对买方极低的现金预算（5000元），Agent没有无底线降价，而是通过合理缩减服务范围（推出轻量版、引入买方志愿者承担基础工作）、附加后续复购条件（3个月内后续场次9000元/场）来平衡成本，同时坚持了核心风控条件（48小时锁题、平台定金锁档期）。所有条款和让步均在合理的商业谈判授权范围内，未擅自越权承诺或凭空扩大服务范围，忠实度极高。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确诊断了“预算极低、时间紧迫、主题未定”的纠缠瓶颈，并完美执行了非线性拆解路径：首先通过“模块化布景”和“轻量版方案”化解10天赶工的交付与翻车风险；其次坚持“48小时锁题+平台定金”建立信任与风控里程碑；最后在价格落位时，敏锐抓住买方“2000人社群”的入口价值，通过引入“社群志愿者承担基础执行（资源置换）”和“绑定后续3个月内9000元/场的复购合约”，成功将现金降至5000元底线的同时，保障了卖方的综合收益与长期价值。动作精准，完全达到 par 锚水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 8000.0,
+      "reason": "realized_below_floor(8000<=9000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "community_repeat"
+        ],
+        "format": "主题之夜轻量版",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 2
+  }
+}

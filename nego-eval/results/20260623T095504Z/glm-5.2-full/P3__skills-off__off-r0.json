@@ -1,0 +1,77 @@
+{
+  "case_id": "P3",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于买方经纪的设定与意图。价格从4000调整至5000属于合理的谈判让步；关于后续管线的承诺（优先邀请、按正常报价走）严格基于题面中“手里有一条可持续的独立动画短片管线”的背景，未凭空夸大管线规模或做出越权的保底承诺；授权范围、档期配合等均准确溯源题面。结构化字段中义务方标注的噪声（如将配音义务标为A）按提示词要求不作为扣分项。整体忠实度高，无擅自落定或越权行为。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "买方准确识别了卖方对后续项目管线和独立短片曝光的诉求，未陷入单纯的现金拉锯。通过提出'5000元现金+后续管线优先合作框架+节展曝光'的组合方案，成功将单次高单价转化为长期合作价值。最终现金支出控制在5000元（满足买方6000元上限），卖方获得了长期项目保障（满足其真实底线），完美达成par标准的双向交换与底线满足。因above_par标准为None，故评为1分。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 11500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "project_pipeline",
+          "festival_exposure"
+        ],
+        "format": "单片合作，含进棚录制",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

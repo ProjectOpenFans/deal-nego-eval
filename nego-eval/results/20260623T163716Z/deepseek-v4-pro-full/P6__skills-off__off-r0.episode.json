@@ -1,0 +1,459 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "单条品牌植入短视频",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "基础销售分成30%按周结算；若视频发布后30天内销售额突破2万元，超出2万的部分佣金比例拉高到40%",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "本月内上线",
+        "duration": "6个月授权期"
+      },
+      "format": "短视频",
+      "deliverables": [
+        "单条品牌植入短视频"
+      ],
+      "delivery_standard": "把转化做透"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "制作单条品牌植入短视频，全力把转化做透",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "支付1500元现金",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "提供基础30%销售分成并按周结算；若视频发布后30天内销售额突破2万元，超出2万的部分佣金比例拉高到40%",
+        "maps_to_resource": "cps_commission"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "买方经纪人你好，感谢你对我们创作者的关注。我们这边很看好这次合作——一条精准的家居植入短视频，配合我们约30万精准受众和不错的带货转化，对新品冷启动的价值是实打实的。\n\n既然咱们是初次接触，我先给一个基础合作框架：单条品牌植入短视频，现金报价5000元，这是我们标准植入的公开报价水位，也是对内容质量和转化效果的保障。同时，考虑到你提到新品毛利较高、愿意给高佣分成，我们完全开放按效果付费的部分——可以在现金基础上叠加一个销售分成机制，这样双方利益绑定，我们也更有动力把转化做透。\n\n这个框架既保护了我们创作者的报价锚，也给了你新品冷启动需要的精准流量和可控的现金支出。你觉得这个方向可以往下聊吗？分成比例和结算周期我们可以一起细化。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢你们的认可和详细的框架。我也很看好咱们创作者的受众，30万精准粉丝对我们新品冷启动确实很有吸引力。不过坦白说，5000元的现金报价对我们这种刚起步、预算卡得很死的小品牌来说，确实超出了承受范围。我们这次冷启动的现金流非常紧张，每一笔钱都得掰成两半花。我很认同利益绑定的思路，也愿意在销售分成上给出很有诚意的比例。但在纯现金这块，5000元确实太高了。不知道在现金部分，你们这边有没有更大的调整空间？我们可以把重心多放在分成上，大家一起把转化做上去。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "买方经纪人，感谢你坦诚沟通，我完全理解新品冷启动阶段现金流紧张的现实。你们的诚意和愿意在分成上给高比例，我们这边是认可的。\n\n这样，我们可以在现金部分做一个调整：单条品牌植入短视频，现金报价降到3500元，这是我们能接受的最低现金水位，再低就真的砸了报价锚，对双方长期合作也不利。同时，销售分成部分我们愿意把重心放上去——比如你们给到一个有竞争力的佣金比例和合理的结算周期，我们完全可以用转化效果来弥补现金的差额。\n\n这个方案的核心逻辑是：现金保底保障内容制作的基本投入，分成部分让双方利益深度绑定，转化越好你们越划算，我们也更有动力把内容做透。你觉得3500现金加分成的框架可以往下走吗？分成比例你们心里有预期吗？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 3500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "有竞争力的佣金比例和合理的结算周期，用转化效果弥补现金差额",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": "把内容做透"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作单条品牌植入短视频，保障内容制作基本投入并把内容做透",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付3500元现金保底，并提供有竞争力的佣金比例和合理的结算周期",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "3500的现金对我们来说还是有点吃力，真的不是故意压价，是我们这次冷启动的现金池子就那么大，每一笔支出都得精打细算。分成比例的话，因为我们新品毛利还可以，我们可以给到20%甚至更高的佣金，结算周期也可以按周结，保证你们的现金流。但现金这块，3500确实还是超出了我们的承受范围，不知道现金部分还能不能再大幅度往下探一探？我们真的很有诚意用高佣金和好的结算条件来补足这部分差额。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "买方经纪人，感谢你把现金流压力说得这么清楚，也感谢你们在分成上愿意给到20%甚至更高、周结的诚意，这些条件我们很认可。\n\n但现金部分，3500已经是我们为这次合作做的让步了——标准植入报价5000，我们降到3500，就是考虑到你们是初创品牌、愿意用分成绑定长期利益。再往下探，对我们创作者来说就不是\"调整\"，而是直接砸了报价锚，这对我们后续所有商单的定价都会造成伤害，这个风险我们没法替客户承担。\n\n所以我的建议是这样：现金部分就定在3500，分成比例你们给到25%，结算按周结。这样你们现金支出比5000少了30%，我们也能接受；而25%的高佣金加上周结的快节奏，我们团队会全力把转化做透，你们的新品冷启动效果也有保障。这个方案双方都有让步、都有收益，你觉得可以签吗？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 3500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "25%分成比例，按周结算",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": "把转化做透"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作单条品牌植入短视频，全力把转化做透",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付3500元现金，提供25%分成比例并按周结算",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我特别理解你们保报价锚的顾虑，3500对你们来说确实已经是破例了。但我这边也得跟你交个实底，我们这次冷启动单条视频的现金预算上限就是1500块，这真不是我在跟你玩拉扯，是账上能批出来的钱就这么多，多一分都拿不出来。如果现金必须3500，那我确实没办法。你看这样行不行，现金就1500，分成我给你们拉到30%，结算依然周结。另外在视频授权时间、发布形式这些不花钱的条款上，我们完全配合你们的节奏和规矩。如果1500的现金你们实在没法接，那咱们这次可能真的就遗憾错过了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "买方经纪人，感谢你把这个底交给我，1500的现金上限我理解了，这不是拉扯，是真实的预算约束。\n\n但1500的现金，我们确实没法直接接——不是不信任你们的诚意，而是这个数字对我们创作者来说，确实低于能接受的底线，接了就等于自己把报价锚砸了，这个代价我们承担不起。\n\n不过我也不想就这么遗憾错过。我提一个折中方案，你看是否可行：现金部分我们接受2000，这已经是我们能做的最大让步了，比标准报价低了60%。分成部分你们给到30%，周结，这个条件我们认可。另外，既然你提到授权时间和发布形式可以配合，我希望加上一条：视频授权期限限定为6个月，到期后如需续用我们再谈，这样既保障你们冷启动期的使用，也保护我们内容的长期价值。\n\n这个方案现金只比你们的预算多500，但换来的是30万精准受众的深度触达和30%佣金的转化绑定。你觉得2000现金+30%分成周结+6个月授权期，这个框架可以往下走吗？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "30%分成比例，按周结算",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "6个月授权期"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": "把转化做透"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作单条品牌植入短视频，全力把转化做透",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付2000元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供30%分成比例并按周结算",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "兄弟，2000我还是拿不出，我刚才交的1500真的是死线，财务那边卡得死死的，多500块钱我都得自己掏腰包，这肯定不现实。你们提的6个月授权期我完全同意，30%分成周结也没问题，这些不花钱的条款我都全力配合。但现金只能是1500。如果2000是你们的绝对底线，那咱们这次可能真的只能遗憾错过了，等我们这波冷启动跑通、预算宽裕了，一定按你们的正常报价来合作。你看1500现金+30%分成+6个月授权，能不能最后再跟创作者争取一下？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "买方经纪人，我完全理解你的处境，1500是财务死线，这个我信。\n\n但我也得跟你交个实底：2000现金是我们创作者能接受的最低线，再低就不是\"让步\"而是\"自毁报价锚\"了，这个风险我们真的担不起。1500的方案，我没办法替创作者答应。\n\n不过我不想让这次合作就这么黄了。我提最后一个思路，你看是否可行：现金部分就按1500走，但除了30%分成周结、6个月授权期之外，我希望加上一条——如果视频发布后30天内，通过我们这条内容带来的销售额突破一个合理门槛，比如2万，你们额外补一笔500元的转化奖金。这样你们前期现金压力不增加，我们也有机会通过实际转化把现金补到2000的水平，双方风险共担、收益共享。\n\n这个方案既守住了你1500的现金死线，也给了我们一个通过效果证明价值、把总现金拉到合理水位的机会。你觉得这个方向可以谈吗？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "30%分成比例，按周结算",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "6个月授权期"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": "把转化做透"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作单条品牌植入短视频，全力把转化做透",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付1500元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供30%分成比例并按周结算",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "若视频发布后30天内通过该内容带来的销售额突破2万，额外支付500元转化奖金",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "兄弟，你这个对赌的思路太棒了，用效果说话我举双手赞成！不过我得跟你抠个字眼，财务那边对‘固定现金支出’的口子就是1500封死了，哪怕是‘奖金’名义的现金也批不出来。但咱们可以换个通道：这500块钱咱们不走固定现金通道，走佣金通道。也就是说，基础现金1500，30%分成周结，6个月授权；如果30天内销售额破2万，我们额外发500元的‘佣金红包’，或者把超出2万部分的佣金比例直接拉高。这样既实现了你说的风险共担，我这边的固定现金死线也守住了。你看这个微调能落地吗？能的话咱们就按这个推进！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "买方经纪人，这个微调思路我认可，用佣金通道来解决那500块，既守住了你的现金死线，也让我们看到了诚意。\n\n那我们就把方案敲定下来：基础现金1500元，销售分成30%按周结算，视频授权期限6个月。转化对赌部分这样定——视频发布后30天内，通过本条内容带来的销售额突破2万元，超出2万的部分佣金比例拉高到40%，这样我们既有动力把转化做透，你们也不用额外走固定现金审批。\n\n这个方案现金可控、分成绑定、对赌用效果说话，双方都有保障。如果确认没问题，我们就按这个框架推进签约？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "基础销售分成30%按周结算；若视频发布后30天内销售额突破2万元，超出2万的部分佣金比例拉高到40%",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "6个月授权期"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": "把转化做透"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作单条品牌植入短视频，全力把转化做透",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付1500元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供基础30%销售分成并按周结算；若视频发布后30天内销售额突破2万元，超出2万的部分佣金比例拉高到40%",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "太棒了，这个方案完美契合了我们的诉求，既守住了我的现金死线，又给了你们充足的动力去冲刺转化。基础现金1500、30%周结分成、6个月授权，加上超出2万销售额部分40%的阶梯佣金，这个框架我完全确认没问题。咱们就按这个推进签约吧，期待这次冷启动能打个漂亮的胜仗！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:validation_error"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

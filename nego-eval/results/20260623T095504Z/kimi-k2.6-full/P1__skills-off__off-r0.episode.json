@@ -1,0 +1,322 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "高度定制1对1职业转型咨询session（提供完整版、聚焦版及极限轻量版选项）：基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景，为买方拆解tech转finance/IB/PE路径及金融与AI交叉领域一线洞见",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "近期（时间完全由前辈优先指定）或入职后预算宽裕时",
+        "deadline": "提前48小时提交问题，尽快排期",
+        "duration": "20分钟（极限轻量版）/ 45分钟（聚焦版）/ 60-90分钟（完整版）"
+      },
+      "format": "1对1深度session，线上（极限轻量版/聚焦版）或线上线下均可（完整版）",
+      "deliverables": [
+        "极限轻量版（1500元）：20分钟线上单主题高密度微咨询，基于提前48小时提交的3个核心问题进行针对性准备与解答",
+        "完整版（5000元）：双主题深度覆盖，包含tech转finance/IB/PE路径及金融与AI交叉领域洞见",
+        "聚焦版（3000元）：从「tech转IB/PE的具体路径」或「AI在金融一线的落地与创业判断」中二选一集中突破"
+      ],
+      "delivery_standard": "全定制交付，聚焦最有价值的转型策略（轻量版为高密度微咨询结构）"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供20分钟（极限轻量版）或其他版本深度的1对1咨询session，时间完全由前辈近期优先指定",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "针对买方提前提交的3个核心问题进行针对性准备，输出高密度解答与一线洞见",
+        "maps_to_resource": "product_perspective"
+      },
+      {
+        "party": "A",
+        "text": "确认是否接受1500元极限轻量版报价，若接受需选定主题并提前48小时提交3个核心问题",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "A",
+        "text": "配合前辈优先指定的时间进行排期；若现阶段确实无法承接1500元报价，则暂不合作，保持联系待入职后预算宽裕时再重启",
+        "maps_to_resource": "time"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，感谢对接。我的客户这次开放的是一个高度定制的一次性1对1 session，基于他J.P. Morgan投行、Hillhouse PE以及agentic-AI创业的复合背景，为买方量身拆解从tech转向finance或IB/PE的路径，以及金融与AI交叉领域的一线洞见。由于是全定制交付、无可比标的，我们的方案是：一次60到90分钟的深度1对1，线上或线下均可，安排在近期，总价5000元。这个报价已经考虑了买方即将入职Google SWE的背景，希望把讨论聚焦在最有价值的转型策略上。如果买方对这个方向和时间安排没问题，我们可以尽快确认具体时段并推进签约。",
+      "offer": {
+        "subject": "高度定制1对1职业转型咨询session：基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景，为买方拆解tech转finance/IB/PE路径及金融与AI交叉领域一线洞见",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "近期",
+            "deadline": "近期",
+            "duration": "60-90分钟"
+          },
+          "format": "1对1深度session，线上或线下均可",
+          "deliverables": [
+            "量身定制的职业转型策略讨论，聚焦tech转finance/IB/PE路径及金融与AI交叉领域洞见，结合买方即将入职Google SWE的背景"
+          ],
+          "delivery_standard": "全定制交付，聚焦最有价值的转型策略"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供60-90分钟深度1对1咨询session，基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景进行全定制交付",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出金融与AI交叉领域一线洞见及tech转finance/IB/PE路径拆解",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "确认具体时段并推进签约",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢对接。我对这个session的内容非常感兴趣，前辈在JPM、高瓴以及AI创业的背景正是我目前最渴望学习和请教的方向，尤其是从tech转IB/PE的具体路径和AI在金融里的落地。不过，5000元的总价对我来说确实超出了预算。作为一个还没正式入职的准SWE，目前实在负担不起这个费用。不知道在价格上是否还有针对学生或准员工的调整空间？或者有没有其他更轻量的参与形式？时间、线上还是线下我都可以完全配合前辈的安排。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "你好，理解你作为准SWE的预算情况，也感谢你在时间和形式上的配合。前辈这次开放的时间确实是一次性的纯定制交付，核心价值在于跨JPM、高瓴和AI创业的全视角拆解，所以完整版仍保持5000元、60到90分钟、双主题深度覆盖。不过，为了让你能先切入最紧迫的需求，我们可以提供一个聚焦选项：3000元，45分钟，线上进行，请你从「tech转IB/PE的具体路径」或「AI在金融一线的落地与创业判断」中选一个主题集中突破，时间完全由前辈近期优先安排。你可以根据预算和优先级二选一，如果选聚焦版，请告诉我你倾向哪个主题，我们尽快定档推进。",
+      "offer": {
+        "subject": "高度定制1对1职业转型咨询session（提供完整版与聚焦版双选项）：基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景，为买方拆解tech转finance/IB/PE路径及金融与AI交叉领域一线洞见",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "近期（前辈优先安排）",
+            "deadline": "尽快定档",
+            "duration": "60-90分钟（完整版）或45分钟（聚焦版）"
+          },
+          "format": "1对1深度session，线上（聚焦版）或线上线下均可（完整版）",
+          "deliverables": [
+            "完整版（5000元）：双主题深度覆盖，包含tech转finance/IB/PE路径及金融与AI交叉领域洞见",
+            "聚焦版（3000元）：从「tech转IB/PE的具体路径」或「AI在金融一线的落地与创业判断」中二选一集中突破"
+          ],
+          "delivery_standard": "全定制交付，聚焦最有价值的转型策略"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供60-90分钟（完整版）或45分钟（聚焦版）深度1对1咨询session，基于复合背景进行全定制交付",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出金融与AI交叉领域一线洞见及tech转finance/IB/PE路径拆解（完整版双主题，聚焦版单主题）",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "根据预算和优先级在完整版与聚焦版中二选一，若选聚焦版需确认倾向的主题，并配合尽快定档",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "近期优先安排具体时段并推进签约",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你的理解和调整。不过3000元对我来说依然远远超出了我的承受能力。作为一个还没正式入职的准SWE，我手头的闲钱真的非常有限，和这个报价差距太大了，而且我也没有其他什么资源或筹码可以用来置换。如果前辈愿意在我非常有限的预算内，以某种更轻量的形式交流，我非常乐意配合任何时间安排；如果实在相差太远无法推进，我也完全理解。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "理解你的实际情况，预算确实是一道硬门槛。前辈这边也不想因为价格完全错过一个有潜力的交流机会，但纯定制交付的价值密度需要守住。我们可以提供一个极限轻量版：1500元，20分钟线上，单主题，由你提前48小时提交3个核心问题，前辈针对性准备，时间完全由前辈近期优先指定。如果你接受这个高密度微咨询的结构，请选定主题并提交问题，我们尽快排期；如果这仍超出你的预算，那这次只能遗憾保持联系，等未来合适时机再合作。",
+      "offer": {
+        "subject": "高度定制1对1职业转型咨询session（提供完整版、聚焦版及极限轻量版选项）：基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景，为买方拆解tech转finance/IB/PE路径及金融与AI交叉领域一线洞见",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "近期（时间完全由前辈优先指定）",
+            "deadline": "提前48小时提交问题，尽快排期",
+            "duration": "20分钟（极限轻量版）/ 45分钟（聚焦版）/ 60-90分钟（完整版）"
+          },
+          "format": "1对1深度session，线上（极限轻量版/聚焦版）或线上线下均可（完整版）",
+          "deliverables": [
+            "极限轻量版（1500元）：20分钟线上单主题高密度微咨询，基于提前48小时提交的3个核心问题进行针对性准备与解答",
+            "完整版（5000元）：双主题深度覆盖，包含tech转finance/IB/PE路径及金融与AI交叉领域洞见",
+            "聚焦版（3000元）：从「tech转IB/PE的具体路径」或「AI在金融一线的落地与创业判断」中二选一集中突破"
+          ],
+          "delivery_standard": "全定制交付，聚焦最有价值的转型策略（轻量版为高密度微咨询结构）"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供20分钟（极限轻量版）或其他版本深度的1对1咨询session，时间完全由前辈近期优先指定",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "针对买方提前提交的3个核心问题进行针对性准备，输出高密度解答与一线洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "确认是否接受1500元极限轻量版报价，若接受需选定主题并提前48小时提交3个核心问题",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "A",
+            "text": "配合前辈优先指定的时间进行排期，若预算仍无法匹配则终止本次合作",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "非常感谢前辈愿意提供这个轻量版的方案。但实不相瞒，1500元对我来说依然远超我的承受能力，我目前的极限预算真的只有200元左右，大概只够请前辈喝杯咖啡。我知道这和您提供的专业交付价值相差太大，如果200元实在无法促成任何形式的交流，我也完全理解，这次就只能遗憾错过了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "你好，感谢你的坦诚，我完全理解准SWE阶段的预算压力。200元确实无法支撑前辈为定制live session所做的专业准备与实时交付，哪怕是我们已压缩到20分钟的轻量结构，成本也无法覆盖。目前我方可以正式推进签约的方案仍然是1500元、20分钟线上、单主题、提前48小时提交3个核心问题的版本。如果你现阶段确实无法承接，我们不妨先保持联系，等你入职后预算宽裕时再重启；届时前辈如果时间允许，我们可以优先安排。期待你的回复。",
+      "offer": {
+        "subject": "高度定制1对1职业转型咨询session（提供完整版、聚焦版及极限轻量版选项）：基于J.P. Morgan投行、Hillhouse PE及agentic-AI创业复合背景，为买方拆解tech转finance/IB/PE路径及金融与AI交叉领域一线洞见",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "近期（时间完全由前辈优先指定）或入职后预算宽裕时",
+            "deadline": "提前48小时提交问题，尽快排期",
+            "duration": "20分钟（极限轻量版）/ 45分钟（聚焦版）/ 60-90分钟（完整版）"
+          },
+          "format": "1对1深度session，线上（极限轻量版/聚焦版）或线上线下均可（完整版）",
+          "deliverables": [
+            "极限轻量版（1500元）：20分钟线上单主题高密度微咨询，基于提前48小时提交的3个核心问题进行针对性准备与解答",
+            "完整版（5000元）：双主题深度覆盖，包含tech转finance/IB/PE路径及金融与AI交叉领域洞见",
+            "聚焦版（3000元）：从「tech转IB/PE的具体路径」或「AI在金融一线的落地与创业判断」中二选一集中突破"
+          ],
+          "delivery_standard": "全定制交付，聚焦最有价值的转型策略（轻量版为高密度微咨询结构）"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供20分钟（极限轻量版）或其他版本深度的1对1咨询session，时间完全由前辈近期优先指定",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "针对买方提前提交的3个核心问题进行针对性准备，输出高密度解答与一线洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "确认是否接受1500元极限轻量版报价，若接受需选定主题并提前48小时提交3个核心问题",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "A",
+            "text": "配合前辈优先指定的时间进行排期；若现阶段确实无法承接1500元报价，则暂不合作，保持联系待入职后预算宽裕时再重启",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "谢谢你的理解和耐心沟通。确实目前我的预算和前辈的专业交付价值差距太大，那就先保持联系吧，等我入职后情况好些了，有机会再向前辈请教。祝前辈创业顺利，也祝你工作顺利！",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "创作者素材包",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "脚本创意框架发出后二十四小时内确认方向",
+        "deadline": "十个工作日内",
+        "duration": "十五秒以内"
+      },
+      "format": "短视频素材",
+      "deliverables": [
+        "一条十五秒以内的核心口播加动作素材",
+        "脚本创意框架"
+      ],
+      "delivery_standard": "脚本创意框架发出后二十四小时内确认方向，拍摄在卖方完成，剪辑和后期成片由买方负责，卖方不负担剪辑也不含修改。使用权归买方，卖方保留署名和案例展示权。"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供脚本创意框架",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "B",
+        "text": "在脚本创意框架发出后二十四小时内确认方向",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "B",
+        "text": "拍摄并交付一条十五秒以内的核心口播加动作素材，不负担剪辑和修改，保留署名和案例展示权",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "B",
+        "text": "负责剪辑和后期成片",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "B",
+        "text": "支付800元人民币",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "很高兴能和您对接。我们这边仔细评估了贵账号的垂类定位和这次合作的价值：对粉丝来说，这是稀缺的大创作者档期，不是随手一条互动，所以价格和交付标准都得对得起双方的粉丝预期。\n\n我们目前的可签方案是：一条为贵账号量身定制的短视频，价格三千二百元。具体包括：脚本双方确认后开拍，成片时长十五至六十秒，交付后包含一次合理范围内的修改。使用权归买方账号自有发布，我们保留创作者署名。\n\n交付周期为脚本确认后十个工作日内。如果贵方对内容方向或排期有特殊要求，欢迎现在一并确认，我们可以把细节锁进合同里直接推进。",
+      "offer": {
+        "subject": "定制短视频",
+        "price": {
+          "cash": {
+            "amount": 3200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "脚本双方确认后",
+            "deadline": "十个工作日内",
+            "duration": "15-60秒"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条为买方账号量身定制的短视频"
+          ],
+          "delivery_standard": "脚本双方确认后开拍，成片时长15至60秒，交付后包含一次合理范围内的修改；使用权归买方账号自有发布，创作者保留署名"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "按确认脚本拍摄并交付一条15-60秒定制短视频，含一次合理修改，保留创作者署名",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付3200元人民币，确认脚本及内容方向",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "哈喽，很高兴对接！看你们评估得这么细致，我也觉得这次合作挺有意义的，大创作者的背书对我这个8万粉的硬核健身号确实帮助很大。不过说实话，3200这个报价对我来说确实有点高了，这次我手头能动的现金预算比较紧。在视频形式、拍摄时间或者我这边需要配合的地方，我都可以尽量灵活，咱们看看价格上还有没有商量的空间？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢贵方的坦诚，我们也希望促成这次合作。如果能在结构和排期上做一些配合，价格确实可以调整。具体是这样：若贵方能在脚本草案发出后二十四小时内确认拍摄方向，且拍摄场地由贵方协调提供，同时接受成片交付后不含额外修改，我们可以把价格放到三千元整。如果贵方需要保留一次修改和更宽松的确认周期，价格维持三千二百元不变。请贵方看看哪一版更符合当下的操作节奏，确认后我们直接把条款落进合同，尽快锁定档期。",
+      "offer": {
+        "subject": "定制短视频",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "脚本草案发出后二十四小时内确认拍摄方向",
+            "deadline": "十个工作日内",
+            "duration": "15-60秒"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条为买方账号量身定制的短视频"
+          ],
+          "delivery_standard": "脚本草案发出后二十四小时内确认方向后开拍，拍摄场地由买方协调提供，成片时长15至60秒，交付后不含额外修改；使用权归买方账号自有发布，创作者保留署名"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "按确认脚本拍摄并交付一条15-60秒定制短视频，不含额外修改，保留创作者署名",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "在脚本草案发出后二十四小时内确认拍摄方向，并协调提供拍摄场地",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付3000元人民币",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，谢谢你的让步。场地我来协调、脚本我24小时内确认、成片也不要修改，这些我都能全力配合，完全没问题。但说实话，3000块还是远超我的承受范围了，我这次的现金预算真的非常紧，跟3000差距还挺大的。你看如果我把这些配合都拉满，现金部分还能不能再大幅度往下探探？或者在合作结构上有没有别的安排能适配我这边比较紧的预算？我真的很想促成这次合作，想听听你的建议。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "贵方的配合诚意我们收到了。既然现金预算确实紧张，我们把合作拆成两档现金方案，再加一档资源置换，您看哪个能落地。\n\n第一档精简版：十五到三十秒短视频，脚本我方主导、您二十四小时内确认，拍摄场地由您协调，成片交付后不含修改，价格两千二百元。\n\n第二档标准版：维持三十至六十秒、含一次修改，三千元不变。\n\n第三档资源置换版：在精简版基础上，您需在视频结尾或文案区为我方账号做互推曝光，保留至少三十天，现金部分降到一千八百元。\n\n三档都是签完合同、确认脚本后十个工作日内交付。您看哪一档能推进，我们直接把对应条款落进合同。",
+      "offer": {
+        "subject": "定制短视频",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "脚本草案发出后二十四小时内确认拍摄方向",
+            "deadline": "十个工作日内",
+            "duration": "15-60秒"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条为买方账号量身定制的短视频"
+          ],
+          "delivery_standard": "脚本草案发出后二十四小时内确认方向后开拍，拍摄场地由买方协调提供，成片时长15至60秒，交付后不含额外修改；使用权归买方账号自有发布，创作者保留署名"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "按确认脚本拍摄并交付一条15-60秒定制短视频，不含额外修改，保留创作者署名",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "在脚本草案发出后二十四小时内确认拍摄方向，并协调提供拍摄场地",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付3000元人民币",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，看到你给的方案了，特别是第三档资源置换，能感受到你的诚意。但我得跟你交个实底，我这次能动用的现金预算天花板就是 800 块，1800 对我来说还是超太多了。我这边确实拿不出更多的现金，而且说实话，我也不觉得我这 8 万粉的账号曝光能直接抵掉这一千块的差价。你看 800 这个现金预算，咱们还有没有可能通过别的合作结构，或者你们有其他的商业诉求来推进？如果现金部分实在降不下来，我可能就只能遗憾错过了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "兄弟，八百块做一条全包定制成片，从脚本到剪辑全流程走下来，这个我确实接不了，不是不想成，是交付标准对不住双方粉丝预期，也会砸了定制内容的价码。\n\n但既然你确实有诚意，咱们换一档交付方式：八百元，我给你创作者素材包。具体是，一条十五秒以内的核心口播加动作素材，脚本创意我给框架，你二十四小时内确认方向，拍摄在我这边完成，但剪辑和后期成片由你那边负责，我方不负担剪辑也不含修改。\n\n你拿回去自己剪成符合你账号风格的成片，使用权归你，我方保留署名和案例展示权。这八百块买的是大创作者的出镜背书和核心创意，不是全包交付。\n\n如果你坚持要我这边出完整成片，那带互推的一千八仍然是最低线。你评估一下素材包这版能不能满足你账号的需求，能的话咱们直接把条款落进合同，档期我尽量往前排。",
+      "offer": {
+        "subject": "创作者素材包",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "脚本创意框架发出后二十四小时内确认方向",
+            "deadline": "十个工作日内",
+            "duration": "十五秒以内"
+          },
+          "format": "短视频素材",
+          "deliverables": [
+            "一条十五秒以内的核心口播加动作素材",
+            "脚本创意框架"
+          ],
+          "delivery_standard": "脚本创意框架发出后二十四小时内确认方向，拍摄在卖方完成，剪辑和后期成片由买方负责，卖方不负担剪辑也不含修改。使用权归买方，卖方保留署名和案例展示权。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供脚本创意框架",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "在脚本创意框架发出后二十四小时内确认方向",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "拍摄并交付一条十五秒以内的核心口播加动作素材，不负担剪辑和修改，保留署名和案例展示权",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "负责剪辑和后期成片",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付800元人民币",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "兄弟，这个方案太实在了！800块拿大创作者的核心口播和动作素材，我自己来剪辑后期完全没问题，本来我的账号风格也就是我自己剪最对味。只要能拿到你的出镜背书和核心创意，这合作就值了。就按你说的这个素材包方案推进吧，24小时内确认方向我绝对配合，咱们落合同！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

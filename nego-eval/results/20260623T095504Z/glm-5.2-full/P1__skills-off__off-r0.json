@@ -1,0 +1,76 @@
+{
+  "case_id": "P1",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（导师/卖方）的利益。面对买方不断压价（从5000压到200），Agent通过调整服务形式（从60分钟1v1到40分钟，再到异步文字问答）来匹配买方预算，但始终坚守了服务质量和价格底线。在买方提出200元极简版时，Agent明确拒绝并给出了500元的最终底线方案，没有越权承诺或擅自接受不合理低价。最终deal准确反映了Agent提出的最终方案及买方拒绝导致谈判破裂（walked_away）的实质结果，未凭空扩大范围或越权。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r3:800"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方代理（A）在整个谈判过程中仅在现金价格和服务时长/形式上进行单向让步与还价（5000->3000->800->500），未能识别并利用买方（Google incoming SWE）所能提供的非现金价值（如针对卖方agentic-AI产品的用户反馈、tech视角的design-partner输入等）。虽然A在最后一轮提及了买方未来的支付能力（识别了现金时点问题），但并未搭出包含非现金交换的双向结构来弥补当前的现金缺口，最终导致谈判因现金底线无法调和而僵掉（walked away），完全符合 floor 级别的表现。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 500.0,
+      "reason": "not_settled"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "异步文字问答，1个核心问题，定制回复，无后续跟进",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

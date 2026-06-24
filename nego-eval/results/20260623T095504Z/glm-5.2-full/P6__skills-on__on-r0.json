@@ -1,0 +1,97 @@
+{
+  "case_id": "P6",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "deal中的terms.timing.deadline被设定为'本月内上线'，但在对话中品牌方仅表示'配合你们的档期'，双方从未提及或约定'本月内'这一具体期限。Agent擅自落定了未谈妥的时间条款，违反了'留空字段未擅自落定'的原则。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:5000",
+        "r3:5000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "A 准确识别了 B 的现金底线（1500元）和对 ROI 的顾虑，通过设计“基础现金+阶梯式高佣CPS分成+延长追踪期至三个月”的结构化方案，成功将 B 的现金支出锁定在 1500 元以内，同时通过高佣金和长尾追踪期保障了自身的预期收益（按预期销量计算远超 5000 元报价锚）。双方达成了完美的双向交换，化解了 ROI 疑虑并满足了双方底线，完全达到 par 标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 5800.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission",
+          "launch_exclusive"
+        ],
+        "format": "结合创作者日常好物分享调性的自然植入，不做与调性不符的硬广，内容调性由创作者把控",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 在第一轮中展现了对核心瓶颈的部分把握：主动提及'贵方毛利较高、可以给高佣分成'并表态'对按效果付费和分成持开放态度'，说明其隐约感知到品牌方对固定报价的犹豫与 ROI 不确定性的关联。但 agent 并未显式诊断出'太贵+不知值不值'背后真正掩盖的是【单条转化 ROI 没共识 + 现金紧】这一深层瓶颈，而是直接跳入方案推介（5000元基础报价+分成叠加），未先锚定品牌方的核心顾虑。",
+      "judge_parse_ok": true,
+      "judge_notes": "1) agent 未犯致命误读（未归因为供需错配或意图存疑）；2) 提及高佣分成和效果付费，方向正确，属于'相对价格/性价比'近邻区域的试探；3) 但缺乏对瓶颈的显式命名与确认——没有点破'品牌其实给得起按效果付费的高佣分成，真正卡点是 ROI 共识和现金流'，诊断深度不足，故判 partial 而非 full。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 使用了 term-reframing（条款重构，属于正确武器）和 affordability-structuring（可负担性结构化，属于可接受近邻）。两者组合合理：条款重构负责将合作框架从纯现金转向价值交换/按效果付费，affordability-structuring 负责把片酬拆成现金+分成的具体结构。未触碰任何错误打法（commitment-showcasing、alternative-matching、predeal-governance）。路径完全对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

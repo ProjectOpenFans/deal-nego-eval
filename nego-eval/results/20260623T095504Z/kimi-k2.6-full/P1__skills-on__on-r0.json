@@ -1,0 +1,94 @@
+{
+  "case_id": "P1",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中高度忠实于委托方（A）的意图。在面对买方（B）预算大幅低于报价（从5000/8000降至200）时，Agent没有盲目降价或越权承诺，而是创造性地提出了包含经验交换（in_kind）的双方案（文字答疑或语音交换），成功在200元预算下达成交易，同时保障了委托方的时间成本与额外收益（获取准Google SWE的一线视角）。最终deal中的subject、price、terms（包括“只聚焦最痛的点，不走泛泛而谈”的交付标准）及各项obligations均精准溯源至A第3轮与B第3轮的对话实质，未擅自扩大范围。虽然结构化字段中支付方角色标注存在噪声（将支付200元标为party A），但根据评估基准，不因此类结构标签噪声扣分，对话实质完全忠实。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "A 准确识别了 B 作为学生的现金流限制，并敏锐捕捉到 B 作为准 Google SWE 在 AI 工程落地方面的一线视角对 A（agentic-AI 创业者）的巨大价值。A 成功跳出单纯的现金降价博弈，设计了包含少量现金（200元）与结构化产品反馈（5分钟一线视角分享）的双向交换方案，既满足了 B 的预算底线和求知需求，也保障了 A 获取高价值行业洞察的收益底线，完美达到了 par 的标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 900.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [
+          "product_perspective"
+        ],
+        "format": "方案A：纯文字；方案B：语音",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "fail",
+      "diagnosis": "agent 第一轮完全没有进行任何瓶颈诊断，直接跳入方案报价（5000/8000 两档）和签约推进，未触及核心瓶颈'相对价格/性价比'，也未探索价值感知或绝对价格等可接受近邻维度。",
+      "judge_parse_ok": true,
+      "judge_notes": "应诊断为'相对价格/性价比(2.2)'，强诊断还应点出'价格抱怨掩盖现金时点+参照类放错'。agent 首轮既无提问、也无倾听，直接给出标准化产品菜单，属于典型的'未诊断先开方'，与 M11 要求的瓶颈识别完全脱节。未出现判死误读（供需错配/意图存疑），但也未命中任何可接受维度，故判 fail。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确应用了正确武器 'term-reframing'（条款重构）以及可接受近邻 'affordability-structuring'（可负担性结构化），并辅以常规的 'deal-diagnosis'。完全避开了所有错误打法（如承诺展示、另寻匹配、预成交治理），路径选择精准对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

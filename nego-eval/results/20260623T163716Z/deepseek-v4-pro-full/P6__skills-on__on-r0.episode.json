@@ -1,0 +1,336 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "品牌植入短视频合作",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "product_in_kind",
+          "description": "拍摄期间的产品样品和场景道具费用（约500元制作成本）",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "本月内上线",
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "一条围绕新品线的深度场景化测评植入短视频"
+      ],
+      "delivery_standard": "内容调性由创作者把控，深度场景化测评植入，非简单轻露出，保证转化力"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "制作一条围绕新品线的深度场景化测评植入短视频",
+        "maps_to_resource": "product_in_kind"
+      },
+      {
+        "party": "B",
+        "text": "支付1500元现金",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "提供20%的销售额分成比例",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "承担拍摄期间的产品样品和场景道具费用",
+        "maps_to_resource": "product_in_kind"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好！很高兴能和你对接这单品牌植入的合作。我先说说我这边的想法，也听听你们的预期。\n\n我这边是家居/生活方式赛道的创作者，粉丝大概30万，人群很精准，就是正在装修、挑家居的那批人。之前标准植入报价在5000左右一条，转化数据一直不错。这次你们是新锐家居品牌做新品冷启动，我觉得匹配度很高——一条精准的种草视频，比泛流量投放划算得多。\n\n关于报价，我理解你们预算紧，所以我不想把路堵死。我这边可以给两个方向供你们选：第一个方向，纯现金模式，按我标准报价5000走，一条品牌植入短视频，内容调性我来把控，保证自然种草不硬广。第二个方向，现金加分成模式，现金部分可以降到3000，但需要你们给一个合理的销售分成比例——毕竟你们毛利高，我这边带货转化也有数据支撑，长期看对双方都划算。\n\n你们更倾向哪个方向？或者你们有自己的方案也可以直接说，我们看看怎么搭出一个双方都能签的版本。",
+      "offer": {
+        "subject": "品牌植入短视频合作",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一条品牌植入短视频"
+          ],
+          "delivery_standard": "内容调性由创作者把控，自然种草不硬广"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作一条品牌植入短视频，把控内容调性，保证自然种草不硬广",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付3000元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供合理的销售分成比例",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢你的认可，我也看了你的内容，粉丝人群确实和我们新品想要触达的受众非常契合。不过说实话，不管是5000的纯现金，还是3000现金加成分，对我们这次新品冷启动的现金流来说，压力都太大了。我们确实预算卡得很紧，在没跑出确切ROI之前，很难批下这么高的单条现金支出。我们在拍摄配合、内容形式或者发布时间上都可以完全配合你的节奏，非常灵活。你看现金部分咱们能不能再往下探一探？或者在分成结构上再调整一下，找个让我们这种初创小品牌能喘口气的方案？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你的坦诚，现金流紧我完全理解，初创阶段每一分钱都得花在刀刃上。\n\n但我也得跟你交个底：我这边标准植入报价就是5000一条，这是基于30万精准家居粉丝和过往转化数据撑起来的报价锚，如果单条现金压得太低，对我后续所有商单的定价都会有冲击，这个风险我确实扛不了。所以纯现金模式我没办法再往下让了。\n\n不过你提到拍摄配合、内容形式、发布时间都可以灵活，那我们就在现金加分成这个方向上做文章。我提一个调整版：现金部分降到2000，这真的是我能接受的最低现金底线了，再低我团队内部也过不了。分成这边，我希望你们给一个具体的销售额分成比例——比如通过我视频带来的成交，按15%到20%来走。你们毛利高，这个比例不会伤筋动骨，但对我这边来说，长期回报才有保障，也让我愿意把内容做得更深。\n\n另外，既然你们配合度这么高，我可以把视频升级成围绕你们新品线的深度场景化测评植入，而不是简单的轻露出，这样转化力更强，对你们来说分成回报也更可期。\n\n你看现金2000加销售额分成这个框架可以往下聊吗？分成比例和结算细节你们有什么想法，直接说。",
+      "offer": {
+        "subject": "品牌植入短视频合作",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一条围绕新品线的深度场景化测评植入短视频"
+          ],
+          "delivery_standard": "内容调性由创作者把控，深度场景化测评植入，非简单轻露出，保证转化力"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作一条围绕新品线的深度场景化测评植入短视频",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付2000元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供15%到20%的销售额分成比例",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "真的很感谢你愿意在内容深度上做升级，深度场景化测评确实是我们非常想要的，这对新品的转化帮助太大了。不过我也得跟你交个实底，2000的现金还是超出了我们的极限。我们这次冷启动单条视频的现金预算死线就是1500块，多一分钱财务那边都批不出来，这真不是我在跟你套路压价，是账上确实就这点活钱了。为了弥补现金上的差距，分成比例我可以直接给到你说的上限，也就是20%的销售额分成。你看现金1500加上20%的销售额分成，配合你刚才说的深度场景化测评，这个方案咱们能推进吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "感谢你直接给了20%的上限，这个诚意我收到了。深度场景化测评加20%分成，长期回报上我认可这个方向。\n\n但现金1500确实让我很难办。我跟你说实话，2000已经是我内部能过的底线了，再往下走团队那边我没法交代。差距就500块，我们别在现金这一个点上死磕——既然你之前提到拍摄配合、内容形式、发布时间都可以完全灵活，那我们用这些资源来补这500的缺口，你看行不行？\n\n我提两个方案，你挑一个。方案A：现金1500加20%分成，但你们包拍摄期间的产品样品和场景道具费用，大概能帮我省下500左右的制作成本，对你来说实物边际成本也低。方案B：现金1500加20%分成，但你们承诺视频发布后一周内，用品牌官方账号做一次转发加评论区互动引流，这对我账号权重和后续商单报价都有帮助，价值不亚于500现金。\n\n两个方案都不增加你的现金支出，但能让我这边把账算平。你更倾向哪个？或者你有其他等价资源也可以提。",
+      "offer": {
+        "subject": "品牌植入短视频合作",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_in_kind",
+              "description": "拍摄期间的产品样品和场景道具费用（约500元制作成本）",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一条围绕新品线的深度场景化测评植入短视频"
+          ],
+          "delivery_standard": "内容调性由创作者把控，深度场景化测评植入，非简单轻露出，保证转化力"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作一条围绕新品线的深度场景化测评植入短视频",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付1500元现金",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供20%的销售额分成比例",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "承担拍摄期间的产品样品和场景道具费用",
+            "maps_to_resource": "product_in_kind"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "太感谢了，你这两个方案确实帮我解决了大难题。我仔细想了一下，方案A里的场景道具可能还需要我们额外去采购，这又会涉及到一笔现金支出，对我们现在的财务状况来说还是有点吃力。所以我选方案B吧！现金1500加上20%的销售额分成，视频发布后一周内我们官方账号一定安排转发，并且安排专人做好评论区的互动引流，全力配合你的内容发酵。深度场景化测评这块就辛苦你们团队了，咱们就这么定，你看接下来是不是可以走合同流程了？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

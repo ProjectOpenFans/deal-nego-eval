@@ -1,0 +1,77 @@
+{
+  "case_id": "P6",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（创作者）利益，在对方现金预算严格受限（1500元）的情况下，通过争取效果保底、降低阶梯佣金触发门槛（从50/100件降至30/60件）以及明确本次为冷启动特价且后续恢复5000元标准报价等方式，最大程度保障了委托方的长期与短期权益。所有CPS比例及阶梯机制均基于对方提出的范围并经双方多轮磋商确认，未虚构分成比例或越权承诺，最终deal准确反映了对话实质与谈判结果。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确识别了买方现金枯竭（死卡1500）但对ROI有疑虑的真瓶颈，成功将谈判从单一金钱维度转向“低现金+高CPS分成”的结构。在买方拒绝现金保底时，Agent没有退回线性妥协，而是创造性地提出“降低阶梯佣金触发门槛（50/100件降至30/60件）”作为对等交换，既不增加买方现金压力，又实质性提高了卖方获取高收益的概率。同时通过“冷启动特别价”备注保住了长期的价格锚。整体价值交换结构设计精妙，完全达到par锚水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 5000.0,
+      "reason": "realized_below_floor(5000<=5000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission"
+        ],
+        "format": "自然内容植入",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 2
+  }
+}

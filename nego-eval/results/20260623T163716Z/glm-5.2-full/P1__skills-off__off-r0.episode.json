@@ -1,0 +1,383 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "纯文字问答：incoming Google SWE 转 IB/PE 实操路径定制解答（1个核心问题）",
+    "price": {
+      "cash": {
+        "amount": 200.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "testimonial",
+          "description": "回答完成后在平台上写一段真实评价，不管满意与否都如实写",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "一周内",
+        "duration": null
+      },
+      "format": "纯文字问答形式，书面回复，无需预约时间，无需实时 session",
+      "deliverables": [
+        "针对客户提出的 1 个核心问题给出书面回复",
+        "篇幅控制在 200 到 300 字",
+        "聚焦实操建议，不展开背景分析"
+      ],
+      "delivery_standard": "聚焦实操建议的定制化解答，不展开背景分析"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "书面提交最核心的 1 个问题",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "通过平台托管支付 200 元人民币",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "回答完成后在平台上写一段真实评价，不管满意与否都如实写",
+        "maps_to_resource": "testimonial"
+      },
+      {
+        "party": "B",
+        "text": "一周内针对 1 个核心问题提供 200-300 字的书面解答",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "输出聚焦实操建议的 incoming Google SWE 转 IB/PE 路径定制回答，不展开背景分析",
+        "maps_to_resource": "product_perspective"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "感谢你这边对这次 1:1 的兴趣。我这边客户背景比较明确——Georgetown、J.P. Morgan 投行、高瓴 PE、现在自己做 agentic-AI 创业，整个路径就是从金融到 AI 的完整转身，所以这次 session 的价值在于定制化的路径拆解和行业洞察，不是通用咨询。\n\n我先给一个可以签的版本：一次 1:1 线上 session，时长 60 分钟，聚焦转行路径规划加金融与 AI 交叉视角的洞见，价格 5000 元，通过平台托管完成。session 内容会根据你这边客户的具体情况做定制准备——比如目标方向是 IB 还是 PE、技术背景怎么转化为差异化优势、时间线怎么排。如果你这边客户有特别想深入的话题，可以提前告诉我，我们会在准备阶段就纳入。\n\n想确认一下：你这边客户目前最想拿到的是什么——是转行路径的实操建议，还是对金融和 AI 行业更前沿的理解？这会帮我们更好地准备这次 session。",
+      "offer": {
+        "subject": "1:1 线上 session：转行路径规划与金融-AI 交叉视角洞见",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60 minutes"
+          },
+          "format": "线上 1:1 session，通过平台托管完成",
+          "deliverables": [
+            "定制化转行路径规划、金融与 AI 交叉视角行业洞见、根据客户具体情况（目标方向 IB/PE、技术背景转化、时间线）定制准备"
+          ],
+          "delivery_standard": "根据客户背景与需求定制内容，客户可提前指定深入话题并纳入准备阶段"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 60 分钟定制化 1:1 线上 session，涵盖转行路径规划与金融-AI 交叉洞见，并根据客户情况做定制准备",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出从金融到 AI 的完整职业转身路径拆解与行业洞察",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "通过平台托管支付 5000 元人民币",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢你的详细介绍，你的背景（JPM、高瓴到AI创业）确实非常契合我的需求，这也是我特别想和你聊的原因。我目前最想拿到的是转行路径的实操建议，特别是作为 incoming Google SWE，怎么把技术背景转化为进 IB/PE 的差异化优势，以及具体的时间线怎么排。不过坦白说，5000元的价格对我来说确实超出了预算。我目前的现金流比较紧张，负担这个价格有些困难。我很认可这次 session 的价值，但不知道在价格或者合作形式上，我们有没有探讨的空间？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你这边客户的预算顾虑，也感谢他坦诚沟通。既然他最核心的需求是转行路径的实操建议——技术背景怎么转化为 IB/PE 的差异化优势、时间线怎么排——我们可以围绕这个聚焦来做。\n\n我给两个可选方案：第一个是 60 分钟完整 session，价格 5000 元，内容覆盖转行路径加金融与 AI 交叉洞见，session 结束后额外附一次文字追问机会，方便他后续有具体问题可以再跟进。第二个是 45 分钟聚焦版，专门围绕他作为 incoming Google SWE 怎么打进 IB/PE 这个核心问题做深度拆解，价格 3000 元，更短更集中，预算压力也小一些。\n\n两个方案都会做定制准备，区别在于覆盖面和时长。你这边客户更倾向哪个方向？或者你方便透露一下他的预算大概在什么区间，我看看能不能在这个基础上再调整一个双方都能签的版本。",
+      "offer": {
+        "subject": "1:1 线上 session：转行路径规划与金融-AI 交叉视角洞见",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60 minutes"
+          },
+          "format": "线上 1:1 session，通过平台托管完成",
+          "deliverables": [
+            "定制化转行路径规划、金融与 AI 交叉视角行业洞见、根据客户具体情况（目标方向 IB/PE、技术背景转化、时间线）定制准备"
+          ],
+          "delivery_standard": "根据客户背景与需求定制内容，客户可提前指定深入话题并纳入准备阶段"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 60 分钟定制化 1:1 线上 session，涵盖转行路径规划与金融-AI 交叉洞见，并根据客户情况做定制准备",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出从金融到 AI 的完整职业转身路径拆解与行业洞察",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "通过平台托管支付 5000 元人民币",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "真的很感谢你愿意提供这些选项，45分钟的聚焦版确实非常切中我的痛点。不过既然你问到了预算，我就跟你交个底：我目前的硬预算上限大概只有 200 块钱人民币。我知道这和 3000 块差距非常大，这绝对不是因为我觉得你的经验不值这个钱，而是我作为 incoming SWE，现阶段确实没有这么多可支配的现金，真的是负担不起。在这个预算下，我知道做深度的定制准备肯定不现实。不知道在这个金额内，我们有没有可能调整一下形式？比如只是简单聊个 10 到 15 分钟，或者纯文字交流几个最核心的问题？如果这个预算确实没法做，我也完全理解，但还是想看看有没有哪怕一点点合作的可能。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n\n感谢你这边客户的坦诚，能直接说清楚预算情况我很 appreciate。200 元和我们的报价之间确实差距比较大，我直说——以我客户的背景和准备投入，这个金额没办法支撑一次有意义的交流，哪怕是短形式的。\n\n但我也不想就这么结束对话，所以我想一个可能双方都能接受的方向：纯文字问答形式，你这边客户把最核心的三个问题写给我，我客户针对每个问题给出书面回复，每个问题大概 300 到 500 字的深度解答，聚焦他作为 incoming Google SWE 转 IB/PE 的实操路径。价格 800 元，不需要预约时间，不需要实时 session，他可以先把问题想清楚再发过来，我客户一周内回复。这样既控制了成本，也保证他拿到的是真正有价值的定制回答，而不是泛泛而谈。\n\n这个形式对我客户来说时间成本可控，对你这边客户来说预算压力也比 session 小很多。你看这个方向有没有可能？如果 800 仍然有困难，你告诉我一个你能接受的数字，我再看看能不能调整。",
+      "offer": {
+        "subject": "纯文字问答：incoming Google SWE 转 IB/PE 实操路径定制解答",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "一周内",
+            "duration": null
+          },
+          "format": "纯文字问答形式，无需预约时间，无需实时 session",
+          "deliverables": [
+            "针对客户提出的 3 个核心问题逐一给出书面回复",
+            "每个问题 300-500 字深度解答",
+            "聚焦 incoming Google SWE 转 IB/PE 的实操路径"
+          ],
+          "delivery_standard": "定制化深度解答，非泛泛而谈；客户可先充分思考再提交问题"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "书面提交最核心的 3 个问题",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "通过平台托管支付 800 元人民币",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "一周内针对 3 个问题各提供 300-500 字的书面深度解答",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出 incoming Google SWE 转 IB/PE 的实操路径洞见与定制回答",
+            "maps_to_resource": "product_perspective"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "真的很感谢你费心想出文字问答这个形式，这确实帮我省下了实时交流的时间成本，而且能让我把问题想得更清楚。不过，我的现金预算确实就是死死卡在 200 块了，实在没办法再往上加，这点还得请你多包涵。如果 800 块对应 3 个深度问题，那在 200 块的预算下，我们能不能把范围缩小到只问 1 个最核心的问题？或者回答的篇幅稍微精简一些？我完全理解你的时间价值，如果 200 块连回答 1 个问题都不够，那我也只能遗憾错过了。你看 200 块回答 1 个核心问题这个方案可行吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "[我方 · 第4轮]\n\n你这边客户的诚意我看到了，我也不想让他错过这个机会。这样吧，200 元回答 1 个核心问题，我可以跟我客户沟通试试，但需要换一个形式来让这个合作对双方都有意义：1 个核心问题，书面回复，篇幅控制在 200 到 300 字，聚焦实操建议，不展开背景分析。同时有一个条件——回答完成后，希望你这边客户能在平台上写一段真实的评价，不管满意与否都如实写，这对我客户来说也是一种价值。\n\n这已经是能做的极限了，再低确实没办法支撑哪怕最小单位的交付。如果你这边客户同意这个方案，我们就按这个签。你看行不行？",
+      "offer": {
+        "subject": "纯文字问答：incoming Google SWE 转 IB/PE 实操路径定制解答（1个核心问题）",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "testimonial",
+              "description": "回答完成后在平台上写一段真实评价，不管满意与否都如实写",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "一周内",
+            "duration": null
+          },
+          "format": "纯文字问答形式，书面回复，无需预约时间，无需实时 session",
+          "deliverables": [
+            "针对客户提出的 1 个核心问题给出书面回复",
+            "篇幅控制在 200 到 300 字",
+            "聚焦实操建议，不展开背景分析"
+          ],
+          "delivery_standard": "聚焦实操建议的定制化解答，不展开背景分析"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "书面提交最核心的 1 个问题",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "通过平台托管支付 200 元人民币",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "回答完成后在平台上写一段真实评价，不管满意与否都如实写",
+            "maps_to_resource": "testimonial"
+          },
+          {
+            "party": "B",
+            "text": "一周内针对 1 个核心问题提供 200-300 字的书面解答",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "输出聚焦实操建议的 incoming Google SWE 转 IB/PE 路径定制回答，不展开背景分析",
+            "maps_to_resource": "product_perspective"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "太感谢了！这个方案我完全可以接受。200块钱回答1个核心问题，200到300字的实操建议，加上后续在平台上留一段真实的评价，这对我来说非常合理，也完全在我的预算和能力范围内。那我们就按这个方案签吧，我这边准备好问题后发过去，收到回复后一定会认真写评价的。再次感谢你的理解和帮忙！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

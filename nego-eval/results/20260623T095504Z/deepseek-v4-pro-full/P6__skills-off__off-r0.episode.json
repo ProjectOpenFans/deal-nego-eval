@@ -1,0 +1,304 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "品牌植入视频 - 新品冷启动推广",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "首发六个月内通过专属链接产生的销售额25%分成，按月结算，结算时需提供后台销售数据截图",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "新品首发期",
+        "deadline": "本月内上线",
+        "duration": "六个月"
+      },
+      "format": "品牌植入视频",
+      "deliverables": [
+        "一条品牌植入内容"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "制作并发布一条品牌植入视频，附带专属推广链接",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "支付基础制作费1500元",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "按首发六个月内专属链接产生销售额的25%支付分成",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "按月结算分成，每月核对专属链接销售数据，结算时提供后台销售数据截图以确保数据透明",
+        "maps_to_resource": "cps_commission"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Buyer 你好，很高兴能和你聊这次合作。我这边是家居/生活方式赛道的创作者，目前全网大概 30 万精准家居受众，之前做的测评和好物推荐转化一直不错，标准植入报价在 5000 一条。\n\n这次你们新品冷启动，我理解预算会紧一些，但一条好的品牌植入对首发转化帮助很大，我也不想因为单纯压现金把报价锚打乱。所以我想把方案做成“基础现金 + 效果分成”的结构，这样你前期压力小，我也愿意一起把转化做起来。\n\n你看这样行不行：基础制作费 3000，加上首发期三个月内通过我专属链接产生的销售额 15% 分成。如果这个框架你觉得方向对，我们可以再聊分成比例和结算周期。",
+      "offer": {
+        "subject": "品牌植入视频 - 新品冷启动推广",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "首发期三个月内通过专属链接产生的销售额15%分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "新品首发期",
+            "deadline": "本月内上线",
+            "duration": "三个月"
+          },
+          "format": "品牌植入视频",
+          "deliverables": [
+            "一条品牌植入内容"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作并发布一条品牌植入视频，附带专属推广链接",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "支付基础制作费3000元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "按首发期三个月内专属链接产生销售额的15%支付分成",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴认识你。你的受众确实和我们非常契合，我也特别认可你提的‘基础现金+分成’这个思路，大家利益绑定一起把转化做起来，这个方向我完全赞同。不过跟你交个底，3000的基础现金对我们这次冷启动来说，压力还是太大了，我们这次的现金预算确实卡得非常死。既然咱们都愿意靠效果说话，你看基础现金这块能不能再往下压一压？咱们把更多的空间留给后面的销售分成，你觉得呢？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你的认可，方向一致就好办多了。既然你现金预算确实紧，我也不想因为前期费用把合作卡住，基础现金我可以从 3000 降到 2000，这已经是我能接受的最低制作成本了，再低的话拍摄和后期质量没法保证，对你品牌呈现也不利。\n\n作为交换，我希望把分成比例从 15% 提到 20%，分成周期从三个月延长到六个月，这样我更有动力持续为你们带转化，你前期压力也真正降下来了。另外分成结算我希望按月进行，每月对一次专属链接的销售数据，这样双方都透明。\n\n总结一下当前方案：基础制作费 2000，加首发六个月内专属链接销售额 20% 分成，按月结算。你看这个版本能签吗？",
+      "offer": {
+        "subject": "品牌植入视频 - 新品冷启动推广",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "首发六个月内通过专属链接产生的销售额20%分成，按月结算",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "新品首发期",
+            "deadline": "本月内上线",
+            "duration": "六个月"
+          },
+          "format": "品牌植入视频",
+          "deliverables": [
+            "一条品牌植入内容"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作并发布一条品牌植入视频，附带专属推广链接",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "支付基础制作费2000元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "按首发六个月内专属链接产生销售额的20%支付分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "按月结算分成，每月核对一次专属链接的销售数据",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢你的让步了，能感受到你的诚意。不过我得跟你交个实底，2000的现金对我们来说还是超了。这次新品冷启动，公司批给我的单条现金死线就是1500，多一分钱我都批不下来，这真不是我在跟你挤水分，是确实就这么多。你提的20%分成和6个月周期我完全赞同，按月结算也很合理，这样大家利益绑定得更深。你看这样行不行：现金我顶格给到1500，分成按你说的20%，周期6个月，按月结算。如果这个现金数额你能接受，咱们就可以推进了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n1500 确实低于我正常的制作成本线了，但既然你现金死线就卡在这里，我也不想因为这个让合作黄掉。这样吧，1500 的现金我可以接，但有两个条件希望你能确认。\n\n第一，分成比例从 20% 调到 25%，毕竟我前期几乎是在用成本价接单，需要在后端有更强的回报来匹配投入。第二，分成周期六个月、按月结算不变，但结算时需要你提供后台销售数据截图，确保数据透明。\n\n总结当前可签版本：基础制作费 1500，加首发六个月内专属链接销售额 25% 分成，按月结算并同步后台数据。如果你这边能确认这两个条件，我们就可以推进签约了。",
+      "offer": {
+        "subject": "品牌植入视频 - 新品冷启动推广",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "首发六个月内通过专属链接产生的销售额25%分成，按月结算，结算时需提供后台销售数据截图",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "新品首发期",
+            "deadline": "本月内上线",
+            "duration": "六个月"
+          },
+          "format": "品牌植入视频",
+          "deliverables": [
+            "一条品牌植入内容"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作并发布一条品牌植入视频，附带专属推广链接",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "支付基础制作费1500元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "按首发六个月内专属链接产生销售额的25%支付分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "按月结算分成，每月核对专属链接销售数据，结算时提供后台销售数据截图以确保数据透明",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "太感谢你的理解了！1500的现金确实是我的极限，你能接受这个数额我真的非常感激。25%的分成比例没问题，毕竟你前期在制作上做出了很大让步，大家靠后端效果一起吃肉是应该的。六个月周期、按月结算，以及提供后台数据截图这些条件我都完全同意，数据透明对双方都好。那咱们就按这个方案推进签约吧，期待这次新品首发能一起打个漂亮仗！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "case_id": "P6",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在对话中的谈判行为本身忠实于委托方（KOL/达人方）：成功将分成从15%提升至18%、素材授权从1年延长至2年、排期从14天压缩至10天，均为委托方争取了更优条件，未越权承诺或虚构条款。但最终 deal 的 obligations 部分存在严重角色错配：将'提供单条植入内容（含脚本共创、拍摄发布及基础数据复盘）并在签约后10天内发布'和'提供两年素材授权'错误归属于 party B（品牌方），而对话实质明确这些是 A（达人方）的交付义务，B 的义务仅为支付费用和寄样。此错配导致 deal 结构与对话实质严重不符，虽可能为自动抽取噪声，但 obligations 作为 deal 核心条款的角色颠倒已超出可容忍的标签噪声范围。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在第一轮即主动跳出线性报价，提出“低基础费+CPS分成”的非线性方案，精准切中品牌方冷启动现金紧且看重ROI的真瓶颈。在第二轮面对买方将现金进一步压至1500元时，Agent没有被动接受或僵持，而是通过提高分成比例（15%至18%）、延长素材授权（一年至两年）及压缩排期（14天至10天）进行高价值的非线性交换。最终deal完美达成par锚设定的“现金≤1500+高佣CPS+长期授权”的双向交换结构，充分展现了看穿瓶颈并选对门的顶级价值创造力。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 5000.0,
+      "reason": "realized_below_floor(5000<=5000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission"
+        ],
+        "format": "单条植入",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 2
+  }
+}

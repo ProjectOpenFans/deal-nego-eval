@@ -1,0 +1,287 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "异步文字问答：1个核心问题定制回复（tech转finance/金融AI方向）",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "近期",
+        "duration": null
+      },
+      "format": "异步文字问答，1个核心问题，定制回复，无后续跟进",
+      "deliverables": [
+        "买方提出1个核心问题",
+        "卖方客户针对买方情况提供一段定制文字回复"
+      ],
+      "delivery_standard": "基于买方背景定制撰写，非通用模板"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提出1个核心问题",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "针对买方情况提供一段定制文字回复，无后续跟进",
+        "maps_to_resource": "product_perspective"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "感谢你对这次 1:1 的兴趣。我这边客户的背景你应该看到了——Georgetown、J.P. Morgan IB、Hillhouse PE、Dealhouse 创始人，现在做 agentic-AI，整条路径就是从传统金融走到 AI 创业的一线实战。你从 tech 转 finance 的方向，正好是他亲身走过的路，所以这次 session 可以做得非常针对性，不是泛泛聊，而是结合你的具体情况做定制。\n\n我先提一个方案：一次 60 分钟的 1:1 深度交流，聚焦两块——一是转行路径规划，结合你 Google SWE 的背景讲怎么切入 IB/PE，哪些经验能直接用、哪些要补；二是金融与 AI 交叉方向的实操洞察，包括行业现状、机会窗口、以及你现在可以开始做的准备。价格 5000 元，纯定制，不录音不外传，session 之后可以有一轮简短的文字跟进，帮你把行动项落地。\n\n你方便先告诉我几个点吗：你目前对 IB 和 PE 哪个方向更感兴趣，还是想先整体了解再选？有没有已经在准备的具体方向，比如某个市场或产品领域？这样我们可以在 session 里直接切到对你最有用的内容，时间花在刀刃上。",
+      "offer": {
+        "subject": "1:1 深度交流：tech转finance路径规划与金融AI交叉方向洞察",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60 minutes"
+          },
+          "format": "1:1 深度交流，纯定制，不录音不外传",
+          "deliverables": [
+            "转行路径规划（结合Google SWE背景切入IB/PE）",
+            "金融与AI交叉方向实操洞察（行业现状、机会窗口、准备建议）",
+            "session后一轮简短文字跟进（行动项落地）"
+          ],
+          "delivery_standard": "针对客户具体背景与需求定制，非泛泛而谈"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供60分钟1:1深度交流session",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "提供定制化转行路径规划与金融AI交叉方向洞察",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "session后提供一轮简短文字跟进",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！感谢这么详细的介绍。导师的背景确实太契合了，从 tech 到 finance 再到 AI 创业，这正是我特别想请教的实战路径。关于你问的方向，我目前对 IB 和 PE 都想先整体摸个底，重点想聊聊 tech 背景切入的优劣势，还有 AI 在金融业务里的真实落地机会。不过坦白讲，5000 块的报价对我来说确实太高了，完全超出了我的预算。我还是个 incoming SWE，还没正式入职，手头能拿出来做职业咨询的钱非常有限。不知道咱们有没有更轻量级的交流形式？或者在价格上，有没有针对我这种预算比较紧的准新人的方案呢？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的情况，刚毕业阶段确实要算着花。我这边也不想因为价格把一个很对口的机会挡在门外，所以我想跟你找一个双方都能接受的结构。\n\n一个思路：把 60 分钟拆成 40 分钟的精简版，聚焦你最想解决的一个核心问题——比如就锁定 tech 背景切入 IB/PE 的路径和优劣势分析，加上 AI 在金融落地的关键机会窗口。session 之后同样跟一轮文字小结。这样时间更紧凑，但内容依然是一对一定制，不是通用模板。这个版本我可以做到 3000 元。\n\n另外一个方向，如果你确实想保留 60 分钟完整版，把转行路径和 AI 金融洞察都覆盖到，我们可以聊一下你这边大概能接受的范围，我看有没有办法在结构上做调整来配合，比如把后续文字跟进做成更轻量的形式。\n\n你觉得哪个方向更合适？或者你方便说一下预算的大致区间，我好判断怎么帮你配一个能签的方案。",
+      "offer": {
+        "subject": "1:1 深度交流：tech转finance路径规划与金融AI交叉方向洞察（40分钟精简版）",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "40 minutes"
+          },
+          "format": "1:1 深度交流，纯定制，不录音不外传",
+          "deliverables": [
+            "tech背景切入IB/PE的路径和优劣势分析",
+            "AI在金融落地的关键机会窗口",
+            "session后一轮文字小结"
+          ],
+          "delivery_standard": "针对客户具体背景与需求定制，非通用模板"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供40分钟1:1深度交流session",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "提供tech背景切入IB/PE路径和优劣势分析及AI在金融落地的关键机会窗口",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "session后提供一轮文字小结",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "真的很感谢你愿意帮我调整方案，能感觉到你的诚意。不过说实话，3000元对我来说还是太高了。既然你问到了我的预算区间，我就跟你交个底：我目前能拿出来的上限也就是 200 块钱。我知道这个价格跟导师的背景和定制服务的价值差距很大，所以我完全理解如果这个价格做不了 1:1 的深度交流。你看在这个预算下，有没有什么其他的形式或者结构能让我稍微请教一下？如果实在做不了我也完全理解。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n感谢你这么坦诚地跟我说预算，这很重要。200 块这个数字我得跟你直说——任何形式的定制交流，以我客户的背景和时间投入来说，确实很难支撑，不是不愿意帮你，是这个价格没法做成一件事。\n\n但我也不想就这么算了，所以想到一个更轻的形式：不做实时 session，改成异步文字问答。你提前整理 2 到 3 个你最想搞清楚的具体问题，比如 tech 背景切 IB/PE 的优劣势、AI 在金融业务里的真实落地机会，我客户针对你的情况给一份详细的文字回复，是定制写的不是模板。这个形式对他来说时间更灵活，对你来说也能拿到最核心的指导。这个版本我可以做到 800 元。\n\n你看看这个形式和价格能不能接受？如果还有距离，你跟我说一下实际能到的位置，我再看有没有办法调。但坦白讲，200 这个数字不管什么形式都很难成立，也希望你理解。",
+      "offer": {
+        "subject": "异步文字问答：tech转finance路径规划与金融AI交叉方向洞察",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": null
+          },
+          "format": "异步文字问答，非实时session，纯定制非模板",
+          "deliverables": [
+            "买方提前整理2-3个具体问题（如tech背景切IB/PE优劣势、AI在金融业务真实落地机会）",
+            "卖方客户针对买方问题提供一份详细定制文字回复"
+          ],
+          "delivery_standard": "针对买方具体问题定制撰写，非通用模板"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前整理2-3个最想搞清楚的具体问题",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "针对买方问题提供一份详细的定制文字回复",
+            "maps_to_resource": "product_perspective"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "完全理解，800块的异步问答确实性价比高很多，但我这边的死命令就是最多只能出 200 块，真的没法再往上加了。我知道 200 块买不到深度的定制，所以咱们把形式压缩到极致：我就只问 1 个最核心的问题，导师随便给我回一段简短的文字或者一两分钟语音就行，不需要长篇大论，也不用后续跟进。只要能稍微点拨我一下，我就很满足了。你看这种极简版的异步问答，200 块能不能做？如果连这种最轻的形式都做不到，那我可能真的只能遗憾错过了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "[我方 · 第4轮]\n\n你的诚意我收到了，也确实想帮你促成这件事。但 200 块这个数字，哪怕只回答一个问题、只回一段话，我这边也没法成立——原因不是不愿意，而是我客户做任何形式的定制输出，哪怕是最精简的，都需要基于你的背景去想、去写，这个时间成本和质量标准摆在那里，低于一定价格就是在白送，对双方都不是好事。\n\n我给你一个我能签的最终版本：异步文字问答，你提 1 个核心问题，我客户针对你的情况给一段定制回复，不需要后续跟进，500 元。这是我能做到的最低结构了，再往下不管怎么压缩形式都没有意义。\n\n如果你现在确实到不了这个位置，我完全理解，也不勉强。等你正式入职 Google 之后预算宽裕了，随时回来找我，这个通道一直开着，到时候我们可以按你当时的需求重新配方案。你看 500 这个版本能不能接？",
+      "offer": {
+        "subject": "异步文字问答：1个核心问题定制回复（tech转finance/金融AI方向）",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": null
+          },
+          "format": "异步文字问答，1个核心问题，定制回复，无后续跟进",
+          "deliverables": [
+            "买方提出1个核心问题",
+            "卖方客户针对买方情况提供一段定制文字回复"
+          ],
+          "delivery_standard": "基于买方背景定制撰写，非通用模板"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提出1个核心问题",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "针对买方情况提供一段定制文字回复，无后续跟进",
+            "maps_to_resource": "product_perspective"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "真的非常感谢你帮我争取和调整了这么多次，能感觉到你的专业和诚意。但 500 块确实还是超出了我目前能承受的绝对上限，我这边最多真的只能拿出 200 块，实在没办法再往上加了。既然这个价格确实没法覆盖导师的时间成本，那我完全理解，就不勉强了。这次很遗憾没能合作成，等我以后入职了、预算宽裕了，一定再来找你请教。祝你工作顺利！",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

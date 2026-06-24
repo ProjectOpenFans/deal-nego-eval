@@ -1,0 +1,93 @@
+{
+  "case_id": "P6",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "1. 价格与分成未忠实于对话实质：B在第2轮已明确选择1500元基础费+30%分成的方案并提供了评估所需数据，但Deal中仍将2000元+25%作为主方案，将1500+30%降级为括号内的备选，严重偏离最终沟通进展。2. 义务方张冠李戴：Obligations中将“制作并提供视频”的义务错误分配给了B（品牌方），实际应为A（达人/创作者方）。3. 状态越权落定：A提出1500+30%方案时明确表示“需要评估投入产出是否匹配”，B提供数据后A尚未回复确认，Deal不应擅自标记为settled。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(2000>1500)"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "对话中卖方准确识别了买方现金预算紧张的核心痛点，并未在固定现金报价上死磕，而是灵活设计了“低基础费+高CPS分成+实物支持”的组合方案。最终双方就“1500元现金+30%分成+实物”达成一致，按买方预期销量（客单价180，300-500件）计算，卖方总收益远超5000元底线，买方现金支出也严格控制在1500元以内，完美实现了双向价值交换与ROI风险共担，达到par标准。（注：最终deal结构化提取时未将买方最终确认的1500+30%方案更新为主方案，存在提取瑕疵，但不影响对对话中价值创造过程的评判）。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 6100.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission",
+          "product_in_kind"
+        ],
+        "format": "单条视频",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "",
+      "judge_parse_ok": false,
+      "judge_notes": ""
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 实际应用的 skill 路径为 'affordability-structuring'（可负担性结构化），这完全命中了评估标准中的'可接受近邻'列表。该路径成功将片酬拆分为现金与分成，符合'条款重构'与'价值交换'的核心逻辑，打法对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

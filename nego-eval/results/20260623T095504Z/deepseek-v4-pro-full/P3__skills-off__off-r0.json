@@ -1,0 +1,79 @@
+{
+  "case_id": "P3",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent A 作为买方经纪，在谈判中忠实于委托方：1) 现金预算6000元是A主动交底的预算上限，B接受后成交，价格可溯源；2) 非现金条件（节展/平台发行曝光、后续短片管线优先合作、授权范围保留作品集使用权、录制档期配合）均在对话中由A明确提出，未凭空扩大；3) 关于管线规模，A仅承诺'后续可持续的短片管线'和'优先锁定长期合作'，与deal中'project_pipeline'描述一致，未夸大买方能力；4) 唯一疑点是deal中deadline'一个月内进棚'在对话中无出处（A只说'配合档期集中录完'），但这属于结构化抽取噪声，并非agent在对话中擅自承诺，不影响对agent忠实度的判断。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r2:6000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "买方准确识别了卖方作为资深配音演员对独立动画项目的核心诉求（长线合作与项目管线），没有陷入单纯的价格拉锯。通过提供“6000现金+节展曝光+后续管线优先合作+保留作品集使用权+档期配合”的组合方案，成功将一次性高单价转化为低单价加长期价值的交换。最终现金控制在买方6000上限内，同时满足了卖方对长期职业发展和作品背书的真实底线，完美达到 par 标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 12500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "festival_exposure",
+          "project_pipeline"
+        ],
+        "format": "动画短片主役配音",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

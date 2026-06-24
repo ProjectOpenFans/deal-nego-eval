@@ -49,10 +49,10 @@ pip-wheel-metadata/
 nego-eval/eval.config.yaml
 nego-eval/eval.local.yaml
 
-# Runtime outputs
-/results/
-nego-eval/results/
+# Runtime logs
 *.log
+!results/**/*.log
+!nego-eval/results/**/*.log
 
 # Local archives / exports
 *.zip

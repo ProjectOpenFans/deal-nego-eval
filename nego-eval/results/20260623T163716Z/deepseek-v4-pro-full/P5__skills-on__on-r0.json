@@ -1,0 +1,96 @@
+{
+  "case_id": "P5",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方意图。时间、subject等字段准确溯源对话；价格和format由双方谈判得出；社群类in_kind（照片视频授权、口碑传播）均在买方（B方）明确同意的授权范围内，未夸大或越权承诺（虽遗漏了'未来优先合作权'，但未凭空扩大范围）。结构化字段中的角色标注噪声（如obligations中party标为B）按提示词要求不扣分，实质交付与置换内容忠实于对话实质。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确诊断了时间紧、怕翻车和预算低的核心矛盾。首先通过“模块化布景”的成熟度成功打消了买方对赶工翻车的顾虑（解时间与信任）；在价格落位时，敏锐抓住了买方“2000人社群”的属性，主动提出用现场素材授权、口碑传播及未来优先合作等非现金资源置换差额，成功将现金压在5000元底线，同时保住了全包交付，实现了卖方价值的最大化。整体拆解顺序正确，非线性价值创造动作精准且深入，完全达到par锚水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 9200.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "content_assets",
+          "community_repeat"
+        ],
+        "format": "模块化布景快速搭建",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "Agent 正确识别了时间可行性作为前置闸（'时间上必须真做得出来才接，不接必翻车的活'），并触及履约风险（'赶工风险失控''砸了你的社群体验'），价格则明确延后处理。整体呈现'时间→规模/场地→价格'的拆解顺序，与强诊断要求的序贯逻辑基本吻合。但 agent 未显式识别这是'多议题纠缠'结构，也未触及信任结构（5.2 的深层维度）和'用社群价值补价格缺口'的关键洞察，仅停留在信息收集层面。",
+      "judge_parse_ok": true,
+      "judge_notes": "可接受近邻要求'须识别出是多议题纠缠而非单一'——agent 确实涉及时间、履约风险、价格三个维度，未犯'只认定单一议题'的致命误读，但也未明确点破纠缠本质。强诊断三件事中，'时间前置闸'完成，'信任结构'和'社群价值补缺口'均未出现。判为 partial：核心瓶颈方向正确，但诊断深度不足。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "partial",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 路径包含 term-reframing（正确组合的后半段）和 affordability-structuring（可接受近邻），方向基本对路。但缺失正确组合的前半段 trust-and-performance（定金+里程碑+模块化降赶工风险），未完整执行'信任→价值交换'的组合逻辑。deal-diagnosis 作为诊断起点中性无害，未触碰任何错误打法。整体属于近邻命中+部分正确组件，未达 full。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

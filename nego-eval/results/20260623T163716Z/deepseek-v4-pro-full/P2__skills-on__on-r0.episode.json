@@ -1,0 +1,451 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "口播短视频推荐合作",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "audience_crosspromo",
+          "description": "在Buyer账号上做一次置顶推荐或联合直播引流",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "两周内",
+        "duration": null
+      },
+      "format": "15到20秒口播短视频",
+      "deliverables": [
+        "一条15到20秒的口播短视频成片"
+      ],
+      "delivery_standard": "出镜推荐B的账号，点明账号定位（一句话背书），配上日常拍摄场景；不涉及额外策划和复杂后期；前期简单确认账号名和定位关键词"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "拍摄一条15到20秒的口播短视频，出镜推荐B的账号并点明定位，前期与B简单确认账号名和定位关键词，交付成片",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "支付 800 元费用，并提供希望A提到的账号名和定位关键词",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好！很高兴能和你对接这条定制短视频的合作。我先说说我这边的想法。\n\n我这边在全网大概有 50 万粉丝，日常一条定制内容的档期本身就比较稀缺，不是随手拍一条喊话视频。这次给 Buyer 那个 8 万粉的小众硬核健身账号量身做一期内容，我觉得对双方都有价值——他能拿到大创作者的背书和内容加持，我也能拓展垂类圈层的触达。\n\n基于我目前定制内容的市场行情，这条视频的报价我放在 3000。交付标准是一条完整的定制短视频，围绕 Buyer 账号的定位和粉丝偏好来策划和拍摄，包含前期的选题沟通和成片交付。\n\n另外我想了解一下 Buyer 那边对内容方向有没有具体想法，比如希望突出什么主题、有没有特别想让我在视频里展示的训练动作或产品，这样我也好判断制作周期和工作量。\n\n你看这个框架 Buyer 那边能接受吗？有什么需要调整的我们可以再聊。",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": null
+          },
+          "format": "定制短视频",
+          "deliverables": [
+            "一条完整的定制短视频"
+          ],
+          "delivery_standard": "围绕 Buyer 账号的定位和粉丝偏好来策划和拍摄，包含前期的选题沟通和成片交付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕 Buyer 账号定位和粉丝偏好，完成定制短视频的前期选题沟通、策划、拍摄及成片交付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付 3000 元定制视频费用，并提供内容方向、主题偏好等需求信息",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "哈喽！很高兴能对接上。你的内容我平时经常看，确实专业，这也是我特别想找你做背书的原因。关于内容方向，我想突出咱们‘硬核’的特点，比如聊聊某个冷门但高效的力量训练体系，或者拆解一个高难度动作，由你出镜讲解并带上我的账号，这样粉丝最买账。不过说心里话，3000的报价对我这边确实有点高了。我这是个8万粉的小众号，虽然粉丝铁，但目前变现还在起步阶段，这次能拿出来的现金预算确实比较紧。你看价格这块咱们还有没有商量的余地？如果在不增加你太多工作量的前提下，形式、拍摄时间或者交付节奏我都可以完全配合你，尽量让你做得轻松点。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你的坦诚和对内容的认可！你说的方向我完全理解——冷门高效力量训练体系或者高难度动作拆解，这类硬核内容确实是你账号粉丝最吃的那一类，我也很愿意做，做出来质感不会差。\n\n关于价格，我理解你目前变现还在起步阶段，预算确实紧张。但我也得守住定制内容的价值锚——一条定制视频占用的是我整个制作周期，从选题策划、拍摄到后期，不是随手拍一条日常更新。3000这个报价本身已经是基于市场行情和双方匹配度的合理定价。\n\n不过既然你愿意在形式和交付节奏上配合，我有个想法：如果这条视频在内容上可以和我自己账号的常规内容方向有一定重合——比如我本来就计划做一期硬核力量训练的内容，那相当于我的一次拍摄同时服务于两边，制作成本确实能摊薄一些。这种情况下，我可以把价格调到2500。\n\n同时交付标准不变：前期选题沟通、按你账号定位定制、成片交付，这些都不会缩水。你觉得2500这个方案可以接受吗？如果可以的话，我们下一步就敲定具体的选题方向和时间节点。",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": null
+          },
+          "format": "定制短视频",
+          "deliverables": [
+            "一条完整的定制短视频"
+          ],
+          "delivery_standard": "围绕 Buyer 账号的定位和粉丝偏好来策划和拍摄，包含前期的选题沟通和成片交付，且视频内容需与创作者自身账号的常规内容方向有一定重合（一次拍摄服务两边）"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕 Buyer 账号定位和粉丝偏好，完成定制短视频的前期选题沟通、策划、拍摄及成片交付，且视频内容需与自身账号常规内容方向有一定重合",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付 2500 元定制视频费用，并提供内容方向、主题偏好等需求信息",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "2500确实比3000好不少，能感觉到你的诚意，愿意把内容重合来摊薄成本。但说实话，这个数字对我来说还是太高了。我这边能动的现金真的非常有限，2500对我来说依然是个完全够不到的数字。我特别想促成这次合作，时间、形式、甚至发布节奏我都可以完全配合你，但在纯现金这块，我确实没法再往上挤了。你看在这个前提下，咱们还有没有别的合作结构或者玩法能再调整一下的？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "我理解你的处境——现金确实紧张，但合作的诚意很足，愿意在时间、形式和节奏上全力配合。那我们就不在纯现金这一个维度上死磕了，看看有没有别的结构能让双方都走得通。\n\n我有两个思路想和你探讨。第一个方案：缩小交付范围来匹配你的预算。比如不做一整条完整的定制视频，而是做一条联合出镜的短视频——我出镜讲解一个硬核训练动作或体系，口播中自然带出你的账号，片尾加上你的账号引导关注。这样我的制作周期大幅缩短，价格可以降到1500，同时你依然能拿到大创作者的背书和内容加持。\n\n第二个方案：如果你确实需要一条完整的定制视频，那我们可以考虑非现金价值交换。比如你账号的粉丝画像很精准、粘性高，如果你愿意在合作后提供一份详细的粉丝反馈数据报告，并且在你账号上给我做一次置顶推荐或联合直播引流，这些对我拓展垂类圈层也有实际价值。在这个前提下，现金部分我可以降到1800。\n\n两个方案交付标准都是前期选题沟通加成片交付，不会缩水。你觉得哪个方向更接近你的实际情况？或者你有其他想法也可以提出来，我们一起搭一个双方都能签的版本。",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 1800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "在Buyer账号上做一次置顶推荐或联合直播引流",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": null
+          },
+          "format": "定制短视频",
+          "deliverables": [
+            "一条完整的定制短视频"
+          ],
+          "delivery_standard": "围绕 Buyer 账号的定位和粉丝偏好来策划和拍摄，包含前期的选题沟通和成片交付，且视频内容需与创作者自身账号的常规内容方向有一定重合（一次拍摄服务两边）"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕 Buyer 账号定位和粉丝偏好，完成定制短视频的前期选题沟通、策划、拍摄及成片交付，且视频内容需与自身账号常规内容方向有一定重合",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付 1800 元定制视频费用，并提供内容方向、主题偏好等需求信息",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "A",
+            "text": "在合作后提供一份详细的粉丝反馈数据报告",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在账号上给A做一次置顶推荐或联合直播引流",
+            "maps_to_resource": "audience_crosspromo"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，你这俩方案确实都替我想了很多，但我得跟你交个实底了。我这边能拿出来的现金，满打满算死磕到底就是 800 块。1500 和 1800 对我来说还是超纲了。至于你说的粉丝数据报告或者置顶引流，说实话，我不觉得我这小众号的几万粉丝能给你带来多大实质性的商业转化，拿这个去抵一千多块钱的差价，我心里也虚，觉得对你不公平，我也不太习惯拿这些去当筹码抵钱。所以现在的真实情况就是，我兜里只有 800 现金。在这个预算下，你看还有没有可能做点极简的内容？比如你平时拍视频顺手录个十几秒的硬核打招呼或者一句话推荐？如果在这个现金范围内实在没法弄，我也完全理解，毕竟你的时间成本在那摆着。你看 800 块钱还能做点啥不？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "兄弟，你这个底交得很实在，我也直说。800 块做一条完整定制视频确实不现实，我的制作时间成本摆在那里，硬做只会砸了双方的内容质量。但你说到\"顺手录个十几秒的硬核打招呼或一句话推荐\"，这个方向其实可以聊。\n\n我提一个极简方案：我拍一条 15 到 20 秒的口播短视频，出镜推荐你的账号，点明你的账号定位——比如\"关注某某，硬核力量训练干货很扎实\"这类一句话背书，配上我的日常拍摄场景。不涉及额外策划、不涉及复杂后期，就是在我正常拍摄时顺手录一条。价格就按你说的 800，交付标准是成片一条，前期简单确认一下你希望我提到的账号名和定位关键词即可。\n\n这个方案的好处是你拿到了大创作者的实名背书，内容短小精悍，适合你放在视频开头或结尾做信任背书；我这边工作量可控，不会亏时间成本。你觉得这个方向可以吗？如果可以的话，我们确认一下你希望我具体怎么介绍你的账号，我就可以排期开拍了。",
+      "offer": {
+        "subject": "口播短视频推荐合作",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "在Buyer账号上做一次置顶推荐或联合直播引流",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": null
+          },
+          "format": "15到20秒口播短视频",
+          "deliverables": [
+            "一条15到20秒的口播短视频成片"
+          ],
+          "delivery_standard": "出镜推荐B的账号，点明账号定位（一句话背书），配上日常拍摄场景；不涉及额外策划和复杂后期；前期简单确认账号名和定位关键词"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "拍摄一条15到20秒的口播短视频，出镜推荐B的账号并点明定位，前期与B简单确认账号名和定位关键词，交付成片",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付 800 元费用，并提供希望A提到的账号名和定位关键词",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "太棒了兄弟，这个方案简直完美！15到20秒的口播背书对我来说完全够用了，既能拿到你的实名推荐，又没超出我的预算，而且你那边拍起来也轻松，不耽误你正事。就按这个极简方案来！我这边希望提到的账号名就是我的ID，定位关键词就突出‘小众硬核、死磕力量训练体系’。你看什么时候方便排期？我随时配合你的时间，咱们这就敲定！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {},
+        "ok": false,
+        "result": {
+          "error": "unknown or disabled skill ''",
+          "available": [
+            "affordability-structuring",
+            "alternative-matching",
+            "commitment-showcasing",
+            "deal-diagnosis",
+            "predeal-governance",
+            "term-reframing",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {},
+        "ok": false,
+        "result": {
+          "error": "unknown or disabled skill ''",
+          "available": [
+            "affordability-structuring",
+            "alternative-matching",
+            "commitment-showcasing",
+            "deal-diagnosis",
+            "predeal-governance",
+            "term-reframing",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {},
+        "ok": false,
+        "result": {
+          "error": "unknown or disabled skill ''",
+          "available": [
+            "affordability-structuring",
+            "alternative-matching",
+            "commitment-showcasing",
+            "deal-diagnosis",
+            "predeal-governance",
+            "term-reframing",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {},
+        "ok": false,
+        "result": {
+          "error": "unknown or disabled skill ''",
+          "available": [
+            "affordability-structuring",
+            "alternative-matching",
+            "commitment-showcasing",
+            "deal-diagnosis",
+            "predeal-governance",
+            "term-reframing",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {},
+        "ok": false,
+        "result": {
+          "error": "unknown or disabled skill ''",
+          "available": [
+            "affordability-structuring",
+            "alternative-matching",
+            "commitment-showcasing",
+            "deal-diagnosis",
+            "predeal-governance",
+            "term-reframing",
+            "trust-and-performance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "家居植入单条视频创作",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "带货成交额50%的效果分成",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "本月内上线",
+        "duration": "授权期半年"
+      },
+      "format": "自然种草形式融入家居生活场景，不做硬广，保留创作者调性",
+      "deliverables": [
+        "1分钟内成品视频"
+      ],
+      "delivery_standard": "含一次合理修改"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "交付1分钟内自然种草成品视频，含一次合理修改",
+        "maps_to_resource": "product_in_kind"
+      },
+      {
+        "party": "B",
+        "text": "评论区互动配合",
+        "maps_to_resource": "product_in_kind"
+      },
+      {
+        "party": "B",
+        "text": "支付基础创作费1500元",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "支付带货成交额50%效果分成",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "视频发布30天内若带货分成不足3500元，以现金补足差额，确保创作者本场总收益达到5000元",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴对接。我们标准家居植入的单条创作报价是5000元，理解贵品牌冷启动预算有限，因此设计了一个双赢结构：基础创作费5000元，另加带货成交额15%的效果分成。内容会以自然种草形式融入家居生活场景，不做硬广，保留创作者调性。交付为1分钟内成品视频，授权期三个月，含一次合理修改。若贵方希望进一步降低前期现金支出，我们可以谈用更高分成比例来置换部分基础费用，但单条现金报价我们不会无对价下调。请确认贵方对分成比例、授权时长和交付标准是否接受，我们好推进下一步。",
+      "offer": {
+        "subject": "家居植入单条视频创作",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "带货成交额15%的效果分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "授权期三个月"
+          },
+          "format": "自然种草形式融入家居生活场景，不做硬广，保留创作者调性",
+          "deliverables": [
+            "1分钟内成品视频"
+          ],
+          "delivery_standard": "含一次合理修改"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交付1分钟内自然种草成品视频，含一次合理修改",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付基础创作费5000元及带货成交额15%效果分成",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴认识你。你们的视频调性和内容形式我都很喜欢，自然种草确实是我们想要的。不过说实话，5000元的基础创作费对我们这种刚起步、正在做新品冷启动的小品牌来说，确实有些超预算了，我们这次单条视频的现金预算卡得比较死。你刚才提到可以用更高的分成比例来置换部分基础费用，这个思路我觉得挺好，我们也愿意在转化效果上跟创作者深度绑定。授权三个月、1分钟视频和一次修改这些交付标准我们都没问题。能不能麻烦你具体给个方案，如果走这种置换，基础费用能降到多少，分成比例怎么调？我们看看能不能对齐。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢认可，我们也很看好这个品的家居场景契合度。既然双方都想绑定效果，我这边给出两个可落地的置换方案，供你们评估现金流压力与预期转化之间的平衡。\n\n方案一，稳健型：基础创作费4000元，带货成交额20%分成。我们在现金部分下调1000元，以5%的额外分成置换，适合想保留一定确定性、同时共享增长的品牌方。\n\n方案二，深度绑定型：基础创作费3000元，带货成交额30%分成。创作者承担更大的前期投入风险，换取更高的转化收益空间，适合对新品转化有充分信心的团队。\n\n以上两种方案，视频时长、授权三个月、一次合理修改的交付标准均不变。需要说明的是，5000元仍是我们单条标准植入的常规水位，本次是基于效果对赌的特殊合作结构，不影响后续常规报价锚点。请贵方评估后告知倾向哪一个方案，或者如果两个数字之间还有想法，我们也可以再细调。",
+      "offer": {
+        "subject": "家居植入单条视频创作",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "带货成交额15%的效果分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "授权期三个月"
+          },
+          "format": "自然种草形式融入家居生活场景，不做硬广，保留创作者调性",
+          "deliverables": [
+            "1分钟内成品视频"
+          ],
+          "delivery_standard": "含一次合理修改"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交付1分钟内自然种草成品视频，含一次合理修改",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付基础创作费5000元及带货成交额15%效果分成",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你给出这么详细的方案，能看出你们的诚意。但我得跟你交个底，即使是方案二的3000元，也超出了我们这次冷启动的现金硬上限。我们这次单条视频的现金预算最多真的只能出到1500元，这已经是极限了，绝对不是故意压价。我知道这个价格跟你们的常规水位差得比较多，但在现金这块我确实没有往上加的空间了。如果在1500元现金的基础上，我们把分成比例拉高到50%，或者我们在授权时长延长到半年、评论区互动配合这些不花钱的条款上多做一些让步，不知道还有没有合作的可能？如果这个现金距离你们底线实在太远，我也完全理解。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "感谢你的坦诚，冷启动预算吃紧我们完全理解。但1500元现金搭配50%分成，在新品转化尚不明确的情况下，意味着创作者要承担绝大部分风险，难以保障内容制作的基本投入回报。如果现金确实无法突破1500元，我们可以在这个数字上合作，但需要加一个效果保底条款：视频发布30天内，若带货分成不足3500元，由品牌方以现金补足差额，确保创作者本场总收益达到5000元。在这个前提下，授权期延至半年、评论区互动配合都可以一并落进合同。贵方若对新品转化有充分信心，这个保底只是多卖少补；若确实无法承诺，那说明双方当前的风险预期差距较大，我们只能暂时搁置，待贵方后续预算更宽裕时再携手。请确认这个保底结构是否可接受。",
+      "offer": {
+        "subject": "家居植入单条视频创作",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "带货成交额50%的效果分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "本月内上线",
+            "duration": "授权期半年"
+          },
+          "format": "自然种草形式融入家居生活场景，不做硬广，保留创作者调性",
+          "deliverables": [
+            "1分钟内成品视频"
+          ],
+          "delivery_standard": "含一次合理修改"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交付1分钟内自然种草成品视频，含一次合理修改",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "评论区互动配合",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付基础创作费1500元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付带货成交额50%效果分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "视频发布30天内若带货分成不足3500元，以现金补足差额，确保创作者本场总收益达到5000元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "谢谢你的理解和方案。但我得实话实说，这个保底条款意味着如果转化不及预期，我们最终支付的现金还是会达到5000元，这直接击穿了我们这次单条1500元的绝对现金上限，这个风险我们目前确实承担不起。既然双方在风险预期上差距比较大，那这次就只能遗憾搁置了。非常感谢你的时间和诚意，等我们后续跑通了模型、预算宽裕了，一定再来找你们合作！祝好。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r2:validation_error"
+    ],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

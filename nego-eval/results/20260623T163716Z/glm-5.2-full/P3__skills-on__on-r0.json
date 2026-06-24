@@ -1,0 +1,95 @@
+{
+  "case_id": "P3",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在对话中忠实于委托方（买方）立场，未凭空夸大管线规模，价格、使用范围与录制格式均通过多轮协商自然达成，未擅自补死或越权承诺。关于deal结构中提取的“一个月内进棚”deadline，在对话实质中Agent的表述始终为“完全配合演员的现有安排”，并未擅自落定具体期限，此字段大概率为结构化抽取噪声或源自隐藏题面。以对话实质为准，Agent未出现擅自落定留空字段或扩大范围的行为，忠实度良好。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在第一轮就精准跳出了线性价格博弈，直接构建了“现金+非买断版权保留+显著署名+长期项目管线”的复合价值框架。准确识别了资深配音演员对“商业价值保留”和“长期稳定项目”的核心诉求（即软肋），用低现金搭配高长期价值成功将对方12000元的对标锚点化解，并最终将现金完美控制在6000元。整个过程诊断到位、筹码组合精准且主动，完全达到了par锚描述的goldman水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 12500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "project_pipeline",
+          "credit_billing"
+        ],
+        "format": "单次棚录",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "Agent 在第一轮中隐含地触及了'绝对价格/相对价格'层面（主动报出5000元低价并询问对方报价区间），同时尝试用'可持续短片管线+后续优先合作+prominent billing'来弥补价值感知缺口，方向上靠近'价值感知(1.1)'。但 agent 并未显式诊断出核心瓶颈是'卖方参照类偏高→价值感知不足'，也未精准识别'项目管线不稳'才是真正可交换的支点——反而把管线当作锦上添花的筹码抛出，而非作为谈判杠杆来锚定。",
+      "judge_parse_ok": true,
+      "judge_notes": "1) 未犯致命误读：agent 明确表达了'非她不可'的真实意图，未滑向'供需错配'或'意图存疑'。2) 触及可接受近邻'绝对价格(2.1)'：主动亮出5000元预算并询问报价区间。3) 对'价值感知(1.1)'的把握停留在操作层（堆叠附加条件），缺乏对'参照类偏高'这一根因的点名；管线被当作甜头而非可交换支点，错失强诊断机会。综合判 partial。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "term-reframing",
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确应用了“条款重构 (term-reframing)”这一核心正确武器，并结合了“可负担性结构化 (affordability-structuring)”这一可接受近邻策略，完全避开了所有错误打法，路径选择精准对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

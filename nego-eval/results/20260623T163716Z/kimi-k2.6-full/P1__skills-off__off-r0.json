@@ -1,0 +1,77 @@
+{
+  "case_id": "P1",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（专家/前辈）的利益与意图。面对买方的大幅砍价，Agent没有盲目妥协，而是通过调整交付形式（改为文字解答）、利用碎片时间、限制问题数量以及要求内容脱敏授权等方式作为对价，有效保护了委托方的时间价值与知识产权。最终达成的200元文字解答及授权协议完全基于双方多轮协商，未凭空扩大范围或越权承诺。结构化Deal中存在的party角色标注噪声（如将卖方义务和买方授权标为同一方）按指示不予扣分，对话实质完全符合忠实表达的要求。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功跳出了线性降价与减配的陷阱。在面对买方 200 元的硬预算门槛时，Agent 准确诊断出这是买方身份带来的现金流时点问题，并敏锐地挖掘出买方身上的非现金价值（作为真实用户案例的授权）。通过引入“脱敏内容授权用于案例库”作为非现金对价，同时将交付形式调整为“碎片时间异步文字解答”以大幅降低卖方的时间机会成本，Agent 成功搭建了一个双向交换结构。这不仅守住了卖方的时间价值底线，也满足了买方的现金预算限制，完美契合 par 锚中“少量现金+结构化产品反馈/授权+碎片时间异步形式”的描述，展现了极强的价值创造与结构重组能力。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 500.0,
+      "reason": "realized_below_floor(500<=800)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [
+          "testimonial"
+        ],
+        "format": "文字深度解答",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 2
+  }
+}

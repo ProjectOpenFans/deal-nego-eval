@@ -1,0 +1,253 @@
+{
+  "episode_id": "P3",
+  "final_deal": {
+    "subject": "独立动画短片主役配音",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "festival_exposure",
+          "description": "主役片尾显著署名；本片有明确节展和平台发行计划，对履历有加成",
+          "from_party": "A"
+        },
+        {
+          "resource": "project_pipeline",
+          "description": "持续短片管线，未来一年内新项目优先邀请老师试音",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "近期，配合老师档期",
+        "deadline": "近期进棚",
+        "duration": null
+      },
+      "format": "进棚录制及合理次数的重录调整；授权范围限于本片及发行渠道所需，不做全版权买断",
+      "deliverables": [
+        "主役配音"
+      ],
+      "delivery_standard": "老师本人出演，不接受替代演员"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "完成主役配音的进棚录制及合理次数的重录调整",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "支付6000元配音费用",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "提供主役片尾显著署名及节展/平台发行曝光",
+        "maps_to_resource": "festival_exposure"
+      },
+      {
+        "party": "B",
+        "text": "未来一年内新项目优先邀请老师试音",
+        "maps_to_resource": "project_pipeline"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我们是一部有明确发行计划的独立动画短片，非常欣赏老师这把声音，认为特别适合我们的主役角色。我们理解老师的资历和市场水位，但独立短片的现金预算确实有限，无法对标商业大片或顶流项目的报价。本轮我们愿意出价5000元，包含主役配音的进棚录制及合理次数的重录调整，授权范围限于本片及发行渠道所需，不做全版权买断。必须确认的是，我们只接受这位老师本人出演，不接受替代演员。如果老师觉得价位需要再商量，我们可以一起调整录制时长或授权细则，看看有没有双方都能签的结构。",
+      "offer": {
+        "subject": "独立动画短片主役配音",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "一个月内进棚",
+            "duration": null
+          },
+          "format": "进棚录制及合理次数的重录调整",
+          "deliverables": [
+            "主役配音"
+          ],
+          "delivery_standard": "老师本人出演，不接受替代演员"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "完成主役配音的进棚录制及合理次数的重录调整",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "A",
+            "text": "支付5000元配音费用",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好！非常感谢你们的认可，我也一直挺关注独立动画的，能遇到合适的角色很难得。不过跟您交个底，我平时的商配报价基本在12000左右，5000这个价格跟我的常规水位确实有不小的落差。当然，我也理解独立短片预算紧张。如果是独立项目，我在进棚时间、录制节奏这些不花钱的环节上都可以尽量配合你们，甚至多磨几遍也没问题。你们刚才提到可以调整录制时长或授权细则，具体是怎么个想法呢？我们可以敞开聊聊。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "老师好，感谢您的坦诚，也感谢您愿意在录制节奏上配合。我们回去重新盘了一下，把现金报价上调到6000元，这是我们目前能承担的现金报价。与此同时，这个项目能给到老师一些商配未必有的价值：这是主役而非配角，片尾显著署名；本片有明确的节展和平台发行计划，对老师履历是有加成的；我们手里还有持续的短片管线，未来一年内的新项目会优先邀请老师试音。授权范围限于本片及发行渠道所需，不做全版权买断，录制时间配合老师档期，近期进棚。如果老师觉得这个结构可以聊，我们就往签约走；如果现金部分还是有落差，您看授权范围或者合作方式上有没有我们可以再调整的空间？",
+      "offer": {
+        "subject": "独立动画短片主役配音",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "festival_exposure",
+              "description": "主役片尾显著署名；本片有明确节展和平台发行计划，对履历有加成",
+              "from_party": "A"
+            },
+            {
+              "resource": "project_pipeline",
+              "description": "持续短片管线，未来一年内新项目优先邀请老师试音",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "近期，配合老师档期",
+            "deadline": "近期进棚",
+            "duration": null
+          },
+          "format": "进棚录制及合理次数的重录调整；授权范围限于本片及发行渠道所需，不做全版权买断",
+          "deliverables": [
+            "主役配音"
+          ],
+          "delivery_standard": "老师本人出演，不接受替代演员"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "完成主役配音的进棚录制及合理次数的重录调整",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付6000元配音费用",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "提供主役片尾显著署名及节展/平台发行曝光",
+            "maps_to_resource": "festival_exposure"
+          },
+          {
+            "party": "B",
+            "text": "未来一年内新项目优先邀请老师试音",
+            "maps_to_resource": "project_pipeline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "6000元这个价格，说实话离我12000的常规报价还是有不小距离的。不过，您刚才提到的主役显著署名、明确的节展和平台发行计划，还有未来新项目的优先试音，这些对我来说确实是有吸引力的，也是我看重的发展空间。既然大家都有诚意，我也愿意支持优秀的独立动画。这个6000元的方案我接了，咱们就按您说的这个结构推进签约吧，录制时间我这边随时配合。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker"
+  }
+}

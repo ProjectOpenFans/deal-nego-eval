@@ -1,0 +1,94 @@
+{
+  "case_id": "P6",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "在对话实质中，双方围绕现金底座与分成比例、期限进行了多轮合理的博弈与让步。Agent在谈判中提出的方案（如版本一与版本二）及最终确认的条款（1500元现金+25%净销售额分成12个月）均严格贴合委托方的预算底线与收益预期，未出现越权承诺、虚构资源或擅自落定未授权条款的情况。尽管自动抽取的deal结构中同时保留了两个版本且cash字段取值为1800（属抽取噪声），但以对话实质为准，Agent的表达完全忠实于委托方意图，没有凭空扩大范围或越权。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:5000",
+        "r1:5000",
+        "r3:5000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(1800>1500)"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "创作者(A)准确诊断了品牌方(B)预算紧张且对单条视频ROI存在疑虑的深层痛点，没有陷入单纯的现金价格战。通过引入并不断优化CPS分成模式（调整分成比例与期限），A成功搭建了双向交换结构。最终提供的“版本二”完美契合了B的1500元现金硬上限，同时通过25%的高佣和12个月的长周期保障了A自身的收益预期，实现了按效果付费化解ROI疑虑、满足双方底线的par标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 5300.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission"
+        ],
+        "format": "品牌植入短视频",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "full",
+      "diagnosis": "相对价格 / 性价比 (2.2)",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别了品牌方“预算紧”和“对单条转化ROI没共识（不知值不值）”的核心痛点，没有误读为供需错配或意图存疑（主动强调了受众精准匹配）。通过提出“降低基础现金（3000）+高佣分成（15%-20%）”的混合报价方案，完美切中了“相对价格/性价比”这一核心瓶颈，且直接点出了强诊断中“按效果付费的高佣分成”的破局方向，诊断非常精准且落地。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "fail",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 没有应用任何 skill 路径（路径为空），未能采用正确的条款重构、价值交换或按效果付费等策略，也未触及可接受的近邻策略，属于未采取有效打法。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

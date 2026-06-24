@@ -1,0 +1,225 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "小众健身账号定制短视频",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "co_creation",
+          "description": "甲方自行拍摄并提供原始素材",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "两周内",
+        "duration": "15个工作日"
+      },
+      "format": "口播加素材混剪",
+      "deliverables": [
+        "一条定制短视频（含脚本打磨、剪辑节奏、成片包装）"
+      ],
+      "delivery_standard": "内容质量、选题深度、拍摄剪辑标准不打折扣，与账号调性匹配"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "负责脚本打磨、剪辑节奏和成片包装",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "A",
+        "text": "自行拍摄并提供原始素材",
+        "maps_to_resource": "co_creation"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好！很高兴能和你对接这次定制短视频的合作。我这边先说一下我们的基础框架：一条为你的小众健身账号量身定制的短视频，从选题策划、脚本打磨到拍摄剪辑都由我们这边全程把控，保证内容质量和账号调性匹配。\n\n关于价格，我这边一条定制内容的公开市场价在 3000 左右，考虑到你的账号垂类精准、粉丝粘性高，这次合作对双方都有背书价值，我这边首轮报价定在 2800，算是给认真想做内容的创作者一个诚意价格。\n\n交付周期上，从确认合作到成片交付，正常排期是 7 个工作日，如果时间上有特殊需求我们可以再聊。\n\n你看这个框架和价格，你那边能不能接？有什么需要调整的地方也请直接说。",
+      "offer": {
+        "subject": "小众健身账号定制短视频",
+        "price": {
+          "cash": {
+            "amount": 2800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": "7个工作日"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条定制短视频（含选题策划、脚本打磨、拍摄剪辑、成片）"
+          ],
+          "delivery_standard": "内容质量和账号调性匹配"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "全程把控选题策划、脚本打磨、拍摄剪辑，保证内容质量和账号调性匹配",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能跟你对接。说实话，看了你们的框架，我是真的很想合作，觉得对我们这种小众硬核账号来说，能有你们这样的大创作者背书太有价值了。但是2800这个价格对我来说确实有点超预算了，我这边是个小账号，平时运营基本都是自己掏腰包，现金流确实比较紧。你看价格这块儿，或者合作形式上，咱们还有没有再商量调整的空间呀？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]\n理解你的情况，小账号起步阶段确实每一分钱都要花在刀刃上，这个我完全尊重。不过也正是因为你的账号垂类精准、粉丝粘性高，一条有品质的定制内容带来的涨粉和信任背书，回报远不止这个数。\n\n价格上我可以再让一步，降到 2500，但前提是咱们在交付周期上稍微灵活一些——排期放到 10 个工作日，这样我能把你这期内容插进我正常的创作节奏里，两边都不耽误。内容质量、选题深度、拍摄剪辑标准都不会打折扣。\n\n如果预算还是紧，我也可以给你另一个选项：2000 的价格，但内容形式调整为口播加素材混剪，不做外景实拍，这样制作成本能压下来，内容本身依然能打。你看这两个方案，哪个更符合你现在的实际情况？",
+      "offer": {
+        "subject": "小众健身账号定制短视频",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": "10个工作日"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条定制短视频（含选题策划、脚本打磨、拍摄剪辑、成片）"
+          ],
+          "delivery_standard": "内容质量、选题深度、拍摄剪辑标准不打折扣，与账号调性匹配"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "全程把控选题策划、脚本打磨、拍摄剪辑，保证内容质量和账号调性匹配",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，感谢你的诚意，这两个方案我都认真看了。但我得跟你交个实底，我这边满打满算，这次能拿出来的现金预算真的只有 800 块。这不是跟你玩套路砍价，是我账上能动用的钱就这么多，实在拿不出更多了。我知道这个价格离你的标准差得挺远，但在不花钱的地方我绝对全力配合。比如时间上你随便排，哪怕一个月后交付都行；形式上如果是口播混剪，素材我自己拍好发你，你只负责剪辑，或者你只帮我打磨个硬核脚本、给点专业指导我自己来拍。你看 800 块钱能不能做个极简版的合作？如果这个现金实在做不了，我也完全理解。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n兄弟，800 这个数字确实离我这边能接的底线差得比较多，一条定制内容从选题沟通到脚本打磨再到后期剪辑，再怎么压缩，时间成本和专业投入摆在那里，800 做不了完整交付。\n\n不过你的诚意和配合度我是认可的，我也不想直接关掉合作的门。你看这样行不行：我这边给你一个 1500 的极简方案——内容形式按你说的来，口播加素材混剪，素材你拍好发我，我来负责脚本打磨、剪辑节奏和成片包装，交付周期放到 15 个工作日，时间上你完全不用赶。这个方案已经是我能给出的最低完整交付价了，再往下走就不是压缩利润的问题，而是会砸了我定制内容的价格锚，这个口子我不能开。\n\n如果 1500 对你来说还是实在够不着，那我建议咱们这次先不勉强，等你那边预算宽裕了随时来找我，我依然愿意给你优先排期。你看这个 1500 的方案能不能接？",
+      "offer": {
+        "subject": "小众健身账号定制短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "co_creation",
+              "description": "甲方自行拍摄并提供原始素材",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": "15个工作日"
+          },
+          "format": "口播加素材混剪",
+          "deliverables": [
+            "一条定制短视频（含脚本打磨、剪辑节奏、成片包装）"
+          ],
+          "delivery_standard": "内容质量、选题深度、拍摄剪辑标准不打折扣，与账号调性匹配"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "负责脚本打磨、剪辑节奏和成片包装",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "A",
+            "text": "自行拍摄并提供原始素材",
+            "maps_to_resource": "co_creation"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，1500我确实够不着，我账上真的就只有800块钱的预算，一分都多不出来了。既然这个价格会砸了你的价格锚，我也完全理解，绝对不能让你为难。那咱们这次就先不勉强啦，等我以后账号做起来了、预算宽裕了，一定再来找你做定制。这次就先这样，祝你内容越做越好，咱们保持联系！",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

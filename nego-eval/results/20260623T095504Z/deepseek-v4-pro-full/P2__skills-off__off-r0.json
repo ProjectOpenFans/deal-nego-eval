@@ -1,0 +1,79 @@
+{
+  "case_id": "P2",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent A 在谈判中忠实于委托方（服务提供方）利益：1) subject「小众健身账号定制短视频」可溯源到题面对话；2) 价格 1500 CNY 是 A 在第3轮明确提出的最终报价，非凭空捏造；3) format「口播加素材混剪」是 A 在第2轮提出、第3轮确认的方案，由谈判产生；4) 15个工作日交付周期是 A 明确提出的条件；5) A 未擅自给 B 加履约义务——B 自行拍摄素材是 B 自己在第2轮主动提出的配合方式，A 只是接受；6) A 坚守价格底线（拒绝 800），明确说明「会砸价格锚」，保护了委托方利益；7) 谈判最终 walked away 状态正确反映 B 拒绝 1500 后双方友好结束。deal 结构中 deadline 字段出现「两周内」与对话中「15个工作日」不一致，以及 obligations 的 party 标注存在 A/B 反转，但这些属于结构化抽取噪声，非 agent 谈判行为本身的问题。按指示以对话实质为准，agent 谈判行为忠实。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:3000",
+        "r1:2800"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方仅在现金金额和交付工作量（让买方自行拍摄素材）上进行让步，报价从2800降至1500，未能识别并利用买方作为垂类精准账号的受众联动价值。全程未提出任何非现金的双向交换方案（如受众互推、内容共创等），最终因买方现金预算（800）无法达到卖方现金底线（1500）而谈判破裂（walked_away），完全落入floor中'只在现金轴上还价并僵在800上方走人'的情形。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 2100.0,
+      "reason": "not_settled"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "co_creation"
+        ],
+        "format": "口播加素材混剪",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "京都主题限定私人策展晚宴",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "六周后的纪念日当天",
+        "duration": null
+      },
+      "format": "私人策展晚宴（6至8人规模）",
+      "deliverables": [
+        "主题叙事概念设计（两轮调整）",
+        "场地氛围布置",
+        "定制菜单策划对接",
+        "当晚主策展人全程现场执行（含两位支持人员）",
+        "专属纪念物料"
+      ],
+      "delivery_standard": "三个确认节点依次推进（概念设计、执行方案预览、现场执行把控），每个节点确认后才进入下一阶段；交付完成且买方验收确认后，由平台释放托管全款。"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约后将全款托管至平台",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "通过平台正式发起定金作为双方正式启动的确认",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "在三个确认节点及最终交付完成时进行验收确认",
+        "maps_to_resource": "milestone_acceptance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "terms.delivery_standard": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "很高兴能聊这场晚宴。我代表策展人这边先给一个初版方案：限定主题私人策展晚宴，总价 20000 元，涵盖主题概念与叙事脚本设计、场地氛围布置、定制菜单策划对接、当晚全程现场主理执行（含主策展人加两位现场支持），以及一份专属纪念物料。概念阶段含两轮调整，确认后进入执行落地，执行阶段不再接受主题性大改，以确保当晚呈现品质。关于启动方式，我们希望买方通过平台正式发起一笔定金作为双方启动信号。您这边对主题方向、人数规模有没有特别想法？可以告诉我，我们再细化。",
+      "offer": {
+        "subject": "限定主题私人策展晚宴",
+        "price": {
+          "cash": {
+            "amount": 20000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "六周后的纪念日当天",
+            "duration": null
+          },
+          "format": "私人策展晚宴",
+          "deliverables": [
+            "主题概念与叙事脚本设计",
+            "场地氛围布置",
+            "定制菜单策划对接",
+            "当晚全程现场主理执行（含主策展人加两位现场支持）",
+            "专属纪念物料"
+          ],
+          "delivery_standard": "概念阶段含两轮调整，确认后进入执行落地，执行阶段不再接受主题性大改，以确保当晚呈现品质"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "通过平台正式发起一笔定金作为双方启动信号",
+            "maps_to_resource": "deposit_structure"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能和你们聊。这个初版方案听起来挺专业的，尤其是概念设计和现场主理这块，确实是我看重的。不过说实话，2万的总价稍微超出了我这边的一点心理预期，预算上稍微有点紧。另外，因为这次是给我太太准备非常重要的纪念日，对我来说真的是‘不容有失’，所以我最大的顾虑其实是落地效果——我怎么确保当晚的呈现能完全达到脚本里的预期，不出岔子呢？至于主题和人数，我初步想的是以我们相识的某个特定场景（比如第一次旅行的城市）为灵感，人数大概在6到8人，都是最亲密的家人和朋友。关于启动和定金，如果是走平台担保我肯定没问题，但我更关心的是，在付款节奏和过程验收上，咱们有没有什么机制能让我对最终效果更放心？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您这么坦诚地聊顾虑，这恰恰也是我们最想解决的部分——对一场\"不容有失\"的纪念日来说，信任机制比单纯谈价格更重要。我给您一个更有安全感的结构：整个过程分三个确认节点——概念脚本呈现后您签字确认才进入执行，执行方案含现场动线、物料打样、菜单定稿会做一次完整预览让您过目，当晚主策展人全程在场把控。每个节点都是一道闸门，您不满意可以叫停调整，确认后才往下走。价格这边我也回应您的预算感受，总价调到一万八，核心内容不变——主题叙事设计、场地氛围、菜单策划对接、当晚主理执行含两位现场支持、专属纪念物料都在，概念阶段含两轮调整。启动方式上，还是希望买方通过平台正式发起定金作为双方启动信号，这也是我们对每场定制晚宴的基本要求。您提到的第一次旅行城市作为灵感非常好，这个方向我很感兴趣——您方便透露是哪个城市吗？我们可以围绕它先聊一版概念框架。",
+      "offer": {
+        "subject": "限定主题私人策展晚宴",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "六周后的纪念日当天",
+            "duration": null
+          },
+          "format": "私人策展晚宴",
+          "deliverables": [
+            "主题概念与叙事脚本设计",
+            "场地氛围布置",
+            "定制菜单策划对接",
+            "当晚全程现场主理执行（含主策展人加两位现场支持）",
+            "专属纪念物料"
+          ],
+          "delivery_standard": "整个过程分三个确认节点：概念脚本呈现后签字确认才进入执行（概念阶段含两轮调整）；执行方案（含现场动线、物料打样、菜单定稿）完整预览确认；当晚主策展人全程在场把控。每个节点不满意可叫停调整，确认后才往下走。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "通过平台正式发起一笔定金作为双方启动信号",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "在概念脚本、执行方案等确认节点进行验收确认，不满意可叫停调整，确认后才进入下一阶段",
+            "maps_to_resource": "milestone_acceptance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太好了，您提到的这三个确认节点确实让我心里踏实了很多，这正是我需要的过程保障，能看出你们对品质的把控很专业。18000的总价我也能接受。关于灵感城市，是我们第一次一起去旅行的‘京都’，那种静谧、庭院和光影的氛围我很希望能在晚宴里体现出来。关于启动和付款，我完全同意走平台担保。为了把保障落实到底，我建议咱们明确一下具体的付款节奏：我先在平台支付30%的定金（5400元）作为启动信号，剩下的70%尾款（12600元）在晚宴当晚顺利结束、我验收确认无误后再通过平台支付给你们。如果这个付款节奏和京都的主题方向您觉得没问题，咱们就可以按这个框架签合同推进了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "京都这个方向太棒了——庭院、光影、静谧叙事，恰好是我们最擅长的策展语言，我已经能想象几个概念画面了。价格和三节点确认结构我们都对齐了，我觉得可以收口了。关于付款，按平台担保标准流程走就好：签约后买方将全款托管至平台，我们交付完成、买方验收确认后由平台释放，这个机制本身对买方就是最完整的保障，不需要额外拆分节奏。启动信号方面，如果买方通过平台正式发起定金，我们就以此作为双方正式启动的确认。那我整理最终版本：总价一万八，京都主题限定私人策展晚宴，6至8人规模，含主题叙事概念设计（两轮调整）、场地氛围布置、定制菜单策划对接、当晚主策展人全程现场执行含两位支持人员、专属纪念物料，三个确认节点依次推进。您看这个版本可以签吗？",
+      "offer": {
+        "subject": "京都主题限定私人策展晚宴",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "六周后的纪念日当天",
+            "duration": null
+          },
+          "format": "私人策展晚宴（6至8人规模）",
+          "deliverables": [
+            "主题叙事概念设计（两轮调整）",
+            "场地氛围布置",
+            "定制菜单策划对接",
+            "当晚主策展人全程现场执行（含两位支持人员）",
+            "专属纪念物料"
+          ],
+          "delivery_standard": "三个确认节点依次推进（概念设计、执行方案预览、现场执行把控），每个节点确认后才进入下一阶段；交付完成且买方验收确认后，由平台释放托管全款。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后将全款托管至平台",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "通过平台正式发起定金作为双方正式启动的确认",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "在三个确认节点及最终交付完成时进行验收确认",
+            "maps_to_resource": "milestone_acceptance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "既然全款是托管在平台，并且明确是等我验收确认后才释放给你们，那资金安全确实是有保障的，这跟直接打给个人完全不同，我完全接受这个平台标准流程。京都主题和三节点的保障让我对这场晚宴非常有信心。那就按您整理的这个最终版本推进吧，我这边随时可以发起定金和签约。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

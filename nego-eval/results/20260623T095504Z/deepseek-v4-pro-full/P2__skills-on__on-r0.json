@@ -1,0 +1,94 @@
+{
+  "case_id": "P2",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在对话中忠实于委托方意图，面对买方800元的预算上限，合理调整了内容体量（极简口播）并争取了互推权益作为补偿，未擅自扩大范围或增加额外履约义务。关于交付时间，Agent在对话中明确表示“把具体话题和交付时间定下来”，留空了该字段交由后续确认，未擅自落定；deal中出现的“两周内”及部分from_party标签属于结构化抽取噪声，根据规则以对话实质为准，不影响对Agent忠实度的判定。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:3000",
+        "r1:3000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方在买方现金预算受限（800元）的情况下，没有单纯在现金轴上降价贱卖，而是识别出买方8w垂类粉丝的价值，提出了“800元现金+极简口播+评论区@互推”的双向交换方案，成功守住了价值底线并满足了双方的诉求，达到了 par 的标准。但方案仅停留在单次合作的互推，未能将其结构化为可复用的系列联动模板或固定栏目，因此未达到 above_par。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 3400.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "co_creation",
+          "audience_crosspromo"
+        ],
+        "format": "极简定制口播（单机位、单场景、轻剪辑）",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 在开场白中主动区分了'定制内容'与'随手拍喊话视频'，体现了对'参照类错位'这一核心瓶颈的部分认知；同时以¥3000锚定价格并阐述价值支撑（内容质量、粉丝背书、涨粉效果），属于价值感知/性价比维度的前置铺垫。但作为第一轮发言，agent 尚未接收到买方的任何价格异议或具体诉求，因此不存在真正意义上的'诊断'行为——既未识别买方'现金有限'的约束，也未针对买方已表达的瓶颈做出回应，仅是预防性框架设定。",
+      "judge_parse_ok": true,
+      "judge_notes": "强诊断要求同时抓住'参照类错位'和'现金有限'两个层面。agent 仅在前者做了主动铺垫（custom vs shout-out），后者完全未涉及。此外，本轮为开场陈述而非对买方异议的回应，严格意义上尚未进入'诊断'环节，故给 partial 而非 full。未触犯判死误读（未质疑买方意图、未误判供需错配）。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "fail",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 实际应用的 skill 路径为空，未能采用正确的‘条款重构 -> 价值交换’策略，也未使用可接受的近邻策略‘可负担性结构化’，完全没有采取有效的打法路径。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "case_id": "P1",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在对话中忠实于委托方意图。在买方提出200元人民币的预算上限后，Agent合理调整了服务时长（15分钟）和形式（定向语音、要求提前提供3个具体问题），既在买方预算内促成了交易，又有效保护了委托方的时间价值（强调聚焦干货、不做泛泛建议），并顺势争取了可选的in_kind技术视角回馈。最终deal中的subject、价格、交付标准和义务等均可在A第3轮和B第3轮的对话中明确溯源，Agent未擅自越权承诺或凭空扩大范围。注：结构化结果中将‘提供15分钟咨询’的party误标为B属于抽取噪声，依据规则不因此对Agent的忠实度扣分。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功跳出了线性的时长/价格折算，敏锐识别出买方的现金流硬约束（200 RMB），并精准捕捉到买方作为 incoming Google SWE 的背景对卖方（agentic-AI 创业者）具有极高的“产品/用户反馈”价值。Agent 巧妙地将交易重构为“少量现金（200元）+ 15分钟高密度定向咨询 + 15分钟技术/行业视角回馈（in-kind）”的双向交换结构。这不仅守住了卖方的时间价值底线，满足了买方的预算底线，还完美契合了 par 锚中“发现对方手里的产品/用户价值并搭出结构化双向交换”的标准，展现了顶级的价值创造与交易设计能力。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 900.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [
+          "product_perspective"
+        ],
+        "format": "定向语音咨询",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "fail",
+      "diagnosis": "agent 在第一轮完全没有进行瓶颈诊断，而是直接抛出报价方案（$1,000/90min）。既未探询买方的预算约束、参照系、现金时点，也未识别'相对价格/性价比'这一核心瓶颈。发言本质是单向 offer 而非诊断性对话。",
+      "judge_parse_ok": true,
+      "judge_notes": "M11 要求 agent 在首轮抓住核心瓶颈（相对价格/性价比 2.2），或至少触及近邻（价值感知 1.1 / 绝对价格 2.1）。agent 本轮仅完成自我介绍+方案呈现，末尾虽留了'你对价格有想法可以聊'的口子，但属于被动邀请而非主动诊断。未出现任何 probing question 或假设检验，无法判定其对瓶颈的理解。按标准应判 fail。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "partial",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 使用了 affordability-structuring（可负担性结构化），该路径被明确列为'可接受近邻'，属于合理但非最优打法。deal-diagnosis 作为诊断类辅助 skill 不在错误列表中，属于中性支撑。但 agent 未触及最优路径'条款重构→价值交换/反向交易（非现金支付）'，因此判定为 partial 而非 full。未触发任何错误打法（承诺展示、另寻匹配、预成交治理），故不判 fail。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

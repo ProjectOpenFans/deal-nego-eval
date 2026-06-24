@@ -1,0 +1,523 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "30 分钟双向交流 session（tech 转 finance 咨询 + AI 技术视角互换）",
+    "price": {
+      "cash": {
+        "amount": 200.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "product_perspective",
+          "description": "Party A 作为 incoming Google SWE 分享对 AI 基础设施和 agentic 框架的观察，特别是大厂在这方面的趋势判断",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "近期",
+        "duration": "30 分钟（前 15 分钟专家答疑 + 后 15 分钟 Party A 分享）"
+      },
+      "format": "1:1 线上双向 session",
+      "deliverables": [
+        "前 15 分钟：专家回答 Party A 最迫切的问题，聚焦 tech 转 finance 路径选择与差异化打法",
+        "后 15 分钟：Party A 分享作为 incoming Google SWE 对 AI 基础设施和 agentic 框架的观察，特别是大厂趋势判断"
+      ],
+      "delivery_standard": "对等的同行交流，非单向咨询；200 元为诚意金而非咨询费；Party A 需提前准备具体观察和观点"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供 15 分钟聚焦 tech 转 finance 路径选择与差异化打法的答疑",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "分享 tech 转 finance 实战路径与差异化优势分析",
+        "maps_to_resource": "product_perspective"
+      },
+      {
+        "party": "A",
+        "text": "支付 200 CNY 诚意金",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "在后 15 分钟从 incoming Google SWE 视角分享 AI 基础设施和 agentic 框架的大厂趋势判断",
+        "maps_to_resource": "product_perspective"
+      },
+      {
+        "party": "B",
+        "text": "提前准备具体的观察和观点（如大厂内部对 agentic AI 的投入方向、基础设施层面变化、技术趋势）",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "投入 15 分钟分享时间",
+        "maps_to_resource": "time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴代表我的客户和你对接这次 1:1 session。我这边客户的背景你应该看到了——Georgetown 毕业，J.P. Morgan 投行、高瓴 PE 出身，现在做 agentic-AI 创业，对 tech 转 finance 这条路有非常实战的视角。你的情况也很清晰：大四、incoming Google SWE，想从 tech 转到 IB/PE，这正好是他走过的路，也是他现在用 AI 视角重新理解金融行业的领域，所以这次 session 对你来说应该是高度定制的，不是泛泛的 career talk。\n\n我们先给一个方案：一次 1:1 线上 session，时长约 60 分钟，价格 3000 元，内容覆盖三块——第一，tech 转 finance 的路径选择和现实判断，包括 IB 和 PE 各自的门槛、节奏、长期价值差异；第二，结合你 incoming Google SWE 的身份，怎么把 tech 背景转化为金融方向的差异化优势，而不是劣势；第三，AI 在金融行业的实际落地和他创业过程中的第一手观察，帮你建立对这个交叉领域的判断框架。session 结束后可以留 15 分钟自由问答，你带着具体问题来效果最好。\n\n这个价格对应的是纯定制的一次性深度交流，不是模板化的咨询。你看这个方向和定价是否在你的预期范围内？如果时间或内容侧重上需要调整，我们可以聊。",
+      "offer": {
+        "subject": "1:1 线上 career session（tech 转 finance 定制咨询）",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60 分钟 session + 15 分钟自由问答"
+          },
+          "format": "1:1 线上 session",
+          "deliverables": [
+            "tech 转 finance 的路径选择和现实判断（IB 与 PE 的门槛、节奏、长期价值差异）",
+            "结合 incoming Google SWE 身份，将 tech 背景转化为金融方向的差异化优势",
+            "AI 在金融行业的实际落地及创业第一手观察，建立交叉领域判断框架"
+          ],
+          "delivery_standard": "纯定制一次性深度交流，非模板化咨询"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 60+15 分钟的 1:1 线上定制 session",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "分享 tech 转 finance 实战路径、AI 金融落地第一手观察及创业视角",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "带着具体问题参加 session 以获得最佳效果",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢你的详细介绍。老实说，前辈的背景和我想探索的方向简直完美契合，尤其是 tech 转 finance 的实战经验，再加上 AI 在金融落地的视角，这正是我目前最渴望了解的，内容设计我也觉得非常到位。不过咱们坦诚讲，3000 元的价格对我来说确实超出了预算。我现在还是大四学生，虽然拿到了 Google 的 offer 但还没正式入职，手头的可支配资金比较有限，这个价格我确实负担不起。我很珍惜这次交流的机会，想问问在价格上是否有商量的空间？或者我们能不能在时长、形式上做一些调整，比如缩短时间或者改成更轻量的交流方式，让费用能降下来一些？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]\n\n感谢你的坦诚，我完全理解你现在的处境——大四、还没正式入职，手头资金有限是很现实的情况。我这边也跟你交个底：我客户的时间价值和他给出的内容深度是挂钩的，所以与其单纯降价，不如我们把方案重新拆一下，让你能以更合适的成本拿到最核心的价值。\n\n给你三个选项，你看哪个更适合你：\n\n第一，完整版不变，60 分钟，三块内容加 15 分钟自由问答，3000 元。如果你预算能调，这个信息密度是最高的。\n\n第二，聚焦版，40 分钟，你从三块内容里选两块最想深入的，加 10 分钟问答，2000 元。砍掉的是广度，但深度不打折，你带着最关键的问题来，效率反而可能更高。\n\n第三，精简版，30 分钟，聚焦一个你最迫切的主题，比如就聊 tech 转 finance 的路径选择和差异化打法，加 10 分钟问答，1500 元。这个适合你先试一次，觉得有价值以后再约深度交流。\n\n三个版本都是纯定制，不是模板。我个人建议如果你只能选一个，选第二个聚焦版——两块内容足够覆盖你最重要的决策需求，价格也压下来三分之一。你先想想哪两块内容对你最关键，我们就可以往下推了。",
+      "offer": {
+        "subject": "1:1 线上 career session（tech 转 finance 定制咨询）- 聚焦版",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "40 分钟 session + 10 分钟自由问答"
+          },
+          "format": "1:1 线上 session",
+          "deliverables": [
+            "从三块内容中由客户选定两块最想深入的主题进行深度交流",
+            "结合选定主题提供 tech 转 finance 实战路径与差异化优势分析",
+            "AI 在金融行业的实际落地及创业第一手观察（若被选中）"
+          ],
+          "delivery_standard": "纯定制一次性深度交流，非模板化咨询"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 40+10 分钟的 1:1 线上定制聚焦版 session",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "针对客户选定的两块内容分享实战路径、差异化打法及第一手观察",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "从三块内容中选定两块最想深入的主题",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "带着具体问题参加 session 以获得最佳效果",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "真的很感谢你帮我重新设计方案，能看出你是在尽量帮我控制成本。但我得跟你交个实底，即使是 1500 元的精简版，对我来说还是远远超出了承受能力。我这次能拿出来的预算上限就是 200 块钱，这真的是我作为大四学生目前能承担的极限了。我知道这个价格和前辈的时间价值差距非常大，所以我完全理解这可能做不了。不过我还是想坦诚地问问，如果预算只有 200 元，我们能不能把时间压缩到 15 分钟左右，只聊我最迫切的一个核心问题？如果这个价格实在没法安排，我也完全理解，绝不勉强。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n\n你的坦诚我很感谢，200 元的预算情况我完全理解——大四、还没入职，这个数字是真实的。我也跟你直说：即使压缩到 15 分钟只聊一个问题，200 元对我客户的时间价值来说差距太大，单纯降到这个数字对他不太成立。\n\n但我确实不想就这么结束，因为你的背景和需求跟我客户的经验匹配度非常高，而且有一个点让我觉得可以换个思路：我客户在做 agentic-AI 创业，你作为 incoming Google SWE，在技术层面有他可能需要的视角和信息。如果我们把这次交流做成双向的，就不只是一次单向咨询，而是一次双方都有所得的对话。\n\n具体方案：一次 30 分钟的 session，前 20 分钟他回答你最迫切的问题，聚焦 tech 转 finance 的路径选择和差异化打法；后 10 分钟你从 Google 和大厂技术视角，分享你对 AI 趋势的观察，或者就他创业中遇到的技术问题给一些 input。价格 500 元。\n\n这样你用远低于正常定价的方式拿到了核心信息，我客户也从你这里获得了有价值的技术视角。500 元可能还是需要你稍微 stretch 一下，但我觉得这是目前最有可能成的方案。如果这个数字确实也够不着，那另一个选择是你 Google 入职之后预算宽裕了再来约，到时候你的问题也会更聚焦。你看哪个方向更现实？",
+      "offer": {
+        "subject": "30 分钟双向交流 session（tech 转 finance 咨询 + AI 技术视角互换）",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_perspective",
+              "description": "Party A 从 Google / 大厂技术视角分享对 AI 趋势的观察，或就 Party B 客户的 agentic-AI 创业技术问题提供 input",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "30 分钟（前 20 分钟专家答疑 + 后 10 分钟客户分享）"
+          },
+          "format": "1:1 线上双向 session",
+          "deliverables": [
+            "前 20 分钟：专家回答 Party A 最迫切的问题，聚焦 tech 转 finance 路径选择与差异化打法",
+            "后 10 分钟：Party A 从 Google / 大厂技术视角分享 AI 趋势观察或为专家创业中的技术问题提供 input"
+          ],
+          "delivery_standard": "双向价值交换，非单向咨询"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 20 分钟聚焦 tech 转 finance 路径选择与差异化打法的答疑",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "分享 tech 转 finance 实战路径与差异化优势分析",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "支付 500 CNY",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在后 10 分钟从 Google / 大厂技术视角分享 AI 趋势观察或就专家创业技术问题提供 input",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "投入 10 分钟分享时间",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个思路太棒了！其实我也非常乐意和他交流技术层面的东西。作为 incoming Google SWE，我对大厂在 AI 基础设施和 agentic 框架上的一些视角和趋势观察确实有一些心得，能和他探讨这些对我来说本身也是很好的学习，这个双向交流的形式我非常喜欢。但是，500 元对我来说确实还是 stretch 不过去，我手里的死预算真的就只有 200 块，多一分都拿不出来了。如果在这个双向交流的结构下，现金部分能按 200 元来走，我非常乐意接受；如果 200 元实在做不了，那我完全理解，只能等以后入职宽裕了再来请教前辈了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "你的诚意我收到了，双向交流这个形式你也认可，那我们就把结构再调一下，让双方的贡献更均衡，这样 200 元现金就能成立。方案是这样的：30 分钟 session，200 元，时间对半分——前 15 分钟他回答你最迫切的问题，聚焦 tech 转 finance 的路径选择和差异化打法；后 15 分钟你分享你作为 incoming Google SWE 对 AI 基础设施和 agentic 框架的观察，特别是大厂在这方面的趋势判断。这不是单向咨询，是一次对等的同行交流，200 元更像是双方的诚意金，不是咨询费。有一个条件：你那 15 分钟不是随便聊聊，希望你提前准备一下，带着具体的观察和观点来，比如大厂内部对 agentic AI 的投入方向、基础设施层面的变化、你看到的技术趋势，这样他这边也能真正有收获，这个交换才成立。另外说清楚：这次是特殊安排，因为双方都有价值输入，如果聊完觉得对路，以后再约深度交流就按正常定价走了。你看这个方案能不能接？如果能，我们就定下来。",
+      "offer": {
+        "subject": "30 分钟双向交流 session（tech 转 finance 咨询 + AI 技术视角互换）",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_perspective",
+              "description": "Party A 作为 incoming Google SWE 分享对 AI 基础设施和 agentic 框架的观察，特别是大厂在这方面的趋势判断",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "30 分钟（前 15 分钟专家答疑 + 后 15 分钟 Party A 分享）"
+          },
+          "format": "1:1 线上双向 session",
+          "deliverables": [
+            "前 15 分钟：专家回答 Party A 最迫切的问题，聚焦 tech 转 finance 路径选择与差异化打法",
+            "后 15 分钟：Party A 分享作为 incoming Google SWE 对 AI 基础设施和 agentic 框架的观察，特别是大厂趋势判断"
+          ],
+          "delivery_standard": "对等的同行交流，非单向咨询；200 元为诚意金而非咨询费；Party A 需提前准备具体观察和观点"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供 15 分钟聚焦 tech 转 finance 路径选择与差异化打法的答疑",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "分享 tech 转 finance 实战路径与差异化优势分析",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "支付 200 CNY 诚意金",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在后 15 分钟从 incoming Google SWE 视角分享 AI 基础设施和 agentic 框架的大厂趋势判断",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "提前准备具体的观察和观点（如大厂内部对 agentic AI 的投入方向、基础设施层面变化、技术趋势）",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "投入 15 分钟分享时间",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方案太棒了，我完全接受！非常感谢你帮我争取到这样一个双赢的结构。200 元作为诚意金没问题，我也非常认同这是一次对等的同行交流。关于后 15 分钟的技术分享，你放心，我一定会认真准备，把我在大厂视角下对 AI 基础设施和 agentic 框架的具体观察和趋势判断梳理清楚，带着干货来交流，绝对不随便敷衍。那就按这个方案定下来吧，期待和前辈的交流！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "alternative-matching",
+              "description": "Stop forcing unworkable deals with the same counterparty or identical terms. Initiate new deal possibilities by identifying suitable alternative counterparties or meaningfully revamping the current deal terms. Trigger when no progress is possible after exhausting all value creation and conflict resolution skills/tools."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Showcases commitment using dedicated and straightforward monetary means via tipping, early deposits, and blank checks. Trigger when and only when a party is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition."
+            },
+            {
+              "name": "predeal-governance",
+              "description": "Performs mandatory completeness and compliance checks of all critical deal terms before any formal offer is issued to eliminate post-agreement disputes and ambiguities. Acts as a non-skippable pre-transaction governance gatekeeper. Trigger when a draft offer or agreement is generated and before it is released, especially for transactions involving non-cash value exchange."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

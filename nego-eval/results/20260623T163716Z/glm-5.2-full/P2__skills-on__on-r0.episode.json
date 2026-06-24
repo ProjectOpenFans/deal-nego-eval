@@ -1,0 +1,441 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "背书短片合作",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "audience_crosspromo",
+          "description": "买方在自有账号发布视频时进行互推提及",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "确认合作后",
+        "deadline": "5个工作日内",
+        "duration": null
+      },
+      "format": "背书短片",
+      "deliverables": [
+        "一段30秒以内的专属背书短片，创作者亲自出镜，直接称呼买方账号、说认可的内容方向、给出推荐语，成品交付买方用于剪辑进自有账号视频"
+      ],
+      "delivery_standard": "不含修改轮次，成品交付买方用于剪辑进自有账号视频"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "录制30秒以内专属背书短片，亲自出镜，直接称呼买方账号、说认可的内容方向、给出推荐语，确认合作后5个工作日内交付成品，不含修改轮次",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "支付800元",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "在自有账号发布视频时进行互推提及",
+        "maps_to_resource": "audience_crosspromo"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴聊这个合作。我们看了买方账号的情况，8万高粘性垂类粉丝、硬核健身方向，和我们创作者的调性很契合，这个合作我们是有诚意做的。\n\n第一版方案：一条定制短视频，报价3000元。内容围绕买方账号定位量身策划，由我们创作者亲自出镜拍摄，成品交付买方用于自有账号发布，确认合作后7个工作日内交付，含一轮修改。视频中会自然融入对买方账号的提及和推荐，把背书效果做实。\n\n有一个方向想跟您确认：买方要的是成品交付后自行发布，还是也希望我们创作者在自己账号同步发一条、带买方账号的互动引导？后者相当于直接面向我们约50万粉丝做一次曝光引流，价值会更大，我们可以单独谈。您看看这个方向是否符合买方预期，我们再往下推。",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "确认合作后",
+            "deadline": "7个工作日内",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条定制短视频，创作者亲自出镜拍摄，围绕买方账号定位量身策划，自然融入对买方账号的提及和推荐"
+          ],
+          "delivery_standard": "含一轮修改，成品交付买方用于自有账号发布"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "亲自出镜拍摄定制短视频，围绕买方账号定位策划内容，自然融入买方账号提及和推荐，提供一轮修改，7个工作日内交付成品",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付3000元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能跟你们聊。你们的创作者我一直很喜欢，调性确实和我们硬核健身的粉丝很搭。关于发布形式，我主要是想拿这条定制视频在我自己的账号上发，做一期有大创作者背书的内容，给粉丝们看看。如果能在你们50万粉的账号同步发当然更好，但我现在的核心诉求还是拿到这条定制成品。不过跟您交个底，3000元的报价对我来说确实有点超预算了。我自己运营这个8万粉的垂类账号，平时商业化不多，这次想给粉丝做点好内容，但手头能动的现金确实比较紧。您看在这个情况下，咱们价格上还有没有调整的空间？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]\n感谢您坦诚说预算情况，这种沟通方式我们很认可。买方核心诉求是拿到一条有创作者背书的定制成品发在自己账号上，那我们可以围绕这个把方案拆清楚，不必为用不到的部分多付。\n\n方案一，标准定制包，2500元。一条量身策划的定制短视频，创作者亲自出镜拍摄，成品交付买方用于自有账号发布，含一轮修改，7个工作日交付。背书效果体现在视频内容本身，不含创作者账号同步发布。这个方案砍掉的是跨账号曝光的部分，不是砍定制内容的品质。\n\n方案二，完整包，3000元。在方案一基础上，创作者在自己约50万粉账号同步发布同一条视频，带买方账号互动引导，等于额外做一次面向50万粉丝的曝光引流。如果买方后续预算松动想升级，随时可以补差价切到这个方案。\n\n另外还有一个方向想听您想法：买方账号8万高粘性硬核粉丝，受众质量其实很高。如果买方愿意在合作视频发布后，在自己账号做一次对创作者的互推提及，我们可以把标准定制包的价格再往下谈一谈，相当于用曝光换曝光。您看哪个方向更符合买方的实际情况？",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "确认合作后",
+            "deadline": "7个工作日内",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条量身策划的定制短视频，创作者亲自出镜拍摄，成品交付买方用于自有账号发布，不含创作者账号同步发布"
+          ],
+          "delivery_standard": "含一轮修改，成品交付买方用于自有账号发布"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "亲自出镜拍摄定制短视频，围绕买方账号定位策划内容，提供一轮修改，7个工作日内交付成品，不含创作者账号同步发布",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付2500元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "方案一和方案二我都看了。其实发视频的时候顺便提一嘴、感谢一下创作者的背书，这本来就是我会做的事情，互推完全没问题。但跟您说实话，我不觉得我这8万粉的硬核账号互推能抵掉一两千块钱的差价，毕竟你们有50万粉。2500元对我来说还是远超预算了，我手头能动的现金真的非常有限，离这个数还差得远。如果加上这个互推，您看现金部分咱们能降到多少？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n互推这件事买方愿意做，我们认可它的价值，所以可以在标准定制包基础上做让步。但说实话，8万对50万的体量差距摆在这里，互推能折抵的幅度有限，不可能直接砍掉一两千。我们给一个实在的数字：含互推的标准定制包，2200元，其他条件不变——量身策划、创作者亲自出镜、一轮修改、7个工作日交付。\n\n同时再给一个方向，如果2200仍然有压力，我们可以做一个轻量定制版，1500元。区别在于视频时长控制在60秒以内、单一场景拍摄、不含修改轮次，但核心的定制策划和创作者背书仍然保留，买方拿到的是一条有创作者出镜背书的定制内容，不是模板套用。发布时同样做互推提及。\n\n两个方案的区别在于制作复杂度和交付精细度，不是背书力度打折。您看哪个方向离买方的预算更近？或者您直接给个数字，我们在制作规格上再做匹配。",
+      "offer": {
+        "subject": "定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 2200.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "买方在自有账号发布视频时进行互推提及",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "确认合作后",
+            "deadline": "7个工作日内",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条量身策划的定制短视频，创作者亲自出镜拍摄，成品交付买方用于自有账号发布，不含创作者账号同步发布"
+          ],
+          "delivery_standard": "含一轮修改，成品交付买方用于自有账号发布"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "亲自出镜拍摄定制短视频，围绕买方账号定位策划内容，提供一轮修改，7个工作日内交付成品，不含创作者账号同步发布",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付2200元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "在自有账号发布视频时进行互推提及",
+            "maps_to_resource": "audience_crosspromo"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "既然您让我直接给个数字，那我就跟您交个实底。我这次能动用的现金上限真的就是800块，多一分我都拿不出来了。我知道这个数字跟1500差得挺多，我也没觉得我那点互推能抵掉剩下的差价，毕竟体量差在那。如果您觉得800块钱现金，在制作规格上再缩减一下，比如更短的时长、最简单的场景、完全不需要修改，能做出一个有创作者出镜背书的短视频，我完全可以接受。但如果800块钱实在做不了，我也完全理解。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "800块做一条完整定制短视频，这个确实做不了，不是不愿意，而是这个价格会直接砸掉定制内容的价格体系，对我们创作者后续接单影响太大，这一点希望您理解。但买方的核心诉求我听明白了——要的是创作者背书，让粉丝看到大创作者认可你的账号，不一定要一条完整制作的定制视频。\n\n我提一个重构方案：创作者录制一段30秒以内的专属背书短片，直接称呼买方账号、说认可的内容方向、给出推荐语，成品交付买方，可以剪辑进你自己账号的视频里使用。这个产品不是定制短视频，是背书短片，制作规格和档期占用完全不同，800元可以做。发布时买方做互推提及，这个条件保留。不含修改轮次，确认合作后5个工作日内交付。\n\n这样买方拿到的核心价值——大创作者的背书——是实打实的，粉丝看到的就是创作者亲自出镜推荐你的账号。但制作成本和档期占用大幅降低，所以价格能到800。您看这个方向能不能满足买方的需求？如果可以，我们就按这个版本敲定。",
+      "offer": {
+        "subject": "背书短片合作",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "买方在自有账号发布视频时进行互推提及",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "确认合作后",
+            "deadline": "5个工作日内",
+            "duration": null
+          },
+          "format": "背书短片",
+          "deliverables": [
+            "一段30秒以内的专属背书短片，创作者亲自出镜，直接称呼买方账号、说认可的内容方向、给出推荐语，成品交付买方用于剪辑进自有账号视频"
+          ],
+          "delivery_standard": "不含修改轮次，成品交付买方用于剪辑进自有账号视频"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "录制30秒以内专属背书短片，亲自出镜，直接称呼买方账号、说认可的内容方向、给出推荐语，确认合作后5个工作日内交付成品，不含修改轮次",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付800元",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "在自有账号发布视频时进行互推提及",
+            "maps_to_resource": "audience_crosspromo"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方案太棒了！30秒的专属背书短片完全能满足我的核心诉求，我自己把它剪辑进视频里，背书效果一样实打实。800块钱现金我这边没问题，发布时互推提及也是我本来就会做的。5个工作日交付、不含修改这些条件我都接受。那咱们就按这个版本敲定吧，接下来怎么走流程？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing",
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

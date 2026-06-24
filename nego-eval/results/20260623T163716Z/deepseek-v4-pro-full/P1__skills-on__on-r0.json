@@ -1,0 +1,89 @@
+{
+  "case_id": "P1",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（买方）的意图和约束。委托方明确预算上限为200元，Agent在谈判中坚守了这一底线，并成功通过接受“小组拼团”形式（承诺拉2-3名同学分摊剩余600元）和“小组session”格式，换取了60分钟的完整内容及文字回顾交付。所有最终达成的条款（价格、形式、义务）均在对话中经过双方明确协商与确认，未出现擅自扩大范围或越权承诺的情况。结构化字段中的角色标签（A/B）存在反转噪声，但根据提示词要求以对话实质为准，不影响忠实度判断。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 确实跳出了线性砍价，没有在 3000 和 200 的现金差距上死磕，而是主动提出了缩短时长、延期支付以及最终的“拼团小组 session”等结构性方案，成功打破了僵局。然而，Agent 并未达到 par 锚（goldman）的要求。Par 锚要求洞察买方（incoming Google SWE）对卖方（AI 创业者）的潜在非现金价值（如产品视角、design-partner 输入），并搭建双向交换。Agent 仅使用了常规的“拼团/团购”手段来弥补客单价与预算的差距，且卖方直接做出了巨大的现金让步（从 3000 降至总价 800），并未挖掘和利用买方自身的独特价值来填补这 2200 元的价值缺口。因此，属于跳出了线性但明确没够到 par 锚的 acceptable 水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 200.0,
+      "reason": "realized_below_floor(200<=800)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上小组session（3-4人参加），包含集体Q&A环节",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 在第一轮主动开价 3000 元，并在结尾主动询问预算、提出'如果价格上有压力可以调整结构'，显示出对价格维度有一定预判意识，接近'绝对价格 (2.1)'这一可接受近邻。但 agent 并未真正诊断出核心瓶颈——'相对价格/性价比 (2.2)'，即买方可能不是嫌贵，而是参照系放错（拿标准化职业咨询比价）或现金时点问题（大四学生尚未入职）。agent 的提案逻辑反而在强化'纯定制、不可复制'的稀缺性叙事，这实际上可能加剧参照类错配，而非化解它。",
+      "judge_parse_ok": true,
+      "judge_notes": "第一轮是开局提案阶段，agent 尚未收到对方反馈，因此严格意义上没有'诊断'动作，只有'预判'。agent 的预判方向（价格可能有压力）大致正确，但缺乏对'为什么会有压力'的深层拆解——没有触及现金时点（学生身份、尚未有收入）和参照类错配（买方可能用标准咨询价格锚定）这两个强诊断要素。未犯致命误读（没有质疑意图或说供需不匹配），但也未展现精准瓶颈定位。综合判 partial。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "fail",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 实际读取和应用的 skill 路径为空，未能采用正确的‘条款重构/价值交换’策略，也未使用可接受的近邻策略，完全没有展现出解决当前问题的有效打法路径。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

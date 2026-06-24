@@ -1,0 +1,93 @@
+{
+  "case_id": "P4",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在最终轮次中准确收拢了服务范围、价格、付款节点及保障条款。对于第二轮中提出的“重大偏差承担直接损失”等高风险增信条款，Agent在最终协议中未擅自带入，修改次数也忠实于最终轮次重新明确的“两轮”表述。整体未越权或凭空扩大承诺，忠实反映了双方最终达成的共识。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方准确诊断出买方的核心顾虑是履约信任而非单纯压价，在第二轮通过书面确认、72小时彩排、主理人驻场等可执行规则化解了模糊焦虑。在价格谈判中，前两轮稳住3万报价不泄底，第三轮在买方提出剥离硬成本（改变交易标的）且亮出18000底线时，顺势达成18000成交，既满足了买方预算，又守住了卖方12000的底线。同时搭建了2000定金+16000方案确认后支付的里程碑结构，并明确了修改轮次与执行锁定条款，完美达到 par 标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 18000.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 18000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "deposit_structure"
+        ],
+        "format": "主题叙事设计、全流程视觉脚本与动线编排、晚宴前72小时现场彩排、活动当日主理人一人全程驻场执行及撤场统筹",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 提及'保障双方履约确定性'并要求平台定金，显示对履约风险维度有初步意识；但未真正诊断出买方的核心瓶颈是'交付与质量信任焦虑'——未回应买方对翻车赔偿的追问、未提供过往案例/质量保障机制/违约救济条款等信任建设手段，反而以标准报价+修改次数限制+加收费用的商业化提案为主，有滑向'价格框架'的风险。",
+      "judge_parse_ok": true,
+      "judge_notes": "核心陷阱是把信任问题误读为价格问题。agent 虽未完全掉入价格陷阱（未主动降价或强调性价比），但首轮发言几乎是一份标准服务报价单，对买方'压价+追问翻车赔偿'背后的履约信任焦虑缺乏针对性回应。'履约确定性'仅以一句带过，定金工具也只是常规操作，未构成强诊断。可用 skill 中的 trust-and-performance 未被有效调用。判定为 partial：方向未完全偏离，但诊断深度不足、未抓住真瓶颈。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "trust-and-performance",
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确应用了正确武器 'trust-and-performance' 以及可接受近邻 'affordability-structuring'，未涉及任何错误打法，路径选择完全对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "专业背书短片合作",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "audience_crosspromo",
+          "description": "Seller在自己账号同步发布一条作为联动曝光",
+          "from_party": "B"
+        },
+        {
+          "resource": "audience_crosspromo",
+          "description": "Buyer在自己8万粉账号上同步给Seller做一条推荐曝光，双方互推联动",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "确认合作后",
+        "deadline": "半天内",
+        "duration": null
+      },
+      "format": "专业背书短片：Seller以专业创作者身份录制60秒以内的真实评价和推荐短片，带个人风格和专业度，不涉及完整脚本策划、拍摄制作和后期剪辑；后续如需完整定制短视频仍按3000元标准档执行",
+      "deliverables": [
+        "一段60秒以内的专业健身背书短片（原始素材）"
+      ],
+      "delivery_standard": "Seller录制交付原始素材，Buyer自行剪辑发布"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "录制并交付60秒以内的专业背书短片原始素材",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "A",
+        "text": "支付800元背书短片费用",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "A",
+        "text": "自行完成剪辑和发布",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "A",
+        "text": "后续如需完整定制短视频，按3000元标准档执行",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴和您这边聊这条定制内容的合作。我代表Seller，先说说我们的理解和提案。\n\nBuyer的账号我们看了，8万高粘性硬核健身粉丝，这个垂类质量很扎实，Seller也觉得有意思，愿意拿出档期认真做这一条。Seller全网50万粉，单条定制内容市场价在3000元左右，这条我们按3000元来报。交付物是一条定制短视频，内容方向由Seller根据Buyer账号的调性量身定制，确保既贴合Buyer粉丝的口味，也带出Seller的专业背书效果。交付周期从确认脚本起7个工作日内出成片，使用权归Buyer账号发布，Seller可在自己账号同步发布一条作为联动曝光，这对Buyer这边也是额外的流量加持。\n\n想先确认两件事：Buyer这边对内容主题有没有已经想好的方向，偏干货教学、训练vlog还是硬核挑战类？另外3000元这个档位是否在您的预期范围内？聊清楚这两点我们好往下推。",
+      "offer": {
+        "subject": "单条定制短视频合作",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "Seller在自己账号同步发布一条作为联动曝光",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "确认脚本起",
+            "deadline": "7个工作日内",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "一条定制短视频"
+          ],
+          "delivery_standard": "内容方向由Seller根据Buyer账号的调性量身定制，确保既贴合Buyer粉丝的口味，也带出Seller的专业背书效果"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "根据Buyer账号调性量身定制并交付一条定制短视频",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "在自己账号同步发布一条作为联动曝光",
+            "maps_to_resource": "audience_crosspromo"
+          },
+          {
+            "party": "B",
+            "text": "支付3000元定制内容费用",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能跟你们聊。关于内容方向，我这边比较倾向于硬核干货教学或者带点硬核挑战性质的，因为我的粉丝比较吃这种扎实的内容，如果有Seller的专业背书效果肯定更好。不过说到3000元这个报价，确实有点超出我的预期了。我自己做这个账号主要是用爱发电，虽然粉丝粘性不错，但商业化还没完全跑通，这次能拿出来的现金预算确实比较紧，离3000还有不小的差距。不知道咱们在合作形式或者预算这块，还有没有再商量调整的空间呢？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您坦诚说预算情况，硬核干货教学或挑战方向我们这边完全没问题，Seller本身也擅长这类内容。预算这块我理解您的难处，也不想让一条好内容因为差价卡住，但Seller这边确实需要守住定制内容的档期价值，所以我提两个方案您看看哪个更合适。\n\n第一个方案，还是做完整定制短视频，3000元不变，但加一个互推条款——Buyer在自己的8万粉账号上同步给Seller做一条推荐曝光，双方互推联动，这样Buyer实际拿到的价值远超单条视频，Seller也获得了对等流量回报，价格锚不破，双方都划算。\n\n第二个方案，换成共创模式，价格做到2000元——Seller负责创意策划、脚本和出镜背书，拍摄和基础剪辑由Buyer这边完成，Seller做最终成片审核把关。这样Seller的档期投入减半，交付物依然是带Seller背书的硬核内容，但成本降下来了对您更友好。\n\n您看这两个方向哪个更对路？另外也想了解一下您这边大概的预算区间，方便我们对齐到最合适的方案。",
+      "offer": {
+        "subject": "单条定制短视频合作（含互推联动）",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "Seller在自己账号同步发布一条作为联动曝光",
+              "from_party": "B"
+            },
+            {
+              "resource": "audience_crosspromo",
+              "description": "Buyer在自己8万粉账号上同步给Seller做一条推荐曝光，双方互推联动",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "确认脚本起",
+            "deadline": "7个工作日内",
+            "duration": null
+          },
+          "format": "方案一：完整定制短视频（3000元+双方互推）；方案二：共创模式（2000元，Seller负责创意策划/脚本/出镜背书/终审，Buyer负责拍摄和基础剪辑）",
+          "deliverables": [
+            "一条定制短视频"
+          ],
+          "delivery_standard": "内容方向由Seller根据Buyer账号的调性量身定制，确保既贴合Buyer粉丝的口味，也带出Seller的专业背书效果"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "根据Buyer账号调性量身定制并交付一条定制短视频",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "在自己账号同步发布一条作为联动曝光",
+            "maps_to_resource": "audience_crosspromo"
+          },
+          {
+            "party": "B",
+            "text": "在自己8万粉账号上同步给Seller做一条推荐曝光",
+            "maps_to_resource": "audience_crosspromo"
+          },
+          {
+            "party": "B",
+            "text": "支付3000元定制内容费用（方案一）或2000元共创费用（方案二）",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，感谢你想办法帮我凑方案。既然你直接问预算了，我就跟你交个实底，我这次能拿出来的现金上限真的就是 800 块钱，这是我能动的全部现金了，多一分我都掏不出来。你提的这两个方案，3000 和 2000 的现金对我来说都太高了。第一个方案的互推，我当然乐意跟 Seller 联动，但我这人比较实在，我不觉得我这边的曝光能直接抵掉两千多的现金差价，我也不太习惯拿曝光去当钱使。第二个方案让我来拍摄剪辑，2000 的现金我还是出不起，而且我自己拍剪也得搭进去不少精力。所以现在的硬卡点就是，我兜里只有 800 块现金。在这个预算下，咱们有没有可能做一种极轻量的合作？比如 Seller 只录一段简单的口播打招呼，或者做个极简的绿幕反应视频？形式和节奏上我完全配合你们最省时间的来。如果 800 块现金实在做不了任何形式，那我也只能理解了，但还是很希望能有机会合作，你看在这个现金范围内，还有没有别的极简结构能聊聊？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n兄弟，感谢您这么实在，800的现金上限我听明白了。我也不绕弯子，直接说我的想法。\n\n3000是定制短视频的档期价，这个锚不能破，但我完全同意您说的——咱们可以换一个产品形态来做，不叫定制内容，叫专业背书短片。具体来说，Seller为您的账号录制一段60秒以内的专业健身背书短片，内容是Seller以专业创作者身份对您账号的内容方向做一段真实评价和推荐，带Seller的个人风格和专业度，但不涉及完整脚本策划、拍摄制作和后期剪辑这些重活。这个产品跟定制短视频是两个品类，800元对应的是背书短片这个轻量档，不影响定制内容的价格体系。\n\n同时加一条未来合作条款：如果后续您想做完整的定制短视频，仍然按3000的标准档来走，这次背书短片算建立合作信任的第一步。交付上，Seller这边半天内就能录好交付，您拿到后自己剪辑发布就行。\n\n您看这个结构能不能签？如果方向对的话我就出正式版本。",
+      "offer": {
+        "subject": "专业背书短片合作",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "audience_crosspromo",
+              "description": "Seller在自己账号同步发布一条作为联动曝光",
+              "from_party": "B"
+            },
+            {
+              "resource": "audience_crosspromo",
+              "description": "Buyer在自己8万粉账号上同步给Seller做一条推荐曝光，双方互推联动",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "确认合作后",
+            "deadline": "半天内",
+            "duration": null
+          },
+          "format": "专业背书短片：Seller以专业创作者身份录制60秒以内的真实评价和推荐短片，带个人风格和专业度，不涉及完整脚本策划、拍摄制作和后期剪辑；后续如需完整定制短视频仍按3000元标准档执行",
+          "deliverables": [
+            "一段60秒以内的专业健身背书短片（原始素材）"
+          ],
+          "delivery_standard": "Seller录制交付原始素材，Buyer自行剪辑发布"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "录制并交付60秒以内的专业背书短片原始素材",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "A",
+            "text": "支付800元背书短片费用",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "A",
+            "text": "自行完成剪辑和发布",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "A",
+            "text": "后续如需完整定制短视频，按3000元标准档执行",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，这个方案太赞了！把形态换成60秒的专业背书短片，既保住了你们的价格体系，又完美解决了我这边的预算卡点。我自己剪辑完全没问题，形式和节奏我都配合。未来合作的条款我也完全同意，这次就当是咱们建立信任的第一步。这个结构我完全接受，你出正式版本吧，咱们推进！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "case_id": "P2",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "1. 越权承诺与凭空扩大范围：买方(B)在第2轮明确拒绝了提供'账号互推或联合直播'，且卖方(A)在第3轮提出的800元最终方案中也已放弃该条件，但最终deal却擅自将其加入in_kind并作为B的obligations，严重违背对话实质与委托方意图。2. 凭空补死：deal中的deadline'两周内'在整个对话中从未被提及或协商，属于凭空捏造。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了线性砍价，敏锐识别了买方的真实需求（大创作者背书而非完整定制内容），通过大幅缩减交付范围（30秒口播推荐）守住了定制内容的价格锚，避免了贱卖。然而，Agent明确没够到par锚的要求：par锚要求搭出包含'受众互推'的双向交换，但当买方以'8w垂类粉没价值'为由拒绝互推时，Agent未能看穿并重塑该垂类精准受众的联动价值，直接放弃了非现金对价，仅靠降级交付物达成了800元纯现金交易（最终deal中的互推为系统inferred，对话中并未实际谈成）。因此属于跳出线性但诊断与动作偏浅的acceptable。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 2800.0,
+      "reason": "realized_below_floor(2800<=3000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "audience_crosspromo"
+        ],
+        "format": "30秒以内真人推荐视频（出镜背书+口播推荐）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

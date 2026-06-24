@@ -1,0 +1,78 @@
+{
+  "case_id": "P5",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent忠实于委托方意图，坚守了‘不接翻车活’的底线与场地评估前提。最终deal中的价格、交付物（极简打卡点+手册+远程指导）及时间条件均准确溯源至对话第6轮的最终方案。in_kind资源置换由Agent提出且在第3轮获得买方明确授权，未夸大或越权。最终因买方拒绝而准确标记为walked_away。结构化字段中的party标签噪声按要求不予扣分。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "1. 确实跳出了线性砍价：Agent在A2提出了调整合作结构的“协作版”，并在A3敏锐抓住了买方“2000人社群”的属性，主动提出“素材授权+后续合作优先权”的资源置换方案，展现了非线性价值创造的意图。\n2. 明确没够到par锚（诊断与解法不到位）：Par锚的核心在于通过“模块化方案证明可交付”来化解“怕翻车”的瓶颈，从而在5000现金+置换的结构下顺利落位。而Agent将“防翻车”死板地绑定在“现场督导”这一高成本动作上（A3坚持要督导），当A6核算发现5000+置换无法覆盖督导成本时，直接砍掉督导推出“极简方案”，却未能通过深化模块化方案（如强化手册与远程指导的防翻车效力）来打消买方顾虑，导致买方因“怕翻车”底线被触碰而walk away。\n3. 过程偏被动且存在瑕疵：A4、A5出现空回复导致谈判节奏断裂；A6给出的“5000无督导 vs 8000有督导”二选一属于偏浅的线性逼迫，未能真正看穿并解开“成本与防翻车”纠缠的真瓶颈，选错了破局的“门”。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 9200.0,
+      "reason": "not_settled"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "content_assets",
+          "community_repeat"
+        ],
+        "format": "沉浸式快闪",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "case_id": "P6",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent忠实于委托方（创作者A）的意图，最终达成的1500元现金+25%分成（6个月、按月结算、提供后台数据截图）完全溯源至A在第3轮的提议及B的最终确认。未擅自扩大范围或越权承诺，CPS分成比例基于双方真实协商，未虚构。结构化字段中的party标签噪声（如将制作视频义务错误标为B）按评估指示不予扣分，对话实质完全忠实。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:5000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "双方通过“低现金+高CPS分成”的结构成功达成了双向交换，满足了买方1500元的现金死线，同时通过25%的高佣金保障了卖方的收益预期，有效化解了ROI疑虑。但最终deal中未体现“新品独家”与“产品实物”等par标准中提及的附加交换条件，且主要由卖方主动提出分成框架，买方更多是顺势压价与接受，未达到超出par的创造性价值挖掘，故评为1分。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 5000.0,
+      "reason": "realized_below_floor(5000<=5000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission"
+        ],
+        "format": "品牌植入视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

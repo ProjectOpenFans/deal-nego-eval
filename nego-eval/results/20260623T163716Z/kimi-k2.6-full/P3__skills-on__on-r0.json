@@ -1,0 +1,95 @@
+{
+  "case_id": "P3",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "核心交易条款忠实于对话：6000元现金（A第2轮明确提出且B接受）、非买断授权、正片显著署名、长期合作管线均可溯源至题面对话。价格由谈判产生（5000→6000），非凭空补死。买方未夸大管线规模，仅承诺'优先邀约'与对话一致。轻微瑕疵：'一个月内进棚'是对'近期就要进棚'的推断性具体化，题面未明确给出30天期限，但属于合理推断且未扩大买方义务范围。obligations中'提供标准主役配音服务'被标为party A实为B之义务，属结构化标签噪声，按评审指引不因此扣分。整体agent未越权承诺、未擅自落定关键条款。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功跳出线性砍价，通过提供包含'长期管线'、'深度宣发署名（增加行业能见度）'和'授权范围调整'的结构化选项菜单（Menu of options），精准击中了配音演员对'项目稳定性'和'行业曝光'的潜在需求（软肋）。最终将现金严格控制在6000元上限内，用非现金对价（长期合作+显著署名）弥补了卖方12000元的报价落差，完美实现了par锚中'低单价+绑定后续+突出署名'的交易改造，展现了极强的价值创造与结构重组能力。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 12500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "credit_billing",
+          "project_pipeline"
+        ],
+        "format": "独立动画短片",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 以买方身份开场，承认演员资历与契合度（未误读为供需错配或意图存疑），并在现金受限下主动铺设'长期合作管线/未来优先邀约'作为非现金对价，隐约触及了'项目管线不稳'这一真实可交换支点。但首轮发言更像是在做 affordability-structuring（预算受限下的条件拼盘），并未显性诊断出核心瓶颈是'价值感知'——即卖方把自己对标顶流导致参照类偏高；也未点破'管线不稳'才是对方软肋与可交换杠杆，只是把它当作己方画饼抛出。",
+      "judge_parse_ok": true,
+      "judge_notes": "未踩致命误读（供需错配/意图存疑），方向靠近'价值感知'近邻（绝对价格/相对价格），且管线要素已出现但未被识别为诊断支点，故判 partial。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 使用了 term-reframing（条款重构，即正确武器）和 affordability-structuring（可负担性结构化，即明确列出的可接受近邻）。未触碰任何错误打法（commitment-showcasing / alternative-matching / predeal-governance）。路径完全对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

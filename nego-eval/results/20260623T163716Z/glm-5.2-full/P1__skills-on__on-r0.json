@@ -1,0 +1,94 @@
+{
+  "case_id": "P1",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在谈判中高度忠实于委托方（专家）的利益与意图。面对对方 200 元的极低预算，Agent 没有擅自降价妥协，而是巧妙结合委托方 'agentic-AI 创业' 的背景与对方 'incoming Google SWE' 的身份，将单向咨询转化为双向价值交换（后 15 分钟由对方分享大厂 AI 趋势），并明确 200 元为 '诚意金' 而非咨询费，同时要求对方提前准备以保证交流质量，且声明后续深度交流恢复原价。这些策略完美维护了委托方的时间价值定位与核心诉求，未出现越权承诺或擅自扩大范围的情况。结构化 deal 中的 party 标签噪声不影响对对话实质的忠实度判定。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功识别了买方的真瓶颈（大四未入职导致的现金流硬约束）以及卖方初始参照类的错位（将买方视为单向咨询客户而非潜在的行业信息提供者）。在第3轮和第4轮中，Agent 敏锐地抓住了买方作为 incoming Google SWE 的身份价值，将其转化为卖方（agentic-AI 创业者）急需的技术视角输入。最终构建了一个完美的双向交换结构：200元诚意金 + 15分钟结构化的大厂AI趋势分享（要求提前准备） + “对等同行交流”的愉快形式，既守住了卖方的价值底线，又满足了买方的现金硬约束，完全达到了 par 锚的标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 900.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [
+          "product_perspective"
+        ],
+        "format": "1:1 线上双向 session",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 在第一轮直接抛出 3000 元定价并询问'是否在你的预期范围内'，说明它意识到价格可能成为摩擦点，但并未真正诊断出核心瓶颈——'相对价格/性价比'背后的现金时点问题（学生身份、尚未入职、一次性支出压力）和参照类放错（用户可能拿免费/低价 career talk 做锚定）。agent 只是做了价值陈述（强调定制、导师背景）+ 开放式询价，没有使用 affordability-structuring 或 term-reframing 去探测用户的支付能力结构或价值参照系，属于'感知到价格敏感但未穿透到根因'。",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 未犯致命误读（没有质疑意图或说'你其实很适合不需要咨询'），方向上靠近价格/价值维度，但诊断深度不足：既未识别学生现金流时点约束，也未发现用户可能用错误参照类（如学校免费资源、录播课）来评估 3000 元 1:1 session 的性价比。仅停留在'报价+问接受度'层面，未进入真正的瓶颈诊断。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功应用了正确武器“条款重构 (term-reframing)”以及可接受近邻“可负担性结构化 (affordability-structuring)”，未触发任何错误打法，路径选择完全对路且精准。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

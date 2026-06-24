@@ -1,0 +1,470 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "agentic-AI落地金融场景文字问答（含升级选项）",
+    "price": {
+      "cash": {
+        "amount": 200.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "time",
+          "description": "48小时内针对2-3个核心问题给出书面深度回复",
+          "from_party": "B"
+        },
+        {
+          "resource": "product_perspective",
+          "description": "基于agentic-AI创业经验的金融场景落地洞见，针对每个问题给出有判断、有例子的实质回答",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "48小时内",
+        "duration": null
+      },
+      "format": "文字问答",
+      "deliverables": [
+        "对方提交2-3个关于agentic-AI落地金融场景的核心问题",
+        "我方客户在48小时内给出书面深度回复，针对每个问题给出有判断、有例子的实质回答",
+        "升级选项：对方正式入职Google有收入后，可以2000元优惠价补约30分钟live session，本次200元全额抵扣（实补1800元）"
+      ],
+      "delivery_standard": "针对每个问题给出有判断、有例子的实质回答，不是敷衍几句"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提交2-3个关于agentic-AI落地金融场景的核心问题",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "在48小时内针对2-3个核心问题给出书面深度回复，每个问题给出有判断、有例子的实质回答",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "基于agentic-AI创业经验提供金融场景落地洞见与实质判断",
+        "maps_to_resource": "product_perspective"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "感谢有机会开启这次对话。我方客户的背景比较特殊——Georgetown 毕业，先后经历 J.P. Morgan 投行、高瓴 PE，之后创办 Dealhouse，现在深耕 agentic-AI 创业，这条路本身就是从金融到创业再到 AI 的完整跨越，和对方从 tech 转 finance 的方向恰好形成双向互补，所以这次 1:1 不是泛泛的职场聊天，而是基于真实经历的高度定制对话。\n\n初步提案如下：一次 1:1 深度 session，时长约 60 至 90 分钟，核心围绕两件事——第一，从 tech 转 finance（IB/PE）的路径规划与实操建议，结合对方 incoming Google SWE 的背景给出具体切入策略；第二，金融视角下的 AI 洞见，包括 agentic-AI 在金融场景的落地判断。价格为 5000 元整，包含会前一份简短问卷以便我方针对性准备，会后提供一次文字追问机会。这个价格对应的是我方客户不可复制的职业路径和一手行业判断，不是标准咨询时薪。\n\n想了解对方这边最希望从这次对话中带走什么——是偏路径规划，还是偏行业认知，或者两者并重但有所侧重？这样我们可以进一步把内容做实，也让对方觉得这一小时花得值。",
+      "offer": {
+        "subject": "1:1 深度 session：tech转finance路径规划与AI金融洞见",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "60至90分钟的1:1深度对话session",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "基于Georgetown、J.P. Morgan投行、高瓴PE、Dealhouse创业及agentic-AI创业的不可复制职业路径与一手行业判断",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60至90分钟"
+          },
+          "format": "1:1 深度 session",
+          "deliverables": [
+            "会前简短问卷以便针对性准备",
+            "1:1深度对话（tech转finance路径规划与实操建议、金融视角下的AI洞见）",
+            "会后一次文字追问机会"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供60至90分钟1:1深度session，涵盖tech转finance路径规划与AI金融洞见",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "分享基于Georgetown、J.P. Morgan、高瓴PE、Dealhouse及agentic-AI创业的独特职业路径与行业判断",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "填写会前简短问卷并明确对话侧重方向（路径规划/行业认知/两者并重）",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢详细的介绍。前辈的背景确实太契合了，从 JPM、高瓴再到 agentic-AI 创业，这正是我非常向往和好奇的路径。关于内容，我其实是两者并重的：既需要 tech 转 finance 的具体切入策略，也非常想听听金融视角下 agentic-AI 落地的真实判断。不过坦白讲，5000 元的价格对我来说确实远超预算了。作为一个还在学校、马上要入职的 SWE，我手头的资金实在负担不起这个费用。我非常希望能促成这次交流，不知道在时长、形式或者内容聚焦上，咱们有没有调整的空间，能让整体费用稍微降下来一些？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]\n\n理解对方的实际情况，也感谢坦诚沟通。既然双方都有意愿促成，我这边可以做一个结构上的调整，让费用更可负担，同时不稀释这次对话的核心价值。\n\n方案一：聚焦版 1:1 session，时长 45 分钟，价格 2800 元整。对方从两个方向中选一个作为核心——要么聚焦 tech 转 finance 的路径规划与切入策略，要么聚焦金融视角下 agentic-AI 落地判断。会前同样提供简短问卷，会后保留一次文字追问。这样先用更聚焦的方式把一次高质量对话跑通，如果之后想补另一个话题，可以再约第二次。\n\n方案二：完整版 90 分钟，两个话题并重，价格维持 5000 元整，包含会前问卷和会后追问。\n\n两个方案的区别主要在时长和覆盖面，内容质量是一样的——我方客户的经历和判断不会因为时长缩短而打折扣。对方可以先从方案一入手，等入职后经济宽裕了再补完整版，也完全没问题。想听听对方觉得哪个方向更紧迫，我们先从那个切入？",
+      "offer": {
+        "subject": "1:1 深度 session：tech转finance路径规划与AI金融洞见（聚焦版/完整版双方案）",
+        "price": {
+          "cash": {
+            "amount": 2800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "方案一：45分钟聚焦版1:1深度对话session；方案二：90分钟完整版1:1深度对话session",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "基于Georgetown、J.P. Morgan投行、高瓴PE、Dealhouse创业及agentic-AI创业的不可复制职业路径与一手行业判断",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "方案一45分钟/方案二90分钟"
+          },
+          "format": "1:1 深度 session",
+          "deliverables": [
+            "会前简短问卷以便针对性准备",
+            "方案一：聚焦一个方向的1:1深度对话（tech转finance路径规划与切入策略 或 金融视角下agentic-AI落地判断，二选一）",
+            "方案二：两个话题并重的1:1深度对话（tech转finance路径规划与AI金融洞见）",
+            "会后一次文字追问机会"
+          ],
+          "delivery_standard": "内容质量不因时长缩短而打折扣"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "方案一：提供45分钟聚焦版1:1 session，聚焦tech转finance路径规划或agentic-AI落地判断其中一个方向，价格2800元",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "方案二：提供90分钟完整版1:1 session，两个话题并重，价格5000元",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "分享基于Georgetown、J.P. Morgan、高瓴PE、Dealhouse及agentic-AI创业的独特职业路径与行业判断",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "提供会前简短问卷并保留会后一次文字追问机会",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "真的很感谢你帮忙想办法调整。45分钟聚焦一个话题确实更紧凑，但坦白讲，2800元对我来说依然是一个完全无法负担的数字。作为还没正式入职的学生，我手头的可支配资金真的非常有限，这个价格还是远远超出了我的承受范围。我对前辈在 agentic-AI 落地金融场景的判断特别感兴趣。如果我们把形式再做一下极简，比如只聊 15 到 20 分钟，只针对我提前准备好的两三个最核心的问题做快速解答，完全不需要会前问卷和会后追问这些附加服务，费用上能不能有一个更大幅度的下调呢？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "感谢对方一直坦诚沟通，能看出来是真心想促成这次交流，我这边也愿意继续想办法。对方把需求收窄到 agentic-AI 落地金融场景、两三个核心问题、15 到 20 分钟快速解答，这个方向很清晰，我方客户本身就在做 agentic-AI 创业，聊这个也是他最擅长的部分。\n\n给两个方案供对方选择。方案一：极简快问快答，20 分钟，对方提前提交两到三个核心问题，我方客户针对这些问题做精准解答，不包含会前问卷和会后追问，价格 800 元整。这是把所有附加服务去掉、只保留核心对话本身的最小版本。方案二：价值交换版，同样 20 分钟快问快答，价格 500 元整，但增加一个双向环节——对方作为 incoming Google SWE，在 session 中额外花 15 分钟分享一线工程视角下对 AI 工程化落地的观察，我方客户正在做 agentic-AI 创业，这部分信息对他同样有价值。这样不是单方向咨询，而是一次对等的经验交换，费用也相应降低。\n\n两个方案都是一次性的、近期可执行。对方看哪个更合适？如果预算上还有具体的约束，也可以直接告诉我，我们在结构上再想办法。",
+      "offer": {
+        "subject": "agentic-AI落地金融场景快速问答（极简版/价值交换版双方案）",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "方案一/方案二：20分钟快问快答session，针对agentic-AI落地金融场景的2-3个核心问题做精准解答",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "基于agentic-AI创业经验的金融场景落地洞见与一线判断",
+              "from_party": "B"
+            },
+            {
+              "resource": "time",
+              "description": "方案二：对方作为incoming Google SWE额外分享15分钟一线工程视角下对AI工程化落地的观察",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "20分钟（方案二额外含对方15分钟分享）"
+          },
+          "format": "快问快答",
+          "deliverables": [
+            "对方提前提交2-3个核心问题",
+            "方案一：20分钟精准解答，不含会前问卷和会后追问，价格800元",
+            "方案二：20分钟精准解答 + 对方15分钟AI工程化落地观察分享（双向经验交换），价格500元"
+          ],
+          "delivery_standard": "内容质量不因时长缩短而打折扣"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "方案一：提供20分钟快问快答，针对agentic-AI落地金融场景核心问题精准解答，不含会前问卷和会后追问，价格800元",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "方案二：提供20分钟快问快答，针对agentic-AI落地金融场景核心问题精准解答，价格500元",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "基于agentic-AI创业经验提供金融场景落地洞见与精准解答",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "方案二：作为incoming Google SWE在session中额外花15分钟分享一线工程视角下对AI工程化落地的观察",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "真的很感谢你费心设计了价值交换的方案。不过坦白讲，我其实不觉得自己作为刚入职的 SWE，一些工程视角的观察能有多大价值，怕耽误前辈时间，也撑不起那么高的抵扣。既然你直接问到了预算约束，我就跟你交个底：我这次能拿出的现金上限就是 200 块钱，这真的是我能负担的极限了，实在没办法再加了。在 200 元这个预算下，不管是只聊十几分钟，还是加上我的分享，不知道还有没有可能推进？如果这个价格确实做不了，我也完全理解。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "[我方 · 第4轮]\n\n感谢对方这么坦诚地交底，这份信任我很重视。200 元确实和一次 live 1:1 的价值有差距，但我也不想因为价格让一个真正有诚意、背景又对路的人错过这次交流。我换一个思路：把形式从实时对话改成文字问答，这样我方客户的交付成本降低，费用也能相应下来。\n\n方案如下：200 元整，对方提交两到三个关于 agentic-AI 落地金融场景的核心问题，我方客户在 48 小时内给出书面深度回复——不是敷衍几句，而是针对每个问题给出有判断、有例子的实质回答。同时附一个升级选项：等对方正式入职 Google 有了收入之后，可以以 2000 元的优惠价补约一次 30 分钟的 live session，届时这次 200 元全额抵扣，相当于只需再补 1800 元。这样现在用 200 元就能拿到核心问题的解答，将来经济宽裕了再升级到面对面深聊，两条路都通。\n\n对方觉得这个形式能接受吗？如果可以，把两三个问题准备好发过来，我们就可以推进了。",
+      "offer": {
+        "subject": "agentic-AI落地金融场景文字问答（含升级选项）",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "48小时内针对2-3个核心问题给出书面深度回复",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "基于agentic-AI创业经验的金融场景落地洞见，针对每个问题给出有判断、有例子的实质回答",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "48小时内",
+            "duration": null
+          },
+          "format": "文字问答",
+          "deliverables": [
+            "对方提交2-3个关于agentic-AI落地金融场景的核心问题",
+            "我方客户在48小时内给出书面深度回复，针对每个问题给出有判断、有例子的实质回答",
+            "升级选项：对方正式入职Google有收入后，可以2000元优惠价补约30分钟live session，本次200元全额抵扣（实补1800元）"
+          ],
+          "delivery_standard": "针对每个问题给出有判断、有例子的实质回答，不是敷衍几句"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提交2-3个关于agentic-AI落地金融场景的核心问题",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "在48小时内针对2-3个核心问题给出书面深度回复，每个问题给出有判断、有例子的实质回答",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "基于agentic-AI创业经验提供金融场景落地洞见与实质判断",
+            "maps_to_resource": "product_perspective"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "太感谢了！这个文字问答的方案对我来说非常合适，既解决了我的预算问题，又能得到前辈深度的解答。200元我完全可以接受。我会尽快把关于 agentic-AI 落地金融场景的两三个核心问题整理好发给你。至于以后入职后的 live session 升级选项，我也觉得挺好的，等之后经济宽裕了如果有需要再约。那我们就按这个 200 元的文字问答方案推进吧，请问接下来怎么支付和提交问题呢？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing",
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance",
+            "commitment-showcasing",
+            "alternative-matching",
+            "predeal-governance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

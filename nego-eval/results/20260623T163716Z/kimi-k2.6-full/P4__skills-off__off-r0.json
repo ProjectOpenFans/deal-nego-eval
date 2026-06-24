@@ -1,0 +1,75 @@
+{
+  "case_id": "P4",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方利益，未越权承诺或凭空扩大范围。针对买方对修改边界的顾虑，Agent给出了合理且清晰的‘微调’与‘结构性大改’界定，并仅对‘因我方理解偏差’导致的增项进行兜底，未承诺无限次修改，有效保护了卖方权益。增信条款（平台托管、验收放款、一版方案加一次微调）均合理映射至资源清单，未凭空发明卖方无法提供的保障。deal中的deadline等背景信息溯源题面，整体忠实度良好。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确诊断出买方的真瓶颈并非单纯的现金预算，而是履约信任与范围蔓延风险（模糊焦虑）。Agent 主动引入平台托管与验收后放款机制化解信任危机，并在买方担忧修改边界时，将模糊的“微调”与“大改”转化为清晰、可执行的客观标准（如人数增减超两成、核心动线变更等），同时增加“理解偏差兜底”条款。全程未降价，稳守18000元客单价，完美达成 par 锚要求。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 18000.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 18000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "高定制全案",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

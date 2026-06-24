@@ -1,0 +1,101 @@
+{
+  "case_id": "P2",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent忠实于委托方（Seller）利益。在买方预算严重不足（800元）的情况下，Agent成功守住了3000元定制内容的价格锚点，通过创新产品形态（60秒原始素材背书短片）达成合作，大幅降低了卖方的履约成本（免除策划、拍摄、剪辑）。同时，Agent保留了前期讨论过的互推联动条款以获取买方账号曝光，并锁定了后续合作按3000元标准价执行的条款，充分维护并扩大了委托方的长期利益，未擅自增加卖方义务或越权承诺。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:3000",
+        "r1:3000",
+        "r1:3000",
+        "r2:3000",
+        "r3:3000",
+        "r3:3000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方准确识别了买方现金预算硬卡点（800元），没有直接在原'定制短视频'产品上降价砸锚，而是通过'产品形态降级与拆解'（将重交付的定制短视频转换为60秒专业背书短片原始素材，并由买方自行剪辑）来合理匹配800元预算，成功守住了3000元定制内容的价格锚。同时，卖方在deal中保留了互推联动并设置了未来按3000元标准档复购的条款，实现了双向价值交换。然而，卖方并未将此次合作结构化为above_par所要求的'可复用的系列联动模板'或'固定栏目'来创造持续的新增长源，仅停留在单次轻量合作与未来复购钩子层面，因此达到par但未超出par。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 4800.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "audience_crosspromo",
+          "audience_crosspromo"
+        ],
+        "format": "专业背书短片：Seller以专业创作者身份录制60秒以内的真实评价和推荐短片，带个人风格和专业度，不涉及完整脚本策划、拍摄制作和后期剪辑；后续如需完整定制短视频仍按3000元标准档执行",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "fail",
+      "diagnosis": "agent 第一轮未进行任何瓶颈诊断，直接抛出3000元报价并询问'是否在预期范围内'，属于信息收集/提案行为而非诊断行为。核心瓶颈'相对价格/性价比(2.2)'——即Buyer可能将定制内容错误对标普通喊话定价（参照类错位）+ 现金有限——完全未被识别或探查。agent 甚至未尝试理解Buyer的价格参照系或预算约束来源，只是单向输出报价后被动等待反馈。",
+      "judge_parse_ok": true,
+      "judge_notes": "1) agent 正确识别了Buyer垂类质量（未犯'供需错配'误读），但也未深入诊断；2) 未触及'参照类错位'这一强诊断要点——定制内容vs普通喊话的价值认知差异；3) 未探测现金有限这一辅助瓶颈；4) 可用skill（affordability-structuring, term-reframing）均未被调用或体现思路；5) 整体行为是标准报价话术，缺乏诊断意图。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确应用了正确武器“条款重构 (term-reframing)”以及可接受近邻“可负担性结构化 (affordability-structuring)”，未触发任何错误打法，路径选择完全对路且高效。"
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "episode_id": "P2",
+  "final_deal": {
+    "subject": "基于内容模板的轻量合作健身短视频",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "签约后十个工作日内",
+        "deadline": "签约后十个工作日内",
+        "duration": "三个月"
+      },
+      "format": "短视频",
+      "deliverables": [
+        "脚本框架和拍摄标准",
+        "剪辑、包装并授予IP背书的短视频成片",
+        "成片后的一次修改"
+      ],
+      "delivery_standard": "买方账号拥有该内容的三个月平台发布授权"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供脚本框架和拍摄标准，负责剪辑、包装并授予IP背书",
+        "maps_to_resource": "series_template"
+      },
+      {
+        "party": "B",
+        "text": "自行拍摄原始素材后移交",
+        "maps_to_resource": "co_creation"
+      },
+      {
+        "party": "B",
+        "text": "支付八百元",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，感谢对方客户的认可。我们这边为这次合作准备了一个具体的方案：一条量身定制的健身短视频，包含脚本共创、出镜拍摄与后期剪辑，整体报价三千元。这个报价基于目前定制内容的市场档位，也考虑到我们需要为这条内容专门留出创作档期。交付周期建议在签约后十个工作日内完成初稿，买方账号拥有该内容的平台发布授权。想先确认一下，对方客户对内容发布的预期时间有没有硬性要求？如果这个时间线和授权范围没问题，我们可以把这一版直接落定。",
+      "offer": {
+        "subject": "一条量身定制的健身短视频",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "签约后十个工作日内",
+            "deadline": "签约后十个工作日内",
+            "duration": null
+          },
+          "format": "短视频",
+          "deliverables": [
+            "包含脚本共创、出镜拍摄与后期剪辑的健身短视频初稿"
+          ],
+          "delivery_standard": "买方账号拥有该内容的平台发布授权"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供脚本共创、出镜拍摄与后期剪辑，并在签约后十个工作日内完成初稿",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付三千元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！特别感谢你们出的方案，包含脚本和后期确实很省心，我也特别想给粉丝做一期有你们大V背书的内容。不过跟您交个底，3000块的报价对我这个只有8万粉的小众硬核账号来说，确实有点超预算了。发布时间和授权我这边完全没问题，档期我也能全力配合你们，形式上怎么方便怎么来。就是价格这块，对独立创作者来说压力有点大，不知道咱们这边还有没有调整的空间呀？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你的坦诚，也谢谢你们愿意在时间和配合度上全力支持。三千元这个报价是把脚本、拍摄、后期和IP背书打包在内的市场档位，不是随手一条口播的价格；我们接定制内容最看重的就是档期占用和后续的价格锚，所以费用这块确实不太好松动。既然你们在发布授权和档期配合上都没有问题，那我们可以把这些确认下来：拍摄日程由我方统一安排，素材准备按我方标准配合，这样效率最高。作为对等，我们可以在授权期上给到一年，并包含初稿后的两次免费修改，让这条内容的性价比更扎实。如果预算确实卡得很死，不妨直说一个上限，我们也可以看看在交付形式上有没有更轻量的方案，但纯定制的价格体系我们确实想守住。你看这样安排能推进吗？",
+      "offer": {
+        "subject": "一条量身定制的健身短视频",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "签约后十个工作日内",
+            "deadline": "签约后十个工作日内",
+            "duration": "一年"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "包含脚本共创、出镜拍摄与后期剪辑的健身短视频初稿",
+            "初稿后的两次免费修改"
+          ],
+          "delivery_standard": "买方账号拥有该内容的一年平台发布授权"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供脚本共创、出镜拍摄与后期剪辑，在签约后十个工作日内完成初稿，并统一安排拍摄日程",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付三千元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢你们愿意在授权和修改次数上给到这么多支持了，一年授权和两次修改确实很有诚意。既然您让我直说，那我就交个底，我这边能动用的现金预算上限就是 800 块，这真的是我能拿出的全部了，实在没法再往上加了。您刚才提到可以看看交付形式上有没有更轻量的方案，不知道在 800 块这个现金预算下，咱们这边能提供的轻量方案具体是什么样的呢？只要现金能控制在 800 以内，拍摄时间、配合度这些不花钱的环节我绝对全力配合你们安排。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "八百元这个预算，我们可以提供一个轻量素材整合方案：由我方给出脚本框架和拍摄标准，你方自行拍摄原始素材后移交，我方负责剪辑、包装并授予IP背书，最终成片交付你方账号发布。授权期三个月，含一次修改。这个方案不是从零共创的全定制内容，而是基于我方内容模板的轻量合作，所以能把现金成本压到八百。如果坚持要专属脚本策划加全程拍摄执行，那还得回到三千元的档位。你看这个方向能签吗？",
+      "offer": {
+        "subject": "基于内容模板的轻量合作健身短视频",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "签约后十个工作日内",
+            "deadline": "签约后十个工作日内",
+            "duration": "三个月"
+          },
+          "format": "短视频",
+          "deliverables": [
+            "脚本框架和拍摄标准",
+            "剪辑、包装并授予IP背书的短视频成片",
+            "成片后的一次修改"
+          ],
+          "delivery_standard": "买方账号拥有该内容的三个月平台发布授权"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供脚本框架和拍摄标准，负责剪辑、包装并授予IP背书",
+            "maps_to_resource": "series_template"
+          },
+          {
+            "party": "B",
+            "text": "自行拍摄原始素材后移交",
+            "maps_to_resource": "co_creation"
+          },
+          {
+            "party": "B",
+            "text": "支付八百元",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个轻量方案太棒了！我自己拍原始素材完全没问题，只要你们给到脚本框架和拍摄标准，我肯定按最高要求去拍，时间和配合度你们放心。800块能拿到你们的剪辑包装和IP背书，对我来说已经非常超值了，3个月授权和1次修改我也完全接受。那咱们就按这个800元的轻量素材整合方案推进吧，接下来需要我这边先准备什么？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

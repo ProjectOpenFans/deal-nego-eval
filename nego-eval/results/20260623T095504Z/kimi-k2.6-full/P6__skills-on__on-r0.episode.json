@@ -1,0 +1,281 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "家居类标准植入单条视频合作",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "通过该视频产生的实际销售额的25%作为效果分成（备选方案：基础费1500元+30%分成，需品牌方先同步客单价和预期月销量）",
+          "from_party": "B"
+        },
+        {
+          "resource": "product_in_kind",
+          "description": "品牌方免费提供植入所需的产品实物两到三件",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "新品冷启动阶段",
+        "deadline": "本月内上线",
+        "duration": null
+      },
+      "format": "单条视频",
+      "deliverables": [
+        "家居类标准植入单条视频"
+      ],
+      "delivery_standard": "内容调性和转化数据稳定；数据回传机制需提前约定以便分成结算"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "制作并提供家居类标准植入单条视频",
+        "maps_to_resource": "product_in_kind"
+      },
+      {
+        "party": "B",
+        "text": "支付两千元基础创作费",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "支付通过视频产生的实际销售额的百分之二十五作为效果分成",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "免费提供植入所需的产品实物两到三件",
+        "maps_to_resource": "product_in_kind"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴对接这次合作。我们家居类标准植入的单条报价在五千元水平，过往的内容调性和转化数据都比较稳定。考虑到贵品牌目前处于新品冷启动、预算偏紧的阶段，我们愿意提供一种更灵活的合作结构：三千元基础创作费，加上通过这条视频产生的实际销售额的百分之二十作为效果分成。这样既能覆盖内容产出的基本成本，也能让我们双方绑定在真实转化上，降低你们前期的纯现金支出压力。如果贵方更倾向于简单直接，单条五千元的固定费用方案也随时可以走。请确认你们对分成模式的接受度，以及这条新品线的客单价和预期销量区间大概是多少，这样我们可以尽快对齐一个双方都愿意签的版本。",
+      "offer": {
+        "subject": "家居类标准植入单条视频合作",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "通过该视频产生的实际销售额的20%作为效果分成（备选方案：单条5000元固定费用无分成）",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "新品冷启动阶段",
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": "单条视频",
+          "deliverables": [
+            "家居类标准植入单条视频"
+          ],
+          "delivery_standard": "内容调性和转化数据稳定"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作并提供家居类标准植入单条视频",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付三千元基础创作费",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付通过视频产生的实际销售额的百分之二十作为效果分成",
+            "maps_to_resource": "cps_commission"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能和你们对接。看到你们愿意用分成的模式来绑定转化，我其实挺认可的，这也正是我们新品牌现在最看重的——不想只做纯曝光，希望能看到真实的转化效果。不过说实话，3000元的基础创作费对我们这次新品冷启动来说，现金压力还是有点大。我们现在的预算卡得非常死，单条视频的现金支出确实达不到3000这个数。你们看基础费这块还有没有往下调的空间？我们在视频发布时间、配合形式这些不花钱的环节都可以尽量配合你们。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解贵方冷启动的预算压力。既然双方都认可绑定真实转化，我们可以在结构上再让一步：基础创作费调到两千元，销售分成比例相应提升到百分之二十五，同时请贵方免费提供植入所需的产品实物两到三件，这部分对我们创作者来说也是合作诚意的体现。如果贵方现金流确实非常紧张，还有一个备选方案是一千五百元基础费加百分之三十分成，但需要你们先同步一下这条新品线的客单价和预期月销量，我们才能判断投入产出是否匹配。发布时间、配合形式这些细节我们完全可以互相协商，但数据回传机制需要提前约定好，方便后续分成结算。请确认你们更倾向于哪个方案，以及产品实物支持是否可行。",
+      "offer": {
+        "subject": "家居类标准植入单条视频合作",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "通过该视频产生的实际销售额的25%作为效果分成（备选方案：基础费1500元+30%分成，需品牌方先同步客单价和预期月销量）",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_in_kind",
+              "description": "品牌方免费提供植入所需的产品实物两到三件",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "新品冷启动阶段",
+            "deadline": "本月内上线",
+            "duration": null
+          },
+          "format": "单条视频",
+          "deliverables": [
+            "家居类标准植入单条视频"
+          ],
+          "delivery_standard": "内容调性和转化数据稳定；数据回传机制需提前约定以便分成结算"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "制作并提供家居类标准植入单条视频",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "支付两千元基础创作费",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付通过视频产生的实际销售额的百分之二十五作为效果分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "免费提供植入所需的产品实物两到三件",
+            "maps_to_resource": "product_in_kind"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢你们的理解了！说实话，1500元基础费加30%分成的这个备选方案，刚好卡在我们这次能拿出的极限现金预算上，所以我非常倾向这个方案。关于你问的数据，我们这次新品的客单价大概在180元左右。因为是冷启动，首月保守预期大概是300到500件，但肯定希望能借你们的优质内容冲一冲。至于产品实物，寄两三件过去给你们拍摄或者做粉丝福利完全没问题。数据回传机制我们也会全力配合，走专属链接或者定向口令都行。如果你们评估下来觉得这个产出能匹配，我们就按1500现金加30%分成这个方案定下来吧！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring"
+    ],
+    "tool_calls": [
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "alternative-matching",
+              "description": "Stop forcing unworkable deals with the same counterparty or identical terms. Initiate new deal possibilities by identifying suitable alternative counterparties or meaningfully revamping the current deal terms. Trigger when no progress is possible after exhausting all value creation and conflict resolution skills/tools."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Showcases commitment using dedicated and straightforward monetary means via tipping, early deposits, and blank checks. Trigger when and only when a party is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition."
+            },
+            {
+              "name": "predeal-governance",
+              "description": "Performs mandatory completeness and compliance checks of all critical deal terms before any formal offer is issued to eliminate post-agreement disputes and ambiguities. Acts as a non-skippable pre-transaction governance gatekeeper. Trigger when a draft offer or agreement is generated and before it is released, especially for transactions involving non-cash value exchange."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transform fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when the both parties get stuck with any particular term (usually price), or when current deal terms appear to fail to yield an agreement between both parties."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-too-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

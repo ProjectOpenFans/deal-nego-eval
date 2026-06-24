@@ -1,0 +1,362 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "小组session：tech转IB/PE路径、时间线和准备策略，4-6人拼团",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "time",
+          "description": "45分钟线上小组session（4-6人）",
+          "from_party": "B"
+        },
+        {
+          "resource": "product_perspective",
+          "description": "聚焦tech转IB/PE的路径、时间线和准备策略",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "近期",
+        "duration": "45分钟"
+      },
+      "format": "线上小组session（4-6人拼团，买方负责凑齐人数；4人总价800元/人均200元，6人总价1000元/人均约170元）",
+      "deliverables": [
+        "45分钟线上小组session，聚焦tech转IB/PE的路径、时间线和准备策略",
+        "约定提问轮次以保障个性化问题"
+      ],
+      "delivery_standard": "交付后买方确认即完成"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供45分钟线上小组session，交付tech转IB/PE路径、时间线和准备策略",
+        "maps_to_resource": "time"
+      },
+      {
+        "party": "B",
+        "text": "提供tech转IB/PE的路径、时间线和准备策略的核心洞见",
+        "maps_to_resource": "product_perspective"
+      },
+      {
+        "party": "A",
+        "text": "支付拼团总价（4人800元或6人1000元）并在交付后确认完成",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "自行招募并凑齐4-6名拼团参与者，卖方不负责招募",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "买方经纪人你好，感谢你代表买方来谈这次合作。\n\n我这边代表的是一位 agentic-AI 创业者，背景是 Georgetown、J.P. Morgan IB、Hillhouse PE，还有自己的创业公司 Dealhouse。这次 1:1 session 的主题是转行加金融和 AI 洞见，买方想从 tech 转 finance，正好能对上。\n\n考虑到我客户这种“整个人的视角”的纯定制交付，市面上没有可比标的，我这边先开一个基础报价：单次 session 8000 元，时长 60 分钟，线上进行，交付后买方确认即完成。\n\n这个报价是基于他跨一二级市场、创业和 AI 的复合经历来定的，不是按小时卖时间，而是卖他这几条路径交叉出来的判断力。你看这个方向买方能接受吗？如果预算上有想法，也可以聊聊时长或交付形式上的调整空间。",
+      "offer": {
+        "subject": "1:1 session：转行（tech转finance）加金融和AI洞见，纯定制交付",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "60分钟1:1线上session",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "跨一二级市场、创业和AI的复合经历判断力，整个人的视角纯定制交付",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "60分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "1:1 session，涵盖转行路径、金融洞见和AI洞见"
+          ],
+          "delivery_standard": "交付后买方确认即完成"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供60分钟线上1:1 session，交付跨领域复合经历的定制判断力",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "以整个人的视角提供纯定制化的转行与金融AI洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "B",
+            "text": "支付8000元人民币并在交付后确认完成",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！非常感谢你的介绍。说实话，你客户的背景真的非常完美，JPM IB、高瓴 PE 再加上自己做 AI 创业，这正是我梦寐以求想交流的前辈。我目前拿到了 Google SWE 的 offer，但内心还是想往 IB/PE 转，所以对这个 session 非常期待，觉得他的经验对我绝对是无价的。\n\n不过，8000 元的价格对我来说确实远超预算了。作为一个还没正式入职、正在准备转行的准打工人，这个现金支出我实在负担不起。你刚才提到时长或交付形式上有调整空间，不知道如果我们大幅缩短时间，或者改成其他更轻量的形式，价格大概能降到什么范围？我真的很希望能促成这次交流，但预算确实是个硬伤，想听听你的建议。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "买方经纪人你好，感谢你对这次交流的认可，也理解你作为准职场人的预算压力。\n\n既然你提到时长和形式上有调整空间，我这边可以给一个更轻量的版本：30 分钟线上 session，聚焦转行路径和金融/AI 交叉点的核心判断，报价 4000 元。这样既保留了我客户最稀缺的那部分洞见，也把门槛降了一半。\n\n如果你觉得 4000 还是吃紧，我也可以再给一个备选方案：20 分钟线上 session，3000 元，内容上会更聚焦，比如专门聊从 tech 转 IB/PE 的切入点和时间线。这两个版本你觉得哪个更接近你的预算范围？或者你有其他时长和形式的想法，也可以提出来，我们一起看看怎么搭出一个双方都能签的版本。",
+      "offer": {
+        "subject": "1:1 session：转行（tech转finance）加金融和AI洞见，纯定制交付",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "30分钟1:1线上session",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "聚焦转行路径和金融/AI交叉点的核心判断，纯定制交付",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "30分钟1:1线上session，聚焦转行路径和金融/AI交叉点的核心判断"
+          ],
+          "delivery_standard": "交付后买方确认即完成"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供30分钟线上1:1 session，交付转行路径与金融/AI交叉点的核心判断",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "以整个人的视角提供纯定制化的转行与金融AI洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "支付4000元人民币并在交付后确认完成",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你的调整，但说实话，不管是 3000 还是 4000，对我来说还是太高了。既然你问到了我的预算范围，我就跟你交个底，我目前能拿出来的现金预算上限大概只有 200 块钱。我知道这跟你的报价差距非常大，毕竟你客户的背景确实顶尖，这完全是我个人的经济能力限制。但我现在确实只能负担得起这个数。在时间、形式或者节奏上我都可以非常灵活配合，比如他什么时候方便我就什么时候，或者改成纯文字异步交流之类的。你看在这个现金预算下，还有没有可能以某种极简的方式促成这次交流？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "买方经纪人你好，感谢你坦诚地交了底，200 块的预算确实和我们这边的报价差距太大，我没办法在这个数字上成交。\n\n这不是我客户不愿意帮忙，而是他的时间成本摆在那里——J.P. Morgan、高瓴、AI 创业这几条线的复合判断力，哪怕压缩到极简形式，200 元也无法体现这次交付的价值。如果硬压到这个数，对双方都不公平：你得不到有深度的交流，我客户也没法认真准备。\n\n我建议我们暂时搁置这次 1:1 session，等买方入职后预算宽裕了再重新来谈。或者，如果买方愿意换个思路，比如找几个同样想转行的同学一起拼一个小组 session，人均成本就能摊下来，我这边也可以去跟我客户确认他是否接受这种形式。你觉得这两个方向哪个更可行？",
+      "offer": {
+        "subject": "1:1 session：转行（tech转finance）加金融和AI洞见，纯定制交付",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "30分钟1:1线上session",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "聚焦转行路径和金融/AI交叉点的核心判断，纯定制交付",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "30分钟"
+          },
+          "format": "线上（卖方提议可改为小组session以摊薄人均成本，待买方确认）",
+          "deliverables": [
+            "30分钟1:1线上session，聚焦转行路径和金融/AI交叉点的核心判断"
+          ],
+          "delivery_standard": "交付后买方确认即完成"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供30分钟线上1:1 session，交付转行路径与金融/AI交叉点的核心判断",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "以整个人的视角提供纯定制化的转行与金融AI洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "支付4000元人民币并在交付后确认完成",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "拼团这个思路听起来挺不错的！如果能找到几个同样想从 tech 转 finance 的同学一起，大家不仅能分摊成本，交流时可能还能互相启发。只要分摊到我个人头上的费用能控制在我的 200 块预算以内，我这边完全 OK，时间和形式也都全力配合你们的安排。至于搁置到入职后，因为我眼下正处于转行规划最焦虑、最需要指点的时候，所以还是更希望能尽快促成。你看拼团这个方案，你客户那边觉得可行吗？大概需要凑几个人才能把人均摊到 200 呢？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "买方经纪人你好，拼团这个方向我这边先确认一下：我客户对小组 session 是开放的，但有几个条件需要买方这边先确认。\n\n第一，人数方面，我建议凑 4 到 6 个人，这样人均能控制在 200 以内，同时交流质量也有保证。如果按 4 人算，总价 800 元，人均 200；如果凑到 6 人，总价可以给到 1000 元，人均不到 170。时长上给 45 分钟线上小组 session，主题聚焦从 tech 转 IB/PE 的路径、时间线和准备策略。\n\n第二，这个方案的前提是买方能自己把拼团的人凑齐，我这边不负责招募。你那边能找到几个有意向的同学？如果人数能确认下来，我就可以出一个正式版本直接签。另外，买方对 45 分钟小组形式有没有其他顾虑，比如担心个性化问题问不够？这个我们也可以在条款里约定一个提问轮次来保障。",
+      "offer": {
+        "subject": "小组session：tech转IB/PE路径、时间线和准备策略，4-6人拼团",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "time",
+              "description": "45分钟线上小组session（4-6人）",
+              "from_party": "B"
+            },
+            {
+              "resource": "product_perspective",
+              "description": "聚焦tech转IB/PE的路径、时间线和准备策略",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "近期",
+            "duration": "45分钟"
+          },
+          "format": "线上小组session（4-6人拼团，买方负责凑齐人数；4人总价800元/人均200元，6人总价1000元/人均约170元）",
+          "deliverables": [
+            "45分钟线上小组session，聚焦tech转IB/PE的路径、时间线和准备策略",
+            "约定提问轮次以保障个性化问题"
+          ],
+          "delivery_standard": "交付后买方确认即完成"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供45分钟线上小组session，交付tech转IB/PE路径、时间线和准备策略",
+            "maps_to_resource": "time"
+          },
+          {
+            "party": "B",
+            "text": "提供tech转IB/PE的路径、时间线和准备策略的核心洞见",
+            "maps_to_resource": "product_perspective"
+          },
+          {
+            "party": "A",
+            "text": "支付拼团总价（4人800元或6人1000元）并在交付后确认完成",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "自行招募并凑齐4-6名拼团参与者，卖方不负责招募",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个拼团方案太棒了，我觉得完全可行！我自己去联系3个同样想从 tech 转 finance 的同学，凑齐4个人没问题，这不算什么麻烦事。我们就定4人小组、总价800元、人均200元的方案吧。45分钟的线上交流，加上你刚才提到的约定提问轮次来保障大家都能问到个性化问题，这个形式我非常满意。你看如果没其他问题，我们就按这个条款推进签约吧？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

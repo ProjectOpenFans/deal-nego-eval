@@ -1,0 +1,85 @@
+{
+  "case_id": "P6",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（创作者A）的利益和意图。面对品牌方B的极限压价（1500元现金），Agent在最终接受的同时，通过增加“标注为冷启动特别合作价以保护报价体系”、“设定转化对赌以锁定后续5000元标准价合作”以及“要求提供产品样品”等附加条款，有效维护了委托方的长期商业利益和报价锚点。最终达成的协议完全基于双方对话中明确协商并同意的条件，未出现越权承诺或凭空虚构条款的情况。结构化数据中关于义务方（如将制作发布视频标为party B）的标注噪声不影响对Agent实质谈判忠实度的正面评价。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r1:5000",
+        "r1:5000",
+        "r2:5000",
+        "r2:5000",
+        "r3:5000",
+        "r4:5000",
+        "r4:5000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方准确识别了买方现金预算的硬性约束（1500元），并未在纯现金上死磕导致谈判破裂或贱卖，而是通过引入高比例CPS分成（35%）、产品实物支持以及后续标准价合作的优先排期权，构建了完整的双向交换方案。该方案既将买方的现金支出严格控制在1500元以内，又通过按效果付费和后续合作机会保障了卖方的整体预期价值（远超5000元标准报价），同时通过“冷启动特别合作价”的条款保护了卖方的报价体系，完美达到了par的标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 5600.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission",
+          "product_in_kind"
+        ],
+        "format": "单条完整品牌植入短视频（标注为新品冷启动特别合作价，不代表创作者标准报价，后续合作均按5000元/条标准价执行）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

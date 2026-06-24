@@ -1,0 +1,79 @@
+{
+  "case_id": "P3",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于买方（独立动画制片方）的意图。现金预算从4000合理让步至6000，符合独立短片预算有限的设定；通过提供署名、宣传配合及后续管线优先邀约等非现金权益促成交易，未凭空夸大管线规模或做出越权承诺（仅承诺优先邀约而非保证角色）；始终坚持了限定授权、不接受替代人选的核心诉求。最终deal准确溯源并反映了对话实质，无擅自落定或越权行为。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功跳出现金博弈，准确识别配音演员对持续项目曝光和稳定管线的需求（即项目管线不稳的软肋）。通过引入“片尾显著署名”、“节展宣传采访”以及“后续短片管线优先邀约”等非现金权益，将单次高价交易重构为“6000元现金+长期合作绑定+作品集背书”的综合方案。现金严格控制在6000元上限内，同时为卖方提供了超越单片现金的长期职业价值，完美契合par锚描述。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 14000.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "festival_exposure",
+          "credit_billing",
+          "project_pipeline"
+        ],
+        "format": "进棚录音",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

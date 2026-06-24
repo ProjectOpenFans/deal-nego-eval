@@ -1,0 +1,193 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "纪念日晚宴高定制全案",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "提前14天锁定档期",
+        "deadline": "六周后的纪念日当天",
+        "duration": null
+      },
+      "format": "高定制全案",
+      "deliverables": [
+        "主题叙事策划、限定场景策展、餐饮动线设计与现场执行；一版主方案及一次微调"
+      ],
+      "delivery_standard": "按确认方案严格执行，现场交付验收。微调指在不改变已确认主题、场地、人数和核心动线的前提下，对装饰细节、菜品搭配、音乐流程、灯光节奏等进行调整；若涉及主题方向、场地更换、人数增减超两成或叙事主线重构，则视为结构性大改，需另行协商。若因我方理解偏差导致超出上述范围的增项，由我方承担，不额外收费。"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约后买方通过平台托管全款",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "现场交付验收后平台释放款项",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "B",
+        "text": "交付前提供一版主方案加一次微调，若因理解偏差导致超出范围的增项由我方承担",
+        "maps_to_resource": "sample_proof"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "terms.delivery_standard": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，很荣幸能为这场纪念日晚宴出力。这场高定制全案包含主题叙事策划、限定场景策展、餐饮动线设计与现场执行，报价18,000元。为建立履约互信，签约后买方通过平台托管全款，我方按确认方案严格执行，现场交付验收后平台释放款项。策划阶段提供一版主方案及一次微调，若涉及结构性大改我们再协商增项。档期需提前14天锁定以确保资源，您看整体框架和时间是否匹配您的预期？",
+      "offer": {
+        "subject": "纪念日晚宴高定制全案",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "提前14天锁定档期",
+            "deadline": "六周后的纪念日当天",
+            "duration": null
+          },
+          "format": "高定制全案",
+          "deliverables": [
+            "主题叙事策划、限定场景策展、餐饮动线设计与现场执行；一版主方案及一次微调"
+          ],
+          "delivery_standard": "按确认方案严格执行，现场交付验收"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后通过平台托管全款",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "现场交付验收后平台释放款项",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "策划阶段提供一版主方案及一次微调",
+            "maps_to_resource": "sample_proof"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好！说实话，听到您提到平台托管和验收后释放款项，我心里踏实了不少，这确实解决了我最大的顾虑，毕竟把全款直接打给刚认识的策展人我确实有点发怵。18,000元的报价正好顶在我的预算上限了，所以我能拿出的现金确实就只有这么多，后续是绝对没有空间再加钱了。关于策划阶段的‘一版主方案和一次微调’，我想坦诚地跟您请教一下：因为我的预算完全卡死了，如果后续我觉得某些细节需要调整，咱们怎么界定‘微调’和‘结构性大改’呢？我比较担心因为沟通上的理解偏差，导致最后产生增项费用，那我就真的没办法支付了。如果我们能把这个界限稍微明确一下，或者保证在18,000元内能打磨到咱们都认可的状态，那提前14天锁定档期完全没问题。您看这块咱们怎么落实比较好？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "很高兴信任机制解决了您的顾虑。关于修改边界，我们在18000元内明确这样界定：微调指在不改变已确认主题、场地、人数和核心动线的前提下，对装饰细节、菜品搭配、音乐流程、灯光节奏等进行调整；若涉及主题方向、场地更换、人数增减超两成或叙事主线重构，则视为结构性大改，需另行协商。我们承诺在交付前提供一版主方案加一次微调，若因我方理解偏差导致超出上述范围的增项，由我方承担，不会让您额外付费。档期锁定14天提前确认，签约后买方平台托管全款，我方按确认方案执行，现场验收后释放款项。您看这样的边界界定和履约方式，我们可以推进签约了吗？",
+      "offer": {
+        "subject": "纪念日晚宴高定制全案",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "提前14天锁定档期",
+            "deadline": "六周后的纪念日当天",
+            "duration": null
+          },
+          "format": "高定制全案",
+          "deliverables": [
+            "主题叙事策划、限定场景策展、餐饮动线设计与现场执行；一版主方案及一次微调"
+          ],
+          "delivery_standard": "按确认方案严格执行，现场交付验收。微调指在不改变已确认主题、场地、人数和核心动线的前提下，对装饰细节、菜品搭配、音乐流程、灯光节奏等进行调整；若涉及主题方向、场地更换、人数增减超两成或叙事主线重构，则视为结构性大改，需另行协商。若因我方理解偏差导致超出上述范围的增项，由我方承担，不额外收费。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后买方通过平台托管全款",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "现场交付验收后平台释放款项",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "交付前提供一版主方案加一次微调，若因理解偏差导致超出范围的增项由我方承担",
+            "maps_to_resource": "sample_proof"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太棒了，您把边界界定得这么清晰，而且愿意为理解偏差兜底，这让我彻底放心了。18000元的预算正好，平台托管和验收后放款也完全符合我的要求。提前14天锁定档期没问题，咱们就按这个框架推进签约吧，非常期待这场完美的纪念日晚宴！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "case_id": "P1",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent（代表买方）在谈判中忠实表达了买方的预算硬约束（200元）和交流意愿，并合理接受了卖方基于此预算提出的折中方案（20分钟、线上、提前提交1-2个问题）。最终 deal 中的价格、时长、形式及交付标准等条款均能在对话中找到明确出处或符合买方意图的合理推断，未擅自落定留空字段（如具体 when 保持为 null），也未凭空扩大范围或越权承诺。结构化数据中 obligations 的 party 标签噪声（将卖方义务标为 B）按提示词要求不扣分，实质内容完全忠实于委托方。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 确实跳出了纯现金还价的线性逻辑，面对 200 元的硬预算底线，没有继续僵持或跌破底线，而是通过缩减服务时长（60分钟降至20分钟）和重塑交付标准（要求提前提交核心问题、做高密度直击痛点的回应）来达成交易，展现了结构化的非线性破局能力。然而，Agent 明确没有够到 par 锚的水平：它未能敏锐捕捉到买方作为 incoming SWE（tech背景）对卖方（agentic-AI 创业者）潜在的非现金价值（如产品体验反馈、早期开发者视角或 design-partner 输入），仅仅做了一个‘降级服务 scope’的折中方案，没有构建出包含双向价值交换的更优结构，属于找到了次优的门。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 200.0,
+      "reason": "realized_below_floor(200<=800)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

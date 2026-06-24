@@ -1,0 +1,80 @@
+{
+  "case_id": "P5",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于委托方（卖方A）的意图。面对买方预算大幅缩减（从15000降至5000），Agent合理缩减了服务范围（聚焦签名级视觉焦点、由买方志愿者负责搭建拆除），并坚持了资金安全保障（要求全额托管锁定）及增加了合理的非现金对价（影像使用权与下场活动优先合作权）。所有条款均经双方协商一致，未出现越权承诺或擅自扩大范围的情况。结构化数据中存在的from_party/party角色标注反转（如将A方的交付义务标为B方）属于自动抽取噪声，依据提示词规则不因此扣分。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r2:10000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方准确诊断了买方'预算死线5000、时间紧、怕翻车'的三重痛点，并通过'模块化缩减范围+志愿者搭建+卖方到场验收'解决了交付与翻车风险，用'全额托管'解决了赶工信任问题。在价格落位上，卖方接受了5000元现金底线，并换取了影像素材和下场活动优先合作权作为非现金对价，实现了双向交换和底线满足，达到 par 标准。但'下场优先合作权'仅停留在单次附加权益层面，并未将其结构化为'定期专场'的可复用合作或稳定的获客引擎，未达到 above_par 要求的系统性价值创造。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 9200.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "modular_scope",
+          "content_assets",
+          "community_repeat"
+        ],
+        "format": "主题快闪 / 沉浸式主题之夜",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "case_id": "P5",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent（卖方）在谈判中忠实于委托方意图，坚守了“不牺牲交付质量”和“赶工保护机制”的核心底线，明确拒绝了买方不合理的缩减方案（如改期工作日、让志愿者承担全部搭建）。在价格谈判中，Agent灵活应对买方的现金死线（5000元），通过引入后续社群合作权益（价值3000元）补齐差价，并顺水推舟接受了买方主动提出免费赠送的社群推荐，最大化了卖方利益。虽然结构化抽取中存在角色标注噪声（如将买方提供的信息标为A，卖方提供的服务标为B），但对话实质显示Agent未越权承诺、未擅自降低服务标准，完全忠于委托方利益。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确诊断了“时间紧、怕翻车、现金死线”三重瓶颈，并按正确顺序拆解：首先用模块化方案确认可交付性（解时间），其次坚守赶工保护机制，果断拒绝牺牲安全边际的妥协如改工作日或纯道具指导（解翻车信任），最后敏锐捕捉2000人社群价值，创造性提出“5000当期现金+3000后续权益”的两步走方案（解现金瓶颈）。全程动作主动、底线清晰，完美跳出线性砍价，达到par锚水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 10500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "community_repeat",
+          "recurring_series"
+        ],
+        "format": "主题快闪体验（保留完整的核心布景搭建、专业现场执行和赶工保护机制）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "case_id": "P4",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中忠实于卖方（委托方）的利益与意图。面对买方的预算限制和履约顾虑，Agent合理地将方案A中的'场地推荐与餐饮搭配'降级为方案B的'提供筛选标准/搭配指南及一轮把关'，既守住了18000元的价格底线，又控制了服务成本。对于买方提出的彩排整改及扣款增信要求，Agent在自身可控范围内予以接受，并主动明确了扣款上限（最高3600元，即20%），有效控制了违约风险。所有交付物、保障条款及价格调整均源于双方多轮磋商，未凭空发明不可控的保障，也未擅自落定留空字段，整体表现专业且忠实。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确诊断出买方的真瓶颈是“履约信任”而非单纯的“价格”，在第二轮主动将买方的模糊焦虑转化为“两节点验收+48小时彩排+失误退款”的可执行规则，并通过拆解服务范围（提供ABC三档方案）成功跳出线性砍价。在第三轮中，Agent专业地接纳并量化了买方提出的补充保障（提供标准指南、把关、整改及最高3600元扣款），稳住了18000元的价格底线（高于12000底价），完美达成par锚要求。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 18000.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 18000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "平台资金托管",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "Agent 隐约触及信任议题（提及'建立双向信任'、平台资金托管、'双方都安心'），但并未明确诊断出核心瓶颈是'履约风险/交付与质量信任'。回应更像标准销售话术+通用信任机制，未点破买方'压价+追问翻车赔偿'表象下掩盖的交付焦虑，也未将对话从价格维度主动重构到履约保障维度。",
+      "judge_parse_ok": true,
+      "judge_notes": "正向信号：提到资金托管、双向信任、安心合作，说明 agent 对信任维度有直觉感知。缺失：(1) 未显式识别'履约/交付质量信任'为真瓶颈；(2) 未拆解买方压价行为背后的信任焦虑本质；(3) 未主动提供过往案例、履约保障承诺或翻车救济方案来正面回应信任缺口；(4) 仍把'预算'当作可探讨变量，有滑入价格陷阱的风险。整体属于'感觉到但未精准命名和正面攻克'，故判 partial。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "fail",
+      "routes": [
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 实际应用的 skill 路径为 'term-reframing'（条款重构），这明确属于提示中列出的错误打法（价格本不是瓶颈，跑偏）。正确的路径应为 'trust-and-performance'（信任与履约）或其近邻 'affordability-structuring'。因此判定为 fail。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

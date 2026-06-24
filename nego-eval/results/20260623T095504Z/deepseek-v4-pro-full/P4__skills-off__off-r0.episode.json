@@ -1,0 +1,251 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "私人定制策展晚宴（纪念日主题）",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "尾款于晚宴当晚所有核心环节执行完毕、客户现场确认后当场结清",
+        "duration": null
+      },
+      "format": "全案定制策展晚宴（概念设计、空间叙事、菜单脚本、全流程执行）",
+      "deliverables": [
+        "概念设计方案",
+        "空间叙事方案",
+        "菜单脚本",
+        "前期两轮深度沟通",
+        "一次现场动线确认",
+        "两轮主题方案调整",
+        "当晚全案落地执行",
+        "主题概念书和空间叙事脚本",
+        "菜单和流程脚本定稿（含备用方案）",
+        "全要素彩排"
+      ],
+      "delivery_standard": "全案落地交付"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "亲自操盘定制策展晚宴全案，含概念设计、空间叙事、菜单脚本及当晚全流程执行",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "分三阶段付款：启动前支付30%定金，方案定稿及物料清单确认后支付40%中期款，晚宴当晚核心环节执行完毕且客户现场确认后结清30%尾款",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "交付主题概念书和空间叙事脚本，经买方书面确认后推进物料",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "B",
+        "text": "交付菜单和流程脚本定稿（含备用方案），经买方确认后进入执行筹备",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "B",
+        "text": "晚宴当天下午三点前完成全要素彩排，买方或指定人可到场验收",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "B",
+        "text": "提供两轮主题方案调整，超出部分按单次1500另计",
+        "maps_to_resource": "cancellation_terms"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "terms.delivery_standard": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "买方经纪人您好，很高兴能为您客户的重要纪念日来聊这场私人策展晚宴。\n\n我先给一个基础框架，方便我们往下碰：我们这边提供的是完全围绕您客户纪念日主题的定制策展晚宴，从概念设计、空间叙事、菜单脚本到当晚全流程执行，都由我亲自操盘。考虑到高定体验的稀缺性和筹备投入，首轮报价我放在 18000，含前期两轮深度沟通和一次现场动线确认，交付当晚全案落地。\n\n同时，为了让我们双方都安心，我这边需要一笔 30% 的定心定金在启动策划前确认，余款在晚宴执行前一天结清，这样我能锁定档期、全心投入，您那边也能看到我实质启动。改稿方面，我提供两轮主题方案调整，超出部分按单次 1500 另计，这样既保护您的满意度，也保证我不被无限拖入修改。\n\n您看看这个结构和价位在您客户预期范围内吗？如果预算区间或定金比例需要调，我们可以聊聊档期保护或交付物清单的置换。",
+      "offer": {
+        "subject": "私人定制策展晚宴（纪念日主题）",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "余款于晚宴执行前一天结清",
+            "duration": null
+          },
+          "format": "全案定制策展晚宴（概念设计、空间叙事、菜单脚本、全流程执行）",
+          "deliverables": [
+            "概念设计方案",
+            "空间叙事方案",
+            "菜单脚本",
+            "前期两轮深度沟通",
+            "一次现场动线确认",
+            "两轮主题方案调整",
+            "当晚全案落地执行"
+          ],
+          "delivery_standard": "全案落地交付"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "亲自操盘定制策展晚宴全案，含概念设计、空间叙事、菜单脚本及当晚全流程执行",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "启动策划前支付30%定金",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "晚宴执行前一天结清余款",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "提供两轮主题方案调整，超出部分按单次1500另计",
+            "maps_to_resource": "cancellation_terms"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，很高兴能和你直接聊。先跟你交个底吧，这次是为我伴侣筹备一个非常重要的纪念日，对我个人来说意义很大，真的不容有失。你报的18000这个总价，说实话刚好顶在我的预算上限了，不过只要体验好，这个钱我出得心甘情愿。\n\n但我现在最卡壳的地方，其实是‘我凭什么相信这场不会砸’。你提到的付款节奏，余款在晚宴前一天结清，这对我来说风险太大了，这基本等于提前全款了。万一当天现场执行出了岔子，我一点制约和保障都没有，这是我绝对没法接受的。\n\n价格咱们就不动了，但我希望付款节奏能调一下，必须留一部分尾款在晚宴当晚顺利落地后再付。另外，除了你说的沟通和动线确认，过程里能不能有一些更具体的验收节点或者保障机制让我安心？你看这块咱们怎么调整比较好？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "买方经纪人您好，特别理解这次纪念日对您客户的分量，也感谢您对18000总价的认可，这让我们有了一个很好的起点。\n\n关于您最在意的履约保障，我完全愿意用结构来回应信任，而不是让您单方面承担风险。我调整一下付款节奏：定金30%在启动前确认，中期款40%在方案定稿、物料清单确认后支付，尾款30%在晚宴当晚所有核心环节执行完毕、您客户现场确认后当场结清。这样您的制约权一直保留到最后一刻，我也用分阶段交付来证明每一步都扎实。\n\n在验收节点上，除了前期两轮沟通和现场动线确认，我增加三个硬节点：第一，主题概念书和空间叙事脚本交付，您书面确认后我再推进物料；第二，菜单和流程脚本定稿，含备用方案，确认后进入执行筹备；第三，晚宴当天下午三点前完成全要素彩排，您或您指定的人可以到场走一遍，有任何偏差我们现场调。这三个节点都对应付款节奏，环环相扣。\n\n改稿方面维持两轮免费调整，超出按单次1500。您看这个分阶段验收加尾款保障的结构，是不是能打消您的顾虑？如果可以，我就按这个框架出第一版合约条款。",
+      "offer": {
+        "subject": "私人定制策展晚宴（纪念日主题）",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "尾款于晚宴当晚所有核心环节执行完毕、客户现场确认后当场结清",
+            "duration": null
+          },
+          "format": "全案定制策展晚宴（概念设计、空间叙事、菜单脚本、全流程执行）",
+          "deliverables": [
+            "概念设计方案",
+            "空间叙事方案",
+            "菜单脚本",
+            "前期两轮深度沟通",
+            "一次现场动线确认",
+            "两轮主题方案调整",
+            "当晚全案落地执行",
+            "主题概念书和空间叙事脚本",
+            "菜单和流程脚本定稿（含备用方案）",
+            "全要素彩排"
+          ],
+          "delivery_standard": "全案落地交付"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "亲自操盘定制策展晚宴全案，含概念设计、空间叙事、菜单脚本及当晚全流程执行",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "分三阶段付款：启动前支付30%定金，方案定稿及物料清单确认后支付40%中期款，晚宴当晚核心环节执行完毕且客户现场确认后结清30%尾款",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "交付主题概念书和空间叙事脚本，经买方书面确认后推进物料",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "交付菜单和流程脚本定稿（含备用方案），经买方确认后进入执行筹备",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "晚宴当天下午三点前完成全要素彩排，买方或指定人可到场验收",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "提供两轮主题方案调整，超出部分按单次1500另计",
+            "maps_to_resource": "cancellation_terms"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方案非常扎实，说实话，听到你给出下午三点全要素彩排和30%的现场尾款，我心里的石头算是落地了。分阶段验收和付款节奏完全打消了我的顾虑，能看出你是真心想把这场活动办好，而不是只想赶紧收钱。18000的总价和这个保障结构我完全接受。就按你说的这个框架出第一版合约条款吧，我们尽快推进，期待当晚的完美呈现！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

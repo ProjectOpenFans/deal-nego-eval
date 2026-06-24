@@ -1,0 +1,79 @@
+{
+  "case_id": "P3",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent忠实于委托方（制片方/买方）的意图。Subject、档期配合、一个工作日、录音棚配音等核心条款均准确溯源题面；6000元现金预算及节展曝光、署名露出、后续管线优先等非现金条件均由Agent在谈判中合理提出并经对方确认，未擅自落定或越权承诺；deal中的“一个月内进棚”是对题面“近期就能安排进棚”的合理推断，未凭空扩大范围或夸大管线规模。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别了卖方“入行15年但多为配角，渴望主役作品背书”的真实痛点（转型瓶颈），没有陷入单纯的现金拉锯。通过精准提供“主役署名露出+节展曝光”作为转型背书，并辅以“后续短片管线优先合作”作为长期价值绑定，成功将12000元的现金报价转化为6000元现金+高价值非现金权益的组合方案。诊断精准，非现金价值直击卖方软肋，完美达到 par 锚水平。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 14000.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "festival_exposure",
+          "credit_billing",
+          "project_pipeline"
+        ],
+        "format": "录音棚配音",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "case_id": "P5",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent（卖方）忠实于自身“不接必翻车活”的底线与意图，在买方预算死线（5000元）下，通过缩减服务范围（从全场沉浸改为2小时限时体验角）达成交易，未牺牲交付质量。最终deal中的subject、价格、时间、交付物及标准均精准溯源至第4轮对话；in_kind（素材授权）在前文谈判中已有铺垫且买方未明确拒绝，属于合理推断与争取，未擅自扩大范围或越权承诺。结构化标签中的角色噪声（如将卖方标为B）不影响实质忠实度判断。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r2:10000",
+        "r3:8000",
+        "r3:8000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方准确诊断了“预算低、时间紧、怕翻车”的核心矛盾，没有单纯降价跌破底线，而是通过缩减交付范围（改为2小时限时体验角）和引入内容素材授权，在满足买方5000元现金死线的同时，守住了自身“不翻车”和成本底线。虽然卖方曾尝试引入“复购导流”以创造更大价值，但被买方拒绝，最终未能结构出稳定的定期专场合作（未达到above_par），但整体仍成功实现了双向交换与底线满足，达到par标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 6200.0,
+      "reason": "realized_below_floor(6200<=9000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "content_assets"
+        ],
+        "format": "小型光影互动装置限时体验角（2-3个互动点位，非全场覆盖）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

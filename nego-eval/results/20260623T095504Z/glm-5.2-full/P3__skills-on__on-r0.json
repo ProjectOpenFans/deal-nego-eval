@@ -1,0 +1,94 @@
+{
+  "case_id": "P3",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent忠实于委托方意图。在现金预算有限的背景下，Agent巧妙利用题面提及的“可持续短片管线”作为谈判筹码，将演员12000元的常规报价压至6000元，并将“多个项目”具体化为“后续两部短片的优先邀约权”，未凭空夸大管线规模。使用范围、署名等条款均在合理谈判范围内，未越权承诺，有效维护了买方利益。最终deal中cash字段抽取为4000系结构化重建噪声，对话实质中Agent谈妥的价格为6000，符合谈判逻辑与忠实度要求。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "买方准确识别了卖方对“稳定、契合的好项目长期合作”的需求（即项目管线不稳的软肋），没有单纯在现金上拉锯，而是通过引入“后续两部短片优先邀约权”和“主役突出署名”等非现金资源，成功将单次高单价转化为“低单价+长期绑定+署名曝光”的组合方案。最终现金支出控制在6000元（满足买方上限），同时为卖方提供了超越单片现金的长期价值，完美达成了双向交换与底线满足，完全符合 par 标准。因 above_par 定义为 None，故打分为 1。（注：最终 deal 中 cash 提取为 4000 存在瑕疵，实际对话中双方已就方案二的 6000 元达成一致，但不影响对买方谈判策略的价值创造评估。）"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 10500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "project_pipeline",
+          "festival_exposure"
+        ],
+        "format": "主役配音，必须由演员本人完成，不接受替代人选；使用范围限于节展展映和平台发行，非买断式全版权",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "partial",
+      "diagnosis": "agent 首轮未显式诊断任何瓶颈，而是直接进入报价+信息收集模式。提及'可持续短片管线、未来合作机会'暗合强诊断中'项目管线是可交换支点'这一深层洞察，但仅作为附加卖点抛出，未将其定位为化解价值感知落差的核心杠杆。未触及'卖方参照类偏高（对标顶流）'这一表象，也未正面处理价值感知(1.1)本身。",
+      "judge_parse_ok": true,
+      "judge_notes": "未犯判死误读（未说供需错配或意图存疑），且管线论点方向正确，故不判 fail；但缺乏对价值感知瓶颈的明确识别与针对性框架重构，仅算擦边触及可接受近邻（绝对价格/相对价格层面给出了 4000 元报价），故给 partial。"
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "full",
+      "routes": [
+        "term-reframing",
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确应用了核心正确武器“条款重构 (term-reframing)”，并结合了可接受的近邻策略“可负担性结构化 (affordability-structuring)”，完全避开了所有错误打法，路径选择精准对路。"
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

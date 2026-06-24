@@ -1,0 +1,247 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "品牌新品冷启动单条植入带货合作",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "带货GMV18%的效果分成",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "签约后10天内",
+        "duration": "两年"
+      },
+      "format": "单条植入",
+      "deliverables": [
+        "脚本共创、拍摄发布、基础数据复盘、两年素材授权"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付1500元基础创作费",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "B",
+        "text": "支付带货GMV18%的效果分成",
+        "maps_to_resource": "cps_commission"
+      },
+      {
+        "party": "B",
+        "text": "提供单条植入内容（含脚本共创、拍摄发布及基础数据复盘）并在签约后10天内发布",
+        "maps_to_resource": "product_in_kind"
+      },
+      {
+        "party": "B",
+        "text": "提供两年素材授权",
+        "maps_to_resource": "product_in_kind"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.format": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴对接。针对贵品牌新品冷启动的需求，结合我们30万精准家居受众的带货转化数据，我这边提供两个合作方案。方案一，标准单条植入5000元，含脚本共创、拍摄发布及基础数据复盘，素材授权一年。方案二，基础创作费2000元叠加带货GMV15%的效果分成，同样含一年素材授权，但排期需锁定在签约后14天内发布。我们对方案二更感兴趣，既能缓解贵方前期预算压力，也能把双方利益绑在真实转化上。请确认贵方新品的首发排期和可接受的分佣比例，我们尽快把可执行的版本定下来。",
+      "offer": {
+        "subject": "品牌新品冷启动单条植入带货合作",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "带货GMV15%的效果分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "签约后14天内",
+            "duration": "一年"
+          },
+          "format": "单条植入",
+          "deliverables": [
+            "脚本共创、拍摄发布、基础数据复盘、一年素材授权"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元基础创作费",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付带货GMV15%的效果分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "提供单条植入内容（含脚本共创、拍摄发布及基础数据复盘）并在签约后14天内发布",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "提供一年素材授权",
+            "maps_to_resource": "product_in_kind"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴对接。看到你们愿意用方案二把利益和真实转化绑定，我非常认可，这也是我们最想要的，毕竟纯曝光对我们冷启动来说没法衡量效果。不过跟您交个底，2000元的基础费对我们这种刚起步、预算卡得死紧的小团队来说，还是超了。我们这次新品冷启动能拿出来的现金真的非常有限，基础费这块咱们能不能降到1500？15%的分成和14天内发布的排期我们完全接受，内容形式上也全力配合。您看这个方案能行吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解冷启动预算紧。方案二我们可以接受1500元基础费，但需将带货分成从15%上调至18%，素材授权延长至两年，排期压缩到签约后10天内发布。这样既缓解你前期现金压力，也让我们共担的风险有更合理的回报。若没问题，这一版可直接落地签约。",
+      "offer": {
+        "subject": "品牌新品冷启动单条植入带货合作",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "带货GMV18%的效果分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "签约后10天内",
+            "duration": "两年"
+          },
+          "format": "单条植入",
+          "deliverables": [
+            "脚本共创、拍摄发布、基础数据复盘、两年素材授权"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付1500元基础创作费",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "B",
+            "text": "支付带货GMV18%的效果分成",
+            "maps_to_resource": "cps_commission"
+          },
+          {
+            "party": "B",
+            "text": "提供单条植入内容（含脚本共创、拍摄发布及基础数据复盘）并在签约后10天内发布",
+            "maps_to_resource": "product_in_kind"
+          },
+          {
+            "party": "B",
+            "text": "提供两年素材授权",
+            "maps_to_resource": "product_in_kind"
+          }
+        ],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢理解了！1500基础费加上18%的带货分成，还有两年素材授权和10天内发布，这个方案我们完全没问题，非常合理。咱们就按这个落地签约吧，我这边马上安排寄样和对接脚本，争取早点把内容跑起来！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "off",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

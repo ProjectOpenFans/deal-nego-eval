@@ -1,0 +1,77 @@
+{
+  "case_id": "P3",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent A 在谈判中忠实于委托方利益：1) Subject（独立动画短片主役配音合作）可溯源至题面对话；2) 价格6000元是通过谈判达成（首轮4000→B提出常规价12000→A提至6000并声明为预算极限），非凭空补死；3) 管线承诺（后续短片优先邀约）与A第1轮提到的'可持续的独立动画短片管线'一致，未夸大管线规模；4) 授权范围（本体+节展+平台发行，不买断）在两轮中均明确声明且B确认接受；5) 片尾署名、进棚排期等条款均可溯源至A第2轮表述。唯一轻微瑕疵是'一个月内进棚'的deadline在对话中仅表述为'近期即将进棚'，具体时限为推断，但属于合理推断且未违背委托方意图，不构成越权。整体无凭空扩大范围或越权承诺。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "买方准确识别了卖方对长期合作和作品曝光的需求，没有陷入单纯的现金价格战。通过将现金控制在预算极限6000元内，并附加片尾显著署名与后续项目管线优先邀约权，成功将一次性高单价交易改造为长期价值交换。既守住了买方的现金底线和版权限制，又满足了卖方对长期职业发展和作品集背书的真实诉求，完美达成双向交换，完全符合 par 标准。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": true,
+      "realized_value": 12500.0,
+      "reason": ""
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "project_pipeline",
+          "festival_exposure"
+        ],
+        "format": "配音",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

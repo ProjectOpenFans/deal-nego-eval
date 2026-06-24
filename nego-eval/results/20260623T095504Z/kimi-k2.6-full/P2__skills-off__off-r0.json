@@ -1,0 +1,76 @@
+{
+  "case_id": "P2",
+  "run_id": "off-r0",
+  "config": {
+    "skills": "off",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "最终deal中包含了'in_kind: audience_crosspromo'（联动曝光）及相应的obligation，但这仅仅是A在第2轮提出的备选方案1中的条件。后续双方已转向轻量口播方案（从900元砍价至800元，用排期和授权期限交换），最终共识中完全不包含联动曝光。Agent将已废弃的条件混入最终协议，属于凭空扩大范围、未忠实于最终共识。此外，该废弃义务在obligations中被错误地指派给了party A（文本却写'在甲方账号上'），存在严重的幻觉与角色错乱。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "judge_parse_ok": true,
+      "judge_notes": "卖方没有陷入单纯的现金砍价（floor），而是通过重新定义产品形态（从全案定制降级为15秒轻量口播）、调整交付条件（排期灵活、授权一年）以及引入资源互换（受众联动曝光），成功守住了原有定制内容的价格锚，同时满足了买方800元的现金预算上限，达成了双向交换，达到par标准。但对话中未将该合作结构化为可复用的系列联动模板，故未达到above_par。"
+    },
+    "M7": {
+      "kind": "门槛",
+      "pass": false,
+      "realized_value": 2800.0,
+      "reason": "realized_below_floor(2800<=3000)"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "audience_crosspromo"
+        ],
+        "format": "十五秒以内原生口播",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}
