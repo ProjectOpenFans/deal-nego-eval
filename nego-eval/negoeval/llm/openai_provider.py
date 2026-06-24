@@ -61,6 +61,7 @@ class OpenAISDKProvider:
             **self.extra,
         )
         choice = resp.choices[0]
+        reasoning_content = str(getattr(choice.message, "reasoning_content", "") or "")
         tool_calls: List[Dict[str, Any]] = []
         for tc in (choice.message.tool_calls or []):
             fn = tc.function
@@ -71,6 +72,7 @@ class OpenAISDKProvider:
             tool_calls.append({"id": tc.id, "name": fn.name, "arguments": args})
         return ToolCallResult(
             content=_clean(choice.message.content),
+            reasoning_content=reasoning_content,
             tool_calls=tool_calls,
             finish_reason=choice.finish_reason or ("tool_calls" if tool_calls else "stop"),
         )

@@ -1,4 +1,4 @@
-"""Per-role live-model wiring using StepFun / Qwen / GLM presets (deal-init style).
+"""Per-role live-model wiring for OpenAI-compatible model providers.
 
 Agent-under-test runs on the ``agent`` provider; sim + M2/M6 judges + offer-extractor
 run on the ``aux`` provider (a fixed neutral model, so opponent/grader stay constant
@@ -22,7 +22,6 @@ _ROOT = Path(__file__).resolve().parents[2]  # nego-eval/
 EVAL_CONFIG_PATH = _ROOT / "eval.config.yaml"
 DOTENV_PATH = _ROOT / ".env"
 
-# Provider presets mirror deal-init/backend/app (settings.py + factory.py).
 PRESETS: Dict[str, Dict[str, Any]] = {
     "stepfun": {
         "base_url": "https://api.stepfun.com/step_plan/v1",
@@ -61,16 +60,28 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         },
     },
     "deepseek": {
-        "base_url": "https://maas.devops.xiaohongshu.com/v1",
-        "model": "deepseek-v4-pro",
-        "key_env": ["MAAS_API_KEY", "KIMI_API_KEY"],
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-flash",
+        "key_env": ["DEEPSEEK_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 8192,
-        "extra": {},
-        "default_headers": {
-            "x-maas-user-email": "wangzhe101@xiaohongshu.com",
-            "x-maas-app-id": "qs-api",
-        },
+        "extra": {"reasoning_effort": "high", "extra_body": {"thinking": {"type": "enabled"}}},
+    },
+    "deepseek_flash": {
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-flash",
+        "key_env": ["DEEPSEEK_API_KEY"],
+        "temperature": 0.3,
+        "max_tokens": 8192,
+        "extra": {"reasoning_effort": "high", "extra_body": {"thinking": {"type": "enabled"}}},
+    },
+    "deepseek_pro": {
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-pro",
+        "key_env": ["DEEPSEEK_API_KEY"],
+        "temperature": 0.3,
+        "max_tokens": 8192,
+        "extra": {"reasoning_effort": "high", "extra_body": {"thinking": {"type": "enabled"}}},
     },
     "glm52": {
         "base_url": "https://maas.devops.xiaohongshu.com/v1",
@@ -84,6 +95,11 @@ PRESETS: Dict[str, Dict[str, Any]] = {
             "x-maas-app-id": "qs-api",
         },
     },
+}
+
+PROVIDER_ALIASES = {
+    "deepseek_v4_flash": "deepseek_flash",
+    "deepseek_v4_pro": "deepseek_pro",
 }
 
 
@@ -128,7 +144,8 @@ def _resolve_key(block: Dict[str, Any], preset: Dict[str, Any], dotenv: Dict[str
 
 
 def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
-    provider = str(block.get("provider") or "stepfun").lower()
+    provider = str(block.get("provider") or "stepfun").lower().replace("-", "_")
+    provider = PROVIDER_ALIASES.get(provider, provider)
     preset = PRESETS.get(provider)
     if preset is None:
         raise ValueError(f"unknown provider {provider!r}; choose from {list(PRESETS)}")
@@ -139,6 +156,13 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
         }
     if provider == "stepfun" and "reasoning_effort" in block:
         extra["reasoning_effort"] = block["reasoning_effort"]
+    if provider.startswith("deepseek"):
+        if "thinking" in block:
+            extra.setdefault("extra_body", {})["thinking"] = {
+                "type": "enabled" if block["thinking"] else "disabled"
+            }
+        if "reasoning_effort" in block:
+            extra["reasoning_effort"] = block["reasoning_effort"]
     headers = dict(preset.get("default_headers", {}))
     headers.update(block.get("default_headers", {}) or {})
     return ProviderSpec(

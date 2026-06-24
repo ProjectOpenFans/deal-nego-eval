@@ -96,7 +96,11 @@ class LocalBrokerRunner:
                         "function": {"name": name, "arguments": json.dumps(args, ensure_ascii=False)},
                     }
                 )
-            working.append({"role": "assistant", "content": "", "tool_calls": assistant_calls})
+            assistant_message: Dict[str, Any] = {"role": "assistant", "content": "", "tool_calls": assistant_calls}
+            reasoning_content = str(getattr(result, "reasoning_content", "") or "").strip()
+            if reasoning_content:
+                assistant_message["reasoning_content"] = reasoning_content
+            working.append(assistant_message)
             for call, assistant_call in zip(calls, assistant_calls):
                 name = str(call.get("name") or "")
                 args = call.get("arguments") or {}

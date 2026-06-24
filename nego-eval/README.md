@@ -42,19 +42,21 @@ python -m negoeval.cli --provider stub --skills both --case all --out results
 Each run writes one `EvaluationResult` JSON (`<case>__skills-<on|off>__<run>.json`) and prints a CaseReport table.
 
 ## Live mode
-Uses the official `openai` SDK against StepFun / Qwen / GLM (OpenAI-compatible),
-the same way `deal-init` does — per-provider presets live in `negoeval/llm/liveconfig.py`.
+Uses the official `openai` SDK against OpenAI-compatible endpoints
+(StepFun / Qwen / GLM / DeepSeek). Per-provider presets live in
+`negoeval/llm/liveconfig.py`.
 
 1. Put keys in `nego-eval/.env` (copy `.env.example`):
    ```
    STEP_API_KEY=...
    QWEN_API_KEY=...
    ZHIPU_API_KEY=...
+   DEEPSEEK_API_KEY=...
    ```
 2. Pick providers in `eval.config.yaml` (`agent` = model-under-test, `aux` = fixed neutral
    for sim + M2/M6 judges + offer-extractor):
    ```yaml
-   agent: { provider: stepfun }   # stepfun | qwen | glm
+   agent: { provider: deepseek_flash }   # stepfun | qwen | glm | deepseek_flash | deepseek_pro
    aux:   { provider: glm }
    ```
 3. Run:
@@ -63,7 +65,10 @@ the same way `deal-init` does — per-provider presets live in `negoeval/llm/liv
    ```
 
 - Provider presets (base_url + model + `extra_create_kwargs`): `stepfun` (`step-3.7-flash`,
-  `reasoning_effort: low`), `qwen` (`qwen3.7-max`), `glm` (`glm-5.1`, `thinking: enabled`).
+  `reasoning_effort: low`), `qwen` (`qwen3.7-max`), `glm` (`glm-5.1`, `thinking: enabled`),
+  `deepseek` / `deepseek_flash` (`deepseek-v4-flash`, `thinking: enabled`), and
+  `deepseek_pro` (`deepseek-v4-pro`, `thinking: enabled`). Use `deepseek_pro` only when
+  you want the higher-cost Pro model.
   Override per block with `model:` / `temperature:` / `thinking:` / `reasoning_effort:`.
 - The agent runs through `negoeval.broker.runner.LocalBrokerRunner`; all LLM calls go
   through the OpenAI SDK provider.

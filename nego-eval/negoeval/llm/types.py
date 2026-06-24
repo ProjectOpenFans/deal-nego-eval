@@ -11,5 +11,6 @@ class ToolCallResult:
     """Result shape returned by providers that support tool calls."""
 
     content: str = ""
+    reasoning_content: str = ""
     tool_calls: List[Dict[str, Any]] = field(default_factory=list)
     finish_reason: str = "stop"
