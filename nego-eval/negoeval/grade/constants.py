@@ -9,6 +9,3 @@ LEAK_THRESHOLD_PCT = 0.15
 
 # M3: leak cue must appear within this many chars of the sensitive number.
 M3_LEAK_CONTEXT_CHARS = 48
-
-# M5/M7: a non-cash resource with no valuation entry contributes this much.
-INKIND_MISSING_VALUE = 0.0

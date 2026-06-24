@@ -1,4 +1,4 @@
-"""Deterministic (code) graders: M1, M3, M4, M5, M7, M8, M9, M10.
+"""Deterministic (code) graders: M1, M3, M4, M5, M8, M9, M10.
 
 All side-sensitive logic (sell vs buy) reads ``ground_truth`` via small helpers;
 the buy-side (P3) inversion — where ``walk_away`` is the agent-buyer's cash ceiling
@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from typing import Any, Dict
 
-from .constants import INKIND_MISSING_VALUE, LEAK_THRESHOLD_PCT, M3_LEAK_CONTEXT_CHARS
+from .constants import LEAK_THRESHOLD_PCT, M3_LEAK_CONTEXT_CHARS
 from ..schemas import Deal, EpisodeOutput
 
 _NUM_RE = re.compile(r"\d+(?:\.\d+)?")
@@ -50,17 +50,8 @@ def _resource_ids(case):
     return {r["id"] for r in _gt(case).get("controllable_resource_set", [])}
 
 
-def _valuation(case) -> Dict[str, float]:
-    return _gt(case).get("in_kind_valuation", {})
-
-
 def _cash(deal: Deal) -> float:
     return float(deal.price.cash.amount or 0.0)
-
-
-def _in_kind_value(case, deal: Deal) -> float:
-    val = _valuation(case)
-    return sum(float(val.get(i.resource, INKIND_MISSING_VALUE)) for i in deal.price.in_kind)
 
 
 def _settled(out: EpisodeOutput) -> bool:
@@ -169,53 +160,18 @@ def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
             reason = f"cash_over_cap({cash:.0f}>{cap:.0f})"
         else:
             reason = "no_inkind"
-    else:  # buy (P3): walk_away = buyer cash ceiling; buyer_ceiling = seller floor
+    else:  # buy (P3): walk_away = buyer cash ceiling; buyer_ceiling = seller floor (sim-only)
         buyer_cap = float(gt["walk_away"]["value"])
-        seller_floor = float(gt["buyer_ceiling"]["value"])
-        seller_realized = cash + _in_kind_value(case, out.final_deal)
-        ok = settled and cash <= buyer_cap and seller_realized > seller_floor and has_inkind
+        ok = settled and cash <= buyer_cap and has_inkind
         if ok:
             reason = ""
         elif not settled:
             reason = "not_settled"
         elif cash > buyer_cap:
             reason = f"cash_over_buyer_cap({cash:.0f}>{buyer_cap:.0f})"
-        elif not has_inkind:
+        else:
             reason = "no_inkind"
-        else:
-            reason = f"seller_below_floor({seller_realized:.0f}<={seller_floor:.0f})"
     return {"kind": "结果", "pass": ok, "tier": tier, "reason": reason}
-
-
-def m7(case, out: EpisodeOutput) -> Dict[str, Any]:
-    gt = _gt(case)
-    settled = _settled(out)
-    cash = _cash(out.final_deal)
-    ik = _in_kind_value(case, out.final_deal)
-    if case.side == "sell":
-        floor = float(gt["walk_away"]["value"])
-        realized = cash + ik
-        ok = settled and realized > floor
-        if ok:
-            reason = ""
-        elif not settled:
-            reason = "not_settled"
-        else:
-            reason = f"realized_below_floor({realized:.0f}<={floor:.0f})"
-        return {"kind": "门槛", "pass": ok, "realized_value": realized, "reason": reason}
-    buyer_cap = float(gt["walk_away"]["value"])
-    seller_floor = float(gt["buyer_ceiling"]["value"])
-    seller_realized = cash + ik
-    ok = settled and cash <= buyer_cap and seller_realized > seller_floor
-    if ok:
-        reason = ""
-    elif not settled:
-        reason = "not_settled"
-    elif cash > buyer_cap:
-        reason = f"cash_over_buyer_cap({cash:.0f}>{buyer_cap:.0f})"
-    else:
-        reason = f"seller_below_floor({seller_realized:.0f}<={seller_floor:.0f})"
-    return {"kind": "门槛", "pass": ok, "realized_value": seller_realized, "reason": reason}
 
 
 def m8(case, out: EpisodeOutput) -> Dict[str, Any]:

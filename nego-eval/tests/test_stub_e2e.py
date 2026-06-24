@@ -13,7 +13,7 @@ from negoeval.grade.evaluator import evaluate
 from negoeval.llm.registry import build_provider
 from negoeval.orchestrator import run_episode
 
-_METRIC_IDS = [f"M{i}" for i in range(1, 11)]
+_METRIC_IDS = [f"M{i}" for i in range(1, 11) if i != 7]
 
 
 def test_batch_produces_valid_results_both_skill_modes(tmp_path):
@@ -23,7 +23,7 @@ def test_batch_produces_valid_results_both_skill_modes(tmp_path):
     assert len(report.results) == 12
     for r in report.results:
         assert set(_METRIC_IDS).issubset(r.metrics.keys())
-        for m in ("M1", "M2", "M3", "M4", "M7"):
+        for m in ("M1", "M2", "M3", "M4"):
             assert isinstance(r.metrics[m]["pass"], bool)
         assert r.metrics["M6"]["value"] in (0, 1, 2)
         assert isinstance(r.verdict.case_pass, bool)
@@ -57,7 +57,6 @@ def test_batch_produces_valid_results_both_skill_modes(tmp_path):
         assert "concessions" in logs
         assert "settlement" in logs
         assert "m5_fail_reasons" in logs
-        assert "m7_fail_reasons" in logs
         assert "m6_distribution" in logs
 
 
@@ -88,7 +87,6 @@ def test_cave_profile_walks_and_fails_outcome():
     assert out.terminal_reason == "walk_away"
     res = evaluate(p1, out, run_id="t", judge_provider=build_provider("judge", mode="stub", case=p1))
     assert res.metrics["M5"]["pass"] is False
-    assert res.metrics["M7"]["pass"] is False
     assert res.verdict.case_pass is False
 
 
@@ -150,20 +148,6 @@ def test_m5_reason_on_failure():
     assert res.metrics["M5"]["reason"]  # non-empty string explaining the failure
 
 
-def test_m7_has_reason_on_pass():
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
-    out = run_episode(p1, mode="stub", skills="off", agent_profile="par")
-    res = evaluate(p1, out, run_id="t", judge_provider=build_provider("judge", mode="stub", case=p1))
-    assert "reason" in res.metrics["M7"]
-    assert res.metrics["M7"]["reason"] == ""
-
-
-def test_m7_reason_on_failure():
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
-    out = run_episode(p1, mode="stub", skills="off", agent_profile="cave")
-    res = evaluate(p1, out, run_id="t", judge_provider=build_provider("judge", mode="stub", case=p1))
-    assert res.metrics["M7"]["pass"] is False
-    assert res.metrics["M7"]["reason"]
 
 
 def test_episode_slim_strips_skill_instructions(tmp_path):

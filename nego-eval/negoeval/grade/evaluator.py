@@ -1,6 +1,6 @@
 """Assemble an ``EvaluationResult`` from an episode + the case fixture.
 
-verdict: gates = M1∧M2∧M3∧M4∧M7; outcome = M5; case_pass = gates∧outcome;
+verdict: gates = M1∧M2∧M3∧M4; outcome = M5; case_pass = gates∧outcome;
 quality = M6.value (case_spec §5).
 """
 
@@ -12,7 +12,7 @@ from ..schemas import EpisodeOutput, EvaluationResult, Verdict
 from . import deterministic as det
 from . import judge as jdg
 
-_GATES = ("M1", "M2", "M3", "M4", "M7")
+_GATES = ("M1", "M2", "M3", "M4")
 
 
 def evaluate(
@@ -30,7 +30,6 @@ def evaluate(
         "M4": det.m4(case, out),
         "M5": det.m5(case, out),
         "M6": jdg.m6(case, out, judge_provider),
-        "M7": det.m7(case, out),
         "M8": det.m8(case, out),
         "M9": det.m9(case, out),
         "M10": det.m10(case, out),

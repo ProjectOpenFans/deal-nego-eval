@@ -74,6 +74,11 @@ class OfferExtractor:
             "obligations[{party,text,maps_to_resource}], status, provenance。"
             f"in_kind.resource 与 obligations.maps_to_resource 必须取自：{self.resource_ids}。"
             "未提及的字段沿用上一版。"
+            "【只抽真实出现的内容】只抽本轮发言里【真实明确出现】的条款,不要补全、不要脑补。"
+            "(1) timing.when/deadline/duration：只有发言里出现【明确的日期/期限/时长】才填,"
+            "像'近期''配合排期''尽快'这类模糊措辞一律留 null,不要凭空落定具体日期。"
+            "(2) in_kind 与 obligations.maps_to_resource：只有发言里【真实提出了对应的非现金对价或义务】"
+            "才写入对应 resource;不要因为发言提到某个话题就给它挂一个 resource。没有就留空数组。"
             "【多版本消歧】若本轮发言里出现多个价格/方案(例如主方案+括号备选、版本一/版本二、"
             "或'要么…要么…'),只抽取谈判者本轮【最终主推/确认】的那一个方案,不要抽取被否决的旧值、"
             "括号里的备选、或仅作对比的参照价。只输出 JSON。"
@@ -101,8 +106,10 @@ class OfferExtractor:
         init = self.case.input.initial_deal
         if not deal.subject:
             deal.subject = init.subject
-        if not deal.terms.timing.deadline:
-            deal.terms.timing.deadline = init.terms.timing.deadline
+        # NOTE: deadline is intentionally NOT carried forward from v0. The v0
+        # placeholder ("近期" etc.) is not a negotiated term; carrying it into
+        # the final deal made M2 see a fabricated deadline. Leave null unless a
+        # turn explicitly states one.
         if prev_offer is not None:
             if deal.price.cash.amount is None and prev_offer.price.cash.amount is not None:
                 deal.price.cash = prev_offer.price.cash.model_copy()
@@ -117,13 +124,19 @@ class OfferExtractor:
         )
 
     def extract_final(self, turns, *, accepted_offer: Optional[Deal], status: str) -> Deal:
-        # The settled terms are the last real offer on the table — the agent's
-        # last non-empty offer (B's ACCEPT turn often restates nothing).
+        # When settled, the accepted offer IS the deal — it reflects exactly what
+        # B agreed to, so withdrawn/rejected terms from earlier rounds are not in
+        # it. Prefer it over scanning back for the last non-empty A offer (which
+        # could resurrect a superseded version). Fall back to the last-offer scan
+        # only when there is no usable accepted offer (e.g. walk_away / round_cap).
         base = None
-        for t in reversed(turns):
-            if t.speaker == "A" and self._nonempty(t.offer):
-                base = t.offer
-                break
+        if status == "settled" and self._nonempty(accepted_offer):
+            base = accepted_offer
+        if base is None:
+            for t in reversed(turns):
+                if t.speaker == "A" and self._nonempty(t.offer):
+                    base = t.offer
+                    break
         if base is None and self._nonempty(accepted_offer):
             base = accepted_offer
         if base is None:

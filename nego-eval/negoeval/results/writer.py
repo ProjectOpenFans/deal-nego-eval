@@ -9,7 +9,7 @@ from typing import Any, Dict, List
 
 from ..schemas import EvaluationResult
 
-_GATES = ("M1", "M2", "M3", "M4", "M7")
+_GATES = ("M1", "M2", "M3", "M4")
 
 
 def write_result(result: EvaluationResult, out_dir: str | Path) -> Path:
@@ -114,11 +114,6 @@ def aggregate(results: List[EvaluationResult]) -> List[Dict[str, Any]]:
             for r in rs
             if not r.metrics["M5"].get("pass") and r.metrics["M5"].get("reason")
         ]
-        m7_fail_reasons = [
-            r.metrics["M7"].get("reason", "")
-            for r in rs
-            if not r.metrics["M7"].get("pass") and r.metrics["M7"].get("reason")
-        ]
         reports.append(
             {
                 "case_id": case_id,
@@ -136,7 +131,6 @@ def aggregate(results: List[EvaluationResult]) -> List[Dict[str, Any]]:
                     "concessions": concessions_vals,
                     "settlement": settlements,
                     "m5_fail_reasons": m5_fail_reasons,
-                    "m7_fail_reasons": m7_fail_reasons,
                     "m6_distribution": m6_dist,
                     "m6_tiers": m6_tiers,
                 },

@@ -88,10 +88,9 @@ def test_goldrun_par_deal_all_pass():
         process={"skills": "on", "agent_profile": "par", "mode": "stub", "skills_used": ["deal-diagnosis"]},
     )
     res = evaluate(p1, out, run_id="gold-par", judge_provider=_judge(p1))
-    for m in ("M1", "M2", "M3", "M4", "M7"):
+    for m in ("M1", "M2", "M3", "M4"):
         assert res.metrics[m]["pass"] is True, (m, res.metrics[m])
     assert res.metrics["M5"]["pass"] is True
-    assert res.metrics["M7"]["realized_value"] == 1200.0
     assert res.metrics["M6"]["value"] == 1
     assert res.metrics["M8"]["value"] == 2
     assert res.metrics["M9"]["value"] == 1
@@ -121,8 +120,6 @@ def test_goldrun_cave_below_floor_fails():
     )
     res = evaluate(p1, out, run_id="gold-cave", judge_provider=_judge(p1))
     assert res.metrics["M5"]["pass"] is False  # no non-cash component
-    assert res.metrics["M7"]["pass"] is False  # 200 < 800
-    assert res.metrics["M7"]["realized_value"] == 200.0
     assert res.metrics["M6"]["value"] == 0  # no maneuver -> floor
     assert res.verdict.case_pass is False
 

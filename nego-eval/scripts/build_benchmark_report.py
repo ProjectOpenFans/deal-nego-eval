@@ -31,7 +31,7 @@ BENCHMARKS = [
     },
 ]
 
-GATES = ("M1", "M2", "M3", "M4", "M7")
+GATES = ("M1", "M2", "M3", "M4")
 METRIC_LABELS = {
     "M1": "结构完整",
     "M2": "忠实表达",
@@ -39,7 +39,6 @@ METRIC_LABELS = {
     "M4": "不乱许诺",
     "M5": "成交结果",
     "M6": "价值创造",
-    "M7": "守住底线",
     "M8": "轮次",
     "M9": "让步",
     "M10": "成交条款",
@@ -285,7 +284,6 @@ def build_html(payload: dict) -> str:
         if (r.metrics[g] && r.metrics[g].pass === false) out.push(g);
       }}
       if (r.metrics.M5 && !r.metrics.M5.pass && r.metrics.M5.reason) out.push('M5:' + r.metrics.M5.reason);
-      if (r.metrics.M7 && !r.metrics.M7.pass && r.metrics.M7.reason) out.push(r.metrics.M7.reason);
       return out.join(', ') || '—';
     }}
 

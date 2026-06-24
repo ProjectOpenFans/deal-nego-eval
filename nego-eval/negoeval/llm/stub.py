@@ -34,10 +34,9 @@ def _labels(case) -> Dict[str, str]:
 
 def _noncash_resources(case) -> List[str]:
     gt = _gt(case)
-    val = gt.get("in_kind_valuation", {})
-    ids = [r["id"] for r in gt.get("controllable_resource_set", []) if r["id"] != "cash"]
-    ids.sort(key=lambda i: float(val.get(i, 0)), reverse=True)
-    return ids
+    # Valuation table removed: stub just takes resource-set order (no ranking by
+    # price). Stub episodes only need *a* non-cash resource, not the priciest.
+    return [r["id"] for r in gt.get("controllable_resource_set", []) if r["id"] != "cash"]
 
 
 def _provider_party(case) -> str:
@@ -103,8 +102,8 @@ def par_offer(case, *, settled: bool = False, top_n: int = 2) -> Dict[str, Any]:
     """A compound offer: low cash + the highest-valued non-cash resources."""
     labels = _labels(case)
     party = _provider_party(case)
-    ids = [i for i in _noncash_resources(case) if float(_gt(case).get("in_kind_valuation", {}).get(i, 0)) > 0][:top_n]
-    if not ids:  # fall back to any non-cash id if none carry a valuation
+    ids = _noncash_resources(case)[:top_n]
+    if not ids:  # no non-cash resources in set
         ids = _noncash_resources(case)[:1]
     in_kind = [{"resource": i, "description": labels.get(i, i), "from_party": party} for i in ids]
     obligations = [{"party": party, "text": f"提供{labels.get(i, i)}", "maps_to_resource": i} for i in ids]
@@ -152,7 +151,7 @@ class StubProvider:
                 return f"我可以做这次「{subj}」。我先按 ¥{int(_anchor_cash(case))} 报，我们看看怎么谈成。"
             return f"我想请你来做「{subj}」，预算有限，先按 ¥{int(_anchor_cash(case))} 试探有没有合作空间。"
         labels = _labels(case)
-        ids = [i for i in _noncash_resources(case) if float(_gt(case).get("in_kind_valuation", {}).get(i, 0)) > 0][:2]
+        ids = _noncash_resources(case)[:2]
         res_text = "、".join(labels.get(i, i) for i in ids) or "一项非现金安排"
         line = f"这样吧：现金我出 ¥{int(_settle_cash(case))}，再把「{res_text}」绑进这次合作，对双方都更值，就按这个成交。"
         if self.profile == "leak":
