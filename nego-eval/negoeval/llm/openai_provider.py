@@ -25,10 +25,11 @@ class OpenAISDKProvider:
         api_key: str,
         base_url: str,
         model: str,
-        temperature: float = 0.2,
+        temperature: Optional[float] = 0.2,
         max_tokens: int = 8192,
         extra_create_kwargs: Optional[Dict[str, Any]] = None,
         default_headers: Optional[Dict[str, str]] = None,
+        omit_temperature: bool = False,
     ):
         from openai import OpenAI
 
@@ -37,13 +38,20 @@ class OpenAISDKProvider:
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.extra = dict(extra_create_kwargs or {})
+        self.omit_temperature = omit_temperature
+
+    def _temperature_kwargs(self, temperature: Optional[float]) -> Dict[str, float]:
+        if self.omit_temperature:
+            return {}
+        value = self.temperature if temperature is None else temperature
+        return {} if value is None else {"temperature": value}
 
     def chat_completion(self, messages, temperature=None, max_tokens=None, enable_thinking=None) -> str:
         resp = self.client.chat.completions.create(
             model=self.model,
             messages=list(messages),
-            temperature=self.temperature if temperature is None else temperature,
             max_tokens=max_tokens or self.max_tokens,
+            **self._temperature_kwargs(temperature),
             **self.extra,
         )
         return _clean(resp.choices[0].message.content)
@@ -56,8 +64,8 @@ class OpenAISDKProvider:
             messages=list(messages),
             tools=tools,
             tool_choice=tool_choice or "auto",
-            temperature=self.temperature if temperature is None else temperature,
             max_tokens=max_tokens or self.max_tokens,
+            **self._temperature_kwargs(temperature),
             **self.extra,
         )
         choice = resp.choices[0]

@@ -1,12 +1,13 @@
 # nego-eval live-mode model wiring for OpenAI-compatible providers.
 # Copy to eval.config.yaml and pick providers. Keys come from nego-eval/.env or the
-# environment (STEP_API_KEY / QWEN_API_KEY / ZHIPU_API_KEY / DEEPSEEK_API_KEY),
-# NOT from this file.
+# environment (STEP_API_KEY / QWEN_API_KEY / ZHIPU_API_KEY / KIMI_API_KEY /
+# MOONSHOT_API_KEY / DEEPSEEK_API_KEY), NOT from this file.
 #
 # Providers (presets in negoeval/llm/liveconfig.py):
 #   stepfun -> https://api.stepfun.com/step_plan/v1   model step-3.7-flash   (reasoning_effort: low)
 #   qwen    -> https://dashscope.aliyuncs.com/compatible-mode/v1  model qwen3.7-max
 #   glm     -> https://open.bigmodel.cn/api/paas/v4   model glm-5.1          (thinking: enabled)
+#   kimi    -> https://api.moonshot.cn/v1             model kimi-k2.6       (thinking: enabled; no temperature)
 #   deepseek       -> https://api.deepseek.com   model deepseek-v4-flash    (cheaper default)
 #   deepseek_flash -> https://api.deepseek.com   model deepseek-v4-flash    (thinking: enabled)
 #   deepseek_pro   -> https://api.deepseek.com   model deepseek-v4-pro      (higher-cost Pro)
@@ -16,7 +17,7 @@ agent:
   provider: stepfun
   # model: step-3.7-flash      # optional override
   # temperature: 0.3
-  # thinking: true             # glm / deepseek
+  # thinking: true             # glm / kimi / deepseek
   # reasoning_effort: low      # stepfun; deepseek supports high / max
 
 # Fixed neutral model for sim + M2/M6 judges + offer-extractor.

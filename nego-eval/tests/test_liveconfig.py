@@ -1,4 +1,34 @@
 from negoeval.llm.liveconfig import _spec
+from negoeval.llm.openai_provider import OpenAISDKProvider
+
+
+def test_openai_provider_can_omit_temperature_kwargs():
+    provider = OpenAISDKProvider(
+        api_key="test-key",
+        base_url="https://api.example.invalid/v1",
+        model="test-model",
+        omit_temperature=True,
+    )
+
+    assert provider._temperature_kwargs(0.3) == {}
+
+
+def test_kimi_uses_official_moonshot_api_without_temperature():
+    spec = _spec({"provider": "kimi"}, {"KIMI_API_KEY": "test-key"})
+
+    assert spec.name == "kimi"
+    assert spec.base_url == "https://api.moonshot.cn/v1"
+    assert spec.model == "kimi-k2.6"
+    assert spec.api_key == "test-key"
+    assert spec.extra["extra_body"]["thinking"]["type"] == "enabled"
+    assert spec.default_headers == {}
+    assert spec.omit_temperature is True
+
+
+def test_kimi_accepts_official_moonshot_key_env_name():
+    spec = _spec({"provider": "kimi"}, {"MOONSHOT_API_KEY": "test-key"})
+
+    assert spec.api_key == "test-key"
 
 
 def test_deepseek_default_uses_official_flash_api_and_key_env():
