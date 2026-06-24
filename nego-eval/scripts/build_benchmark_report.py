@@ -13,9 +13,9 @@ RESULTS = ROOT / "results"
 BENCHMARKS = [
     {
         "id": "deepseek",
-        "label": "DeepSeek V4 Pro",
-        "model": "deepseek-v4-pro",
-        "subdir": "deepseek-v4-pro-full",
+        "label": "DeepSeek V4 Flash",
+        "model": "deepseek-v4-flash",
+        "subdir": "deepseek-r3",
     },
     {
         "id": "glm52",

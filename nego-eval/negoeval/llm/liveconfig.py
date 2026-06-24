@@ -48,16 +48,13 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "extra": {"extra_body": {"thinking": {"type": "enabled"}}},
     },
     "kimi": {
-        "base_url": "https://maas.devops.xiaohongshu.com/v1",
+        "base_url": "https://api.moonshot.cn/v1",
         "model": "kimi-k2.6",
-        "key_env": ["KIMI_API_KEY", "MAAS_API_KEY"],
-        "temperature": 0.3,
+        "key_env": ["KIMI_API_KEY", "MOONSHOT_API_KEY"],
+        "temperature": None,
         "max_tokens": 8192,
-        "extra": {},
-        "default_headers": {
-            "x-maas-user-email": "wangzhe101@xiaohongshu.com",
-            "x-maas-app-id": "qs-api",
-        },
+        "extra": {"extra_body": {"thinking": {"type": "enabled"}}},
+        "omit_temperature": True,
     },
     "deepseek": {
         "base_url": "https://api.deepseek.com",
@@ -109,10 +106,11 @@ class ProviderSpec:
     base_url: str
     api_key: str
     model: str
-    temperature: float = 0.3
+    temperature: Optional[float] = 0.3
     max_tokens: int = 8192
     extra: Dict[str, Any] = field(default_factory=dict)
     default_headers: Dict[str, str] = field(default_factory=dict)
+    omit_temperature: bool = False
 
 
 @dataclass
@@ -154,6 +152,10 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
         extra.setdefault("extra_body", {})["thinking"] = {
             "type": "enabled" if block["thinking"] else "disabled"
         }
+    if provider == "kimi" and "thinking" in block:
+        extra.setdefault("extra_body", {})["thinking"] = {
+            "type": "enabled" if block["thinking"] else "disabled"
+        }
     if provider == "stepfun" and "reasoning_effort" in block:
         extra["reasoning_effort"] = block["reasoning_effort"]
     if provider.startswith("deepseek"):
@@ -174,6 +176,7 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
         max_tokens=block.get("max_tokens", preset["max_tokens"]),
         extra=extra,
         default_headers=headers,
+        omit_temperature=block.get("omit_temperature", preset.get("omit_temperature", False)),
     )
 
 
