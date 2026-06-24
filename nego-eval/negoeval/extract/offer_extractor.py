@@ -104,8 +104,14 @@ class OfferExtractor:
 
     def _carry_forward(self, deal: Deal, prev_offer: Optional[Deal]) -> None:
         init = self.case.input.initial_deal
-        if not deal.subject:
+        # subject 抽取偶尔吐出空值或字面量 "None"/"null"，回退到 v0 原值。
+        # 注意：真重构出的新 subject（有意义的新标的）不会命中这些坏值，不受影响。
+        if not deal.subject or str(deal.subject).strip() in ("None", "none", "null", ""):
             deal.subject = init.subject
+        # 继承 v0 的真实 provenance（stated/open），只补缺失项、不覆盖抽取已标的，
+        # 让 final_deal 的来源标记与 v0 一致（M1 结构检查与输出消费者依赖它）。
+        for _field, _prov in (init.provenance or {}).items():
+            deal.provenance.setdefault(_field, _prov)
         # NOTE: deadline is intentionally NOT carried forward from v0. The v0
         # placeholder ("近期" etc.) is not a negotiated term; carrying it into
         # the final deal made M2 see a fabricated deadline. Leave null unless a
