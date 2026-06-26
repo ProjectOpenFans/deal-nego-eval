@@ -1,0 +1,254 @@
+{
+  "episode_id": "P3",
+  "final_deal": {
+    "subject": "动画短片主役配音",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "动画短片",
+      "deliverables": [
+        "主役配音（必须老师本人出演）",
+        "成品音频"
+      ],
+      "delivery_standard": "按约定的台词量和艺术要求"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "签约后立即将全款托管至平台",
+        "maps_to_resource": "cash"
+      },
+      {
+        "party": "A",
+        "text": "按约定的台词量和艺术要求完成北京棚录并交付成品音频",
+        "maps_to_resource": "project_pipeline"
+      },
+      {
+        "party": "A",
+        "text": "确认收讫后通知平台释放款项",
+        "maps_to_resource": "cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.deadline": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好。我们是一家独立动画工作室，目前正在筹备一部计划走节展和平台发行的动画短片，导演非常欣赏贵方这位配音老师的音色和表演质感，指名希望能邀请他担纲主役配音——必须是老师本人出演，这点对我们很重要。\n\n我们知道老师在行业里十余年的积累，声音的分量摆在那里，也愿意为合适的人选给出体面的酬劳。但既然是独立项目，整体制作预算确实偏紧，和商业大片没法直接对标。想先请教一下您这边对这类短片主役配音的常规合作条件或报价区间，我们结合自己的情况看看有没有彼此都能接受的空间。期待您的回复。",
+      "offer": {
+        "subject": "动画短片主役配音",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "动画短片",
+          "deliverables": [
+            "主役配音（必须老师本人出演）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好！非常感谢导演和咱们工作室的认可，听到导演这么欣赏我的声音和表演，我挺高兴的。我自己对独立动画也一直很有热情，知道大家做这种有表达欲的项目都不容易。关于报价，我平时接这类主役配音，常规的报价是 12000 元。我也明白独立项目的预算肯定没法跟商业大片直接对标。你们可以先透个底，大概的预算范围是多少？另外短片的体量、预计的录制周期和形式（比如是棚录还是远程）也可以同步给我。时间档期和录制形式上我都可以尽量配合咱们的节奏。咱们先聊聊看，看怎么推进最合适。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]\n收到老师的回复，能感受到他对独立创作的真诚热情，这对我们是很大的鼓舞。关于项目的具体情况：短片总时长约 15 分钟，主役台词量中等偏重，有独白段落；录制计划是在北京的专业录音棚进行，预计一到两个工作日内可以完成，档期上我们完全配合老师的安排。\n\n您提出的 12000 元这个价位，我们理解这是老师多年资历和作品积累的正常市场身价，一点也不过分。只是坦诚说，我们此次独立短片的整体现金池非常有限，12000 对我们来说确实超出了能承受的范围，如果按这个标准走，项目就很难启动了。\n\n我们目前能在单片配音上腾挪的现金空间在四五千这个量级。不知道在档期宽松、棚录时间尽量压缩的情况下，老师那边是否有可能提供一个更贴近独立项目的合作价格，或者有其他的合作方式可以考虑？也请老师直接告诉我们您能接受的最低数字，我们尽力去凑。",
+      "offer": {
+        "subject": "动画短片主役配音",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "动画短片",
+          "deliverables": [
+            "主役配音（必须老师本人出演）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听到你们这么认可，我其实挺感动的。做独立动画确实是在用爱发电，我自己平时也会遇到项目管线青黄不接的时候，太知道攒个局、抠预算有多难了。既然导演这么坚持要用我，你们也坦诚交了底，那我也直说：4000元是我能接受的绝对底线了。再低的话，我确实没法向自己这十几年的职业标准交代。如果是4000元现金，北京棚录，时间档期我完全配合你们的节奏，咱们就当交个朋友，一起把这部作品打磨好。你们看这个数能定下来吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n特别感谢老师的这份诚意，能明确给到 4000 这个数，我们非常珍惜。这个合作协议我们这边可以直接确认：4000 元现金，老师本人出演，北京棚录，档期完全配合我们的节奏——这个条件对我们来说完全可行，也由衷谢谢老师愿意和独立项目站在一起。\n\n那咱们就把合作方式具体落下来：我们建议通过平台签约，总价 4000 元人民币，买方在签约后立即将全款托管至平台，老师按约定的台词量和艺术要求完成棚录并交付成品音频，我们导演组确认收讫后平台释放款项。录制细节和档期咱们拉群对接，进度上绝不拖泥带水。\n\n如果这个框架您那边没问题，我们这边就可以马上发起合约签署流程了。",
+      "offer": {
+        "subject": "动画短片主役配音",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "动画短片",
+          "deliverables": [
+            "主役配音（必须老师本人出演）",
+            "成品音频"
+          ],
+          "delivery_standard": "按约定的台词量和艺术要求"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签约后立即将全款托管至平台",
+            "maps_to_resource": "cash"
+          },
+          {
+            "party": "A",
+            "text": "按约定的台词量和艺术要求完成北京棚录并交付成品音频",
+            "maps_to_resource": "project_pipeline"
+          },
+          {
+            "party": "A",
+            "text": "确认收讫后通知平台释放款项",
+            "maps_to_resource": "cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "太好了，感谢你们的信任和爽快！这个框架我完全没问题。4000元现金，北京棚录，档期配合，走平台签约和全款托管流程，咱们就这么定了。你们随时发起合约签署流程吧，签完咱们就拉群对台词本和档期。很期待和导演一起把这部短片做好，祝咱们项目顺利！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r2:validation_error"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker"
+  }
+}

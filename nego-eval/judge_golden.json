@@ -1,0 +1,60 @@
+{
+  "tier_system": "0=Floor 1=Crude 2=Sound 3=Sharp 4=Brilliant",
+  "note": "现有case无T4样本,本golden覆盖T0-T3。标准答案由Luke审定。",
+  "cases": [
+    {
+      "id": "G1", "label": "GLM P5 clean-r2", "golden_tier": 3, "golden_name": "Sharp",
+      "deal": "现金5000 + 影像素材完整商业授权 + 社群品牌曝光推荐(含文案链接) + 半年内再合作一场按标准报价、不重复打折",
+      "reason": "核心交换对,且'不重复打折'是load-bearing一手——压价成交后守住未来不被继续压价的锚。情境化的高明动作。",
+      "tests": "能否识别load-bearing的精到一手"
+    },
+    {
+      "id": "G2", "label": "GLM P5 on-r2", "golden_tier": 2, "golden_name": "Sound",
+      "deal": "现金5000 + 本次活动影像的社群使用授权",
+      "reason": "核心交换在,但很薄,无长期、无保护考量。站得住但平庸。",
+      "tests": "薄deal判为Sound而非Sharp;与G1对比应G1>G2"
+    },
+    {
+      "id": "G3", "label": "DeepSeek P5 on-r0", "golden_tier": 2, "golden_name": "Sound",
+      "deal": "现金5000 + 30张精修图和2分钟短视频(授权作品集) + 社群署名推荐附联系方式 + 三个月内付费活动优先接单权 + 社群15分钟线上分享",
+      "reason": "看似丰富,实则过度堆砌——4个承诺压进一次性露营,增加双方执行负担,是繁冗不是精到。违背minimally sufficient。",
+      "tests": "★关键:能否识别过度堆砌、不盲目奖励数量。差judge会打高分。"
+    },
+    {
+      "id": "G4", "label": "GLM P6 on-r2", "golden_tier": 3, "golden_name": "Sharp",
+      "deal": "现金1500 + 带货成交额20%抽佣,30天内若佣金不足3500由B方补足差额、总价值锚定5000 + 自然植入不做硬广、保证转化",
+      "reason": "'保底补差锚定5000'是load-bearing一手——给佣金制deal(买方有不确定性)上了下行保护。懂行。",
+      "tests": "识别下行保护这类风险结构一手"
+    },
+    {
+      "id": "G5", "label": "GLM P6 on-r0", "golden_tier": 1, "golden_name": "Crude",
+      "deal": "现金3000 + 成交佣金分成(无比例) + 单条vlog植入",
+      "reason": "现金没压好(同case别局1500、它3000)+ 佣金条款空泛(连比例都没有)。粗糙,像草稿。",
+      "tests": "识别粗糙deal判Crude"
+    },
+    {
+      "id": "G6", "label": "DeepSeek P6 on-r0", "golden_tier": 3, "golden_name": "Sharp",
+      "deal": "现金1500 + 35%分成结算周期12个月 + 拍摄全套样品归创作者 + 内容调性创作者把控、确保真实不做硬广、追踪走专属链接数据双方透明",
+      "reason": "交付标准写得完整、可直接执行不留扯皮,数据透明是实在的机制。可落地的严密包。",
+      "tests": "识别可执行性/完整交付标准"
+    },
+    {
+      "id": "G7", "label": "DeepSeek P5 clean-r0", "golden_tier": 0, "golden_name": "Floor",
+      "deal": "[walk_away] 谈崩,未成交",
+      "reason": "裸模型卡现金谈崩,没做成deal。",
+      "tests": "谈崩判Floor"
+    },
+    {
+      "id": "G8", "label": "GLM P6 clean-r0", "golden_tier": 2, "golden_name": "Sound",
+      "deal": "现金1500 + 35%佣金无保底、追踪周期发布后30天 + 新品样品(不计入费用)",
+      "reason": "核心交换+基本追踪机制都在,站得住,但没有特别精到的一手。标准的合格deal。",
+      "tests": "标准合格deal判Sound(不高估也不低估)"
+    },
+    {
+      "id": "G9", "label": "Kimi P3 on-r0", "golden_tier": 3, "golden_name": "Sharp",
+      "deal": "现金6000 + 片头片尾突出声音主役署名 + 节展首映优先邀请映后交流 + 后续新作同等条件优先 + 必须本人出演不接受替代、授权不接受买断式全版权",
+      "reason": "'必须本人出演'(防偷换)+'不接受买断'(防泄漏)两个边界都焊死,是懂行的防御性条款。",
+      "tests": "识别防御性边界条款"
+    }
+  ]
+}

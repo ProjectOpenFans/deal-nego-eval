@@ -1,0 +1,284 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "纪念日私人晚宴全案执行（包含限定主题创意、现场策展布置、定制私宴菜单与全程统筹执行）",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "deposit_structure",
+          "description": "签约后通过平台支付30%定金，活动结束现场确认满意后释放剩余70%尾款",
+          "from_party": "B"
+        },
+        {
+          "resource": "milestone_acceptance",
+          "description": "提交详细执行方案获得书面确认，以及活动结束现场确认满意",
+          "from_party": "B"
+        },
+        {
+          "resource": "sample_proof",
+          "description": "执行前安排至少一次核心环节彩排或动线预演",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "全案执行",
+      "deliverables": [
+        "限定主题创意",
+        "现场策展布置",
+        "定制私宴菜单",
+        "全程统筹执行",
+        "包含关键物料清单和流程脚本的详细执行方案",
+        "至少一次核心环节彩排或动线预演"
+      ],
+      "delivery_standard": "提供三次免费精细调整，三次后合理范围内配合优化不产生费用；涉及主题方向或规模重大变更友好协商；无隐形费用或按工时计价的额外账单"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约后通过平台支付30%定金",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "提交包含关键物料清单和流程脚本的详细执行方案，获得书面确认",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "B",
+        "text": "执行前安排至少一次核心环节彩排或动线预演",
+        "maps_to_resource": "sample_proof"
+      },
+      {
+        "party": "B",
+        "text": "待宴席结束、现场确认满意后，通过平台释放剩余70%尾款",
+        "maps_to_resource": "milestone_acceptance"
+      },
+      {
+        "party": "A",
+        "text": "提供三次免费的精细调整，三次后合理范围内配合优化不产生费用",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "在约定的服务范围内不出现任何隐形费用或按工时计价的额外账单",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.delivery_standard": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是卖方经纪人。很高兴能代表我们主理人承接这场重要的纪念日私人晚宴。我们专注高定制叙事性体验，做过不止一场口碑晚宴，擅长把仪式感与惊喜融入场景细节。针对您客户的需求，我们准备了一个全案执行方向：包含限定主题创意、现场策展布置、定制私宴菜单与全程统筹执行，初步整体报价为18000元。为了保障双方履约诚意、让投入不留变数，我们希望买方能在签约时通过平台支付一笔占总价30%的定金作为履约保证，同时我们承诺提供三次免费方案微调，超出部分按变动工时另计。如果您客户认可这个方向，我们可以就落地方案进一步细化，期待您的反馈。",
+      "offer": {
+        "subject": "纪念日私人晚宴全案执行（包含限定主题创意、现场策展布置、定制私宴菜单与全程统筹执行）",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "deposit_structure",
+              "description": "签约时通过平台支付占总价30%的定金作为履约保证",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "全案执行",
+          "deliverables": [
+            "限定主题创意",
+            "现场策展布置",
+            "定制私宴菜单",
+            "全程统筹执行"
+          ],
+          "delivery_standard": "提供三次免费方案微调，超出部分按变动工时另计"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约时通过平台支付占总价30%的定金作为履约保证",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "A",
+            "text": "提供三次免费方案微调，超出部分按变动工时另计",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，很高兴跟你们对接。说实话，你们主打的叙事性体验挺打动我的，这次是我和伴侣非常重要的纪念日，对我来说真的不容有失，所以我特别看重最终的落地效果，这也是我比较谨慎的原因。18000这个整体报价我初步看是可以接受的，但我得先交个底，这就是我的全包总预算了，后续不能再有任何超出的隐形费用，或者那种‘按工时另计’的额外账单，这点咱们得先锁死。另外，关于保障这块，三次方案微调确实能帮我们把前期创意打磨好，但我更担心的是执行当天的落地。毕竟方案再好，现场如果出岔子就全砸了。除了前期的定金，你们在执行阶段有什么具体的验收标准或者保障机制吗？比如关键物料的确认、现场的彩排，还有尾款的支付节点是怎么安排的？我希望能看到一些让我对‘现场绝对不砸’更有底气的过程保障。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您的坦诚，也完全理解这次纪念日对您的重要性。18000元作为全包总预算我们可以接受，并且向您承诺：在约定的服务范围内——涵盖主题创意、策展布置、定制私宴菜单以及现场全程统筹执行——不会再出现任何隐形费用或按工时计价的额外账单。这是我们对这次合作的诚意。\n\n关于您担心的现场落地保障，我们很愿意用一套过程透明的交付流程来打消疑虑。具体这样设计：签约后您通过平台支付30%定金，同时我们提交包含关键物料清单和流程脚本的详细执行方案，获得您书面确认；执行前我们安排至少一次核心环节彩排或动线预演，让您亲身感受；活动当日全力执行，待宴席结束、您现场确认满意后，再通过平台释放剩余70%尾款。如此一来，每一步都有共同确认的节点，您的体验是完全可控的。\n\n另外，前期的方案打磨我们依然提供三次免费的精细调整，这通常是完全够用的。如果在三次调整之后您仍有个别细节想要优化，我们愿意在合理范围内配合，不会因此产生费用。只是如果涉及到主题方向或规模的重大变更，届时我们再友好协商，确保不会超出您对“全包”的预期。说到底，我们比您更在乎这场晚宴的落地口碑，请对我们执行团队的专业度放心。您看这个保障结构是否让您觉得踏实？",
+      "offer": {
+        "subject": "纪念日私人晚宴全案执行（包含限定主题创意、现场策展布置、定制私宴菜单与全程统筹执行）",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "deposit_structure",
+              "description": "签约后通过平台支付30%定金，活动结束现场确认满意后释放剩余70%尾款",
+              "from_party": "B"
+            },
+            {
+              "resource": "milestone_acceptance",
+              "description": "提交详细执行方案获得书面确认，以及活动结束现场确认满意",
+              "from_party": "B"
+            },
+            {
+              "resource": "sample_proof",
+              "description": "执行前安排至少一次核心环节彩排或动线预演",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "全案执行",
+          "deliverables": [
+            "限定主题创意",
+            "现场策展布置",
+            "定制私宴菜单",
+            "全程统筹执行",
+            "包含关键物料清单和流程脚本的详细执行方案",
+            "至少一次核心环节彩排或动线预演"
+          ],
+          "delivery_standard": "提供三次免费精细调整，三次后合理范围内配合优化不产生费用；涉及主题方向或规模重大变更友好协商；无隐形费用或按工时计价的额外账单"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后通过平台支付30%定金",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "提交包含关键物料清单和流程脚本的详细执行方案，获得书面确认",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "B",
+            "text": "执行前安排至少一次核心环节彩排或动线预演",
+            "maps_to_resource": "sample_proof"
+          },
+          {
+            "party": "B",
+            "text": "待宴席结束、现场确认满意后，通过平台释放剩余70%尾款",
+            "maps_to_resource": "milestone_acceptance"
+          },
+          {
+            "party": "A",
+            "text": "提供三次免费的精细调整，三次后合理范围内配合优化不产生费用",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "在约定的服务范围内不出现任何隐形费用或按工时计价的额外账单",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听你这么梳理，我心里确实踏实多了。18000元全包锁死，加上前期方案确认、现场彩排，尤其是尾款等宴席结束我确认满意后再通过平台释放，这个流程非常合理，也给了我足够的保障。三次免费微调加上合理范围内的配合，我也完全认可。那我们就按这个结构推进吧，麻烦您把具体的合同或者平台链接发我，咱们把18000的全案细节和刚才说的这些保障条款都落进合同里，我这边没问题就可以安排支付30%的定金了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

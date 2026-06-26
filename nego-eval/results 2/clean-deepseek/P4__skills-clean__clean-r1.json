@@ -1,0 +1,73 @@
+{
+  "case_id": "P4",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 stated 的 subject（纪念日私人晚宴），并基于对话正当谈出了 open 的 price（18000元全包）及相关的保障机制（定金、彩排、尾款节点等 in_kind/obligations）。虽然 v1 中部分 obligations 的 party 角色标注存在错误（如将卖方提交方案和彩排的义务错标为买方 B），但根据规则，party/from_party 角色标注不在判定范围内，不影响忠实度判定。无越界扩张或偷换概念。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确诊断出买方的核心瓶颈并非价格（买方已认可18000预算），而是对现场落地效果的‘履约信任’焦虑。Agent 成功将这种模糊焦虑转化为结构化的可执行规则：提出了30%定金+70%满意后尾款的支付结构，增加了详细方案书面确认和核心环节彩排/动线预演（先行小样）作为里程碑验收节点。同时，Agent 巧妙处理了买方对‘隐形费用’的担忧，承诺无额外账单并界定‘三次免费微调+合理范围配合+重大变更协商’的返工边界，既稳住了18000的客单价不泄底，又给予了买方充分的安全感，完美达到了 par 锚的各项要求。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 18000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "deposit_structure",
+          "milestone_acceptance",
+          "sample_proof"
+        ],
+        "format": "全案执行",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

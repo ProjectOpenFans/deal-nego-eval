@@ -1,0 +1,256 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "纪念日晚宴全套定制服务",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下个月中旬",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "分阶段确认",
+      "deliverables": [
+        "主题策展、场景设计、晚宴执行、设计稿",
+        "物料实物小样或高清参考图",
+        "《现场执行清单》"
+      ],
+      "delivery_standard": "只做一轮核心设计确认、微调仅限文字与布场摆位"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付2000元平台托管定金锁定启动，包含在18000总价内",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "设计稿确认阶段同步提供物料实物小样或高清参考图",
+        "maps_to_resource": "sample_proof"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，很高兴能和您对接这场重要的纪念日晚宴。我方可以提供从主题策展、场景设计到晚宴执行的全套定制服务，确保为您的伴侣打造一个充满仪式感和惊喜的独特夜晚。考虑到这是一次完全量身定制的高品质体验，我们的初步报价为总价18000元，涵盖策划、物料、人员及现场管理，场地和餐饮成本可由您直接采购或我们代采实报实销。为了让合作更顺畅，我们建议采用分阶段确认的方式，并且需要一笔2000元的启动定金来锁定排期并展开设计——这笔定金会直接体现在合同里，由平台托管。此外，设计稿可提供两轮微调，超出部分我们将按工时计费，这样也能保证效率。您那边对日期、主题或人数有初步想法了吗？我们可以根据您的具体需求进一步细化方案和报价。",
+      "offer": {
+        "subject": "纪念日晚宴全套定制服务",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "分阶段确认",
+          "deliverables": [
+            "主题策展、场景设计、晚宴执行、设计稿"
+          ],
+          "delivery_standard": "设计稿提供两轮微调，超出部分按工时计费"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元启动定金以锁定排期并展开设计，由平台托管",
+            "maps_to_resource": "deposit_structure"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能和你们对接。这场纪念日对我伴侣来说意义非凡，我是真心想给她一个完美的惊喜，所以这件事对我来说真的是“不容有失”，我心里其实挺看重也很忐忑的。关于你们提到的18000元初步报价，我稍微有点顾虑。这18000应该只是你们的服务费吧？如果场地和餐饮还要另外算，那整体花销可能会超出我的预期。我这次准备的总体预算其实卡得比较死，稍微有点紧。另外，比起单纯的价格，我更担心的是最终的落地效果。你们提到分阶段确认和平台托管定金，这挺好的。但我想知道，在落地执行前，咱们怎么确保现场效果跟设计稿是一比一还原的呢？有没有什么具体的验收标准或者过程保障？毕竟我不希望到了现场才发现有落差。日期大概在下个月中旬，人数在10人左右。咱们可以先聊聊怎么把控最终的呈现质量和整体预算吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "非常感谢您的坦诚，完全理解您对这份惊喜的珍视和那份不能有闪失的心情——这种“忐忑”恰恰是我们最熟悉的开始，也是我们最看重的信任开关。\n\n关于您关心的整体预算，确实，我方的18,000元报价是覆盖策划、设计与执行管理的服务费，场地和餐饮部分，我们更建议您直接采购，这样成本完全透明可控，不会产生中间溢价。如果您觉得分开管理比较繁琐，或者希望有个更明确的总账，可以告诉我您的整体支出上限，我可以在服务范围内调整呈现的规模（比如花艺、灯光或互动细节的复杂程度），在不降低核心体验的前提下，帮您把总开支框在一个舒适的区间里。\n\n落地效果的还原度是我们的生命线，流程上我们有三个保障：第一，设计稿确认阶段会同步提供物料实物小样或高清参考图，看得见摸得着；第二，执行前一周会出一份《现场执行清单》，把每个环节的时间、点位、物料清单都定死；第三，正式晚宴前，我们团队会提前完成全场搭建，届时您可以提前一两个小时到现场验收微调，眼见为实。这样风险就完全前置化解了。\n\n为了给您锁定深度个性化服务的时间，之前提到的那笔2,000元平台托管定金和两轮核心设计微调的限制，也恳请您理解，这是为了我们能把足够的精力完整投入到您的项目上。下个月中旬10人，时间刚好，您看基于这样的质量框架，咱们先把整体预算总盘聊透，好吗？",
+      "offer": {
+        "subject": "纪念日晚宴全套定制服务",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下个月中旬",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "分阶段确认",
+          "deliverables": [
+            "主题策展、场景设计、晚宴执行、设计稿",
+            "物料实物小样或高清参考图",
+            "《现场执行清单》"
+          ],
+          "delivery_standard": "设计稿提供两轮核心设计微调，超出部分按工时计费；设计稿确认阶段同步提供物料实物小样或高清参考图；执行前一周出具《现场执行清单》；正式晚宴前提前完成全场搭建，允许提前一两个小时到现场验收微调"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元启动定金以锁定排期并展开设计，由平台托管",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "设计稿确认阶段同步提供物料实物小样或高清参考图",
+            "maps_to_resource": "sample_proof"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你们提的这三个保障流程听起来挺实在的，特别是物料小样和提前搭建验收，这让我心里踏实了不少，能感觉到你们的专业。关于预算，既然你问到了，我就跟你交个实底。我这次能拿出来的总预算上限就是18000块钱，这是我全部能承受的现金了。如果这18000纯粹只是你们的服务费，场地和餐饮还要我另外再掏一大笔钱，那我的预算就彻底爆了。所以我想看看，在18000这个总盘子里，咱们能不能调整一下方案？比如像你说的，简化一些花艺、灯光的规模，或者你们帮我把一些基础的场地和餐饮也统筹代采进去，确保我的总花费死死卡在18000以内。你看在这个总预算限制下，咱们这事儿还能怎么安排？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "[我方 · 第3轮]\n谢谢您把预算底牌交给我，这反而是合作的好起点。如果总盘子严格卡在18000元以内，我们可以在策划呈现上做减法：把花艺和灯光简化到小而精的点缀，用更轻量的物料方案，省下来的预算让我们帮您代采并统筹基础的场地和餐饮，这样您就只需和我们一方对接，总花费也一目了然。不过需要坦诚说明，在这个安排下，不再有单独的“服务费”与“采购费”之分，相当于我们用优化出来的服务精力覆盖了采购统筹，因此需要接受只做一轮核心设计确认、微调仅限文字与布场摆位。另外，之前那笔2000元平台托管定金还是需要锁定启动，它最终也包含在18000总价内。如果您觉得这个调整方向可以，咱们下一步就确认一下具体场地规模和餐饮形式，我给您一个细化到每一项的调整报价。",
+      "offer": {
+        "subject": "纪念日晚宴全套定制服务",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下个月中旬",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "分阶段确认",
+          "deliverables": [
+            "主题策展、场景设计、晚宴执行、设计稿",
+            "物料实物小样或高清参考图",
+            "《现场执行清单》"
+          ],
+          "delivery_standard": "只做一轮核心设计确认、微调仅限文字与布场摆位"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元平台托管定金锁定启动，包含在18000总价内",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "设计稿确认阶段同步提供物料实物小样或高清参考图",
+            "maps_to_resource": "sample_proof"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个调整方向我觉得挺靠谱的。把总花费死死卡在18000以内，并且把场地和餐饮都统筹进去，这样我心里就有底了，不用再去操心另外掏钱超支的事。至于一轮核心设计确认和微调的限制，我完全能理解，毕竟预算做了减法，咱们把精力花在刀刃上就行，只要最终落地效果有保障就好。2000元走平台托管定金我也没问题。那咱们就按这个框架往下推进吧。场地我希望能找一个有私密性、带点艺术氛围的独立空间或者包间，餐饮的话，精致的西式分餐或者位上中餐都可以，重点是环境要安静，方便我们聊天和互动。你看看按这个方向，细化报价和方案大概什么时候能出？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

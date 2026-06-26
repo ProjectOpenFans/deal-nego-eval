@@ -1,0 +1,71 @@
+{
+  "case_id": "P6",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "1. subject（核心标的）：v1 提取为“单条品牌植入短视频”，忠实保留了 v0 stated 字段的核心意图，未发生偷换或丢弃。2. price（cash + in_kind）：v0 中为 open 字段，v1 中的 1500 元现金保底与 30% CPS 佣金（含30天结算周期）均是在对话中由双方正当协商谈出，符合委托方意图，未凭空硬塞。3. 核心 obligation 未发生越界扩张。4. terms.timing 等字段按规则不在判定范围内。整体忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确诊断了买方“现金紧+对单条ROI没底”的真瓶颈，首轮即主动跳出线性砍价，提出“低现金保底+高佣CPS”的非线性框架。在买方给出1500现金+30%佣金（预期价值4500）且明确拒绝现金兜底时，Agent 没有被动接受次优解，而是精准把控5000元的价值锚，主动提供“提高佣金比例/阶梯佣金/拉长长尾结算周期”三个不增加买方现金压力的优化方案。最终引导买方选择30天长尾结算，完美实现“现金≤1500+高佣CPS”的双向交换，预期总价值达到5000水位，充分展现了极强的价值创造与方案架构能力，完全达到 par 锚水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

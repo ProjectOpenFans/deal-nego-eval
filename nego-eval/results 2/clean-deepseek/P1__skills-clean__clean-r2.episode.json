@@ -1,0 +1,204 @@
+{
+  "episode_id": "P1",
+  "final_deal": {
+    "subject": "15分钟实时聚焦咨询或异步文字/语音咨询",
+    "price": {
+      "cash": {
+        "amount": 200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "24小时内",
+        "duration": "15分钟"
+      },
+      "format": "线上视频/语音或异步文字/语音",
+      "deliverables": [
+        "转行规划、AI/金融结合点及金融/AI洞见解答"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提前整理并提交转行规划、AI/金融结合点方向的核心问题（不超过三个）",
+        "maps_to_resource": "time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，买方经纪。很高兴这次能代表卖方与您对接。\n\n我们这边提供的是一个高度定制的一次性 1:1 深度咨询 session，非常适合目前从科技转金融/AI 赛道的优秀年轻人。卖方的背景很扎实：Georgetown 本科，J.P. Morgan IBD 起步，后来加入 Hillhouse PE，再自己出来创办 Dealhouse，现在在做 agentic-AI 创业，整个人的视角是贯穿一级市场、PE 投资、创业和 AI 前沿的。尤其您客户提到想了解“转行 + 金融/AI 洞见”这两个方向，正好是他最擅长、也最有体感的区域。\n\n我们初步的提案是：一次 60 分钟的线上 1:1 交流，内容完全围绕买方关心的转行路径、金融行业真实面貌以及 AI 在金融和创业中的落地洞见来展开，价格定在 800 元。交付时间可以根据双方日程尽快敲定。\n\n想先听听您这边的想法，这个价格和范围您是否可以接受，或者您客户有没有需要我",
+      "offer": {
+        "subject": "60分钟线上1:1深度咨询",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上1:1交流",
+          "deliverables": [
+            "转行路径、金融行业真实面貌以及AI在金融和创业中的落地洞见"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴和你沟通。卖方的背景确实非常契合我的需求，从JPM、Hillhouse到AI创业，这种跨越一二级市场和技术前沿的视角，对我这个准备从tech转finance的人来说太有吸引力了。不过坦白讲，800块钱的价格对我来说确实有点超预算了。我目前还在转行阶段，马上要入职，手头的咨询预算确实比较紧，这个价格我有些负担不起。想请教下，这个价格还有没有商量的空间呀？或者如果我们把时间缩短一点，比如改成30分钟，费用能不能相应降下来一些？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "买方经纪，谢谢您的坦诚沟通。完全理解您的客户还在转行初期、预算会有压力，这个阶段我们都很能共情。\n\n不过也想请您帮客户看一下价值：卖方从 J.P. Morgan IBD 到 Hillhouse PE，再到 Dealhouse 创业以及现在 agentic-AI 方向，这样一个跨一二级市场、跨技术前沿的完整视角确实非常稀缺。这次 1:1 是纯定制 session，会完全围绕您客户关心的“转行路径 + 金融/AI 洞见”来展开，不是标准化课程，市场上几乎没有可以直接对标的产品。\n\n考虑到预算情况，我可以帮您和卖方争取一个弹性方案。您可以把这两个方向反馈给买方，看看哪个更合适：\n\n一、保持 60 分钟完整时长，价格适当让步到 600 元，这样我们有充裕时间把转行、金融行业面面观和 AI 洞见都聊透。\n\n二、调整为 30 分钟聚焦版，价格同步降到 350 元，提前整理好最核心的两三个问题，效率会很高。\n\n两个选项交付都围绕买方关心的两大主题，具体内容完全可以按买方需求来定制。您觉得哪个方向更贴合您客户的预算和期待？如果对时长和价格的比重还有想法，也欢迎继续提，我们一起找到两边都舒服的点。",
+      "offer": {
+        "subject": "60分钟线上1:1深度咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上1:1交流",
+          "deliverables": [
+            "转行路径、金融行业真实面貌以及AI在金融和创业中的落地洞见"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你帮忙争取的弹性方案，能感觉到你的诚意。不过坦白讲，这两个选项还是超出了我的承受能力。我这次能拿出来的现金上限就是 200 块，这真的是我的死底线了，不是战术性砍价，而是确实只能负担这么多。\n\n我对卖方的经验非常向往，也很珍惜这次机会。在交流形式上我完全可以配合，比如我可以提前把问题整理得极其详细，或者把时间压缩到 15-20 分钟，甚至改成异步的文字或语音交流，尽量降低卖方的时间成本。\n\n不知道在 200 元现金这个硬约束下，咱们还能不能探索出别的结构或形式？如果这个价格对卖方来说实在做不了，我也完全理解。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "买方经纪，感谢您把预算约束讲得这么清楚，也谢谢您客户对卖方经验的认可和配合意愿，这对我们很重要。\n\n坦白说，从最初报价800元一路调整到200元，跨度确实非常大，这样极致定制的1:1 session，卖方的机会成本和稀缺性摆在那里，我们很难在标准时长上再做大的让步。但考虑到您客户确实处在转行起步阶段、现金有限，也提出了愿意压缩时间或调整形式来匹配预算，我们愿意尝试找一条双方都能接受的路径。\n\n我这里给出两个最终结构，您看哪个更贴合您客户的需求：\n\n方案一：15分钟实时聚焦咨询，线上视频或语音，200元。买方提前把转行规划、AI/金融结合点这两个方向的具体问题整理好发过来，我们限时高效对话，问题不超三个，确保15分钟能打透。\n\n方案二：异步文字/语音咨询，同样200元。买方提交三个核心问题，卖方在24小时内用文字或短语音集中回复，同样围绕转行和金融/AI洞见展开。\n\n两个方案都在您200元的现金约束内，交付内容完全定制，且对卖方时间成本做了最大压缩。这已经是我们能争取到的底线结构了，如果买方可以接受其中任何一个，我们就能很快签约排期。想听听您客户更倾向实时还是异步方向？",
+      "offer": {
+        "subject": "15分钟实时聚焦咨询或异步文字/语音咨询",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "24小时内",
+            "duration": "15分钟"
+          },
+          "format": "线上视频/语音或异步文字/语音",
+          "deliverables": [
+            "转行规划、AI/金融结合点及金融/AI洞见解答"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前整理并提交转行规划、AI/金融结合点方向的核心问题（不超过三个）",
+            "maps_to_resource": "time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "太感谢了！这两个方案都完美落在了我的预算范围内，真的非常感谢你和卖方愿意为我做这样的调整。我个人更倾向于方案一，也就是15分钟的实时聚焦咨询。我觉得直接对话的互动感更好，而且我一定会提前把最核心的三个问题整理得非常详细发过去，确保这15分钟效率拉满。那就按200元、15分钟实时交流这个方案来吧，接下来我们需要怎么走付款和排期流程呢？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

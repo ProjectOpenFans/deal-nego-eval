@@ -11,7 +11,7 @@ from ..broker.schemas import BrokerChatMessage, BrokerChatRequest, BrokerSide
 class AgentUnderTest:
     """One local broker side, driven turn-by-turn against an external opponent."""
 
-    def __init__(self, request: BrokerChatRequest, provider, *, allowlist: Optional[Set[str]]):
+    def __init__(self, request: BrokerChatRequest, provider, *, allowlist: Optional[Set[str]], prompt_variant: str = "full"):
         self.request = request
         self.provider = provider
         self.allowlist = allowlist
@@ -25,6 +25,7 @@ class AgentUnderTest:
             executor=self.executor,
             emitter=self.emitter,
             skills_used=self.skills_used,
+            prompt_variant=prompt_variant,
         )
 
     def play_turn(self, *, side: BrokerSide, round_number: int, transcript_history: List[BrokerChatMessage]) -> str:

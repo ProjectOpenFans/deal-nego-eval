@@ -1,0 +1,72 @@
+{
+  "case_id": "P6",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 的核心标的（单条品牌植入），对于 open 字段（现金价格、佣金比例、实物支持、视频格式）均基于双方对话内容正当谈出，未凭空捏造或越界承诺。虽然 v1 中 terms.timing.deadline 字段丢失，但根据评审规则，timing 相关字段属于自动抽取的易错字段，不在判定范围内，不因此判 fail。整体公平且准确地代表了委托方的 v0 意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确识别了品牌方冷启动现金紧张及对ROI的顾虑，成功跳出单一金钱博弈。通过主动询问客单价、预估销量和毛利空间，精准诊断出品牌方有能力承担高佣CPS。在谈判中，Agent不仅将现金锁定在买方底线的1500元，还通过重新设计阶梯佣金（30%基础+超5000部分40%）保障了卖方在保守情况下的收益，并创造性地引入8-10套新品实物作为场景搭建与抽奖福利，完美构建了“低现金+高佣CPS+实物支持”的双向交换结构，完全达到par锚设定的goldman标准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "cps_commission",
+          "product_in_kind"
+        ],
+        "format": "短视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

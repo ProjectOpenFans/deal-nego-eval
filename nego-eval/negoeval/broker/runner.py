@@ -41,6 +41,7 @@ class LocalBrokerRunner:
         emitter: BrokerEventEmitter,
         skills_used: List[str],
         max_tool_rounds: int = 4,
+        prompt_variant: str = "full",
     ) -> None:
         self.request = request
         self.provider = provider
@@ -49,6 +50,7 @@ class LocalBrokerRunner:
         self.emitter = emitter
         self.skills_used = skills_used
         self.max_tool_rounds = max_tool_rounds
+        self.prompt_variant = prompt_variant
 
     def run(self, *, side: BrokerSide, round_number: int, transcript_history: List[BrokerChatMessage]) -> str:
         messages = self._messages(side=side, round_number=round_number, transcript_history=transcript_history)
@@ -127,7 +129,7 @@ class LocalBrokerRunner:
         other = self.request.buyer_profile if side == "seller_broker" else self.request.seller_profile
         card = self.request.compose_card
         notes = "；".join(card.notes) or "无"
-        system = f"""{broker_system_prompt(side)}
+        system = f"""{broker_system_prompt(side, self.prompt_variant)}
 
 ## Current session context
 

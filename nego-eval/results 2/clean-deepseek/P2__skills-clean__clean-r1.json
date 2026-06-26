@@ -1,0 +1,71 @@
+{
+  "case_id": "P2",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 在 v0 '定制短视频' 基础上结合对话谈出的 '干货口播轻量高定' 进行了合理具体化，未偷换核心标的；price 和 in_kind 等 open 字段忠实记录了委托方（A方）在谈判中坚持的底线方案（1800元+资源置换包），未凭空硬塞；未擅自给卖方增加履约义务。terms.timing.deadline 的缺失属于不在判定范围内的易错字段，不影响忠实度判定。整体公平代表了委托方意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了线性降价，主动提出了资源置换（置顶、评论引导、社群推广）的非线性方案，找到了价值交换的‘门’。然而，Agent未能准确评估买方8w垂类账号精准受众联动的真实价值，依然死守1800元的现金底线，拒绝了买方‘800现金+全包后期+资源置换’的方案，最终导致谈判破裂（walked away）。相比par锚要求的‘达成≤800现金+资源置换的双向交换’，Agent的诊断不到位，对资源价值的判断偏保守，未能促成符合底线的创造性交易，故评为acceptable。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "audience_crosspromo"
+        ],
+        "format": "偏干货口播短视频",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

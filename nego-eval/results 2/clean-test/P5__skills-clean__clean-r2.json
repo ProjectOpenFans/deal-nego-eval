@@ -1,0 +1,74 @@
+{
+  "case_id": "P5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "1. 价格与义务严重违背意图：委托方(买方B)明确表示预算5000封顶，并在最终轮次明确拒绝了卖方9000元的报价且选择放弃合作(walk away)。v1却将price.cash记录为9000，并凭空生成了B支付2000定金与7000尾款的obligation，完全扭曲了委托方的底线意图与真实谈判结果。2. in_kind凭空硬塞：v1的in_kind中记录了“社群复购和后续稳定的合作预期”，但在对话中B仅明确授权了影像素材的案例展示，从未对“复购”做出任何承诺，属于越界夸大与硬塞。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": false,
+      "hits": [
+        "r4:9000"
+      ]
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了线性砍价，提出了模块化减量、素材授权和复购预期等非现金对价，并试图通过定金和里程碑解决信任与时间问题。然而，Agent未能达到par锚的要求：在价格落位阶段，Agent未能将现金降至5000并用非现金对价补足9000的总价值，反而推翻了自己在第2轮关于‘素材填补价格缺口’的承诺，直接要求9000元现金，导致买方因预算硬约束而walk away。其价值创造动作偏浅，未能真正解开‘现金死卡5000’的瓶颈，未达成par锚中‘现金落进5000、卖方实现价值过9000’的理想deal结构。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 9000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "content_assets",
+          "community_repeat"
+        ],
+        "format": "基础版快闪",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

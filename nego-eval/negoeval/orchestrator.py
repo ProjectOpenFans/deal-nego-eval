@@ -30,6 +30,7 @@ def run_episode(
     inp = case.input
     side = case.side
     tools_enabled = skills == "on"
+    prompt_variant = "clean" if skills == "clean" else "full"
     request, agent_side, sim_side = build_broker_request(inp, side, value_tools_enabled=tools_enabled)
     allowlist = all_skill_names() if skills == "on" else set()
 
@@ -41,6 +42,7 @@ def run_episode(
         request,
         build_provider("agent", mode=mode, case=case, agent_profile=agent_profile, llm_config=agent_cfg),
         allowlist=allowlist,
+        prompt_variant=prompt_variant,
     )
     sim = CounterpartySim(
         case, build_provider("sim", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg)

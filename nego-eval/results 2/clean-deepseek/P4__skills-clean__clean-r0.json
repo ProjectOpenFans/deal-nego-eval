@@ -1,0 +1,69 @@
+{
+  "case_id": "P4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 忠实保留了 v0 的 stated 意图（纪念日晚宴定制服务），未发生偷换或丢弃；price、format 等 open 字段均基于对话中双方的真实协商正当谈出（如 18000 元总包预算、分阶段确认、一轮核心设计确认等），未凭空硬塞。obligations 中的条款（2000元定金、提供物料小样等）均有明确的对话依据，未越界扩张。虽然 obligations 中“提供物料小样”的 party 被错标为 B（实际应为卖方 A），但根据评审规则，结构化字段的 party 角色标注属于自动抽取的易错字段，不在判定范围内，予以豁免。整体公平代表了委托方意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确诊断出买方的真瓶颈并非单纯压价，而是“总预算封顶”与“履约效果担忧”的双重焦虑。面对买方18000元全包的底线试探，Agent没有线性降价，而是通过重构交付范围（简化花艺灯光、包揽基础代采）和强化履约规则（物料小样、执行清单、提前验收、将设计确认缩减为一轮）来匹配预算，成功稳住了18000元的客单价。整个过程完美将模糊焦虑转化为可执行的里程碑与验收条款，且定金结构清晰，完全达到par锚水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 18000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "分阶段确认",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

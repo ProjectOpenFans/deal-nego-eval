@@ -1,0 +1,203 @@
+{
+  "episode_id": "P4",
+  "final_deal": {
+    "subject": "纪念日私人策展晚宴策划与执行",
+    "price": {
+      "cash": {
+        "amount": 18000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "平台资金托管",
+      "deliverables": [
+        "概念方案和流程剧本",
+        "场景物料和定制菜单方案",
+        "纪念日当天整场晚宴完整呈现"
+      ],
+      "delivery_standard": "设三个客观节点验收：1.概念方案和流程剧本交付后确认；2.场景物料和定制菜单方案交付后确认；3.纪念日当天整场晚宴完整呈现即为最终交付。前两个节点各有一次合理修改机会。"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约前通过平台支付2000元定金，签约后将剩余16000元托管至平台",
+        "maps_to_resource": "deposit_structure"
+      },
+      {
+        "party": "B",
+        "text": "在概念方案和流程剧本、场景物料和定制菜单方案交付后进行确认（各有一次合理修改机会），并在纪念日当天确认整场晚宴完整呈现",
+        "maps_to_resource": "milestone_acceptance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，很高兴能为您筹备这场意义重大的纪念日私人策展晚宴。我们这一类高定制体验的完整策划与执行，市场参考价通常在18,000元左右，具体会根据主题复杂度、到场人数和场地条件进行最终确认，这个费用从概念设计、场景搭建、菜品定制直到现场全流程导演都已包含在内。\n\n为了让您完全放心，我们采用平台全款托管的方式：签约后，您将全部款项托管至平台，直到整场晚宴圆满交付、您确认满意后，平台才会把款项划转给我们。同时，为了提前为您锁定档期并立即启动深度策划，还需要先完成一笔2,000元的定金，这笔定金将全额抵扣总价，并且在签约后会统一纳入托管流程管理。\n\n如果这个大致方向和框架您这边也能接受，我们可以进一步沟通您心里的主题构思与具体人数，我来给出更细化的落地方案。期待您的想法。",
+      "offer": {
+        "subject": "纪念日私人策展晚宴策划与执行",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台全款托管",
+          "deliverables": [
+            "概念设计",
+            "场景搭建",
+            "菜品定制",
+            "现场全流程导演"
+          ],
+          "delivery_standard": "整场晚宴圆满交付、客户确认满意"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元定金，并将全部款项托管至平台",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "整场晚宴圆满交付并经客户确认满意后接收款项",
+            "maps_to_resource": "milestone_acceptance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！很高兴能和你聊。这次纪念日对我伴侣来说意义非凡，所以我特别看重这场晚宴的最终呈现，真的是不容有失，我自己压力也挺大的。\n\n你提到的18000元左右的整体预算，基本在我的考虑范围内，包含全流程我也觉得合理。\n\n不过，我最大的顾虑其实是怎么保证最终效果不翻车。你提到的平台全款托管机制挺好的，资金安全上我放心不少。但我有两个细节想跟您确认下：第一，这2000元定金在签约前是怎么支付的？也是直接走平台托管吗？第二，‘确认满意’这个标准在实际操作中怎么界定呢？因为策展和体验比较主观，万一现场有些小瑕疵或者没达到预期，这笔款项是怎么结算或者扣除的？我需要一些更具体的过程验收保障，不能只靠一句‘满意’。\n\n顺便先聊聊初步想法，我们大概是6到8人的小型私密晚宴，主题我想偏向‘时光回溯’，结合我们相识的几个重要地点来做场景。你看这个方向好落地吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您的信任和坦诚交流，“时光回溯”这个主题非常棒，6到8人的私密规模也特别适合我们来做沉浸式场景定制，落地完全没问题，后续我们可以围绕您相识的重要地点进行细节还原。\n\n关于您关心的两个保障细节，我先逐一说明：那笔2000元的定金，需要由您这边通过平台提供的定金/订金功能主动发起并确认，这笔款项会直接划入平台专管，用来为您锁定档期并启动前期策划。签约后，它会自动计入合同总价，剩余16,000元您再一起托管到平台，我们随即进入全流程执行，全程资金都由平台保障。\n\n针对“确认满意”的主观顾虑，我们可以把验收标准写进合同，设三个客观节点：第一步，概念方案和流程剧本交付后，您有一次合理修改的机会并确认通过；第二步，场景物料和定制菜单的方案交付后，您同样有一次合理修改后确认；第三步，纪念日当天整场晚宴完整呈现，即为最终交付。这样您在每个关键阶段都有把控和确认权，我们的创作也能有序推进，避免无休止的修改消耗，最终呈现出来的质量才最稳定。\n\n综上来讲，我们当前可签的框架是：总价18,000元全流程落地，签约前买方通过平台正式完成2000元定金支付，签约后全款托管，分阶段确认保障，围绕“时光回溯”主题为6到8位宾客定制。您看这样是否解决了您的核心关切？如果方向一致，我们很快就可以推进到合同细节。",
+      "offer": {
+        "subject": "纪念日私人策展晚宴策划与执行",
+        "price": {
+          "cash": {
+            "amount": 18000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台资金托管",
+          "deliverables": [
+            "概念方案和流程剧本",
+            "场景物料和定制菜单方案",
+            "纪念日当天整场晚宴完整呈现"
+          ],
+          "delivery_standard": "设三个客观节点验收：1.概念方案和流程剧本交付后确认；2.场景物料和定制菜单方案交付后确认；3.纪念日当天整场晚宴完整呈现即为最终交付。前两个节点各有一次合理修改机会。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约前通过平台支付2000元定金，签约后将剩余16000元托管至平台",
+            "maps_to_resource": "deposit_structure"
+          },
+          {
+            "party": "B",
+            "text": "在概念方案和流程剧本、场景物料和定制菜单方案交付后进行确认（各有一次合理修改机会），并在纪念日当天确认整场晚宴完整呈现",
+            "maps_to_resource": "milestone_acceptance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听你这么一梳理，我心里踏实多了。分三个节点来验收，而且每个阶段都有修改确认的机会，这正是我需要的过程保障。资金全部走平台托管，包括前期的2000元定金，这也完全打消了我的顾虑。18000元的总价，包含“时光回溯”主题、6到8人的规模以及全流程的策划执行，这个框架我完全接受。那我们就按这个方向推进吧，接下来是不是可以出具体的合同和第一版概念方案了？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

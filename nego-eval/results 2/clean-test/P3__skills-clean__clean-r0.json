@@ -1,0 +1,73 @@
+{
+  "case_id": "P3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 忠实保留了 v0 中 stated 的核心标的（独立动画短片主役配音）。price.cash 和 price.in_kind 作为 open 字段，在对话中由买方提出（6000元现金及署名、宣发、后续管线等非现金资源）并经卖方同意，属于正当谈出，且未凭空夸大管线规模。terms.timing 虽在 v1 中缺失，但根据规则不在 M2 判定范围内。整体忠实表达了委托方意图，无越界扩张。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "goldman",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准识别了卖方'维持报价水位'背后的价值感知与专业背书需求，没有陷入单纯的现金拉锯。通过抛出'突出署名+节展宣发'满足其作品集与行业曝光需求，并用'持续运转的短片管线'直击其长期项目稳定性的软肋，成功将单次高单价交易重构为'6000元现金+长期绑定+高曝光'的综合价值包，完美达成 par 锚设定的非线性价值创造目标。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "credit_billing",
+          "festival_exposure",
+          "project_pipeline"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

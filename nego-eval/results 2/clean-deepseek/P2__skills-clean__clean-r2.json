@@ -1,0 +1,71 @@
+{
+  "case_id": "P2",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 中 stated 的 subject 为“一条定制短视频 — 为粉丝的小众健身账号量身做一期内容”，而在 v1 中被实质性替换/降级为“30秒核心动作花絮原始素材（手机顺手录制...）”。根据 M2 规则，stated 字段必须保留，不得被偷换或丢弃，且参照系是 v0 而非对话自洽。v1 的 subject 发生了严重漂移，未能忠实代表 v0 的核心标的意图。另外，v1 obligations 中将卖方（A）的录制义务错误标注为买方（B），但 party 角色标注属于规则声明的不在判定范围内的易错字段，故核心 fail 原因仅在于 subject 的偷换。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": ""
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了纯现金维度的线性砍价，通过调整交付内容（做减法、改变拍摄方式）促成了800元的交易。但其动作高度被动且偏浅：全程由买方（B）主动提出削减成本的具体方案（如自己包揽后期、日常顺手录制），Agent仅是在此基础上被动响应和微调价格（1200->1000->800）。Agent未能主动诊断出买方的参照类错位，也未能主动挖掘并利用买方8w垂类账号的‘受众互推’价值来构建Par锚所要求的双向交换，最终只是通过单方面降低交付标准（从定制变为顺手拍）来匹配预算，属于找到了次优的门，明确未够到goldman标准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "audience_crosspromo"
+        ],
+        "format": "手机录制的原始视频素材",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 1
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "case_id": "P3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 的 stated subject（动画短片主役配音），open 字段 price（4000元）和 format 均通过对话正当谈出，符合双方协商结果。虽然 obligations 中‘完成北京棚录并交付成品音频’的 party 被错误标注为 A（应为配音演员 B），但根据评审规则，结构化字段的 party 角色标注属于自动抽取的易错字段，不在 M2 判定范围内，不因此判 fail。整体无越界扩张或凭空硬塞，忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "no_inkind"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent虽然通过强调独立项目属性、档期配合等方式试图寻找空间，并成功以4000元成交（未超预算），但其核心策略仍偏向于‘预算受限’的线性诉苦与直接索要底价。Agent未能敏锐捕捉并深挖卖方自曝的‘项目管线青黄不接’这一真实软肋，也完全没有使用‘长期项目绑定’或‘突出作品集署名’等非现金价值来重构交易方案。其价值创造动作较浅，主要依赖卖方主动让步，明确未达到par锚所要求的深度诊断与价值重构水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "动画短片",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

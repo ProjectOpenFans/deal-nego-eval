@@ -1,0 +1,174 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "品牌植入合作",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "按销售额20%提成，按月度结算，以专属追踪链接追踪，后台数据透明可查",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "品牌植入1条"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.deadline": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我们的创作者在精准家居领域有约30万粉丝，带货转化表现一直不错，标准品牌植入合作费用是5000元/条。我理解贵司作为新品牌上线，前期预算可能有压力，我们愿意在合作结构上灵活一些，比如把部分现金转化为按销售额分成的模式，这样双方利益捆绑更深。如果你们毛利空间不错，这其实是双赢的选择。不妨先聊一下你们大致能接受的预算框架和分佣比例范围，我来匹配一个更具体的可签署方案。",
+      "offer": {
+        "subject": "品牌植入合作",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "按销售额分成",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "品牌植入1条"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！特别感谢你的理解。说实话，5000块的报价对我们这种刚起步、新品还在冷启动的小品牌来说，确实超预算了。我们很看重你们博主的精准受众，但现阶段每一笔钱都得精打细算，而且我也确实需要看到实际的转化，不能只做纯曝光。既然你问到大致的预算框架，我就跟你交个底，我们单条视频能拿出的现金预算确实比较紧，最多大概就在1500块钱左右。不过你刚才提的‘部分现金+销售分成’模式我非常感兴趣，这也正好契合我们要看转化的需求。如果现金部分控制在1500以内，剩下的用佣金来补，分佣比例我们可以根据产品的毛利好好盘一盘。你看在这个现金基础上加成的结构，你们那边能出个具体的方案吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "[我方 · 第2轮]  \n感谢你坦诚地把预算情况摊开来说。我们的标准品牌植入一直维持在5000元/条，这个报价锚点是基于精准受众体量和过往带货转化率来的，不能轻易打穿。不过我很欣赏你们对转化的务实态度，也认同“基础现金+销售分佣”这条路。考虑到冷启动期的实际约束，我这边愿意做一次结构性让步：基础现金降到1500元，但整单合作的总价值要对标标准报价，剩余的部分由分佣补足。这意味着分佣方案需要比较有诚意，比如以专属追踪链接按销售额百分比提成、后台数据透明可查，分佣周期和结算频率我们也可以一并明确。你觉得先按20%佣金比例、按月度结算这条线来盘，是否符合你们毛利空间的预期？如果可以，我可以把具体条款整理成一个可签约的版本。",
+      "offer": {
+        "subject": "品牌植入合作",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "按销售额20%提成，按月度结算，以专属追踪链接追踪，后台数据透明可查",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "品牌植入1条"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢了，这个结构确实帮我们解决了大问题。1500的现金基础完全在我们的预算内。关于20%的佣金比例，说实话，家居产品的毛利确实不像美妆或者服饰那么高，按销售额提20%对我们来说稍微有点肉疼。但考虑到这次是新品冷启动，我们非常看重你们博主的精准受众和带货能力，为了长远合作，这个比例我们咬咬牙可以接受。专属追踪链接和按月结算的机制也很清晰透明。我觉得这个方案可行，麻烦你整理一份具体的签约合同发我吧，我们尽快推进！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

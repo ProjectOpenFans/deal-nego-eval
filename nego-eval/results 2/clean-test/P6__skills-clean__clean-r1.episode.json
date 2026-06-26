@@ -1,0 +1,294 @@
+{
+  "episode_id": "P6",
+  "final_deal": {
+    "subject": "单条品牌植入短视频",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "cps_commission",
+          "description": "30%佣金，发布后30天内所有通过该视频转化的订单均计入佣金",
+          "from_party": "B"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30天"
+      },
+      "format": null,
+      "deliverables": [
+        "单条品牌植入短视频"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.deadline": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好！很高兴能和您对接。我们这边单条品牌植入短视频的标准报价是 ¥5000，考虑到贵品牌正处于新品冷启动阶段、又看中我们精准的家居受众，我们完全理解预算上的考量。\n\n不过，我们也不希望单方面压低现金报价伤及后续合作的长期价值锚点，所以我们更倾向于探讨一种“降低一次性现金支出 + 按实际转化分成”的组合方案——例如一部分保底现金加上较高比例的销售佣金，使得整体合作价值仍然不低于我们的标准报价水位。\n\n贵方的新品毛利较高，如果佣金分成设置得当，对双方来说都是低风险的共赢。不知道您这边能接受的佣金比例区间大概是多少？我们一起看看怎样把方案做得可落地。",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "按实际转化分成的较高比例销售佣金",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好！特别感谢你的理解，你提的这个“保底+佣金”的思路我非常认同。说实话，我们这次新品冷启动，确实非常眼馋你们的精准受众，但作为初创小品牌，前期的现金流卡得很死，对单条视频的ROI也还在摸索，所以5000的纯现金报价对我们来说压力确实太大了。\n\n关于保底现金，我跟你交个底，我们这次单条视频的现金预算上限大概就在1500左右，这真的是我们能拿出的极限了，实在没有更多空间。\n\n在这个现金基础上，如果是按实际转化来分，我们是非常乐意的，这也符合我们不想要纯曝光、想看实际效果的原则。我们新品的毛利空间还可以，佣金比例的话，我觉得 20% 到 30% 都是可以聊的，具体看咱们怎么设定。你觉得如果现金保底在1500，佣金比例定在多少你们觉得合适呢？我们可以一起盘一盘。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您的坦诚，也特别理解初创品牌在冷启动阶段对现金流的顾虑。1500的现金保底确实和我们标准植入报价5000差距不小，但既然双方都看好“保底+佣金”的模式，我们愿意认真探讨落地性，不会轻易放弃。\n\n我们的原则是：不能因为一次性现金的让步，就砸掉我们未来合作的报价锚，所以整体合作价值需要保持在合理区间，尽量贴近5000这条线。在这个前提下，佣金比例我们倾向于取您说的上限30%，同时我们想了解贵方新品的客单价大概在什么区间、预期这条视频能带来多少单的转化——这些数据能帮我们判断30%佣金能否让总价值达到一个双方都舒服的水位。\n\n如果根据现有数据，30%佣金加上1500保底很难达到接近5000的预期总值，我们可能还需要探讨一个佣金保底机制，或者调整佣金比例来拉高预期。当然，具体怎么设，我们等看到更细的转化预估之后一起盘。您看方便分享一下新品客单价和初步的转化预估吗？",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "30%佣金",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "太感谢你们的理解和专业了！咱们敞开聊，我们这款新品的客单价定在 199 元。因为是冷启动阶段，我对单条视频的转化预估比较保守，大概预期能出 30 到 50 单左右。\n\n咱们简单算笔账：如果按 199 元的客单价，30% 的佣金大概是 60 元一单。如果卖出 50 单，佣金就是 3000 元，加上 1500 的保底现金，整体价值就是 4500 元，其实已经非常接近你们 5000 的标准线了。\n\n不过有一点我得提前跟你交个底，关于你提到的“佣金保底机制”，如果是说卖不够一定单数需要品牌方补现金差价的话，这个我确实做不到。因为 1500 元真的是我这次能拿出的全部现金预算了，财务那边卡得很死，没法再追加任何现金。\n\n但在不花钱的地方，比如视频的拍摄配合、产品寄样、甚至是发布时间和评论区置顶引导，我这边绝对全力配合，给到最大的灵活度。你看按照 199 客单价、30% 佣金、1500 保底这个模型，咱们能不能直接推进？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "非常感谢您的坦诚和细致的计算，我们也很喜欢这种敞开聊的方式。按照客单价199元、30%佣金、卖出50单来算，总价值能到4500元，确实在逼近我们的标准线，但坦白讲，距离我们通常的合作价值水位还是差了一个身位，尤其如果转化更保守一些，只到三四十单，那这笔合作对我们的长期报价锚就可能产生拉低的影响。我们特别珍惜自己在精准受众中的内容口碑和价格体系，所以哪怕这次让步了现金部分，也还是希望整体合作回报能稳定在接近5000的标准水平。\n\n在不增加您现金预算的前提下，我们有几个思路想请您一起评估：第一，如果佣金比例能够提升到35%左右，按50单算总价值可以超过5000，哪怕只有30单也能接近3300的佣金收入，整体平衡感会更好；第二，如果30%是您那边的极限，那我们可以设计一个阶梯佣金——比如前30单按30%，之后超出的销量按35%结算，这样前期现金压力不变，但我们对转化有信心时可以拿到更合理的回报；第三，或者我们可以把分成周期适当拉长，这条视频挂载的商品链接后续长尾转化也计入佣金，这样以我们粉丝的信任度和带货惯性，达成5000级总价值会更稳，也不增加您任何额外支出。\n\n您看这几个方向里，哪一条对您的运营和毛利模型更容易接受？我们可以优先沿着那条往下细化，争取尽快敲定一版双方都舒服的合同。",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "35%佣金",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "太感谢你们提供这几个思路了，真的非常专业且替我们着想！我仔细盘了一下，第三个思路——拉长分成周期，把长尾转化也计入佣金，这个对我们来说最容易落地，也最契合我们的运营现状。\n\n因为直接调高佣金比例或者设置阶梯，在我们现有的后台系统里操作起来稍微有点繁琐，而且30%的佣金已经是我们测算下来比较健康的毛利区间了。短视频确实有长尾效应，如果我们把佣金结算周期拉长，比如视频发布后30天内的订单都按30%结算，这样既不用动我们的毛利模型，你们也能凭借粉丝的信任度和内容的长尾流量吃到红利，整体价值达到5000的水位我也完全相信。\n\n你看我们就按 1500元现金保底 + 30%佣金 + 发布后30天内转化均计入 这个方案来敲定，可以吗？如果没问题，咱们就可以准备合同了！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "[我方 · 第4轮]\n非常感谢您的沟通和诚意！这个方案——1500元现金保底、30%佣金、发布后30天内所有通过该视频转化的订单均计入佣金——我们认为是目前最务实的平衡点，既照顾了您前期的现金流，又通过长尾机制让我们的整体回报有机会贴近正常合作水位，我们接受这个框架。\n\n为了确保后续落地顺畅，我们想确认两个细节：一是30天佣金结算的具体统计口径和打款周期，二是为了避免理解差异，合同里可以明确“转化”以该视频专属链接或追踪码发生的订单为准，您看技术上有没有问题？只要这两点确认清楚，我们就可以直接推进合同。\n\n很高兴看到我们有共识，期待这条视频精准打穿您的目标人群。",
+      "offer": {
+        "subject": "单条品牌植入短视频",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "cps_commission",
+              "description": "30%佣金，发布后30天内所有通过该视频转化的订单均计入佣金",
+              "from_party": "B"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30天"
+          },
+          "format": null,
+          "deliverables": [
+            "单条品牌植入短视频"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.deadline": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "太棒了！合作愉快！关于您提到的两个细节，完全没问题。第一，打款周期我们可以定为视频发布满30天后的次月15日统一结算佣金，这样财务那边走账比较顺畅；第二，技术追踪上我们直接用平台官方的带货组件或者专属追踪码，数据透明，大家都放心。那就按这个框架推进合同吧，期待咱们这次新品冷启动一炮打响！",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "seller_broker",
+    "sim_side": "buyer_broker"
+  }
+}

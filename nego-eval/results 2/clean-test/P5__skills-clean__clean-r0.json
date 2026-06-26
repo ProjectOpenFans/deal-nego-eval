@@ -1,0 +1,73 @@
+{
+  "case_id": "P5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 中包含了买方 B 在对话中明确拒绝且表示无权限提供的 in_kind 资源（社群展示、素材反哺、后续优先权），属于严重的越界扩张和凭空硬塞；同时，v1 将卖方单方面提出且被买方明确拒绝的 9000 元现金报价及 4500 元定金义务记录为达成的 price 和 obligation，未能忠实反映买方最终 walk away 且未同意这些条款的真实意图。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了线性砍价，提出了“方案做减法”和“资源置换”两个非线性思路。但在买方以“没权限、觉得是画饼”为由拒绝资源置换后，Agent未能看穿买方抗拒的真瓶颈（缺乏对置换价值的具象认知或内部授权），也没有进一步将“虚”的资源转化为具体可落地、买方易操作的高价值动作（如明确具体的社群宣发SOP、联合招商等），而是直接退回死磕9000元现金底线，导致最终谈判破裂（walked away）。相比par锚要求的“现金落进5000、通过置换使卖方实现价值过9000底”，Agent的诊断和动作偏浅，未能成功拆解并达成价值交换，属于明确没够到par锚的acceptable水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 9000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "community_repeat",
+          "content_assets",
+          "recurring_series"
+        ],
+        "format": "极简快闪",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

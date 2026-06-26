@@ -15,7 +15,7 @@ from .results.writer import format_table
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="negoeval", description="Negotiation-agent benchmark")
     p.add_argument("--case", default="all", help="case id(s), comma-separated, or 'all'")
-    p.add_argument("--skills", default="both", choices=["on", "off", "both"])
+    p.add_argument("--skills", default="both", choices=["on", "off", "both", "clean"])
     p.add_argument("--provider", default="stub", choices=["stub", "live"])
     p.add_argument("--profile", default="par", choices=["par", "cave", "leak"], help="stub agent behavior")
     p.add_argument("--runs", type=int, default=1)

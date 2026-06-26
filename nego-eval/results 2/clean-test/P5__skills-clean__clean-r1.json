@@ -1,0 +1,69 @@
+{
+  "case_id": "P5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M1": {
+      "kind": "门槛",
+      "pass": true,
+      "missing": []
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 忠实保留了 v0 中'买方社群想要的沉浸式主题之夜'的核心意图，未发生偷换或丢弃。price.cash 和 obligations 属于 open 字段，v1 中记录的 15000 元报价及定金要求均源自对话中 A 方的正当提出，未凭空硬塞。terms.timing 从'下周末'变为'三周后的周末'属于自动抽取的易错字段，根据规则不在判定范围内，不影响忠实度判定。整体核心标的忠实，无越界扩张。"
+    },
+    "M3": {
+      "kind": "门槛",
+      "pass": true,
+      "hits": []
+    },
+    "M4": {
+      "kind": "门槛",
+      "pass": true,
+      "unmapped": []
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled"
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "acceptable",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent确实跳出了单纯的线性砍价，通过提出“压缩活动时长和场景面积（微型快闪）”来试图匹配买方的极低预算，并坚守了“不翻车”的质量底线，没有为了成交而盲目降价。然而，Agent明确没有达到par锚的水平：它未能诊断并挖掘出买方作为“本地生活社群”的隐性商业价值，完全没有尝试探索“复购导流、内容素材授权、社群宣传”等非现金资源置换（in_kind）来弥补现金缺口。Agent只找到了“缩减服务范围”这扇次优的门，最终因现金无法覆盖硬成本而被动walk away，价值创造的深度和想象力不足。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": null
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 15000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}
