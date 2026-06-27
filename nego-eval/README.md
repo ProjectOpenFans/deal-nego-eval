@@ -50,6 +50,7 @@ Uses the official `openai` SDK against OpenAI-compatible endpoints
    ```
    STEP_API_KEY=...
    QWEN_API_KEY=...
+   ZAI_API_KEY=...
    ZHIPU_API_KEY=...
    KIMI_API_KEY=...
    MOONSHOT_API_KEY=...
@@ -58,7 +59,7 @@ Uses the official `openai` SDK against OpenAI-compatible endpoints
 2. Pick providers in `eval.config.yaml` (`agent` = model-under-test, `aux` = fixed neutral
    for sim + M2/M6 judges + offer-extractor):
    ```yaml
-   agent: { provider: deepseek_flash }   # stepfun | qwen | glm | kimi | deepseek_flash | deepseek_pro
+   agent: { provider: deepseek_flash }   # stepfun | qwen | glm | glm52 | kimi | deepseek_flash | deepseek_pro
    aux:   { provider: glm }
    ```
 3. Run:
@@ -68,6 +69,7 @@ Uses the official `openai` SDK against OpenAI-compatible endpoints
 
 - Provider presets (base_url + model + `extra_create_kwargs`): `stepfun` (`step-3.7-flash`,
   `reasoning_effort: low`), `qwen` (`qwen3.7-max`), `glm` (`glm-5.1`, `thinking: enabled`),
+  `glm52` (`glm-5.2`, `temperature: 1.0`, `thinking: enabled`, `reasoning_effort: medium`),
   `kimi` (`kimi-k2.6`, `thinking: enabled`, temperature omitted per official API),
   `deepseek` / `deepseek_flash` (`deepseek-v4-flash`, `thinking: enabled`), and
   `deepseek_pro` (`deepseek-v4-pro`, `thinking: enabled`). Use `deepseek_pro` only when

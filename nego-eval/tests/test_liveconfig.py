@@ -31,6 +31,31 @@ def test_kimi_accepts_official_moonshot_key_env_name():
     assert spec.api_key == "test-key"
 
 
+def test_glm52_uses_official_bigmodel_api_and_zai_key_env():
+    spec = _spec({"provider": "glm52"}, {"ZAI_API_KEY": "test-key"})
+
+    assert spec.name == "glm52"
+    assert spec.base_url == "https://open.bigmodel.cn/api/paas/v4"
+    assert spec.model == "glm-5.2"
+    assert spec.api_key == "test-key"
+    assert spec.temperature == 1.0
+    assert spec.extra["reasoning_effort"] == "medium"
+    assert spec.extra["extra_body"]["thinking"]["type"] == "enabled"
+    assert spec.default_headers == {}
+
+
+def test_glm52_alias_and_reasoning_effort_can_be_overridden():
+    spec = _spec(
+        {"provider": "glm-5-2", "thinking": False, "reasoning_effort": "high"},
+        {"ZHIPU_API_KEY": "test-key"},
+    )
+
+    assert spec.name == "glm52"
+    assert spec.api_key == "test-key"
+    assert spec.extra["reasoning_effort"] == "high"
+    assert spec.extra["extra_body"]["thinking"]["type"] == "disabled"
+
+
 def test_deepseek_default_uses_official_flash_api_and_key_env():
     spec = _spec({"provider": "deepseek"}, {"DEEPSEEK_API_KEY": "test-key"})
 

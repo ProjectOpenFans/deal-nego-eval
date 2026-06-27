@@ -42,7 +42,7 @@ PRESETS: Dict[str, Dict[str, Any]] = {
     "glm": {
         "base_url": "https://open.bigmodel.cn/api/paas/v4",
         "model": "glm-5.1",
-        "key_env": ["ZHIPU_API_KEY", "GLM_API_KEY"],
+        "key_env": ["ZAI_API_KEY", "ZHIPU_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 4096,
         "extra": {"extra_body": {"thinking": {"type": "enabled"}}},
@@ -81,22 +81,20 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "extra": {"reasoning_effort": "high", "extra_body": {"thinking": {"type": "enabled"}}},
     },
     "glm52": {
-        "base_url": "https://maas.devops.xiaohongshu.com/v1",
+        "base_url": "https://open.bigmodel.cn/api/paas/v4",
         "model": "glm-5.2",
-        "key_env": ["MAAS_API_KEY", "KIMI_API_KEY"],
-        "temperature": 0.3,
+        "key_env": ["ZAI_API_KEY", "ZHIPU_API_KEY"],
+        "temperature": 1.0,
         "max_tokens": 8192,
-        "extra": {},
-        "default_headers": {
-            "x-maas-user-email": "wangzhe101@xiaohongshu.com",
-            "x-maas-app-id": "qs-api",
-        },
+        "extra": {"reasoning_effort": "medium", "extra_body": {"thinking": {"type": "enabled"}}},
     },
 }
 
 PROVIDER_ALIASES = {
     "deepseek_v4_flash": "deepseek_flash",
     "deepseek_v4_pro": "deepseek_pro",
+    "glm5_2": "glm52",
+    "glm_5_2": "glm52",
 }
 
 
@@ -148,7 +146,7 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
     if preset is None:
         raise ValueError(f"unknown provider {provider!r}; choose from {list(PRESETS)}")
     extra = copy.deepcopy(preset["extra"])
-    if provider == "glm" and "thinking" in block:
+    if provider in {"glm", "glm52"} and "thinking" in block:
         extra.setdefault("extra_body", {})["thinking"] = {
             "type": "enabled" if block["thinking"] else "disabled"
         }
@@ -157,6 +155,8 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
             "type": "enabled" if block["thinking"] else "disabled"
         }
     if provider == "stepfun" and "reasoning_effort" in block:
+        extra["reasoning_effort"] = block["reasoning_effort"]
+    if provider == "glm52" and "reasoning_effort" in block:
         extra["reasoning_effort"] = block["reasoning_effort"]
     if provider.startswith("deepseek"):
         if "thinking" in block:
