@@ -72,6 +72,28 @@ class LocalBrokerRunner:
     def _run_tools(self, messages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         tools = skill_tools()
         working = list(messages)
+        # === FORCE_DIAGNOSIS_PATCH ===
+        # full on: 强制先读 deal-diagnosis (中央路由), 保证 skill harness 真正介入,
+        # 不依赖模型 auto 是否主动调。模型读后仍可在下面的循环里继续 route 其它 skill。
+        if "deal-diagnosis" not in self.skills_used:
+            from .skills import read_skill as _read_skill
+            _payload, _ok = _read_skill("deal-diagnosis", self.allowlist)
+            if _ok:
+                self.skills_used.append("deal-diagnosis")
+                # 本地 thinking 端点对伪造的 assistant tool_call 历史会静默 hang，
+                # 改为把 deal-diagnosis 作为背景材料用一条 user message 注入，绕开 thinking 校验。
+                import pathlib as _pl
+                _inject_path = _pl.Path(__file__).resolve().parents[2] / "skills" / "deal-diagnosis" / "INJECT.md"
+                if _inject_path.exists():
+                    _diag_text = _inject_path.read_text(encoding="utf-8")
+                else:
+                    _diag_text = _payload if isinstance(_payload, str) else str(_payload.get("instructions") or json.dumps(_payload, ensure_ascii=False))
+                working.append({
+                    "role": "user",
+                    "content": "[系统已为你调用 deal-diagnosis 中央路由技能，请先阅读以下诊断框架并据此展开后续谈判]\n\n" + _diag_text,
+                })
+                self.emitter.emit("tool_call", name="read_skill",
+                                  arguments={"name": "deal-diagnosis"}, result=_payload)
         for tool_round in range(self.max_tool_rounds):
             result = self.provider.chat_completion_with_tools(
                 messages=working,

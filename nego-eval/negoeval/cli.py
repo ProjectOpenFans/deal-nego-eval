@@ -15,10 +15,12 @@ from .results.writer import format_table
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="negoeval", description="Negotiation-agent benchmark")
     p.add_argument("--case", default="all", help="case id(s), comma-separated, or 'all'")
-    p.add_argument("--skills", default="both", choices=["on", "off", "both", "clean"])
+    p.add_argument("--skills", default="both", help="on|off|both|clean, or comma list e.g. clean,on")
     p.add_argument("--provider", default="stub", choices=["stub", "live"])
     p.add_argument("--profile", default="par", choices=["par", "cave", "leak"], help="stub agent behavior")
     p.add_argument("--runs", type=int, default=1)
+    # === PARALLEL_PATCH ===
+    p.add_argument("--workers", type=int, default=16, help="parallel workers")
     p.add_argument("--out", default="results", help="output directory for EvaluationResult json")
     p.add_argument("--cases-dir", default=None, help="override cases directory")
     p.add_argument(
@@ -64,6 +66,7 @@ def main(argv=None) -> int:
         agent_profile=args.profile,
         live_config=live_config,
         keep_trace=args.keep_trace,
+        workers=args.workers,
     )
 
     print(format_table(report.reports))

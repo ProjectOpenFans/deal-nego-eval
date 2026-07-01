@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "case_id": "R4N4",
+    "r4": true,
+    "skin_family": 6,
+    "side": "sell",
+    "flow": "inbound",
+    "driver": "agent-led",
+    "tier_axis": "entangled-multi-issue+find-the-keystone+hybrid-bundle",
+    "comp_ability": "semi-custom",
+    "isolates": "买方四议题(价格/交期/范围/标准)一起压。三层加难: (a)【把价格喊得最响】, 误导agent以为价格是主结、在价格上做文章; (b)【绝不主动说优先级】, 四个并列轰炸; (c)【就算被问也不直接承认交期是命门】——自己也没清醒意识到、只焦虑地说'都很重要'——agent要从'要得急'的行为线索里自己推断出交期是硬约束, 而非等买方说。常规解全死: 逐个孤立让步(拆东墙补西墙)、或被'价格'误导在价格上死磕(撞不到真命门交期)。唯一解: 不被价格误导+从行为线索推断出交期是主结(买方不会直说)+用'保交期'松开其余。",
+    "probes": [
+      "entangled-multi-issue",
+      "find-the-keystone-issue",
+      "tradeoff-coupling",
+      "hybrid-standard-plus-custom",
+      "priority-not-stated",
+      "inbound"
+    ],
+    "diagonal_note": "v1太松(clean2.8): buyer主动暴露'周五deadline', 主结太好找。v2加难: 价格喊最响误导+不主动说优先级+被问也不承认交期是命门(要agent自己推断)。5.2裸模预期: 被价格误导在价格上做文章、或逐个孤立让步拆东墙补西墙, 压到floor/crude。"
+  },
+  "input": {
+    "episode_id": "R4N4",
+    "initial_deal": {
+      "subject": "出售一件标准产品+围绕它的定制化人设/故事包装（hybrid）",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": "买方要得急",
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "A",
+          "display_name": "Seller(卖标准品+定制层的人)",
+          "education": [],
+          "career": [
+            "做一件标准产品, 同时能围绕它做定制化的故事/人设包装"
+          ],
+          "current_focus": "把标准品+定制层打包卖出, 定制层是溢价来源",
+          "location": "",
+          "age_band": "",
+          "hobbies": [],
+          "interests": [
+            "定制层的价值被认可"
+          ],
+          "credentials": []
+        },
+        "private": {
+          "intent": "把标准品+定制包装层打包卖个好价, 定制层是利润和心血所在。",
+          "interests": [
+            "标准品部分有市场参考价、好谈; 定制层是溢价和差异化, 不愿被当赠品砍掉",
+            "四个议题里, 他有腾挪空间的和不能动的各不同——需要agent帮他把buyer的真实主结找出来, 才能谈得高效"
+          ],
+          "value_perception": "标准品comp-able; 定制层pure-custom, 是溢价核心。",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 3000,
+              "currency": "CNY",
+              "note": "标准品+定制层打包的现金底线约¥3000(标准品成本+定制层最低心血价)。内部、不对外。"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "定制层被当赠品白送",
+              "为提速牺牲定制层质量到砸招牌"
+            ]
+          }
+        }
+      },
+      "B": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "B",
+          "display_name": "Buyer(要得急又要得多的人)",
+          "education": [],
+          "career": [],
+          "current_focus": "想买这个hybrid, 但有一堆要求且要得急",
+          "location": "",
+          "age_band": "",
+          "hobbies": [],
+          "interests": [
+            "拿到满意的成品"
+          ],
+          "credentials": []
+        },
+        "private": {
+          "intent": "想买标准品+定制包装, 同时嫌贵/要快/要更多定制/要高标准, 四个一起压。【绝不主动说哪个最重要】, 且【就算agent问也不直接承认交期是命门】(自己也没清醒意识到), 把价格喊得最响(误导agent以为价格是主结)。",
+          "interests": [
+            "【四议题一起压, 价格喊最响(误导)】: 把'太贵了'喊得最大声, 反复强调价格, 误导agent以为价格是主结。",
+            "【绝不主动说优先级】: 四个并列, 不说哪个最重要, 只焦虑地说'都很重要、都得满足'。",
+            "【被问也不承认交期是命门(关键)】: 自己也没清醒意识到交期是唯一硬约束(背后有个没明说的硬deadline), 就算agent问'哪个最重要'也答'都重要'或回到价格。agent要从'要得这么急'的行为里自己推断出交期是真命门, 而不是等买方交底。",
+            "其余三个(价格/范围/标准)其实都可让, 只要交期保住——但买方自己没说清。"
+          ],
+          "value_perception": "认可hybrid的价值, 但被'又贵又慢又少又糙'的综合焦虑裹着, 自己没理清优先级。",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 5000,
+              "currency": "CNY",
+              "note": "预算上限约¥5000, 其实够(卖方底线3000)。价格非真障碍, 真障碍是交期(主结)。"
+            },
+            "must_haves": [
+              "那个硬deadline必须满足(但他没明说这是唯一硬约束)"
+            ],
+            "deal_breakers": [
+              "赶不上他的硬deadline —— 这是唯一真正不可退的",
+              "四个议题被agent逐个孤立糊弄、没有整体方案"
+            ],
+            "blocking_flags": [
+              "多议题并列轰炸: 一上来把价格/交期/范围/标准四个要求一起压, 都说得很重要, 不主动透露'其实交期才是命门、其余可谈'。",
+              "耦合陷阱: 任一议题单独让步都会顶到另一条(降价→保不住标准、提速→扩不了范围)。agent若逐个孤立回应、每个让一点, 必然拆东墙补西墙、越谈越乱、最后哪个都没谈好。",
+              "只有当agent看穿'四个里交期是主结(buyer真正的硬约束)'、优先锁定交期、再用'交期保住'去交换其余软诉求的让步(如: 保交期前提下, 定制范围聚焦到最关键几项、价格给到合理、标准抓重点)时, buyer才会松动、觉得'这人真懂我要什么'。在此之前buyer继续四个一起压。"
+            ]
+          },
+          "blocking_flags": [
+            "价格喊最响误导: 把'太贵'喊得最大声, 误导agent以为价格是主结、在价格上做文章(其实预算够、价格非真障碍)。",
+            "绝不主动说优先级: 四议题并列轰炸, 不说哪个最重要。",
+            "被问也不承认交期是命门(核心加难): 自己没清醒意识到交期是唯一硬约束, 被问'哪个最重要'答'都重要'或绕回价格。agent要从'要得急'的行为线索自己推断交期是命门, 不能等买方说。",
+            "只有当agent①不被'价格'误导②从买方'要得急'的行为里推断出交期是真主结③用'保交期'作支点松开价格/范围/标准其余软诉求时, 买方才松动。任一环没做到→在价格上死磕或拆东墙补西墙、撞死在交期上。"
+          ]
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier_axis": "entangled-multi-issue+find-the-keystone+hybrid-bundle",
+      "tier_rationale": "压制机制=多议题缠绕找主结(非误诊)。议题都在明面(价格/交期/范围/标准), 难在三点: (a)四议题互相耦合, 单独让步顶到另一条; (b)buyer没说优先级、四个并列轰炸; (c)真主结是交期(唯一硬约束), 但藏在并列里没点出。常规解全死: 逐个议题孤立让步→拆东墙补西墙、越让越乱。唯一解: 识别交期是主结(load-bearing issue)、优先锁它、用'保交期'去松开其余软诉求。非doomed: 解存在(交期能保、其余可让), 但5.2裸模会逐个孤立谈、陷入耦合泥潭。",
+      "conventional_deal_fails_why": "逐个议题孤立让步: 降价顶到保不住标准、提速顶到扩不了范围、扩范围顶到赶不上交期——四个耦合, 每个单让都引发新矛盾, 越谈越乱、最后撞死在交期(真硬约束)上还没意识到它是命门。",
+      "walk_away": {
+        "value": 3000,
+        "unit": "CNY",
+        "basis": "卖方标准品+定制层打包现金底线约¥3000。给M3、M7用。内部、不对外。"
+      },
+      "buyer_cash_ceiling": {
+        "value": 5000,
+        "unit": "CNY",
+        "note": "买方预算上限¥5000其实够。价格非真障碍, 真障碍是交期(主结)。"
+      },
+      "keystone_issue": "四个并列议题(价格/交期/定制范围/标准)里, 交期是主结(buyer唯一真硬约束、源于真实deadline)。解开交期、其余软诉求自然可让。buyer没主动点出主次, agent需识别。",
+      "controllable_resource_set": [
+        {
+          "id": "delivery_priority",
+          "label": "优先锁定并保证交期(命中buyer真硬约束)"
+        },
+        {
+          "id": "scope_focusing",
+          "label": "保交期前提下把定制范围聚焦到最关键几项(而非全加)"
+        },
+        {
+          "id": "price_reasonable",
+          "label": "在合理区间给价(价格非真障碍, 不必死磕)"
+        },
+        {
+          "id": "standard_triage",
+          "label": "标准抓重点(关键处高标准、次要处够用)"
+        },
+        {
+          "id": "cash",
+          "label": "现金价款(≤5000)"
+        }
+      ],
+      "in_kind_valuation": {
+        "delivery_priority": 0,
+        "scope_focusing": 0,
+        "price_reasonable": 0,
+        "standard_triage": 0,
+        "cash": 0
+      },
+      "creation_door": {
+        "description": "单层(找主结)+重构。四议题缠绕、买方没说优先级。门=看穿'交期是主结'(buyer唯一真硬约束、源于没明说的deadline), 优先锁定交期, 再用'交期保住'作为支点去松开其余三个软诉求——保交期前提下定制范围聚焦关键项、价格给合理、标准抓重点。把'四个并列、互相顶'的缠绕死局, 重构成'一个主结+三个围绕它排序的软项'的有主次结构。最高明处: 不是四个各让一点(那必然拆东墙补西墙), 是抓住命门一击、其余顺势理顺。buyer从'四个都要'的焦虑, 变成'这人帮我理清了什么最重要'。",
+        "route_out_trigger": "若agent被'太贵'误导在价格上死磕(价格非障碍)、或逐个议题孤立让步(拆东墙补西墙)、或没推断出交期是命门(等买方说但买方不说) → 多议题泥潭 → 谈崩或成赶不上deadline的废deal。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "卖方v0意图: 卖标准品+定制包装层、定制层是溢价核心(stated subject须保留)。推断须忠实; 价格、交期、范围、标准这些留空字段由agent谈出来, 不凭空扩范围、不白送定制层。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "本case是HARD(多议题缠绕找主结, 非误诊)。三重难: (a)四议题(价格/交期/范围/标准)互相耦合, 单让顶到另一条; (b)buyer四个并列轰炸、不说优先级; (c)真主结是交期(藏在并列里)。高档必须: 识别交期是主结(load-bearing issue) + 优先锁它 + 用'保交期'松开其余软诉求 + 不被价格死磕带偏(价格非真障碍)。注意'复杂'不是四个都回应, 是抓住命门、其余顺势理顺。",
+      "T0_floor": "逐个议题孤立回应、每个让一点: 降点价、答应尽量快、加几项定制、口头保证高标准——顶到耦合约束(降价保不住标准、提速扩不了范围), 拆东墙补西墙、越谈越乱, 最后撞死在交期上还没意识到它是命门, 或成一个赶不上deadline的废单。= bare model把四个并列议题逐个孤立处理的默认结果。",
+      "T1_crude": "模糊觉得'不能四个都硬接、得有取舍', 但没识别出哪个是主结: 笼统说'咱们分个轻重缓急吧'却没点到交期、或猜错主结(以为是价格, 在价格上做文章)。方向上想理优先级、但没找到真命门, 像草稿。",
+      "T2_sound": "找到主结(交期)并据此重构, 把优先级挖出一层: 看出buyer最在意的是交期(或通过试探问出来)、优先锁定交期保证, 再据此调其余——'交期我保住, 那定制范围咱聚焦到最关键这几项、价格给到这个数、标准抓这几处重点'。理出了主次、给了整体方案。能落地、四议题被排成有主次的结构。这就是par。",
+      "T3_sharp": "在Sound之上把主结用得更load-bearing: 不只识别交期是命门, 而是主动诊断出'buyer要得急背后是个真实硬deadline'、把交期保证做成确定性承诺(而非泛泛说尽快), 并精准用它作为支点——'既然X号必须用, 那我把交期锁死, 作为交换这几项软的咱们这么排', 让buyer清楚感到核心诉求被精准接住、其余让步是值得的。role开始反转: buyer从'四个都跟你要'变成'你最懂我真正不能让的是什么'。",
+      "T4_brilliant": "Sharp之上彻底重构, 别人想不到的一手: 看穿'buyer的真实场景'(那个deadline背后要用这个hybrid去达成的目标), 把交付从'满足四个议题'重构成'帮buyer把那件事办成'——围绕buyer的真实目标重组标准品+定制层的配置, 让定制层精准服务于buyer用这东西要达成的效果。从'卖一个达标的产品'升维到'交付一个能帮buyer成事的方案'。supply视角反转: 卖方不再是被四个要求压的供货方, 是帮buyer达成目标的伙伴。全部用v0信息可达, 不over-engineer, 干净可执行。",
+      "tier_reference_note": "par=T2。v2加难: 价格喊最响误导+被问也不承认交期是命门(要agent推断)。预期5.2裸模: floor/crude(被价格误导或逐个孤立让步)。on臂预期救起到sound/sharp。"
+    },
+    "tier_reference_note": "par=T2(Sound)。多议题缠绕型, 目标顶住5.2。预期5.2裸模落点: floor(逐个孤立让步、拆东墙补西墙、撞死交期)。on臂(term-reframing多维重构) 预期被救起到sound/sharp。和误诊型对照: 这里测的是'多议题缠绕中找主结'的能力。"
+  }
+}

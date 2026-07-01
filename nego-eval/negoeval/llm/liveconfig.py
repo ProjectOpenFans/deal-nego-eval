@@ -41,11 +41,19 @@ PRESETS: Dict[str, Dict[str, Any]] = {
     },
     "glm": {
         "base_url": "https://open.bigmodel.cn/api/paas/v4",
-        "model": "glm-5.1",
+        "model": "glm-5.2",
         "key_env": ["ZHIPU_API_KEY", "GLM_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 4096,
         "extra": {"extra_body": {"thinking": {"type": "enabled"}}},
+    },
+    "glm_local": {
+        "base_url": "https://ai.coolwei.com/models/glm_code/openai/v1",
+        "model": "GLM-5.2-W4AFP8",
+        "key_env": ["GLM_LOCAL_API_KEY"],
+        "temperature": 0.3,
+        "max_tokens": 4096,
+        "extra": {},
     },
     "kimi": {
         "base_url": "https://api.moonshot.cn/v1",

@@ -95,7 +95,7 @@
         }
       }
     },
-    "config": { "agent_seat": "A", "round_cap": 8 }
+    "config": { "agent_seat": "A", "round_cap": 12 }
   },
 
   "fixture": {
@@ -103,12 +103,27 @@
       "tier_axis": "terms+interest+person",
       "tier_rationale": "常规'钱换权益'对这个买方天然失效(没钱、没商业价值、博主无动机), 不是硬堵。唯一解: 粉丝重构角色, 从看似无关的自身背景(咖啡馆/本地社群/运营/圈外视角)里【创造】出博主上升期真正需要的价值(线下化/破圈/粉丝深度运营), reframing 成博主觉得有意思的 collab, 很可能 role 反转。难在: 看穿双方真实诉求(都不在钱上) + 从无关背景创造 synergy + 反转地位不对称。非doomed: 有精确解、极难找。",
       "conventional_deal_fails_why": "广告位: 粉丝付不起市场价、且博主不会卖给无商业价值个人。占股: 粉丝的钱买不到有意义份额、上升期博主不愿稀释给散户。甩手赞助: 粉丝没那个钱、博主也不缺这种钱、且粉丝自己 deal_breaker 不接受碰不到事本身。→ 所有钱换权益变体结构性死。",
+      "walk_away": { "value": 5000, "unit": "CNY", "basis": "买方(粉丝)现金上限; 给M3防泄漏用。本case M3非重点。" },
       "buyer_cash_ceiling": { "value": 5000, "unit": "CNY", "note": "粉丝现金硬上限; 买不动任何常规权益。非现金投入(场域/社群/运营/热情)的'预算'远大于此。" },
       "seller_real_need": "博主上升期的真实诉求 = 增长杠杆(破圈/线下化/真实触达/内容新角度/运营帮手), 不是粉丝这笔小钱。谁能帮TA解决这个, 谁就有谈的资格。",
+      "controllable_resource_set": [
+        { "id": "venue",            "label": "他的咖啡馆(可作线下活动/据点场地)" },
+        { "id": "local_community",  "label": "他运营的真实本地兴趣社群(几百人, 线下活跃)" },
+        { "id": "ops_experience",   "label": "线下活动的组织/运营经验" },
+        { "id": "outsider_view",    "label": "圈外普通人的真诚视角/真实用户反馈" },
+        { "id": "fan_gesture_equity", "label": "象征性的极小股权/名分位置(as fan gesture, 不是投资)" },
+        { "id": "cash",             "label": "有限现金(≤5000)" }
+      ],
+      "in_kind_valuation": { "venue": 0, "local_community": 0, "ops_experience": 0, "outsider_view": 0, "fan_gesture_equity": 0, "cash": 0 },
       "creation_door": {
         "description": "粉丝看似跟博主无关(咖啡馆老板/社群运营者 vs 线上博主), 但他手里恰是博主上升期缺的: 线下场域、真实本地社群、活动运营经验、圈外真诚视角。把博主'线上势能'×粉丝'线下场域+社群'对上 → 一个让博主破圈/线下化的 collab。最高明处: 把这个粉丝+他的社群做成博主'粉丝深度共创/线下化'的第一个样本和操盘据点, role 反转 —— 博主从'又一个想蹭的粉丝'变成'我找到了能帮我打开线下/粉丝经济的伙伴', 反过来想绑住他。粉丝要一个'很小的、象征性的位置 as fan gesture'此刻变成双方都觉得对的情感+利益绑定。",
         "route_out_trigger": "若 agent 始终以'买方'身份谈(求买广告位/占股/掏钱赞助/泛泛求带), 没从粉丝背景里创造出博主需要的价值、没反转角色 → 博主礼貌疏离 → 谈崩, 或一个粉丝掏了钱却没真参与的尬 deal。"
       }
+    },
+
+    "answers": {
+      "M1": { "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "anchor": "买方(粉丝)的 v0 意图: 想跟博主达成某种合作、真实参与进来(不是投资回报)。stated 的 subject 必须保留; price/format 等 open 字段由 agent 谈出, 不得凭空硬塞或承诺粉丝资源清单外的东西。" }
     },
 
     // ===== 五档 tier_reference (本case anchor, 喂给judge) =====

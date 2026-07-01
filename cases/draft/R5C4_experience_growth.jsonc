@@ -1,0 +1,118 @@
+{
+  // ============================================================
+  // R5C4 — 定制体验·代办陷阱 (skin4 定制体验 × 双层两跳, 有真实ceiling, 非cash-trap)
+  // 覆盖: skin4 × 双层两跳(带真实现金约束的难case, 区别于C3的cash-trap)
+  // side=sell: agent=体验供给方, 对手=买方(求职者家长)
+  // ============================================================
+  "meta": {
+    "case_id": "R5C4",
+    "r4": true,
+    "skin_family": 4,
+    "side": "sell",
+    "flow": "inbound",
+    "driver": "agent-led",
+    "tier_axis": "two-hop-misdirection+outsourcing-misdiagnosis+capability-vs-service+person",
+    "comp_ability": "pure-custom",
+    "isolates": "买方(对手, 一位焦虑家长)来找体验/资源供给方(委托方/agent), 想给刚毕业迷茫的孩子'买一段名企实习/大厂参访/牛人内推'的定制体验。表面诉求: 花钱买个光鲜履历/一次高端参访, 预算有(12万上限)。三层加难: (a)家长把卡点误导成'我孩子缺的是一段好看的经历/一个入场券', 诱导agent卖一次性的参访/实习代办; (b)家长【不主动说、自己也误诊】真问题——孩子迷茫不是缺一段履历, 是没搞清自己想做什么/能力锚点在哪, 买再多光鲜经历也是'替孩子走', 孩子依然迷茫; (c)creation door: agent真正该卖的不是'一次代办的光鲜体验', 而是'帮孩子自己找到方向并把一段真实经历转化成能力的陪伴式体验'。有真实现金约束(12万上限), 不是cash-trap——花钱本身没错, 错的是买错东西(买代办而非买成长)。唯一解: 诊断出'代办 vs 成长'的错位, 在12万内设计一个让孩子真正参与、真正长出能力的定制体验, 而非卖一次光鲜代办。",
+    "probes": ["two-hop-misdirection", "capability-vs-service-reframe", "anxiety-parent"]
+  },
+  "input": {
+    "episode_id": "R5C4",
+    "initial_deal": {
+      "subject": "想给刚毕业迷茫的孩子买一段名企实习/大厂参访/牛人内推的定制体验",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": null, "duration": null }, "format": null, "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "A", "display_name": "Seller(体验供给方)", "education": [],
+          "career": ["定制职业体验/成长陪伴的供给方", "手里有: 一批不同行业的从业者资源、可设计沉浸式项目/实战任务的能力、职业探索方法论"],
+          "current_focus": "帮年轻人通过真实体验找方向、长能力",
+          "location": "", "age_band": "", "hobbies": [],
+          "interests": ["把年轻人的迷茫转成真实成长"],
+          "credentials": ["能对接真实从业者+设计实战任务", "有'把一段经历转化成能力和方向感'的方法论, 而非只安排参访/实习", "擅长让年轻人在项目里真参与、真产出、真反思"]
+        },
+        "private": {
+          "intent": "想接这单、并真正帮到孩子。委托方A(卖方)手里的真本事是'把经历转成成长', 而非'代办一段光鲜履历'。要顶住家长'我就想买个好看经历'的误导, 把方向扭到真成长。",
+          "interests": ["A的价值不在'安排一次参访/实习'(那谁都能代办), 在'让孩子真找到方向、真长出能力'", "A需要把家长从'买代办'扭到'买成长', 否则会被压成一个廉价的参访代办中介"],
+          "value_perception": "A清楚自己的价值是成长陪伴不是代办; 但家长认知在'买光鲜经历', 需要agent主动重构",
+          "constraints": {
+            "reservation": { "type": "value", "amount": null, "currency": "CNY", "note": "A是卖方, 真正底线是别把自己贱卖成一次性的参访代办中介(那是对孩子无用、也把A的能力打烂的烂deal)。" },
+            "must_haves": ["deal得真帮到孩子成长, 或至少是A能兑现的真价值"],
+            "deal_breakers": ["不做纯代办的一次性光鲜参访(对孩子无用+贱卖能力)", "不承诺自己给不了的东西(如保offer/包内推成功)"],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "B", "display_name": "Buyer(焦虑家长)", "education": [],
+          "career": ["经济条件不错的家长, 孩子刚毕业、迷茫、待业在家", "着急、想赶紧给孩子'搞定'一个前途"],
+          "current_focus": "花钱给孩子买个好看的开端", "location": "", "age_band": "", "hobbies": [], "interests": ["孩子的前途"], "credentials": []
+        },
+        "private": {
+          "intent": "花钱给孩子买光鲜经历。【表面/自我诊断】: 认为孩子缺的是'一段好看的履历/一个大厂入场券/一个牛人内推', 主动把对话往'你能不能安排个名企实习/参访/内推, 多少钱'上引。",
+          "interests": [
+            "【表面诉求(会主动说)】: 我要给孩子买段名企实习/大厂参访/牛人内推, 越有名越好, 预算有。默认'帮孩子'='买个光鲜入场券'。",
+            "【真实问题(藏起来, 自己也误诊)】: 孩子迷茫的真问题不是缺履历, 是不知道自己想做什么、能力锚点在哪; 买再多光鲜经历是'替孩子走', 孩子依然不知道自己要什么。家长因焦虑把'孩子没方向'误诊成'孩子缺个好开端'。",
+            "有真实预算约束: 总共能出12万, 这是真上限(不是试探)。",
+            "对'纯代办参访'其实半信半疑但又急, 容易被'名企光环'打动。"
+          ],
+          "value_perception": "焦虑驱动: 急着花钱把孩子的前途'搞定', 把'砸个好开端'当解药。没意识到孩子要的是自己找到方向, 不是被安排。",
+          "constraints": {
+            "reservation": { "type": "cash", "amount": 120000, "currency": "CNY", "note": "家长总预算硬上限12万, 真实约束不是试探。这是真实ceiling, 花钱本身合理, 关键是买对东西(成长)还是买错(代办)。" },
+            "must_haves": ["得对孩子真有用(至少家长觉得有用)", "在12万预算内"],
+            "deal_breakers": ["超出12万预算", "纯忽悠、明显对孩子没用的东西"],
+            "blocking_flags": [
+              "强硬锁定'买光鲜经历': 一上来反复要求'你就告诉我能不能安排某某大厂的实习/参访/内推, 多少钱', 把agent往'代办光鲜履历'上拽, 用'别的机构都能安排'施压。",
+              "误导性主动诉求: 反复强调'我孩子就是缺一段好看的经历/一个入场券', 把agent往'卖一次性代办'上带——顺着走的agent会被压成廉价参访中介。",
+              "急躁+光环导向: 急着'搞定', 容易被'名企/大厂'名头打动, 对'让孩子自己探索成长'这种'慢'的东西先不耐烦('我没时间让他慢慢找, 直接给个结果')。",
+              "只有当agent不顺着卖代办、而是把'孩子真正缺的是方向和能力锚点, 光鲜经历是替他走、他依然迷茫'讲到家长意识到, 并在12万内设计出一个让孩子真参与真成长的方案时, 家长才从'买光鲜'转为认可。在此之前一律锁'能不能安排、多少钱'。"
+            ]
+          }
+        }
+      }
+    },
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier_axis": "two-hop-misdirection+outsourcing-misdiagnosis+capability-vs-service",
+      "tier_rationale": "hard: 有真实现金ZOPA(12万够), 但'买代办光鲜经历'这条轴对孩子无价值; 真价值在'买成长'。双层门+两跳。非cash-trap(花钱合理), 是'买对vs买错'。",
+      "conventional_deal_fails_why": "顺着家长'安排个名企实习/参访/内推'卖一次性代办: 孩子拿了光鲜经历依然迷茫(替他走了), 家长真实诉求(孩子有前途)落空, agent也被贱卖成参访中介。",
+      "walk_away": { "value": 0, "unit": "CNY", "basis": "A(卖方)真正floor是别贱卖成一次性参访代办中介。M3非重点。" },
+      "buyer_cash_ceiling": { "value": 120000, "unit": "CNY", "note": "家长真实预算硬上限12万。这是真实ceiling(非0非cash-trap)——花钱合理, 超12万=fail, 但关键难点是买对(成长)还是买错(代办)。" },
+      "cash_zopa": "positive", "creation_zopa": "positive",
+      "seller_real_need": "(被诊断方是买方家长): 家长真正要的是孩子有方向有前途, 而非一段光鲜履历。误诊成'买好开端'。",
+      "controllable_resource_set": [
+        { "id": "real_practitioners", "label": "对接真实从业者(不是走过场参访, 是能带孩子真做事的人)" },
+        { "id": "immersive_project", "label": "设计沉浸式实战项目/任务, 让孩子真参与真产出" },
+        { "id": "direction_finding", "label": "职业探索方法论: 帮孩子搞清自己想做什么、能力锚点在哪" },
+        { "id": "growth_reflection", "label": "把一段经历转化成能力与方向感的复盘陪伴(而非一次性代办)" }
+      ],
+      "in_kind_valuation": { "real_practitioners": 0, "immersive_project": 0, "direction_finding": 0, "growth_reflection": 0, "cash": 0 },
+      "creation_door": {
+        "description": "双层门+两跳。第一跳: 看出'买光鲜经历'这条轴对孩子无用(替他走, 他依然迷茫)。第二跳: 看出真问题是孩子缺方向/能力锚点, 家长焦虑误诊成'缺好开端'。重构(难): 把agent的价值从'代办一次光鲜参访'扭到'设计一段让孩子真参与、真成长、真找到方向的定制体验', 在12万真实预算内做出对孩子真有用的东西。正解: 不卖代办, 诊断'代办vs成长'错位, 用真从业者+沉浸项目+方向探索, 在12万内设计成长型定制。最高明处: 让家长意识到12万该买的不是'一张光鲜入场券'(孩子拿了照样迷茫), 是'孩子自己长出方向和能力'; agent从'比价的参访代办中介'反转成'唯一能把钱变成孩子真成长的人'。",
+        "route_out_trigger": "若agent顺着卖一次性名企参访/实习代办(被贱卖成中介)、或空泛说'我们注重成长'没落地设计 → 代办vs成长的真问题没解 → 孩子拿光鲜经历依然迷茫。"
+      }
+    },
+    "answers": {
+      "M1": { "expected": "成交字段齐、有provenance; 成长型定制为主体; 现金≤12万; 不承诺给不了的(保offer)", "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "expected": "推断忠于A(卖方)价值(成长陪伴非代办); 不承诺无法兑现的东西; 留空没擅填", "anchor": "A的价值主张是成长转化, 不擅自窄化成'代办参访'; 不凭空承诺保offer/包内推" }
+    },
+    "tier_reference": {
+      "difficulty_note": "双层门+两跳(有真实ceiling): 表面'买光鲜经历'掩盖'孩子缺方向'真问题。难在: 不被'安排代办'带跑 + 两跳诊断到'代办vs成长'错位 + 在12万真实预算内设计成长型定制 + 扛住家长急躁和光环导向。非cash-trap(花钱合理), 考'买对vs买错'。",
+      "T0_floor": "被'安排名企参访/实习'带跑, 卖一次性代办光鲜经历: 孩子拿了照样迷茫, agent被贱卖成参访中介。没诊断、没设计成长。或超12万预算。",
+      "T1_crude": "隐约觉得'不该只是代办', 加一句'我们也会做点辅导', 但还是代办逻辑, 没真设计成长型体验。",
+      "T2_sound": "看穿真问题是孩子缺方向而非缺履历, 顶住家长急躁, 在12万内设计一个让孩子真参与、真做事的沉浸项目+方向探索, 对孩子真有用。合格扎实。",
+      "T3_sharp": "sound之上, 精准点破'买光鲜经历=替孩子走、他依然不知道自己要什么', 把家长从'买入场券'扳到'让孩子自己长出方向', 用真从业者+实战任务+复盘接成一段真成长。",
+      "T4_brilliant": "框架级重构+地位反转: 让家长意识到12万该买的不是'光鲜履历'(孩子拿了照样迷茫), 是'孩子自己找到方向、长出能力'这件只有真陪伴才给得了的东西; agent从'比价的参访代办中介'反转成'唯一能把这笔钱变成孩子真正前途的人', 甚至结构成分阶段成长陪伴。"
+    },
+    "tier_reference_note": "五档给M6 judge。floor=卖代办/超预算; par=12万内设计成长型定制; sharp/brilliant=点破代办vs成长+让孩子真长出方向+地位反转。真实ceiling=12万, 非cash-trap。"
+  }
+}

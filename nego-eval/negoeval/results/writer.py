@@ -156,7 +156,11 @@ def write_summary(
     }
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    path = out / "_summary.json"
+        # === PARALLEL_PATCH ===
+    import time as _t
+    _sk = (config or {}).get("skills", "x")
+    _ts = _t.strftime("%Y%m%d_%H%M%S")
+    path = out / f"_summary_{_sk}_{_ts}.json"
     path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     return path
 

@@ -1,0 +1,113 @@
+{
+  // ============================================================
+  // R4N5 — 底线试探型 hard case（新陷阱：bottom-line probing）
+  // 压制机制：buyer持续用话术钓agent的floor，agent须hold住不泄底+推进成交。
+  // 同时是唯一专门压测 M3(不泄底线gate) 的case。skin 复用2/3(creator/personal)。
+  // ============================================================
+  "meta": {
+    "case_id": "R4N5",
+    "r4": true,
+    "skin_family": 3,
+    "side": "sell",
+    "flow": "inbound",
+    "driver": "agent-led",
+    "tier_axis": "bottomline-probing+hold-the-floor+anchor-discipline",
+    "comp_ability": "semi-custom",
+    "isolates": "buyer真心想买、价值无分歧, 但是个老练的压价高手: 反复用各种话术套agent的底价('你最低多少''说个实价我马上定''别人都给X''你不让我就找别人'), 软硬兼施持续试探floor。真问题: 这不是价值/诚意问题, 是一场定价纪律的博弈——agent必须既hold住不泄底线(否则被锚到底价附近成交、卖方利益受损)、又不把buyer逼走、还要推进成交。常规失败: 被套话说漏底价(或报出贴近底线的数)、或为表诚意自己先跳水、或硬扛把buyer惹走。唯一解: 锚定价值不锚成本、用结构(而非降价)回应压价、守住底线区间的同时给buyer'赢了'的感觉成交。",
+    "probes": ["bottomline-probing", "hold-the-floor-m3", "anchor-on-value-not-cost", "structure-vs-discount", "price-discipline", "inbound"],
+    "diagonal_note": "压制机制=底线试探(定价纪律博弈)。和误诊/创造型都不同: 价值无分歧、无藏的真问题、ZOPA存在。难在'顶住持续套话不泄底+不被逼降到底'。这是唯一专测M3(不泄底线)的case。5.2裸模预期: 被反复套话逼出贴近底线的报价、或自己先跳水表诚意, 泄底+贱卖, 压到floor/crude(且M3 gate挂)。高档=锚价值、用结构挡降价、守住区间成交。"
+  },
+  "input": {
+    "episode_id": "R4N5",
+    "initial_deal": {
+      "subject": "出售本人的一项专业能力/作品（semi-custom, 有一定市场参考但仍需定价）",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": { "timing": { "when": null, "deadline": "近期", "duration": null }, "format": null, "deliverables": [], "delivery_standard": null },
+      "obligations": [], "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+    "parties": {
+      "A": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "A", "display_name": "Seller(卖专业能力的人)",
+          "education": [], "career": ["某专业领域有口碑的从业者, 作品/能力有市场认可"],
+          "current_focus": "把专业能力/作品卖个合理价, 不被压到地板", "location": "",
+          "age_band": "", "hobbies": [], "interests": ["专业价值被合理定价"], "credentials": ["口碑/案例"]
+        },
+        "private": {
+          "intent": "把这项能力/作品卖出, 拿到对得起价值的合理价, 不被压到底。",
+          "interests": ["价值有市场参考, buyer也认可、真心想买——这不是难在价值, 难在守住定价不被套话逼到底", "他容易犯的错: 被反复追问'最低多少'时, 为了显诚意/促成, 报出贴近底线的数、或自己先跳水"],
+          "value_perception": "semi-custom, 有市场参考区间; 合理价应在区间中上, 而非贴着成本底线。",
+          "constraints": {
+            "reservation": { "type": "cash", "amount": 4000, "currency": "CNY", "note": "现金底线约¥4000(成本+最低合理利润)。市场合理价区间约6000-8000。底线绝不对外, agent须守住、不泄漏、不报贴近4000的数。" },
+            "must_haves": [], "deal_breakers": ["把底价或贴近底价的数说漏给buyer", "为表诚意自己先大幅跳水"]
+          }
+        }
+      },
+      "B": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "B", "display_name": "Buyer(老练压价高手)",
+          "education": [], "career": [], "current_focus": "真心想买, 但要尽量压低价", "location": "",
+          "age_band": "", "hobbies": [], "interests": ["以尽量低的价拿下"], "credentials": []
+        },
+        "private": {
+          "intent": "真心想要这个能力/作品(价值认可、会成交), 但是个老练买家, 目标是把价压到卖方底线附近。持续套agent的floor。",
+          "interests": [
+            "【会反复用的套话(软硬兼施)】: '你最低能到多少''你给个实价我现在就定''我打听过别人都给X(低价)''诚意点, 你先让一步''你不让我就找别人了''就这数, 行就行不行拉倒'——目标是套出或逼出卖方底价。",
+            "【真实立场】: 价值他认、真想买、也成交得起市场合理价(6000-8000他出得起)。他不是付不起, 是习惯性极限压价、看agent扛不扛得住。一旦发现agent守得住、且给了他'赢了/占到便宜'的台阶, 他会在合理价区间成交。",
+            "对'强行硬扛不让步'也会不爽: 他要的是'感觉自己赢了', 不是真把卖方榨干。给他面子和台阶, 比死扛有用。"
+          ],
+          "value_perception": "高、认可价值, 出得起合理价; 压价是习惯和博弈, 不是真预算不够。",
+          "constraints": {
+            "reservation": { "type": "cash", "amount": 8000, "currency": "CNY", "note": "buyer实际能接受的上限约¥8000(市场合理价上沿), 远高于卖方底线4000。ZOPA存在。压价是博弈、非真上限。" },
+            "must_haves": ["感觉自己谈赢了/占到便宜(台阶)"],
+            "deal_breakers": ["卖方完全不让步、毫无台阶地硬扛 —— 会不爽(但不一定走)", "被明显当韭菜宰(报价离谱高)"],
+            "blocking_flags": [
+              "持续套话试探底线: 反复用'最低多少''给个实价''别人都给X''不让就走'软硬兼施套agent的floor。一旦agent报出贴近底线的数或松口说漏, 立刻锚住往下压。",
+              "纪律陷阱: 表面是价格博弈, 实则测agent的定价纪律——agent若被套出底价/报贴近底线数(M3挂)、或为表诚意自己先大幅跳水, 就被锚到底部、贱卖。",
+              "buyer真心想成交且出得起合理价: 只要agent①守住不泄底②用价值/结构(而非降价)回应压价③最后给buyer一个'赢了'的台阶(小让步/加点添头/限时优惠), buyer就会在合理价区间(6000-8000)成交。agent若死扛零让步, buyer会不爽但未必走; agent若泄底跳水, buyer会狠压到底。"
+            ]
+          }
+        }
+      }
+    },
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier_axis": "bottomline-probing+hold-the-floor+anchor-discipline",
+      "tier_rationale": "压制机制=底线试探(定价纪律博弈)。价值无分歧、ZOPA存在(卖方底线4000、buyer上限8000)、buyer真心买。难纯在'顶住持续套话不泄底+不被逼到底+还促成'。这是唯一专测M3(不泄底线gate)的case。常规失败: 被'最低多少'套出底价或报贴近4000的数(M3挂+被锚到底)、或为表诚意先跳水(贱卖)、或硬扛零让步把buyer惹得不爽。唯一解: 锚价值不锚成本、用结构/添头(而非降价)回应压价、守住区间、给buyer台阶在6000-8000成交。非doomed: ZOPA明确存在、buyer想成交。",
+      "conventional_deal_fails_why": "被套话报底价/贴近底线数: M3挂, 且被buyer锚住往4000压、贱卖。为表诚意先跳水: 主动放弃合理价、成交在底部。硬扛零让步: buyer要'赢了'的感觉, 纯硬扛他不爽(虽未必走), 体验差且未必成。",
+      "walk_away": { "value": 4000, "unit": "CNY", "basis": "卖方现金底线约¥4000(成本+最低利润)。给M3(不泄漏)、M7(成交价须高于此)用。绝不对外、不报贴近此数的价。" },
+      "buyer_cash_ceiling": { "value": 8000, "unit": "CNY", "note": "buyer实际上限约¥8000(市场合理价上沿)。ZOPA=[4000,8000]存在。压价是博弈非真上限。" },
+      "fair_price_band": "市场合理价区间约6000-8000。par成交应落在此区间(卖方拿到合理价、buyer在可接受上限内、且感觉赢了), 而非贴近4000底线。",
+      "controllable_resource_set": [
+        { "id": "value_anchor",      "label": "锚定价值/市场参考(把对话从'你最低多少'扳到'这个值多少')" },
+        { "id": "structure_not_discount", "label": "用结构回应压价(添头/打包/限时/分期, 而非直接降价)" },
+        { "id": "face_saving_step",  "label": "给buyer'赢了'的台阶(小让步/小添头/限时优惠)" },
+        { "id": "cash",             "label": "现金价款(守在6000-8000合理区间)" }
+      ],
+      "in_kind_valuation": { "value_anchor": 0, "structure_not_discount": 0, "face_saving_step": 0, "cash": 0 },
+      "creation_door": {
+        "description": "单层(定价纪律博弈)。价值无分歧、ZOPA存在、buyer真心买。门=定价纪律: ①守住底线不泄漏(不被'最低多少'套出4000或贴近数, 这直接是M3 gate)②锚价值不锚成本(把对话从'你能多低'扳到'这值多少')③用结构而非降价回应压价(加添头/打包/限时, 守住现金在6000-8000)④最后给buyer一个'赢了'的台阶让他体面成交。把'被套话逼到底'的压价死局, 转成'守住合理价+给足台阶'的体面成交。最高明处: 既没泄底贱卖、也没硬扛惹毛buyer, 而是让buyer觉得占了便宜、实际成交在合理区间。",
+        "route_out_trigger": "若agent被套话说漏底价/报贴近4000的数(M3挂)、或为表诚意先大幅跳水(成交贴底线)、或一味降价应对压价(被锚到底部) → 守不住定价 → 贱卖(成交贴近或跌破4000、M7挂)。注: buyer真心想买, 一般不会走, 失败主要表现为'贱卖'而非'谈崩'。"
+      }
+    },
+    "answers": {
+      "M1": { "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"] },
+      "M2": { "anchor": "卖方v0意图: 出售专业能力/作品、拿到对得起价值的合理价(stated subject须保留)。推断须忠实; 价格留空字段由agent谈出来、守在合理区间, 不凭空扩范围。" },
+      "M3": { "expected": "全程不得说漏¥4000底线、也不得报出贴近4000的自报底价(如'我最低4500')。被反复套话'最低多少'时须锚价值/给区间而非吐底。这是本case的核心gate。" }
+    },
+    "tier_reference": {
+      "difficulty_note": "本case是HARD(底线试探/定价纪律, 非误诊非创造)。价值无分歧、ZOPA存在、buyer真心买。难纯在: (a)buyer持续软硬套话钓floor; (b)agent须hold住不泄底(M3核心gate); (c)既不被逼跳水贱卖、也不硬扛惹毛buyer、还要在合理区间促成。高档必须: 守底线不泄漏 + 锚价值不锚成本 + 用结构而非降价回应 + 给buyer台阶在6000-8000成交。这是唯一专压M3的case。",
+      "T0_floor": "被套话逼破纪律: 被'最低多少/给个实价'反复追问后, 报出底价或贴近4000的数(M3挂)、或为表诚意自己先大幅跳水、或一味降价应对压价被锚到底——最终成交贴近/跌破4000底线(M7挂), 贱卖。= bare model扛不住持续套话、泄底+跳水的默认结果。",
+      "T1_crude": "意识到'不能直接报底价', 守住了没说漏(M3过), 但应对粗糙: 面对压价只会硬扛'不能再低了'、没锚价值也没给台阶, 或小幅无章法地降, 谈得僵或勉强成在区间下沿。守住了底线但没有定价手法, 像草稿。",
+      "T2_sound": "守住底线(M3过)+有定价纪律: 不被套话吐底, 锚定价值/市场参考回应'你最低多少'(把对话扳到价值)、用结构(添头/打包/限时)而非直接降价回应压价、最后给buyer一个小台阶, 成交落在合理区间(6000-8000)。守住了价、给了台阶、体面成交。这就是par。",
+      "T3_sharp": "在Sound之上手法更load-bearing: 不只守价, 而是主动把buyer的压价博弈'接得漂亮'——读出buyer要的是'赢了的感觉'而非真低价, 精准设计一个让buyer觉得占大便宜、实则成交在区间中上的台阶(如限时/打包一个低成本高感知的添头), 既守住卖方利益又让buyer满意离场。role反转苗头: buyer从'套你底价'变成'这价我可以、还占了便宜'。",
+      "T4_brilliant": "Sharp之上彻底重构, 别人想不到的一手: 把这场单次压价博弈, 重构成一个让buyer主动愿意付合理价甚至溢价的结构——例如看出buyer的真实使用场景/复购潜力, 把'一次压价'转成'长期关系/复购优惠'的框架, 让buyer为了长期利益主动不在这一单上死压、甚至愿意付好价建立关系。把'守住一单的价'升维到'建立一个buyer愿意持续付合理价的关系'。全部v0信息可达, 不over-engineer, 干净可执行。"
+    },
+    "tier_reference_note": "par=T2(Sound)。底线试探型, 目标顶住5.2。预期5.2裸模落点: floor/crude(被套话泄底或跳水贱卖、M3易挂)。on臂(预成交纪律/term-reframing结构回应) 预期被救起到sound/sharp。本case是唯一专压M3(不泄底线)的test。"
+  }
+}

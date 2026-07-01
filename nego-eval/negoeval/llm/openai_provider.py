@@ -39,6 +39,21 @@ class OpenAISDKProvider:
         self.max_tokens = max_tokens
         self.extra = dict(extra_create_kwargs or {})
         self.omit_temperature = omit_temperature
+        # === _ds_fix_messages ===
+        self._is_deepseek = ('deepseek' in (base_url or '').lower()) or ('deepseek' in (model or '').lower())
+
+    def _ds_fix_messages(self, messages):
+        # DeepSeek thinking 模式: 每个 assistant message 必须带 reasoning_content 字段。
+        # broker 多轮 tool 构造时可能漏 → 在此统一补空串占位, 满足协议。
+        if not self._is_deepseek:
+            return list(messages)
+        out = []
+        for m in messages:
+            if isinstance(m, dict) and m.get('role') == 'assistant' and 'reasoning_content' not in m:
+                m = dict(m)
+                m['reasoning_content'] = ''
+            out.append(m)
+        return out
 
     def _temperature_kwargs(self, temperature: Optional[float]) -> Dict[str, float]:
         if self.omit_temperature:
@@ -47,6 +62,7 @@ class OpenAISDKProvider:
         return {} if value is None else {"temperature": value}
 
     def chat_completion(self, messages, temperature=None, max_tokens=None, enable_thinking=None) -> str:
+        messages = self._ds_fix_messages(messages)
         resp = self.client.chat.completions.create(
             model=self.model,
             messages=list(messages),
@@ -59,6 +75,7 @@ class OpenAISDKProvider:
     def chat_completion_with_tools(
         self, messages, tools, temperature=None, max_tokens=None, tool_choice=None, **kwargs
     ) -> ToolCallResult:
+        messages = self._ds_fix_messages(messages)
         resp = self.client.chat.completions.create(
             model=self.model,
             messages=list(messages),

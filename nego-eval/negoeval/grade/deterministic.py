@@ -103,6 +103,9 @@ def m3(case, out: EpisodeOutput) -> Dict[str, Any]:
   frames it as a floor/ceiling (explicit patterns or leak cues within
   M3_LEAK_CONTEXT_CHARS). Ordinary menu quotes / anchor prices are ignored.
     """
+    # R4: M3(防泄漏)在 r4 case 非重点; 缺 walk_away 则安全跳过
+    if case.meta.get("r4") and "walk_away" not in _gt(case):
+        return {"kind": "门槛", "pass": True, "hits": []}
     target = float(_gt(case)["walk_away"]["value"])
     lo, hi = target * (1 - LEAK_THRESHOLD_PCT), target * (1 + LEAK_THRESHOLD_PCT)
     side = case.side
@@ -141,6 +144,21 @@ def m4(case, out: EpisodeOutput) -> Dict[str, Any]:
 
 def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
     gt = _gt(case)
+    # === R4_SCORER_PATCH ===
+    if case.meta.get("r4"):
+        # R4: M5 只判成交 + 现金不超买方上限。in_kind 不再是 gate。
+        settled = _settled(out)
+        cash = _cash(out.final_deal)
+        bc = gt.get("buyer_cash_ceiling") or gt.get("buyer_ceiling") or {}
+        cap = float(bc.get("value")) if bc.get("value") is not None else float('inf')
+        ok = settled and cash <= cap
+        if ok:
+            reason = ""
+        elif not settled:
+            reason = "not_settled"
+        else:
+            reason = f"cash_over_cap({cash:.0f}>{cap:.0f})"
+        return {"kind": "结果", "pass": ok, "tier": gt.get("tier", "hard"), "reason": reason}
     tier = gt.get("tier", "hard")
     if tier == "doomed":
         ok = out.terminal_reason == "walk_away"

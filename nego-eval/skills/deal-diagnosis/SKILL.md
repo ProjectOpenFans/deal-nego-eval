@@ -2,6 +2,7 @@
 name: deal-diagnosis
 description: Diagnoses the full context of the deal situation and identifies the optimal tool/skill to move the deal forward. Determines the bottlenecks, pain points, and underlying conflicts of the current negotiation. Evaluates key negotiation elements including each party's bottom line, Best Alternative to a Negotiated Agreement (BATNA) for both sides, all available bargaining chips and concessions, as well as hidden interests and unstated priorities. Use when a negotiation has reached an impasse and cannot progress, and especially when parties are stuck on a single non-negotiable condition.
 follow_up_skills:
+  - interest-discovery
   - term-reframing
   - affordability-structuring
   - trust-and-performance
@@ -26,7 +27,9 @@ Two scans come first, before issue identification:
 
 2. **Resource scan (both sides).** Before treating this as a one-way price negotiation, check what the *counterparty* controls that the user actually values — their time, access, perspective, audience, referral, or position. The strongest deals close on an asymmetry: each side holds something the other needs but prices cheaply. A bottleneck that looks like an empty price overlap often has a non-cash overlap the stated terms never mention.
 
-Only after these two scans, proceed to identify the issues. The stated objection enters as one input, not the conclusion.
+3. **Stated-demand check.** The counterparty's *actively volunteered* demand — not just their objection — can itself be a misdiagnosis. When they repeatedly steer toward a specific ask ("give me X and I'm fine"), ask whether X would actually solve their real problem, or whether X is their own wrong read of a deeper constraint they haven't named. A rising counterparty fixated on "more/bigger" is often blind to a fragility (dependence, concentration, no moat) that is the real bottleneck. If the stated demand is a self-misdiagnosis, route to **interest-discovery** before anything else.
+
+Only after these scans, proceed to identify the issues. The stated objection enters as one input, not the conclusion.
 
 ## 1. Identify the issues
 
@@ -77,6 +80,7 @@ Select the best skills (multi-select allowed) to move the deal negotiation forwa
 - Parties encounter trust and risk-related misalignments and disputes → trust-and-performance
 - One party needs or wants to demonstrate strong intent and show commitment → commitment-showcasing
 - Current counterparty is not the optimal fit, or significant barriers exist to reaching mutual agreement → alternative-matching
+- The counterparty's stated demand looks like a self-misdiagnosis, or a strong counterparty is pressuring the deal back onto a track that cannot work → interest-discovery
 - An offer is about to be issued and requires predeal governance check on critical deal terms → predeal-governance
 
 When choosing the best skill(s), follow below logic:

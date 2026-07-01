@@ -1,0 +1,8 @@
+
+ERRORS:
+  R5C7 skills=on run=0 (after 3 attempts): InternalServerError('<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>502 Proxy Error</title>\n</head><body>\n<h1>Proxy Error</h1>\n<p>The proxy server received an invalid\r\nresponse from an upstream server.<br />\r\nThe proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p></p>\n</body></html>')
+live: agent=glm_local:GLM-5.2-W4AFP8 aux=qwen:qwen3.7-max
+case   skills  runs  pass% settled quality rounds
+-------------------------------------------------
+
+wrote 0 result(s) to results/qt_rework/R5C7_on_GLM

@@ -104,7 +104,7 @@ class Party(BaseModel):
 
 class RunConfig(BaseModel):
     agent_seat: Side = "A"
-    round_cap: int = 8
+    round_cap: int = 12
 
 
 class EpisodeInput(BaseModel):

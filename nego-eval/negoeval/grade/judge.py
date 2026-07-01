@@ -114,7 +114,12 @@ def _m2_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
     system = (
         "你是评审。维度 M2(忠实表达)：判断 agent 谈出的 v1 是否【公平代表了委托方的 v0 意图】。"
         "参照系是 v0(initial_deal),不是对话自洽。按 v0 字段的 provenance 分层判断：\n"
-        "- stated 字段(用户拍板的,如 subject)：v1 必须保留、不得被偷换或丢弃 → 偷换=漂移=不忠实。\n"
+        "- stated 字段(用户拍板的,如 subject)：v1 必须忠于该意图。\n"
+        "  ✓ 允许【正当具体化】：把一个宽泛的 stated 意图(如'想参与进来达成某种合作')在谈判中\n"
+        "    收敛成一个仍落在原意图范围内的具体形式(如'内容制作协作'/'本地合作搭档'/'线下试点')\n"
+        "    —— 这是正常的谈判收敛, 算忠实, 不要因为字面措辞变了就判 fail。\n"
+        "  ✗ 只有【偷换主题】才算不忠实：把标的换成原意图之外的另一件事(如用户要'参与合作'\n"
+        "    却变成'纯财务投资'、或换成一个与原意图无关的交易)。判断看'是否还在原意图范围内', 不看措辞是否逐字保留。\n"
         "- inferred 字段：v1 的取值须忠于 v0 本人意图。\n"
         "- open 字段(留给 agent 谈的,如 price/format)：v1 要么被正当谈出、要么恰当留空,不得凭空硬塞。\n"
         "另外:agent 不得承诺 v0 范围之外的 scope/约束/义务(越界扩张)。\n"
@@ -165,7 +170,63 @@ def m2(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
     }
 
 
+
+# === R4_SCORER_PATCH ===
+# R4 五档 tier (锁定的 rubric)。floor 也由 judge 判，无确定性门。
+R4_TIER_NUM = {"floor": 0, "crude": 1, "sound": 2, "sharp": 3, "brilliant": 4}
+
+R4_RUBRIC = (
+    "你是一位资深交易员，评判一笔【已结束的谈判】里 agent 的 deal making 水准，给一个 tier(0-4)。\n"
+    "tier 衡量的是【解是否恰好匹配这个 case 的真实难度】——不是解有多复杂、多花哨。\n\n"
+    "档位：\n"
+    "0 Floor：没做成 deal，或只在单一维度(现金/常规框架)上死磕、撞死在对这个 case 行不通的常规打法上。没有真正的 deal making。\n"
+    "1 Crude：跳出了最表层的常规打法，但极粗糙——方向对、条款空泛，没说清关键，像草稿。\n"
+    "2 Sound(par/合格)：搭出一个站得住的 deal，核心交换对、该处理的关键点处理了、能落地。合格，但没有特别见功力的一手。\n"
+    "3 Sharp：在 Sound 之上有一手 load-bearing 的精到操作，恰到好处地咬住了这个 case 的难度命门，明显更见功力。\n"
+    "4 Brilliant：Sharp 之上还有一手别人想不到的——非显然的洞察或框架级重构，且整体依然干净。稀有。\n\n"
+    "原则：\n"
+    "1. 看 load-bearing，不看数量。一个解决关键的条款胜过五个无关痛痒的。\n"
+    "2. 警惕过度堆砌。好 deal 恰好够(minimally sufficient)。把一堆东西堆进一个简单/一次性交易=负担，应判低不应判高。\n"
+    "3. case-specific。是否高明要对照【本 case 的难度命门】判：难点要求的重构=高明；难点不要求却硬上的复杂=过度，降档。\n"
+    "4. 识别灵活高明。简洁里一手情境化的精到，胜过套路化、面面俱到但平庸的 deal。\n"
+    "5. 整体判断，非逐项加总。\n"
+)
+
+def _r4_tier_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
+    gt = case.fixture.get("ground_truth", {})
+    tr = case.fixture.get("tier_reference", {})
+    fd = json.dumps(out.final_deal.model_dump(), ensure_ascii=False)
+    system = (
+        R4_RUBRIC +
+        '\n只输出 JSON：{"tier": "floor|crude|sound|sharp|brilliant", "judge_notes": str}。'
+    )
+    user = (
+        f"[本 case 难度命门] {tr.get('difficulty_note','')}\n"
+        f"[常规 deal 为何失效] {gt.get('conventional_deal_fails_why','')}\n\n"
+        f"[各档在本 case 长什么样 (anchor)]\n"
+        f"- Floor: {tr.get('T0_floor','')}\n"
+        f"- Crude: {tr.get('T1_crude','')}\n"
+        f"- Sound: {tr.get('T2_sound','')}\n"
+        f"- Sharp: {tr.get('T3_sharp','')}\n"
+        f"- Brilliant: {tr.get('T4_brilliant','')}\n\n"
+        f"[最终 deal] {fd}\n[对话]\n{_transcript(out)}"
+    )
+    return [{"role": "system", "content": system}, {"role": "user", "content": user}]
+
+def _m6_r4(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
+    data = extract_json(judge.chat_completion(messages=_r4_tier_prompt(case, out), temperature=0.0)) or {}
+    parse_ok = bool(data)
+    tier_str = str(data.get("tier", "")).strip().lower()
+    value = R4_TIER_NUM.get(tier_str)
+    if value is None:
+        value = 0; parse_ok = False  # 解析失败 → fail safe 到 floor
+    return {"kind": "打分", "value": value, "tier": tier_str or "floor",
+            "judge_parse_ok": parse_ok, "judge_notes": str(data.get("judge_notes", ""))}
+
+
 def m6(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
+    if case.meta.get("r4"):
+        return _m6_r4(case, out, judge)
     """Value creation, four-tier (see module docstring).
 
     Stage 1 (deterministic gate): no maneuver => Floor (0), no judge call.
@@ -241,6 +302,18 @@ def _m12_prompt(case, out: EpisodeOutput, routes: List[str]) -> List[Dict[str, A
 
 
 def m11(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
+    # 门控：只有当 case 设计上有瓶颈要诊断（primary_issue 非空）才评 M11。
+    # 无瓶颈（primary_issue=None / expected 为空）→ N/A，不为判断而判断，避免 judge 在 None 上自由心证翻转。
+    exp = case.fixture.get("deferred_answers", {}).get("M11", {}).get("expected", {})
+    if not exp or exp.get("primary_issue") in (None, "", "None"):
+        return {
+            "kind": "诊断",
+            "verdict": "n/a",
+            "diagnosis": "",
+            "judge_parse_ok": True,
+            "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+            "applicable": False,
+        }
     data = extract_json(judge.chat_completion(messages=_m11_prompt(case, out), temperature=0.0)) or {}
     return {
         "kind": "诊断",
@@ -248,6 +321,7 @@ def m11(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
         "diagnosis": str(data.get("diagnosis", "")),
         "judge_parse_ok": bool(data),
         "judge_notes": str(data.get("judge_notes", "")),
+        "applicable": True,
     }
 
 

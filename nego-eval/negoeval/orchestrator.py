@@ -69,7 +69,19 @@ def run_episode(
 
         if sim_turn.action == "ACCEPT":
             terminal = "settled"
-            accepted_offer = sim_turn.offer or prev_offer
+            if sim_turn.offer is not None:
+                # B countered with its own structured offer and then accepted it.
+                accepted_offer = sim_turn.offer
+            else:
+                # B accepted in natural language. If A's last turn put multiple
+                # parallel plans on the table, prev_offer may be the wrong plan.
+                # Re-extract from B's acceptance text + A's full offer text so we
+                # bind to the plan B actually named. Fall back to prev_offer if
+                # re-extraction fails or yields nothing.
+                resolved = extractor.extract_accepted(
+                    accept_text=sim_turn.message, a_text=a_text, prev_offer=prev_offer
+                )
+                accepted_offer = resolved if resolved is not None else prev_offer
             break
         if sim_turn.action == "WALK":
             terminal = "walk_away"

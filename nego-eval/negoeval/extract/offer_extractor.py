@@ -81,7 +81,11 @@ class OfferExtractor:
             "才写入对应 resource;不要因为发言提到某个话题就给它挂一个 resource。没有就留空数组。"
             "【多版本消歧】若本轮发言里出现多个价格/方案(例如主方案+括号备选、版本一/版本二、"
             "或'要么…要么…'),只抽取谈判者本轮【最终主推/确认】的那一个方案,不要抽取被否决的旧值、"
-            "括号里的备选、或仅作对比的参照价。只输出 JSON。"
+            "括号里的备选、或仅作对比的参照价。"
+            "【并列的完整方案】若一轮里摆出两个并列的完整方案(如'方案一:单场七三分成'+'方案二:独家六四分成'),"
+            "且上下文显示对方只接受/主推其中一个、pass 掉另一个,则只把【被接受/主推那个方案】的 in_kind 与 "
+            "obligations 抽进来;被 pass/拒绝方案独有的条款(分成比例、独家性、额外资源)绝不抽入,"
+            "避免最终 deal 里混入两个互斥方案的条款。只输出 JSON。"
         )
         user = f"上一版 Deal:\n{json.dumps(prev, ensure_ascii=False)}\n\n本轮发言:\n{text}"
         return [{"role": "system", "content": system}, {"role": "user", "content": user}]
@@ -128,6 +132,57 @@ class OfferExtractor:
         return deal is not None and (
             deal.price.cash.amount is not None or bool(deal.price.in_kind) or bool(deal.obligations)
         )
+
+    def extract_accepted(
+        self, accept_text: str, a_text: str, prev_offer: Optional[Deal]
+    ) -> Optional[Deal]:
+        """Resolve which offer B actually accepted when B accepts in natural
+        language (no structured offer of its own).
+
+        Bug this fixes: when A puts multiple parallel plans on the table
+        (组合A/组合B, 方案一/方案二) and B accepts one of them by name in prose,
+        the orchestrator used to fall back to ``prev_offer`` — the A turn already
+        collapsed to whichever plan the extractor picked first, not the one B
+        chose. Here we re-extract using B's acceptance text plus A's full offer
+        text so the extractor can bind to the plan B named.
+        """
+        prev = prev_offer.model_dump() if prev_offer else None
+        system = (
+            "你是一个信息抽取器。上一方(A)在其发言里可能摆出了【多个并列方案】"
+            "(如 组合A/组合B、方案一/方案二、或'要么…要么…'),对方(B)随后用自然语言"
+            "【明确接受了其中某一个方案】。你的任务：结合 B 的接受话术,判断 B 到底选了 A 的哪个方案,"
+            "然后【只抽取 B 实际接受的那个方案】的条款,抽成一个 Deal JSON。\n"
+            "【关键】以 B 接受话术里指名/描述的方案为准(如 B 说'方案B/1.5万那个/深度绑定档'),"
+            "从 A 发言中定位对应方案,抽取该方案的 cash 与 in_kind。"
+            "绝不抽取 B 未选的那个方案的价格或资源。若 B 的话术里直接确认了某个具体数字(如'1.5万'),"
+            "以该数字为准。\n"
+            f"in_kind.resource 与 obligations.maps_to_resource 必须取自：{self.resource_ids}。\n"
+            "字段：subject, price{cash{amount,currency}, in_kind[{resource,description,from_party}]}, "
+            "terms{timing{when,deadline,duration},format,deliverables,delivery_standard}, "
+            "obligations[{party,text,maps_to_resource}], status, provenance。"
+            "未在本轮明确出现的字段沿用上一版。只输出 JSON。"
+        )
+        user = (
+            f"上一版 Deal:\n{json.dumps(prev, ensure_ascii=False)}\n\n"
+            f"A 的发言(含并列方案)：\n{a_text}\n\n"
+            f"B 的接受话术(指明接受哪个方案)：\n{accept_text}"
+        )
+        raw = self.provider.chat_completion(
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
+            temperature=0.0,
+        )
+        data = extract_json(raw)
+        if not data:
+            self.fallback_turns.append("accepted:no_json")
+            return None
+        try:
+            deal = Deal.model_validate(coerce_deal(data, provider_party=self.provider_party))
+        except Exception:
+            self.fallback_turns.append("accepted:validation_error")
+            return None
+        self._snap_resources(deal)
+        self._carry_forward(deal, prev_offer)
+        return deal
 
     def extract_final(self, turns, *, accepted_offer: Optional[Deal], status: str) -> Deal:
         # When settled, the accepted offer IS the deal — it reflects exactly what
@@ -180,9 +235,15 @@ class OfferExtractor:
                 )
                 if not in_offers:
                     self.warnings.append(f"cash_not_in_transcript:{n}")
+        _seen_res = {}
         for item in deal.price.in_kind:
             if item.resource not in ids:
                 self.warnings.append(f"inkind_unknown_resource:{item.resource}")
+            # 同一 resource 出现多条 → 可能并列方案混入 (非阻塞 flag, 供审阅)
+            _seen_res[item.resource] = _seen_res.get(item.resource, 0) + 1
+        for _r, _c in _seen_res.items():
+            if _c >= 2:
+                self.warnings.append(f"inkind_duplicate_resource:{_r}x{_c}")
         for ob in deal.obligations:
             if ob.maps_to_resource and ob.maps_to_resource not in ids:
                 self.warnings.append(f"obl_unknown_resource:{ob.maps_to_resource}")
