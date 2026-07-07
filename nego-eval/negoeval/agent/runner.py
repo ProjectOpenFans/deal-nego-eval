@@ -18,6 +18,7 @@ class AgentUnderTest:
         self.executor = BrokerToolExecutor(allowlist=allowlist)
         self.emitter = BrokerEventEmitter()
         self.skills_used: List[str] = []
+        self.skills_forced: List[str] = []
         self.turns = LocalBrokerRunner(
             request=self.request,
             provider=self.provider,
@@ -25,6 +26,7 @@ class AgentUnderTest:
             executor=self.executor,
             emitter=self.emitter,
             skills_used=self.skills_used,
+            skills_forced=self.skills_forced,
             prompt_variant=prompt_variant,
         )
 

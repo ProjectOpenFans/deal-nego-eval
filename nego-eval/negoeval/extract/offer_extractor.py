@@ -85,7 +85,11 @@ class OfferExtractor:
             "【并列的完整方案】若一轮里摆出两个并列的完整方案(如'方案一:单场七三分成'+'方案二:独家六四分成'),"
             "且上下文显示对方只接受/主推其中一个、pass 掉另一个,则只把【被接受/主推那个方案】的 in_kind 与 "
             "obligations 抽进来;被 pass/拒绝方案独有的条款(分成比例、独家性、额外资源)绝不抽入,"
-            "避免最终 deal 里混入两个互斥方案的条款。只输出 JSON。"
+            "避免最终 deal 里混入两个互斥方案的条款。"
+            "【无数字的现金承诺】若本轮发言明确承诺了现金付费但没有给出具体数字"
+            "(如'按你的公开刊例价走''价格你定我们照付''预算不是问题按市场价来'),"
+            "cash.amount 填 -1 表示'已承诺现金、金额未定'——绝不能留 null(null 表示无现金承诺)。"
+            "【绝不加总】绝不把并列方案的金额相加;附加佣金/返点/奖励若属于未被选中的方案,不计入 cash。只输出 JSON。"
         )
         user = f"上一版 Deal:\n{json.dumps(prev, ensure_ascii=False)}\n\n本轮发言:\n{text}"
         return [{"role": "system", "content": system}, {"role": "user", "content": user}]
@@ -122,6 +126,12 @@ class OfferExtractor:
         # turn explicitly states one.
         if prev_offer is not None:
             if deal.price.cash.amount is None and prev_offer.price.cash.amount is not None:
+                deal.price.cash = prev_offer.price.cash.model_copy()
+            # A concrete number in prev must not be degraded to the undefined-cash
+            # sentinel by a later vague turn ("那就按说好的来").
+            prev_amt = prev_offer.price.cash.amount
+            if (deal.price.cash.amount is not None and float(deal.price.cash.amount) == -1
+                    and prev_amt is not None and float(prev_amt) != -1):
                 deal.price.cash = prev_offer.price.cash.model_copy()
             if not deal.price.in_kind and prev_offer.price.in_kind:
                 deal.price.in_kind = [i.model_copy() for i in prev_offer.price.in_kind]
@@ -160,7 +170,9 @@ class OfferExtractor:
             "字段：subject, price{cash{amount,currency}, in_kind[{resource,description,from_party}]}, "
             "terms{timing{when,deadline,duration},format,deliverables,delivery_standard}, "
             "obligations[{party,text,maps_to_resource}], status, provenance。"
-            "未在本轮明确出现的字段沿用上一版。只输出 JSON。"
+            "未在本轮明确出现的字段沿用上一版。"
+            "【绝不加总】绝不把两个方案的金额相加;附加佣金/返点若属于 B 未选中的方案,绝不计入 cash。"
+            "【无数字的现金承诺】若被接受的方案承诺现金但无具体数字(如'按刊例价'),cash.amount 填 -1。只输出 JSON。"
         )
         user = (
             f"上一版 Deal:\n{json.dumps(prev, ensure_ascii=False)}\n\n"
@@ -209,6 +221,13 @@ class OfferExtractor:
             base = accepted_offer or self.case.input.initial_deal
         deal = base.model_copy(deep=True)
         deal.status = status
+        # Undefined-cash sentinel (-1): the transcript committed to cash without a
+        # number ("按刊例价"). Normalize the record to None but surface a warning
+        # that M5 treats as blocking — a settled deal may not contain an
+        # undefined cash commitment (it evades the cash cap otherwise).
+        if deal.price.cash.amount is not None and float(deal.price.cash.amount) == -1:
+            deal.price.cash.amount = None
+            self.warnings.append("undefined_cash_commitment")
         self._ensure_provenance(deal)
         self._sanity_check(deal, turns)
         return deal

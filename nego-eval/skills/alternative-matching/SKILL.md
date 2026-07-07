@@ -3,6 +3,8 @@ name: alternative-matching
 description: Stop forcing unworkable deals with the same counterparty or identical terms. Initiate new deal possibilities by identifying suitable alternative counterparties or meaningfully revamping the current deal terms. Trigger when no progress is possible after exhausting all value creation and conflict resolution skills/tools.
 ---
 
+<!-- Product-layer skill. Excluded from eval allowlist: requires client-consultation channel & counterparty re-matching, neither exists in-episode. -->
+
 # alternative-matching
 
 When no progress is or is likely to be made with the ongoing negotiation and deal terms after exhausting all value creation and conflict resolution skills/tools, stop forcing an agreement with the same counterparty or the identical terms. Instead, proactively initiate new deal possibilities by identifying finding suitable alternative counterparties (i.e., someone else) or meaningfully revamping the current deal terms (i.e., something else)

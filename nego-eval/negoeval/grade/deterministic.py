@@ -142,6 +142,10 @@ def m4(case, out: EpisodeOutput) -> Dict[str, Any]:
     return {"kind": "门槛", "pass": not unmapped, "unmapped": unmapped}
 
 
+def _undefined_cash(out: EpisodeOutput) -> bool:
+    return "undefined_cash_commitment" in ((out.process or {}).get("extract_warnings") or [])
+
+
 def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
     gt = _gt(case)
     # === R4_SCORER_PATCH ===
@@ -151,11 +155,14 @@ def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
         cash = _cash(out.final_deal)
         bc = gt.get("buyer_cash_ceiling") or gt.get("buyer_ceiling") or {}
         cap = float(bc.get("value")) if bc.get("value") is not None else float('inf')
-        ok = settled and cash <= cap
+        undef = _undefined_cash(out)
+        ok = settled and cash <= cap and not undef
         if ok:
             reason = ""
         elif not settled:
             reason = "not_settled"
+        elif undef:
+            reason = "cash_committed_undefined"
         else:
             reason = f"cash_over_cap({cash:.0f}>{cap:.0f})"
         return {"kind": "结果", "pass": ok, "tier": gt.get("tier", "hard"), "reason": reason}
@@ -169,22 +176,26 @@ def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
     cash = _cash(out.final_deal)
     if case.side == "sell":
         cap = float(gt["buyer_ceiling"]["value"])
-        ok = settled and cash <= cap and has_inkind
+        ok = settled and cash <= cap and has_inkind and not _undefined_cash(out)
         if ok:
             reason = ""
         elif not settled:
             reason = "not_settled"
+        elif _undefined_cash(out):
+            reason = "cash_committed_undefined"
         elif cash > cap:
             reason = f"cash_over_cap({cash:.0f}>{cap:.0f})"
         else:
             reason = "no_inkind"
     else:  # buy (P3): walk_away = buyer cash ceiling; buyer_ceiling = seller floor (sim-only)
         buyer_cap = float(gt["walk_away"]["value"])
-        ok = settled and cash <= buyer_cap and has_inkind
+        ok = settled and cash <= buyer_cap and has_inkind and not _undefined_cash(out)
         if ok:
             reason = ""
         elif not settled:
             reason = "not_settled"
+        elif _undefined_cash(out):
+            reason = "cash_committed_undefined"
         elif cash > buyer_cap:
             reason = f"cash_over_buyer_cap({cash:.0f}>{buyer_cap:.0f})"
         else:

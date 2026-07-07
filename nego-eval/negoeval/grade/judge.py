@@ -296,7 +296,8 @@ def _m12_prompt(case, out: EpisodeOutput, routes: List[str]) -> List[Dict[str, A
     )
     user = (
         f"[METRIC:M12] 正确武器：{exp.get('correct_weapon')}；可接受近邻：{exp.get('acceptable_siblings')}；"
-        f"错误打法：{exp.get('wrong')}\nagent 实际读取/应用的 skill 路径：{routes}"
+        f"错误打法：{exp.get('wrong')}\n"
+        f"agent 自愿读取/应用的 skill 路径（系统强制注入的 deal-diagnosis 不在此列，不作评判）：{routes}"
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
@@ -326,7 +327,26 @@ def m11(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
 
 
 def m12(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
-    routes = list((out.process or {}).get("skills_used", []))
+    # routes = the agent's VOLUNTARY read_skill choices. The harness force-injects
+    # deal-diagnosis every episode (recorded in process.skills_forced) — a forced
+    # route is not a trajectory choice and must not be judged as one. Legacy
+    # results (no skills_forced field) get the same exemption by filtering.
+    proc = out.process or {}
+    routes = list(proc.get("skills_used", []))
+    if "skills_forced" not in proc and "deal-diagnosis" in routes:
+        routes.remove("deal-diagnosis")
+    # Mirror M11's gating: if the case defines no expected path, N/A — do not ask
+    # the judge to freestyle on None (it fails every on-arm run of such cases).
+    exp = case.fixture.get("deferred_answers", {}).get("M12", {}).get("expected", {})
+    if not exp or not any(exp.get(k) for k in ("correct_weapon", "acceptable_siblings", "wrong")):
+        return {
+            "kind": "路径",
+            "verdict": "n/a",
+            "routes": routes,
+            "judge_parse_ok": True,
+            "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+            "applicable": False,
+        }
     data = extract_json(judge.chat_completion(messages=_m12_prompt(case, out, routes), temperature=0.0)) or {}
     return {
         "kind": "路径",

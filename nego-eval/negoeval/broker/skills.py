@@ -10,6 +10,11 @@ import yaml
 
 SKILLS_ROOT = Path(__file__).resolve().parents[2] / "skills"
 
+# Product-layer skills: kept in the repo for the product roadmap, excluded from
+# the eval allowlist (their core actions need channels that do not exist
+# in-episode: client consultation, counterparty re-matching).
+PRODUCT_LAYER_SKILLS = {"alternative-matching"}
+
 
 @dataclass(frozen=True)
 class SkillEntry:
@@ -52,7 +57,12 @@ def discover() -> List[SkillEntry]:
 
 
 def all_skill_names() -> Set[str]:
-    return {entry.name for entry in discover()}
+    """Eval-eligible skill names (product-layer skills excluded).
+
+    Allowlist semantics in this module: ``None`` means all eval-eligible
+    skills; pass an explicit ``set()`` for a no-skills baseline arm.
+    """
+    return {entry.name for entry in discover()} - PRODUCT_LAYER_SKILLS
 
 
 def _entry_map() -> Dict[str, SkillEntry]:

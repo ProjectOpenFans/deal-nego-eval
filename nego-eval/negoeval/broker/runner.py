@@ -10,6 +10,27 @@ from .schemas import BrokerChatMessage, BrokerChatRequest, BrokerSide
 from .skills import run_skill_tool, skill_catalog_block, skill_tools
 
 
+_ROUND_LABEL_RE = None
+
+
+def _strip_round_labels(text: str) -> str:
+    """Strip leaked transcript labels ("[我方 · 第3轮]") from the head of a message."""
+    global _ROUND_LABEL_RE
+    import re as _re
+    if _ROUND_LABEL_RE is None:
+        _ROUND_LABEL_RE = _re.compile(r"^\s*\[(?:我方|对方)\s*·?\s*第\s*\d+\s*轮\]\s*")
+    prev = None
+    while prev != text:
+        prev = text
+        text = _ROUND_LABEL_RE.sub("", text, count=1)
+    return text
+
+
+def _strip_html_comments(text: str) -> str:
+    import re as _re
+    return _re.sub(r"<!--.*?-->\s*", "", text, flags=_re.DOTALL)
+
+
 class BrokerEventEmitter:
     def __init__(self) -> None:
         self.trace: List[Dict[str, Any]] = []
@@ -40,6 +61,7 @@ class LocalBrokerRunner:
         executor: BrokerToolExecutor,
         emitter: BrokerEventEmitter,
         skills_used: List[str],
+        skills_forced: Optional[List[str]] = None,
         max_tool_rounds: int = 4,
         prompt_variant: str = "full",
     ) -> None:
@@ -49,13 +71,14 @@ class LocalBrokerRunner:
         self.executor = executor
         self.emitter = emitter
         self.skills_used = skills_used
+        self.skills_forced = skills_forced if skills_forced is not None else []
         self.max_tool_rounds = max_tool_rounds
         self.prompt_variant = prompt_variant
 
     def run(self, *, side: BrokerSide, round_number: int, transcript_history: List[BrokerChatMessage]) -> str:
         messages = self._messages(side=side, round_number=round_number, transcript_history=transcript_history)
         if self.allowlist:
-            messages = self._run_tools(messages)
+            messages = self._run_tools(messages, round_number=round_number)
         final_messages = messages + [
             {
                 "role": "user",
@@ -66,34 +89,48 @@ class LocalBrokerRunner:
             }
         ]
         text = self.provider.chat_completion(messages=final_messages, temperature=0.3)
+        text = _strip_round_labels(str(text or ""))
         self.emitter.emit("round_message", side=side, round=round_number, message=text)
-        return str(text or "").strip()
+        return text.strip()
 
-    def _run_tools(self, messages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def _run_tools(self, messages: List[Dict[str, Any]], *, round_number: int = 1) -> List[Dict[str, Any]]:
         tools = skill_tools()
         working = list(messages)
         # === FORCE_DIAGNOSIS_PATCH ===
         # full on: 强制先读 deal-diagnosis (中央路由), 保证 skill harness 真正介入,
         # 不依赖模型 auto 是否主动调。模型读后仍可在下面的循环里继续 route 其它 skill。
-        if "deal-diagnosis" not in self.skills_used:
+        # Round 1: force-inject the deal-diagnosis brief (INJECT.md). Forced reads are
+        # tracked in skills_forced, NOT skills_used — skills_used carries only the
+        # agent's voluntary route signal (consumed by M12).
+        # Round 2+: inject the per-round compass (COMPASS.md) every round.
+        # Injection uses a user message (local thinking endpoints hang on fabricated
+        # assistant tool_call history).
+        import pathlib as _pl
+        _skills_dir = _pl.Path(__file__).resolve().parents[2] / "skills" / "deal-diagnosis"
+        if round_number <= 1 and "deal-diagnosis" not in self.skills_forced:
             from .skills import read_skill as _read_skill
             _payload, _ok = _read_skill("deal-diagnosis", self.allowlist)
             if _ok:
-                self.skills_used.append("deal-diagnosis")
-                # 本地 thinking 端点对伪造的 assistant tool_call 历史会静默 hang，
-                # 改为把 deal-diagnosis 作为背景材料用一条 user message 注入，绕开 thinking 校验。
-                import pathlib as _pl
-                _inject_path = _pl.Path(__file__).resolve().parents[2] / "skills" / "deal-diagnosis" / "INJECT.md"
+                self.skills_forced.append("deal-diagnosis")
+                _inject_path = _skills_dir / "INJECT.md"
                 if _inject_path.exists():
-                    _diag_text = _inject_path.read_text(encoding="utf-8")
+                    _diag_text = _strip_html_comments(_inject_path.read_text(encoding="utf-8"))
                 else:
                     _diag_text = _payload if isinstance(_payload, str) else str(_payload.get("instructions") or json.dumps(_payload, ensure_ascii=False))
                 working.append({
                     "role": "user",
-                    "content": "[系统已为你调用 deal-diagnosis 中央路由技能，请先阅读以下诊断框架并据此展开后续谈判]\n\n" + _diag_text,
+                    "content": "[系统已为你加载 deal-diagnosis 中央路由技能，作为每一轮的思考底座。何时跑哪一层，按框架内 When to run what 执行]\n\n" + _diag_text,
                 })
-                self.emitter.emit("tool_call", name="read_skill",
-                                  arguments={"name": "deal-diagnosis"}, result=_payload)
+                self.emitter.emit("forced_inject", name="deal-diagnosis", round=round_number)
+        elif round_number >= 2:
+            _compass_path = _skills_dir / "COMPASS.md"
+            if _compass_path.exists():
+                _compass_text = _strip_html_comments(_compass_path.read_text(encoding="utf-8"))
+                working.append({
+                    "role": "user",
+                    "content": "[本轮罗盘——先按其分类对方上一条消息，再组织本轮谈判动作]\n\n" + _compass_text,
+                })
+                self.emitter.emit("compass_inject", round=round_number)
         for tool_round in range(self.max_tool_rounds):
             result = self.provider.chat_completion_with_tools(
                 messages=working,
@@ -179,9 +216,12 @@ class LocalBrokerRunner:
 {skill_catalog_block(self.allowlist)}"""
         messages: List[Dict[str, Any]] = [{"role": "system", "content": system}]
         for item in transcript_history:
-            role = "assistant" if item.role == side else "user"
-            label = "我方" if item.role == side else "对方"
-            messages.append({"role": role, "content": f"[{label} · 第{item.round}轮]\n{item.content}"})
+            if item.role == side:
+                # Own past messages: plain content. Labels on own messages teach the
+                # model to emit "[我方 · 第X轮]" prefixes into the public transcript.
+                messages.append({"role": "assistant", "content": item.content})
+            else:
+                messages.append({"role": "user", "content": f"[对方 · 第{item.round}轮]\n{item.content}"})
         messages.append({"role": "user", "content": f"现在是第 {round_number} 轮，轮到你发言。"})
         return messages
 

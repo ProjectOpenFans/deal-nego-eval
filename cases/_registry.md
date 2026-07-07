@@ -64,3 +64,7 @@
 - [ ] ceiling=0家族(P5/P6/P7/P8/P10/P11)逐个审:是"正确disposition陷阱"还是"误伤正解"
 - [ ] R4N2的"加钱有害"机制审:M6 judge抓不抓得住砸钱自证
 
+
+| R5C11 | 4定制 | buy | 双层两跳·主理人升级 | 🔧 返工 | 三模型全0(1run): public_profile泄解药 | 铁律一违规, 解药下沉private重跑 |
+| R5C12 | 4定制 | sell | cash-trap·静修 | 🔧 返工 | 仅DS 3/3 gap0; SF/GLM踩雷或崩(1run) | ceiling=0错设(本该付费场景,同C6/C9); 改真值让M6判堆豪华vs精准设计 |
+| R5C13 | 2创作者 | buy | cash-trap·卖课变现·产品设计换共创 | 🟢 run-ready | SF clean2→on4 gap+2; DS偏易(clean4); GLM 3/3 (1run) | skin2 cash-trap第2个填满; harness真穿透(deal-diagnosis+interest-discovery); C1变体真不同 |

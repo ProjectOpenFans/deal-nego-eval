@@ -95,6 +95,7 @@ def run_episode(
     )
     process = {
         "skills_used": list(agent.skills_used),
+        "skills_forced": list(agent.skills_forced),
         "tool_calls": list(agent.executor.tool_calls),
         "trace": list(agent.emitter.trace),
         "extract_fallbacks": list(extractor.fallback_turns),
