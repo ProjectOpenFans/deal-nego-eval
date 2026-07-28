@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """M6 抽样审计 — 分层抽样重判，对比历史判分，验稳定性+正确性。
 先自验（clean-r2应判0），通过才跑抽样。每局重判N次取众数。
-用法: python m6_sample_audit.py --config eval.glm52local.yaml --n 3
+用法: python m6_sample_audit.py --config configs/legacy/eval.glm52local.yaml --n 3
 """
 import sys, json, glob, os, argparse
 from collections import defaultdict, Counter
@@ -88,6 +88,6 @@ def main(cfg,n):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
-    ap.add_argument("--config",default="eval.glm52local.yaml")
+    ap.add_argument("--config", default="configs/legacy/eval.glm52local.yaml")
     ap.add_argument("--n",type=int,default=3)
     main(ap.parse_args().config, ap.parse_args().n)

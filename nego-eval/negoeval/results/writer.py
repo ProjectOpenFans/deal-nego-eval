@@ -145,7 +145,7 @@ def write_summary(
     config: Dict[str, Any],
     out_dir: str | Path,
 ) -> Path:
-    """Write a batch-level ``_summary.json`` with aggregated reports and metadata."""
+    """Write a timestamped batch summary with aggregated reports and metadata."""
     now = datetime.now(timezone.utc)
     summary = {
         "batch_id": now.strftime("%Y%m%dT%H%M%SZ"),
@@ -156,7 +156,6 @@ def write_summary(
     }
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-        # === PARALLEL_PATCH ===
     import time as _t
     _sk = (config or {}).get("skills", "x")
     _ts = _t.strftime("%Y%m%d_%H%M%S")

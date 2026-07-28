@@ -1,8 +1,13 @@
-"""Load ``cases/P*.jsonc`` and split into meta / input / fixture.
+"""Load negotiation case JSONC files and split meta / input / fixture.
 
 The case files are JSONC (JSON + ``//`` and ``/* */`` comments). We strip
 comments with a small string-aware scanner (so ``//`` inside a string value is
 preserved), then ``json.loads``.
+
+The repository has two deliberately separate banks:
+
+* ``DEFAULT_CASES_DIR``: the current evaluation set.
+* ``LEGACY_CASES_DIR``: the frozen P1-P6 regression fixtures used by unit tests.
 """
 
 from __future__ import annotations
@@ -15,8 +20,10 @@ from pydantic import BaseModel, Field
 
 from .schemas import EpisodeInput
 
-# nego-eval/negoeval/cases.py -> parents: [0]=negoeval [1]=nego-eval [2]=deal-rec
-DEFAULT_CASES_DIR = Path(__file__).resolve().parents[2] / "cases"
+# nego-eval/negoeval/cases.py -> parents: [0]=negoeval [1]=nego-eval [2]=repo
+CASES_ROOT = Path(__file__).resolve().parents[2] / "cases"
+DEFAULT_CASES_DIR = CASES_ROOT
+LEGACY_CASES_DIR = CASES_ROOT / "archive"
 
 
 def strip_jsonc(text: str) -> str:

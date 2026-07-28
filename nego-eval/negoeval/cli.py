@@ -47,7 +47,7 @@ def main(argv=None) -> int:
                 f"live mode is missing API key(s) for: {', '.join(missing)}. "
                 "Set them in nego-eval/.env or the environment (e.g. STEP_API_KEY / "
                 "QWEN_API_KEY / ZHIPU_API_KEY), and pick providers in nego-eval/eval.config.yaml "
-                "(see eval.config.example.yaml).",
+                "(see configs/legacy/eval.config.example.yaml).",
                 file=sys.stderr,
             )
             return 2

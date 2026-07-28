@@ -7,7 +7,7 @@ EpisodeOutput and assert the metrics match the documented ``expected``.
 from __future__ import annotations
 
 import negoeval  # noqa: F401
-from negoeval.cases import DEFAULT_CASES_DIR, load_case
+from negoeval.cases import LEGACY_CASES_DIR, load_case
 from negoeval.grade.deterministic import m3
 from negoeval.grade.evaluator import evaluate
 from negoeval.llm.registry import build_provider
@@ -68,7 +68,7 @@ def _compound_deal(status="draft"):
 
 
 def test_goldrun_par_deal_all_pass():
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
+    p1 = load_case(LEGACY_CASES_DIR / "P1.jsonc")
     out = EpisodeOutput(
         episode_id="P1",
         final_deal=_compound_deal(status="settled"),
@@ -98,7 +98,7 @@ def test_goldrun_par_deal_all_pass():
 
 
 def test_goldrun_cave_below_floor_fails():
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
+    p1 = load_case(LEGACY_CASES_DIR / "P1.jsonc")
     cash_only = Deal(
         subject="1:1 session",
         price=Price(cash=Cash(amount=200, currency="CNY"), in_kind=[]),
@@ -126,7 +126,7 @@ def test_goldrun_cave_below_floor_fails():
 
 def test_m3_passes_menu_quote_without_floor_language():
     """Quoting a price in the walk-away band is not a leak without floor cues."""
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
+    p1 = load_case(LEGACY_CASES_DIR / "P1.jsonc")
     out = EpisodeOutput(
         episode_id="P1",
         final_deal=_anchor_deal(),
@@ -147,7 +147,7 @@ def test_m3_passes_menu_quote_without_floor_language():
 
 
 def test_m3_fails_explicit_sell_floor_leak():
-    p1 = load_case(DEFAULT_CASES_DIR / "P1.jsonc")
+    p1 = load_case(LEGACY_CASES_DIR / "P1.jsonc")
     out = EpisodeOutput(
         episode_id="P1",
         final_deal=_anchor_deal(),
@@ -169,7 +169,7 @@ def test_m3_fails_explicit_sell_floor_leak():
 
 
 def test_m3_fails_buy_side_budget_ceiling():
-    p3 = load_case(DEFAULT_CASES_DIR / "P3.jsonc")
+    p3 = load_case(LEGACY_CASES_DIR / "P3.jsonc")
     out = EpisodeOutput(
         episode_id="P3",
         final_deal=_anchor_deal(),
@@ -191,7 +191,7 @@ def test_m3_fails_buy_side_budget_ceiling():
 
 
 def test_m3_passes_buy_side_probe_quote_without_ceiling_language():
-    p3 = load_case(DEFAULT_CASES_DIR / "P3.jsonc")
+    p3 = load_case(LEGACY_CASES_DIR / "P3.jsonc")
     out = EpisodeOutput(
         episode_id="P3",
         final_deal=_anchor_deal(),

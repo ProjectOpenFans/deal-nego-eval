@@ -1,5 +1,8 @@
 results/
 .env
-archive/
 .venv/
 .DS_Store
+
+# Ad-hoc runtime material belongs here; versioned historical artifacts live
+# under archive/ and remain visible to Git.
+archive/local/

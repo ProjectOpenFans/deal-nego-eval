@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """M6 抽样审计 v2 — 写死路径清单，单一批次同源，逐个rejudge。
 不glob扫库（杜绝跨目录同名混淆），清单内每项 case|历史分|episode路径 同源。
-用法: python m6_audit_v2.py --config eval.glm52local.yaml --n 5
+用法: python m6_audit_v2.py --config configs/legacy/eval.glm52local.yaml --n 5
 """
 import sys, json, argparse
 from collections import Counter
@@ -68,5 +68,5 @@ def main(cfg,n):
     print(f"\n判读: {'✓稳' if r>=90 else ('⚠有±1边界抖动' if r>=75 else '✗深挖')}")
 
 if __name__=="__main__":
-    a=argparse.ArgumentParser(); a.add_argument("--config",default="eval.glm52local.yaml"); a.add_argument("--n",type=int,default=5)
+    a=argparse.ArgumentParser(); a.add_argument("--config", default="configs/legacy/eval.glm52local.yaml"); a.add_argument("--n",type=int,default=5)
     args=a.parse_args(); main(args.config,args.n)

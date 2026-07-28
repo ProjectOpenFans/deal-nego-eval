@@ -2,7 +2,7 @@
 """历史 floor(0) 局重判复核 — 量化 judge 误判率。
 取所有历史判0的局，重判，统计仍判0 vs 被纠正到更高档的比例。
 用法：
-  python recheck_floor.py --config eval.glm52local.yaml --n 1 --sample 3
+  python recheck_floor.py --config configs/legacy/eval.glm52local.yaml --n 1 --sample 3
   --n: 每局重判几次（取众数）；--sample: 每个case_arm抽样几局（0=全量）
 """
 import sys, json, glob, os, argparse
@@ -69,7 +69,7 @@ def main(cfg,n,sample):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
-    ap.add_argument("--config",default="eval.glm52local.yaml")
+    ap.add_argument("--config", default="configs/legacy/eval.glm52local.yaml")
     ap.add_argument("--n",type=int,default=1)
     ap.add_argument("--sample",type=int,default=3)
     a=ap.parse_args()

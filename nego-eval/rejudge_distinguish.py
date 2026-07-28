@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """M6 区分度测试 — 喂各档代表局，各重判N次，看能否拉开、是否混档。
 用法：
-  python rejudge_distinguish.py --n 5 --config eval.glm52local.yaml
+  python rejudge_distinguish.py --n 5 --config configs/legacy/eval.glm52local.yaml
 各档代表局在下面 SPECS 里写死（可改）。
 """
 import sys, json, statistics, argparse
@@ -57,6 +57,6 @@ def main(n, cfg):
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--n",type=int,default=5)
-    ap.add_argument("--config",default="eval.glm52local.yaml")
+    ap.add_argument("--config", default="configs/legacy/eval.glm52local.yaml")
     a=ap.parse_args()
     main(a.n,a.config)

@@ -8,7 +8,7 @@
   python rejudge.py --mode m11 --case R4P9 --episode 路径/xxx_episode.json
 
   # M6 稳定性：同一局重判 N 次
-  python rejudge.py --mode m6 --case R4P9 --episode 路径/xxx_episode.json --n 10 --config eval.glm52local.yaml
+  python rejudge.py --mode m6 --case R4P9 --episode 路径/xxx_episode.json --n 10 --config configs/legacy/eval.glm52local.yaml
 """
 import sys, json, statistics, argparse
 from collections import Counter
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     ap.add_argument("--case", required=True)
     ap.add_argument("--episode", required=True)
     ap.add_argument("--n", type=int, default=10)
-    ap.add_argument("--config", default="eval.glm52local.yaml")
+    ap.add_argument("--config", default="configs/legacy/eval.glm52local.yaml")
     args = ap.parse_args()
     if args.mode == "m11":
         check_m11(args.case, args.episode)

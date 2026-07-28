@@ -1,0 +1,79 @@
+# Canonical v2 experiment configuration.
+# Phase 1 defines this contract; Phase 2 wires it to `python -m negoeval.cli --config`.
+version: 2
+
+experiment:
+  name: clean-glm52-qwen36
+  mode: live
+  cases:
+    # Paths are resolved relative to this YAML file.
+    directory: ../../cases
+    include: ["*"]
+    exclude: []
+  arms: [clean]
+  runs_per_case: 1
+  workers: 8
+  resume: true
+  keep_trace: false
+  output_dir: ../results/clean-glm52-qwen36
+
+# Named model connections. A role refers to one of these names and may override
+# generation fields locally. Secrets are environment-variable names, never keys.
+models:
+  glm52:
+    adapter: openai_compatible
+    base_url: https://open.bigmodel.cn/api/paas/v4
+    api_key_env: ZHIPU_API_KEY
+    model: glm-5.2
+    temperature: 0.3
+    max_tokens: 8192
+    extra:
+      extra_body:
+        thinking:
+          type: enabled
+
+  qwen36:
+    adapter: openai_compatible
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key_env: QWEN_API_KEY
+    model: qwen3.6
+    temperature: 0.3
+    max_tokens: 8192
+    extra: {}
+
+# `case.meta.side` chooses the AUT negotiator and the opposing counterparty:
+#   sell -> seller_negotiator vs buyer_counterparty
+#   buy  -> buyer_negotiator  vs seller_counterparty
+roles:
+  buyer_negotiator:
+    model: glm52
+  seller_negotiator:
+    model: glm52
+  buyer_counterparty:
+    model: qwen36
+  seller_counterparty:
+    model: qwen36
+  offer_extractor:
+    model: qwen36
+    temperature: 0.0
+
+# Deterministic metrics do not call an LLM. LLM-graded metrics inherit
+# `default`; any metric can select a different named model independently.
+judges:
+  default:
+    model: qwen36
+    temperature: 0.0
+    repeats: 3
+  metrics:
+    M2:
+      model: qwen36
+      repeats: 3
+    M6:
+      model: qwen36
+      repeats: 3
+    M11:
+      model: qwen36
+      repeats: 3
+    M12:
+      model: qwen36
+      repeats: 3

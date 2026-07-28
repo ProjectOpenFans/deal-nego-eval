@@ -1,8 +1,9 @@
 # nego-eval
 
-Negotiation-agent benchmark. Drives a local broker single-side turn as the
-agent-under-test against our own counterparty sim, and grades the result with
-metrics **M1–M12** per `../case_spec.md`. Runs `../cases/P*.jsonc`.
+Negotiation-agent benchmark. It drives a buyer or seller negotiator against a
+counterparty simulator and grades the result with metrics **M1–M12** per
+`../case_spec.md`. The current evaluation bank is `../cases/*.jsonc`; frozen
+P1-P6 regression fixtures live in `../cases/archive/`.
 
 The benchmark is self-contained: it does not import or require
 `../openfans-agents`.
@@ -22,6 +23,9 @@ negoeval/
   batch.py  cli.py
 skills/                   # local negotiation skill markdown files
 tests/                    # stub e2e, grader GoldRuns, sim fidelity
+configs/                  # canonical v2 YAML plus legacy v1 configs
+docs/                     # architecture and refactor notes
+archive/                  # versioned historical logs/results/source snapshots
 ```
 
 ## Setup
@@ -41,10 +45,26 @@ python -m negoeval.cli --provider stub --skills both --case all --out results
 
 Each run writes one `EvaluationResult` JSON (`<case>__skills-<on|off>__<run>.json`) and prints a CaseReport table.
 
-## Live mode
-Uses the official `openai` SDK against OpenAI-compatible endpoints
-(StepFun / Qwen / GLM / DeepSeek). Per-provider presets live in
-`negoeval/llm/liveconfig.py`.
+## YAML refactor
+
+The canonical configuration is
+`configs/eval.clean.glm52-qwen36.yaml`. It defines the experiment and routes
+buyer negotiator, seller negotiator, both counterparties, offer extraction,
+and judges independently.
+
+Phase 1 freezes that contract. Direct execution with:
+
+```bash
+python -m negoeval.cli --config configs/eval.clean.glm52-qwen36.yaml
+```
+
+is implemented in Phase 2. Until then, the legacy CLI below remains the
+executable path.
+
+## Legacy live mode
+
+Uses the official `openai` SDK against OpenAI-compatible endpoints. Per-provider
+presets live in `negoeval/llm/liveconfig.py`.
 
 1. Put keys in `nego-eval/.env` (copy `.env.example`):
    ```
@@ -53,8 +73,9 @@ Uses the official `openai` SDK against OpenAI-compatible endpoints
    ZHIPU_API_KEY=...
    DEEPSEEK_API_KEY=...
    ```
-2. Pick providers in `eval.config.yaml` (`agent` = model-under-test, `aux` = fixed neutral
-   for sim + M2/M6 judges + offer-extractor):
+2. For the pre-refactor runner, copy
+   `configs/legacy/eval.config.example.yaml` to `eval.config.yaml`. Its `agent`
+   slot is the model-under-test and `aux` is shared by sim, judge, and extractor:
    ```yaml
    agent: { provider: deepseek_flash }   # stepfun | qwen | glm | deepseek_flash | deepseek_pro
    aux:   { provider: glm }
@@ -64,12 +85,8 @@ Uses the official `openai` SDK against OpenAI-compatible endpoints
    python -m negoeval.cli --provider live --skills both --case all --out results
    ```
 
-- Provider presets (base_url + model + `extra_create_kwargs`): `stepfun` (`step-3.7-flash`,
-  `reasoning_effort: low`), `qwen` (`qwen3.7-max`), `glm` (`glm-5.1`, `thinking: enabled`),
-  `deepseek` / `deepseek_flash` (`deepseek-v4-flash`, `thinking: enabled`), and
-  `deepseek_pro` (`deepseek-v4-pro`, `thinking: enabled`). Use `deepseek_pro` only when
-  you want the higher-cost Pro model.
-  Override per block with `model:` / `temperature:` / `thinking:` / `reasoning_effort:`.
+- These `agent` / `aux` configs are retained only for backwards compatibility
+  during the refactor.
 - The agent runs through `negoeval.broker.runner.LocalBrokerRunner`; all LLM calls go
   through the OpenAI SDK provider.
 - To benchmark *agent vs baseline*: swap only `agent.provider`, keep `aux` fixed, diff the CaseReports.
