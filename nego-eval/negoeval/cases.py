@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -69,6 +69,7 @@ class CaseFile(BaseModel):
     meta: Dict[str, Any] = Field(default_factory=dict)
     input: EpisodeInput
     fixture: Dict[str, Any] = Field(default_factory=dict)
+    source_path: Optional[str] = Field(default=None, exclude=True)
 
     @property
     def case_id(self) -> str:
@@ -83,7 +84,9 @@ class CaseFile(BaseModel):
 def load_case(path: str | Path) -> CaseFile:
     path = Path(path)
     raw = json.loads(strip_jsonc(path.read_text(encoding="utf-8")))
-    return CaseFile.model_validate(raw)
+    case = CaseFile.model_validate(raw)
+    case.source_path = str(path.resolve())
+    return case
 
 
 def discover_cases(cases_dir: str | Path | None = None) -> List[Path]:

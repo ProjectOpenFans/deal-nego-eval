@@ -32,28 +32,48 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "extra": {"reasoning_effort": "low"},
     },
     "qwen": {
-        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "model": "qwen3.6",
-        "key_env": ["QWEN_API_KEY", "DASHSCOPE_API_KEY"],
+        "base_url": "http://192.168.55.237:8000/v1",
+        "model": "Qwen3.6-27B-NVFP4",
+        "key_env": ["COOLWEI_API_KEY", "GLM_LOCAL_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 8192,
-        "extra": {},
+        "extra": {
+            "extra_body": {
+                "chat_template_kwargs": {"enable_thinking": False}
+            }
+        },
+        "trust_env": False,
     },
     "glm": {
-        "base_url": "https://open.bigmodel.cn/api/paas/v4",
-        "model": "glm-5.2",
-        "key_env": ["ZHIPU_API_KEY", "GLM_API_KEY"],
+        "base_url": "http://192.168.55.233:8000/v1",
+        "model": "GLM-5.2-NVFP4",
+        "key_env": ["COOLWEI_API_KEY", "GLM_LOCAL_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 4096,
-        "extra": {"extra_body": {"thinking": {"type": "enabled"}}},
+        "extra": {},
+        "trust_env": False,
     },
     "glm_local": {
-        "base_url": "https://ai.coolwei.com/models/glm_code/openai/v1",
-        "model": "GLM-5.2-W4AFP8",
+        "base_url": "http://192.168.55.233:8000/v1",
+        "model": "GLM-5.2-NVFP4",
         "key_env": ["GLM_LOCAL_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 4096,
         "extra": {},
+        "trust_env": False,
+    },
+    "qwen_local": {
+        "base_url": "http://192.168.55.237:8000/v1",
+        "model": "Qwen3.6-27B-NVFP4",
+        "key_env": ["COOLWEI_API_KEY", "GLM_LOCAL_API_KEY"],
+        "temperature": 0.3,
+        "max_tokens": 8192,
+        "extra": {
+            "extra_body": {
+                "chat_template_kwargs": {"enable_thinking": False}
+            }
+        },
+        "trust_env": False,
     },
     "kimi": {
         "base_url": "https://api.moonshot.cn/v1",
@@ -122,6 +142,10 @@ class ProviderSpec:
     # V2 role configs own generation temperature. Legacy presets leave this
     # false so call-site temperatures retain their historical behavior.
     force_temperature: bool = False
+    # LAN vLLM routes must bypass workstation HTTP/SOCKS proxy variables.
+    trust_env: bool = True
+    timeout_seconds: float = 180.0
+    max_retries: int = 0
 
 
 @dataclass
@@ -188,6 +212,9 @@ def _spec(block: Dict[str, Any], dotenv: Dict[str, str]) -> ProviderSpec:
         extra=extra,
         default_headers=headers,
         omit_temperature=block.get("omit_temperature", preset.get("omit_temperature", False)),
+        trust_env=block.get("trust_env", preset.get("trust_env", True)),
+        timeout_seconds=float(block.get("timeout_seconds", preset.get("timeout_seconds", 180.0))),
+        max_retries=int(block.get("max_retries", preset.get("max_retries", 0))),
     )
 
 

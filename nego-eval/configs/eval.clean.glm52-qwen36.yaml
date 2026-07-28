@@ -3,7 +3,7 @@
 version: 2
 
 experiment:
-  name: clean-glm52-qwen36
+  name: clean-coolwei-glm52-qwen36
   mode: live
   cases:
     # Paths are resolved relative to this YAML file.
@@ -11,35 +11,41 @@ experiment:
     include: ["*"]
     exclude: []
   arms: [clean]
-  runs_per_case: 1
-  workers: 8
+  runs_per_case: 3
+  workers: 4
   resume: true
   keep_trace: false
-  output_dir: ../results/clean-glm52-qwen36
+  output_dir: ../results/clean-coolwei-glm52-qwen36
 
 # Named model connections. A role refers to one of these names and may override
 # generation fields locally. Secrets are environment-variable names, never keys.
 models:
   glm52:
     adapter: openai_compatible
-    base_url: https://open.bigmodel.cn/api/paas/v4
-    api_key_env: ZHIPU_API_KEY
-    model: glm-5.2
+    base_url: http://192.168.55.233:8000/v1
+    api_key_env: [COOLWEI_API_KEY, GLM_LOCAL_API_KEY]
+    model: GLM-5.2-NVFP4
     temperature: 0.3
-    max_tokens: 8192
-    extra:
-      extra_body:
-        thinking:
-          type: enabled
+    max_tokens: 4096
+    extra: {}
+    trust_env: false
+    timeout_seconds: 180
+    max_retries: 0
 
   qwen36:
     adapter: openai_compatible
-    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-    api_key_env: QWEN_API_KEY
-    model: qwen3.6
+    base_url: http://192.168.55.237:8000/v1
+    api_key_env: [COOLWEI_API_KEY, GLM_LOCAL_API_KEY]
+    model: Qwen3.6-27B-NVFP4
     temperature: 0.3
-    max_tokens: 8192
-    extra: {}
+    max_tokens: 4096
+    extra:
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false
+    trust_env: false
+    timeout_seconds: 180
+    max_retries: 0
 
 # `case.meta.side` chooses the AUT negotiator and the opposing counterparty:
 #   sell -> seller_negotiator vs buyer_counterparty
@@ -47,15 +53,20 @@ models:
 roles:
   buyer_negotiator:
     model: glm52
+    max_tokens: 2048
   seller_negotiator:
     model: glm52
+    max_tokens: 2048
   buyer_counterparty:
     model: qwen36
+    max_tokens: 2048
   seller_counterparty:
     model: qwen36
+    max_tokens: 2048
   offer_extractor:
     model: qwen36
     temperature: 0.0
+    max_tokens: 1024
 
 # Deterministic metrics do not call an LLM. LLM-graded metrics inherit
 # `default`; any metric can select a different named model independently.
@@ -63,17 +74,26 @@ judges:
   default:
     model: qwen36
     temperature: 0.0
+    max_tokens: 1536
     repeats: 3
   metrics:
     M2:
       model: qwen36
+      temperature: 0.0
+      max_tokens: 1536
       repeats: 3
     M6:
       model: qwen36
+      temperature: 0.0
+      max_tokens: 1536
       repeats: 3
     M11:
       model: qwen36
+      temperature: 0.0
+      max_tokens: 1536
       repeats: 3
     M12:
       model: qwen36
+      temperature: 0.0
+      max_tokens: 1536
       repeats: 3

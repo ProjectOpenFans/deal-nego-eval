@@ -20,12 +20,12 @@ def main(argv=None) -> int:
         help="run directly from a v2 YAML experiment configuration",
     )
     p.add_argument("--case", default="all", help="case id(s), comma-separated, or 'all'")
-    p.add_argument("--skills", default="both", help="on|off|both|clean, or comma list e.g. clean,on")
+    p.add_argument("--skills", default=None, help="on|off|both|clean, or comma list e.g. clean,on")
     p.add_argument("--provider", default="stub", choices=["stub", "live"])
     p.add_argument("--profile", default="par", choices=["par", "cave", "leak"], help="stub agent behavior")
-    p.add_argument("--runs", type=int, default=1)
+    p.add_argument("--runs", type=int, default=None, help="override YAML runs_per_case")
     # === PARALLEL_PATCH ===
-    p.add_argument("--workers", type=int, default=16, help="parallel workers")
+    p.add_argument("--workers", type=int, default=None, help="override YAML parallel workers")
     p.add_argument("--out", default="results", help="output directory for EvaluationResult json")
     p.add_argument("--cases-dir", default=None, help="override cases directory")
     p.add_argument(
@@ -68,15 +68,17 @@ def main(argv=None) -> int:
         report = run_batch(
             out_dir=out_dir,
             cases_dir=str(eval_config.cases_dir),
-            case_filter="all",
+            case_filter=args.case,
             case_include=experiment.cases.include,
             case_exclude=experiment.cases.exclude,
-            skills=",".join(experiment.arms),
+            skills=args.skills or ",".join(experiment.arms),
             mode=experiment.mode,
-            runs=experiment.runs_per_case,
-            live_config=eval_config if experiment.mode == "live" else None,
+            runs=args.runs or experiment.runs_per_case,
+            # Stub mode ignores live providers but still uses the YAML's repeat
+            # counts and writes the same provenance contract as live runs.
+            live_config=eval_config,
             keep_trace=experiment.keep_trace,
-            workers=experiment.workers,
+            workers=args.workers or experiment.workers,
             resume=experiment.resume,
             experiment_name=experiment.name,
         )
@@ -113,13 +115,13 @@ def main(argv=None) -> int:
         out_dir=args.out,
         cases_dir=args.cases_dir,
         case_filter=args.case,
-        skills=args.skills,
+        skills=args.skills or "both",
         mode=args.provider,
-        runs=args.runs,
+        runs=args.runs or 1,
         agent_profile=args.profile,
         live_config=live_config,
         keep_trace=args.keep_trace,
-        workers=args.workers,
+        workers=args.workers or 16,
     )
 
     print(format_table(report.reports))

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-07-28T09:16:00Z",
+  "connections": [
+    {
+      "id": "glm52",
+      "label": "GLM-5.2",
+      "provider": "内网 vLLM",
+      "base_url": "http://192.168.55.233:8000/v1",
+      "model": "GLM-5.2-NVFP4",
+      "status": "verified",
+      "detail": "/v1/models 与 /v1/chat/completions 均返回 HTTP 200；SDK 设置 trust_env=false 直连。"
+    },
+    {
+      "id": "qwen36",
+      "label": "Qwen3.6 27B",
+      "provider": "内网 vLLM",
+      "base_url": "http://192.168.55.237:8000/v1",
+      "model": "Qwen3.6-27B-NVFP4",
+      "status": "verified",
+      "detail": "/v1/models 与 /v1/chat/completions 均返回 HTTP 200；SDK 设置 trust_env=false 直连。"
+    }
+  ]
+}

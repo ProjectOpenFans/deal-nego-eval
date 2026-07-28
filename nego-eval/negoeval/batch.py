@@ -120,7 +120,30 @@ def run_batch(
                     live_config=live_config,
                     agent_profile=agent_profile,
                 )
-                res = evaluate(cf, out, run_id=run_id, judge_provider=judge)
+                repeats = (
+                    {
+                        metric: live_config.judge_repeats(metric)
+                        for metric in ("M2", "M6", "M11", "M12")
+                    }
+                    if hasattr(live_config, "judge_repeats")
+                    else None
+                )
+                config_extra = (
+                    {
+                        "experiment_name": live_config.experiment.name,
+                        "provenance": live_config.run_provenance(cf),
+                    }
+                    if hasattr(live_config, "run_provenance")
+                    else None
+                )
+                res = evaluate(
+                    cf,
+                    out,
+                    run_id=run_id,
+                    judge_provider=judge,
+                    judge_repeats=repeats,
+                    config_extra=config_extra,
+                )
                 with _write_lock:
                     write_result(res, out_dir)
                     write_episode(out, cf.case_id, sk, run_id, out_dir, keep_trace=keep_trace)
@@ -163,5 +186,7 @@ def run_batch(
         "resume": resume,
         "experiment_name": experiment_name,
     }
+    if hasattr(live_config, "run_provenance"):
+        batch_config["provenance"] = live_config.run_provenance()
     write_summary(report.results, report.errors, batch_config, out_dir)
     return report

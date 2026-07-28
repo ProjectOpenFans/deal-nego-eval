@@ -34,5 +34,9 @@ def build_provider(
             default_headers=getattr(spec, "default_headers", None),
             omit_temperature=getattr(spec, "omit_temperature", False),
             force_temperature=getattr(spec, "force_temperature", False),
+            trust_env=getattr(spec, "trust_env", True),
+            timeout_seconds=getattr(spec, "timeout_seconds", 180.0),
+            max_retries=getattr(spec, "max_retries", 0),
+            role=role,
         )
     raise ValueError(f"unknown provider mode: {mode!r}")

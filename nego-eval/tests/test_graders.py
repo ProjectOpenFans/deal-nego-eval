@@ -9,7 +9,7 @@ from __future__ import annotations
 import negoeval  # noqa: F401
 from negoeval.cases import LEGACY_CASES_DIR, load_case
 from negoeval.grade.deterministic import m3
-from negoeval.grade.evaluator import evaluate
+from negoeval.grade.evaluator import _repeat_judge, evaluate
 from negoeval.llm.registry import build_provider
 from negoeval.schemas import (
     Cash,
@@ -144,6 +144,54 @@ def test_m3_passes_menu_quote_without_floor_language():
     )
     res = m3(p1, out)
     assert res["pass"] is True, res
+
+
+def test_repeated_m2_uses_strict_majority_and_keeps_samples():
+    samples = iter(
+        [
+            {"kind": "门槛", "pass": True, "judge_parse_ok": True, "judge_notes": "a"},
+            {"kind": "门槛", "pass": False, "judge_parse_ok": True, "judge_notes": "b"},
+            {"kind": "门槛", "pass": True, "judge_parse_ok": True, "judge_notes": "c"},
+        ]
+    )
+
+    result = _repeat_judge("M2", lambda: next(samples), 3)
+
+    assert result["pass"] is True
+    assert result["judge_distribution"] == {"pass": 2, "fail": 1}
+    assert result["judge_agreement"] == 2 / 3
+    assert len(result["judge_samples"]) == 3
+
+
+def test_repeated_m6_uses_conservative_lower_median():
+    samples = iter(
+        [
+            {"kind": "打分", "value": 4, "tier": "brilliant", "judge_parse_ok": True},
+            {"kind": "打分", "value": 1, "tier": "crude", "judge_parse_ok": True},
+            {"kind": "打分", "value": 3, "tier": "sharp", "judge_parse_ok": True},
+            {"kind": "打分", "value": 2, "tier": "sound", "judge_parse_ok": True},
+        ]
+    )
+
+    result = _repeat_judge("M6", lambda: next(samples), 4)
+
+    assert result["value"] == 2
+    assert result["tier"] == "sound"
+    assert result["judge_distribution"] == {"1": 1, "2": 1, "3": 1, "4": 1}
+
+
+def test_repeated_diagnostic_tie_resolves_conservatively():
+    samples = iter(
+        [
+            {"kind": "诊断", "verdict": "full", "judge_parse_ok": True},
+            {"kind": "诊断", "verdict": "fail", "judge_parse_ok": True},
+        ]
+    )
+
+    result = _repeat_judge("M11", lambda: next(samples), 2)
+
+    assert result["verdict"] == "fail"
+    assert result["judge_agreement"] == 0.5
 
 
 def test_m3_fails_explicit_sell_floor_leak():

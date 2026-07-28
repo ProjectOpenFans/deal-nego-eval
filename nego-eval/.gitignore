@@ -2,7 +2,9 @@ results/
 .env
 .venv/
 .DS_Store
+._*
 
 # Ad-hoc runtime material belongs here; versioned historical artifacts live
 # under archive/ and remain visible to Git.
 archive/local/
+configs/*.local.yaml

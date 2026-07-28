@@ -32,6 +32,8 @@ ENV/
 
 # Python packaging
 build/
+!nego-eval/viewer/build/
+!nego-eval/viewer/build/sites-vite-plugin.ts
 dist/
 *.egg-info/
 .eggs/

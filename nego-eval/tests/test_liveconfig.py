@@ -1,10 +1,13 @@
 from negoeval.llm.liveconfig import _spec
 
 
-def test_qwen_preset_targets_qwen36():
-    spec = _spec({"provider": "qwen"}, {"QWEN_API_KEY": "test-key"})
+def test_qwen_preset_targets_coolwei_qwen36():
+    spec = _spec({"provider": "qwen"}, {"COOLWEI_API_KEY": "test-key"})
 
-    assert spec.model == "qwen3.6"
+    assert spec.base_url == "http://192.168.55.237:8000/v1"
+    assert spec.model == "Qwen3.6-27B-NVFP4"
+    assert spec.extra["extra_body"]["chat_template_kwargs"]["enable_thinking"] is False
+    assert spec.trust_env is False
 
 
 def test_deepseek_default_uses_official_flash_api_and_key_env():
