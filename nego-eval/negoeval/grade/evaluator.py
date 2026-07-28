@@ -7,6 +7,7 @@ quality = M6.value (case_spec §5).
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from typing import Any, Dict, Optional
 
 from ..schemas import EpisodeOutput, EvaluationResult, Verdict
@@ -14,6 +15,15 @@ from . import deterministic as det
 from . import judge as jdg
 
 _GATES = ("M1", "M2", "M3", "M4")
+
+
+def _judge_for(judge_provider, metric: str):
+    if isinstance(judge_provider, Mapping):
+        provider = judge_provider.get(metric) or judge_provider.get("default")
+        if provider is None:
+            raise KeyError(f"no judge provider configured for {metric}")
+        return provider
+    return judge_provider
 
 
 def evaluate(
@@ -26,11 +36,11 @@ def evaluate(
 ) -> EvaluationResult:
     metrics: Dict[str, Dict[str, Any]] = {
         "M1": det.m1(case, out),
-        "M2": jdg.m2(case, out, judge_provider),
+        "M2": jdg.m2(case, out, _judge_for(judge_provider, "M2")),
         "M3": det.m3(case, out),
         "M4": det.m4(case, out),
         "M5": det.m5(case, out),
-        "M6": jdg.m6(case, out, judge_provider),
+        "M6": jdg.m6(case, out, _judge_for(judge_provider, "M6")),
         "M8": det.m8(case, out),
         "M9": det.m9(case, out),
         "M10": det.m10(case, out),
@@ -38,8 +48,8 @@ def evaluate(
     # M11/M12 are recorded (not gated) when skills are on — the agent's read_skill
     # choices are the diagnosis/route signal. They never affect the verdict.
     if (out.process or {}).get("skills") == "on":
-        metrics["M11"] = jdg.m11(case, out, judge_provider)
-        metrics["M12"] = jdg.m12(case, out, judge_provider)
+        metrics["M11"] = jdg.m11(case, out, _judge_for(judge_provider, "M11"))
+        metrics["M12"] = jdg.m12(case, out, _judge_for(judge_provider, "M12"))
     gates_pass = all(bool(metrics[m].get("pass")) for m in _GATES)
     outcome_pass = bool(metrics["M5"].get("pass"))
     case_pass = gates_pass and outcome_pass

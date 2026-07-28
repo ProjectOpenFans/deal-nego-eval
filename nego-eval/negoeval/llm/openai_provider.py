@@ -30,6 +30,7 @@ class OpenAISDKProvider:
         extra_create_kwargs: Optional[Dict[str, Any]] = None,
         default_headers: Optional[Dict[str, str]] = None,
         omit_temperature: bool = False,
+        force_temperature: bool = False,
     ):
         from openai import OpenAI
 
@@ -39,6 +40,7 @@ class OpenAISDKProvider:
         self.max_tokens = max_tokens
         self.extra = dict(extra_create_kwargs or {})
         self.omit_temperature = omit_temperature
+        self.force_temperature = force_temperature
         # === _ds_fix_messages ===
         self._is_deepseek = ('deepseek' in (base_url or '').lower()) or ('deepseek' in (model or '').lower())
 
@@ -58,7 +60,7 @@ class OpenAISDKProvider:
     def _temperature_kwargs(self, temperature: Optional[float]) -> Dict[str, float]:
         if self.omit_temperature:
             return {}
-        value = self.temperature if temperature is None else temperature
+        value = self.temperature if self.force_temperature or temperature is None else temperature
         return {} if value is None else {"temperature": value}
 
     def chat_completion(self, messages, temperature=None, max_tokens=None, enable_thinking=None) -> str:

@@ -45,23 +45,30 @@ python -m negoeval.cli --provider stub --skills both --case all --out results
 
 Each run writes one `EvaluationResult` JSON (`<case>__skills-<on|off>__<run>.json`) and prints a CaseReport table.
 
-## YAML refactor
+## YAML runner
 
 The canonical configuration is
 `configs/eval.clean.glm52-qwen36.yaml`. It defines the experiment and routes
 buyer negotiator, seller negotiator, both counterparties, offer extraction,
 and judges independently.
 
-Phase 1 freezes that contract. Direct execution with:
-
 ```bash
 python -m negoeval.cli --config configs/eval.clean.glm52-qwen36.yaml
 ```
 
-is implemented in Phase 2. Until then, the legacy CLI below remains the
-executable path.
+When `--config` is present, the YAML is the source of truth for case selection,
+arms, repeats per case, worker count, output path, and live model routing.
+Relative paths are resolved from the YAML's directory.
 
-## Legacy live mode
+For a sell-side case, the runtime pairs `seller_negotiator` with
+`buyer_counterparty`; for a buy-side case it pairs `buyer_negotiator` with
+`seller_counterparty`. `offer_extractor`, the default judge, and per-metric
+judge overrides are resolved separately.
+
+Judge `repeats` is part of the v2 contract but repeat execution/aggregation is
+introduced in Phase 3. Phase 2 performs one judge call per judged metric.
+
+## Legacy CLI
 
 Uses the official `openai` SDK against OpenAI-compatible endpoints. Per-provider
 presets live in `negoeval/llm/liveconfig.py`.

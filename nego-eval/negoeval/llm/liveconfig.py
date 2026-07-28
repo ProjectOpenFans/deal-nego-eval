@@ -33,7 +33,7 @@ PRESETS: Dict[str, Dict[str, Any]] = {
     },
     "qwen": {
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "model": "qwen3.7-max",
+        "model": "qwen3.6",
         "key_env": ["QWEN_API_KEY", "DASHSCOPE_API_KEY"],
         "temperature": 0.3,
         "max_tokens": 8192,
@@ -119,6 +119,9 @@ class ProviderSpec:
     extra: Dict[str, Any] = field(default_factory=dict)
     default_headers: Dict[str, str] = field(default_factory=dict)
     omit_temperature: bool = False
+    # V2 role configs own generation temperature. Legacy presets leave this
+    # false so call-site temperatures retain their historical behavior.
+    force_temperature: bool = False
 
 
 @dataclass

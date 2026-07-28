@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from fnmatch import fnmatchcase
+from pathlib import Path
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -26,11 +28,59 @@ class BatchReport:
         return aggregate(self.results)
 
 
-def _select(cases: List[CaseFile], case_filter: str) -> List[CaseFile]:
-    if case_filter in ("all", "", None):
-        return cases
-    wanted = {c.strip() for c in case_filter.split(",")}
-    return [c for c in cases if c.case_id in wanted]
+def _select(
+    cases: List[CaseFile],
+    case_filter: str,
+    case_include: Optional[List[str]] = None,
+    case_exclude: Optional[List[str]] = None,
+) -> List[CaseFile]:
+    selected = cases
+    if case_filter not in ("all", "", None):
+        wanted = {c.strip() for c in case_filter.split(",")}
+        selected = [case for case in selected if case.case_id in wanted]
+    if case_include is not None:
+        selected = [
+            case
+            for case in selected
+            if any(fnmatchcase(case.case_id, pattern) for pattern in case_include)
+        ]
+    if case_exclude:
+        selected = [
+            case
+            for case in selected
+            if not any(fnmatchcase(case.case_id, pattern) for pattern in case_exclude)
+        ]
+    return selected
+
+
+def _skill_modes(skills: str) -> List[str]:
+    if skills == "both":
+        return ["on", "off"]
+    if "," in skills:
+        return [item.strip() for item in skills.split(",")]
+    return [skills]
+
+
+def _build_judges(case, *, mode: str, live_config, agent_profile: str):
+    if mode == "live" and hasattr(live_config, "judge_spec"):
+        return {
+            metric: build_provider(
+                "judge",
+                mode=mode,
+                case=case,
+                agent_profile=agent_profile,
+                llm_config=live_config.judge_spec(metric),
+            )
+            for metric in ("M2", "M6", "M11", "M12")
+        }
+    judge_config = live_config.aux if (mode == "live" and live_config) else None
+    return build_provider(
+        "judge",
+        mode=mode,
+        case=case,
+        agent_profile=agent_profile,
+        llm_config=judge_config,
+    )
 
 
 def run_batch(
@@ -45,27 +95,31 @@ def run_batch(
     live_config: Any = None,
     keep_trace: bool = False,
     workers: int = 16,
+    case_include: Optional[List[str]] = None,
+    case_exclude: Optional[List[str]] = None,
+    resume: bool = True,
+    experiment_name: Optional[str] = None,
 ) -> BatchReport:
-    cases = _select(load_all(cases_dir), case_filter)
-    skill_modes = (["on", "off"] if skills == "both" else [x.strip() for x in skills.split(",")] if "," in skills else [skills])
-    judge_cfg = live_config.aux if (mode == "live" and live_config) else None
+    cases = _select(load_all(cases_dir), case_filter, case_include, case_exclude)
+    skill_modes = _skill_modes(skills)
     report = BatchReport()
-    # === PARALLEL_PATCH ===
     _write_lock = threading.Lock()
 
     def _one(cf, sk, i):
         run_id = f"{sk}-r{i}"
-        # === RESUME_PATCH ===
-        from pathlib import Path as _P
-        if (_P(out_dir) / f"{cf.case_id}__skills-{sk}__{run_id}.json").exists():
+        if resume and (Path(out_dir) / f"{cf.case_id}__skills-{sk}__{run_id}.json").exists():
             return None
-        # === RETRY_PATCH ===
-        _max_attempts = 3
-        _last_exc = None
-        for _attempt in range(_max_attempts):
+        max_attempts = 3
+        last_exception = None
+        for attempt in range(max_attempts):
             try:
                 out = run_episode(cf, mode=mode, skills=sk, agent_profile=agent_profile, live_config=live_config)
-                judge = build_provider("judge", mode=mode, case=cf, agent_profile=agent_profile, llm_config=judge_cfg)
+                judge = _build_judges(
+                    cf,
+                    mode=mode,
+                    live_config=live_config,
+                    agent_profile=agent_profile,
+                )
                 res = evaluate(cf, out, run_id=run_id, judge_provider=judge)
                 with _write_lock:
                     write_result(res, out_dir)
@@ -73,11 +127,14 @@ def run_batch(
                     report.results.append(res)
                 return None
             except Exception as exc:
-                _last_exc = exc
-                if _attempt < _max_attempts - 1:
-                    time.sleep(5 * (3 ** _attempt))  # 5s, 15s, 45s 退避
+                last_exception = exc
+                if attempt < max_attempts - 1:
+                    time.sleep(5 * (3 ** attempt))
                     continue
-        return f"{cf.case_id} skills={sk} run={i} (after {_max_attempts} attempts): {_last_exc!r}"
+        return (
+            f"{cf.case_id} skills={sk} run={i} "
+            f"(after {max_attempts} attempts): {last_exception!r}"
+        )
 
     tasks = [(cf, sk, i) for cf in cases for sk in skill_modes for i in range(runs)]
     if workers <= 1 or len(tasks) <= 1:
@@ -101,6 +158,10 @@ def run_batch(
         "runs": runs,
         "agent_profile": agent_profile,
         "keep_trace": keep_trace,
+        "case_include": case_include,
+        "case_exclude": case_exclude,
+        "resume": resume,
+        "experiment_name": experiment_name,
     }
     write_summary(report.results, report.errors, batch_config, out_dir)
     return report

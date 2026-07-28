@@ -33,5 +33,6 @@ def build_provider(
             extra_create_kwargs=spec.extra,
             default_headers=getattr(spec, "default_headers", None),
             omit_temperature=getattr(spec, "omit_temperature", False),
+            force_temperature=getattr(spec, "force_temperature", False),
         )
     raise ValueError(f"unknown provider mode: {mode!r}")

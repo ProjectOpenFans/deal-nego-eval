@@ -1,6 +1,12 @@
 from negoeval.llm.liveconfig import _spec
 
 
+def test_qwen_preset_targets_qwen36():
+    spec = _spec({"provider": "qwen"}, {"QWEN_API_KEY": "test-key"})
+
+    assert spec.model == "qwen3.6"
+
+
 def test_deepseek_default_uses_official_flash_api_and_key_env():
     spec = _spec({"provider": "deepseek"}, {"DEEPSEEK_API_KEY": "test-key"})
 

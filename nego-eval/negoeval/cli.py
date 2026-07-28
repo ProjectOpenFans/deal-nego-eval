@@ -14,6 +14,11 @@ from .results.writer import format_table
 
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="negoeval", description="Negotiation-agent benchmark")
+    p.add_argument(
+        "--config",
+        default=None,
+        help="run directly from a v2 YAML experiment configuration",
+    )
     p.add_argument("--case", default="all", help="case id(s), comma-separated, or 'all'")
     p.add_argument("--skills", default="both", help="on|off|both|clean, or comma list e.g. clean,on")
     p.add_argument("--provider", default="stub", choices=["stub", "live"])
@@ -35,6 +40,54 @@ def main(argv=None) -> int:
         help="also write *.trace.json with full broker trace and skill instructions",
     )
     args = p.parse_args(argv)
+
+    if args.config:
+        from .config import load_eval_config
+
+        eval_config = load_eval_config(args.config)
+        experiment = eval_config.experiment
+        if experiment.mode == "live":
+            missing = eval_config.missing_model_names()
+            if missing:
+                print(
+                    f"live mode is missing API key(s) for model connection(s): "
+                    f"{', '.join(missing)}. Set each connection's api_key_env in "
+                    "nego-eval/.env or the environment.",
+                    file=sys.stderr,
+                )
+                return 2
+        print(f"config: {eval_config.source_path}")
+        print(
+            "routes: "
+            + ", ".join(
+                f"{role}={model}"
+                for role, model in eval_config.route_summary().items()
+            )
+        )
+        out_dir = str(eval_config.output_dir)
+        report = run_batch(
+            out_dir=out_dir,
+            cases_dir=str(eval_config.cases_dir),
+            case_filter="all",
+            case_include=experiment.cases.include,
+            case_exclude=experiment.cases.exclude,
+            skills=",".join(experiment.arms),
+            mode=experiment.mode,
+            runs=experiment.runs_per_case,
+            live_config=eval_config if experiment.mode == "live" else None,
+            keep_trace=experiment.keep_trace,
+            workers=experiment.workers,
+            resume=experiment.resume,
+            experiment_name=experiment.name,
+        )
+        print(format_table(report.reports))
+        print(f"\nwrote {len(report.results)} result(s) to {out_dir}")
+        if report.errors:
+            print("\nERRORS:", file=sys.stderr)
+            for error in report.errors:
+                print("  " + error, file=sys.stderr)
+            return 1
+        return 0
 
     live_config = None
     if args.provider == "live":

@@ -19,6 +19,23 @@ from .sim.counterparty import CounterpartySim
 _STATUS = {"settled": "settled", "walk_away": "walked_away", "round_cap": "draft"}
 
 
+def _live_role_specs(case, live_config):
+    """Resolve v2 side-specific roles, with v1 agent/aux compatibility."""
+    if hasattr(live_config, "role_spec"):
+        if case.side == "sell":
+            negotiator_role = "seller_negotiator"
+            counterparty_role = "buyer_counterparty"
+        else:
+            negotiator_role = "buyer_negotiator"
+            counterparty_role = "seller_counterparty"
+        return (
+            live_config.role_spec(negotiator_role),
+            live_config.role_spec(counterparty_role),
+            live_config.role_spec("offer_extractor"),
+        )
+    return live_config.agent, live_config.aux, live_config.aux
+
+
 def run_episode(
     case,
     *,
@@ -34,9 +51,9 @@ def run_episode(
     request, agent_side, sim_side = build_broker_request(inp, side, value_tools_enabled=tools_enabled)
     allowlist = all_skill_names() if skills == "on" else set()
 
-    # Per-role models in live mode: agent = model-under-test; aux = fixed neutral.
-    agent_cfg = live_config.agent if (mode == "live" and live_config) else None
-    aux_cfg = live_config.aux if (mode == "live" and live_config) else None
+    agent_cfg = sim_cfg = extractor_cfg = None
+    if mode == "live" and live_config:
+        agent_cfg, sim_cfg, extractor_cfg = _live_role_specs(case, live_config)
 
     agent = AgentUnderTest(
         request,
@@ -45,10 +62,24 @@ def run_episode(
         prompt_variant=prompt_variant,
     )
     sim = CounterpartySim(
-        case, build_provider("sim", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg)
+        case,
+        build_provider(
+            "sim",
+            mode=mode,
+            case=case,
+            agent_profile=agent_profile,
+            llm_config=sim_cfg,
+        ),
     )
     extractor = OfferExtractor(
-        case, build_provider("extractor", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg)
+        case,
+        build_provider(
+            "extractor",
+            mode=mode,
+            case=case,
+            agent_profile=agent_profile,
+            llm_config=extractor_cfg,
+        ),
     )
 
     turns = []
