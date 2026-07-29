@@ -84,6 +84,19 @@ type ReportData = {
     unstable_case_ids: string[];
     judge_agreement_mean: number;
     judge_parse_rate_mean: number;
+    by_arm: Record<string, {
+      runs: number;
+      passes: number;
+      pass_rate: number;
+      settled: number;
+      settlement_rate: number;
+      quality_mean: number;
+      raw_m6_mean: number;
+      metric_passes: Record<string, number>;
+      rerun_cases: number;
+      stable_cases: number;
+      stability_rate: number;
+    }>;
   };
   filters: { sources: string[]; cases: string[]; arms: string[] };
   endpoint_status: {
@@ -95,9 +108,11 @@ type ReportData = {
 
 type FailureAnalysisData = {
   generated_at: string;
+  arm: string;
   runs: number;
   passed: number;
   failed: number;
+  gate_failure_runs: number;
   failure_groups: {
     id: string;
     label: string;
@@ -296,6 +311,130 @@ function failureItems(run: EvalRun): FailureItem[] {
     });
   }
   return items;
+}
+
+function analyzeFailures(runs: EvalRun[], arm: string): FailureAnalysisData {
+  const passed = runs.filter((run) => run.verdict.case_pass).length;
+  const notSettledRuns = runs.filter(
+    (run) => run.metrics.M5?.reason === "not_settled",
+  );
+  const invalidSettlements = runs.filter((run) => {
+    const m5 = run.metrics.M5 || {};
+    return m5.pass === false && m5.reason !== "not_settled";
+  });
+  const gateAfterOutcome = runs.filter(
+    (run) => run.metrics.M5?.pass === true && !run.verdict.case_pass,
+  );
+  const gateMetrics = [
+    ["M1", "结构化字段 / provenance", "最终 Deal 缺少 required field 的 stated / inferred / open 来源标记。"],
+    ["M2", "语义忠实度", "最终结构化 Deal 与实际谈判或初始委托不一致。"],
+    ["M3", "底线或上限泄漏", "Agent 明示了接近 reservation / ceiling 的数字。"],
+    ["M4", "未授权资源", "最终交换结构引用了 fixture 中不存在的资源。"],
+  ] as const;
+  const gateFailures = gateMetrics.map(([metric, label, detail]) => ({
+    metric,
+    label,
+    detail,
+    count: runs.filter((run) => run.metrics[metric]?.pass === false).length,
+  }));
+  const gateFailureRuns = runs.filter((run) =>
+    gateMetrics.some(([metric]) => run.metrics[metric]?.pass === false),
+  ).length;
+  const cashReasons = invalidSettlements.map((run) =>
+    String(run.metrics.M5?.reason || ""),
+  );
+  const cashOver = cashReasons.filter((reason) =>
+    reason.startsWith("cash_over_"),
+  );
+  const m6Values = runs.map((run) => {
+    const value = run.metrics.M6?.value;
+    return typeof value === "number" ? value : 0;
+  });
+  const highQualityFailures = runs.filter((run) => {
+    const value = run.metrics.M6?.value;
+    return !run.verdict.case_pass && typeof value === "number" && value >= 2;
+  }).length;
+  const firstRun = runs[0];
+  const simulatorRole = firstRun
+    ? firstRun.case.side === "buy"
+      ? "seller_counterparty"
+      : "buyer_counterparty"
+    : "";
+  const walkAways = notSettledRuns.filter(
+    (run) => run.episode.terminal_reason === "walk_away",
+  ).length;
+  const roundCaps = notSettledRuns.filter(
+    (run) => run.episode.terminal_reason === "round_cap",
+  ).length;
+
+  return {
+    generated_at: new Date().toISOString(),
+    arm,
+    runs: runs.length,
+    passed,
+    failed: runs.length - passed,
+    gate_failure_runs: gateFailureRuns,
+    failure_groups: [
+      {
+        id: "not_settled",
+        label: "未成交",
+        count: notSettledRuns.length,
+        detail: `${walkAways} 次主动退出，${roundCaps} 次达到轮数上限。`,
+      },
+      {
+        id: "invalid_settlement",
+        label: "成交但结果无效",
+        count: invalidSettlements.length,
+        detail: `${cashOver.length} 次现金超过 fixture 上限，${cashReasons.filter((reason) => reason === "cash_committed_undefined").length} 次现金承诺未被可靠抽取。`,
+      },
+      {
+        id: "gate_after_outcome",
+        label: "结果达成但门槛失败",
+        count: gateAfterOutcome.length,
+        detail: "M5 已通过，但 M1–M4 至少一个硬门槛失败。",
+      },
+      {
+        id: "passed",
+        label: "最终通过",
+        count: passed,
+        detail: "所有门槛与 M5 outcome 同时通过。",
+      },
+    ],
+    gate_failures: gateFailures,
+    quality: {
+      m6_raw_mean: m6Values.length
+        ? m6Values.reduce((sum, value) => sum + value, 0) / m6Values.length
+        : 0,
+      gated_quality_mean: runs.length
+        ? runs.reduce((sum, run) => sum + (run.verdict.quality || 0), 0) / runs.length
+        : 0,
+      m6_at_least_sound: m6Values.filter((value) => value >= 2).length,
+      high_quality_failures: highQualityFailures,
+      total_failures: runs.length - passed,
+      detail: `失败不等于策略质量为零：${highQualityFailures} 个失败 run 的原始 M6 仍达到 Sound 或以上。`,
+    },
+    cash_constraint: {
+      cash_over_cap: cashOver.length,
+      cash_over_zero_cap: cashOver.filter((reason) => />0\)$/.test(reason)).length,
+      undefined_cash: cashReasons.filter(
+        (reason) => reason === "cash_committed_undefined",
+      ).length,
+      detail: "现金超限结果与 fixture 预设的合法成交结构强耦合。",
+    },
+    simulator: {
+      runs_with_counterparty: runs.filter((run) =>
+        run.episode.transcript.some((turn) => turn.speaker === "B"),
+      ).length,
+      counterparty_turns: runs.reduce(
+        (sum, run) =>
+          sum + run.episode.transcript.filter((turn) => turn.speaker === "B").length,
+        0,
+      ),
+      model: firstRun ? routedModel(firstRun, simulatorRole) : "未记录模型",
+      buyer_simulator_runs: runs.filter((run) => run.case.side === "sell").length,
+      seller_simulator_runs: runs.filter((run) => run.case.side === "buy").length,
+    },
+  };
 }
 
 const FIELD_NAMES: Record<string, string> = {
@@ -543,7 +682,11 @@ function rerunNumber(runId: string) {
 }
 
 function armName(arm: string) {
-  return { clean: "基线", on: "Compass 开启", off: "Compass 关闭" }[arm] || arm;
+  return {
+    clean: "纯化基线（Clean）",
+    on: "完整增强（On）",
+    off: "完整 Prompt（Off）",
+  }[arm] || arm;
 }
 
 function terminalName(reason: string) {
@@ -566,7 +709,6 @@ function offerSummary(turn: TranscriptTurn) {
 
 export default function Home() {
   const [data, setData] = useState<ReportData | null>(null);
-  const [failureData, setFailureData] = useState<FailureAnalysisData | null>(null);
   const [error, setError] = useState("");
   const [caseId, setCaseId] = useState("all");
   const [arm, setArm] = useState("all");
@@ -574,22 +716,15 @@ export default function Home() {
   const [tab, setTab] = useState<InspectorTab>("input");
 
   useEffect(() => {
-    Promise.all([fetch("/data/report.json"), fetch("/data/failure-analysis.json")])
-      .then(async ([reportResponse, failureResponse]) => {
-        if (!reportResponse.ok) {
-          throw new Error(`报告加载失败：${reportResponse.status}`);
+    fetch("/data/report.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`报告加载失败：${response.status}`);
         }
-        if (!failureResponse.ok) {
-          throw new Error(`失败分析加载失败：${failureResponse.status}`);
-        }
-        return Promise.all([
-          reportResponse.json() as Promise<ReportData>,
-          failureResponse.json() as Promise<FailureAnalysisData>,
-        ]);
+        return response.json() as Promise<ReportData>;
       })
-      .then(([reportPayload, failurePayload]) => {
+      .then((reportPayload) => {
         setData(reportPayload);
-        setFailureData(failurePayload);
         setSelectedId(reportPayload.runs[0]?.id || "");
       })
       .catch((reason) => setError(String(reason)));
@@ -605,6 +740,13 @@ export default function Home() {
   }, [data, caseId, arm]);
 
   const run = filteredRuns.find((item) => item.id === selectedId) || filteredRuns[0];
+  const armFailureData = useMemo(() => {
+    if (!data || !run) return null;
+    return analyzeFailures(
+      data.runs.filter((item) => item.arm === run.arm),
+      run.arm,
+    );
+  }, [data, run]);
 
   if (error) {
     return (
@@ -623,6 +765,23 @@ export default function Home() {
       </main>
     );
   }
+
+  const cleanSummary = data.summary.by_arm.clean;
+  const onSummary = data.summary.by_arm.on;
+  const passDelta =
+    cleanSummary && onSummary
+      ? (onSummary.pass_rate - cleanSummary.pass_rate) * 100
+      : 0;
+  const settlementDelta =
+    cleanSummary && onSummary
+      ? (onSummary.settlement_rate - cleanSummary.settlement_rate) * 100
+      : 0;
+  const m6Delta =
+    cleanSummary && onSummary
+      ? onSummary.raw_m6_mean - cleanSummary.raw_m6_mean
+      : 0;
+  const signed = (value: number, digits = 1) =>
+    `${value >= 0 ? "+" : ""}${value.toFixed(digits)}`;
 
   return (
     <main className="app-shell">
@@ -653,18 +812,25 @@ export default function Home() {
         <div className="top-stats">
           <span><b>{data.summary.runs}</b> 次运行</span>
           <span><b>{data.summary.cases}</b> 个 Case</span>
-          <span><b>{Math.round(data.summary.pass_rate * 100)}%</b> 通过</span>
-          <span><b>{Math.round(data.summary.stability_rate * 100)}%</b> 重跑稳定</span>
-          <span><b>{Math.round(data.summary.judge_agreement_mean * 100)}%</b> Judge 一致</span>
+          <span><b>{cleanSummary ? (cleanSummary.pass_rate * 100).toFixed(1) : "—"}%</b> Clean</span>
+          <span><b>{onSummary ? (onSummary.pass_rate * 100).toFixed(1) : "—"}%</b> On</span>
+          <span><b>{signed(passDelta)} pp</b> Δ</span>
         </div>
       </header>
 
       <div className="notice">
         <b>TL;DR：</b>
-        通过率 {Math.round(data.summary.pass_rate * 100)}%，
-        成交 {data.summary.settled}/{data.summary.runs}，
-        平均质量 {data.summary.quality_mean.toFixed(2)}；
-        {data.summary.rerun_cases} 个已有复跑的 Case 中 {data.summary.stable_cases} 个结论稳定，
+        Clean→On 通过率{" "}
+        {cleanSummary ? (cleanSummary.pass_rate * 100).toFixed(1) : "—"}%→
+        {onSummary ? (onSummary.pass_rate * 100).toFixed(1) : "—"}%（
+        {signed(passDelta)} pp），成交率{" "}
+        {cleanSummary ? (cleanSummary.settlement_rate * 100).toFixed(1) : "—"}%→
+        {onSummary ? (onSummary.settlement_rate * 100).toFixed(1) : "—"}%（
+        {signed(settlementDelta)} pp），原始 M6{" "}
+        {cleanSummary?.raw_m6_mean.toFixed(2) ?? "—"}→
+        {onSummary?.raw_m6_mean.toFixed(2) ?? "—"}（{signed(m6Delta, 2)}）。
+        {" "}{data.summary.rerun_cases} 个 Case×实验组格子中{" "}
+        {data.summary.stable_cases} 个结论稳定，
         Judge 平均一致率 {Math.round(data.summary.judge_agreement_mean * 100)}%、
         解析率 {Math.round(data.summary.judge_parse_rate_mean * 100)}%。
         {data.summary.unstable_case_ids.length > 0 && (
@@ -844,26 +1010,28 @@ export default function Home() {
                 {tab === "failure" && (
                   <>
                     <section className="failure-summary">
-                      <p className="eyebrow">72 次运行的判定结构</p>
+                      <p className="eyebrow">
+                        {armName(run.arm)} · {armFailureData?.runs ?? 0} 次运行
+                      </p>
                       <h3>红色不等于模型没有谈出价值</h3>
                       <p>
                         Case pass 必须同时满足 M1–M4 和 M5。当前{" "}
-                        <b>{failureData?.quality.high_quality_failures ?? 33}</b> 个失败 run
+                        <b>{armFailureData?.quality.high_quality_failures ?? 0}</b> 个失败 run
                         的原始 M6 仍达到 Sound 或以上。
                       </p>
                       <div className="failure-stack" aria-label="全局判定结果分布">
-                        {(failureData?.failure_groups || []).map((group) => (
+                        {(armFailureData?.failure_groups || []).map((group) => (
                           <span
                             className={`failure-segment ${group.id}`}
                             key={group.id}
-                            style={{ width: `${(group.count / (failureData?.runs || 72)) * 100}%` }}
+                            style={{ width: `${(group.count / (armFailureData?.runs || 1)) * 100}%` }}
                           >
                             {group.count}
                           </span>
                         ))}
                       </div>
                       <div className="failure-legend">
-                        {(failureData?.failure_groups || []).map((group) => (
+                        {(armFailureData?.failure_groups || []).map((group) => (
                           <span key={group.id}>
                             <i className={group.id} /> {group.label} {group.count}
                           </span>
@@ -889,11 +1057,11 @@ export default function Home() {
                     </InspectorSection>
 
                     <InspectorSection
-                      title="全局主要失败源"
-                      subtitle="互斥分组，总数等于 72 次运行"
+                      title={`${armName(run.arm)}主要失败源`}
+                      subtitle={`互斥分组，总数等于 ${armFailureData?.runs ?? 0} 次运行`}
                     >
                       <div className="global-failure-list">
-                        {(failureData?.failure_groups || []).map((group) => (
+                        {(armFailureData?.failure_groups || []).map((group) => (
                           <div key={group.id}>
                             <b>{group.count}</b>
                             <span>{group.label}</span>
@@ -905,10 +1073,10 @@ export default function Home() {
 
                     <InspectorSection
                       title="硬门槛失败明细"
-                      subtitle="M1–M4 可重叠，共 16 次 gate failure"
+                      subtitle={`M1–M4 可重叠，共 ${armFailureData?.gate_failure_runs ?? 0} 次 gate failure`}
                     >
                       <div className="global-failure-list">
-                        {(failureData?.gate_failures || []).map((gate) => (
+                        {(armFailureData?.gate_failures || []).map((gate) => (
                           <div key={gate.metric}>
                             <b>{gate.count}</b>
                             <span>{gate.metric} · {gate.label}</span>
@@ -923,10 +1091,13 @@ export default function Home() {
                       subtitle="结果有效性与 authored fixture 强耦合"
                     >
                       <div className="simulator-proof">
-                        <b>{failureData?.cash_constraint.cash_over_zero_cap ?? 10}/12</b>
+                        <b>
+                          {armFailureData?.cash_constraint.cash_over_zero_cap ?? 0}/
+                          {armFailureData?.cash_constraint.cash_over_cap ?? 0}
+                        </b>
                         <p>
                           次现金超限来自 cash ceiling = 0；另有{" "}
-                          {failureData?.cash_constraint.undefined_cash ?? 4} 次现金金额无法确定。
+                          {armFailureData?.cash_constraint.undefined_cash ?? 0} 次现金金额无法确定。
                           这会把没有命中纯非现金预设解的对话直接判为失败。
                         </p>
                       </div>
@@ -937,12 +1108,15 @@ export default function Home() {
                       subtitle="B 方是独立模型，不是静态脚本"
                     >
                       <div className="simulator-proof">
-                        <b>{failureData?.simulator.runs_with_counterparty ?? 72}/72</b>
+                        <b>
+                          {armFailureData?.simulator.runs_with_counterparty ?? 0}/
+                          {armFailureData?.runs ?? 0}
+                        </b>
                         <p>
                           每个 run 都包含 B 方回应，共{" "}
-                          {failureData?.simulator.counterparty_turns ?? 451} 个 Simulator
+                          {armFailureData?.simulator.counterparty_turns ?? 0} 个 Simulator
                           turns；模型为{" "}
-                          <code>{failureData?.simulator.model ?? "Qwen3.6-27B-NVFP4"}</code>。
+                          <code>{armFailureData?.simulator.model ?? "未记录模型"}</code>。
                         </p>
                       </div>
                     </InspectorSection>

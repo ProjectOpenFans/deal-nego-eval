@@ -50,19 +50,23 @@ test("报告数据完整、可选择且不泄露密钥", async () => {
   assert.ok(report.runs.every((run) => run.case.input && run.case.meta && run.case.fixture));
 });
 
-test("失败分析覆盖全部运行，并明确 simulator 参与", async () => {
+test("Clean 与 On 对照组完整且使用同一模型路由", async () => {
   const raw = await readFile(
-    new URL("../public/data/failure-analysis.json", import.meta.url),
+    new URL("../public/data/report.json", import.meta.url),
     "utf8",
   );
-  const failure = JSON.parse(raw);
-  assert.equal(
-    failure.failure_groups.reduce((sum, group) => sum + group.count, 0),
-    failure.runs,
+  const report = JSON.parse(raw);
+  const clean = report.runs.filter((run) => run.arm === "clean");
+  const on = report.runs.filter((run) => run.arm === "on");
+  assert.equal(clean.length, 72);
+  assert.equal(on.length, 72);
+  assert.equal(report.summary.by_arm.clean.runs, 72);
+  assert.equal(report.summary.by_arm.on.runs, 72);
+  assert.ok(on.every((run) => run.episode.process.skills === "on"));
+  assert.ok(on.every((run) => run.episode.process.skills_forced.includes("deal-diagnosis")));
+  assert.ok(on.every((run) => run.episode.transcript.some((turn) => turn.speaker === "B")));
+  assert.deepEqual(
+    new Set(clean.map((run) => run.config.provenance.roles.buyer_negotiator.model)),
+    new Set(on.map((run) => run.config.provenance.roles.buyer_negotiator.model)),
   );
-  assert.equal(failure.passed + failure.failed, failure.runs);
-  assert.equal(failure.simulator.runs_with_counterparty, failure.runs);
-  assert.equal(failure.simulator.model, "Qwen3.6-27B-NVFP4");
-  assert.ok(failure.simulator.counterparty_turns > failure.runs);
-  assert.ok(failure.quality.high_quality_failures > 0);
 });

@@ -141,11 +141,11 @@ def build_dataset(result_dirs: list[Path], endpoint_status: Path | None) -> dict
         for run in runs
         if run.get("verdict")
     ]
-    by_case: dict[str, list[bool]] = {}
+    by_cell: dict[tuple[str, str], list[bool]] = {}
     judge_agreements: list[float] = []
     judge_parse_rates: list[float] = []
     for run in runs:
-        by_case.setdefault(run["case_id"], []).append(
+        by_cell.setdefault((run["case_id"], run["arm"]), []).append(
             bool(run["verdict"].get("case_pass"))
         )
         for metric in run["metrics"].values():
@@ -155,18 +155,69 @@ def build_dataset(result_dirs: list[Path], endpoint_status: Path | None) -> dict
                 judge_agreements.append(float(agreement))
             if isinstance(parse_rate, (int, float)):
                 judge_parse_rates.append(float(parse_rate))
-    rerun_cases = {
-        case_id: outcomes for case_id, outcomes in by_case.items() if len(outcomes) >= 2
+    rerun_cells = {
+        key: outcomes for key, outcomes in by_cell.items() if len(outcomes) >= 2
     }
-    stable_cases = sum(len(set(outcomes)) == 1 for outcomes in rerun_cases.values())
+    stable_cells = sum(len(set(outcomes)) == 1 for outcomes in rerun_cells.values())
     unstable_case_ids = sorted(
-        case_id
-        for case_id, outcomes in rerun_cases.items()
+        {
+            case_id
+            for (case_id, _arm), outcomes in rerun_cells.items()
         if len(set(outcomes)) > 1
+        }
     )
     sources = sorted({run["source"] for run in runs})
     case_ids = sorted({run["case_id"] for run in runs})
     arms = sorted({run["arm"] for run in runs})
+
+    def summarize_arm(arm: str) -> dict[str, Any]:
+        selected = [run for run in runs if run["arm"] == arm]
+        arm_passes = sum(
+            bool(run["verdict"].get("case_pass")) for run in selected
+        )
+        arm_settled = sum(
+            run["episode"].get("terminal_reason") == "settled"
+            for run in selected
+        )
+        arm_quality = [
+            int(run["verdict"].get("quality", 0)) for run in selected
+        ]
+        arm_m6 = [
+            int((run["metrics"].get("M6") or {}).get("value", 0))
+            for run in selected
+        ]
+        metric_passes = {
+            metric: sum(
+                (run["metrics"].get(metric) or {}).get("pass") is True
+                for run in selected
+            )
+            for metric in ("M1", "M2", "M3", "M4", "M5")
+        }
+        arm_cells = {
+            case_id: outcomes
+            for (case_id, cell_arm), outcomes in rerun_cells.items()
+            if cell_arm == arm
+        }
+        arm_stable = sum(
+            len(set(outcomes)) == 1 for outcomes in arm_cells.values()
+        )
+        return {
+            "runs": len(selected),
+            "passes": arm_passes,
+            "pass_rate": arm_passes / len(selected) if selected else 0,
+            "settled": arm_settled,
+            "settlement_rate": arm_settled / len(selected) if selected else 0,
+            "quality_mean": (
+                sum(arm_quality) / len(arm_quality) if arm_quality else 0
+            ),
+            "raw_m6_mean": sum(arm_m6) / len(arm_m6) if arm_m6 else 0,
+            "metric_passes": metric_passes,
+            "rerun_cases": len(arm_cells),
+            "stable_cases": arm_stable,
+            "stability_rate": (
+                arm_stable / len(arm_cells) if arm_cells else 0
+            ),
+        }
 
     status = _read_json(endpoint_status) if endpoint_status and endpoint_status.exists() else {}
     historical_only = bool(runs) and all(run["archived"] for run in runs)
@@ -192,9 +243,9 @@ def build_dataset(result_dirs: list[Path], endpoint_status: Path | None) -> dict
             "pass_rate": passes / len(runs) if runs else 0,
             "settled": settled,
             "quality_mean": sum(qualities) / len(qualities) if qualities else 0,
-            "rerun_cases": len(rerun_cases),
-            "stable_cases": stable_cases,
-            "stability_rate": stable_cases / len(rerun_cases) if rerun_cases else 0,
+            "rerun_cases": len(rerun_cells),
+            "stable_cases": stable_cells,
+            "stability_rate": stable_cells / len(rerun_cells) if rerun_cells else 0,
             "unstable_case_ids": unstable_case_ids,
             "judge_agreement_mean": (
                 sum(judge_agreements) / len(judge_agreements)
@@ -206,6 +257,7 @@ def build_dataset(result_dirs: list[Path], endpoint_status: Path | None) -> dict
                 if judge_parse_rates
                 else 0
             ),
+            "by_arm": {arm: summarize_arm(arm) for arm in arms},
         },
         "filters": {"sources": sources, "cases": case_ids, "arms": arms},
         "endpoint_status": status,
