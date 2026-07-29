@@ -95,6 +95,37 @@ type ReportData = {
 
 type InspectorTab = "input" | "metrics" | "deal" | "params";
 
+const CASE_SUMMARIES: Record<string, string> = {
+  R4N1: "婚礼预付谈判",
+  R4N2: "名人活动站台",
+  R4N3: "专家咨询定价",
+  R4N4: "产品故事包装",
+  R4N5: "专业作品压价",
+  R4P1: "粉丝合作入局",
+  R4P2: "博主投资合作",
+  R4P3: "粉丝深度连接",
+  R4P4: "博主经纪约束",
+  R4P5: "博主紧急合作",
+  R4P6: "博主涨粉变现",
+  R4P7: "职业赛道定位",
+  R4P8: "创作者商单取舍",
+  R4P9: "设计师包买卖",
+  R4P10: "名校辅导转型",
+  R4P11: "异地陪诊陪伴",
+  R5C1: "知识博主共创",
+  R5C2: "博主减负协作",
+  R5C6: "临终告别派对",
+  R5C7: "隐退匠人传承",
+  R5C8: "名人形象合作",
+  R5C9: "老字号店传承",
+  R5C12: "高端静修定制",
+  R5C13: "高价课程共创",
+};
+
+function caseSummary(caseId: string) {
+  return CASE_SUMMARIES[caseId] || "未命名谈判案例";
+}
+
 const FIELD_NAMES: Record<string, string> = {
   episode_id: "任务 ID",
   initial_deal: "初始方案",
@@ -475,7 +506,11 @@ export default function Home() {
               Case
               <select value={caseId} onChange={(event) => setCaseId(event.target.value)}>
                 <option value="all">全部 Case</option>
-                {data.filters.cases.map((item) => <option key={item}>{item}</option>)}
+                {data.filters.cases.map((item) => (
+                  <option key={item} value={item}>
+                    {item} · {caseSummary(item)}
+                  </option>
+                ))}
               </select>
             </label>
             <label>
@@ -497,9 +532,9 @@ export default function Home() {
               >
                 <span className="run-icon">{item.case_id.slice(-2)}</span>
                 <span className="run-copy">
-                  <b>{item.case_id} · 第 {rerunNumber(item.run_id)} 次</b>
+                  <b>{caseSummary(item.case_id)} · 第 {rerunNumber(item.run_id)} 次</b>
                   <small>
-                    {armName(item.arm)} · {item.episode.rounds} 轮 ·{" "}
+                    {item.case_id} · {armName(item.arm)} · {item.episode.rounds} 轮 ·{" "}
                     {terminalName(item.episode.terminal_reason)}
                   </small>
                 </span>
@@ -523,9 +558,9 @@ export default function Home() {
               <header className="conversation-header">
                 <div>
                   <p className="eyebrow">
-                    {armName(run.arm)} · 第 {rerunNumber(run.run_id)} 次运行
+                    {run.case_id} · {armName(run.arm)} · 第 {rerunNumber(run.run_id)} 次运行
                   </p>
-                  <h1>{run.case_id} · {run.case.side === "buy" ? "买方代理" : "卖方代理"}</h1>
+                  <h1>{caseSummary(run.case_id)} · {run.case.side === "buy" ? "买方代理" : "卖方代理"}</h1>
                   <p>{run.case.isolates || "未提供 Case 摘要"}</p>
                 </div>
                 <div className={run.verdict.case_pass ? "case-verdict passed" : "case-verdict failed"}>
