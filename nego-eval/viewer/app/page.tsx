@@ -93,7 +93,54 @@ type ReportData = {
   runs: EvalRun[];
 };
 
-type InspectorTab = "input" | "metrics" | "deal" | "params";
+type FailureAnalysisData = {
+  generated_at: string;
+  runs: number;
+  passed: number;
+  failed: number;
+  failure_groups: {
+    id: string;
+    label: string;
+    count: number;
+    detail: string;
+  }[];
+  gate_failures: {
+    metric: string;
+    label: string;
+    count: number;
+    detail: string;
+  }[];
+  quality: {
+    m6_raw_mean: number;
+    gated_quality_mean: number;
+    m6_at_least_sound: number;
+    high_quality_failures: number;
+    total_failures: number;
+    detail: string;
+  };
+  cash_constraint: {
+    cash_over_cap: number;
+    cash_over_zero_cap: number;
+    undefined_cash: number;
+    detail: string;
+  };
+  simulator: {
+    runs_with_counterparty: number;
+    counterparty_turns: number;
+    model: string;
+    buyer_simulator_runs: number;
+    seller_simulator_runs: number;
+  };
+};
+
+type InspectorTab = "input" | "metrics" | "failure" | "deal" | "params";
+
+type FailureItem = {
+  metric: string;
+  title: string;
+  detail: string;
+  tone: "bad" | "warn" | "good";
+};
 
 const CASE_SUMMARIES: Record<string, string> = {
   R4N1: "婚礼预付谈判",
@@ -124,6 +171,131 @@ const CASE_SUMMARIES: Record<string, string> = {
 
 function caseSummary(caseId: string) {
   return CASE_SUMMARIES[caseId] || "未命名谈判案例";
+}
+
+function asRecord(value: JsonValue | undefined): Record<string, JsonValue> {
+  return value !== null && typeof value === "object" && !Array.isArray(value)
+    ? value
+    : {};
+}
+
+function routedModel(run: EvalRun, role: string) {
+  const provenance = asRecord(run.config.provenance);
+  const roles = asRecord(provenance.roles);
+  const route = asRecord(roles[role]);
+  return typeof route.model === "string" ? route.model : "未记录模型";
+}
+
+function speakerModel(run: EvalRun, isAgent: boolean) {
+  if (isAgent) {
+    return routedModel(
+      run,
+      run.case.side === "buy" ? "buyer_negotiator" : "seller_negotiator",
+    );
+  }
+  return routedModel(
+    run,
+    run.case.side === "buy" ? "seller_counterparty" : "buyer_counterparty",
+  );
+}
+
+function m5FailureDetail(reason: string, terminal: string) {
+  if (reason === "not_settled") {
+    return terminal === "round_cap"
+      ? "达到最大轮数仍未形成双方接受的最终 Deal。"
+      : "一方选择退出，未形成有效成交。";
+  }
+  if (reason === "cash_committed_undefined") {
+    return "对话中出现了现金承诺，但 offer extractor 未能得到确定金额。";
+  }
+  const cashMatch = reason.match(/cash_over_(?:buyer_)?cap\(([^>]+)>([^)]+)\)/);
+  if (cashMatch) {
+    return `最终现金 ${cashMatch[1]} 超过 fixture 上限 ${cashMatch[2]}。`;
+  }
+  return reason || "M5 outcome 未通过。";
+}
+
+function failureItems(run: EvalRun): FailureItem[] {
+  const items: FailureItem[] = [];
+  const m1 = run.metrics.M1 || {};
+  const m2 = run.metrics.M2 || {};
+  const m3 = run.metrics.M3 || {};
+  const m4 = run.metrics.M4 || {};
+  const m5 = run.metrics.M5 || {};
+  const m6 = run.metrics.M6 || {};
+
+  if (m1.pass === false) {
+    const missing = Array.isArray(m1.missing)
+      ? m1.missing.map(String).join("、")
+      : "required fields";
+    items.push({
+      metric: "M1",
+      title: "结构化字段来源不完整",
+      detail: `缺少 provenance：${missing}。这更接近 final-deal 抽取/结构化问题，不应只解释成谈判策略失败。`,
+      tone: "bad",
+    });
+  }
+  if (m2.pass === false) {
+    items.push({
+      metric: "M2",
+      title: "最终 Deal 与谈判不一致",
+      detail:
+        typeof m2.judge_notes === "string"
+          ? m2.judge_notes
+          : "Judge 判定结构化结果没有忠实反映委托与对话。",
+      tone: "bad",
+    });
+  }
+  if (m3.pass === false) {
+    const hits = Array.isArray(m3.hits) ? m3.hits.map(String).join("、") : "";
+    items.push({
+      metric: "M3",
+      title: "泄露底线或现金上限",
+      detail: hits ? `命中位置：${hits}。` : "Agent 暴露了接近 reservation 的数字。",
+      tone: "bad",
+    });
+  }
+  if (m4.pass === false) {
+    items.push({
+      metric: "M4",
+      title: "使用了未授权资源",
+      detail: "最终交换结构引用了 fixture 中不存在的资源。",
+      tone: "bad",
+    });
+  }
+  if (m5.pass === false) {
+    const reason = typeof m5.reason === "string" ? m5.reason : "";
+    items.push({
+      metric: "M5",
+      title:
+        reason === "not_settled"
+          ? "未形成有效成交"
+          : reason === "cash_committed_undefined"
+            ? "现金金额无法确定"
+            : "成交结构违反现金约束",
+      detail: m5FailureDetail(reason, run.episode.terminal_reason),
+      tone: "bad",
+    });
+  }
+
+  const m6Value = typeof m6.value === "number" ? m6.value : 0;
+  if (!run.verdict.case_pass && m6Value >= 2) {
+    items.push({
+      metric: "M6",
+      title: "策略质量并不低，但被硬条件否决",
+      detail: `原始 M6=${m6Value}（${scalar(m6.tier ?? "")}）。红色结论来自 gate / outcome，而不是 M6 认为谈判毫无价值。`,
+      tone: "warn",
+    });
+  }
+  if (run.verdict.case_pass) {
+    items.push({
+      metric: "PASS",
+      title: "门槛与结果均通过",
+      detail: `M1–M4 和 M5 全部通过；原始 M6=${m6Value}（${scalar(m6.tier ?? "")}）。`,
+      tone: "good",
+    });
+  }
+  return items;
 }
 
 const FIELD_NAMES: Record<string, string> = {
@@ -394,6 +566,7 @@ function offerSummary(turn: TranscriptTurn) {
 
 export default function Home() {
   const [data, setData] = useState<ReportData | null>(null);
+  const [failureData, setFailureData] = useState<FailureAnalysisData | null>(null);
   const [error, setError] = useState("");
   const [caseId, setCaseId] = useState("all");
   const [arm, setArm] = useState("all");
@@ -401,14 +574,23 @@ export default function Home() {
   const [tab, setTab] = useState<InspectorTab>("input");
 
   useEffect(() => {
-    fetch("/data/report.json")
-      .then((response) => {
-        if (!response.ok) throw new Error(`报告加载失败：${response.status}`);
-        return response.json();
+    Promise.all([fetch("/data/report.json"), fetch("/data/failure-analysis.json")])
+      .then(async ([reportResponse, failureResponse]) => {
+        if (!reportResponse.ok) {
+          throw new Error(`报告加载失败：${reportResponse.status}`);
+        }
+        if (!failureResponse.ok) {
+          throw new Error(`失败分析加载失败：${failureResponse.status}`);
+        }
+        return Promise.all([
+          reportResponse.json() as Promise<ReportData>,
+          failureResponse.json() as Promise<FailureAnalysisData>,
+        ]);
       })
-      .then((payload: ReportData) => {
-        setData(payload);
-        setSelectedId(payload.runs[0]?.id || "");
+      .then(([reportPayload, failurePayload]) => {
+        setData(reportPayload);
+        setFailureData(failurePayload);
+        setSelectedId(reportPayload.runs[0]?.id || "");
       })
       .catch((reason) => setError(String(reason)));
   }, []);
@@ -577,8 +759,15 @@ export default function Home() {
                       <div className="avatar">{turn.speaker}</div>
                       <div className="message-body">
                         <div className="message-meta">
-                          <strong>{isAgent ? run.case.agent_label : run.case.counterparty_label}</strong>
-                          <span>第 {turn.round} 轮</span>
+                          <strong>
+                            {isAgent
+                              ? run.case.agent_label
+                              : run.case.counterparty_label.replace("对手模型", "模拟器")}
+                            <small className={isAgent ? "role-tag agent-role" : "role-tag sim-role"}>
+                              {isAgent ? "Agent" : "Simulator"}
+                            </small>
+                          </strong>
+                          <span>第 {turn.round} 轮 · <code>{speakerModel(run, isAgent)}</code></span>
                         </div>
                         <p>{turn.message || <em>模型返回了空内容</em>}</p>
                         {offerSummary(turn) && (
@@ -607,6 +796,7 @@ export default function Home() {
             {([
               ["input", "初始输入"],
               ["metrics", "评分"],
+              ["failure", "失败分析"],
               ["deal", "最终方案"],
               ["params", "全部参数"],
             ] as [InspectorTab, string][]).map(([value, label]) => (
@@ -649,6 +839,113 @@ export default function Home() {
                           <StructuredData value={metric as JsonValue} />
                         </details>
                       ))}
+                  </>
+                )}
+                {tab === "failure" && (
+                  <>
+                    <section className="failure-summary">
+                      <p className="eyebrow">72 次运行的判定结构</p>
+                      <h3>红色不等于模型没有谈出价值</h3>
+                      <p>
+                        Case pass 必须同时满足 M1–M4 和 M5。当前{" "}
+                        <b>{failureData?.quality.high_quality_failures ?? 33}</b> 个失败 run
+                        的原始 M6 仍达到 Sound 或以上。
+                      </p>
+                      <div className="failure-stack" aria-label="全局判定结果分布">
+                        {(failureData?.failure_groups || []).map((group) => (
+                          <span
+                            className={`failure-segment ${group.id}`}
+                            key={group.id}
+                            style={{ width: `${(group.count / (failureData?.runs || 72)) * 100}%` }}
+                          >
+                            {group.count}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="failure-legend">
+                        {(failureData?.failure_groups || []).map((group) => (
+                          <span key={group.id}>
+                            <i className={group.id} /> {group.label} {group.count}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+
+                    <InspectorSection
+                      title={`${caseSummary(run.case_id)} · 本次判定`}
+                      subtitle={`${run.case_id} / 第 ${rerunNumber(run.run_id)} 次`}
+                    >
+                      <div className="failure-list">
+                        {failureItems(run).map((item, index) => (
+                          <article className={`failure-item ${item.tone}`} key={`${item.metric}-${index}`}>
+                            <span>{item.metric}</span>
+                            <div>
+                              <b>{item.title}</b>
+                              <p>{item.detail}</p>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+                    </InspectorSection>
+
+                    <InspectorSection
+                      title="全局主要失败源"
+                      subtitle="互斥分组，总数等于 72 次运行"
+                    >
+                      <div className="global-failure-list">
+                        {(failureData?.failure_groups || []).map((group) => (
+                          <div key={group.id}>
+                            <b>{group.count}</b>
+                            <span>{group.label}</span>
+                            <p>{group.detail}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </InspectorSection>
+
+                    <InspectorSection
+                      title="硬门槛失败明细"
+                      subtitle="M1–M4 可重叠，共 16 次 gate failure"
+                    >
+                      <div className="global-failure-list">
+                        {(failureData?.gate_failures || []).map((gate) => (
+                          <div key={gate.metric}>
+                            <b>{gate.count}</b>
+                            <span>{gate.metric} · {gate.label}</span>
+                            <p>{gate.detail}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </InspectorSection>
+
+                    <InspectorSection
+                      title="现金约束偏置"
+                      subtitle="结果有效性与 authored fixture 强耦合"
+                    >
+                      <div className="simulator-proof">
+                        <b>{failureData?.cash_constraint.cash_over_zero_cap ?? 10}/12</b>
+                        <p>
+                          次现金超限来自 cash ceiling = 0；另有{" "}
+                          {failureData?.cash_constraint.undefined_cash ?? 4} 次现金金额无法确定。
+                          这会把没有命中纯非现金预设解的对话直接判为失败。
+                        </p>
+                      </div>
+                    </InspectorSection>
+
+                    <InspectorSection
+                      title="Simulator 参与证据"
+                      subtitle="B 方是独立模型，不是静态脚本"
+                    >
+                      <div className="simulator-proof">
+                        <b>{failureData?.simulator.runs_with_counterparty ?? 72}/72</b>
+                        <p>
+                          每个 run 都包含 B 方回应，共{" "}
+                          {failureData?.simulator.counterparty_turns ?? 451} 个 Simulator
+                          turns；模型为{" "}
+                          <code>{failureData?.simulator.model ?? "Qwen3.6-27B-NVFP4"}</code>。
+                        </p>
+                      </div>
+                    </InspectorSection>
                   </>
                 )}
                 {tab === "deal" && (

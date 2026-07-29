@@ -49,3 +49,20 @@ test("报告数据完整、可选择且不泄露密钥", async () => {
   assert.doesNotMatch(JSON.stringify(report), /clean-deepseek|clean-test/i);
   assert.ok(report.runs.every((run) => run.case.input && run.case.meta && run.case.fixture));
 });
+
+test("失败分析覆盖全部运行，并明确 simulator 参与", async () => {
+  const raw = await readFile(
+    new URL("../public/data/failure-analysis.json", import.meta.url),
+    "utf8",
+  );
+  const failure = JSON.parse(raw);
+  assert.equal(
+    failure.failure_groups.reduce((sum, group) => sum + group.count, 0),
+    failure.runs,
+  );
+  assert.equal(failure.passed + failure.failed, failure.runs);
+  assert.equal(failure.simulator.runs_with_counterparty, failure.runs);
+  assert.equal(failure.simulator.model, "Qwen3.6-27B-NVFP4");
+  assert.ok(failure.simulator.counterparty_turns > failure.runs);
+  assert.ok(failure.quality.high_quality_failures > 0);
+});

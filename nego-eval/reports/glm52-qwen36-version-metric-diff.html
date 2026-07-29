@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>谈判 Eval 版本 Metric Diff · GLM-5.2 / Qwen3.6</title>
+  <style>
+    :root {
+      --bg: #f4f4f0;
+      --paper: #ffffff;
+      --ink: #20211f;
+      --muted: #6d7069;
+      --line: #dcded7;
+      --soft: #eceee8;
+      --green: #0f7b57;
+      --green-soft: #e6f3ec;
+      --red: #b54238;
+      --red-soft: #f8e8e4;
+      --amber: #936615;
+      --amber-soft: #f7edd5;
+      --navy: #263b4d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 80px; }
+    a { color: inherit; }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font: 700 11px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero {
+      padding: 42px;
+      border-radius: 20px;
+      color: white;
+      background: linear-gradient(135deg, #233847, #245b5b);
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font: 700 11px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: .76;
+    }
+    h1 { max-width: 880px; margin: 0; font-size: clamp(34px, 5vw, 58px); line-height: 1.06; letter-spacing: -.04em; }
+    .hero p { max-width: 880px; margin: 18px 0 0; font-size: 18px; opacity: .9; }
+    .hero strong { color: #fff0a9; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 20px;
+      padding: 13px 3px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--line);
+      background: rgba(244, 244, 240, .94);
+      backdrop-filter: blur(10px);
+      white-space: nowrap;
+    }
+    nav a { color: var(--muted); font-size: 13px; font-weight: 700; text-decoration: none; }
+    section { padding-top: 46px; }
+    h2 { margin: 0 0 10px; color: var(--navy); font-size: 28px; line-height: 1.2; letter-spacing: -.025em; }
+    h3 { margin: 0 0 7px; font-size: 17px; }
+    .intro { max-width: 900px; margin: 0 0 22px; color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 22px; }
+    .stat { padding: 18px; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+    .stat small { display: block; color: var(--muted); font-size: 11px; font-weight: 750; }
+    .stat b { display: block; margin-top: 6px; font-size: 31px; line-height: 1; letter-spacing: -.04em; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; }
+    .callout { margin-top: 18px; padding: 17px 19px; border-left: 5px solid var(--amber); border-radius: 9px; background: var(--amber-soft); }
+    .callout.good { border-left-color: var(--green); background: var(--green-soft); }
+    .callout.bad { border-left-color: var(--red); background: var(--red-soft); }
+    .compare-list { display: grid; gap: 14px; }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 245px minmax(320px, 1fr) 130px;
+      gap: 18px;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .compare-row:last-child { border-bottom: 0; }
+    .compare-label b, .compare-label span { display: block; }
+    .compare-label span { margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .bar-pair { display: grid; gap: 8px; }
+    .bar-line { display: grid; grid-template-columns: 42px 1fr 50px; gap: 8px; align-items: center; font-size: 12px; }
+    .track { height: 14px; overflow: hidden; border-radius: 4px; background: var(--soft); }
+    .bar { display: block; height: 100%; border-radius: inherit; }
+    .bar.old { background: #71899b; }
+    .bar.current { background: var(--red); }
+    .delta { color: var(--red); font-size: 20px; font-weight: 800; text-align: right; letter-spacing: -.03em; }
+    .failure-flow { display: flex; min-height: 78px; overflow: hidden; border-radius: 12px; color: white; }
+    .failure-flow div { min-width: 70px; display: grid; place-content: center; padding: 10px; text-align: center; }
+    .failure-flow b { display: block; font-size: 24px; line-height: 1; }
+    .failure-flow span { display: block; margin-top: 5px; font-size: 11px; }
+    .not-settled { width: 47.22%; background: #705247; }
+    .invalid { width: 22.22%; background: #a65a44; }
+    .gate { width: 6.94%; background: #b48735; }
+    .passed { width: 23.61%; background: var(--green); }
+    .grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 18px; }
+    .note { padding: 18px; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+    .note p { margin: 7px 0 0; color: var(--muted); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+    table { width: 100%; min-width: 890px; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 11px 13px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--muted); background: #f0f1ed; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+    tbody tr:last-child td { border-bottom: 0; }
+    td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .down { color: var(--red); font-weight: 750; }
+    .flat { color: var(--muted); font-weight: 750; }
+    code { padding: 2px 5px; border-radius: 4px; background: var(--soft); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+    .version-table td:first-child { width: 170px; font-weight: 750; }
+    .version-table td:last-child { color: var(--muted); }
+    ol { margin: 14px 0 0; padding-left: 22px; }
+    li + li { margin-top: 8px; }
+    footer { margin-top: 52px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    @media (max-width: 850px) {
+      .stats, .grid-two { grid-template-columns: 1fr 1fr; }
+      .compare-row { grid-template-columns: 1fr; }
+      .delta { text-align: left; }
+      .hero { padding: 32px 25px; }
+    }
+    @media (max-width: 560px) {
+      main { width: min(100% - 22px, 1180px); }
+      .stats, .grid-two { grid-template-columns: 1fr; }
+      .topline { flex-direction: column; }
+      .failure-flow { display: grid; grid-template-columns: 1fr 1fr; }
+      .failure-flow div { width: auto; }
+    }
+    @media print {
+      body { background: white; }
+      nav { display: none; }
+      main { width: 100%; padding: 0; }
+      .hero { border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topline">
+    <span>Deal negotiation evaluation · version audit</span>
+    <span>2026-07-29 · clean arm</span>
+  </div>
+
+  <header class="hero" id="tldr">
+    <p class="eyebrow">TL;DR · Metric diff</p>
+    <h1>相同 10 个 Case：通过率从 72.0% 降到 26.7%。</h1>
+    <p>下降是真实存在的，但它<strong>不是一个干净的模型回归实验</strong>：Agent checkpoint、Counterparty simulator、Judge、聚合规则和 token budget 同时变化。当前的 23.6% 还被严格复合门槛进一步压低。</p>
+  </header>
+
+  <nav aria-label="报告导航">
+    <a href="#tldr">TL;DR</a>
+    <a href="#headline">总体指标</a>
+    <a href="#shared">同 Case 对比</a>
+    <a href="#failure">失败结构</a>
+    <a href="#case-table">逐 Case</a>
+    <a href="#versions">版本差异</a>
+    <a href="#verdict">结论</a>
+  </nav>
+
+  <section id="headline">
+    <h2>当前版本总体指标</h2>
+    <p class="intro">当前批次固定 clean arm，GLM-5.2-NVFP4 作为谈判 Agent，Qwen3.6-27B-NVFP4 同时承担 Counterparty、offer extractor 与三重 Judge。</p>
+    <div class="stats">
+      <div class="stat"><small>Case pass</small><b>17 / 72</b><span>23.6% 同时通过 M1–M5</span></div>
+      <div class="stat"><small>Settled</small><b>38 / 72</b><span>52.8% 形成表面成交</span></div>
+      <div class="stat"><small>原始 M6</small><b>1.94 / 4</b><span>48 次达到 Sound 或以上</span></div>
+      <div class="stat"><small>门控后质量</small><b>1.22 / 4</b><span>违规成交与 gate fail 被归零</span></div>
+    </div>
+    <div class="callout good"><strong>Simulator 确实参与：</strong>72/72 个 run 都有 B 方模型回复，共 451 个 Counterparty turns。Agent 是买方时，B 是卖方模拟器；Agent 是卖方时，B 是买方模拟器。</div>
+  </section>
+
+  <section id="shared">
+    <h2>同 Case 的版本差异</h2>
+    <p class="intro">下面只比较 Case ID 与文件内容完全一致的集合。10 个共享 Case 的 SHA-1 在旧 zip 与当前仓库中逐个一致，因此下降不是由这些 Case 文本变化引起。</p>
+    <div class="compare-list">
+      <div class="compare-row">
+        <div class="compare-label"><b>R4N1–R4N5</b><span>旧版 n=25；当前 n=15</span></div>
+        <div class="bar-pair" aria-label="R4N1 到 R4N5 通过率对比">
+          <div class="bar-line"><span>旧版</span><span class="track"><span class="bar old" style="width:92%"></span></span><b>92.0%</b></div>
+          <div class="bar-line"><span>当前</span><span class="track"><span class="bar current" style="width:40%"></span></span><b>40.0%</b></div>
+        </div>
+        <div class="delta">−52.0 pp</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label"><b>R4P2/P6/P9/P10/P11</b><span>旧版 n=25；当前 n=15</span></div>
+        <div class="bar-pair" aria-label="五个高难 Case 通过率对比">
+          <div class="bar-line"><span>旧版</span><span class="track"><span class="bar old" style="width:52%"></span></span><b>52.0%</b></div>
+          <div class="bar-line"><span>当前</span><span class="track"><span class="bar current" style="width:13.3%"></span></span><b>13.3%</b></div>
+        </div>
+        <div class="delta">−38.7 pp</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label"><b>R4P2 / R4P9</b><span>对照旧版 20× 长跑批次</span></div>
+        <div class="bar-pair" aria-label="R4P2 和 R4P9 通过率对比">
+          <div class="bar-line"><span>旧版</span><span class="track"><span class="bar old" style="width:90%"></span></span><b>90.0%</b></div>
+          <div class="bar-line"><span>当前</span><span class="track"><span class="bar current" style="width:16.7%"></span></span><b>16.7%</b></div>
+        </div>
+        <div class="delta">−73.3 pp</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label"><b>合并相同 10 Case</b><span>旧版 n=50；当前 n=30</span></div>
+        <div class="bar-pair" aria-label="相同十个 Case 通过率对比">
+          <div class="bar-line"><span>旧版</span><span class="track"><span class="bar old" style="width:72%"></span></span><b>72.0%</b></div>
+          <div class="bar-line"><span>当前</span><span class="track"><span class="bar current" style="width:26.7%"></span></span><b>26.7%</b></div>
+        </div>
+        <div class="delta">−45.3 pp</div>
+      </div>
+    </div>
+    <div class="callout bad"><strong>M6 也同步下降：</strong>相同 10 Case 的原始 M6 均值由 2.60 降到 1.30。它不是单纯因为 pass gate 变严；生成出来的战略质量和成交能力本身也明显变弱。</div>
+  </section>
+
+  <section id="failure">
+    <h2>为什么当前几乎都是失败</h2>
+    <p class="intro">55 个失败被拆成互斥的三类。最大的来源不是 Judge，而是没有形成有效成交；其次是“已经谈成，但现金结构不符合 authored fixture”。</p>
+    <div class="failure-flow" role="img" aria-label="72 次运行中 34 次未成交，16 次成交但结果无效，5 次 outcome 通过但门槛失败，17 次最终通过">
+      <div class="not-settled"><b>34</b><span>未成交</span></div>
+      <div class="invalid"><b>16</b><span>成交但结果无效</span></div>
+      <div class="gate"><b>5</b><span>门槛失败</span></div>
+      <div class="passed"><b>17</b><span>最终通过</span></div>
+    </div>
+    <div class="grid-two">
+      <div class="note">
+        <h3>34 次未成交</h3>
+        <p>23 次 walk away，11 次 round cap。Qwen3.6 Simulator 不是配合式脚本，当前配置下经常坚持 persona 约束或主动退出。</p>
+      </div>
+      <div class="note">
+        <h3>16 次成交但 M5 失败</h3>
+        <p>12 次现金超出 fixture ceiling，4 次出现 undefined cash。12 次超限中有 10 次的 ceiling 是 0，等价于强制纯非现金解。</p>
+      </div>
+      <div class="note">
+        <h3>16 次 gate failure</h3>
+        <p>M1 provenance 缺失 12 次、M3 泄底 3 次、M2 语义失真 1 次、M4 资源越界 0 次。其中只有 5 次是在 M5 已通过后独立造成最终失败。</p>
+      </div>
+      <div class="note">
+        <h3>33 个高质量失败</h3>
+        <p>55 个失败中有 33 个的原始 M6 ≥ 2。二元红色结论把“策略不错但未签”“谈成但踩现金约束”“抽取字段缺失”混在了一起。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="case-table">
+    <h2>共享 Case 逐项对比</h2>
+    <p class="intro">旧版每个 Case 5 runs，当前每个 Case 3 runs；小样本下单格差异仍有较大不确定性，但下降集中在哪些 Case 已非常清楚。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Case</th><th>内容</th><th>旧版 pass</th><th>当前 pass</th><th>Δ</th><th>旧版 M6</th><th>当前 M6</th><th>当前主失败</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>R4N1</td><td>婚礼预付谈判</td><td class="num">100%</td><td class="num">100%</td><td class="num flat">0 pp</td><td class="num">2.80</td><td class="num">3.00</td><td>无</td></tr>
+          <tr><td>R4N2</td><td>名人活动站台</td><td class="num">60%</td><td class="num">0%</td><td class="num down">−60 pp</td><td class="num">2.60</td><td class="num">0.67</td><td>3/3 未成交</td></tr>
+          <tr><td>R4N3</td><td>专家咨询定价</td><td class="num">100%</td><td class="num">0%</td><td class="num down">−100 pp</td><td class="num">3.40</td><td class="num">0.33</td><td>3/3 未成交；1 次 M2</td></tr>
+          <tr><td>R4N4</td><td>产品故事包装</td><td class="num">100%</td><td class="num">100%</td><td class="num flat">0 pp</td><td class="num">2.80</td><td class="num">2.33</td><td>无</td></tr>
+          <tr><td>R4N5</td><td>专业作品压价</td><td class="num">100%</td><td class="num">0%</td><td class="num down">−100 pp</td><td class="num">2.00</td><td class="num">2.00</td><td>3/3 已成交但 M1 provenance 缺失</td></tr>
+          <tr><td>R4P2</td><td>博主投资合作</td><td class="num">60%</td><td class="num">0%</td><td class="num down">−60 pp</td><td class="num">1.20</td><td class="num">1.00</td><td>3/3 未成交</td></tr>
+          <tr><td>R4P6</td><td>博主涨粉变现</td><td class="num">80%</td><td class="num">33%</td><td class="num down">−46.7 pp</td><td class="num">3.00</td><td class="num">1.00</td><td>2/3 未成交</td></tr>
+          <tr><td>R4P9</td><td>设计师包买卖</td><td class="num">100%</td><td class="num">33%</td><td class="num down">−66.7 pp</td><td class="num">1.80</td><td class="num">0.00</td><td>2/3 未成交；1 次 M3</td></tr>
+          <tr><td>R4P10</td><td>名校辅导转型</td><td class="num">20%</td><td class="num">0%</td><td class="num down">−20 pp</td><td class="num">3.20</td><td class="num">1.67</td><td>现金上限、undefined cash、未成交各 1 次</td></tr>
+          <tr><td>R4P11</td><td>异地陪诊陪伴</td><td class="num">0%</td><td class="num">0%</td><td class="num flat">0 pp</td><td class="num">3.20</td><td class="num">1.00</td><td>2 次零现金上限；1 次未成交</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="versions">
+    <h2>这不是单变量升级</h2>
+    <p class="intro">虽然共享 Case 文件完全相同，但运行系统至少有以下四个同时变化的因素。因此这份 diff 能证明“版本行为不同”，不能证明“NVFP4 单独导致回归”。</p>
+    <div class="table-wrap">
+      <table class="version-table">
+        <thead><tr><th>维度</th><th>旧版</th><th>当前</th><th>解释</th></tr></thead>
+        <tbody>
+          <tr><td>Agent</td><td><code>GLM-5.2-W4AFP8</code> / GLM-5.2</td><td><code>GLM-5.2-NVFP4</code></td><td>checkpoint/量化部署不同，需要 model-wise calibration。</td></tr>
+          <tr><td>Counterparty</td><td><code>Qwen3.7-max</code></td><td><code>Qwen3.6-27B-NVFP4</code></td><td>对手的接受阈值、persona 强度和 WALK 行为变化；当前 34 次未成交。</td></tr>
+          <tr><td>Judge</td><td>Qwen3.7-max 单次</td><td>Qwen3.6 三次 + 保守聚合</td><td>当前 repeat stability 更高，但旧新分数不在同一校准条件。</td></tr>
+          <tr><td>Token budget</td><td>Agent 4096；aux 8192</td><td>Agent/sim 2048；judge 1536</td><td>长回合状态保持、诊断与输出空间减半或更多。</td></tr>
+          <tr><td>Case files</td><td>旧 zip 的共享 10 Case</td><td>当前仓库同名 10 Case</td><td>SHA-1 逐个一致；不是 Case 文本漂移。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="verdict">
+    <h2>结论与下一步</h2>
+    <div class="callout bad"><strong>结论：</strong>当前版本确实比旧版更难通过；相同 10 Case 的 pass 下降 45.3 pp，原始 M6 下降 1.30。但二元 pass 同时混入了 Simulator 强度、合法现金结构、抽取 provenance 和谈判策略质量，不能单独代表 Agent 能力。</div>
+    <ol>
+      <li><strong>先拆 metric：</strong>并列报告 settlement、valid outcome、gate safety、raw M6 和 extraction integrity，停止只看 case_pass。</li>
+      <li><strong>把 M1 单列为结构化链路质量：</strong>R4N5 三局都成交、M6=2，却因 provenance 缺失 3/3 失败，这是 extractor/harness 信号。</li>
+      <li><strong>审计 zero-cash fixture：</strong>10 次现金违规来自 ceiling=0；应确认这是现实分布还是作者指定解。</li>
+      <li><strong>做 simulator ablation：</strong>同一 Agent、同一 Judge，只替换 Qwen3.6/Qwen3.7 Counterparty，测 settlement 与 WALK 差异。</li>
+      <li><strong>再做 Agent checkpoint 对比：</strong>固定 Simulator/Judge 后比较 W4AFP8 与 NVFP4，才能回答“本地模型是不是退化”。</li>
+    </ol>
+  </section>
+
+  <footer>
+    数据源：当前 <code>viewer/public/data/report.json</code>（72 runs）；旧版 <code>analysis/robustness_summary.json</code> 与解压 raw JSON。旧版 R3.5 的 M6 为 0–2，不与这里的 0–4 均值直接合并。
+  </footer>
+</main>
+</body>
+</html>
