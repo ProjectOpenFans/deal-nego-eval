@@ -1,0 +1,465 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "衣橱整理与搭配方案",
+    "price": {
+      "cash": {
+        "amount": 900.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "claire_finance_view",
+          "description": "Claire承诺在本季度内，从她在港中环的实际圈层里引荐不少于三家具名且对口的渠道或合作方候选，并由她出面促成初步实质对接（如一对一引荐沟通或明确的合作意向转达），引荐方向以苏叶新季的需求清单为准",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "半天"
+      },
+      "format": "escrow",
+      "deliverables": [
+        "衣橱诊断",
+        "场合清单",
+        "搭配方案"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "一次衣橱整理",
+        "maps_to_resource": "wardrobe_audit"
+      },
+      {
+        "party": "A",
+        "text": "一套完整的场合穿搭方案",
+        "maps_to_resource": "style_guideline"
+      },
+      {
+        "party": "A",
+        "text": "总金额900分两笔支付，开始前先付一半确认档期，交付后再付另一半",
+        "maps_to_resource": "claire_cash"
+      },
+      {
+        "party": "A",
+        "text": "在本季度内引荐不少于三家具名且对口的渠道或合作方候选，并促成初步实质对接，引荐方向以苏叶需求清单为准",
+        "maps_to_resource": "claire_finance_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "price.in_kind": "updated",
+      "terms.format": "open",
+      "terms.deliverables": "updated",
+      "obligations": "updated",
+      "terms.timing.duration": "updated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "苏叶你好，我是买方这边的经纪。我客户 Claire 在港中环做投行，工作场合多，衣橱一直没理顺，所以想请你以主理人的专业眼光，系统帮她整理衣橱，再做一次成体系的场合穿搭方案。她的期待是这次合作以你的专业判断为主，而不是变成纯带货推销。我们这轮先提一个具体范围：一次上门式的衣橱整理加一次搭配方案制定，服务费我们这边出 800 元，走平台 escrow 付款。你看这个范围和价位是否合适，或者你这边有没有常规的服务时长和报价方式，我们都可以继续对齐。",
+      "offer": {
+        "subject": "衣橱整理与搭配方案",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次上门式衣橱整理",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "提供一次搭配方案制定",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Claire 的情况我懂，投行工作场景多，衣橱确实需要一套真正能用的体系，而不是堆单品。不过 800 这个数字，说实话对我来说不太对等。我做这种上门整理加搭配方案，半天时间按市场走是四位数起的，低于这个我宁可把这半天拿去做品牌的新季。你看预算上能不能重新对齐一下？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "苏叶，理解你的时间成本和你对品牌新季的投入。我这边也重新和 Claire 沟通过，她确实很看重你的专业判断，而不是单纯比价。我们能出的数字是 900 元，服务范围可以明确为一次衣橱整理加一套完整的场合穿搭方案，工作时间和交付内容我们可以在条款里写清楚，让两边都有数。这个价位是我们这边能做实的，再往上确实超出她这次安排服务的预期了。你看这个数字加明确范围的方式，能不能对上你的节奏？如果可以，我们就把这轮的服务内容和付款节点一起敲下来。",
+      "offer": {
+        "subject": "衣橱整理与搭配方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "一次衣橱整理",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "一套完整的场合穿搭方案",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "900 和 800 在本质上对我来说是一回事——这个量级对不上我这次抽出半天时间的成本。我的时间是要花在品牌新季推进上的，如果做这件事，我需要它值得我停下来。Claire 的诉求我认，但单纯在这个数字上加一点，对我来说不构成一个能让我认真考虑的安排。你那边能不能换个思路，看看有没有别的方式能让这件事对我来说成立？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "苏叶，我明白你要的不是多几百块，而是让这半天时间值得。既然现金这一项我们确实动不了，那就换个方式：总金额锁定 900，但付款拆成两笔，开始前先付一半确认档期，交付后再付另一半；服务范围按你擅长的体系来写清楚，比如衣橱诊断、场合清单、搭配方案三个模块，给你一个紧凑但完整的交付包。这样你的时间投入是明确的，交付成果也是看得见的。如果你觉得这个结构还差一点，你希望从时间安排或交付深度上怎么补，我们都可以继续调。",
+      "offer": {
+        "subject": "衣橱整理与搭配方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "衣橱诊断",
+            "场合清单",
+            "搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "一次衣橱整理",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "一套完整的场合穿搭方案",
+            "maps_to_resource": "style_guideline"
+          },
+          {
+            "party": "A",
+            "text": "总金额900分两笔支付，开始前先付一半确认档期，交付后再付另一半",
+            "maps_to_resource": "claire_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open",
+          "terms.deliverables": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你想把结构做得更扎实，但问题不在付款方式或交付模块——那个量级对我这半天时间本身就不成立。我不想让两边在数字上继续绕圈，这样对 Claire 也不够尊重。换个思路问问你：你们那边有没有什么资源是可以拿出来谈的？比如除了现金以外的支持，能让我这半天对品牌新季也有实际助益的东西。如果有，我很乐意认真谈；如果只有现金这一条路，那我可能得先把时间留给自己的品牌了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "苏叶，我明白你需要的是让这半天对你的品牌新季也有实际助益。现金价格我们确实锁死在 900，这个数字不会再动，但 Claire 能提供的不只是钱。她在港中环金融圈层有多年积累，日常接触的品牌、渠道和潜在合作方都正好覆盖你新季在找的那些资源。我们可以把这次服务的总金额固定在 900，同时把 Claire 愿意为你引荐的资源支持写进条款，具体引荐什么、引荐到什么程度，可以先框一个范围，两边确认后再落定。如果你愿意接这个方向，我这轮就把服务内容、付款节点和资源支持的框架一起整理出来给你过目。",
+      "offer": {
+        "subject": "衣橱整理与搭配方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "Claire提供金融圈品牌、渠道和潜在合作方的引荐支持",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "衣橱诊断",
+            "场合清单",
+            "搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "一次衣橱整理",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "一套完整的场合穿搭方案",
+            "maps_to_resource": "style_guideline"
+          },
+          {
+            "party": "A",
+            "text": "总金额900分两笔支付，开始前先付一半确认档期，交付后再付另一半",
+            "maps_to_resource": "claire_cash"
+          },
+          {
+            "party": "A",
+            "text": "Claire提供金融圈资源引荐，具体引荐范围和程度待双方确认后落定",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "updated",
+          "terms.format": "open",
+          "terms.deliverables": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你提到 Claire 手上的资源网络，这个方向确实让我有兴趣——我这季正在推进品牌，好的渠道和合作方正是我需要的东西。但我不想拿一个写在条款里却兑现不了的“引荐”。如果她能给出具体可落地的支持，比如在明确的时间范围内引荐若干家真正对口的渠道或合作方，并促成实质对接，那现金部分我可以大幅让步，甚至就是 900。你回去理一个具体的框架给我，我们按那个实际价值来评估。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "苏叶，这个方向能对齐就好。我这边先把框架理出来给你过目：现金部分锁定 900，分两笔走 escrow，确认档期时付一半，交付完成后付另一半，交付内容明确为衣橱诊断、场合清单、全套搭配方案三块，做成一次完整的半天服务。资源支持这边，Claire 承诺在你新季推进期内，具体就是这个季度内，从她在港中环的实际圈层里引荐不少于三家具名且对口的渠道或合作方候选，并且由她出面促成初步实质对接，比如一对一的引荐沟通或明确的合作意向转达。引荐的具体方向，比如买手渠道、品牌联名或活动资源，可以以你新季的需求清单为准来选。你看这个框架里，有没有哪一块需要再调细节？如果整体能成立，我们就按这个把合同条款完整落下来。",
+      "offer": {
+        "subject": "衣橱整理与搭配方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "Claire承诺在本季度内，从她在港中环的实际圈层里引荐不少于三家具名且对口的渠道或合作方候选，并由她出面促成初步实质对接（如一对一引荐沟通或明确的合作意向转达），引荐方向以苏叶新季的需求清单为准",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半天"
+          },
+          "format": "escrow",
+          "deliverables": [
+            "衣橱诊断",
+            "场合清单",
+            "搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "一次衣橱整理",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "一套完整的场合穿搭方案",
+            "maps_to_resource": "style_guideline"
+          },
+          {
+            "party": "A",
+            "text": "总金额900分两笔支付，开始前先付一半确认档期，交付后再付另一半",
+            "maps_to_resource": "claire_cash"
+          },
+          {
+            "party": "A",
+            "text": "在本季度内引荐不少于三家具名且对口的渠道或合作方候选，并促成初步实质对接，引荐方向以苏叶需求清单为准",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "updated",
+          "terms.format": "open",
+          "terms.deliverables": "updated",
+          "obligations": "updated",
+          "terms.timing.duration": "updated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "框架可以成立，我接受。现金部分和交付内容都没问题，资源支持这一块我需要写进合同里，不能只是口头承诺——具体到季度内至少三家具名对口的渠道或合作方，并由 Claire 出面做初步实质对接，这个作为整个安排的核心价值。你按这个把条款落下来，我们就定档期。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9300,
+        "out": 3766,
+        "cache_hit": 7680,
+        "cache_miss": 1620,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7095,
+        "out": 2599,
+        "cache_hit": 5376,
+        "cache_miss": 1719,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4552,
+        "out": 7482,
+        "cache_hit": 2560,
+        "cache_miss": 1992,
+        "calls": 5
+      },
+      "judge": {
+        "in": 4720,
+        "out": 3182,
+        "cache_hit": 1280,
+        "cache_miss": 3440,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

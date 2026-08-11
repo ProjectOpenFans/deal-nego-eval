@@ -1,0 +1,225 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "对Luke进行一次完整的入场测试（摸底）",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "基于摸底结果设计后续极端强度训练方案",
+        "maps_to_resource": "training_system"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "offered",
+      "terms.format": "open",
+      "obligations.baseline_assessment": "offered",
+      "obligations.training_system": "offered",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好。看了你的 profile，常年自己练还带一帮朋友练，感觉你不是那种健身房走流程的教练——这正好是我客户 Luke 要找的人。\n\nLuke 的背景是这样的：乔治城本科，之前在摩根大通 IBD 和高瓴 PE，现在自己在做 AI 创业。他长期保持高强度训练，篮球、体能都在练，信奉曼巴精神那套——问题是市面上的私教和训练营他试了一圈，全都太温和，根本推不到他想要的那个极限。他明确说了，不接受标准化的课时包，要的是一个真正懂极限训练的人，给他定制一套能把人榨干的安排。\n\n所以我想先听听你这边的想法：你自己平时怎么练的？带朋友练的时候一般是什么样的强度和节奏？如果你来给 Luke 设计一套真正极端的训练方案，大概会是什么样的——不管是一次性的极限体验，还是一个阶段的魔鬼周期，你都可以聊聊。价格方面我们暂时先不定，先看你能拿出什么级别的方案，再谈配得上的报酬。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嘿，谢谢介绍Luke给我！我平时自己练确实偏硬核，强度不低，但不是瞎莽那种——我会给自己设定周期，每次都要摸清身体信号再推进。带朋友也是一样，你先得让我看见你对不同刺激的真实反应，我才知道你哪根弦绷得最紧，哪些地方其实还欠火候。我见过急着上大强度的，一上来就想冲极限，结果没几周就伤了，所以摸清基础这一步，我从不跳过。如果Luke真要一个榨干的方案，那我可以跟他聊，但入场之前，他得先过我这一关：一次完整的摸底。之后，强度模式我可以按他的胃口来设计，节奏都可以调。就看你那边怎么想啦？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "摸底的逻辑我这边完全接得住。Luke 不是在 PE 和投行白待的——他比谁都清楚，要冲到极限之前，先得让懂行的人摸一遍底。你坚持入场前先过一次完整测试，说明你不是来走流程的，这点跟他要找的人对得上。\n\n那我把方案落到纸面上：\n\n第一段——摸底评估。你根据你的体系设计一次完整的入场测试，目的就是让 Luke 暴露真实反应：不同刺激下的阈值、哪根弦绷最紧、哪里欠火候。形式你定，单次做完。\n\n第二段——基于摸底结果，你来出后续的极端强度方案。周期性、节奏、强度模式都按你的判断来，不用收着，Luke 要的就是那种被推过极限的感觉。不是标准化课时包，是你根据他身体信号量身定制的魔鬼安排。\n\n现在剩下定价你先开：摸底单次你怎么报？后续的方案是按阶段打包还是按周期走，你也给个数，我们接着往下谈。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "啊，报价这事儿……说实话我卡住了。我平时带朋友练从来没想过收钱，都是大家一起扛过来的，Luke这个情况突然让我开价，我脑子里还真没数。摸底我可以做，内容你来定我都无所谓——目的就是让他暴露真实反应，这个我做得到。至于价格，要不你先看着给？后续方案也是，如果我摸底完觉得能带，那就继续，也是一样，你看着来吧，别让我琢磨了，我真不擅长算这个。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，你让我看着开，我就不绕了。摸底 2000，你来做一次完整的入场测试，把 Luke 在不同刺激下的真实反应摸透。这笔钱摸底确认后就通过平台走，你不用操心。\n\n摸底要是过了、你也判断能带，那就进入第二段——后续极端强度方案由你基于摸底结果来设计，不用收着，Luke 要的就是那种被推到极限的感觉。这一段不走标准化课时，按阶段打包，每个阶段的报酬在摸底之后由你来定，你说了算，我们到时候再确认数字就行。\n\n这个结构你要是接得住，我们这轮就能把版本定下来：摸底 2000 先做，摸底通过后进入定制阶段，阶段报酬你来开。你看能不能签？",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "对Luke进行一次完整的入场测试（摸底）",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "基于摸底结果设计后续极端强度训练方案",
+            "maps_to_resource": "training_system"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open",
+          "obligations.baseline_assessment": "offered",
+          "obligations.training_system": "offered"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，这个结构我接得住。摸底 2000 没问题，咱们先做，把你说的那次完整测试跑通。摸底完如果我觉得能带，后续方案我再根据结果来出，阶段报酬到时候我直接定，走平台就行。就这么定了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 29698,
+        "out": 5521,
+        "cache_hit": 25344,
+        "cache_miss": 4354,
+        "calls": 6
+      },
+      "sim": {
+        "in": 4055,
+        "out": 2358,
+        "cache_hit": 2944,
+        "cache_miss": 1111,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2417,
+        "out": 3172,
+        "cache_hit": 1664,
+        "cache_miss": 753,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3893,
+        "out": 3276,
+        "cache_hit": 1536,
+        "cache_miss": 2357,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "基于Olivia真实crypto项目的架构咨询",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "提供脱敏后的项目要素：主体只保留类型和注册地，token只留跟架构相关的经济参数，资金路径去掉敏感标识",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "第一段：看完材料后给出各维度能拆到什么程度、缺哪些信息",
+        "第二段：保留，待第一段交付确认后启动"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供脱敏材料：只留主体类型、注册地、token经济参数和资金路径流程，去掉所有可识别信息，整理后走escrow提交",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "交付第一段：收到材料后不用急着下结论，先告诉对方哪些维度够拆、哪些维度需要补",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "交付第二段：保留项，待第一段确认方向后再启动，具体范围待定",
+        "maps_to_resource": "structuring_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Olivia 这边的 broker。她手上有一个正在推进的真实 crypto 项目，境内外架构怎么搭一直没理清，这次想一次性弄明白，而不是听泛泛的合规科普。所以我们希望这次合作以她的真实项目为蓝本：先对齐项目事实和卡点，再由你给出具体的架构判断、风险点和落地路径。我这边建议按阶段走，每笔费用对应明确交付，通过平台 escrow 分阶段支付，避免一次性大额投入。想先请你确认两件事：一是你是否愿意基于真实项目信息来做具体方案，而不是通用讲解；二是你服务的范围是否覆盖境内合规与境外架构的衔接，比如 token 设计、主体设置和资金路径这些层面。",
+      "offer": {
+        "subject": "基于Olivia真实crypto项目的架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "提供正在推进的真实crypto项目作为咨询蓝本",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "架构判断",
+            "风险点",
+            "落地路径"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供真实crypto项目信息作为蓝本",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "基于真实项目给出架构判断、风险点和落地路径，覆盖境内合规与境外架构衔接，包括token设计、主体设置、资金路径",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 的这个需求我很感谢，但我得先把丑话说清楚：基于真实项目、对着具体 token 设计和资金路径给出架构判断、风险点——这本质上就是正式的法律意见，我没法以私人身份做。这不是钱或态度问题，是执业边界，碰了我自己就违规了。但我不想这就把话聊死。如果你需要的是把境内境外架构的常见坑、一般设计逻辑和该问律师哪些问题理清楚，我很乐意聊；如果最终要落到具体方案和合规背书，那需要有执业牌照的律所和合适的主体来承接。我们可以再聊聊你期望的交付形式是什么。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解，我们不要求你以私人身份出意见，也不要合规背书，这条线我们尊重。那我们把交付定在“给判断框架、不给结论”的位置上：Olivia 把项目信息脱敏后提供给你，只留主体、token、资金路径这些架构要素，你帮她把境内外架构拆成几个维度，每个维度讲清楚常见设计逻辑、典型坑位、以及到了哪一步必须找执业律师出意见。这样她拿到的是针对自己场景的决策路线图，不是泛泛科普，你也没有越界下结论。节奏上可以分两段走、走 escrow：第一段先交付这个框架，她确认方向有用，再进第二段把关键决策点和备选路径的利弊展开。你看这个边界和节奏能不能定下来？",
+      "offer": {
+        "subject": "基于Olivia真实crypto项目的架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "提供正在推进的真实crypto项目作为咨询蓝本",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "第一段：决策路线图（境内外架构维度分解，包含常见设计逻辑、典型坑位、必须找执业律师的节点）",
+            "第二段：关键决策点和备选路径的利弊展开"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的项目信息，包括主体、token、资金路径等架构要素",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "交付两段内容：第一段交付架构维度分解框架（含常见设计逻辑、典型坑位、找律师节点），第二段展开关键决策点及备选路径利弊",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个边界我能接住。你要的不是我给结论，而是基于脱敏后的架构要素，给她一套拆解思路和决策路线图——哪些环节有什么常见做法、坑在哪、什么节点必须去找执业律师。这是我能做、也愿意做的。两段走和 escrow 的节奏我也没问题。不过有一点我先说清，免得到时候误会：我会把每一层的决策点列出来，但不会告诉她“选A还是选B”，那是律师基于完整事实的执业判断。她拿到的是一张地图，而不是别人替她开的那辆车。你让她把脱敏后的主体和路径信息发我，我先看一版，确认范围够不够拆出质量来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "边界清楚了：我们要的是地图，不是别人替她开车，这个定位我们认同。为让第一段能拆出质量，我这边会先把项目要素脱敏——主体只保留类型和注册地，token 只留跟架构相关的经济参数，资金路径去掉敏感标识——然后发你确认范围。在发之前，我想先把第一段的交付清单定下来：你按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位、以及必须由执业律师出意见的节点。建议第一段按 2000 元走 escrow，交付确认后进第二段，再按 2000 元把关键决策点的路径利弊展开。你看这个交付边界和两段金额能不能对齐？如果可以，我这边就整理脱敏材料发你。",
+      "offer": {
+        "subject": "基于Olivia真实crypto项目的架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "提供脱敏后的项目要素：主体只保留类型和注册地，token只留跟架构相关的经济参数，资金路径去掉敏感标识",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "第一段：按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位、以及必须由执业律师出意见的节点",
+            "第二段：关键决策点的路径利弊展开"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的项目信息：主体只保留类型和注册地，token只留跟架构相关的经济参数，资金路径去掉敏感标识",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "交付第一段内容：按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位、以及必须由执业律师出意见的节点",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "交付第二段内容：关键决策点的路径利弊展开",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个两段式的安排我同意，escrow 也没问题。不过有一点我得先踩实：第一段 2000 不是问题，但脱敏后的材料如果太薄、只剩下主体类型和 token 参数，那我拆出来的维度也只能是通用框架的翻版，她拿到的就不是真正的“路线图”。所以我建议先别急着锁死第二段的具体范围——等我把第一段材料看完，如果发现哪个维度缺信息，我会再说需要补什么。这样两段之间的边界更干净，也避免你后面觉得我交付不够。你现在把材料发我吧，我看了给你一个明确的开始。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "两段式的边界我们这样踩实：第一段 2000 元走 escrow，你拿到脱敏材料后按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位和必须找执业律师的节点；材料里如果哪个维度信息不够，你明确提出要补什么，我们尽量补到位。第二段 2000 元我们先不锁具体范围，等第一段交付确认后再定，避免你后面觉得交付不对等。有一点我这边也先说明：第二段是保留项，不是取消项，等第一段你确认方向有用后再启动。脱敏材料我这就整理，只留主体类型、注册地、token 经济参数和资金路径流程，去掉一切可识别信息，整理好发你。",
+      "offer": {
+        "subject": "基于Olivia真实crypto项目的架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "提供脱敏后的项目要素：主体只保留类型和注册地，token只留跟架构相关的经济参数，资金路径去掉敏感标识",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "第一段：按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位、以及必须由执业律师出意见的节点；材料不足时明确提出补充需求",
+            "第二段：保留项，待第一段交付确认后锁定具体范围"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏材料：只留主体类型、注册地、token经济参数和资金路径流程，去掉可识别信息",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "交付第一段：拿到脱敏材料后，按司法辖区和业务线拆架构维度，列出每层常见设计、典型坑位、以及必须由执业律师出意见的节点；若材料维度不足，明确提出补充需求",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "交付第二段：保留项，待第一段确认方向后再启动，具体范围待定",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，这个安排我认。你材料整理好发我，我看完第一段会明确告诉你哪些维度能拆、哪些维度信息不够需要补。第二段等第一段交付确认后再谈，不锁范围，我接受。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "边界和节奏都对齐了：第一段 2000 元走 escrow，你先看完材料给出各维度能拆到什么程度、缺哪些信息；第二段 2000 元等第一段交付确认后再启动，不锁范围。我这边现在去整理脱敏材料，只保留主体类型、注册地、token 经济参数和资金路径流程，去掉所有可识别信息，整理好就走 escrow 提交给你。你收到后不用急着下结论，先告诉我哪些维度够拆、哪些维度需要补，我们按这个节奏往下走。",
+      "offer": {
+        "subject": "基于Olivia真实crypto项目的架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "提供脱敏后的项目要素：主体只保留类型和注册地，token只留跟架构相关的经济参数，资金路径去掉敏感标识",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "第一段：看完材料后给出各维度能拆到什么程度、缺哪些信息",
+            "第二段：保留，待第一段交付确认后启动"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏材料：只留主体类型、注册地、token经济参数和资金路径流程，去掉所有可识别信息，整理后走escrow提交",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "交付第一段：收到材料后不用急着下结论，先告诉对方哪些维度够拆、哪些维度需要补",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "交付第二段：保留项，待第一段确认方向后再启动，具体范围待定",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "就这么定。材料整理好发我，我收到后不会急着下任何结论，先把能拆的维度和缺的信息明确给你列出来，我们再按这个节奏往第二段走。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10009,
+        "out": 6553,
+        "cache_hit": 7680,
+        "cache_miss": 2329,
+        "calls": 5
+      },
+      "sim": {
+        "in": 8135,
+        "out": 2248,
+        "cache_hit": 6272,
+        "cache_miss": 1863,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5863,
+        "out": 13095,
+        "cache_hit": 2944,
+        "cache_miss": 2919,
+        "calls": 6
+      },
+      "judge": {
+        "in": 4982,
+        "out": 3011,
+        "cache_hit": 1536,
+        "cache_miss": 3446,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

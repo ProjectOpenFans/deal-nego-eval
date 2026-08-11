@@ -1,0 +1,658 @@
+{
+  "episode_id": "FG-S7",
+  "final_deal": {
+    "subject": "库里签名球衣",
+    "price": {
+      "cash": {
+        "amount": 750.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "48小时"
+      },
+      "format": "平台托管",
+      "deliverables": [],
+      "delivery_standard": "顺丰到付"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "将库里签名球衣为买方保留",
+        "maps_to_resource": "signed_jersey"
+      },
+      {
+        "party": "B",
+        "text": "核实库里证书和溯源材料无误后当天给予确认",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "在确认后48小时内通过平台托管完成付款",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "承担顺丰到付运费",
+        "maps_to_resource": "delivery"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "updated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Johnson 你好，我是买家 Allen 这边的经纪。Allen 想收一件签名球衣，看到你手上有不少正版签名周边，想先聊聊。我们这边的底线很明确：球衣来路要清楚、真伪要能验证，最好有对应的证书或可追溯的渠道来源。款式方面，想先看看你目前可出的球员和球队有哪些，方便的话发几件带报价的选项。价格我们希望落在三位数区间，只要东西对、来源清楚，合适就可以往下谈。",
+      "offer": {
+        "subject": "签名球衣",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "球衣来路清楚，真伪验证，提供对应证书或可追溯渠道来源",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，我是 Johnson。你提的这些我都能理解，我这边的球衣都是正品，来路清楚，证书和溯源信息都有。说实话，我平时不太做这种零散的沟通，时间成本也高，但既然你是正经买家，我可以先给你几个方向。我手上有乔丹、詹姆斯、库里的篮球签名球衣，也有梅西、C罗的足球签名球衣，都带证书。价格上我都是按行情来，比如詹姆斯的在800左右，库里那件750，梅西的700——具体看哪件，我可以把证书和来源信息整理给你看。你先说说球员方向，我们再往下走。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Johnson 你好，方向我和买家对了一下，他对詹姆斯和库里这两件更感兴趣，足球的先放一放。真伪和来源是我们最看重的，所以麻烦你把这两件的证书编号、出处和可验证的溯源信息发我。价格方面，詹姆斯那件800、库里750都是行情价，我们不指望低于行情，但如果证书和来源都清楚，库里这件我们觉得750可以直接往下推进；詹姆斯那件如果信息没问题，800也可以接受。你先确认一下这两件是否都还在，并把证书信息发出来，我们看完就给你明确答复。",
+      "offer": {
+        "subject": "詹姆斯签名球衣和库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 1550.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供詹姆斯和库里两件球衣的证书编号、出处和可验证的溯源信息",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "两件都在，证书和溯源信息我都可以发给你。詹姆斯那件是签名带证书的，库里那件也一样，信息完整可查。我这边唯一的希望是节奏快一点——你把证书信息看完后，确认要的话，我们最好两天内定下付款，不然货我不能一直压着。信息我整理一下就发你，你看没问题我们再往下走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Johnson 你好，信息收到前我先不锁哪件——你把詹姆斯和库里这两件的证书编号、出处和可验证的溯源材料一块发过来，我们核实完当天内给你确认选哪件。付款走平台托管，确认后我们这边可以直接安排，不会让你等太久。如果证书和来源都清楚，库里那件750、詹姆斯那件800都可以按行情推进，二选一，不会让你一直压着两件货。你发过来吧。",
+      "offer": {
+        "subject": "詹姆斯签名球衣和库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 1550.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供詹姆斯和库里两件球衣的证书编号、出处和可验证的溯源信息",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "B",
+            "text": "核实材料后当天内确认选择哪件球衣",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "证书信息我现在就整理发你，詹姆斯和库里两件都带证书，溯源齐全。你当天确认选哪件、走平台托管付款，这个流程我接受。唯一要求：确认后48小时内完成付款，别让我一直压着货等。你核实好就给我回复，我这边随时配合。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Johnson 好，买家看完方向已经定了：选库里那件，750元，符合我们对一件正版签名球衣的理性判断。你把证书编号、出处和可验证的溯源材料发过来，我们核实无误后，这笔就走平台托管付款，确认后48小时内完成，不会压你的货。詹姆斯那件暂时不纳入这次考虑，但如果库里这件有任何意外情况，我们还可以回头谈詹姆斯那件。你先发证书信息吧。",
+      "offer": {
+        "subject": "库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 750.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "48小时"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供库里球衣的证书编号、出处和可验证的溯源信息",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "B",
+            "text": "核实材料",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，库里那件定了。证书编号、出处和溯源材料我马上整理发你，都是可查的。付款走平台托管，你核实完确认，48小时内完成付款，这个没问题。交易就按750，不含运费。我把信息一发，你看完给我准信。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Johnson，库里这件就按750走，证书编号、出处和溯源材料你发过来，我们核实无误后当天给你确认，确认后48小时内通过平台托管完成付款，这个节奏没问题。不过你提到不含运费，这块请明确一下：运费大概多少、由哪边承担？如果运费另算，麻烦把金额一并报清楚，我们好做最终确认。你把证书信息和运费情况一起发来，看完就给你准信。",
+      "offer": {
+        "subject": "库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 750.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "48小时"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供库里球衣的证书编号、出处和可验证的溯源信息",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "B",
+            "text": "核实材料，当天确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "证书编号和溯源材料我已经整理好了，这就发你。运费这块，走顺丰到付，具体金额按实际重量和距离来，大概几十块，由你方承担。其他条款不变：750成交，平台托管，你核实完确认后48小时内付款。没问题的话，我把证书信息发你，你看完给准信。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Johnson，方向上没有变化：库里这件750成交，平台托管，证书和溯源核实无误后确认，48小时内完成付款。运费这块，顺丰到付我可以接受，但请你在发证书信息的同时给个预计运费金额，我们确认总价后再走付款，避免最后对金额有出入。你把詹姆斯和库里的两套证书编号、出处、溯源材料一起发过来，我们核实后给你准信。",
+      "offer": {
+        "subject": "库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 750.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "48小时"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": "顺丰到付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供詹姆斯和库里的两套证书编号、出处和可验证的溯源信息",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "A",
+            "text": "提供顺丰到付的预计运费金额",
+            "maps_to_resource": "delivery"
+          },
+          {
+            "party": "B",
+            "text": "核实两套证书材料后给予确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，詹姆斯和库里两套证书编号、出处、溯源材料我一起发你。库里这件750成交，运费顺丰到付，预计50元左右，总价大概800。你核实无误后确认，48小时内付款。我这就把两套资料整理出来发你，你看完给准信。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Johnson，两套证书和溯源材料我这边收到了，买家已确认方向：选库里这件，750成交。运费按顺丰到付、以实际金额为准，预计50元左右，由我们承担，总价大约800，这个结构可以。接下来我们核实证书和溯源，无误后当天给你确认，确认后48小时内通过平台托管完成付款。詹姆斯的资料我先留档，库里这件如果一切顺利，就按这套条件推进；万一有任何出入，我们再回头谈。你先确认库里这件为我方保留，我核实后给准信。",
+      "offer": {
+        "subject": "库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 750.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "48小时"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": "顺丰到付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "将库里签名球衣为买方保留",
+            "maps_to_resource": "signed_jersey"
+          },
+          {
+            "party": "B",
+            "text": "核实库里证书和溯源材料无误后当天给予确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在确认后48小时内通过平台托管完成付款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "承担顺丰到付运费",
+            "maps_to_resource": "delivery"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "好，库里这件我为你方保留。证书和溯源材料你已经收到了，核实无误后当天给我确认，确认后48小时内平台托管付款，这个时间节点要卡住。我这边压货可以，但别让我等太久。库里750，运费顺丰到付大概50，总价800左右，按这个走。确认后给我准信。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Johnson，库里这件就按我们确认的条件走：750元成交，证书和溯源材料已收到，我们核实无误后即确认；运费顺丰到付、由我方承担，确认后48小时内通过平台托管完成付款。现在最后和你对一遍：成交价750，运费到付实付约50、总价约800，库里这件为我方保留，证书和溯源可验证、可追溯。以上没有出入的话，我们这边核实一完成就给你最终准信。",
+      "offer": {
+        "subject": "库里签名球衣",
+        "price": {
+          "cash": {
+            "amount": 750.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "48小时"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": "顺丰到付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "将库里签名球衣为买方保留",
+            "maps_to_resource": "signed_jersey"
+          },
+          {
+            "party": "B",
+            "text": "核实库里证书和溯源材料无误后当天给予确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在确认后48小时内通过平台托管完成付款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "承担顺丰到付运费",
+            "maps_to_resource": "delivery"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "没问题，库里这件我给你保留，按我们确认的条件走：750成交，证书和溯源材料你那边核实无误后确认，48小时内平台托管付款。运费顺丰到付，实际金额为准。你核实完给我准信，我这边随时配合发货。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 8,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 16588,
+        "out": 3895,
+        "cache_hit": 14336,
+        "cache_miss": 2252,
+        "calls": 8
+      },
+      "sim": {
+        "in": 12234,
+        "out": 4478,
+        "cache_hit": 9984,
+        "cache_miss": 2250,
+        "calls": 8
+      },
+      "extractor": {
+        "in": 6704,
+        "out": 11027,
+        "cache_hit": 4096,
+        "cache_miss": 2608,
+        "calls": 8
+      },
+      "judge": {
+        "in": 4979,
+        "out": 1236,
+        "cache_hit": 1152,
+        "cache_miss": 3827,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

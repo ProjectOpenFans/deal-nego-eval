@@ -1,0 +1,706 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "高强度定制训练",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周六下午两点",
+        "deadline": null,
+        "duration": "一个半小时"
+      },
+      "format": null,
+      "deliverables": [
+        "摸底后当场给出初步判断",
+        "定制训练方案（按能力上限设计，非标准化课时包）",
+        "摸底后当场聊大方向（合作模式、训练周期、强度逻辑）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+        "maps_to_resource": "baseline_assessment"
+      }
+    ],
+    "status": "draft",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "兄弟你好，我是 Luke 的经纪人。Luke 自己 AI 创业，长期保持高强度训练，市面上的私教他基本都试过，统一的评价是“太温和”。他这次目标很明确：要一个真正能把他练到极限的安排，不是标准化的课时包，不接受那种划水式、养生式的带练。\n\n看你常年自己练，也带一帮朋友练，我们想先聊聊，你这边能不能做这种完全定制、强度拉到顶的训练？想听听你平时的训练理念，还有你觉得能让一个训练基础不差的人真正逼到极限，你大概会怎么安排。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，第一次有人专门找我聊这个，还挺意外的。我自己练了很多年，带朋友也是因为大家信任我，从来没想过这事儿还能收钱。你说的Luke，他具体什么情况？自己练过什么？练到什么程度？我得先了解一下，因为带人我有个习惯——没摸过底的人，我不敢直接上强度。以前见过有人觉得自己扛得住，结果第一天就伤了，这不行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你这个习惯，不带生人直接上强度确实是负责任的做法，Luke 也认可这一点。他不是那种盲目冲的愣头青，自己系统练了多年，力量、体能、篮球专项都长期在跟，基础的复合动作和体能储备没什么问题，就是一直苦于找不到能真正把他推过那条线的人。\n\n他现在的问题不是能不能扛，而是市面上私教给的计划都太保守，他觉得练完还有余量，不够爽。所以他需要一个能把强度设计到极限、同时又懂得在极限边缘控风险的人。你要摸底，完全没问题，他愿意先做一次评估，让你上手看看他的实际水平和抗压能力。摸底之后如果你觉得能接，我们就要一个真正硬核的定制方案，强度不能打折。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，既然他自己练过，也愿意先摸底，那这事儿能聊。摸底不是走形式，我得看他动作模式、发力习惯、对疲劳的真实反应——这些东西不亲眼见，谁说都不算。摸底完了，如果我觉得能接，强度我会按他的能力上限来设计，但节奏得我来定，不能他说“再重点”我就无脑加。你刚才说市场上私教太保守，我能理解，但反过来，如果他要的是那种不管人死活硬往上冲的，那我也干不了。先摸个底吧，咱们约个时间。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "没问题，底线清晰是好事，Luke 要的就是这种在极限边缘能控住风险的人，不是那种无脑加量的莽夫。你说的节奏你来定、摸底不是走形式，这些他都认可。\n\n那摸底这块咱们先定下来。Luke 这边时间比较灵活，这周或者下周的工作日晚上、周末全天都可以，看你这边的安排。摸底具体内容和时长你来定，Luke 只需要知道大概需要准备什么、在哪里碰头。\n\n摸底完了之后，如果你觉得能接，我们希望得到一个按他能力上限来设计的定制方案，不是标准化的课时包，强度上绝对不能温和。具体模式你看完摸底再聊也行，我们先约时间把第一步落实。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "这周或者下周的工作日晚上、周末全天",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那这周六下午两点，城北那个老铁馆，地方不大但家伙事儿够用。摸底大概一个半小时，让他穿训练服带双室内鞋就行，我看看他基础动作和体能底子。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "收到，周六下午两点城北老铁馆，带训练服和室内鞋，记下了，Luke 这边没问题。\n\n有一点确认一下——摸底本身你打算怎么算？是免费摸底还是收一次性的评估费？如果收费，我们想让 Luke 摸底完后根据实际体验再定，这个对你有没有问题。\n\n摸底结束当场能给一个初步判断吗？如果能接，我们希望尽快看到一个按他上限设计的定制方案，具体模式到时候一起聊。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated",
+          "terms.timing.when": "stated",
+          "terms.deliverables": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "呃，这个……我其实没想过要收钱，你看着来就行。摸底完了当场我能给你个初步判断，能不能接我直说。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "行，那摸底费我们这边安排一个数作为感谢，你花一个半小时上手评估，这个诚意 Luke 是有的。\n\n摸底完当场给初步判断，这个效率很好。如果判断能接，我们想摸底当天就聊一下大体的合作框架——不是现在就定死，但 Luke 需要知道方向：频率、周期、每次训练的强度逻辑，以及你怎么持续把他逼到上限。他不是来找人陪练的，是要一个能长期把他往前推的人。\n\n另外摸底的时候，除了基础动作和体能底子，Luke 的训练底子比较全面，你重点看看他肌肉耐力和心肺耐力在高强度下的反应，以及他在力竭边界的技术稳定性——这两块是他最想突破的。周六见。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open",
+          "obligations": "updated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "updated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，周六见。具体的框架等摸完底再说，现在聊都是空的，我得先看到人。你说的那两块我会重点看。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "好的，那就周六见。老铁馆具体地址你发一个定位过来，Luke 周六下午两点准时到。\n\n摸底重点我们再对齐一下——基础动作模式和体能底子之外，肌肉耐力和心肺耐力在高强度下的反应，还有力竭边界的技术稳定性，这两块你帮忙重点观察。摸底完了当场给判断，能接的话我们当天就聊框架方向，Luke 不喜欢拖。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "城北工业路17号，老变压器厂改的那个铁馆，门口有个生锈的龙门架，很好认。周六下午两点，我等着。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "收到，工业路17号老变压器厂铁馆，门口生锈龙门架，周六下午两点，Luke准时到。\n\n摸底之外多说一句，Luke对这次摸底挺重视的——不是随便找个人带着练，是真的在找能长期把他往前推的人。所以周六如果判断能接，咱们当天就把框架方向聊出来，不拘形式，哪怕口头对齐也行。Luke要的始终就一件事：真正硬核的定制方案，强度不温和。周六见。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "收到，周六见。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "好的，周六见。城北工业路17号老铁馆，下午两点，Luke这边已经记下了。\n\n摸底完了如果有初步判断，我们当天就直接聊框架方向。Luke要找的是一个能长期把他往前推的人，不是单次的体验课，所以只要你能接得住，后面怎么合作咱们敞开聊。周六见。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "成，周六见。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "好的，周六见。老铁馆下午两点，Luke 已经确认到位。摸底完了如果判断能接，我们希望当天不只是给个结论，最好当场就把大方向聊一嘴——合作模式、训练周期、强度逻辑，不用定死，但方向得先对齐。Luke 对强度的要求你清楚，他也不想摸底之后拖很久没下文。咱们周六快刀斩乱麻，直接聊透。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）",
+            "摸底后当场聊大方向（合作模式、训练周期、强度逻辑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "行，周六见，先摸完底再说。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "好，周六见。老铁馆，下午两点，一切照先前对齐的来。\n\n摸底交由你来主导，Luke到场就是全力配合，我们等你的初步判断。如果能接，希望当天就指个合作方向，Luke不喜欢悬而不决。他找的不是体验课，是能把他长期往前推的人——这一点你心里有数就行，咱们周六摸底见分晓。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）",
+            "摸底后当场聊大方向（合作模式、训练周期、强度逻辑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "行，周六见。摸底是摸底，合作是合作，先摸完再说，别预设一定能接。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "理解，摸底是专业判断环节，能不能接你说了算，我们不预设结果。Luke 对你的态度是尊重专业判断，他现在的训练底子摆在那，行不行你上手一看就清楚。\n\n周六下午两点工业路17号老铁馆，Luke 到点就到，训练服室内鞋都备好。摸底完了你给结论，能接咱们接着聊方向，不能接也直说，不用绕。Luke 就是冲着高强度来的，别摸底也走温和路线就行。周六见。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）",
+            "摸底后当场聊大方向（合作模式、训练周期、强度逻辑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "对，周六就是摸底。今天能给你的只有行或不行，框架什么的等我看完人再说。你一直在催当天聊方向，我理解Luke不想拖，但我不会没摸完底就给任何承诺，这是两码事。周六见。",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "行，不催了，你说得对——摸底就是摸底，判断你来下，节奏你掌握。Luke 尊重这个流程，周六到场就是全力配合你的评估，不会在场边硬催你给方向。\n\n只有一点：如果当天你说能接，Luke 希望能趁热打铁，至少口头聊一下下一步的大体方向，不用承诺，不拘形式。如果判断不能接，也直说，Luke 心里有数就行。\n\n周六下午两点工业路17号老铁馆，不见不散。",
+      "offer": {
+        "subject": "高强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六下午两点",
+            "deadline": null,
+            "duration": "一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底后当场给出初步判断",
+            "定制训练方案（按能力上限设计，非标准化课时包）",
+            "摸底后当场聊大方向（合作模式、训练周期、强度逻辑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "接受一次摸底评估，让教练上手了解实际水平和抗压能力",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "在摸底评估中重点评估肌肉耐力、心肺耐力在高强度下的反应及力竭边界的技术稳定性",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "周六下午两点，工业路17号老铁馆，不见不散。摸底就是摸底，别的等我看完人再说。",
+      "offer": null
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "round_cap",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 27710,
+        "out": 4716,
+        "cache_hit": 24448,
+        "cache_miss": 3262,
+        "calls": 12
+      },
+      "sim": {
+        "in": 23058,
+        "out": 3325,
+        "cache_hit": 19968,
+        "cache_miss": 3090,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 10495,
+        "out": 11993,
+        "cache_hit": 7168,
+        "cache_miss": 3327,
+        "calls": 12
+      },
+      "judge": {
+        "in": 2872,
+        "out": 535,
+        "cache_hit": 640,
+        "cache_miss": 2232,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

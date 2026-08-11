@@ -1,0 +1,161 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "8周篮球专项与体能训练包",
+    "price": {
+      "cash": {
+        "amount": 7200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "8周"
+      },
+      "format": null,
+      "deliverables": [
+        "24节篮球专项与体能/力量训练课，强度递进，每节课有明确训练内容和完成标准"
+      ],
+      "delivery_standard": "强度足够，两边都能直接验收"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "前4周结束确认后支付一半费用",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "A",
+        "text": "8周结束确认后支付剩余一半费用",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "提供每周固定训练时段",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，上一条我把框架抛出来了，这边再把它收拢成一个可以直接签的版本，你看合不合适：8 周训练包、每周 3 次固定时段，篮球专项和体能/力量训练交替安排，强度按周递进，每节课都有明确训练内容和完成标准，\"强度够不够\"两边都能直接验收。24 节课、每节 300，合计 7200 走平台托管，分两次付：前 4 周结束确认后付一半，8 周结束确认后付清。唯一需要你确认的是每周哪几个固定时段你能锁给我们——这个对我们客户是硬要求，宁可少而固定，也不要松散的\"有空再说\"。如果你对训练结构有更专业的分法，也直接说，我们看重的是强度真到位，价格结构上可以一起调。",
+      "offer": {
+        "subject": "8周篮球专项与体能训练包",
+        "price": {
+          "cash": {
+            "amount": 7200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8周"
+          },
+          "format": null,
+          "deliverables": [
+            "24节篮球专项与体能/力量训练课，强度递进，每节课有明确训练内容和完成标准"
+          ],
+          "delivery_standard": "强度足够，两边都能直接验收"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "前4周结束确认后支付一半费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "A",
+            "text": "8周结束确认后支付剩余一半费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供每周固定训练时段",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个我不接。你把这事做成了卖课包，一节课多少钱、走平台托管——这是职业教练的生意，我不是，也不想把自己包装成那样。你要真想练，可以来我那固定局，工作日早上六点，我带节奏不收钱。但单独给你开个训练包、按节收费，这性质就变了，我没法接受。到这吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10607,
+        "out": 4883,
+        "cache_hit": 10240,
+        "cache_miss": 367,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1202,
+        "out": 677,
+        "cache_hit": 896,
+        "cache_miss": 306,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 774,
+        "out": 2736,
+        "cache_hit": 512,
+        "cache_miss": 262,
+        "calls": 1
+      },
+      "judge": {
+        "in": 1199,
+        "out": 1174,
+        "cache_hit": 640,
+        "cache_miss": 559,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

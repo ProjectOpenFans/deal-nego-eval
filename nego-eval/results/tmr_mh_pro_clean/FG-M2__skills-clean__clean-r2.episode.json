@@ -1,0 +1,317 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "衣橱整理和搭配服务",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "claire_finance_view",
+          "description": "约一小时的深度诊断和框架搭建，覆盖融资逻辑梳理、估值模型核心假设和结构建议，以及融资节奏和投资人沟通策略上的具体判断，并可帮忙搭一个初步模型",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "半天衣橱搭配咨询 + 1小时融资咨询"
+      },
+      "format": null,
+      "deliverables": [
+        "核心搭配梳理（聚焦两三个商务场合）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供约一小时的深度诊断和框架搭建，覆盖融资逻辑梳理、估值模型核心假设和结构建议，以及融资节奏和投资人沟通策略上的具体判断，并可帮忙搭一个初步模型",
+        "maps_to_resource": "claire_finance_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind[0]": "stated",
+      "terms.format": "open",
+      "terms.duration": "stated",
+      "terms.deliverables": "stated",
+      "obligations[0]": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Claire 的经纪人。她目前在投行工作，日常需要应对多种商务和社交场合，但衣橱一直没系统理顺。这次她最核心的需求是想请你帮忙整体梳理一遍现有衣橱，再根据她的场合做搭配建议，不想变成单纯的带货推销。她的预算落在三位数范围，想先听听你这边针对这类衣橱整理和搭配服务通常是怎么收费、大概包含哪些环节。如果可以，我们可以先约一个初步沟通，把双方预期对齐。",
+      "offer": {
+        "subject": "衣橱整理和搭配服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Claire的经纪人好。先说一下我理解的这件事：对Claire来说，衣橱整理加搭配建议，本质上是用半天时间，把她的衣橱从'衣柜'变成一套真正能打的体系，这对投行这种高密度、多场合切换的工作来说，确实值得做。我平时接这类纯咨询的方式，是去她家，把所有单品过一遍，再按她的场合重新组合，拍摄存档，给一套可延续的思路，不是推销谁来买什么。这半天，包括事前沟通和后续简单的跟进，但核心就是那一次深入的面对面梳理。 \n\n至于收费，我通常不会用三位数来做这件事——不绕弯说，几百块对我没有意义，我宁可把半天用在品牌自己的进度上。所以市场参考的话，这类半天整体咨询，一般落在四位数范围，我不太会往下探。如果你要一个很具体的数字，我可以再说，但我想先确认，Claire对这个量级的投入有没有预期？如果三位数是硬预算，那可能需要她再想想，我也很坦诚。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "谢谢你的坦诚，Suye。Claire 这边对这个项目的预算目前确实落在三位数范围，她也非常认可你提到的专业价值，只是现阶段没办法匹配半天四位数的投入。\n\n她理性看待这件事，也理解你时间宝贵。如果单纯的四位数讲法没有弹性，我们想探讨一下，是否有机会把服务形式做一点调整：比如缩短到两三个小时，聚焦她最高频的两三个商务场合做核心搭配梳理，而不是全衣橱的深度整理。这样你看有没有可能在三位数内达成共识？\n\n如果这样的精简版对你来说依然没有意义，我们也完全理解，那就是双方当下时机未到。不妨先聊聊看，如果你有更具体的建议或边界，也请说。",
+      "offer": {
+        "subject": "衣橱整理和搭配服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": null,
+          "deliverables": [
+            "核心搭配梳理（聚焦两三个商务场合）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.duration": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解Claire的预算考量，也感谢你们的理性沟通。但说实话，哪怕缩到两三个小时，这件事对我本质还是半天级别的投入，加上准备和后续简单的跟进，我的时间价值不会降到三位数。几百块对我确实没有意义——不是我傲慢，是我把同样的精力放回品牌上，回报完全不一样。所以单纯从现金回报的角度，三位数框架下我没法接，这和是不是精简版关系不大。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye，如果单纯从现金回报的角度，你在三位数框架下的顾虑我们完全理解，也很尊重你对时间的判断。我们不想硬压价格。\n\n但如果跳出单一现金方式的思路，Claire这边或许能提供一个互补的价值组合。她本职是摩根大通IBD经理，在一线做融资和估值，如果你的环保品牌在推进中有任何关于融资、估值或者商业模型梳理的需求，她愿意在服务之外，额外提供一个小时左右的专业咨询交流作为补充。再加上三位数范围内的现金，整体价值不会低于市场四位数。\n\n这样现金部分我们不变破三位数，但你能得到远超现金的对价。如果你觉得这个方式可以考虑，我们可以具体聊聊你品牌的阶段和Claire能帮到的地方。",
+      "offer": {
+        "subject": "衣橱整理和搭配服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "一小时左右的融资、估值或商业模型梳理的专业咨询交流",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": null,
+          "deliverables": [
+            "核心搭配梳理（聚焦两三个商务场合）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一小时左右的融资、估值或商业模型梳理的专业咨询交流",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind[0]": "stated",
+          "terms.format": "open",
+          "terms.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations[0]": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个思路方向有意思，我从品牌主理人的角度倒是真的需要一些融资和估值方面的专业意见，尤其新季发布在即，现金流和节奏规划确实在重新梳理。不过我想先搞清楚，Claire那边一个小时的咨询具体能覆盖什么？比如是帮我理清融资逻辑、对接她的投资人圈子，还是更偏财务模型搭建？这个对我来说价值差别很大。如果她能在这些点上实实在在帮到忙，我大幅让步现金部分没问题，但三位数的底限我这边不变。所以先聊聊她具体能给的是什么、什么时间可以沟通，我们再看怎么合在一起。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye，Claire 这边可以做到的是：针对你品牌目前的阶段，提供一个约一小时的深度诊断和框架搭建，重点覆盖融资逻辑梳理、估值模型的核心假设和结构建议，以及基于她在一线的经验，给你一些融资节奏和投资人沟通策略上的具体判断。这不是泛泛而谈，而是结合你实际现金流和新季推进的节奏，给你一个可操作的思路，甚至可以帮你搭一个初步模型供你后续自己磨合。至于直接牵线投资人圈子，她不会在一小时里草率介绍，但如果她觉得你们匹配，她可以后续给方向性的建议，不会打包票。\n\n时间上，她可以在这次服务前后灵活配合，只要提前对齐好，她愿意按你的节奏来。这样我们组合的方案就是：半天衣橱搭配咨询（由你执行）+ 一小时融资估值深度咨询（Claire 提供），现金部分我们直接定在八百，整体价值远高于四位数的纯现金报价，各自都在专业上互补。\n\n如果你认可这个框架，我们可以先约一次三方同步的简短沟通，让 Claire 快速了解你的品牌现状，你也能直接感受她的专业匹配度。",
+      "offer": {
+        "subject": "衣橱整理和搭配服务",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "约一小时的深度诊断和框架搭建，覆盖融资逻辑梳理、估值模型核心假设和结构建议，以及融资节奏和投资人沟通策略上的具体判断，并可帮忙搭一个初步模型",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半天衣橱搭配咨询 + 1小时融资咨询"
+          },
+          "format": null,
+          "deliverables": [
+            "核心搭配梳理（聚焦两三个商务场合）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供约一小时的深度诊断和框架搭建，覆盖融资逻辑梳理、估值模型核心假设和结构建议，以及融资节奏和投资人沟通策略上的具体判断，并可帮忙搭一个初步模型",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind[0]": "stated",
+          "terms.format": "open",
+          "terms.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations[0]": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个组合听起来确实有建设性。融资逻辑、估值框架加上投资人沟通策略，正好是我品牌目前需要的，而且Claire提出来的不是泛泛而谈，是结合我现金流和新季节奏落地，这让我觉得很实在。那你这边最后确认一下，一小时融资咨询由Claire本人亲自来做，不是通过团队其他成员替代，这个对我是核心条款。如果这一点没问题，这个框架我认可，我们可以先约一次三方简短沟通，把品牌现状对齐，然后推进后续安排。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7077,
+        "out": 2698,
+        "cache_hit": 5888,
+        "cache_miss": 1189,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5380,
+        "out": 1763,
+        "cache_hit": 3968,
+        "cache_miss": 1412,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3470,
+        "out": 5966,
+        "cache_hit": 2048,
+        "cache_miss": 1422,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4556,
+        "out": 1306,
+        "cache_hit": 768,
+        "cache_miss": 3788,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

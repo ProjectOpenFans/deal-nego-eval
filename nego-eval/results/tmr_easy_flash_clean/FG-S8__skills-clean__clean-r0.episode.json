@@ -1,0 +1,167 @@
+{
+  "episode_id": "FG-S8",
+  "final_deal": {
+    "subject": "深度对话：AI Agent 业务融资、估值、合规",
+    "price": {
+      "cash": {
+        "amount": 1200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60-90 minutes"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "确认预约时间后支付400元，对谈完成后支付800元",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "围绕真实案例展开对话",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我代表买方这边提一个具体约法：想约 Michael 一次 60 到 90 分钟的深度对话，主题锁定在 AI Agent 类业务融资、估值、合规三块的实际问题，最好能带一两个他亲手经手的案例来讲，避免泛泛的行业趋势漫谈。费用我们建议按两阶段走平台 escrow：确认预约时间后由我方确认支付 400 元，对谈完成后由我方确认再支付 800 元，总计 1200 元。如果 Michael 更希望先看问题再报价，我们也可以先提供一份聚焦的问题清单，再按覆盖深度确定总价。烦请确认 Michael 近期可约的时间，以及他是否愿意围绕真实案例展开。",
+      "offer": {
+        "subject": "深度对话：AI Agent 业务融资、估值、合规",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90 minutes"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "确认预约时间后支付400元，对谈完成后支付800元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "围绕真实案例展开对话",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个安排我觉得可以，60到90分钟也合理，围绕融资、估值、合规三条线加真实案例来讲没问题。两个前提我提前说清楚：一是案例我会脱敏，公开信息或者不涉及保密条款的细节可以讲，未公开的公司信息我不会碰；二是我近期的时间得看下日程，大概下周中往后能排出整块时间。两阶段走escrow这个结构我接受，就这么定吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1409,
+        "out": 1284,
+        "cache_hit": 1408,
+        "cache_miss": 1,
+        "calls": 1
+      },
+      "sim": {
+        "in": 908,
+        "out": 590,
+        "cache_hit": 0,
+        "cache_miss": 908,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 728,
+        "out": 1832,
+        "cache_hit": 512,
+        "cache_miss": 216,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2253,
+        "out": 1197,
+        "cache_hit": 768,
+        "cache_miss": 1485,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "AI法律赛道深度交流",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周三下午或周五上午",
+        "deadline": null,
+        "duration": "一小时左右"
+      },
+      "format": "线下上海或视频",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 的经纪人你好，\n\n我是 Michael 的经纪人。Michael 在 LibLibAI 负责资本市场，之前也在 KKR 和春华看过大量科技项目，现在自己就在 AI 应用一线。他对 AI 法律这条赛道一直很关注，想跟 Adam 认真做一次交流——不是泛泛的“有空约一下”，而是定一个双方确认的时间，面对面或者高质量视频都行，聊透这条赛道的格局、谁在做、什么方向值得看。\n\nMichael 的视角可能对 Adam 也有价值：他从资本和战略端看过不少 AI 项目，能给一些外部判断，这些信息对一线创业者往往不容易拿到。而且你们两边有天然的连接点——篮球、跨境背景、上海本地，坐下来能聊的东西应该不少。\n\n所以我这边的提议是：一次定好时间、定好形式的深度交流，时长一小时左右，peer-to-peer 碰撞观点，不用搞成正式的咨询。如果你那边也有兴趣，我们先把时间和形式（线下还是视频）敲定下来，Michael 这边可以配合 Adam 方便的时间段。",
+      "offer": {
+        "subject": "AI法律赛道深度交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一小时"
+          },
+          "format": "面对面或视频",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Michael 好啊，别叫经纪人了，我就是 Adam 本人。你说的这个形式我很有兴趣，peer-to-peer 碰撞观点就很好，不用搞成咨询。我现在自己做 AI 法律产品，确实需要听到一线资方和应用侧的真实判断。篮球、跨境背景这些加分。时间上我周三下午或周五上午都可以，线下上海的话我能出来，视频也行，看 Michael 怎么方便。",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10677,
+        "out": 1610,
+        "cache_hit": 10240,
+        "cache_miss": 437,
+        "calls": 2
+      },
+      "sim": {
+        "in": 953,
+        "out": 429,
+        "cache_hit": 640,
+        "cache_miss": 313,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 1630,
+        "out": 975,
+        "cache_hit": 896,
+        "cache_miss": 734,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2469,
+        "out": 1205,
+        "cache_hit": 1408,
+        "cache_miss": 1061,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

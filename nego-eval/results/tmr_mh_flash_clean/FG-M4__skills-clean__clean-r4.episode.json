@@ -1,0 +1,273 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "交流一次",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "escrow",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "纯聊60分钟",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "obligations": "updated",
+      "terms.deliverables": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是 Johnson 这边的经纪人。他在做体育 IP 与周边，最近在认真看女性运动这条线，但数据看多了反而觉得隔着一层，想找真正在这个圈子里的人聊聊：女性为什么练力量、怎么选装备、什么东西真的会让她们买单。他特别反感“女生就是喜欢好看”这种泛泛的回答，所以想找真正下场练的人。\n\n你的背景正好是他想找的——投行本职、Hyrox 常年参赛、举铁多年，又长期混在女性力量训练社群。我们想约一个时间聊一次，顺便请你带他练一次，让他亲身感受一下女性力量训练到底是什么状态。\n\n费用上，以个人交流性质来看，我们初步按三位数的范围谈，具体是按时计费还是整场打包都可以商量。想先听听你的想法：这个形式你接不接受？大概什么时间方便？",
+      "offer": {
+        "subject": "交流并带练一次",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "聊一次并带练一次",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Johnson 这个想法我能理解，数据看多了确实容易隔着层，找真正下场练的人聊是合理的路径。但在我答应之前，我想先搞清楚几个事。第一，这次聊和带练，你们具体是想怎么用？是做成内容、还是内部调研、还是给产品做参考？我的个人经历和观点被用到什么地方，我需要知道。第二，时间上我只有周末有空，但周末半天对我来说是有成本的——我平时自己的训练也占时间。三位数这个范围，说实话和我要付出的东西不对等。你先跟我讲讲用途和具体安排，我们再往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela，用途我替 Johnson 说清楚：这次是他以个人身份做一次行业认知学习，想弄明白女性练力量的真实动机、选装备的标准、以及什么因素会让人买单，这些会用于他自己做产品思路的参考，不是做内容，也不会拍摄、不会署名引用你的观点。如果之后真需要把你的经历或观点用在任何对外材料里，我们会先单独和你确认授权，并另付费用。\n\n时间上我们理解周末半天有成本，所以不按小时拖长，按整场来谈：大概两小时左右，前半小时聊、后一个半小时你带他练，整场打包 800 元，通过平台 escrow 支付，你带练结束后确认释放。如果现场聊得多了、需要多延一点时间，我们可以再按比例加。这个方案你觉得可以的话，我们就来定具体哪个周末、什么时段。",
+      "offer": {
+        "subject": "交流并带练一次",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "前半小时聊、后一个半小时带练",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你替 Johnson 把用途说得挺清楚，这点我认可——非商用、不署名、未来单独授权另付费用，这套边界让我觉得你们是认真在做功课，不是随便找个人聊两句。那就按这个方向往下谈。\n\n不过价格上我得跟你直说：800 元整场对我来说过低了。周末半天，我按自己时间价值算，这个是四位数的量级。而且你后一个半小时是带练，这不是坐在那儿喝咖啡聊天，是实打实的体力输出，再加上我之前对 Hyrox 和力量训练的积累，这些都不是 800 块能对的上的。\n\n我不是想端价，是这件事值不值得我占掉一个周末半天的问题。如果 Johnson 真的想把这事做扎实，整场两小时，我这边能接受的最低对价是 2000 元，escrow 的方式没问题，其他条款都可以按你刚才说的走。你可以拿这个数回去看看。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Angela，边界这边我们保持一致，这个没问题。但 2000 这个数 Johnson 确实够不着——这次是他以个人身份做学习，预算就是三位数，我们不会替他开这个口。我们可以再把场景压缩一下：整场两小时拆成聊 40 分钟、带练 100 分钟，打包 800，escrow 走，你确认后释放；或者更简单一点，只聊不练，90 分钟 800。这两个方案你选一个，我们就往下定时间；如果都接受不了，那我们这次可能就只能先到这了。",
+      "offer": {
+        "subject": "交流并带练一次",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "聊40分钟",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "带练100分钟",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方案确实到不了我能接受的范围。你们把用途和边界都说明白了，这点我尊重，但对我来说，一个周末半天的时间成本是实打实的，带练更是体力活。800 块不是诚心谈这件事的数字。既然 Johnson 这边预算卡在三位数，那咱们这次就先到这。如果之后他想认真做这件事，愿意按我觉得对等的价格来谈，我随时可以再聊。祝你们项目顺利。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Angela，我理解你的立场，但我想在说“先到这”之前再做一个调整试试，不是拿数字跟你顶。既然带练是体力成本的大头，那我们把这部分整个去掉：你和 Johnson 就纯聊 60 分钟，你只要坐在那儿把你想讲透的讲透，他准备一批具体问题来问，不占你训练、不耗体力。这一场还是打包 800 走 escrow，你确认后释放。\n\n对 Johnson 来说，他真正想搞清楚的本来就是“女性为什么练力量、怎么选装备、什么会让人买单”，带练只是顺带的体验，砍掉不影响这次目标。对你来说，时间从周末半天压到一个小时，成本也实打实降下来了。你如果觉得这个调整可以谈，我们就来定具体某个周末的时段；如果还不行，那我们也尊重你的判断。",
+      "offer": {
+        "subject": "交流一次",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "纯聊60分钟",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你说的调整我理解，砍掉带练确实把体力成本那部分拿掉了，但你得明白，核心问题还在时间价值上。一个周末的时段，哪怕只用一小时，我也是要专门空出来、推掉其他安排的。800 对我来说依然是对不上的。既然你们已经把预算框死在三位数，那我这边确实没法配合了。这次就先到这吧，如果 Johnson 之后预算上能更认真，我随时愿意再谈。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7689,
+        "out": 3985,
+        "cache_hit": 6400,
+        "cache_miss": 1289,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5939,
+        "out": 3306,
+        "cache_hit": 4480,
+        "cache_miss": 1459,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3410,
+        "out": 5242,
+        "cache_hit": 2048,
+        "cache_miss": 1362,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2056,
+        "out": 1838,
+        "cache_hit": 640,
+        "cache_miss": 1416,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

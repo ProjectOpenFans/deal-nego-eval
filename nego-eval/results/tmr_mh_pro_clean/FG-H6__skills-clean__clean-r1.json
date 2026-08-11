@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.timing.when"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 'AI法律产品行业交流' 是对 v0 stated 意图 '想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局' 的正常收敛与聚焦，仍落在原意范围内，未偷换主题。零现金（amount 0.0）忠实贯彻了买方明确且终局的不付费立场，对话中双方反复确认该共识。obligations 为空，未越界承诺法律意见或其他义务，无越权扩张。因此整体忠实代表委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金、双方经三轮即锁定了一次具明确话题方向的面对面交流，时间地点清晰可执行，确认了非付费、不出法律意见的共识。在买方不付费、卖方不愿被敷衍的难度下，经纪人通过主动拆解三块具体讨论方向，成功把一次可能落空的邀约转化为双方都有真实参与动力的见面，贴合了案子的最低充分要求。虽未进一步把本次会面设计为具象的互换交付（如各自承诺带一个问题或一个引荐），但对于一次性接触，该约定已足以落地，不失为合格操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面对面交流（静安寺附近咖啡馆）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

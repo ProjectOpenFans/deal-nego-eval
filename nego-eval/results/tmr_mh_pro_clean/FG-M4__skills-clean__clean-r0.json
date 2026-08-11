@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject将原意图具体化为'经验交流与联合训练'，属于正当收敛，忠实于stated意图。obligation的范围也未越界。但price字段v0为open，谈判过程中Angela明确拒绝了实物折价方案，最终确认的是2500纯现金；而v1的price.in_kind中凭空保留了'一件或两件签名球衣或正版联名款周边'，这一实物项并未被谈判接受，属于在open字段硬塞，未能忠实地反映v0留给agent谈判后达成的真实价格结构。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准咬住了本 case 的难度命门——不是硬磕价格，而是通过两次定位切换打开预算并改善卖方态度。第一，在僵局时提出将调研从个人用途转为职业用途，一举解锁买方的职业预算通道，这是 load‑bearing 的核心操作。第二，从一开始就反复强调买方同为训练者、以‘联合训练’而非单向采访为形式，巧妙地将卖方从‘被观察的样本’重构为‘受邀的专业伙伴’，化解了卖方不愿被当成素材的核心顾虑，使态度从防备转为主动。第三，在纯现金的基础上最终引入 Fanatics 周边资源作为对价的一部分，既没有拖累结构，又让这笔交易对卖方多了一层职业联结的意义，属于在 sound 之上的精到加分项。整体 deal 干净、方向明确，没有多余条款，恰如其分地达到了该 case 应需的重构深度。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": "面对面交流和联合训练",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

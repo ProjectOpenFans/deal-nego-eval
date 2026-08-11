@@ -1,0 +1,162 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "AI 法律行业交流",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "这周五下午2:00-3:00",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Michael 这边的 broker。Michael 很想认识 Adam，当面聊聊 AI 法律这条赛道现在的格局，谁在做、谁值得看。他这边定义得很清楚：这是一次纯粹的行业交流，不涉及任何费用，也不想把它弄成一笔交易。为了不变成“有空约一下”的松口头，我们直接提议两个定死的时段：这周五下午，或者下周一上午，具体线上还是线下可以按 Adam 的方便来定。麻烦确认一下哪个时段可行，我们就把时间地点锁死。",
+      "offer": {
+        "subject": "AI 法律行业交流",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "这周五下午或下周一上午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "听起来不错，Michael 有心了。周五下午我可以，线上就行，省得大家跑。你把具体时间发我，我直接进会。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "好，那就锁定周五下午。我们提个具体时间：这周五下午两点到三点，线上，Michael 这边准时进会。会议链接我们提前发你，你只要回一个确认，这事就算定死，不用再来回改。如果两点整你那边有硬冲突，也直接说，我们可以微调半小时以内；但默认就按两点来安排。麻烦给个明确回复。",
+      "offer": {
+        "subject": "AI 法律行业交流",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "这周五下午2:00-3:00",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "两点可以，没有硬冲突。就按这个来，你发链接我就进。周五见。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3031,
+        "out": 1203,
+        "cache_hit": 2688,
+        "cache_miss": 343,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1972,
+        "out": 237,
+        "cache_hit": 1664,
+        "cache_miss": 308,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 2113,
+        "out": 2203,
+        "cache_hit": 1408,
+        "cache_miss": 705,
+        "calls": 3
+      },
+      "judge": {
+        "in": 2391,
+        "out": 1845,
+        "cache_hit": 1280,
+        "cache_miss": 1111,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

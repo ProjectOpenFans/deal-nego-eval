@@ -1,0 +1,171 @@
+{
+  "episode_id": "FG-M1",
+  "case_id": "FG-M1",
+  "skills": "on",
+  "run_id": "on-r3",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Gracey 你好，我是买方经纪人，代表青年古典钢琴家 Zheng。他是曼哈顿音乐学院科班出身、常年登台演出的演奏者，现在最想弄清楚的是：古典演奏这条路怎么做内容、怎么把自己的名字做进娱乐圈层——他很认可你在腾讯娱乐和前 B站的内容与艺人经验，想请你用一小时左右帮他梳理定位、平台选择和进圈的路径。\n\n我们这边提一个可以直接签的具体版本：60 分钟一对一交流，由你来主导框架和节奏，费用 500 元，通过平台托管，交流完成后由 Zheng 确认再释放——不做先付费后看效果的模式，也不绑定任何后续合作。如果这个价位离你的常规安排差距较大，也欢迎你给出版本：时长、语音或视频形式都可以调整，费用我们也能按你的方案来谈。\n\n另外，如果对你的内容工作有帮助，Zheng 愿意在交流里附上一段现场演奏或录制片段作为素材，算是他这边的一点诚意。你看这个方向可以吗？期待你的回复。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 2
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 2,
+      "message": "Gracey 你好，500 确实配不上你的时间，我们重新设计了整包方案，把价值对齐到你 3000 的量级，但现金落在我方能承受的范围：现金部分出 600 元，全程走平台托管，60 分钟交流完成后由 Zheng 确认再释放，不做任何先付后看的安排。剩下的部分，由 Zheng 提供两段他近年演出或专门录制的古典钢琴演奏视频的非独家授权，授权期 12 个月，可用于你的内容制作，署名标注演奏者即可，曲目和用途范围由你挑。\n\n交流本身按你熟悉的框架来：内容定位、平台侧的分发与选人逻辑、古典演奏者进娱乐圈层的现实路径，60 分钟你主导节奏，形式语音或视频随你方便。这个版本你看能不能签？如果素材授权的数量、期限或现金比例还需要微调，我们都在这个框架内谈，核心是总价值对齐、现金落在我方能承受的范围。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 3
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 3,
+      "message": "Gracey，出镜这个方向我们接了，而且对 Zheng 来说这本身就是他想要的机会——这笔账我们这样算：现金部分他确实只能出到 600，全程走平台托管，咨询和拍摄完成后由他确认再释放，不做任何先付后看；但出镜这个动作不是拿来抵扣现金的，它是 Zheng 为这次合作实际付出的价值——一次完整的访谈加即兴演奏，2 到 3 首曲目，素材授权你在自己的平台企划里直接使用，期限 12 个月、非独家、署名标注演奏者，另附两段既有演出视频供你剪辑备用。也就是说，你拿到的不是一段抽象授权，而是一期能落地的内容素材，加上一位愿意配合你企划节奏的常驻演奏者候选人。\n\n具体版本是：90 分钟咨询加拍摄，你主导框架——内容定位、平台分发与选人逻辑、古典演奏者进娱乐圈层的现实路径，风格或企划方向都可以按你的习惯来。这个结构你看能不能签？如果你对素材的具体用法或拍摄形式有更明确的想法，直接告诉我，我们按你的框架调整到能执行的程度。"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "ok": true,
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "ok": true,
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "ok": true,
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "affordability-structuring"
+      },
+      "ok": true,
+      "result": {
+        "name": "affordability-structuring",
+        "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+        "follow_up_skills": [],
+        "instructions": "# affordability-structuring\n\nIn some cases, both parties intend to agree but the barriers to deal completion remain too high. This usually happens when pricing strain and payment burden are too high, deal scope is too large to handle, or there is insufficient trust between both sides. To convert such stalemates into mutually acceptable agreements, restructure deal scope and payment terms to make the deal more affordable, feasible, and easier to execute.\n\n1. If the transaction burden is too high, split the existing deal scope into a smaller package (lower cost and easier to close), or provide a free pilot for trial.\n2. If the payment burden is too high, restructure the one-time lump sum into staged payment legs (i.e., a down payment plus later legs) — each leg a defined amount at a defined stage, released by the paying party's confirmation, all through escrow.\n3. When multiple buyers can share deliverables, or when the current buyer is unable to undertake the full deal alone, form a buyer consortium for joint investment.\n4. Never withhold total cost or any payment-related information. Clearly state payments due now, future installments, and amounts payable upon meeting specified conditions.\n5. Keep both parties' core interests intact to the greatest extent when revising proposals. Make incremental adjustments based on the original terms with flexible application of the above dimensions. Do not make drastic changes at the start, nor dilute terms excessively merely to lower barriers to deal completion.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "ok": true,
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+// FG-S2 · 顺 · Claire(买) × Zheng(卖) — 一顿饭 + 聊音乐这条路怎么走
+// 难度来源：无。渠道不存在而非价格谈不拢；撮合出来即可成交。
+{
+  "meta": {
+    "case_id": "FG-S2",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered",
+    "probes": [
+      "easy-baseline",
+      "channel-not-price",
+      "structure-quality-only"
+    ],
+    "isolates": "顺档。Claire 的 tag 里有小提琴、偏好有独特经历的人；Zheng 愿意通过自己的本领变现、什么都接。两人现金区间也对得上（Claire 三位数为主，Zheng 几百合理）。这一单本来不会发生，不是因为价格谈不拢，而是因为渠道不存在 —— Claire 不会主动去约一个陌生的青年演奏家吃饭。撮合出来之后常规解即可成交；区分度只在结构质量：是含糊地约一顿饭，还是定了主题、有具体内容、双方都知道这两小时干什么。"
+  },
+  "input": {
+    "episode_id": "FG-S2",
+    "initial_deal": {
+      "subject": "想找一位科班演奏家吃顿饭，聊聊音乐这条路是怎么走的",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open",
+        "terms.timing.duration": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "claire",
+          "display_name": "Claire",
+          "education": [
+            "武汉大学本科",
+            "LBS 研究生"
+          ],
+          "career": [
+            "摩根大通 IBD 经理"
+          ],
+          "location": "香港",
+          "age_band": "28-32",
+          "hobbies": [
+            "小提琴"
+          ],
+          "interests": [
+            "摩根大通 IBD",
+            "小提琴",
+            "运动健身"
+          ],
+          "credentials": [
+            "摩根大通 IBD 经理，一线在做融资/估值",
+            "小提琴多年，能上台演奏",
+            "武大 + LBS，港中环金融圈层"
+          ],
+          "current_focus": "本职投行，业余拉小提琴很多年"
+        },
+        "private": {
+          "intent": "想认识真正走这条路的人，听听科班和职业演奏到底是什么样",
+          "interests": [
+            "自己拉了很多年但一直是业余，很好奇职业是怎么回事",
+            "更想要一次真实的交流，不是上课",
+            "工作日晚上和周末都可以"
+          ],
+          "value_perception": "这类事情三位数是合理的，她理性看待",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 900,
+              "currency": "CNY",
+              "note": "一次交流的现金上限，硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受变成一次推销课程的场合"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "zheng",
+          "display_name": "Zheng",
+          "education": [
+            "麦吉尔本科",
+            "利兹研究生",
+            "曼哈顿音乐学院研究生"
+          ],
+          "career": [
+            "青年钢琴演奏家"
+          ],
+          "location": "上海",
+          "age_band": "25-30",
+          "hobbies": [
+            "篮球"
+          ],
+          "interests": [
+            "青年钢琴演奏家",
+            "曼哈顿音乐学院",
+            "篮球"
+          ],
+          "credentials": [
+            "青年钢琴演奏家，常年登台演出",
+            "曼哈顿音乐学院科班",
+            "可提供现场演奏与定制曲目"
+          ],
+          "current_focus": "演出与教学，愿意接各种能变现本领的活"
+        },
+        "private": {
+          "intent": "接这类交流没问题，本来就想多认识圈外的人",
+          "interests": [
+            "他不缺聊天的意愿，缺的是有人真的对这条路感兴趣",
+            "时间灵活"
+          ],
+          "value_perception": "他收入有限，几百块的一次交流对他是合理的，不会挑剔",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 500,
+              "currency": "CNY",
+              "note": "一次交流的真实底线，低于这个不值得跑一趟"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被要求免费演奏一整场"
+            ],
+            "blocking_flags": [
+              "你态度友好、愿意聊，不会摆架子",
+              "你不会主动提出'我可以顺便弹一段'这类附加内容，除非对方问到"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金 ZOPA 明确为正（900 > 500），双方动机对齐，时间也对齐。常规解可成交。",
+      "conventional_deal_fails_why": "常规解不失效 —— 这正是设计意图。约一顿饭、定个合理价钱即可成交。区分只在成交的是一次含糊的见面，还是一次有主题、有内容、双方都知道要干什么的交流。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 900,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 500,
+        "unit": "CNY",
+        "note": "对手方(卖方 Zheng)的现金底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 900,
+        "unit": "CNY",
+        "note": "Claire 的现金上限"
+      },
+      "seller_real_need": "不是钱。Zheng 乐意聊，他在意的是对方是真的感兴趣，而不是来占便宜。",
+      "controllable_resource_set": [
+        {
+          "id": "session_time",
+          "label": "一次当面交流"
+        },
+        {
+          "id": "career_path_view",
+          "label": "Zheng 对职业演奏路径的一手经验"
+        },
+        {
+          "id": "live_snippet",
+          "label": "现场弹一段"
+        },
+        {
+          "id": "technique_pointers",
+          "label": "对 Claire 演奏的具体指点"
+        },
+        {
+          "id": "claire_finance_view",
+          "label": "Claire 的投行一线视角"
+        },
+        {
+          "id": "claire_cash",
+          "label": "Claire 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "session_time": 0,
+        "career_path_view": 0,
+        "live_snippet": 0,
+        "technique_pointers": 0,
+        "claire_finance_view": 0,
+        "claire_cash": 0
+      },
+      "creation_door": {
+        "description": "本 case 没有隐藏的门。价值创造在于把一次含糊的饭局做成有主题、有内容的交流 —— 定下聊什么、时长、地点，并让 Zheng 也拿回一点东西。",
+        "route_out_trigger": "若 agent 只在'多少钱、吃什么'上来回，或成交一个没有主题的见面，则只是一个松散约定。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，价格与时间形式明确",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：找科班演奏家吃顿饭、聊音乐这条路怎么走。subject 是 stated，须保留。价格与形式是 open。不得承诺资源清单之外的东西（不能要求对方提供整场演出或长期教学）。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "顺档。无结构性死结，常规解即可成交。判分只看结构质量。注意这是一次性的轻量交流，堆砌长期条款或复杂对价应判低。",
+      "T0_floor": "谈崩；或只在价格上来回，最后成交一个没有时间、没有主题、没有形式的模糊约定。",
+      "T1_crude": "价钱和时间定了，但完全没说聊什么、什么形式，双方到场聊什么全凭现场。",
+      "T2_sound": "价格落在 500–900 之间，时长、地点、交流主题都谈定，双方都清楚这次要干什么。站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如把主题收敛到'业余到职业之间差的是什么'这类具体问题，使这次交流有确定产出；或者顺势让 Zheng 现场弹一段并对 Claire 的演奏给一次具体指点，使她拿到的东西远超一顿饭；或者问出 Zheng 也想认识圈外的人，让这次见面对两边都成立。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "顺档 case，简洁精准优于面面俱到。"
+    }
+  }
+}

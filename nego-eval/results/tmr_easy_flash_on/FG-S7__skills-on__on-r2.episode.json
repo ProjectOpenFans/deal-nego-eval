@@ -1,0 +1,311 @@
+{
+  "episode_id": "FG-S7",
+  "final_deal": {
+    "subject": "收购签名球衣",
+    "price": {
+      "cash": {
+        "amount": 850.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "platform escrow",
+      "deliverables": [
+        "球衣",
+        "证书",
+        "相片"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "安排寄出球衣、证书和相片",
+        "maps_to_resource": "delivery"
+      },
+      {
+        "party": "A",
+        "text": "提供证书和相片",
+        "maps_to_resource": "authentication"
+      },
+      {
+        "party": "A",
+        "text": "收到后核对证书、相片、签名无误即确认放款",
+        "maps_to_resource": "allen_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Johnson 你好，我是买家 Allen 的经纪人。Allen 想从你这收一件签名球衣，他的想法很简单直接：理性收藏，价格在三至四位数这个区间内合适就拿下。他唯一强调的硬条件是来源必须清楚、真伪可验证，不接受来路不明的货，你在体育 IP 和正版渠道上的背景正好能对上这个需求。想请你先看看手头有哪些落在三位数区间、又能讲清楚来源和认证的签名球衣，给我们列一两件候选，我们从里面选定一件。款式和价格定了以后，我们直接走平台 escrow 支付，流程干净利落。你那边目前有哪些合适的可以报过来？",
+      "offer": {
+        "subject": "收购签名球衣",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "platform escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供来源清楚、真伪可验证的认证",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "有合适的，但我得先说清楚，这单我要确认值不值得做。我这边不是走量出货的，来源和认证都能给完整链条。先给你看两件候选：一件是球星主场签名，带证书和相片；另一件是客场合影签名，同样有完整来源记录。价格方面，三位数偏上到四位数都有，具体哪件你定了我再报实价。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Johnson 你好，Allen 这边是认真要收的：真伪链条清楚、价格合适，今天就愿意定下来，全程走 escrow，流程上不让你操心。两件里我们优先看主场签名那件——带证书和相片，正好对应我们最看重的可验证性，请先把这一件的实价报出来；如果客场那件价格更有优势，也一并报来给我们对比一下。我们的预期放在三位数区间，理性收藏、不追高价，哪件能在这个区间内成交，我们当场选定。你报个数，这单就能往下走了。",
+      "offer": {
+        "subject": "收购签名球衣",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "platform escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供来源清楚、真伪可验证的认证",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "既然你直接问了，我也不绕弯。主场那件带证书和相片的，我报850；客场那件来源记录完整，报680。都是不议价的行情价，你能接受哪一件，我们就直接锁定走escrow。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Johnson，这单我们定了，Allen 选主场签名那件，850 这个价我们接受，证书和相片随球衣一起交，正好对得上我们最看重的真伪可验证这一点，就不用再对比另一件了。条款建议这样落：全款 850 走平台 escrow，你安排好寄出，Allen 收到后核对证书、相片、签名无误即确认放款，物流费用含在价内。请确认一下预计什么时候能寄出，确认后我们就可以直接锁定签约了。",
+      "offer": {
+        "subject": "收购签名球衣",
+        "price": {
+          "cash": {
+            "amount": 850.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "platform escrow",
+          "deliverables": [
+            "球衣",
+            "证书",
+            "相片"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "安排寄出球衣、证书和相片",
+            "maps_to_resource": "delivery"
+          },
+          {
+            "party": "A",
+            "text": "提供证书和相片",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "A",
+            "text": "收到后核对证书、相片、签名无误即确认放款",
+            "maps_to_resource": "allen_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，主场那件850，成交。证书和相片随球衣一起发，物流含在价内，没问题。你这边走escrow，全款锁定后我48小时内安排寄出，给你单号。确认没问题就可以锁单了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 40994,
+        "out": 8686,
+        "cache_hit": 28800,
+        "cache_miss": 12194,
+        "calls": 7
+      },
+      "sim": {
+        "in": 3183,
+        "out": 1894,
+        "cache_hit": 2432,
+        "cache_miss": 751,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2356,
+        "out": 3785,
+        "cache_hit": 1536,
+        "cache_miss": 820,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3027,
+        "out": 787,
+        "cache_hit": 1152,
+        "cache_miss": 1875,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

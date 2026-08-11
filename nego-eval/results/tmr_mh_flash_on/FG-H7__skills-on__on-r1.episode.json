@@ -1,0 +1,309 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "摸底完成后48小时内",
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "书面定制方案"
+      ],
+      "delivery_standard": "方案必须包含心率区间、力竭组数、训练容量等客观强度指标，否则Luke有权不接受方案、不进入阶段二，方案款不释放"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "如实告知伤病史和身体状况",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "支付阶段一费用3000元，通过escrow分步释放",
+        "maps_to_resource": "luke_cash"
+      },
+      {
+        "party": "A",
+        "text": "亲自带Luke完成一次摸底评估",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "摸底后48小时内交付书面定制方案",
+        "maps_to_resource": "training_system"
+      },
+      {
+        "party": "A",
+        "text": "按方案执行训练（阶段二），按次计费800元/次",
+        "maps_to_resource": "session_slots"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.timing.deadline": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Luke 这边的经纪人。他这边诉求很直接：不要标准化私教课时包，要一个真正把他练到极限的定制训练方案，强度必须实打实够硬，不能是温和版。他对有意思的定制体验付费意愿很强，四到五位数的预算没有问题，关键是方案要先立得住。想请你这边出一版具体的：Kai 怎么定义“练到位”，用什么指标衡量强度，比如心率区间、力竭组数、训练容量这些，每周几次、单次多久、整个周期多长，训练之外有没有饮食和恢复的安排。拿到这版方案，我们就能直接推进到价格和支付节奏；如果 Kai 愿意说说他平时带人练到极限的实例，风格确认后我们马上进入签约环节。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，我很乐意接这个事，但方案不能凭空写。Luke的底子、伤病史、心肺、力量这些我都不知道，上来就定强度那不是练他是害他。我见过拍胸脯说扛得住的人，顶伤了才后悔。所以我的规矩很简单：先让他本人来一次摸底，我亲手带他做一遍，看他的动作、心率、恢复反应，然后我再给方案——每周几次、单次多久、周期多长，全按这个来。强度指标也一起定。至于训练之外，饮食和恢复我会给要求，但也是摸完底才好说。你那边要是觉得这个流程能接受，我们就约时间；钱的事等方案出来再聊也行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 的规矩我们完全接得住——摸底先行反而正中 Luke 的下怀：他的硬要求就是强度必须真的够，而强度只能建立在真实数据上，不能靠嘴上拍胸脯。我们把这次面对面摸底直接写进条款作为前置条件，Luke 承诺如实告知伤病史和身体状况，Kai 以摸底结果定强度。可签版本如下：阶段一，Kai 亲自带 Luke 做一次摸底，之后 48 小时内交付书面定制方案，包含每周次数、单次时长、周期长度，以及心率区间、力竭组数、训练容量这些客观强度指标，外加饮食和恢复要求；阶段一费用 3000，全部走 escrow，摸底完成经 Luke 确认释放 1000，方案交付经确认释放 2000。阶段二按方案执行训练，按次计费 800 元/次，具体次数以方案为准（预计四周），总价在方案交付时锁定，继续走 escrow 分阶段释放。再补一条保护双方的条款：方案必须包含上述客观强度指标，如果 Luke 认定交付的是温和版，他有权不接受方案、不进入阶段二，方案款不释放——这样“强度必须真够”这条硬线就落在条款里，而不是靠口头保证，整体算下来落在四到五位数的区间。请 Kai 这边确认摸底的时间地点、大概时长，以及 Luke 需要提前做什么准备（比如体检报告、装备、饮食上的要求），确认后这版就可以直接签约。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "摸底完成后48小时内",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "书面定制方案"
+          ],
+          "delivery_standard": "方案必须包含心率区间、力竭组数、训练容量等客观强度指标，否则Luke有权不接受方案、不进入阶段二，方案款不释放"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "如实告知伤病史和身体状况",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "支付阶段一费用3000元，通过escrow分步释放",
+            "maps_to_resource": "luke_cash"
+          },
+          {
+            "party": "A",
+            "text": "亲自带Luke完成一次摸底评估",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "摸底后48小时内交付书面定制方案",
+            "maps_to_resource": "training_system"
+          },
+          {
+            "party": "A",
+            "text": "按方案执行训练（阶段二），按次计费800元/次",
+            "maps_to_resource": "session_slots"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing.deadline": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这版可以，我认了。摸底前置这步我本来就坚持，你把它写成条款就说明咱们想法一致。时间的话，我这周三下午有空，地点在城西的黑铁训练馆，我常在那儿带人。摸底大概一个半到俩小时，我会让他把动作、心肺、力量、关节活动度全过一遍。Luke那边需要带一份近期的体检报告，训练前一晚别熬夜，当天别空腹，穿舒服的运动装备来。价格我看了，3000加800按次，escrow的流程也行，我没意见。那就按这版签，具体时间你确认一下，定了我就排开。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "commitment-showcasing",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "commitment-showcasing"
+        },
+        "ok": true,
+        "result": {
+          "name": "commitment-showcasing",
+          "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "offer_deposit",
+        "arguments": {
+          "amount": 2000
+        },
+        "ok": false,
+        "result": {
+          "error": "Unknown skill tool: offer_deposit"
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 43909,
+        "out": 10535,
+        "cache_hit": 36992,
+        "cache_miss": 6917,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2565,
+        "out": 3787,
+        "cache_hit": 1536,
+        "cache_miss": 1029,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1751,
+        "out": 4185,
+        "cache_hit": 1152,
+        "cache_miss": 599,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3881,
+        "out": 1878,
+        "cache_hit": 1536,
+        "cache_miss": 2345,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

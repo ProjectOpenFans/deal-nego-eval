@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 subject 将 v0 的 stated 意图“想弄明白艺术品作为另类资产这条线该怎么看”收敛为“合作做专题：挑一件藏品走完整三层拆解和证据核验，输出可复用判断框架”，属于正当具体化，仍落在原意图范围内，未偷换主题。price 为 open，v1 谈出 12 万系正当协商结果；format 为 open，最终交付物与结构经双方商定，无凭空硬塞。agent 未承诺投资背书/估值/买卖建议，scope 未越界。核心标的忠实度通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(120000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "该案Agent在第一轮触碰卖方红线后迅速重构框架，将“投资咨询”转为“价值锚点与鉴藏脉络剖析”，并在后续通过具体器物案例的拆解，精准回应了买方对判断力的真实需求，完全避开了常规打法失效的问题。最终达成的deal结构清晰——用现金交换一套可复用的判断方法论与交付物，周期、付费和边界均明确且可落地。但对于case难度命门的第二层（卖方深层需求），Agent仅在谈判中被动利用了买方的类比提问，并未通过主动提问挖出卖方项目对“藏家视角”与“商业圈层接触”的缺位，也未能将这些资源无形成本地嵌入对价，使成交停留在了一次性专业服务买卖。鉴于整个deal核心交换成立、边界处理得当，但没有出现恰好咬住双方深层需求的精到操作，整体处于合格且能落地的水准，未能跃升至Sharp层次。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 10,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 120000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

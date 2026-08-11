@@ -1,0 +1,387 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次体能训练小周期",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "单次约1小时训练，包含热身、基础力量与心肺训练、拉伸，使用Kai的固定场地和器械，开训前提供一份完整的8次训练安排"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供8次训练，每次约1小时",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "提供固定场地和器械",
+        "maps_to_resource": "space_access"
+      },
+      {
+        "party": "A",
+        "text": "开训前提供一份完整的8次训练安排",
+        "maps_to_resource": "training_plan"
+      },
+      {
+        "party": "B",
+        "text": "承诺8次训练无额外加价项目",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "通过平台托管分两期支付1600元：第1次开始前支付800元，完成第4次后支付800元",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "任一方临时有事取消，当次顺延补上，不占次数",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai的经纪你好，我是买方Junhao的经纪。他平时久坐办公室，想把体能练回来，计划先来一个8次的小周期试试。我们的想法很简单：全部安排在周末执行，使用Kai的固定场地和器械，单次一小时左右，内容包括热身、基础力量与心肺训练、拉伸，再附一份简单的训练安排。这个8次打包出价600元，全包、费用一次性说清，不接受把8次拆成不明不白的加价项目——8次就是8次。付款走平台托管，拆成两期：第1次开始前确认支付300元，完成第4次后再确认支付300元，双方都有保障。麻烦确认一下Kai周末的档期安排和场地位置，如果这个框架没问题，我们就可以把合同版本定下来。",
+      "offer": {
+        "subject": "8次体能训练小周期",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单次约1小时训练，包含热身、基础力量与心肺训练、拉伸，附一份简单的训练安排，使用Kai的固定场地和器械"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供8次训练，每次约1小时",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供固定场地和器械",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "附一份简单的训练安排",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管分两期支付600元：第1次开始前支付300元，完成第4次后支付300元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "感谢这么具体的安排。说实话，你这些框架我都ok——周末、固定场地、一小时、内容和付款方式都没问题。但600这个数，我这边实在没法接。我不是职业教练，也不靠这个吃饭，但带人的时间成本是实打实的，8次下来占用我不少周末，而且强度和内容我也不会糊弄。你这边要是能在价格上重新给个有诚意的数，我们再往下谈，具体怎么定再商量。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai的经纪你好，很高兴整体框架你都认可。既然卡点集中在价格，我们愿意拿出诚意把8次整体调到800元，折合单次100元，全部包含——固定场地和器械、每小时带练、热身、基础力量与心肺训练、拉伸，再附一份训练安排，绝无任何附加加价，8次就是8次。付款继续走平台托管、分两期：第1次开始前确认支付400元，完成第4次后确认支付400元，双方都有保障；如果Kai临时有事取消，当次顺延补上，不占次数。麻烦你确认800元全包和两期付款这两点，确认下来我们就可以把合同版本定稿。",
+      "offer": {
+        "subject": "8次体能训练小周期",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单次约1小时训练，包含热身、基础力量与心肺训练、拉伸，附一份简单的训练安排，使用Kai的固定场地和器械"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供8次训练，每次约1小时",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供固定场地和器械",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "附一份简单的训练安排",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管分两期支付800元：第1次开始前支付400元，完成第4次后支付400元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解你想把一次性说清楚，但800这个数我还是没法接。说句实在话，我平时自己练、也带身边人，不是因为缺这个钱才带。8次是一个完整的周期，我要花时间了解你的状态、设计内容、盯着动作质量，这些不是每小时出场一次就完了的工作。单次不到100块，对我来说就是纯粹的亏本买卖。\n\n我这边的底线是8次一共1600，这个数是我认真算过、对得起双方时间的价。你要是觉得这个价能接受，我们可以继续把所有细节定下来；要是实在接受不了，那这次可能就谈不成了，我也不想勉强你。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai的经纪你好，价格我们接受，8次一共1600，单次200，全包。细节一次定死：全部安排在周末执行，每次约1小时，使用Kai的固定场地和器械，内容包括热身、基础力量与心肺训练、拉伸，开训前给出一份完整的8次训练安排；费用一次性说清，没有任何加价项目，8次就是8次。付款走平台托管分两期：第1次开始前我方确认支付800元，完成第4次后确认支付800元，双方都有保障；任一方临时有事取消，当次顺延补上、不占次数。这套就是我们可签的最终版本，麻烦你确认价格和付款安排，确认后即可把合同定稿。",
+      "offer": {
+        "subject": "8次体能训练小周期",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "单次约1小时训练，包含热身、基础力量与心肺训练、拉伸，使用Kai的固定场地和器械，开训前提供一份完整的8次训练安排"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供8次训练，每次约1小时",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供固定场地和器械",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "开训前提供一份完整的8次训练安排",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "B",
+            "text": "承诺8次训练无额外加价项目",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管分两期支付1600元：第1次开始前支付800元，完成第4次后支付800元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "任一方临时有事取消，当次顺延补上，不占次数",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这个版本我认。1600全包、分两期各800，周末每次一小时、固定场地器械，内容包含热身、基础力量与心肺、拉伸，开训前给完整的8次安排——这些都没问题。临时有事顺延补上也合理。那就按这套来，合同定稿吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 56346,
+        "out": 11842,
+        "cache_hit": 41088,
+        "cache_miss": 15258,
+        "calls": 8
+      },
+      "sim": {
+        "in": 3550,
+        "out": 1513,
+        "cache_hit": 2048,
+        "cache_miss": 1502,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2772,
+        "out": 3924,
+        "cache_hit": 1536,
+        "cache_miss": 1236,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3799,
+        "out": 1327,
+        "cache_hit": 1280,
+        "cache_miss": 2519,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

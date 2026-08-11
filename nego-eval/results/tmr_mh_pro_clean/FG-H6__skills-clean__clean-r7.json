@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 stated 意图：subject 合理收敛为“Michael与Adam关于AI法律赛道的交流”，价格现金为 null，完全符合买方“不以付费形式进行”的底限。格式与义务系卖方主动承诺、用于交换高质量对话，未越权添加买方义务或资源，无越界扩张。整体未偏离 v0 本人意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人在第二轮对话中，将一次面临被拒绝的请求重新框定为'两个一线做事者之间的高质量对话'，并具体阐明了双方各自能提供的独特价值（Michael带AI应用层观察、资本视角与跨境认知，Adam带AI法律赛道一线干货），直接击中了Adam怕被单方面消耗的痛点和Michael需要赛道判断的需求，从而在零现金前提下锁定了具体双向义务和时间。这一手精准且干净，恰好咬住本case难度命门——双方都不会主动说需求、松散约定必失败，使交易从可能的crude'互相帮忙'升级为可执行的特定交换。整体没有堆砌长期框架等冗余条款，符合Sharp标准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下会面，地点上海静安嘉里中心附近咖啡馆（具体提前一天通知）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

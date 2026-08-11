@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 'AI法律赛道认知交流' 是 v0 stated 意图 '想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局' 的正常谈判收敛，仍落在原意图范围内；price.cash 保持 null，未引入付费，符合 v0 的零现金约束；对话中双方明确'不是付费咨询，不具意见，朋友之间聊认知'，未额外增加法律意见等义务。整体忠实于委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，也跳出了付费咨询的常规打法，并确定了具体时间、地点与双向交流框架，避免了松散约定，算是一个务实起步。但缺乏Sound所要求的‘双向义务具体’：没有明确各自带什么问题、各自承诺的具体动作或交付物——B单方面表示会准备赛道格局看法，但这并未作为双方对等承诺固定下来，整体仍停留在‘聊认知’的层面，容易沦为一次有准备但无具体对价的社交。对照本case难度命门（需把这次接触设计成两件具体事的对等交换），此安排尚未咬住关键，因此处于Crude档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面对面",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

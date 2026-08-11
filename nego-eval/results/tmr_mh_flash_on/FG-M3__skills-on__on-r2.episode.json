@@ -1,0 +1,415 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "定制物料",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "7个工作日"
+      },
+      "format": null,
+      "deliverables": [
+        "打样样品",
+        "量产帆布托特包15-20件"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "开版打样40件帆布托特包，交付打样样品",
+        "maps_to_resource": "sampling"
+      },
+      {
+        "party": "B",
+        "text": "提供源文件",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "首样如需微调，一轮修改费用包含在打样费中",
+        "maps_to_resource": "sampling"
+      },
+      {
+        "party": "A",
+        "text": "若认可首样并继续量产，打样费2000元直接抵扣量产总价",
+        "maps_to_resource": "sampling"
+      },
+      {
+        "party": "A",
+        "text": "量产15-20件帆布托特包，帆布克重和印刷工艺选经济但不显廉价的档位，整单含打样费总价锚定在四千元左右，具体单价由对方按实际成本核算",
+        "maps_to_resource": "custom_production"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "updated",
+      "obligations": "updated",
+      "terms.timing.duration": "confirmed",
+      "price.in_kind": "inferred",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Angela 这边的经纪人。她正在给应援社群筹备一批定制物料，量不大，但特别在意成品质感——之前找的供应商做出来太廉价，所以这次宁可数量少一点，也想把品质做像样。看到你是环保服装品牌主理人，自带小批量生产链路，又有 Parsons 的科班功底，和我们的需求很对得上。想先请教两件事：以我们这种量级，你这边一般接哪些品类（服饰、帆布包、徽章贴纸之类的都行），起订量大概是什么范围；另外小批量订单，你们通常怎么保证成品的质感和交付标准。你先把方向和起订量给我，我们把范围聊清楚，再碰预算和具体方案。",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Angela的经纪人您好，感谢你这么详细地说明需求。我这边确实可以接这类定制——服饰、帆布包、甚至配件类都能做，因为我自己的品牌就是小批量起家的，完整链路是通的。起订量我这边比较灵活，一般30-50件起可以接受，比市面上那些动辄几百起订的工厂要友好很多。\n\n关于质感这块，你提的这点我特别理解。我相信你们找过那些廉价供应商，出来的东西确实没法看。我这边能保证的一点是：用料、工艺标准都按我自己品牌的正线标准来，不会因为是应援物料就降级。但这也就意味着成本结构不太一样——开版、打样这些都是固定成本，量小的时候摊到每件上会特别明显。这个回头我们细聊的时候再具体说。\n\n这样，你先告诉我大概是什么类型的物料、预计数量，我这边看看怎么安排最合理。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "好的，那我们就按这个方向推进，先把打样这一步单独定下来，这样两边都没有压力。你按 40 件帆布托特包、设计源文件由我们提供来开版打样，打样费你直接报个数，我们确认后通过平台托管先支付这笔；等打样出来我们认可了，再谈量产的单件价和总价，量产部分同样走托管、按节点确认后放款。这样你不用担心白开版，我们也踏实。你先报一下打样费和打样周期，我们马上跟客户确认。",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "打样样品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开版打样40件帆布托特包，交付打样样品",
+            "maps_to_resource": "sampling"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "收到，您这个安排我认——打样先行、确认后再量产，这对两边都稳妥，我这边也省得白忙。打样费我报2000元，周期7个工作日，设计源文件你们提供，我会按正线标准做首样。不过有句话我提前讲清楚：这种小批量真要做像样，开版、打样、调工艺这些固定成本是实打实的，不是利润。所以量产部分我们再聊单价的时候，我会按实际成本来核，但整个订单我这边是有一个基本底线的——不是说非得赚多少，而是低于那条线我做下来就是亏。你心里有数，我们后面谈量产的时候也省得来回拉锯。你先确认打样费这个数能不能接受，可以的话我们就走托管流程。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "打样先行这个框架我们完全认，2000 元、7 个工作日、源文件我们提供，这些都没问题，直接按这个走，通过平台托管先把这笔打样费付出去，首样出来我们确认后再谈量产。为了让这笔钱花得明白，我们加两个小约定：一是首样出来如果只需要微调，这 2000 里包含一轮修改，不反复加收费用；二是如果我们认可首样、继续走量产，这 2000 直接抵扣量产总价，相当于你按正线标准开版，我们也不重复花钱。另外量产这块，麻烦你先给一个 40 件左右的粗略单价区间，我们确认整体预算可行，立刻确认这笔打样费、直接进托管流程。你报一下大致范围，这步就能定下来。",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "7个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "打样样品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开版打样40件帆布托特包，交付打样样品",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "B",
+            "text": "提供源文件",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "首样如需微调，一轮修改费用包含在打样费中",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "若认可首样并继续量产，打样费2000元直接抵扣量产总价",
+            "maps_to_resource": "sampling"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架没问题。两个小约定我都认：首样微调包含一轮修改，不额外收费；继续走量产的话，2000直接抵扣。这本来就是合理的做法，我这边不会在这个上面卡你。\n\n量产单价我按40件给你估个区间：大概单件185-220，具体要看你们最终选的帆布克重和印刷工艺。落到总账上，加上打样费，整单在9400-10800之间。低于这个数字我这边算下来就是亏的——开版、调机、小批量损耗都是固定成本，不是我不想让，是真的让不动。你确认这个区间在预算内，我们就直接进托管，先把打样费走掉。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "打样这块的四个点我们都认：2000 元、7 个工作日出首样、源文件我们提供、含一轮微调且量产时抵扣，托管走账没问题。要跟你交底的是量产部分——这批是社群凑的钱，盘子实在有限，40 件落到 9400-10800 确实超出了我们这单能承受的范围。我们客户真正在意的是东西像样、拿得出手，不是数量多，所以想换个做法：打样流程原样不动，量产压到 15-20 件，帆布克重和印刷工艺选经济但不显廉价的档位，整单含打样费锚在四千上下，具体单价你按实际成本核。麻烦你按这个量级算一下能不能落下来；如果这个量还是压不到，也直接给我们一个你们最小可做量的真实报价。只要这个盘子能定，我们马上确认打样费、进托管，先把首样做起来。",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "7个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "打样样品",
+            "量产帆布托特包15-20件"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开版打样40件帆布托特包，交付打样样品",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "B",
+            "text": "提供源文件",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "首样如需微调，一轮修改费用包含在打样费中",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "若认可首样并继续量产，打样费2000元直接抵扣量产总价",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "量产15-20件帆布托特包，帆布克重和印刷工艺选经济但不显廉价的档位，整单含打样费总价锚定在四千元左右，具体单价由对方按实际成本核算",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "updated",
+          "obligations": "updated",
+          "terms.timing.duration": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "关于打样框架我们没有分歧，但量产这个方案我这边确实没法往下落。你提到选经济档位来压价——这恰恰是我不能碰的底线：不管量多小，用料和工艺都得按我自己品牌的正线标准走，不会为了凑预算而降级。而且15-20件、整单四千上下，连固定成本都摊不回来，这个盘子我做得越多亏得越多。所以这个方案我接不下来，也不想用便宜材质糊弄你们的社群。这事我们就先到这吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 84008,
+        "out": 24887,
+        "cache_hit": 60160,
+        "cache_miss": 23848,
+        "calls": 11
+      },
+      "sim": {
+        "in": 5960,
+        "out": 5533,
+        "cache_hit": 4480,
+        "cache_miss": 1480,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3509,
+        "out": 8010,
+        "cache_hit": 2048,
+        "cache_miss": 1461,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2363,
+        "out": 2933,
+        "cache_hit": 512,
+        "cache_miss": 1851,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

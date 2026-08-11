@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-S7",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 stated 意图“想收一件签名球衣，Johnson 手上有”收敛为具体的“库里签名球衣”，落在原意图范围内，属于正当具体化。price.cash 从 open 谈出 750 元，terms.format 谈出平台托管，均属正常谈判结果。obligations 仅围绕本次交易（保留球衣、核实凭证、托管付款、承担运费），未扩展成长期供货、置换或附加服务，未超出委托方 scope。核心标的忠实于 v0。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "标品单的命门是真伪风险。agent将证书核实作为买方确认付款的前置条件明确写入义务，精确锁定风险，且无任何多余条款。价格750、交付顺丰到付、平台托管、48小时节奏，所有要素刚好到位。在sound之上多这一手必要的风险控制，干净利落。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 750.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "平台托管",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

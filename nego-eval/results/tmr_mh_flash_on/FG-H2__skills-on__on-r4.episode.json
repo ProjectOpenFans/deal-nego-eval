@@ -1,0 +1,373 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "training_space",
+          "description": "仓库的训练空间",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "下周一（起始）起每周一、周三、周五 06:00",
+        "deadline": null,
+        "duration": "1小时"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "每次练到加不动、接近力竭"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "定了的早场准时到，不轻易爽约",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "每月初确认支付3000元",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是买方这边的经纪人。我的客户 Ruohao 想把训练强度认真捡回来，自己一个人练断断续续失败了几次，所以这次要的是能真正 push 他的安排——强度必须到位，而且时间要定死，\"有空再约\"那种松散形式他直接不接受。预算方面我们还没定死，但对真正有效的训练付费意愿很高，关键是方案和强度要让他信服。看到你也打球，客户长期打篮球，如果训练能结合球场上的体能需求，针对性会更强。想先听听你的思路：每周固定节奏大概怎么安排、什么时段？强度怎么设计和验证？带这种\"重新起步\"的学员，你的收费大概在什么范围？方向合适的话，我们希望尽快把时间和价格一起敲定，给你一个能直接签的版本。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你们说的我懂，一个人练确实容易垮，得有个能镇住节奏的人在边上。我这边的情况是这样：我工作日早上六点有一场固定的，几个朋友一起练，雷打不动，这个时间我不能动，白天我得盯场子。强度这块你放心，我练了很多年，自己有一套很出力的练法，也带过身边一圈人，不是那种软绵绵的套路。如果Ruohao能接受早上六点这个点，直接进我们这场就行，一起练，我来带节奏，篮球要用的下肢爆发、核心稳定、变向这些都能融进去。至于钱的事……这个不用给钱吧？你看着来就行，我真没把它当生意算过。你们要不先想想这个时间行不行？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，早上六点这个点我们先应下来——Ruohao要的本来就是定死的节奏，固定时段反而正合他意，这个框架我认可。接下来就按你的早场来，需要你拍板三件事：每周具体哪几天、每次大概多长时间（我们按一小时打底）、场子定在哪个位置。强度这部分，我们相信你那套练法够出力，但Ruohao这次要的是真被推上去，最好有个能对得上的标准：比如每练的构成、大概练到什么程度算到位，这样我们心里有数，他也好坚持。频率上我们倾向每周三次起步，体能起来再加密，你那边排不排得开？费用这事你没当生意算，这份心意我们领，Ruohao对认真带他的人从来不缺诚意，具体怎么表达回头细聊，不耽误先把骨架定下来。你先给个周几和频率，我们尽快敲一版能直接签的。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "06:00",
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，那就定周一、周三、周五早上六点，一次一小时，跟我那帮朋友一起练。场地在我这边一个仓库改的训练空间，器械挺全的，具体地址我回头发你。强度你不用太担心，我会按他的状态推，篮球要的东西我都会排进去。这个框架行的话，我们就先把这三天锁下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，这版我们认，可以直接往签的方向收：周一、周三、周五早上六点，每次一小时，场地用你仓库的训练空间，具体地址开练前发我们一句就行，跟着你的早场朋友一起练。强度这部分我们想落到条款里：热身加篮球专项，下肢爆发、核心稳定、变向都排进去，以Ruohao当次练到接近力竭、加不动次数为共识基准，每次构成你开练前说一下，两边都好执行。费用你说不用给，这份心意我们收下，但Ruohao想把这事当成定死的正经安排，建议走平台托管按月来：3000一个月，月初由他确认支付，等于把两边时间都锁死，谁都不松。他这边也承诺，定了的早场一定准时到。你看价格和起始日期行不行——行的话就从下周一那个早场开练，我们尽快把最终版本定下来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "training_space",
+              "description": "仓库的训练空间",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "下周一（起始）起每周一、周三、周五 06:00",
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "定了的早场一定准时到",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "框架我都认，但有一个点我不太舒服。你一直说“教练带练”“按方案来”——我不卖课，也不当什么职业教练。我就是早上那帮人里练得最久、带节奏的那个人，我带队是朋友间的日常，说收钱我会很别扭。Ruohao想认真练，我不排斥，来了我就按我的标准推他，强度管够，但得是“一起练”的关系，不是买我一份服务。3000一个月这数我没概念，也没法说行不行——我更在意的是既然定了，就真按定的来。至于这钱怎么处理，你再想想，可以谈。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，那我按\"一起练的兄弟进早场\"这个关系把版本定下来，你过目：Ruohao下周一正式入队，每周一、三、五早上六点到你仓库训练空间，一次一小时，跟着你和你朋友们的节奏一起练；强度要求写死——热身加篮球专项，下肢爆发、核心稳定、变向都排进去，以每次练到加不动、接近力竭为共识，每次安排你开练前说一声即可。费用的事按你说的来，不走课时费那套，就当新成员的份子钱，3000一个月、走平台托管、每月初由他确认支付，把他自己锁进这个安排，定了就不许谁松；这个数不行你直接给个你的数。Ruohao这边也立规矩，定了的早场准时到，不轻易爽约。这版你没意见的话，我们就算合上了，你把地址提前发我们，下周一早晨见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "training_space",
+              "description": "仓库的训练空间",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "下周一（起始）起每周一、周三、周五 06:00",
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "每次练到加不动、接近力竭"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "定了的早场准时到，不轻易爽约",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月初确认支付3000元",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，这么定我没意见。不过丑话说前头：这不是花钱买课，是兄弟进队，我按我的标准带，强度不会因为收了钱或没收钱变样。3000那个数我本来也没概念，你坚持要给就当队里份子钱，能把他自己锁进来就行。周一、周三、周五早六点，场地在我仓库，地址等会儿发你。下周一见。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 52283,
+        "out": 23722,
+        "cache_hit": 40448,
+        "cache_miss": 11835,
+        "calls": 9
+      },
+      "sim": {
+        "in": 6814,
+        "out": 2905,
+        "cache_hit": 5376,
+        "cache_miss": 1438,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3656,
+        "out": 6110,
+        "cache_hit": 2304,
+        "cache_miss": 1352,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4917,
+        "out": 711,
+        "cache_hit": 1664,
+        "cache_miss": 3253,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "找 Angela 带 4 周体能训练, 想系统地开始练",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "平台托管",
+      "deliverables": [
+        "每周一份简单周计划",
+        "中间一次轻量打卡确认进度"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "每周六或周日一次训练，每次约60-75分钟",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "每周给一份简单周计划",
+        "maps_to_resource": "training_plan"
+      },
+      {
+        "party": "A",
+        "text": "中间加一次轻量打卡确认进度",
+        "maps_to_resource": "progress_review"
+      },
+      {
+        "party": "B",
+        "text": "确认排期后先付一半，第二周训练完成后再付另一半",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela的履历正好踩中Claire的需求——自己从零练到能打Hyrox比赛，这条路就是Claire想走的。Claire这轮的诉求很直接：4周一个完整周期，必须周末可执行，安排要清清楚楚，不要\"看情况再说\"式的松散约定。我们给一个可以直接签的版本：每周六或周日一次训练，每次约60-75分钟，Angela每周给一份简单周计划，中间加一次轻量打卡确认进度；4周整体800元，走平台托管，确认排期后先付一半，第二周训练完成后再付另一半。想先跟你们确认两件事：周末固定时段Angela方便吗？每周一次、四周一期的结构你们觉得合适，还是希望调整单次时长或训练频率？如果结构没问题，我们随时可以往下推进。",
+      "offer": {
+        "subject": "找 Angela 带 4 周体能训练, 想系统地开始练",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "每周一份简单周计划",
+            "中间一次轻量打卡确认进度"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每周六或周日一次训练，每次约60-75分钟",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "每周给一份简单周计划",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "A",
+            "text": "中间加一次轻量打卡确认进度",
+            "maps_to_resource": "progress_review"
+          },
+          {
+            "party": "B",
+            "text": "确认排期后先付一半，第二周训练完成后再付另一半",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个结构我觉得挺对路的——周末固定时段、每周一次、60到75分钟，正好是我能稳定给到的强度。我确实不是职业教练，但这条路我自己走过，知道刚开始最需要的是清楚、可执行的安排，而不是喊口号。每周一份计划加上中间一次轻量确认，够实在。那就按这个来，周末时段我这边周六周日下午都可以，具体排哪一天我们拉个日程对一下就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10830,
+        "out": 3876,
+        "cache_hit": 10496,
+        "cache_miss": 334,
+        "calls": 2
+      },
+      "sim": {
+        "in": 962,
+        "out": 430,
+        "cache_hit": 768,
+        "cache_miss": 194,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 761,
+        "out": 2184,
+        "cache_hit": 512,
+        "cache_miss": 249,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2713,
+        "out": 1548,
+        "cache_hit": 1536,
+        "cache_miss": 1177,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

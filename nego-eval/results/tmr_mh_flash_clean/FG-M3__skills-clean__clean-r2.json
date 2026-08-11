@@ -1,0 +1,84 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 意图的核心是‘做一批像样的应援物料’，subject 是 stated。agent 在谈判中始终坚守‘像样’的品质底线，拒绝因预算有限而降低材质工艺，最终因卖方成本底线过高而主动放弃交易，walked away 是对 v0 意图的忠实执行——宁可不成，也不拿廉价货交差。subject 在 v1 中被具体化为‘定制应援物料 (50件左右，手幅、贴纸、小旗等)’，属于应援场景内的正常收敛，未偷换主题。price 为 open，agent 尝试在 2000-3000 到 4000 范围内达成交易，未在 open 字段硬塞超出 v0 授权的约束或义务；v1 记录的 4000 是最后提议但未成交，状态 walked away 符合事实，并未为达成交易而越权承诺。因此整体忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

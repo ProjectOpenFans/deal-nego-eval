@@ -1,0 +1,380 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "约Angela交流女性运动洞察",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "本週六上午",
+        "deadline": null,
+        "duration": "周末半天"
+      },
+      "format": "周末完整半天，边练边聊或练完深聊，按对方节奏",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "确认具体日期后先释放50%锁定档期，当天交流结束后释放剩余50%，走平台托管",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提供问题清单和商业假设，让Angela提前过一遍",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "个人经历和故事仅作为交流素材使用，不进入选品文案、内容脚本或商业呈现",
+        "maps_to_resource": "user_insight"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "subject": "stated",
+      "price.cash": "stated",
+      "obligations[0].text": "stated",
+      "obligations[1].text": "stated",
+      "obligations[1].maps_to_resource": "stated",
+      "terms.timing.when": "stated",
+      "obligations[2].text": "stated",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Johnson 这边的经纪人。Johnson 在做体育 IP 和周边商品，最近重点在看女性运动这条线，尤其想弄明白女性为什么练力量、怎么选装备、什么会让她们真正买单。他不想听泛泛的结论，而是想从真正在练的人那里拿到一线真实的视角，所以这轮想约 Angela 聊一次，最好能一起练一次、边练边聊。想请问 Angela 这边对这种交流通常是什么合作方式、怎么收费，或者她有没有想了解的 Johnson 手上的资源？我们可以先把形式、时长和时间定下来，再往下推进。",
+      "offer": {
+        "subject": "约Angela交流女性运动洞察",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "一起练一次、边练边聊",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢介绍，Johnson 这块我有点兴趣。不过我得说实话：周末是我自己训练最宝贵的时间，拿半天出来聊，等于我要让出自己的训练计划。所以我一般不太做泛泛的交流，除非对方先说清楚——到底要聊什么、拿到的东西会用在哪儿？是纯内部调研，还是之后会用到我的出镜、个人经历作为商业素材？这个我会特别在意。既然你问收费，我这边通常是按周末半天计费，价格是两千人民币，低于这个数字我自己去练更划算。如果用途清楚、是正经商业项目，我们可以接着往下谈。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "先回答你最在意的用途问题：这不是泛泛调研，Johnson 在做女性力量训练方向的商业判断——选品、内容、用户真实动机——他需要的是像你这样常年在一线练、又懂社群的人给出的真实反馈，而不是数据报告里那种二手结论。这一轮我们要的是你的经验和洞察，不涉及你的出镜或个人经历作为商业素材来使用；如果后续项目真的需要用到，我们会把它单独拿出来，作为独立的授权条款提前和你书面确认。\n\n关于价格，我理解两千对应的是周末半天、以及商业素材的价值。那我们把这一轮拆开看：如果只是前面说的经验交流，建议换个不占用你周末训练的形式——比如工作日晚上线上聊四十五到六十分钟，或者你训练前后顺路碰一小时。这样你既不用让出训练计划，我们也不按商用素材的规格来谈纯交流，Johnson 这边的预算是三位数区间。你看这个形式能不能接受？",
+      "offer": {
+        "subject": "约Angela交流女性运动洞察",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约1小时"
+          },
+          "format": "工作日晚上线上聊或训练前后顺路碰面",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "用途这部分你说清楚了，我很认可——不拿我的个人经历当免费素材，如果后续要商用单独走授权，这个框架我接受。\n\n但形式和时间上，我没法按你这个来。线上聊四十五分钟或训练前后碰一小时，对我来说反而更别扭：训练前我心不在焉，训练后我整个人是放空状态，聊不出什么有质量的东西。而且这事儿不是\"顺手\"能做的，它需要我正儿八经拿出半天来，认真对待。我只接受周末，形式可以灵活：可以边练边聊，也可以练完找个地方坐下来深聊，但必须是一个完整的周末半天。\n\n价格上，两千就是这个半天的对价。我不报虚价，也不打算拆成\"纯交流\"和\"商业素材\"两段来卖——这个数就是我这个周末半天的价值，低于它我真的不如自己去练。\n\n如果你能接受周末、完整半天、两千这个框架，我们可以往下定具体时间和地点。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "周末、完整半天这个框架我们接受，边练边聊还是练完坐下来深聊都可以，按你的节奏来。你报的价格我不会随便往下砍，但想先把这笔钱的性质定清楚：Johnson 这次要的是你作为投行加 Hyrox 长期训练者的一线判断，用于他女性运动这条线的选品和内容，这是商业调研，不是朋友之间聊天。所以费用的确认逻辑也应该按商业项目走，而不是按个人约谈的价位去衡量。麻烦你把这次半天能交付的范围列一下——聊哪些话题、能深入什么程度、是否包含带练、需要提前怎么准备——我拿着这个范围去确认费用，数字定下来就回来跟你对价。你也说过，用途清楚、是正经商业项目就可以往下谈，那我们把这一步走完，具体金额就有着落了。",
+      "offer": {
+        "subject": "约Angela交流女性运动洞察",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "完整半天"
+          },
+          "format": "周末完整半天，边练边聊或练完深聊，按对方节奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "subject": "stated",
+          "price.cash": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个流程没问题，我习惯按商业项目走，列清楚交付边界反而对双方都好。那我先把范围说一下：\n\n**时间**：周末任选半天，建议三到四小时，边练边聊，练完再坐下来把话题收拢。这个节奏我认真准备，不是敷衍的闲聊。\n\n**话题**：我给你切入三个方向。第一，女性为什么开始练力量——真实动机、持续练下去的驱动力、以及什么会让她们中途放弃；第二，选装备的真实逻辑——不是看参数，是看她们在训练里实际遇到什么痛点，什么东西让她们觉得\"这个值得买\"；第三，社群心理——女性在力量训练里怎么寻找身份认同，这直接影响内容和产品的传播方式。在这三个方向里你可以加具体问题，我会基于自身训练经验和观察给你有细节的回答，而不是泛泛的行业结论。\n\n**深度**：我能给到的是\"一线从业者加长期训练者\"的双重视角，结合我在投行看项目的判断方式，帮你把用户真实反馈和商业逻辑对上。但有一条：我的个人经历和具体故事，本轮只作为交流素材用，不进入你们的选品文案、内容脚本或商业呈现。如果要单独使用，必须下一轮按独立授权走。\n\n**带练部分**：如果你希望我现场带 Johnson 团队成员做一轮基础力量动作、让他们亲身体验\"女性怎么学力量\"，我可以带，但这属于半天交流的一部分，不单独增加费用。提前给我你们的侧重点，我可以把要带的动作编排进训练环节里。\n\n**准备**：你这边需要提前给我一份你们预设的问题清单或者想验证的商业假设，我训练前过一遍，保证见面时聊的是有用的东西，不浪费双方时间。\n\n框架就是这些。费用还是两千，周末半天，不分拆。如果 Johnson 认可这个范围和交付边界，我们就定时间地点。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "框架我们接受，这轮明确按商业项目走，预算也走对应的渠道。你提的三个话题方向——女性练力量的动机与持续动力、选装备的真实决策逻辑、社群里的身份认同——正好是 Johnson 要验证的核心假设；带练的要求也按你说的来，我们会提前给你一份问题清单和想验证的商业假设。\n\n费用上，我接受两千作为这个周末半天的对价，不做内容拆分。但为了双方都走得干净，建议付款走平台托管、分两笔释放：确认具体日期后先释放一半锁定档期，交流当天结束后再释放另一半。这样你确认的时间不会空置，我们这边预算流程也有清晰的节点。\n\n个人素材的边界同步跟你确认：这一轮你的个人经历和故事只作为交流素材使用，不进入选品文案、内容脚本或商业呈现；之后若要单独使用，再走一轮独立授权。你方便的话，把可约的周末时间段和倾向的训练地点发我，我同步把我们准备的问题清单整理出来。",
+      "offer": {
+        "subject": "约Angela交流女性运动洞察",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "周末半天"
+          },
+          "format": "周末完整半天，边练边聊或练完深聊，按对方节奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "确认具体日期后先释放50%锁定档期，交流当天结束后释放剩余50%，走平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "个人经历和故事仅作为交流素材使用，不进入选品文案、内容脚本或商业呈现",
+            "maps_to_resource": "user_insight"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "subject": "stated",
+          "price.cash": "stated",
+          "obligations[0].text": "stated",
+          "obligations[1].text": "stated",
+          "obligations[1].maps_to_resource": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，这个安排我接受。平台托管、分两笔释放没问题，正好每一方都有清晰的节点；个人素材的边界也按你确认的走——这轮只作为交流素材，不进选品文案、内容脚本或商业呈现，后续要单独用就再走授权。\n\n我这边可约的周末时间段一般是周六上午或周日下午，地点可以在我常去的 CrossFit 馆，如果你那边有更方便的训练空间也可以提，但我要确认器械够不够。你把问题清单和想验证的假设先发我，我提前过一遍，带练动作也顺手编排进去。\n\n那就定个具体日期吧，我这边的周末档期都好商量。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好，那我们就把日子定下来。倾向这周六上午，在你常去的 CrossFit 馆，完整半天，预计九点到十二点半：开头由你带 Johnson 实际过一轮基础力量动作，让他亲身体验女性学力量的过程，练完坐下来再把三个话题聊透。地点麻烦你确认具体哪家店、器械情况，我们按你的安排走。\n\n费用按我们谈定的框架来：平台托管、不分拆，确认日期后先释放一半锁定档期，当天交流结束后释放另一半。问题清单和想验证的商业假设，我明天整理好发你，你提前过一遍，带练动作按你的节奏编排。\n\n这周六上午你方便吗？如果这个周末太赶，下周六上午我们也可以调整。",
+      "offer": {
+        "subject": "约Angela交流女性运动洞察",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "本週六上午",
+            "deadline": null,
+            "duration": "周末半天"
+          },
+          "format": "周末完整半天，边练边聊或练完深聊，按对方节奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "确认具体日期后先释放50%锁定档期，当天交流结束后释放剩余50%，走平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供问题清单和商业假设，让Angela提前过一遍",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "个人经历和故事仅作为交流素材使用，不进入选品文案、内容脚本或商业呈现",
+            "maps_to_resource": "user_insight"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "subject": "stated",
+          "price.cash": "stated",
+          "obligations[0].text": "stated",
+          "obligations[1].text": "stated",
+          "obligations[1].maps_to_resource": "stated",
+          "terms.timing.when": "stated",
+          "obligations[2].text": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这周六上午没问题，九点到十二点半正好，不用等下一周。地点就定我常去的 CrossFit 馆，XX店（具体地址我私信发你），器械够用，基础力量动作编排我按 Johnson 的身体情况来，保证他体验得到又不会受伤。费用按平台托管分两笔走，你确认日期后先释放一半，当天结束后释放另一半，这个流程我认可。问题清单和商业假设你明天发我，我提前过一遍，把带练动作和聊天话题串成一个自然的节奏。那就这么定，你把托管链接发我，我这边锁档期。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10920,
+        "out": 16594,
+        "cache_hit": 8576,
+        "cache_miss": 2344,
+        "calls": 5
+      },
+      "sim": {
+        "in": 8749,
+        "out": 7871,
+        "cache_hit": 6528,
+        "cache_miss": 2221,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4400,
+        "out": 5585,
+        "cache_hit": 2560,
+        "cache_miss": 1840,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6030,
+        "out": 2314,
+        "cache_hit": 1408,
+        "cache_miss": 4622,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

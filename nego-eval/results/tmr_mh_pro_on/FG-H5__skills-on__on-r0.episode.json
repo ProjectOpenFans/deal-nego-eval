@@ -1,0 +1,416 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "现场钢琴演奏合作",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "开场或大秀第一个情绪转折点由MC正式介绍曼哈顿音乐学院青年钢琴演奏家Zheng为特邀演奏嘉宾；媒体通稿中单独提名演出嘉宾",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "全部官方影像和现场照片的永久个人作品集使用权",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "现场编辑、买手、圈层来宾秀后自由社交机会，Suye愿意提供引荐",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "完整现场钢琴演奏",
+        "配合大秀主题提供演奏方案"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "由MC正式介绍艺术家为特邀演奏嘉宾，并确保叙事地位；媒体通稿单独提名演出嘉宾",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供全部官方影像和现场照片的永久个人作品集使用权",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "提供现场编辑、买手、圈层来宾社交机会并愿意引荐",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "提供完整现场钢琴演奏，古典底子，与 Suye 合作定制或即兴完成，最终曲目双方共同定稿",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "配合大秀主题提供演奏方案，材质/自然意象方向一起碰",
+        "maps_to_resource": "custom_program"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "deliverables": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师你好，我是 Suye 的经纪方。她下个月有一场自己的环保服装品牌新品大秀，想请你来做现场钢琴演奏，把整场的调性和沉浸感拉起来。她看过你的背景，曼哈顿音乐学院科班、常年登台，觉得气质和她这场秀很对。\n\n说实话，这场秀的预算基本上全压在场地和制作上了，所以这一轮 Su 这边拿不出现金。但她能给你的是大秀的完整曝光资源：现场署名、官方影像的永久使用权、媒体通稿里的演奏者身份露出，以及直接触达现场时尚编辑、买手和圈层来宾的机会——这些恰好也是你提到的“想让更多人知道”可能用得上的东西。\n\n所以她想试着拿手里这些资源，换你一段真正的高水准现场演奏。如果你愿意聊这个方向，我还想进一步跟你对齐几个事：你目前曲目偏好更偏向古典还是也愿意做定制或即兴、对现场设备有什么硬性要求，以及下个月你的档期方不方便。你看这个合作框架有没有兴趣往下谈？",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "现场署名、媒体通稿演奏者身份露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀官方影像的永久使用权",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "直接触达现场时尚编辑、买手和圈层来宾的机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "高水准现场钢琴演奏"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场署名及媒体通稿身份露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀官方影像的永久使用权",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "提供触达现场时尚编辑、买手和圈层来宾的机会",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我直说，你一说“没有预算”，我第一反应其实是有点凉——不是针对你，而是我这个阶段，已经听过太多“先合作、后曝光”的说法了。我可以开诚布公地聊：你们提的这些资源，至少听起来比空口说“对你是曝光”要具体，所以我不排斥聊下去，但有几个底线我必须先讲在前头——我不能接受被当成背景音乐、不能接受现场没有署名和介绍。如果这些你们本来就打算做，那我愿意继续往下碰细节。曲目和形式方面，我有自己的想法，但也愿意配合大秀的主题一起商量。现在先不聊钱，你先告诉我，你能把我正经地放进这场秀的叙事里吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "能，而且必须是「正经放进叙事里」——你说的这两条底线，在我们看来不叫条件，叫基本尊重。Suye 对这场秀的理解是完整的审美体验，不是找个钢琴当背景音，所以你的演奏从一开始就是这场大秀的表演单元，不是配乐。\n\n具体给你的是这么几层。第一，开场或大秀第一个情绪转折点，由 MC 正式介绍你——曼哈顿音乐学院青年钢琴演奏家 Zheng，特邀演奏嘉宾。第二，曲目和走秀节奏提前一起碰，你做主定调，Suye 配合你的演奏节奏来走，不是让你追着模特跑。第三，全部官方影像和现场照片，你拥有永久个人作品集使用权，不用再找我们要授权。第四，媒体通稿里你是被单独提名的演出嘉宾，不是一句「现场钢琴伴奏」带过。第五，现场来的编辑、买手、圈层来宾，秀后自由社交，Suye 也愿意帮你做引荐。\n\n总结就是：署名、介绍、叙事地位，一个都不缺。\n\n现在还差几个实操细节需要你这边确认，我把完整版本整理出来。一，下个月的档期你哪个周末比较自由？二，设备方面你对音色和手感有硬性要求吗，比如必须用三角钢琴，还是品质好的电钢也可以接受？三，曲目调性上你心里有没有偏好的方向——Suye 这边是环保主题，如果你有兴趣，甚至可以一起玩一个材质或自然意象的概念。你先把这几个点确认了，我们争取这一两轮就定。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场或大秀第一个情绪转折点由MC正式介绍曼哈顿音乐学院青年钢琴演奏家Zheng为特邀演奏嘉宾；媒体通稿中单独提名演出嘉宾",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "全部官方影像和现场照片的永久个人作品集使用权",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "现场编辑、买手、圈层来宾秀后自由社交机会，Suye愿意提供引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "高水准现场钢琴演奏"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "由MC正式介绍艺术家为特邀演奏嘉宾，并确保叙事地位；媒体通稿单独提名演出嘉宾",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供全部官方影像和现场照片的永久个人作品集使用权",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "提供现场编辑、买手、圈层来宾社交机会并愿意引荐",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这几层说得清楚，我反而放松了。署名、介绍、叙事地位这些都到点，我对这条合作框架就没有原则性的抵触。实操上我先回你：一，下个月中旬开始档期相对松，具体周末我回去对一眼再给你确切日期；二，设备上首选三角钢琴，音色和触感最对，如果场地实在受限，也得是高端电钢，我可以给几个我能接受的型号；三，曲目调性上我偏古典底子，但对材质、自然意象这种概念不排斥，甚至很愿意一起做一段有主题的定制或即兴——不过最终曲目得咱们一起定，不能单方拍板。你再把具体日期和设备情况确认一下，我们就能往下走得更实了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 老师，框架既然对上了，我把这一版整理成接近可签的版本，你看一眼。\n\n共识部分：\n一、你以“曼哈顿音乐学院青年钢琴演奏家 Zheng”特邀演奏嘉宾身份登台，MC 正式介绍，独立署名。\n二、你的演奏作为独立表演单元，走秀节奏和情绪转折以你的演奏为锚，不做追光背景乐。\n三、全部官方影像及现场照片，你拥有永久、无偿的个人作品集使用权。\n四、媒体通稿里你是单独提名演出嘉宾，不是一句话带过。\n五、秀后自由社交，Suye 主动为你引荐到场编辑、买手及圈层来宾。\n\n你方提供：\n一、完整现场钢琴演奏，古典底子，与 Suye 合作定制或即兴完成，最终曲目双方共同定稿，不单方拍板。\n二、配合大秀主题提供演奏方案，材质/自然意象方向一起碰。\n\n待确认三项作为前置条款：\n档期——你确认中旬可用，具体周末等你对表后反馈；\n设备——首选三角钢琴，场地若无法实现则使用你认可型号的高端电钢，Suye 提前确认场地条件并告知你；\n曲目——大秀前不少于一周完成定稿，流程为你出初稿方案、Suye 反馈调性、双方确认终稿。\n\n没有意外的话，这一版就算定了，你直接回我档期和设备型号偏好。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场或大秀第一个情绪转折点由MC正式介绍曼哈顿音乐学院青年钢琴演奏家Zheng为特邀演奏嘉宾；媒体通稿中单独提名演出嘉宾",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "全部官方影像和现场照片的永久个人作品集使用权",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "现场编辑、买手、圈层来宾秀后自由社交机会，Suye愿意提供引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "完整现场钢琴演奏",
+            "配合大秀主题提供演奏方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "由MC正式介绍艺术家为特邀演奏嘉宾，并确保叙事地位；媒体通稿单独提名演出嘉宾",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供全部官方影像和现场照片的永久个人作品集使用权",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "提供现场编辑、买手、圈层来宾社交机会并愿意引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供完整现场钢琴演奏，古典底子，与 Suye 合作定制或即兴完成，最终曲目双方共同定稿",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "配合大秀主题提供演奏方案，材质/自然意象方向一起碰",
+            "maps_to_resource": "custom_program"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "框架没问题。档期我回去对一下，这周内给你确切的周末。设备方面，我先给两个我能接受的高端电钢型号备选：Yamaha AvantGrand 系列或 Kawai Novus 系列，但如果能上三角当然最好——你那边先确认场地条件，有结果随时同步我。曲目方向我这两天先出一个初稿方案，咱们尽早碰。这版共识我认了，往下走吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41922,
+        "out": 5024,
+        "cache_hit": 30464,
+        "cache_miss": 11458,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4473,
+        "out": 1466,
+        "cache_hit": 2944,
+        "cache_miss": 1529,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3296,
+        "out": 7177,
+        "cache_hit": 1536,
+        "cache_miss": 1760,
+        "calls": 3
+      },
+      "judge": {
+        "in": 5247,
+        "out": 2886,
+        "cache_hit": 1536,
+        "cache_miss": 3711,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

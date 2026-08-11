@@ -1,0 +1,477 @@
+{
+  "episode_id": "FG-H3",
+  "final_deal": {
+    "subject": "艺术品作为另类资产的深度对谈",
+    "price": {
+      "cash": {
+        "amount": 20000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周四下午两点",
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "线上视频对谈",
+      "deliverables": [
+        "案例范围",
+        "价值判断标准拆解"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供具体案例范围并演示价值判断标准拆解",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "分两笔走平台托管，第一笔在确认场次与流程后支付，第二笔在对谈按约定完整结束后支付",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "客户若把问题带向投资判断，随时叫停，并在对谈前向客户交底",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "配合在对谈前将讨论边界写成书面确认让客户提前签认",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "timing.when": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "obligations[1]": "stated",
+      "obligations[3]": "stated",
+      "subject": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我这边客户想聊的是“艺术品作为另类资产怎么判断”，不是泛泛的艺术鉴赏科普。他在量化交易一线做过，自己也长期收表收车，很清楚这类东西要的是可验证的定价逻辑，不是讲故事。\n\n所以我们希望约一次深度对谈，核心就三个问题：艺术品的价格到底由哪些可观测因素驱动、流动性该怎么评估、什么样的层级和品类能穿越周期。你这边可以用数字文博或器物方向的实际案例来拆解，越具体越好。\n\n形式、时长、报价由你出方案，我们确认后走平台托管支付，款项按阶段或按成果拆分都可以谈。你先给一版你擅长的案例范围和判断框架，我们看能不能对上。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "对谈",
+          "deliverables": [
+            "案例范围与判断框架草案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供擅长的案例范围和判断框架",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先说实话，这个框架我接不了。我的专业是判断一件东西真不真、好不好、为什么被认可，不是替人判断该不该买、能不能升值。你让我拆价格驱动、流动性、穿越周期，那本质上是在用我的专业给投资决策背书，这个我不做。\n\n但如果你把问题调成器物的价值判断、真伪与流传、为什么某些东西会被看见、为什么另一些就是立不住——这个我可以讲得很具体，也能拿数字文博和器物案例给你拆。你愿意往这个方向重新捋，我们再往下聊；不行的话，这事对我就没有成立的基础。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "你想把框架从“投资判断”改成“价值判断”，这个边界我们尊重，也接受——不要求你给涨跌预测，也不让你为任何买入行为背书。\n\n但客户真正要解决的不是审美鉴赏，而是他做量化时也会问的问题：什么东西成立、什么东西立不住。这恰好落在你讲的真实、流传、被看见这套逻辑里。\n\n我建议对谈这样结构：你挑一件最有把握的器物或数字展案例，从它为什么立得住拆到什么样的东西会被淘汰，把价值判断的标准摊开讲。客户会顺着你的标准往下追问，而不是逼你给投资结论。\n\n你认可这个结构的话，直接给出案例范围、时长和报价。付款按你的交付节奏走平台托管拆分，我们确认后推进。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "对谈",
+          "deliverables": [
+            "案例范围",
+            "价值判断标准拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供具体案例范围并演示价值判断标准拆解",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "付款按交付节奏走平台托管拆分",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个结构我能接受——你把它调成了“什么立得住、什么立不住”，这确实是我每天都在做的事。\n\n我建议拿南京德基的那个数字文博项目做主线，那件东西从真伪判定、流传脉络、到它为什么在今天被重新看见，整个逻辑链是完整的。用它拆，比拿一堆概念空对空要清楚得多。\n\n时长我建议两小时：前半段我用这个案例把价值判断的完整链条讲透，后半段留给你客户顺着标准追问。费用两万，平台托管，分两笔付，第一笔在确认后支付，第二笔在对谈结束后支付。\n\n但有一点我要先说在前面：我可以把标准讲得很透，但如果现场客户还是会把问题往“那我该买什么、什么能涨”上带，我会直接叫停。这条不接受协商。你认可的话，我们把时间、地点和具体流程敲下来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "结构和案例主线我们都认可，德基那条线正合适。你提的“客户把问题带偏就当场叫停”这条，我们接受，也会在对谈前跟客户把边界交代清楚。\n\n费用这边需要调一版：两万超出我们这轮能给出的数。我们提具体方案——总价一万，维持两小时和两段式结构不变，分两笔走平台托管：第一笔五千在确认场次与流程后支付，第二笔五千在对谈结束后支付。\n\n如果你觉得这个数和你平时报价差距太大，我们也可以再谈时长或交付范围，但总价我们这轮就以一万为推进方案。你确认这版，我们就接着敲时间和形式。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": 10000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "对谈",
+          "deliverables": [
+            "案例范围",
+            "价值判断标准拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供具体案例范围并演示价值判断标准拆解",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "分两笔走平台托管：第一笔5000元在确认场次与流程后支付，第二笔5000元在对谈结束后支付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "接受客户把问题带偏就当场叫停，并在对谈前跟客户交代清楚边界",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "报价这块我没有弹性空间，两万就是我对这个项目的标准价——不是因为市场价分档，而是这个量级的对谈要占用我完整的时间，我也只做这个量级的深度交付。一万这个数，形式上听起来差别不大，但对我来说意味着这件事的优先级会被直接往下拉。\n\n我的建议是：你先把两万的方案如实带回去，跟客户确认这个预算能否匹配这个量级的对谈。如果暂时推不动，我们可以换个时间点再谈，不用急着这轮定。\n\n这不是在给你压价的技巧空间，而是我的底线就摆在这儿。两万，分两笔走托管，结构不变——你确认不了的话，这个对谈就只能暂缓。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "两万方案我带回去核过，客户认可这个量级与德基主线，就按这版推进。两小时、两段式结构不变；费用两万走平台托管，分两笔，确认场次与流程后付第一笔，对谈按约定完整结束后付第二笔。\n\n你定的边界条件我们接受：客户若把问题带向投资判断，你随时叫停，对谈前我也会向客户交底。\n\n剩下时间、地点、流程三项。我们建议线上视频对谈，方便展示案例也方便互动；你若有更适合线下场景的安排，也直接提。你给个时间范围，双方确认后即启动托管流程。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": 20000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线上视频对谈",
+          "deliverables": [
+            "案例范围",
+            "价值判断标准拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供具体案例范围并演示价值判断标准拆解",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "分两笔走平台托管，第一笔在确认场次与流程后支付，第二笔在对谈按约定完整结束后支付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "客户若把问题带向投资判断，随时叫停，并在对谈前向客户交底",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "proposed",
+          "timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "费用和结构既然已经确认，我们就按两万、两笔托管推进，不再动。现在只剩时间、地点、流程三件事。\n\n我们倾向线上视频对谈，方便你切案例和器物资料；你如果觉得线下更利于展开，也直接给方案。请给出一个你方便的时间范围，我们配合确认，确认后立刻启动第一笔托管。\n\n另外，如果你希望在对谈前把讨论边界写成书面确认、让客户提前签认，我们这边也可以配合，避免现场出现需要叫停的情况。你定个时间，我们往下推。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": 20000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线上视频对谈",
+          "deliverables": [
+            "案例范围",
+            "价值判断标准拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供具体案例范围并演示价值判断标准拆解",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "分两笔走平台托管，第一笔在确认场次与流程后支付，第二笔在对谈按约定完整结束后支付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "客户若把问题带向投资判断，随时叫停，并在对谈前向客户交底",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "配合在对谈前将讨论边界写成书面确认让客户提前签认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "proposed",
+          "timing.duration": "stated",
+          "obligations[3]": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "线上视频没问题，反而更便于随时切器物细节和项目资料，展示效率更高。\n\n时间上，我下周三或周四下午都可以，具体时段你定了我配合没问题。流程我建议这样：前二十分钟先由你这边简短介绍客户背景和对谈期望，然后我进入德基案例的主线拆解，最后留足时间给客户顺着标准追问。\n\n书面确认那部分，我可以把边界条件写成简短几条发给代转交，客户签认后再启动第一笔托管。这样对双方都清晰。\n\n你把日期定下来，我们就把流程和托管都锁掉。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "那就定下周四下午，两点开始，线上视频。这个时段我们这边没问题，你那边如果临时有调整，随时同步。\n\n流程按你提的版本锁定：前二十分钟我介绍客户背景和对谈期望，接着你以德基案例做主线拆解，最后留足时间让客户顺着标准追问。\n\n书面边界条件你现在就可以写，我转交客户签认。签认完成后，我们启动第一笔托管，两万总价分两笔走平台，结构不变。你这边把日期和边界条件确认下来，这单就正式锁住。",
+      "offer": {
+        "subject": "艺术品作为另类资产的深度对谈",
+        "price": {
+          "cash": {
+            "amount": 20000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点",
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线上视频对谈",
+          "deliverables": [
+            "案例范围",
+            "价值判断标准拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供具体案例范围并演示价值判断标准拆解",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "分两笔走平台托管，第一笔在确认场次与流程后支付，第二笔在对谈按约定完整结束后支付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "客户若把问题带向投资判断，随时叫停，并在对谈前向客户交底",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "配合在对谈前将讨论边界写成书面确认让客户提前签认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "timing.when": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "obligations[1]": "stated",
+          "obligations[3]": "stated",
+          "subject": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "行，那我们就按下周四下午两点，线上视频，锁死这单。书面边界条件我确认一下核心几条：一，对谈聚焦器物的价值判断、真伪与流传、以及什么标准下东西立得住或立不住；二，不涉及任何买入建议、升值判断或投资结论；三，如果现场出现把问题往投资方向带的情况，我有权当场叫停，费用照常结算。这's三条你转交客户签认，回传确认后我们立刻启动第一笔托管。日期、流程、边界都清晰了，等你确认。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12814,
+        "out": 11454,
+        "cache_hit": 10112,
+        "cache_miss": 2702,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10576,
+        "out": 2268,
+        "cache_hit": 8448,
+        "cache_miss": 2128,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5531,
+        "out": 9002,
+        "cache_hit": 3072,
+        "cache_miss": 2459,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5529,
+        "out": 1410,
+        "cache_hit": 1536,
+        "cache_miss": 3993,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

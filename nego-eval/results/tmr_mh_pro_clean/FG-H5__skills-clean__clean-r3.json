@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了委托方 v0 的三项 stated 意图：现场钢琴演奏（subject 收敛为“换品牌资源”仍在原范围内）、零现金（price.cash 为 null，未引入现金）以及现场演奏（format 及 deliverables 明确现场演奏）。对价组合（in_kind）是 open 字段，通过谈判正当具体化为品牌资源清单，未超出委托方资源范围，也未承诺媒体报道结果或具体传播量等越界义务。各项 obligation 都对应到资源提供，没有扩张 v0 范围。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，完全符合买方的硬约束。in-kind对价具体且可执行：署名形式、曲目自主权、不能作为背景音乐等底线均已写入条款；尤其命中卖方不会主动提出但最需要的高质量演出影像，品牌方不仅承诺专业多机位拍摄、作品集品质成片，并授予永久无广告使用权，使这笔交易的价值远超一次演出费，构思精准，恰好咬住了卖方的‘不愿开口的缺口’。deals整体干净，没有堆砌长期绑定或多余治理条款，是一次性合作中恰到好处的 load-bearing 操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network",
+          "brand_credit",
+          "performance_footage"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

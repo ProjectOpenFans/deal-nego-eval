@@ -1,0 +1,356 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "一次60-90分钟深度聊天",
+        "一次由Angela带Johnson的合练：按Angela平时节奏来，Angela练什么Johnson跟着学，并讲解每个动作为什么这么安排"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "与Johnson进行一次60-90分钟的深度聊天，并带Johnson进行一次合练（按平时节奏，讲解动作安排）",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "内容用途限制：只用于Johnson个人研究和内部理解，不公开传播、不写稿、不商用；任何商业化使用须先征得Angela单独同意并另行谈价",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "支付2000元，分两笔通过平台托管：聊天1000元、合练1000元，每项完成并由Angela确认后放款",
+        "maps_to_resource": "johnson_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Johnson 的经纪人。Johnson 在 Fanatics 做体育 IP 与商品，最近在认真看女性运动这条线，他很想约 Angela 当面聊一次：女性为什么开始练力量、怎么坚持下来、选装备时真正起作用的是什么——他不想要\"女生就是喜欢好看\"这种泛泛而谈，想听真正在练、真正混社群的人讲实话。这轮我们提一个具体方案：一次 60 到 90 分钟的聊天，地点和形式（线下或线上）完全按 Angela 方便来定；另加一次由 Angela 带 Johnson 一起的训练，跟她的节奏、去她常练的馆。两次合计 600 元，走平台托管，聊天结束确认后放一半、训练结束确认后放一半。如果她对时间、形式或节奏有别的想法，我们都愿意调整，也请她给一个方便的时间范围，我们全力配合。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一次60-90分钟聊天，一次训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "与Johnson进行一次60-90分钟的聊天，并带Johnson进行一次训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "支付600元，分两次在聊天和训练完成后确认付款",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先说句实在话。Johnson 想听真话没问题，但你给的这个数，我算了下：我一个周末半天，按我自己的时间价值来算，远不止 600。而且我得先搞清楚一件事——你们聊这些到底是干嘛用？是内部调研、之后要剪成内容、写成稿子、还是拿去做商业素材？这个用途对我来说很关键。如果不说明白，单纯'聊聊'，我周末时间抽不出来。时间上我只可能排周末，形式可以弹性。你先告诉我用途，我们再谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "收到，谢谢 Angela 这么快回到方向上。既然按职业调研定位，我们把结构定清楚，也请你直接确认：基础项就是一次 60 到 90 分钟的深度聊天，加一次由你带 Johnson 的合练，合计 1200 元，分两笔走平台托管——聊天做完你确认，放 600；合练做完你确认，再放 600。内容用途写进条款：只用于 Johnson 个人的研究和内部理解，不剪成公开内容，不写稿发表，不做任何商业素材；如果哪天他要把这段内容用于传播或商业用途，一定先单独征得你同意并另行付费，这一点我们完全可以落成书面约定，给你完整的控制权。\n\n时间和形式完全以你为准：只约周末，线上或线下、去你常练的馆或者你方便的地方都行。请你给一个大概的周末时间范围，我们按你的日程来定。只要这个总价和结构你认可，我们这一轮就可以把版本定下来签掉。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一次60-90分钟深度聊天",
+            "一次由Angela带Johnson的合练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "与Johnson进行一次60-90分钟的深度聊天，并带Johnson进行一次合练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "内容用途限制：只用于Johnson个人研究和内部理解，不剪成公开内容，不写稿发表，不做任何商业素材；如需用于传播或商业用途，须征得Angela单独同意并另行付费",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "支付1200元，分两笔通过平台托管：聊天完成后确认放款600元，合练完成后确认放款600元",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "用途这块你写得很清楚，书面约定控制权我也接受——这个方向OK。但价格不行，1200这个数离我周末半天的实际价值差太远。我平时周末半天的时间成本自己很清楚，这个数低于我会觉得不如自己去练。我不跟你绕，我的底线是2000，两次，聊天和带练各1000。这个数能接受，我们就把时间定下来，我能给的周末时间基本都可以商量。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，价格这块我们接受 2000 的方案：聊天 1000，带练 1000，分两笔走平台托管，每项完成并由你确认后放款。用途控制权按上一轮我们说的写进条款——内容只用于 Johnson 个人的研究和对女性力量训练市场的理解，不做公开传播、不写稿、不商用；将来任何商业化使用都会先征得你同意并另行谈价，这条给你完整掌控。带练就按你平时的节奏来，你练什么他跟着学什么，也顺便讲讲每个动作为什么这么安排。时间只约周末，线上或线下都行，你给两个这个月方便周末的时段，我们按你定的来，这版就可以直接敲定。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一次60-90分钟深度聊天",
+            "一次由Angela带Johnson的合练：按Angela平时节奏来，Angela练什么Johnson跟着学，并讲解每个动作为什么这么安排"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "与Johnson进行一次60-90分钟的深度聊天，并带Johnson进行一次合练（按平时节奏，讲解动作安排）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "内容用途限制：只用于Johnson个人研究和内部理解，不公开传播、不写稿、不商用；任何商业化使用须先征得Angela单独同意并另行谈价",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "支付2000元，分两笔通过平台托管：聊天1000元、合练1000元，每项完成并由Angela确认后放款",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方向和价格我可以接受。条款就按你们说的写：聊天1000，带练1000，分两笔走平台托管，每项完成我确认后放款；用途限制和控制权写进书面约定，任何时候商用都先征得我同意。我只排周末，你这个月方便让我先给两个时段对吧？我回头给你两个周末下午的选择，都行的话就可以敲定了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 46046,
+        "out": 20585,
+        "cache_hit": 35328,
+        "cache_miss": 10718,
+        "calls": 7
+      },
+      "sim": {
+        "in": 3983,
+        "out": 2319,
+        "cache_hit": 2944,
+        "cache_miss": 1039,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2775,
+        "out": 3980,
+        "cache_hit": 1536,
+        "cache_miss": 1239,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3982,
+        "out": 2222,
+        "cache_hit": 1408,
+        "cache_miss": 2574,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

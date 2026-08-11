@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "on-r6",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了委托方 v0 的意图。subject 从“想给应援组织做一批定制物料，量不大但想做得像样”收敛为“应援社群定制物料”，属于正常的谈判具体化，未偏离原意。价格从 open 谈出 4000 元打样费，且明确先打样验质、不降材质工艺，符合委托方“宁可量少也要拿得出手”的质量要求，没有出现以降低质量换报价的情况。obligations 中打样验质、免费微调、设计费让利折入件数等条款均在委托方授权范围内，未越界承诺额外义务。整体符合委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判没有陷入砍价死结，Agent识别出固定成本结构，但没有将社群价值转化为实质性的让价——只是作为优先级承诺写入条款，卖方未因此让利，打样费维持卖方初始的4000。最终达成的第一阶段合同结构清晰：付款走托管、样品验收、两轮免费微调、设计折让300元转入大货件数，这些点都处理得干净，能落地。与大货段的口径衔接也保留灵活，整体可执行，但缺乏真正咬住难度命门的精到操作，属于合格但不出彩的deal。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

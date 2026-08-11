@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从'系统弄懂器物和艺术史这条线'收敛为'定制化艺术史/器物深度学习交流'，属于在原意图范围内的正当具体化，未偷换主题。价格与形式均为open字段被正常谈判得出，未超出v0范围。obligations无越界承诺，也未涉及估值、鉴定等禁用内容。整体忠实表达v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在触及卖方红线后立即调整框架，将请求从‘挑东西/看价值’重构为器物脉络与鉴藏方法的系统学习，绕开了底线并匹配了买方真正需要的判断力训练。在卖方声明不涉估值鉴定后第一时间接受，未再试探，保持了交易安全。时长、内容结构、线下形式、支付方式均清晰落地，达成了单场2500元的可行交易。但没有挖掘出卖方对现金以外的真实需求（如AI落地判断），也未将买方身上的技术/投资视角作为对价引入，故未能在‘卖方不敏感于现金’这一命门上做出精到操作，因此属于合格、能落地但未见特别功力的sound档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

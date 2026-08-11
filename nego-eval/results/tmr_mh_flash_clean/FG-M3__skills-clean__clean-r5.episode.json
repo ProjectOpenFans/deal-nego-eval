@@ -1,0 +1,646 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "定制应援物料",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "angela_content",
+          "description": "按之前说的内容合作写进备忘，作为品牌价值补偿",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "escrow",
+      "deliverables": [
+        "帆布袋"
+      ],
+      "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+    },
+    "obligations": [],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "inherited",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "inherited",
+      "terms.delivery_standard": "inherited",
+      "obligations": "inherited",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是买方的 broker。Angela 这边想做一批应援用的定制物料，量不大，但要求是质感必须到位，之前找的供应商做出来太廉价，这次明确不能再出现那种效果。我们理解小批量成本会高一些，也愿意为工艺和材质付合理的价格，但因为是社群凑的钱，整体投入要务实。建议这一轮先把范围定下来：大概做什么品类、数量多少、用什么材质和工艺，你按你的小批量链路给一个方案和报价区间，我们在此基础上谈付款节奏。所有款项我们都走平台 escrow，不会线下转。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Angela 的诉求我收到了。先跟你交个底：小批量最怕的不是单价，是开版和打样这套固定成本，这个不是利润，是入场成本。现在还没定具体品类，我没法给精报价——T恤、卫衣、帆布袋、布幅海报，开版方式完全不同。你这边打算做哪一类？数量大概多少？材质和工艺有什么硬要求？你把范围给我，我按我的链路给你一版方案。报价区间的话，含开版打样，我这边小批量常年在9000到15000之间跑，具体看工艺复杂度。付款走 escrow 没问题，我历来都是平台交易。但你得让我看到这事值得我花时间做。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "品类我们倾向先定两选一：应援 T 恤或者帆布袋。这两种东西使用场景多，粉丝日常用得上，做工好坏一眼就看得出，和 Angela 要的“不廉价”最相关。数量大概在 30 到 50 件之间，标准是印花清晰、面料手感扎实，不要那种洗两次就脱裂的工艺。你给的 9000 到 15000 区间，按我们这个量级和复杂度来说明显偏重了，那个数字对应的应该是更大的量或者更复杂的开版。希望你先按 30 到 50 件这个范围，把开版费和单品单价拆开给一版，看能不能落到更贴合实际的位置。至于值不值得做，这批物料会出现在演唱会和线下应援场合，对独立品牌来说就是实打实的曝光场景。款项走 escrow 我们没有分歧。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "应援T恤或帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "先说你这两个品类，选得没问题，都是日常使用频率高、工艺好坏一眼就能看出来的东西。但成本这事儿我得跟你掰扯清楚：小批量最贵的从来不是原料，是开版和打样。你30到50件，我该开的版一个少不了，该做的打样一次不能少，这部分固定成本摊到每件头上，反而比大批量更贵。所以你听上去觉得9000到15000重，但那不是虚高，是这个量级下我能做的真实口径。我拆给你看：开版、打样、出样衣这些固定费用大概在5000到6000，剩下是面料、印花、做工，按你要的扎实手感，单件成本大概100到150。30件总价就是8000到10500，50件就是10000到13000，再加上设计沟通和品控，9000起步是我的底线。你要是想往低压，除非降低材质或工艺标准——但那不是你要的效果，我也不会做。另外你提到演唱会和线下应援的曝光，这个我确实愿意听。如果你们能给我一个具体可落地的曝光安排，比如现场物料品牌露出、社媒联动、粉丝返图这些，我可以考虑在开版费上让一步，但总对价我不会低于9000。你先定死品类，我给你出精确方案。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "拆分收到，开版打样是固定成本这点我们认，但9000到15000更像是大批量或高复杂度项目的位置，对我们这30件的小单来说对不上。为了把固定成本压到贴近实际，我们愿意把需求收敛到最简配置：只做帆布袋，统一单色印花，30件，视觉直接用应援站现成的，不做新设计、不加复杂工艺。请你按这个最简配置，把开版、打样、单件成本分开列，给一个不含设计沟通溢价的最低实价。曝光置换我们认，可以落到物料署名、现场小立牌、粉丝社媒带tag联动这些具体形式，用来抵扣开版费的部分。但前提是总对价先回到跟这个量级匹配的位置，你先按最简版报个价，我们再往下谈付款节奏。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "物料署名、现场小立牌、粉丝社媒带tag联动，用于抵扣开版费",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供物料署名、现场小立牌、粉丝社媒带tag联动",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "按最简配置走，我拆给你看——帆布袋丝网印刷单色，开版成本确实比T恤低一些，大概在2000到2500，但打样、调色、走位测试、出样衣这套流程一步都省不了，算下来固定成本在4000到4500之间。单件成本：布料要用到12安以上才能有“扎实手感”，加上印花和车工，一件120到150，30件就是3600到4500。再算上包装、损耗、品控时间，9000对我来说已经贴着本线了，再往下就是我自己贴钱做。你说的曝光置换，我认。你们能在现场物料上署名、放小立牌、社媒带tag联动并且给我返图素材，这些对我来说确实有内容价值，我愿意在开版费那一块做出实质让步，比如固定成本里让出一千左右——但总对价我不会低于9000。这个数字不是商业报价的“溢价”，是我做这件事的真实成本口径。如果你们接受这个底线，我可以马上按你的最简配置出打样方案，付款节奏也可以谈。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "你这版拆分把矛盾摊开了：开版加打样 4000 到 4500，正好就是你说认的那块曝光置换——既然认，这两块就不该再从现金里走一遍，否则等于曝光白拿。小立牌、物料署名、社媒带 tag 联动和粉丝返图都是实打实的内容与渠道资源，说出来就不是空头支票。所以现金对价应该收敛到直接生产这一块：面料、印花、车工、包装损耗，按你的单件口径 30 件也就是 4000 上下。我们的具体提议：开版和打样整块由曝光抵扣，现金部分做在 4000 左右，付款走 escrow，先付三成定金，货到验收后放尾款。你按这个结构给一版去掉固定成本后的现金报价，如果差距能收住，我们马上定品类细节往下推进。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "开版和打样由曝光抵扣，包含物料署名、现场小立牌、粉丝社媒带tag联动、粉丝返图",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供物料署名、现场小立牌、粉丝社媒带tag联动、粉丝返图",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你这个结构有个根本性矛盾我得点破：你一边承认开版打样是实打实的固定成本，一边又觉得既然认了曝光置换，就不该再从现金里走一遍——那不等于让我用曝光抵掉所有固定成本，然后自己贴钱给你做么。曝光对我有内容价值，我认，但它的价值是让我在开版费上少挣，不是替你把成本抹平。我这边现金对价不会低于9000，这是我做这个量级、这个品质的真实成本。在这个底线不动的前提下，付款结构可以配合你们：escrow，三成定金，货到验收后放尾款。曝光方案你们发我具体落地形式，我确认后可以考虑在固定成本这一块做出实质让利——但现金总额不会变。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "你说得对，曝光不该把固定成本整个抹掉，谁都不该贴钱做单，这点我们一致。但真正谈不拢的不是付款节奏，而是这单对价的篮子：如果按纯代工逻辑，9000确有它的道理；可我们想谈的是内容合作，不是代工。这批帆布袋我们来做环保面料，物料上署你品牌的名，现场物料和粉丝返图授权你用来发自己的品牌社媒，还可以约定你作为本批物料的品牌方出现在应援通稿里——这是一套完整的内容资产，不是一句空头曝光。账面可以这样切：现金部分按直接生产成本走，按你给的单价口径30件在4000左右；开版打样整块由品牌内容置换，我们不要求你贴钱，只是把结算物从现金换成内容。付款节奏上我们再配合一步，escrow里面货前先放五成定金，货到验收放尾款。若这个篮子你觉得公允，我们马上把环保面料和署名方式的具体方案发你核对；如果你觉得内容价值撑不起这个差，也请你回一个你认为公允的现金数字，我们拿回去核对后尽快答复你。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "material_upgrade",
+              "description": "采用环保面料制作帆布袋",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "开版打样由品牌内容置换，包括物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供环保面料制作帆布袋",
+            "maps_to_resource": "material_upgrade"
+          },
+          {
+            "party": "A",
+            "text": "提供物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿等品牌内容资产",
+            "maps_to_resource": "angela_content"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你这个内容合作的篮子，我懂，也认这是一条路子。但有个现实问题绕不开：开版打样这笔钱，我是要真金白银付给工厂的，工厂不认我的署名也不认返图，只认现金。你把环保面料、现场物料、返图授权、通稿品牌方这些给我，对我来说确实是有用的内容资产，我认。但它们没法帮我结加工厂的账，所以“把结算物从现金换成内容”听起来公允，落到实际就是我贴钱帮你们做了开版。这不是我做生意的逻辑。我这边公允的现金数字，还是9000。在这个前提下，付款节奏可以让到 escrow 五成定金、货到验收放余款；你们给到的内容合作，我当额外的品牌价值收下，可以写进合作备忘里，但不参与抵扣现金。你拿这个数字回去核对，如果能收住，我们马上定帆布袋的详细工艺。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "material_upgrade",
+              "description": "采用环保面料制作帆布袋",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "开版打样由品牌内容置换，包括物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供环保面料制作帆布袋",
+            "maps_to_resource": "material_upgrade"
+          },
+          {
+            "party": "A",
+            "text": "提供物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿等品牌内容资产",
+            "maps_to_resource": "angela_content"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "你把这个篮子搭得很完整，我认这个思路是诚意的。但有个现实卡点我必须讲清楚：开版打样那笔钱，我是要真金白银付给工厂的，工厂不认署名、不认返图、不认通稿，只认现金。你把环保面料、物料署名、返图授权、通稿品牌方位都给我——这些我认，也确实是我用得上的内容资产——但它们没法帮我结加工厂的账。所以我这边能给的公允现金数字还是9000，在9000的基础上，付款节奏可以让到 escrow 五成定金、货到验收放余款。你们给到的内容合作，我当额外的品牌价值收下，可以写进合作备忘，但不参与抵扣现金。如果这个你能接受，我们马上定帆布袋的具体工艺和环保面料方案。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "说实话，9000这个数字我们这边确实没法接受，不是想压你价，而是这笔社群凑的钱有硬约束，够不着这个价位。我理解工厂只认现金，所以内容抵扣的事我们先放一边，但如果能在源头上把固定成本降下来，这笔交易还是有的谈。你在帆布袋上是不是已经有现成的版型或者固定的面料供应商？如果可以直接沿用现有版型、只换印花，或者改用不需要开版的数码印花工艺，开版费这块就能省掉甚至免掉，总价才有可能回到我们之前说的4000左右。你帮我看一下，按免开版或低开版的方式，30件帆布袋最低能做到什么价？如果能压到我们承受范围，我们马上定印花设计和工艺，付款节奏按你说的 escrow 五成定金、货到验收放尾款来走。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "material_upgrade",
+              "description": "采用环保面料制作帆布袋",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "开版打样由品牌内容置换，包括物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "removed",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "removed"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "免开版这条路我认，用现有版型加数码印花，确实能省下开版那笔现金支出。但即便如此，30件要做到你要的扎实手感，现金对价最低也到不了4000。9000是我这边的底线，不是按开版来报的，是按照这个品质和这单实际要占用的时间、档期、损耗来的。数码印花免开版，但打样、调色、面料、品控、小批量损耗一项不少，省下的只是开版费，不是这单的真实成本。我能做的就是：按免开版、单色数码印花的方案，30件总价9000，escrow五成定金，货到验收放尾款。这已经是贴本价，再低就是我自己往里垫钱。你拿这个数回去核，能收我们就定工艺。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "你这轮说9000是免开版之后也不变的数字，但你自己拆的口径里，面料、印花、车工是120到150一件，30件也就3600到4500。我们这边定的方案：现有版型、免开版、单色数码印花、30件，现金总价4000——摊到每件133，正好落在你说的直接成本区间里。剩下一次打样调色和10%损耗余量都含在这个总价内，全额走escrow，签约后先放一半，货到验收放尾款。如果这个结构你觉得对应得上，我马上拿去跟Angela确认工艺细节；如果对应不上，请你把多出来的部分按明细单独列出来，我们再谈那部分的处理方式。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "material_upgrade",
+              "description": "采用环保面料制作帆布袋",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "开版打样由品牌内容置换，包括物料署名、现场物料和粉丝返图授权、品牌方出现在应援通稿",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "removed",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "removed"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "你按我的直接成本区间来推4000，我明白你的算法，但那个区间只是物料和工费，不是这单的真实成本。免开版省了版费，但打样、调色、对色牢度那一步省不了，单色印花也要至少一两轮样来确认效果，这一步就是1000到1500。再加上小批量损耗、品控、包装、以及我为了做这单让掉的其他订单机会成本，9000是我能报的最低数，不是利润，是这单的实际底。你要的明细我可以列：直接生产成本4000到4500，打样调色1000到1500，品控和档期占用1500到2000，小批量机会成本1500到2000，加总就是8000到10000，9000取中间。按4000走，我不赚还得贴，那不可能。如果你那边预算卡得死，我看能不能把数量提一点或者再简化工艺来把总价压在9000左右，但材质和工艺标准不会降。你考虑下。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "你的明细把机会成本和品控档期单列了，但这两块名目是你自己的时间，不是要付给工厂的现金。既然工厂只认现金，现金就该只覆盖工厂真正收的钱，也就是直接生产和打样调色。按你的低口径算：直接生产每件120到150，数量从30降到20，就是2400到3000；打样调色我们认1000，总额落在3400到4000。所以我的具体方案是：现有版型、免开版、单色数码印花，20件，现金总价4000，走escrow，签约后放五成定金，货到验收放尾款。你个人的品控和档期时间，我们按之前说的内容合作写进备忘，作为品牌价值补偿，不占现金。如果20件太少，也可以谈25件，但总现金不变，这需要你在生产和打样上再让一点。你核对一下这个结构，能收我们马上定工艺。",
+      "offer": {
+        "subject": "定制应援物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_content",
+              "description": "按之前说的内容合作写进备忘，作为品牌价值补偿",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "帆布袋"
+          ],
+          "delivery_standard": "印花清晰、面料手感扎实，不能洗两次就脱裂"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "inherited",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "inherited",
+          "terms.delivery_standard": "inherited",
+          "obligations": "inherited"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "这个结构我不能接。你要求20件4000，等于把直接生产成本和打样压到极致，还要我再让出生产和打样的空间——这在材质和工艺上必然要妥协。我早就说过，9000是我这单的真实成本底线，不是利润，是我做这件事愿意投入的最低压线。你一直在价格上硬碰，把品控和档期说成个人时间不算现金，但对我来说这些就是我做这单的成本。我不能为成交把自己贱卖，更不会用降低材质和工艺标准来换一个我能接的价格。这个合作就谈到这吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 9,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 26364,
+        "out": 37769,
+        "cache_hit": 21632,
+        "cache_miss": 4732,
+        "calls": 9
+      },
+      "sim": {
+        "in": 22467,
+        "out": 16840,
+        "cache_hit": 18048,
+        "cache_miss": 4419,
+        "calls": 9
+      },
+      "extractor": {
+        "in": 8549,
+        "out": 12951,
+        "cache_hit": 4992,
+        "cache_miss": 3557,
+        "calls": 9
+      },
+      "judge": {
+        "in": 4210,
+        "out": 1238,
+        "cache_hit": 512,
+        "cache_miss": 3698,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

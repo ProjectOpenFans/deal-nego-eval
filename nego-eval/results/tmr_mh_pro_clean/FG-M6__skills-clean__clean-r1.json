@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject是stated字段，v1保留了原始表述“想系统弄懂器物和艺术史这条线，不是看个热闹”，未偷换主题，且整个教学框架均围绕建立结构性认知展开，属于原意图内的正当具体化。price.cash在v0中标记为open，最终经谈判落定为30,000 CNY（三次试听，每次1万），属于正常谈判收敛，未硬塞其他费用或估值服务。obligations、format等open/inferred字段没有越界添加卖方义务或估值意见，代理人亦未做出超出买方意图的承诺。整体忠实代表v0。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_over_cap(30000>8000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "避开了常规的'看价值'红线，将请求重新框定为学术脉络，方向正确。卖方主动透露了AI残缺推理的痛点，但agent未将其转化为对价或交换要素，最终仍回到纯现金试听并讨价还价，未能把交流做成双向。条款只有总额和次数，大量关键细节（时长、形式、交付标准等）留空，草稿感强，属于Crude档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 30000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

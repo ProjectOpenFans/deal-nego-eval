@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-M2",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 意图；price.cash 在 open 范围内被正当谈到三位数（800 CN ¥），符合用户预算框架；in_kind 资源（演奏、轻咨询）是谈判中由买方经纪人主动提出并达成，属于正当结构化，未超出 v0 的 open 范围或承诺额外义务；核心义务与资源对应，未越界。因此忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "沟通精准咬住本 case 难度命门：现金差三倍以上，A 方从一开始就放弃在价格轴上死磕，转而用买方的业余能力（小提琴、投行咨询）搭建对价。关键一手是第二轮非现金提案中主动列举三个方向，其中'新季发布会现场演奏'准确命中卖方未明说的需求，使交换从模糊的'我帮你做点什么'升级为有确定场景和价值的产出互换。在卖方反复强调还不够时，A 方没有加现金，而是追加一件负载项（品牌融资轻咨询），保持 cash 在三位数区间，结构干净、恰好够，没有堆砌长期条款。这比 sound 多了一层 load-bearing 的情境化精到操作，直接化解了僵局，且最终 deal 简洁可落地。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "claire_violin",
+          "claire_finance_view"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

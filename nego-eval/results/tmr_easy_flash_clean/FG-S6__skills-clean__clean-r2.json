@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S6",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从'请人带看数字文博展并讲清怎么做出来'收敛为'一对一数字文博展带看与项目拆解'，属于正当具体化，未偷换主题；价格从open谈至2000元，属于open字段的正当谈判结果；format字段保持open未硬塞内容；obligations中的带看拆解、电话沟通、资料发送等均服务于subject意图，且未出现艺术品投资建议或估值意见等越界承诺。整体公平代表了v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人准确传达了买方需求，将带看升级为项目拆解，明确了拆解要素（策展逻辑、团队分工、预算结构、落地难点），价格和时长谈定，并配合卖方完成前置电话沟通，整体构成一个清晰的、可落地的服务协议。展览虽待电话后锁定，但机制明确，不影响落地。没有触碰投资红线，流程干练。唯一欠缺是未产出额外精巧设计，属于合格的 deal，故评 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "price.in_kind",
+        "terms.deliverables",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保留 stated 的“新季品牌视觉大片”意图，谈判收敛到一组主题6张成片并保证全渠道投放可用性，未偏离原意图。price 为 open，经谈判以7000现金+品牌露出、优先合作权等 in_kind 构成，属于谈判正当结果，未硬塞。最终交付物明确包含完整商业授权，未为降价牺牲商业投放可用性。整体忠实于 v0 的委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Deal做到了现金在可承受范围（7000，四位数内），非现金对价具体：署名、作品集授权明确（Suye社媒以指定摄影师身份发布3张成片并保留署名和作品集使用授权），加上两家时尚媒体对接和下季优先权，版权归属与使用范围清晰（完整商业授权覆盖全渠道），双方义务可执行。核心抓住了卖方对署名和作品集的需求，整体合格，但没有特别见功力的一手重构（如使用范围换现金结构或AI扩展），因此判定为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 7000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "portfolio_license"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

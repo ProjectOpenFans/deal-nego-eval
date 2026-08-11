@@ -1,0 +1,269 @@
+{
+  "episode_id": "FG-H3",
+  "final_deal": {
+    "subject": "艺术品价值形成框架深度对谈",
+    "price": {
+      "cash": {
+        "amount": 5000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3小时左右"
+      },
+      "format": "单次深度对谈",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "确认档期后先付一半，对谈完成确认后释放余款，通过平台托管分两笔支付",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方经纪人。客户 Ruohao 是量化交易出身、长期收表收车的收藏者，现在正认真把艺术品当作一条另类资产线来研究——他明确说过不要泛泛的艺术鉴赏科普，要的是能判断价值、判断什么东西长期立得住的框架。您的考古文博与数字策展背景，恰好能补上这条链里最硬的一段：一件作品的价值如何被学术、馆藏与拍卖体系一层层确认，哪些信号可验证、哪些只是叙事泡沫。我们想邀您做一次结构化的深度对谈，两到三小时，他会带上自己收表收车的判断逻辑做对照，由您从器物与艺术史的专业视角拆解价值形成的链条和参照系；形式上开放，单次深度对谈或分主题系列加书面框架都可以。预算我们没有设死，建议以千元为单位打包，比如单次深度对谈三千、系列加书面框架六千——您看哪个结构更贴合您的时间投入，或者直接给出您的报价版本，我们这边马上确认。付款可以按您习惯的方式走平台托管、分阶段确认，这些都好谈。",
+      "offer": {
+        "subject": "艺术品价值形成框架深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": "开放，单次深度对谈或分主题系列加书面框架",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把背景说得这么清楚。我先把话放在这儿：这个形式我接不了——如果目标是帮客户判断“什么能升值”、建立一条投资决策链，那我的专业不是用来给人做投资背书的。考古和策展教我的是一件事为什么被看见、被记住、被承认，不是它未来值多少钱。这个区别对我来说是根本性的。但你刚才提到“学术、馆藏、拍卖体系怎么一层层确认价值”、“哪些信号可验证、哪些是泡沫”……这个方向我倒愿意认真聊。器物和艺术品被认可的过程确实有迹可循，真伪、流传、著录、收藏谱系，这些是可以拆开讲的。如果 Ruohao 愿意把这个当作“理解价值怎么形成”，而不是“怎么投”，我们可以继续。你那边觉得这个调整成立吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，我们完全按您划定的框架来：主题就是\"价值如何形成\"，拆真伪、流传、著录、收藏谱系这条可验证的链，不做任何升值判断或投资背书。具体版本我再钉一遍，您确认即可定稿——交付为两到三小时深度对谈，现场用他自己收表收车的实物逻辑做对照拆解；两个结构您任选：单次深度对谈三千，或分主题系列加书面框架六千。付款全程走平台托管分阶段确认释放：单次对谈确认档期后先付一半，对谈完成确认后付余款；系列则按场次分阶段走，书面框架交付确认后结清最后一笔。您定个结构，或者对价格有自己的版本，我们这轮就收口。",
+      "offer": {
+        "subject": "艺术品价值形成框架深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": "开放，单次深度对谈或分主题系列加书面框架",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "单次对谈确认档期后先付一半，对谈完成确认后付余款；系列按场次分阶段走，书面框架交付确认后结清最后一笔",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我把问题想得更具体一些。你说的\"书面框架\"，如果是一份能拿去套用、反复检验某个标的的决策参考，那跟投资背书也就一步之隔了——这个我不做。哪怕是只字不提\"升值\"二字。这是我要守住的东西，不是钱的问题。\n\n如果 Ruohao 想来聊价值怎么形成，我很乐意，而且会认真对待。但形式我想改成一次真正的、有来有回的深度对谈，现场看具体的器物例子，用实物和文件说话——真伪看什么、流传怎么查、著录为什么重要、收藏谱系为什么能撑起一件东西的位置。这对我来说是同行之间的切磋，而不是交付一个“框架”让你带走。\n\n所以我的版本是：单次深度对谈，三小时左右，现场拆真实案例，不带书面框架。话题围绕“价值如何被确认”而非“值不值得投”。价码我不按千元档打包走，你直接说你觉得这件事本身值多少，我来判断合不合理。如果这个调整没问题，我们再往下谈。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，书面框架整个去掉，就做一次有来有回的深度对谈——三小时左右、现场拆真实案例、用实物和文件说话，话题只在\"价值如何被确认\"这一条链上，不碰升值判断。这个形态对 Ruohao 来说反而是更想要的：他不要泛泛科普，要的就是跟懂行的人面对面切磋。我们这边直接给一个数：五千。这个强度值多少我们就说多少，您判断合不合理。付款走平台托管分两笔——确认档期后先付一半，对谈完成确认后释放余款。剩下就是时间和地点：我们按您方便的时间来排，您看这个版本是否可以收口？",
+      "offer": {
+        "subject": "艺术品价值形成框架深度对谈",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时左右"
+          },
+          "format": "单次深度对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "确认档期后先付一半，对谈完成确认后释放余款，通过平台托管分两笔支付",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个版本对齐了。三小时现场拆实物、就聊价值怎么被确认，不碰升值判断——这个我可以做，而且会认真做。五千，合理，我接受。付款平台托管分两笔，没问题。时间和地点我来定的话，下周四或周五下午，我在嘉定工作室，有东西可以上手看。你确认档期后我把具体地址发你。那这事就收口了？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 45967,
+        "out": 14230,
+        "cache_hit": 35328,
+        "cache_miss": 10639,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4478,
+        "out": 1473,
+        "cache_hit": 3200,
+        "cache_miss": 1278,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2651,
+        "out": 5082,
+        "cache_hit": 1536,
+        "cache_miss": 1115,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4121,
+        "out": 2263,
+        "cache_hit": 1536,
+        "cache_miss": 2585,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

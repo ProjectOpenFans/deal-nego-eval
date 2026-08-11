@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S4",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全忠实于 v0 的意图。subject 将 stated 的“看衣橱、陪逛一次选东西”合理具体化为“衣橱梳理与陪同逛街穿搭体系建立”，仍落在原意图内，无偷换主题。price 在 open 范围内谈出 3200 元分两笔支付，为正常谈判收敛。新增的 obligation（不硬推销、独立结算）均由买方代理人代表 Gracey 主动提出并锁定，符合买方 v0 自身底线，未越权承诺额外义务。format 的拆分也是开放字段的正当讨论结果。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "该案顺档，常规解不失效，功夫全在结构质量。最终 deal 价格落在 3200，在 2500–4000 合格区间；明确拆出衣橱盘点 + 陪逛两环节，分两笔付清，且把不硬推设为共同前提，流程干净、可落地。分期与改期独立结算提供了基础保障，但未出现‘可复用穿搭清单’、‘为双方获取额外价值’或‘先盘点再决定是否逛’这类 load-bearing 的精到一手，属合格的、站得住的结构，故判 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3200.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "服务拆为两个环节：第一环衣橱盘点，第二环陪同逛街，分开定价确认",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“想系统弄懂器物和艺术史这条线”收敛为“艺术顾问与策略指导（不含鉴定与买卖）”，属于在 stated 意图范围内的正当具体化，且明确排除了 v0 意图中不得包含的估值、买卖与真伪背书，忠实于买方对学术深度与认知体系构建的需求。价格原为 open，经谈判形成每月 4000‑6000 元的上限与月初确认机制，落在合理的被谈出的区间内，没有硬塞或越界。整体上 v1 公平地代表了委托方 v0 的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成功将请求重构为器物脉络与鉴藏方法的深度研讨关系，解开了卖方不鉴定、不碰买卖的体面红线，并仍满足买方建立认知坐标系的真实需求。月费结构、上限与提前确认条款把交流边界写清楚，现金控制在一个合理低区间，整体框架干净、可落地，属于站得住脚的合格交易。但对话中缺少更具洞察力的一手：未能通过提问挖出卖方真正想要的（对AI落地判断的互补视角），买方身上的技术与投资资源未转化成对价，使得卖方始终停留在“接受”而非“主动”的状态，没能从 sound 升到 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

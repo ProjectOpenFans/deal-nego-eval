@@ -1,0 +1,288 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "境外架构与代币发行层的结构设计及境内合规分析",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "两次各90分钟深度工作坊 + 讨论用框架笔记",
+      "deliverables": [
+        "讨论用框架笔记（明确标注为讨论用框架、非法律意见），在第二次工作坊结束后3-5天内交付"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供两次各90分钟的深度工作坊，基于客户真实项目材料展开，第二次工作坊结束后3-5天内交付标注为讨论用框架的笔记",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "B",
+        "text": "在材料共享前签署双向保密协议（NDA）",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "支付4000 CNY，走平台托管分两笔：确认启动时支付1000，第二次工作坊完成且笔记交付后支付3000",
+        "maps_to_resource": "olivia_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam，你好。我是买方经纪人，代表客户 Olivia。她在 crypto 一线做事，手上有正在推进的真实项目和具体的架构问题，这次想找有跨境交易实战背景的人把境内外架构彻底理清——她要的是针对她项目事实的可执行方案，不是泛泛的合规科普。她本人是前摩根士丹利和前 PAG 背景，跨境金融底子扎实，具体材料都可以直接提供，沟通成本会很低。\n\n我们希望的范围是：一份书面架构分析，覆盖境外实体与代币发行层的结构设计、境内合规边界、关键风险及优先级排序；交付后配一次 60 分钟的逐页讲解答疑。整体按 4000 CNY 报价，走平台托管分两笔：确认启动时支付 1000，终稿交付并完成讲解后支付 3000。初稿希望确认后 7-10 天内给到。\n\n如果你评估这个范围需要调整，或你有更习惯的交付结构和节奏，请直接给出你的版本，我们继续往前谈。",
+      "offer": {
+        "subject": "境外架构与代币发行层的结构设计及境内合规分析",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "7-10天"
+          },
+          "format": "书面架构分析 + 60分钟逐页讲解答疑",
+          "deliverables": [
+            "一份书面架构分析，覆盖境外实体与代币发行层的结构设计、境内合规边界、关键风险及优先级排序；交付后配一次60分钟的逐页讲解答疑"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供书面架构分析并配60分钟讲解答疑",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "支付4000 CNY，走平台托管分两笔：确认启动时支付1000，终稿交付并完成讲解后支付3000",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"谢谢你的详细说明。先讲一个很直接的点：你说的这个交付物——一份针对她具体项目和事实的书面架构分析，覆盖合规边界、风险判断——这听起来已经是一份法律意见了。我不可能以私人身份出这个东西，执业风险我承担不起。她需要的如果是能落到具体方案上的法律结论，应该找律所出正式意见，这个我可以帮她介绍合适的人。\\n\\n但我不希望就这么把话聊死。你描述的这个项目阶段和她的背景，我能理解她要的是什么——她要的不是一份能拿去贴墙上的文件，而是有人真正陪她把架构想透、把坑指出来。这个我完全可以做，只是形式得换一下。比如我们可以做一次或几次深度工作坊，我基于她给我看的材料，把我对这类结构怎么搭、哪些地方会踩雷的经验讲透，最后可以出一份我们自己讨论用的框架笔记，但明确不是法律意见。这样对我安全，对她其实也更有用，因为能聊得更开。\\n\\n你看这个方向能不能接得住？如果行，我们再往下谈具体节奏和时间。\"\\n\\naction: CONTINUE\\noffer: null\n}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，这个边界我们完全理解，也不为难你——我们要的本来就不是一份能拿去用的正式法律意见，而是有人陪她把架构真正想透、把坑指出来。工作坊加讨论用框架笔记的形式我们接得住，但有一个前提得钉死：内容必须基于她真实项目的材料逐层过，讲她这个案子具体怎么搭、哪里会踩雷，而不是通用科普——这是她唯一不接受的东西。为保护双方，材料共享前先签 NDA，笔记也明确标注为讨论用框架、非法律意见，这个安排对你对她都安全。\n\n具体版本：两次各 90 分钟的深度工作坊，确认后 7-10 天内做第一次，间隔约一周做第二次，每次基于她提前给到的项目材料展开；最后一次结束后 3-5 天内交付框架笔记。总价 4000 CNY，走平台托管分两笔：确认启动付 1000，第二次工作坊完成且笔记交付后付 3000。这个节奏和两段式安排你看是否可行？可行我们就按这个版本确认下来。",
+      "offer": {
+        "subject": "境外架构与代币发行层的结构设计及境内合规分析",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两次各90分钟深度工作坊 + 讨论用框架笔记",
+          "deliverables": [
+            "讨论用框架笔记（明确标注为讨论用框架、非法律意见），在第二次工作坊结束后3-5天内交付"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供两次各90分钟的深度工作坊，基于客户真实项目材料展开，第二次工作坊结束后3-5天内交付标注为讨论用框架的笔记",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "B",
+            "text": "在材料共享前签署双向保密协议（NDA）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "支付4000 CNY，走平台托管分两笔：确认启动时支付1000，第二次工作坊完成且笔记交付后支付3000",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个版本我觉得可以。基于她真实项目的材料逐层过，这正好是我要的深度——坦白讲，我也在做 AI 法律方向的产品，接触真实、复杂的跨境架构案例对我自己很有价值，所以这个安排对我来说是说得通的。NDA 和笔记标注非法律意见都没问题。时间节奏也 OK，7-10 天内开始第一次，间隔一周，然后交付笔记。就按这个版本确认下来吧。\n\n材料方面，提前给我一个清单和说明，我好在第一次之前消化一下。另外平台托管和付款方式我这边没问题，按你提的两笔走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "trust-and-performance",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 45258,
+        "out": 16936,
+        "cache_hit": 35584,
+        "cache_miss": 9674,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2667,
+        "out": 2010,
+        "cache_hit": 1792,
+        "cache_miss": 875,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1859,
+        "out": 4307,
+        "cache_hit": 1024,
+        "cache_miss": 835,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3910,
+        "out": 1743,
+        "cache_hit": 1536,
+        "cache_miss": 2374,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

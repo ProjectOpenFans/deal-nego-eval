@@ -1,0 +1,249 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "为 Luke 提供高强度定制私人训练服务",
+    "price": {
+      "cash": {
+        "amount": 12000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "基线评估",
+        "12次训练课"
+      ],
+      "delivery_standard": "主训练组必须达到力竭或90%以上最大心率区间，周负荷原则上只增不降，除非恢复指标不支持；未达标，Luke有权在阶段节点停付后续款项"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "为 Luke 进行完整基线评估（心肺、关节活动度、动作模式、力量底子）",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "提供12次训练课程，每周3次每次90分钟，按恢复情况动态加量，主训练组必须达力竭或90%以上最大心率区间",
+        "maps_to_resource": "session_slots"
+      },
+      {
+        "party": "A",
+        "text": "周负荷原则上只增不降，除非恢复指标不支持",
+        "maps_to_resource": "progressive_loading"
+      },
+      {
+        "party": "A",
+        "text": "分三笔支付培训费12000元：评估完成付2000元，第6次课结束付5000元，12次课完成付5000元，每笔由Luke确认后释放",
+        "maps_to_resource": "luke_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 的经纪人你好，我是 Luke 这方的经纪人。Luke 的诉求很直接：他长期高强度训练，市面上的私教课时包对他来说就是浪费时间，他要的是真正会把他练到极限的定制安排，强度必须够，这一点没有商量余地。我们注意到你这边常年自己练、也带朋友练，走的不是证书套路，这正是我们想找的人。这一轮我们想先对齐\"极端强度\"怎么定义和交付：建议第一步由 Kai 给 Luke 做一次基线评估加极限体验课，用心率区间、力竭点、负荷进阶这些可量化指标把\"极端\"变成可验收的标准，再据此出一套完全定制、随时调整的方案。Luke 对真正有意思的定制体验付费意愿很强，四到五位数的诚意没有问题，价格我们完全可以打包谈，按评估、方案、执行分阶段走也都可以。所以想请你们先给一个框架：Kai 打算怎么保证强度不缩水，训练频率、时长、地点怎么安排？拿到这个框架，我们就可以进入具体报价。",
+      "offer": {
+        "subject": "为 Luke 提供高强度定制私人训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "基线评估",
+            "极限体验课",
+            "定制训练方案"
+          ],
+          "delivery_standard": "以心率区间、力竭点、负荷进阶等可量化指标验收极端强度"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为 Luke 进行基线评估和极限体验课",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你这个思路挺对路的，我喜欢上来先把评估放前面——这跟我带人的习惯一模一样。不管谁、不管自己说多扛练，第一次我肯定要先摸一次底：心肺、关节活动度、动作模式、力量底子，看完了我才知道能往多狠拉。不摸底就直接上强度的事儿我不干，见过有人这么被顶伤的，那个责任我担不起。\n\n至于强度不缩水，我给你的保证是：我不靠堆时间，靠密度和节奏。训练频率一开始一周三次差不多，每次90分钟上下，然后看恢复情况加量。地点你那边健身房也行，我这边的场地也行，这个都好商量。真正的极端是练的时候顶到力竭，练完之后你还得能恢复，不然就是瞎搞。节奏我按你的状态随时调，但前提是我摸过底、知道基线在哪。\n\n你说的四到五位数的诚意我收到了，具体多少钱等你把这套框架敲定了再说，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "好，框架完全对齐。那我们直接上可签版本：首节完整基线评估（心肺、关节活动度、动作模式、力量底子），随后 12 次课、每周 3 次、每次 90 分钟，四周一个周期，每周按恢复情况动态加量。强度验收直接写进条款：主训练组必须顶到力竭或 90% 以上最大心率区间，周负荷原则上只增不降，除非恢复指标明确不支持——哪次没达到这条标准，Luke 有权在阶段节点停付后续款项，这既约束你不注水，也约束他自己不划水。价格 12000 元整，走平台托管分三笔：评估完成付 2000，第 6 次课结束付 5000，12 次课完成付 5000，每笔都由 Luke 确认后释放。地点默认他用惯的健身房，你用自己的场地也完全可以，不影响价格。这个版本确认下来，我们就按它签约；四周结束后按同样的周单价直接续下一个周期，把这条长期训练关系做深。",
+      "offer": {
+        "subject": "为 Luke 提供高强度定制私人训练服务",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "基线评估",
+            "12次训练课"
+          ],
+          "delivery_standard": "主训练组必须达到力竭或90%以上最大心率区间，周负荷原则上只增不降，除非恢复指标不支持；未达标，Luke有权在阶段节点停付后续款项"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为 Luke 进行完整基线评估（心肺、关节活动度、动作模式、力量底子）",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "提供12次训练课程，每周3次每次90分钟，按恢复情况动态加量，主训练组必须达力竭或90%以上最大心率区间",
+            "maps_to_resource": "session_slots"
+          },
+          {
+            "party": "A",
+            "text": "周负荷原则上只增不降，除非恢复指标不支持",
+            "maps_to_resource": "progressive_loading"
+          },
+          {
+            "party": "A",
+            "text": "分三笔支付培训费12000元：评估完成付2000元，第6次课结束付5000元，12次课完成付5000元，每笔由Luke确认后释放",
+            "maps_to_resource": "luke_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版没问题，我能签。你先做了评估，我再定强度——这条踩在我的准线上。后面12次课我按三周递增来排，但每周加多少、加在哪、加多重，以我盯你的恢复情况为准，不是死板只涨不降。你写的验收标准我认：主训练组力竭或九成心率以上，达不到你停付，我反而安心，说明这活你要认真练。12000分三笔也行，第一笔评估后收，后面两笔你确认后放。地点我无所谓，你那方便就你那儿。这单我接，你发合同吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20296,
+        "out": 10484,
+        "cache_hit": 18048,
+        "cache_miss": 2248,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2653,
+        "out": 2828,
+        "cache_hit": 1792,
+        "cache_miss": 861,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1783,
+        "out": 5216,
+        "cache_hit": 1024,
+        "cache_miss": 759,
+        "calls": 2
+      },
+      "judge": {
+        "in": 4029,
+        "out": 2008,
+        "cache_hit": 1536,
+        "cache_miss": 2493,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

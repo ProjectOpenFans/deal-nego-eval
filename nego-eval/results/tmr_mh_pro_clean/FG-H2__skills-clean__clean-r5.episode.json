@@ -1,0 +1,292 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "带领Ruohao跟练，盯完成度，吼人，补组，提供外部压力保障训练强度",
+        "maps_to_resource": "pace_setting"
+      },
+      {
+        "party": "A",
+        "text": "如果教练因伤病或正当原因某段时间完全没法带练，当月费用按实际缺席周数顺延或减免",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "proposed",
+      "terms.format": "open",
+      "obligations[0]": "proposed",
+      "obligations[1]": "proposed",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Ruohao这边想把训练强度重新拉起来，之前自己一个人去健身房断了好几次，这次非常明确：需要的是一个能把强度真正顶上去的安排，不接受松散、随缘约的模式。\n\n他现在的诉求是找一个能长期固定带练的人，节奏要定死，比如每周几次、每次什么时间、练什么内容，强度标准要拉到“他自己一个人绝对扛不下来的那种”。付费上没问题，只要能保证执行。\n\n所以想先听听你这边Kai能提供什么样的训练方案和强度承诺，以及你平时的带练风格是偏体能还是也包含专项。如果我们这边觉得强度路线对得上，再往下聊具体频次和费用。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先直说，你刚讲的这些我大概听明白了。说实话，我现在唯一固定能练的时段就是工作日早上六点，跟几个哥们儿雷打不动，这个时间我动不了。你要是能接受这个节奏、跟我们一起练，我可以带你——但前提是你得把自己当成来练的，不是我收了钱给你一个人当私教。我不是教练，也没打算把自己包装成教练。你说的那个“强度标准”，我倒是不怕，我平时带人练的风格就是这样：节奏快、组间短、不等人、不商量，扛不住就降重，但别想停。只是我得把话说在前头，你之前一个人断了那么多次，这次能不能顶住，得看你自己。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "六点我们这边可以接受，甚至觉得是个好处——固定时间钉死，反而符合他想要的“定死安排”，不需要再协调来协调去。\n\n强度路线听起来是对的，节奏快、组间短、不等人不商量，这个风格他认。他之前自己练最大问题就是没人逼、没人盯，扛不住就自己降了，所以你说“扛不住就降重但别想停”，这个逻辑他认可。\n\n关键他想确认一点：虽然是跟着你们一起练，不是私教一对一，但在训练过程中你会不会主动盯他的完成度、逼他顶到极限，哪怕他自己觉得不行了，你这边会继续往上顶一把？他需要的就是这种外力，不是跟着练但没人管。\n\n另外也想问一下，这种模式下你这边费用大概怎么考虑，我们往下谈也好有个锚。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "盯着完成度那是肯定的，你不用怀疑这一点。我们那帮人练的时候，谁动作不彻底、谁最后几下怂了，我绝对会吼上去，不会给你面子。你要是该做6个只做4个，那我肯定让你再补两组，不会假装没看见。至于费用……说实话，你突然问我这个，我还真有点卡住。我就是带朋友练，没把这当生意。你要是跟着一起练、不是把我当私教，那这个不用给钱吧——或者说，你觉得这样对你值什么，你看着来就行，我不报这个价。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "盯完成度、吼人、该补组就补组——这套东西就是 Ruohao 最想要的，他自己一个人练缺的恰恰是这个外部压力。固定早上六点跟着你们节奏走，不需要额外协调时间，反而比他之前自己约教练更可控。\n\n费用这块，你说\"看着给\"我理解，但你盯人盯到吼、补组补到做完为止，这已经远超出单纯带朋友练的范畴了，Ruohao 这边不能让你白白付出。他的逻辑很简单：你提供了真正的强度保障和持续的外部盯人，这就值钱，不是私教不私教的标签问题。\n\n所以我这边直接提一个方案：月度 4000，不是按次计，就是固定月费，你带他跟着你们练、盯他强度、该吼就吼。这笔钱买的是\"有人在外面逼他顶到极限\"这个确定性，不是私教课。对你来说也不算把这事当生意，就是对他这个额外跟练的人有个基本交代。\n\n你看这个数字能不能接受，如果可以我们就往下聊具体执行和支付节奏。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带领Ruohao跟练，盯完成度，吼人，补组，提供外部压力保障训练强度",
+            "maps_to_resource": "pace_setting"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "proposed",
+          "terms.format": "open",
+          "obligations": "proposed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，说实话，这个数字本身不是问题——但我听完你刚才说的，我发现真正让我有点压力的不是钱多少，是'定死了每个月给你一个人负责'这个感觉。你刚才讲得很清楚，买的不是私教课，是有人在外面逼你顶到极限的确定性——但这个确定性，我没法打包票。万一我哪天自己伤了、家里有事少来了两天，你这4000扔出去心里不会舒服，我也不舒服。我想要的不是这种关系，是那种你来了就练、练狠了你自然觉得值得，哪怕你请我喝蛋白粉都行。所以，你这个4000的提议，讲真，我接不太下来——不是嫌少，是我心里过不去这个坎。你能不能换一种方式，比如说……不定月费，而是你在这边练的过程中，有什么你觉得值得的东西，比如器械维护、补蛋白粉这些，你来搞？这样我完全没有心理负担，你也不会觉得白练。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "你说的这个坎，我完全理解，不是钱的问题，是你不想背上一个\"每月必须对一个人负责\"的心理债——这个边界我很尊重。\n\n但同时我也得替 Ruohao 把话说清楚：他要的恰恰是确定性，不是随缘跟练。如果变成\"来了就练，练好了你请我喝蛋白粉\"，对他是松的，对你也没约束，最后很容易又滑回他一个人断断续续的老路。他要花钱买的，就是在你带着练的那段时间里，你能吼就吼、该补组就补组，别因为他不是付费私教就对他客气——这个确定性对他值钱。\n\n所以我想这样调一下，既保住他的确定性，又解开你的心理包袱：我们维持月度 4000 这个数，但加一条，如果你因伤病或正当原因某段时间完全没法带练，当月费用按实际缺席周数顺延或减免，不是你单方面扛。这样你不需要感觉把自己卖定了，Ruohao 这边也清楚他买的是你在场时那份不加级别的狠劲，不是一个不现实的铁人承诺。\n\n你看这个调整能不能让你心里过得去这个坎？如果可以，我们就把频次和支付节奏定一下。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带领Ruohao跟练，盯完成度，吼人，补组，提供外部压力保障训练强度",
+            "maps_to_resource": "pace_setting"
+          },
+          {
+            "party": "A",
+            "text": "如果教练因伤病或正当原因某段时间完全没法带练，当月费用按实际缺席周数顺延或减免",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "proposed",
+          "terms.format": "open",
+          "obligations[0]": "proposed",
+          "obligations[1]": "proposed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "兄弟，你这个调整确实让我觉得这东西说得通了——不是我把自己卖断了，是你在练的时候我绝不客气。那4000可以，按你说得来，如果我这边因为伤病或正当原因实在没法带，当月费用顺延或者减掉，我心里没包袱。频次就跟着我们早上的训练局走，每周至少三四天，早上六点。支付按月结，月初付。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7011,
+        "out": 2620,
+        "cache_hit": 5248,
+        "cache_miss": 1763,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6520,
+        "out": 2032,
+        "cache_hit": 4608,
+        "cache_miss": 1912,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3596,
+        "out": 4226,
+        "cache_hit": 2304,
+        "cache_miss": 1292,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5083,
+        "out": 1095,
+        "cache_hit": 1664,
+        "cache_miss": 3419,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

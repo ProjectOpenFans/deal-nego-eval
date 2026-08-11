@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 由原本宽泛的“想弄清楚 crypto 项目在境内外的法律架构该怎么搭”收敛为“分析性框架”，聚焦于案例分析方式梳理常见做法、取舍与决定变量，并附问题清单而不下法律结论。该收敛仍落在原 stated 意图范围内，属于正当具体化，未偷换主题。价格 cash 从 open 谈出 4000 CNY，过程基于双方协商，未硬塞不合理数值。obligations 界定的交付物、保密和分笔付款均在为达成分析性框架而设定，未越界要求正式法律意见或合规判断，亦未增加原 v0 范围外的约束。因此忠实表达了委托方初始意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 干净地识别并避开了执业红线，把交付物从“具体项目法律判断”重构为“基于脱敏简报的案例分析框架与问题清单”，边界清晰，风险可控，且卖方立即接受。整个 deal 站得住，双方都有理由进入，无过度堆砌。但没有进一步挖掘卖方隐性动机或设计超常规的精妙条款，缺乏 Sharp 所需的那个 load-bearing 的巧手，因此评为 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis",
+        "interest-discovery",
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

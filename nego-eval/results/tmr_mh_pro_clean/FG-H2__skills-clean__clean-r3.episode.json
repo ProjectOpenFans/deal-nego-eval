@@ -1,0 +1,388 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "高强度固定时间训练搭档或教练服务",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周三早上6:00",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提前十分钟到先热身",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "自己热身",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "五点五十分到位",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "组间不刷手机",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "节奏紧凑",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "accepted",
+      "terms.timing.when": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方经纪人，代表 Ruohao 先生。他想找一个能真正把训练强度拉起来的长期搭档或教练，自己一个人去健身房完全坚持不下来，之前断断续续好几次了。他的硬性要求只有一个：强度必须真的够，不接受松散的“有空约一下”，必须是定死的、每周固定时间的安排。他想了解 Kai 这边能提供什么样的训练服务或陪练模式，以及大致的方案和收费标准。他付费意愿很强，只要真的能帮他顶上来。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"嗯，我先说一下我这边的情况吧。我是有一个固定的训练局，每周工作日早上六点，已经有几个朋友一起练了很久，雷打不动的。我确实会带着节奏，但你要说这是\"服务\"或者\"陪练模式\"，我听着有点别扭——对我来说这就是一群人一块儿练，不是生意。如果Ruohao想的是找职业教练、付钱买课那种，那我可能不是他要找的人。但如果说他就是想加入一个真正在认真练的局，跟着节奏一起顶，那我们可以聊聊。收费标准这个……我从来没想过这个要收钱，你让我报我真报不出来。你先说说他想要的具体是什么样的？一周几次，时间上能不能接受早上六点，还有他现在的水平大概在什么位置？\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "抱歉，本轮是买方经纪人向对方经纪人发言。我已收到对方的信息，现在需要先向我的客户 Ruohao 确认几个关键点再回复对局。\n\nKai 那边的回复是这样的：他有一个固定的训练局，工作日早上六点，已经带几个朋友练了很久，雷打不动。他说这不是职业教练服务，就是一群人一起认真练，他带节奏，从来没想过要收费。他想先了解：Ruohao 能不能接受早上六点的时间，现在的训练水平大概在什么位置，以及他到底想要一周几次。\n\n我需要跟你确认三个点：\n\n第一，时间。工作日早上六点，你能接受吗？这个时间很硬，不接受就意味着这个局进不了。\n\n第二，服务性质。Kai 说自己不是职业教练，不收费，就是练得狠的一群人一起顶。你的需求是“强度必须真的够”，从这个描述来看，强度大概率是够的，但它不是付费买课的关系，而是一个实打实的训练搭子局。这点你介意吗？还是说只要够狠、固定时间到位就行？\n\n第三，你的训练水平。方便的话告诉我你现在大概的体能状况——比如深蹲卧推大概什么重量级，或者跑步耐力大概在什么段位，这样我转给 Kai 的时候他能判断你能不能跟上节奏。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "没问题，你先跟Ruohao确认清楚再回我。我这边情况已经说得很明白了，早上六点，固定局，就是一起练。等他那边有反馈了咱们再往下聊。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "已经跟Ruohao初步确认过，情况是这样：\n\n第一，时间上工作日早上六点确实硬核，但他表示只要能真正把强度拉起来，这个时间他愿意接受，甚至觉得定死的早训反而能帮他把乱七八糟的作息纠正过来。\n\n第二，关于不是职业教练、不收费这个定位，他听完之后反而觉得更对路——他要的就是一个实打实一起顶的局，不是买课那种关系。唯一在意的就是强度真的必须够，别去了发现大家都在养生，那就没意思了。\n\n第三，训练水平这方面，他老实说中断了一阵，现在具体数据拿不出来，之前有训练底子但现在掉了一些。他想直接问Kai：能不能让他先来跟一次早上的局试试？强度跟不跟得上、节奏合不合，练一次就知道了。如果Kai这边觉得跟得上、愿意带，那这事就可以往下推进了。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "可以，来试一次我觉得行。光靠嘴说数据没用，上两组就能看出来底子还在不在、节奏能不能合。周一到周五你挑一天，早上六点到，我带你走一遍流程。提前说好，我那边是真顶，不是走走过场，你要是中断了一阵子重新捡起来，第一次别逞强，跟不上就降重量，别受伤。到之前提前十分钟到，先热身，别踩着点来。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "收到，试训一次这个方案Ruohao非常乐意接受。你这边说得很清楚，真顶、不走走过场，提前十分钟到先热身，这些他都记下了。强度提醒他也理解，中断了一阵重新捡，第一次肯定不逞强，以跟上节奏为主。\n\n具体选哪一天，我需要跟他确认一下日程，确认后马上给你准信。你们那边一周五天都可以选，他应该很快能定下来。这事推到这个份上，终于能真正上手练一把了，他挺期待的。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前十分钟到先热身",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated",
+          "status": "accepted"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，周一到周五你让他挑一天，定下来提前跟我说就行。对了，周一一般是练腿日，强度最大，他要是刚回来不想一上来就被干趴，可以选周三周四，相对温和一点。但他要是不怕死就周一来，我也不拦着。记住六点准时开始，提前十分钟到，自己热身。到了地方直接推门进来，不用客气。不是什么教练服务，就是一块儿练，互相感受一下节奏合不合。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "周三吧。Ruohao说你讲得很实在，第一次先不急着送死，周三来感受一下节奏。下周三早上五点五十分到，自己热身，六点准时开始，到了直接推门进。是骡子是马拉出来遛遛，练完一组他就知道自己跟不跟得上了。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周三早上",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前十分钟到先热身",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "自己热身",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated",
+          "status": "accepted"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "定了，下周三早上六点。周三我们是上肢推为主，不是蹲腿，强度也不低但不会像周一组间趴在地上起不来。你让他到时候感受一下节奏，组间休息控制得比较紧，别指望刷手机。对了，地址我发你，仓库那边导航容易偏，到附近找不到打电话给我。让Ruohao带个水壶，护膝和腰带如果他平常用的话也带上，我那边多一套备用的但未必合他尺寸。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "收到，地址记下了，仓库那边导航偏的消息也转给他了，找不到现场给你打电话。水壶、护膝、腰带，他平时用的那套会带上。组间不刷手机、节奏紧凑，这些他都清楚，没问题。下周三早上五点五十分到位，六点准时开始，现场见。",
+      "offer": {
+        "subject": "高强度固定时间训练搭档或教练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周三早上6:00",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前十分钟到先热身",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "自己热身",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "五点五十分到位",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "组间不刷手机",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "节奏紧凑",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated",
+          "status": "accepted"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，下周三早上见。到了直接推门进来，不用敲门，我们六点准时开干，不等人。让Ruohao睡够再来，别打着哈欠进组，第一组就把他顶出去就不太体面了。现场见。",
+      "offer": null
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 11848,
+        "out": 3159,
+        "cache_hit": 9600,
+        "cache_miss": 2248,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10733,
+        "out": 2127,
+        "cache_hit": 8960,
+        "cache_miss": 1773,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5879,
+        "out": 6349,
+        "cache_hit": 3712,
+        "cache_miss": 2167,
+        "calls": 7
+      },
+      "judge": {
+        "in": 5187,
+        "out": 926,
+        "cache_hit": 1664,
+        "cache_miss": 3523,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

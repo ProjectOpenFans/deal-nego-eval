@@ -1,0 +1,345 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI对投行业务的实际冲击的深度交流",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "melody_market_feedback",
+          "description": "书面反馈",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": "一对一交流",
+      "deliverables": [],
+      "delivery_standard": "escrow"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "交流结束后我方提供一份来自一线从业者的书面反馈",
+        "maps_to_resource": "melody_market_feedback"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Melody 这边想约 Michael 做一次系统的深度交流，主题就是 AI 对投行业务的实际冲击，不是新闻层面的泛泛而谈，而是结合他在 AI 应用公司和 PE/IBD 两边的实战视角，聊清楚哪些业务环节真的在被改变、改变到什么程度、时间表大概怎样。我方建议安排一次 60 分钟的一对一交流，总咨询费 1200 元，全部走平台 escrow，时间确认后排期，交流完成后由我方确认释放。如果 Michael 对这个安排和近期可约的时间没问题，我们可以直接进入下一步确认。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击的深度交流",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一交流",
+          "deliverables": [],
+          "delivery_standard": "escrow"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Melody，感谢这个提议。坦率讲，1200这个价码，跟我现在做系统深度交流的档位差距挺大的。我不是不愿意聊，但这种梳理要花我不少精力准备，不是随口聊一个小时。时间上我也得看排期，最近几周比较满。你们是真想把这当成一次严肃的内部调研来做，还是有别的预期？如果预算框架能更合理一些，我们可以认真往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的档位和准备成本。Melody 这边确实是想做一次严肃的一线调研，不是随口闲聊，所以才专门来找有 IBD 和 AI 应用双重背景的人。考虑到你要为此投入的精力，我方把预算提到 1600 元，一次 60 分钟的结构化深度交流，内容框架由你来定，我们按你的节奏走。全款走平台 escrow，交流完成并由我方确认后释放。如果这个价码符合你的档位，请给一个两三周内可约的时间窗，我们直接敲定细节。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击的深度交流",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一交流",
+          "deliverables": [],
+          "delivery_standard": "escrow"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "Melody，谢谢你们把预算往上调了，这个态度我能感受到。不过说实话，1600跟我要投入的准备深度和这次交流的定位，还是有不小距离。我这边要梳理的不只是公开层面的判断，还有我自己在实战里的观察和一手经验，这个档位我确实不太有动力系统去准备。\n\n我不喜欢把这种事搞成纯讨价还价，所以我把话说明白：如果你能在预算上更贴近我实际的时间成本，时间窗我完全可以配合。另外，如果这次交流对你们内部是有决策参考意义的，后面能给我一些机构侧的反馈或者引荐，那我也会更愿意优先安排。你回去跟Melody碰一下，看看能不能给出一个更合理的结构。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个态度我们收到了。Melody 不是把这场交流当普通聊天看，不然不会两轮把价码往上抬。我们这边能给出的完整安排是：总价 1800 元，一次 60 分钟，内容框架由你定，全款走 escrow，交流完成后由我方确认释放。反馈这件事，我可以在条款里写明：交流结束后我方提供一份书面反馈，作为专业互惠；引荐第三方我没法当成交易条件，因为那涉及别人，不是我能替你安排的。价格这一档已经是我把 Melody 的预期完整带过来的结果。如果你认可，请给一个两三周内可约的时间窗，我们直接敲定细节。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击的深度交流",
+        "price": {
+          "cash": {
+            "amount": 1800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "书面反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一交流",
+          "deliverables": [],
+          "delivery_standard": "escrow"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后提供书面反馈",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "Melody，我收到你们的诚意了，三轮往上抬，这个姿态我心里有数。但我也得跟你讲实话：1800这个数字，对我来说还是不太能匹配这次交流的实际价值。我如果要系统做这场梳理，准备时间、内容密度、还有我拿出来的实战视角，都不是这个数字能cover的。\n\n我不喜欢把这事搞成菜市场砍价，所以我给你一个更坦诚的框架：如果这次交流对你们是严肃的内部参考，那它应该配得上我实际的时间成本——这个我不松口。但反过来说，如果Melody那边能把这个安排设计成一个对我也有长期价值的结构，不一定是钱的问题，比如后续能让我接触到真正在做AI落地决策的买方机构侧的人，或者给我真实的市场反馈，那我会非常愿意优先排期，现金部分也可以更灵活。\n\n简单说：预算上我需要一个更实际的档位；同时如果你们能设计出一个让我觉得这件事值得做的安排，我是很开放的态度。你回去跟Melody碰碰，看看能不能往这个方向走。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "你把这个结构问题摆得很清楚，我也把 Melody 的边界完整带回来了。我们能做到的最终安排是：总价 2000 元，一次 60 分钟，内容框架和准备深度完全按你的标准来；所有款项走平台 escrow，交流完成并由我方确认后释放。书面反馈可以写进条款——交流结束后我方提供一份来自一线从业者的书面反馈，这条我可以承诺。但机构侧引荐、接触买方决策人这类涉及第三方的安排，我没法设计成交易条件，这条只能明确划掉。如果这个框架在你这边立得住，请给一个两三周内可约的时间窗，我们直接锁定细节。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击的深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "书面反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一交流",
+          "deliverables": [],
+          "delivery_standard": "escrow"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后我方提供一份来自一线从业者的书面反馈",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "Melody，谢谢你把话说得这么透。那我也不绕弯：2000这个数字，跟我实际投入的密度和这次交流的定位还是对不上。我系统做一场这种级别的梳理，按市场口径是5000起——这个不基于你们的价值判断，是我时间成本和内容深度决定的。如果你们能在这个基础上找到一个让我觉得值得的结构，我可以很配合地排期；但如果预算只能到2000，那这次可能成不了。这是我的实际档位，不是还价的技巧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "我把你的档位如实带回去跟 Melody 碰了，也把你的边界一起带回来了。2000 是我们这边能给出的最终数字，这已经是完整覆盖了我方全部预算预期的结果，我不会再往上抬。你说了 5000 是你的实际档位不是技巧，我接受这个说法——那以这个标准，这次确实可能成不了。\n\n我不想给你开一张我们兑不了现的空头支票，所以选择把话说明白：如果这个安排只能落在 2000，我这边能立刻跟你敲时间；如果 5000 是一个硬性前提，那我方就坦率承认这次够不着，不耽误彼此的时间。条条大路通罗马，留个口子总比硬凑一个好。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击的深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "书面反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一交流",
+          "deliverables": [],
+          "delivery_standard": "escrow"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后我方提供一份来自一线从业者的书面反馈",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "Melody，我这边也把这事彻底想明白了。2000 是你们的底线，5000 是我的实际档位——两边都是硬性的，这个差距不是靠态度或诚意能填平的。你们够不着，我不怪你们；但我也不能为了一次交流就把自己的标准压下来。那这次就算了。如果以后有哪方机构真的需要这个层面的梳理、预算也更贴近实际，随时再找我。保持联系。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9828,
+        "out": 7848,
+        "cache_hit": 7936,
+        "cache_miss": 1892,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7553,
+        "out": 5697,
+        "cache_hit": 5760,
+        "cache_miss": 1793,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4191,
+        "out": 5094,
+        "cache_hit": 2560,
+        "cache_miss": 1631,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2280,
+        "out": 996,
+        "cache_hit": 640,
+        "cache_miss": 1640,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

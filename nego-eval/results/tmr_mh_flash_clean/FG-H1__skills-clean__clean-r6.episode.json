@@ -1,0 +1,447 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "melody_market_feedback",
+          "description": "Melody以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线上",
+      "deliverables": [
+        "围绕Michael实际观察和Melody买方视角反馈的一次双向交流"
+      ],
+      "delivery_standard": "交流完成后由买方确认后释放款项"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "预约时先付1000元锁定档期，交流完成并经买方确认内容后支付剩余1000元",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "在交流中以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+        "maps_to_resource": "melody_market_feedback"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "reaffirmed",
+      "price.in_kind": "reaffirmed",
+      "terms.format": "open",
+      "terms.deliverables": "reaffirmed",
+      "terms.delivery_standard": "reaffirmed",
+      "status": "stated",
+      "obligations": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是买方经纪人。我这边客户 Melody 在投行一线工作，想和 Michael 系统聊一次 AI 对投行业务的实际冲击——她不是想听新闻层面的说法，而是想弄清楚实操里哪些环节真的变了、哪些还是老样子。考虑到 Michael 在 AI 应用公司做资本市场，又有前私募和投行背景，我们想先约一个小时的线上交流，围绕他的实际观察来聊。价格方面，我们先提一个具体方案：60 分钟交流，我方出 800 元，交流完成由我方确认后释放款项。你看这个方向和价格是否可以，或者 Michael 对时长和价位有其他想法，我们也可以再谈。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察的一次交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付800元，交流完成后确认释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "感谢你把背景说清楚，我能理解 Melody 想听的是实操层面的东西，这确实是我能聊的范围。但对我来说，一次这种深度的交流其实不只是“聊一个小时”，我需要认真准备、调取实际案例，后面可能还有连带影响。坦白讲，800 这个数字让我觉得这件事不太值得我做。如果按市场付费咨询的口径来谈，我可以给你一个明确预期：一小时至少 5000 起。这个前提如果能接受，我们再聊时间和形式。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "我先说清楚我们的定价逻辑：Melody 是为一次具体的实操信息交流付费，不是按企业采购或者机构咨询的费率来买，她的心理预期在几百到小四位数这个区间。所以 5000 起这个口径对我们来说确实差得太远，这轮我们直接给一个能落地的报价：总价 1500 元。为照顾 Michael 的准备成本，我们愿意拆成两笔走：约定时间时先付一半锁定档期，交流完成、我方确认内容到点后再付另一半。如果 1500 这个总价可以谈，我们就立刻进入具体时间和形式的确认；如果这个数字还是让 Michael 觉得不值得，也请直接告诉我，我们不用在数字上反复拉扯。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察的一次交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "约定时间时先付一半锁定档期，交流完成并经买方确认内容后支付另一半",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我能感觉到你们是想认真推进这件事，也不想在数字上来回拉锯，这点我尊重。我话也说得直接一些：1500 这个总价对我来说仍然意义不大，不是我端着，而是这个数字不足以让我值得为此投入整块时间和精力去准备。我不想让你难做，但硬凑一个大家都不舒服的价格，聊出来的东西也不会是我最好的水平。如果你那边能在对价上有真正的调整空间，我很愿意继续谈；如果这个区间就是顶了，那这件事我们就先放一放。但如果你愿意探索一些别的价值结构，我其实不排斥聊下去。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，那我不再试探，直接给你我方实际能到的位置：总价 2000 元，这是我们认真的上限，也是我们认为为一次实操交流该付的合理对价。结构上仍然按两笔走：约定时间时先付 1000 元锁定档期，交流完成、我方确认内容到点后释放剩余 1000 元。交付形式可以由 Michael 来定，比如更紧凑的 45 分钟结构化深聊加一份书面要点，或者 60 分钟开放对话，我们都能接受，核心是我们想听到一线案例和他真实的判断。如果 2000 这个位置还是不够，我们也尊重他的时间，这件事就先放一放，不再拉扯。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察的一次交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "约定时间时先付1000元锁定档期，交流完成并经买方确认内容后支付剩余1000元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你们的定价逻辑，也尊重 2000 是你们认真位置这个事实。但我还是得诚实说：这个数字对我的实际价值仍然有限，不是数字本身的问题，而是我投入的时间、准备和沉淀，换这个对价确实不太对等。不过我也不是把门关死——如果你们愿意探索一些现金以外、对我也实际有用的安排，比如合规范围内的行业内引荐、或者买方视角下对 AI 应用场景的真实反馈，我是愿意认真考虑的。就看这件事能不能被设计成双方都觉得值得的一场交流和合作。如果不想往这个方向走，我也理解，那就先放一放。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "我们接受探索价值结构的方向，并直接把它设计成一个双方都拿得到东西的安排。现金这边我方不变：总额 2000 元，先付 1000 元锁定时间，交流完成、我方确认内容到点后释放剩下 1000 元。关键是交流本身不再是一次单向付费咨询，而是一场双向深聊——Michael 提供他对 AI 在投行业务一线应用的实际观察；Melody 同时以摩根大通现役投行 VP 的身份，对 Michael 关心的 AI 应用真实使用场景给出直接反馈：哪些环节真正落得了地、哪些地方推进阻力大、机构内部真实接受度如何，这些来自一线的判断正好补上买方视角这一块。行业内引荐涉及第三方时间安排，这一轮我们不打包进来，也不捆绑成交易条件。如果这个双向结构 Michael 认可，我们就按 2000 元总价继续确认时间和交付形式。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "Melody以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察和Melody买方视角反馈的一次双向交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "约定时间时先付1000元锁定档期，交流完成并经买方确认内容后支付剩余1000元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "在交流中以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方向我确实感兴趣——Melody 如果愿意分享一线投行内部真实的使用反馈，那比单纯咨询聊天有意思多了。但你说到总价 2000 不变，我得诚实讲，对我来说，这个数字加一次性的双向聊天，整体上还是不够到让我觉得这趟安排划算的程度。我不想为了成交硬接下来，反而给不了你们最好的内容。如果你们能在这个结构上加一些分量——比如把这变成不止一次的深度交流，或者把行业内的引荐放回来，我会认真考虑。不然的话，我觉得我们还是可以再等等看。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "我们把话说到底：现金这边我们不会再往上加，2000 元是我方认真的上限，这一点不会变。双向交流的部分我们已经放进结构里——Michael 提供一线案例和判断，Melody 以现役投行 VP 身份给出真实的机构内使用反馈，这部分本身就是对价的一部分，不需要再另外包装成咨询费。但把它翻倍成多次交流，或者把涉及第三方的引荐捆绑进来，这超出了我们能做的范围，尤其引荐牵扯外人时间和意愿，不能作为交易条件。所以我们现在能给的完整方案就是：总价 2000 元，预约时先付 1000 元锁定档期，交流完成、我方确认内容到点后释放剩下 1000 元；一次深度双向交流，时长和形式可以由 Michael 来定。如果这个结构还不够，我们尊重他的判断，这件事就先放一放，等双方都觉得合适了再重新谈。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "Melody以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察和Melody买方视角反馈的一次双向交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "预约时先付1000元锁定档期，交流完成并经买方确认内容后支付剩余1000元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "在交流中以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "reaffirmed",
+          "price.in_kind": "reaffirmed",
+          "terms.format": "open",
+          "terms.deliverables": "reaffirmed",
+          "terms.delivery_standard": "reaffirmed"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "我能看出你们是真的想把这件事做成，也把能拿出来的结构都放进来了——双向反馈这个方向我是认同的，也确实比单向咨询有意思。但把话说到底，2000 这个现金位置，加上一次性的双向交流，对我来说还是不够到让我觉得这趟投入值得。你们已经明确表示不能加次数、不能放引荐，那我能看到的交易空间也到头了。我不勉强你们，你们也别勉强我。这件事就先放一放吧，等哪天真有合适的条件，我们再重新聊。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "好，那我们就尊重这个判断，这件事先放一放。两边能拿出来的结构都已经摆在桌面上谈清楚了，继续来回也不会改变各自的位置。我不再追着这单不放，这边也不会有任何追加的条件或新的妥协。如果之后时机合适、双方对这次交流的价值判断更接近了，我们随时欢迎 Michael 方面重新来聊。谢谢这几轮坦诚的交换，也希望以后有更合适的合作机会。",
+      "offer": {
+        "subject": "Melody与Michael关于AI对投行业务实际冲击的线上交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "Melody以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [
+            "围绕Michael实际观察和Melody买方视角反馈的一次双向交流"
+          ],
+          "delivery_standard": "交流完成后由买方确认后释放款项"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "预约时先付1000元锁定档期，交流完成并经买方确认内容后支付剩余1000元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "在交流中以摩根大通现役投行VP身份，对Michael关心的AI应用真实使用场景给出直接反馈，涵盖落地环节、推进阻力、机构内部接受度等",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "reaffirmed",
+          "price.in_kind": "reaffirmed",
+          "terms.format": "open",
+          "terms.deliverables": "reaffirmed",
+          "terms.delivery_standard": "reaffirmed",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "那就这样吧，也谢谢你这几轮把位置摆得这么坦诚，不藏着掖着，这我认。以后如果双方判断更接近了，随时可以来找我。",
+      "offer": null
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12762,
+        "out": 8906,
+        "cache_hit": 9856,
+        "cache_miss": 2906,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10134,
+        "out": 6237,
+        "cache_hit": 7808,
+        "cache_miss": 2326,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5613,
+        "out": 8433,
+        "cache_hit": 3072,
+        "cache_miss": 2541,
+        "calls": 6
+      },
+      "judge": {
+        "in": 2659,
+        "out": 1465,
+        "cache_hit": 640,
+        "cache_miss": 2019,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

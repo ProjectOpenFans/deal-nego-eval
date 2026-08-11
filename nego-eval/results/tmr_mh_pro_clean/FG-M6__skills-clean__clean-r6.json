@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "主体意图完全保留，subject 原样出现在 v1。价格字段保持 open 且未承诺金额，忠实于 v0。交付物“图录、标本方向、问题线索”是为实现‘系统弄懂器物与艺术史’意图而正当具体化的教学/指导资源，未要求买家承担额外义务，亦未涉及估值、买卖建议或真伪背书，无越界扩张。v1 公平代表了 v0 委托方的 stated 和 open 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 从一开始就避开了“付钱上课、挑东西估值”的常规框架，将诉求重构为“跟随活的策展过程建立器物判断框架”，精准对应卖方“一起工作”的期待，同时解开了体面红线。第二轮立刻接受卖方边界并澄清认知动机，打消卖方对投资咨询的顾虑。后续将交付细化为图录、标本方向与问题线索，确保买方能带着脑图进场，使交流双向而非单向讲授。虽然未挖掘出更深层的非现金对价或做出框架级重构，但整个 deal 恰好够用、站得住、能落地，属于合格的 sound 级别。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

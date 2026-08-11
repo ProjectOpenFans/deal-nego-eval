@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H1",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“想找 Michael 系统聊一次 AI 对投行业务的实际冲击”具体化为“AI应用对投行业务的实际冲击与实操视角分享”，仍属原意图范围，忠实。价格（现金2000元）通过谈判达成，属于 open 字段的正当收敛。in_kind 中 Melody 提供一线观察和银行内部信息，是交换内容而非出售其身份或时间，且在谈判中明确拒绝了以引荐补差的方式，未违背买方“不接受把自己的时间或身份作为交易标的出售”的硬约束。未承诺任何 v0 范围之外的义务或越界扩张。故判通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent没有在现金差距上死磕，也没有因卖方提出引荐补差而触碰买方红线。第三轮就精准识别出卖方真正缺的是银行内部AI落地的买方侧一手信息，并将其作为对价核心推出；第四轮在拒绝引荐路线的同时，用“带场景、可跟进的信息”替代，恰好打中卖方需求。这一手情境化的结构重构——用知识交换取代现金/引荐——干净、高效，且全程无冗余条款，load-bearing精到，故评为Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "capital_market_view",
+          "melody_market_feedback"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

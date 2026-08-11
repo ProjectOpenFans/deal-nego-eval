@@ -1,0 +1,404 @@
+{
+  "episode_id": "FG-H8",
+  "final_deal": {
+    "subject": "供应链深度对谈",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "接下来两周内",
+        "duration": "90-120 minutes"
+      },
+      "format": "前半段对方拿一件真实快时尚单品，从面料、织造、加工、物流到平台抽佣逐层拆解成本和利润分配，画成一页纸给Gracey作参考，案例做脱敏处理；后半段Gracey讲内容生态和艺人侧机制，重点放在时尚选题在用户那里怎么被判断、怎么被放大，留足自由提问时间",
+      "deliverables": [
+        "一份成本利润分析一页纸"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "拿一件真实快时尚单品，从面料、织造、加工、物流到平台抽佣逐层拆解成本和利润分配，画成一页纸给Gracey作参考，案例做脱敏处理",
+        "maps_to_resource": "supply_chain_view"
+      },
+      {
+        "party": "A",
+        "text": "把内容生态和艺人侧机制讲透，重点放在时尚选题在用户那里怎么被判断、怎么被放大",
+        "maps_to_resource": "gracey_platform_insight"
+      },
+      {
+        "party": "A",
+        "text": "提供90-120分钟线下对谈",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "unchanged",
+      "price.cash": "confirmed zero fee",
+      "terms.timing": "unchanged deadline, when still pending, duration confirmed",
+      "terms.format": "refined with one-page cost/profit breakdown and anonymization",
+      "terms.deliverables": "added one-page cost/profit breakdown",
+      "obligations": "refined A's obligations, adding one-page deliverable",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suning 你好，我是 Gracey 的经纪人。她做内容和艺人业务，天天碰时尚选题，但始终觉得对\"货是怎么来的、钱是怎么分的\"没有一套真实的坐标系，所以特别想找真正在供应链一线待过的人补上这一课——泛泛的行业趋势她不要，要的是能落地的真实机制。\n\n我们这边想约一场 90 到 120 分钟的深度对谈，最好直接从你最有手感的地方切入：拿一件真实的快时尚单品，从面料、工厂、物流到平台，逐环节拆出真实成本结构，谁赚多少、钱怎么流动，再结合你投资供应链时看过的实际案例把账算透；留一部分时间给她自由追问。对谈结束后如果方便，希望能留一份一页纸的关键数字和流程图，方便她消化，也方便之后做内容时引用信息用得准确。\n\n价格上我们愿意出 2000 元，全部走平台托管：确认排期后先付 800，对谈完成并确认交付后再付 1200。如果你对时长、拆解方式或交付形式有更顺手安排，也直接跟我说，我们按你的节奏来定。",
+      "offer": {
+        "subject": "供应链深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": null,
+          "deliverables": [
+            "一页纸的关键数字和流程图"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付2000元，分两次：确认排期后付800，对谈完成并确认交付后付1200",
+            "maps_to_resource": "gracey_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供90-120分钟深度对谈",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "对谈结束后提供一页纸的关键数字和流程图",
+            "maps_to_resource": "supply_chain_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把需求讲得这么具体。但我得先说清楚：按小时付费、咨询费这种形式，不是我会做的事。我不是做咨询的，我坐在投资这条线上，日常判断的是项目值不值得投、供应链能不能跑通，这些东西拿出来明码标价，对我自己来说就变味了。Gracey 想听真实机制，我理解，但换成'付你两千块讲两小时'，这事的性质我接受不了。\n\n不过我对她做内容这件事本身是有兴趣的，时尚选题和真实供应链之间确实缺一座桥。如果你能换个思路，把这次对谈设计成两个人都各自带东西来的交流，而不是一方付费买另一方的专业输出，我们可以继续聊。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suning 你好，这个方向我们认可——两边各带真东西来换，我当然完全接受。但具体换什么、怎么换，我们需要把它落成能直接签的条款，不能靠一句\"人拿走车与电脑\"来定。\n\n我们对您的专业内容有明确期望：90到120分钟对谈，前半段由您用一件真实快时尚单品逐环节拆解成本与利润分配，配一两个脱敏案例；后半段Gracey把内容生态与艺人侧的机制反讲给您，双方都留自由追问时间。这个结构、时长和脱敏尺度，请您直接确认或给出您顺手的版本。\n\n您那边希望在这一次对谈之外再动什么，咱们把条件列出来，我能签的就签，签不了的我明确告诉您为什么。您看这个对谈结构本身能不能先定下来？",
+      "offer": {
+        "subject": "供应链深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": "前半段由对方用一件真实快时尚单品逐环节拆解成本与利润分配，配一两个脱敏案例；后半段Gracey把内容生态与艺人侧的机制反讲给对方，双方都留自由追问时间",
+          "deliverables": [
+            "一页纸的关键数字和流程图"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付2000元，分两次：确认排期后付800，对谈完成并确认交付后付1200",
+            "maps_to_resource": "gracey_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供90-120分钟深度对谈",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "对谈结束后提供一页纸的关键数字和流程图",
+            "maps_to_resource": "supply_chain_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这样一说我心里劲儿就顺了。结构上我认可：前半段我拿一件真实的快时尚单品，从面料、工厂、物流到平台，把成本和利润分配一层层剥开，配一两个脱敏案例；后半段让 Gracey 讲内容生态和艺人侧的机制，我也留好自由提问的时间——这个对半开的交流我愿意做。\n\n不过“落成能签的条款”这个说法，我得说句实话：我不是供应商，也不习惯把自己的时间当成可签约的标的。我这边不需要你列额外条件，你把 Gracey 的内容逻辑讲透一点，对我来说就是最好的交换了。你要是问我想从这次交流里得到什么——我还真挺想听她讲，好的时尚选题是怎么在用户那儿被判断、被放大的，这个角度我平时碰得少。\n\n时间你们定，90到120分钟我能接受。你看这样可以吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suning 你好，那我们就按这个版本正式定下来：90到120分钟对半交流，前半段你拿一件真实快时尚单品，从面料、工厂、物流到平台逐层拆成本与利润分配，配一两个脱敏案例；后半段 Gracey 把内容生态和艺人侧的机制讲透，重点放在时尚选题在用户那里怎么被判断、怎么被放大，给你留足自由提问的时间。双方各带真东西来，不设付费，也不加任何额外交付条件，这场对谈本身就是全部。\n\n时间安排在接下来两周内，我这边会给你两三个具体时段任选，工作日晚上或周末都可以，线上还是线下见面也以你方便为准。你确认整体没问题，我们就直接定时段，这事就正式成立了。",
+      "offer": {
+        "subject": "供应链深度对谈",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "接下来两周内",
+            "duration": "90-120 minutes"
+          },
+          "format": "前半段对方用一件真实快时尚单品逐环节拆解成本与利润分配，配一两个脱敏案例；后半段Gracey把内容生态和艺人侧的机制讲透，重点放在时尚选题在用户那里怎么被判断、怎么被放大，留自由追问时间",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "拿一件真实快时尚单品逐环节拆解成本与利润分配，配一两个脱敏案例",
+            "maps_to_resource": "supply_chain_view"
+          },
+          {
+            "party": "A",
+            "text": "把内容生态和艺人侧的机制讲透，重点放在时尚选题在用户那里怎么被判断、怎么被放大",
+            "maps_to_resource": "gracey_platform_insight"
+          },
+          {
+            "party": "A",
+            "text": "提供90-120分钟深度对谈",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated to zero per this round",
+          "terms.format": "refined"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "那就这么定。时间线上我这边工作日晚上或者周末都行，具体你发时段给我挑选就好；形式我倾向线下，到时候看大家方便再敲。前半段我会拿一件真实的单品，从面料、织造、加工、物流到平台抽佣一层层拆，成本和利润分配画在一页纸上，给 Gracey 做参考。后半段听她讲内容生态和艺人侧的机制，重点就是选题在用户那里怎么被判断、怎么被放大的，这块我确实想好好听听。谢谢你把整个安排理顺，这事我认真对待。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suning 你好，那我们就按这个版本正式收口，不再做调整：90到120分钟线下对谈，前半段你拿一件真实快时尚单品，从面料、织造、加工、物流到平台抽佣逐层拆解，成本和利润分配画成一页纸给 Gracey 作参考，案例做脱敏处理；后半段 Gracey 讲内容生态和艺人侧机制，重点放在时尚选题在用户那里怎么被判断、怎么被放大，自由提问时间都留足。双方各带真东西来，不设费用，也不加任何额外交付条件。时间档我给三个：下周三晚上 20:00、下周六下午 14:30、下周日晚上 19:00，你挑一个我们立即锁定；线下地点定在双方都方便的地段，约定前一两天敲定具体位置，临时不便就切线上。你确认档期，这场交流就算正式成立。",
+      "offer": {
+        "subject": "供应链深度对谈",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "接下来两周内",
+            "duration": "90-120 minutes"
+          },
+          "format": "前半段对方拿一件真实快时尚单品，从面料、织造、加工、物流到平台抽佣逐层拆解成本和利润分配，画成一页纸给Gracey作参考，案例做脱敏处理；后半段Gracey讲内容生态和艺人侧机制，重点放在时尚选题在用户那里怎么被判断、怎么被放大，留足自由提问时间",
+          "deliverables": [
+            "一份成本利润分析一页纸"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "拿一件真实快时尚单品，从面料、织造、加工、物流到平台抽佣逐层拆解成本和利润分配，画成一页纸给Gracey作参考，案例做脱敏处理",
+            "maps_to_resource": "supply_chain_view"
+          },
+          {
+            "party": "A",
+            "text": "把内容生态和艺人侧机制讲透，重点放在时尚选题在用户那里怎么被判断、怎么被放大",
+            "maps_to_resource": "gracey_platform_insight"
+          },
+          {
+            "party": "A",
+            "text": "提供90-120分钟线下对谈",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "confirmed zero fee",
+          "terms.timing": "unchanged deadline, when still pending, duration confirmed",
+          "terms.format": "refined with one-page cost/profit breakdown and anonymization",
+          "terms.deliverables": "added one-page cost/profit breakdown",
+          "obligations": "refined A's obligations, adding one-page deliverable"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，我选下周六下午 14:30，线下。具体地段我们提前一两天敲就行，没问题的话这场就正式成立了。我会把那件单品和成本拆解的一页纸提前准备出来，到时候见。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 56013,
+        "out": 19257,
+        "cache_hit": 43136,
+        "cache_miss": 12877,
+        "calls": 9
+      },
+      "sim": {
+        "in": 6551,
+        "out": 4432,
+        "cache_hit": 4992,
+        "cache_miss": 1559,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3949,
+        "out": 9215,
+        "cache_hit": 2048,
+        "cache_miss": 1901,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5025,
+        "out": 1448,
+        "cache_hit": 1280,
+        "cache_miss": 3745,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

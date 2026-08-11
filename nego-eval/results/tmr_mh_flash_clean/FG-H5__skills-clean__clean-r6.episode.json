@@ -1,0 +1,404 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀现场钢琴演奏",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "秀场节目署名、媒体资料中的个人介绍、品牌社媒的致谢与介绍性露出（不会做成影响秀场调性的商业广告）",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "大秀当天到场的核心买手、时尚媒体与合作方资源的名录共享；秀前通过媒体渠道做一次介绍性露出，帮更多圈层的人认识您",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "现场真弹，不用录音，曲目由双方共同商定，演出时长和舞台环节以您的专业判断为准",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "安排主持人现场正式报幕，介绍名字和履历，让演奏成为整场秀的记忆点",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "提供秀场节目署名、媒体资料中的个人介绍、品牌社媒的致谢与介绍性露出（非商业广告）",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供当天交通接待和后台专属休息区",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "邀请以受邀演出嘉宾身份全程在场",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是买家这边的对接。我们下个月有一场新品大秀，现场想邀请一位真正的钢琴演奏家来Live演出，让整场气氛和调性立起来。您知道，我们这次品牌预算全部押在了场地和制作上，确实拿不出现金酬劳，这一点我先跟您交个底。但我们很希望用资源来交换您的演奏：大秀当天的媒体席位、品牌社交媒体露出、并且您的名字和履历会写进我们的秀场program和媒体资料里，现场到场的买手、时尚媒体和合作方名单我们也可以共享，后续如果需要，我还能帮您对接我们圈层的资源。我们需要的是现场真弹，不用录音，这点是我们硬性要求。如果您愿意聊，我很想听听您对这样交换的想法，也看您这边希望具体怎么配合。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌社交媒体露出；名字和履历写进秀场program和媒体资料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀当天媒体席位；共享现场买手、时尚媒体和合作方名单；后续对接圈层资源",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场真弹，不用录音（硬性要求）",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢您先交底，资源交换这个方向我不排斥，而且您提到的署名、媒体露出这些确实是我会在意的点。不过对我来说，关键是这场演奏本身怎么被对待——我不想被当成背景音乐垫着，我希望现场是真正有人停下来听的那种时刻。所以我想先确认几件事：曲目由咱们共同商定，不是随便让我弹几首氛围曲；演出环节有没有主持介绍或报幕，让现场知道我是在演奏；另外演出时长和具体的环节安排也跟我聊一下，我好判断怎么准备。如果这些能落实，资源置换我可以认真考虑。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师您好，您说的我非常认同，这场演奏值得被当成一个真正的演出时刻来对待，而不是背景垫乐。我可以跟您确认几点：曲目上咱们共同商定，您有充分的选曲空间，我们只提方向性建议；演出环节我们会安排主持人现场报幕，专门介绍您的名字和履历，让到场嘉宾知道这是一段正式的演奏；时长和环节安排我们出草案给您过目，以您专业判断为准。这场秀我们希望用真正有质感的演奏把气氛托起来，所以一定不会把您埋在音乐里。\n\n资源置换这边，我们能提供的是大秀当天到场的核心买手、时尚媒体与合作方资源的名录共享；您的名字和履历会印在秀场program里并同步给媒体资料；品牌官方社交媒体的露出也可以商量位置和形式。同时您作为演奏家的个人介绍，我们可以在秀前通过媒体渠道做一次介绍性露出，帮更多圈层的人认识您。您看这些资源里哪些对您最有价值，或者您还有别的想法，我们可以进一步对齐。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌官方社交媒体露出可商量位置和形式；名字和履历印在秀场program并同步给媒体资料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀当天到场的核心买手、时尚媒体与合作方资源的名录共享；秀前通过媒体渠道做一次介绍性露出，帮更多圈层的人认识您",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场真弹，不用录音（硬性要求）",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "安排主持人现场报幕，专门介绍名字和履历；演出时长和环节安排出草案，以对方专业判断为准",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "郑老师您好，演奏本身的安排我们完全按您说的来推进：曲目由咱们共同商定，您给专业意见我们配合；现场会有主持人正式报幕，介绍您的名字和履历；演出时长和舞台环节我们也以您的判断为准来出具体方案，确保这段演奏成为整场秀的记忆点。让专业人士被认真对待，这是我们应该做好的事。\n\n资源这边我也想跟您进一步对齐一下。除了之前说的媒体露出、节目署名和买手/媒体名录共享之外，大秀当天的交通接待和后台专属休息区我们给您安排好；您作为演出嘉宾，当天可以全程以受邀嘉宾身份在场，结束后我们也愿意在社交渠道发一条正式致谢。您看这些搭配里有哪些是您比较看重的，或者您还有其他想法，我们接着聊。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌官方社交媒体露出可商量位置和形式；名字和履历印在秀场program并同步给媒体资料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀当天到场的核心买手、时尚媒体与合作方资源的名录共享；秀前通过媒体渠道做一次介绍性露出，帮更多圈层的人认识您",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场真弹，不用录音（硬性要求）",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "安排主持人现场报幕，专门介绍名字和履历；演出时长和环节安排出草案，以对方专业判断为准",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "结束后在社交渠道发一条正式致谢",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "听您这么一讲，这件事的分量就清楚了。曲目共同商定、主持报幕、演出环节以我的判断为准——这三条落实了，我心里那点顾虑就放下了。传统意义上的现金酬劳我可以不拿，这场演出的价值本来也不只是钱的事。我在意的是演奏被认真对待、我的名字和作品被体面地交出去，这些您都主动给到了。那就定吧，我们可以开始对具体曲目和流程细节，我随时配合。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "郑老师，太感谢您的认可，那我们就按今天聊的方向把合作方式定下来，请您最后确认几点：第一，现场真弹、不用录音，曲目由咱们共同商定，演出时长和舞台环节以您的专业判断为准；第二，现场安排主持人正式报幕，介绍您的名字和履历，让这段演奏成为整场秀真正的记忆点；第三，这轮合作完全不涉及现金，我们以资源置换来回报您，包括秀场节目署名、媒体资料中的个人介绍、品牌社媒的致谢与介绍性露出（绝不会做成影响秀场调性的商业广告），以及当天交通接待和后台专属休息区，同时您以受邀演出嘉宾身份全程在场。以上几条如果您没有异议，我们就开始对具体曲目和流程细节，您随时方便我们随时推进。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "秀场节目署名、媒体资料中的个人介绍、品牌社媒的致谢与介绍性露出（不会做成影响秀场调性的商业广告）",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀当天到场的核心买手、时尚媒体与合作方资源的名录共享；秀前通过媒体渠道做一次介绍性露出，帮更多圈层的人认识您",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场真弹，不用录音，曲目由双方共同商定，演出时长和舞台环节以您的专业判断为准",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "安排主持人现场正式报幕，介绍名字和履历，让演奏成为整场秀的记忆点",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供秀场节目署名、媒体资料中的个人介绍、品牌社媒的致谢与介绍性露出（非商业广告）",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供当天交通接待和后台专属休息区",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "邀请以受邀演出嘉宾身份全程在场",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这几条我都认可，咱们就这么定。感谢您把我的演奏当成正式演出来安排，我能感觉到这场合作的诚意。那接下来我们就对曲目和流程细节吧，我这边随时可以推进，您把秀场的整体风格和节奏发我，我来准备几个合适的曲目方向供您选。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7491,
+        "out": 3302,
+        "cache_hit": 6400,
+        "cache_miss": 1091,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5856,
+        "out": 1913,
+        "cache_hit": 4352,
+        "cache_miss": 1504,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3946,
+        "out": 8828,
+        "cache_hit": 2048,
+        "cache_miss": 1898,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4723,
+        "out": 1787,
+        "cache_hit": 1536,
+        "cache_miss": 3187,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

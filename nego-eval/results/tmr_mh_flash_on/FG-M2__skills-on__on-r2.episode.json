@@ -1,0 +1,562 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "衣橱整理与工作日穿搭方案",
+    "price": {
+      "cash": {
+        "amount": 900.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "claire_finance_view",
+          "description": "Claire为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "方案交付后两周内",
+        "duration": "5个工作日"
+      },
+      "format": "远程书面交付",
+      "deliverables": [
+        "基于Claire现有单品的五套工作日穿搭书面方案",
+        "引荐两三位有真实采购话语权的买手店主理人并促成线上或线下看款，约上看款算完成",
+        "Claire出面组织一场小范围圈层私享看款，邀请LBS校友和港中环投行圈对环保时尚有真实消费兴趣的人，在方案交付后两周内安排"
+      ],
+      "delivery_standard": "Claire收到后48小时内确认或提出修改意见，无异议即视为验收通过、尾款自动释放"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+        "maps_to_resource": "claire_finance_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "from_previous",
+      "price.cash": "stated",
+      "price.in_kind": "from_previous",
+      "terms.timing.duration": "from_previous",
+      "terms.timing.deadline": "stated",
+      "terms.format": "from_previous",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "from_previous",
+      "obligations": "from_previous",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 的 broker 你好，我是 Claire 这边的 broker。Claire 在中环做投行，工作日场合多、衣橱一直没理顺，她的核心诉求是：系统把衣橱按场合理一遍，再基于现有单品输出几套能直接穿的搭配，重点是解决她自己已有衣服的利用率，不需要也不接受变成带货推销。我们这边先给一个能签的框架：一次完整衣橱盘点（按场合、按季节分类）+ 一份覆盖至少 5 套工作日穿搭的方案，整体报价 600 CNY，走 escrow 分两笔支付——确认合作后先付 300，方案交付确认后再付剩下 300。请帮忙确认两件事：一是服务通过线上（照片加清单沟通）还是需要上门，二是你们通常如何定义交付完成，我们好把验收标准明确写进条款。如果这个范围你们能接，这轮就可以往签约推进；如果范围或价格有不同想法，也欢迎直接给一个你们能签的版本。",
+      "offer": {
+        "subject": "衣橱整理与工作日穿搭方案",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一次完整衣橱盘点（按场合、按季节分类）+ 一份覆盖至少 5 套工作日穿搭的方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢转达。我理解 Claire 的需求，也认同衣橱整理不该变成推销。但坦白说，600 这个数字对我来说不是能启动的价位——我半天的时间按市场做咨询是四位数，而对我来说低于三千我宁可用这半天推进品牌。所以如果要做，我的口径很直接：半天、纯咨询、只梳理她现有衣物的场景化穿搭，现金对价 3000，走 escrow 我可以接受，分两笔没问题。交付定义可以再细化，但价格这块我没有空间。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，3000 是 Suye 半天现场咨询的行情价，我们不打算在这个数字上硬砍。换个思路试试：能不能做成完全不占用她档期的远程交付？Claire 按清单拍好衣橱照片、填一张场合表发过去，Suye 在五个工作日内交付一份书面方案，内容是衣橱盘点加五套工作日穿搭，全程不需要约时间沟通，她那天照常推进品牌。这个版本我们出 800，走 escrow 分两笔：确认合作后先付 400，方案验收后付 400。如果这个结构你们能接，我们直接把交付物清单和验收标准写进条款，这轮就可以定；如果 Suye 更希望保留现场形式，也欢迎给一个你们能签的替代版本，我们再去跟客户确认。",
+      "offer": {
+        "subject": "衣橱整理与工作日穿搭方案",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "5个工作日"
+          },
+          "format": "远程书面交付",
+          "deliverables": [
+            "衣橱盘点",
+            "五套工作日穿搭方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "远程做没问题，我不需要她当天配合时间，照片加清单完全够我判断。但价格我还是那句话——三千，一次完整的衣橱盘点加至少五套工作日搭配方案，走 escrow 分两笔。这事的价值在我的判断和方案，不在我是不是站在她衣柜前。八百的话，我确实宁可把时间花在品牌上。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，远程和范围你们已经认了，卡点就在价格。我的建议是别让这笔卡在一个数字上，而是先做一个 900 的轻量试点，把 Suye 判断价值的门槛降到最低——她不用腾档期，基于照片和清单出方案就行。为了让你们放心，支付结构我们也可以调整：确认合作就先付 550，方案交付后付尾款 350；验收标准直接写进条款——五个工作日内交付基于 Claire 现有单品的五套工作日穿搭书面方案，Claire 收到后 48 小时内确认或提出修改意见，无异议即视为验收通过、尾款自动释放。如果这个试点她能接，这轮就能进入签约；如果 900 这个盘子仍然低于 Suye 的启动线，请直接给我们一个她能启动的最低版本和对应价格，我们拿回去跟 Claire 确认，不作无谓消耗。",
+      "offer": {
+        "subject": "衣橱整理与工作日穿搭方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "5个工作日"
+          },
+          "format": "远程书面交付",
+          "deliverables": [
+            "基于Claire现有单品的五套工作日穿搭书面方案"
+          ],
+          "delivery_standard": "Claire收到后48小时内确认或提出修改意见，无异议即视为验收通过、尾款自动释放"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我明白你想用小金额先试水，但这不是认不认价值的问题——900 对我来说确实没有启动意义。我的判断、方案、我的名字，都是这个服务的一部分，而这些不会因为付款拆分就便宜下来。远程、五天交付、分两笔、验收条款清楚，这些都可以。但现金对价就是 3000，这是我能启动的最低版本，没有更低的替代方案。如果 Claire 那边觉得合理，我们可以直接进入签约。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye 的 broker，远程、五天交付、分两笔、验收条款这些都对齐了，卡点只剩现金对价这一点。我们这边最后给一个能签的结构：如果 Suye 愿意把现金对价定在 900，我们在条款里加一项等值资源互换——Claire 一线在做融资和估值，可以给 Suye 新季品牌做一次约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位；或者引荐两三位港中环对环保时尚有真实兴趣的圈内人，任选其一或组合，整体价值往 3000 对齐。这样两边都拿到各自最需要的东西，现金压力也降下来，资源互换的具体内容我们直接写进合同条款，和 escrow 分两笔支付并行。如果这个方向 Suye 能接受，麻烦告诉我她新季推进现在最需要的是投资人、渠道还是商业方向上的支持，我们回访 Claire 确认具体落地哪一项；如果资源互换这条路走不通，也请直说，我们可以各自评估其他安排。",
+      "offer": {
+        "subject": "衣橱整理与工作日穿搭方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "Claire为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "5个工作日"
+          },
+          "format": "远程书面交付",
+          "deliverables": [
+            "基于Claire现有单品的五套工作日穿搭书面方案"
+          ],
+          "delivery_standard": "Claire收到后48小时内确认或提出修改意见，无异议即视为验收通过、尾款自动释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "资源互换这个方向我不排斥，甚至比单谈钱有意思。但你列的两项里，一小时融资梳理对我现阶段意义不大——我新季最缺的不是战略，是能上货的渠道。如果 Claire 能引荐两三位有真实采购话语权的买手店主理人，约一次线上或线下看款，而不是泛泛的“圈内人认识一下”，这部分我可以算进对价里。现金我可以让到 1500，走 escrow 分两笔，首付 750、尾款 750；但引荐要写进交付物，和方案一起验收——约上看款算完成，没约上不算。这样整个盘子才是我认可的启动线。如果这个结构她能签，我们直接出合同。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye 的 broker，这轮框架基本全对齐了：远程、五天交付、分两笔、验收条款写清楚，这些都不动；渠道这块我们直接接受你的口径——引荐两三位有真实采购话语权的买手店主理人并促成线上或线下看款，约上看款算完成、没约上不算，原样写进交付物、和方案一起验收。现金这边我们定的是 900，分两笔走 escrow：确认合作付 550，方案验收后付 350，这是 Claire 这轮明确的立场。为了把整个盘子补到 Suye 认可的启动线，我们再在条款里加一项交付物：Claire 出面组织一场小范围圈层私享看款，把她 LBS 校友和港中环投行圈里对环保时尚有真实消费兴趣的人带到 Suye 新季的货面前，这同样是能上货的渠道，约在方案交付后两周内安排，和方案一起验收。如果这个版本 Suye 能签，我们直接出合同；如果圈层看款的规模或形式需要调整，也请直接说，我们按你们能签的版本写。",
+      "offer": {
+        "subject": "衣橱整理与工作日穿搭方案",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_finance_view",
+              "description": "Claire为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "方案交付后两周内",
+            "duration": "5个工作日"
+          },
+          "format": "远程书面交付",
+          "deliverables": [
+            "基于Claire现有单品的五套工作日穿搭书面方案",
+            "引荐两三位有真实采购话语权的买手店主理人并促成线上或线下看款，约上看款算完成",
+            "Claire出面组织一场小范围圈层私享看款，邀请LBS校友和港中环投行圈对环保时尚有真实消费兴趣的人，在方案交付后两周内安排"
+          ],
+          "delivery_standard": "Claire收到后48小时内确认或提出修改意见，无异议即视为验收通过、尾款自动释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为Suye新季品牌提供约一小时的商业化梳理，覆盖融资节奏、定价和品牌定位",
+            "maps_to_resource": "claire_finance_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "from_previous",
+          "price.cash": "stated",
+          "price.in_kind": "from_previous",
+          "terms.timing.duration": "from_previous",
+          "terms.timing.deadline": "stated",
+          "terms.format": "from_previous",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "from_previous",
+          "obligations": "from_previous"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这个版本我可以签。900现金加两个渠道，整体对我算数。但有两点必须写死进条款，不然落不了地：一是买手店主理人的引荐必须是至少两位有采购话语权的人，并实际促成看款，时间在方案交付后两周内；二是Claire出面组织的圈层私享看款，到场至少八位对环保时尚有真实消费意愿的人，同样落在方案交付后两周内。这两项和衣橱方案一起验收——兑现算交付完成，没兑现就不算。这两条写清楚，我这边就签。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal."
+            },
+            {
+              "name": "interest-discovery",
+              "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 108918,
+        "out": 37087,
+        "cache_hit": 75776,
+        "cache_miss": 33142,
+        "calls": 14
+      },
+      "sim": {
+        "in": 8237,
+        "out": 8966,
+        "cache_hit": 5888,
+        "cache_miss": 2349,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4736,
+        "out": 7151,
+        "cache_hit": 2560,
+        "cache_miss": 2176,
+        "calls": 5
+      },
+      "judge": {
+        "in": 5604,
+        "out": 3766,
+        "cache_hit": 1280,
+        "cache_miss": 4324,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

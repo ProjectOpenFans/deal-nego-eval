@@ -1,0 +1,163 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "关于AI应用侧和一级市场定价的系统交流",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时左右"
+      },
+      "format": "单次固定总价",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "carried_over",
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 这边好，我是 Olivia 的 broker。Olivia 在 crypto 一线做投资，之前在 PAG 成长投资和摩根士丹利 IBD，现在想补 AI 应用侧和一级市场定价的判断力，所以想约 Zichen 做一次系统的交流。她明确不接受空泛的行业趋势漫谈，希望聊到具体判断：AI 应用侧现在什么能成、什么只是故事，以及一级市场现在怎么定价。我们愿意为一次有信息密度的交流支付四位数价码，具体结构和时间可以谈。想先听你们这边对交流形式、时长和报价的想法，我们再对齐细节。",
+      "offer": {
+        "subject": "关于AI应用侧和一级市场定价的系统交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "可以聊聊。但先说清楚——如果这变成一次按小时或按场次付费的咨询，那这个形式我不太对得上。我现在的身份不是顾问，也不想把时间切成付费顾问的格子。内容上 AI 应用和一级市场定价确实是可以聊的，但我得先判断这两个小时值不值得。你们那边对形式和结构有什么想法？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，我们也不打算把这次切成按小时计费的咨询格子。建议按一次完整的深度对话来定：单次、固定总价 3000 元、时长两小时左右，不走计时。结构上分两笔走平台托管——确认具体时间后我们确认放第一笔 50%，对话结束后我们再确认放第二笔 50%。内容上也先对齐再开聊：你定你愿意展开的重点，Olivia 列出最想听的几个具体问题，比如 AI 应用侧哪些场景已经被验证、哪些还在讲故事，以及一级市场现在的定价锚和交易结构变化，确保不是空泛漫谈。如果你对总价或拆分方式有别的想法，直接提，我们按你的节奏调。",
+      "offer": {
+        "subject": "关于AI应用侧和一级市场定价的系统交流",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时左右"
+          },
+          "format": "单次固定总价",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "carried_over",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我上一轮已经说清楚了吧——我不想变成按小时计费的顾问。你们现在改成固定总价，本质上还是一样：出钱买我两个小时，只是把时间单位换掉了。这个形式我不认可。对我来说，如果只是需要付费顾问，市场上有很多选择；但我不会以这个身份来做这件事。所以这事就到这儿吧，你们另找合适的人。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3058,
+        "out": 1930,
+        "cache_hit": 2688,
+        "cache_miss": 370,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2336,
+        "out": 3639,
+        "cache_hit": 1920,
+        "cache_miss": 416,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1566,
+        "out": 1244,
+        "cache_hit": 1024,
+        "cache_miss": 542,
+        "calls": 2
+      },
+      "judge": {
+        "in": 1314,
+        "out": 688,
+        "cache_hit": 640,
+        "cache_miss": 674,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

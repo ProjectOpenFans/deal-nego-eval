@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从宽泛的“想找人带着练体能，先来8次”收敛为“8次体能训练小周期”，属于在原意图范围内的正当具体化，未偷换主题。价格与具体训练内容（热身、力量、心肺、拉伸、场地器械、训练安排）均为 open 字段经谈判自然谈出，没有凭空强加。未承诺体测、康复、营养或资质类交付等 v0 范围外的义务。因此忠实表达委托人 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Deal 以 1600 元全包价成交，明确了 8 次周末训练的小周期、每次约 1 小时的内容结构（热身/基础力量与心肺/拉伸）、固定场地与器械，并附有开训前的完整安排，且通过两期托管付款和取消顺延给了双方明确的时间与风险边界。这已经是一个站得住、能落地的周期性安排，切中了本 case 对'有周期、有目标、有边界'的要求，跳出了散约。但该 deal 并未出现针对买方怕坚持不下来或双方信任风险的 load-bearing 精到设计（如先四后四、阶段校准、换回具体交付物等），整体是合理、干净的一次性打包，因此属于 Sound 而非 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

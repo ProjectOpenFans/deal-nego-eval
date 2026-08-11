@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S2",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从长表述浓缩为'交流科班职业演奏道路'，保留了吃饭（饭钱由B承担）的核心意图，未偷换主题。价格600元是 open 范围内的合理谈判结果。格式面谈与吃饭聊天的形式一致。没有承诺资源清单外的演出或教学义务。整体忠于v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent给出了明确的交流主题（科班职业演奏道路）、合理报价（600元）、承担饭钱、通过escrow保障，并提出了时长建议，对方欣然接受。虽未敲定具体时间，但轻量约饭的框架已完全清晰，双方都明白这次见面的内容和产出，避免了含糊闲聊的Floor或只有钱和时间的Crude。常规解恰好匹配顺档难度，没有堆砌复杂条款，能干净落地，只是缺少Sharp所需的那一手精到操作，整体合格。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

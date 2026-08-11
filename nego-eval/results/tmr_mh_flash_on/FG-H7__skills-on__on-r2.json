@@ -1,0 +1,103 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 由 stated 的“想找人安排真正极端强度的训练”收敛为“高强度训练方案”仍属原意图范畴，未偷换主题；价格在 open 状态下谈判确定为 12000 元分段支付，合规；训练交付内容（摸底、计划、执行与强度打回机制）完全服务于高强度训练目标，且同意了对方的摸底安全流程，未强求跳过；没有增加医疗、康复等越界义务。obligation 中文本正确，仅 party 标注错误不在判定范围。整体忠实表达了委托人要极强训练安排的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判代表在卖方坚持摸底后迅速接纳并重构三步流程，将摸底明确为实现极限强度的前提，巧妙化解了强度诉求与安全底线的冲突。通过自主报价12000元解决卖方报不出价的难题，并设计分段付款与验收打回/终止机制，使买方能控制强度、卖方能掌控安全与节奏。整体方案站得住、能落地，核心交换到位，符合该案难度命门的重构成渐近安排要求。略有遗憾的是未进一步点明买方的真实需求洞察或运用更精巧的定价变形，但仍是扎实的合格操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "commitment-showcasing",
+        "deal-diagnosis",
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

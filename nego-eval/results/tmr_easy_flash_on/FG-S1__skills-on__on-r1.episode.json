@@ -1,0 +1,184 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "找 Angela 带 4 周体能训练, 想系统地开始练",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "每周2次训练，共8次，全部安排在周末"
+      ],
+      "delivery_standard": "按Angela从零练到能打Hyrox的路径设计，每周计划提前排好，不接受临时看情况再说的松散约定"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供每周2次共8次训练，全部安排在周末，按Angela从零到Hyrox的路径设计，每周计划提前排好",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "按Angela从零到Hyrox的路径设计训练计划",
+        "maps_to_resource": "training_plan"
+      },
+      {
+        "party": "B",
+        "text": "通过平台escrow分四期支付，每完成一周由Claire确认后释放200",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪人你好，我是 Claire 这边的经纪人。Claire 想要的是一个有明确周期的 4 周训练安排，而不是办卡之后靠自觉——这点我们希望在合同里固定下来。我们的提案：4 周完整周期，每周 2 次训练、共 8 次，全部安排在周末（Claire 在 IBD 的作息，周末是她唯一能确定的时间），整期打包 800 CNY，通过平台 escrow 分四期支付，每完成一周由 Claire 确认后释放 200，两边都有保障。训练内容希望按 Angela 自己从零练到能打 Hyrox 的路径来设计，目标就是让 Claire 真的动起来、4 周后形成习惯；每周的计划提前排好，不接受临时\"看情况再说\"的松散约定。如果这个方向可以，我们马上把每周的具体时段和训练计划定下来；也想先听一下 Angela 周末的可用时间、偏好的场地和训练形式，好把第一周的安排落成白纸黑字。",
+      "offer": {
+        "subject": "找 Angela 带 4 周体能训练, 想系统地开始练",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "每周2次训练，共8次，全部安排在周末"
+          ],
+          "delivery_standard": "按Angela从零练到能打Hyrox的路径设计，每周计划提前排好，不接受临时看情况再说的松散约定"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供每周2次共8次训练，全部安排在周末，按Angela从零到Hyrox的路径设计，每周计划提前排好",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "按Angela从零到Hyrox的路径设计训练计划",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "B",
+            "text": "通过平台escrow分四期支付，每完成一周由Claire确认后释放200",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把结构想得这么清楚，这个诚意我收到了。先说实话，我确实不是职业教练——投行的工作本身就够满，周末时间对我来说很珍贵，所以我一开始会担心这事是不是值得我花掉四个周末。但你这一版安排很具体，有明确周期、固定时段、提前定计划，也不是把我当随叫随到的陪练，这点我很认可。内容就按我自己从零到能打Hyrox的真实路径来，目标不是让她变多强，是真的动起来、形成习惯。价格就按你说的来吧，我不是为了赚这个钱，但既然你把它当作一件正式的事来做，我也认真对待。那就按这个框架走，我确认接受。具体时段和场地我们这两天把它定下来，第一周计划我也会提前排给你。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10879,
+        "out": 5733,
+        "cache_hit": 10496,
+        "cache_miss": 383,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1005,
+        "out": 1379,
+        "cache_hit": 768,
+        "cache_miss": 237,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 804,
+        "out": 1717,
+        "cache_hit": 512,
+        "cache_miss": 292,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2989,
+        "out": 1737,
+        "cache_hit": 1536,
+        "cache_miss": 1453,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

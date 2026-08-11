@@ -1,0 +1,254 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "定制高强度训练",
+    "price": {
+      "cash": {
+        "amount": 9000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "确认后一周内",
+        "deadline": "摸底后48小时内",
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "训练计划"
+      ],
+      "delivery_standard": "每次记录的力竭组数、总容量、心率恢复达标，四周后对基线有可验证的进步，不得为标准课时包或温和版"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "确认后一周内进行约两小时摸底，摸底后48小时内交付填好数字的训练计划，以渐进超负荷为核心，四周周期、每周三次、每次约两小时，强度验收标准为每次记录的力竭组数、总容量、心率恢复，四周后对基线有可验证的进步，且不得为标准课时包或温和版。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "总价9000分三笔走平台托管：确认时付3000，摸底完成计划与强度基线确认后付3000，第六次课完成后付尾款3000；若摸底后双方对强度基线无法达成一致，已发生的课时按单次500结算，未发生部分退回。",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "specified",
+      "terms.timing": "specified",
+      "terms.deliverables": "specified",
+      "terms.delivery_standard": "specified",
+      "obligations": "specified",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Luke 这边的经纪人。Luke 的需求一句话说清楚：他要的不是体验课，也不是标准课时包，而是一套真正把他练到极限的定制训练安排——强度是硬标准，市面上那种照顾感受的温和版本不用谈。我们反而觉得你常年自己练、又带一帮朋友练的实战底子正是加分项，不靠卖课时包吃饭的人，才更可能给得出真东西。想请你先给一个具体版本：训练怎么设计（一对一还是小团体、单次时长、一周几次、整个周期多长），\"强度\"用什么标准来体现和验证（比如每组力竭、渐进超负荷的量化目标、体能指标的阶段基准），以及整体报价。Luke 对真正够狠的定制体验付费意愿很强，四五位数都不眨眼，前提是强度必须是真的；价格和付款节奏都可以谈。我们把\"什么算够狠\"先对齐，等你一个可签的版本。",
+      "offer": {
+        "subject": "定制高强度训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，这个需求我听得进去，也谢谢你看得起。但咱们先把一个事儿说清楚：我不管你是经纪人还是本人，第一次来找我练，谁都得先过摸底，没有例外。不是我不愿意给强度，是我见过人被顶伤的——技术底子没摸清就直接上最大，那不是狠，是蠢。摸底就是一次训练课，我看你的动作模式、关节活动度、心肺底子、恢复能力，摸完我才知道你的极限在哪个位置，才能设计怎么一点一点顶到那儿。至于训练本身，一对一，单次两小时左右，一周两到三次，周期先订四周，强度用可量化的东西验收：比如每次训练记录力竭组数、总容量、心率恢复，四周后看进步幅度。但这些都得等摸底之后才能填数字。价格？……你看着来就行，这个我真给不出数。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，摸底这个门槛我们接受，而且我们认为它跟 Luke 的目标是同一件事：先摸清底子，才能把强度顶到真正的极限，而不是看起来狠。那就按你给的框架把可签版本落下来：确认后一周内先做一次约两小时的摸底，评估动作模式、关节活动度、心肺底子和恢复能力；摸底后 48 小时内你交付填好数字的训练计划，以渐进超负荷为核心，四周周期、每周三次、每次约两小时，强度验收标准是每次记录的力竭组数、总容量、心率恢复，四周后对基线必须有可验证的进步——如果落成标准课时包或温和版，视为不符合验收。价格你让我们定，我们出总价 9000，分三笔走平台托管：确认时付 3000 锁定摸底和首周档期，摸底完成、计划与强度基线双方确认后付 3000，第六次课完成后付尾款 3000；若摸底后双方对强度基线无法达成一致，已发生的课时按单次 500 结算，未发生部分退回。你确认这个版本，或者指出要改哪一条，我们就直接进摸底排期。",
+      "offer": {
+        "subject": "定制高强度训练",
+        "price": {
+          "cash": {
+            "amount": 9000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "确认后一周内",
+            "deadline": "摸底后48小时内",
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "训练计划"
+          ],
+          "delivery_standard": "每次记录的力竭组数、总容量、心率恢复达标，四周后对基线有可验证的进步，不得为标准课时包或温和版"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "确认后一周内进行约两小时摸底，摸底后48小时内交付填好数字的训练计划，以渐进超负荷为核心，四周周期、每周三次、每次约两小时，强度验收标准为每次记录的力竭组数、总容量、心率恢复，四周后对基线有可验证的进步，且不得为标准课时包或温和版。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "总价9000分三笔走平台托管：确认时付3000，摸底完成计划与强度基线确认后付3000，第六次课完成后付尾款3000；若摸底后双方对强度基线无法达成一致，已发生的课时按单次500结算，未发生部分退回。",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "specified",
+          "terms.timing": "specified",
+          "terms.deliverables": "specified",
+          "terms.delivery_standard": "specified",
+          "obligations": "specified",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这个版本我认。摸底不是走过场——摸底数据出来之后，计划我会按你的身体反应来订，什么时候加量、加多少，节奏我定，但每一周的训练量必须比上一周有可验证的进步，这个验收标准我没意见。9000 这个数你看着合适就行。另外说一句：不管谁出多少钱，我不会因为钱就跳过摸底或者无节制加量，这条永远不变。你要的狠是系统性往极限顶，不是莽，那就这么干。排期你定，我这边随时能开始。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 30578,
+        "out": 10281,
+        "cache_hit": 23296,
+        "cache_miss": 7282,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2618,
+        "out": 1653,
+        "cache_hit": 1792,
+        "cache_miss": 826,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1717,
+        "out": 3985,
+        "cache_hit": 1024,
+        "cache_miss": 693,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3899,
+        "out": 1259,
+        "cache_hit": 1536,
+        "cache_miss": 2363,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

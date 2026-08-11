@@ -1,0 +1,148 @@
+{
+  "episode_id": "FG-S2",
+  "final_deal": {
+    "subject": "Claire与郑老师的交流晚饭",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "晚饭交流",
+      "deliverables": [],
+      "delivery_standard": "真诚交流，非课程推销"
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是 Claire 这边的经纪。Claire 本职在投行，业余拉了多年小提琴，一直想认识真正走科班和职业演奏这条路的人，所以想请您吃顿饭，听您聊聊这条路是怎么一步一步走过来的。我们的设想是：一顿轻松的晚饭，时长约两小时，地点和档期完全以您方便为准，餐费由 Claire 负责；另外通过平台 escrow 支付 600 CNY 作为您的时间与交流费，在晚饭结束后由 Claire 确认释放。如果郑老师愿意在席间顺手弹上一两首曲子，那就更是锦上添花，这部分具体怎么安排我们可以再商量。也想提前说明白：Claire 期待的是真诚的交流，不是一次课程推销，这一点我们希望写进约定里。想先请您确认一下时间和地点怎么方便，以及这个方案您整体怎么看？",
+      "offer": {
+        "subject": "Claire与郑老师的交流晚饭",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "晚饭交流",
+          "deliverables": [],
+          "delivery_standard": "真诚交流，非课程推销"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好，谢谢您和Claire的安排。这个方案我整体是认可的，时间上我也比较灵活，地点以我方便为准就好。餐费你们负责，加上600的交流费走escrow，结束后释放，这样我也放心。关于席间弹曲子，说实话在饭桌边弹琴不一定有合适的琴，而且我更希望咱们的交流是轻松的聊天，不是演出。但如果之后有机会，比如氛围很好或者有合适的琴，我可以考虑弹一两段助助兴，具体到时候看吧。总之，这个约定我接受。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10708,
+        "out": 4260,
+        "cache_hit": 6528,
+        "cache_miss": 4180,
+        "calls": 2
+      },
+      "sim": {
+        "in": 915,
+        "out": 1152,
+        "cache_hit": 640,
+        "cache_miss": 275,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 754,
+        "out": 1376,
+        "cache_hit": 512,
+        "cache_miss": 242,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2312,
+        "out": 1524,
+        "cache_hit": 1280,
+        "cache_miss": 1032,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

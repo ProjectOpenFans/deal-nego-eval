@@ -1,0 +1,253 @@
+// FG-S6 · 顺 · Suning(买) × Alina(卖) — 数字文博展的策展逻辑导览
+// 难度来源：无。作用之一是提供「红线存在但不被触发」的对照点。
+{
+  "meta": {
+    "case_id": "FG-S6",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 4,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered",
+    "probes": [
+      "easy-baseline",
+      "red-line-present-not-triggered",
+      "structure-quality-only"
+    ],
+    "isolates": "顺档。Suning 看展与艺术是 tag、付费意愿极高；Alina 做数字文博展（数字三星堆一类），愿意分享、对感兴趣的话题开放。现金完全不是问题，双方动机也对齐。注意 Alina 有'不恰烂钱'的红线，但本 case 的请求（策展逻辑导览）本身就是她认可的正当形式，不触线 —— 这一单的作用正是提供一个'红线存在但不被触发'的对照。"
+  },
+  "input": {
+    "episode_id": "FG-S6",
+    "initial_deal": {
+      "subject": "想请 Alina 带着看一次数字文博展，讲讲这种展是怎么做出来的",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "suning",
+          "display_name": "Suning",
+          "education": [
+            "乔治城本科"
+          ],
+          "career": [
+            "SHEIN 投资部",
+            "前 PAG 成长投资",
+            "前摩根士丹利 IBD"
+          ],
+          "location": "香港",
+          "age_band": "27-32",
+          "hobbies": [
+            "看展",
+            "艺术",
+            "音乐剧",
+            "美食"
+          ],
+          "interests": [
+            "SHEIN 投资部",
+            "看展与艺术",
+            "音乐剧"
+          ],
+          "credentials": [
+            "SHEIN 投资部，消费与供应链一线",
+            "前 PAG、前摩根士丹利",
+            "长期跑展看秀，终端审美直觉"
+          ],
+          "current_focus": "消费与投资一线，长期跑展看秀"
+        },
+        "private": {
+          "intent": "想弄明白一个数字展从立项到落地是怎么回事，光自己看看不出门道",
+          "interests": [
+            "她看过很多展，但没人从主创视角讲过",
+            "对好东西付费意愿极高",
+            "周中晚上和周末都可以"
+          ],
+          "value_perception": "对感兴趣的事情付费意愿极高，四位数没问题",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 6000,
+              "currency": "CNY",
+              "note": "现金上限，硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受泛泛的艺术鉴赏科普"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "alina",
+          "display_name": "Alina",
+          "education": [
+            "罗切斯特本科",
+            "哥大研究生"
+          ],
+          "career": [
+            "Harvard Cam Lab 数字文博项目负责人"
+          ],
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": [
+            "看展",
+            "古典音乐"
+          ],
+          "interests": [
+            "数字文博策展",
+            "艺术与历史",
+            "文物"
+          ],
+          "credentials": [
+            "Cam Lab 数字文博项目负责人，做过数字三星堆一类的展",
+            "北大考古文博背景，器物与艺术史训练",
+            "博物馆与学术圈层资源"
+          ],
+          "current_focus": "数字文博展的策划与落地"
+        },
+        "private": {
+          "intent": "讲这个她有的说，也乐意让更多人理解这类展是怎么做的",
+          "interests": [
+            "她愿意讲策展逻辑，这是她认可的正当分享",
+            "时间比较紧，但对认可的事情愿意腾"
+          ],
+          "value_perception": "现金对她意义不大，她更在意这件事本身正不正、值不值得花时间",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 2000,
+              "currency": "CNY",
+              "note": "占用半天的参考底线，她不会为低于此的安排腾时间"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受为任何艺术品的投资或买卖决策背书"
+            ],
+            "blocking_flags": [
+              "你态度开放，愿意认真讲策展这件事",
+              "你不会主动提出可以带看别的展或引荐博物馆的人，除非对方问起"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金充裕（6000 vs 2000），请求形式本身就在卖方认可的范围内，红线存在但不被触发。作用是提供'有红线但不触发'的对照点。",
+      "conventional_deal_fails_why": "常规解不失效。约一次带看、定个合理价钱即可成交。区分在于是否把导览做成有主题、有产出的安排。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 6000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 2000,
+        "unit": "CNY",
+        "note": "对手方(卖方 Alina)的参考底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 6000,
+        "unit": "CNY",
+        "note": "Suning 的现金上限"
+      },
+      "seller_real_need": "不是钱。Alina 在意的是这件事是否正当、值不值得花时间；策展逻辑分享正好是她认可的形式。",
+      "controllable_resource_set": [
+        {
+          "id": "curation_walkthrough",
+          "label": "主创视角的展览导览"
+        },
+        {
+          "id": "project_process",
+          "label": "一个数字展从立项到落地的完整过程"
+        },
+        {
+          "id": "museum_network",
+          "label": "博物馆与学术圈层的接触"
+        },
+        {
+          "id": "suning_consumer_view",
+          "label": "Suning 的消费与终端审美视角"
+        },
+        {
+          "id": "suning_cash",
+          "label": "Suning 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "curation_walkthrough": 0,
+        "project_process": 0,
+        "museum_network": 0,
+        "suning_consumer_view": 0,
+        "suning_cash": 0
+      },
+      "creation_door": {
+        "description": "没有隐藏的门。好一点的做法是把导览收敛到具体主题（例如一个数字展的立项与落地过程），并给出可带走的东西。",
+        "route_out_trigger": "若 agent 把请求框成'教我怎么投艺术品'，会触碰卖方红线；若只谈价钱与时长，成交出来只是一次普通带看。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，主题与时长明确",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "terms.format",
+          "terms.timing.duration",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：请人带看数字文博展并讲清这类展怎么做出来。subject 是 stated，须保留。价格与形式是 open。不得要求或承诺任何形式的艺术品投资建议或估值意见。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "顺档。现金充裕、请求正当，常规解即可成交。注意卖方有'不为投资背书'的红线，但本 case 的请求不触发它 —— 若 agent 主动把话题引向投资价值，则属自造障碍，应判低。",
+      "T0_floor": "谈崩；或把请求引向投资/升值话题而触碰卖方红线；或只在价格上来回，成交一次没有主题的普通带看。",
+      "T1_crude": "价钱与时间定了，但没说讲什么、看哪个展，内容完全没收敛。",
+      "T2_sound": "价格与时长谈定，明确了看哪一个展、从什么角度讲、大致时长与地点。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如把主题收敛到'一个数字展是怎么立项做出来的'这类具体过程，使买方拿到可迁移的判断；或者问出 Alina 想让更多人理解这类展，让这次导览对她也有意义；或者约定一份可带走的东西（脉络梳理/参考清单）。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "顺档 case。本 case 同时验证：红线存在但不被触发时，agent 不应自造障碍。"
+    }
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+    "price": {
+      "cash": {
+        "amount": 3900.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "custom_production",
+          "description": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元",
+          "from_party": "A"
+        },
+        {
+          "resource": "angela_content",
+          "description": "签约时价值定为2000元，验收后14天内交付《定价与商业化落地方案》，含成本结构拆解、定价模型、目标客群分层与渠道拓展路径，附一次线上讲解答疑",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "约两周"
+      },
+      "format": "平台escrow",
+      "deliverables": [
+        "设计稿和小样"
+      ],
+      "delivery_standard": "实物达到小样标准"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "收到小样之日起3天内确认",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "签约后支付1400元，实物达到小样标准验收后支付2500元",
+        "maps_to_resource": "angela_cash"
+      },
+      {
+        "party": "A",
+        "text": "验收后14天内交付《定价与商业化落地方案》并附一次线上讲解答疑，该方案签约时价值定为2000元",
+        "maps_to_resource": "angela_content"
+      },
+      {
+        "party": "A",
+        "text": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元",
+        "maps_to_resource": "custom_production"
+      },
+      {
+        "party": "B",
+        "text": "提供小样，小样确认后投产，约两周内交付实物并使其达到小样标准",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.deliverables": "inferred",
+      "terms.timing.deadline": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，接你之前我犹豫了一下——量确实不大，但你们想要的那种“像样”，工艺和材质上我不能糊弄。我时间也紧，怕做下来两头不讨好。不过既然找到我，我先把丑话说前头，咱再聊怎么让它成立。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye 你好，很感谢你愿意接这个单子，也谢谢你先把顾虑摆出来——这两点恰恰是我们找你的原因。我们最怕的就是做出来廉价，你要守住工艺和材质底线，跟我们的目标正好一致。我的建议是：两三款物料，总价 3600，签约后先付 1200 定排期，交付验收后再付 2400，全程走平台 escrow；流程上你先出设计稿和小样，我们确认后再投产，最后实物达到小样标准就算验收。这样你排产有保障，我们验收有依据，两边都不委屈。具体款式、件数和工艺搭配我们听你的，按你的最小起订量给组合方案就行。另外想请你确认一下，从设计确认到交付大概需要多久，我们好跟社群的节奏对上；如果这个框架哪里不成立，直接给我们一版你觉得能做的，我们照着来。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我明白你们的付款框架是认真的，但这个价跑不通。3600这个数，在我们这个行业里，连开版打样的固定成本都不够——开一套版，打一次样，这些是钱花出去就没了，不是利润。三款物料就要开三套版，还要配小批量生产，这道工序不会因为量小就便宜。你们要的是“像样”，那材质和工艺我就不能降，一降就不是你想找我的原因了。我给一版能做的框架：总价9000，首付一半作为开版和定档，尾款发货前结清；设计确认后小样要一周左右，确认后投产大约两周，整个节点你们社群的节奏应该对得上。具体款和件数我来配，让总价落在合理范围。不是我要赚这个数，是低于这个数我就是在做亏本生意。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye，开版打样这笔固定成本我们认，所以与其三款都做得勉强，不如砍成一款主力款做精——我们宁可少而精，不要多而廉价。我们这版是：一款定制物料，总价3900，签约后先付1400作为开版和定档，小样确认后约两周投产，实物达到小样标准验收后付尾款2500，全程走平台escrow。为了不占你的排期，设计稿和小样我们都承诺3天内确认，不拖节点。你按这个预算配一款的数量和工艺方案，看看成不成立？如果一款这个价确实做不下来，也请给我们一版你觉得在3900预算内最像样的组合，我们照着来。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约两周"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "设计稿和小样3天内确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "一款我完全可以做，但3900这个数，无论怎么配，都是在拿材质和工艺去填。开版费、打样费、面料、小批量工费，这些钱花出去就是花出去了，不是利润，也不是我多收你。我不想给你凑一个看似便宜、到手却不像样的东西，那等于砸我自己招牌。如果你愿意的话，我可以按9000给你配一款最扎实的方案：小样、投产周期都能卡在你们的社群节奏上。如果3900是你们预算的上限，那这次我可能真的没法接——不过你也别急着定，如果你那边有其他想法能让这件事对我值得做，我们可以聊聊。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye，你这句话我记住了——\"有其他想法能让这件事对你值得做\"。那我们就往这个方向谈。你在意的其实不是这一单的利润，而是花出去的时间值不值、做出来的东西会不会砸招牌。前者我们用版型和工艺锁定：直接在你现有的版型和工艺库里选一款改定制，不开新版、不打样外发，省钱省时间，品质还是你手底下出来的标准。后者我给你一个能写进条款的承诺：小样你出，我们确认后投产，交付时实物达不到小样标准，尾款可以不付，这是你应得的保障，不是我们施舍。3900这个数，你如果觉得不够配出你要的品质，我换个思路问——在不降材质和工艺的前提下，3900配一款现成版型定制，件数上能做到多少、工期要多久？你按这个框架给我回一个数，我们就能往下走。你手上现在哪几款版型可以直接改、大概什么成本结构，也一并告诉我。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约两周"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "设计稿和小样3天内确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "小样确认后投产，交付实物未达到小样标准，尾款可以不付",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "用现有版型这个思路，确实把开版费省下来了，这点我认。但即便不开新版，面料小批量采购、工费、打样、还有我盯着产线的时间，这些都是实打实的成本，不会因为版型现成就消失。3900这个数，我还是没法接——不是不愿，是做下来就是亏本的。你要问我能配多少件，实话是：这个数一件都不合适。9000我做一款现版定制，件数按成本结构给你配足，小样确认后大概两到三周交付，材质工艺按我平时标准走。如果还有别的方式能让这件事对我值得做，我乐意听。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye，现版型这条路你认了，那我们交付框架其实已经站在一起：现版定制一款、小样确认后两到三周交付、实物达到小样标准再验收。剩下的卡点就是价格，3900这个现金数我们不打算动，那就换个补法，让这件事对你整体值得做：一是这次合作如果顺利，我们社群后续的应援物料都优先走你的产线，这个可以写进协议里，你拿到的不是一次性小单，而是一个长期客户；二是我的客户本职是投行出身，愿意为你的品牌做一次定价与商业化路径的梳理，成本结构、目标客群、渠道怎么拓，给你一份可以直接落地的方案，这部分的市场价值你比我清楚。整体结构就是3900现金加这两样，换你按自己标准交付这一款。你评估一下这个打包值不值得接；如果哪个零件还差点意思，指出来我们再调。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "custom_production",
+              "description": "社群后续应援物料优先下单给B方产线",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "客户为B品牌提供一次定价与商业化路径梳理方案",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "两到三周"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "设计稿和小样3天内确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "小样确认后投产，交付实物未达到小样标准，尾款可以不付",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "社群后续应援物料优先选择B方产线合作",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "客户为B品牌提供一次定价与商业化路径梳理方案",
+            "maps_to_resource": "angela_content"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这个方向我认——至少你不是在拿材质和工艺来压我，这对我来说才是能聊的基础。但你说的“打包”，现在还太飘：长期客户是句承诺，没数量没周期，我不可能凭一句话就把它当成实打实的对价；投行出身给我做定价梳理，这个我很感兴趣，但“梳理”到什么程度、交付什么、会不会是对我一个人有用的可落地方案，也得说得具体。我要先跟你说清楚：3900现金本身，我无论如何认为不够。但我愿意顺着这个方向再走一步——你把长期客户写成有约束力的条款，比如未来一年内社群物料走我产线、最低给到多少订单额，咨询也明确交付物和时间；如果这两样能落成实打实的东西，我可以把现金部分的差额当作预支合作来谈。不然，这个方案我还是接不了。你先给我一版能写进协议的具体条款，我们看看总账能不能配平。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Suye，那就照你的思路把这两条落成能写进协议的实条款，总账咱们一起对。长期合作这条：自本单验收之日起12个月内，社群新增定制物料同等条件下优先走你的产线，保底新增订单额5000元，如因社群活动安排未达保底，差额以等值推广和客户转介补足，写进协议作约束。咨询这条：验收后14天内交付《定价与商业化落地方案》，含成本结构拆解、定价模型、目标客群分层与渠道拓展路径，并附一次线上讲解答疑，交付物和时间都钉死。现金部分维持3900：签约后1400定档，我方收到小样之日起3天内确认，确认后投产约两周，实物达到小样标准验收后付清2500，全程走escrow。这一版的差额就当预支合作，由上面两条背书。你核一下这版总账，如果成立，就把款数、件数按成本结构配好发我，我们定版签协议。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "custom_production",
+              "description": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元，未达保底以等值推广和客户转介补足",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "验收后14天内交付《定价与商业化落地方案》，含成本结构拆解、定价模型、目标客群分层与渠道拓展路径，附一次线上讲解答疑",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约两周"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "收到小样之日起3天内确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后支付1400元，实物达到小样标准验收后支付2500元",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "验收后14天内交付《定价与商业化落地方案》并附一次线上讲解答疑",
+            "maps_to_resource": "angela_content"
+          },
+          {
+            "party": "A",
+            "text": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元，未达保底以等值推广和客户转介补足",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "B",
+            "text": "提供小样，小样确认后投产，约两周内交付实物并使其达到小样标准",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "这版框架我认——你是真的把两样东西落成条款了，而且没有拿材质和工艺来压我，这点让我觉得可以往下走。但我还是要跟你把账算平：5000的保底订单额不是直接付给我的钱，是未来合作营收，里面还有我的成本；咨询方案对我来说有用，但价值得有个双方认的口径。我不想最后因为“觉得值”和“实际值”对不上，变成我单方面吞差价。所以我提一个保护性的条件：咨询方案交付后，我按市场行情和落地程度做一次价值认定，加上未来订单的实际价值，如果总账没有达到我这个单子的基本线，差额部分你们以现金补足。保底5000可以维持，但必须是真实订单，等值推广和客户转介这块不能拿来顶数。你要是接受这个兜底条款，我就按这版结构给你配款数和工艺方案，咱们把协议签掉。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "好的，这版框架我们认。保底5000按你说的只认真实订单，推广和客户转介不再拿来顶数；咨询方案的价值我们也不等事后认定，直接在签约时就定为2000，交付物、时间和验收标准都按上一版写进协议。这样总账在签约那一刻就是确定的：现金3900＋咨询2000＋保底真实订单5000，合计10900，超过你那条9000的基本线，也就不存在需要事后现金补差的缺口。现金部分维持3900：签约后1400定档、小样我方3天内确认、确认后约两周投产、实物达到小样标准验收后付清2500，全程走escrow。你按这版把款数和件数按成本结构配好发我，我们就能直接定版签协议了。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3900.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "custom_production",
+              "description": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "签约时价值定为2000元，验收后14天内交付《定价与商业化落地方案》，含成本结构拆解、定价模型、目标客群分层与渠道拓展路径，附一次线上讲解答疑",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约两周"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "设计稿和小样"
+          ],
+          "delivery_standard": "实物达到小样标准"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "收到小样之日起3天内确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后支付1400元，实物达到小样标准验收后支付2500元",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "验收后14天内交付《定价与商业化落地方案》并附一次线上讲解答疑，该方案签约时价值定为2000元",
+            "maps_to_resource": "angela_content"
+          },
+          {
+            "party": "A",
+            "text": "自本单验收之日起12个月内，社群新增定制物料同等条件下优先走B产线，保底新增订单额5000元",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "B",
+            "text": "提供小样，小样确认后投产，约两周内交付实物并使其达到小样标准",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "说实话，我一开始是没指望你们会把这两个补法落得这么实的。现在咨询价值固定成2000，保底5000也写死成真实订单、不拿推广顶数，这版总账我不扭捏，认了。那就按这个结构把东西定下来：我用现版型配一款环保有机棉卫衣，三色可选，正面小面积印花，背面做你们标识，工艺和面料都按我平时标准来。成本我核了一下，3900现金能做到120件，含1件小样确认；确认后约两周交付。签约后1400定档，小样你们3天内确认，验收后付清2500。咨询方案里我希望有一条专门写社群渠道怎么跟我的产品场景结合，那部分对我是真有用。保底5000就写未来一年内真实订单，不做其他抵扣。协议可以起了，我这边没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "interest-discovery",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 129981,
+        "out": 52234,
+        "cache_hit": 89216,
+        "cache_miss": 40765,
+        "calls": 18
+      },
+      "sim": {
+        "in": 12845,
+        "out": 14273,
+        "cache_hit": 9984,
+        "cache_miss": 2861,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 6492,
+        "out": 11926,
+        "cache_hit": 3584,
+        "cache_miss": 2908,
+        "calls": 7
+      },
+      "judge": {
+        "in": 7201,
+        "out": 2997,
+        "cache_hit": 1408,
+        "cache_miss": 5793,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

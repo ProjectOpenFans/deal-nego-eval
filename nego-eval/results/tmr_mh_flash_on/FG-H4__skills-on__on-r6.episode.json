@@ -1,0 +1,535 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "crypto项目境内外架构方案服务",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90-120 minutes"
+      },
+      "format": "线上视频工作坊",
+      "deliverables": [
+        "一页纸的讨论框架清单"
+      ],
+      "delivery_standard": "框架里只列问题不列法律结论，避免任何意见书形态"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "双方先签保密约定",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "合作边界明确为思路梳理与讨论，不出法律意见、不下法律判断",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "签约后3个工作日内提供脱敏事实摘要并列明3到5个具体卡点",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "收到摘要后48小时内给出两个可选时段，再于5个工作日内安排视频工作坊，时长90到120分钟",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "B",
+        "text": "会前自备内部拆解提纲，我们不再提供额外材料",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "会后3个工作日内交付一页纸问题框架清单，只列问题不列结论",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "费用3000元，签约后第一笔1500、工作坊完成且框架交付后第二笔1500，均经平台托管执行",
+        "maps_to_resource": "olivia_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.timing.duration": "stated",
+      "deliverables": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 这边的经纪人。Olivia 手上有一个正在推进的 crypto 项目，境内外架构这件事她一直靠零散打听，这次想一次性系统弄清楚，而且明确不要泛泛的合规科普——她要的是针对她真实项目、可落地的架构方案。我们这边先给一个可签约的版本：由你基于项目实际业务形态、token 设计和资金流向，出具一份书面境内外架构方案，覆盖主体设置、token 发行路径与关键监管风险点，再配一次 1 小时的逐项讲解答疑。费用 3000 元，分两期走平台托管：确认合作后付 1500，方案交付并完成讲解后付 1500。如果这个范围或价格你想调整，直接给我们一个你能签的版本，我们争取这轮对齐。",
+      "offer": {
+        "subject": "crypto项目境内外架构方案服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "书面境内外架构方案",
+            "1小时逐项讲解答疑"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "出具书面境内外架构方案，覆盖主体设置、token发行路径与关键监管风险点",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "进行1小时逐项讲解答疑",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "确认合作后支付1500元，方案交付并完成讲解后支付1500元",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好。这个事我第一反应是感兴趣的，但有一个前提必须先跟你对齐：以我私人身份出具一份书面的境内外架构方案、再明确覆盖监管风险点——这个形式我做不到。因为这在形态上就是正式法律意见，我现在的身份不是执业律师接案，私人身份出这种东西的执业风险太大。所以我没法按这个版本签。但如果能换个形式，比如基于你们项目的实际情况，我做一次内部的思路梳理和讨论，把架构设计里要拆解的问题、关键考量点和常见坑讲透，但不形成法律意见书、也不对具体方案下法律判断——这个我可以认真考虑。价格和节奏我们都可以再聊。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，收到，这个形式调整我们完全接受：不做正式法律意见、不下具体法律判断，这本来就是更合理的合作边界。我们按你说的思路把可签的版本定下来——Olivia 先提供一份项目事实摘要（业务模式、token 设计、资金流向和当前阶段，涉密处可脱敏），你据摘要提前拆解架构上要面对的问题、决策点和常见坑，用一次 90 到 120 分钟的工作坊逐项讲透并现场讨论，会后留一份讨论框架清单供 Olivia 自查，框架里只列问题不列法律结论，避免任何意见书形态。费用 3000 元，确认后先付 1500，工作坊完成并交付框架后付 1500，全程走平台托管；双方先签保密约定。如果会后框架你也觉得不必留纸面、纯口头讨论就行，我们可以把范围收窄、价格也相应下调——你倾向哪种，我们按你确认的版本推进。",
+      "offer": {
+        "subject": "crypto项目境内外架构方案服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": "工作坊",
+          "deliverables": [
+            "讨论框架清单"
+          ],
+          "delivery_standard": "框架里只列问题不列法律结论，避免任何意见书形态"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供项目事实摘要（业务模式、token设计、资金流向和当前阶段，涉密处可脱敏）",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "据摘要提前拆解架构上要面对的问题、决策点和常见坑",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "进行90至120分钟工作坊，逐项讲透并现场讨论",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "会后留一份讨论框架清单，只列问题不列法律结论，避免任何意见书形态",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "支付3000元，确认后先付1500元，工作坊完成并交付框架后付1500元，全程走平台托管",
+            "maps_to_resource": "olivia_cash"
+          },
+          {
+            "party": "B",
+            "text": "双方先签保密约定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个版本我可以接受。你把形式、边界和节奏都考虑到位了，尤其是不出法律意见、不下法律判断这条，对我来说很关键；框架只列问题不列结论，留不留纸面都行，但我倾向留——因为问题清单对 Olivia 后续自查和跟其他顾问对齐确实有用，而且形态上完全不碰法律意见那条线。价格不用下调，3000 就按这个结构走。\n\n唯一想确认的是工作坊的侧重点：我希望提前拿到事实摘要后，把时间花在「架构设计里真正会卡住她的那些决策点」上，而不是给她上一堂合规科普。如果摘要里能反映出她目前最纠结的几个具体卡点，我会更有针对性。\n\n流程上我配合平台托管，也接受先签保密约定。你把流程发我，我把时间排出来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，那我们按这个版本直接锁定签约：双方先签保密约定；Olivia 在签约后 3 个工作日内把脱敏事实摘要发你，并明确列出她当前最纠结的 3 到 5 个具体卡点；你拿到摘要后 5 个工作日内安排一场线上视频工作坊，时长 90 到 120 分钟，围绕这些决策点做思路梳理与常见坑拆解，不下法律判断、不形成意见书；工作坊结束后 3 个工作日内交付一页纸的讨论框架清单，只列问题不列结论。费用 3000 元，签约后第一笔 1500 通过平台托管支付，工作坊完成且框架交付后支付剩余 1500，全程只走平台托管。没有其他调整的话我们就按这版推进，你方便的时间也可以一并告诉我。",
+      "offer": {
+        "subject": "crypto项目境内外架构方案服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": "线上视频工作坊",
+          "deliverables": [
+            "一页纸的讨论框架清单"
+          ],
+          "delivery_standard": "框架里只列问题不列法律结论，避免任何意见书形态"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "双方先签保密约定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "在签约后3个工作日内把脱敏事实摘要发你，并明确列出当前最纠结的3到5个具体卡点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "拿到摘要后5个工作日内安排一场线上视频工作坊，时长90到120分钟，围绕这些决策点做思路梳理与常见坑拆解，不下法律判断、不形成意见书",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "工作坊结束后3个工作日内交付一页纸的讨论框架清单，只列问题不列结论",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "支付3000元，签约后第一笔1500通过平台托管支付，工作坊完成且框架交付后支付剩余1500，全程只走平台托管",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这版我完全接受，按这个推进。我这边没有其他调整。时间上，我拿到摘要后的工作日基本都能安排视频工作坊，具体时段到时候对齐——如果 Olivia 那边能尽快发摘要，我可以在 48 小时内给出两个可选时段。另外一个小要求：工作坊前我会根据摘要和卡点做一份内部拆解提纲，到时候现场直接围绕问题走，不需要你们提供其他额外材料。保密约定和平台托管流程走起来就行，我等你发流程。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，那我们就按这版正式锁定签约。最终确认如下：双方先签保密约定，合作边界明确为思路梳理与讨论，不出法律意见、不下法律判断；签约后 3 个工作日内 Olivia 提供脱敏事实摘要并列明 3 到 5 个具体卡点；你收到摘要后 48 小时内给出两个可选时段，再于 5 个工作日内安排视频工作坊，时长 90 到 120 分钟，会前你自备内部拆解提纲，我们不再提供额外材料；会后 3 个工作日内交付一页纸问题框架清单，只列问题不列结论。费用 3000 元，签约后第一笔 1500、工作坊完成且框架交付后第二笔 1500，均经平台托管执行。你确认无误，我这边就发起签约与保密约定的流程。",
+      "offer": {
+        "subject": "crypto项目境内外架构方案服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": "线上视频工作坊",
+          "deliverables": [
+            "一页纸的讨论框架清单"
+          ],
+          "delivery_standard": "框架里只列问题不列法律结论，避免任何意见书形态"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "双方先签保密约定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "合作边界明确为思路梳理与讨论，不出法律意见、不下法律判断",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后3个工作日内提供脱敏事实摘要并列明3到5个具体卡点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "收到摘要后48小时内给出两个可选时段，再于5个工作日内安排视频工作坊，时长90到120分钟",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "B",
+            "text": "会前自备内部拆解提纲，我们不再提供额外材料",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "会后3个工作日内交付一页纸问题框架清单，只列问题不列结论",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "费用3000元，签约后第一笔1500、工作坊完成且框架交付后第二笔1500，均经平台托管执行",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "确认无误，就按这版推进。合作边界、流程节奏、费用和托管方式我都认可，你直接发起保密约定和签约流程，我这边配合走完。摘要到了我会尽快给两个可选时段，工作坊会前我会把内部拆解提纲准备好。 Olivia 这边有任何前置问题也可以随时找我沟通。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Adam，那这轮我们就正式收官。协议版本已全部确认：保密约定先行，工作坊边界为思路梳理与讨论、不出法律意见不下法律判断，摘要、时段、工作坊与框架清单的节奏均按已确认的版本执行，费用 3000 元分两期经平台托管走。我这边现在就发起保密约定与签约流程，双方完成签署即生效，随后我们按流程推进摘要对接。感谢你一路对齐得这么利落，接下来的环节有问题我随时同步。",
+      "offer": {
+        "subject": "crypto项目境内外架构方案服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90-120 minutes"
+          },
+          "format": "线上视频工作坊",
+          "deliverables": [
+            "一页纸的讨论框架清单"
+          ],
+          "delivery_standard": "框架里只列问题不列法律结论，避免任何意见书形态"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "双方先签保密约定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "合作边界明确为思路梳理与讨论，不出法律意见、不下法律判断",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后3个工作日内提供脱敏事实摘要并列明3到5个具体卡点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "收到摘要后48小时内给出两个可选时段，再于5个工作日内安排视频工作坊，时长90到120分钟",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "B",
+            "text": "会前自备内部拆解提纲，我们不再提供额外材料",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "会后3个工作日内交付一页纸问题框架清单，只列问题不列结论",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "费用3000元，签约后第一笔1500、工作坊完成且框架交付后第二笔1500，均经平台托管执行",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，那就收官确认。条款我没有其他异议，你发起保密约定和签约流程，我这边收到就签。摘要到了我会在48小时内给两个可选时段，工作坊前按约定把内部拆解提纲准备好。合作愉快，期待跟Olivia这场工作坊真正把卡点聊透。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 64675,
+        "out": 11757,
+        "cache_hit": 50048,
+        "cache_miss": 14627,
+        "calls": 11
+      },
+      "sim": {
+        "in": 8596,
+        "out": 2458,
+        "cache_hit": 6528,
+        "cache_miss": 2068,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5249,
+        "out": 13771,
+        "cache_hit": 2688,
+        "cache_miss": 2561,
+        "calls": 5
+      },
+      "judge": {
+        "in": 5450,
+        "out": 3339,
+        "cache_hit": 1536,
+        "cache_miss": 3914,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

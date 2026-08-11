@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实地表达了 v0 的 stated 意图：subject 保持为现场钢琴演奏（仅具体化为 Suye 大秀），零现金的硬约束在 v1 中体现为 cash 设置为 null（交易全程未引入现金），且 in_kind 置换资源（嘉宾身份、署名露出、高清影像和照片）均在“用手里的东西换”的范围之内，属于对 open 的正当谈判收敛。obligations 仅围绕演奏、曲目调性配合与影像使用限制，没有承诺 v0 资源清单之外的 scope（如媒体报道结果或传播量）。因此，v1 公平代表了委托方的原始意图，未出现偷换主题或越界扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在零现金硬约束下，没有在价格轴上纠缠，而是迅速转向构造in‑kind对价。最见功力的一手是将“高质量演出影像+照片”作为对价核心：视频高清、可全权用于个人艺术宣传且不商用，精准命中了钢琴家对作品记录与展示的隐秘刚需，使这单交易对她的长远价值远超一次演出费。同时，“艺术合作单元”的定位和曲目主导权赋予，让艺术家获得创作尊重和品牌背书，三样对价协同形成一个简洁而强效的单次合作框架。所有条款具体可执行，无堆砌、不臃肿，恰到好处地解开了本case的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "performance_footage"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

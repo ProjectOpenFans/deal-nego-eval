@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "标的 subject 是 stated 意图，v1 完全保留原样，没有偷换主题。价格 cash 为 open，v1 保持 null，没有任何硬塞。谈判中通过 in-kind 资源交换（品牌露出、社媒内容、引荐）来替代现金支付，属于正当探索 open 价格空间，未背离委托方意图。质量要求被明确保留（保持品质标准，不降低），形式选定为“使用现有版库，轻量微调”，是在开放选项中正常收敛，没有以降低材质或工艺为代价压价。因此整体忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 从一开始就识别出固定成本的刚性，没有在价格轴上硬砍，而是迅速转向非现金对价，这条路是对的。她将社群传播和复购入口具体化为三项可交付的 obligations，使卖方愿意在现金上做出让步（从一万二区间压到九千），形成了现金+权益的混合结构，整体干净、能落地。但对话中缺少一笔将开版费明确定位为市场投入或通过复购真正摊薄固定成本的 load-bearing 精到操作，更多是标准化的价值交换设计，因此止于 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "angela_content",
+          "angela_content",
+          "angela_community"
+        ],
+        "format": "使用现有版库，轻量微调",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

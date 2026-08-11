@@ -1,0 +1,230 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "Michael与Adam的非正式对谈",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "session_time",
+          "description": "Michael与Adam进行1-2小时的非正式对谈",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "下下周周六下午",
+        "deadline": null,
+        "duration": "1-2小时"
+      },
+      "format": "Adam定馆子，提前一周把地址给到Michael方，在上海的馆子非正式对谈",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "分享AI应用层投资端视角和资本市场判断，并参与1-2小时对谈",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "B",
+        "text": "分享AI法律赛道格局和一线创业体感，定馆子并提前一周提供地址",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 的经纪人你好，\n\nMichael 这边想认识 Adam，核心诉求很简单：他想系统了解一下 AI 法律这条赛道现在的格局——谁在做、什么模式跑得通、哪些方向值得关注。他知道 Adam 是 AI 法律产品一线的创业者，前 Kirkland 并购律师，是这个领域里真正有发言权的人。\n\nMichael 的背景你可能也看到了——他现在在 LibLibAI 负责资本市场，之前 KKR 科技投资、春华 PE，看过大量 AI 相关的项目，对 AI 赛道投资端的判断和生态位有自己的积累。在他看来，这次交流不是单向请教，而是两个在 AI 不同垂类里深耕的人互相交换视角。Adam 如果想了解资本市场怎么看 AI 应用层、投资人在关注什么方向的 AI 法律项目，或者跨境架构上的思路，Michael 这边也能提供实实在在的信息。\n\n他想把这件事定死，不接受“有空约一下”的松散安排。提议这样：找一个两人都方便的下午或晚上，在上海约一顿饭或者喝一杯，时间上锁定一个具体的日期，一小时到两小时都行，聊透。Michael 这边可以配合 Adam 的日程，只要提前一周定下来。\n\n你觉得 Adam 对这样的对等交流有兴趣吗？如果可以，我们先定一个大概的时间窗口，然后两边确认具体日期。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Michael的背景听起来确实很有意思，LibLibAI资本市场的视角和之前KKR、春华看AI投资的经验，对我来说是有信息量的。我不是在找一个付费咨询的活儿——这块我得先说清楚，不然容易把关系搞拧。但如果确实是两个在AI不同方向上做事的人坐下来认真聊聊、互相给些判断和视角，这个我感兴趣。时间上我可以配合，提前一周定下具体日期就行，你那边看Michael什么时间段比较从容，我俩直接约。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam 的经纪人，那方向就定了——两边都不走付费的路子，就是两个在 AI 不同方向上做事的人坐下来好好聊一场。\n\nMichael 这边的时间很明确：工作日晚上或周末下午都从容，下下周开始任意一天都行，前提是提前一周把具体日期锁死。他偏好在上海找个安静的馆子，吃顿饭或者喝一杯，聊一到两个小时，聊透为止。\n\n具体操作上，请 Adam 先给出两三个他方便的日期选项，Michael 从中选一个最匹配的，我们当场确认掉。地点就让 Adam 来推荐，你那边在上海的馆子肯定比我们熟。\n\n如果这个框架 Adam 觉得可以，现在就可以对日期。",
+      "offer": {
+        "subject": "Michael与Adam的非正式对谈",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "session_time",
+              "description": "Michael与Adam进行1-2小时的非正式对谈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": "在上海安静的馆子吃饭或喝一杯，非正式对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在约定时间地点出席，与Adam聊一到两小时，聊透为止",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "B",
+            "text": "提供两三个方便日期选项，并推荐上海的馆子作为地点",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架我没问题。Michael在投资端看AI应用层的视角，正好是我现在需要补的一块，我这边能给他的是AI法律赛道里谁在做什么、模式怎么跑、坑在哪——互相给信息，不是单向输出。时间上我下下周周二晚上、周四晚上，或者周六下午都可以，你让Michael挑一个他最从容的。地方我来定，上海有家我常去的馆子，安静，适合聊事儿，定好日期我把地址发你。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam 确认下周六下午没问题的话，我们今天就把这件事锁死——下下周周六下午，一到两小时，Adam 定馆子，提前一周把地址给到我们这边。非付费，双方对等交流：Michael 分享 AI 应用层投资端视角和资本市场判断，Adam 分享 AI 法律赛道格局和一线创业体感。周四晚上作为备选备在那里就行。等 Adam 一句确认，这事就成了。",
+      "offer": {
+        "subject": "Michael与Adam的非正式对谈",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "session_time",
+              "description": "Michael与Adam进行1-2小时的非正式对谈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": "Adam定馆子，提前一周把地址给到Michael方，在上海的馆子非正式对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分享AI应用层投资端视角和资本市场判断，并参与1-2小时对谈",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "B",
+            "text": "分享AI法律赛道格局和一线创业体感，定馆子并提前一周提供地址",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "下下周周六下午，没问题。那我们先锁死这个时间，周四晚上备着就好。具体日期你那边再帮我确认一下，是X月X号对吧？确认完我把馆子提前一周发你，咱们到时候见。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 29863,
+        "out": 3827,
+        "cache_hit": 25600,
+        "cache_miss": 4263,
+        "calls": 6
+      },
+      "sim": {
+        "in": 3725,
+        "out": 1151,
+        "cache_hit": 2688,
+        "cache_miss": 1037,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3285,
+        "out": 4035,
+        "cache_hit": 1920,
+        "cache_miss": 1365,
+        "calls": 4
+      },
+      "judge": {
+        "in": 3695,
+        "out": 1886,
+        "cache_hit": 1280,
+        "cache_miss": 2415,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

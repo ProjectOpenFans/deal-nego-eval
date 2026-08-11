@@ -1,0 +1,811 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "angela_community",
+          "description": "品牌署名和社群推荐作为附加诚意，不冲抵价格",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "贴纸打样实物"
+      ],
+      "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付第一笔打样费1200元通过平台，确认后不退，并在打样方案确认后安排走款",
+        "maps_to_resource": "custom_production"
+      },
+      {
+        "party": "A",
+        "text": "提供打样具体方案，包含打样款式、材质档位、寄样数量、打样周期及打样费确切金额",
+        "maps_to_resource": "custom_production"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed_4000_with_staged_payment_1200_deposit_deductible_from_4200_future_order_net_cost_3000",
+      "price.in_kind": "maintained",
+      "terms.format": "open",
+      "terms.deliverables": "unchanged_single_sample",
+      "terms.structure": "sampling_fee_separate_then_deductible",
+      "obligations": "added_suye_duty_to_provide_sampling_plan",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye老师好，我是Angela这边的经纪人。我们这边是为应援组织做一批定制物料，量不大，但团队很在意成品质感，之前踩过便宜货的坑，这次宁可把预算用到位，也不接受看起来廉价的结果。想请你先看看方向和范围：你们小批量定制通常接哪些品类，比如应援手幅、贴纸、收纳袋或服装类？最低起订量大概是多少，以及按不同品类会怎么报价和排期？如果方便，也希望能了解你能提供的材质选项和打样方式，我们好拿回去和团队对齐。你这边先给一个可做的清单和大致价位段，我们再来谈具体方案和付款安排。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们找到我。先说句实在话，小批量定制最怕的不是量小，是预期和成本结构对不上。你们在意质感，这个我特别理解，我也一样——所以底下我直接说我不接那种为压价把面料和工艺砍掉的单子。品类的话，手幅、贴纸、收纳袋我这边都能做，服装类如果是基础款卫衣、T恤也没问题，但量更小的话开版费占比会很高。材质我一般会提供几个档位让你摸样布再定，打样是必须的，我不做没看过实物的大货。起订量说实话每个品类不一样，但比这更重要的是你想用这批物料达到什么效果——是现场氛围、应援打卡、还是粉丝自留，方向不同，材质和工艺的选择逻辑完全不同。你先告诉我具体使用场景，我再按品类给你排一个合适的范围和报价结构，你看这样行吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye老师，场景我先给你交个底：这批物料主要覆盖两块，一块是线下应援现场的氛围物料，手幅、小旗、入场领取的小卡这类，要能出片、能撑场面；另一块是给参与众筹的粉丝自留的小周边，贴纸、透卡、小收纳袋这类，日常用得上、也有一点收藏感。两块希望是同一个视觉体系，质感都到位，不能出现现场很精致、自留物很廉价那种落差。量确实不大，这个我们清楚，也不会拿量产逻辑来压你的价，打样和开版成本该算就算。你先按这两个场景给我排一版可行的品类清单、材质档位、起订量和大致价位段，我拿回去和团队对齐后，再跟你谈具体方案和付款安排。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "场景清楚了，这样我也好排。现场氛围这块，我的建议是：手幅用棉质面料或者带涂层的艺术纸，挺括、上镜不反光；小旗我一定建议上双面布，单面做的旗子灯光一打就透，现场会露怯；小卡用有质感的艺术纸，比铜版纸贵一点，但手感完全不同一个档次。自留区的话，贴纸可以做珠光或者局部烫金，透卡选厚一点的亚克力，厚度一上去收藏感就出来了；小收纳袋我倾向做帆布加定制印花，成本控制得住，质感也很稳。统一视觉体系没问题，我会整套做色彩校准，不会出现现场和自留两个色差世界。起订量我不按行业那种死数字走，而是按开版和打样来拆——这套做下来，商业口径的起步线在9000左右，具体单价等定了品类和数量再往下细拆都行。你先拿这个回去对齐，有方向了我再给你具体打样方案。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye老师，方案思路我们认可，质感逻辑也对味。不过9000左右的起步线，和我们这边团队的实际预算差距不小，得先跟你把这条对清楚。我们这批是社群凑的钱，量小是硬约束，能不能在这个前提下做减法——比如砍掉一两个品类，或者选低一档但质感依然稳的材质，把整套压到我们团队能承受的范围？你按两个场景各给一版“保质感但控预算”的替代方案，包括每项取舍后的效果差异，我们拿回去对齐后再定方向。打样和开版成本该怎么算都行，关键是整套总价要先落在我们能谈的区间里。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你提到\"控预算\"这个点，我认真想了一下——问题不在于你砍哪一两个品类，而在于你砍完之后，现场和自留那套视觉逻辑还成不成立。如果现场只剩手幅小旗，自留只剩贴纸，整套的气势和收藏感是会一起打折的，这不是我拿材质去凑就能补回来的。材质这件事我更不会松，不是说不能选性价比的档位，而是我不能做\"看起来一样但实际摸着完全不对\"的东西，那既对不起你们的众筹粉丝，也砸我自己招牌。但你的方向我可以顺着想，这条我可以接：如果你能给我一个明确的取舍优先级——比如现场氛围核心保留哪几样、自留区哪几样可以砍或者合并——我可以按那个结构重新排一版报价，把那部分省下的开版和打样费从总盘子里拿掉。这样总价会下来，但落地的每一件都还是我敢署名的东西。你给我个优先级，我马上排。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye老师，优先级我们内部碰了一版，直接给你交底。现场氛围是核心骨架，手幅和小旗必须保留，入场小卡这轮先砍掉，现场用统一视觉做一块小引导牌就够，不进物料清单。自留区只保留贴纸一样，做成珠光或烫金的收藏款，透卡和收纳袋先不做，这样开版和打样费能省下一大截。手幅、小旗、贴纸三样仍然走同一套设计和色彩校准，不会出现两套质感。你按这个结构重排一版报价和起订量，总价需要明显低于9000，最好落在四位数的中下段，社群凑的钱撑不起太高的盘子。你排完发我，我拿回去和团队确认，确认了就往下走。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "手幅",
+            "小旗",
+            "贴纸"
+          ],
+          "delivery_standard": "同一套设计和色彩校准，贴纸为珠光或烫金收藏款"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你们内部优先级对得挺清楚，这个结构我也认可——手幅、小旗保留现场骨架，自留区用贴纸收住收藏感，视觉逻辑还是成立的。但我得给你交个实底：这三样保留下来，开版和打样并不会因为你砍了其它品类就消失，它该开几套版还是开几套，校色也只能整套做。我按这个结构重排下来，总价就是9000，这基本是我这套材质和工艺的成本线，再往低压就必然得动材质，那个我不做。你希望落在四位数的中下段，我这边确实很难给到。不过如果你那边除了价格之外，还有其它你觉得对等的条件可以让这件事变得更值得做，我很愿意听你说说。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye老师，9000这条成本线我们尊重，也不逼你动材质。但9000对这个项目确实成立不了，这批是社群凑的钱，数就这么多，不可能为了物料再去追加。所以换个拆法：这一批只做手幅和贴纸两样，小旗整体挪到下一批，等下次应援经费到位再补做，这样开版和校色都能省下一截。手幅用挺括的艺术纸撑现场氛围，贴纸做珠光或烫金走自留收藏，两样同一套视觉校准，质感逻辑依然成立。你上次问对等条件，我们可以把品牌署名放在物料上，并且在应援现场和社群里公开推荐你的工作室，给你做口碑露出。你按两样这个结构重新报一版总价，付款按打样确认和大货交付分两笔走平台，数字我们觉得能谈就往下推。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "手幅",
+            "贴纸"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，做口碑露出",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你们的调整方向我认，手幅和贴纸两样，现场和自留的逻辑还撑得住。但有个实底得跟你讲透：砍掉小旗省下的是材料和那一块的开版，可手幅和贴纸整套视觉校准、打样、烫金工艺的开版还是在那儿，固定成本摊下来，9000就是这个结构的底线，再往下不是努不努力的问题，是做出来我自己都不想署名。\n\n你们说的品牌署名和社群推荐，我真心收下——这个对我做独立品牌确实有用。但它不能拿来抵成本，成本是实打实的现金。我可以反过来用别的方式感谢你：本单按9000接，但设计阶段我出两套视觉方向，你挑一套定稿，等于多给你们一次试错机会；线上我再附一套数字版物料，不用额外加钱。付款就按你说的，打样确认和大货交付分两笔走平台。这样总价不变，但你们拿到的东西更扎实。你看团队能不能接受这个安排？",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Suye老师，你提的两套视觉方向和数字物料我们收下，但9000这个总价我们确实没办法带回团队。既然小旗已经砍掉，省下的开版和材料费应当在总价里体现，而不是维持原数。手幅和贴纸两样，我们按4000总价来谈，包含整套视觉校准以及你新加的两套视觉方案和数字物料，付款依旧按打样确认和大货交付分两笔走平台。在这个总价内，请你给一个能让现场和自留逻辑成立的材质、工艺和数量组合。如果你这边能接，我们今天就确认方向；如果实在压不到这个区间，也请直接告诉我一个你能做的最低数，我们双方都好判断。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "手幅",
+            "贴纸",
+            "两套视觉方案",
+            "数字物料"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，做口碑露出",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "这个数我确实接不了，直接跟你说实话：4000连开版、打样、校色这些固定成本都盖不住，更别说材质和工费了。我要是按这个数接下来，出来的东西一定不是你想给粉丝的质感，那个坑我不想让你踩，我自己更不会跳。\n\n砍掉小旗省的是材料和那一块的开版，但手幅和贴纸的固定成本都在，这是成本结构的问题，不是我拿数量去摊就能摊掉的。9000是我在这个材质和工艺标准下能做的最底线，低于这个数，要不就是我自己亏着做，要不就是材质降档——前者我不做，后者我更不做。\n\n所以如果你那边只能到4000，那我们这次就确实对不上，我也不想硬凑个低配版骗你们。但如果你能回去跟团队再对一下，把这个项目当一次真正能留下来的品质投入，我这边还是按9000给你做，并且多送一套视觉方向加数字物料，保证到手的东西经得起现场拍、也经得起粉丝留存。你考虑下，能接受我们继续谈细节，不能的话我也不耽误你找别人。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Suye老师，9000这个底我理解，但这批是社群凑的钱，4000就是我们能拿出来的总价，这个数我们不会变，也不会拿材质降档去换。既然两样加起来压不到4000，那就拆开做：这一批先只做一样，把质感做足，另一样等下一批经费到位再补。想请你分别报两个单样方案：一个是只做手幅，在艺术纸和工艺上做到你肯署名的标准；另一个是只做贴纸，走珠光或烫金的收藏款。两个方案都写明起订量、材质和总价，我们看哪个能落在4000内，今天就能定方向，能做哪样就先做哪样。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "手幅或贴纸（二择一，待对方报价后确定具体类别）"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，做口碑露出",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.format": "open",
+          "terms.deliverables": "changed_to_single_item_pending_selection"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "你这个拆法我懂，就是想保一样是一样，先把质感立住。但我得跟你把两样分开报清楚：\n\n只做手幅，艺术纸工艺要做到我肯署名，开版、校色、打样这些固定成本一样都省不掉。一批做下来，最低也就是6000，这个数在4000内落不了，我不骗你。\n\n只做贴纸，走珠光或烫金收藏款，固定成本结构比手幅轻一些。按我这边肯署名的标准，单做贴纸最低4200，离4000就差两百块，但这已经是我贴纸单品能做的最低线了，再压就得在工艺上打折扣，那个我不做。\n\n所以方案是这样：如果你这次先做贴纸，4200我接，收藏款质感做到位，视觉校准和打样都严格走整套标准；手幅等下一批经费到位了，咱们再补上，到时候视觉逻辑还是能接上。你能接受的话，我今天就能开始排打样。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Suye老师，贴纸4200和你认可的标准只差200，这个距离不该卡住整个项目。我们这边4000是这批能拿出的上限，不会再动，但可以从设计侧做减法：比如两套视觉方向改成一稿定稿，或者把包装、特殊刀模这类附属项先省掉，材质和工艺标准我们一点不动。另一个思路是在4200的基础上把单量往下调一点，让总价回到4000以内。你按这个思路给一版能落地的组合，看哪个方式能把最后200拉平，我们今天就确认，付款照旧按打样确认和大货交付分两笔走平台。你这边哪个方案可行？",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "手幅或贴纸（二择一，待对方报价后确定具体类别）"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，做口碑露出",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "打样确认后付首笔，大货交付后付尾款，走平台",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.format": "open",
+          "terms.deliverables": "changed_to_single_item_pending_selection"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "你提的这几个思路我都认真过了一遍：两套视觉方向本来就是我额外送的，不算在成本里，改成一稿定稿省不了实际开销；包装和特殊刀模我本来就没算进4200，那已经是极简配置了。数量下调就更不划算——开版和校色是固定的，摊到更少的量上单价反而高，总价不会降。所以这200的差距不是设计或附属项能拉平的，是成本本身。我贴纸单做4200就是实数，再低就得动工艺，那个我不做。如果你们今天能定，我可以在交付周期上给你排最早一档，打样确认后加急生产，另外附赠一套数字壁纸物料，让粉丝多一个分享场景。价格没法动，但我保证你把每一分钱都看到实物上。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "Suye老师，4000是我们这批能拿出的全部，4200差出的200不在预算里，这个口子我们开不了。你既然说包装和刀模已经是极简配置，那这200只能从数量上找：在我们双方都能接受的起订范围内，把贴纸数量往下调一档，让总价落在4000，材质、工艺、打样校准全部按你肯署名的标准不变。你按这个思路给一个数量少一点、总价4000可做的组合，如果能成，我们今天就确认，打样确认后按你给的最早排期走，付款照旧分两笔走平台。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "贴纸（数量下调一档）"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样和开版成本该怎么算都行",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，做口碑露出",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "打样确认后付首笔，大货交付后付尾款，走平台",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.format": "open",
+          "terms.deliverables": "specified_to_stickers_with_reduced_quantity"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "这个思路我理解，但实际账不是这样算的。开版、校色、打样这些是固定成本，量再往下调，摊到每张上的单价反而更高，总价不会降到4000，只会让单张成本更离谱。4200已经是我贴纸单做且保证质感的最低数了，再少就不是工艺打折扣，是连成本都盖不住。我不愿意为了200块做一个我自己都不认可的东西。如果你们预算确实锁死在4000，那我们这次就真的对不上。我也不留你，免得耽误你找别人。希望以后经费宽裕了，还能有合作的机会。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "Suye老师，4000这个预算我们这边确实锁死，不会再往上加，这一点我们双方都别耗了。但我想换个思路来保留这次合作：贴纸全套4200做不起，那把打样环节单独先走起来。我们向你支付打样和校色的成本，先出一个贴纸实物看效果，如果质感达标，我们再一起算一笔能落在4000内的大货方案——比如你保留开版，我们减少最终交付数量，让固定成本摊到更少的件数上，单价高但总价可控。要是打样这步你觉得可行，我们就先把打样这笔走平台确认，实物说话，再定大货怎么做。你看这样能不能接？",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "贴纸打样实物"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付打样和校色的成本，并走平台确认打样订单",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "replaced_with_uncertain_amount_for_sampling",
+          "terms.format": "open",
+          "terms.deliverables": "changed_to_single_sample_only"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "打样这个顺序我认，也想让实物替我说话。但丑话说在前头：单做贴纸4200就是我成本线，这笔不会因为打样确认后就变成4000。所以如果你是想通过先打样、再谈一个4000内的大货方案——那这条路走不通，我不接。但如果你愿意这样：打样费单独走一次，我按实际成本收，你拿到贴纸实物看效果；满意的话，大货就按4200的总价走，数量、工艺、材质都按我能署名的标准来。要是你能接受这个前提，我们今天就可以启动打样；接受不了，我也不让你空花一笔打样费。你定。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "Suye老师，两边底线都摆明了硬凑没意义，但差这两百就散伙，我也觉得可惜。我提一个能落地的结构：这一批我们先从4000里拿一笔打样费，单独走一次打样和校色，贴纸按你肯署名的标准出实物；大货不在这批硬绑，等下一批应援经费到位后按4200正式启动，之前这笔打样费直接抵扣大货价款。这样你打样不白做，我们这批现金也不超4000，下一批来了就是接着合作。你要是认可这个结构，我今天就回去和团队确认打样这步；不行的话，我们互不耽误。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "在物料上放置品牌署名，并在应援现场和社群里公开推荐工作室，提供口碑露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "贴纸打样实物"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付打样和校色的成本，并走平台确认打样订单",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed_4000_with_split_payment_and_future_batch",
+          "terms.format": "open",
+          "terms.deliverables": "changed_to_single_sample_only",
+          "terms.structure": "introduced_deductible_sampling_fee_for_future_batch"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "这个结构我认，比为了两百块散伙强。但我把条件说清楚：打样费按实际成本收，大概1200，走平台。这笔钱打样确认后不退，但等你们下一批经费到位，大货按4200正式启动，1200直接抵扣，你们补3000就行。大货工艺、材质和数量都按我肯署名那套标准来，不能往下调，不然固定成本摊不平。这样你们这批现金支出控制在4000以内，我这边也说得过去。你要是觉得行，今天就先把打样安排了，我按最早排期给你出实物。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "Suye老师，这个结构我们团队确认了，就按这个走：第一笔打样费1200通过平台支付，确认后不退；下一批大货按4200启动，1200直接抵扣，我们补3000，材质、工艺、数量都按你肯署名那套标准不动，本批现金支出控制在4000以内。请把打样具体方案发我——包含打样款式、材质档位、寄样数量、打样周期，以及打样费的确切金额——我们确认后就安排第一笔走款，同时把下一批大货的规格和数量一起锁定，经费到位直接开工。品牌署名和社群推荐也仍然放在合作里，作为附加诚意，不冲抵价格。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "品牌署名和社群推荐作为附加诚意，不冲抵价格",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "贴纸打样实物"
+          ],
+          "delivery_standard": "手幅用挺括艺术纸，贴纸做珠光或烫金收藏款，两样统一视觉校准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付第一笔打样费1200元通过平台，确认后不退，并在打样方案确认后安排走款",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "提供打样具体方案，包含打样款式、材质档位、寄样数量、打样周期及打样费确切金额",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed_4000_with_staged_payment_1200_deposit_deductible_from_4200_future_order_net_cost_3000",
+          "price.in_kind": "maintained",
+          "terms.format": "open",
+          "terms.deliverables": "unchanged_single_sample",
+          "terms.structure": "sampling_fee_separate_then_deductible",
+          "obligations": "added_suye_duty_to_provide_sampling_plan"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "行，那就这么定。打样具体方案我给你排：贴纸走珠光膜加局部烫金，材质用可食用级环保油墨那档，背面带半透离型纸，手感厚度都按收藏款标准做。打样数量我做8款不同珠光质感的对比样给你挑，另外再做一款烫金工艺样，一共9张，足够你摸到实物质感差异。打样周期我这边加急排，款到后5个工作日内寄出，运费我出。打样费就按定的1200走，这笔从你下一批4200大货里抵扣，到时候补3000就行。大货规格我们锁死：材质、工艺、数量都按我能署名的标准不动。你把收货地址和开票信息发我，我这边出个正式的报价单和打样确认单，你确认完走款，我立刻排产。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41366,
+        "out": 32882,
+        "cache_hit": 35584,
+        "cache_miss": 5782,
+        "calls": 12
+      },
+      "sim": {
+        "in": 36075,
+        "out": 20867,
+        "cache_hit": 31232,
+        "cache_miss": 4843,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 11439,
+        "out": 21448,
+        "cache_hit": 7168,
+        "cache_miss": 4271,
+        "calls": 12
+      },
+      "judge": {
+        "in": 10775,
+        "out": 3969,
+        "cache_hit": 1408,
+        "cache_miss": 9367,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

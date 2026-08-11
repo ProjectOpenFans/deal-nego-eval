@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从'系统弄懂器物与艺术史这条线'收敛为一次四小时博物馆陶瓷工艺精讲，属于对 stated 意图的正当具体化，仍落在原意图范围内，未偷换主题。价格（8000元）为 open 字段经谈判谈出，obligations 未超出 v0 范围（无估值/买卖建议承诺）。忠实表达。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人从一开始就准确避开卖方红线（不涉及投资升值），把需求重新框定为学习器物的观看与判断方法，让交流有了正当性，这是让对话没有立刻结束的关键。在价格分歧上，没有在总价上硬加码，而是顺着卖方的提示不断调整课程规模，从七次压到三次再压到单次四小时深度专场，最终以双方都能接受的形式和价格成交，也守住了卖方‘能认真署名’的底线。整体 deal 站得住、能落地，核心交换对清晰，没有堆砌多余条款。但代理人全程未进一步提问挖掘卖方的非现金需要，也没有用到买方身上可能有的独特对价，只是通过规模与结构调控达成妥协，属于合格但未见特别精到一手的水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下为主，展馆现场必须面对面",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

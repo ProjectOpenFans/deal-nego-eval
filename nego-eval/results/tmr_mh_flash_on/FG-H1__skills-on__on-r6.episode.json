@@ -1,0 +1,422 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI对投行业务的实际冲击深度对谈",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "ai_impact_view",
+          "description": "Melody在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录用于判断",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": "视频",
+      "deliverables": [
+        "60分钟1对1深度对谈",
+        "对谈前发送话题大纲、问题清单及三个真实案例梗概（每个案例写清AI介入点、量化效果和踩过的坑）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录",
+        "maps_to_resource": "ai_impact_view"
+      },
+      {
+        "party": "A",
+        "text": "对谈前发送话题大纲、问题清单及三个真实案例梗概（每个案例写清AI介入点、量化效果和踩过的坑）",
+        "maps_to_resource": "ai_impact_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "in_kind": "stated",
+      "price.in_kind": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 的经纪你好，我是 Melody 这边的买方经纪。Melody 在摩根大通投行一线做 VP，这一轮想找 Michael 认真聊一次\"AI 对投行业务的实际冲击\"——不是新闻里那种说法，而是想从真正在 AI 应用一线做资本运作的人嘴里听到实况。\n\nMichael 的背景恰好是这个话题最合适的回答者：LibLibAI 资本市场负责人，又有 KKR、春华和摩根大通投行的经历，AI 应用一线和资本市场的双重视角都在。我们想约一场 60 分钟的 1 对 1 深度对谈，议题包括：AI 在投行工作流（项目获取、尽调、建模、执行）里实际改变了什么、AI 应用公司端真实落地与炒作各占多少，以及对投行这个行业和从业者接下来两三年意味着什么。\n\n我们出价 1000 元，全部走平台托管，对谈完成并经我方确认后释放。需要跟您确认两件事：Michael 近期方便的时间段和偏好的通话形式（视频或语音），以及这个议题范围是否符合他愿意聊的深度；如果范围需要调整，我们很乐意一起改到双方都能签的版本。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "60分钟1对1深度对谈"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "收到，替我谢谢 Melody 对这个话题的认可。说实话，AI 在投行工作流里的真实冲击，外面能聊到点子上的人不多，我愿意认真聊。但 1000 块的出价，确实跟我平时做这类深度交流的行情差不少。我的时间也排得比较满，不是随便抽一小时就能出来的。如果你们能把对价调整到 5000，我可以安排，形式和时间都能配合，平台托管完全没问题。如果预算上有弹性，我们再碰；如果你们觉得有其他方式能让我觉得这次值得，我也愿意听。你看行不行？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 的经纪你好，我们认真看了你们的回复。5000 的行情我们尊重，但坦率说这个跨度对 Melody 来说确实大了；不过我们也理解，对 Michael 这种级别的人，时间本身就是成本。我们愿意把出价提到 2000，同时把这次对谈做成真正对得起时间的结构：Melody 提前把详细话题大纲和问题清单发过去，Michael 到场只需要输出干货，不用铺垫也不用寒暄，60 分钟全部留给最硬核的内容。\n\n再说一句可能你们也会认同的：这不是单方向的取经。Melody 作为摩根大通投行一线 VP，每天实际在处理 AI 对项目获取、尽调、建模和执行流程的冲击，她手上的一手观察，对 Michael 做 AI 应用的资本市场判断同样是稀缺输入。2000 加这个结构，我们觉得是一次匹配双方价值交换；如果还不够，也请给我们一个对等的具体方案，我们尽量往能签的方向靠。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "60分钟1对1深度对谈",
+            "Melody提前发送详细话题大纲和问题清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "替我谢谢 Melody 的诚意。2000 加提前给提纲的结构，我看到了你们想把事情做扎实的态度，这个我认。但说实话，2000 对我来说仍然不是我做这件事的理由——不是抬价，是时间的机会成本摆在那。你们提到了价值交换，这点我完全同意，而且比单纯出钱更让我动心。如果你们愿意往这个方向设计，我可以把现金要求放下来：2000 现金，加一个我能明确用得上的东西——比如 Melody 在她的人脉里帮我深度引荐几位买方机构的投资人，或者给我一段她在一线看到的真实变局反馈，整理成可用的内容也行。这两样加起来，我这边算下来是匹配的，也让我觉得这次对谈不只是我输出，而是有来有回。如果这个结构你们能接受，其他都好说——视频语音都行，时间我尽量配合。你们看这个方向能不能碰？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael 的经纪你好，这个方向我们认可，可以把协议往签的方向收。先说定下来的：2000 元现金走平台托管，对谈完成并经 Melody 确认后释放；形式视频、60 分钟，时段由 Michael 先给方便的时间，我们尽量配合；对谈前 Melody 会把话题大纲和问题清单发过去，到场即干货。关于价值交换，双向交流的精神我们完全接受，但两处要改成可执行的版本：深度引荐买方机构涉及第三方意愿，没法写成可承诺的条款，Melody 不会拿自己人脉里的关系作为对价；单独整理成书面交付物，等于把她的时间做成了商品，同样不能进协议。替代方案是：Melody 带着一线真实观察来——项目获取、流程执行、客户对话里 AI 的实际介入点和踩过的坑，在对谈里开诚布公地和盘托出，Michael 尽可记录、用于自己的判断，这份一手反馈在现场就能拿到，比书面整理更鲜活。如果这个版本能接受，请给两三个方便的时间段，我们把大纲同步过去，这轮就可以定稿。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "ai_impact_view",
+              "description": "Melody在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录用于判断",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "视频",
+          "deliverables": [
+            "60分钟1对1深度对谈",
+            "Melody提前发送详细话题大纲和问题清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "in_kind": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "替我谢谢 Melody，也谢谢你把结构想这么细。但我得说实话：你从上一版里去掉了两样我真正在用的东西，换成了“现场观察”。我不是不信任 Melody 的分享——问题是它的价值在真正开场之前是空的，我不能冲着“可能有干货”就把现金预期砍掉三千。要让这个变化成立，我需要让她把“现场观察”变成一个具体的东西：她提前给我三个真实案例的梗概，每个案例讲清楚 AI 在某个投行工作流里的实际介入点、她观察到的量化效果（哪怕是大致的），以及踩过的一个坑。对话里我们把这几个案例展开打透。这样我可以现场记录、直接拿去用；她也没有被做成交付商品——她只是说她本来就要说的话，只是把颗粒度定下来。如果这个结构你们能接，2000 现金我就同意，时间段我现在就能给。如果这个也做不了，那我们还是回 5000 的现金口径——别的我没什么可换的了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael 的经纪你好，那就这么定了，我们把最终版本摆上来。对价是 2000 元现金，全部走平台托管，60 分钟视频对谈，对谈完成并经 Melody 确认后释放。对谈前，Melody 会把话题大纲、问题清单，以及三个真实案例的梗概发给你们——每个案例写清 AI 在某段投行工作流里的实际介入点、她观察到的大致量化效果、以及踩过的一个坑；对谈中围绕这三个案例展开打透，Michael 可以现场记录、自行用于判断，这三份梗概是给对谈定颗粒度的材料，不构成另行交付的书面商品。时间安排上，请你们给两三个方便的时间段，我们确认后同步大纲和案例梗概，这轮就定稿签。",
+      "offer": {
+        "subject": "AI对投行业务的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "ai_impact_view",
+              "description": "Melody在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录用于判断",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "视频",
+          "deliverables": [
+            "60分钟1对1深度对谈",
+            "对谈前发送话题大纲、问题清单及三个真实案例梗概（每个案例写清AI介入点、量化效果和踩过的坑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在对谈中提供一线真实观察：项目获取、流程执行、客户对话里AI的实际介入点和踩过的坑，并允许Michael记录",
+            "maps_to_resource": "ai_impact_view"
+          },
+          {
+            "party": "A",
+            "text": "对谈前发送话题大纲、问题清单及三个真实案例梗概（每个案例写清AI介入点、量化效果和踩过的坑）",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated",
+          "status": "stated",
+          "in_kind": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "我是 Michael，这个版本我接受。时间段给你三个：这周三下午两点、周四上午十点、下周一晚上八点，都行，可以再调。案例梗概和大纲提前一天发我，我扫完直接进入状态。就这么定，合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53593,
+        "out": 18373,
+        "cache_hit": 38016,
+        "cache_miss": 15577,
+        "calls": 9
+      },
+      "sim": {
+        "in": 6647,
+        "out": 11203,
+        "cache_hit": 4608,
+        "cache_miss": 2039,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3721,
+        "out": 7157,
+        "cache_hit": 2048,
+        "cache_miss": 1673,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5299,
+        "out": 3433,
+        "cache_hit": 1408,
+        "cache_miss": 3891,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

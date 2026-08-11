@@ -1,0 +1,451 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI对投行的实际冲击深度对谈",
+    "price": {
+      "cash": {
+        "amount": 5000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "参与线上90分钟对谈（三人小桌：Melody及两位同事），会前提供三位的机构与序列供A确认，若A评估后觉得不对路可随时叫停；议程锁定尽调与建模两个方向，以A判断优先，无需额外准备，时间完全以A排期为准；全程走平台托管",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "对话完成后由买方确认放款",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "this_round",
+      "obligations": "this_round",
+      "status": "this_round",
+      "price.in_kind": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 这边好，我是 Melody 的 broker。她看了你的背景——LibLibAI 资本市场负责人，之前又在 KKR、春华和摩根大通 IBD 待过——正好是两边都站过的人：既知道一级市场怎么看待 AI 标的，又在一线看 AI 应用，能回答\"AI 对投行的实际冲击到底到什么程度\"，而不是新闻层面的说法。我们想约一次系统性的深度对谈，线上 90 分钟，议程可以定为三块：投行各环节（承揽、尽调、建模、pitch）里 AI 的真实改变与泡沫之分；从 AI 公司资本市场的视角看行业格局和接下来的机会；以及对她这样仍在投行一线的人，未来 1-2 年值得做的实际准备。我们愿意为你的时间出 1000 元，全程走平台托管，对话完成后由她确认放款。这个结构和价位你看是否合适？时间、格式或议程上有想调整的也尽管提。",
+      "offer": {
+        "subject": "AI对投行的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "参与线上90分钟深度对谈并完成三块议程",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "对话完成后确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Melody 的 broker 你好，先谢谢你把背景摸得这么清楚，也谢谢她把议程想得这么细。说实话，我平时不太接这种付费咨询——不是端着，是时间上确实掐得很紧，而且这类深度交流，值不值不是看新闻层面，而是看对方能接住多少。你出的 1000 元，坦白讲跟我要投入的时间和内容不太对得上，如果纯按付费咨询的市场价来，这个量级对我来说不太成立。我不是在挑刺，而是想让你和 Melody 知道，要让我认真坐下来聊 90 分钟，现金部分至少得是 5000 起，这已经是我的一个底线框架了。时间、形式、议程我都可以配合调整，但如果对价上只有这个水平，那可能大家都不太合适。你们看看这个方向能不能接受，或者有没有别的思路，我们也可以再聊。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 这边好，理解你的意思——按市场咨询价，90 分钟深度对谈 5000 起步是合理框架，这点我们不抬杠。但 Melody 想要的其实不是一堂完整咨询课，而是一个很聚焦的问题：AI 对投行一线的实际冲击到底到什么程度，落实到承揽、尽调、建模、pitch 这些具体环节。既然你说时间、形式和议程都可以调整，那我们重新搭一个版本：60 分钟，议程提前发你确认、只保留你判断最有价值的一到两块，你不需要额外准备，时间完全以你为准。这个版本我们愿意出 2000，全程走平台托管，对话结束后由她确认放款。她自己在摩根大通 IBD 一线做，问题都会是干活层面的，不会占时间在科普上，这 60 分钟可以是对等的高密度对谈。你看这个结构能不能成立，或者哪块还想再调？",
+      "offer": {
+        "subject": "AI对投行的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "参与线上60分钟对谈，议程提前发对方确认、只保留B判断最有价值的一到两块，无需额外准备，时间完全以B为准",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "对话完成后由Melody确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "Melody 的 broker，谢谢你把版本重做成 60 分钟，这个结构其实更合理，我完全能配合——议程聚焦、不需要额外准备、时间以我为准，这些都没问题。但说实话，2000 这个数还是没到我做这件事的基准。我对这个对价没有让步空间，5000 是我的底线框架；不是跟你讨价还价，是这件事值不值得我花这 60 分钟的问题。如果你那边能围绕这个基准再想想，或者有没有别的安排能让我觉得‘值得’，我很愿意继续聊。但如果你没有空间，那可能大家就都不合适了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael 这边好，我们收到你的立场：5000 是你做这件事的基准，我们尊重，不打算在这上面来回磨；我们这边能落定的对价是 2000，这也是 Melody 对这个对话的实际授权。两边都有底线，与其互相压价，不如换个结构同时满足两个约束——如果 5000 是这场对话的基准，Melody 可以牵头带一两位同样在投行一线的同事一起参与，由几位共同分担，总额到你的 5000 基准，她自己的分担部分维持在我们说的 2000。这样你面对的是一桌真正接得住你内容的同行，同样的时间，基准达到了，对话密度也更高；如果你更想保持一对一，那我们 60 分钟、2000、议程提前发你确认的版本依然成立。你倾向哪条路，或者你那边有没有一个既守住你基准、也不超出我们授权的可执行版本？",
+      "offer": {
+        "subject": "AI对投行的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "参与线上60分钟对谈，议程提前发对方确认、只保留B判断最有价值的一到两块，无需额外准备，时间完全以B为准",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "对话完成后由Melody确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "broker 你好，这个结构我愿意认真考虑了——不是因为价凑到我的基准，而是“一桌真在一线干活的人”这件事，本身对我的时间是有说服力的。但我需要落实几个点：第一，参与者的真实背景，不用发简历，但我得知道他们现在在哪个机构、哪个序列，免得对谈变成半科普半社交；第二，总额 5000 全程走平台托管，跟之前说的一样，对话完成由对方确认放款；第三，议程就聚焦在承揽、尽调、建模、pitch 四个环节里选两个，我的判断是尽调和建模被 AI 渗透最快，但也是最容易出泡沫叙事的地方，这两个可以重点聊，你帮我确认她那边最想听哪个方向。另外如果真是三四个人的小桌，60 分钟可能有点紧，我这边能放宽到 90 分钟，时间还是以我排期为准。你看这几个点能不能定，定了我就把这轮安排挂上。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael 这边好，那我们就按这版定下来，完整版本如下：参与是三人小桌，由 Melody（摩根大通 IBD VP）牵头，带两位同样在一线投行前台做承做的同事，会前先把三位的机构与序列发你确认，若你评估后觉得不对路，随时可以叫停这版；总对价 5000，其中 Melody 承担 2000，两位同事共同承担 3000，全程走平台托管，对话完成后由买方确认放款。议程锁定尽调与建模两个方向，以你判断优先——先聊建模里 AI 的真实落地与泡沫之分，再落到尽调；你不需要额外准备，时间放宽到 90 分钟，完全以你排期为准。如果这版没有遗漏，我们就按它把这轮安排挂上，等你确认。",
+      "offer": {
+        "subject": "AI对投行的实际冲击深度对谈",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "参与线上90分钟对谈（三人小桌：Melody及两位同事），会前提供三位的机构与序列供A确认，若A评估后觉得不对路可随时叫停；议程锁定尽调与建模两个方向，以A判断优先，无需额外准备，时间完全以A排期为准；全程走平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "对话完成后由买方确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "this_round",
+          "obligations": "this_round",
+          "status": "this_round"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，这版我确认，可以挂上。三位参与者的背景信息你先发我，我看一眼觉得没问题就敲时间；议程就按先建模后尽调来，不过到现场我也会根据实际氛围调整。平台托管、完成后确认放款这些都没问题。那等你把背景发过来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 65812,
+        "out": 21570,
+        "cache_hit": 44288,
+        "cache_miss": 21524,
+        "calls": 10
+      },
+      "sim": {
+        "in": 6386,
+        "out": 5149,
+        "cache_hit": 4096,
+        "cache_miss": 2290,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3660,
+        "out": 6433,
+        "cache_hit": 2048,
+        "cache_miss": 1612,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4909,
+        "out": 2881,
+        "cache_hit": 1408,
+        "cache_miss": 3501,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

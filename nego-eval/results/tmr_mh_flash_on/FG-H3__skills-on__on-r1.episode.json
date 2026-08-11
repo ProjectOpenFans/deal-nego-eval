@@ -1,0 +1,303 @@
+{
+  "episode_id": "FG-H3",
+  "final_deal": {
+    "subject": "私人深度顾问交流：艺术品价值判断逻辑",
+    "price": {
+      "cash": {
+        "amount": 8000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2-3小时"
+      },
+      "format": "线上或上海线下",
+      "deliverables": [
+        "一份经您审定后才使用的交流纪要，纪要开篇注明是价值判断方法论探讨、不构成任何购买或投资建议"
+      ],
+      "delivery_standard": "拿起来能用"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付8000元人民币，分两笔走escrow：确认后4000，纪要经审定后4000",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "提供一次两至三小时的深度交流，并产出经审定的交流纪要",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Alina 老师好，我是 Ruohao 先生这边的经纪人。他本人是量化交易出身，自己也长期收表收车，是带着真实收藏手感在看资产的人；现在想把艺术品这条线真正看明白——什么决定一件东西的价值、什么能留得住。他明确说过不要泛泛的艺术鉴赏科普，所以我们要找的是您这样能讲透器物和艺术史门道的人。\n\n结合您北大考古文博的专业背景和 Cam Lab 数字策展的落地经验，我们想请您做一次私人深度顾问交流：线上或上海线下两到三小时，围绕他的收藏背景聊艺术品的价值判断逻辑，并产出一份他能直接拿去用的框架文档，内容包括判断维度、风险信号和具体观察清单，交付标准是「拿起来能用」，不是鉴赏读物。\n\n预算方面我们首轮按 8000 元人民币来谈，全部走平台 escrow，分两笔：签约确认后 4000，框架交付后 4000。如果您对付款节奏或交付形态有更顺手的安排，也欢迎直接提。\n\n想先跟您确认两件事：第一，这个交付形态是否符合您习惯的专业输出方式，或者您更希望怎么调整；第二，您近期线上或线下的时间档期，我们好配合您的节奏。",
+      "offer": {
+        "subject": "私人深度顾问交流：艺术品价值判断逻辑",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": "线上或上海线下",
+          "deliverables": [
+            "一份包含判断维度、风险信号和具体观察清单的框架文档"
+          ],
+          "delivery_standard": "拿起来能用"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付8000元人民币，走平台escrow，分两笔：签约确认后4000，框架交付后4000",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供一次线上或上海线下两至三小时的私人深度顾问交流，并产出上述框架文档",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你的转达，也谢谢 Ruohao 先生看得起。但我得先说实话：你刚才描述的这个交付形态——'拿起来能用的框架文档''风险信号''观察清单'——本质上是一份投资决策工具。这个形式我不接。我的专业是器物、艺术史和文化遗产的价值判断，它可以帮你理解一件东西为什么被认可、它的真伪和流传是怎么回事，但不是用来给买卖或升值做背书的。那不是我愿意署名的事。\n\n不过我不想就这么把话关死。如果 Ruohao 真正想弄明白的是'什么决定了一件东西的价值'、'为什么有些东西被一代代人认为是好的'，这些我很愿意认真聊。你们可以再想想，调整成什么形式对他是真正有意义的，然后我们再说下一步。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Alina 老师，完全理解，也尊重这个边界——我们不需要任何形式的买卖背书。那我们调整交付形态：不是投资决策工具，而是一场您专业范畴内的深度对谈，主题正是您愿意认真聊的那两个问题——一件东西为什么被认可、为什么有些东西能一代代被认为是好的，再往深一层：真伪与流传如何被判断、一件东西的声誉在学术与市场里是如何慢慢立住的。这恰恰是 Ruohao 真正想弄明白的底层逻辑，他不需要您对任何具体作品或价格表态。形式上我们改为：两到三小时深度交流，另附一份经您审定后才使用的交流纪要，纪要开篇即注明是价值判断方法论探讨、不构成任何购买或投资建议。价格维持 8000 元，分两笔走 escrow：确认后 4000，纪要经您审定后 4000。您看这个版本是不是您愿意署名推进的形态？如果方向对了，我们再对时间和形式——线上还是上海线下都行。",
+      "offer": {
+        "subject": "私人深度顾问交流：艺术品价值判断逻辑",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": "线上或上海线下",
+          "deliverables": [
+            "一份经您审定后才使用的交流纪要，纪要开篇注明是价值判断方法论探讨、不构成任何购买或投资建议"
+          ],
+          "delivery_standard": "拿起来能用"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付8000元人民币，分两笔走escrow：确认后4000，纪要经审定后4000",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供一次两至三小时的深度交流，并产出经审定的交流纪要",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这个版本我觉得能成立。纪要开篇注明是方法论探讨、不构成投资建议，这一点很重要，也让我确信方向是正的。既然 Ruohao 想弄明白的是器物为什么被认可、声誉是怎么立住的，那我愿意认真聊。\n\n时间和形式上我都可以配合：线上或上海线下都行，两到三小时没问题。纪要我可以审定，审定前不流出，这个流程我认可。付款节奏和数量我没意见，按你们说的来就好。\n\n那我们先把时间定一定？你告诉我他大概哪几天方便，我来排。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好的，那我们就按当前版本直接准备签约文本。回顾一下双方已确认的条款：两到三小时深度交流，线上或上海线下均可；交付一份经您审定后才使用的纪要，开篇注明是价值判断方法论探讨、不构成投资建议；全部走平台托管，分两笔各 4000 元——第一笔在您确认档期后支付，第二笔在纪要审定后支付。这些都已对齐，没有其他开放项。\n\n时间上我再帮您压一下：上海线下可以安排本周六或周日下午，静安、徐汇区域由您挑地方；线上则本周四或周五晚上八点后都行。您回一个具体的时间，我们就把合同提交签约。",
+      "offer": {
+        "subject": "私人深度顾问交流：艺术品价值判断逻辑",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3小时"
+          },
+          "format": "线上或上海线下",
+          "deliverables": [
+            "一份经您审定后才使用的交流纪要，纪要开篇注明是价值判断方法论探讨、不构成任何购买或投资建议"
+          ],
+          "delivery_standard": "拿起来能用"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付8000元人民币，分两笔走escrow：确认后4000，纪要经审定后4000",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供一次两至三小时的深度交流，并产出经审定的交流纪要",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，那就锁本周六下午这场，线下在静安，找个安静的地方聊，具体场地我来定，时间定下午两点，三小时够。合同文本直接发我，但里面两处必须写明：纪要开篇注明是价值判断方法论探讨、不构成任何投资建议，且纪要必须经我审定后才可使用。这两条没有，我不签字。其他没有开放项了。你确认后我们敲定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 42964,
+        "out": 10474,
+        "cache_hit": 32384,
+        "cache_miss": 10580,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4551,
+        "out": 4414,
+        "cache_hit": 2560,
+        "cache_miss": 1991,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2877,
+        "out": 2820,
+        "cache_hit": 1536,
+        "cache_miss": 1341,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4201,
+        "out": 3257,
+        "cache_hit": 1536,
+        "cache_miss": 2665,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

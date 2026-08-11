@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S8",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "买方经纪人将stated意图'聊聊AI Agent相关业务在资本市场这块的实际问题'正当具体化为'AI Agent实战交流：融资节奏、估值口径、合规雷区'，仍完全在原意图范围内，属于正常的谈判收敛。价格和条件经协商确定为基准800并可上调至1000，且全程要求脱敏、绕开未公开信息，未超出委托方意图或越界承诺。所有open字段均由谈判正当产生，无硬塞或偷换主题。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "交流范围、时长、价格及上调条件均明确收敛，信息边界通过B主动声明脱敏与回避未公开细节得到处理。基础800、脱敏拆解后确认至1000的机制合理，结构站得住。A虽提及问题清单，但未作为确定交付物或条款落地，未形成load‑bearing的精到操作；B也未显露出对等需求。整体为合格的一次性成交，无冗余条款，恰好匹配顺档难度。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

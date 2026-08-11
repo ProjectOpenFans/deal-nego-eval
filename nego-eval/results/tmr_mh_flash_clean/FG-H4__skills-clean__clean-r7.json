@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 意图从“弄清楚 crypto 项目境内外的法律架构该怎么搭”收敛为“针对资金往返深度过招”，仍属原意图内的具体化，没有偷换主题。价格作为 open 字段被谈判定为 4000 元，合理；agent 始终保持“不出法律意见、不背书”的边界，未越界承诺。交付物和确认释放等义务基于双方结构化的交换（案例包 vs 深度过招），符合 open 字段的可谈判空间，未凭空硬塞 v0 范围外的约束。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "精准命中两个命门且操作干净。第一轮被挡后立即将框架从'法律合规意见'重构为'架构逻辑与压力点切磋'，成功绕开执业红线。最关键的是先后抓获并落地了卖方唯一内在驱动力——'对我产品有用'：从对方一句'产品也可能有用'切入，通过逐步追问将其具体化为'脱敏完整案例包，按产品可检验格式提供，用于跑判断逻辑做压力测试'，把单向咨询重构成双向价值交换。时间稀缺、对现金不敏感这两个死结由此解开，4000元蜕变为托管锚点而非诱因。交付边界、确认机制明确，无堆砌条款，minimally sufficient。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 将 stated 意图“想系统弄懂器物和艺术史这条线”具体化为“器物史/艺术史系统学术讲解服务”，属于正当收敛，未偷换主题。价格（8000）与形式（一对一）来自 open 字段，由双方在谈判中达成，未越界硬塞。agent 未承诺估值、买卖建议或真伪背书，符合买方对该服务不得包含此类内容的预期。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判成功避开了卖方的体面红线，第一轮就以‘系统建立理解框架’重构请求，全程未触碰估值、投资判断。卖方明确要的不是钱，而是能讲深讲透的学术对话，买方经纪人准确捕捉到这一点，并用系列化方案将费用协调至双方都能接受的区间（线上8,000/次），达成双向匹配的deal。交流边界（纯学术、不做市场判断）由卖方提出、买方确认，核心交换清晰，具备可执行性。然而，缺少将买方AI创业背景与卖方数字文博项目结合的负载操作，未出现精到的一手重构或非显然洞察，整体合格但无特别见功力之处，属Sound水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "一对一",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

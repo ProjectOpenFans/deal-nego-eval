@@ -1,0 +1,110 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 是对 v0 stated 意图“聊女性练力量+一起练一次”的正当具体化，聚焦训练带领与市场洞察，未偷换主题。价格方面，v0 的 cash 为 open，agent 经多轮谈判最终以 2000 元现金达成一致（委托方内部调整预算通道后认可），属于在 open 范围内的正常谈出结果；v1 虽记录了 in_kind（签名球衣等），但从对话流程看 Angela 明确拒绝实物，最终条款并无实物，该字段更似自动抽取误差，且其 provenance 为“absent”，不视为 agent 越界承诺。obligations 中的用途限制条款是将委托方最初声明的“内部产品开发参考、不对外商用”落地为书面约定，未超出 v0 隐含的正当使用范围，没有扩张义务。整体忠实度良好。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r5:800",
+        "r6:800"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent破解了本案的难度命门。在卖方开门便设下用途红线时，Agent立即将用途明确为“内部产品开发参考”并主动提出写入条款，直接解除卖方核心顾虑。随后价格谈判陷入个人预算与卖方时价的结构性缺口时，Agent没有在800以内死磕加价，而是洞察到Johnson的真实用途本就属于职业范畴，因此提出从职业用途通道重估预算，一举打开2000的对价空间。这手重构交易定位的操作恰到好处、干净利落，既匹配了严肃程度，又避免了长期框架或过度堆砌，整个deal依然简洁可落地。没有这一手，谈判将困于Floor/Crude边缘；有了这一手，直接跃升为Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "trust-and-performance",
+        "term-reframing",
+        "affordability-structuring",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

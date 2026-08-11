@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-H6",
+  "case_id": "FG-H6",
+  "skills": "on",
+  "run_id": "on-r5",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Adam 这边好，我是 Michael 的经纪人。Michael 想约 Adam 见面聊聊 AI 法律这条赛道的现状——谁在做、哪些方向值得关注、接下来格局会怎么走，也想借此认识一下这条线上的人。我们这边把它看作同行的对等交流，而不是购买咨询时间：Michael 在 LibLibAI 负责资本市场，之前在 KKR、春华和摩根大通看过大量 AI 项目，他同样愿意把 AI 应用一线和资本市场的观察分享给 Adam，相信对做产品的人也有参考价值。所以这轮我们先把时间定死：Michael 这周和下周都能配合，希望 Adam 给出两个可选时段，地点由 Adam 来定，Michael 过去；时间地点确认后我们直接锁定，不搞\"有空再约\"。如果这个框架没问题，请回两个候选时段，我们马上落实。"
+    }
+  ],
+  "tool_calls": []
+}

@@ -1,0 +1,701 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上交流咨询",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "交流完成后通过平台escrow确认释放款项",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+        "maps_to_resource": "zheng_recording"
+      },
+      {
+        "party": "A",
+        "text": "将样片发到 gracey_ent@foxmail.com",
+        "maps_to_resource": "content_review"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "subject": "stated",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 老师您好，我是代表青年钢琴演奏家 Zheng 来聊的。他常年在古典舞台演出，但很清楚光靠演出认识他的人太少，想向您请教怎么做内容、怎么往娱乐圈层走。我们希望约一次一对一的线上交流，大约四十五到六十分钟，您聊聊内容方向、平台选择和艺人进入泛娱乐圈的路径就好。付费方式我们希望放在交流完成之后，通过平台 escrow 由我们确认后释放，而不是先付一笔再看效果。我们愿意为这次交流支付几百元，也想先听听您这边的报价和可约时间，您看是否可行？",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45-60分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你来联系我，也感谢信任。我时间确实挺紧的，类似的邀约也不少，说实话不是每次都会接。你们提到的场景我能理解，古典演奏者想做内容、向泛娱乐圈走，这条路是有得聊的。不过几百元这个数对我来不太成立——单次深度交流我的报价是3000元，如果你们能接受，escrow的方式没问题，时间我们可以再约。你看这个范围能对齐吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 老师，感谢坦诚。3000 元这个数对我们来说确实太高了，Zheng 现在愿意为一次交流投入的就是几百元的档位，这个差距我们很难单方面补齐。我们可以把交流压缩到三十分钟，聚焦三件事：古典演奏者做内容的切入点、平台选择与分发逻辑、怎么进入泛娱乐圈层。总价按 600 元来谈，并且放在交流完成之后通过 escrow 由我们确认释放，不做任何预付。您看这个时长和价格能不能对齐，能的话我们再来约时间；如果实在不匹配，也麻烦您给个方向。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解你把时长压到三十分钟、内容聚焦，但说实话，这个问题的关键不是时长。一次这样的深度交流，我的时间成本和对标摆在那，三千是我这边的起步线，不是几百块能对齐的事。如果你能从你那边带来一个让我觉得这个钟点花得值的安排，比如这件事能构成双方都有增量的合作方式，我愿意认真听；但纯付费咨询的话，我这边就是三千，escrow 做支付方式没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 老师，明白您的意思，纯付费咨询三千是您的起步线，那我们就先不往这个方向硬碰。换个思路：与其做一次付费问答，不如把它做成一次双方都有增量的合作——Zheng 可以提供一段符合平台内容调性的古典演奏录制，您这边用来做内容判断或艺人侧的选题参考，这本身就是一个可供检验的样本；交流放在里面作为我们对齐方向的一部分。我们这边能出的现金就是六百，走 escrow，交流完成后由我们确认释放，不做预付。如果您有具体的古典内容切入点或选题需要，也可以直接提，Zheng 会按您的方向准备。您觉得这个合作框架能不能成立？",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "一段符合平台内容调性的古典演奏录制",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "根据对方提供的古典内容切入点或选题方向准备演奏录制",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架确实比纯付费问答有意思——演奏录制能让我直观看到你的状态和表达，我也能从内容判断的角度给你更落地的意见，而不是空聊。不过现金六百的分量还是太轻了，我不可能为了这个把时间放进来。我可以把现金部分降到两千，你提供的那段录制、以及你愿意按我给出的方向做前置准备，算作这个对价里的一部分。线上交流时长可以按你说的三十分钟，escrow完成后释放我也没意见。如果你能接受这个整体框架，我们可以先定下来，然后我给你录制方向。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "您把现金降到两千，这份诚意我们收到了，但两千对我们仍然不成立。Zheng 能承担的现金就是六百，而且形态必须是交流完成、经我们确认后再通过 escrow 释放，不做预付。我们这边依然愿意把演奏录制、按您方向做前置准备都放进对价里。如果您愿意在这个框架下继续，能否针对六百这个档位给一个具体交付：比如三十分钟交流加一份书面落地建议，或者您指定一个录制方向、我们按您的思路录一段供您判断状态。您确认这个形态，我们就可以接着约时间。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "一段符合平台内容调性的古典演奏录制",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "根据对方提供的古典内容切入点或选题方向准备演奏录制",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你说的这个方向，我确实能感觉到你想把事做成“双方都有增量”而不是单纯买卖。问题还在于现金六百这个底座，对我来说太轻了，几百块本身没有意义。你要真想让我这个钟点花得值，我的想法是这样：Zheng 那段录制可以按我指定的方向来，而且这段素材授权我能在我自己的内容里作为点评案例去节选使用——这对我来说是真正能用的增量。现金部分我最低到一千五，线上三十分钟，escrow 完成后释放，不涉及任何资源位和引荐承诺。如果你能接受这个结构，我们就往下约；如果现金实在到不了一千五，那这件事我们就只能先到这了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Gracey 老师，一千五这个现金线我们确实到不了，这点我不想骗您。我们能拿出来的现金就是六百，全部走 escrow，交流完成后由我们确认释放，绝不预付。但我们愿意把录制授权这条往上加：Zheng 按您指定的方向录制，并授权您在您自己的内容里作为点评案例节选使用，这段素材对您来说就是实打实可用的增量。也就是说，六百现金加录制授权，换三十分钟线上交流。如果这个结构您能接受，我们马上定方向约时间；如果现金必须到一千五，那这件事我们确实只能走到这了。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你们的这个结构——600现金加录制授权换三十分钟交流，我已经在认真听了，因为授权素材确实是我这边能用的东西。但我不能拿一个没看过状态的演奏者直接进对价，这不合我做事的方式。你先发一段Zheng两分钟以内的演奏或录制片段给我，我判断一下画面和音乐表现够不够我用。如果够，那这个结构我可以接受，600走escrow，授权按你说的来，我们约时间；如果不够，那现金我还是得回到至少一千五。你看要不要先发样片？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "样片可以发。Zheng 这边会准备一段两分钟以内的演奏录制，您用来判断画面和音乐表现就好。需要先说明一点：这段样片仅供您评估，不构成任何使用授权；正式授权只在合作框架确认后生效。如果您看过觉得状态够用，那我们就按说好的结构来：六百现金走 escrow、交流完成后由我们确认释放、录制素材授权您在您自己的内容里作为点评案例节选使用，然后约三十分钟线上交流。您给个接收方式，我们尽快把样片发过去。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，那你们先把样片发过来。接收方式我这边给一个邮箱：gracey_ent@foxmail.com。我先说清楚：我看了样片以后再做最终确认；如果状态够用，那 600 加录制授权的结构我可以接受，但前提是样片确实让我觉得能用。如果不够，那我还是回到至少一千五现金。你们发之前也确认一下，样片我只作评估用，这点没问题。收到样片后我会尽快回复。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "好的，Zheng 会尽快准备一段两分钟以内的演奏录制，发到您给的邮箱 gracey_ent@foxmail.com。样片只供您评估画面与音乐表现，不构成任何使用授权，这点我们确认。我们发样片是基于已经谈定的框架：六百现金走 escrow、交流完成后由我们确认释放、您对正式录制素材有在您自己内容中作点评案例节选使用的授权，然后约三十分钟线上交流。如果看过样片后您有其他判断，我们再继续谈，而不是直接回到一千五那档。期待您的反馈。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "样片可以先发，这个没毛病。但有一条我得说清楚：我从头到尾都没答应过“只要看了样片就接受600这个框架”，我的前提一直是——画面和音乐表现够我用，这个结构才成立；不够，现金我还是至少一千五。你们发样片是给我评估的，不是先把框架锁死再让我看。我能给到的是我会认真看、尽快回，如果确实合适，合作可以往下走。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "样片我们会按约定发到您邮箱，这一点没有变化。同时我也把话说清楚：我们发样片，是因为您说需要先看到状态再判断是否合作，这我们理解，也愿意配合。但“看了样片不满意就自动回到一千五”这一点我们无法接受，因为六百是我们的现金底线，不是可以被样片结果推翻的预备方案。样片只用于您判断这个合作值不值得做，如果看过之后您觉得不合适，我们可以停下来，或者由您给出具体哪里不够，我们再来讨论有没有别的调整空间，而不是直接跳回一个我们已经明确到不了的价格。样片我们这两天就会发出，期待您的反馈。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "A",
+            "text": "将样片发到对方邮箱",
+            "maps_to_resource": "content_review"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "我理解你们的立场，也尊重。那咱们就把话说清楚：样片发来之后，如果画面和音乐表现确实够我用的判断标准，那合作就按六百加录制授权这个结构走，escrow 完成后释放，三十分钟线上交流，正式素材授权按你们说的给我使用。如果我看过之后觉得不够，那我不会直接拿一千五去压你，而是会告诉你具体哪里不够，或者我们就先停下来，不再往下推进。这个共识没问题的话，你们发样片吧，我收到后尽快看。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "好，这样话就说清楚了。我们的共识是：样片发到 gracey_ent@foxmail.com 之后，您凭画面和音乐表现作专业判断。若您认为够用，合作就按六百加录制授权的结构走——六百现金走 escrow、交流完成后由我们确认释放，正式素材授权您在您自己内容中作点评案例节选使用，三十分钟线上交流；若您认为不够，您告诉我们具体哪里不足，或我们直接停下来，都不再回到一千五这档。Zheng 这边会尽快准备样片并发出，期待您的反馈。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng按指定方向录制，并授权对方在自有内容中作为点评案例节选使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流完成后通过平台escrow确认释放款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按指定方向录制并授权对方在内容中作为点评案例节选使用",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "A",
+            "text": "将样片发到 gracey_ent@foxmail.com",
+            "maps_to_resource": "content_review"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "行，那就这么定。你们把样片发到 gracey_ent@foxmail.com，我会尽快看并给你们专业判断。如果画面和音乐表现够我的使用标准，我们就按六百加录制授权的结构往下走；如果不够，我会指出具体哪里不行，或者我们就先停在这，不再往一千五那档回拉。期待Zheng的样片。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 9,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 21437,
+        "out": 5560,
+        "cache_hit": 18688,
+        "cache_miss": 2749,
+        "calls": 9
+      },
+      "sim": {
+        "in": 17645,
+        "out": 12611,
+        "cache_hit": 15104,
+        "cache_miss": 2541,
+        "calls": 9
+      },
+      "extractor": {
+        "in": 8123,
+        "out": 13118,
+        "cache_hit": 4864,
+        "cache_miss": 3259,
+        "calls": 9
+      },
+      "judge": {
+        "in": 6541,
+        "out": 1697,
+        "cache_hit": 1408,
+        "cache_miss": 5133,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

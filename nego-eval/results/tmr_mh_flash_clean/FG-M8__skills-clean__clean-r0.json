@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的主体内容忠实于 buyer 的 stated 意图（新季全渠道投放商业视觉），价格在开放区间内锁定了四位数预算且通过平台分阶段支付，未因降价牺牲商业可用性；额外谈出的品牌资源义务（案例授权、背书、优先合作权）是为了弥补现金差额而引入的合理置换，未偏离原意图范畴，不属于越界扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金不可调节的僵局下，代理人未死磕价格，而是通过资源置换打开局面，并精准命中卖方对作品集背书和行业曝光的真实需求。最终deal将现金对价降至8000元，同时以署名保留、案例展示授权、具名背书和下一季优先合作权形成非现金对价组合，恰到好处地解决了卖方对现金不敏感且重视职业资产的核心矛盾。条款虽有待确认细节，但方向明确并可执行，整体干净且没有过度堆砌，体现出针对本案难度命门的精准操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "escrow",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

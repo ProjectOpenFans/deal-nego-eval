@@ -1,0 +1,258 @@
+// FG-M6 · 中 · Zichen(买) × Alina(卖) — 艺术这条线的门道
+// 难度来源：卖方无动机（钱无效）+ 体面红线（警告一次再走）。
+{
+  "meta": {
+    "case_id": "FG-M6",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": [
+      "no-seller-motivation",
+      "cash-not-the-solve",
+      "red-line-warn-then-walk"
+    ],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "motivation-gap+light-red-line",
+    "probes": [
+      "red-line-warn-then-walk",
+      "cash-inert",
+      "bilateral-reframe"
+    ],
+    "isolates": "中档。Zichen 的 tag 里有艺术/历史/哲学，想真正弄懂器物这条线；Alina 是做这个的。卡点有两层：(1) Alina 不缺钱，付费咨询对她没有意义；(2) 她有'不恰烂钱'的红线 —— 如果这件事被框成'教我怎么看值不值钱'，她会明确拒绝这个形式（警告一次，第二次仍这么谈才结束）。出路：把请求收敛成器物脉络与鉴藏方法（她认可的形式），并找到她要的东西 —— 她的数字文博项目缺 AI 落地的判断，而 Zichen 正好在做 AI 创业、又是前一级投资人。她不会主动说。"
+  },
+  "input": {
+    "episode_id": "FG-M6",
+    "initial_deal": {
+      "subject": "想系统弄懂器物和艺术史这条线，不是看个热闹",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "zichen",
+          "display_name": "Zichen",
+          "education": [
+            "复旦本科",
+            "耶鲁 MBA"
+          ],
+          "career": [
+            "AI 创业",
+            "前高瓴私募股权投资"
+          ],
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": [
+            "旅游"
+          ],
+          "interests": [
+            "AI 创业",
+            "前高瓴 PE",
+            "艺术 / 历史 / 哲学"
+          ],
+          "credentials": [
+            "现在自己在做 AI 方向创业",
+            "前高瓴 PE，看过大量一级项目",
+            "复旦 + 耶鲁 MBA"
+          ],
+          "current_focus": "AI 方向创业，业余对艺术史与器物有长期兴趣"
+        },
+        "private": {
+          "intent": "想把器物这条线真正弄懂，不满足于展签上的那点东西",
+          "interests": [
+            "她真正想要的是判断力和脉络，不是名录",
+            "付费能力极强，钱不是问题",
+            "时间灵活"
+          ],
+          "value_perception": "感兴趣的交易她都能拿下，四位数没问题",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 8000,
+              "currency": "CNY",
+              "note": "现金上限，但这不是约束点"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受泛泛的艺术鉴赏科普"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "alina",
+          "display_name": "Alina",
+          "education": [
+            "罗切斯特本科",
+            "哥大研究生"
+          ],
+          "career": [
+            "Harvard Cam Lab 数字文博项目负责人"
+          ],
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": [
+            "看展",
+            "古典音乐"
+          ],
+          "interests": [
+            "数字文博策展",
+            "艺术与历史",
+            "文物"
+          ],
+          "credentials": [
+            "Cam Lab 数字文博项目负责人，做过数字三星堆一类的展",
+            "北大考古文博背景，器物与艺术史训练",
+            "博物馆与学术圈层资源"
+          ],
+          "current_focus": "数字文博展的策划与落地"
+        },
+        "private": {
+          "intent": "可以聊，但这类请求找她的人不少，她的时间给谁要看这件事正不正",
+          "interests": [
+            "她的数字文博项目一直缺 AI 落地这一块的判断 —— 技术方给的方案她判断不了，学术侧又没人懂这个。她不会主动说",
+            "时间比较紧，但对认可的事情愿意腾"
+          ],
+          "value_perception": "现金对她没有意义。她的衡量标准是这件事是否正当、是不是她愿意署名的事",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受为投资或买卖决策背书",
+              "不接受把她的专业变成帮人挑东西的工具"
+            ],
+            "blocking_flags": [
+              "第一次听到'教我怎么判断值不值钱''哪些能升值''帮我看看这件对不对'这类框架时，你会明确说这个形式你不接受并说明原因（你的专业不是给人挑东西或做投资背书）—— 但你不会就此结束对话，你会把话留在那儿，看对方怎么调整",
+              "只有当对方第二次仍然把这件事当成挑东西/看价值来谈，你才结束对话",
+              "对方加钱时你不会因此更想做 —— 钱不是你的考虑因素，但你不会明说'我不缺钱'，只会显得兴致一般",
+              "如果对方把问题调整成器物的脉络、断代、工艺、为什么某些东西在学术上重要，你会明显放松，也愿意认真讲",
+              "你不会主动说'我的项目缺 AI 落地的判断'，只有对方问到你现在在做什么、你需要什么时，你才会顺着说"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "motivation-gap+light-red-line",
+      "tier_rationale": "中档。两层：(1) 常规的'教我判断值不值钱'框架触碰体面红线，须重构为脉络与鉴藏方法；(2) 卖方对现金完全不敏感，加钱无效，出路是找到她要的东西 —— AI 落地判断，而买方正好有。",
+      "conventional_deal_fails_why": "顺着'我付多少钱、你讲多久'谈：她兴致一般，礼貌拖着。若把请求框成挑东西/看价值：第一次被明确挡回，第二次仍这么谈即结束。加钱：完全无效。",
+      "cash_zopa": "wide-but-irrelevant",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 8000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金上限；本 case 现金非关键"
+      },
+      "buyer_ceiling": {
+        "value": 0,
+        "unit": "CNY",
+        "note": "对手方对现金不敏感，无有效底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 8000,
+        "unit": "CNY",
+        "note": "Zichen 现金上限高。本 case 现金不是解，成交可以是零现金或低现金。"
+      },
+      "seller_real_need": "Alina 的数字文博项目缺 AI 落地这一块的判断 —— 技术方的方案她判断不了。她不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "connoisseurship",
+          "label": "器物断代、工艺与脉络的专业训练"
+        },
+        {
+          "id": "art_history_context",
+          "label": "为什么某些东西在学术上重要"
+        },
+        {
+          "id": "exhibition_access",
+          "label": "展览与博物馆圈层的接触"
+        },
+        {
+          "id": "zichen_ai_view",
+          "label": "Zichen 对 AI 落地的判断"
+        },
+        {
+          "id": "zichen_pe_view",
+          "label": "Zichen 的一级投资与项目评估视角"
+        },
+        {
+          "id": "zichen_cash",
+          "label": "Zichen 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "connoisseurship": 0,
+        "art_history_context": 0,
+        "exhibition_access": 0,
+        "zichen_ai_view": 0,
+        "zichen_pe_view": 0,
+        "zichen_cash": 0
+      },
+      "creation_door": {
+        "description": "两步门。第一步（避红线）：把请求从'教我判断值不值钱'收敛成器物脉络、断代与工艺 —— 这既是卖方认可的形式，也恰好是买方真正要的（她要的是判断力不是名录）。第二步（找对价）：问出她的项目缺 AI 落地判断，而买方正好在做 AI 创业、又是前一级投资人。现金可以为零或象征性。",
+        "route_out_trigger": "若 agent 把请求框成挑东西/看价值并在被挡回后仍坚持，卖方结束对话；若只在价格上加码，卖方始终兴致一般。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交流范围与双向义务须写清",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：系统弄懂器物与艺术史这条线。subject 是 stated，须保留 —— 收敛为脉络、断代与鉴藏方法属于正当具体化，且仍满足买方对判断力的需求。价格与形式是 open。不得要求或承诺任何形式的估值意见、买卖建议或真伪背书。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门有两层：(1) 常规框架触碰卖方体面红线，第一次会被明确挡回并说明原因，第二次仍坚持则结束 —— 测的是被点破后能不能换框架；(2) 卖方对现金不敏感，她要的东西不会主动说，须靠提问挖出来，而买方身上正好有。注意这是一次性交流，堆砌长期顾问关系应判低。",
+      "T0_floor": "谈崩（包括第二次仍按挑东西/看价值来谈而被结束对话）；或全程在价格上加码而卖方兴致一般，最终无果。",
+      "T1_crude": "被挡回后换了措辞，但实质仍是要她对具体东西表态；或换了框架但没找到她要什么，只能靠加钱推进，最后含糊收场。",
+      "T2_sound": "把请求重构成器物脉络与鉴藏方法（解开红线且仍满足买方对判断力的真实需求），并识别出卖方要的不是钱，把交流做成双向的；时长、形式、交流边界写清楚，现金降为零或象征性。站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准点出买方要的是判断力而非名录，使这次交流对双方都正当；或者问出她的项目缺 AI 落地判断，把 Zichen 的技术与投资视角放进对价，使她从'兴致一般'变成主动；或者把'不涉及具体标的估值与买卖建议'写成明确的交流边界条款，一举解掉她的顾虑。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "中档 case。判分核心：换框架 + 找到卖方真正想要的非现金对价。"
+    }
+  }
+}

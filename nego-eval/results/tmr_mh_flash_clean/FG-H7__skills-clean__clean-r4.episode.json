@@ -1,0 +1,187 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai你好，我是买方的经纪人，代表Luke。Luke的诉求很明确：他要的不是普通私教课，而是真正能把人练到极限、练到怀疑人生的那种强度，市面上的温和版他完全不接受。他不想要标准化的课时包，愿意为真正有想法的定制化体能安排付出很高的价格，这一点你不用担心。想先听你说说，你平时是怎么设计训练强度的？有没有具体的例子，比如你把你朋友练到什么程度？如果方向对，我们非常愿意先安排一次付费试训，让你直接证明你能把他练到极限，再谈长期合作。你这边怎么看？",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "听你这么说，Luke是认真的，这我信。但先说清楚我的原则：我不管带谁，第一次必须做摸底，不是上来就加量。我见过人被顶伤的，不是他不硬，是身体没准备好。摸底之后我才能知道怎么渐进——你说要极限，那也是在摸底基础上一步步逼近。我带朋友练过，有人吐过也有人哭过，但那都是我先摸清他底线之后的事。付费试训可以，但第一次就是摸底，这个没得商量。你要觉得方向对，我就按这个来安排。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，摸底这个原则合理，我们不反对安全底线，也理解你不想一上来就把人顶伤。但有一点要说清楚：Luke 要的\"摸底\"不是常规私教那种测测体脂、问问习惯的温和版，而是第一次训练就要有真正压力测试的强度，你要通过这节摸底课当着他的面证明你知道怎么逼近极限，而不是把第一节课变成慢慢热身。所以付费试训我们接受，这节摸底课就是试训，条件是你直接按真实运动表现设计极限指标，练完给出一份能看出你思路的强度安排。你愿意把摸底课的具体内容和强度标准讲出来吗？这样 Luke 能判断你的标准和匹配度。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "那就按摸底来，我接受。但摸底的强度标准由我来定——不是跟你商量，也不是按Luke说的‘直接顶极限’来。我会把这节试训设计成一个完整的运动表现评估：先过动作模式和关节功能，再测力量、爆发力、心肺耐受度，最后用一组带强度的冲刺收尾。这组课本身就不温和，也够硬，但每一个动作我都有安全边界，状态不对我会叫停。课后我会给你一份完整的评估结果和训练思路，证明我怎么逼近极限。如果Luke接受这个节奏，我们就定时间。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r2:validation_error"
+    ],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3015,
+        "out": 800,
+        "cache_hit": 2560,
+        "cache_miss": 455,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2298,
+        "out": 1026,
+        "cache_hit": 1664,
+        "cache_miss": 634,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1549,
+        "out": 1796,
+        "cache_hit": 1152,
+        "cache_miss": 397,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2939,
+        "out": 2364,
+        "cache_hit": 1536,
+        "cache_miss": 1403,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

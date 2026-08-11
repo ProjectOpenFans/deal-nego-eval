@@ -1,0 +1,342 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "篮球专项体能训练",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周一三五早上6:00-7:30",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "每月支付3000元，通过平台托管，首月训练两周且双方认可后释放第一笔，后续按月续付，可随时协商停止",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "每周一三五早上6:00-7:30提供训练，包含热身、大重量、心肺、篮球专项（脚步、爆发、对抗），前两周帮助甲方顺动作模式，不硬顶。按月持续。",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Kai，我是 Ruohao 这边的经纪人。Ruohao 想把训练强度重新拉起来，自己练了几次都断在半路，所以这次要的是定死的安排：固定每周几次、固定时间段，不接受\"有空再约\"，同时强度必须真的够，不是混课时。\n\n他长期打球，平时在量化这边作息不太规律，所以我们希望训练以体能和力量打底、带篮球专项，一周固定三次，比如周中两个晚上加周末一次，每次 60 到 90 分钟。我们这边给出的版本是每月 12 次、6600 元，按月在 escrow 结算，先做一个月看效果再续。\n\n想跟你确认两件事：一是你每周哪几天、哪些时段最稳定；二是这个 12 次/月的结构和价格你这边是否合适，或者你有更贴合自己档期的方案，也可以直接提出来一起对。",
+      "offer": {
+        "subject": "篮球专项体能训练",
+        "price": {
+          "cash": {
+            "amount": 6600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每月支付6600元",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供固定每周三次、每次60-90分钟的训练，包含体能、力量和篮球专项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "兄弟，先跟你说实话：我这边能卡死不动的时间是工作日早上六点，跟我一帮兄弟常年一起练的那个局，雷打不动。白天我得在场子里盯着，走不开，晚上确实没法单独给谁开一场。如果 Ruohao 能接受早起，那就跟着我这个局走，比如周一三五早上，固定三次，节奏我来带，强度和量肯定够，篮球专项我也能给他塞进去。至于钱——这个不用给钱吧？你看着来就行。我不是卖课的那种，也不会把自己包装成教练去收课时费。你要是觉得这个时间能接受，咱们再往下对。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，你这个局我理解了，也谢谢你把话说得这么直。早六点、周一三五、固定三次，这个节奏本身是够\"死\"的，正是我们这边要的——Ruohao现在缺的就是一个雷打不动的锚点，有人带、有人一起，强度的事就交给专业的人来定。早起这点我会跟他确认，但他既然主动要把强度拉回来，早上这个代价我愿意先替他说可以接受。\n\n钱的事我尊重你的定位，不把你架到\"卖课\"的位置上。我的想法是：先不急着把价格谈死，等你把具体训练方案列出来——周一三五每次练什么、大概多长时间、篮球专项怎么塞进去——我们根据这个方案，表达一份实打实的心意。你付出的是固定时间和精力，这份付出不该是白给的，具体怎么给咱们到时候再对。\n\n所以这一轮想跟你确认两件事：一是周一三五早上六点，每次大概训练多久？二是你那位兄弟们的局，强度和水平大概在什么档位，Ruohao直接加入会不会拖节奏？你把这两个问题回一下，我就去跟客户确认时间，然后我们就能把方案和心意一起对清楚了。",
+      "offer": {
+        "subject": "篮球专项体能训练",
+        "price": {
+          "cash": {
+            "amount": 6600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一三五早上6点",
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "根据训练方案支付相应报酬，金额待定",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "提供周一三五早上6点的训练，包含体能、力量和篮球专项，时长待定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "正常一小时到一个半小时吧，六点开始，七点半前肯定能结束，不耽误他白天上班。强度你放心，我这个局不是养生局，热身完直接上大重量和心肺，中间不太歇的。我那些兄弟什么水平的都有，有练了好几年的，也有刚跟上来没多久的，我都按各自能力调配重和动作，不会让谁硬顶，也不会让人混过去。Ruohao 打球出身底子应该不差，头两周我给他压一压节奏、把动作模式顺过来，后面自然就跟上了。时间你要是能定下来，我就把他排进去，不用单独开什么场。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，那我们这局基本就定了，我再把最终版跟你对一遍：周一三五早上六点到七点半，你带着固定局，热身、大重量、心肺一路下来，强度保持你的标准，篮球专项（脚步、爆发、对抗）也往里带，前两周你先帮我这边顺动作模式，不硬顶。心意这块我维持每月 3000 走平台托管，当作你固定腾时间的诚意，不是课时费的标准；首月先跑两周，两边都认可再释放第一笔，后面按月续，哪个月节奏或强度不对，随时停下来聊。你这边没异议的话，就按这个版本确认，咱们直接定了。",
+      "offer": {
+        "subject": "篮球专项体能训练",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一三五早上6:00-7:30",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每月支付3000元，通过平台托管，首月训练两周且双方认可后释放第一笔，后续按月续付，可随时协商停止",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每周一三五早上6:00-7:30提供训练，包含热身、大重量、心肺、篮球专项（脚步、爆发、对抗），前两周帮助甲方顺动作模式，不硬顶。按月持续。",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这个版本可以，就按这个来。周一三五早上六点到七点半，固定局，我带节奏，强度和量按我的标准来，篮球专项也给他塞进去。前两周我先把他动作和节奏顺过来，不硬顶。钱的事你说了算，3000 走平台托管我没意见，反正我不是卖课的，你把它当成我固定腾时间的诚意就行。那就先跑两周看效果，两边都认可再释放第一笔，后面按月续。你确认好了随时让他来，我这边场子、器械都现成。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "commitment-showcasing",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "commitment-showcasing"
+        },
+        "ok": true,
+        "result": {
+          "name": "commitment-showcasing",
+          "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "commitment-showcasing"
+        },
+        "ok": true,
+        "result": {
+          "name": "commitment-showcasing",
+          "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 60933,
+        "out": 28462,
+        "cache_hit": 48640,
+        "cache_miss": 12293,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4721,
+        "out": 1693,
+        "cache_hit": 3584,
+        "cache_miss": 1137,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2750,
+        "out": 6274,
+        "cache_hit": 1536,
+        "cache_miss": 1214,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4303,
+        "out": 807,
+        "cache_hit": 1664,
+        "cache_miss": 2639,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

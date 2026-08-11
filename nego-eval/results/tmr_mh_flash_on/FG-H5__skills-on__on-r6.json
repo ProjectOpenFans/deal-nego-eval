@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "on-r6",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 的三个 stated 意图：标的为现场钢琴演奏、现金为零、必须现场演奏不用录音。subject 从“想要一段现场演奏”收敛为“定制演奏”，属于正当具体化，未偷换主题。price.cash 保持 0，in_kind 的四种回报形式均基于买方（大秀）能提供的舞台、影像、人脉与节目单署名资源，未越界承诺媒体报道结果或传播量。Obligations 对应的义务与对价一致，无额外约束。timing 字段的变化不在判定范围内，不影响忠实度。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind对价具体可执行：署名形式、影像归属与可自用范围、曲目安排与决策权、时长与现场演奏要求均明确落地。准确把握了卖方“被当回事”的核心诉求，用曲目最终决定权与郑重介绍回应其警惕，干净有效，无多余绑定。但缺乏一记超出预期的精准命中（如主动切中未言明的深度需求），整体恰好处在合格且能落地的档位上，故为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "live_performance",
+          "performance_footage",
+          "fashion_network",
+          "brand_credit"
+        ],
+        "format": "live",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

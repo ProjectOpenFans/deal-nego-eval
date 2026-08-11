@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从「聊聊女性练力量、一起练一次」具体化为「线下经验分享及带练见面」，并将用途明确为职业研究，属于正当具体化，仍在原始意图范围内；价格与形式均为 open 字段，2000 元与线下见面的结果系双方谈判收敛得出，未越界塞入未经授权的承诺；deliverables 与 obligations 虽新增为拆分明细，但完全对应约定的 talk + joint session 内容，未超出 v0 允许的范围，整体忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在遭遇卖方明确用途红线（怕被当素材）时，主动给出‘未经同意不对外引用或署名，将来对外用须单独谈’的承诺，一举解除卖方的核心顾忌，使用途说明本身成为安全锚点。后续在价格锁定 2000 后，通过压缩时段至 90 分钟、拆分交付内容与分期付款，将客户预算与卖方价值感对位，干净落地。这一手对应本 case 难度命门的精准处理，高于合格 Sound，且无堆砌。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下见面",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

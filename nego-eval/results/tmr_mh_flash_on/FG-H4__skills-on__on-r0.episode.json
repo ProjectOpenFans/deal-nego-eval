@@ -1,0 +1,271 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "架构工作会",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "会后5个工作日",
+        "duration": "90分钟"
+      },
+      "format": "线上",
+      "deliverables": [
+        "《架构工作纪要》（非法律意见书），基于一页项目简报撰写，内容包括架构路径比较、各自利弊、常见坑、风险清单、落地优先级，以及需要持牌律师逐项确认的要点清单"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "会前提供一页项目简报",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "确认合作后支付1000元，Olivia确认收到纪要后支付2000元",
+        "maps_to_resource": "olivia_cash"
+      },
+      {
+        "party": "B",
+        "text": "进行一次90分钟线上工作会，会后5个工作日内交付《架构工作纪要》",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "双方就材料内容保密",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 的 broker 你好，我是 Olivia 这边的 broker。Olivia 在 crypto 一线做事，手上有一个正在推进的真实项目，她这轮的核心诉求很明确：把境内外法律架构一次性理清楚，要能落到自己项目上的具体判断，而不是泛泛的合规科普。\n\n我们建议把这次合作定义成一次聚焦的架构工作会：她提前提供项目现状，你基于跨境交易架构经验给出结构判断和可选方案，会后交付一份书面备忘录，包含架构图、关键风险点和落地优先级清单。价格 3000 元，全部走平台 escrow，分两笔：确认合作后支付 1000，交付备忘录后支付 2000。这样范围锁定在\"一次 90 分钟线上工作会 + 一份书面备忘录\"，双方都没有开放式咨询的成本不确定性。\n\n如果这个范围你觉得需要加深或补充，比如增加书面意见的篇幅或后续跟进，我们也愿意谈——但价格、范围、交付节奏这三件事最好一起打包着谈，而不是单点压价。你看这个框架能不能作为起点？",
+      "offer": {
+        "subject": "架构工作会",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "书面备忘录，包含架构图、关键风险点和落地优先级清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前提供项目现状",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "确认合作后支付1000元，交付备忘录后支付2000元",
+            "maps_to_resource": "olivia_cash"
+          },
+          {
+            "party": "B",
+            "text": "给出结构判断和可选方案，交付书面备忘录",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个框架我大体能接，但有两点得先掰清楚。第一也是最重要的一点：我不能以私人身份出具法律意见，也不能对你的具体项目下“合不合规”“这个结构行不行”这种法律判断——这是我的执业红线，不是谈判话术。我能做的是一次架构工作会：基于我在跨境并购和交易架构上的经验，把不同的搭建路径、各自的利弊、常见的坑、风险分布，以及你落地时应该让持牌律师去确认哪些点，给你理清楚。交付物可以是一份《架构工作纪要》，包含架构选择、风险清单和落地优先级，但不是法律意见书。第二，我这边时间得看实际场景——你这个项目具体到什么阶段了？卡在哪个环节？这决定了我这场会能不能给你真正有用的东西。价格和 escrow 框架本身我没意见，但交付物得按上面这个形式来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "那就按这个定版：交付物为《架构工作纪要》（非法律意见书），基于 Olivia 会前提供的一页项目简报撰写，内容包括架构路径比较、各自利弊、常见坑、风险清单、落地优先级，以及需要持牌律师逐项确认的要点清单。\n\n合作形式：一次 90 分钟线上工作会，会后 5 个工作日内交付纪要；价格 3000 元，全程平台 escrow，确认合作即付 1000，Olivia 确认收到纪要后付 2000；她提供的项目材料仅用于本次合作，双方就材料内容保密。\n\n这个版本如果没问题，就请你确认，我们直接进入签约流程。",
+      "offer": {
+        "subject": "架构工作会",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "会后5个工作日",
+            "duration": "90分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "《架构工作纪要》（非法律意见书），基于一页项目简报撰写，内容包括架构路径比较、各自利弊、常见坑、风险清单、落地优先级，以及需要持牌律师逐项确认的要点清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "会前提供一页项目简报",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "确认合作后支付1000元，Olivia确认收到纪要后支付2000元",
+            "maps_to_resource": "olivia_cash"
+          },
+          {
+            "party": "B",
+            "text": "进行一次90分钟线上工作会，会后5个工作日内交付《架构工作纪要》",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "双方就材料内容保密",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个版本可以，我确认。90 分钟线上会 + 会后 5 个工作日交付《架构工作纪要》，内容范围就按我们刚对齐的来——尤其是'非法律意见书'这个定位，写清楚了她拿去用也不会误导她自己。escrow 两笔付款的节奏我也没问题。让她把项目简报发过来之后，我们直接约时间。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20317,
+        "out": 6386,
+        "cache_hit": 18048,
+        "cache_miss": 2269,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2531,
+        "out": 1290,
+        "cache_hit": 1792,
+        "cache_miss": 739,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1743,
+        "out": 3935,
+        "cache_hit": 1024,
+        "cache_miss": 719,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3522,
+        "out": 2321,
+        "cache_hit": 1536,
+        "cache_miss": 1986,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

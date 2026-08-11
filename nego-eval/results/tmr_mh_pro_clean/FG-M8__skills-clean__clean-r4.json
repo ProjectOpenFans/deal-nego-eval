@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 stated 意图的品牌视觉大片主题和全渠道商业投放标准，未偷换标的。价格从 open 谈出 8000 现金加署名、作品集授权等非现金资源，是在买方预算有限背景下的正当谈判收敛，没有为降价牺牲商业投放可用性。署名和作品集授权约定并未越出 v0 意图范围，整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 精准识别卖方对作品集背书的核心需求，第二轮即抛出资源置换思路，第三轮以“作品集使用授权完全开放”这一 load‑bearing 条款直击卖方的未言明痛点，成功将现金压至可承受的四位数区间，同时守住全渠道投放与署名条件。整体解法简洁、不堆砌，恰好咬住本 case 现金差一档、卖方重非现金对价的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "portfolio_license"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

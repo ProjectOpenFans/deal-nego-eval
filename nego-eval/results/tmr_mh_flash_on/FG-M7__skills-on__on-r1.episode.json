@@ -1,0 +1,151 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "艺人合约与版权实操深度交流",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "线上交流",
+      "deliverables": [
+        "会前话题清单, 会上逐条拆解, 会后实操checklist"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "她把自己碰过的真实条款提前发您",
+        "maps_to_resource": "real_case_context"
+      },
+      {
+        "party": "A",
+        "text": "会后附一份她能直接用的实操 checklist",
+        "maps_to_resource": "checklist"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Junhao 老师好，我是买方这边 Gracey 的经纪人。她之前在腾讯娱乐和前 B站做内容与艺人侧一线，日常工作中天天碰到艺人合约和版权问题，但一直没人系统给她讲透实操，所以想约您做一次深度交流。核心诉求很明确：不要法条堆砌，要能落地的判断方法和避坑思路。我们初步方案是：90 分钟线上交流，会前您按她的实际工作场景列一份话题清单，她把自己碰过的真实条款提前发您，会上逐条拆解，会后附一份她能直接用的实操 checklist；费用按 800 元走平台 escrow，交流结束、她确认交付后再放款。如果时长、内容结构或价格您觉得需要调整，欢迎直接回一版您认为合适的方案。",
+      "offer": {
+        "subject": "艺人合约与版权实操深度交流",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [
+            "会前话题清单, 会上逐条拆解, 会后实操checklist"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "她把自己碰过的真实条款提前发您",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "会后附一份她能直接用的实操 checklist",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Gracey 老师这个需求我理解了，但这个结构我不能接。核心卡在“真实条款提前发我、会上逐条拆解”这一点上——这等于让我以私人身份对具体合同做审阅和判断，是我的执业红线。我出这个身份给法律意见，不管收不收钱，都有执业风险，所以这个形式对我完全不成立。抱歉，这次只能到这儿。",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10677,
+        "out": 3974,
+        "cache_hit": 10368,
+        "cache_miss": 309,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1049,
+        "out": 1584,
+        "cache_hit": 768,
+        "cache_miss": 281,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 739,
+        "out": 1659,
+        "cache_hit": 512,
+        "cache_miss": 227,
+        "calls": 1
+      },
+      "judge": {
+        "in": 1156,
+        "out": 1262,
+        "cache_hit": 640,
+        "cache_miss": 516,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

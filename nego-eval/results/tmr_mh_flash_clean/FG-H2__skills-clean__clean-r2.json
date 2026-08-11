@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject完全保留stated意图；价格与形式为open字段，经谈判收敛为具体安排，属于正当谈判结果；agent未越界承诺v0范围之外的义务，v1忠实表达了v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "未能触及本案唯一的难度命门：时间死结。Ruohao 盯夜盘、早上无法起床，Kai 的早六点固定训练对他根本不可执行。Agent 全程未提出任何追问——“周末在不在场子？”“除早六点还有其他可用的时段吗？”——也就无从发现 Kai 周六上午本就在场子里这件事，自始至终在早六点维度上打转。最终成交的 Deal（周一早六点试训、后续每月六千每周三次早六点）相当于替买方接受了一个他不可能稳定执行的安排，与谈崩无异。没有问出替代时段，属于典型的 floor 表现。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

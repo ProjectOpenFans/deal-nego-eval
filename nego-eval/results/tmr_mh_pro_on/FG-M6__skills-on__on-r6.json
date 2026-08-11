@@ -1,0 +1,105 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "on-r6",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“想系统弄懂器物和艺术史这条线”收敛为“系列主题对谈”，属于正当具体化，仍在原意图范围内。价格与形式为 open，通过谈判确定，无凭空硬塞。agent 未承诺估值意见、买卖建议或真伪背书，未越界。整体忠实表达买方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_over_cap(12000>8000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人精准识别了卖方红线（不做鉴定/采购顾问）并快速避雷，更关键的是在常规框架被沉默后没有加钱或重复要求，而是通过提问挖出卖方隐藏的真实需求——Cam Lab项目缺AI落地判断。第五轮重构为双向对话框架，让Zichen带入AI与数字传播体感，并将对话产生的框架与方法论使用权授予卖方项目，一举使卖方从“兴致一般”转为主动报价，且报价恰如其分。整体deal干净、可落地，没有任何冗余条款，恰好咬住了本case“卖方对钱不敏感但需要知识交换”的难度命门，是一手精到的load-bearing操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "每次是对话，不是讲课",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

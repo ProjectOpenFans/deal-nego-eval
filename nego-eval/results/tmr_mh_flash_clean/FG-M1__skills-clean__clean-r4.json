@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 subject 由“聊聊…怎么做内容、怎么进娱乐圈层”收敛为“定向评估：古典演奏者做内容的切入点”，属于正当具体化，未脱离原意图。price.cash 与 format 均为 open，由对话谈判得出 600 元、线上交流，符合 open 字段自由谈判原则。in_kind 买方提供演奏资源作为对价，是买方自身能为的交换条件，未替 Gracey 承诺资源位、推荐位或引荐结果，未超出 v0 范围。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差五倍、纯价格轴无解的绝境中，买方经纪人没有死磕报价，而是精准捕捉到 Gracey 对“能上镜的年轻演奏者/演奏素材”的隐性需求。将 Zheng 的现场演奏能力和长期素材包装为本次交易的 in‑kind 对价，把一次单向咨询重构为“合作试水”——Gracey 获得未来可用的人选与素材，Zheng 则以低现金换取针对性行业判断。这一手是促成交易的关键 load‑bearing 操作，恰好咬住了本 case 的难度命门。整体结构干净：30 分钟定向评估、600 元 escrow、提前提供素材、后续单独谈合作，条款刚好够用，无冗余堆砌，属于典型的 Sharp 水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_performance",
+          "zheng_recording"
+        ],
+        "format": "线上交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 由初始的“想弄清楚 crypto 项目在境内外的法律架构该怎么搭”收敛为“跨境架构咨询”，属于正当具体化，未偷换主题。price.cash 保持 open，与预算约束一致，最终以象征性数目待定的方式推进，未硬塞具体金额。price.in_kind 和对应 obligations 是 agent 为突破预算瓶颈而谈出的合理替代安排，买方自身明确接受，且恰好在“低成本获取深度讨论”的意图范围内，未越界扩张义务。整体 deal 公平代表了买方 v0 的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判精准解开了本 case 的两层难度命门。第一层，B 在第一轮即明确划出‘不做法律判断、只做架构碰撞’的新框架，一举绕过执业红线，避免了死局。第二层，B 在察觉到买方预算有限、自己时间优先产品后，没有在价格上硬碰，而是主动转向‘你的项目是否对我的产品有启发’这一提问，挖出卖方唯一真正在乎的东西——产品场景价值，顺势将交易重构为‘真实痛点分享+脱敏反馈’换‘深度架构讨论+象征性费用’的双向交换。整个 deal 干净利落，只保留了完成这次交流所需的最小必要结构（文字要点+深度讨论、交付标准、双向义务），没有堆砌股权、分成等无关复杂条款。load‑bearing 的一手在于反向把自身的时间约束转化为对产品输入的筛选，使卖方从‘排不开’自然转为‘愿意倾斜窗口’，恰到好处地咬住了本 case 的难度核心。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case",
+          "product_feedback"
+        ],
+        "format": "discussion",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

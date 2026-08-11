@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-M2",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 为“衣橱整理与搭配方案”，与 v0 用户明确表达的“想请 Suye 帮我把衣橱理一遍，再挑一次搭配”完全一致，属于 faithful 的复述。价格从 open 收敛至 900 元现金，经过了正常的价格谈判，且 agent 未将价格强制设定为违背用户预算范围（最终用户代表确认了此让步，并引入了非现金对价，这属于对 open 部分的正当结构化）。deliverables “4到6套可直接复用的搭配方案，全程不带货不推销”是对初始搭配意图的合理具体化，未偏离原意。无越界承诺额外义务，忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差三倍以上、纯价格轴完全无解的情况下，agent果断跳出框架，将Claire的投行多场景穿搭经验和圈层人脉转化为三项可执行、可验证的非现金对价（匿名案例素材、结构化用户洞察、3-5人口碑推荐），恰好回应了Suye要求的‘具体、落地’。三条拆解精准，无模糊之处，使Suye愿意将价格从三千级降至900，且约定白纸黑字写入条款，交易站得住、能闭合。整体回应了难度命门中‘把买方特殊资源变成对价’的核心逻辑，结构干净、不堆砌。但方案本质是标准化的价值交换拆解，缺少一步灵光乍现、非显然的情境化重构（如以Claire的演奏直接对接Suye新季活动需求等），尚未达到Sharp层面，故判为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 900.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

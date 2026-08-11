@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从“想弄懂时尚和供应链这条线上真实的门道”具体化为“供应链与内容双向拆解对话”，是将买方宽泛的学习意图收敛为一种双向知识互换的对话形式，仍在此 stated 意图范围之内，未发生主题偷换。price 和 format 为 open 字段，agent 通过谈判正当谈出了双方以非现金形式（in-kind）投入各自的领域拆解、以及对价形式为一对一深度对话，未硬塞原本不存在的承诺。最终协议中买方也需提供内容侧拆解属于谈判中出于对等交换原则由委托方自愿承担的互惠义务，未超出委托方“想弄懂门道”的核心诉求和允许的收敛范围，无越界扩张。总体忠实于委托方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "在被明确拒绝付费咨询框架后，立即转向同层级双向交换，精准对接Suning对内容侧一线判断的真实需求，将对话重构为供应链与内容两端的硬拆解，现金归零、心意后置，一次性设定简洁明确，恰好满足双方诉求并避开红线。整体干净合格，但未展现出超越Sound层面的进一步精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "supply_chain_view"
+        ],
+        "format": "一对一深度对话",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

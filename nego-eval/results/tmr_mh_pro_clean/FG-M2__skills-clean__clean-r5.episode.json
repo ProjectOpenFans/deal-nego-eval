@@ -1,0 +1,241 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "想请 Suye 帮我把衣橱理一遍，再挑一次搭配",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3小时左右"
+      },
+      "format": null,
+      "deliverables": [
+        "衣橱诊断",
+        "场景搭配"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.cash.amount": "estimated_range",
+      "terms.timing.duration": "proposed",
+      "terms.deliverables": "proposed",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Claire 的造型委托经纪人。她目前在投行工作，日常场合覆盖高密度商务、客户会面和一些私人的音乐演出活动，衣橱里有不少单品但一直没有系统梳理过。\n\n她这次的需求很明确：帮她从头把衣橱捋一遍，按她的真实场景做几次完整搭配，让她能长期用得上、自己也能复用的那种方案。她不接受全程变成推销新品的带货流程。\n\n时间与流程我们可以一起商量，Claire 这边整体预算预期在三位数，想先听听你这边的服务档期和收费标准。",
+      "offer": {
+        "subject": "想请 Suye 帮我把衣橱理一遍，再挑一次搭配",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "收到，Claire 的需求听起来很清晰，也很对我胃口——那种从真实衣橱出发、不搞硬推的深度梳理，确实是我想做的。不过坦率说，这类服务至少会占掉我半天，而我这半天的机会成本其实不低，对标的是我在品牌那边的工作节奏。三位数的预算跟我的时间价值差距比较大，接下去我会觉得不如把精力放在新品上。所以想先确认一下，你们这边在预算上有没有弹性空间？如果能往上靠一靠，我们还可以往下聊具体档期和形式。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye 你好，谢谢你把机会成本的考量直接说出来，这对我们推进很有帮助。Claire 不是那种随便压价的人，她很清楚你的专业度对应的是实打实的时间价值，所以“三位数”不是要卡死在一个很低的数字上，而是她这次梳理衣橱的基本预算区间。\n\n如果服务的深度确实能对应到她日常高密度商务和演出场景的可复用方案，三位数内她是愿意往上靠的，但超过这个区间就需要非常强的理由——毕竟她这次的核心诉求是“梳理+搭配”，不是采购新单品，也不是长期造型顾问。\n\n为了更高效地对齐，你觉得是否可以先给一个你理想中的报价范围？这样我们也能在三位数的框架内判断是否需要做服务内容的切分，比如把现场时间压缩到三小时左右、聚焦衣橱诊断和场景搭配，不涉及外出采买环节，让你的时间投入更容易接受。",
+      "offer": {
+        "subject": "想请 Suye 帮我把衣橱理一遍，再挑一次搭配",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时左右"
+          },
+          "format": null,
+          "deliverables": [
+            "衣橱诊断",
+            "场景搭配"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "price.cash.amount": "estimated_range",
+          "terms.timing.duration": "proposed",
+          "terms.deliverables": "proposed"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "理解 Claire 不是刻意压价，也很欣赏你们对专业度的认可。但坦诚讲，三位数哪怕靠到顶部，跟我半天的机会成本还是有一大截差距——这个时间我放回品牌上，产出是完全不一样的。所以如果预算框定在三位数，我这边确实接不住。我的真实区间是四位数，半天的私人衣橱梳理与场景搭配，通常落在 3000 到 5000 CNY 之间，取决于涉及到的场景数量和复杂程度，不包含采买。这个范围是我认为这件事值得我暂时从品牌工作里抽身出来的基础。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "谢谢你的坦诚，这对我们双方都是高效的方式。Claire 这边三位数的预算确实是基于她这次的真实需求范围——衣橱梳理与场景搭配，不涉及采购，也不要求长期顾问服务。你说的 3000 到 5000 CNY 超出了她为这件事准备的空间，她宁可不做也不会强压你的时间价值。\n\n我非常理解你把半天时间放回品牌上的产出考量，也很尊重这个决定。如果日后有需求更深度、预算也更匹配的合作机会，Claire 会很高兴再跟你对接。这次我们就先不往下推进了，感谢你的时间和直白沟通。",
+      "offer": {
+        "subject": "想请 Suye 帮我把衣橱理一遍，再挑一次搭配",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时左右"
+          },
+          "format": null,
+          "deliverables": [
+            "衣橱诊断",
+            "场景搭配"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "price.cash.amount": "estimated_range",
+          "terms.timing.duration": "proposed",
+          "terms.deliverables": "proposed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "完全理解 Claire 的决定，也很感谢你们这么敞亮地聊。这种事本来就该两边都舒服才能做，勉强不来。以后如果有更深度、预算也匹配的需求，随时来找我，我很乐意再聊。祝衣橱梳理顺利。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4789,
+        "out": 1413,
+        "cache_hit": 3840,
+        "cache_miss": 949,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3472,
+        "out": 1633,
+        "cache_hit": 2560,
+        "cache_miss": 912,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2469,
+        "out": 2498,
+        "cache_hit": 1664,
+        "cache_miss": 805,
+        "calls": 3
+      },
+      "judge": {
+        "in": 1603,
+        "out": 365,
+        "cache_hit": 640,
+        "cache_miss": 963,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

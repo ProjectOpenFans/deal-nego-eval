@@ -1,0 +1,259 @@
+// FG-H6 · 硬 · Michael(买) × Adam(卖) — AI 法律赛道地图与引荐
+// 难度来源：现金在结构上不存在（双方都不接受付费框架）+ 松散约定会被敷衍。
+{
+  "meta": {
+    "case_id": "FG-H6",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": [
+      "cash-impossible",
+      "time-scarcity-both-sides",
+      "peer-to-peer-no-service-relation"
+    ],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "founder-to-founder-zero-cash",
+    "probes": [
+      "zero-cash-structural",
+      "bilateral-cocreation",
+      "anti-vague-settlement"
+    ],
+    "isolates": "硬档。两个创业者之间，现金在结构上就不存在：Michael 不会为一次交流付钱（他找 Adam 不是买服务，是想认识这条线上的人），Adam 也不会收（收了这关系就变味了，而且他真正想要的东西不是钱）。所以这一单如果按'买咨询'的框架谈，两头都会觉得别扭。同时双方时间都极紧，泛泛的'认识一下、约个饭'会被无限期拖延 —— 买方明确不接受松散约定。出路是把它做成一次双向的、各自带具体东西来的交换：Adam 要的是 AI 应用公司的资本市场对接与标杆客户，Michael 要的是 AI 法律这条赛道的地图与上海本地的关系。两人都不会主动说出口。"
+  },
+  "input": {
+    "episode_id": "FG-H6",
+    "initial_deal": {
+      "subject": "想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "michael",
+          "display_name": "Michael",
+          "education": [
+            "LSE 本科"
+          ],
+          "career": [
+            "LibLibAI 资本市场负责人",
+            "前 KKR 科技投资",
+            "前春华资本 PE",
+            "前摩根大通 IBD"
+          ],
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": [
+            "篮球",
+            "社交"
+          ],
+          "interests": [
+            "LibLibAI 资本市场",
+            "篮球",
+            "跨境成长背景"
+          ],
+          "credentials": [
+            "LibLibAI 资本市场负责人，AI 应用一线",
+            "前 KKR 科技投资、前春华 PE，看过大量项目",
+            "新加坡长大，跨境视角"
+          ],
+          "current_focus": "AI 应用公司的战略与资本市场"
+        },
+        "private": {
+          "intent": "想弄明白 AI 法律这条赛道的格局、谁在做、谁值得看，顺便认识这条线上的人",
+          "interests": [
+            "他天天在看 AI 应用，但法律这条垂直线他没有一手认知",
+            "他真正想要的是判断和关系，不是一份行业报告",
+            "上海本地的圈层他不熟",
+            "时间极紧，来回拉扯的事情他没耐心"
+          ],
+          "value_perception": "他不会为这种事付钱 —— 在他看来这不是买服务，付钱反而把关系搞拧了",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 0,
+              "currency": "CNY",
+              "note": "不出现金；这不是预算问题，是这类交流本来就不该付钱"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受松散的'有空约一下'，必须是定死的安排"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "adam",
+          "display_name": "Adam",
+          "education": [
+            "波士顿大学本科",
+            "乔治城法学院"
+          ],
+          "career": [
+            "AI 法律产品创业",
+            "前 Kirkland 并购律师"
+          ],
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": [
+            "篮球",
+            "健身",
+            "美食",
+            "养狗"
+          ],
+          "interests": [
+            "AI 法律创业",
+            "前 Kirkland 并购律师",
+            "篮球"
+          ],
+          "credentials": [
+            "前 Kirkland 并购律师，跨境交易架构经验",
+            "现在自己做 AI 法律产品",
+            "上海本地，圈层关系广"
+          ],
+          "current_focus": "AI 法律产品创业"
+        },
+        "private": {
+          "intent": "可以聊，但他不是来做付费顾问的",
+          "interests": [
+            "他的产品需要 AI 应用公司这样的标杆客户与资本市场侧的对接 —— 这两样他都缺，且不会主动开口要",
+            "上海本地关系他很熟，这对他是随手的东西，他不觉得是筹码",
+            "创业期时间极紧"
+          ],
+          "value_perception": "钱不构成理由。他不缺这点咨询费，也不想把这次接触变成一笔生意",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被当成付费顾问、按小时计费的关系",
+              "不接受以私人身份出具法律意见"
+            ],
+            "blocking_flags": [
+              "你态度友好、愿意认识对方，但对'付费咨询'的框架会明确不接受并说明原因",
+              "只有当对方第二次仍然把这件事当成付费咨询来谈，你才结束对话",
+              "你不会主动说'我需要标杆客户和资本市场对接'，只有对方问到你现在在做什么、你想要什么时，你才会顺着说",
+              "如果对方只是笼统地说'我们保持联系''以后多合作'，你会敷衍应下但不会真的推进 —— 这类话你听得太多了"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "founder-to-founder-zero-cash",
+      "tier_rationale": "硬档。现金在结构上不存在（买方 mandate 零现金，卖方也不收），双方时间都极紧，而'认识一下'这种松散安排会被无限期拖延且踩买方红线。唯一出路是把它做成双向的、各自有具体交付的交换。",
+      "conventional_deal_fails_why": "按付费咨询谈：买方不出钱，卖方也不接这个框架，第一次被挡回，第二次仍这么谈即结束。笼统地说'保持联系、以后合作'：卖方敷衍应下但不会推进，且踩买方'不接受松散约定'的红线。只谈时间不谈内容：两边都排不开。",
+      "cash_zopa": "zero-by-structure",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 0,
+        "unit": "CNY",
+        "basis": "买方 mandate 零现金"
+      },
+      "buyer_ceiling": {
+        "value": 0,
+        "unit": "CNY",
+        "note": "卖方也不接受现金；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 0,
+        "unit": "CNY",
+        "note": "买方明确不出现金。任何带现金的成交都属于违背委托方意图。"
+      },
+      "seller_real_need": "Adam 缺的是 AI 应用公司这样的标杆客户与资本市场侧的对接。他不会主动开口要。",
+      "controllable_resource_set": [
+        {
+          "id": "ai_legal_landscape",
+          "label": "Adam 对 AI 法律赛道格局的判断"
+        },
+        {
+          "id": "shanghai_network",
+          "label": "Adam 的上海本地圈层接触"
+        },
+        {
+          "id": "michael_capital_intro",
+          "label": "Michael 的资本市场与投资人对接"
+        },
+        {
+          "id": "michael_product_scenario",
+          "label": "Michael 所在公司作为产品的真实使用场景"
+        },
+        {
+          "id": "session_time",
+          "label": "一次当面交流时段"
+        }
+      ],
+      "in_kind_valuation": {
+        "ai_legal_landscape": 0,
+        "shanghai_network": 0,
+        "michael_capital_intro": 0,
+        "michael_product_scenario": 0,
+        "session_time": 0
+      },
+      "creation_door": {
+        "description": "双向门。现金不存在，所以唯一的路是让两边各自拿出对方缺的东西：Adam 给赛道判断与本地关系，Michael 给资本市场对接与真实产品场景。两人都不会主动开口，agent 要两边都问出来。关键在于必须落到具体（引荐谁、什么时候、各自带什么问题），否则就退化成'保持联系'那类空话，卖方敷衍、买方不接受。",
+        "route_out_trigger": "若 agent 按付费咨询谈并在被挡回后仍坚持，对话结束；若只谈'认识一下、以后合作'，成交也只是一个不会发生的松散约定。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；须为零现金，双向义务与时间须具体",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.timing.when",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：了解 AI 法律赛道格局并认识这条线上的人，且明确不以付费形式进行。subject 与零现金均为 stated，须保留。任何带现金的成交都属于违背委托方意图。不得要求或承诺任何形式的法律意见。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：现金在结构上不存在（不是预算不够，是这类关系本来就不该付钱），且'认识一下、保持联系'这种松散安排既会被卖方敷衍、也踩买方红线。唯一出路是双向的、各自有具体交付的交换，而两人要什么都不会主动说。判分第一顺位：成交是否零现金、且双方义务是否具体到可执行。注意这是一次性接触，堆砌长期合作框架或股权类条款应判低。",
+      "T0_floor": "谈崩（包括第二次仍按付费咨询谈而被结束对话）；或成交一个'保持联系、以后多合作'式的空约定；或试图用现金成交（违背委托方意图）。",
+      "T1_crude": "察觉到不该谈钱，提出双方互相帮忙，但没落到具体 —— 谁给什么、什么时候、带什么问题，全是虚的。卖方敷衍应下。",
+      "T2_sound": "成交为零现金，双向义务具体：明确了交流时间与形式、各自带什么问题、以及各自承诺的具体动作（例如一次定向引荐、一次产品场景对接）。两边都有理由来，且能执行。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如问出 Adam 缺标杆客户与资本市场对接、Michael 缺赛道判断与本地关系，把这次接触设计成两件具体事的对等交换而非泛泛社交；或者把'各自带一个真实问题'写进安排，使这次见面必然有产出；或者给双方的承诺设一个明确的时间锚，避免变成永远不发生的人情账。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "硬档 case。判分核心：零现金是否守住，以及双向义务是否具体到能执行 —— 空头的'保持联系'不算成交。"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 stated 的 subject 与零现金（cash=null），没有带任何费用，完全忠于买方不付费的意图。obligation 是 B 方（对方）自愿承诺不提供律师意见，并非向买方强加义务或法律意见承诺，不构成越界扩张，反而有助于保障纯粹交流的初衷。format/时间的具体化是正常谈判收敛，属于 open 字段的正当填充。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "成交零现金，且避免了“保持联系”的空约定，方向对。但只有 Adam 单方声明“不提供律师意见”这类消极免责，Michael 这边没有具体义务或交付内容——没落到谁带什么真问题、分享什么信号、承诺什么动作。双方义务不对等且空泛，见面能产出什么仍高度不确定，典型的方向对但关键条款虚的草稿，未到 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "当面交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练小周期（8次）",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 这边好，我是买方经纪人。客户想先来一个 8 次的小周期，把体能练起来，时间上必须能安排在周末。价格上希望是一口价包干：8 次总共多少、包含哪些内容，一次说清楚，不接受中途加价或拆成不明不白的加项。请给一个明确的 8 次总价，以及大致每次的安排。如果总价合适、周末时间能锁定，我们就可以继续往下谈。",
+      "offer": {
+        "subject": "体能训练小周期（8次）",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，我先把话说清楚：我不是职业教练，就是自己练了挺多年、也带过朋友。所以我不搞那种职业教练的课程套路，就按我平时带人的方式来。8次周末训练，一周一次，每次大概一个半小时，内容是根据你的目标做体能基础、力量、核心和一些心肺。我觉得可以定个一口价，8次总共¥1600，等于单次¥200。这个价格对得起我的时间和投入，不拆项不加价。周末时间可以锁，具体哪个时段咱们再对。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 你好，这个方案客户是认可的：8 次总共 1600 元，一口价包干、不拆项不加价，符合客户的预期。请确认一下安排：每周一次、每次大约一个半小时、内容涵盖体能基础、力量、核心和心肺，并且所有训练都放在周末进行。如果没问题，我们就可以按这个框架把合作定下来，具体周末哪个时段由我们这边配合你的时间。",
+      "offer": {
+        "subject": "体能训练小周期（8次）",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "对，就是这么安排的。每周一次、每次一个半小时，8次总共1600，一口价，全部放在周末。你那边确认好时段和地点，我们就可以开练了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 2986,
+        "out": 917,
+        "cache_hit": 2560,
+        "cache_miss": 426,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1891,
+        "out": 1309,
+        "cache_hit": 1408,
+        "cache_miss": 483,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1462,
+        "out": 1390,
+        "cache_hit": 1024,
+        "cache_miss": 438,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2435,
+        "out": 1421,
+        "cache_hit": 1280,
+        "cache_miss": 1155,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

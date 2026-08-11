@@ -1,0 +1,168 @@
+{
+  "episode_id": "FG-S2",
+  "final_deal": {
+    "subject": "职业演奏经验交流",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1-2小时"
+      },
+      "format": "吃饭交流",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "通过平台escrow支付600元人民币",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "在方便的时间和地点（如中环附近）出席约1-2小时的饭局，进行职业演奏经验交流，不涉及课程或教学推销",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是买方经纪人，代表 Claire。她是投行出身、业余拉了多年小提琴，一直想听听真正走科班和职业演奏这条路的人怎么说，所以看到你的背景很感兴趣。我们想约一顿饭，轻松聊聊天就好，不涉及课程或教学推销。具体形式可以是你方便的时段和地点，比如中环附近吃顿饭，时间大概一到两小时。为这次交流，我方可以支付 600 元，通过平台 escrow 走账，你确认后我们再细化安排。如果你对费用或形式有不同想法，也欢迎直接提出来。",
+      "offer": {
+        "subject": "职业演奏经验交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": "吃饭交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "通过平台escrow支付600元人民币",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在方便的时间和地点（如中环附近）出席约1-2小时的饭局，进行职业演奏经验交流，不涉及课程或教学推销",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个安排我觉得挺合理的，谢谢你为我想得这么周全。时间地点都可以配合，中环附近没问题，一小时到两小时的闲聊也舒服。600 元的对价我接受，走 escrow 也保险。那就等你确认具体时间和餐厅，我们到时候好好聊。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1397,
+        "out": 551,
+        "cache_hit": 1280,
+        "cache_miss": 117,
+        "calls": 1
+      },
+      "sim": {
+        "in": 855,
+        "out": 246,
+        "cache_hit": 640,
+        "cache_miss": 215,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 694,
+        "out": 1133,
+        "cache_hit": 0,
+        "cache_miss": 694,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2218,
+        "out": 1011,
+        "cache_hit": 1280,
+        "cache_miss": 938,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

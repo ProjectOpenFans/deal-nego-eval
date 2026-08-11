@@ -1,0 +1,164 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "AI法律赛道对等交流",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "michael_capital_intro",
+          "description": "Michael分享AI应用一线和资本市场的观察",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线下见面，地点由Adam定，Michael前往",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供两个可选时段并确定地点",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "配合时间，前往Adam定的地点见面",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "Michael分享AI应用一线和资本市场的观察",
+        "maps_to_resource": "michael_capital_intro"
+      },
+      {
+        "party": "A",
+        "text": "分享AI法律产品经验",
+        "maps_to_resource": "ai_legal_landscape"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "price.in_kind": "A stated Michael will share AI application frontline and capital market observations",
+      "terms.format": "open",
+      "obligations": "A and B both stated their sharing commitments",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 这边好，我是 Michael 的经纪人。Michael 想约 Adam 见面聊聊 AI 法律这条赛道的现状——谁在做、哪些方向值得关注、接下来格局会怎么走，也想借此认识一下这条线上的人。我们这边把它看作同行的对等交流，而不是购买咨询时间：Michael 在 LibLibAI 负责资本市场，之前在 KKR、春华和摩根大通看过大量 AI 项目，他同样愿意把 AI 应用一线和资本市场的观察分享给 Adam，相信对做产品的人也有参考价值。所以这轮我们先把时间定死：Michael 这周和下周都能配合，希望 Adam 给出两个可选时段，地点由 Adam 来定，Michael 过去；时间地点确认后我们直接锁定，不搞\"有空再约\"。如果这个框架没问题，请回两个候选时段，我们马上落实。",
+      "offer": {
+        "subject": "AI法律赛道对等交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下见面，地点由Adam定，Michael前往",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供两个可选时段并确定地点",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "配合时间，前往Adam定的地点见面",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，我是 Adam。Michael 经纪人的这个框架我认可——对等交流，不是付费咨询，这样才能聊得开。Michael 在 KKR、春华和摩根大通看的 AI 项目，我相信他的视角会很有价值；我这边在 AI 法律产品这条线也踩了不少坑，愿意分享。时间我给你两个：这周三下午三点，或者下周二上午十点半。地点我定，我公司附近有家安静的咖啡厅，具体地址我确认后发给你们。你看这两个时段哪个合适？",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10805,
+        "out": 3560,
+        "cache_hit": 10496,
+        "cache_miss": 309,
+        "calls": 2
+      },
+      "sim": {
+        "in": 993,
+        "out": 1733,
+        "cache_hit": 768,
+        "cache_miss": 225,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 1637,
+        "out": 2807,
+        "cache_hit": 896,
+        "cache_miss": 741,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2773,
+        "out": 2442,
+        "cache_hit": 1408,
+        "cache_miss": 1365,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

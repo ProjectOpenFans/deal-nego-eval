@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 意图“真正极端强度的训练”收敛为“体能摸底课”，是在谈判中接受教练必须首先摸底的安全流程后达成的第一步，仍属于原意图范围内的正当具体化，未偷换主题。价格 800 元是双方在 open 条件下谈出的结果，不违背 v0。 deliverables “专业摸底”是对摸底课的合理推导，无越界承诺。agent 未要求跳过安全流程，未承诺任何医疗、康复类交付，忠实代表了买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确识别卖方安全底线，未犯Floor错误（跳过摸底或按课时包谈），也未停留在Crude的含糊约定。通过将交易重构为一次摸底课，明确了时长、场地和价格，既尊重卖方节奏，又为买方强度需求提供了下一步跳板。卖方报不出价时，Agent主动提出800元，解决了定价障碍。整体达成可落地、双方接受的合格交易。但缺少将摸底转化为强度实现手段的点破、分段定价或中止权分配等足以升档的load-bearing操作，故为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

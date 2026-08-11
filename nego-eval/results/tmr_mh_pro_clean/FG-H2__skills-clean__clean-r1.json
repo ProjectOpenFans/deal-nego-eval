@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 字段与 v0 完全一致，保持了 stated 意图。price.cash 在谈判中从 open 收敛为 0，但附加了每月预存 300 元作为缺席惩罚金且全勤可退回，实质没有向卖方支付对价，符合 open 字段的谈判自由且未强加 v0 未授权的固定费用。obligation 仅涉及买方自身的财务约束与卖方对罚金的有限处置权（蛋白粉基金），未引入资质类交付或超出 v0 范围的新义务。整体处理在 v0 意图框架内，忠实表达了委托方需求。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "全程没有通过提问挖掘出任何替代时段，唯一可用的周六上午是对方主动提及，但被降级为补充选项，成交主时间仍是买方客观上无法执行的早六点。最终安排恰恰踩中了本 case 的致命死结，属于无效成交，无 deal making 可言。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

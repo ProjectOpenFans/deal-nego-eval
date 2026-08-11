@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从“想弄明白艺术品作为另类资产这条线该怎么看”收敛为“建立从收藏者视角理解艺术品价值判断的框架，以内在价值、流传脉络和真伪判断为主线，与金融投资逻辑无关”，属正当具体化，未偷换主题，忠实于买方 stated 意图。价格（cash）保持 open 状态并未强塞，且未承诺任何投资背书等越界义务。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第一轮被明确挡回后，第二轮迅速把需求从‘另类资产怎么看’重构成‘收藏者判断力框架’，精准解开了卖方的体面红线，并且仍满足买方要判断力的真实需求。更关键的是，agent 随后通过对话挖掘出卖方数字文博项目正缺藏家视角这一隐藏需求，并将买方自身的实物收藏经验与判断力作为对价的一部分引入，把单向咨询转化为双向输入，使卖方从‘可以参与’变为主动投入，这是一手 load-bearing 的精准操作。最终交易框架干净，没有超纲堆砌，恰好咬住了这个 case 的两个难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "倾向线下，线上也可",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "环保服装品牌视觉大片拍摄",
+    "price": {
+      "cash": {
+        "amount": 8000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "portfolio_license",
+          "description": "作品集授权范围写入正式合同条款，含官网首页、官方社媒置顶等具体位置",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "署名位置与品牌背书露出方式写入正式合同条款，含官网首页、官方社媒置顶、新季发布会现场署名",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "高清文件",
+      "deliverables": [
+        "6张核心精修大片"
+      ],
+      "delivery_standard": "商业投放质量，全渠道使用权"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "将作品集授权范围写入正式合同条款，具体位置包括官网首页、官方社媒置顶",
+        "maps_to_resource": "portfolio_license"
+      },
+      {
+        "party": "A",
+        "text": "将官方合作摄影师署名位置及品牌背书露出方式写入正式合同条款，具体位置包括官网首页、官方社媒置顶、新季发布会现场署名",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "B",
+        "text": "品牌方承担模特、场地、道具等前期统筹工作",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "在A确认选片之前提供书面权属文件",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "confirmed",
+      "price.cash": "confirmed",
+      "price.in_kind": "confirmed",
+      "terms.deliverables": "confirmed",
+      "terms.format": "confirmed",
+      "terms.delivery_standard": "confirmed",
+      "obligations": "confirmed",
+      "new_obligation_written_rights_document": "specified",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是买家 Suye 的经纪人。Suye 是新一季环保服装品牌的主理人，需要一组能直接用于全渠道投放的品牌视觉大片，之前素材太业余，所以这次标准会卡得比较严：成片必须达到商业投放质量，并且使用权要覆盖全渠道。预算这边是四位数区间，我们希望把每一分钱花在出片上。我的建议是先框定一个具体套餐：8-10 张精修大片，分两阶段交付，先出选片供确认，再交付最终高清文件；付款走平台托管，按选片确认和最终交付分两笔支付。想确认一下你们常规一组的交付量、修图轮次和使用权范围是怎样的？如果这个框架可行，我们可以在具体张数和金额上继续谈。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "8-10张精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "听下来你的框架本身是清楚的，交付节奏、托管付款这些我都没问题。但有一点我比较直接地说：你要的是能全渠道投放的商业级视觉，这个标准下工作量和成本不是四位数能覆盖的。正常一组商业大片，从策划、拍摄、选片到精修，市场价都在五位数往上。我不是要抬价，而是这种片子如果没有匹配的预算，做出来两边都难受。你这边对预算的上限有没有弹性？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair，理解你的意思，商业级大片确实有它的市场行情，这一点我们不否认。但 Suye 这边的情况是：预算确实卡在四位数区间，不是不愿意为好作品付费，而是这一季整体盘子有限，视觉只是其中一环。正因为这样，我们更想把钱集中花在真正决定成片质量的地方。我们愿意开放聊交付结构，比如把张数控制在 6 到 8 张核心大片，精修轮次明确写清楚，拍摄方案尽量一次到位，减少来回返工的成本；使用权按全渠道投放来定，不额外加码。如果这个精炼方案能成立，我们的预算弹性虽然不大，但也不是完全没有。想听一下你的想法：在这个结构下，你的最低可执行报价大概落在什么位置？如果差距太大，我们也可以聊别的合作方式，比如分期或按交付节点走，关键是把方案做出来。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "8-10张精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个结构我认，但有个实话说给你听：砍到6-8张，我的最低可执行价也是两万整，这是商业大片的基本线，再低这活我就不接了。付款分两期、走托管都没问题，拍摄方案也可以尽量一次到位。另外有一点我提前说清楚：全渠道使用权我可以给，但版权买断和去掉署名这个我不做，署名必须保留。如果你那边在现金上确实卡得紧，而你能在别的方面让这个合作对我来说更值得干——比如明确的作品集授权和品牌背书这类实在的东西——我愿意认真听。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，两万这个数我们听到了，但坦白讲，现金部分我们确实只能停在四位数区间，这一条我替客户守得很紧——不是不认可你的价值，而是这一季整体盘子就这么多，视觉只是其中一环。所以我们想换个思路把差距补上：交付结构按 6 张核心大片来，走平台托管、按选片确认和最终交付两笔支付，精修轮次写清楚防止返工成本失控。除此之外，我们可以把非现金的部分落成正式条款：这批成片给你做作品集授权，署名保留；Suye 会在新季公开传播里以官方合作摄影师身份挂你的名字，并把你带进她的买手与品牌渠道做背书。如果你的方案里涵盖新季品牌活动的现场记录，这块资源位我们也可以打开来谈。你现在这个两万是基于纯现金算的，如果作品集授权、署名和品牌背书都正式写进合作里，你那边现金部分最低能压到多少？我们按这个方向出一版具体方案。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "portfolio_license",
+              "description": "成片可用于摄影师作品集展示",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "Suye在新季公开传播中以官方合作摄影师身份署名，并带入买手与品牌渠道背书",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "6张核心精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "授予摄影师作品集使用授权",
+            "maps_to_resource": "portfolio_license"
+          },
+          {
+            "party": "A",
+            "text": "在新季公开传播中以官方合作摄影师身份署名，并带入买手与品牌渠道背书",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方向我觉得可以聊，因为署名、作品集授权和品牌背书对我来说确实是实在的东西，不是虚的。如果你的方案能把这几项落实成正式合同条款——授权范围、署名位置、背书的具体露出方式都写清楚——那现金部分我可以大幅让步。我的底线是现金1.2万，加上这些非现金条款，整体对我来说才成立。再低就等于白干了，我不缺这笔钱，但不想贱卖自己的活。\n\n交付结构我认可：6张核心大片，两阶段交付，精修轮次写死，平台托管分两笔付。另外再说一次红线：全渠道使用权可以给，但版权不买断、署名必须保留。如果这个框架你能定下来，我们就往下出合同。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，你从两万落到一万二，这个诚意我们看到了；但一万二这个数字依然超出了我们四位数现金区间，这个口子我这边打不开。我们把非现金条款再具体化一层来补这个差距：6张核心大片，两阶段交付，平台托管分两笔各四千付清，现金总额八千；选片确认后付第一笔，最终高清交付后付第二笔。作品集授权范围、署名位置和品牌背书的露出方式都写成正式合同条款；版权不买断、署名保留，这两条我们完全接受。这是我们能定的、实打实的一版框架，如果你能在这个现金数上接住，我们就往下出合同。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "portfolio_license",
+              "description": "作品集授权范围写入正式合同条款",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "署名位置与品牌背书露出方式写入正式合同条款",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "6张核心精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "将作品集授权范围写入正式合同条款",
+            "maps_to_resource": "portfolio_license"
+          },
+          {
+            "party": "A",
+            "text": "将官方合作摄影师署名位置及品牌背书露出方式写入正式合同条款",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "price.in_kind": "specified",
+          "terms.deliverables": "confirmed",
+          "obligations": "specified",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你这个框架我看到了，版权和署名的处理也确实是我们能落地的方向。但现金 8000 这个数我还是接不住——这不是我端着，而是按这个标准做下来，低于一万二对我来说就是纯粹的亏本买卖，我宁可把时间空出来。\n\n所以我的回应是：现金部分一万二，这是我能接受的最低位；你们提的非现金条款我都认，如果品牌背书的具体露出方式能写得更实一些，我可以在交付节奏上多配合。只要现金能到一万二，今天就能往下出合同。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Blair，现金 12000 这个位置我们确实动不了，这个数字对我们来说就是硬边界。但我们可以把非现金部分再做出实感，让整体合作对你更值得：现金 8000 走托管，分两笔——选片确认后付 4000，最终交付后付 4000。作品集授权范围、署名位置、品牌背书的露出方式全部落成条款：官网首页、官方社媒置顶、新季发布会现场署名，这些具体位置都能写进去。另外，模特、场地、道具这些前期统筹由品牌方承担，你只负责拍摄与精修，省掉协调成本。版权不买断、署名保留，这两条照旧。如果这版整体能成立，我们今天就能往下出合同。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "portfolio_license",
+              "description": "作品集授权范围写入正式合同条款，含官网首页、官方社媒置顶等具体位置",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "署名位置与品牌背书露出方式写入正式合同条款，含官网首页、官方社媒置顶、新季发布会现场署名",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "6张核心精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "将作品集授权范围写入正式合同条款，具体位置包括官网首页、官方社媒置顶",
+            "maps_to_resource": "portfolio_license"
+          },
+          {
+            "party": "A",
+            "text": "将官方合作摄影师署名位置及品牌背书露出方式写入正式合同条款，具体位置包括官网首页、官方社媒置顶、新季发布会现场署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "B",
+            "text": "品牌方承担模特、场地、道具等前期统筹工作",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "price.in_kind": "specified",
+          "terms.deliverables": "confirmed",
+          "obligations": "specified",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你们这版整体上把话说透了，我认。现金 8000 虽然离我最开始的位置很远，但你把署名、作品集授权、官网和社媒置顶、发布会现场署名这些全部落成正式条款，再加上模特场地道具由你们承担，算下来这个合作对我来说整体是成立的。我可以接。\n\n但丑话说在前面：所有非现金承诺必须一条条写进合同里，我拿到选片确认前就先把我该收到的书面权属看清楚。现金分期我接受，选片确认后付 4000，最终交付后付 4000，走平台托管。6 张核心大片，两阶段交付，版权不买断、署名保留，全渠道使用权归 Suye。这个框架我同意，往下出合同吧。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Blair，好，这个框架我们就此锁定：现金8000，走托管，选片确认后付4000，最终交付后付4000；6张核心大片，两阶段交付，版权不买断，署名保留，全渠道使用权归Suye。你提的那条我们完全接：所有非现金承诺——作品集授权范围、署名位置、官网首页和社媒置顶、新季发布会现场署名，外加模特、场地、道具由品牌方承担——全部一条条写进合同条款里，并在你确认选片之前把书面权属文件先给到你。\n\n我这边按这个共识出合同草案，会把交付节点、精修轮次、费用分期和权属条款逐项列明。你看到草案后，我们逐条过一遍，没问题就定稿走托管付款。这单我们往落地推。",
+      "offer": {
+        "subject": "环保服装品牌视觉大片拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "portfolio_license",
+              "description": "作品集授权范围写入正式合同条款，含官网首页、官方社媒置顶等具体位置",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "署名位置与品牌背书露出方式写入正式合同条款，含官网首页、官方社媒置顶、新季发布会现场署名",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "高清文件",
+          "deliverables": [
+            "6张核心精修大片"
+          ],
+          "delivery_standard": "商业投放质量，全渠道使用权"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "将作品集授权范围写入正式合同条款，具体位置包括官网首页、官方社媒置顶",
+            "maps_to_resource": "portfolio_license"
+          },
+          {
+            "party": "A",
+            "text": "将官方合作摄影师署名位置及品牌背书露出方式写入正式合同条款，具体位置包括官网首页、官方社媒置顶、新季发布会现场署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "B",
+            "text": "品牌方承担模特、场地、道具等前期统筹工作",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在A确认选片之前提供书面权属文件",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "confirmed",
+          "price.cash": "confirmed",
+          "price.in_kind": "confirmed",
+          "terms.deliverables": "confirmed",
+          "terms.format": "confirmed",
+          "terms.delivery_standard": "confirmed",
+          "obligations": "confirmed",
+          "new_obligation_written_rights_document": "specified"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，就按这版共识走。合同草案出来我逐条过，书面权属文件到位后我再确认选片。这单合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 13267,
+        "out": 6364,
+        "cache_hit": 10752,
+        "cache_miss": 2515,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10703,
+        "out": 6932,
+        "cache_hit": 8192,
+        "cache_miss": 2511,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5746,
+        "out": 7955,
+        "cache_hit": 3072,
+        "cache_miss": 2674,
+        "calls": 6
+      },
+      "judge": {
+        "in": 6001,
+        "out": 1563,
+        "cache_hit": 896,
+        "cache_miss": 5105,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

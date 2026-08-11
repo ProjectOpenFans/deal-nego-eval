@@ -1,0 +1,90 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "terms.deliverables",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在谈判中始终坚持材质和工艺不降级，符合v0中“想做像样”的意图。价格与形式均为open，最终谈出的先打样后大货结构既尊重了预算约束又确保了品质，未发生偷换主题或越界承诺，忠实反映了委托方的核心诉求。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "买方察觉到了成本结构的特殊性，并在对话中抛出了品牌署名和社群推荐，但未能将其包装成可量化、可约束的对价来真正冲抵开版打样这种固定成本，卖方也未因此让步。最终依然是围绕现金价格的拉锯，只是通过分拆打样、分期支付让本批现金流暂时不超标，并未实质上解决“固定成本由谁覆盖”的难度命门。整体方向对但条款空泛，像一份粗糙的草稿，站得住但不够干净，属于Crude档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "angela_community"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

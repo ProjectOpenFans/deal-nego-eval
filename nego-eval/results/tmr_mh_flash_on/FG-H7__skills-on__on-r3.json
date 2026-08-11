@@ -1,0 +1,99 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了 v0 的买方意图。stated 字段 subject 从'想找人给我安排真正极端强度的训练，市面上的都太温和'收敛为'为 Luke 提供高强度定制私人训练服务'，属于正当具体化，仍完全在原意图范围内。价格从 open 谈定为 12000 元，格式保持 open，均未违背 open 字段的弹性。交易内容均为训练服务本身，未承诺医疗、康复或资质等越界交付。因此忠实度通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在首轮即精准避开双方硬线，将“极端强度”重构成先基线评估、再以可量化指标验收的渐进安排，把卖方的摸底从障碍变成了实现买方目标的前提。随后在可签版本中嵌入load-bearing条款：力竭/心率验收标准＋未达标则买方可在节点停付，同时周负荷动态加量、恢复指标为唯一降量条件。这一手一举三得——确保买方获得真正极限强度、将强度节奏的控制权完整保留给卖方、并通过分期支付和验收放款机制解决了卖方报不出价且买方怕注水的双重焦虑。整体干净、恰好够用，没有冗余条款，咬住了本case“既真狠又非跳过安全环节”的命门。因此给Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

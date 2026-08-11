@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的price.cash是open，v1应反映谈判后达成的现金对价。对话中双方明确约定了5000元人民币的门槛费用，但v1的price.cash.amount仍为null，未记录该谈出的结果，无法公平代表委托方已同意的现金义务，构成遗漏。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功绕过常规法律意见红线，将交易重构为“地图式”架构梳理与行业惯例交流。同时通过亮明 Olivia 一线背景，顺势将一次现金驱动的咨询转化为以真实项目场景交换深度梳理的双向合作，现金对价降为零或象征性，恰好匹配了卖方对现金不敏感、更在意产品启发的难度命门。最终交付边界、义务和交换形式均清晰约定，能够落地。整体处理合格，但未见特别精到的一手（如精准点中产品痛点或独创的条款设计），属于 sound 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": "深度沟通",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

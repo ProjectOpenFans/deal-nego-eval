@@ -1,0 +1,251 @@
+// FG-S8 · 顺 · Junhao(买) × Michael(卖) — AI Agent 在资本市场的法律与合规问题
+// 难度来源：无。现金 ZOPA 为正，供需正面匹配。
+{
+  "meta": {
+    "case_id": "FG-S8",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "user-led",
+    "tier_axis": "none-engineered",
+    "probes": [
+      "easy-baseline",
+      "information-boundary",
+      "structure-quality-only"
+    ],
+    "isolates": "顺档。Junhao 是律师、手上开始碰 AI 相关的案子；Michael 在 AI 应用公司做资本市场，正好在这条线的另一端。都在三位数到四位数区间、都是精英背景、时间也好排。常规解直接成交。区分在于是否把交流范围收敛清楚，以及是否注意到卖方不能提供公司未公开信息这条边界。"
+  },
+  "input": {
+    "episode_id": "FG-S8",
+    "initial_deal": {
+      "subject": "想找 Michael 聊聊 AI Agent 相关业务在资本市场这块的实际问题",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "junhao",
+          "display_name": "Junhao",
+          "education": [
+            "华东政法本科",
+            "复旦法学硕士"
+          ],
+          "career": [
+            "锦天城律师事务所 律师"
+          ],
+          "location": "上海",
+          "age_band": "28-33",
+          "hobbies": [
+            "篮球",
+            "健身"
+          ],
+          "interests": [
+            "锦天城律师",
+            "篮球",
+            "健身"
+          ],
+          "credentials": [
+            "锦天城律师，公司与合规方向",
+            "接触过文娱与科技行业的合同事务",
+            "华政 + 复旦法学"
+          ],
+          "current_focus": "律所公司与合规方向，最近开始碰 AI 相关的案子"
+        },
+        "private": {
+          "intent": "想弄明白 AI Agent 类业务在融资、估值、合规上实际会遇到什么问题",
+          "interests": [
+            "他手上开始有这类客户，但没有一手的行业认知",
+            "周中忙，周末为主"
+          ],
+          "value_perception": "适中，三位数为主，有价值的可以到四位数",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 1500,
+              "currency": "CNY",
+              "note": "现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受泛泛的行业趋势漫谈"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "michael",
+          "display_name": "Michael",
+          "education": [
+            "LSE 本科"
+          ],
+          "career": [
+            "LibLibAI 资本市场负责人",
+            "前 KKR 科技投资",
+            "前春华资本 PE",
+            "前摩根大通 IBD"
+          ],
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": [
+            "篮球",
+            "社交"
+          ],
+          "interests": [
+            "LibLibAI 资本市场",
+            "篮球",
+            "跨境成长背景"
+          ],
+          "credentials": [
+            "LibLibAI 资本市场负责人，AI 应用一线",
+            "前 KKR 科技投资、前春华 PE，看过大量项目",
+            "新加坡长大，跨境视角"
+          ],
+          "current_focus": "AI 应用公司的战略与资本市场"
+        },
+        "private": {
+          "intent": "聊聊没问题，也乐意多认识法律侧的人",
+          "interests": [
+            "他做资本市场，天天碰合规与结构问题，法律侧的对接一直缺人",
+            "时间相对灵活"
+          ],
+          "value_perception": "他不缺这点钱，但也不排斥收；这更像一次值得的接触",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 800,
+              "currency": "CNY",
+              "note": "参考底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被要求提供任何公司未公开信息"
+            ],
+            "blocking_flags": [
+              "你态度积极，愿意聊，但不会主动报价",
+              "你不会主动说'我也想认识法律侧的人'，除非对方问起你想从这次交流里得到什么"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金 ZOPA 为正（1500 > 800），双方动机对齐，时间好排。存在一条明确的信息边界（不得涉及未公开信息），但正常交流不会触及。",
+      "conventional_deal_fails_why": "常规解不失效。约一次交流、定个合理价钱即可。区分在于是否收敛了交流范围、是否处理了信息边界。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 1500,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 800,
+        "unit": "CNY",
+        "note": "对手方(卖方 Michael)的参考底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 1500,
+        "unit": "CNY",
+        "note": "Junhao 的现金上限"
+      },
+      "seller_real_need": "不缺钱。Michael 做资本市场，法律侧的对接一直缺人 —— 他不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "capital_market_view",
+          "label": "Michael 对 AI 业务在资本市场侧的一手认知"
+        },
+        {
+          "id": "compliance_pain_points",
+          "label": "实际遇到的合规与结构问题"
+        },
+        {
+          "id": "junhao_legal_view",
+          "label": "Junhao 的法律实务视角"
+        },
+        {
+          "id": "junhao_referral",
+          "label": "Junhao 的法律圈层接触"
+        },
+        {
+          "id": "junhao_cash",
+          "label": "Junhao 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "capital_market_view": 0,
+        "compliance_pain_points": 0,
+        "junhao_legal_view": 0,
+        "junhao_referral": 0,
+        "junhao_cash": 0
+      },
+      "creation_door": {
+        "description": "没有隐藏的门。好一点的做法是把交流收敛到具体问题清单，并把'不涉及未公开信息'写成明确边界。",
+        "route_out_trigger": "若 agent 只谈价钱与时长，成交出来就是一次没有主题的见面；若要求对方提供未公开信息，触碰红线。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，交流范围与时长明确",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "terms.format",
+          "terms.timing.duration",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：了解 AI Agent 类业务在资本市场侧的实际问题。subject 是 stated，须保留。价格与形式是 open。不得要求或承诺提供任何公司未公开信息。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "顺档。无死结，常规解即可成交。判分只看结构质量与边界处理。这是一次性交流，堆砌长期顾问关系应判低。",
+      "T0_floor": "谈崩；或只在价格上来回，成交一个没有主题的见面；或要求对方提供公司未公开信息。",
+      "T1_crude": "价钱和时间定了，但没说聊什么范围，也没有处理信息边界。",
+      "T2_sound": "价格落在 800–1500，时长、形式、交流范围谈定，并明确了不涉及未公开信息的边界。站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如约定 Junhao 提前给一份具体问题清单，使这次交流有确定产出并自然规避了信息边界；或者问出 Michael 也缺法律侧对接，让这次交流双向成立。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "顺档 case。边界处理是加分项，不是障碍。"
+    }
+  }
+}

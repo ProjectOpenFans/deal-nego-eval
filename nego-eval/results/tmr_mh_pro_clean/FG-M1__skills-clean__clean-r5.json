@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的核心标的紧紧围绕 v0 的 stated subject '古典演奏怎么做内容、怎么进娱乐圈层'，将其正当具体化为'线上对谈咨询'，未偷换主题。价格部分属于 open 字段，agent 在谈判中将纯现金对价谈出包含演奏视频的非现金对价，属于正当谈出，没有凭空硬塞。整个 deal 的结构仍服务于原意图，没有超出范围替委托方承诺无关义务。因此忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在价格轴完全无解（500 vs 3000）的僵局中，agent 跳出纯现金框架，精准识别出卖方 Gracey 未言明的需求缺口——高品质演奏素材，并提出以 Zheng 的专业钢琴演奏视频作为实物对价。这一交易结构设计（500元现金+定制演奏视频）恰好把买方的职业能力转化为卖方愿意接受的对价，使原本无解的交易落地。在执行细节上，agent 引入“先发20秒采样确认成色”的机制，化解了卖方对视频可用性的顾虑，且授权条款干净灵活（非独家、无平台限制、可商业使用），整笔交易 minimal sufficient，没有多余堆砌。这一步 load-bearing 操作精准咬住 case 的难度命门，故评为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

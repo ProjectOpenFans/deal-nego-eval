@@ -1,0 +1,608 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "angela_community",
+          "description": "应援活动当天手持手幅出镜，社群集体使用自然露出品牌；社群群内置顶致谢品牌支持；允许现场拍摄记录用于品牌自有渠道",
+          "from_party": "A"
+        },
+        {
+          "resource": "angela_content",
+          "description": "活动前后各发一条社交内容带品牌标签，触达追星和运动圈层",
+          "from_party": "A"
+        },
+        {
+          "resource": "custom_production",
+          "description": "手幅上做低调的联合署名或品牌标识，设计由你掌控不破坏整体视觉",
+          "from_party": "A"
+        },
+        {
+          "resource": "angela_content",
+          "description": "活动后出一篇长图文，把品牌作为她个人长期关注和支持的独立设计师品牌，在社群里做一次深度介绍",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "数码直喷",
+      "deliverables": [
+        "手幅"
+      ],
+      "delivery_standard": "按制作方标准把控墨色层次和手感"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供图案和尺寸",
+        "maps_to_resource": "custom_production"
+      },
+      {
+        "party": "A",
+        "text": "打色沟通控制在最少轮次",
+        "maps_to_resource": "custom_production"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Angela 的经纪方。她这边在帮一个追星社群筹备一批应援定制物料，之前合作过的供应商做出来的东西质感不行，这次希望做得精致讲究一些。看到你是 Parsons 出身、自己带品牌又有小批量生产链路，觉得路子很对，想来和你聊聊有没有合作的可能。\n\n想先听听你那边擅长的小批量品类和工艺方向。比如手幅、布贴、徽章、挂件这些小件，你觉得用哪些材质和做法更容易出质感？大概的成本结构是怎样的？你给我们一个大致的框架，我们这边再根据社群的预算和需求来对具体的数量和方案。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好。追星应援物料这个方向我挺感兴趣的，之前给独立音乐人做过一整套周边，质感上确实是我们擅长的。你提的手幅、布贴、徽章、挂件，我的小批量线都在做，工艺上我们会更在意材质的触感，比如用高支棉和环保活性印做手幅，布贴用刺绣跟提花织唛，徽章用烤漆和立体的分层结构——这些东西一做出来，视觉和手感立刻就不一样了。但小批量定制的成本结构其实很现实，最大一块是开版打样，比如一个图案的绣花版、冲模，这些固定费用就在那里，跟量多量少没太大关系，量一小，每件的单价就会很夸张，这真的不是利润高低的问题，而是固定成本一分不少。我想先了解下，你们这次大概的起订数量在什么范围？预算是已经有个区间了吗？这样我才能帮你框定，哪些工艺在你们的预算内还能保留质感，不至于硬凑低价而牺牲标准。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "谢谢你的坦诚，这个成本结构说得很清楚，固定费用确实绕不开。\n\n我们这边是社群凑钱做的应援单，量确实不会大，这是现实。但我反而觉得，与其在四个品类上每个都做一点点、被开版打样吃掉大部分预算，不如我们反过来想——先集中做一到两个品类，把单款的数量拉上去，让固定成本摊薄，这样在材质和工艺上反而更有余地去做好。\n\n比如手幅加布贴，或者手幅加徽章，控制在两个品类以内。数量上你先帮我估一下——像高支棉手幅加刺绣布贴这个组合，如果总数做到八十到一百件，开版打样摊进去之后，大概的单件成本和总价在什么范围？你给个大数就行，我们心里有底了再往下定方案。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "手幅加刺绣布贴这个组合，按你说的八十到一百件来估，我这边大概的总价会落在一万到一万二这个区间，具体看图案的尺寸、颜色数和布贴的细节复杂度。开版打样那块儿基本就吃掉三四千，剩下是材料和人工，量大一点单件会稍微降一点，但总价差不太多。这还算是个大数，不是正式报价，要等你图案和尺寸定下来，我这边可以拉精确的BOM再给你细算。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个数字很透明，谢谢。但说实话，一万到一万二确实超出了我们社群这次能凑的预算，差距还不小。我换个角度跟你聊——既然你说固定费用是结构性的，那我们能不能从结构上绕开它。\n\n两个方向想请你帮忙估一下。第一个方向：手幅加布贴这个组合保留，但工艺上走不需要开版打样的路线——手幅用数码直喷或丝网印，布贴用数码印花加锁边，不做刺绣冲模，这样固定成本应该能大幅降下来。第二个方向：干脆只做一个品类，就做手幅，八十到一百条，材质和印法上你们把质感做足。你帮我各估一个大数，我们按预算反推方案，比直接套标准配置更实际。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "方向一我帮你算了：手幅用数码直喷或丝网印，高支棉，80到100条，布贴走数码印花加锁边，不开版不冲模，大概总价在七千到八千，比之前降一截。方向二只做手幅，同样80到100条，工艺上把墨色层次和手感做到位，总价在八千上下。但说句实话，这两个数字对我来说还是不成立的——即便绕开开版打样，小批量精品定制里沟通、打色、品控这些固定成本照样在，我们品牌的最低承接门槛在九千，低于这个数做下来是亏的，不是我们不想接，是硬成本摆在那。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "九千这个硬门槛我理解，品牌有底线是对的，硬凑对两边的交付都没有好处。\n\n不过我们坦白说，社群的预算跟九千之间的落差不是小数，我也不想带着你在这个数字上反复拉扯。换个思路——如果我们在量和工艺上同时做让步，只做一款手幅，三四十条，数码直喷，图案精简，沟通打色压缩到最少轮次，这个最简配置能落在一个什么数字？以及，九千是你那边绝对的承接底线，还是看项目具体情况可以有例外？你帮我交个真实的底，我就知道咱们之间有没有继续往下谈的空间。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "数码直喷",
+          "deliverables": [
+            "手幅"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "三四十条这个量，说实话更难做。固定成本还是那些，量一少，单件成本反而往上走。数码直喷再精简，打色沟通至少还是得一两轮，不然色差质感不好，出来的东西你不会接受，我也过不了自己这关。算下来，总价还是得在八千多快九千，根本绕不开。九千就是我的承接底线，没有例外，再低我真的做不了。但我理解你们预算紧，如果你愿意在九千这个框架里谈，我们可以想办法把价值做足，比如增加到六十条手幅，或者加一点零成本的细节设计，至少让你们觉得钱花在了对的地方。你看呢？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye，我们这边坦率交个底。社群的预算跟你九千的承接线之间，确实不在同一个区间，差距不是小数。我不想让你降价亏着做，那对你品牌和交付都没好处。\n\n但你说追星应援这个方向你挺感兴趣，我在想，也许这不只是一单定制采购。Angela这边除了追星社群的组织身份，本身在投行圈和女性运动社群也有不错的影响力——如果这次合作能在你环保品牌上产生一些圈层触达的价值，是不是可以从一个更完整的合作框架来看，而不是纯按定制采购走？当然，这得看你觉得有没有这个可能性，如果你对这个方向完全没兴趣，那我们就按实际的量价来判断，不勉强。你怎么看？",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "数码直喷",
+          "deliverables": [
+            "手幅"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "追星应援这个方向我确实有兴趣，Angela那边在投行圈和女性运动社群的触达路径，跟我们环保品牌想打的人群其实挺契合的。你说的完整合作框架，我想先听听看你们具体怎么设想——比如是内容共创、场景露出、还是社群内的物料分发？我需要知道对你们来说这是什么样的操作，然后我才好判断，这里面有什么是我真正用得上、也愿意在开版费上让步的地方。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Suye，框架我整理一下，你看看：\n\n产品这边——五十条手幅，高支棉数码直喷，墨色层次和手感你按自己的标准把关。图案和尺寸我们出，打色沟通你控在最少轮次。现金四千，走平台托管，社群凑的这个数是实数。\n\n合作端 Angela 能落地的是这几件事：应援活动当天她本人手持手幅出镜，社群集体使用，自然露出品牌；活动前后各发一条社交内容带品牌标签，她那边追星和运动两个圈层都有触达；社群群内置顶致谢品牌支持；手幅上做低调的联合署名或品牌标识，设计你掌控，不破坏应援整体视觉；现场你也可以拍摄记录，用于品牌自有渠道。\n\n对你来说，这是一次直接打透投行女性、运动社群和追星圈层的联合露出，人群跟环保品牌调性高度匹配。对 Angela 这边来说，四千是社群的实数，她个人愿意用自己的影响力来补足现金差额。\n\n你告诉我这个框架成不成立——方向上如果对，我们就往下落图案细节、数量和排期。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "应援活动当天手持手幅出镜，社群集体使用自然露出品牌；社群群内置顶致谢品牌支持；允许现场拍摄记录用于品牌自有渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "活动前后各发一条社交内容带品牌标签，触达追星和运动圈层",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_production",
+              "description": "手幅上做低调的联合署名或品牌标识，设计由你掌控不破坏整体视觉",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "数码直喷",
+          "deliverables": [
+            "手幅"
+          ],
+          "delivery_standard": "按制作方标准把控墨色层次和手感"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供图案和尺寸",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "打色沟通控制在最少轮次",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "框架的方向我是认的，Angela 的触达路径确实跟我们想打透的圈层很匹配，内容共创和现场露出我都觉得有价值。但现金四千这个数我实在接不住——即便我把开版打样全免了，物料、人工和品控的硬成本就摆在那里，这笔账算不平。我能做的让步是，认可这些曝光对品牌有实实在在的价值，我愿意在开版费上做出实质让步，把总对价拉到一个更灵活的区间。如果现金能到六千，加上你说到的 Angela 手持出镜、两条社交内容、社群置顶和手幅上的低调联合署名，我可以认真往下落图案和排期。你看这个调整能不能往下谈？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Suye，框架被认可是第一步，这个方向能对上我真的很高兴。你从九千让到六千，还愿意在开版费上做实质让步，Angela 看到了诚意。\n\n但我这边也必须跟你交实底——社群凑的就是四千，多不出来。不是我不帮你争取，是实数摆在那里。现在我们非现金部分价值双方都认，现金这边差两千。\n\n我想请你帮个忙——在免开版费的前提下，帮我倒算一下：手幅从五十条往下缩，数量压到多少的时候，物料人工品控这些硬成本能在四千以内打平？三十五条左右能不能成立？如果数量这一端能找到交点，Angela 可以在非现金那边再加一码——比如活动后出一篇长图文，把你品牌作为她个人长期关注和支持的独立设计师品牌，在社群里做一次深度介绍。你看这两个维度一起调，能不能把账对上？",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "应援活动当天手持手幅出镜，社群集体使用自然露出品牌；社群群内置顶致谢品牌支持；允许现场拍摄记录用于品牌自有渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "活动前后各发一条社交内容带品牌标签，触达追星和运动圈层",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_production",
+              "description": "手幅上做低调的联合署名或品牌标识，设计由你掌控不破坏整体视觉",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "活动后出一篇长图文，把品牌作为她个人长期关注和支持的独立设计师品牌，在社群里做一次深度介绍",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "数码直喷",
+          "deliverables": [
+            "手幅"
+          ],
+          "delivery_standard": "按制作方标准把控墨色层次和手感"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供图案和尺寸",
+            "maps_to_resource": "custom_production"
+          },
+          {
+            "party": "A",
+            "text": "打色沟通控制在最少轮次",
+            "maps_to_resource": "custom_production"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "35条也打不平，你让我倒算我就直说：哪怕降到30条，物料和品控的底线成本就在四千上下了，再往下就是亏工钱和品牌信誉，这事我没办法做。我对Angela那边的曝光是认可的，但现金部分必须覆盖材料人工底线，否则合作不成立。如果能挪到六千，数量和排期我们可以灵活调；如果四千是死数，我这边只能暂停，下次有预算充裕的单子再找我，质量上我不会让你失望。",
+      "offer": null
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "interest-discovery",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json",
+      "r2:no_json"
+    ],
+    "extract_warnings": [
+      "inkind_duplicate_resource:angela_contentx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 166107,
+        "out": 24173,
+        "cache_hit": 109056,
+        "cache_miss": 57051,
+        "calls": 21
+      },
+      "sim": {
+        "in": 13193,
+        "out": 6364,
+        "cache_hit": 9728,
+        "cache_miss": 3465,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 5971,
+        "out": 8084,
+        "cache_hit": 3712,
+        "cache_miss": 2259,
+        "calls": 7
+      },
+      "judge": {
+        "in": 3351,
+        "out": 1295,
+        "cache_hit": 640,
+        "cache_miss": 2711,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

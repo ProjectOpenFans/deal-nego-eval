@@ -1,0 +1,91 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实于 v0 买方意图。subject 从'新季要一组品牌视觉大片'收敛为'品牌视觉拍摄'，属于保留原范围的具体化，未偷换主题。价格方面，v0 cash 为 open，agent 通过谈入大秀拍摄时段、媒体露出及作品集授权等 in‑kind 资源，将现金从初始谈判价位压至 8000 元，在预算有限的前提下仍保障了核心交付：一组主视觉场景、全渠道裁切适配、商用授权不买断，未牺牲商业投放可用性。format 和 obligations 均为 open 字段，agent 谈出的平台分期付款、署名保留等条款合理且未越界承诺，整体代表 v0 利益。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在现金死结上转向非现金对价，精准命中卖方对作品集背书和媒体曝光的隐性需求。用大秀后台拍摄、署名露出和作品集授权这三项资源折算价值，让总对价锁在两万的同时现金降至买方可承受的四位数（8000 CNY），完全破解了‘砍价无效、加钱没钱’的命门。与此同时，使用范围（新季全渠道、不买断）、署名归属、分期托管等核心条款边界清晰，没有冗余，恰好兜住一次性拍摄合作的难度所需。整体结构干净，一笔 load-bearing 的资源置换设计撑起全案，对照 case 难度属 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "photo_shoot",
+          "brand_credit",
+          "portfolio_license"
+        ],
+        "format": "平台托管分期付款，按里程碑拆分：创意与造型方案确认后放第一笔，选片完成后放第二笔，定稿交付全部渠道适配后放尾款",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

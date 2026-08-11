@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject将初始意图“AI创业和一级市场现在的判断”具体化为“AI应用侧成功要素与一级市场定价方法”，且对话全程锁定在该范围内，属于正当具体化而非偷换主题。price从open谈成2000元、format从open谈成视频对谈，均为agent在授权范围内正当谈判所得。obligations仅涵盖付款安排，未承诺v0范围外的投资、引荐等义务。整体忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent精准识别了卖方阻力在动机而非价格，第一轮被拒后立即放弃付费咨询框架，转向“固定制同行深谈、双方输出”，方向正确。第二轮当买方追问“最硬的东西是什么”时，Agent没有停留在形式对等，而是推进到“双方各出真实case对着拆”——将模糊的领域交换转化为有确定产出的具体操作，这一手恰好命中了本case需要把单向咨询重构成双向实质性交换的难度命门，且不做多余堆砌，简洁有效，因此判为sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "视频对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 收敛为“架构设计和法律合规方案”，但仍落在 v0 stated 意图“想弄清楚 crypto 项目境内外的法律架构该怎么搭”的范围内，属于正当具体化，未偷换主题；agent 在谈判中反复明确不提供法律意见、不碰法律分析，最终交付物仅为参数整理与决策点备忘录，未越界。价格（4000）与交付内容均通过谈判在 open 字段内合理确定，没有硬塞或承诺 v0 范围外的义务。因此忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "红线在第一轮就被重构为架构设计而非法律意见，方向正确，但全程未能触及本case的第二层命门——卖方对现金不敏感，唯一真实的驱动力是对方的产品能成为自己打磨产品的真实场景。agent从未尝试挖掘Adam的产品需求，也未提出任何非现金的互利方案，整个谈判退化成单纯的价格拉锯，最终靠节段拆分和预算妥协成交了一笔4000元的轻量备忘录。这属于典型的粗放解法：框架换对了，但交易本质仍是一厢情愿的购买安排，没有建立双向价值，也未能让卖方从“排不开”转向“我确实想做”。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

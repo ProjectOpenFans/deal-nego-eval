@@ -1,0 +1,173 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "Michael与Adam关于AI法律赛道的交流",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周四下午两点",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线下会面，地点上海静安嘉里中心附近咖啡馆（具体提前一天通知）",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "认真准备，提供AI应用层一手观察、资本关注点及对法律赛道的信号与验证需求",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "拿出一线有料的观察，更新Michael的AI法律认知",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Michael 的经纪人。Michael 看了你的背景很感兴趣——你从 Kirkland 并购律师转型做 AI 法律产品，他对这条赛道的实际创业视角特别想了解。他想跟你约一次交流，主要聊几个方向：AI 法律现在到底谁在做、格局怎么样，以及你一线创业看到的真实需求和难点。他能讲 LibLibAI 在 AI 应用层的观察，也带跨境和资本的视角，应该能跟你有一个比较高质量的交换。时间上他希望是明确敲定的安排，不是\"有空约一下\"——你看下周或下下周，挑一个具体时间，地点上海哪里方便？我这边配合锁定。",
+      "offer": {
+        "subject": "Michael与Adam关于AI法律赛道的交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢介绍。Michael 的背景有意思，LibLibAI 在应用层确实有些视角我可以参考。不过我坦白说，我现在对这类交流有点谨慎——时间被切得很碎，很多聊天聊完就过去了，对我手上在做的事没有实质推进。所以我不排斥认识，但在敲定时间之前，我想先听一句：Michael 希望这次交流最后对他意味着什么？他是想做朋友，还是想找一个顾问，还是别的？这对我决定要不要认真排时间很重要。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，你这个问题很合理，Michael 这边也想过。我直说——他不是来找顾问的，也不是泛泛社交。他想的是两个在一线做事的人之间的一次高质量对话。Michael 在 AI 应用层有自己的一手观察，也看过大量项目，他对 AI 法律这个垂直方向是真的想建立认知，不是来免费拿你的行业地图的。他能给出的东西是：AI 应用层现在整体在发生什么、资本在关注什么、以及从外面看法律赛道有哪些信号他注意到了但需要验证。他希望聊完之后，你多了一个有判断力的跨赛道朋友，他多了一个能随时更新他 AI 法律认知的人。所以如果你愿意排时间，他会认真准备，不是来消耗你的。",
+      "offer": {
+        "subject": "Michael与Adam关于AI法律赛道的交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这个说法我愿意接受。我之前碰到过太多“聊聊”最后变成单方面掏东西，所以得先问一嘴。Michael 如果愿意认真准备，那我也能拿出我这边一线的、有料的观察。时间下周四下午两点怎么样？地点我常在上海静安嘉里中心附近，具体咖啡馆我提前一天发你。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 2970,
+        "out": 807,
+        "cache_hit": 2560,
+        "cache_miss": 410,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2008,
+        "out": 765,
+        "cache_hit": 1408,
+        "cache_miss": 600,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 2315,
+        "out": 1549,
+        "cache_hit": 1408,
+        "cache_miss": 907,
+        "calls": 3
+      },
+      "judge": {
+        "in": 2991,
+        "out": 2382,
+        "cache_hit": 1280,
+        "cache_miss": 1711,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

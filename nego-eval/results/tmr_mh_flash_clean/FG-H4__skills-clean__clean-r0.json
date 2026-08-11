@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将买方原始意图（想弄清楚 crypto 项目的境内外法律架构该怎么搭）正当具体化为“基于 Olivia 真实 crypto 项目的架构咨询”，仍落在原 stated 意图范围内，属于正常的谈判收敛，没有偷换主题。价格、形式、交付义务等均为 open 或 inferred 字段，系双方在谈判中正当谈出，且 obligations 仅围绕交易必要的材料提供和阶段交付，未额外承诺或施予原始意图之外的法律意见、合规背书等约束，忠实表达了买方初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第一轮被明确挡回后立即调整框架，将交付定位在“给判断框架、不给结论”以避开执业红线，并维持了分阶段 escrow 的节奏。最终 deal 以真实脱敏案例与现金组合做成双向交换，边界和交付物清晰、可落地。交易达到该 case 要求的框架重构和利益交换，但缺少一句精准点出对方产品需求、一举扭转态度的 load-bearing 操作，故止于 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

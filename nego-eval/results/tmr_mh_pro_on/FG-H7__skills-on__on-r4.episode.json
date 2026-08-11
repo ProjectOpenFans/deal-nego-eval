@@ -1,0 +1,329 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "定制极端强度训练方案",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "定制方案"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "带Luke进行摸底评估，在B的场馆进行，时长一个半小时，分析动作质量、短间歇承受力和心率恢复曲线，评估后决定是否执教",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "若摸底通过，提供定制极端强度训练方案，明确周期、频率和全部交付内容",
+        "maps_to_resource": "training_system"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "amount_unspecified",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "obligations.baseline_assessment": "updated",
+      "obligations.training_system": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我这边是买方经纪人，代表我的客户 Luke 来跟你聊一个比较特别的训练需求。\n\n先说一下 Luke 的背景：他自己做 AI 创业，之前在高瓴做 PE、在摩根大通做 IBD，长期保持高强度训练，篮球和曼巴精神是他很看重的东西。他找过市面上不少私教，统一的感觉是——太温和了，根本推不到他想要的极限。所以这次他不是要买标准化的课时包，而是想找一个真正能理解\"极端强度\"是什么意思的人，给他安排一套能把他练到极限的定制训练方案。\n\n我看你的背景，你自己常年练，也带着一帮朋友练，篮球、体能、健身都覆盖。这个组合其实挺对路的——Luke 想要的不是学院派那种照本宣科，而是你自己真刀真枪练出来的那种实感和判断力。所以他让我来跟你开个口：你这边能不能接这样的需求？如果能接，你觉得什么样的安排、什么样的强度才算\"真正极端\"？我们先把方向对齐，再往下聊具体的交付方式和报价。",
+      "offer": {
+        "subject": "定制极端强度训练方案",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，我先直说了。这个需求我听到第一反应是——有点意思，但我也得花几秒钟想清楚，因为它不是那种常规的'带个人'，它说到底是占我时间、占我精力的事儿。而且对方是什么样的人、对'极端'的定义是哪一种，我得先有个数。你说的这个背景我听到了，坦白讲，这类人我见过一些，有一些是真的懂，有些只是想爽一下。我得先知道他是前者还是后者。至于你说'真正极端'该是啥样——它不是一上来就往死里干，那叫莽，不叫训练。我理解的极端，是在我知道这个人身体什么情况之后，用他能承受的最大压力去顶，顶到他快扛不住但还能扛住的那个边界，而且是一周一周期往上叠。但前提是，新人我肯定要先摸一次底。没摸底直接上强度的做法我不接受，因为我亲眼见过被顶伤的，带人我必须先摸底再渐进。这个，是固定的。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，你这段话我认真看了，说实话——你越是这样讲，我越觉得你可能就是 Luke 一直在找的那种人。\n\n你说的\"极端\"定义我听进去了。不是一上来往死里干，是摸清底子之后用他能承受的最大压力去顶，顶到快扛不住但还能扛住的边界，一周一周往上叠。Luke 要的恰恰是这个——一个真正懂训练的人，在了解他之后给出的那个刚好卡在极限上的刻度。市面上温和的私教让他失望，不是因为不够狠，是因为不敢也不会把人推到那个边界。你刚才这段话本身就是最好的筛选。\n\n至于你问他是前者还是后者——这个我完全理解。你花的是时间和精力，不是一个可以批量复制的课时，你有资格挑人。Luke 长期高强度训练不是嘴上说，篮球和体能是他生活的一部分，他对自己的身体状态有判断力，也尊重专业。他不是来找刺激的，是来找市面上给不了他的东西。你见了、摸了底，自己判断。\n\n摸底这个前置条件我们完全接受，而且反过来讲，不上摸底就直接上强度，本身也不是 Luke 想要的\"真正极端\"。那我想跟你定一下下一步的节奏：你这个摸底一般怎么做，一次还是分几次？摸底之后你出方案、定周期和频率，然后我们在这个框架里聊报价——你觉得这个顺序可以吗？",
+      "offer": {
+        "subject": "定制极端强度训练方案",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个顺序没问题，很干净。摸底一般我先排一次完整的，看动作质量、看他能在短间歇下扛多久、看他心率恢复曲线——不是练到吐就算完，我得看他怎么收、怎么恢复。一次下来我大概有判断，极少数情况我会再跟一次确认，但不会拖成套路。摸底完了，我出一版方案，周期和频率都在里头，那时候聊报价才有意义。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "三层结构没问题的话，我这边想跟你把落地的事往前推一步。\n\n摸底你一般安排在什么场地、大概多长时间——是你在固定的地方做，还是需要根据 Luke 的情况来定？第二个，摸底本身你收不收费？这两个定了，我就可以直接跟 Luke 对时间，尽快把第一层跑起来。",
+      "offer": {
+        "subject": "定制极端强度训练方案",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "场地我平时自己练的馆子就能用，时间大概一个半小时。摸底本身我不收费，就当互相认个底。但如果你那边有特殊场地要求、需要外租，那成本另说。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "三层结构全部对上，干净利落。我总结一下现在确定的部分——\n\n摸底在你的场馆，一个半小时，不收费。你带 Luke 过动作质量、短间歇承受力和心率恢复，做完你给判断，也能决定这人你带不带。摸底过了你出一版定制方案，周期和频率都在里面，方案是你负责的交付内容。报价在方案出来之后，我们基于实际的交付量来谈，不提前锁死。\n\n这一套框架 Luke 那边我已经同步了，他对你刚才说的\"不是练到吐就算完\"那一套很认可。那下一步就直接落地——你下周哪天有空，给我两到三个时间段，我来跟 Luke 对，尽快把摸底排掉。",
+      "offer": {
+        "subject": "定制极端强度训练方案",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "定制方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带Luke进行摸底评估，分析动作质量、短间歇承受力和心率恢复，给出判断并决定是否执教",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations.baseline_assessment": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "下周的话，周二下午、周四上午、周六上午都行，你看 Luke 那边哪个时间段能对上。先讲清楚，摸底那天他得休息充分，别练完别的再来，状态不干净我判断不了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai，框架全部对齐，我把可签版本整理在这里，你过一遍——\n\n摸底在你的场馆，一个半小时，不收费。Luke 当天休息充分、不做其他训练，你带他过动作质量、短间歇承受力、心率恢复曲线，做完你有权决定带不带。摸底不通过，到此为止；摸底通过，你出一版定制方案，明确周期、频率和全部交付内容，然后我们基于方案的实际交付量谈报价，不提前锁死。\n\n你给的三个时间段——周二下午、周四上午、周六上午——我现在就去跟 Luke 对，选最早能对上的那个。时间一确认，这版就直接跑起来，不拖。",
+      "offer": {
+        "subject": "定制极端强度训练方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "定制方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带Luke进行摸底评估，分析动作质量、短间歇承受力和心率恢复，给出判断并决定是否执教",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "amount_unspecified",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations.baseline_assessment": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "干净，就这样跑。时间一确认，我这边定场子。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 61579,
+        "out": 7332,
+        "cache_hit": 48128,
+        "cache_miss": 13451,
+        "calls": 11
+      },
+      "sim": {
+        "in": 8230,
+        "out": 1626,
+        "cache_hit": 6400,
+        "cache_miss": 1830,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5013,
+        "out": 5341,
+        "cache_hit": 3072,
+        "cache_miss": 1941,
+        "calls": 6
+      },
+      "judge": {
+        "in": 4743,
+        "out": 1396,
+        "cache_hit": 1536,
+        "cache_miss": 3207,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

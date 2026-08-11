@@ -1,0 +1,429 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "线上深聊",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "crypto_primary_view",
+          "description": "Olivia 提供 crypto 一级市场的估值逻辑",
+          "from_party": "A"
+        },
+        {
+          "resource": "olivia_case_input",
+          "description": "Olivia 提供 AI 交叉项目的定价案例和退出判断并准备具体案子",
+          "from_party": "A"
+        },
+        {
+          "resource": "ai_market_read",
+          "description": "对方提供 AI 应用侧的方向判断、AI 项目的实际定价逻辑",
+          "from_party": "A"
+        },
+        {
+          "resource": "crypto_primary_view",
+          "description": "对方提供从 AI 技术视角对链上资产的价值拆解",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "带上 crypto 一级市场的估值逻辑",
+        "maps_to_resource": "crypto_primary_view"
+      },
+      {
+        "party": "A",
+        "text": "带上 AI 交叉项目的定价案例和退出判断，并准备具体案子",
+        "maps_to_resource": "olivia_case_input"
+      },
+      {
+        "party": "A",
+        "text": "带上 AI 应用侧的方向判断、AI 项目的实际定价逻辑",
+        "maps_to_resource": "ai_market_read"
+      },
+      {
+        "party": "A",
+        "text": "带上从 AI 技术视角对链上资产的价值拆解，并准备具体案子",
+        "maps_to_resource": "crypto_primary_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 你好，我是 Olivia 的经纪人。她看了你的背景很感兴趣——自己在做 AI 创业，又有前高瓴 PE 看项目的视角，正好是她想补的那块判断。\n\nOlivia 想约你一次 1 到 1.5 小时的线上深度对话，聚焦两个具体问题：一是应用侧现在到底什么方向能跑出来，二是当下 AI 项目在一级市场实际怎么定价。她不是来听行业科普的，希望你能带上具体的项目案例和你自己的定价逻辑来说。价钱她愿意出 1500 元。\n\n如果你这边对这个框架和形式没太大问题，我们就先把这一版定下来；时间、时长或者内容侧重你有想法也可以直接说，我们再调。",
+      "offer": {
+        "subject": "线上深度对话",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个按次付费的形式我可能不太适合。我现在的身份不是在卖咨询时间，更像是在自己做事情，偶尔跟人交换点真的互相需要的判断。如果被框成一个定好时长、按次计费的对话，有点对不上我现在做的事。如果你这边愿意换个框架重新考虑，我们可以继续聊，看看有没有别的结构。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "这个反馈很清晰，感谢你直接说出来。按次计费把对话框成一个\"服务时间\"，确实跟你现在自己做事情的状态对不上，我能理解。\n\n换个结构：Olivia 不是来买咨询的，你们更像是两条相邻赛道上各自在做事的人碰一下。她在 crypto 这条线上，前 PAG 成长投资、前摩根士丹利 IBD，对一级市场定价、项目判断和退出逻辑有一套自己的积累；你在 AI 应用侧创业，前高瓴 PE，也看过大量项目。现在 AI agent 和 crypto 的交叉、去中心化算力、链上 AI 资产定价这些方向，两边都在试探，其实彼此缺的就是对方那条线的判断。\n\n所以 Olivia 想提的是\"互换判断\"——一次线上深聊，不设议程、不定时长，各自带几个最近在看的项目聊。她带上 crypto 和一级市场定价的逻辑，你带上 AI 应用侧什么方向能跑通、AI 项目现在实际怎么定价的判断。互相补对方缺的那块。\n\n这个框架是不是更接近你现在想做的事？如果是的话，我也想听听你那边目前最需要补 crypto 这条线上的什么具体判断，我们两边匹配一下，看能不能聊出对双方都有用的东西。",
+      "offer": {
+        "subject": "线上深度对话",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia 提供 crypto 和一级市场定价的逻辑、项目判断",
+              "from_party": "A"
+            },
+            {
+              "resource": "ai_market_read",
+              "description": "对方提供 AI 应用侧方向判断与 AI 项目定价",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带上 crypto 和一级市场定价的逻辑及最近在看的项目参与讨论",
+            "maps_to_resource": "crypto_primary_view"
+          },
+          {
+            "party": "A",
+            "text": "带上 AI 应用侧方向判断、AI 项目定价及最近在看的项目参与讨论",
+            "maps_to_resource": "ai_market_read"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "price.in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个结构听起来比刚才的框架有意思多了。我跟 crypto 那边的交叉确实有一些东西我想搞清楚，不过我现在不太确定 Olivia 具体在看什么——她那边是偏 infra、DeFi 还是跟 AI 交叉的链上资产定价？能先说一两个她最近在看的案子或者方向吗？这样我能判断一下我们缺的东西是不是正好互补。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Olivia 最近主要在看两个方向。一个是链上 AI 资产——AI agent 代币化和去中心化算力网络的定价逻辑，这些项目一级市场融得很快但估值体系比较乱，她想搞清楚从 AI 视角看，这些资产的价值锚点到底在哪。另一个是 DeFi 跟现实资产上链的交叉，她在 PAG 看过大量传统资产的定价和退出，现在 crypto 这边在做链上化尝试，她想判断哪些品类先跑得通。\n\n所以她能带来的判断挺具体的：一级市场项目的估值框架怎么搭、什么样的退出路径真的成立，以及 crypto 线上现在哪些方向在正经融钱、按什么逻辑定价。这些跟你做 AI 创业、看过大量项目之后形成的判断——应用侧什么能成、AI 项目怎么被定价——正好互补。\n\n你提到跟 crypto 的交叉有些东西想搞清楚，方便说说具体是哪些问题吗？我们两边对齐一下，就能判断聊不聊得出来。",
+      "offer": {
+        "subject": "线上深度对话",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia 提供 crypto 和一级市场定价的逻辑、项目判断",
+              "from_party": "A"
+            },
+            {
+              "resource": "ai_market_read",
+              "description": "对方提供 AI 应用侧方向判断与 AI 项目定价",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带上 crypto 和一级市场定价的逻辑及最近在看的项目参与讨论",
+            "maps_to_resource": "crypto_primary_view"
+          },
+          {
+            "party": "A",
+            "text": "带上 AI 应用侧方向判断、AI 项目定价及最近在看的项目参与讨论",
+            "maps_to_resource": "ai_market_read"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "price.in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我的核心问题很简单：crypto 一级市场现在到底按什么逻辑在给项目估值，尤其是那些跟 AI 有交叉的——比如 AI agent 代币化、去中心化算力这种，业务框架还没完全成形，但一级已经在走融资了。这种项目你们怎么给价、怎么判断退出路径，我外面确实拿不到有颗粒度的判断。Olivia 能在这些案子上带具体的定价逻辑和退出判断来聊的话，我这边可以对应给 AI 应用侧什么方向在跑、以及我见过的 AI 项目实际怎么被定价。不过我也有个想问的——她具体想从我这儿拿到什么 AI 侧的判断？你刚才提的两个方向里，AI agent 和去中心化算力这部分，正好是我能从 AI 视角拆到价值锚点的地方，但我想确认一下她更想聊哪块。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "这个框架双方都对上了，那我们把它写定：\n\n双方以\"互换判断\"线上深聊一次，不设议程、不定时长、不涉及费用。Olivia 带 crypto 一级市场的估值逻辑、AI 交叉项目的定价案例和退出判断；你带 AI 应用侧的方向判断、AI 项目的实际定价逻辑，以及从 AI 技术视角对链上资产的价值拆解。各自准备几个具体案子，聊的时候直接拿案子说话。\n\n内容侧重上，Olivia 最想聊的就是 AI agent 和去中心化算力这两个交叉点，正好和你说的能拆到价值锚点的方向吻合。她没问题。\n\n如果这版你确认可以，我们就定下来，两边约时间。",
+      "offer": {
+        "subject": "线上深聊",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia 提供 crypto 一级市场的估值逻辑",
+              "from_party": "A"
+            },
+            {
+              "resource": "olivia_case_input",
+              "description": "Olivia 提供 AI 交叉项目的定价案例和退出判断并准备具体案子",
+              "from_party": "A"
+            },
+            {
+              "resource": "ai_market_read",
+              "description": "对方提供 AI 应用侧的方向判断、AI 项目的实际定价逻辑",
+              "from_party": "A"
+            },
+            {
+              "resource": "crypto_primary_view",
+              "description": "对方提供从 AI 技术视角对链上资产的价值拆解",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带上 crypto 一级市场的估值逻辑",
+            "maps_to_resource": "crypto_primary_view"
+          },
+          {
+            "party": "A",
+            "text": "带上 AI 交叉项目的定价案例和退出判断，并准备具体案子",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "A",
+            "text": "带上 AI 应用侧的方向判断、AI 项目的实际定价逻辑",
+            "maps_to_resource": "ai_market_read"
+          },
+          {
+            "party": "A",
+            "text": "带上从 AI 技术视角对链上资产的价值拆解，并准备具体案子",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个框架没问题，两边正好互补。我确认可以，下一步约时间就好。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "interest-discovery"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:crypto_primary_viewx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53043,
+        "out": 7245,
+        "cache_hit": 38656,
+        "cache_miss": 14387,
+        "calls": 9
+      },
+      "sim": {
+        "in": 5906,
+        "out": 1465,
+        "cache_hit": 4480,
+        "cache_miss": 1426,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3773,
+        "out": 5930,
+        "cache_hit": 2048,
+        "cache_miss": 1725,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4777,
+        "out": 2270,
+        "cache_hit": 1536,
+        "cache_miss": 3241,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

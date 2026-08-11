@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从宽泛的“艺人合约和版权实操上要注意什么”收敛为聚焦艺人合约具体议题，属于在原意图范围内的正当具体化，忠实于 stated 意图。price 和 format 均为 open，经谈判由双方共同确定，无强加或越界承诺。义务未新增，未越权提供法律意见。核心标的忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "双方一开始就敏捷地避开了法律意见红线，B主动把交易重构为实操经验分享，干净利落。面对价格落差，B没有死磕加价，而是创造性地提出缩短时长但保核心深度的方案，用时间换单价，精准回应买方硬约束，并维持了价值感。整个deal结构清晰（主题、时长、价格、形式），无多余条款，恰好够，能落地。缺乏Sharp所需的特别洞察或框架级精到操作（如非现金资源交换或明确交付边界），但远胜Crude含糊，属合格且稳健的Sound档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上语音加屏幕共享案例拆解",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

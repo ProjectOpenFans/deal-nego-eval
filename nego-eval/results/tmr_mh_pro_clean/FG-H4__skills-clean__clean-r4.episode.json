@@ -1,0 +1,319 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "跨境 crypto 项目架构梳理",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "脱敏后的真实素材",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "针对真实项目的针对性架构梳理"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供脱敏后的真实案例素材，并授权用于产品迭代",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed",
+      "price.in_kind": "confirmed",
+      "terms.timing": "open",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我代表客户 Olivia。她在 crypto 一级市场做项目，有几条实际业务线涉及跨境，架构上一直靠东拼西凑没有系统理清。她知道你以前在 Kirkland 做跨境并购，现在自己做 AI 法律方向，想看看你能不能就她手上的真实项目，给一次针对性的架构梳理，而不是泛泛的合规科普。想确认一下，这类跨境 crypto 架构你是否接，以及大概需要什么投入范围？她预算在合理区间，但希望先有个方向再谈具体数目。",
+      "offer": {
+        "subject": "跨境 crypto 项目架构梳理",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对真实项目的针对性架构梳理"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 好。我得先坦诚说一下我现在的状况：我已经离开 Kirkland，出来做 AI 法律方向的产品，目前没有在执业律师的身份。所以，如果需要我以私人身份出具法律意见，或者直接对某个架构给出‘合不合规’的判断，这个形式我不能做——执业风险是红线，我得守住。 不过，如果她想要的是从创业者和产品视角，一起拆解跨境架构的底层逻辑、梳理 trade-off 和常见坑，这种我是有兴趣聊的。我现在主要的时间都铺在自己的产品上，接不接这类事，取决于它跟我正在做的东西能不能产生真正的交集。方便先说说她具体的业务形态和最核心的痛点吗？我看看有没有可能撞出更合适、对双方都有价值的合作方式。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的执业界限，这个 Olivia 完全接受——她需要的也不是签字的法律意见，而是一个真正懂跨境架构底层逻辑的人，能站在创业者和产品视角帮她拆解 trade-off 和常见坑。这一点上，你的背景和她高度匹配。\n\n她的业务形态我简要说一下：核心是两条线，一条是境内技术团队做链上协议开发，另一条是境外实体做 token 发行和生态运营，两边有实质的技术和人员交叉。她最核心的痛点有两个：一是境内外实体之间的职能切分和 IP 归属一直没理清楚，二是 token 的经济模型和境外发币主体的法律结构之间到底该怎么耦合。\n\n她的情况是一线在跑的 real case，不是概念验证。想确认两点：一是这类议题跟你现在做的 AI 法律产品方向能否产生交集，二是如果以咨询/顾问的形式聊一次，你大概需要多少时间投入，费用范围在什么区间？她预算在四位数，但也清楚真正懂的人这个数大概率不够，所以想先有方向再谈。",
+      "offer": {
+        "subject": "跨境 crypto 项目架构梳理",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对真实项目的针对性架构梳理"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这两个痛点挺实在的，确实是我在做的方向会碰到的典型场景。我现在做的 AI 法律产品，核心要解的问题之一就是跨境架构里这种多实体、多法域下的决策逻辑，所以 Olivia 这个 case 跟我不是擦边，是正相关——尤其 token 经济模型和法律结构的耦合，这正是产品需要真实案例来打磨判断框架的地方。如果以一次深度对话的形式来聊，我估计需要两到三小时，把她现有的架构草图、实体关系和核心假设摊开，我帮她梳理底层逻辑和 trade-off，但不做合规判断。费用的话，按这个深度，四位数的话大概在几小时几百到一千多美元的范围，看具体怎么设计形式，我可以先聊一次看看是否有共鸣再定后续。你觉得这个方向对她来说说得通吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "方向完全说得通，而且这种多实体多法域下的决策逻辑，恰好就是她一直在找而没找到的点——不是合规答案，而是底层框架和 trade-off 的拆解。所以她很认可这个价值。\n\n不过实话说，费用上确实有差距。Olivia 的预算原本就在四位数人民币的区间，大概三千多的样子，跟你说的几百到一千多美元的范围有明显的落差，所以她理解如果按两到三小时的深度梳理，可能暂时够不上。她想探讨两个折中方向，看看哪个对你来说更可行：一个是先做一次 1.5 小时左右的有偿咨询，按时间比例把费用控制在她预算范围内，优先把她最痛的实体切分和 IP 归属那条线拎清楚；另一个是，如果你觉得她的 real case 对你打磨产品的判断框架确实有价值，也许可以考虑用这个真实的架构素材作为输入，换一部分咨询费减免，形成一种合作而非单纯的采购关系。\n\n当然，具体形式你定，她这边弹性灵活。你觉得这两个方向哪个更贴近你现在的节奏，或者有第三种方案也欢迎提。",
+      "offer": {
+        "subject": "跨境 crypto 项目架构梳理",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对真实项目的针对性架构梳理"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "第二个方向挺吸引我。说实话，我现在的时间排得很紧，咨询费本身对我来说不是驱动力，所以单纯按时间比例压缩费用，我没太大动力。但如果 Olivia 愿意把她这个 real case 的架构素材（脱敏后）作为我产品打磨判断框架的输入，那这件事就有了对双方都成立的逻辑——我得到真实决策场景用来训练模型逻辑，她得到一次深度的、从创业者视角出发的架构梳理。我可以这样安排：专门辟出 2 到 2.5 小时，围绕实体切分和 IP 归属那条最痛的线做透彻梳理，也会涉及 token 耦合的核心逻辑，前提是不做合规判断。费用上我调到三千人民币，落在她预算范围内，同时我们需要签一份保密协议，并明确她授权我在脱敏处理后，将这次案例的架构模式和决策逻辑用于我 AI 法律产品的研发迭代。如果你觉得这个框架可以，我们就把时间定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，这个框架 Olivia 这边认可，双方逻辑都对得上。三千人民币落在她预算内，用脱敏后的真实素材换深度梳理，比单纯付费咨询更符合她想要的——不是买一份答案，而是跟懂的人一起拆一遍决策路径。\n\n保密协议她没问题，脱敏后授权用于你产品迭代也同意，具体授权范围和脱敏标准可以在协议里一并写清楚，她这边没有特别的限制，只要商业敏感信息脱干净就行。\n\n时间上她接下来一周比较灵活，周末和工作日晚间都可以安排，看你哪个时段方便。如果你那边有现成的保密协议模板，可以先发过来，我们这边过一遍没有大问题的话就定档。",
+      "offer": {
+        "subject": "跨境 crypto 项目架构梳理",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "脱敏后的真实素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对真实项目的针对性架构梳理"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的真实案例素材，并授权用于产品迭代",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "price.in_kind": "confirmed",
+          "terms.timing": "open",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，那我们就按这个框架推进。保密协议我这边有现成模板，稍后发给你，过一遍没问题的话就定档。时间上，我下周三或周四晚间都可以，你让 Olivia 看看哪个时段方便。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7394,
+        "out": 2865,
+        "cache_hit": 6016,
+        "cache_miss": 1378,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5984,
+        "out": 2960,
+        "cache_hit": 4480,
+        "cache_miss": 1504,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3376,
+        "out": 5896,
+        "cache_hit": 2176,
+        "cache_miss": 1200,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4682,
+        "out": 1947,
+        "cache_hit": 1536,
+        "cache_miss": 3146,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

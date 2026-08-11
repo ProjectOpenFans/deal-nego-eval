@@ -1,0 +1,155 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "AI法律赛道对等交流",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "michael_capital_intro",
+          "description": "Michael 同步资本市场情况，包括 AI 应用的融资热度和资金走向",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "周四下午",
+        "deadline": null,
+        "duration": "45分钟至1小时"
+      },
+      "format": "上海线下固定时段约见",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "同步资本市场情况，包括 AI 应用的融资热度和资金走向",
+        "maps_to_resource": "michael_capital_intro"
+      },
+      {
+        "party": "A",
+        "text": "分享 AI 法律赛道实际情况",
+        "maps_to_resource": "ai_legal_landscape"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated as 0",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Michael 这边的经纪人。Michael 正在系统看 AI 法律这条赛道，这次特别想当面听 Adam 聊一线经验：现在谁真正在做产品、哪些场景有真实付费需求、跨境架构里的机会怎么拆。他这边是纯对等交流，不收钱也不付钱——Michael 会把资本市场这边看到的情况同步给 Adam，比如 AI 应用的融资热度和资金正在往哪些方向走，两边都拿干货。Michael 的日程可以完全配合 Adam，这周或下周在上海约一个固定时段，四十五分钟到一小时，具体日期和地点由 Adam 来定。麻烦帮忙确认一个具体时间段，哪怕先锁一小时，我们这边立刻配合。如果能顺带聊聊篮球或者上海的圈子，那就更好了。",
+      "offer": {
+        "subject": "AI法律赛道对等交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "michael_capital_intro",
+              "description": "Michael 同步资本市场情况，包括 AI 应用的融资热度和资金走向",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "这周或下周",
+            "deadline": null,
+            "duration": "45分钟至1小时"
+          },
+          "format": "上海线下固定时段约见",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "同步资本市场情况，包括 AI 应用的融资热度和资金走向",
+            "maps_to_resource": "michael_capital_intro"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，这个聊法我可以接受。先说清楚一点：我不做那种按小时计费的付费顾问，也不会以私人身份给法律意见。但如果是一次对等交换视角，Michael 把他的资本市场观察给我，我这边讲讲我看到的 AI 法律赛道实际情况——那这个我感兴趣。时间的话，我这周四下午在上海有空，具体地点我回头定，你看行不行？",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10807,
+        "out": 3162,
+        "cache_hit": 10496,
+        "cache_miss": 311,
+        "calls": 2
+      },
+      "sim": {
+        "in": 970,
+        "out": 592,
+        "cache_hit": 768,
+        "cache_miss": 202,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 1590,
+        "out": 1977,
+        "cache_hit": 896,
+        "cache_miss": 694,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2571,
+        "out": 3376,
+        "cache_hit": 1408,
+        "cache_miss": 1163,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

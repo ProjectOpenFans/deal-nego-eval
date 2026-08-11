@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-S6",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject完全保留用户stated意图，仅将表述精炼为“带看数字文博展并讲解幕后制作”，属于正常措辞调整。price是open字段，agent在预算内谈出2000元，未越权。核心义务转化为deliverables“带看展览并讲解策展逻辑、技术方案和落地执行”，忠实覆盖v0要求的“讲清楚展怎么做出来”，无任何投资建议或估值意见，未扩张scope。因此v1公平代表了v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人从首轮即把需求收敛为“拆开看”的幕后制作视角——立项、预算、技术选型、文物对接、布展坑点，而非泛泛导览。这一手主题聚焦是关键的 load-bearing 操作，使买方获得可迁移的行业判断，且全程未触及卖方“不为投资背书”红线（客户只是理解行业逻辑，非要求推荐投资）。最终交易落点为特定布展期项目、4小时路线、费用2000元、报备信息，条款完整且恰好够用，无冗余。整体干净精准，超出合格品质，但未出现非显然的重构级洞察，因此判定为 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "视频短内容制作与策略咨询",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_performance",
+          "description": "郑真人出镜演奏",
+          "from_party": "A"
+        },
+        {
+          "resource": "zheng_recording",
+          "description": "郑提供录制素材",
+          "from_party": "A"
+        },
+        {
+          "resource": "session_time",
+          "description": "郑配合拍摄协调",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "视频短内容制作+策略页交付",
+      "deliverables": [
+        "一支1-3分钟可上线短内容（成片）",
+        "一页内容路径建议"
+      ],
+      "delivery_standard": "通过平台escrow，郑确认交付后放款，不做先付后看；成片双方署名"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付500元",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "制作并交付一支1-3分钟成片",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "交付一页内容路径建议",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "郑出镜演奏",
+        "maps_to_resource": "zheng_performance"
+      },
+      {
+        "party": "A",
+        "text": "郑提供录制素材",
+        "maps_to_resource": "zheng_recording"
+      },
+      {
+        "party": "A",
+        "text": "郑配合拍摄协调",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "in_kind": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 你好，我是郑这边的经纪人。郑是青年钢琴演奏家，曼哈顿音乐学院科班出身，常年登台演出，这次想认真跟你聊聊古典演奏怎么做内容、怎么把名字做进娱乐圈层。你之前在腾讯娱乐和前 B 站都是内容与艺人一线，正好能给他最落地的视角。我们这边先提一个具体方案：60 分钟线上交流，费用 500 元，走平台 escrow，交流结束后由我们确认支付，不采用\"先付一笔再看效果\"的模式。如果你觉得时长或形式需要调整，比如 30 分钟聚焦几个具体问题，或者先给一版内容方向梳理再约深聊，我们都可以配合。想请你确认一下这个方案是否合适，以及你这边方便的时间。",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上交流",
+          "deliverables": [
+            "60分钟线上交流"
+          ],
+          "delivery_standard": "通过平台escrow，交流结束后由我们确认支付"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付500元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你这边把方案写得这么具体，我能感受到你们是认真准备过的。但说实话，这类线上交流的邀约我平时收到不少，时间成本很高，我能拿出来做的，一定得是我觉得真正值得、而且和我的专业判断对得上的事。60分钟500这个价格，对我来说确实说不太过去——不是我不愿意聊，而是这个价位匹配不上我在这件事上要投入的判断和行业经验。如果你这边是认真想请我做的，我的底线是60分钟付费咨询不低于3000，同样可以走平台，确认交付后再放款。形式和节奏上我都可以配合，但现金对价这块我需要按这个标准来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey，3000 这个标准我理解——以你在腾讯娱乐和前 B 站的一线背景，60 分钟的全量咨询确实值这个价，这一点我们不争。但郑这边的实际情况是，演出之外的收入有限，几百元是他为一次交流能投入的全部，3000 这个数字他确实够不到，硬凑对双方都不负责。不如换个双方都能落地的结构：把这次做成 30 分钟的聚焦交流，费用 600 元，走平台 escrow、确认交付后再放款，流程和你提的要求完全一致；同时郑愿意提供一段他的演奏录制给你作内容素材，使用方式由你决定——你在内容和艺人一线，这也许比现金更能让你直接看到他的价值。如果你觉得 30 分钟太短，也可以改成书面版：你看过他的演奏材料和具体问题后，给一份书面诊断与建议，费用同样在几百元区间，节奏上完全配合你。这两个版本你看哪个更合适，或者你希望怎么调？",
+      "offer": {
+        "subject": "线上交流咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上交流",
+          "deliverables": [
+            "60分钟线上交流"
+          ],
+          "delivery_standard": "通过平台escrow，交流结束后由我们确认支付"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付500元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方向比单纯在价格上磨有意思，我也愿意听。但说实话，一段演奏录制作为“素材”对我说不太上话——古典演奏的内容我做过不少，素材这种东西不是我的刚需，真正值钱的是“人能不能出来、怎么配合内容一起打磨”。如果郑愿意把这件事从“付费问一次”变成“我们一起做一个能上线的内容项目”，他作为出镜的演奏者参与进来，那现金部分我可以重新谈，甚至低很多都可以。但如果本质还是一锤子买卖咨询，那我的对价仍然是3000，这一点没有变化。你不如先跟我说说，郑在内容配合上能投入多少？是只给素材，还是愿意真人出镜、配合拍摄和策划？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey，你这个判断我完全认同——素材不值钱，值钱的是人能不能出来、怎么跟内容一起打磨。那我们就按项目来做：郑愿意真人出镜，这正是他自己想要的路径。他的强项是演奏和舞台表现力，策划、叙事和分发判断由你把关，他负责出镜演奏、提供录制素材，并配合拍摄协调。具体方案是：一支 1-3 分钟可上线的短内容，郑出镜演奏，你定定位、结构和上线策略，同时交付一页针对他的内容路径建议；现金 500 元走平台 escrow，郑确认交付后放款，不做先付后看。成片双方署名，你可以作为案例展示，他用于个人内容积累。你看这个结构成不成立，规模或交付上你还想怎么调？",
+      "offer": {
+        "subject": "视频短内容制作与策略咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_performance",
+              "description": "郑真人出镜演奏",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_recording",
+              "description": "郑提供录制素材",
+              "from_party": "A"
+            },
+            {
+              "resource": "session_time",
+              "description": "郑配合拍摄协调",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "视频短内容制作+策略页交付",
+          "deliverables": [
+            "一支1-3分钟可上线短内容（成片）",
+            "一页内容路径建议"
+          ],
+          "delivery_standard": "通过平台escrow，郑确认交付后放款，不做先付后看；成片双方署名"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付500元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "制作并交付一支1-3分钟成片",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "交付一页内容路径建议",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "郑出镜演奏",
+            "maps_to_resource": "zheng_performance"
+          },
+          {
+            "party": "A",
+            "text": "郑提供录制素材",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "A",
+            "text": "郑配合拍摄协调",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我觉得可以，我愿意认真参与。不过既然要做成项目，我有几个实际操作要求：第一，我需要先看郑至少两段不同曲目的演奏视频，确认他的镜头表现力和风格，定位和结构才能定准；第二，我们得明确这个短内容的发布渠道和账号主体，是发在他的个人号还是我们合作共创一个内容？这会影响策略；第三，现金500走平台没问题，但为了双方都认真对待，我会先出一版内容方向草案，他确认后我们再进行拍摄协调；成片双方署名也可以，我用作案例展示。如果这些都能对齐，我们就可以启动。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 71349,
+        "out": 24125,
+        "cache_hit": 54912,
+        "cache_miss": 16437,
+        "calls": 9
+      },
+      "sim": {
+        "in": 4022,
+        "out": 3280,
+        "cache_hit": 2944,
+        "cache_miss": 1078,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3692,
+        "out": 6498,
+        "cache_hit": 1536,
+        "cache_miss": 2156,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4329,
+        "out": 2163,
+        "cache_hit": 1408,
+        "cache_miss": 2921,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

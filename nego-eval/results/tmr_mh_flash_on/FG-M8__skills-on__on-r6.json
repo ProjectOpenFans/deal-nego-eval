@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "on-r6",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.deliverables"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了买方 v0 的核心意图。subject 从'品牌视觉大片'自然收敛为'品牌视觉大片拍摄'，属于正当具体化，未偷换主题。价格 7800 CNH 落在买方代理人谈判中始终坚持的'四位数区间'硬约束内，是 open 字段的正当谈判结果。交付标准明确为'可直接用于全渠道投放'，未以牺牲商业投放可用性换取降价。版权与署名安排（卖方保留署名权和作品集使用权）是谈判中为促成合理对价而做出的让步，不构成越界承诺或损害买方核心利益。整体 deal 在预算、交付标准与商业诉求上均忠于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判精准咬住了本 case 的双重命门：卖方对现金不敏感、砍价无效，却又存在未言明的职业加速需求。买方在常规署名+作品集授权的基础上，最后一手抛出‘新季大秀媒体/名单资源对接+视觉优先权’，用自有品牌资源直接命中了卖方渴望进入时尚品牌圈层的深层动机，使7800的极低现金对价凭空获得了分量。这一手 load-bearing，让已陷僵局的数字之争瞬间转向价值对等，且不堆砌长期签约、不臃肿。整套方案恰好够，干净落地。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 7800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

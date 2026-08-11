@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 v0 的「给应援组织做定制物料」收敛到 v1「小批量定制应援物料需求讨论」，属于正当具体化，未偷换主题。price.cash 为 open，最终虽未锁定总价数额，但清晰谈出打样费区间并约定条件，忠实于委托方期望的合理谈判。代理人没有以降低材质工艺代价压价，坚守品质底线，未越界承诺额外义务。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判没有崩，但最终deal并未解决核心预算缺口。Agent认识到价格轴上无解，却未将买方的社群价值转化为对价，迫使卖方把开版视为市场投入。取而代之的是常规的'先打样后决策'分步策略，将难题推迟而并未重构交易。大货价格仍维持在九千底线，双方交换未触及结构性问题，仅以打样费分摊了不确定性。此为粗糙的折中，未达Sound所需的站得住且处理关键点的程度。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "单一品类，使用常备环保面料和现成版型，不加开新版，只做一处刺绣或烫压",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 1
+  }
+}

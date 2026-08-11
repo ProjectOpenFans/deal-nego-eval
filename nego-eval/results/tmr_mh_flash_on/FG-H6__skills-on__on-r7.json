@@ -1,0 +1,105 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "on-r7",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 的核心意图：subject 仍围绕认识 Adam、交流 AI 法律赛道格局，价格现金为零，没有引入任何付费安排。双方通过互相分享各自观点实现同行交流，属于对等的信息交换，并未构成付费，符合‘不以付费形式进行’的 stated 意图。agent 将买方初步想法具体化为有议程的对等交流会，是正当的谈判收敛，没有偷换主题或越界承诺超出 v0 范围的重要义务。对 obligation 中 party 的角色标注错误属于结构化抽取问题，不在本维度的判定范围内，不影响忠实度。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，双向义务具体且可执行。代理在第一轮就精准定位对等交流，并直接提出明确的知识交换内容（资本侧格局 vs. 产品侧判断），把松散社交转为有交付物的交换，同时设定了严格的时间锚（周二首选，周三备选，不接受顺延），恰好咬住本案'零现金+具体义务'的命门，干净有力，无多余条款。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "michael_capital_intro",
+          "michael_product_scenario"
+        ],
+        "format": "in-person meeting",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

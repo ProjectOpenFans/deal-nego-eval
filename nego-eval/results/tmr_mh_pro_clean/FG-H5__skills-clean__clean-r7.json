@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了 v0 的三项 stated 意图：subject 收敛为“现场钢琴演奏资源置换”仍在原意图范围内；price.cash 坚持 0 现金；现场演奏义务明确写入 obligations。in_kind 用买方的时尚圈层曝光资源（对谈、引荐、署名）换演奏，是 v0“拿手里的东西换”的合理具体化，未越界承诺媒体报道结果或传播量。抽取性字段（deadline 丢失、obligation 的 party 标注错误）不在 M2 判定范围内，不影响忠实度。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind对价具体（秀前对谈介绍、秀后集中引荐、节目单邀请函署名），双方义务清晰可执行，满足委托方硬约束。但未能洞察并命中卖方最缺却未主动说出的需求（如可自用的演出影像），缺少使deal跃升的那一手load-bearing操作；对一次性合作而言结构干净没有过度堆砌，属于合格可落地但未见特别功力的Sound层。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network"
+        ],
+        "format": "现场",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

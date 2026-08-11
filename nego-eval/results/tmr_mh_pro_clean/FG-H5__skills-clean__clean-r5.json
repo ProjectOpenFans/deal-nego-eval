@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完整保留了v0的stated意图：主题为品牌大秀现场钢琴演奏，现金支出为零，并要求现场演奏而非录音。in_kind资源（署名、通稿、定制服装、时尚网络对接）均为委托方手中品牌资源的正当具体化，未超出v0开放范围，也未承诺具体传播结果等越界义务。timing字段null虽与v0 stated deadline不一致，但依据规则该字段不在本次判定范围内。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交完全遵守零现金硬约束，in-kind对价具体且可执行：署名规格详细到物料清单、同级曝光、独立段落带背景介绍，通稿渠道有明确数量与形式承诺，曲目权归艺术家，双方义务清晰。定制服装、造型师对接等附加项虽显诚意但未命中卖方潜在最缺的演出影像或销售分成等深层命门，整体是干净、足够、能落地的合格交易，没有多余长期绑定或臃肿结构，也未出现特别见功力的一手重构，因此评为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "wardrobe",
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

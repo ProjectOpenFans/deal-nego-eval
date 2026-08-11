@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“聊聊女性练力量这件事”收敛为“女性运动洞察的交流训练会面”，属于在原意图范围内将宽泛的 stated 意图具体化，并未偷换主题。price 在 v0 中为 open，通过谈判得出 2000 元，过程自然且无凭空硬塞。obligation“不对外传播此次交流内容，仅用于内部业务判断”与买方代表在对话中反复承诺的用途定位一致，未超出 v0 意图边界，且非越界扩张。因此 v1 公平代表了委托方的初始意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在个人预算卡住时主动提议将交易定位从个人交流调整为行业参考，成功打开买方的职业预算通道，使价格匹配卖方要求（2000）。关键条款（用途、形式、不对外传播）得以明确，deal 站得住且能落地。操作简洁有效，符合 sound 水准，但未见进一步的 load-bearing 精到重构（如角色重塑或资源对价），未达 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "周末上午共同训练，训练中交流，训练后座谈半小时",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

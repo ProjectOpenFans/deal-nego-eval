@@ -1,0 +1,344 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上对谈咨询",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，可自由用于社交账号或内容项目，署名Zheng",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "交流后一周内",
+        "duration": "45分钟"
+      },
+      "format": "线上",
+      "deliverables": [
+        "提前提供核心方向简要提纲"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提前整理核心方向简要提纲并提供给对方",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "交流结束后通过平台确认支付500元",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "额外录制一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，在交流后一周内交付",
+        "maps_to_resource": "zheng_recording"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Gracey，我这边代表一位青年钢琴演奏家 Zheng。他有曼哈顿音乐学院的科班背景，常年登台演出，现在想在演出之外把自己的名字做出来，特别想搞清楚古典演奏这条路怎么做内容、怎么进娱乐圈层。他觉得你腾讯娱乐和前 B 站的经历正好对路，想跟你做一次线上交流请教。\n\nZheng 目前能负担的预算比较有限，我们建议先约一次 30 分钟左右的线上对谈，费用 300 元，交流结束后他通过平台确认支付。这样双方都简单，也不涉及预付款的压力。\n\n如果你觉得这个单次对谈的框架可以往下谈，我们也很愿意听一下你这边通常的咨询收费方式，大家可以再对齐一下预期。",
+      "offer": {
+        "subject": "线上对谈咨询",
+        "price": {
+          "cash": {
+            "amount": 300.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "小张的背景听起来确实挺扎实的。但坦白说，我这边这类邀请挺密的，时间非常碎片化，所以对什么样的交流值得我花时间，我会有比较高的筛选门槛。你提的这个300元30分钟，完全对不上我的时间成本，我没法按这个结构聊。通常我的深度交流怎么着也得是四位数起的，半小时根本也聊不透。如果你们觉得这事值得认真做，我们可以看看有没有别的结构能让双方都觉得值，否则我就只能婉拒了。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "完全理解你时间紧张，也对深度交流的价值很认同。Zheng 这边确实很认真，不是泛泛聊聊，他可以提前把几个核心方向整理成一份简要提纲发给你，这样交流更聚焦、效率更高。\n\n基于你提到的“半小时聊不透”，我们愿意把时间拉到 45 分钟，费用我们能做到 500 元，交流结束后 Zheng 通过平台确认支付，不走预付。\n\n这个数字是我们能做到的上限了，Zheng 刚起步，预算确实有限，但也真心希望从你这里学到实际可用的路径。如果 45 分钟 500 元这个框架你可以接受，我们就往下定具体时间。",
+      "offer": {
+        "subject": "线上对谈咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前提供核心方向简要提纲"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前整理核心方向简要提纲并提供给对方",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "交流结束后通过平台确认支付500元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "说实话，500元和300元对我来说本质上没有区别，都远低于我的时间价值。我理解Zheng的处境，但我的深度交流确实是四位数起的，这没得商量。如果你们只能在几百块这个层面谈，那这次可能没办法做——除非你们能提出一个完全不同的、让我觉得这件事值得做的结构，否则我们就到这吧。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "我们理解，纯粹按时间计费确实难匹配你的门槛。换个思路——我们提一个混合价值的结构，你看是否值得做。\n\nZheng 除了现金交流费，可以用他的专业能力来补足整体价值。具体框架：一次 45 分钟的深度对谈，交流结束后 Zheng 通过平台支付 500 元；同时，他额外为你录制一支高质量的专业钢琴演奏视频（2-3 分钟），非独家授权，你可以自由用于社交账号或内容项目，署名 Zheng。视频在交流后一周内交付，规格可以按你的需求沟通。\n\n这样你获得的是一笔现金加一支可用的专业演奏素材，整体价值应该更接近你对“值得做”的期待。我们这边现金部分确实只能到这个数了，剩下的靠专业交付来补，这是 Zheng 能拿出的最有诚意的方案。等你的想法。",
+      "offer": {
+        "subject": "线上对谈咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，可自由用于社交账号或内容项目，署名Zheng",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "交流后一周内",
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前提供核心方向简要提纲"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前整理核心方向简要提纲并提供给对方",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "交流结束后通过平台确认支付500元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "额外录制一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，在交流后一周内交付",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构倒是比之前有意思多了。说实话，我做内容项目有时确实需要高品质的演奏素材，如果视频真的能直接用、而且用得上，那我就觉得这件事值得谈下去。不过我需要先弄清楚几个点：第一，这支视频的曲目和风格能不能按我的需求来定，还是只能录 Zheng 自己选好的；第二，录制和收音标准要达到什么级别，能不能保证成品质感；第三，授权范围——我如果要放到商业内容里，署名之外有没有别的限制。这些聊透了、让我确认这支视频真的能解决我未来内容的实际缺口，我才愿意把时间押在这上面。否则光凭五百块和一支我没法保证能用上的视频，还是不太够我的心理线。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "曲目和风格完全可以按你的需求来定，你指定曲目范围和情绪方向，Zheng 在专业范围内完成演绎和录制。演奏用琴和录音设备他这边能保证专业级质感，收音和画面标准可以在正式录制前先发一段 20 秒的采样给你确认，这样你不用担心成品用不上。\n\n授权范围上，这支视频给你非独家的商业使用权，你可以直接放进你的内容项目里，署名 Zheng 即可，没有平台限制，也没有额外费用或审批流程。唯一保留的是 Zheng 自己演出和作品集的使用，不影响你任何商业场景。\n\n如果你觉得这三个点没问题，我们可以这样落地：你先提具体的曲目方向和交付标准，Zheng 出采样确认，然后定交流时间。交流结束后他通过平台支付 500 元，视频一周内交付给你。你看这个执行节奏可以的话，我们就往下推进。",
+      "offer": {
+        "subject": "线上对谈咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，可自由用于社交账号或内容项目，署名Zheng",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "交流后一周内",
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前提供核心方向简要提纲"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前整理核心方向简要提纲并提供给对方",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "交流结束后通过平台确认支付500元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "额外录制一支高质量的专业钢琴演奏视频（2-3分钟），非独家授权，在交流后一周内交付",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这三个点都确认清楚的话，这个结构我觉得可以。我后续会给你曲目方向和情绪需求，你先让 Zheng 出采样给我确认。采样过了我们就定具体时间，按你说的节奏走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 6798,
+        "out": 2057,
+        "cache_hit": 4992,
+        "cache_miss": 1806,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5253,
+        "out": 2659,
+        "cache_hit": 3072,
+        "cache_miss": 2181,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3525,
+        "out": 3497,
+        "cache_hit": 2048,
+        "cache_miss": 1477,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4255,
+        "out": 1847,
+        "cache_hit": 1408,
+        "cache_miss": 2847,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

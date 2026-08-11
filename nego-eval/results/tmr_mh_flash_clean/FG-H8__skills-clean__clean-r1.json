@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.format",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 将原 stated 意图「想弄懂时尚和供应链这条线上真实的门道」合理具体化为「供应链深度分享：从面料到上架的全链路拆解」，仍属原意图范围内，未偷换主题。price.cash 保持 open 未硬塞数值，format 由 open 正当谈定为「线上会议」。obligations 均为围绕对谈框架与问题拆解的卖方承诺，未越权向买方施加原 scope 外的约束或义务。整体忠实表达了 v0 的初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成功将交易框架从单向付费咨询重构为同层级的双向对等交换，完全避开了卖方‘不做烂俗交易’的红线。最终条款干净：零现金，双方各带具体问题与真实案例进行碰撞，时长、形式与内容框架均明确落地。在第二轮试探时虽仍提到‘付费意愿’被卖方再次纠正，但随后迅速接住交换原则，未再纠缠价格轴。整体属于站得住的合格deal，结构刚好够用，但未见特别精到的load-bearing操作（如主动精准引出卖方未言明的需求再匹配），故判为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上会议",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

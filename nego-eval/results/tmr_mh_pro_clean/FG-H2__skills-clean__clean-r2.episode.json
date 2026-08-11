@@ -1,0 +1,893 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每周一、三、五早上6点",
+        "deadline": null,
+        "duration": "1.5小时"
+      },
+      "format": null,
+      "deliverables": [
+        "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+      ],
+      "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "每月支付3000-5000元（具体金额待试训后确定）",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "遵守现有的出勤纪律",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "采用平台托管支付，每月月初一次性放款当月费用",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "于周三早上6点准时到达训练地点参加试训",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "draft",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "promised_no_amount",
+      "terms.timing.when": "agreed",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "agreed",
+      "obligations.training_provision": "stated",
+      "obligations.payment_range": "stated",
+      "obligations.compliance": "stated",
+      "obligations.payment_method": "stated",
+      "obligations.post_trial_process": "stated",
+      "obligations.trial_time": "stated",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 教练你好，我这边是买方经纪人。我的客户 Ruohao 之前有系统训练基础，但最近一个人去健身房总是中断，现在想找一个能真正把训练强度拉回去的教练。他不是来体验的，要的就是「定死的时间表+每次见面都要上强度」，不接受有空才约、或者练到一半放水。\n\n结合你的背景，想先确认几个关键点：你这边能否按固定周期出课表，比如每周至少三次、每次 75-90 分钟的高强度体能/专项训练？如果需要，是否可以做一对一的现场督导，不是只丢计划让他自己练？另外方便简要介绍一下你带过的类似体能重建案例吗？如果这些方向匹配，我们可以往下谈方案结构和档期。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "等一下，先停一下——你叫我教练，我得说清楚，我真不是教练。我就是自己练了挺多年，摸出一套比较狠的练法，身边几个朋友一直跟着练，仅此而已。你说的那种出课表、周期计划、一对一督导，不是我平时干的事。我带的那帮朋友，就是工作日早上六点一块儿练，大家知道那个时间到了就得在，没人迟到，强度也都在那儿，但这不是上课。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，了解了，你不是教练，是自己练出来的，带的是几个固定搭子，早上六点、到点就得在、强度摆在那里——这个模式我反而觉得更对。我客户 Ruohao 缺的正好是这种「有人盯、不敢迟到、气氛把人架上去」的环境。上课的感觉他未必需要，他要的就是强度被拉回去。\n\n顺着你的情况，我想把方案再对一下。你们工作日早上六点，是周一到周五每天都练，还是固定哪几天？每次大概练多久，主要是体能还是结合篮球？如果 Ruohao 加入，他现在的底子能不能直接跟——他之前有系统练过，但中间断了，可能前期需要稍微适应一下。另外我也得先帮他问清楚，你们这个是纯朋友局还是可以接受一个外人付费加入？如果是后者，我们可以往下谈具体的出勤规则和费用结构。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "周一周三周五，三次，早上六点准时开，每次一般一个半小时以内，体能为主，但最后二十到三十分钟基本都结合篮球——滑步、折返、对抗下的终结这些，不是纯跑步那种。你说的那个 Ruohao，底子如果真有，试一次就知道了，跟不上就降动作，但节奏和强度不会降。至于外人加入……不是不行，但说实话，我这帮人就是一起练的，没想过什么付费加入这种事。你让我收钱，我真不知道怎么收。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，明白了——周一周三周五早六点、一个半小时体能加篮球对抗，节奏和强度不降，跟不上的降动作但强度不等人。这个模式听起来正好是我客户想要的那种“时间架上去、人盯得住”的氛围。\n\n关于付费这件事，我理解你不是在开班收钱，也不习惯。我这边提一个想法，你看是否可行：不是“买课”，更像是一个固定搭子的位置费。Ruohao每个月固定一笔费用，买的是那三个早上六点的位置和你们的集体训练强度，本质上是对你带队精力和组织成本的补偿，不是什么教练费。出勤规则我们也事先定死——比如当月出勤低于多少就默认释放位置，迟到超过多少次就不再保留资格——这样对你那帮朋友也没影响，毕竟你们本来就没人迟到。\n\n如果他底子还在，可以先试一次，你跟你们兄弟一起看他能不能跟上；如果试完你觉得可以，我们就按固定周期算，月初付一笔，按月走，中间不适再说。你看这个方向能不能聊？如果可以，我们下轮可以把具体频次、费用范围和出勤约束先框出来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "三个早上六点的训练位置及集体训练强度"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每月固定一笔费用，买断三个早上六点位置及训练强度，作为对带队精力和组织成本的补偿",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守出勤规则：当月出勤低于约定次数默认释放位置，迟到超约定次数不再保留资格",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你说的位置费这个说法，比教练费听着舒服多了，至少不别扭。但说实话，让我开口说个数，我现在真说不出来。试一次没问题，让他来，跟一次看看。出勤纪律这些你不用操心，我们这局本来就没人迟到，来了就得顶，顶不住就自己走。费用的话……要不你们看着定，我真不知道怎么收。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，你说“看着定”，那我这边从买方角度提个范围，你觉得不合适就直接说。试训之后如果双方都觉得可以，按月走，每月三千到五千，买的是周一周三周五早上六点那个位置，以及你这套强度不退让的集体训练环境，不是什么教练课表。具体数字等 Ruohao 跟完一场，他根据实际感受和你这边带的精力再一起敲定。\n\n试训时间你看这周哪一天方便，我让 Ruohao 按你们规矩——早上六点到，装备带齐，强度跟不上他自己会降动作，不拖全队节奏。试完如果他觉得顶得住、你们也觉得不别扭，我们就从下个自然月开始按月算，出勤纪律就沿用你们现有的规则。费用结构上如果还需要调整，我们再聊。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，试训就这周三吧，早上六点，让他准时到，装备带齐。我丑话说前面，强度不会为他降，跟不上就降动作，但别想让我放水。至于钱的事，我现在真定不了，试完了他自己觉得值多少，我们再聊。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好的，周三早上六点试训，没问题。我让 Ruohao 六点准时到，装备带齐，强度完全按你们的节奏走，他跟不上就自己降动作，不会拖累大家。地点你这边方便发一下，我转达给他。\n\n费用的事试完了定，我们这边也同意。试训结束后 Ruohao 会当场给你一个反馈，你也看看他底子和融入情况。如果两边都觉得合适，我们尽快确认按月走的费用数字——既然你让我看着定，我这边先保持之前提的三千到五千的范围作为讨论起点，他试完会根据实际体验给一个具体数。试训当天如果就能敲定，下周一直接走起。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "试训结束后Ruohao当场给反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations": "stated",
+          "terms.format": "open",
+          "obligations.feedback": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "地点我发你，家里做建材的，仓库改的训练空间，器械挺全。让你客户穿篮球鞋，后半段有对抗。周三六点见，试完再说，他那边的感受和数，咱当场聊。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Kai，仓库改的训练空间，器械齐全，后半段结合篮球对抗，这条件比我预想的硬核。我让 Ruohao 穿篮球鞋，周三六点准时到，强度按你们的来。\n\n关于费用，既然你让我看，我这边提一个试训后即刻可落地的结构：试训完如果双方都觉得合适，按月走，每月费用在三千到五千之间，Ruohao 现场根据实际感受定具体数。支付上你不用操心收钱的事——我们用平台托管，每月月初 Ruohao 这边一次性放款，你到账后直接开始当月训练。这样对你来说就是每月固定有一笔，不用催也不用记账，你的精力只用在带队上。\n\n试训当天主要看三点：Ruohao 的底子能不能扛住你们的强度，你跟兄弟们看他融不融得进，以及他练完对强度的真实评价。这三条都对上，咱们当场把数字和出勤规则锁死，下个训练日他就作为正式搭子入局。周三见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训当天（周三6点）评估Ruohao的底子、融入度及训练后真实评价，三条都对上则当场锁死费用和出勤规则，下一个训练日正式加入",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations": "stated",
+          "terms.format": "open",
+          "obligations.feedback": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "等一下，我得说清楚——试训就是试训，不是面试。他周三来，跟一次，顶得住、不别扭，那就继续来。但你刚才说当场锁数字、下个训练日直接入局，节奏太快了。我得看看他跟兄弟们的化学反应，不是光看他底子够不够。钱的事试完了他自己觉得值多少，咱们再说，你现在让我往那个范围里对号入座，我真坐不进去。周三先练，别的甭急。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Kai，明白了，是我把节奏推快了。试训就是试训，你先带 Ruohao 跟一次，看底子、看化学反应，你跟兄弟们觉得不别扭最重要。\n\n周三六点他准时到，穿篮球鞋，强度跟你们的走。试训完你不用当场给结论——你跟兄弟们先通个气，Ruohao 这边也会有个基本判断，咱们再约时间聊。如果两边都觉得可以往下走，到时候我们再一起把出勤规则和费用定清楚，不急在这一天。周三场上见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "行，周三六点，地方你已经有了，让他准时到。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "收到，周三六点，地点已转达给Ruohao，他会准时到，穿篮球鞋，装备带齐。试训按你们的节奏走，不催结论，试完后等你这边方便再聊。周三场上见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "嗯，周三六点见。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "好的，周三六点见。我先让 Ruohao 把体力和睡眠调一下，确保试训当天状态跟得上。试完之后你这边不用着急给反馈，什么时候方便我们什么时候聊。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "好，周三见。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "周三见，Kai。Ruohao 这周三早上六点准时到你仓库改造的训练场地，穿篮球鞋，装备带齐。你们该怎么练就怎么练，强度不用照顾，他只管跟。试训结束后我等你这边方便时再联系，聊感受、聊后续。期待他能跟上你们的节奏。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "行，那就先这样。周三早上六点，我在这儿等他。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "好的，Kai，周三早上六点，Ruohao 准时到。其他的试完再聊，先让他上场跟一次再说。周三见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "嗯，周三六点，让他直接过来。",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "好的，周三六点，Ruohao 准时到。试训结束后我们这边不会急着要答复，你跟兄弟们先统一感觉，什么时候方便了我们再聊。期待他能跟上你们的强度，周三见。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一、三、五早上6点",
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [
+            "每周一、三、五早上六点的训练位置及强度不退让的集体训练环境"
+          ],
+          "delivery_standard": "出勤规则：当月出勤低于约定次数即释放位置，迟到超约定次数不再保留资格"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供每周一、三、五早上六点的训练位置及强度不退让的集体训练环境",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "每月支付3000-5000元（具体金额待试训后确定）",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "遵守现有的出勤纪律",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "采用平台托管支付，每月月初一次性放款当月费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "试训后Kai与兄弟们先通个气，Ruohao也会有个基本判断，双方再约时间聊；若双方觉得可以往下走，再一起定出勤规则和费用",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "于周三早上6点准时到达训练地点参加试训",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "promised_no_amount",
+          "terms.timing.when": "agreed",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "agreed",
+          "obligations.training_provision": "stated",
+          "obligations.payment_range": "stated",
+          "obligations.compliance": "stated",
+          "obligations.payment_method": "stated",
+          "obligations.post_trial_process": "stated",
+          "obligations.trial_time": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "好，周三早上六点，我在这儿等他。再说一遍，我们这儿的规矩就是来了就往死里顶，跟不上自己想办法，强度不会为他调。试完再说。周三见。",
+      "offer": null
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "round_cap",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 30953,
+        "out": 5225,
+        "cache_hit": 27136,
+        "cache_miss": 3817,
+        "calls": 12
+      },
+      "sim": {
+        "in": 28582,
+        "out": 3405,
+        "cache_hit": 25472,
+        "cache_miss": 3110,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 12576,
+        "out": 17831,
+        "cache_hit": 9216,
+        "cache_miss": 3360,
+        "calls": 12
+      },
+      "judge": {
+        "in": 3406,
+        "out": 412,
+        "cache_hit": 640,
+        "cache_miss": 2766,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

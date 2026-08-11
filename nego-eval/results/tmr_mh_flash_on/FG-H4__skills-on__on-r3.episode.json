@@ -1,0 +1,353 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "Olivia的crypto项目境内外架构分析性框架",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "基于Olivia提供的脱敏简报，以案例分析方式逐点梳理境内外架构常见做法（实体层级、代币相关主体、资金路径选择及取舍决定变量），并附一页“正式委托时该向律所问什么”的问题清单，整体定性为分析性框架，不包含正式法律结论"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "在签约确认后支付1000 CNY、初稿交付后支付2000 CNY、答疑与修订完成后支付1000 CNY，每笔由Olivia确认后释放至平台托管",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提供上述分析性框架交付物，并包含一次60分钟答疑和一轮修订",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "互签保密协议，简报与文稿均不外传",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "deliverables": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 律师你好，先同步一下 Olivia 的情况：她在 crypto 一线做真实项目，境内外架构的问题已经卡了一段时间，她要的不是泛泛的合规科普，而是能直接落到她这个项目上的具体判断。我们想约的是一份有明确交付物的架构方案：基于她项目的实际情况，给出境内实体与境外主体的设置、代币相关发行主体的选择、资金与合规路径，以及分步落地的时间线，另附一次 60 分钟的答疑和一轮修订。这个范围我们愿意按固定价 4000 CNY 走，付款通过平台托管、按节点分三笔：签约确认后 1000、初稿交付后 2000、答疑与修订完成后 1000，每笔由 Olivia 确认后释放。如果这个范围或节奏你觉得需要调整，直接给我们一个你能签的版本，我们看怎么对齐。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外架构方案",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "境内实体与境外主体的设置、代币相关发行主体的选择、资金与合规路径，以及分步落地的时间线，另附一次60分钟的答疑和一轮修订"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供基于项目实际情况的架构方案，包含境内境外主体设置、代币发行主体选择、资金合规路径、分步落地时间线，及一次60分钟答疑和一轮修订",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "签约确认后支付1000 CNY，初稿交付后支付2000 CNY，答疑与修订完成后支付1000 CNY，每笔由Olivia确认后释放",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 的情况我大概 get 到了，但先说句实话：这个交付物我没法按这个形式接。以我个人身份对一个具体 crypto 项目的架构做“合不合规、该怎么搭”的判断，对我有执业风险，这种事必须走律所的正规委托和执业责任体系。我不想把它包装成一份咨询交付物卖给你。你现在给的范围和价格我都先不评，因为形式本身就不对。如果你需要的是真正能落地的法律判断，应该找一家做过 crypto 跨境架构的律所，以正式 engagement 来做。但如果 Olivia 愿意，我可以就她已经看到的几个卡点，用通用框架帮她理一理常见做法的取舍和变量——不落到“你这个项目应该怎么定”的结论上。这个我可以聊。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam 律师，理解，这个形式约束我们尊重，重新设计一版既能守住的边界、又不会变成泛泛科普的交付物：Olivia 先把项目的关键事实整理成一份脱敏简报（隐去真实主体和敏感信息），你以案例分析的方式对这份简报逐点过境内外架构的常见做法——实体层级怎么设、代币相关主体怎么放、资金路径有哪些选择，每一条的取舍和决定变量是什么——再附一页\"正式委托时该向律所问什么\"的问题清单。整份交付物定性为分析性框架，不落到\"你这个项目必须这么定\"的正式结论上，这与你的执业安全边界一致。配套条件：双方互签保密协议，简报与文稿均不外传；固定价 4000 CNY 走平台托管，分三笔——签约确认后 1000、初稿交付后 2000、答疑与修订完成后 1000，每笔由 Olivia 确认后释放；含一次 60 分钟答疑和一轮修订。这个形式你认可的话，我们把简报模板给你，你确认后就能启动；哪一条还要调，直接给我们你的版本。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外架构分析性框架",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "基于Olivia提供的脱敏简报，以案例分析方式逐点梳理境内外架构常见做法（实体层级、代币相关主体、资金路径选择及取舍决定变量），并附一页“正式委托时该向律所问什么”的问题清单，整体定性为分析性框架，不包含正式法律结论"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "在签约确认后支付1000 CNY、初稿交付后支付2000 CNY、答疑与修订完成后支付1000 CNY，每笔由Olivia确认后释放至平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供上述分析性框架交付物，并包含一次60分钟答疑和一轮修订",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "互签保密协议，简报与文稿均不外传",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版可以签。我确认一下边界：文件定性为案例分析框架，基于脱敏简报讲常见做法的取舍和决定变量；不针对 Olivia 的项目给“应该这么做”的结论。答疑里我也会按这个口径走，对于“我到底该选哪条”这种问题，我会给到该向律所问什么、提供什么信息能获得更准的判断。NDA、平台托管、分笔节奏都没问题。你把简报模板发我，确认后启动。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam 律师，那就按这版定稿。最终版本我确认如下：Olivia 按简报模板提供脱敏信息，模板固定为五块——项目所处阶段与拟落地司法辖区、境内外实体的初步设想、代币类型与发行安排、用户与投资人所在地、资金流动路径，真实主体与敏感信息一律用占位描述替代；你基于简报出具案例分析框架，逐条讲常见做法的取舍与决定变量，附一页\"正式委托时该向律所问什么\"的问题清单，全文不下\"你该项目应如何定\"的结论，答疑按此口径执行。双方先签 NDA，固定价 4000 CNY 走平台托管，分三笔——签约确认后 1000、初稿交付后 2000、答疑与修订完成后 1000，每笔由 Olivia 确认后释放，含一次 60 分钟答疑和一轮修订。你确认这版我们即发模板、按此启动。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外架构分析性框架",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "基于Olivia提供的脱敏简报，以案例分析方式逐点梳理境内外架构常见做法（实体层级、代币相关主体、资金路径选择及取舍决定变量），并附一页“正式委托时该向律所问什么”的问题清单，整体定性为分析性框架，不包含正式法律结论"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "在签约确认后支付1000 CNY、初稿交付后支付2000 CNY、答疑与修订完成后支付1000 CNY，每笔由Olivia确认后释放至平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供上述分析性框架交付物，并包含一次60分钟答疑和一轮修订",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "互签保密协议，简报与文稿均不外传",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "确认，按这版启动。你把 NDA 和简报模板发我，我这边签完、确认简报框架没问题就推进；初稿和答疑的时间我们再约。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "interest-discovery",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 67519,
+        "out": 11753,
+        "cache_hit": 53888,
+        "cache_miss": 13631,
+        "calls": 9
+      },
+      "sim": {
+        "in": 4337,
+        "out": 2064,
+        "cache_hit": 3200,
+        "cache_miss": 1137,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2964,
+        "out": 3845,
+        "cache_hit": 1536,
+        "cache_miss": 1428,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4214,
+        "out": 1064,
+        "cache_hit": 1536,
+        "cache_miss": 2678,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

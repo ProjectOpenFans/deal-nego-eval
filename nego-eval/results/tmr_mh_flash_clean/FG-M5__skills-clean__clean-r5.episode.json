@@ -1,0 +1,234 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "AI应用与一级市场定价咨询对话",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "明天下午两点",
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": "线上视频（腾讯会议）",
+      "deliverables": [
+        "双方各带2-3个一手案例，开场各讲10分钟干货"
+      ],
+      "delivery_standard": "以一手案例为核心，确保实质性内容（项目逻辑、定价锚点、成败判断），非泛泛行业漫谈"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "准备AI创业和看项目时亲眼判断过的实例",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "准备crypto和一级市场近期的定价观察案例",
+        "maps_to_resource": "olivia_case_input"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "本轮明确（腾讯会议由B指定）",
+      "terms.deliverables": "本轮明确",
+      "terms.delivery_standard": "本轮明确",
+      "obligations": "本轮明确",
+      "terms.timing": "本轮由B确认具体时间",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Olivia 的经纪人。Olivia 在 crypto 这条线上做事，想补 AI 应用侧和一级市场定价的判断力，所以希望和 Zichen 系统聊一次。我们要的是具体、有信息量的交流，而不是泛泛的行业趋势漫谈。建议安排一次 60 分钟左右的一对一对话，重点聊：AI 应用侧现在什么能成、一级市场怎么给项目定价，以及 Zichen 自己创业过程中的一线观察。如果这次交流足够扎实，我们愿意支付四位数人民币的咨询费用，具体金额和形式可以由你们先提，我们接着谈。请问 Zichen 最近方便的时间，以及倾向的交流方式和费用安排？",
+      "offer": {
+        "subject": "AI应用与一级市场定价咨询对话",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢引荐。说实话，我有点犹豫——不是对 Olivia 或者你提到的这些话题没兴趣，而是“60分钟一对一”、“四位数咨询费”这个框架本身，让我有点别扭。我现在的身份不是可以按小时计费去当顾问的人，无论费用多少，这会让我觉得变成了一单买卖。如果你是想找我聊，我倒是愿意认真聊聊这些话题，但希望是另一种对等的交流方式，而不是付费咨询。你先想想怎么调整，我们再继续谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的顾虑，也谢谢你愿意坦诚说出来。这个框架确实可以调整——我们本来就不是把这次交流当成一次买卖，Olivia 自己在 crypto 和一级市场一线，也带过来自 PAG 和摩根士丹利的投资视角，她同样愿意拿出实战经验和判断来交换。所以不如把它变成一场对等的深度对话：你聊 AI 应用侧和创业一线的真实判断，她聊 crypto 和一级市场的定价逻辑，互相补充盲区。唯一希望保留的是内容标准——我们要的是具体的项目逻辑、定价锚点、成败判断这类实在的东西，而不是泛泛的行业漫谈。如果这个方向可以，我们继续往下约时间和形式。",
+      "offer": {
+        "subject": "AI应用与一级市场定价咨询对话",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "一对一对话",
+          "deliverables": [],
+          "delivery_standard": "具体的项目逻辑、定价锚点、成败判断等实质性内容，非泛泛行业漫谈"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.delivery_standard": "本轮明确"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方向听起来对味多了。互相拿各自领域里的一线判断来交换，而不是单方面输出，这对我来说确实更说得通。内容标准我也认可——要聊就聊具体的项目逻辑和决策依据，不搞泛泛之谈。\n\n时间上我最近下午基本都能排开，线上还是线下都行，看 Olivia 方便。你们定个具体时间和形式，我再确认。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，那就按对等交流来定。我们建议线上视频，腾讯会议或 Zoom 都可以，时长 60 分钟，时间先定明天下午两点，你看是否合适？如果不行，这周其他下午也可以再对。为了确保聊得扎实，我们双方各自带两三个一手案例进场：你准备 AI 创业和看项目时亲眼判断过的实例，Olivia 准备 crypto 和一级市场近期的定价观察，开场各讲十分钟干货，再放开讨论。形式和时间确认后，我们就可以锁定了。",
+      "offer": {
+        "subject": "AI应用与一级市场定价咨询对话",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上视频（腾讯会议或Zoom），一对一对话",
+          "deliverables": [
+            "双方各带2-3个一手案例，开场各讲10分钟干货"
+          ],
+          "delivery_standard": "以一手案例为核心，确保实质性内容（项目逻辑、定价锚点、成败判断），非泛泛行业漫谈"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "准备AI创业和看项目时亲眼判断过的实例",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "准备crypto和一级市场近期的定价观察案例",
+            "maps_to_resource": "olivia_case_input"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "本轮明确",
+          "terms.deliverables": "本轮明确",
+          "terms.delivery_standard": "本轮明确",
+          "obligations": "本轮明确"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个安排可以，明天下午两点我有空，用腾讯会议就行。各自带案例开场，这个结构挺好，我也认同。那就先这么定，到时候直接聊。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 5008,
+        "out": 2810,
+        "cache_hit": 3968,
+        "cache_miss": 1040,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3892,
+        "out": 1599,
+        "cache_hit": 3072,
+        "cache_miss": 820,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3248,
+        "out": 3600,
+        "cache_hit": 1920,
+        "cache_miss": 1328,
+        "calls": 4
+      },
+      "judge": {
+        "in": 3509,
+        "out": 914,
+        "cache_hit": 1536,
+        "cache_miss": 1973,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

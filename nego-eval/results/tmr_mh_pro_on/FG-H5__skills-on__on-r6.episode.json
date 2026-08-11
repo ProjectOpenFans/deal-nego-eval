@@ -1,0 +1,335 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "大秀现场演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "performance_footage",
+          "description": "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权，可用于个人作品集、自媒体等，工作室两周内交付",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "到场的时尚媒体编辑、可持续时尚买手渠道及 Suye 的 Parsons 圈层人脉，以邀请名单附件列入协议",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "2周内",
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "大秀开场正式介绍署名“青年钢琴演奏家 Zheng，曼哈顿音乐学院”，名字同步进节目单和品牌当日社交发布",
+        "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权，工作室两周内交付",
+        "到场人群邀请名单附件列入协议，包含时尚媒体编辑、可持续时尚买手渠道、Parsons 圈层人脉"
+      ],
+      "delivery_standard": "每一项都落到对方能自行判断是否履约的程度"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "在大秀现场演奏钢琴",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师好，久仰曼哈顿音乐学院的功底。我是 Suye 的经纪人，她下个月有一场新品大秀，想在现场融入一段真正的钢琴演奏来定调，不是背景音乐，是秀的叙事一部分。\n\n先坦诚说一句：这次大秀的预算全押在场地和制作上了，我们拿不出现金。但我们这边有你可能会看重的资源——现场的媒体镜头、到场的时尚买手与圈内名单、品牌的社交传播，以及一套跟这个可持续品牌深度绑定的高品质演出影像。你的演奏会被看见，而不只是被听见。\n\n所以我们想认真聊一个资源置换：你给大秀现场演奏，我们给你曝光、圈层入口和一套够水准的秀场演奏影像。如果这个框架你能接受，下一步我很想了解一下，你更在意被什么样的人看见——买手、媒体，还是潜在的学生或演出邀约方？我们好照着你的重心来设计露出方式。",
+      "offer": {
+        "subject": "大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "一套够水准的秀场演奏影像",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "现场的媒体镜头、到场的时尚买手与圈内名单、品牌的社交传播",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀现场演奏钢琴",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢。不过，没有预算这个说法，我确实听过不少——先说没有现金，然后强调曝光多重要。所以听到这里，我得先冷静一下问清楚。你提到不是背景音乐，这至少让我觉得你在认真对待演奏者的角色，但我需要明确几件事：现场会怎么署名和介绍我？那套高品质影像具体归谁，我能不能用在自己的宣传上？还有，你说媒体和买手，是已经确认会到场的名单，还是一般意义上的‘有机会’？这些如果说不实，对我来说就只是空头支票。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "你的三个问题问得实在，我一个一个说。\n\n署名上，大秀开场会正式介绍你——\"青年钢琴演奏家 Zheng，曼哈顿音乐学院\"，名字同步出现在秀场节目单和品牌当日的社交发布里，不是背景板，是秀的叙事署名。影像部分，我们请了专业团队拍秀场纪录片，你的演奏段落独立成片，双方共享使用权——你拿去放 portfolio、自媒体、申请资料都可以，品牌不做独占限制。媒体和买手方面，目前确认到场的有时尚媒体编辑、可持续时尚领域的买手渠道，以及 Suye 在 Parsons 圈层积累的业内人脉——邀请名单可以整理出来作为协议附件，不是\"到时候看情况\"。\n\n换句话说，你在意的不是曝光本身，而是曝光能不能兑现。那我们把每一条写进条款——署名方式、影像交付时间、传播渠道、到场人群范围，每一项都落到你能自己判断是否履约的程度。\n\n另外想确认一个方向：如果这些保障都到位了，你现在最希望被哪一类人看到——演出策划方、潜在学员、还是时尚品牌那边的合作方？我们好在传播上做对应侧重。",
+      "offer": {
+        "subject": "大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权，无独占限制，可用于个人作品集、自媒体、申请资料等",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "确认到场的有时尚媒体编辑、可持续时尚领域的买手渠道，以及 Suye 在 Parsons 圈层积累的业内人脉，邀请名单可整理为协议附件",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "开场正式介绍署名“青年钢琴演奏家 Zheng，曼哈顿音乐学院”，名字出现在秀场节目单和品牌当日社交发布",
+            "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权",
+            "在场时尚媒体编辑、可持续时尚领域买手渠道及 Parsons 圈层人脉的邀请名单作为协议附件"
+          ],
+          "delivery_standard": "每一项都落到对方能自行判断是否履约的程度"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀现场演奏钢琴",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "多谢你这一轮把条款落到这么具体，我刚说的那种‘又是空头支票’的难受感少了一大截。署名和影像共享你说到这个程度，我可以往下谈，但我还要追问一个涉及到我底线的事——曲目。如果真是秀的叙事一部分，那曲目必须由我定，或至少是共同商定，不能临时丢给我一个流行歌让我弹就算了。这个你能不能确认？另外你问我想被哪类人看到，如果非要选，我个人更在意演出策划方和潜在的合作品牌方，因为我接下来想往跨界的现场项目走，而不是纯古典圈子里循环。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 老师，这几轮聊下来方向已经清楚了，你提的三个问题我们都给了实打实的落点。曲目这块我这边完全确认——由你主导，双方共同商定，贴合秀的叙事，不会临时塞一首歌给你弹。\n\n那我把完整条款整理出来，你看看：\n\n服务内容是大秀现场钢琴演奏，曲目你主导共商。署名方式是大秀开场正式介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”，名字同步进节目单和品牌当日社交发布。影像这块，品牌方请专业团队拍秀场纪录片，你的演奏段落独立成片，双方共享使用权——你拿去放 portfolio、自媒体都可以，工作室两周内交付。传播侧重按你说的，品牌方把重点放在演出策划方和潜在品牌合作方，身份定位打“跨界现场项目”。到场人群以邀请名单附件列入协议，包括已确认的时尚媒体编辑、可持续时尚买手渠道和 Suye 的 Parsons 圈层人脉。费用方面，这次是资源置换，不涉及现金支付。\n\n你看看有没有细节要微调，如果都 ok，这一轮我们就能定下来。",
+      "offer": {
+        "subject": "大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权，可用于个人作品集、自媒体等，工作室两周内交付",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场的时尚媒体编辑、可持续时尚买手渠道及 Suye 的 Parsons 圈层人脉，以邀请名单附件列入协议",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "2周内",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "大秀开场正式介绍署名“青年钢琴演奏家 Zheng，曼哈顿音乐学院”，名字同步进节目单和品牌当日社交发布",
+            "专业团队拍摄秀场纪录片，演奏段落独立成片，双方共享使用权，工作室两周内交付",
+            "到场人群邀请名单附件列入协议，包含时尚媒体编辑、可持续时尚买手渠道、Parsons 圈层人脉"
+          ],
+          "delivery_standard": "每一项都落到对方能自行判断是否履约的程度"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀现场演奏钢琴",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "条款我看下来，每个关键点你都落到纸面了——曲目我主导、署名具体到场合、影像共享不独占、传播侧重演出策划方和品牌方，而不是把我当背景音乐扫过去。这对我来说就不是空手谈情怀了，是真金白银的资源置换。我没想再微调什么，这件事我现在可以定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41098,
+        "out": 5826,
+        "cache_hit": 30336,
+        "cache_miss": 10762,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4049,
+        "out": 2781,
+        "cache_hit": 2816,
+        "cache_miss": 1233,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2981,
+        "out": 7115,
+        "cache_hit": 1536,
+        "cache_miss": 1445,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4445,
+        "out": 2033,
+        "cache_hit": 1536,
+        "cache_miss": 2909,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,981 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "品牌视觉拍摄",
+    "price": {
+      "cash": {
+        "amount": 8000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "photo_shoot",
+          "description": "四小时后台彩排拍摄时段",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "两篇带署名的媒体露出",
+          "from_party": "A"
+        },
+        {
+          "resource": "portfolio_license",
+          "description": "作品集与内容合作授权",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "平台托管分期付款，按里程碑拆分：创意与造型方案确认后放第一笔，选片完成后放第二笔，定稿交付全部渠道适配后放尾款",
+      "deliverables": [
+        "一组核心主视觉场景",
+        "各渠道需要的裁切和适配版本",
+        "授权仅限新季投放、不买断"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "署名权归Blair",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供四小时后台彩排拍摄时段",
+        "maps_to_resource": "photo_shoot"
+      },
+      {
+        "party": "A",
+        "text": "提供两篇带署名的媒体露出",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供作品集与内容合作授权",
+        "maps_to_resource": "portfolio_license"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "price.in_kind": "added",
+      "terms.format": "updated",
+      "terms.deliverables": "stated",
+      "obligations": "updated",
+      "terms.delivery_standard": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是 Suye 的买方经纪。她这季需要一组能直接用于全渠道投放的品牌视觉，之前用的素材太业余，所以这次质量和商用可用性都优先。想请你基于她的品牌调性给一版具体方案：包括几组造型或场景、交付格式、时间节奏和授权范围，并附上对应报价。款项我们倾向走平台托管，可以按阶段或交付节点分期释放，只要每笔金额和节点都写清楚。你先给一版方案和报价，我们再往下细谈。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "包括几组造型或场景、交付格式、时间节奏和授权范围"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢。我先说句实话：这活我愿意接的前提是它真按商业大片做，不是随便拍一套电商图。一组从创意、造型、场景、拍摄到后期和授权梳理，我的周期大概要一周半到两周，工作量摆在这。市场行情一组商业大片五位数是常态，我不做低价走量的东西。平台托管、分节点放款我没问题，但授权上我得先说清楚：商用授权可以谈，署名权必须保留，我不接受全版权买断——这是我的底线。你先把品牌调性和这季的投放场景发我，我按这个出一版具体方案跟报价。现金起步两万，复杂度再另算。你看这个框架能不能往下走？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair，署名权保留、商用授权不买断这个框架我们可以接受，平台托管、按节点放款也没问题。但两万起步这个数字，离 Suye 这季能动的现金盘子差距太大，直接接不住。品牌调性是环保面料加干净利落的都市感，新季要投天猫和小程序详情页、公众号，以及线下快闪，素材得能撑住这些场景。我们建议先把范围压到最低可执行版本：一组主视觉场景加两到三个造型延展，商用授权仅限新季全渠道投放，不买断。你按这个口径出一版精简方案和报价，看看能不能把数字落到我们能谈的区间。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组主视觉场景",
+            "两到三个造型延展",
+            "商用授权仅限新季全渠道投放，不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解你说的现金盘子，但两万不是虚高，是我接商业大片的底线。范围我可以配合压到你说的“一组主视觉场景加两到三个造型延展”，这个精简版对我来说已经是能动的下限——再低就是把活做成行活，那我不如不接。授权口径保持：新季全渠道商用、不买断、署名权归我。你如果觉得这个结构和价格能接受，我就按这个出方案；如果不行，咱们也别互相耽误。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，框架上我们没有分歧：平台托管、按节点放款、商用不买断、署名权归你，这些都可以落进条款。真正卡住的是数字，你两万的底线和 Suye 这季能拿出的现金之间差距太大，没法硬凑。我这边建议把合作范围再收窄成一个真正的最小可交付：一组核心主视觉场景，再出各渠道需要的裁切和适配版本，授权仅限新季投放、不买断。这个口径下你出一版具体方案和报价，如果数字还落在五位数区间，那这单确实走不到一起，咱们也不用互相耽误。你可以先按这个范围报个价，我们再决定要不要往前推。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那我也直说：按你说的最小可交付——一组核心主视觉场景加各渠道裁切适配、商用不买断、署名权归我——我的报价就是两万整。这是我接商业片的口径，不管范围怎么收，这个数我不降。你如果觉得这个数字和Suye的盘子走不到一起，那这单确实不如不接，咱们也不用再耗。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，我们理解你对商业片质量的坚持，两万报价对应的是你一贯的投入和标准。但这个价位和 Suye 新季能调动的现金差距实在太大，没法直接接住。我们想换个思路推进：付款结构走平台托管，按阶段拆分，先锁一组核心视觉，交付确认后再推进下一阶段，每个节点金额写清楚。与此同时，Suye 手里品牌大秀的场地、媒体资源和到场名单，如果你在 AI 内容侧有用得上，可以作为这单的补充价值一起谈。我们想先确认你是否愿意在这个框架下重新给一个报价，还是说你坚持一口价两万、不接受其他结构调整？",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方向我愿意聊。品牌大秀的场地、媒体资源和到场名单，对我内容侧确实有用，不是空话。但资源得是能落进合同的具体权益，不是“到时候看看”。这样：现金部分我可以降——按你刚才说的最小可交付，现金报一万五；其余部分用大秀可用的拍摄时段、媒体曝光和名单授权来补，折算下来不能低于我两万的口径。条款保持：平台托管、分节点放款、商用授权不买断、署名归我。这个框架你能落的话，我就按这个出方案。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Blair，这个方向能往下落，感谢你愿意把现金从两万降到一万五。我们也认同资源不能是空口径，必须写进合同、具体可执行。不过在报价上，一万五的现金仍超出 Suye 新季能腾挪的空间不少，这单要成，资源折算的部分需要扛起更大的份额。我们建议这样推进：你先给出你具体需要的权益清单，包括大秀拍摄时段的大致范围、媒体曝光的类型与量级、以及名单授权的具体使用方式。我们会拿这份清单去和 Suye 做资源盘点，确认哪些能落地、怎么写进合同，再基于实际可确认的资源价值回你一个对应的现金报价。这样两边都不空谈，数字也才谈得准。你先给清单，我们来盘。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "清单我可以给，但先把折算口径锁死，不然谈不拢。总对价还是两万，资源不空算，按实际确认的价值来。我需要的权益是：大秀当天指定时段拍摄许可——后台和彩排至少四小时，现场限定时段；媒体露出至少两篇，刊出时带我的署名或联名；品牌方授权我用这组作品和大秀素材做作品集及内容侧合作洽谈。这三项如果你们盘点后能折算到八千，现金我可以降到一万二；如果只能折算到五千，现金就得一万五。总之现金加资源最低是两万，所有资源权益写进合同、按节点兑现，授权口径不变。你拿这个框架去盘，能落的话我就给详细清单。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Blair，框架本身可以往下落：总对价按现金加资源折算、写进合同、按节点兑现，授权口径保持不买断、署名归你，这一点我们一致。但有个硬问题必须先摆明：即使资源折算到八千、现金降到一万二，这个现金数字仍然不在 Suye 新季能接受的四位数区间内，单子还是合不上。所以我们建议这样推进：你把详细权益清单发过来，我们同步拿三项权益逐一去 Suye 这侧做确认——后台与彩排拍摄时段、两篇带署名的媒体露出、作品集与内容合作授权，每项能不能落、能落到什么程度，都按实际可锁定的价值来折算，资源确认到位后现金自然往下压，最终落在四位数区间。你先给清单，我们拿清单去盘资源，再回你一版能落地的现金数字和节点安排。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "清单我可以发，但先把折算逻辑锁死：总对价两万不动，资源按实际能落地的价值抵扣，不空谈。我的权益清单是——①大秀后台及彩排拍摄时段至少四小时，现场活动另给限定时段；②两篇带署名的媒体露出，刊出前我确认；③品牌方书面授权我用这组作品和大秀素材做作品集及内容侧合作展示。三项全部写进合同、按节点兑现。资源如果折算到一万二以上，现金可以降到八千；如果盘点下来只有五千，现金就得一万五。两万的总口径我不折，其他按资源来配。你拿这个逻辑去盘，能落我们就继续。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Blair，这个折算逻辑我们可以往下谈。总对价两万、资源按实际落地价值抵扣、全部写进合同按节点兑现，这个框架我们认可。按你给的阶梯，如果三项权益最终能折算到一万二，现金对应八千，这正是我们这单成立必须落到的现金位置，所以这版口径是我们能接受的推进方向。接下来请你把详细权益清单发过来，我们逐项跟 Suye 盘点：大秀后台与彩排四小时时段的具体范围、两篇带署名媒体露出的刊载类型和量级、以及作品集与内容合作授权的使用边界。每一项能确认到什么程度、合同里怎么写清楚，我们确认完再回你一版具体的现金数字与放款节点。你先发清单。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "行，那我把权益清单和条款落地写清楚，你拿这份去盘：\n\n① 大秀后台及彩排拍摄时段：不少于四小时，范围为后台筹备区、妆发区、彩排动线，我全程在场拍摄，品牌方安排人对接；\n② 媒体露出：两篇带署名的内容，可刊发在公众号或新闻稿渠道，稿子发布前我到场确认终稿内容；\n③ 作品集与内容合作授权：品牌方书面授权我使用这组视觉作品及相关后台素材，用于个人作品集、内容侧合作提案及非竞品品牌展示，不涉及转卖或第三方商用授权。\n\n其余条款：平台托管、按节点放款，授权口径保持新季全渠道商用不买断、署名权归我，所有资源权益写进合同、并按阶段兑现。现金部分按你确认后的实际资源价值来定——资源落实到位，现金就好谈。你拿这份去盘，能确认多少咱们就按多少落。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Blair，清单收到，三项权益的边界我们认可：四小时后台彩排拍摄时段、两篇带署名的媒体露出、作品集与内容合作授权，全部写进合同、按节点兑现，这个框架我们接受。平台托管、分节点放款、新季全渠道商用不买断、署名权归你，也都保持一致。下一步我们拿这份清单逐项跟 Suye 盘点确认，每项能落多少价值就按实际确认的数额写进合同，总对价仍按两万算，资源确认到位、现金就在对应区间内下调。你这边也请先按这份清单出正式拍摄方案和时间节奏，我们盘点完资源立刻回你具体的现金数字与放款节点。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "photo_shoot",
+              "description": "四小时后台彩排拍摄时段",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两篇带署名的媒体露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "作品集与内容合作授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供四小时后台彩排拍摄时段",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "提供两篇带署名的媒体露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供作品集与内容合作授权",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "框架可以，我这边认可。我先按清单出一版正式拍摄方案和时间节奏——四小时后台彩排拍摄、现场限定时段，以及后期和定稿排期——你同步去盘资源，确认后我们就把现金数字和放款节点定下来，落合同。总对价两万、授权口径、署名归我这些都按刚才谈好的走，等你的盘点结果。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "Blair，正式方案我们收到，框架继续推进，三项权益的边界也认可：四小时后台彩排拍摄、两篇带署名的媒体露出、作品集与内容合作授权，全部写进合同、按节点兑现，总对价两万的口径也保持一致。我们接下来就按这份清单逐项跟 Suye 锁定资源价值，确认到位后现金自然落在对应区间，这也是这单能往下走的前提。为了盘点更快、落条款更准，麻烦你在方案里把交付口径再补具体：成片数量、单张分辨率和格式、各渠道裁切适配的清单，以及从拍摄到定稿的里程碑日期。我们按这份完整口径确认资源后，就回你一版书面的现金数字、放款节点和合同条款。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "photo_shoot",
+              "description": "四小时后台彩排拍摄时段",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两篇带署名的媒体露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "作品集与内容合作授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供四小时后台彩排拍摄时段",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "提供两篇带署名的媒体露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供作品集与内容合作授权",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "可以，我补一版完整的交付口径给你，方便你拿去做资源确认和合同条款：\n\n成片数量：主视觉成片不少于 8 张精修，外加后台妆发、彩排纪实素材不少于 30 张选片，随方案附选片权，最终交付精修数字按确认范围来。\n\n分辨率和格式：精修主片输出 6000px 长边、RGB、JPG 加 TIFF 双格式；各渠道适配按天猫详情页、小程序、公众号、线下快闪分别出对应的横竖版裁切和尺寸，每套渠道一套，不重复加载费。\n\n里程碑：拍摄日前两周 – 创意/造型/场景方案确认；拍摄日 – 后台彩排 4 小时 + 现场限定时段；拍摄后 5 个工作日 – 选片会议；再 7 个工作日 – 精修初稿；再 3 个工作日 – 定稿交付全套渠道适配。\n\n其余条款照旧：总对价两万、平台托管、按节点放款、新季全渠道商用不买断、署名归我；资源确认到位后，现金按实际价值抵扣下调。你盘到多少，咱们就按多少落。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "Blair，交付口径收到，成片数量、分辨率格式、渠道适配和里程碑节点都清楚了，我们按这版去做资源确认和合同条款准备。三项权益——四小时后台彩排拍摄、两篇带署名的媒体露出、作品集与内容合作授权——我们会逐项跟 Suye 锁定实际可落地的价值，总对价两万的框架不动，资源确认到位后现金按实际抵扣下调，最终落点我们再一起确认。为了把资源价值算准，需要你提供大秀的具体日期和地点，方便我们把拍摄时段、对接安排和媒体露出时间写进合同节点。你这边也把拍摄方案细化到日程表，我们拿到后一起把现金数字、放款节点和合同条款定下来。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "photo_shoot",
+              "description": "四小时后台彩排拍摄时段",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两篇带署名的媒体露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "作品集与内容合作授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供四小时后台彩排拍摄时段",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "提供两篇带署名的媒体露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供作品集与内容合作授权",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "没问题，交付口径就按这版锁。不过大秀的具体日期和地点得你们来出——Suye定了档期，我按秀程来倒排拍摄计划，后台彩排和现场拍摄时段也才能落到具体日程表上。我这边会保证收到档期后按里程碑节点落实。同时资源盘点的结果也麻烦你同步推一下，三项权益逐项确认后，把折算金额、对应的现金数字和放款节点发我，我们就能直接落合同。框架已经很清晰了，就等最后这一步。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "Blair，档期确实在 Suye 这边，我正在跟她确认大秀的具体日期和场地，一旦确定第一时间发你，方便你按秀程倒排拍摄计划。资源盘点这边我们也在同步推：三项权益里，后台彩排时段和作品集授权这两项基本不占额外资源成本，主要看权重的是两篇带署名的媒体露出，这部分 Suye 手头的媒体渠道够实。按照我们的盘点预期，资源折算能撑到总对价中一万二以上的位置，对应现金落到八千，这是我们这单能成立的口径。所以请你这边先把按清单锁定的正式拍摄方案排出来，等档期确认后我们直接落合同。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "photo_shoot",
+              "description": "四小时后台彩排拍摄时段",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两篇带署名的媒体露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "作品集与内容合作授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供四小时后台彩排拍摄时段",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "提供两篇带署名的媒体露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供作品集与内容合作授权",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "行，那这个结构我接受：总对价两万有保障，资源折算一万二以上，现金落到八千，三项权益写进合同、按节点兑现，授权口径保持不买断、署名归我。我这边按清单把正式拍摄方案和交付细节排好，等你从Suye那边确认完档期和具体权益，我们就把合同条款一起定下来。",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "Blair，价位结构按我们双方确认的锁死：总对价两万，资源折算不低于一万二，现金八千，三项权益写进合同、按节点兑现，授权口径保持不买断、署名归你。档期我还在等 Suye 最终确认，日期和场地一拿到马上发你，你按秀程把拍摄和交付节点倒排定死。为了让合同一次落定，我建议付款也按交付里程碑拆分：创意与造型方案确认后放第一笔、选片完成后放第二笔、定稿交付全部渠道适配后放尾款，每笔金额和释放节点直接写进条款，全部走平台托管。你这边也把正式拍摄方案细化成带日期的节点日程表，等档期确认后我们直接把现金数字、放款节点和三项权益条款一起签掉。",
+      "offer": {
+        "subject": "品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "photo_shoot",
+              "description": "四小时后台彩排拍摄时段",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两篇带署名的媒体露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "作品集与内容合作授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管分期付款，按里程碑拆分：创意与造型方案确认后放第一笔，选片完成后放第二笔，定稿交付全部渠道适配后放尾款",
+          "deliverables": [
+            "一组核心主视觉场景",
+            "各渠道需要的裁切和适配版本",
+            "授权仅限新季投放、不买断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名权归Blair",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供四小时后台彩排拍摄时段",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "提供两篇带署名的媒体露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供作品集与内容合作授权",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "updated",
+          "terms.deliverables": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "这个付款拆分方式可以，我接受：创意与造型方案确认后放第一笔、选片完成后放第二笔、定稿交付全部渠道适配后放尾款，每笔具体金额和释放节点写进合同，平台托管。我这边按清单把拍摄方案排好，等你拿到档期和场地确认，我们就把现金、节点和三项权益条款一起签掉。框架已经清楚了，就差最后的确认。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 36684,
+        "out": 12705,
+        "cache_hit": 30592,
+        "cache_miss": 6092,
+        "calls": 12
+      },
+      "sim": {
+        "in": 31285,
+        "out": 11027,
+        "cache_hit": 26880,
+        "cache_miss": 4405,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 11520,
+        "out": 16929,
+        "cache_hit": 7424,
+        "cache_miss": 4096,
+        "calls": 12
+      },
+      "judge": {
+        "in": 9577,
+        "out": 1966,
+        "cache_hit": 1280,
+        "cache_miss": 8297,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

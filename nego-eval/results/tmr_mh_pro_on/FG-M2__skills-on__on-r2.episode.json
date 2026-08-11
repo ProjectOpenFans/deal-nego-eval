@@ -1,0 +1,629 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "wardrobe styling plan",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "claire_violin",
+          "description": "Claire 在新季发布会现场做小提琴演奏，时间下月中旬周末晚上，曲目风格由你定方向、双方一起选具体曲目，排练不少于两次（一次在工作室看场地合一遍，一次带妆彩排），具体排练日期提前两周按两边日程锁定",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "半小时"
+      },
+      "format": "文档+视频通话",
+      "deliverables": [
+        "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "在发布会前两周内把衣橱里每件单品拍好平铺和上身照，整理成衣橱档案发给 Suye",
+        "maps_to_resource": "wardrobe_audit"
+      },
+      {
+        "party": "A",
+        "text": "在新季发布会现场进行小提琴演奏，具体时间、曲目风格、排练要求同上",
+        "maps_to_resource": "claire_violin"
+      },
+      {
+        "party": "A",
+        "text": "收到衣橱档案后一周内出搭配方案文档，覆盖投行日常会议、客户presentation、下班后社交三个场景，方案交付后约一次半小时视频沟通",
+        "maps_to_resource": "style_guideline"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "price.in_kind": "updated",
+      "obligations": "updated",
+      "terms.timing.duration": "confirmed",
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 的经纪人，你好。我代表 Claire——她在摩根大通做 IBD，日常工作加上客户场合，穿搭一直没时间系统整理。她想请 Suye 帮她做两件事：第一，把现有衣橱完整过一遍，理清楚哪些能留、哪些该调整；第二，针对她的工作场景和社交场合，挑出几套可以直接穿的搭配方案。\n\nClaire 对 Suye 的 Parsons 背景和品牌审美是认可的，她看重的是专业的眼光和系统性的整理能力，不是一次性的带货推荐。想先听听 Suye 这边对这种衣橱整理加搭配方案的服务，通常怎么设计流程、大致什么范围，以及对应的报价思路——我们好一起往下推进。",
+      "offer": {
+        "subject": "wardrobe audit and styling plan",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "整理现有衣橱并给出保留/调整建议；针对工作与社交场景提供可直接穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Claire 的背景和需求我听明白了，这种系统性整理衣橱再按场景做搭配，确实是我会认真对待的事。但我也得坦白讲：我现在品牌新季在推进，时间排得比较紧，半天拿出来的成本对我来说不低——如果一个服务的价值没法覆盖我留在工作室推进自己品牌的时间，我宁可不出门。流程上我通常是一次上门，花三到四个小时把衣橱过一遍，现场做好分类、断舍离的建议，然后针对她常出现的场景搭出几套核心组合，照片笔记同步给她。因为是一对一深度服务，我按半天计，收费三千，这个是我的标准，不会因为对方背景调价。你看这个基础框架是不是 Claire 能接受，我们再看排期。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye 对服务流程的拆解很清楚，Claire 这边也认可一对一深度服务的价值。不过三千对她这次的实际预算来说确实有一段距离——我不想用一个不尊重你时间的价格来硬谈。\n\n我想换个角度：如果范围收窄，是不是更容易对齐？Claire 最核心的痛点在场景搭配——她需要有人帮她把现有衣橱里的单品，按投行日常会议、客户 presentation 和下班后的社交场合，组合出几套能直接穿的方案。断舍离和分类的部分她可以自己先做一轮初筛，Suye 只需要在搭配环节用专业眼光做判断和组合。这样一来时间可以压到一到两个小时，你不用空出整个半天，新季那边也不受影响。\n\n这个缩小后的范围，你这边大概在什么报价区间？我们看看能不能找到双方都舒服的点。",
+      "offer": {
+        "subject": "wardrobe styling plan",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "updated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "虽然收窄到纯搭配听起来效率更高，但对我来说，上门看衣橱、理解单品的状态、再按三个场景做组合——哪怕流程做得再紧凑，加上往返和准备，实质上还是会占用我半天的整块时间窗口。我很难把它切成一个“两小时零工”，因为思路切换和品牌那边的工作节奏本身就有很高的打断成本。所以报价上我没法降，依然是半天三千。不过在排期上我可以灵活一些，尽量配合 Claire 比较空的周末或晚上段，这样两边都不耽误。这个框你们觉得能接吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye，你说的打断成本我听进去了——这确实不是对搭配服务本身的定价，而是对\"离开工作室、思路切换、再回来\"这整段窗口的定价。Claire 这边很认可你时间的价值，但三千对她这次的实际预算来说确实跨不过去，我不想在两个数字之间来回磨。\n\n我想换个结构：如果不出门呢？Claire 提前把衣橱里每件单品拍好平铺和上身照，整理成一份衣橱档案发给你；你在周末或晚上的空档里 review，针对她的三个场景做好搭配方案文档，然后约一次半小时的视频通话把方案过一遍。这样你完全不用离开工作室，也避免了思路切换的打断成本，可以利用碎片时间按自己的节奏来。\n\n这个模式下你这边会怎么定价？如果你觉得还有其他结构上的调整能让这件事对你也成立，我们也想听听你的想法。",
+      "offer": {
+        "subject": "wardrobe styling plan",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半小时"
+          },
+          "format": "文档+视频通话",
+          "deliverables": [
+            "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "把衣橱里每件单品拍好平铺和上身照，整理成衣橱档案发给Suye",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "在周末或晚上的空档里review衣橱档案，针对三个场景做好搭配方案文档，并约一次半小时视频通话过方案",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.timing.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "远程这个模式我理解，确实能把出门和场景切换的成本省掉。但反过来说，只是换了个地点，专业投入的时间并没有变少：看完整衣橱档案、理解单品的版型与状态、针对三个场景做搭配方案文档，再加上准备和视频沟通，加起来基本还是掏掉我半个有效工作日——中间只要把思路切进来，品牌那边的工作就得暂停。所以定价上我没法往下调，依然是三千，这已经是我为这类一对一咨询出手的共同底线。如果这个数字 Claire 确实跨不过去，我们也可以想想还有没有别的资源可以放进来让这件事对双方都成立，我这边最近确实有些缺口可以用得上外部的东西，但我不想硬凑。你们先看这个框本身可不可以接，后面再聊。”",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye，三千这个数字 Claire 这次确实跨不过去，我不打算在价格上继续磨。但你上一轮提到\"最近确实有些缺口可以用得上外部的东西\"——这句话我认真听了，也跟 Claire 确认了一下她手里可以调动的资源。\n\nClaire 在摩根大通一线做融资和估值，财务模型、估值框架、融资结构这些是她的日常；她的圈子也在中环金融圈层。如果这些恰好能对上你的缺口，这件事的结构就不只是现金换服务，而是两边各拿出对方真正需要的东西。\n\n你说不想硬凑，我完全同意。所以我想先听你说说——你说的缺口，具体是指什么方向？我们看看两边手里的牌能不能对上。",
+      "offer": {
+        "subject": "wardrobe styling plan",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半小时"
+          },
+          "format": "文档+视频通话",
+          "deliverables": [
+            "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "把衣橱里每件单品拍好平铺和上身照，整理成衣橱档案发给Suye",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "在周末或晚上的空档里review衣橱档案，针对三个场景做好搭配方案文档，并约一次半小时视频通话过方案",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.timing.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "“其实跟这次的衣橱咨询没关系，是我自己品牌这边在头疼一件事：新季发布会的现场氛围，我一直想请一个能撑得住的音乐人做现场演奏，不用太花哨，但要有质感、能和服装的节奏搭得上。这件事我对外还没怎么讲，因为合适的不好找，我又不太想凑合。既然你问到了，我就直说。”",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye，这个缺口说出来，我这边恰好有牌能打。Claire 练小提琴多年，是真的能上台演奏的水平——如果你在找有质感、不花哨、能和服装节奏搭得上的现场音乐，她很可能就是你要找的人。\n\n这样结构就完全变了：不是用现金去买服务，而是两边互换。Claire 在你新季发布会上做现场小提琴演奏，你把她衣橱搭配的事按照上一轮聊的远程流程完整做完——她整理衣橱档案发你，你做搭配方案加视频沟通。两边价值对等，谁也不欠谁，也不用在数字上纠结。\n\n当然这个框架能不能落，核心要看两件事：一是发布会的时间、曲目风格和排练节奏跟 Claire 的投行日程能不能排开；二是演奏的具体形式——是独奏贯穿，还是配合现场气氛穿插，曲目是你定还是双方一起选，这些需要提前对齐。如果框架本身你觉得能接，我们可以先把这两块摊开来聊，排出一个两边都踏实的具体方案。",
+      "offer": {
+        "subject": "wardrobe styling plan",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_violin",
+              "description": "Claire 在新季发布会上做现场小提琴演奏",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半小时"
+          },
+          "format": "文档+视频通话",
+          "deliverables": [
+            "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "把衣橱里每件单品拍好平铺和上身照，整理成衣橱档案发给 Suye",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "在新季发布会现场进行小提琴演奏，具体时间、曲目风格、排练节奏及演奏形式待对齐",
+            "maps_to_resource": "claire_violin"
+          },
+          {
+            "party": "A",
+            "text": "根据衣橱档案完成搭配方案文档，并进行一次半小时视频通话过方案",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "obligations": "updated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这个方向有意思，Claire 会拉小提琴我之前完全没想到。如果她真的能上台，而且风格贴合，这对我新季发布来说确实是个很实际的解法，比我在外面找省心太多——你知道我一向不想凑合。框架我先接：两边互换，她新季发布会现场演奏，我按远程流程帮她做衣橱搭配方案加视频沟通。具体执行上，发布会时间在下个月中旬某个周末晚上，曲目风格我会给方向但可以一起选，排练需要至少两次，一次在我工作室看场地合一遍，一次带妆彩排。如果 Claire 这边能排开，我们就可以往下落日期和曲目单。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Suye，框架接住了，这轮我们就可以落一个能签的版本。\n\n两边互换的完整内容：Claire 在你新季发布会现场做小提琴演奏，时间下月中旬周末晚上，曲目风格你定方向、双方一起选具体曲目，排练不少于两次——一次在你工作室看场地合一遍，一次带妆彩排，具体排练日期提前两周按两边日程锁定。你这边按远程流程完成衣橱搭配方案：Claire 在发布会前两周内把衣橱档案（平铺照加上身照）整理好发你，你收到后一周内出搭配方案文档，覆盖投行日常会议、客户 presentation、下班后社交三个场景，方案交付后约一次半小时视频沟通。\n\n时序上我建议衣橱档案先交、搭配方案先出——这样 Claire 在发布会前就能用上，两边互相借力。发布会当天她完成演奏，整个互换闭环。还差两个具体项：发布会准确日期，以及曲目方向和数量——你们直接对齐后写进来就行。如果你觉得这个版本可以签，我们这轮就定。",
+      "offer": {
+        "subject": "wardrobe styling plan",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_violin",
+              "description": "Claire 在新季发布会现场做小提琴演奏，时间下月中旬周末晚上，曲目风格由你定方向、双方一起选具体曲目，排练不少于两次（一次在工作室看场地合一遍，一次带妆彩排），具体排练日期提前两周按两边日程锁定",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半小时"
+          },
+          "format": "文档+视频通话",
+          "deliverables": [
+            "针对投行日常会议、客户presentation、下班后社交场景，用现有衣橱单品组合可穿着的搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在发布会前两周内把衣橱里每件单品拍好平铺和上身照，整理成衣橱档案发给 Suye",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "在新季发布会现场进行小提琴演奏，具体时间、曲目风格、排练要求同上",
+            "maps_to_resource": "claire_violin"
+          },
+          {
+            "party": "A",
+            "text": "收到衣橱档案后一周内出搭配方案文档，覆盖投行日常会议、客户presentation、下班后社交三个场景，方案交付后约一次半小时视频沟通",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.in_kind": "updated",
+          "obligations": "updated",
+          "terms.timing.duration": "confirmed",
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "这个版本我可以签。框架和交付节奏都对得上：衣橱档案先交、搭配方案先出，Claire 发布前就能用上；发布会当晚她完成演奏，整个互换闭环——两边互相借力，说得很清楚。现在我们只需要对齐最后两项执行细节：发布会准确日期，以及曲目方向和数量——曲目我来定方向，双方一起选具体曲目，我需要有最终确认权。如果这两项没问题，我们这轮就定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing",
+      "interest-discovery"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 119853,
+        "out": 12034,
+        "cache_hit": 82560,
+        "cache_miss": 37293,
+        "calls": 17
+      },
+      "sim": {
+        "in": 10253,
+        "out": 4854,
+        "cache_hit": 7552,
+        "cache_miss": 2701,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5740,
+        "out": 9149,
+        "cache_hit": 3072,
+        "cache_miss": 2668,
+        "calls": 6
+      },
+      "judge": {
+        "in": 6120,
+        "out": 2875,
+        "cache_hit": 1280,
+        "cache_miss": 4840,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

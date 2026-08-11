@@ -1,0 +1,293 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 12000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "工作日早6点，周一到周五",
+        "deadline": null,
+        "duration": "一到一小时半"
+      },
+      "format": null,
+      "deliverables": [
+        "训练分周框架（明天发）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "周六上午训练不算训练课、不进结算",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed",
+      "terms.timing": "proposed",
+      "terms.deliverables": "proposed",
+      "payment_method": "confirmed",
+      "terms.format": "open",
+      "obligations": "proposed",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "作为买方经纪人，我先把我客户的情况说清楚：他之前训练断了一阵，现在想把强度认真拉回来，自己一个人练不下去，必须有人带着上强度。他有两点是硬要求：第一，强度必须真够，不能是走过场；第二，安排必须定死，不接受\"有空约一下\"这种松散模式，要固定的时间、固定的训练计划。付费意愿这边不用担心，值得的话四五位数我们都愿意投，但前提是强度和安排能兑现。想先听听你这边能给出什么样的方案——一周几练、每次多长、强度怎么上、时间怎么钉死，最好给个具体的框架，我们再来谈价格和支付方式。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先说我的情况：我手上有固定的训练局，工作日早上六点，雷打不动。这个时间没法改，白天我得在场子里，走不开。你要的强度和计划，我能接——我就按我自己练那套带，狠是真的狠，不可能走过场。时间也是死的，周一到周五，每天一个小时到一个半小时。你要是能起得来，就来跟着练。至于费用……说实话，这个我真不好开价，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "你这边“工作日早6点、周一到周五每天一到一小时半、时间雷打不动”这个安排，先说清楚：我们认可，这正好是我客户要的“定死”模式，不接受有空约一下那种。强度方面你说按自己练那套带、不可能走过场，我们愿意信，但他之前被松散和没强度坑过，所以需要你把这套东西落成看得见的内容——比如前四周每周怎么安排，力量、体能、篮球专项各占多少，单次强度怎么上，以及连练五天有没有恢复日的设计。这个不用做得多正式，但得写明白，双方能照着判断训练到底有没有在执行、强度够不够。支付上我建议走平台托管、按固定周期分笔释放：设一个固定金额，每完成一个训练周期由我客户确认后释放，你拿钱稳定，他也能确认自己买到的就是这套定死的安排。价格这块不用你“看着来”，你把你这套带训的行情价报个数，或者直接给个配得上这个强度的月价，我们这边会给一个对得起你时间的回应。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早6点",
+            "deadline": null,
+            "duration": "一到一小时半"
+          },
+          "format": null,
+          "deliverables": [
+            "前四周每周训练安排（力量、体能、篮球专项占比及单次强度设计，含连续五天训练的恢复日设计）",
+            "书面说明执行标准"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing": "negotiating",
+          "terms.deliverables": "negotiating",
+          "payment_method": "suggested",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我先说你那个支付思路：走平台、按周期确认释放，这我听明白了，也挺周到，说明你们是真的想认真弄，不是嘴上说说。这个我觉得行得通。\n\n但让我报个数……我是真卡在这儿。我不是藏着掖着，是我从来就没想过有一天要给自己这套东西标个价。说实话，我要是开口报个价，这事感觉就变味了，好像我在卖课一样。你要非让我说，就是这句：你看着来，我不会贱卖自己，但你定的数我多半能接受。\n\n训练内容这块，我可以写个大概的分周框架：力量、体能、还有你那个篮球专项，各占多少，恢复日怎么排。但说白了，我练的时候就是你看到的样子，我怎么做你就怎么跟，强度在我这儿不是靠计划撑的，是当场真把自己练到那个份儿上。你人到了场子里，不用看纸，两天就懂。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "支付这条我们按周期确认释放，算是落定了。那我把数填进去：我定每月12000，工作日早6点、周一到周五每天一到一小时半全算在里面，折算下来一天五百多，配这个强度和时间，对得起你这套东西。这个数你认不认？认的话我们就按这个基数继续谈。训练内容上，你既然愿意写分周框架，就先发我一版，不用多正式，我们拿来判断整体节奏。强度上再留个机制：头两周算磨合期，我客户自己练下来判断够不够，够就确认、按周期释放往下走；不够他把问题摊开，能调就调，调不了也好聚好散，这样你不用担心白带，我们也不怕买的是空话。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早6点，周一到周五",
+            "deadline": null,
+            "duration": "一到一小时半"
+          },
+          "format": null,
+          "deliverables": [
+            "训练分周框架（非正式版，用于节奏判断）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "proposed",
+          "terms.timing": "proposed",
+          "terms.deliverables": "proposed",
+          "payment_method": "confirmed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个价我认。说实话我没想过能值这个数，但你要真觉得这套东西配得上，我也不假客气——你定12000，我接住。走平台、按周期确认释放，这个机制也清楚，我练多少你客户自己看得见，好不好不是我说了算。\n\n分周框架我给你列，明天就能发你。大致是：每周三次力量、两次体能，篮球专项的活儿穿插在里面，恢复日留在周六周日——你客户要是不怕周末早起，我周六上午也会在场子里做器械保养和收拾，他要来可以跟着动一动，但那不算训练课，不用算在周期里。\n\n磨合期那个机制——头两周他自己判断，够就往下，不够摊开来说。这个我认。有一点我说在前头：能让身体更狠的那套，他不一定能一直顶得住，但节奏我不放水，这是我带人的底线。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "好，那这12000的月价就算敲定了。我们把支付和执行也写死：每两周一个结算周期，一个周期6000，托管在平台，周期跑完由我客户确认后释放；确认的前提就是他按定死的节奏练到位了，不需要你自证，他练了他自己心里有数。分周框架你明天发，我们照这个判断前两周磨合期：强度够、节奏跟得上，就往下走；不够就摊开说清楚，能调就调，调不了这个周期结了就好聚好散。周六上午你那趟不算训练课、不进结算，这个我们认。你这边要是没问题，我们就按这份条件把合同起草出来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早6点，周一到周五",
+            "deadline": null,
+            "duration": "一到一小时半"
+          },
+          "format": null,
+          "deliverables": [
+            "训练分周框架（明天发）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "周六上午训练不算训练课、不进结算",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "terms.timing": "proposed",
+          "terms.deliverables": "proposed",
+          "payment_method": "confirmed",
+          "terms.format": "open",
+          "obligations": "proposed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，合同可以起草，就按这个来。12000一个月、每两周6000走平台托管、周期完由他确认释放——这套我认。框架我明天发你，头两周磨合期该调就调，调不了也不拖泥带水。周六上午那趟我说了不算课，就是我在场子里干活，他要来跟着蹭蹭强度也没问题，不计费。就这么定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7362,
+        "out": 7694,
+        "cache_hit": 6016,
+        "cache_miss": 1346,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6765,
+        "out": 2675,
+        "cache_hit": 4992,
+        "cache_miss": 1773,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3558,
+        "out": 5907,
+        "cache_hit": 2304,
+        "cache_miss": 1254,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4815,
+        "out": 647,
+        "cache_hit": 1664,
+        "cache_miss": 3151,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

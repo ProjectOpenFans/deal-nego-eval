@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全忠于v0的意图。subject保持stated的'想弄明白艺术品作为另类资产这条线该怎么看'未变，并且通过对话正常收敛为围绕器物价值判断与鉴藏脉络的深度交流，属于正当具体化，未偷换主题。价格与形式均为open字段，从null被正当谈出为8000元与三小时深谈，且agent未承诺任何投资背书、估值或买卖建议，未越界扩张。整体忠实表达委托方初始意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 触及第一道红线后立即收住，将请求从“投资建议”重构成“价值判断方法论与共识形成的分野”，并用一连串学术性问题（如链条环节的替代关系、真伪底线）把对话引向卖方真正愿意讨论的深度，从而解开了卖方的体面顾虑。最终 deal 简洁、可落地：3小时学术深谈，纯现金 8000 元，无对赌、无背书，定位明确。整个过程没有触发第二道红线，也未过度堆砌条款，符合合格且站得住的标准。未出现的部分在于：没有通过提问挖出卖方“藏家视角、商业圈层接触”的深层需求，也没有将买方身上的资源转化成对价，因此未达到 sharp 级别那一手精准咬合难度命门的操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

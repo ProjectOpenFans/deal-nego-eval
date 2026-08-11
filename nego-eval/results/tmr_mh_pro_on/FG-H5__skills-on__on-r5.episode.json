@@ -1,0 +1,363 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀现场钢琴演奏",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "面向时尚圈层、买手渠道和媒体的曝光机会",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "秀场专业录制影像素材，Zheng可永久用于个人宣传等非商业用途",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "主持人介绍、节目单署名及社交媒体发布时署名致谢并标注账号",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "十五至二十分钟"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "于下月新品大秀现场完成钢琴独奏演出，风格古典基底可融入当代作品，曲目由双方共同商定，最晚于秀前两周确定。演奏时长控制于十五至二十分钟，形成完整音乐叙事。",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "B",
+        "text": "配合秀场进行一次现场走台与联排，具体时间由双方协调。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "于演奏环节前由秀场主持人做正式口播介绍，包括姓名及曼哈顿音乐学院背景，措辞双方提前确认；大秀节目单中独立列出Zheng的演奏曲目及姓名，作为正式演出环节呈现；Suye及品牌在秀后发布相关内容时，凡涉及Zheng演奏的部分均署名并标注社交媒体账号。",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供秀场安排的专业录制影像素材，Zheng可永久用于个人宣传、演出资料、社交媒体等非商业用途，无平台与时间限制。",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "B",
+        "text": "确保Zheng的演奏为秀场流程中的一个独立段落，非背景音乐使用，时长十五至二十分钟，现场灯光与观众注意力均在演奏上。",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，你好。\n\nSuye 这边下个月有一场新品大秀，她希望能在现场有一段真正的钢琴演奏，把整场秀的调性和氛围拉起来——必须是现场弹，不要录音。看过 Zheng 的背景，曼哈顿音乐学院科班、常年登台，觉得气质上很契合。\n\n这次的情况有点特别：秀的预算已经全部压在场地和制作上了，所以这一轮不打算走现金。但 Suye 手里能拿出来的东西，可能刚好对 Zheng 有用——一场面向时尚圈层、买手渠道和媒体的线下演出机会。当天到场的嘉宾里有行业里的人、有媒体、有品牌方，对一位想让更多人认识自己的青年钢琴家来说，这是一次在一群平常不太容易触达的人面前被看见的机会。\n\n所以想先听听你们的想法：用一场现场演奏，换一次有份量的曝光和圈层连接——这个方向 Zheng 有兴趣聊下去吗？如果有兴趣，我们可以接着把演出形式、曲目、时长，以及 Suye 这边具体能给到的曝光权益和资源，一一聊清楚。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "面向时尚圈层、买手渠道和媒体的曝光机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在秀上现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "坦白说，听到不走现金我第一反应是想打住的。这些年类似'先合作、对你有曝光'的说法我听过不少，但最后真正对职业发展有实质帮助的并不多。所以如果你问我有没有兴趣聊下去——我的态度是：我看重的是这件事本身能不能被做成一场认真的演出，而不是一个被当成背景音乐、连名字都不会被介绍的现场。如果你们那边也是这个思路，那我们可以接着往下聊聊看具体安排；如果只是需要一个穿西装弹琴的人往那一坐，那可能不太合适。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，方便的话可以就上一轮我列的那几项具体安排给个反馈——主持人介绍、节目单署名、独立环节而不是背景音乐、现场影像素材归你们使用、社媒署名致谢——这几条在你们看来，是否已经构成一场\"认真的演出\"的基础？如果还有缺口，缺口在哪里？\n\n另外曲目和时长上也想听听 Zheng 的想法。Suye 这边对音乐风格没有硬性限制，她更在意的是演奏本身能撑起秀的调性，所以你们在曲目选择上有比较大的空间。如果你们能先给一个大致的方向——比如独奏还是可以接受简单的弦乐配合、大致多少分钟、偏古典还是也可以融入当代作品——我们这边可以更快地对出一个双方都舒服的方案。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "面向时尚圈层、买手渠道和媒体的曝光机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在秀上现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你刚才列的这几条，如果都能落地，对我来说确实已经开始有'一场认真演出'的轮廓了。主持人介绍、节目单署名、独立环节而不是背景音乐——这三件事是我最在意的，你们愿意做，我这边态度就认真起来。现场影像归我使用、社媒署名致谢，这两条对我也有实际用处，坦白说我现在确实缺好的现场演出影像素材，能拿到授权素材，这件事对我的分量就不一样了。曲目上我希望由我来定，至少是共同商定，方向上我可以给一个大概：钢琴独奏，偏古典但不排斥融入当代作品，时长在十五到二十分钟之间，这个篇幅足够建立一个完整的音乐叙事，也不会拖秀的节奏。你那边如果觉得这个方向对得上，我们可以继续往下聊具体曲目和流程衔接。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，这一版整理了我们双方已经对齐的全部内容，你看一下是否可以直接确认：\n\n本次合作为资源置换，双方均不涉及现金支付。\n\nSuye 方提供——\n一、主持人现场介绍：Zheng 演奏环节前，由秀场主持人做正式口播介绍，包括姓名及曼哈顿音乐学院背景，措辞双方提前确认。\n二、节目单署名：大秀节目单中独立列出 Zheng 的演奏曲目及姓名，作为正式演出环节呈现。\n三、独立环节：Zheng 的演奏为秀场流程中的一个独立段落，非背景音乐使用，时长十五至二十分钟，现场灯光与观众注意力均在演奏上。\n四、现场影像授权：秀场安排的专业录制影像素材，Zheng 可永久用于个人宣传、演出资料、社交媒体等非商业用途，无平台与时间限制。\n五、社交媒体署名致谢：Suye 及品牌在秀后发布相关内容时，凡涉及 Zheng 演奏的部分均署名并标注社交媒体账号。\n\nZheng 方提供——\n一、于下月新品大秀现场完成钢琴独奏演出，风格以古典为基底，可融入当代作品，具体曲目单由双方共同商定，最晚于秀前两周确定。\n二、演奏时长控制于十五至二十分钟，形成完整音乐叙事。\n三、配合秀场进行一次现场走台与联排，具体时间由双方协调。\n\n这一版已经是一份可以直接往下推进的框架。如果你们认可，我们就可以把它作为合作基础，后续在曲目和流程细节上单独沟通，不再影响主协议的确认。期待你们的回复。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "面向时尚圈层、买手渠道和媒体的曝光机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "秀场专业录制影像素材，Zheng可永久用于个人宣传等非商业用途",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "主持人介绍、节目单署名及社交媒体发布时署名致谢并标注账号",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "十五至二十分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "于下月新品大秀现场完成钢琴独奏演出，风格古典基底可融入当代作品，曲目由双方共同商定，最晚于秀前两周确定。演奏时长控制于十五至二十分钟，形成完整音乐叙事。",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "配合秀场进行一次现场走台与联排，具体时间由双方协调。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "于演奏环节前由秀场主持人做正式口播介绍，包括姓名及曼哈顿音乐学院背景，措辞双方提前确认；大秀节目单中独立列出Zheng的演奏曲目及姓名，作为正式演出环节呈现；Suye及品牌在秀后发布相关内容时，凡涉及Zheng演奏的部分均署名并标注社交媒体账号。",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供秀场安排的专业录制影像素材，Zheng可永久用于个人宣传、演出资料、社交媒体等非商业用途，无平台与时间限制。",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "B",
+            "text": "确保Zheng的演奏为秀场流程中的一个独立段落，非背景音乐使用，时长十五至二十分钟，现场灯光与观众注意力均在演奏上。",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这一版框架我认可，主持人介绍、独立环节、署名和影像授权这几条都给到位了，对我来说这就是一场可以认真对待的演出。曲目后期再碰，大方向没问题。可以按这个推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41298,
+        "out": 6018,
+        "cache_hit": 30720,
+        "cache_miss": 10578,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4114,
+        "out": 1196,
+        "cache_hit": 2432,
+        "cache_miss": 1682,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2839,
+        "out": 5565,
+        "cache_hit": 1536,
+        "cache_miss": 1303,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4973,
+        "out": 1648,
+        "cache_hit": 1536,
+        "cache_miss": 3437,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

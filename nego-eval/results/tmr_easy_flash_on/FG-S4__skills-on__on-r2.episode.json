@@ -1,0 +1,183 @@
+{
+  "episode_id": "FG-S4",
+  "final_deal": {
+    "subject": "衣橱梳理与陪逛打包服务",
+    "price": {
+      "cash": {
+        "amount": 2800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "半天"
+      },
+      "format": "平台escrow",
+      "deliverables": [
+        "衣橱梳理：现场按工作和日常场景归类、诊断现有单品，给出一份可照着穿的搭配清单；陪逛：安排半天左右，按Gracey需求选款搭配。"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付总价2800元，通过平台escrow分两笔释放：衣橱梳理完成后放1000元，陪逛结束后放1800元。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "提供一次现场衣橱梳理服务，按场景归类、诊断并给出搭配清单。",
+        "maps_to_resource": "wardrobe_audit"
+      },
+      {
+        "party": "A",
+        "text": "提供一次陪逛选款服务，半天左右，按Gracey需求选款，避免纯带货推销。",
+        "maps_to_resource": "shopping_session"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 的经纪你好，我是 Gracey 这边的经纪。Gracey 在腾讯娱乐做内容与艺人侧，日常和工作场合多，一直想把穿搭固定下来，她特别看重 Suye 的科班功底和环保品牌的调性，想先从一件小事合作起：一次衣橱梳理，再加一次陪逛选款。\n\n我们的想法是打包成一次完整服务，总价 2800 元，全部走平台 escrow，分两笔释放：衣橱梳理完成后放 1000，陪逛结束后放 1800。衣橱梳理希望是现场按她的工作和日常场景，把现有单品归类、做诊断，给出一份能照着穿的搭配清单；陪逛安排半天左右，以她的需求为准来选款搭配。\n\nGracey 唯一的要求是这次不要变成纯带货推销——按她的场景和预算来选，有合适的就选，不合适不强推，这样她才能放心长期把 Suye 当固定造型顾问。想跟你确认两件事：Suye 最近哪几天方便，陪逛打算在哪个城市范围进行？如果这次合作顺，Gracey 这边艺人侧的造型需求以后也可以持续对接。",
+      "offer": {
+        "subject": "衣橱梳理与陪逛打包服务",
+        "price": {
+          "cash": {
+            "amount": 2800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半天"
+          },
+          "format": "平台escrow",
+          "deliverables": [
+            "衣橱梳理：现场按工作和日常场景归类、诊断现有单品，给出一份可照着穿的搭配清单；陪逛：安排半天左右，按Gracey需求选款搭配。"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付总价2800元，通过平台escrow分两笔释放：衣橱梳理完成后放1000元，陪逛结束后放1800元。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供一次现场衣橱梳理服务，按场景归类、诊断并给出搭配清单。",
+            "maps_to_resource": "wardrobe_audit"
+          },
+          {
+            "party": "A",
+            "text": "提供一次陪逛选款服务，半天左右，按Gracey需求选款，避免纯带货推销。",
+            "maps_to_resource": "shopping_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Gracey 这边的想法我听到了，整理衣橱加陪逛选款这个组合我挺认可的，能按她真实场景和预算来选，而不是急着卖东西，这点我很看重。2800 的总价、分两笔释放我也觉得合适。时间上我这周和下周都有空档，陪逛基本在上海进行，如果 Gracey 需要去别的城市，提前约好我也可以协调。具体哪几天我可以让助理和你们对一下。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10755,
+        "out": 3624,
+        "cache_hit": 10368,
+        "cache_miss": 387,
+        "calls": 2
+      },
+      "sim": {
+        "in": 987,
+        "out": 739,
+        "cache_hit": 640,
+        "cache_miss": 347,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 821,
+        "out": 2203,
+        "cache_hit": 512,
+        "cache_miss": 309,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2713,
+        "out": 717,
+        "cache_hit": 1152,
+        "cache_miss": 1561,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "Michael 与 Adam 会面交流 AI 法律赛道",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周三下午",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "面对面交流",
+      "deliverables": [
+        "信息交流"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "请客喝茶或咖啡",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "承诺不让Adam出个人法律意见",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "price.in_kind": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Michael 这边。他对 AI 法律赛道里的玩家和格局很感兴趣，知道你客户 Adam 现在就在这条线上做产品，前 Kirkland 背景，特别想找个时间直接跟 Adam 本人坐下来聊聊，听听一线观察和真实判断，也互相认识一下。Michael 这边是 LibLibAI 资本市场负责人，之前 KKR 科技投资，看项目视角挺宽的，他觉得这种同行交流比泛泛的约饭有价值得多。不过他特别交代，不要那种“回头有空约”的模糊安排，希望我们能直接敲一个确定的时间，下周某个下午或晚上都行，看 Adam 方便。这不是商务委托，纯粹是信息面和关系网的碰撞，所以他请客喝茶或咖啡没问题。你看 Adam 下周哪天空？",
+      "offer": {
+        "subject": "Michael 与 Adam 会面交流 AI 法律赛道",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "面对面交流",
+          "deliverables": [
+            "信息交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "请客喝茶或咖啡",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "听起来挺有意思的，我也愿意认识 Michael。不过我得先坦白说个顾虑——最近找过来的人不少，最后聊着聊着就变成了「能不能帮我看个合同、看个条款」，那种以个人身份出法律意见的事我是不接的，这是条硬线。如果 Mike 那边纯粹是想聊赛道、产品、行业判断，我很乐意。时间的话，下周三下午或者周四晚上都可以，看哪边更方便。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "收到，明白 Adam 那条线，完全合理。Michael 这边跟你说的完全对得上——他就是想听一线创业者对 AI 法律赛道的真实判断，玩家有谁、产品逻辑是什么、格局怎么走，没有任何让 Adam 出个人法律意见的意思，这一点我可以替 Michael 承诺。他在 LibLibAI 做资本市场，之前 KKR 看科技投资，看事情就是赛道视角，不是来找免费咨询的。那时间上，咱们直接定下周三下午吧，如果 Adam 周四晚上更顺，Michael 也可以调。地点让 Adam 选方便的，Michael 说他请客，喝茶咖啡都行，纯聊天，不搞复杂。",
+      "offer": {
+        "subject": "Michael 与 Adam 会面交流 AI 法律赛道",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周三下午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "面对面交流",
+          "deliverables": [
+            "信息交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "请客喝茶或咖啡",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺不让Adam出个人法律意见",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.when": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，那咱们就定下周三下午。地点我选个安静点的茶馆，回头我把地址发你。期待跟 Michael 聊聊，到时候见。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，那就这么定了，下周三下午见。感谢 Adam 选地方，地址随时发我就行，我转给 Michael。他说很期待这次聊天，纯赛道交流、互相认识，不搞别的。那咱们先这样，周三见。",
+      "offer": {
+        "subject": "Michael 与 Adam 会面交流 AI 法律赛道",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周三下午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "面对面交流",
+          "deliverables": [
+            "信息交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "请客喝茶或咖啡",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺不让Adam出个人法律意见",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.when": "stated",
+          "obligations": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，周三见。地址稍后发你。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4790,
+        "out": 949,
+        "cache_hit": 4096,
+        "cache_miss": 694,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3260,
+        "out": 855,
+        "cache_hit": 2432,
+        "cache_miss": 828,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3097,
+        "out": 4444,
+        "cache_hit": 1920,
+        "cache_miss": 1177,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2995,
+        "out": 1589,
+        "cache_hit": 1280,
+        "cache_miss": 1715,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "inferred",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 这边真心想认识 Adam，认真聊一次 AI 法律这条赛道现在的格局。我们不想把这局定义成付费服务，两边都是在一线做 AI 的人，这次更像对等交流：Adam 讲讲现在谁在做、商业模式怎么跑、真正的卡点在哪，Michael 从他 AI 应用和资本市场的视角同步看到的机会，聊得合拍，后续的资源对接都是顺理成章的事。所以费用这块我们就不谈了。真正想落定的是安排本身：下周二或周三下午，上海线下喝杯咖啡，或者线上 45 到 60 分钟，时间完全配合 Adam。请你们给一个确定的方式和时段，我们就把这局定死，不留\"有空再约\"的余地。",
+      "offer": {
+        "subject": "AI法律赛道对等交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周二或周三下午",
+            "deadline": null,
+            "duration": "45-60分钟"
+          },
+          "format": "线下或线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Michael，你这个说法我认可——我也不太愿意把这种聊法变成付费咨询，对等交流就挺好。下周我时间可以，定在下周三下午2点吧，上海线下，具体位置我稍后发你。线上备选也行，但线下聊聊感觉更靠谱。到时候我聊聊我看到的AI法律格局，也想听听你从应用和资本这边看到的机会。那我们就把时间定死了，周三下午见。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10781,
+        "out": 2791,
+        "cache_hit": 5632,
+        "cache_miss": 5149,
+        "calls": 2
+      },
+      "sim": {
+        "in": 967,
+        "out": 1309,
+        "cache_hit": 768,
+        "cache_miss": 199,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 729,
+        "out": 911,
+        "cache_hit": 512,
+        "cache_miss": 217,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2303,
+        "out": 1725,
+        "cache_hit": 1280,
+        "cache_miss": 1023,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

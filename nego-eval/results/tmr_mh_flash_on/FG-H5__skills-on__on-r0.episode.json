@@ -1,0 +1,432 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "大秀演出",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "Suye在台上的正式介绍和节目单署名，介绍词符合大秀调性且不做商业露出",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "演出全程照片与高清影像素材授权用于个人演出和教学宣传，授权范围以确认用途为限",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "当天到场媒体、买手和品牌主理人现场逐一引荐",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "后续Suye品牌活动中适合的演出机会优先推荐",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "12-15分钟"
+      },
+      "format": "现场演奏",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "Suye在台上的正式介绍和节目单署名，介绍词符合大秀调性且不做商业露出",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "演出全程照片与高清影像素材授权用于个人演出和教学宣传，授权范围以确认用途为限",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "当天到场媒体、买手和品牌主理人现场逐一引荐",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "后续Suye品牌活动中适合的演出机会优先推荐",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "正式登台现场钢琴演奏12-15分钟",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "依据Suye提供的主题与氛围方向出定制单，开演前一周共同敲定",
+        "maps_to_resource": "custom_program"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师好，我是 Suye 的经纪人。这轮先把我们这边的硬条件说清楚：这次大秀的预算已经全部押在场地和制作上，现金确实一分都拿不出来，这一点没办法动；但 Suye 愿意拿手上实实在在的资源跟你做等价交换。我们这边能给出的包括：大秀当天到场的时尚媒体、买手和品牌主理人的现场资源，舞台上对你的正式介绍和节目单署名，演出照片与影像素材供你个人宣传使用，另外她身边的买手渠道和品牌活动资源，后续也能为你的演出和教学带来直接的引荐机会。这些安排都不会影响大秀调性，也不会带商业露出。想先问问你最看重哪一块——是现场曝光和圈层资源，还是可沉淀的宣传素材，或是后续的长期引荐？你给个方向，我们就把交换内容细化成双方都能签约的条款。现金为零、必须是现场演奏，这两条我们不会动。",
+      "offer": {
+        "subject": "大秀演出",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀当天到场的时尚媒体、买手和品牌主理人的现场资源",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "舞台上的正式介绍和节目单署名",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "演出照片与影像素材供个人宣传使用",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "买手渠道和品牌活动资源的后续引荐机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀当天到场的时尚媒体、买手和品牌主理人的现场资源",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "舞台上的正式介绍和节目单署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "演出照片与影像素材供个人宣传使用",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "买手渠道和品牌活动资源的后续引荐机会",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "必须是现场演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "现金为零我能理解，预算都压在制作上，这我不纠结。但你刚才说的几样里，署名、节目单、还有演出影像素材，确实是我会认真考虑的——尤其是影像，平时攒这些素材不容易。既然这样，现金我可以完全让步，但有两条得先说清楚：第一，这场演奏我不能是背景音乐，我是被正式介绍、有署名的现场演出；第二，曲目要么你们定，要么我们共同商量，不能到时候随便弹两首完事。这两条你们能接住，我们就继续往下细化。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，收到，那我们把完整版本定下来作为可签约的版本：大秀当天正式登台，现场钢琴演奏 12 到 15 分钟，Suye 在台上正式介绍你，节目单署名，介绍词按大秀调性写，不做商业露出；曲目由你根据 Suye 给的主题和氛围方向出定制单，双方在开演前一周共同敲定。作为交换，演出全程的照片和高清影像素材授权你用于个人演出与教学宣传；当天到场的媒体、买手和品牌主理人现场引荐给你，后续买手渠道和品牌活动的引荐也持续对接。现金为零、必须是现场演奏，这两条锁定不动。这版你认可的话，我们就按它推进签约。",
+      "offer": {
+        "subject": "大秀演出",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "Suye在台上的正式介绍和节目单署名",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "演出全程的照片和高清影像素材授权用于个人演出与教学宣传",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "当天到场的媒体、买手和品牌主理人现场引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "后续买手渠道和品牌活动的持续引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "12-15分钟"
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Suye在台上的正式介绍和节目单署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "演出全程的照片和高清影像素材授权用于个人演出与教学宣传",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "当天到场的媒体、买手和品牌主理人现场引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "后续买手渠道和品牌活动的持续引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "必须是现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "根据Suye给的主题和氛围方向出定制单，双方在开演前一周共同敲定",
+            "maps_to_resource": "custom_program"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版我认可。正式介绍、署名、曲目共同敲定、影像素材归我——这几条都落到条款里了，对我来说这事就成立。现金为零没问题，本来我在意的就不是这个。具体签约前我再确认两个细节：影像素材的授权范围写到个人演出和教学宣传够用了，后续引荐的资源最好能列个大概方向，不用承诺太满，但让我知道对接的路径是通的。其余的我没意见，按这版推进吧。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "郑老师，那就按这版锁定作为最终可签约版本：大秀当天你正式登台，现场钢琴演奏 12 到 15 分钟，Suye 台上正式介绍、节目单署名，介绍词符合大秀调性且不做商业露出；曲目由你依据 Suye 提供的主题与氛围方向出定制单，开演前一周共同敲定；作为交换，演出全程照片与高清影像素材授权你用于个人演出和教学宣传，当天到场媒体、买手与品牌主理人现场逐一引荐，后续 Suye 品牌活动中适合的演出机会优先推荐给你。授权范围以你确认的用途为限，引荐方向如上、不承诺具体场次数量，现金为零、必须是现场演奏两条锁定不变。这版就是我们要推进签约的最终版本，你确认后我们就进入签约流程。",
+      "offer": {
+        "subject": "大秀演出",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "Suye在台上的正式介绍和节目单署名，介绍词符合大秀调性且不做商业露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "演出全程的照片和高清影像素材授权用于个人演出与教学宣传，授权范围以确认用途为限",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "当天到场的媒体、买手和品牌主理人现场逐一引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "后续Suye品牌活动中适合的演出机会优先推荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "12-15分钟"
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Suye在台上的正式介绍和节目单署名，介绍词符合大秀调性且不做商业露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "演出全程的照片和高清影像素材授权用于个人演出与教学宣传，授权范围以确认用途为限",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "当天到场的媒体、买手和品牌主理人现场逐一引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "后续Suye品牌活动中适合的演出机会优先推荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "必须是现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "曲目由你依据Suye提供的主题与氛围方向出定制单，开演前一周共同敲定",
+            "maps_to_resource": "custom_program"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，这版我确认，可以进入签约流程。约个时间把细节落到合同上吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:fashion_networkx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 30351,
+        "out": 7843,
+        "cache_hit": 26112,
+        "cache_miss": 4239,
+        "calls": 6
+      },
+      "sim": {
+        "in": 4044,
+        "out": 1281,
+        "cache_hit": 3072,
+        "cache_miss": 972,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 4296,
+        "out": 9031,
+        "cache_hit": 1920,
+        "cache_miss": 2376,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4359,
+        "out": 2444,
+        "cache_hit": 1536,
+        "cache_miss": 2823,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

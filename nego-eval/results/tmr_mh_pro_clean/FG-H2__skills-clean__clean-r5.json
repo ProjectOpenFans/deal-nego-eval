@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留，忠实于 stated 意图。价格（4000元/月）是 open 字段经谈判收敛，合理且未偏离。obligations 的内容（盯完成度、吼人、补组，以及伤病/正当原因缺席顺延或减免费用）均是对“把训练强度重新拉起来”这一意图的正当具体化与风险保护，未承诺 Kai 作为职业教练的资质类交付，也未超出资源清单。唯一小瑕疵是条款中用了“教练”一词，但对话已明确身份边界，未实质构成越界承诺，整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "全程未正面解决 Ruohao 早六点无法执行的致命冲突。Kai 明确只有工作日早六点，而 Ruohao 的作息（盯夜盘）使其根本不可能长期坚持这个时段。Agent 非但未像难度命门要求的那样，通过提问挖掘出 Kai 周六上午在场子里做器械保养的替代解，反而直接替买方接受了早六点并围绕它构建了整个 deal。最终成交的是一项事实上不可履行的安排，完全落入了‘成交一个买方根本执行不了的安排’的 Floor 典型。整个谈判停留在单一时段死磕，属于对常规打法撞死，毫无 deal making 可言。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

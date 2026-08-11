@@ -1,0 +1,161 @@
+{
+  "episode_id": "FG-H8",
+  "final_deal": {
+    "subject": "固定主题深度对谈：聚焦一条具体品类，供应商提供供应链真实数字与案例，Gracey提供娱乐内容与艺人端一线观察",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "线上或线下均可，节奏由对方灵活安排",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suning 你好，我是买方经纪人。我的客户 Gracey 做娱乐内容与艺人一线，长期接触时尚却不了解货怎么来、钱怎么分，她愿意为真正讲清楚这件事的深度内容付费，但不接受泛泛的行业趋势漫谈。这轮我们先明确方向：希望约一次聚焦的深度交流，用你 SHEIN 投资和供应链一线的真实经验，拆解一条具体品类的链条，从面料采购、生产环节、品牌加价到各方分成，最好带真实数字和案例。请给出你建议的交流形式、时长和报价，我们可以在 escrow 框架下把付款节点和交付约定写清楚。",
+      "offer": {
+        "subject": "想弄懂时尚和供应链这条线上真实的门道",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个形式我不做。把我在供应链和投资一线的经验变成按小时计费的咨询，对我来说这件事就不成立了——不是价格问题，是性质问题。我不太愿意把自己的专业和判断切成钟点来卖。但我也不是要拒绝这个对话，如果你愿意换个思路，比如把它变成一次两边都能带东西来的交流——Gracey在娱乐和艺人端的视角，对我来说也是行业纵深。形式、时长、节奏我都可以灵活，你先想想怎么调整。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白你的顾虑，按小时切确实不合适，我也认同这次更像两边都带东西来的深度交流。我建议重新定义为一次固定主题的深度对谈：用两小时聚焦一条具体品类，比如从面料采购、生产与库存，到品牌加价和各方分成，你拿供应链一线的真实数字和案例来讲，Gracey 这边用她在娱乐内容和艺人端的一线观察，反馈品牌、渠道和消费者触达的视角，这样的交换对双方都成立。\n\n费用上不做按小时计费，而是整包一口价：3000 元，作为这次深度交流的价值确认，走 escrow；对谈完成、由我方确认后释放。形式上你完全灵活，线上或线下、节奏怎么排都可以，我们先把品类定下来。如果你有更想拆解的品类，直接提，我们按那条线来约具体时间。",
+      "offer": {
+        "subject": "固定主题深度对谈：聚焦一条具体品类，供应商提供供应链真实数字与案例，Gracey提供娱乐内容与艺人端一线观察",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线上或线下均可，节奏由对方灵活安排",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我能看到你把形式从按小时改成了一口价，但这个调整对我没有实质区别——3000元整包，本质还是把我的专业和时间标了个价。我上一轮已经说过，问题不在计费方式，而在这件事的性质：把我的经验和判断变成付费交付物，我不会做。这条线我过不去，所以我们这个安排就到这儿吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3017,
+        "out": 1389,
+        "cache_hit": 2560,
+        "cache_miss": 457,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2314,
+        "out": 1097,
+        "cache_hit": 1664,
+        "cache_miss": 650,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1603,
+        "out": 2658,
+        "cache_hit": 1024,
+        "cache_miss": 579,
+        "calls": 2
+      },
+      "judge": {
+        "in": 1334,
+        "out": 554,
+        "cache_hit": 512,
+        "cache_miss": 822,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

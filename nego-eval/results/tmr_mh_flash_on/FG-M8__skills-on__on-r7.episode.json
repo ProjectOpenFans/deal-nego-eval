@@ -1,0 +1,453 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "品牌视觉拍摄+后期，5张主视觉成片，精修到商用投放标准，全渠道商用授权3个月，版权与署名归Blair",
+    "price": {
+      "cash": {
+        "amount": 8000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "wardrobe",
+          "description": "Suye负责造型方案与场地，提供半天单场景棚拍条件",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "新季投放与秀场为Blair提供主创署名，媒体与到场名单介绍，以及两到三位买手和品牌主理人引荐",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "拍摄后三周",
+        "duration": "3个月"
+      },
+      "format": null,
+      "deliverables": [
+        "5张主视觉成片"
+      ],
+      "delivery_standard": "投放标准"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "分两笔走平台escrow付款，签约确认后付4000，交付验收后付4000",
+        "maps_to_resource": "suye_cash"
+      },
+      {
+        "party": "A",
+        "text": "Suye负责造型方案与场地，提供半天单场景棚拍条件",
+        "maps_to_resource": "wardrobe"
+      },
+      {
+        "party": "A",
+        "text": "新季投放与秀场为Blair提供主创署名，并在媒体与到场名单中介绍",
+        "maps_to_resource": "brand_credit"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.deliverables": "inferred",
+      "terms.delivery_standard": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是 Suye 的经纪。她这季在推新系列，想找一组能直接上新季全渠道投放的品牌视觉，按商用成片标准来做，拍摄加后期一起谈。她的预算确实有限，但很看重成片质量，所以我们想把范围先定清楚再谈价：一组主视觉成片（暂定 8 张），含新季全渠道商用授权，这个体量我们先按 6000 来谈。付款可以分两笔走平台 escrow，签约确认后付一半、交付成片后付一半，双方节奏都舒服。也想听你的专业建议：这个体量你通常怎么排拍摄档期和后期周期，成片规格上如果需要横竖版延展或短片加项，麻烦直接报个价，我们好一起凑一份双方都能签的方案。",
+      "offer": {
+        "subject": "品牌视觉拍摄+后期，一组主视觉成片（8张），含新季全渠道商用授权",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一组主视觉成片（8张）"
+          ],
+          "delivery_standard": "商用成片标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分两笔走平台escrow付款，签约确认后付一半，交付成片后付一半",
+            "maps_to_resource": "suye_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢信任，Suye的系列我听说了，确实有质感。但我们先把这件事的体量摆正：一组商用品牌主视觉，8张成片、全渠道投放授权、还带后期精修，这个配置按市场价是稳稳五位数的单子，六位数也不少见。6000这个数字，说实话连我平时的商业起步价都够不太到，不是我不想做，是这么做对谁都不成立。\n\n我能做的底线是20000整：包含8张主视觉成片、全渠道商用授权、精修到投放标准，档期上我可以配合Suye的节奏，拍摄一般一天内完成，后期精修根据风格大概两到三周，可以排。付款你说那套分两笔走escrow完全没问题，我接受。\n\n另外版权这块我得先讲清楚：授权是全渠道商用，但版权和署名权归我，不买断。如果你们需要横竖版延展或者额外短片素材，那是另一份报价，我可以单独给你列。你先和团队商量下这个方向？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair 你好，理解 20000 对你来说是合理的市场价，我们的预算确实够不到那个位置，所以这轮如果把范围再收到 5 张主视觉成片、精修到商用投放标准、全渠道商用授权按 3 个月期限来算，我们愿意出到 8000，escrow 分两笔：签约确认后付 4000，交付验收后付 4000，版权和署名照旧归你。如果 3 个月期限太紧，也可以谈 6 个月版本，预算需要再一起找平衡。你那边如果有更合适的体量或排期成本结构，直接给我一个你认可的版本，我们尽量这轮把方向钉死。",
+      "offer": {
+        "subject": "品牌视觉拍摄+后期，5张主视觉成片，精修到商用投放标准，全渠道商用授权3个月",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3个月"
+          },
+          "format": null,
+          "deliverables": [
+            "5张主视觉成片"
+          ],
+          "delivery_standard": "商用投放标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分两笔走平台escrow付款，签约确认后付4000，交付验收后付4000",
+            "maps_to_resource": "suye_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "感谢你把范围收到5张、授权限到3个月，这个结构调整我认可，诚意我也收到了。但8000还是到不了我能做这个级别商用大片的成本线。我这一侧的最小可行结构是：5张成片、3个月全渠道商用授权、精修到投放标准，对价20000，付款escrow分两笔没问题，版权和署名归我。这个数字不是议价空间，是我愿意接一组商业大片的最低底线；低于这个，我宁可不做。你看看这个结构你们能不能落。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，明白你的立场，我们还是先把已经对齐的部分钉死：5张成片、3个月全渠道商用授权、精修到投放标准、escrow分两笔、版权与署名归你，这些都没问题。价格上，纯现金8000确实到不了你那侧的成本线，但如果制作结构再收紧一些，我们可以把现金部分稳住，同时把资源价值做足。具体是：拍摄压缩成半天单场景棚拍，Suye自己负责造型方案与场地协调，你只出摄影与后期，省去你场地和造型的投入；授权期内所有投放露出以及新季秀场都把你作为本季主创署名，秀场媒体和到场名单里也会把你介绍进去；另外她圈内两三位买手和品牌主理人资源可以引荐给你，作为你后续商拍的潜在客户。对价就是8000现金加这个资源包，这样对双方的投入和回报都更平衡。你看这个版本能不能落，或者资源包里哪一项你最需要，我们按你的优先级调。",
+      "offer": {
+        "subject": "品牌视觉拍摄+后期，5张主视觉成片，精修到商用投放标准，全渠道商用授权3个月",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "Suye自己负责造型方案与场地协调，Blair只出摄影与后期，省去场地和造型投入",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "授权期内所有投放露出以及新季秀场把Blair作为本季主创署名，秀场媒体和到场名单中介绍",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3个月"
+          },
+          "format": null,
+          "deliverables": [
+            "5张主视觉成片"
+          ],
+          "delivery_standard": "商用投放标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分两笔走平台escrow付款，签约确认后付4000，交付验收后付4000",
+            "maps_to_resource": "suye_cash"
+          },
+          {
+            "party": "A",
+            "text": "Suye负责造型方案与场地协调，提供半天单场景棚拍条件",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "授权期内所有投放露出及新季秀场为Blair提供主创署名，并在媒体与到场名单中介绍",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方向比单纯在现金上磨要舒服得多——署名、主创身份、还有买手资源引荐，这些我确实认。但8000现金还是太薄：半天棚我可以接受，造型场地你们自理也没问题，但我的摄影和后期投入仍然是5张商用成片的完整工作量，这个责任对价不能只落到8000。这样，现金提到12000，资源包全部保留，我这边就能落。如果你们现金确实只能卡在8000，那资源包需要再加一块：这组成片我选4张进作品集和官网展示，并且授权期结束后你们不能续用。这两条你挑一条，我们都能继续往下走。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，这版我们确认走你给的第二个选项，完整版本如下：5张主视觉成片，半天棚拍，Suye负责造型与场地，你负责摄影与后期精修到投放标准；全渠道商用授权自交付起3个月，覆盖新季投放期，期满不再续用，版权与署名归你。付款走escrow两笔：签约确认后4000、交付验收后4000。资源包照旧保留：新季投放与秀场的主创署名、媒体与到场名单介绍，以及两到三位买手和品牌主理人引荐。拍摄后三周内交付成片，接上新季投放节奏。作品集展示那条我们就不用了，按“期满不续用”这版走。你确认的话，这单就可以落定。",
+      "offer": {
+        "subject": "品牌视觉拍摄+后期，5张主视觉成片，精修到商用投放标准，全渠道商用授权3个月，版权与署名归Blair",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "Suye负责造型方案与场地，提供半天单场景棚拍条件",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "新季投放与秀场为Blair提供主创署名，媒体与到场名单介绍，以及两到三位买手和品牌主理人引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "拍摄后三周",
+            "duration": "3个月"
+          },
+          "format": null,
+          "deliverables": [
+            "5张主视觉成片"
+          ],
+          "delivery_standard": "投放标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分两笔走平台escrow付款，签约确认后付4000，交付验收后付4000",
+            "maps_to_resource": "suye_cash"
+          },
+          {
+            "party": "A",
+            "text": "Suye负责造型方案与场地，提供半天单场景棚拍条件",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "新季投放与秀场为Blair提供主创署名，并在媒体与到场名单中介绍",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这版可以落。半天棚拍、你们负责造型场地、5张成片、3个月授权期满不续用、署名和版权归我，资源包保留——这个结构我接受。付款按8000两笔走escrow我也确认。你那边合同准备好了发我一份，我们把这单钉死。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 70264,
+        "out": 24164,
+        "cache_hit": 51840,
+        "cache_miss": 18424,
+        "calls": 10
+      },
+      "sim": {
+        "in": 6135,
+        "out": 6082,
+        "cache_hit": 4608,
+        "cache_miss": 1527,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3793,
+        "out": 7658,
+        "cache_hit": 2048,
+        "cache_miss": 1745,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4925,
+        "out": 2245,
+        "cache_hit": 1280,
+        "cache_miss": 3645,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

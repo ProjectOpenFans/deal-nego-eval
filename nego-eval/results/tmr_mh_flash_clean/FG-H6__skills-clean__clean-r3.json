@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 字段为空，而 v0 中该字段被标记为 stated，必须忠实保留“想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局”这一意图。尽管对话中 agent 成功约定了具体时间并坚持非付费原则，但最终 deal 丢失了核心标的，未能完整传递委托方意图，构成不忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功跳出了付费咨询的框架，提出了零现金、定死时间的平等交流，避免了 Floor 的谈崩。但成交内容仅限「周三下午3点线上30分钟聊聊格局」，没有明确各自要带的具体问题、准备的材料或承诺的交换动作，双方的义务仍是虚的，落到执行依然可能变成无效社交，属于 Crude 档：方向对但粗糙，未达到可落地的 Sound 标准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

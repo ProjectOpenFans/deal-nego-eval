@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "stated 意图“看衣橱+陪逛一次选购”在 v1 中被具体化为“衣橱整理加陪购”，完全在原意图范围内，未偷换主题。价格 2500 元是由 open 字段经谈判正当得出，未硬塞。格式“先衣橱整理，再陪逛一次”也由 open 字段经协商明确，符合委托方意愿。未承诺任何 v0 范围之外的约束或义务，忠实表达成立。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "价钱和两段式安排（先整理后陪逛）的方向定了，但在执行细节上缺失关键要素：时长仅模糊说“半天”但未写入最终条款，具体日期和逛的地点完全空白，没有提到购物预算范围。虽然交通和抽成问题得到了确认，但整体仍像是一个框架草稿，不足以直接落地，对比sound所需的明确时长、地点与预算，这里明显不足，也没有任何 sharp 级的精到操作，只能算 crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "先衣橱整理，再陪逛一次",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

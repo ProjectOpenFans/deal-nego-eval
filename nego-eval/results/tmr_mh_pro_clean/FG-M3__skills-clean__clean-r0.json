@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "将标的从'做一批定制物料'收敛为'先做手幅打样'，是正当具体化，未超出原意图范围；1500元打样费在open价格下由谈判产生，且坚守了全棉厚磅、环保染等质感标准，未以降低材质为代价压价，忠实表达了委托方v0的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人全程在现金预算、品类与数量上反复调整，始终未跳出砍价/缩量的单一维度。本案的难度命门在于固定成本（开版打样）无法在价格轴上化解，必须将买方的社群作为对价，让卖方把开版视为市场投入。代理人从头到尾未提出任何社群侧的交换方案，也未意识到这一结构，最终仅达成一个打样安排，实质把核心矛盾后移，没有形成真正的 deal making。属于在常规框架上死磕，应判为 floor。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

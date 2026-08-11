@@ -1,0 +1,261 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "摸底训练和极端训练方案",
+    "price": {
+      "cash": {
+        "amount": 5500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "平台托管",
+      "deliverables": [],
+      "delivery_standard": "强度到位"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "进行摸底评估，判断Luke身体能否承受高强度训练",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "A",
+        "text": "提供12次高强度训练，教练全权决定训练强度",
+        "maps_to_resource": "session_slots"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "open",
+      "terms.timing.when": "open",
+      "terms.timing.deadline": "open",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "open",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Luke 的经纪人。Luke 长期高强度训练，篮球和体能方向都有很深的基础，但他现在遇到一个瓶颈：市面上的私教课太保守了，练不到他想要的那个极限。他不是要找标准化的课时包，而是在找一个真正能把他往死里练的人——强度是硬条件，这个没得商量。\n\n看了你的背景，你自己练、也带朋友练，不走健身房那套流程，这恰恰是我们感兴趣的方向。Luke 对有意思的定制体验付费意愿很强，他想知道你平时带朋友是怎么练的、你能把训练强度推到什么程度，以及如果你来设计一个真正极限向的训练安排，大概会是什么样子。\n\n你先聊聊你的训练风格和想法，我们再看怎么搭一个双方都满意的方案。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，我先说说我怎么练和我带人怎么练。我自己练好几年了，不混商业健身房，就是铁馆和户外那套——大重量复合动作、负重体能、高强度间歇这些，偶尔也搞搞农夫行走、翻轮胎、拖雪橇这种脏活。我带朋友就一个原则：先摸底，再上强度。新人进来第一件事不是看他们能举多重，是看他动作模式、核心稳定、关节活动度、心率恢复能力。因为你不摸，直接上强度，我见过太多被顶伤的——腰、膝盖、肩，一伤就是几个月。所以我要先看他动，看他能不能安全地把自己逼到极限。如果这个底子清楚，那后面要练到吐、练到趴，都没问题，节奏我定，但强度绝对给够。你们说的那个'往死里练'我大概能理解，但前提是我想确认Luke的身体能不能接得住。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，你说的\"先摸底再上强度\"我们完全认可——说实话，敢上强度的人不少，但知道怎么安全地把人推到极限的，才是我们在找的人。Luke 这边你不用担心底子问题：他长期高强度训练，篮球和体能方向都有积累，动作模式和核心稳定性不是从零起步，他对自己的身体边界有认知，不是硬撑到受伤的类型。\n\n所以我们想这样走：先安排一次摸底训练，你亲眼看他动、看他心率恢复，你判断他能接住什么级别的强度。摸底过了，后面就是你说了算——练到吐练到趴，节奏你定，但强度必须给满，这是 Luke 的硬条件。\n\n你先帮我们理两件事：第一，摸底本身你怎么收费；第二，如果摸底通过，你设计的极端训练方案大概是什么结构——周期多长、频率多少、内容方向——对应价格大概在什么区间。把这些聊清楚，我们就能出一个双方都愿意签的版本。",
+      "offer": {
+        "subject": "摸底训练和极端训练方案",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "摸底这个，说实话，你突然问我怎么收费，我还真卡住了。我平时带朋友没想过收钱这回事，都是练得狠了请顿饭那种。你这个情况……你看着来就行，我没办法给你报个具体数。然后方案结构我可以跟你说说。如果摸底过了，我倾向先做四周一个周期，每周三次，内容方向是复合力量打底，加高强度间歇和负重体能，最后一周上一些极限耐受的环节，比如高次数深蹲死亡组、极限农夫行走、心率推顶的间歇冲刺这种。每次训练我都在场盯，节奏和加量全由我根据他当天的状态调。价格的话，也还是你看着来吧。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，方案框架我们完全对齐了——摸底加四周极限周期，你全权控场、强度给满，这就是 Luke 一直在找的东西。既然你让我来定价格，我不跟你绕弯子，直接给一个我们觉得对双方都公平的数：\n\n摸底训练一次，500 元。四周极端训练周期十二次训练，5000 元。合计 5500，全部走平台托管——摸底费用先付，四周费用摸底通过后付。\n\n前提很明确：摸底如果你判断 Luke 身体接不住你要的强度，付清摸底费用就结束，双方没有后续义务；摸底过了，后面十二次你说了算，不用收任何力，练到吐练到趴都行。对我们来说，强度到位这个条件是写死的，剩下的一切节奏都归你。\n\n价格你确认没问题的话，再跟我说训练地点大概在哪边，我们就可以落一个正式版本。",
+      "offer": {
+        "subject": "摸底训练和极端训练方案",
+        "price": {
+          "cash": {
+            "amount": 5500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": "强度到位"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "进行摸底评估，判断Luke身体能否承受高强度训练",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "A",
+            "text": "提供12次高强度训练，教练全权决定训练强度",
+            "maps_to_resource": "session_slots"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "open",
+          "terms.timing.when": "open",
+          "terms.timing.deadline": "open",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "open",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这些数我没意见，就按你说的来。训练地点的话，我主要在城南那个老铁馆练，户外部分我会用附近的田径场和一段山坡，到时候根据当天的内容安排。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41567,
+        "out": 7730,
+        "cache_hit": 30720,
+        "cache_miss": 10847,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4060,
+        "out": 1468,
+        "cache_hit": 2944,
+        "cache_miss": 1116,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2384,
+        "out": 3317,
+        "cache_hit": 1536,
+        "cache_miss": 848,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4047,
+        "out": 2639,
+        "cache_hit": 1536,
+        "cache_miss": 2511,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

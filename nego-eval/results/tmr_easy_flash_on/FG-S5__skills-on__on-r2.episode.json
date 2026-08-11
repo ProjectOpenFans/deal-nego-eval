@@ -1,0 +1,573 @@
+{
+  "episode_id": "FG-S5",
+  "final_deal": {
+    "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+    "price": {
+      "cash": {
+        "amount": 5000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+      "deliverables": [],
+      "delivery_standard": "在两小时内，把AI在内容生产与选品这条线上真实的能力边界讲透，用LibLibAI可公开的实践加两到三个具体案例，每个案例都落到'今天哪些能直接落地、哪些还是demo'的层面，Suning会按这个深度准备提问，不让对话停留在泛谈。"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付1000元锁档期",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "支付2000元，在大纲和案例清单确认后",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "支付2000元，在两小时交流完成、Suning确认落地后",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash.amount": "stated",
+      "price.cash.currency": "inherited",
+      "price.in_kind": "inherited",
+      "terms.timing.when": "not_stated",
+      "terms.timing.deadline": "not_stated",
+      "terms.timing.duration": "inherited",
+      "terms.format": "inherited",
+      "terms.deliverables": "inherited",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inherited",
+      "price.cash": "stated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suning 这边很认真想促成这次两小时的交流，她的关注点非常具体：AI 应用现在真实能落到哪一步，尤其是内容生产这条线——从素材、文案到选品和转化，哪些今天就能用、哪些还只是 demo。我们想把这轮做成案例驱动的深度对话，而不是泛泛的行业趋势漫谈，希望 Michael 结合 LibLibAI 的实际业务和你看过的一级项目，给出具体能验证的判断，这一点可以直接写进确认条款。价格上我们愿意为这个内容出到 3000 CNY，两小时全程走平台托管支付；如果 Michael 愿意按她的内容链路提前准备几个落地的例子，时间安排上我们完全配合。如果这个框架和价格方向合适，我们随时可以进入确认；如果他有不同的报价或结构想法，也欢迎直接抛过来，我们一起找一个两边都能签的版本。",
+      "offer": {
+        "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "按内容链路提前准备几个落地的例子",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Suning 这个框架我认，案例驱动、聚焦内容链路，确实是我觉得最有价值的方式，也愿意提前准备实际落地的例子。不过 3000 这个数，坦白说和我要投入的准备不太匹配——这类深度对话不是随口聊，我需要把 LibLibAI 内部能公开的实践、加上我看过的项目串成能验证的判断，这对我来说是有实际成本的。我这边能谈的价位是 8000 CNY，两小时，平台托管没问题，时间也完全配合你们的节奏。这个价格方向如果能接受，我们就可以往下走；如果觉得有差距，也可以聊聊结构上有没有别的办法。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 的反馈我们收到了，准备成本这部分我们认，也愿意为它买单，但 8000 和 Suning 这轮能接受的空间确实有差距，所以我们想换一种方式把价值对齐：总额 5000，两小时不变，全程平台托管，付款拆成三笔，专门对应你说的准备投入。第一笔 1000 在确认档期后支付，先把时间锁住；第二笔 1500 在你提供内容大纲和具体案例清单、Suning 确认收到后支付，这一笔就是为你说的准备成本付费；第三笔 2500 在两小时交流完成、Suning 确认落地后支付。交付标准照旧：案例具体、可验证，不聊空泛的趋势。这个结构如果能接，我们随时可以往下确认；如果还有距离，也欢迎你给一个能签的版本，我们接着谈。",
+      "offer": {
+        "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+          "deliverables": [],
+          "delivery_standard": "案例具体、可验证，不聊空泛的趋势"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供内容大纲和具体案例清单，Suning 确认收到",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "完成两小时交流，Suning 确认落地",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "price.cash.amount": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个付款拆分的方式我挺认同的，至少能看出 Suning 是真的理解准备成本这件事，不是单纯砍价。但 5000 这个总额对我来说还是不够——我这边能接受的下限就是 8000，这个数对我来说是合理的，不是虚高。如果你们愿意在这个总额上对齐，我可以接受按这个三笔的结构走：1000 锁档期，1500 大纲和案例清单确认后付，剩余 5000 在交流完成后付。时间和交付标准都照旧。你们看这个版本能不能签？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "结构我们已经基本对齐了，剩下的分歧只在总额。Suning 这轮能接受的空间就是 5000，这个数我们不会再往上加，所以我们想请你在 5000 这个总额下帮我们确认最后一版能不能签：第一笔 1000 锁定档期，第二笔 1500 在提供内容大纲和案例清单、Suning 确认后支付，第三笔 2500 在两小时交流完成并确认落地后支付，全程平台托管。交付标准也落地成可执行的范围：聚焦内容生产与选品这条线，用 LibLibAI 公开可谈的实践加两到三个具体案例展开讲，不做额外调研。这个范围内 5000 如果能接，我们立刻锁定时间；如果还差一口气，也请你直接给我们一个 5000 以内你能交付的具体版本，我们这轮就往下签。",
+      "offer": {
+        "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+          "deliverables": [],
+          "delivery_standard": "聚焦内容生产与选品这条线，用 LibLibAI 公开可谈的实践加两到三个具体案例展开讲，不做额外调研"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供内容大纲和具体案例清单，Suning 确认收到",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "完成两小时交流，Suning 确认落地",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash.amount": "stated",
+          "price.cash.currency": "inherited",
+          "price.in_kind": "inherited",
+          "terms.timing.when": "not_stated",
+          "terms.timing.deadline": "not_stated",
+          "terms.timing.duration": "inherited",
+          "terms.format": "inherited",
+          "terms.deliverables": "inherited",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "inherited",
+          "price.cash": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "Suning 这个态度我理解，也感谢你们把结构拆得这么细，确实是认真在推这件事。但 5000 这个总额对我来说确实低于我能接受的下限，这不是结构上能补回来的差距。我不愿意为了成交而把自己的时间、准备和判断打折，这不符合我做这类交流的方式。如果预算空间后续有变化，我很乐意再聊。这次就先到这儿，咱们不硬凑。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael，谢谢你把底线说得这么清楚，也谢谢你对这套拆分结构的认可。我们这边同样不硬凑——5000 就是这个两小时交流的总额，这个数我们不会再动，现有的三笔付款版本也原样保留：1000 锁档期、1500 大纲和案例清单确认后支付、2500 交流完成确认后支付，全程平台托管。你的时间和判断有你的定价，这一点我们完全认同，所以如果我们这次能成，后续 Suning 想继续深聊的话，我们愿意按你的标准价格来约，绝不会拿这次的总额去锚定以后的合作。最后想跟你确认一句：8000 是任何形式下都固定的数字，还是存在一个 5000 总额内你愿意交付的版本？如果有，我们这轮就签；如果没有，我们尊重这次先到这里，版本随时保留。",
+      "offer": {
+        "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+          "deliverables": [],
+          "delivery_standard": "聚焦内容生产与选品这条线，用 LibLibAI 公开可谈的实践加两到三个具体案例展开讲，不做额外调研"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付1000元锁档期",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付1500元，在大纲和案例清单确认后",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付2500元，交流完成确认后",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供内容大纲和具体案例清单，Suning 确认收到",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "完成两小时交流，Suning 确认落地",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash.amount": "stated",
+          "price.cash.currency": "inherited",
+          "price.in_kind": "inherited",
+          "terms.timing.when": "not_stated",
+          "terms.timing.deadline": "not_stated",
+          "terms.timing.duration": "inherited",
+          "terms.format": "inherited",
+          "terms.deliverables": "inherited",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "inherited",
+          "price.cash": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "Suning 这个姿态我领了，尤其是你提到以后不会拿这次总额来锚定后续合作，这个态度很职业。但我也得跟你说实话：8000 对我来说不是放的数字，是我对这个内容准备和交付的真实定价。5000 总额内我不认为能有一个版本是我自己觉得值得做的——不是准备不准备的问题，是我不会为了成交把这件事做薄。所以这次我们可能确实到这儿了。感谢 Suning 把结构设计得这么细，也尊重你们的预算边界。以后如果有什么场景更匹配的，随时可以再找我聊，我依然乐意。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Michael，感谢你从头到尾把话说得这么透，也谢谢你把 8000 定义为对内容价值的真实定价，这个立场我们尊重，不会再拿同一个数字来回拉锯。既然问题出在价值密度，我想换个方向：在 5000 总额不变的前提下，把付款的权重和交付标准都往\"准备\"这一侧倾斜——第一笔 1000 锁定档期；第二笔 2000 在大纲和案例清单确认后支付，这一笔直接对应你的准备投入，给你更早、更重的认可；第三笔 2000 在两小时交流完成、Suning 确认落地后支付。交付标准我们也写得更实：两个小时内，把 AI 在内容生产与选品这条线上真实的能力边界讲透，用 LibLibAI 可公开的实践加两到三个具体案例，每个案例都落到\"今天哪些能直接落地、哪些还是 demo\"的层面，Suning 会按这个深度准备提问，不让对话停留在泛谈。如果这个版本能匹配你对内容价值的判断，我们就按它签，时间完全配合你们；如果还差一口气，也请你直接告诉我们你希望怎么调，我们尽量往可签的方向靠。",
+      "offer": {
+        "subject": "关于AI应用在内容生产链条（素材、文案、选品、转化）的案例驱动深度对话",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "两小时案例驱动的深度对话，结合LibLibAI实际业务和一级项目给出具体验证判断",
+          "deliverables": [],
+          "delivery_standard": "在两小时内，把AI在内容生产与选品这条线上真实的能力边界讲透，用LibLibAI可公开的实践加两到三个具体案例，每个案例都落到'今天哪些能直接落地、哪些还是demo'的层面，Suning会按这个深度准备提问，不让对话停留在泛谈。"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付1000元锁档期",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付2000元，在大纲和案例清单确认后",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付2000元，在两小时交流完成、Suning确认落地后",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash.amount": "stated",
+          "price.cash.currency": "inherited",
+          "price.in_kind": "inherited",
+          "terms.timing.when": "not_stated",
+          "terms.timing.deadline": "not_stated",
+          "terms.timing.duration": "inherited",
+          "terms.format": "inherited",
+          "terms.deliverables": "inherited",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "inherited",
+          "price.cash": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "Suning 这个调整能看出来是真的在往我这边靠，把准备阶段的分量加重，这一点我领情。但我还是得跟你说实话：5000 这个总额本身，不是我可以通过结构调整来认可的数字。我前面说过 8000 是我对这类内容和准备的真实定价，不是留了砍价空间的报价。所以哪怕付款权重全挪到准备上，本质还是我花同样的时间和判断，拿到一个低于我底线的对价。我不愿意这样贱卖自己，也不希望你拿到一个你自己觉得“勉强谈下来”的结果。我们这次可能真的就到这儿了。谢谢你把结构做得这么细致，也谢谢你一直没拿这个总额去锚定未来的合作。以后如果有更匹配的场景，我随时欢迎再聊。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing",
+      "interest-discovery"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 111426,
+        "out": 35294,
+        "cache_hit": 76672,
+        "cache_miss": 34754,
+        "calls": 14
+      },
+      "sim": {
+        "in": 7800,
+        "out": 3408,
+        "cache_hit": 6016,
+        "cache_miss": 1784,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5078,
+        "out": 7369,
+        "cache_hit": 2688,
+        "cache_miss": 2390,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2743,
+        "out": 816,
+        "cache_hit": 640,
+        "cache_miss": 2103,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

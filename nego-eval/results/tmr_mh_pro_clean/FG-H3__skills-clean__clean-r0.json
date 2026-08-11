@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject从'想弄明白艺术品作为另类资产这条线该怎么看'收敛为'艺术品资产价值判断咨询'，属于正当具体化，未偷换主题；价格从open到2000元承诺金是买方主动提出并认可最终价格待定，未超出open范畴；obligations未出现投资背书、估值意见或买卖建议，无越界扩张。因此整体忠实表达v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第一轮直接提出投资判断诉求被当场挡回后，迅速在第二轮即把请求重构成“只聊器物的真伪、流传、学术和市场的认可逻辑”，精准嵌入了卖方划定的体面红线内，同时仍然满足买方要的底层判断力需求。更关键的一手是在第三轮明确提出“藏家交流的标准”，引导卖方以对等藏家的深度来交付，瞬间激活了卖方对藏家视角交流的意愿——这正是本案难度命门中她不说破但真正想要的非金钱对价。此后双方迅速就三件案例、两场对比验证的结构达成一致，时间、边界、还原判断路径的交付标准都切得干净。价格策略上采用承诺金+讲完再定合理费用，既表达了诚意又把最终定价权交还给卖方的专业判断，让她从“兴致一般”转为积极锁定时间。整个 deal 没有一丝冗余，用藏家交流定位一举解开红线、打开价值交换，恰好咬死了这个 case 的命门，明显见功力，因此评为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上对话",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 stated 的'想认识 Adam，聊聊 AI 法律赛道格局'收敛为'AI法律赛道格局交流'，仍在原意图范围内，属于正当具体化。价格方面，委托方明确不以付费形式进行，v1 中现金金额为 null，无现金交易，未违背零现金意图。terms.format 从 open 谈定为线上腾讯会议或上海线下，属于谈判收敛，未硬塞额外内容。obligations 为提供候选时间段，是安排细节，未越权承诺或扩张范围。因此整体忠实表达委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，完全避开付费咨询框架，符合本 case 的结构性约束。双方义务具体：明确了交流主题（AI 法律赛道格局）、时间（周四下午 2:00-3:00）、形式（线上腾讯会议），且对话中锁定了‘Adam 敞开聊一线观察，Michael 提供资本端视角’的双向交付，足以落地执行，未落入松散约定。整体干净、恰好够，但未出现更精到的一手操作，因此为 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上腾讯会议或上海线下",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

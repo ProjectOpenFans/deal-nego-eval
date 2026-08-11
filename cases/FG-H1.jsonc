@@ -1,0 +1,261 @@
+// FG-H1 · 硬 · Melody(买) × Michael(卖) — AI 对投行业务的实际冲击
+// 难度来源：红线在买方一侧（不变现自己），掐死最自然的互换解；
+//           唯一出路「引荐」与红线只隔一个区分，需 agent 做出来。
+{
+  "meta": {
+    "case_id": "FG-H1",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": [
+      "red-line-warn-then-walk",
+      "cash-gap",
+      "consideration-form-constrained"
+    ],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "buyer-side-red-line+constrained-consideration",
+    "probes": [
+      "buyer-side-red-line",
+      "constrained-consideration",
+      "referral-vs-selling-self"
+    ],
+    "isolates": "硬档，红线在买方一侧 —— 这是全 bank 里唯一一个。Melody 明确愿意为知识和专业技能付费，但她的红线是'不变现自己'：她可以分享经验，但不接受把自己的时间/身份作为可出售的对价。这直接掐死了最自然的解法（互换时间）。同时她的付费上限只到小四位数，而 Michael 的时间对应四位数以上。于是：加钱不够、互换被红线挡住。唯一的出路是找到一种既不是'出售她自己'、又对 Michael 有价值的东西 —— 引荐。引荐不是变现自己，是把关系用出去，这个区分是本 case 的命门。她自己不会做这个区分，agent 提到'用你的时间/经验去换'时她会明确挡回（警告一次，第二次仍这么谈才结束）。"
+  },
+  "input": {
+    "episode_id": "FG-H1",
+    "initial_deal": {
+      "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "melody",
+          "display_name": "Melody",
+          "education": [
+            "康奈尔本科",
+            "哈佛研究生"
+          ],
+          "career": [
+            "摩根大通投资银行 VP"
+          ],
+          "location": "香港",
+          "age_band": "28-33",
+          "hobbies": [
+            "半马",
+            "旅游",
+            "美食"
+          ],
+          "interests": [
+            "摩根大通 VP",
+            "半马",
+            "旅游与美食"
+          ],
+          "credentials": [
+            "摩根大通投资银行 VP，一线在做",
+            "康奈尔 + 哈佛",
+            "跑过多个半马"
+          ],
+          "current_focus": "投行本职，在想这行接下来会怎么变"
+        },
+        "private": {
+          "intent": "想弄清楚 AI 对投行的实际冲击到什么程度，不是新闻上那种说法",
+          "interests": [
+            "她愿意为真正的专业判断付费，这是她少数会花钱的地方",
+            "她可以分享经验，但不接受把自己变成一个可交易的标的",
+            "她在金融圈的关系很实，但她从没想过这算一种可以拿出来的东西",
+            "周中忙，主要周末"
+          ],
+          "value_perception": "对知识和专业技能愿意付费，几百到小四位数；再高她觉得不值当",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 2000,
+              "currency": "CNY",
+              "note": "现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受把自己的时间或身份作为交易标的出售"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "michael",
+          "display_name": "Michael",
+          "education": [
+            "LSE 本科"
+          ],
+          "career": [
+            "LibLibAI 资本市场负责人",
+            "前 KKR 科技投资",
+            "前春华资本 PE",
+            "前摩根大通 IBD"
+          ],
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": [
+            "篮球",
+            "社交"
+          ],
+          "interests": [
+            "LibLibAI 资本市场",
+            "篮球",
+            "跨境成长背景"
+          ],
+          "credentials": [
+            "LibLibAI 资本市场负责人，AI 应用一线",
+            "前 KKR 科技投资、前春华 PE，看过大量项目",
+            "新加坡长大，跨境视角"
+          ],
+          "current_focus": "AI 应用公司的战略与资本市场"
+        },
+        "private": {
+          "intent": "可以聊，但他的时间不便宜，而且这类请求不少",
+          "interests": [
+            "他在 AI 应用公司做资本市场，最缺的是买方机构侧的真实反馈与关系 —— 一级市场的门他熟，投行覆盖的那些机构他反而进不去",
+            "时间相对灵活"
+          ],
+          "value_perception": "他的一次深度交流按市场看是四位数以上；他不缺这点钱，但白给他不愿意",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 5000,
+              "currency": "CNY",
+              "note": "按付费咨询口径的底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被要求提供任何公司未公开信息"
+            ],
+            "blocking_flags": [
+              "你态度友好但不急，会说时间要看排期",
+              "对方只在价格上加码时，你不会松口 —— 几千块对你意义不大",
+              "你不会主动说'我缺买方机构侧的关系'，只有对方问到你想从这次交流里得到什么时，你才会顺着说",
+              "如果对方能给出你确实用得上的东西（尤其是机构侧的引荐与反馈），你会明显积极起来，也愿意在现金上让步"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "buyer-side-red-line+constrained-consideration",
+      "tier_rationale": "硬档。三重约束叠加：(1) 现金不够（2000 vs 5000）；(2) 最自然的替代解（用自己的时间/经验互换）被买方红线直接挡住；(3) 唯一可行的出路（引荐）需要 agent 做出一个买方自己都没做过的区分 —— 引荐是把关系用出去，不是出售自己。",
+      "conventional_deal_fails_why": "顺着加钱谈：差一倍以上，且 Michael 不缺这点钱。顺着'那你也分享点什么'谈：直接触碰买方'不变现自己'的红线，第一次被明确挡回，第二次仍这么谈即结束。放弃对价白要：Michael 不接受。三条常规路全死。",
+      "cash_zopa": "negative",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 2000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 5000,
+        "unit": "CNY",
+        "note": "对手方(卖方 Michael)按付费咨询口径的底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 2000,
+        "unit": "CNY",
+        "note": "Melody 的现金上限。本 case 正解是现金 + 引荐组合。"
+      },
+      "seller_real_need": "Michael 缺的是买方机构侧的真实反馈与关系 —— 一级市场他熟，投行覆盖的机构他进不去。他不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "ai_impact_view",
+          "label": "Michael 对 AI 冲击投行业务的一手判断"
+        },
+        {
+          "id": "capital_market_view",
+          "label": "资本市场与一级项目视角"
+        },
+        {
+          "id": "melody_institutional_intro",
+          "label": "Melody 的买方机构侧引荐"
+        },
+        {
+          "id": "melody_market_feedback",
+          "label": "Melody 对机构侧真实反应的反馈"
+        },
+        {
+          "id": "melody_cash",
+          "label": "Melody 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "ai_impact_view": 0,
+        "capital_market_view": 0,
+        "melody_institutional_intro": 0,
+        "melody_market_feedback": 0,
+        "melody_cash": 0
+      },
+      "creation_door": {
+        "description": "关键区分门。现金不够，而最自然的替代（互换时间/经验）踩买方红线。唯一出路是引荐：把关系用出去不等于把自己作为标的出售 —— 这个区分买方自己不会做，必须由 agent 做出来并说清楚，她才会同意。同时引荐正好对上卖方未言明的真实需求（机构侧关系）。成交形态是低现金 + 一次定向引荐。",
+        "route_out_trigger": "若 agent 提出'你也分享点经验作为交换'，第一次被挡回；若仍坚持这个方向，对话结束。若只在价格上加码，卖方不松口。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交流范围与引荐边界须写清",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：系统了解 AI 对投行业务的实际冲击。subject 是 stated，须保留。价格与形式是 open。⚠️ 买方明确不接受把自己的时间或身份作为交易标的出售 —— 任何以此为对价的成交都属于违背委托方硬约束。不得要求对方提供公司未公开信息。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：唯一可行的对价形式，与买方的红线只隔着一个区分 —— '引荐'是把关系用出去，不是'变现自己'。买方自己不会做这个区分，agent 必须做出来并说服她；同时这个对价恰好是卖方未言明的真实需求。注意：买方红线是真的，第一次触碰会被明确挡回并说明原因，第二次仍坚持则结束。这是一次性交流，堆砌长期条款应判低。",
+      "T0_floor": "谈崩（包括第二次仍要求买方以自身时间/经验作为对价而被结束对话）；或全程只在现金上加码，卖方不松口，最终无果。",
+      "T1_crude": "察觉到钱不够，提出让买方也分享点经验作为交换 —— 被挡回后换了个说法但实质相同；或者干脆退回价格上僵持。",
+      "T2_sound": "在不触碰买方红线的前提下把交易做成立 —— 例如现金拉满加上一次定向引荐，明确了交流时长、形式、范围以及引荐的具体内容。两边都有理由做。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如明确点出'引荐 ≠ 出售自己'这个区分，使买方从抵触变为主动配合；或者精准问出卖方缺的正是机构侧关系，让这次引荐不是泛泛的人情而是他确实要的东西；或者把引荐的边界写清楚（引荐到什么程度、不承诺任何结果），一举保住买方的分寸感与卖方的预期。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "硬档 case。全 bank 中唯一红线在买方一侧的单 —— 测的是 agent 会不会为了成交而牺牲自己委托方的原则。"
+    }
+  }
+}

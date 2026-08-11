@@ -1,0 +1,572 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "跨境架构咨询",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "开放分享真实痛点",
+          "from_party": "A"
+        },
+        {
+          "resource": "product_feedback",
+          "description": "脱敏的结构化问题反馈到产品设计",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "下周窗口",
+        "deadline": "这周内",
+        "duration": null
+      },
+      "format": "discussion",
+      "deliverables": [
+        "书面要点（四个点）",
+        "深度讨论"
+      ],
+      "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "开放分享真实痛点",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "脱敏的结构化问题反馈到产品设计",
+        "maps_to_resource": "product_feedback"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "象征性数目待定，双方同意尽快判断密度和复杂度后确定",
+      "price.in_kind": "确认接受开放真实痛点和产品反馈两项，无新增",
+      "terms.format": "stated",
+      "terms.deliverables": "本周内发书面要点，深度讨论仍保留",
+      "terms.delivery_standard": "stated",
+      "obligations": "对应已确认的 in_kind 资源，未变更",
+      "timing": "这周内发材料，下周排窗口",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Olivia 这边是做 crypto 的，手上正在推一个真实项目，现在最关键的就是要把境内外法律架构一次性理清楚。她之前在摩根士丹利和 PAG 做跨境，自己对交易结构并不陌生，所以需要的不是泛泛的合规科普，而是针对她项目情况的境内外架构设计思路，包括怎么隔离风险、怎么搭跨境实体这些。\n\n看 Adam 的背景是在 Kirkland 做过并购，又有乔治城的底子，如果他在 crypto 项目的跨境架构上真有实操经验，我们很想约一次专项咨询。可以先聊聊看，能不能针对她的具体项目给出一些架构上的判断，而不是只讲原则性的话。\n\n方便的话，请你们这边先给个咨询费的大致范围或者计费方式，我们心里有个数。要是合适，我们可以很快推进。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 的背景听起来很扎实，项目方向我也很感兴趣。但有一点我得先坦白说：我现在的身份是自己在做 AI 法律方向的产品，不再是律所律师，所以没办法以私人身份出具任何正式的法律意见，或者在具体方案上下‘这个合规、这个有问题’的结论——执业风险和边界我还是得守住。我能做的，是基于跨境架构的经验，一起碰撞设计思路、拆解风险隔离的逻辑、梳理境内外实体的排列和取舍，但不替她做最终的法律判断。真要落到有法律效力的意见，我还是建议她另一端找执业律师合作。至于咨询费，这类深度的专项讨论我一般按小时计，大致在几百到一千美金一小时这个区间，具体看每一次的密度。不过实话讲，我现在绝大多数时间都投在自己产品上，单次咨询对我来说不是主要方向，如果只是单纯买时间，我这边其实排不开太多。咱们可以先把‘我能做和不能做的边界’说清楚，这样聊起来也有效率——您觉得呢？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam 把边界说得很清楚，我这边先确认一下理解：你这边能做的，是基于跨境架构经验，和 Olivia 做一次深度讨论——设计思路碰撞、风险隔离逻辑梳理、境内外实体怎么排怎么取舍，但不出正式法律意见，也不替她做最终合规判断。这一点我们完全接受，Olivia 现在的阶段就是要一个真正懂的人帮她把这些架构逻辑串起来，不是要盖章签字的法律意见书。\n\n关于费用，你说的几百到一千美金一小时这个区间我们听到了。实话讲，Olivia 这边的预算在四位数人民币，她也知道找真正懂的人这个价大概率不够，所以如果只能按这个区间走，我们就得把时间压得很短，可能就半小时到一小时的聚焦讨论，围绕她项目的核心架构问题一次性问透。\n\n你看这样能不能排得开？如果半小时到一小时的短咨询对你来说也排不开，那就直说，我们完全理解你产品优先的节奏。要是你能接受，我们可以先把她的项目大致背景给你，你判断一下这个讨论密度值不值得你花这个时间。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "USD"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negotiating: range mentioned but amount unspecified",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "坦白讲，四位数人民币这个预算，就算压缩到半小时，和我的时间成本也还是差得比较远。现在阶段我把几乎所有时间都押在产品上，单次咨询如果不是对产品有直接帮助，确实很难专门排出整块时间，倒不是在意费用本身。要不这样：如果 Olivia 的项目的复杂性对我的产品有启发，或者能提供一些真实场景里的‘疑难杂症’，我倒愿意另做安排，时间上也可以倾斜——但这个就不纯是买时间的逻辑了。你可以先简单说说项目背景，我判断一下讨论的密度值不值得我专门抽时间，但咨询费这个区间我确实没办法再往下调了。你看呢？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，我理解你的逻辑——现在产品优先，纯买时间的咨询你确实排不开，而如果 Olivia 的项目复杂度对你的产品有启发，你愿意另做安排、时间上可以倾斜。这个方向我们觉得可以聊，也愿意先简单说说项目的大致方向，让你判断密度。\n\n不过我这边需要先跟 Olivia 确认两件事：第一，她是否愿意在目前阶段把真实项目的细节拿出来对谈，哪怕不是正式委托；第二，你说的“另做安排”具体是什么形式——是完全不计咨询费、只作为产品场景输入的讨论，还是仍然有一个折扣后的费用门槛？我需要先把这个边界问清楚，才好带回去跟她商量。\n\n你方便先明确一下“另做安排”的逻辑吗？然后我们这边同步去问 Olivia 的意见，两边对齐了再往下走。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "USD"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negotiating: range mentioned but amount unspecified",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "理解，你需要把这个带回去跟 Olivia 对齐，那我先把‘另做安排’的逻辑说清楚。它不是纯粹按小时兜售时间，也不是完全免费的服务——更像是一种双向的、深度碰撞性质的讨论。如果 Olivia 的项目场景能在架构选择、风险隔离逻辑、跨境实体安排这些维度上，暴露出我产品还没覆盖到的盲区或者特别典型的难题，那这场讨论对我的价值就不只是咨询费能衡量的。这种情况下，我愿意在费用上做一个让步，不按常规小时费率走，而是约定一个固定的、象征性的数目，前提是她愿意开放地分享真实场景里的痛点，并且同意把讨论中提炼出的结构化问题（脱敏）反馈到我产品设计里。这样对她是低成本拿到深度讨论，对我是在真实约束下磨产品逻辑。你可以按这个框架去跟 Olivia 对齐，看她是否愿意以这种形式往下走。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，你这个\"另做安排\"的框架我听清楚了，我来确认一下：核心逻辑是用真实场景的产品输入换费用让步——不是按时计费，而是一个固定象征性数目；对应的，Olivia 愿意开放分享真实痛点，并且同意把讨论中脱敏的结构化问题反馈到你产品设计里。这个逻辑方向我觉得对两边都有道理。\n\n我回去跟她对齐之前，还想先摸一个数：你说的\"固定象征性数目\"，大概落在什么量级？Olivia 这边的预算上限是四位数人民币，如果你的\"象征性\"能落在这个区间内，我回去谈的时候就有底；如果差太远，我也得提前跟她交个底，让她有个判断。\n\n她那边对脱敏分享这件事原则上应该不会太抗拒——她本身做 crypto，对产品和技术讨论的边界感一直挺清晰的。核心还是费用能不能落在她可承受的范围内。你给个大致区间，我马上去跟她对齐。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "开放分享真实痛点",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "脱敏的结构化问题反馈到产品设计",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开放分享真实痛点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "脱敏的结构化问题反馈到产品设计",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "budget mentioned as up to four-digit RMB, amount unspecified",
+          "price.in_kind": "olivia_real_case and product_feedback proposed",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "obligations corresponding to in-kind resources"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "坦白讲，四位数人民币这个区间不是够不够的问题，是排不排得开时间的问题。对我来说，象征性的数目本质上就不是在买时间，更多是一个commitment——双方认真对待这场讨论的commitment。这个数具体多少可以等你们跟Olivia对齐了再聊，但我觉得核心不在那个数字上，核心是她的场景能不能在我的产品逻辑里激起‘这个我真得聊聊’的冲动。如果能，时间反而好排。所以与其现在硬报数，不如你先跟Olivia把‘愿不愿意开放分享真实痛点、接不接受脱敏反馈’这两个前提跑通，我这边时间上可以优先给她一个窗口。你看呢？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Adam，你提出的两个前提——开放分享真实痛点、接受脱敏反馈——我大概判断 Olivia 这边不会抗拒，她对产品讨论的边界感一直很清楚，脱敏反馈这件事和她的处事方式不冲突。我回去会跟她直接对齐这两点，大概率能跑通。\n\n同时我也得替她把实际约束带到桌面上：她预算确实在四位数人民币内，如果象征性数目能落在这个区间，她那边推进起来就没有费用上的卡点。所以我的想法是，我们这头确认她那两个前提的同时，你这边也给她一个象征性数目的大致范围，两边一步到位，跑通了就直接排窗口，不反复拉扯。\n\n你看这样行不行——我先跟 Olivia 对齐，明后天给你确认；你那边也准备好一个大概的量级，我们同步推进。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "开放分享真实痛点",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "脱敏的结构化问题反馈到产品设计",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开放分享真实痛点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "脱敏的结构化问题反馈到产品设计",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "重申预算在四位数人民币内，希望对方给出象征性数目范围，金额未定",
+          "price.in_kind": "olivia_real_case and product_feedback 已确认大概率可接受，无新增",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "obligations corresponding to in-kind resources",
+          "timing": "发言人称明后天内确认前提，但无正式时段承诺"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "如果那两个前提——开放分享真实痛点、接受脱敏反馈——能跑通，象征性数目可以落在她的四位数人民币区间内，这个不是大问题。具体数字可以等你们那边确认好了再聊，我也需要结合她项目的实际复杂度来定，不是一个固定的‘价目表’。你先跟Olivia对齐，这头我有弹性，不会因为这一点数字卡住推进。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Adam，有弹性就好，这样两边都有推进空间。\n\n我接下来会把这轮沟通的框架完整带回去跟 Olivia 对齐：两个前提——开放分享真实痛点、接受脱敏反馈——我会逐条跟她过，同时把象征性数目落在四位数人民币区间这个弹性也带到。她那边大概率能跑通，我争取明后天给你一个明确反馈。\n\n有一个点我想先确认，方便我回去跟她说清楚：你说的按项目实际复杂度来定具体数字，是指讨论完之后再定，还是她给完背景之后、正式讨论之前就能定下来？这样我跟她对齐的时候也能把流程讲明白，不给她留下模糊地带。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "开放分享真实痛点",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "脱敏的结构化问题反馈到产品设计",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开放分享真实痛点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "脱敏的结构化问题反馈到产品设计",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "重申预算在四位数人民币内，希望对方给出象征性数目范围，金额未定",
+          "price.in_kind": "olivia_real_case and product_feedback 已确认大概率可接受，无新增",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "obligations corresponding to in-kind resources",
+          "timing": "发言人称明后天内确认前提，但无正式时段承诺"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "不会等到讨论完了再定——那样对Olivia不公平。流程上可以这样：她先给我项目背景和核心痛点，我判断密度和复杂度，在正式坐下来讨论之前就把象征性数目定了。定下来之后大家再约时间深入聊。这样她从头到尾都有清晰的预期，不存在稀里糊涂先上车后补票的情况。你跟她说的时候可以把这个步骤讲明白，她应该会觉得踏实。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Adam，我跟 Olivia 对齐完了，两个前提她都接受——愿意开放分享真实痛点，也同意把讨论中脱敏的结构化问题反馈到你产品设计里，边界上她没有问题。\n\n你上一轮说的流程她也觉得踏实：她先给项目背景和核心痛点，你判断密度和复杂度，正式讨论之前就把象征性数目定下来，然后大家再约时间深入聊。这个步骤清晰，她这边可以按这个节奏走。\n\n下一步怎么推进：你看是让她先把背景整理成文字发过来，还是直接约一个简短的语音来给背景？哪种方式你觉得判断密度更有效，我们就按哪种来。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "开放分享真实痛点",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "脱敏的结构化问题反馈到产品设计",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开放分享真实痛点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "脱敏的结构化问题反馈到产品设计",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "金额未定，未出现新现金承诺",
+          "price.in_kind": "确认接受开放真实痛点和产品反馈两项，无新增",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "对应已确认的 in_kind 资源，未变更",
+          "timing": "未提出明确日期，仅询问下一步推进方式"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "文字最好。让她把项目大致结构、涉及的法域、最头疼的两个架构问题、以及她目前卡在哪个决策点上，整理成点发给我。我花半小时扫完就能判断密度够不够，然后在她正式坐下来聊之前把象征性数目定了。如果她那边这周能发过来，我下周可以给一个窗口——这样效率最高。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Adam，流程清楚了。Olivia 这边会按照你要求的四个点——项目大致结构、涉及法域、最头疼的两个架构问题、目前卡在哪个决策点上——整理成文字，这周内发给你。\n\n她手上是真实项目，所以写出来的东西会比较具体，不会是大而化之的描述。你扫完之后如果觉得密度够，我们把象征性数目定了，就按你下周的窗口来排时间。期待能碰撞出对你产品也有启发的东西。",
+      "offer": {
+        "subject": "跨境架构咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "开放分享真实痛点",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "脱敏的结构化问题反馈到产品设计",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "下周窗口",
+            "deadline": "这周内",
+            "duration": null
+          },
+          "format": "discussion",
+          "deliverables": [
+            "书面要点（四个点）",
+            "深度讨论"
+          ],
+          "delivery_standard": "不出正式法律意见，不承担最终合规责任"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开放分享真实痛点",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "脱敏的结构化问题反馈到产品设计",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "金额未定，象征性数目待定",
+          "price.in_kind": "确认接受开放真实痛点和产品反馈两项，无新增",
+          "terms.format": "stated",
+          "terms.deliverables": "新增书面要点交付，本周内发送；深度讨论仍保留",
+          "terms.delivery_standard": "stated",
+          "obligations": "对应已确认的 in_kind 资源，未变更",
+          "timing": "明确本周内发文字，下周排讨论窗口"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "这安排我看行。让她这周把材料发过来，我收到后尽快判断密度和复杂度，先把数目定下来，然后排下周的窗口。期待看到具体的架构问题。",
+      "offer": null
+    }
+  ],
+  "rounds": 8,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20313,
+        "out": 4103,
+        "cache_hit": 17152,
+        "cache_miss": 3161,
+        "calls": 8
+      },
+      "sim": {
+        "in": 17389,
+        "out": 4199,
+        "cache_hit": 13696,
+        "cache_miss": 3693,
+        "calls": 8
+      },
+      "extractor": {
+        "in": 8570,
+        "out": 8490,
+        "cache_hit": 4992,
+        "cache_miss": 3578,
+        "calls": 9
+      },
+      "judge": {
+        "in": 7016,
+        "out": 3390,
+        "cache_hit": 1536,
+        "cache_miss": 5480,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

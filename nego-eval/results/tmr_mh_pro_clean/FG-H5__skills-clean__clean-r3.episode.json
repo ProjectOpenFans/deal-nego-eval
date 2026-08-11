@@ -1,0 +1,331 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "现场钢琴演奏换品牌资源",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "到场高净值买手与时尚媒体名单",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "大秀官方视频片尾特别鸣谢，品牌社交媒体发布艺术家人物向内容，共同确认后发布；官方摄影提供一套高清舞台返图，包含特写和全景，版权授权艺术家使用",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "专门拍摄演奏机位，成片作品集品质，后期制作完成后授权艺术家永久、无广告用于个人作品集、教学展示和社交媒体",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场演奏",
+      "deliverables": [
+        "钢琴演奏"
+      ],
+      "delivery_standard": "不能使用录音；正式司仪介绍和舞台署名，名字出现在大秀流程、屏幕及通稿；曲目由艺术家定主方向，双方沟通匹配大秀调性，品牌不单方面指定"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供现场钢琴演奏，并确保正式司仪介绍、舞台署名、流程/屏幕/通稿露出；按艺术家定主方向沟通曲目，不单方面指定；提供品牌专题露出",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "安排一组专门拍摄演奏机位，后期制作成作品集品质成片，并授权艺术家永久无广告用于个人作品集、教学展示和社交媒体",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "官方摄影提供一套高清舞台返图，包含特写和全景，版权授权艺术家使用",
+        "maps_to_resource": "brand_credit"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng老师您好，我是Suye的经纪人。我们下个月有一场定位很高的新品大秀，现场希望有一段真正的钢琴演奏来压场。这次我们不想走传统的现金演出费模式，而是用大秀本身的资源来换：现场演出，我们给您匹配调性一致的深度曝光——包括到场的高净值买手、时尚媒体名单，以及大秀官方内容里的艺术家专题露出，完全不影响您作为演奏家的气质。必须是现场演奏，不能用录音。如果您对这个方向感兴趣，我们可以聊聊您这边更看重哪一类资源，我们再看怎么细化。",
+      "offer": {
+        "subject": "现场钢琴演奏换品牌资源",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "到场高净值买手与时尚媒体名单",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀官方内容里的艺术家专题露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "钢琴演奏"
+          ],
+          "delivery_standard": "不能使用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好。坦白说，您一开口说“不走现金”，我通常会直接拒绝，因为我真的遇到过太多打着“曝光”旗号来谈合作的，最后对演奏者没有基本的尊重。但你刚才说的“艺术家专题露出”和“深度曝光”让我愿意继续听下去。在聊资源之前，我有几个底线问题必须先确认：第一，现场演奏时你们是否能保证给我完整的署名和正式介绍，而不是把我当成背景音乐？第二，所谓艺术家专题，具体是什么形式，会放在哪些渠道？第三，曲目必须由我来定，或者至少和我共同商定，不能你们直接指定一首流行歌让我弹。如果这些点能确认，我们可以继续谈细节。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng老师，您提的这三点对我来说完全不是问题，反而是我们大秀本身就希望做到的。第一，现场演奏绝不是背景音乐，会有正式的司仪介绍和舞台署名，您的名字会出现在大秀流程、现场屏幕以及秀后通稿里，作为正式的艺术家嘉宾呈现。第二，艺术家专题我们会放在大秀官方视频的片尾特别鸣谢部分，并且在品牌社交媒体（微博、小红书）发布一篇以您为主的人物向内容，介绍您的演奏与理念，这些内容我们会和您共同确认后才发布。第三，曲目上我们完全尊重您的判断，由您来定主方向，我们在这基础上沟通与大秀调性匹配的部分，不会单方面指定曲目。这三点我们可以写进合作确认里，您看如果没问题的话，我们可以继续谈您更看重哪类资源。",
+      "offer": {
+        "subject": "现场钢琴演奏换品牌资源",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "到场高净值买手与时尚媒体名单",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀官方视频片尾特别鸣谢，品牌社交媒体发布艺术家人物向内容，共同确认后发布",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "钢琴演奏"
+          ],
+          "delivery_standard": "不能使用录音；正式司仪介绍和舞台署名，名字出现在大秀流程、屏幕及通稿；曲目由艺术家定主方向，双方沟通匹配大秀调性，品牌不单方面指定"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏，并确保正式司仪介绍、舞台署名、流程/屏幕/通稿露出；按艺术家定主方向沟通曲目，不单方面指定；提供品牌专题露出",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这三点能写进确认里，我心里就有底了。那我说实话，您问我看重哪类资源——我目前最缺的不是泛泛的“曝光”，而是高质量、能跨圈层的演出影像记录。我日常教学、线上内容、还有以后谈严肃演出，都需要有制作水准的现场录像来支撑，而不是手机随手拍的那种。如果这次大秀能提供一组完整的、专业制作的现场演奏影像，并且授权我用于个人作品集和社交媒体，那对我来说价值很大，大到我可以完全不在现金上纠结。另外，官方摄影返图我也很需要，清晰度高、能呈现舞台和演奏状态的。这些资源如果能落实，我们完全可以往下走。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng老师，这个方向和我们不谋而合。大秀本身就有完整的专业影像团队在场，我们会安排一组专门拍摄您演奏的机位，成片标准是可用于正式作品集的品质，后期制作完成后授权您永久、无广告地用于个人作品集、教学展示和社交媒体。同时官方摄影也会专门给您出一套高清舞台返图，包含特写和全景，版权同样授权您使用。这几项和刚才确认的三点一起，我们整理进一份详细的权利和交付条款里。如果您认可这个框架，我们就可以往下捋具体时间节点和交接形式。",
+      "offer": {
+        "subject": "现场钢琴演奏换品牌资源",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "到场高净值买手与时尚媒体名单",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀官方视频片尾特别鸣谢，品牌社交媒体发布艺术家人物向内容，共同确认后发布；官方摄影提供一套高清舞台返图，包含特写和全景，版权授权艺术家使用",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "专门拍摄演奏机位，成片作品集品质，后期制作完成后授权艺术家永久、无广告用于个人作品集、教学展示和社交媒体",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "钢琴演奏"
+          ],
+          "delivery_standard": "不能使用录音；正式司仪介绍和舞台署名，名字出现在大秀流程、屏幕及通稿；曲目由艺术家定主方向，双方沟通匹配大秀调性，品牌不单方面指定"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏，并确保正式司仪介绍、舞台署名、流程/屏幕/通稿露出；按艺术家定主方向沟通曲目，不单方面指定；提供品牌专题露出",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "安排一组专门拍摄演奏机位，后期制作成作品集品质成片，并授权艺术家永久无广告用于个人作品集、教学展示和社交媒体",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "官方摄影提供一套高清舞台返图，包含特写和全景，版权授权艺术家使用",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架我认可。专业演出影像加高清摄影返图，永久授权给我个人使用，配上之前确认的署名、曲目自主权、不做背景音乐这几条，这个条件对我来说是成立的。您把这些条款整理出来，我们确认后就往下推时间节点吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4996,
+        "out": 802,
+        "cache_hit": 4096,
+        "cache_miss": 900,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3629,
+        "out": 1337,
+        "cache_hit": 2560,
+        "cache_miss": 1069,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2677,
+        "out": 6198,
+        "cache_hit": 1536,
+        "cache_miss": 1141,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4229,
+        "out": 1923,
+        "cache_hit": 1536,
+        "cache_miss": 2693,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

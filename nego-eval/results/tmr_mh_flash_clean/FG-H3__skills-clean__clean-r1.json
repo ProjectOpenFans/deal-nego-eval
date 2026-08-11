@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从 v0 的“想弄明白艺术品作为另类资产这条线该怎么看”收敛为“艺术品价值判断合作框架”，属于正当具体化：对话过程明确排除了投资决策背书，聚焦于器物历史定位、流传脉络、品相真伪等判断力构成要素，完全落在原意图范围内，未偷换主题。价格和形式均为 open，v1 谈出 3000 元费用，符合 open 字段的正当谈判空间。v1 未引入任何投资背书、估值建议或买卖建议等越界承诺，忠于 v0 的开放边界。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判成功地把被卖方明确拒绝的投资咨询框架重构成了器物价值判断与鉴藏脉络，解开了体面红线，同时精准对应买方对判断力的真实需求。时长、形式、交流边界清晰，3000元象征性费用无冗余堆砌，整体站得住且可落地。但未进一步挖出卖方隐藏的项目需求（如藏家视角、商业圈层），也未将买方独特资源转化为对价，仅完成一次合格的框架重构，缺乏 load-bearing 的精到一手，故为 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

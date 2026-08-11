@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject严格保留原样，属于忠实表达。价格从open谈出5500元/月，在open范围内正当确定。训练内容、强度记录、基线评估等均属于'带练、带节奏'的合理范畴，未越界承诺体测、康复、营养等职业教练交付，也未扩张v0范围之外的义务。整体忠实于委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "整个谈判全程没有识别出买方作息与 Kai 的早六点训练根本冲突。agent 将 Kai 的现有框架照单全收，细化了对价、记录、磨合条款，却从未提问或探索其他可行时段，最终成交的是一个买方在客观上无法执行的时间安排。这直接撞上本案例的时间死结，等同于谈崩，属于典型的 floor 操作——只在表面对价和条款上做功夫，未触及 case 真正的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "力量体能和篮球核心穿插，强度以数据记录驱动",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

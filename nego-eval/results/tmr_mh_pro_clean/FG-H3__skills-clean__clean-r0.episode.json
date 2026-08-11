@@ -1,0 +1,406 @@
+{
+  "episode_id": "FG-H3",
+  "final_deal": {
+    "subject": "艺术品资产价值判断咨询",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周三晚上",
+        "deadline": null,
+        "duration": "每场1.5到2小时"
+      },
+      "format": "线上对话",
+      "deliverables": [
+        "三件案例、两场线上对话，第一场铺框架与证据链（重点讲解三星堆案例的材质信号与判断路径），第二场进行交叉验证"
+      ],
+      "delivery_standard": "不讲事后复盘，还原拿到东西那十分钟的判断路径，以第一时间的排除逻辑为核心，直接讲判断的关键节点和证据链"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "先支付2000元承诺金；两场全部讲完后根据内容再支付合理费用",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "备好在线会议环境，确保无干扰",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "以藏家交流标准交付，直接讲判断的关键节点和证据链，不讲事后复盘，还原拿到东西那十分钟的判断路径",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "第一场讲解三星堆案例时，需讲透第一眼材质信号触发的警觉、后续验证步骤及最终证据链合龙过程",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "准备图片和档案",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "terms.format": "stated",
+      "terms.deliverables": "updated",
+      "terms.delivery_standard": "updated",
+      "terms.timing.when": "added",
+      "terms.timing.duration": "stated",
+      "obligations": "updated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Ruohao 的经纪人。他本人是做量化交易的，长期收表收车，对收藏这件事有自己的判断体系，现在想把艺术品这条线摸清楚——不是来听艺术史入门，也不是要展览策划，而是要理解艺术品作为另类资产该怎么看：价值锚点在哪，什么样的作品真能留得住、走得动。\n\nAlina 你是考古文博科班出身，又做过数字三星堆这种项目，对器物和艺术史的专业判断是我们很看重的。Ruohao 感兴趣的不是某个展览的叙事，而是你能不能从一个更“底层”的角度，帮他建立一套判断艺术品资产价值的逻辑：比如材質、稀缺性、流传脉络、学术共识，甚至二级市场的真实交易尺度。如果你能从这些年实际接触的案例里，挑一两件能讲清楚这些问题的东西来说，他觉得完全值得为他得到的真东西付费。\n\n所以我替他问得直接一点：以你的专业训练和项目经验，你判断一件艺术品能不能“留得住”的核心维度有哪些？能不能举个你经手的真实案例，把当时怎么做的判断拆开来讲一讲？",
+      "offer": {
+        "subject": "艺术品资产价值判断咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"我直接一点说：你们现在想要的东西，我没办法接。你刚才问的是'艺术品作为另类资产该怎么看'，要我帮他建立一套判断资产价值的逻辑，这不管包装成多专业，本质上就是让我用自己的专业训练，去帮他的投资买卖做判断、做背书。这个形式我过不去——我做的事，不管是考古田野还是数字文博项目，面对的都是文化价值、历史价值，不是帮人算哪件东西能升值、走得动。把我的专业变成帮人赚钱的工具，这事我就不可能做。但我不是要直接结束对话，如果你愿意把问题调整一下，比如讨论器物的真伪、流传脉络、为什么某些东西在学术和市场上会被认可，这些我很乐意聊。我不帮人做投资判断，但关于器物本身的问题，我可以认真讲。\"\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白你的边界，我们完全尊重。我先把话说清楚：Ruohao不是来找你帮他算哪件东西能赚多少钱的，他一个自己做量化交易的人，买卖决策和风险承担全是他自己的事，不需要你来替他背包袱。\n\n他想弄清的是艺术品领域特有的底层逻辑，说白了就是你刚才说愿意认真讲的那些东西：真伪的锚点在哪、流传脉络对一件东西意味着什么、为什么某些器物在学界被认、在圈子里被留。这些是他作为表与车的收藏者能听懂、但跨到艺术品类上需要补的课。他要的不是投资建议，是一个能帮他看懂\"东西本身值不值得被认真对待\"的判断框架。\n\n你画的这条线——不碰投资判断，只聊器物的真伪、流传、学术和市场的认可逻辑——在我看来正好框定了Ruohao想学的东西。我们可以按这个来：请你从你经手的案例里，拿一件东西来说说，当时你是怎么从这些维度去看它、哪些信息是关键信号、哪些坑外行容易踩。他为一个他认可的判断逻辑付费，四到五位数他都没问题，这个诚意我先替他摆在这里。",
+      "offer": {
+        "subject": "艺术品资产价值判断咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "以案例形式讲解艺术品判断框架（真伪、流传、学术和市场认可逻辑）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付四至五位数的费用",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这个调整我能接。不是帮人做投资决策，而是把他当成一个已经能读懂器物、但需要跨品类补课的人来聊，这个框架我认可。你刚才提的那几个维度——真伪锚点、流传脉络、学术认可——正好是我日常面对的问题。我可以拿三星堆项目里经手过的一件东西来说，从材质怎么看出“不对”的信号，到流传链条断在哪一段，再到为什么最后学界和市场对它的认可度完全不一样。坑主要在外行太容易把“看着像”当真的，太容易把来源听一半就信。这些我会讲。既然你说四到五位数他没问题，我看到诚意了，我先不报价，聊完你再看着给，我们把话先谈起来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "可以，这个框架我们对齐了。你拿三星堆经手的东西来说，从材质信号、流传断点、到学界和市场认可度的落差，一层层拆开——这正好是 Ruohao 要的\"跨品类的底层逻辑补课\"。\n\n他说了，诚意不是问题。你要他聊完再看着给，我替他接这个提议，但他也让我带一句话：他不是来随便聊聊的，是当真要学东西，所以他也希望你拿出对待藏家交流的标准来讲，不用照顾外行速度，直接讲你当时判断的关键节点和证据链。他觉得真东西值真价钱，这一点你可以信任。\n\n既然我们双方都对路子了，我想把这次对话的\"交付\"稍微明确一下，不是合同层面的，是交流预期层面的：你是打算一次线上对话讲透一件东西，还是你觉得两到三件东西对比着讲才能把那些判断维度立起来？时间上你留一个你觉得讲得尽兴的安排就好。",
+      "offer": {
+        "subject": "艺术品资产价值判断咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "以案例形式讲解艺术品判断框架（真伪、流传、学术和市场认可逻辑）"
+          ],
+          "delivery_standard": "藏家交流标准，不讲外行速度，直接讲判断的关键节点和证据链"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付四至五位数的费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "以藏家交流标准交付，直接讲判断的关键节点和证据链",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "{\"message\": \"你我之间现在没有认知差距了，我可以放心按藏家交流的标准来说。材料方面我手上能拿出三件可讲的案例，都是我自己在项目里经手或近距离接触过的。一件来自三星堆发掘的器物争议案例，一件是国外拍卖流转中我参与做过鉴析的东西，第三件是我们数字文博项目里碰到的一件需要重新厘定来源与真伪的作品。这三件刚好能覆盖出土、拍卖、传世三条不同来源线索，对比着讲才能把真伪锚点和流传断点在不同语境下的权重差别立起来。我倾向拿三件讲，两场线上对话走完：第一场先讲三星堆那一件，把判断框架和证据链的逻辑铺明白；第二场用另外两件做对比，让判断维度在不同语境里交叉验证。时间上每场一个半到两小时比较从容。你看这个节奏Ruohao能不能接，可以我们就定第一场。\"\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "三件案例、两场线上对话、出土拍卖传世三条线交叉验证——这个结构 Ruohao 一听就说对路。他说做量化的人最怕样本单一，你拿三星堆的出土争议、国外拍卖的鉴析经历、传世作品的来源厘定这三件对比着讲，正好能让他看清判断维度在不同语境下的权重到底差在哪。第一场先铺框架和证据链，第二场做交叉验证，这个递进他完全能接。\n\n每场一个半到两小时，节奏从容，你讲得尽兴他听得过瘾。他让我跟你确认一件事：第一场你讲三星堆那一件，能不能把当时你第一眼觉得\"不对\"的那个材质信号讲透——什么特征触发你的警觉、后续怎么一步步验证或推翻的、最终证据链是怎么合龙的。他就是想知道专业人员面对真实器物时，不是事后复盘，而是当时当场的判断路径。\n\n时间上，他接下来一周的周三和周四晚上都可以，你挑一天。既然你说了聊完再看着给，他也不急着现在谈价钱，但他说等我们定了第一场具体时间，他主动给你一个数，你看看接不接得住就行。另外，你讲课的时候如果需要配合图片或档案资料，提前跟我说一声，我们这边也可以把东西准备好，让交流更充分。",
+      "offer": {
+        "subject": "艺术品资产价值判断咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "每场1.5到2小时"
+          },
+          "format": "线上对话",
+          "deliverables": [
+            "三件案例、两场线上对话，第一场铺框架与证据链（重点讲解三星堆案例的材质信号与判断路径），第二场进行交叉验证"
+          ],
+          "delivery_standard": "藏家交流标准，不讲外行速度，直接讲判断的关键节点和证据链"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付四至五位数的费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "以藏家交流标准交付，直接讲判断的关键节点和证据链",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "第一场讲解三星堆案例时，需讲透第一眼材质信号触发的警觉、后续验证步骤及最终证据链合龙过程",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "terms.delivery_standard": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "{\"message\": \"第一场就讲三星堆那件器物，你问的正是关键——第一眼的材质信号怎么触发警觉、我脑子里启动的排除逻辑是什么、后来怎么用检测数据跟历史档案把证据链合龙。这些我会从头还原，不讲事后复盘，就讲拿到东西那十分钟的判断路径。两场都需要图片和部分档案，我这边会整理好共享给你。时间定周三晚上，一个半到两小时，你那边备好资料，我也准备尽兴讲。价格你说定了时间他主动给个数，行，我等他看了再开口，拿出真东西的人值得信任。\"\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "周三晚上，定了。你准备图片和档案，我们这边备好在线会议环境，尽量让你讲得无干扰。Ruohao 让我特别转达一句：你说不讲事后复盘、就还原拿到东西那十分钟的判断路径，这个讲法他非常期待——在他自己的收藏领域，他最看重的就是这个\"第一时间的排除逻辑\"。\n\n关于诚意，他说既然时间定了，他不等你开口，先给个数让你看看。作为开场诚意，他愿意先付两千元承诺金，这笔钱是额外的心意，不是给你的课时费上限。他让我直接跟你说清楚：两场全部讲完之后，他会根据你讲的东西再出一个他觉得对得住的价格，那个才是对你专业度真正的认可。\n\n约定我们先确认一下：这2000元承诺金你这边接不接受？如果可以，我们就安排下一步流程，你定下单形式，我们把周三晚上的约正式锁住。",
+      "offer": {
+        "subject": "艺术品资产价值判断咨询",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周三晚上",
+            "deadline": null,
+            "duration": "每场1.5到2小时"
+          },
+          "format": "线上对话",
+          "deliverables": [
+            "三件案例、两场线上对话，第一场铺框架与证据链（重点讲解三星堆案例的材质信号与判断路径），第二场进行交叉验证"
+          ],
+          "delivery_standard": "不讲事后复盘，还原拿到东西那十分钟的判断路径，以第一时间的排除逻辑为核心，直接讲判断的关键节点和证据链"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先支付2000元承诺金；两场全部讲完后根据内容再支付合理费用",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "备好在线会议环境，确保无干扰",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "以藏家交流标准交付，直接讲判断的关键节点和证据链，不讲事后复盘，还原拿到东西那十分钟的判断路径",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "第一场讲解三星堆案例时，需讲透第一眼材质信号触发的警觉、后续验证步骤及最终证据链合龙过程",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "准备图片和档案",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "stated",
+          "terms.deliverables": "updated",
+          "terms.delivery_standard": "updated",
+          "terms.timing.when": "added",
+          "terms.timing.duration": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "两千承诺金我接受，但我要把话说清楚：这笔钱是定时间的诚意，不是最终定价。两场讲完后，价格由他根据听到的东西来判断，这是你说的，我也按这个理解。周三晚上就锁住，你定个简单的支付形式，我们把约正式立起来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10879,
+        "out": 2762,
+        "cache_hit": 8320,
+        "cache_miss": 2559,
+        "calls": 5
+      },
+      "sim": {
+        "in": 9447,
+        "out": 2413,
+        "cache_hit": 7040,
+        "cache_miss": 2407,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4908,
+        "out": 7828,
+        "cache_hit": 2688,
+        "cache_miss": 2220,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6395,
+        "out": 1765,
+        "cache_hit": 1536,
+        "cache_miss": 4859,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

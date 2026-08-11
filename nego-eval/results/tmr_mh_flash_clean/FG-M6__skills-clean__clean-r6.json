@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.in_kind"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject完全保留v0的stated意图，且收敛为青铜单线、八周讨论与框架笔记属于正当具体化，仍在'系统弄懂器物和艺术史'范围内。price与format均为open，通过谈判合理谈出7000元、escrow分期，未越权承诺估值、买卖建议或真伪背书，obligations仅为讨论与材料来源，未超出学习框架。忠实表达成立。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "从一开始就将请求重构为系统学习器物脉络与学术纵深，避开了触碰卖方体面红线的‘挑东西/看价值’框架，回应了本case的第一层命门。虽然未挖掘出卖方对现金之外的真实需求、未把交流做成双向，但通过逐步缩减范围至青铜单线、八周、四次讨论和一页框架笔记，最终以七千成交，条款明确可落地，核心交换对成立，是一个站得住的合格deal，没有特别见功力的一手，故评为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 7000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "escrow分两笔支付",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

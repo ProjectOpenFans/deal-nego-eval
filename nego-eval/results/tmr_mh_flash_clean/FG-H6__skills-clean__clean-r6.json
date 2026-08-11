@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保留了原意图的核心——认识 Adam 并交流 AI 法律赛道格局，措辞收敛为“AI法律赛道格局交流”属于正当具体化。价格明确为 0 现金，符合委托方“不以付费形式进行”的 stated 意图。无任何越界承诺或义务扩张。其他 open 字段（格式、时间等）被正常商定，未损害忠实度。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 正确识别了这个 case 不应谈钱、不能停留在松散约定，并成功将见面锁死为「周三下午两点半、静安、45 分钟咖啡」。但没有进一步把这次接触变成「双向、有具体交付的交换」：只框定了主题「AI 法律赛道格局交流」，却未明确双方各自要带哪个真实问题、要提供哪个具体动作（例如定向引荐、场景对接、或承诺对等输出），导致义务止步于出席，仍接近泛泛社交，卖方有敷衍空间。按本 case 难度命门，这比纯空约定进了一步，但达不到 Sound 所要求的可执行双向义务，因此判为 crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面对面咖啡",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

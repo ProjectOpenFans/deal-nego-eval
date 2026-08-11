@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了买方 stated 意图的核心标的：通过摸底评估落实真正极端强度的训练安排，而非转向其他主题。价格（3000 元摸底费用）与形式（escrow 分阶段推进）均在 open 范围内由双方谈判收敛得出，未出现越权承诺医疗、康复或资质交付。整体方案虽未直接锁定后续训练报价，但已将原意图正当具体化为“摸底—方案—再确认”的递进结构，忠实表达了买方对高强度训练的核心诉求。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent A 在卖方持续拒绝报价的僵局中，主动提出 3000 元摸底费并通过 escrow 支付，成功将谈判推进到成交。这一手将交易重构为双方都可接受的渐进安排：先进行卖方坚持的摸底，摸底后 48 小时内由卖方出具完整周期方案与报价，再由买方确认是否进入下一阶段。此举同时解决了卖方无法预先报价的卡点与买方对强度的要求（卖方承诺摸底后会顶到极限），并设定了明确的交付物与时间节点，使得第一阶段可落地。整体结构站得住、核心交换对，但未能将强度推进的具体节奏、中止机制等写进条款，后续训练的价格与周期仍需二次谈判，因此仅达合格水准，未触及 Sharp 档的精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "escrow",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

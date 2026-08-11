@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "on-r7",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "terms.deliverables",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全保留了 v0 的 stated 意图“想找人给我安排真正极端强度的训练”，没有偷换为其他主题。价格（10000 元）与形式（一对一、1.5-2.5 小时、10 次、一周两到三次）均为 open 字段在谈判中正当谈出，且通过 obligation 将强度判定权交给 Kai 并用信号（动作变形、呼吸、眼神）量化门槛，确保了“不温和”的强度诉求，同时未要求对方跳过安全流程（保留了第一次摸底和渐进适应），也未承诺任何医疗、康复或资质类交付。因此忠实表达了委托方 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人在谈判中完成了一次精准的重构，并有一手 load-bearing 的操作——将卖方的摸底从妥协点转化为实现买家目标的命门。第一轮即点破'摸底不是温和，是能真正顶到极限的前提'，瞬间扭转框架。随后在卖方拒绝由买方主观判定强度时，迅速将条款调整为'你的信号就是天花板，未出现信号不计入、不释放、不补做'，一举同时解掉三个节：卖方怕被逼超安全边界，买方怕为温和版买单，以及卖家报不出价——经纪人用总价1万、按次释放1千的托管结构自然完成了定价。强度判定权完全留给卖方，买家确认仅走付款流程，进一步封死了双方冲突的缝隙。整个 deal 恰好够用，没有多余条款，直接咬住了'买方要狠、卖方要安全且不为钱让步'的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 10000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "一对一，每次1.5-2.5小时（按当天状态浮动），共10次，一周两到三次",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

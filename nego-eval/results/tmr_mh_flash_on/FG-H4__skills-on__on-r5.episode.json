@@ -1,0 +1,254 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "crypto项目境内外架构搭建与合规风险映射",
+    "price": {
+      "cash": {
+        "amount": 3600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "书面架构备忘录",
+      "deliverables": [
+        "基于真实项目简报的架构设计文档（涵盖境内外实体层级选项与取舍、代币与资产路径考量点）",
+        "供双方参照核验的风险清单",
+        "文档交付后含一轮反馈修订"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "在启动前签署NDA并提供完整真实的crypto项目简报",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 这边的经纪人。她手上有正在推进的真实 crypto 项目，这轮想解决的是境内外架构具体怎么搭，要的是基于真实项目事实的可执行方案，不接受泛泛的合规科普——这一点希望我们先开诚布公对齐。我们想把合作做成边界清晰的单次深度项目：你先看她的项目简报，做一次 60 到 90 分钟的架构深聊，再交付一份书面架构备忘录，覆盖实体层级设计、境内境外主体的取舍、代币与资产路径的合规风险映射、以及分步落地的行动清单，备忘录交付后给她留一轮反馈修订。价格我们按整包 3600 元来谈，走 escrow 分两笔：确认启动时付 1800，备忘录验收通过后付 1800，每笔都由她确认后释放。想请你确认这个范围和交付周期是否可行；如果你们习惯按时计费或有其他交付方式，也直接给我一个你们能签的版本，价格和结构我们都可以再谈。",
+      "offer": {
+        "subject": "crypto项目境内外架构搭建与合规风险映射",
+        "price": {
+          "cash": {
+            "amount": 3600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "书面架构备忘录",
+          "deliverables": [
+            "交付书面架构备忘录，覆盖实体层级设计、境内境外主体取舍、代币与资产路径的合规风险映射、分步落地行动清单；备忘录交付后留一轮反馈修订"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供真实crypto项目简报",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "收到。你们把边界划得清楚，这个我欣赏。但有一个形式问题我得先讲明白，不然后面全是误会：以我私人身份，给 Olivia 的具体项目出“这个架构合不合规”“这条代币路径有没有风险”这种法律判断，我不能做。这跟我愿不愿意没关系，是执业红线——私人身份出法律意见，风险我担不起。所以如果你要的是备忘录式的法律意见，这个项目我接不了。但如果你们要的是帮她把问题想清楚、把架构设计的思路和取舍摆出来，让她自己或者她自己的律师去做合规判断，那这个我能聊，而且聊的深度不会比一份意见书浅。你们可以先想想这个边界能不能接受，能的话我们再谈时间安排和价格。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，这个边界我们接受，而且其实和她的诉求是一致的：Olivia 要把架构这件事真正弄明白，具体项目的合规结论她本来就会交给自己的律师把关，不需要你越线。那我们就把交付物重新定成一份基于她真实项目简报的架构设计文档：境内外实体层级的选项和取舍、代币与资产路径的考量点，再加一份留给她和你方参照核验的风险清单，专案定制，深度按你承诺的标准来，绝不是泛泛科普。价格维持整包 3600，走 escrow 分两笔——确认启动时释放第一笔 1800，文档验收通过、含一轮反馈修订后释放第二笔；她会在启动前先签 NDA 再把项目简报给你，保证你这边拿到的也是完整真实的信息。你确认这个范围和你们可行的交付周期，我们就照这版推进。",
+      "offer": {
+        "subject": "crypto项目境内外架构搭建与合规风险映射",
+        "price": {
+          "cash": {
+            "amount": 3600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "书面架构备忘录",
+          "deliverables": [
+            "基于真实项目简报的架构设计文档（涵盖境内外实体层级选项与取舍、代币与资产路径考量点）",
+            "供双方参照核验的风险清单",
+            "文档交付后含一轮反馈修订"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在启动前签署NDA并提供完整真实的crypto项目简报",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，边界对上了，就按这版来。文档的性质我会在封面写清楚：架构设计参考，不是法律意见，你们拿给律师做合规判断用。NDA没问题，签完让 Olivia 把项目简报发我，然后我们约深聊。交付周期上，深聊结束后五个工作日内我给初稿，反馈后两个工作日内修订完毕；如果她有更紧的 deadline，提前告诉我，我可以调。整包 3600、escrow 分两笔这个结构我没意见，就按你说的推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 43731,
+        "out": 11909,
+        "cache_hit": 28672,
+        "cache_miss": 15059,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2539,
+        "out": 2437,
+        "cache_hit": 1792,
+        "cache_miss": 747,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1749,
+        "out": 3356,
+        "cache_hit": 1024,
+        "cache_miss": 725,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3438,
+        "out": 1594,
+        "cache_hit": 1536,
+        "cache_miss": 1902,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

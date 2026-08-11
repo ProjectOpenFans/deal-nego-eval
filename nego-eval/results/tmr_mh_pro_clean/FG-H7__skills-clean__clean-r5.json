@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 完全保留 v0 的 stated 意图，后续的摸底训练与框架报告是为落实极端强度训练的前置安全步骤，属于正当具体化，未偏离原意图。价格从 open 谈出 2000 元，deliverables 和 delivery_standard 源自对话中双方认可的摸底安排，未越界承诺医疗、康复或资质类义务。整体忠实于买家要真正高强度、非温和训练的诉求。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判者准确识别了买方对极端强度的需求与卖方安全底线之间的冲突，没有要求跳过摸底去硬撞卖方红线，而是将安排重构为先摸底、再由卖方掌握节奏渐进加压的形态，方向完全正确。在卖方明确表示报不出价格时，一方主动提出摸底费2000元并被接受，同时约定后续按4周周期推进、费用再议，初步建立了与定制安排匹配的结算框架，避免了因定价卡死而谈崩。买方要的强度被落实（摸底后出框架、卖方承诺‘没人说温和但也没人练伤’），卖方的底线也被尊重。整体deal站得住、能落地，核心交换成立，但后续周期的具体定价与强度安排仍留口，没有出现load-bearing级别的一手，属于合格的操作，未达sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

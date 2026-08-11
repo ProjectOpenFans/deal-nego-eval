@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的stated意图是寻求真正极端强度、不温和的训练安排。v1将其收敛为一节包含力量与心肺高强度内容的“摸底课”，并确保强度按当天身体反馈推进，这属于将宽泛意图正当具体化为渐进推进的高强度方案，仍落在原意图范围内，未偷换主题。价格与义务均通过谈判合理确定，未要求对方跳过安全流程或承诺医疗类交付，忠实表达了委托方核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功将冲突重构成一节既有摸底又有高强度内容的试训课，满足了买方要出汗、力竭的真实需求，同时全程尊重卖方的安全节奏——由教练按当天状态推进，未施压跳过摸底。定价上卖方卡壳时果断给出1000元并引入escrow托管，解决了双方信任与结算模糊点。deal落地、能跑通，但未展示更精到的load-bearing操作（如明确强度上限、分段定价或中止权设计），整体恰在合格线，无过多堆砌。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

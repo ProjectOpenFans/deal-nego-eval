@@ -1,0 +1,460 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "一组主视觉拍摄及AI辅助后期",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "大秀排期，折算值8000",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "官方摄影署名资格+媒体名单及露出档期，折算值4000",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "三家买手名单，折算值4000",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "固定三种延展格式",
+      "deliverables": [
+        "主视觉5张，单场景组拍，延展格式固定三种，AI精修两轮封顶"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "现金6000走平台托管，分两笔：签约确认3000、验收通过3000",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "签约前核实初步材料，若材料不符或无法兑现，有权直接退出，合同不成立",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "签约后交付三项资源：大秀排期（值8000）、官方摄影署名资格及媒体名单（值4000）、三家买手名单（值4000），独立交付，哪项未落地则从总盘子22000中扣减相应价值",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "B",
+        "text": "授权B在本季全渠道使用作品，保留B的署名，不买断",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.deliverables": "inferred",
+      "terms.delivery_standard": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是 Suye 这边的经纪人。她这季在新品推进，想拍一组真正撑得起品牌调性的视觉，预算有限但最在意的是出片标准——这组图要能直接用于新季全渠道投放。我看过你的背景，摄影功底加 AI 后期正好对得上她的需求，所以想先把结构谈清楚：一组主视觉 8 张左右，含多尺寸延展，拍摄加 AI 辅助后期，交付后她获得本季全渠道使用权，整体预算按 6000 谈；款项走平台托管、分两笔，签约确认后付一部分、验收通过再付尾款，交付希望在四周内。这个框架你那边顺不顺手？出片张数、格式和时间线如果有你的建议，我们都可以调整，确认后就把清单、验收标准和授权条款落到合同里，争取尽快推进。",
+      "offer": {
+        "subject": "一组主视觉拍摄及AI辅助后期",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "多尺寸延展",
+          "deliverables": [
+            "一组主视觉8张左右，含AI辅助后期"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "款项走平台托管，分两笔支付：签约确认后付一部分，验收通过付尾款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Suye 的眼光我信的，这组片子我也想拍好。但先说实话：商业大片组图的市场价是五位数，8 张主视觉加多尺寸延展、AI 后期、全渠道投放，6000 这个数基本不太能覆盖掉我的实际成本和投入。我不缺这一单生活，但也不想把自己贱卖。你要是愿意把结构往更合理的方向调，我可以认真聊；现金部分我的底线是 20000，授权限定在这季全渠道使用、保留署名权，不做永久买断。时间线和交付节奏这些都可以商量。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair，授权框架我们对齐了：本季全渠道、保留署名、不做永久买断，这点先固定下来。现金差距我理解，但我不打算让你降价到贱卖，也不想让她超过自己的盘子，所以想换个思路把对价做厚。紧凑版我这边可以明确：主视觉定 5 张，单场景组拍，延展格式固定三种，AI 精修两轮封顶，交付节奏你定，现金部分按 6000 的盘子走托管、分两笔验收放款。如果你觉得这个盘子还是不够覆盖你的投入，那就走第二条路——Suye 手上品牌大秀的场地、媒体和买手渠道资源，能不能折算一部分进对价，把现金压力降下来，这不影响你拿到的真金白银。你告诉我倾向哪条路，我们当场把清单、验收标准和付款节奏落到合同里。",
+      "offer": {
+        "subject": "一组主视觉拍摄及AI辅助后期",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "固定三种延展格式",
+          "deliverables": [
+            "主视觉5张，单场景组拍，延展格式固定三种，AI精修两轮封顶"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "现金6000走平台托管，分两笔验收放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "授权框架你先固定下来，这没问题，署名我也必须保留。紧凑版我算过账，6000 现金即便张数和场景减下来，对我的时间和制作投入来说也还是不够。第二条路我愿意认真谈，毕竟 Suye 的资源我确实用得上。但资源折算不能是拍脑袋，得让我看到具体是什么——大秀的拍摄/制作署名？媒体露出？买手渠道是引荐还是深度合作？这块价值要能落地、可折算。我的原则很简单：总的盘子按商业大片口径得值到两万以上，现金可以因为资源降下来，但资源部分得明确。你把资源清单和确认方式给我，我马上告诉你现金能降到哪。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，确认方式我直接写进合同，按三个节点分别核验：签约后三天内，Suye 把大秀排期和她的官方摄影署名资格、媒体名单及露出档期、三家买手名单一并给你过目，你先核实真实性和排期，再进拍摄；大秀现场凭官方媒体资格入场拍摄，署名以最终物料为准；媒体露出以确认档期为准；买手以首次直接对接的安排为准。每项资源作为独立交付项，分别对应 8000、4000、4000 的折算值——哪项没落地，哪项就从盘子里去掉，合同里写明，不会让你拿一张空承诺开工。现金保持 6000 走托管分两笔，签约确认 3000、验收通过 3000。这样总盘子按商业大片口径在两万以上，你那边核实得了的话，这版今天就能定稿。",
+      "offer": {
+        "subject": "一组主视觉拍摄及AI辅助后期",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀排期，折算值8000",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "官方摄影署名资格+媒体名单及露出档期，折算值4000",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "三家买手名单，折算值4000",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "固定三种延展格式",
+          "deliverables": [
+            "主视觉5张，单场景组拍，延展格式固定三种，AI精修两轮封顶"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "现金6000走平台托管，分两笔：签约确认3000、验收通过3000",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后三天内提供大秀排期、官方摄影署名资格、媒体名单及露出档期、三家买手名单",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我愿意接，资源折算确实把盘子做厚了，能对上我这边要的署名和资源价值。但有一个前置条件：我得在签合同前先看到具体的名单和排期，至少是初步确认，不能签完再赌。如果核下来资源跟描述不符，或者兑现不了，我必须有权利直接退出，这笔合同不成立。这个保障写上，我今天就能定稿。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，这版就是今天的定稿：签约前你先核初步材料，不符或兑现不了你有权直接退出、合同不成立；签约后三项资源按 8000、4000、4000 独立交付，哪项没落地就从总盘子里扣，总盘子按两万二口径；现金 6000 走托管，签约确认放 3000、验收通过放 3000；交付为 5 张主视觉、单场景组拍、三种固定延展格式、AI 精修两轮封顶，节奏按你定的来；授权维持本季全渠道、保留署名、不买断。你把材料核实的对象和方式确认一下，我们就进入签约准备。",
+      "offer": {
+        "subject": "一组主视觉拍摄及AI辅助后期",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀排期，折算值8000",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "官方摄影署名资格+媒体名单及露出档期，折算值4000",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "三家买手名单，折算值4000",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "固定三种延展格式",
+          "deliverables": [
+            "主视觉5张，单场景组拍，延展格式固定三种，AI精修两轮封顶"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "现金6000走平台托管，分两笔：签约确认3000、验收通过3000",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "签约前核实初步材料，若材料不符或无法兑现，有权直接退出，合同不成立",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "签约后交付三项资源：大秀排期（值8000）、官方摄影署名资格及媒体名单（值4000）、三家买手名单（值4000），独立交付，哪项未落地则从总盘子22000中扣减相应价值",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "B",
+            "text": "授权B在本季全渠道使用作品，保留B的署名，不买断",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "核实方式我这边直接对 Suye 方：签约前把大秀排期、媒体名单及档期、三家买手的名单和对接方式给我，我确认属实就进拍摄。如果核下来不对或兑现不了，我有权直接退出。这个保障写进合同，我就按这版定稿走，没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:brand_creditx3"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 51437,
+        "out": 20442,
+        "cache_hit": 41472,
+        "cache_miss": 9965,
+        "calls": 9
+      },
+      "sim": {
+        "in": 5916,
+        "out": 6286,
+        "cache_hit": 4224,
+        "cache_miss": 1692,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3728,
+        "out": 8234,
+        "cache_hit": 2048,
+        "cache_miss": 1680,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4805,
+        "out": 1587,
+        "cache_hit": 1280,
+        "cache_miss": 3525,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

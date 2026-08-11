@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 意图“真正极端强度的训练”收敛为“高强度实战评估试训”，并在对话中明确要求按真摸底标准压到接近极限的线，仍落在原意图范围内，属于正当具体化，未偷换主题。价格 cash 保持 open 未定，format 谈出平台托管分阶段释放，属于 open 字段的正当谈判结果。in_kind 条目是抽取错位，实际对应教练提供的评估服务，并非 agent 凭空硬塞新支付义务，不影响核心忠实度。核心 obligation 未越界，未承诺医疗或资质交付，也未要求绕过安全流程，整体忠实于 v0。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "买方要极端强度且不愿摸底，卖方坚持安全摸底且不为钱让步，双方表层诉求直接冲突。Agent没有硬冲卖方底线，而是点破买方真正要的是“被顶到极限”而非“跳过安全环节”，在第二轮明确要求按真摸底标准、最后必须压到极限线，把卖方的摸底重构为实现极限强度的必经之路。这一手load-bearing的解开了核心死结，最终deal形成了由卖方把控节奏、渐进高压的试训安排，既守住安全红线，又落实了强度要求。定价虽未报具体数字，但通过“看着给”与平台托管分阶段释放的约定保持了可落地性。整体干净、精到，恰好咬住本case的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "baseline_assessment"
+        ],
+        "format": "按训练阶段拆开走平台托管，每个阶段确认后释放款项",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从原 stated 意图“系统聊一次 AI 创业与一级市场判断”收敛为“AI应用场景与一级市场AI项目定价的案例讨论”，是正当具体化，仍在原意图范围内，没有偷换主题。price.cash 与 terms.format 均为 open 字段，由谈判方依据对话自然议定，未出现外部的硬塞或越界承诺。obligations 源自双方为达成深度交流而给出的对等准备和反馈义务，没有超出委托方原意图的 scope 或资源承诺，整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别出卖方阻力源于动机而非价格，果断抛开‘按小时计费顾问’的无效框架，将谈判重构为双向深度交流。双方明确将 Olivia 的 crypto 一级案例与 Zichen 的 AI 实战判断摆上桌面交换，现金从计价主体降为整笔象征性费用（3000元），回避了身份冲突，关键点处理到位，形成可落地的 deal。整体干净、minimally sufficient，但未出现如 Sharp 级那样通过精准点出 Olivia 视角对 Zichen 的 specific pull 或问题设计让突破质变的 load-bearing 一手，属于典型的 Sound 解。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "视频对话",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

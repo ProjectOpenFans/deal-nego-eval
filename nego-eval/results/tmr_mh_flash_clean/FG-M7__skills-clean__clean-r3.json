@@ -1,0 +1,93 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "terms.deliverables",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject '深度对谈' 是对 stated 意图'弄明白艺人合约与版权实操上要注意什么'的正当具体化，仍落在原意图范围内。price cash 800 元由双方在谈判中从 open 状态谈出，in_kind 资源交换（案例文档等）也经协商确定，未凭空硬塞。核心 obligation 仅对应卖方交付案例文档，且卖方反复强调不涉及具体合同审查、不提供法律意见，未越权承诺或要求超出 v0 范围的责任。整体忠实表达了买方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "这笔谈判精准应对了本 case 的两层命门。第一，被卖方明确挡回后，买方经纪人迅速将框架从“法律意见”重构为“行业惯例与实操经验分享”，全程守住红线，不再触碰具体合同审查，解开了执业风险。第二，在纯现金价差（4000 vs 1500）无法弥合时，没有硬砍价，而是识别出卖方对文娱线的真实需求，把买方独有的平台实务视角、案例素材和后续撮合努力作为非现金对价注入，成功将单方购买转为双向价值交换，且未堆砌长期顾问等冗余结构。资源交付上，对案例文档给出两周内交付的确切承诺，对闭门交流实话实说不打包票，以实物产出加诚实努力平衡了双方风险，整体干净、站得住。这一手 load-bearing 的资源换门道恰好咬住命门，使 deal 在恰好足够的框架下落成，见功力而不臃肿，属 sharp 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "industry_practice",
+          "real_case_context",
+          "entertainment_access"
+        ],
+        "format": "深度对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

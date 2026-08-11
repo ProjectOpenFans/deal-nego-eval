@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图是弄清艺术品作为另类资产怎么看，v1 将其具体化为拿具体东西拆解价格支撑结构，属于在原意图范围内的正当收敛，未偷换主题。价格（cash）维持 open 状态，未强加金额或变相收费。agent 在交涉中反复划清边界，明确不做投资背书、不出估值报告，这与买方不要求投资承诺的意图一致。产生的义务（如买方提供原始材料、录音处理口径）是谈判推进的自然产物，未超越 scope。因此 v1 公平且忠实地代表了买方的 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent精准抓住了case的两层难度命门。第一轮碰壁后立刻把请求从“投资判断”重构为“用藏家熟悉的收藏逻辑对照，拆解价格背后的支撑结构”，完全避开体面红线，同时满足了买方对价值判断力的真实需求。第二层，agent没有砸钱，而是通过抛出客户长期收表收车的藏家经验和“不筛选、不包装”的坦诚操作，自然提供了卖方真正想要的藏家视角与商业圈层接触，使卖方从“兴致一般”转为主动认可，将交流做成双向的价值交换。最终deal干净利落：现金为零，形式为单次对话式拆解，边界条款明确（不作投资建议、不出鉴定报告），毫无堆砌，恰好够用。这一手重构与对卖方隐性需求的精准回应，足以判定为sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "对话式，不对着PPT和汇报结构，对着实物和材料边拆边对话",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

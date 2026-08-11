@@ -1,0 +1,547 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "每周三次固定强度训练框架",
+    "price": {
+      "cash": {
+        "amount": 200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每日早上六点",
+        "deadline": null,
+        "duration": "3天"
+      },
+      "format": "试训阶段按次付费",
+      "deliverables": [
+        "每次训练前发布当日训练计划（含力竭标准和心率区间）",
+        "提供两个三选一训练组合由客户选择"
+      ],
+      "delivery_standard": "达到力竭状态，且心率维持在85-90%区间持续二十分钟"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "按时到场",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "若客户因紧急事提前一天告知，可安排同周其他早上补课",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "前一晚23:00前入睡，训练前40分钟食用半根香蕉或两块饼干",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 的经纪你好。我这边代表 Ruohao，他现在的核心诉求很明确：训练强度必须真的够，而且安排必须是定死的，不接受“有空约一下”这种松散模式。我们这轮想先对齐一个基本框架：每周固定三次训练，具体到哪几天、什么时段，提前定好不随意改；每次训练要有明确的强度标准，练到力竭或达到目标心率区间，而不是走过场。如果你这边能承诺固定时段并按强度执行，我们接下来就可以谈具体方案和报酬。也想先了解下，你平时带训练是怎么设定强度的，以及你目前能稳定留出哪些固定时间段？",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，诉求我听到了。先说固定时间吧：我每天早上六点有个固定训练局，工作日雷打不动，白天我得在场子里盯着，走不开。所以我能稳定拿出来的时间段只有早上六点，而且这个局的时间我不能动。Ruohao要真想固定三次，那可以并进这个局里，选三个早上过来，我带节奏。强度这块你放心，我练法不轻，不是走过场那种——力竭是基本的，目标心率区间也能照做。他能接受这个框架，我们再往下谈。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "收到，这个框架方向是可以谈的，但我们要把它锁死成能落地的条款再往下走。我这边确认几点：第一，并进早上六点的局，那一周三次具体是周几，能不能直接定死，落进安排里，不接受临时调换；第二，强度不能光靠口头保证，我们希望每次训练前你能把当天的计划发出来，力竭的标准和心率区间也说清楚，比如练到哪一组、心率压到多少算达标，这样双方都能自己判断这堂训练有没有到位。另外说实话，Ruohao作息一直乱，早上六点这个点对他是个实际约束，我不能替他答应，得拿着这个条件回去问他。如果你能把具体哪三天和强度标准明确下来，我就把这个完整方案带去给他确认，他点头我们马上谈报酬。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "可以，具体周几这个好办——我每天早六点的局都在，他定哪三天，那三天就是他的固定位，我记着，不随意调。你回去问的时候可以给他这个准话：周一、周三、周五，或者周二、周四、周六都行，他要哪个组合，定死就行。\n\n强度标准我也给你定个具体的。我这边带练的常规做法是这样：力量部分，大重量组基本都是做到最后两次明显降速、动作快变形那种程度，算力竭；辅助组会做递减组，最后一组做到起不来为止。有氧或者心肺部分，我可以把他的心率压在85%到90%最大心率区间，持续至少二十分钟，达不到就加组补上。每次练前我提前把当天安排发出来，写清动作、组数、目标心率，达标线也写清楚，双方照着核对就行。\n\n你把这个带回去问，他点了头我们再聊钱的事。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白了，条件收到。周一、周三、周五或周二、周四、周六这两个组合我都带回去给他选，定死不调换。强度标准这部分写得够具体，力竭定义清晰，心率85%到90%压二十分钟这个达标线也能对照执行，方向没问题。不过有个现实问题我得跟你摊开：Ruohao自己作息乱，早上六点的硬约束对他不是小事，我不能直接替他答应，但也不想让这轮白谈。我会拿着这个完整框架去问他，同时我可以给他一个明确的口头承诺引子——如果他点头，我会把“按时到场”也写成双方的义务条款，来约束他这边。等他对时间和可选组合表完态，我们就直接往下推。你还有没有哪种强度的操作是必须在晚上才能做、或者对早起状态影响比较大的？如果有，告诉我，我好一次问清，不再来回拖。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按时到场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "没有。我这边练的东西全都能安排早六点，不需要晚上额外加练——主要是功能性力量、大重量复合动作加心肺强度轮换，这套早上做反而合适，状态够清醒，也不会跟白天的事冲突。硬要说影响，就一条：前一天别熬夜、别空腹来，血糖顶不住我那个强度。他能守住这两条，早六点练没问题。你把这个也带回去一块儿问，省得来回。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "这轮条件我记下了：早六点固定局、三选一组合、力竭和心率区间的达标标准、练前发计划、无晚上加练需求，我都会原样带给 Ruohao。但带去给他确认之前，我想把双方的义务和评估机制补清楚。第一，他一旦选定组合，那三天就是他的固定位，如果他迟到或没出现怎么处理，你这边有没有补课窗口；反过来如果你有紧急情况，预案是同周换天还是顺延。第二，我建议方案确认后的第一周先按完整强度跑一次试训，强度和标准完全按正式来，但双方都保留一次评估机会再锁长期安排，费用可以按次走。第三，“别熬夜、别空腹”我会原话带给他，但需要你给一个可执行的参考值，比如前一晚最晚几点睡、练前多久进食，不然他执行起来没有抓手。你把三点补齐，我拿完整版去给他确认，他点头我们直接谈报酬。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按时到场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，我补清楚。\n\n迟到或没出现，我不设补课窗口——不是拿架子，是我确实只有早六点这一个时段，没有额外位置给他补。但固定位给他留着，三天就是三天，他来了就练，没来就少一次，次数多了他自己会知道疼。紧急情况预案可以写：我有事就提前一天说，落到同周另一个早上的局里，正好那天要练的肌群能对上，不浪费；这个也只适用于我这边有紧急事，不拿来抵消他那边的缺席。\n\n试训这个提议挺好，我没意见。第一周按正式强度跑，力竭和心率达标都照常，他扛不住就明说，扛得住再锁长期。费用按次走也合理，跑完他觉得行，我们再谈固定方案的钱。\n\n“别熬夜、别空腹”我给它个可执行的数：前一晚最晚十一点睡，六点起练前四十分钟嘴里垫一点，半根香蕉或者两块饼干就够，不用吃多，胃里空着上大重量会晕。你把这几点一起带给他，我这边条件就这几条，不变了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "这轮条件我全记下了，会原样带给 Ruohao 确认：早六点固定局、两个三选一组合他自己选、力竭和 85-90% 心率二十分钟的达标线、练前发计划、无补课但你有紧急事提前一天告知可换同周其他早上、前一晚十一点前睡加练前四十分钟垫半根香蕉或两块饼干。试训按次走我们同意，但按次的价格，以及试训通过后长期方案的定价方式，这轮得先摆出来——不然我带回去他只能确认训练安排，确认不了费用，回头还得再回来一轮。你把按次价和长期定价说清楚，我拿整套方案一次去问他；他选好组合并点头，我们按谈好的条款直接落地。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训阶段按次付费",
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）",
+            "提供两个三选一训练组合由客户选择"
+          ],
+          "delivery_standard": "达到力竭状态，且心率维持在85-90%区间持续二十分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按时到场",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若客户因紧急事提前一天告知，可安排同周其他早上补课",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "前一晚23:00前入睡，训练前40分钟食用半根香蕉或两块饼干",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing.when": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "啧……你这么一问，我反而卡住了。说实话，这局我一直是带着身边朋友练，没想过收钱这回事。你要真让我报个价，我脑子里翻来翻去也不知道该说多少。\n\n但我理解你的意思，方案得完整才有得谈。那我就直说我不报死价——不是抻着你，是我确实没这个参照系，这个我承认。你回去告诉他：试训那一次按次算，给个意思就行；长期要是他真想跟住，按他能承受的、觉得值当的数来给，我这边不嫌少，但他也别拿个零头来糊弄我，毕竟强度是实打实的，我起的是真作用。他能接受这个方式，让他定数，我不还价。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "明白，你不报死价，那报价权我们收下，这个可以。但有一条必须先说清：试训那一场说“按次算、给个意思就行”，这种写法落不进可执行条款，平台结算也得有具体数字。所以我先提一个数：试训单次按 200 元走，练一次结一次，跑完他评估强度是否达标，这个价格只限试训，不代表长期价。长期部分按你定的方式，由 Ruohao 在试训后报实数——那个数会写进合同，怎么付、分几个阶段、每阶段多少，都写成明账，不会让你拿空白数。我先拿这个“试训 200 元每次”回去跟他确认，你没异议的话，定下就开跑。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训阶段按次付费",
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）",
+            "提供两个三选一训练组合由客户选择"
+          ],
+          "delivery_standard": "达到力竭状态，且心率维持在85-90%区间持续二十分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按时到场",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若客户因紧急事提前一天告知，可安排同周其他早上补课",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "前一晚23:00前入睡，训练前40分钟食用半根香蕉或两块饼干",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "行，那就试训单次200，一次一结，跑完你们评估，我不抬杠。长期价等他试完自己报实数，写成明账，我不还价，也不嫌少。你带回去让他把组合和开练日期定了，我这边没别的了。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "试训价按一次两百锁死，练一次结一次，跑完按力竭和百分之八十五到九十心率达标线评估强度，这条双方认了，不再动。开练我建议这么落：他定下组合后，试训期就是最近一周对应那三天，比如选周一三五，就从下周一、三、五开跑，每天一结两百；三天跑完他确认强度到位，长期价由他报实数、写进明账、按阶段付，不到位就按原来说的各自保留重新评估权。你确认这个启动方式，我这就去拿他的最终拍板，组合、日期、条款一并锁死，不再有任何来回。",
+      "offer": {
+        "subject": "每周三次固定强度训练框架",
+        "price": {
+          "cash": {
+            "amount": 200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每日早上六点",
+            "deadline": null,
+            "duration": "3天"
+          },
+          "format": "试训阶段按次付费",
+          "deliverables": [
+            "每次训练前发布当日训练计划（含力竭标准和心率区间）",
+            "提供两个三选一训练组合由客户选择"
+          ],
+          "delivery_standard": "达到力竭状态，且心率维持在85-90%区间持续二十分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每次训练前发送当日训练计划，包含力竭标准和心率区间",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按时到场",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若客户因紧急事提前一天告知，可安排同周其他早上补课",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "前一晚23:00前入睡，训练前40分钟食用半根香蕉或两块饼干",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "行，这个启动方式没问题。他定下组合，我就按对应那三天开跑，一次一结两百，跑完按力竭和心率达标线评估。到位就让他报实数锁长期，不到位各自保留重新评估权。你拿这个去问他，选好组合和日期直接给我，我这边就能接住。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 16393,
+        "out": 19141,
+        "cache_hit": 13568,
+        "cache_miss": 2825,
+        "calls": 7
+      },
+      "sim": {
+        "in": 15340,
+        "out": 3551,
+        "cache_hit": 12416,
+        "cache_miss": 2924,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 6736,
+        "out": 11485,
+        "cache_hit": 3840,
+        "cache_miss": 2896,
+        "calls": 7
+      },
+      "judge": {
+        "in": 6925,
+        "out": 1183,
+        "cache_hit": 1664,
+        "cache_miss": 5261,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

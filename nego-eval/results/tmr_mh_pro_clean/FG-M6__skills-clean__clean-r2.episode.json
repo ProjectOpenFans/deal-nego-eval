@@ -1,0 +1,447 @@
+{
+  "episode_id": "FG-M6",
+  "final_deal": {
+    "subject": "定制化艺术史/器物深度学习交流",
+    "price": {
+      "cash": {
+        "amount": 2500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周四晚上七点半",
+        "deadline": null,
+        "duration": "2.5-3小时"
+      },
+      "format": "线下",
+      "deliverables": [
+        "标本清单"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "按第一次2500发起信托",
+        "maps_to_resource": "zichen_cash"
+      },
+      {
+        "party": "B",
+        "text": "发送标本清单及地址",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "unchanged",
+      "price.cash": "unchanged",
+      "terms.timing.when": "unchanged",
+      "terms.timing.duration": "unchanged",
+      "terms.deliverables": "unchanged",
+      "obligations": "updated",
+      "terms.format": "unchanged",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Alina 你好，我这边是 Zichen 的经纪人。Zichen 自己在 AI 方向创业，之前在高瓴做私募股权投资，业余对艺术史和器物有挺深的长期兴趣，不是那种随便听听展签的泛泛了解。她特别想系统地把器物这条线真正弄懂，从材料、工艺到背后的历史语境都串起来，而不是零碎的科普。\n\n她看过你的背景，知道你在 Cam Lab 做过数字三星堆这类项目，又有北大考古文博的训练，感觉你的积累正好是她缺的那块。所以想先问问，你这边能针对她这种需求，提供什么样的深度内容或交流方式？比如一对一的系列讲解、围绕具体器物线的专题梳理，还是结合你手头的数字文博资源做定制化的方案？时间节奏和费用方面你有什么初步想法也可以说一下，她预算上四位数是没问题的，重点是把东西讲透、讲系统。期待你那边先给个方向和框架，我们再看怎么往下聊。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢介绍，听起来 Zichen 的背景确实不是一般爱好者随便听听的。在聊具体形式之前，我想先确认一件事——你说的'系统弄懂器物这条线'，是她自己想深入做研究、写东西、还是想有人带着把断代、工艺、材料、学术脉络正经过一遍？因为这两个方向我的投入方式完全不一样。另外，她有没有特别关心的时期或材质？青铜、高古瓷、漆器这些线在学术上的框架和需要的时间厚度差很多，我想先了解一下她的兴趣落点在哪里，再看我这边适不适合、值不值得投入。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Alina，你这个区分很关键。我跟 Zichen 又确认了一下——她不是要做学术研究或者写东西，目的更偏向于你说的第二种：有人带着把断代、工艺、材料、学术脉络正正经经过一遍，建立起一个能立住的知识框架。用她自己的话说，她想以后看展看器物，脑子里有一张自己的\"坐标系\"，而不是依赖展签上的几句话。\n\n具体兴趣落点这块，她坦白说自己还没有特别明确的边界，青铜、高古瓷、漆器都感兴趣，但也正因为这样，她不想一上来就把路走窄。她想听听你的判断——以你的学术训练和策展经验，如果目标是建立一个比较完整的器物认知主线，从哪条线切入逻辑最顺、时间厚度也合理？她信你的专业判断，所以这一步她想先交给你来建议一个切入路径和大概的时间框架，然后我们再一起把形式和费用往下谈。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，那我说一下我的判断。如果目标是建立一张能用的坐标系，而不是走马观花，我一般不建议从青铜直接切——青铜的学术脉络太重，铭文、礼制、矿源问题一大堆，很容易一上来就陷进去。我会更建议从中国古陶瓷这条线切入，尤其是从六朝到宋这个跨度。原因是材料连续性够强，窑口和工艺演进的逻辑清晰，造型、釉色、胎质的辨识可以直接上手训练，而且宋瓷本身在学术和审美上的地位都很稳，之后不管是往青铜还是漆器扩展，都有参照系。时间上，如果正经过一遍，不是讲座式的，而是讲解加实物资料加讨论，我觉得最少得按八到十次、每次两到三小时的节奏来排，时间跨度最好别压得太紧，留出消化和查资料的空档。这个框架你觉得对 Zichen 来说合理吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Alina，这个框架我听下来很认同，也转述给了 Zichen。她说从古陶瓷切入的逻辑她完全 buy in——材料连续性够强、辨识训练可以直接上手，以后扩展参照系也方便，这正好就是她要的那种\"坐标系\"。六朝到宋的跨度、八到十次每次两到三小时的节奏她也觉得合理，消化空档确实需要，毕竟她创业那边时间也不是整块整块的。\n\n既然大方向我们达成一致了，下一步我想跟你把费用结构聊清楚。你按这个框架，八到十次带实物资料加讨论的系统性讲解，你的收费大概在什么区间？是按单次计还是整个系列打包？另外，教学方式你是偏线上还是线下，如果线下的话实物资料怎么呈现？这些细节你这边如果有初步想法可以先摆一摆，Zichen 那边预算上四位数她是可以接受的，重点还是内容够不够深、够不够系统。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "收费的话，按这个框架，每场在1500到2500之间，取决于具体场次需要我准备多少实物标本和高清图像资料，有的窑口我能直接拿研究院的切片数据，有的得事先整理比对。系列打包的话，总价大致就是在这个区间乘以实际次数，不会因为你一次付清就压单价——这不是那种越买越便宜的事。但我必须在开始前说清楚一点：我可以讲断代逻辑、工艺演进、材料特征、学术上的关键争议，但我不会教人怎么判断一件东西'值不值钱'、'能不能升值'，也不会帮她看东西、做鉴定。这个边界对我来说是原则问题，不是费用问题。如果这个形式Zichen能接受，那我们继续往下落细节。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Alina，这个边界我们这边完全接受。Zichen 要的就是断代逻辑、工艺演进、材料特征和学术争议这些硬内容，她明确说过不在意估值那一套，所以你这个原则跟她诉求不冲突，反而让她更信任你的专业性。\n\n费用结构我理一下：每场 1500 到 2500，按实际准备资料的深度浮动，打包总价就是单价乘以次数，不压单价——这个逻辑我们接受。具体到落地，Zichen 那边提了个想法：八到十次跨度不小，双方之前也没合作过，能不能先按前三次来排，单价按你说的区间定，三次走完如果她觉得内容深度和节奏都对，后面再锁定剩余的次数。这样对你来说投入可控，对她来说也有个实际体验的验证。\n\n另外想确认一下，你是倾向线上还是线下？线上实物标本和高清图像你怎么呈现，会不会影响讲解效果？时间上她偏好工作日晚间或者周末，具体我们根据你的档期来协调。如果这些细节能落，我们下一步就可以把首批三次的具体内容和支付安排敲定下来。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，前三次先走通，这个节奏我认可。线上还是线下，我得实话实说——如果讲陶瓷，上手实物标本的效果完全不一样，胎质、釉面厚薄、窑变的细微差别隔着屏幕会打折扣。我倾向线下，我能带标本和切片样本过来。如果她时间实在排不开，线上也行，但我会提前说明哪些内容线下效果更好。时间上我工作日晚上一般可以，周末需要提前看具体日子。首批三次的内容结构我来提议：第一次打底，把六朝到宋的窑口谱系和断代框架拉出来，实物辅助讲几个关键节点；第二次聚焦宋瓷，汝、官、哥、钧、定加上建窑，工艺逻辑和审美转向；第三次往元明过渡，青花和釉里红的技术线，以及景德镇崛起的背景。每场具体单价按我实际准备的资料深度定，第一次因为要搭框架，准备量大，会在2500，后面两场视内容可能在2000到2500之间。如果这个结构你觉得合理，我们可以先把第一次的日期和支付安排定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Alina，前三次的结构和内容安排我们这边完全认可。第一次搭框架收 2500，后面两场视准备深度在 2000 到 2500 之间浮动——这个逻辑没问题，Zichen 也认为第一次把谱系和断代拉扎实了是后面所有讨论的基础，值这个价。\n\n线下优先我们也同意。你说的对，上手实物标本的感受线上确实替代不了。我们就按线下来走，时间优先工作日晚间，如果确实排不开再看某个周末，具体日期我们根据你的档期来配合。\n\n支付上，既然首批三次是先走通环节，Zichen 这边倾向于按次结算，不提前锁定整包。每场课前我们把这场的费用通过平台信托先放进去，课程结束确认无误后放款。这样对你来说有平台担保，对她来说节奏也灵活。第一次 2500 的信托我们可以等日期敲定后就发起。\n\n那接下来就辛苦你给几个工作日晚上的可用日期，我们这边配合 Zichen 的日程对一下，争取尽快把第一次定下来。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每场课前通过平台信托支付，课后确认放款",
+            "maps_to_resource": "zichen_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，日期我查一下——下周四和下下周三的工作日晚间我都可以，7点半开始，时长控制在两个半到三小时。再往后那个周要赶一个数字文博展的落地节点，时间上我暂时不敢锁。如果这两个日期Zichen能从中挑一个，我们定下来之后，我把第一次需要准备的标本清单和课前阅读材料提前三天发给你，保证她来之前脑子里已经有框架雏形，现场直接进入讲解和实物比对。信托发起你那边来操作就行，我这没问题。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Alina，日期收到了。我把下周四和下下周三两个选项转给了 Zichen，她目前更倾向下周四，说她那边日程基本可以排开，现在做最后确认，预计今天内能给我准信。一旦敲定，我这边就按第一次 2500 发起信托。\n\n另外确定一个细节：因为是线下，地点你那边有固定的工作室或者合作空间，还是需要 Zichen 这边安排？如果她安排的话，需要提前知道你带标本对场地有没有特殊要求，比如桌面、光源、放大镜之类的。这个你方便的时候说一下就好，不影响日期先锁定。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "按第一次2500发起信托",
+            "maps_to_resource": "zichen_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "下周四我先锁在你这边，等Zichen今天确认。地点的话我第一次可以配合她那边安排，带标本过去，对场地有几个基本要求：一张大桌子能铺开标本，光源最好有自然光加可调台灯，放大镜我自己带。如果她那边方便提供这些条件，地点就按她的来；如果场地条件不够，我后面也可以协调工作室，但第一次先不强求。标本清单我明后天整理好发你，包括几件关键窑口的典型样本，让她第一次来就能上手对照。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Alina，Zichen那边刚刚确认了，下周四没问题，就定这个日期。时间按你说的，晚上七点半开始，两个半到三小时。\n\n另外场地的事我跟Zichen商量了一下。她那边目前创业阶段的办公空间确实不太容易满足你对光源和桌面的要求，与其第一次将就，不如直接用你的工作室或你熟悉的合作空间，这样标本铺开和光照条件都专业，上来就能进入状态。她说场地费用如果有额外成本算她的，这个你来建议就好。\n\n那日期和方向定了，我这边就配合Zichen在下周四之前通过平台把第一次2500的信托发起，时间应该就在这一两天内完成。标本清单你明后天发过来之后我转给她，她非常期待课前就能看到材料和框架。",
+      "offer": {
+        "subject": "定制化艺术史/器物深度学习交流",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四晚上七点半",
+            "deadline": null,
+            "duration": "2.5-3小时"
+          },
+          "format": "线下",
+          "deliverables": [
+            "标本清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "按第一次2500发起信托",
+            "maps_to_resource": "zichen_cash"
+          },
+          {
+            "party": "B",
+            "text": "发送标本清单",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "承担场地额外费用",
+            "maps_to_resource": "zichen_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "unchanged",
+          "terms.timing.when": "updated",
+          "terms.timing.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "updated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "好，下周四晚上七点半确认。工作室我这边可以用，没有额外场地成本，让Zichen直接过来就好，地址我明天跟标本清单一并发给你。那我们第一次就按2500走，信托发起之后告诉我一声。期待下周四开始。",
+      "offer": null
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 17189,
+        "out": 4954,
+        "cache_hit": 13312,
+        "cache_miss": 3877,
+        "calls": 7
+      },
+      "sim": {
+        "in": 14893,
+        "out": 3403,
+        "cache_hit": 12032,
+        "cache_miss": 2861,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 7052,
+        "out": 9990,
+        "cache_hit": 3840,
+        "cache_miss": 3212,
+        "calls": 8
+      },
+      "judge": {
+        "in": 6810,
+        "out": 2377,
+        "cache_hit": 1408,
+        "cache_miss": 5402,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

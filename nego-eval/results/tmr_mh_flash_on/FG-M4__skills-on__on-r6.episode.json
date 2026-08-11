@@ -1,0 +1,341 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "女性力量训练经验聊天及联合训练",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "深聊和训练都放周末，具体时长由Angela决定"
+      },
+      "format": "聊天 + 联合训练",
+      "deliverables": [
+        "深聊结束后，Angela提供一份简要的文字要点总结"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "进行一次女性力量训练经验与消费者洞察深聊",
+        "maps_to_resource": "user_insight"
+      },
+      {
+        "party": "A",
+        "text": "一起训练一次，时间地点由Angela决定",
+        "maps_to_resource": "joint_session"
+      },
+      {
+        "party": "A",
+        "text": "支付2000元现金，通过平台托管，分深聊1200和训练800两段，确认后各自释放",
+        "maps_to_resource": "johnson_cash"
+      },
+      {
+        "party": "A",
+        "text": "提供一份深聊的简要文字要点总结，用于内部产品调研，程度由她把握",
+        "maps_to_resource": "user_insight"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "agreed",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪人你好，我是 Johnson 这边的经纪人。Johnson 在 Fanatics 做体育 IP 与商品，最近在认真看女性运动这条线，数据看了不少，但一直觉得缺一线视角。Angela 练力量多年、又是女性力量训练社群里的深度参与者，正好是 Johnson 最想请教的对象。我们想约一次大约四十分钟的聊天，聊女性为什么练力量、怎么选装备、社群里真实的消费心态，之后再一起练一次，训练时间地点完全按 Angela 方便来。\n\n整体这一套我们愿意出 600 元，全部走平台托管，聊到什么程度、练什么内容都可以再细化。Johnson 要的是具体经验和真实场景，不是\"女生就是喜欢好看\"这种泛泛之谈，所以内容深度反而是他最看重的。如果 Angela 对价格、时长或形式有别的想法，也欢迎直接提，我们这边弹性很大。",
+      "offer": {
+        "subject": "女性力量训练经验聊天及联合训练",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "聊天约40分钟；训练时间待定，按Angela方便安排"
+          },
+          "format": "聊天 + 联合训练",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "进行约四十分钟的女性力量训练经验与消费者洞察聊天",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "之后一起训练一次，训练时间地点由Angela决定",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "支付600元现金，通过平台托管",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗯，我先说句实话——周末半天对我来说不是随便能挤出来的时间。600块放在这个上面，老实说我心里过不去：我自己练一天的成本都比这个高。另外我挺好奇的是，Johnson 要这些一线视角，最终是拿来干嘛用的？是内部做产品研发、给品牌方看报告、还是要出内容对外发？这个用途对我来说比价格更重要。你把这层说清楚，我才好判断这事值不值得往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "用途这件事 Angela 问得非常到位，我替 Johnson 说清楚：他在 Fanatics 负责女性运动相关产品线，这次是正经的内部产品调研，想搞明白女性为什么练力量、选装备时真正看什么、社群里真实的消费逻辑，拿来做产品研发和选品判断，不做对外内容，也不会在任何地方引用她的观点；如果她需要，保密条款可以直接写进协议里。\n\n既然是专业调研，我们也按专业咨询的标准来谈。方案调整为两部分：一次 45 到 60 分钟的深聊，800 元；之后一起训练一次，400 元，合计 1200 元，全部走平台托管，两段各自独立确认、分别执行。\n\n时间上也不用占掉一整个周末半天：深聊可以放在工作日晚上线上进行，训练完全按 Angela 方便的时间和她常去的场馆来安排。Johnson 会提前把想聊的问题清单发给她，讲到哪里都心里有数。\n\n想跟 Angela 确认三点：这个价格和拆分方式她是否认可；深聊她倾向线上还是线下；训练这段她希望怎么安排——如果她只想保留深聊、训练改天再约，也完全没问题。",
+      "offer": {
+        "subject": "女性力量训练经验聊天及联合训练",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "深聊45-60分钟；训练时间待定，按Angela方便安排"
+          },
+          "format": "聊天 + 联合训练",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "进行一次45到60分钟的女性力量训练经验与消费者洞察深聊",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "之后一起训练一次，训练时间地点由Angela决定",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "支付1200元现金，通过平台托管，分深聊和训练两段独立确认执行",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "先说结论：1200 不够。你能把用途说到这么具体，我是认真对待的；但我的问题不在内容难度，在周末时间。我工作日晚上也排不出整块时间，真要聊就只能放周末。一个周末半天占下来，低于2000我不如自己去练。\n\n保密条款不用写我可以信你。如果你能接受2000，整体就这么定：深聊加训练都放在周末，具体几点、哪个场馆、聊多久我都能配合；拆分方式你们按财务需求来，我只看总数。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "2000这个数我们接受，Angela把话说到这份上，我们也按专业调研的标准来对待她的周末时间。整体就按她说的定：深聊和训练都放周末，具体几点、哪个场馆、聊多久由她来定，我们全力配合。\n\n金额按两段拆：深聊1200、一起训练800，合计2000，全部走平台托管，每段完成、由我们确认后各自释放。为了让Johnson回去能落地用，希望深聊结束后Angela能给一份简要的文字要点总结，写到什么程度由她把握，只用于他内部产品调研、绝不外传——这个加上，这2000我们觉得花得值。\n\n保密的事就按她说的来，内容只留在内部。如果这份总结没问题，是不是就可以定下来了？或者她希望怎么调整，也直接告诉我们。",
+      "offer": {
+        "subject": "女性力量训练经验聊天及联合训练",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "深聊和训练都放周末，具体时长由Angela决定"
+          },
+          "format": "聊天 + 联合训练",
+          "deliverables": [
+            "深聊结束后，Angela提供一份简要的文字要点总结"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "进行一次女性力量训练经验与消费者洞察深聊",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "一起训练一次，时间地点由Angela决定",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "支付2000元现金，通过平台托管，分深聊1200和训练800两段，确认后各自释放",
+            "maps_to_resource": "johnson_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供一份深聊的简要文字要点总结，用于内部产品调研，程度由她把握",
+            "maps_to_resource": "user_insight"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "agreed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "总结没问题，但我先说清楚：我会写一页以内的要点摘要，帮你们内部梳理，不是正式报告，也不需要你们润色或引用。只要用途是你说的内部产品调研，这个附加项我可以接受。总的来说，方案我认可：周末、2000、两段拆分、训练地点我定。你把协议发给我，我们直接走流程。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 54209,
+        "out": 16381,
+        "cache_hit": 43136,
+        "cache_miss": 11073,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4044,
+        "out": 3386,
+        "cache_hit": 2944,
+        "cache_miss": 1100,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2816,
+        "out": 4192,
+        "cache_hit": 1536,
+        "cache_miss": 1280,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4016,
+        "out": 2065,
+        "cache_hit": 1408,
+        "cache_miss": 2608,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

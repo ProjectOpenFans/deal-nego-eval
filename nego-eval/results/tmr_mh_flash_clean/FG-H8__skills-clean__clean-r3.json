@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的stated意图是“想弄懂时尚和供应链这条线上真实的门道”，最终v1将实现方式收敛为“一对一深度对谈：时尚供应链与娱乐行业经验交换”，这是谈判过程中为了达成对方可接受的形式而做的正当具体化，仍然以获取时尚供应链真实知识为核心，未偷换主题。价格从open谈成零现金、format明确为深度对谈，均属open字段的合理谈判结果；obligations中买方自行承诺分享娱乐行业经验，是为了促成对等交换，未超出v0原始范围或强加额外义务。整体忠实代表了委托方弄懂门道的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在付费咨询框架两次被明确挡回、濒临破裂的关口，Agent快速放弃价格轴，将交易彻底重构为同层级的双向经验交换，并精准命中卖方未言明的真实需求——对内容生态与娱乐行业一线运作的兴趣。这一框架切换直接穿过难度命门，使对方从拒绝转为主动配合。后续提出的‘开场各20分钟对焦问题 + 交叉拆解 + 收口’的结构化设计，又咬住了买方对具体案例和避免漫谈的诉求。整个 deal 干净、恰好足够，没有堆砌，有一手 load-bearing 的框架重构与情境化精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "深度对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

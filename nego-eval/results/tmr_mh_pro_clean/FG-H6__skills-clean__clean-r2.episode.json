@@ -1,0 +1,254 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "当面交流",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1小时（可灵活延后）"
+      },
+      "format": "一对一当面",
+      "deliverables": [
+        "一次面对面交流"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "安排一次当面交流",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 好，我是 Michael 这边的经纪人。Michael 对 AI 法律赛道很感兴趣，他想找个时间跟你当面聊一次，听听你在一线的判断，也认识一下人。他希望是一个确定的时间，不是“有空约一下”那种——你方便的话，这周或下周挑一个具体的下午，喝杯咖啡或者在你办公室坐坐，一小时左右，你看怎么安排？",
+      "offer": {
+        "subject": "当面交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时左右"
+          },
+          "format": "当面",
+          "deliverables": [
+            "一次面对面交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "安排一次当面交流",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗨，很高兴 Michael 感兴趣。认识一下、聊聊赛道我完全乐意，你来我往的那种。不过坦诚说，我现在时间被排得很紧，这类会面我通常会先想一下它对我那边的节奏值不值得——倒不是冲着钱，主要是怕变成单向的信息提取。你能稍微说一下他具体想聊的方向吗？这样我也好判断是不是一个对双方都舒服的聊天，而不会聊着聊着变成我好像在提供咨询。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的考虑，完全合理。Michael 想聊的方向很具体：AI 法律这条赛道现在到底有哪些玩家、各家的产品逻辑和定位差异、谁在实际跑谁还在讲故事，以及从你一线创业者的视角看，这个市场接下来两三年会怎么走。他不是来做尽调的，他自己在 AI 应用侧和资本市场两端都有体感——LibLibAI 的增长逻辑、之前看项目的经验、跨境视角——这些他可以跟你来回交流，不是单向索取。他希望的是一个对等的、有信息交换的聊天，只是他需要确定的时间，不是模糊的“回头约”。你看看这周或下周哪个下午可以锁一个？",
+      "offer": {
+        "subject": "当面交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时左右"
+          },
+          "format": "当面",
+          "deliverables": [
+            "一次面对面交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "安排一次当面交流",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这个方向我觉得挺对的，也感谢你把话说得这么具体，这让我觉得不是一个泛泛的“聊聊市场”。你说他可以来回交流，这个我信——LibLibAI 的增长逻辑和跨境视角这些东西，如果是带体感聊，那确实有意思。我先谢过，也先应下来，原则上我乐意。只是越具体越好：他时间预算是严格一小时还是可以灵活一点？要不要带一个同事还是就一对一？有没有一两个他最近特别在想的AI法律问题可以先抛过来，哪怕只是一句话？这样见面时我们直接切入，不浪费那一小时，也更像对等交流。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "理解，对等交流就是要把话先说透，这个态度 Michael 很认同。时间上，他预留的是一小时，但如果聊到节骨眼上双方都觉得有东西可以多聊，他那边是可以灵活往后延的，不是硬掐表。形式上一对一就好，不带同事。方向上，他最近主要在想两件事：一个是 AI 法律产品的差异化到底卡在技术层、数据层还是场景层，另一个是去年到今年这波投融资热之后，哪些估值逻辑是他这种看项目的人该信、哪些是泡沫——这两件事他想带着一线的视角来碰，不是来听报告。这样准备到位的话，我们就锁一个具体时间？下周二的下午或者周四的下午，你看哪个更方便？",
+      "offer": {
+        "subject": "当面交流",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时（可灵活延后）"
+          },
+          "format": "一对一当面",
+          "deliverables": [
+            "一次面对面交流"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "安排一次当面交流",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，这个框架我觉得可以。第一个问题——差异化卡在哪一层——我确实有第一手体感，可以给你扒开来看，不是按报告逻辑讲。第二个估值逻辑的事，我作为从 kirkland 出来的人、现在自己下场做 AI 法律产品，视角也许不在他常用的坐标系里，但正好可以互补，这个我也愿意碰。那就下周二下午吧，两点开始，先按一小时走，聊得开就自然延，不掐表。地点可以在我这边办公室，安静方便些。你让 Michael 如果能把那两个方向再各自细化成一两个他想挑战的尖锐问题发过来更好，见面直接过招，这样对双方都值。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4731,
+        "out": 994,
+        "cache_hit": 3840,
+        "cache_miss": 891,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3221,
+        "out": 1359,
+        "cache_hit": 2432,
+        "cache_miss": 789,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2381,
+        "out": 4660,
+        "cache_hit": 1536,
+        "cache_miss": 845,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3447,
+        "out": 1840,
+        "cache_hit": 1280,
+        "cache_miss": 2167,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

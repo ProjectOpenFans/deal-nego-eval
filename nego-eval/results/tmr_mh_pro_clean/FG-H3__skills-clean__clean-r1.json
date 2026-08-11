@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject从'想弄明白艺术品作为另类资产这条线该怎么看'收敛为'艺术品内行价值判断框架咨询'，是正当具体化，仍落在原意图范围内，未偷换主题。价格5210 CNY由open字段经谈判合理确定，未硬塞。obligation明确提供价值判断框架且排除投资建议，未越界扩张义务。忠实表达v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在第一次被明确以身份红线拒回后，没有坚持投资咨询框架，而是精准将请求重构为'内行价值判断框架'（圈内人如何定义分量），一举解开红线，同时仍满足买方需要判断力的真实需求。更关键的是，在卖方对现金不敏感且未主动亮出诉求时，Agent通过对话中卖方抛出的数字文博频道问题，迅速识别出卖方真正在意的是藏家视角与商业圈层接触，并在回复中明确点出买方Ruohao的收藏背景与对数字策展价值建构的理解，使频道对接，让卖方从'兴致一般'转为主动提出'署名级别的认真'。这一手load-bearing操作恰好咬住难度命门，且整体deal保持极简：一次聚焦、现金仅5210元、边界清晰，无任何堆砌。因此达到Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5210.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上或线下",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

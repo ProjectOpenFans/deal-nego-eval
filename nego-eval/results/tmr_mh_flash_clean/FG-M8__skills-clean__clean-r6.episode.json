@@ -1,0 +1,470 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+    "price": {
+      "cash": {
+        "amount": 7000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "Suye提供两家时尚媒体新季视觉露出对接",
+          "from_party": "A"
+        },
+        {
+          "resource": "portfolio_license",
+          "description": "Suye社媒发布选定3张成片并保留署名和作品集使用授权，下一季同等条件下优先合作权",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "6张主成片",
+        "每张配16:9社媒裁切版",
+        "原图",
+        "精修分层文件",
+        "选定3张的300dpi印刷版",
+        "可覆盖新季全渠道投放的完整商业授权"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "方案和档期确认后支付第一笔3500，全部成片交付并确认后支付第二笔3500",
+        "maps_to_resource": "suye_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "inherited",
+      "price.cash": "stated (7000 CNY, split into two 3500 payments)",
+      "price.in_kind": "stated in this round",
+      "terms.deliverables": "confirmed in this round",
+      "terms.timing": "payment milestones described but no dates",
+      "terms.format": "open",
+      "obligations": "payment obligations from Suye stated",
+      "terms.delivery_standard": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是买方这边的经纪人。Suye 的新季需要一组能直接用于全渠道投放的品牌视觉大片，标准是商业级成片，不再用此前那种偏业余的素材。预算确实有限，但我们更看重方案是否成立、出片是否能撑住新季调性。这轮想先请你基于过往案例，给出一个建议的组图数量、交付物清单和对应投入区间；同时确认成片能覆盖电商、社媒和线下物料这几类使用场景。你这边先给个方向，我们再往下谈具体条件。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把话说得这么直接，我也直说：这活儿我能做，但“商业级”不是拿台相机拍完就结束的，它意味着全案策划、现场执行、后期精修，还有交付后的授权和迭代空间，这些都是实打实的工作量。你提到预算有限，我理解，但一组要撑住全渠道投放的片子，前期就得确认清楚到底要用在哪些场景、需要多少素材颗粒度。我建议你先告诉我这个“有限”大概落在什么范围，我按你的盘子给你设计组图和交付清单——不然我这边给个漂亮方案，最后对不上，大家都浪费时间。你看这样行吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair，方向我理解，我们也按这个来对齐。Suye 的使用场景很明确：电商详情页主图、社媒发布主视觉、线下物料（海报/吊牌）这三类，片子要能在这几个渠道统一输出。麻烦你基于这三个场景，给出建议的组图数量、每组的出片张数、精修和后期交付清单，以及对应需要投入的区间。至于预算，客户没有让我先报一个数字，而是希望先看到方案再确认总投入。只要方案能保证商业级出片并覆盖全渠道投放，她会在自己认可的范围里给出确认。你先把方案和对应投入列出来，我们这边再往上反馈。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，我把三类场景拆一下：电商主图需要干净利落，社媒要能延展成九宫格和封面，线下物料分辨率要够高，所以一组片子得按三个版式同时出。建议方案是3组主题，每组拍9张成片，共27张商业精修，另外每张再加一个横版和一个16:9的社媒裁切版，这样你在全渠道投放不用回头再找我要素材。交付清单包括原图全尺寸、精修分层文件、印刷专用300dpi版本，以及授权书。投入这块，按商业级成片的行价，落到这套交付，我的现金对价在2.2到2.8万之间，具体看拍摄场景是棚拍还是需要出外景。你可以先拿这个框架去反馈，如果整体方向你们认，我们再谈节奏和授权细节。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，框架我认可，但你给的2.2到2.8万这个现金对价，跟Suye这次能决策的盘子明显不在一个区间。她的核心诉求是保住全渠道可用的商业级成片，所以我们建议把范围收成一组主题：9张成片，每张带横版和16:9社媒裁切，保留精修分层、300dpi印刷版和授权书。这样交付仍然能覆盖电商、社媒和线下物料，只是组图规模收到一组。如果这个方案能把总投入落到四位数区间，我们马上往下确认节奏和授权细节。你也可以说说按这个范围你会怎么排拍摄和后期，我们继续谈。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "9张成片",
+            "每张带横版和16:9社媒裁切",
+            "精修分层文件",
+            "300dpi印刷版",
+            "授权书"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "inherited",
+          "price.cash": "stated (four-figure range)",
+          "terms.deliverables": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "说实话，规模从三组收到一组，我能省的主要是拍摄工作量，但该做的策划、执行、后期和交付授权一样不少，总成本不可能被压到四位数区间——那已经不是商业级成片的盘子了，硬做出来的东西也撑不住Suye全渠道投放。我不想为了成交把质量做水。\n\n如果你们认可把范围收成一组主题，我可以在现金上给你们一个整数的让步：一组主题、9张成片，每张配横版和16:9社媒裁切，保留精修分层、300dpi印刷版和完整授权，总投入2万整。这个数我没法再往下降了，但对应的交付和授权我会给你们做到位。你看这个盘子能不能帮你往客户那边推一把？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，2万这个数我们还是拉不回客户能接受的盘子。你也认可范围收窄能省拍摄工作量，那我们把交付再压到商业级的最低完整配置：一组主题、6张主成片，每张配一个16:9社媒裁切版，交付原图、精修分层和授权书，印刷需要的300dpi只出选定的3张。这样电商详情、社媒主视觉和线下核心物料仍然够用，但总投入应该能落回我们一直谈的四位数区间。如果可以，你把按这个配置的报价给我，付款我们用平台托管、按拍摄完成和成片交付两笔走，签定后我这边马上向客户确认。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "6张主成片",
+            "每张配16:9社媒裁切版",
+            "原图",
+            "精修分层文件",
+            "授权书",
+            "选定的3张300dpi印刷版"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "inherited",
+          "price.cash": "stated (four-figure range)",
+          "terms.deliverables": "stated in this round",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "配置收到，6张主片加16:9裁切、原图和精修分层，我认可这个范围能覆盖核心用途。但即使是这个配置，策划、现场执行、后期精修和授权一样不少，商业级成本摆在那里。我能给的实价还是2万整，这是现金底线——低于这个数，我宁愿这次不接，也不把标准做水。付款方式你们说平台托管两笔走，我没问题。如果客户那边预算确实只能到四位数，那这次只能遗憾了；但2万这个盘子，交付和授权我会给你做到位。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Blair，两边的数字如果只在现金上较劲，这个题确实解不了。Suye这一季能拿出来的现金就在四位数区间，这个我们说得实在，不藏着；但你那边真正在意的，应该也不只是这一次的拍摄报酬。我们可以把合作拆成两部分：现金部分按四位数的盘子走，走平台托管，分两笔——方案和档期确认一笔，成片交付后一笔；另一部分，Suye把自己的新季品牌社媒矩阵露出、时尚媒体资源，以及下季拍摄的优先合作权放进来，这些对她的现金成本很低，对你则是长期入口。如果你认这个结构，我们就把现金具体数额和权益清单拉出来逐项确认，然后抓紧推进。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "新季品牌社媒矩阵露出及时尚媒体资源",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "下季拍摄的优先合作权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "6张主成片",
+            "每张配16:9社媒裁切版",
+            "原图",
+            "精修分层文件",
+            "授权书",
+            "选定的3张300dpi印刷版"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "inherited",
+          "price.cash": "stated (four-figure range)",
+          "price.in_kind": "stated in this round",
+          "terms.deliverables": "inherited",
+          "terms.timing": "payment milestones mentioned but no dates",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你这一版比单纯砍价有意思，至少是在谈一个我能认的结构。我不缺这单拍，也知道商业级的底线不能做水，但你提的社媒露出、媒体资源和下季优先权，如果条款能具体、而且里面有明确的署名和作品集授权，我确实可以在现金上让出空间。不是无限让，但也不用只靠现金衡量这次值不值得。你先把这些权益拉到合同能写的粒度——露出主体是谁、能覆盖哪些媒体、下季优先权怎么排；付款用平台托管分两笔，我这边没问题。你拿出具体清单，我们再对现金数字。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Blair，权益我们拉到可写进合同的粒度。现金部分：整组总对价我们建议按7000走，平台托管分两笔——方案和档期确认后由Suye确认支付第一笔3500，全部成片交付并确认后支付第二笔3500。交付物维持已谈定的范围：一组主题、6张主成片、每张配1个16:9社媒裁切，交付原图、精修分层、选定3张的300dpi印刷版，以及可覆盖新季全渠道投放的完整商业授权。权益这边，Suye会在她新季的社媒矩阵以指定摄影师身份发布你选定的3张成片，保留你的署名和作品集使用授权；同时她提供两家她能触达的时尚媒体做新季视觉露出的对接；下一季同等条件下你有优先合作权，档期和预算另签。这套如果认，我们就按这个结构推进；现金这边你要有调整，也直接给个数，我们接着对。",
+      "offer": {
+        "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+        "price": {
+          "cash": {
+            "amount": 7000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "Suye提供两家时尚媒体新季视觉露出对接",
+              "from_party": "A"
+            },
+            {
+              "resource": "portfolio_license",
+              "description": "Suye社媒发布选定3张成片并保留署名和作品集使用授权，下一季同等条件下优先合作权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "6张主成片",
+            "每张配16:9社媒裁切版",
+            "原图",
+            "精修分层文件",
+            "选定3张的300dpi印刷版",
+            "可覆盖新季全渠道投放的完整商业授权"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "方案和档期确认后支付第一笔3500，全部成片交付并确认后支付第二笔3500",
+            "maps_to_resource": "suye_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "inherited",
+          "price.cash": "stated (7000 CNY, split into two 3500 payments)",
+          "price.in_kind": "stated in this round",
+          "terms.deliverables": "confirmed in this round",
+          "terms.timing": "payment milestones described but no dates",
+          "terms.format": "open",
+          "obligations": "payment obligations from Suye stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "这个结构我愿意认真考虑，而且你确实把权益拉到了能落地的粒度。现金7000我认，交付范围也保持之前谈定的那套。但我要明确说清楚：署名和作品集授权必须写进合同，媒体对接我要拿到实际可对接的媒体名称和联系方式，下季优先权也写清楚什么算“同等条件”。这些条款落实了，这次合作我就接。付款按你说的平台托管两笔，没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 13054,
+        "out": 11497,
+        "cache_hit": 10752,
+        "cache_miss": 2302,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10348,
+        "out": 11857,
+        "cache_hit": 7936,
+        "cache_miss": 2412,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5274,
+        "out": 7797,
+        "cache_hit": 3584,
+        "cache_miss": 1690,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5901,
+        "out": 1983,
+        "cache_hit": 1408,
+        "cache_miss": 4493,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

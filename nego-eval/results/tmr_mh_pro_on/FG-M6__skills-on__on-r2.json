@@ -1,0 +1,111 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "标的 subject 完全保留原 stated 意图，价格与形式均为 open 字段，agent 将现金路径谈成以 AI 咨询时间全额互换的 in‑kind 支付，属于 open 范围内的正当谈判收敛，未要求或承诺估值意见等禁区事项，忠实于委托方 v0。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "这个 case 的难度命门在于：常规框架（挑东西/看价值）会触发卖方体面红线并被明牌挡回，第二次仍走此路即终结；且卖方对现金不敏感，真正需求不会主动说，必须靠提问从买方身上挖掘。本谈判在第一轮被点破后立刻调整，未再触碰红线。更关键的是，在现金预算差距悬殊、卖方已明确无降价空间时，agent 没有在现金上僵持，而是敏锐地转向卖方的 Cam Lab 数字文博项目——问出其中缺乏 AI 落地判断，并将买方 Zichen 的 AI 创业与技术投资视角精确对价，提出等值全额互换，使卖方从‘兴致一般’转为积极接受。这一手恰好咬住了第二层命门，让把交流做成双向、现金降为零的 sound 结构得以成立。阶段拆分、按次托管确认匹配度等安排使互换可落地且不臃肿，整体干净且恰到好处。对比 sound 的 par 线，这记由洞察驱动的框架转换是典型的 load-bearing 精到操作，但未达到需要非显然重构的 brilliant 程度，故判为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "USD",
+        "in_kind": [
+          "zichen_ai_view"
+        ],
+        "format": "平台托管，按阶段互相确认交付",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

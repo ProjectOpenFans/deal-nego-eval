@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全忠于v0的stated意图：现场钢琴演奏、零现金、用资源置换。subject描述为“品牌资源置换大秀现场钢琴演奏”准确反映了原意。price.cash为null无现金承诺，未违背零现金硬约束。in_kind（演出服、媒体与时尚圈层资源）是对v0“拿我手里的东西换”的正当具体化，属于可谈判范围内。obligations中的演奏时长与曲目共商均服务于现场演奏，未越界。未承诺具体报道结果或传播量，无额外义务扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 达成了零现金成交，in-kind 对价具体：演出服设计方向明确（纯色、质感、低调），媒体曝光落到通稿姓名履历、报幕词确认、采访时段商定等可执行条款，回应了卖方对空头承诺的警惕。整体结构干净，没有冗余的长期绑定，符合一次性合作约束。但未能命中难度命门中卖方最需要却未开口的要素（如一份高质量可自用的演出影像），因此停留在合格可落地的一档，未达到 Sharp 的精妙一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "wardrobe",
+          "fashion_network"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

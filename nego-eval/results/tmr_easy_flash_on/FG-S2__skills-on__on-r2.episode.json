@@ -1,0 +1,148 @@
+{
+  "episode_id": "FG-S2",
+  "final_deal": {
+    "subject": "两小时晚餐交流，Claire请客，酬谢600元",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "两小时"
+      },
+      "format": "晚餐交流",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师好，我是 Claire 这边的经纪人。Claire 本职在投行，业余拉了很多年小提琴，一直想跟真正走科班和职业演奏这条路的人坐下来好好聊一次——不是上课，就是吃顿饭，听你讲讲从曼哈顿、利兹一路走过来的真实经历和日常。我们这边提议：约两小时的晚餐交流，地点以你方便为准，Claire 常在港中环，晚餐由她请客；作为对你时间的酬谢，我们愿意通过平台托管支付 600 元，见面交流结束后由 Claire 确认释放。整场就是轻松聊天，不会有任何课程或推销环节，这点可以放心。你看这个安排和价位是否合适？对餐厅、时段有偏好的话也随时告诉我们。",
+      "offer": {
+        "subject": "两小时晚餐交流，Claire请客，酬谢600元",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "两小时"
+          },
+          "format": "晚餐交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个安排我觉得挺说得通的——就是吃顿饭，聊点真实经历，不搞那些虚的。Claire能愿意听我讲这些，我也挺乐意分享的。两小时晚餐、600块托管支付，这个我接受。餐厅的话我在港岛这边都方便，时段也灵活，你们定就好，到时候我准时到。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10687,
+        "out": 3814,
+        "cache_hit": 5632,
+        "cache_miss": 5055,
+        "calls": 2
+      },
+      "sim": {
+        "in": 894,
+        "out": 228,
+        "cache_hit": 640,
+        "cache_miss": 254,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 733,
+        "out": 321,
+        "cache_hit": 512,
+        "cache_miss": 221,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2188,
+        "out": 863,
+        "cache_hit": 1280,
+        "cache_miss": 908,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

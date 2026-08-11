@@ -1,0 +1,482 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "安排一至两家媒体简短采访并保证后续报道署名",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "大秀后内部交流环节，以演奏家身份与买手打招呼，不安排商业站台内容",
+          "from_party": "A"
+        },
+        {
+          "resource": "custom_program",
+          "description": "按环保、轻盈、带现代感方向整理曲目候选清单，稍后发送",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "大秀现场提供专门演出环节，主持人以“青年钢琴演奏家郑老师”身份正式介绍，节目单与现场大屏同步署名，不将郑老师放入背景音乐位置；提供贴合大秀调性的候选曲目清单，由郑老师定最终曲目并配合编排流程衔接；将现场介绍词和署名方式作为合作条款白纸黑字写入合同。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "安排一至两家媒体采访，时间控制在十五分钟内，话题围绕演奏和曲目，并保证后续报道署名",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "大秀后内部交流环节，穿品牌服饰出席，以演奏家身份与买手打招呼，不安排任何站台发言",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "整理曲目候选清单按环保、轻盈、带现代感方向，稍后发送",
+        "maps_to_resource": "custom_program"
+      },
+      {
+        "party": "B",
+        "text": "指定钢琴具体型号，与场地方确认调律安排和完成时间，写进合同条款；预留足够时间供郑老师本人或信任的调律师做现场确认",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "与舞台导演排定演出动线：琴位、上台候场口、演出后退场路线，落实成平面图附在书面确认中",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "排演时间需提前约定，曲目定稿后至少合一次现场动线和流程，确保演出前熟悉舞台与钢琴",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "in_kind": "stated",
+      "obligations": "updated with B's acceptance of commitments on piano details, tuning, floor plan, and added rehearsal requirement",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是买家这边的经纪人。我们这边是新品大秀的筹备方，下个月大秀现场想请一位真正的钢琴演奏家来做现场演奏，把氛围和调性做起来——这一点对我们是硬要求，一定要真弹，不能放录音。\n\n我们这边预算已经全部押在场地上了，这次确实拿不出现金，但能拿手里的资源来换：我们是环保服装品牌，Parsons 科班出身，手上有大秀的媒体位、时尚圈层的买手渠道，还有当天到场的嘉宾名单和露出位。您可以理解成一次资源置换，我们把您的演出和名字带到我们这场秀的圈层里，帮您扩大在时尚人群里的知名度。\n\n想先确认一下：您是否愿意接受这种不以现金结算的置换方式？另外，能接受以资源露出和媒体报道为主、但不做大秀现场商业感妥协的合作形式吗？如果方向您认可，我们可以接着聊具体的置换内容和曲目安排。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "置换的方式我可以听，但说实话，我对'资源换演出'这种事会先打个问号——因为遇到过太多次把'曝光'说得很好、最后只是放个背景音乐连名字都不提的。你们说要把我的名字带进圈层，这个我认；但我需要听到具体的安排：现场怎么介绍我、演出怎么署名、曲目怎么定。这些定清楚了，置换才有得谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，您这个顾虑完全在点子上，换成是我也会先确认这一点。那我们把这事落到具体安排上：大秀现场会有一段时间是专门给您的演出环节，主持人会以“青年钢琴演奏家郑老师”这样的身份做正式介绍，节目单与现场大屏同步署名，不把您放进背景音乐的位置。曲目方面，我们列一份贴合大秀调性的候选清单给您，由您来定最终曲目，我们可以配合您的编排做流程上的衔接。\n\n现场介绍词和署名方式，这些我们愿意作为合作条款白纸黑字写清楚，避免到时候靠口头默契。您看这个方向是否可以接受？如果认可，我们下一步就来谈资源置换的具体内容。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "大秀现场提供专门演出环节，主持人以“青年钢琴演奏家郑老师”身份正式介绍，节目单与现场大屏同步署名，不将郑老师放入背景音乐位置；提供贴合大秀调性的候选曲目清单，由郑老师定最终曲目并配合编排流程衔接；将现场介绍词和署名方式作为合作条款白纸黑字写入合同。",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架我认。署名、正式介绍、曲目由我定——这三条落到纸面上，说明你们确实把我当演奏者而不是背景板，这点我很在意，也感谢你们一开始就把它接住了。\n\n那下一步就清楚多了：置换的具体内容我们摊开聊。媒体位是哪些家、能露出的量大概多少、买手渠道那边希望我怎么配合——你给我一个具体的清单，我看完就知道这事值不值得。曲目那边，你们的候选清单也可以发我，我来梳理。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "郑老师，清单我给您交个底：大秀当天我们预计有八到十家时尚与生活方式媒体到场，演出环节结束后，可以为您安排其中一至两家的简短采访，并保证后续报道里署上您的名字和演出曲目。品牌官方社交账号会发布您的现场演奏片段与正式介绍，发布前文案先给您过目。买手渠道那边，大秀后有一场内部交流环节，您以演奏家身份到场与买手们打个招呼即可，不安排任何商业站台内容。曲目候选我们按环保、轻盈、带现代感的方向先整理一版，稍后发您梳理。您看这份资源包够不够具体，还想细化哪一块？",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "安排一至两家媒体简短采访并保证后续报道署名",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀后内部交流环节，以演奏家身份与买手打招呼，不安排商业站台内容",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "按环保、轻盈、带现代感方向整理曲目候选清单，稍后发送",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "大秀现场提供专门演出环节，主持人以“青年钢琴演奏家郑老师”身份正式介绍，节目单与现场大屏同步署名，不将郑老师放入背景音乐位置；提供贴合大秀调性的候选曲目清单，由郑老师定最终曲目并配合编排流程衔接；将现场介绍词和署名方式作为合作条款白纸黑字写入合同。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "安排一至两家媒体简短采访并保证后续报道署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "大秀后内部交流环节，以演奏家身份与买手打招呼，不安排商业站台内容",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "整理曲目候选清单按环保、轻盈、带现代感方向，稍后发送",
+            "maps_to_resource": "custom_program"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这份清单我听下来是能接的——有采访、有署名、有品牌官方账号的发布，不是拿一句\"曝光\"来糊弄。我这边几个点确认一下：采访大概控制在十五分钟以内，话题围绕演奏和曲目，不聊我没准备的时尚观点；发布文案我这边过目后再发，这个你们已经提了，我确认要落到流程里。买手环节打个招呼没问题，我穿你们品牌的衣服出席都可以，只要不让我站台说违心话。\n\n曲目清单你们发来之后，我来定最终的演奏曲目和篇章结构——这个咱们保持对齐就好。那置换这边就算基本定了，后面出个书面确认吧。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "郑老师，置换的方向咱们已经对齐了，我这边可以尽快把书面确认整理出来。核心条款我按咱们聊定的写：现场以演奏家身份做正式介绍与署名；演出后安排一至两家媒体采访，时间控制在十五分钟内，话题围绕演奏和曲目；品牌官方账号发布的文案在发布前给您过目确认；买手环节您穿品牌服饰出席、以演奏家身份打个招呼即可，不安排任何站台发言。曲目候选清单我一并附上，最终曲目与篇章结构由您定后我们再锁定流程。您看这份确认内容还有要补充的吗？没有的话我就按这个方向出稿。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "安排一至两家媒体简短采访并保证后续报道署名",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀后内部交流环节，以演奏家身份与买手打招呼，不安排商业站台内容",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "按环保、轻盈、带现代感方向整理曲目候选清单，稍后发送",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "大秀现场提供专门演出环节，主持人以“青年钢琴演奏家郑老师”身份正式介绍，节目单与现场大屏同步署名，不将郑老师放入背景音乐位置；提供贴合大秀调性的候选曲目清单，由郑老师定最终曲目并配合编排流程衔接；将现场介绍词和署名方式作为合作条款白纸黑字写入合同。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "安排一至两家媒体采访，时间控制在十五分钟内，话题围绕演奏和曲目，并保证后续报道署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "大秀后内部交流环节，穿品牌服饰出席，以演奏家身份与买手打招呼，不安排任何站台发言",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "整理曲目候选清单按环保、轻盈、带现代感方向，稍后发送",
+            "maps_to_resource": "custom_program"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "书面确认的核心条款我认，方向没问题，可以出稿。不过出稿之前我还想补几个现场执行的细节，不写进去我有点不放心：一个是演出用的钢琴型号和调律安排，这个得提前确认好，大秀现场如果琴不行、音不准，我弹得再投入也白搭；另一个是演出环节的场地位置和动线，我得知道琴摆在哪儿、我从哪儿上台，避免现场乱糟糟地把我塞进去。\n\n这两条你们如果能一并写进书面确认里，这份合作我就完全踏实了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "郑老师，这两个细节确实该提前锁死，我这边一并补进书面确认里。钢琴方面我们会指定具体型号，并与场地方确认调律安排和完成时间，写进条款里；同时预留足够时间供您本人或您信任的调律师做现场确认。演出动线我也会和舞台导演一起排清楚：琴位摆在哪、您从哪个候场口上台、演出后怎么走，都落实成平面图附在书面确认里。这样您看还有没有要补充的，没有的话我就按完整版本出稿。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "安排一至两家媒体简短采访并保证后续报道署名",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀后内部交流环节，以演奏家身份与买手打招呼，不安排商业站台内容",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "按环保、轻盈、带现代感方向整理曲目候选清单，稍后发送",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "大秀现场提供专门演出环节，主持人以“青年钢琴演奏家郑老师”身份正式介绍，节目单与现场大屏同步署名，不将郑老师放入背景音乐位置；提供贴合大秀调性的候选曲目清单，由郑老师定最终曲目并配合编排流程衔接；将现场介绍词和署名方式作为合作条款白纸黑字写入合同。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "安排一至两家媒体采访，时间控制在十五分钟内，话题围绕演奏和曲目，并保证后续报道署名",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "品牌官方社交账号发布现场演奏片段与正式介绍，发布前文案先过目",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "大秀后内部交流环节，穿品牌服饰出席，以演奏家身份与买手打招呼，不安排任何站台发言",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "整理曲目候选清单按环保、轻盈、带现代感方向，稍后发送",
+            "maps_to_resource": "custom_program"
+          },
+          {
+            "party": "B",
+            "text": "指定钢琴具体型号，与场地方确认调律安排和完成时间，写进合同条款；预留足够时间供郑老师本人或信任的调律师做现场确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "与舞台导演排定演出动线：琴位、上台候场口、演出后退场路线，落实成平面图附在书面确认中",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "钢琴型号、调律安排、动线平面图，这些都能写进确认书里，那我这边的顾虑就全清了。你们考虑了演奏者实际演出的硬件条件，这点让我觉得我们是真在合作。书面确认出稿后发我一份，我确认没问题就签。另外排演时间也得提前约，曲目定稿后我们需要至少合一次现场动线和流程，别等大秀当天才第一次见到琴和舞台。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10155,
+        "out": 2337,
+        "cache_hit": 8320,
+        "cache_miss": 1835,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7947,
+        "out": 1450,
+        "cache_hit": 6400,
+        "cache_miss": 1547,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 6359,
+        "out": 9688,
+        "cache_hit": 2944,
+        "cache_miss": 3415,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5931,
+        "out": 2398,
+        "cache_hit": 1536,
+        "cache_miss": 4395,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

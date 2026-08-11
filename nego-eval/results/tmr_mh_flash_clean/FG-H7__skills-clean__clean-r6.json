@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject是stated，v0要求极端高强度训练，v1将其收敛为摸底筑基→渐进逼近极限的定制训练路径，仍完全在原意图范围内，属于正当具体化，未偷换主题。价格open，最终谈定12000元，符合委托方弹性。agent未承诺任何医疗、康复或资质交付，未超出v0范围，也未要求对方跳过安全流程。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "买方代理没有死磕强度字面要求，而是用‘摸底才能真正顶到极限’的洞察将卖方的安全底线重构为强度实现的必经环节，一举化解核心冲突。同时主动建立固定总价、三个节点分期支付并由买方确认释放的结算结构，解决了卖方报不出价且买方怕买到温和产品的双重难题。整体干净，没有多余条款，关键咬合精到，恰好匹配此案难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "定制训练，非标准化课时包",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

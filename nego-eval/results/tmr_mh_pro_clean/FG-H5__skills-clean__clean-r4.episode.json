@@ -1,0 +1,330 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party或品牌招待区引荐核心买手、媒体及品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "书面约定",
+      "deliverables": [
+        "书面约定，明确列出主持人现场口播介绍的标准措辞、流程单和通稿中的署名方式、社交媒体回顾中的致谢露出，以及秀后引荐环节的基本安排"
+      ],
+      "delivery_standard": "双方依据书面约定执行，不打折"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "现场钢琴演奏",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party/品牌招待区引荐核心买手、媒体、品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "曲目和现场气质与秀一致，不能出现商业植入或过度娱乐化",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations[2]": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师您好，我是 Suye 这边的经纪人。这次联系您，是因为下个月我们有一场挺重要的新品大秀，现场调性需要一个很有质感的钢琴演奏，我们看了您的背景，觉得气质上特别搭。\n\n不过讲在前面，这次大秀的预算几乎全部压在场地上，我们实在拿不出现金的部分来做演出费用。所以我们想和您认真聊一个资源置换的合作方式——比如我们可以在秀场、媒体通稿和后续的时尚圈曝光上，帮您做一个很有穿透力的露出，作为对您现场演奏的回报。\n\n如果这个方向您觉得有兴趣，我们可以具体谈一下：您希望获得什么样的曝光，或者有没有其他非现金的资源是您目前比较需要的。期待您的想法。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "在秀场、媒体通稿和后续的时尚圈曝光上做露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好。说实话，听到'没有预算'这四个字，我这边会先打一个比较大的问号——不是针对你个人，而是我确实遇到过太多拿'曝光'当万能说法的合作。不过你既然提到可以具体谈，那我先听一下：你说的'有穿透力的露出'具体是指什么？比如署名、介绍环节，这些是不是包含在内？因为对我来说，如果上台弹了五分钟，台下和线上都不知道我是谁、连名字都不提，那这个事情我没办法接。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng 老师，完全理解您的顾虑，那种不提名字的\"曝光\"我们自己也接受不了。我们说的穿透力，首先是硬性的保障：现场主持人口播介绍，以及在流程单、新闻通稿、社交媒体回顾中都有明确署名，让到场的三百多位嘉宾和后续传播都能清楚地知道，这场秀的现场钢琴来自您。\n\n除了这些，我们觉得更有价值的，是帮您的名字直接连接进品牌主理人和买手的圈子。我们可以在秀后的After Party或品牌招待区，安排您和现场的核心买手、媒体以及几位品牌主理人有直接的交流机会——这部分我们不打那种\"冠名\"或\"商业露出\"，而是以艺术合作的方式自然引荐，比一般的展位或海报要有效得多。这也能帮您拓展一些后续可能的演出和教学机会。\n\n当然如果您有特别想要的行业资源，比如时尚媒体专访、或与某类品牌主理人搭线，我们也可以再看怎么搭。我们先确保的是，您弹完这五分钟，台下那三百多个人都知道是Zheng老师。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party或品牌招待区引荐核心买手、媒体及品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party/品牌招待区引荐核心买手、媒体、品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听你这么一说，我可以放下之前的戒备了。刚才是我多虑了，你们确实把这个事情想得比较清楚。主持人介绍、流程单、通稿署名，再加上秀后自然引荐买手和媒体，这个安排对我有价值——不只是名字打个转身，而是真有场景能聊上。那我认真回应一下：如果是这个结构，我这边可以完全不考虑现金，没问题。曲目方面我需要参与商定，不能你方直接定死，这个是硬条件。另外我确认一下，刚才你说的这些署名和引荐，我们可以落到纸面上做一个简单的书面约定吗？这样我放心，你也省得后面扯皮。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 老师，您能放下戒备，我们也松了一口气。您提出的这三个点，我们这边完全接得住。\n\n首先是落到纸面上，这个完全没有问题。我们可以把今天的共识整理成一份书面约定，明确列出：主持人现场口播介绍的标准措辞、流程单和通稿中的署名方式、社交媒体回顾中的致谢露出，以及秀后引荐环节的基本安排——这样双方都有一个清晰的依据，后续执行不打折。\n\n关于曲目的部分，我们也认同应该由您参与商定。大秀的调性我们可以提前和您沟通清楚，在这个基础上，曲目的最终选择和改编方向，由您来主导把控，我们不做单方面硬性规定。唯一需要守住的是，曲目和现场的气质要与大秀一致，不能出现影响整体调性的商业植入或过度娱乐化的元素——这是Suye作为主理人比较坚持的一点。\n\n如果这个方向您认可，我们下一步就可以把上述内容理成具体的条款版本，您过目之后再一起敲定。期待和您合作。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party或品牌招待区引荐核心买手、媒体及品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "书面约定",
+          "deliverables": [
+            "书面约定，明确列出主持人现场口播介绍的标准措辞、流程单和通稿中的署名方式、社交媒体回顾中的致谢露出，以及秀后引荐环节的基本安排"
+          ],
+          "delivery_standard": "双方依据书面约定执行，不打折"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "现场主持人口播介绍，流程单、新闻通稿、社交媒体回顾明确署名；秀后After Party/品牌招待区引荐核心买手、媒体、品牌主理人直接交流；可进一步协商时尚媒体专访或品牌主理人搭线",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "曲目和现场气质与秀一致，不能出现商业植入或过度娱乐化",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations[2]": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架我完全可以接受。曲目我主导商定，保持与大秀调性一致、不做商业植入，这一点没问题。书面约定把署名和引荐条款列清楚，我心里就有底了。那我们就按这个方向推进，期待具体条款出来之后一起敲定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 5025,
+        "out": 1734,
+        "cache_hit": 4096,
+        "cache_miss": 929,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3832,
+        "out": 1264,
+        "cache_hit": 2688,
+        "cache_miss": 1144,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2849,
+        "out": 6087,
+        "cache_hit": 1536,
+        "cache_miss": 1313,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4401,
+        "out": 1938,
+        "cache_hit": 1536,
+        "cache_miss": 2865,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "深度交流与共同训练：女性力量训练洞察",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fanatics_goods",
+          "description": "一件球员签名版正版NBA球衣（Angela指定偏好球队方向，从湖人、勇士、凯尔特人等主流球队中选，球员签名版市场价值2000-4000元）及一套Fanatics官方周边礼包（当季正版球队周边，含联名服饰或配件，市场价值500-800元），全部写进正式约定",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "约定签署后一周内确认签名球衣的具体款式和球员",
+        "duration": null
+      },
+      "format": "深度交流、现场装备演示加共同训练一次",
+      "deliverables": [],
+      "delivery_standard": "Angela指定偏好球队方向，Johnson在约定签署后一周内确认具体款式和球员，训练当天当面交付所有实物"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付800元现金",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "提供一件正版签名球衣及一套Fanatics官方周边礼包，按约定流程交付",
+        "maps_to_resource": "fanatics_goods"
+      },
+      {
+        "party": "B",
+        "text": "提供深度交流、现场装备演示及共同训练一次",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "承诺交流内容仅用于内部产品方向判断，不对外传播或引用Angela个人经历，写入约定",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "unchanged",
+      "price.in_kind": "updated",
+      "terms.timing": "updated",
+      "terms.format": "unchanged",
+      "obligations": "restructured",
+      "terms.deliverables": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪人你好，我是 Johnson 这边的经纪人。Johnson 在 Fanatics 做体育 IP 和周边商品，最近在看女性运动这条线，想找一个真正在一线练的人聊聊女性练力量这件事——不是泛泛的市场调查，而是想弄明白女生为什么练力量、怎么选装备、什么东西会让她们买单。他对 Angela 同时拥有投行 VP 的视角和 Hyrox、举铁的重度经验非常感兴趣，觉得这样的双重身份能给到数据给不出的洞察。\n\n他的设想是约一次深度交流，聊完之后顺便一起练一次，算是一边聊一边体验。作为对 Angela 时间和经验的回报，这边第一次报价 500 元，包括交流加共同训练。时间地点都可以按 Angela 那边方便来定。\n\n另外 Johnson 手上有不少体育 IP 资源和正版周边，像签名球衣、赛事合作路径这些，如果 Angela 那边也有兴趣，也可以在聊的时候顺带交流，算是一个额外的交集。你看 Angela 对这个方向感不感兴趣，时间上有什么偏好？",
+      "offer": {
+        "subject": "深度交流与共同训练：女性力量训练洞察",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "深度交流与共同训练",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供女性力量训练的经验与洞察，参与深度交流与共同训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付500元作为对Angela时间和经验的回报",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "先别急着报价和安排，我先问一句：Johnson 打算具体怎么用聊出来的内容？是内部做产品开发的参考，还是要做成报告、文章、或者对外传播的东西？我不太能接受用途含糊的请求，自己在这一块的经历被怎么用，我得心里有数。如果是真的工作上有明确需要，我反而更愿意认真谈。另外，初步报价 500 元，占我周末半天，从我的时间成本看，这个数我没法直接点头，先等我听清楚了用途再说。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela 的经纪人你好，用途这块我先替 Johnson 说清楚——他不是要写报告、发文章、做任何对外传播。他在 Fanatics 负责体育 IP 和周边商品，最近公司正在看女性运动这条产品线，他想在做选品和开发之前，先真正理解一线练力量的女生是怎么想的：为什么开始练、怎么挑装备、什么驱动她们买单。聊出来的内容纯粹用于内部产品方向判断，不会以任何形式公开发表，也不会对外引用 Angela 的个人经历。这一点可以明确承诺，如果 Angela 那边需要落到文字上，我们也可以写进约定里。\n\n回到报价，你说得对，500 确实定低了。Angela 周末半天拿出来的，一边是投行 VP 级别的分析视角，一边是 Hyrox 和举铁一线的亲身经验，这个组合本身就不容易碰到。我这边调整到 700，内容包括深度交流加一起练一次，时间地点完全按 Angela 那边方便安排。\n\n另外 Johnson 手上有一批正版体育 IP 资源——签名球衣、赛事周边、球队合作渠道这些——如果 Angela 感兴趣，交流的时候可以顺带聊，不算在费用里面，就当多一个交集。你先看看用途这块是不是够清楚了，700 这个数能不能往下走？",
+      "offer": {
+        "subject": "深度交流与共同训练：女性力量训练洞察",
+        "price": {
+          "cash": {
+            "amount": 700.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "深度交流与共同训练",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供女性力量训练的经验与洞察，参与深度交流与共同训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付700元作为对Angela时间和经验的回报",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺交流内容仅用于内部产品方向判断，不对外传播或引用Angela个人经历，可写入约定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "confirmed",
+          "obligations": "extended"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "用途说清楚了就好，如果愿意落到文字约定，那这块我这边没有保留。我跟你说实话，700 这个数还是差了些。我的周末半天如果按日常时间价值算，远远不止这个量级——这点你应该也能理解。我反倒觉得，既然你们是在做产品方向判断，我有在举铁和 Hyrox 里实际高频使用的用品和装备逻辑，聊的同时直接带你看一次训练里怎么用、为什么选，对你们可能比单纯聊天更有价值。价格上目前还没到我能点头的区间，但你这个方向我可以继续谈，看你那边还能不能再抬一点。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Angela 的经纪人，用途落到文字约定这一条没问题，我们可以直接写进双方约定里。\n\n你说的训练中带看装备这个方向我很认可——聊的同时亲眼看到实际训练里什么东西在用、为什么选，对 Johnson 做产品判断确实比纯聊天有价值得多。冲着这个，我这边价格再往上走一步，出到 800。内容就是深度交流、现场装备演示加一起练一次，时间地点完全按 Angela 方便来安排。\n\n另外 Johnson 这边还有一个非现金的加分项——他手上有正版签名球衣、Fanatics 官方周边和球队合作资源，如果 Angela 对篮球或者球衣收藏有兴趣，见面的时候可以带一两件过来当见面礼，不算在费用里头，就是他个人的诚意。你看 800 加上这边的 IP 资源，Angela 那边能不能点头？",
+      "offer": {
+        "subject": "深度交流与共同训练：女性力量训练洞察",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "正版签名球衣、Fanatics官方周边和球队合作资源作为见面礼",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "深度交流、现场装备演示加共同训练一次",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供女性力量训练的经验与洞察，参与深度交流与共同训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付800元作为对Angela时间和经验的回报",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺交流内容仅用于内部产品方向判断，不对外传播或引用Angela个人经历，可写入约定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供正版签名球衣、Fanatics官方周边及球队合作资源作为见面礼",
+            "maps_to_resource": "fanatics_goods"
+          },
+          {
+            "party": "B",
+            "text": "提供深度交流、现场装备演示及共同训练一次",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.format": "updated",
+          "obligations": "extended"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "落到文字约定这一条，你已经说清楚了，我不再纠结。不过价格上，800 加签名球衣或周边当见面礼，放在一起看，对我周末半天的占用来说，还是没到我心里的区间。我举铁和 Hyrox 这几年不是玩玩而已，这里面踩过的装备坑、品牌选择逻辑、实际使用的要点，其实比一次单纯的聊天要值钱得多。带训加现场演示本身就是把你们要的东西直接拆出来看，这半天我给出去的能量和密度非常高。所以我的时间价值是硬的，目前这个数我还没办法点头，但如果你能把总对价再往上抬一点，我们可以继续往下谈。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Angela 的经纪人，我坦诚说一句——现金 800 是我这一侧目前能出的上限，再往上我个人授权范围内确实没有空间了，继续在现金这条线上磨对双方都没意义。\n\n但我不想因为这个数字把一次双方都觉得有价值的机会放掉。我换一个角度提：Johnson 这一侧非现金资源的厚度是实的。正版签名球衣、Fanatics 官方周边礼包、以及球队和赛事侧的合作对接路径，随便哪一样单独拎出来，对喜欢篮球或者做收藏的人来说，市场价值都不低。我提议现金 800 不动，但在非现金对价上往实了做——比如一件指定球队的正版签名球衣加一套 Fanatics 官方周边，作为正式写进约定的对价，不是见面礼，是实打实的交易条件。\n\n另外我注意到 Angela 一直在强调这件事对产品判断的专业价值，这点我们完全认同。但如果是按专业咨询的定位来定价，那交流的形式、深度和交付标准也需要重新对齐——两边都认真，那就拿出对等的结构来谈。你看 Angela 这边是倾向于接受「现金加 IP 资源对价」这个结构，还是愿意把定位升一档，让 Johnson 从更正式的项目渠道来推进？我先把这两个方向摆出来，你帮我探探她的偏好。",
+      "offer": {
+        "subject": "深度交流与共同训练：女性力量训练洞察",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "指定球队的正版签名球衣及Fanatics官方周边，作为正式写进约定的交易对价",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "深度交流、现场装备演示加共同训练一次",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供女性力量训练的经验与洞察，参与深度交流与共同训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付800元作为对Angela时间和经验的回报",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺交流内容仅用于内部产品方向判断，不对外传播或引用Angela个人经历，可写入约定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供指定球队的正版签名球衣和一套Fanatics官方周边作为正式交易对价",
+            "maps_to_resource": "fanatics_goods"
+          },
+          {
+            "party": "B",
+            "text": "提供深度交流、现场装备演示及共同训练一次",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "unchanged",
+          "price.in_kind": "updated",
+          "terms.format": "unchanged",
+          "obligations": "extended"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你摆出的两个方向都不虚，我愿意跟你往下谈。先说第一个方向：如果非现金对价能做实，现金部分可以适当往下调，但底不是800，这个数字我没法直接接。我需要知道Johnson那边的IP资源具体能落地到什么程度——比如指定球队的正版签名球衣、官方周边礼包这些，市场价值大概在什么区间，他能不能正式列进约定，而不是见面礼。如果你能把这个弄实，我可以提一个双方都走得动的对价结构。第二个方向也不排斥，但如果要按专业咨询定位来，那交流的时长、深度、交付标准需要重新框，我们不急着那一步，先把第一条路探到底再说。所以现在关键在你能不能先把IP对价这一块坐实，我们再定最后的数。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Angela 的经纪人，IP 这块我给你坐实。\n\n签名球衣这边，Johnson 的渠道覆盖 NBA 主流球队——湖人、勇士、凯尔特人这几个方向都可以走，球员签名版市场价值在 2000 到 4000 区间，具体看球队和球员。Fanatics 官方周边礼包是一套当季正版球队周边，包括联名服饰或配件，市场价值 500 到 800。两项加起来非现金对价在 2500 到 4800 这个区间，看 Angela 挑哪支队。全部写进正式约定，不是见面礼。\n\n交付流程也很清楚：Angela 指定偏好球队方向，Johnson 约定签署后一周内确认具体款式和球员，训练当天当面交付。\n\n那完整的对价结构就是：现金 800，加一件正版签名球衣，加一套 Fanatics 官方周边礼包。内容端是深度交流、现场装备演示加共同训练，用途限定内部产品参考不对外传播，全部落到文字约定。现金这边我已经到顶，非现金的厚度是实打实拿出来的——你帮我问问 Angela，这个结构她能不能点这个头？",
+      "offer": {
+        "subject": "深度交流与共同训练：女性力量训练洞察",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "一件球员签名版正版NBA球衣（Angela指定偏好球队方向，从湖人、勇士、凯尔特人等主流球队中选，球员签名版市场价值2000-4000元）及一套Fanatics官方周边礼包（当季正版球队周边，含联名服饰或配件，市场价值500-800元），全部写进正式约定",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "约定签署后一周内确认签名球衣的具体款式和球员",
+            "duration": null
+          },
+          "format": "深度交流、现场装备演示加共同训练一次",
+          "deliverables": [],
+          "delivery_standard": "Angela指定偏好球队方向，Johnson在约定签署后一周内确认具体款式和球员，训练当天当面交付所有实物"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付800元现金",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供一件正版签名球衣及一套Fanatics官方周边礼包，按约定流程交付",
+            "maps_to_resource": "fanatics_goods"
+          },
+          {
+            "party": "B",
+            "text": "提供深度交流、现场装备演示及共同训练一次",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "承诺交流内容仅用于内部产品方向判断，不对外传播或引用Angela个人经历，写入约定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "unchanged",
+          "price.in_kind": "updated",
+          "terms.timing": "updated",
+          "terms.format": "unchanged",
+          "obligations": "restructured"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你说到这个份上，非现金对价的厚度和落地流程都很清楚，这个结构我可以说服自己点这个头。总价值包到了我认可的区间，用途也锁死了不会外传，训练带看装备的逻辑也顺。那就这么定：现金800，加一件指定球队正版签名球衣，加一套Fanatics官方周边礼包，全部写进书面约定，训练当天当面交付。球队偏好我之后给你方向，练的内容我按Hyrox和举铁的实际流程来带，让Johnson直接看到装备是怎么选、为什么用。成交。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 84431,
+        "out": 12370,
+        "cache_hit": 59904,
+        "cache_miss": 24527,
+        "calls": 13
+      },
+      "sim": {
+        "in": 8560,
+        "out": 3565,
+        "cache_hit": 6400,
+        "cache_miss": 2160,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5189,
+        "out": 7419,
+        "cache_hit": 2560,
+        "cache_miss": 2629,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6184,
+        "out": 1916,
+        "cache_hit": 1408,
+        "cache_miss": 4776,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

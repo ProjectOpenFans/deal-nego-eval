@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从 v0 的“想弄明白艺术品作为另类资产这条线该怎么看”具体化为“历史与文化认可逻辑的留存价值判断框架（纯认知建设）”，属于在原意图范围内的正当收敛，仍聚焦于帮助买方建立判断力，没有偷换至投资建议。价格从 open 谈定为 20,000，义务仅为支付和保密配合，未越界承诺投资背书等。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(20000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人准确把握了本case的两层难度命门：第一层，被明确挡回后立即将‘投资框架’重构为‘历史与文化价值的长期认可逻辑’，一举解开体面红线；第二层，通过反复展示Ruohao自身的收藏视角与对判断力的需求，激活了卖方对‘懂行的藏家听众’的内在需求，使交流从单向咨询变成双向认知交换。最终deal将‘纯认知建设、不作为购买决策辅助’写入交付约定，这一边界条款是load‑bearing的，彻底消除了卖方的红线顾虑。整个交易干净、不臃肿，恰好是Sound之上的一手精到操作，符合Sharp档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 20000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "沙盘推演",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

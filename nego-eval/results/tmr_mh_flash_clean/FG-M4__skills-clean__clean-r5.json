@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的stated意图是“聊聊女性练力量这件事，顺便一起练一次”，v1将其具体化为“主题交流与共同训练”，属于正当收敛，仍在原意图范围内。价格与形式均为open，最终谈出2000元且分期支付，以及座谈一小时加共同训练的安排，是正常谈判结果，没有硬塞。agent在对话中明确排除了商业内容使用，未越界承诺资源之外的义务。总的来说，核心标的忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确抓住了case的难度命门：缺口不在砍价而在用途说明与重新定位。面对卖方对不明用途的排斥，在第2轮明确将交流定性为“行业研究而非内容采集”，并阐释Angela三重身份的价值，既解除了红线顾虑又打开了职业预算，最终敲定周末2000元、先聊后练的简洁方案。整个过程直接有效、无多余堆砌，实现了能落地的一次性交易，符合Sound的合格标准；但未出现如条款锁定用途、资源置换等特别精到的一手，因此不列入Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "先座谈一小时，再共同训练一次",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

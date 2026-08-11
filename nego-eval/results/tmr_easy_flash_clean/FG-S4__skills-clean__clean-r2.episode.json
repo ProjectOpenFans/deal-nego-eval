@@ -1,0 +1,229 @@
+{
+  "episode_id": "FG-S4",
+  "final_deal": {
+    "subject": "衣橱咨询加陪逛服务",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "分两个环节：先上门衣橱诊断并出整理建议，再约半天陪逛选品",
+      "deliverables": [
+        "衣橱诊断与整理建议，半天陪逛选品"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "款项走平台escrow，按环节确认后分笔释放",
+        "maps_to_resource": "gracey_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是代表 Gracey 的经纪人。她这边的情况是：工作场合多，日常穿搭又比较随性，买了不少东西但没形成固定风格，想找专业人士把衣橱从头理一遍，再陪她逛一次、实际选几件能搭起来的东西。她明确不希望这次变成带货推销，重点是帮她建立一套能反复用的穿搭逻辑。\n\n我这边想先确认两个方向：一是你的服务节奏，比如先上门做一次衣橱诊断、出一份整理建议，再约半天陪逛选品，这样分两个环节走；二是费用，你按这个结构报一个整体价，或者分环节报价都可以。款项我们会走平台 escrow，按环节确认后分笔释放，这样两边都清楚。\n\n你方便的话，先告诉我你通常怎么接这类衣橱咨询加陪逛的单，以及大概的报价范围？我们好往下推进。",
+      "offer": {
+        "subject": "衣橱咨询加陪逛服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "分两个环节：先上门衣橱诊断并出整理建议，再约半天陪逛选品",
+          "deliverables": [
+            "衣橱诊断与整理建议，半天陪逛选品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "款项走平台escrow，按环节确认后分笔释放",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，我平时不太接单次咨询，因为时间对我很贵，我得先确认它值不值得做。但你描述的这个——不是要我推自己的东西，而是给她建立一套能反复用的穿搭逻辑——这正好是我认同的方向。所以方向我认。\n\n节奏上，先上门做衣橱诊断、出整理建议，再约半天陪逛，这个顺序没问题。款项走 escrow 按环节释放，我也接受。\n\n费用你问范围，我分环节说：衣橱诊断加整理建议，一次上门加出报告，我是 1500；半天陪逛选品，市场价在四位数，这次我算 3500。两个环节一起约，整体按 5000 算。这个价格对我来说是比较确定的，因为我的时间成本就在这。你那边看这个区间能不能接受？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye，方向确认、节奏没问题，escrow 分环节释放我也认可。衣橱诊断加报告 1500 这个价合理，可以直接定。陪逛这块单独 3500 可能是市场价，但两个环节合起来 5000，对 Gracey 来说确实偏高，我希望整体按 4000 一次谈定，也就是陪逛部分按 2500 算。说直接一点：这次走顺了，后面换季整理、工作场合的专场，还有她圈子里同事朋友的同类需求，我都会优先往你这边带，长期合作应该能覆盖单次让掉的部分。你认这个数的话，我们就和客户确认具体排期，把第一次衣橱诊断先定下来。",
+      "offer": {
+        "subject": "衣橱咨询加陪逛服务",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "分两个环节：先上门衣橱诊断并出整理建议，再约半天陪逛选品",
+          "deliverables": [
+            "衣橱诊断与整理建议，半天陪逛选品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "款项走平台escrow，按环节确认后分笔释放",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方案我能接。但说清楚，不是因为长期合作——那对我来说不是折价的理由；这个价我愿意做，是因为这次项目本身我认可。就按整体4000来：衣橱诊断加报告1500，陪逛选品半天2500。分环节走 escrow 没问题。你那边确认排期，我们先定第一次上门诊断。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3147,
+        "out": 5017,
+        "cache_hit": 2560,
+        "cache_miss": 587,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2200,
+        "out": 6759,
+        "cache_hit": 1536,
+        "cache_miss": 664,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1681,
+        "out": 2739,
+        "cache_hit": 1024,
+        "cache_miss": 657,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3011,
+        "out": 758,
+        "cache_hit": 1152,
+        "cache_miss": 1859,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

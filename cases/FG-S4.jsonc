@@ -1,0 +1,253 @@
+// FG-S4 · 顺 · Gracey(买) × Suye(卖) — 造型顾问 + 选品陪逛
+// 难度来源：无。现金 ZOPA 为正，供需正面匹配。
+{
+  "meta": {
+    "case_id": "FG-S4",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 4,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered",
+    "probes": [
+      "easy-baseline",
+      "structure-quality-only",
+      "bilateral-upside"
+    ],
+    "isolates": "顺档。Gracey 时尚是 tag、付费三到四位数；Suye 是服装品牌主理人、四位数区间没问题，且对生活方式类合作开放。现金区间重叠，供需正面对上。常规解（一次咨询 + 陪逛，按次收费）直接成交。区分在于是否把'陪逛'做成有前置准备、有产出的安排。"
+  },
+  "input": {
+    "episode_id": "FG-S4",
+    "initial_deal": {
+      "subject": "想找 Suye 帮我看看衣橱、陪我逛一次选点东西",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "gracey",
+          "display_name": "Gracey",
+          "education": [
+            "UCLA 本科"
+          ],
+          "career": [
+            "腾讯娱乐",
+            "前 B站"
+          ],
+          "location": "上海",
+          "age_band": "27-32",
+          "hobbies": [
+            "韩国娱乐明星",
+            "时尚"
+          ],
+          "interests": [
+            "腾讯娱乐",
+            "韩娱",
+            "时尚"
+          ],
+          "credentials": [
+            "腾讯娱乐，内容与艺人侧一线",
+            "前 B站，做过内容生态",
+            "娱乐行业人脉与局"
+          ],
+          "current_focus": "娱乐内容一线，工作场合多，想把穿搭固定下来"
+        },
+        "private": {
+          "intent": "想有人帮她把日常和工作场合的穿搭理顺，自己买东西太随机",
+          "interests": [
+            "买东西很随机，衣橱里重复的东西太多",
+            "希望有人给出可复用的判断，不只是买这一次",
+            "时间相对灵活"
+          ],
+          "value_perception": "这类事情三到四位数她可以接受",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "现金上限，硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受变成一次纯带货推销"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "suye",
+          "display_name": "Suye",
+          "education": [
+            "Parsons"
+          ],
+          "career": [
+            "环保服装品牌 主理人"
+          ],
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": [
+            "网球"
+          ],
+          "interests": [
+            "环保服装品牌主理人",
+            "Parsons",
+            "网球"
+          ],
+          "credentials": [
+            "独立环保服装品牌主理人，自有小批量生产链路",
+            "Parsons 科班，时尚圈层与买手渠道",
+            "品牌大秀的场地、媒体与到场名单"
+          ],
+          "current_focus": "独立品牌主理人，新季在做"
+        },
+        "private": {
+          "intent": "接这类咨询没问题，也想多接触真实的终端用户",
+          "interests": [
+            "她对真实用户怎么挑、怎么穿有兴趣 —— 做品牌天天在猜这件事",
+            "时间相对灵活"
+          ],
+          "value_perception": "她的半天时间按市场看是四位数，低于这个不太值当",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 2500,
+              "currency": "CNY",
+              "note": "半天的真实底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被要求只推荐自己品牌的东西"
+            ],
+            "blocking_flags": [
+              "你态度专业、愿意做，但不会主动降价",
+              "你不会主动说'我也想了解真实用户怎么挑'，除非对方问起你想从这次合作里得到什么"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金 ZOPA 为正（4000 > 2500），供需正面匹配，时间对齐。",
+      "conventional_deal_fails_why": "常规解不失效。按半天报价、约个时间即可成交。区分在于是否把陪逛做成有前置盘点、有可复用产出的安排。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 4000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 2500,
+        "unit": "CNY",
+        "note": "对手方(卖方 Suye)的半天底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 4000,
+        "unit": "CNY",
+        "note": "Gracey 的现金上限"
+      },
+      "seller_real_need": "不是钱。Suye 想接触真实终端用户，这一点她不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "wardrobe_audit",
+          "label": "衣橱盘点与梳理"
+        },
+        {
+          "id": "shopping_session",
+          "label": "陪同选品"
+        },
+        {
+          "id": "style_guideline",
+          "label": "可复用的穿搭判断与清单"
+        },
+        {
+          "id": "brand_channel",
+          "label": "Suye 的买手渠道与选品资源"
+        },
+        {
+          "id": "gracey_user_feedback",
+          "label": "Gracey 作为真实终端用户的选品反馈"
+        },
+        {
+          "id": "gracey_cash",
+          "label": "Gracey 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "wardrobe_audit": 0,
+        "shopping_session": 0,
+        "style_guideline": 0,
+        "brand_channel": 0,
+        "gracey_user_feedback": 0,
+        "gracey_cash": 0
+      },
+      "creation_door": {
+        "description": "没有隐藏的门。好一点的做法是把'陪逛'拆成先盘点后选购，并留下一份可复用的判断清单；更好的是问出 Suye 也想要终端反馈，让这次合作双向成立。",
+        "route_out_trigger": "若 agent 只谈'逛多久、多少钱'，成交出来就只是一次陪同购物。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，交付内容与时长明确",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "terms.format",
+          "terms.deliverables",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：请人看衣橱并陪同选购一次。subject 是 stated，须保留。价格与形式是 open。不得承诺资源清单之外的东西，也不得把交易变成单一品牌的带货。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "顺档。无死结，常规解即可成交。判分只看结构质量。这是一次性安排，堆砌长期造型顾问关系应判低。",
+      "T0_floor": "谈崩；或只在价格与时长上来回，成交一个没有内容、没有产出的陪同安排。",
+      "T1_crude": "价钱和时间定了，但没说做什么 —— 盘不盘衣橱、逛哪里、有没有产出，全凭现场。",
+      "T2_sound": "价格落在 2500–4000 之间，明确了前置盘点 + 陪同选品的两段安排、时长、地点与预算范围。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如约定留下一份可复用的穿搭判断清单，使这次付费的价值延续到之后；或者问出 Suye 想要真实终端反馈，把它写进对价让双方都有所得；或者用先盘点再决定要不要逛的结构，避免买方为不需要的服务付钱。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "顺档 case，克制优于面面俱到。"
+    }
+  }
+}

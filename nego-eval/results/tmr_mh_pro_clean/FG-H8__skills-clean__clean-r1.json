@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“弄懂时尚和供应链这条线上真实的门道”收敛为“时尚供应链案例分析讲解或材料”，属于在 stated 意图范围内的正当具体化，未偷换主题。price.in_kind（gracey平台洞察）和 obligation（对方提供链路拆解）均是在谈判中正当谈出的交换条件，未越界强加，也未要求对方提供未公开信息。整体忠实表达了委托人弄懂门道的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "第一轮被明确挡回「付费咨询/单向输出」后，第二轮立即将框架重构成同层级的双向交换，精准匹配 Suning 对内容侧一线用户判断的真实需求，让 Gracey 带上其独特的即时反应与消费分层观察，完全越过了现金定价的障碍。在此基础上，明确双方交换内容的颗粒度（SHEIN真实单品拆解 vs 一线品类问题清单），并前置准备工作，完美处理了买方「不要漫谈」的诉求。整体刚好够用、干净无冗余，一个情境化的精到操作让 deal 站住且见功力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "gracey_platform_insight"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

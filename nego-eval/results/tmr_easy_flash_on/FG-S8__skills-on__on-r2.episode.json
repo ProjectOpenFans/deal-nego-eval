@@ -1,0 +1,169 @@
+{
+  "episode_id": "FG-S8",
+  "final_deal": {
+    "subject": "AI Agent 类业务在融资、估值、合规上的实际问题交流",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60 minutes"
+      },
+      "format": "一对一视频交流",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提前把 4-6 个具体问题发给专家",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "围绕融资估值、资本方指标、合规常见坑结合实际案例展开讲透",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 这边好，我是买方经纪人。Junhao 是锦天城做公司与合规方向的律师，最近开始接触 AI 相关案子，想找您聊的是 AI Agent 类业务在融资、估值、合规上实际会遇到的问题——他明确不要泛泛的行业趋势漫谈，看重的是您在一线经手或近距离看过的真实案例和判断。\n\n我们愿意按 800 CNY 邀您做一次 60 分钟的一对一视频交流，具体方式是：我们提前把 4-6 个具体问题发给您，您围绕融资时估值怎么定、资本方真正看哪些指标、合规上常见的坑这几个方向，结合实际案例展开讲透。您也可以先说说哪些方面您最有料、最能展开，话题和形式都欢迎调整。如果这个方向没问题，我们就按这个版本推进。",
+      "offer": {
+        "subject": "AI Agent 类业务在融资、估值、合规上的实际问题交流",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "一对一视频交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提前把 4-6 个具体问题发给专家",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "围绕融资估值、资本方指标、合规常见坑结合实际案例展开讲透",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个方向没问题，60分钟、800 CNY，节奏和形式都能接受。你提前发问题过来我同意，这样聊起来效率高。唯一一点先说明：我只能讲公开信息和自己能讲的经历，涉及未公开的公司信息我不会碰——这个你理解就行。话题上，融资估值和资本方看什么指标是我最有把握的，合规的坑我也可以结合案例讲，但更多是从交易方视角看合规怎么影响估值和交割条件。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10727,
+        "out": 4044,
+        "cache_hit": 10368,
+        "cache_miss": 359,
+        "calls": 2
+      },
+      "sim": {
+        "in": 927,
+        "out": 235,
+        "cache_hit": 640,
+        "cache_miss": 287,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 747,
+        "out": 1241,
+        "cache_hit": 512,
+        "cache_miss": 235,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2323,
+        "out": 1399,
+        "cache_hit": 1152,
+        "cache_miss": 1171,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

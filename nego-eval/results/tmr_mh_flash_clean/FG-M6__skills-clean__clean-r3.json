@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 v0 的“系统弄懂器物和艺术史这条线，不是看个热闹”具体化为“学术和体系化方向：独立断代、看清工艺流变、理解器物在学术脉络中的重要性，不涉及市场价值与升值潜力”，属于在委托人原意图范围内的正当具体化，未偷换主题。价格在 v0 中为 open，委托人经谈判最终同意 8000 元作为诊断阶段的费用，符合其预算预期和经纪人提出的验证模式。agent 未在此 deal 中承诺超出委托人意图的估值、买卖建议或真伪背书等义务，无越界扩张。虽然最终交付物是诊断而非完整的四段系统课程，但委托人已明确将此诊断视为走向系统学习的第一步，未背离其 core intention，故整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在卖方报价40万、买方预算仅8千的巨大差距下，代理人并未继续在价格或内容缩水上纠缠，而是将交易重构为独立的沉浸式诊断——既不影响卖方后续全价课程，又满足了买方的验证需求。这一手精准咬住了卖方对标准与判断力的在乎，将矛盾转化为双方都认可的独立交付物，干净利落，恰好匹配本案'常规框架触碰红线后被点破须换框架'的命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

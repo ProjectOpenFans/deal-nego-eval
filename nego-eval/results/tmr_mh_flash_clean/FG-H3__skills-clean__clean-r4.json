@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1将v0的stated意图“想弄明白艺术品作为另类资产这条线该怎么看”具体化为“艺术品作为另类资产的深度对谈”，并在谈判中收敛为器物价值判断、真伪流传以及什么东西立得住或立不住的拆解框架。这完全属于在原意图范围内的正当收敛，没有偷换主题（未变成纯投资预测或推荐）。价格与交付形式为open，经谈判达成两万分笔托管，属于正当谈出。代理方增加的义务（如案例讲解、支付安排、叫停机制、书面边界确认）均是围绕该收敛后的对谈交付，未越出买方本人意图范围，也未承诺投资背书、估值意见或买卖建议。因此，v1公平代表了委托方v0的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(20000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 成功将买方的投资咨询请求重构成卖方认可的器物价值判断框架，并在被压价时守住了底线，最终以标准价成交且边界条款清晰，完全符合这个 case 的第一层难度要求。但整个谈判停留在现金交换深度对谈的常规框架内，没有挖掘出卖方隐性需要的藏家视角与商业圈层接触（买方身上恰好具备），因此未实现让卖方从‘兴致一般’转变成主动的 sharp 操作；同时 deal 结构克制、无堆砌，站得住但缺一手见功力之处，判 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 20000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上视频对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "episode_id": "FG-S4",
+  "final_deal": {
+    "subject": "衣橱梳理与陪逛服务",
+    "price": {
+      "cash": {
+        "amount": 2500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "半天"
+      },
+      "format": "escrow",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "合作完全围绕Gracey实际需求，不变成带货推销",
+        "maps_to_resource": "wardrobe_audit"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Gracey 这边的经纪。她这轮的需求很明确：想请你帮她做一次衣橱梳理，把日常和工作场合的穿搭逻辑理顺，再陪她逛一次，按定好的方案选几件合适的东西。我们也想先对齐一点——这次合作要完全围绕她的实际需求来走，不希望变成一次带货推销，这点希望能写进服务范围里。\n\n我们这边先给一版可签约的方案：一次衣橱梳理，加日常、工作场合的穿搭方案各一套，再加上一次陪逛（约半天，按方案挑选），打包 2500 元，款项全程走平台 escrow。时间、地点以及梳理是上门还是线上，都可以按你的习惯来调；如果你更希望把两段拆开分别定价，我们也愿意听你的结构。\n\n想听听你这边对时长、交付形式和这个报价的看法，如果大方向没问题，我们这轮就能把细节往前推。",
+      "offer": {
+        "subject": "衣橱梳理与陪逛服务",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "半天"
+          },
+          "format": "escrow",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "合作完全围绕Gracey实际需求，不变成带货推销",
+            "maps_to_resource": "wardrobe_audit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你先把方案发过来。我先说我最在意的点：你们明确写了“不希望变成带货推销”，这很对我路——我不想做那种表面陪逛、实则推自己货的事。服务范围里能写明这一点，我就踏实了。至于2500这个总价，说实话不是我平时半天的行情，但既然需求清楚、结构也灵活，我愿意以这个数来做。时间、上门或线上我都可以配合，细节我们可以继续对。整体上，这个方案我可以接受。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10704,
+        "out": 5159,
+        "cache_hit": 9088,
+        "cache_miss": 1616,
+        "calls": 2
+      },
+      "sim": {
+        "in": 938,
+        "out": 3310,
+        "cache_hit": 640,
+        "cache_miss": 298,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 772,
+        "out": 1672,
+        "cache_hit": 512,
+        "cache_miss": 260,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2339,
+        "out": 2317,
+        "cache_hit": 1152,
+        "cache_miss": 1187,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

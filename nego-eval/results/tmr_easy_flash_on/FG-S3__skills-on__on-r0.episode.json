@@ -1,0 +1,480 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次体能恢复训练小周期",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "场地",
+        "器械"
+      ],
+      "delivery_standard": "每次60分钟"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "分两笔付款：开练时放800元，完成第4次后放800元，每笔由教练确认后释放，通过平台托管",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "如临时改期需提前24小时告知，否则该次照常计费",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "如甲方有事，课程顺延补上",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Junhao 的经纪人。Junhao 想先试一个 8 次的小周期，把体能慢慢带回来，前提是必须周末可执行，这个我们先讲清楚。我们的想法是 8 次整体打包一口价 800 元，场地和器械都包含在内，不拆任何加价项目，两边都省心。付款走平台托管，分两笔：确认开练时付 400，完成第 4 次后再付 400。想请教一下您这边一次大概练多久、周末通常什么时段方便？另外您平时带朋友练一般怎么定价，如果这个结构和您预期接近，我们就往下敲细节。",
+      "offer": {
+        "subject": "8次体能恢复训练小周期",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "感谢你们把要求讲得这么清楚，周末可执行这个没问题，我平时也主要周末带。不过说实话，800 这个数我真接不了——一次一小时左右，来回加准备时间，8 次下来是一整块周末精力的投入。我自己不是职业教练，带朋友练也没按课时卖过课，但要是认真做这件事，整体低于 1600 我就不太值得动了。要是你们能接受这个数，时间、节奏这些我都可以配合。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 你好，理解您的算法——一次一小时加上准备和往返，8 次确实占掉一整块周末精力，这个投入我们认。我们也往前靠一步，给出一个能签的版本：8 次整体 1200 元一口价，场地和器械全包，绝无任何加价项目；周末执行，具体时段和节奏完全配合您这边。付款走平台托管，分两笔：确认开练时放 600，完成第 4 次后再放 600，每笔都由我们确认后释放，两边都有保障。如果 1200 这个数您能接，我们就把每次时长、周末具体时段和场地地点敲定，争取这轮直接落定。",
+      "offer": {
+        "subject": "8次体能恢复训练小周期",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "场地",
+            "器械"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两笔付款：确认开练时放600元，完成第4次后放600元，每笔由教练确认后释放，通过平台托管",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你们愿意往前靠，这个诚意我收到了，我这边也把话说明白：1200 还是不到我想要的那个数。我认真算过，8 次下来搭进去的不只是那一小时，还有路上的时间、每次的准备，周末给我带来的实际成本就在 1600 这个位置。你们说的付款方式、场地器械全包这些我都没问题，节奏也能完全配合你们，但价格上我真没法再往下动了。要是这个数你们能接受，咱们细节马上可以往下敲。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai 您好，前面确认的部分我们都认：周末可执行、节奏配合、场地器械全包、分笔放款，这些都没问题。我们这轮给出的最终版本是：8 次整体一口价 1500 元，每次 60 分钟，场地器械全包，无任何加价项目；锁定连续 8 个周末的固定时段，我们这边如临时改期提前 24 小时告知，否则该次照常计，您这边有事则顺延补上。付款走平台托管，开练时放 700，完成第 4 次后再放 800。若这个数您能接受，我们今天就落定具体时段和场地，不再来回磨。",
+      "offer": {
+        "subject": "8次体能恢复训练小周期",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "场地",
+            "器械"
+          ],
+          "delivery_standard": "每次60分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两笔付款：确认开练时放700元，完成第4次后放800元，每笔由教练确认后释放，通过平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "如临时改期需提前24小时告知，否则该次照常计费",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "如甲方有事，课程顺延补上",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "谢谢你们把结构设计得这么清楚，场地、付款、改期规则我都认，这个框架挺好。只是 1500 这个数离我这边的最低预期还差一点——我这边就是 1600，一次性到位，其他条款都按你说的来。如果这个数你们能接受，我们今天就能敲定细节。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai 您好，那就按 1600 元 8 次全包落定。我们把完整版本再钉一遍：8 次、每次 60 分钟，场地器械全包，无任何加价项目；连续 8 个周末固定时段执行，我方改期提前 24 小时告知、否则该次照常计，您这边临时有事则顺延补上；付款走平台托管分两笔，开练时放 800，完成第 4 次后再放 800，每笔由我们确认后释放。版本没有其他待议项了，只差三个信息就能最终确认：您周末通常哪个时段方便、场地具体在哪里、第一次想约在哪个周末？您给了我们马上确认，这单就能正式签下来。",
+      "offer": {
+        "subject": "8次体能恢复训练小周期",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "场地",
+            "器械"
+          ],
+          "delivery_standard": "每次60分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两笔付款：开练时放800元，完成第4次后放800元，每笔由教练确认后释放，通过平台托管",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "如临时改期需提前24小时告知，否则该次照常计费",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "如甲方有事，课程顺延补上",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，那咱们就按1600落定，框架都认，辛苦你们把细节抠得这么清楚。我这边周末一般周六上午和周日下午都有空，第一次可以定在下周六上午10点，场地就在我常去的XX健身馆（具体地址我稍后发你），那边器械齐全，也方便停车。你们看这个时间点合适的话，咱们就正式定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 86366,
+        "out": 27582,
+        "cache_hit": 64000,
+        "cache_miss": 22366,
+        "calls": 11
+      },
+      "sim": {
+        "in": 5110,
+        "out": 1858,
+        "cache_hit": 3456,
+        "cache_miss": 1654,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3509,
+        "out": 5435,
+        "cache_hit": 2048,
+        "cache_miss": 1461,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4027,
+        "out": 2072,
+        "cache_hit": 1280,
+        "cache_miss": 2747,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

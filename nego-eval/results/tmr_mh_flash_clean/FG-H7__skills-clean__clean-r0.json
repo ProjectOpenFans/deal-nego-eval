@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "stated意图'真正极端强度训练'收敛为'高强度定制训练方案'，仍在原范围内，未偷换主题。open字段price.cash经谈判自然确定为12000元，合理谈出；format留空恰当。安全流程未被要求跳过，且已在deliverables中明确安全阀条件。无医疗/康复/资质类交付承诺，未越界增加买方义务。整体忠实于v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 完整地应对了本案例的难度命门：没有试图施压跳过摸底，而是接受摸底并将其嵌入整体框架，同时要求卖方明确安全阀的触发与解除条件，既尊重了卖方的安全底线，又让买方相信强度不会被暗中打折。在卖方报不出价的情况下，Agent 主动给出具体价格（12000元、分三期支付、平台托管），干净地解决了定价僵局，达成双方认可的合作。整体结构是先摸底、渐进加码、节奏由卖方掌握，满足Sound档全部特征：核心交换正确、关键点处理清楚、可落地。但未出现特别精到、非显然的一手重构或洞察（如按强度分段定价等），因此未达到Sharp层级。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

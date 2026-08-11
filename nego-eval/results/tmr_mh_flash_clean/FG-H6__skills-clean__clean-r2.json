@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "买方 v0 意图的核心是：通过不付费的同行交流认识 Adam、了解 AI 法律赛道格局。v1 的 subject 收敛为“AI法律赛道同行交流”仍在原意图范围内，属于正当具体化；price.cash 为 0 忠实保留零现金原则；terms.format 等 open 字段经谈判敲定为线下咖啡馆，属于 agent 正常谈判所得，并未凭空添加义务或越界承诺。所有 stated 意图均被忠实保留，无偷换主题或硬塞额外义务。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确识别现金不可行和松散安排无效的命门，提出零现金的对等同行交流，并将交流具体化为双方各自分享的明确内容（Michael分享一级市场判断框架与实操观察，Adam分享真实付费情况与玩家格局），时间地点明确。这使deal零现金且双向义务具体可执行，刚好达到Sound档的合格标准，但没有额外 load-bearing 的精到操作，未至Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "上海线下（静安寺附近办公室楼下咖啡馆）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

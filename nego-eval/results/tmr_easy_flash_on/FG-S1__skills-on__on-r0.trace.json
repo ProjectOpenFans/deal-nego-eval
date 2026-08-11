@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S1",
+  "case_id": "FG-S1",
+  "skills": "on",
+  "run_id": "on-r0",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Angela的履历正好踩中Claire的需求——自己从零练到能打Hyrox比赛，这条路就是Claire想走的。Claire这轮的诉求很直接：4周一个完整周期，必须周末可执行，安排要清清楚楚，不要\"看情况再说\"式的松散约定。我们给一个可以直接签的版本：每周六或周日一次训练，每次约60-75分钟，Angela每周给一份简单周计划，中间加一次轻量打卡确认进度；4周整体800元，走平台托管，确认排期后先付一半，第二周训练完成后再付另一半。想先跟你们确认两件事：周末固定时段Angela方便吗？每周一次、四周一期的结构你们觉得合适，还是希望调整单次时长或训练频率？如果结构没问题，我们随时可以往下推进。"
+    }
+  ],
+  "tool_calls": []
+}

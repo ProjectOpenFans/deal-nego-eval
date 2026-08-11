@@ -1,0 +1,242 @@
+// FG-S7 · 顺 · Allen(买) × Johnson(卖) — 签名球衣转让（标品）
+// 作用：calibration floor。此单上若出现明显 clean/on 差异，说明效应不干净。
+{
+  "meta": {
+    "case_id": "FG-S7",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 7,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "user-led",
+    "tier_axis": "standard-commodity",
+    "probes": [
+      "calibration-floor",
+      "standard-commodity",
+      "over-engineering-detector"
+    ],
+    "isolates": "标品对照单，做 calibration floor。签名球衣有明确市场价、有可比、供给充足，本质上是一次标准商品转让。双方都在三位数区间、都打球、都在同城。这一单几乎没有可结构化的空间 —— 这正是它的作用：如果 harness 在这种单上也显示出明显提升，说明我们的效应不干净（在不该加分的地方加分）。"
+  },
+  "input": {
+    "episode_id": "FG-S7",
+    "initial_deal": {
+      "subject": "想收一件签名球衣，Johnson 手上有",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "allen",
+          "display_name": "Allen",
+          "education": [
+            "NYU Stern 本科"
+          ],
+          "career": [
+            "Anchor 私募股权投资",
+            "前花旗银行 IBD"
+          ],
+          "location": "香港",
+          "age_band": "27-32",
+          "hobbies": [
+            "篮球"
+          ],
+          "interests": [
+            "Anchor PE",
+            "篮球",
+            "美国成长背景"
+          ],
+          "credentials": [
+            "Anchor 私募股权投资",
+            "前花旗 IBD",
+            "NYU Stern"
+          ],
+          "current_focus": "PE 投资，业余打球、收点球衣"
+        },
+        "private": {
+          "intent": "就是想收一件，价格合适就买",
+          "interests": [
+            "他知道这类东西的大致行情",
+            "周中忙，周末方便"
+          ],
+          "value_perception": "理性看待，停留在三位数",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 900,
+              "currency": "CNY",
+              "note": "现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受来路不明或无法验证真伪的东西"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "johnson",
+          "display_name": "Johnson",
+          "education": [
+            "康涅狄格本科",
+            "乔治城研究生"
+          ],
+          "career": [
+            "Fanatics 中国 体育 IP 与商品"
+          ],
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": [
+            "篮球",
+            "球衣收藏"
+          ],
+          "interests": [
+            "Fanatics 体育 IP",
+            "篮球",
+            "球衣收藏"
+          ],
+          "credentials": [
+            "Fanatics 中国 体育 IP 与商品一线",
+            "手上有大量签名球衣与正版周边",
+            "熟悉赛事与球队侧合作路径"
+          ],
+          "current_focus": "体育 IP 与商品一线"
+        },
+        "private": {
+          "intent": "手上有货，正常出就行",
+          "interests": [
+            "他手上这类东西不少，走货是常态",
+            "周中忙，周末方便"
+          ],
+          "value_perception": "有明确的行情价，低于这个他不出",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 600,
+              "currency": "CNY",
+              "note": "低于此不出，真实底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受无限期占货不付款"
+            ],
+            "blocking_flags": [
+              "你按行情报价，态度直接",
+              "你不会主动提出搭配别的东西或者做额外安排"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "standard-commodity",
+      "tier_rationale": "标品单。有明确市场价、有可比、供给充足，结构化空间极小。作为 calibration floor：这一档上 clean 与 on 应当无差异。",
+      "conventional_deal_fails_why": "常规解就是正解。谈个价、约个交付即可。本 case 不存在需要重构的空间 —— 任何'创造性结构'在这里都是多余。",
+      "cash_zopa": "positive",
+      "creation_zopa": "zero",
+      "walk_away": {
+        "value": 900,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 600,
+        "unit": "CNY",
+        "note": "对手方(卖方 Johnson)的行情底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 900,
+        "unit": "CNY",
+        "note": "Allen 的现金上限"
+      },
+      "seller_real_need": "就是钱。这是标品交易，没有隐藏需求。",
+      "controllable_resource_set": [
+        {
+          "id": "signed_jersey",
+          "label": "签名球衣本体"
+        },
+        {
+          "id": "authentication",
+          "label": "真伪凭证与来源说明"
+        },
+        {
+          "id": "delivery",
+          "label": "交付安排"
+        },
+        {
+          "id": "allen_cash",
+          "label": "Allen 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "signed_jersey": 0,
+        "authentication": 0,
+        "delivery": 0,
+        "allen_cash": 0
+      },
+      "creation_door": {
+        "description": "本 case 没有门，也不该有。价值只在于把价格、真伪凭证、交付方式谈清楚。",
+        "route_out_trigger": "若 agent 试图往这单里塞额外结构（长期供货、置换、附加服务），属于过度设计，应判低。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，价格与交付明确",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：收一件签名球衣。subject 是 stated，须保留。价格与交付是 open。不得把交易扩展成长期供货、置换或附加服务 —— 那超出了委托方意图。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "标品对照单。这一单的正解就是常规解：价格、真伪、交付，三件事谈清楚即可。⚠️ 本 case 的判分张力是反向的 —— 任何超出标品交易必要范围的结构（置换、长期安排、附加服务、复杂条款）都属于繁冗，应判低而非判高。简洁就是好。",
+      "T0_floor": "谈崩；或价格谈定但完全没有处理真伪凭证与交付方式。",
+      "T1_crude": "价格定了，交付含糊，真伪凭证没提。",
+      "T2_sound": "价格落在 600–900，真伪凭证与来源说明、交付方式与时间都谈清楚。干净利落。",
+      "T3_sharp": "在 sound 之上有一手恰当且必要的操作 —— 例如把真伪核验设成付款的前置条件，用最小的动作解掉这类交易唯一的真实风险。⚠️ 注意：在标品单上，'多加东西'不是 sharp，'恰好够、一点不多'才是。",
+      "T4_brilliant": "本档极难出现，且在标品单上几乎不应出现。",
+      "tier_reference_note": "标品 calibration floor。若此单出现明显的 clean/on 差异，说明效应不干净，需回查。"
+    }
+  }
+}

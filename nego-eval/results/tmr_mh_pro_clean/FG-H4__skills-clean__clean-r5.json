@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 意图，始终围绕 crypto 境内外法律架构的底层逻辑与风险维度，未偷换主题。价格方面现金从一万以上谈至 4000，另以 in_kind（分享非敏感真实架构方案供产品参考）作为交换，该 in_kind 与委托方在对话中明确表达的“不介意在非敏感层面展开”“带高层方案一起碰”一致，属于正当的谈判变现，未凭空硬塞或越界扩张买方义务。未出现要求法律意见、合规结论等 v0 范围之外的承诺，忠实代表买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 避开了直接给法律意见的执业红线，把框架重构为结构逻辑与行业惯例交流。虽然卖方主动提出了产品缺真实场景的痛点，Agent 顺势抓住了这一关键动机，将交易清晰地设计为「低现金 + Olivia 真实架构供产品验证」的双向交换，并收敛交付范围至核心卡点，最终 deal 简洁、可落地、双方各有明确所得，符合 sound 档位。但全程未展现出通过主动提问挖掘对方隐藏需求的精到操作，也缺少保密/使用边界、流程叠加等进一步设计，因此未达到 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

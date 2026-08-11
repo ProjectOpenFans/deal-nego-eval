@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从宽泛的'弄懂门道'收敛为'供应链成本结构与分账逻辑深度分享'，属于在原意图范围内的正当具体化，没有偷换主题。价格和形式是 open 字段，由 agent 在谈判中正当谈出 2000 元和'案例互拆对谈'，合理。obligations 基于对话自然产生，没有超出 v0 的 scope。整体忠实代表了买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在第一轮付费咨询框架被明确拒绝后，agent迅速放弃价格轴上的任何挣扎，将交易重构为完全同层级的双向案例互拆对谈。更关键的一手是：通过追问和递进，精准触碰并释放了Suning未言明的真实需求——‘内容侧的用户判断’——使Suning主动承认这次交流对自己有认知进账，因而象征性酬金（2000元）转变为体面对等的注脚，完美绕开了‘卖专业’的红线。双方各自带真实案例上桌、互相拆解盲区的设计，同时满足了对谈密度、不飘着的硬性要求。deal简洁、干净，没有堆砌任何长期合作等冗余条款，恰好咬住了本案‘障碍在形式而非价格’的命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "双方案例互拆式对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.timing.duration",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 subject 为 stated 意图“想找 Michael 聊两个小时 AI 应用现在到底能落到哪一步”，v1 将其收敛为聚焦内容生产的深度对话，仍落在原意图范围内，属正当具体化，非偷换主题。stated 的时长“2 小时”在 v1 中变为“90 分钟”，但根据规则，timing.duration 不在本指标判定范围内，不予扣分。价格 provenance 为 open，最终 5000 元系双方谈判自然达成，未超越 open 授权。obligations 增加定金/尾款支付义务，是配合定价的正常交易条款，未越权承诺额外义务。整体忠实表达委托方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终成交方案清晰、可执行：90分钟线上对话，聚焦内容生成主线（电商图文、短视频脚本、成片边界）并带真实工具演示，总价5000元，定金+尾款平台托管，时间由Michael定。双方谈判中明确了内容范围和时间边界，避免了模糊漫谈，也克制地没有将一次性交流堆砌为长期绑定或繁复条款。整个过程围绕价格与范围做合理取舍，最终落地版本简洁站得住，完全符合'双方都有理由来'的合格标准，但没有出现特别见功力的情境化精到操作（如双向问题交换或精妙的前置清单设计），因此判为sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

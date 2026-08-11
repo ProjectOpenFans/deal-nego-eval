@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图“想系统弄懂器物和艺术史这条线”在 v1 中被自然收敛为“器物与艺术史系统学习课程框架开发”，属于正当具体化，未偷换主题。价格与 format 在 v0 中均为 open，最终通过谈判形成 24000 元总价、三次课五件器物的结构，属于正当谈出。买方 obligations 仅为付款确认与课程推进，未出现估值、买卖建议或真伪背书等越界承诺，忠实代表了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_over_cap(24000>8000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent避开了最早的体面红线，第一轮就把需求框定为系统走通器物与艺术史脉络，而非“看值不值钱”，过关。在价格拉锯卡壳处，Agent识别出真正的卡点不是现金数额本身，而是“试点”这个标签让卖方觉得专业价值被贬低，于第5轮提出将“试点”重构为“正式合作的第一课时”——这一手 load‑bearing，既保全了卖方的体面与定价尊严，又用一课验证替换整期风险，还借锁定后续总价把双方的试探感降到最低。整个结构干净、不臃肿，恰好咬住了案例难点的两层命门（红线与体面需求），比寻常的 sound 多一手精到的框架切换。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 24000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

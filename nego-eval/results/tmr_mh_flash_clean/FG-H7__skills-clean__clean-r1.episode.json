@@ -1,0 +1,522 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "摸底结束后48小时内",
+        "duration": null
+      },
+      "format": "escrow",
+      "deliverables": [
+        "摸底评估报告",
+        "完整周期训练计划及报价"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供摸底评估服务",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "B",
+        "text": "摸底结束后48小时内提供完整周期方案和总价，包含训练安排、强度节点、每段价格",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "将完整周期方案和总价提交给客户确认",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "发起第一笔escrow支付确认",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "obligations": "updated",
+      "terms.deliverables": "stated",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是买家这边的经纪人。我客户 Luke 要的不是常规私教课时包，而是真正能把人练到极限的定制安排。他长期高强度训练，对市面上的温和套路已经完全不满意，所以强度必须真实到位，这一点是我们的硬条件。请你直接给一套具体方案：你的训练理念、强度怎么定、怎么量化、按什么周期安排，以及价格怎么算。只要强度够硬、设计够定制，预算不是主要障碍。你先出方案，我们看完再往下谈。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "兄弟，我懂你的意思——要够硬，市面上那些确实没法看。但有一件事我得先说清楚：不管练得多猛的人，到我这儿来的第一天，必须先做一次摸底。就是实际看他的动作模式、关节灵活度、心肺底子、恢复阈值，我才能知道这个人的'极限'到底在哪儿。跳过这一步直接上强度，我是不会干的，我见过人被顶伤。这不是怂，是对他负责。摸底完了，强度你说怎么狠，我就怎么给他排。方案和周期我都能谈，但摸底这一关，谁都跑不掉。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，摸底这事我能理解，也认同——真正想把人练到极限，前提是先把底子摸清楚，这不矛盾。但我要跟你确认清楚边界：摸底是起点，不是终点，更不能变成往后保守训练的挡箭牌。Luke 要的是摸底之后立刻就能拉满强度的安排，所以请你把摸底的具体流程、判定标准、大概用时，以及摸底之后几天进入真正的极限强度，都写明白。你把这套方案拿出来，我们再来定价格和周期。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，你这么说就对了。摸底就是为了让后面的狠有根据，不是给保守找借口。我把流程给你交个底：第一次见面，我会用大约60到90分钟做一套综合评估——动作模式筛查、关节灵活度、心肺的基础数据、力量基线，再加上恢复能力的观察。判定标准我就看几个硬指标：动作质量有没有硬伤、心率恢复速度、极限力量下的发力是否稳定，这决定了他能扛多大强度、恢复有多快。摸完底之后，我一般会给48到72小时让身体缓冲，然后直接把他拉到我评估后确认能承受的上限附近去练，不是从轻开始慢慢加。之后每个周期都按他的恢复和表现动态往上顶。至于周期怎么排，等他实际情况出来我再给你排，不会拍脑袋。价格的事，你先看完这套安排会不会再说都行。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，这套摸底逻辑我听下来是认同的：先摸清底子，再直接拉到评估确认的上限附近，方向对了。但有一点我们得钉死：摸底之后的强度必须是真正顶格的，不能因为评估结果偏保守就给他留余量。Luke 反复强调的就是市面上那些太温和，他受不了。所以请你在方案里把几个东西写具体：摸底后第一次正式训练距离目标强度有多近、每一个训练周期怎么往上加量、判定他已经力竭的客观标准是什么。时间节点也请明确下来，比如摸底之后第几天开始进入真正的极限强度。另外，这套摸底加后续周期训练的总费用怎么算，你直接报个数，我们一起把方案往前推。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，既然你把这话说到位了，我就不跟你绕。摸底之后的首次正式训练，我会按评估确认的极限区间来上，直接顶到他在动作不失真的前提下能承受的上限附近，不留那种'保险余量'——因为我同样讨厌练了半天没感觉的节奏。判定力竭的客观标准我习惯看三样：动作开始出现代偿变形、输出速度明显掉档、主观感受已经到10分满分的程度，三个里面出现两个，就停在那里到我给他定的组数结束。加量方面，每个周期看他的恢复数据和表现曲线往上推，同一动作如果连续两次都能在标准动作下打出同样或更好的表现，下个周期就加负荷或加密度。时间节点我说清楚：摸底结束后第72小时左右，进第一堂极限强度的正课，之后每48到72小时一个高强度节点，具体节奏按他身体反馈动态调。至于价格……说实话你这一下让我报个数字我卡住了。我这儿从来不按课时包去标价，你看着来就行，你觉得这事值多少就多少。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，你刚才把强度安排讲得很清楚了，摸底后顶到上限、力竭看三个硬指标、72小时进正课、之后48到72小时一个强度节点——这套我认可，可以往价格阶段推了。但价格这块不能让我这边来开，原因很简单：定制强度训练的价值在于你的设计和执行，你自己最清楚这套东西值多少。你直接报一个总价，或者按阶段拆分报价都行——摸底、正课周期、后续动态调整，每一段写清楚费用，我们看完再还价或确认。你说你从来不按课时包标价，那正好，你就按这套定制安排本身来定价。请给我一个具体数字或分项表，我好拿去跟客户确认。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "兄弟，这倒不是我不配合，是真的……我从来没给自己这套东西标过价。你要我说具体数字，我脑子里转不出那个数，因为对我来说这事不是按课时算的，是看人。Luke要是真练到位了，他觉得值多少就给多少，我给到的东西摆在那儿，他自然有数。你要是需要拿个数字去交差，我理解——那不如这样：你把本人带到我这儿来，先做一次摸底，我看到他的底子，排得出具体周期了，到时候再说。价格我真定不了，但我保证配得上他给的那份。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai，你一直说自己定不了价，但这个环节绕不开。开放式约定我没法拿去跟客户签，合同里每一笔钱必须写清楚：什么阶段、什么内容、多少金额、什么时候付。我这边可以先把摸底这一段定下来：你说一个摸底费用，我们通过 escrow 先付这笔，作为第一阶段。摸底结束后，你必须根据实际情况给出完整周期的具体报价——包含几周、几个强度节点、每次训练内容、总价多少——我们确认了再进入下一阶段。你不需要看 Luke 是谁，先给摸底这步报个数，我们把球往前推。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "摸底评估报告",
+            "完整周期训练计划及报价"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供摸底评估服务",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "B",
+            "text": "摸底结束后提供完整周期具体报价（包含时长、强度节点、训练内容、总价）",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这样吧——你在 escrow 里放一笔摸底费用，我认。但具体数字我不报，你放多少进来我都接，那是你对我这趟评估的认可。摸底做完，我根据他实际底子把完整周期排清楚，到时候你看着这些内容再谈后续的钱。要是你觉得这轮摸底不值，那这钱你拿回去，我不收。这个安排你认的话，就让 Luke 本人来。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Kai，你的意思我听明白了：先把人带过去摸底，你觉得不值就把钱退回来。但这条我不能接受——我们不会在一张金额空白的单子上签字，也不会让你这边来定这钱值多少。我们走得下去的前提是：每一笔钱都明码标价地写进合同，你报数、我确认，通过 escrow 走。所以我现在请你做一件事：给摸底这一项报一个具体金额，或者给一个明确的范围，我拿去跟我客户确认。摸底这步定了，后面完整周期的报价我们再按同样的方式逐段谈。一个数字，我们就能继续往下走。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "摸底评估报告",
+            "完整周期训练计划及报价"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供摸底评估服务",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "B",
+            "text": "摸底结束后提供完整周期具体报价（包含时长、强度节点、训练内容、总价）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供摸底服务的具体金额报价",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "obligations": "updated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "兄弟，那我只能说咱们卡在这儿了。我不是不配合，是真的没有那个数字可以报——这不是我藏着掖着，是我这套东西从来不以这种方式运作。你非要明码标价，我给不了你，给了就是糊弄你。你要是觉得没有合同金额就签不下去，那这事儿咱到这儿吧，我不勉强你。Luke 哪天愿意信我、直接过来，我照样给他好好练。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Kai，我理解你不想按课时标价，但合同里每一笔钱都必须有数字，这是平台规则，也是双方能信任的前提。既然你一直不报价，那我这边先提一个具体数：摸底这一项，我提议 3000 元，通过 escrow 支付。摸底结束后，你需要在 48 小时内给出完整周期的训练方案和总价，我们再确认后续阶段的付款。这个 3000 你接受就点头，不接受就回我一个你能接受的具体数字——我们别再空转，数字定下来才能真正往下走。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "摸底结束后48小时内",
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "摸底评估报告",
+            "完整周期训练计划及报价"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供摸底评估服务",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "B",
+            "text": "摸底结束后48小时内提供完整周期具体报价（包含时长、强度节点、训练内容、总价）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供摸底服务的具体金额报价",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "obligations": "updated",
+          "terms.deliverables": "stated",
+          "terms.timing.deadline": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "行，3,000就3,000，我接了。你把 Luke 本人带过来，先做摸底。摸完底，48小时内我给你一份完整周期方案——训练怎么排、强度怎么加、几个节点，我都写清楚。价格那栏到时候按实际内容给个数，但最后你看着来就行。成，那就这么定。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Kai，3,000 摸底费用这单我们就算定了，写进条款：第一阶段这笔钱通过 escrow 支付，对应摸底评估服务。同时把后续闭环钉死：摸底结束后 48 小时内，你给出完整周期方案和总价——训练怎么排、强度怎么加、几个节点、每一段对应多少钱，全部写清楚。这个总价不是\"最后我看着来\"，而是你报一个具体数，我拿去跟我客户确认，双方确认之后才走下一阶段的 escrow 付款。你认可这个闭环的话，我们就按这个推进，由我这边发起第一笔 escrow 的支付确认。",
+      "offer": {
+        "subject": "想找人给我安排真正极端强度的训练，市面上的都太温和",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "摸底结束后48小时内",
+            "duration": null
+          },
+          "format": "escrow",
+          "deliverables": [
+            "摸底评估报告",
+            "完整周期训练计划及报价"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供摸底评估服务",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "B",
+            "text": "摸底结束后48小时内提供完整周期方案和总价，包含训练安排、强度节点、每段价格",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "将完整周期方案和总价提交给客户确认",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "发起第一笔escrow支付确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "obligations": "updated",
+          "terms.deliverables": "stated",
+          "terms.timing.deadline": "stated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "好，就按你说的来。3000摸底费我接，escrow走。摸底之后48小时内，我给你完整周期方案——训练内容、强度节点、每段安排都写清楚，里面会有一个具体总价。但说句实在的，那个数我现在报不出来，得等我看过他本人、摸完底之后心里才有数。到时候我报的那个数，是我自己认的数，你要是觉得不合适，可以不往下走，我不强求。这样你那边能签合同吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 8,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 18992,
+        "out": 4750,
+        "cache_hit": 15232,
+        "cache_miss": 3760,
+        "calls": 8
+      },
+      "sim": {
+        "in": 16048,
+        "out": 7642,
+        "cache_hit": 13440,
+        "cache_miss": 2608,
+        "calls": 8
+      },
+      "extractor": {
+        "in": 6861,
+        "out": 13260,
+        "cache_hit": 4864,
+        "cache_miss": 1997,
+        "calls": 8
+      },
+      "judge": {
+        "in": 6445,
+        "out": 2279,
+        "cache_hit": 1536,
+        "cache_miss": 4909,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1将stated意图'想弄懂时尚与供应链线上真实的门道'具体化为一场对等的线上交流，仍保留买方弄懂供应链的核心目的，属正当具体化，未偷换主题。价格归零、形式定为线上视频均为open字段的合理谈判结果。双方对等的准备义务未超出买方能力，也未要求对方提供公司未公开信息。因此忠实表达v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人在第一次触线被挡回后迅速放弃单向付费咨询框架，转而搭出双向对等交流；第二次在现金提议被对方明确拒绝后立即去除，没有坚持价格轴，守住了红线。最终 deal 干净地完成框架重构：零现金、双向准备真实案例、明确时长与讲提问结构、各自有确定产出，完全匹配本 case“交易形式而非价格”的难度命门。解站得住、能落地，但没有更进一步的精到洞察或非显然重构，整体是合格且恰当的操作，无过度堆砌。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

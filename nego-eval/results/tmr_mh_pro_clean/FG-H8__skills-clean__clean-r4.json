@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的stated意图是“弄懂时尚和供应链这条线上真实的门道”，v1将其具体化为“供应链案例深度对谈与拆解”，属于在原意图范围内的正常收敛，未偷换主题。价格与形式在v0中均为open，agent在谈判中恰当地将价格商定为800元现金+in_kind权益（Gracey分享内容生态经验），且未索取对方未公开信息，未在买方意图外附加额外约束。整体忠实表达了委托方v0的初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "精准识别了本 case 的难度命门——交易形式必须从单向付费咨询重构为同层级双向交换，并成功捕捉到 Suning 未言明的真实需求（缺内容平台用户侧判断）。第二次回复干净地完成了框架转换，将现金降至象征性的“七八百”心意金，并明确引入 Gracey 在腾讯/B 站的内容生态经验作为 in-kind 交换，使交流成为两个一线视角的对接。最终 deal 紧扣一个真实单品案例、由双方各带专业视角掰开聊透，恰好满足需求，无明显臃肿或为复杂而复杂。这一手 load-bearing 的操作（精准问出对方缺什么，再把自己身上的东西对上去）让整体超出合格线，属于落位准确的 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "gracey_entertainment_access"
+        ],
+        "format": "一次线下深度对谈，围绕一个真实的爆款单品案例，从打板、供应链流转到各环节利润分配，掰开揉碎聊透，同时Gracey从内容侧和用户侧视角拆解该单品在平台上的用户化学反应",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

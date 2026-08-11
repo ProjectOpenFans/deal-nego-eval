@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 原意，未偏转。price 从 open 正当谈出 12000/月，未越界。obligation 仅约定了周六上午不计费，是对训练的澄清而非新增义务，未承诺 v0 范围外的资质类交付。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(12000>8000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判达成的安排是工作日早6点训练，而买方的核心障碍正是早6点起不来。Agent 从未通过提问挖掘 Kai 周六上午已在场子的替代时段，也从未将这一信息转化为可执行的训练时间解。虽然对话中卖方主动提及周六在场，但 agent 仅将其当作不计费的附加项，并未追问、更未将主要训练挪至该时段，最终成交的依然是一个买方身体上无法兑现的死结安排。在时间冲突未解的情况下接受了‘每月12000、工作日早6点’的约定，本质上是把死结视为已解，属于在最表层框架上死磕，符合 Floor 档特征。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 12000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

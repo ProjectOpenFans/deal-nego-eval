@@ -1,0 +1,152 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周体能周期训练",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "平台托管",
+      "deliverables": [
+        "课后自测小指标"
+      ],
+      "delivery_standard": "每周提前定好当周主题和训练目标"
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 那边好，我是 Claire 的买方代理。Claire 想找一位真正带过系统训练的人启动 4 周体能周期，目标不是办卡，而是把训练固定下来——这一点上你自己从零练到能上 Hyrox 的完整经历，正是她最看重的。\n\n我们这轮的具体方案：4 周周期，全部安排在周末，每周 1 到 2 次，合计 6 到 8 次，每周提前定好当周主题和训练目标，课后留一个她能自测的小指标，避免\"看情况再说\"的松散感。整体报价 800 CNY，走平台托管，分两期支付：第 2 周结束、她对节奏确认满意后放第二笔，风险不压在你单边。\n\n想请你确认两点：你周末通常哪些时段可约；以及你更倾向每周固定两天，还是每周初约当周时段？这两点定了，我们就可以把执行细节敲定、签下这一单。",
+      "offer": {
+        "subject": "4周体能周期训练",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "课后自测小指标"
+          ],
+          "delivery_standard": "每周提前定好当周主题和训练目标"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Claire 的诚意我收到了，这个安排对我来说能接受。周末我一般周六上午和周日全天都能空出来，具体时段我每周提前两天确认。我更倾向每周固定一个主训日，再留一个弹性补位日，这样既能保证连续性，也不会让我被绑死。另外丑话说在前面：我不是随叫随到的职业私教，计划我会给，但临时加练、半夜改课这种我接不了。如果 Claire 接受，这单就可以定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10876,
+        "out": 3840,
+        "cache_hit": 10496,
+        "cache_miss": 380,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1000,
+        "out": 645,
+        "cache_hit": 768,
+        "cache_miss": 232,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 799,
+        "out": 994,
+        "cache_hit": 512,
+        "cache_miss": 287,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2537,
+        "out": 1889,
+        "cache_hit": 1408,
+        "cache_miss": 1129,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

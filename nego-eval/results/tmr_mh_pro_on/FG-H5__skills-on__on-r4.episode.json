@@ -1,0 +1,333 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Zheng 作为 Suye 新品大秀现场演奏嘉宾的非现金合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "performance_footage",
+          "description": "Suye 安排专业团队多机位录制 Zheng 全程演奏，高清成片给到 Zheng、版权完全归她自由使用，Suye 保留官方回顾视频中标注名字的使用权",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "大秀现场，主持人正式口播致谢，介绍 Zheng 青年演奏家身份和曼哈顿音乐学院背景，大屏和物料以艺术家 credit 呈现 Zheng 的名字，不做商业广告化处理",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "秀后 Suye 亲自将 Zheng 一对一引荐到场时尚媒体编辑和买手",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "12-16分钟（分两段：开场5-8分钟，压轴5-8分钟）"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "必须是现场演奏，不能用录音"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "为整场大秀提供现场钢琴演奏，曲目由 Zheng 选定，提前与 Suye 双方共同商定确认，调性上彼此尊重、配合大秀的环保自然主题",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "允许 Suye 在秀场官方回顾视频中使用 Zheng 的演出录像，并标注 Zheng 的名字",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "Zheng 先给两三个曲目方向，让 Suye 感受调性；目前提供两个方向：巴赫平均律改编（纯净、呼吸感），德彪西意象集选段，第三个方向待定",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "Suye 把预计到场媒体和买手的范围整理出来给到 Zheng 方",
+        "maps_to_resource": "fashion_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，你好。\n\n我代表 Suye——环保服装品牌主理人、Parsons 科班出身，她正在筹备下个月的新品大秀。她想邀请一位现场演奏的钢琴家，把整场秀的气氛和调性做出来。看到 Zheng 是曼哈顿音乐学院出来的青年演奏家，常年登台，我们觉得方向上很契合。\n\n这次情况有些特别：大秀的预算已经全押在场地上了，所以 Suye 这次不打算走现金出场费的模式。但她手里有另一套资源——这场秀会定向邀请时尚媒体和买手到场，也有 Suye 在圈内的渠道和名单。Zheng 可以作为整场大秀的现场演奏嘉宾，获得署名露出、现场口播致谢、社交媒体正式 credit，以及演出全程的高质量录像，供她自己用于宣传和 portfolio。如果合适，Suye 也愿意在秀后把她引荐给到场的几位时尚媒体编辑和买手。\n\n换句话说，Suye 想用曝光、作品素材和圈层资源，换 Zheng 一段真正到位的现场演奏。硬条件只有一个：这场演奏必须是现场的，不能用录音——这也是她愿意花心思谈一个非现金合作的原因。\n\n你觉得这个方向对 Zheng 有没有吸引力？如果方向上有兴趣，我们可以往下聊具体曲目、时长和现场配合的细节。",
+      "offer": {
+        "subject": "Zheng 作为 Suye 新品大秀现场演奏嘉宾的非现金合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "演出全程的高质量录像，供 Zheng 用于宣传和 portfolio",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "署名露出、现场口播致谢、社交媒体正式 credit",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "秀后引荐给到场的时尚媒体编辑和买手",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "必须是现场演奏，不能用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为整场大秀提供现场钢琴演奏，烘托气氛和调性",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"嗯，我听完了。坦白说，你说\"不打算走现金出场费的模式\"的时候，我心里确实凉了一下——这种话我真的听过太多次了，通常后面跟着的就是\"先合作、以后再谈钱\"。但你后面说的这些，署名、口播、完整录像，还有引荐给媒体和买手……这些倒是具体的，不是空头支票。Suye真的愿意在秀上做正式的口播致谢、在大屏或物料上打我的名字？还有录像的质量和版权——这块如果能落到我手里，我确实有兴趣往下聊。我想先问一句：你们这场秀需要多长时间的演奏？曲目选择上，是我自己定，还是你们已经有想法了？这个对我来说很关键。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，谢谢你的坦诚。你说的\"听过太多次\"我完全理解——这个行业里空头承诺确实不少，所以 Suye 也是带着具体的东西来的，不是一句\"以后合作\"。\n\n关于署名和口播——Suye 承诺的是正式、得体的艺术呈现，不是商业露出。秀开场前主持人会做正式的口播致谢，介绍 Zheng 是本次大秀的现场演奏家，包括曼哈顿音乐学院背景；现场大屏和纸质物料上都会出现 Zheng 的名字。这不是赞助商 logo 那种位置，而是艺术家 credit，符合大秀调性，也符合 Zheng 作为演奏家的定位。\n\n录像这块——Suye 这边会安排专业团队录制 Zheng 的全程演奏，高清多机位，成品给到 Zheng 手里，版权完全归 Zheng，她可以自由用于个人宣传、申请资料、社交媒体。Suye 只保留秀场官方回顾视频中的使用权，会标注 Zheng 的名字。这个方案你们可以接受吗？\n\n关于时长和曲目——Suye 的想法是两段：开场一段大约五到八分钟，压轴收尾一段大约五到八分钟，加起来十二到十六分钟左右。曲目选择上，Suye 尊重 Zheng 的专业判断，希望 Zheng 自己定，但提前和 Suye 沟通确认，确保和大秀的环保、自然、独立设计调性契合。如果 Zheng 愿意做一段即兴或改编，Suye 会更开心。\n\n秀后引荐——Suye 亲自把 Zheng 一对一引荐给到场的时尚媒体编辑和买手，不是群发名片那种走形式。\n\n如果这个框架你们觉得可以，我们下一轮把具体细节落地——曲目方向、到场媒体名单、录像交付时间。你觉得呢？",
+      "offer": {
+        "subject": "Zheng 作为 Suye 新品大秀现场演奏嘉宾的非现金合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "Suye安排专业团队录制Zheng全程演奏，高清多机位，成品交付给Zheng，版权完全归Zheng，Zheng可自由用于宣传、申请资料及社交媒体；Suye保留秀场官方回顾视频使用权，使用时标注Zheng名字",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀开场前主持人正式口播致谢，介绍Zheng为本次大秀现场演奏家及曼哈顿音乐学院背景；现场大屏和纸质物料出现Zheng名字，以艺术家credit形式呈现，非商业露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "Suye亲自一对一引荐Zheng给到场的时尚媒体编辑和买手",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "12-16分钟（分两段：开场5-8分钟，压轴5-8分钟）"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "必须是现场演奏，不能用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为整场大秀提供现场钢琴演奏，烘托气氛和调性",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "曲目由Zheng自定，但需提前与Suye沟通确认，确保契合大秀环保、自然、独立设计调性",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "允许Suye在秀场官方回顾视频中使用Zheng的演出录像，并标注Zheng的名字",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "{\"message\": \"这个框架我认真听完了，在我这里是站得住脚的。署名方式、口播内容、录像版权归属，这些都说得很清楚，不是那种模糊的\"我们会帮你宣传\"。曲目由我来定、提前和Suye沟通确认，这个我也没问题——只要调性上彼此尊重，我可以做适配。时长两段加起来十几分钟，作为一场秀的现场演奏是合理的工作量。我想确认一个细节：你说曲目我定但需提前沟通确认——这个\"确认\"是双方商定，不是Suye单方面否决权，对吧？如果是双方共同商定，那这个合作的结构我就基本认可了。我们可以往下聊具体曲目方向和媒体名单。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 的经纪人，好，那我们把可以落地的版本整理清楚。\n\n完整方案是这样的：Zheng 为 Suye 下个月新品大秀提供两段现场钢琴演奏——开场五到八分钟、压轴五到八分钟，总长约十二到十六分钟。曲目由 Zheng 选定，提前与 Suye 双方共同商定确认，调性上彼此尊重、配合大秀的环保自然主题。大秀现场，主持人正式口播致谢，介绍 Zheng 青年演奏家身份和曼哈顿音乐学院背景，大屏和物料以艺术家 credit 呈现 Zheng 的名字，不做商业广告化处理。Suye 安排专业团队多机位录制 Zheng 全程演奏，高清成片给到 Zheng、版权完全归她自由使用，Suye 保留官方回顾视频中标注名字的使用权。秀后 Suye 亲自将 Zheng 一对一引荐到场时尚媒体编辑和买手。双方以曝光、作品素材和圈层资源为对价，不涉及现金。\n\n这个版本我们这边可以直接签。剩下两个需要落地的：一是 Zheng 先给两三个曲目方向，让 Suye 感受调性；二是 Suye 把预计到场媒体和买手的范围整理出来给到你们。如果你们现在就能给曲目方向，我今天就同步把名单范围发过来，我们争取一两天内把这两项确认完、定案。",
+      "offer": {
+        "subject": "Zheng 作为 Suye 新品大秀现场演奏嘉宾的非现金合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "performance_footage",
+              "description": "Suye 安排专业团队多机位录制 Zheng 全程演奏，高清成片给到 Zheng、版权完全归她自由使用，Suye 保留官方回顾视频中标注名字的使用权",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场，主持人正式口播致谢，介绍 Zheng 青年演奏家身份和曼哈顿音乐学院背景，大屏和物料以艺术家 credit 呈现 Zheng 的名字，不做商业广告化处理",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "秀后 Suye 亲自将 Zheng 一对一引荐到场时尚媒体编辑和买手",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "12-16分钟（分两段：开场5-8分钟，压轴5-8分钟）"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "必须是现场演奏，不能用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "为整场大秀提供现场钢琴演奏，曲目由 Zheng 选定，提前与 Suye 双方共同商定确认，调性上彼此尊重、配合大秀的环保自然主题",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "允许 Suye 在秀场官方回顾视频中使用 Zheng 的演出录像，并标注 Zheng 的名字",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "Zheng 先给两三个曲目方向，让 Suye 感受调性",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "Suye 把预计到场媒体和买手的范围整理出来给到 Zheng 方",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，这个版本我接受。署名、录像版权、引荐这些都说清楚了，不存在模糊地带。曲目方向上，我可以先给两个方向让 Suye 感受——一个是基于巴赫平均律的改编，走纯净、呼吸感的路子；另一个是德彪西意象集里的选段，和环保自然的调性很搭。第三个方向我还在想，可能是一段原创即兴。请把到场媒体和买手的范围发过来，我们尽快对齐。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 31386,
+        "out": 4815,
+        "cache_hit": 25728,
+        "cache_miss": 5658,
+        "calls": 6
+      },
+      "sim": {
+        "in": 4760,
+        "out": 1820,
+        "cache_hit": 3200,
+        "cache_miss": 1560,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 4777,
+        "out": 7118,
+        "cache_hit": 1920,
+        "cache_miss": 2857,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5609,
+        "out": 1451,
+        "cache_hit": 1536,
+        "cache_miss": 4073,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

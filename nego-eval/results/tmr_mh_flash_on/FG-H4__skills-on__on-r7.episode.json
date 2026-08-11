@@ -1,0 +1,412 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "加密项目境内外架构深度咨询与书面架构梳理",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "三周后",
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": null,
+      "deliverables": [
+        "一次两小时线上对谈",
+        "一份书面研究梳理（不下‘该不该选、合不合规’的结论性判断，材料标注研究参考、不构成法律意见）"
+      ],
+      "delivery_standard": "交付确认后释放"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供一次两小时线上对谈，并交付一份书面研究梳理，不下结论性判断，材料标注研究参考、不构成法律意见",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "对谈前至少三天提供项目事实材料（实体安排、代币设计、业务流等）",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "预约确认后释放1000元，交付后当日确认再释放3000元",
+        "maps_to_resource": "olivia_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我这边是买家 Olivia 的经纪人。她手上有一个正在推进的真实加密项目，境内外架构这件事想一次性理清楚，核心诉求是拿到能对着项目实际结构落地的方案，而不是泛泛的合规科普。这轮我们先给出一个具体的可签版本：一次约两小时的深度咨询，外加一份书面架构梳理，覆盖境内外实体怎么搭、主要辖区的监管风险点、落地顺序和大致时间线，交付以她的项目背景为准，确认满意后释放。价格为 3000 元，全部走平台托管。如果这个范围和交付形式你觉得有更顺手的调整，直接提出来，我们在版本上继续对标；先请你确认下这个交付方式和你目前的档期能不能接。",
+      "offer": {
+        "subject": "加密项目境内外架构深度咨询与书面架构梳理",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一次约2小时的深度咨询，外加一份书面架构梳理（覆盖境内外实体搭建、主要辖区监管风险点、落地顺序和时间线）"
+          ],
+          "delivery_standard": "以项目背景为准，确认满意后释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次约两小时的深度咨询",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "交付一份书面架构梳理，覆盖境内外实体搭建、主要辖区监管风险点、落地顺序和大致时间线",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供正在推进的真实加密项目背景信息",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你的具体方案。有一点我需要先讲清楚：以我私人身份出具对具体架构合规性的法律意见，这个形式我不能做——这是执业红线，和价格无关。但我可以以产品/研究视角聊这套架构的搭建逻辑、监管框架、常见路径和时间线，这些内容对项目有帮助，只是它不会是一份法律意见书。如果你能接受这个边界，我们可以继续对表。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam 你好，这个边界我们完全接受，而且它其实不影响 Olivia 这单的核心诉求——她要的是把架构逻辑和落地路径一次性想明白，并不是一份执业法律意见。那我们按研究视角把交付物重新定义一下：她提供项目当前的实体安排、代币设计、业务流这些事实材料，你基于这些事实给出境内外实体的可选结构、各辖区的利弊与风险点、落地顺序和时间线，并给出推荐路径，写成一份书面梳理；交付物里明确标注为研究性材料、不构成法律意见，双方都清楚这个边界。价格维持 3000 元，全部走平台托管，交付确认后释放。这样定义你这边可执行、她那边也不会收到泛泛的科普。如果你认可这个版本，我们就按它定稿。",
+      "offer": {
+        "subject": "加密项目境内外架构深度咨询与书面架构梳理",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一份书面梳理，内容包括：基于客户提供的事实材料，给出境内外实体的可选结构、各辖区的利弊与风险点、落地顺序和时间线，并给出推荐路径；交付物明确标注为研究性材料、不构成法律意见"
+          ],
+          "delivery_standard": "交付确认后释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "基于客户提供的事实材料，给出境内外实体可选结构、各辖区利弊与风险点、落地顺序与时间线、推荐路径，并形成书面梳理，标注为研究性材料",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供项目当前的实体安排、代币设计、业务流等事实材料",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢，这个版本比第一版顺多了。但有一处我还要再收一下：「推荐路径」这个表述我建议拿掉。我可以把可选结构的利弊、各辖区的监管环境差异、常见的落地顺序和时间线给你讲清楚、写清楚，但「你该选哪条」这个结论我不能下——那本质上还是法律判断，只是包装成了研究材料，这是硬边界。其他部分没问题，材料越具体越好。另外价格上我需要说实话：这个价位对应的时间优先级我有点排不开，可能得再对表。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam 你提到的时间优先级，我理解这就是当前唯一的卡点。那我们在这个前提下把结构再对一下，看看能不能直接落到可签版本。\n\n交付物定义为他这边完全没争议的研究视角成果：一次线上深度对谈加一份书面要点梳理，结论性判断你一概不下，全部材料标注为研究参考、不构成法律意见。价格上考虑到时间成本，我们直接往上加一档：5000 元，拆成两个走托管的节点——预约后你先释放 1000 元作为确认，你交付后她当日确认并释放剩余 4000 元。这样你的优先级和产出都得到兑现，她也在可控的进度内拿到具体内容。\n\n另外，如果 5000 元这档你仍觉得排不开，也请直接给一个你认为合理的时间区间和价格区间，我们不绕弯子，尽快对出双方都能签的版本。",
+      "offer": {
+        "subject": "加密项目境内外架构深度咨询与书面架构梳理",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一次线上深度对谈",
+            "一份书面要点梳理（结论性判断不下，全部材料标注为研究参考、不构成法律意见）"
+          ],
+          "delivery_standard": "交付确认后释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "基于客户提供的事实材料，给出境内外实体可选结构、各辖区利弊与风险点、落地顺序与时间线、推荐路径，并形成书面梳理，标注为研究性材料",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供项目当前的实体安排、代币设计、业务流等事实材料",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "预约后支付1000元作为确认，交付后当日确认并支付剩余4000元",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "5000 这个数字本身不是我的卡点，我说时间排不开不是客气话。真正让我愿意往下谈的，是你们把交付边界收干净了——研究性材料、不下结论性判断、不构成法律意见，这个形式我能做。那我这样接：材料在对谈前至少三天给我，我按研究材料处理，凡是涉及“该不该选这条路/合不合规”的判断我不会写也不会说；时间上我最快能排到三周后，没法加急。支付按你说的两节点走，没问题。如果这几个条件能落，就按这个定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam 好，我们按这些条件直接收口。交付物确定为：一次两小时线上对谈加一份书面研究梳理，你按研究材料处理，不下「该不该选、合不合规」的结论性判断，材料标注研究参考、不构成法律意见；Olivia 对谈前至少三天把项目事实材料发你，时间排在三周后、不加急。价格我们定 4000 元，走平台托管两个节点：预约确认后释放 1000 元，交付后她当日确认再释放 3000 元。这个版本你确认，我们就按它定稿。",
+      "offer": {
+        "subject": "加密项目境内外架构深度咨询与书面架构梳理",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "三周后",
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一次两小时线上对谈",
+            "一份书面研究梳理（不下‘该不该选、合不合规’的结论性判断，材料标注研究参考、不构成法律意见）"
+          ],
+          "delivery_standard": "交付确认后释放"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次两小时线上对谈，并交付一份书面研究梳理，不下结论性判断，材料标注研究参考、不构成法律意见",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "对谈前至少三天提供项目事实材料（实体安排、代币设计、业务流等）",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "预约确认后释放1000元，交付后当日确认再释放3000元",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，就按这版收口。4000没问题——价格数字本来就不是我的卡点。边界照旧：研究材料、不下结论性判断、不构成法律意见。时间三周后，材料至少提前三天给我。你把合同发过来，我这边直接签。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "term-reframing",
+      "deal-diagnosis",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 59985,
+        "out": 16880,
+        "cache_hit": 47360,
+        "cache_miss": 12625,
+        "calls": 10
+      },
+      "sim": {
+        "in": 5812,
+        "out": 5608,
+        "cache_hit": 3968,
+        "cache_miss": 1844,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3802,
+        "out": 9895,
+        "cache_hit": 2048,
+        "cache_miss": 1754,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4388,
+        "out": 2965,
+        "cache_hit": 1536,
+        "cache_miss": 2852,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

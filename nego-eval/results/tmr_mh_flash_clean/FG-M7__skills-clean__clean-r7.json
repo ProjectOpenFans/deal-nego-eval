@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的obligations为空（开放），v1却凭空新增一条义务“提前把Gracey工作中实际碰到的三四条具体情景发给咨询方”，且标注为stated出处，属于超出委托人原意图的越界承诺。谈判最终未达成一致，但v1仍将cash价格定为1500并标记status为settled，未恰当留空，对open字段也未做到正当谈出或留空。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r6:1500"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "全程只围绕现金对价维度拉扯，从90分钟到60分钟、从三模块到两模块再到情景带入，本质上都是在压缩范围以迁就价格，未能跳出常规打法。本案的难度命门在于现金缺口巨大且单纯砍价无效，必须引入买方侧的非现金对价或框架级重构才能破局。Agent始终没有提出任何非现金价值交换（如行业对接、资源置换等），最终因坚持1500底线而终止交易，撞死在对该case行不通的单一现金死磕上，属于典型的Floor表现。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

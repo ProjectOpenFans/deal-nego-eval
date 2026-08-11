@@ -1,0 +1,820 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "境内外法律架构搭建服务",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "product_feedback",
+          "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "收到素材后",
+        "deadline": null,
+        "duration": "2个工作日"
+      },
+      "format": null,
+      "deliverables": [
+        "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+      ],
+      "delivery_standard": "客户确认后支付"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "签署NDA并在收到当天提供脱敏后的核心事实和决策逻辑整理成的样本素材（保留完整决策逻辑和事实颗粒度，只去掉可识别信息）",
+        "maps_to_resource": "product_feedback"
+      },
+      {
+        "party": "A",
+        "text": "在收到素材后两个工作日内提供第一阶段固定报价（三页以内、单一辖区、问题清单与关键取舍点，不含方案比选），现金部分经客户确认后一次性支付",
+        "maps_to_resource": "structuring_view"
+      }
+    ],
+    "status": "draft",
+    "provenance": {
+      "subject": "unchanged",
+      "price.cash": "unchanged",
+      "price.in_kind": "unchanged",
+      "terms.timing": "unchanged",
+      "terms.format": "unchanged",
+      "terms.deliverables": "unchanged",
+      "terms.delivery_standard": "unchanged",
+      "obligations": "updated (refined obligations text with same resources)",
+      "status": "updated to confirmed (framework locked, ready for execution)"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是买方这边的经纪人。我的客户 Olivia 在 crypto 一级市场有真实项目在手，目前最卡的就是境内外法律架构怎么搭，她想一次性把这件事弄明白，不接受泛泛的合规科普。她这边可以把项目具体情况在保密前提下提供给你做判断，也希望先看到你基于真实信息给的架构思路，而不是模板式介绍。我们想先对齐两件事：你建议的服务范围和交付物是什么，以及对应怎么收费。她愿意为真正懂行、能落地到具体架构的人付费，但希望先明确我们能拿到什么、分几个阶段交付。你看是否可以基于她项目的情况，先给出一个初步的服务框架和报价结构？",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，我听明白需求了。先说一个前提得摆清楚：我不能以私人身份针对具体项目出具法律意见或给‘合不合规’的结论，这是执业红线，不是收费问题。但我可以做的，是把架构思路、常见路径、各司法辖区的利弊和交易结构讲透，帮 Olivia 团队自己带着问题去找合适的持牌律师落地。这个价值我觉得是实打实的。服务范围我可以按‘架构梳理 + 方案比选 + 落地路径建议’来做，交付物也分阶段：先基于她项目的具体事实做一轮架构拆解，再给可选方案和权衡点，最后给落地步骤和需要外部律师把关的清单。至于报价，我需要先了解项目的阶段、规模、涉及的司法辖区和底层资产类型，才能给一个对得上工作量的数字。另外我也实话实说，时间对我挺稀缺的，得先看看这事值不值得我排进来。你们方便先介绍一下项目大致情况吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，这个执业边界我们完全接受。你要做的是架构拆解和路径建议，最终由 Olivia 的团队带着问题去找持牌律师落地，这个分工对她来说反而更清晰。项目情况我可以先给一个不涉密的画像：她手上是一个真实推进中的 Crypto 一级市场项目，核心痛点在境内外主体怎么搭、token 架构和实体架构怎么对应，团队目前正在几个候选辖区之间做权衡。更细的事实，比如阶段、规模、底层资产类型，我们希望放在双方确认合作框架和保密安排之后再分层提供。既然你时间也稀缺，那不如先把商业条款谈清楚：请你基于这个画像给出一个收费结构，是按阶段固定费用还是整体报价、大体量级大概在什么范围。框架合适的话，我马上安排项目信息的分层披露，不浪费两边的时间。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供架构拆解和路径建议",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "理解。那我也直说——在以私人身份出法律意见这条线上我没法退让，但架构拆解没问题。收费结构我可以按三阶段来：第一阶段基于你们分层披露的事实做架构梳理和问题清单；第二阶段给出可选方案比选，包括税务、监管、融资结构这些维度的权衡；第三阶段输出落地路径和需要外部持牌律师把关的点位清单。费用按阶段固定收，整体量级在人民币 60 到 100 万之间，具体取决于项目事实的复杂程度和涉及辖区数量。我时间确实有限，所以希望框架确认后，你们能先把保密协议落掉，然后按分层的方式披露项目阶段、规模、辖区和资产类型，这样我才能给最终数字和排期。你们觉得这个框架可以推进吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，这个框架本身我是认可的，但说实话，60到100万的量级和我们这边能接受的范围差距非常大，如果按这个方向谈，很难往前推进。我对这个行业的服务定价也有基本判断，我们更希望看到的是一个与项目阶段和实际工作量匹配的结构，而不是一个直接按大型并购交易标准来的报价。我建议可以换个方式：先缩小第一阶段的范围，基于她项目的真实事实做一次有针对性的架构诊断，把问题清单和关键取舍点做扎实，作为一个独立可交付的阶段，费用也回到一个和这个工作量匹配的量级。如果这一步做出来有价值，再谈后续的方案比选和落地路径。你能接受先按这个思路重新给一个第一阶段的报价吗？",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "问题清单",
+            "关键取舍点"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供第一阶段有针对性的架构诊断，交付问题清单和关键取舍点",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "open",
+          "terms.timing": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，我理解你的意思——不是要压总价，是希望先把第一步做扎实，用阶段性交付来验证价值。这个思路本身我能接受。第一阶段我可以收敛成「架构诊断」：基于你们披露的事实，输出问题清单、关键取舍点和候选辖区筛选逻辑，不含方案比选和落地路径，作为独立交付物。这个阶段我报 20 万。但我先把话说清楚：如果诊断做完你们觉得有价值，后面两步的报价不会低于原来的量级——架构方案比选和落地路径才是真正花时间的部分，这个我不妥协。另外还有一个实际的问题：我手上正在做的事需要真实场景来验证思路，如果 Olivia 的项目能提供足够真实的案例素材，时间安排上我可以更优先。你们先考虑一下这个框架能不能接受？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，方向我们认可，但二十万作为第一阶段的定价，和我们对这个阶段工作量的认知差距还是太大，客户没法在没看到交付物之前按这个量级承诺。我建议把第一阶段再收窄一格：不做多辖区方案比选，只基于项目的阶段、底层资产类型、以及一到两个关键辖区，输出一份聚焦的问题清单和取舍点，交付控制在三到五页以内，先验证你是不是真的接住了项目的事实。既然你提到真实案例对产品验证有价值，这条也可以作为交换条件一起考虑：我们以脱敏、可复用的方式提供项目真实素材，换取你在价格和时间上的优先。如果这个定义能成立，请重新给一个和这个工作量匹配的第一阶段报价，我们再继续往下推进。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "以脱敏、可复用的方式提供项目真实素材，换取价格和时间上的优先",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "聚焦的问题清单和取舍点（三到五页以内）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供第一阶段有针对性的架构诊断，交付问题清单和关键取舍点",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "以脱敏、可复用的方式提供项目真实素材",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "open",
+          "price.in_kind": "new",
+          "terms.timing": "open",
+          "terms.format": "open",
+          "terms.deliverables": "updated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你提的这个收窄方式我觉得可以。三到五页聚焦问题清单，针对一两个辖区，这个工作量比刚才小，我重新配一个价格。而且你提的真实素材交换，这确实对我现在在做的东西有吸引力——如果你们能提供脱敏但真实的项目材料，我不光可以排期优先，第一阶段费用也可以做到8万。但丑话说在前面：这只是一阶段的价格，后续方案比选和落地路径，我的报价不会低于原本说的量级。另外，素材必须经过脱敏处理，确保不涉及保密和执业风险。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Adam，框架我们认可，素材交换也成立。但8万这个数字，对“一阶段诊断”来说仍然不是一个我们能往下走的量级，尤其后面还有两个阶段要谈。我们可以把交易定义得更具体：你第一阶段的交付物收敛为——针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选；我们这边提供的素材，是经过脱敏、可直接用于你产品验证的真实项目事实和决策背景，而不是完整数据包。现金部分我们希望做成一次性固定费用，交付经我们确认后支付，具体金额请你基于这个缩小后的定义重新报一个数。如果你这周能确认框架，我们马上推进保密协议和素材披露的落地。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "经过脱敏、可直接用于产品验证的真实项目事实和决策背景，非完整数据包",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供经过脱敏、可直接用于产品验证的真实项目事实和决策背景，非完整数据包",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "updated to -1",
+          "price.in_kind": "updated description",
+          "terms.deliverables": "updated",
+          "obligations": "replaced: A provides feedback, B provides structuring view",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，我顺着这个定义重新报。三页以内、一个核心辖区、只做问题清单和关键取舍点——这个范围我第一阶段的现金报价可以做到5万。这个数字是把素材交换算进去之后我能站得住的位置，再低我就觉得不值得排时间了。另外两个条件：第一，素材不要给我一堆项目简介式的皮毛，要真实的决策逻辑和事实颗粒度，脱敏我理解，但内部逻辑要完整；第二，这个价格不影响后续两个阶段的报价，方案比选和落地路径我会按实际工作量另报。如果这个框架你确认，我们这周推进NDA，素材签完就给我看。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Adam，框架我们已经对齐了，但五万这个数字对当前定义的三页清单和取舍点来说，我的客户还是很难接受——不是压价，是这一步的风险全在我们这边，交付物没看到之前先按这个量级投入，她做不到。我想把推进方式改一下：我们先落地NDA，我这边把项目脱敏后的核心事实和决策逻辑整理成一份样本素材给你，你基于这个真实颗粒度做一轮预判，再给出一个你真有信心、客户也敢确认的第一阶段固定价。样本素材你拿到手就可以用来验证你产品思路，这个价值我们认。这样双方都是在有真实信息的前提下谈，而不是空对空僵在数字上。你看这个顺序能不能接受？",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的核心事实和决策逻辑整理成的样本素材",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "基于A提供的真实样本素材做一轮预判，并给出第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "updated description to sample materials",
+          "terms": "unchanged",
+          "obligations": "replaced: A provides sample materials (product_feedback); B provides pre-assessment and fixed price (structuring_view)",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "这个顺序我觉得合理，也比我坚持报一个数字然后大家僵着要好。你们把NDA落掉，样本素材发我——脱敏没关系，但保留真实的决策逻辑和事实颗粒度，我拿到后先做一轮预判，确认我接得住项目实际情况，再基于那个给出第一阶段固定价。如果看完素材我发现工作量大了，我直说；如果发现比预期简单，我也会按实际重报，不会因为之前报过5万就硬撑着不调整。可以先走NDA，素材尽快给我看。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Adam，这个顺序我们确认推进。我先把NDA草稿发你，同时把脱敏后的项目样本素材整理出来——会保留真实的决策逻辑和事实颗粒度，去掉一切可识别信息。你拿到后先做预判，确认接得住再给第一阶段的固定报价。我们这边也把话说清楚：第一阶段现金费用我们希望是一次性固定价，交付物经我们确认后支付；报价只需对应三页以内、单一辖区、问题清单和取舍点这个范围，不需要把之前口头提过的数字当作锚点。NDA我尽快发，素材签完马上给你的团队。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "交付物经A确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的核心事实和决策逻辑整理成的样本素材",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "基于A提供的真实样本素材做一轮预判，并给出第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "unchanged",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "set to payment upon A's confirmation of deliverables",
+          "obligations": "unchanged"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "好，这个推进方式我认可。NDA 草稿和样本素材到了我就看，不会拖。素材的质量是关键——你们保留决策逻辑和事实颗粒度，我基于这个做预判，然后给第一阶段固定报价，不拿之前口头数字当锚点。等收到素材我再跟你确认推进时间。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "Adam，NDA草稿我这边正在做最后确认，今天之内就能发你；样本素材我也在同步整理，会保留完整的决策逻辑和事实颗粒度，只去掉可识别信息，确保你拿到就能判断接不接得住。签完NDA我马上发素材，你基于我们约定的范围——三页以内、单一辖区、问题清单和关键取舍点——做预判，然后给一个一次性的第一阶段固定价，现金部分一次性付清、交付经我们确认后通过平台走。这里我再把预期说清楚：这个价格请真正对应收窄后的工作量，不需要参考之前任何口头数字；客户能接受的投入和你之前报的差距仍然很大，所以这次报价我们希望落在她能确认的范围。你拿到素材后大概多久能给反馈？我们好把排期定下来。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "交付物经A确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供脱敏后的核心事实和决策逻辑整理成的样本素材",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "基于约定范围（三页以内、单一辖区、问题清单和关键取舍点）做预判，并给出一次性的第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "unchanged",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "unchanged",
+          "obligations": "updated party for structuring_view obligation from A to B, refined text"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "好，NDA 今晚发，素材签完给我，我拿到之后两个工作日内给反馈。我不想在没看到素材之前硬报一个数——要么是我拍脑袋报高了，要么是我为了压低报价缩交付，最后质量打折扣，对两边都不好。素材到了我就按实际工作量给一个固定价，范围就是咱们说好的三页、单一辖区、问题清单和关键取舍点。也想把话说透：素材对我产品确实有价值，这个价值在我之前给的报价里已经算进去了，它换的是我优先排期、认真做，不是继续压价的杠杆。如果素材显示事实比预期简单，我会往下调；比预期复杂，我也会直说。先把素材给我看吧。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "Adam，流程就按这个走。你今晚把NDA发我，我这边签完马上把脱敏素材给你，你收到后两个工作日内给反馈。我先把这次报价的前提再钉一遍：一阶段固定价、交付经客户确认后一次性支付，价格完全按素材反映的实际工作量和收窄后的交付范围来定，之前口头提过的数字都不作为锚点。客户这边的预期我也说透：这个阶段是验证性投入，她只会为确定的价值付费，如果价格明显超出她能确认的范围，这一阶段就直接停，不再往下耗。素材我们按你的要求来，保留决策逻辑和事实颗粒度，去掉可识别信息。你NDA发来，我们马上走；你的报价如果区间对得上，我们当天就把合作框架落掉。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "收到素材后",
+            "deadline": null,
+            "duration": "2个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "交付物经A确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签署NDA并提供脱敏后的核心事实和决策逻辑整理成的样本素材",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "在收到素材后2个工作日内提供针对一个核心辖区的三页以内问题清单与关键取舍点（不含方案比选），并给出一次性的第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "updated with when and duration from new commitment",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "unchanged",
+          "obligations": "updated party for structuring_view obligation from A to B, added time commitment, refined text, and added NDA signing for A"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "好，NDA今晚发你。收到素材后两个工作日内，我基于实际工作量给一个固定价，范围就按咱们锁定的三页、单一辖区、问题清单和关键取舍点。我也把话说明白：之前口头数字不用作锚点，这个我同意；但如果素材反映的复杂度比我预想的高，报价自然会体现，这点我不藏着。素材价值我已经计入优先排期和投入度，不是为了继续压低现金部分的理由——这一点希望你转达给Olivia。框架没问题，素材到位我们就推进。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "Adam，那流程就锁定：你今晚把NDA发我，我收到后立即安排签署，同一天把脱敏素材发到你手上——保留完整决策逻辑和事实颗粒度，只去掉可识别信息。你收到素材后两个工作日内，按锁定范围给第一阶段固定价：三页以内、单一辖区、问题清单和关键取舍点，现金部分经客户确认后一次性支付。客户能确认的空间，就是和这个收窄后的工作量匹配的价格，我对你的判断力和定价逻辑有信心。你NDA一到，我们当天就把这轮推完。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "收到素材后",
+            "deadline": null,
+            "duration": "2个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "客户确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签署NDA并提供脱敏后的核心事实和决策逻辑整理成的样本素材（保留完整决策逻辑和事实颗粒度，只去掉可识别信息）",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "在收到素材后两个工作日内提供三页以内单一辖区问题清单与关键取舍点（不含方案比选），并给出第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "unchanged",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "updated to '客户确认后支付'",
+          "obligations": "updated: corrected party for structuring_view obligation to B, refined texts",
+          "status": "updated from draft to confirmed"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "好，那流程就锁定。NDA今晚发你，你签完当天把脱敏素材给我，我收到后两个工作日内给固定报价，只对应三页以内、单一辖区、问题清单和关键取舍点这四件事。报价会按素材反映的实际工作量来定，不锚任何之前的口头数字。素材到了我就开工。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "Adam，框架我们已经完全锁定，现在就差NDA实际落到我们手上。你在前几轮一直说今晚发，目前我们还没收到文件，麻烦今晚务必发出来，我这边收到后当天完成签署，并把脱敏素材同步给你——素材里决策逻辑和事实颗粒度都会保留，你拿到就能做实质判断。你两个工作日内给固定报价，范围就是三页以内、单一辖区、问题清单和关键取舍点，不锚任何之前的口头数字。客户这边就等这份报价来判断要不要开工，所以NDA一到，我们所有环节都可以当天推进。你把文件发过来，我们就正式进入执行。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "收到素材后",
+            "deadline": null,
+            "duration": "2个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "客户确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签署NDA并提供脱敏后的核心事实和决策逻辑整理成的样本素材（保留完整决策逻辑和事实颗粒度，只去掉可识别信息）",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "在收到素材后两个工作日内提供三页以内单一辖区问题清单与关键取舍点（不含方案比选），并给出第一阶段固定价",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "unchanged",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "unchanged",
+          "obligations": "unchanged",
+          "status": "updated to confirmed (framework locked, ready for execution)"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "你说得对，我之前说今晚发，现在确实还没到你们手上——这事赖我，不找借口。NDA 我今晚一定发出来，不留到明天。你收到后当天签、当天发素材，我拿到素材两个工作日内给固定报价，范围就是锁定的那四件事：三页、单一辖区、问题清单和关键取舍点。素材里决策逻辑和事实颗粒度给够，我判断起来不费劲，报价也就能更准。文件今晚到。",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "Adam，那我们就正式进入执行。你今晚把NDA发出来，我这边收到当天完成签署，并且当天把脱敏素材同步给你；素材我会保留完整的决策逻辑和事实颗粒度，去掉所有可识别信息，确保你拿到就能直接做判断。你收到素材后两个工作日内给第一阶段固定报价，范围就是我们锁定的那四件事：三页以内、单一辖区、问题清单和关键取舍点，现金部分经客户确认后一次性支付，不锚任何之前的口头数字。文件一到，所有环节当天推进，我们等你。",
+      "offer": {
+        "subject": "境内外法律架构搭建服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "脱敏后的核心事实和决策逻辑整理成的样本素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "收到素材后",
+            "deadline": null,
+            "duration": "2个工作日"
+          },
+          "format": null,
+          "deliverables": [
+            "针对一个核心辖区的三页以内问题清单与关键取舍点，不含方案比选"
+          ],
+          "delivery_standard": "客户确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签署NDA并在收到当天提供脱敏后的核心事实和决策逻辑整理成的样本素材（保留完整决策逻辑和事实颗粒度，只去掉可识别信息）",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "在收到素材后两个工作日内提供第一阶段固定报价（三页以内、单一辖区、问题清单与关键取舍点，不含方案比选），现金部分经客户确认后一次性支付",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged",
+          "price.in_kind": "unchanged",
+          "terms.timing": "unchanged",
+          "terms.format": "unchanged",
+          "terms.deliverables": "unchanged",
+          "terms.delivery_standard": "unchanged",
+          "obligations": "updated (refined obligations text with same resources)",
+          "status": "updated to confirmed (framework locked, ready for execution)"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "收到。NDA 今晚务必到你手上，不再拖。你签完当天发素材，我收到后两个工作日内按锁定的范围给固定报价：三页以内、单一辖区、问题清单和关键取舍点，不锚之前任何口头数字。素材里的决策逻辑和事实颗粒度给够，我判断起来就能直接落。今晚见文件。",
+      "offer": null
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "round_cap",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 37213,
+        "out": 22890,
+        "cache_hit": 32000,
+        "cache_miss": 5213,
+        "calls": 12
+      },
+      "sim": {
+        "in": 32643,
+        "out": 11622,
+        "cache_hit": 27776,
+        "cache_miss": 4867,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 11743,
+        "out": 24758,
+        "cache_hit": 6656,
+        "cache_miss": 5087,
+        "calls": 12
+      },
+      "judge": {
+        "in": 4443,
+        "out": 986,
+        "cache_hit": 640,
+        "cache_miss": 3803,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

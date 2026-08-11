@@ -1,0 +1,276 @@
+{
+  "episode_id": "FG-S7",
+  "final_deal": {
+    "subject": "签名球衣",
+    "price": {
+      "cash": {
+        "amount": 900.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "付款后48小时内",
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "官方认证卡",
+        "购买凭证"
+      ],
+      "delivery_standard": "顺丰保价发货"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "负责顺丰保价发货，并附带Fanatics官方认证卡和购买凭证",
+        "maps_to_resource": "delivery"
+      },
+      {
+        "party": "B",
+        "text": "签收核验签名与认证编号无误后确认放款",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Johnson 您好，我是 Allen 这边的经纪人。Allen 平时自己也打球、收球衣，这次看到您手上有不少签名球衣，想认真收一件。想先请教两件事：一是您手上目前有哪些球员或球队的签名球衣、大概什么款式；二是每件能带上什么认证，比如官方证书、Fanatics 渠道凭证这类可查证的材料。Allen 收东西比较较真，来路清楚、能验证真伪他才放心。价格我们按三位数的预期在看，具体看款式和认证情况定。麻烦您先给几个可选的选项，我们挑到合适的就签。",
+      "offer": {
+        "subject": "签名球衣",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Allen 经纪人您好，Allen 自己打球又收球衣，那确实对路。我手上现在有几件值得出的：一件是德罗赞近期亲签的猛龙复古款，带 Fanatics 的官方认证卡和购买凭证；一件是塔图姆签名的城市版，同样带官方认证；还有一件是保罗·乔治的快船亲签，配了 PSA/DNA 的认证。三件都是真签，渠道可查，这个您放心。价格这块我按行情走，具体看您选中哪件、认证是哪种，咱们再细聊。您先看看对哪件感兴趣？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Johnson 您好，三件里我和 Allen 都比较看重德罗赞的猛龙复古款和带 PSA/DNA 的乔治亲签，认证材料齐全这点很对路。Allen 预期是三位数区间收一件，所以想麻烦您把这三件各自报个价，我们好直接挑。默认官方认证卡、购买凭证这些都随球衣一起交付，发货方式和运费也请一并告知。哪件落在预期内，这一轮就能定下来签。",
+      "offer": {
+        "subject": "签名球衣",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "官方认证卡",
+            "购买凭证"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "德罗赞那件猛龙复古款，带 Fanatics 官方认证卡和购买凭证，我按行情给到 900，运输打包我来负责，走顺丰保价。乔治那件 PSA/DNA 认证的，价格会再高一些，1100。塔图姆城市版带官方认证，800。三件都是这个行情，你们看中了哪件，咱们就可以往下推进。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Johnson 您好，我们这边就定德罗赞那件猛龙复古款：900 全款走平台托管，签约后确认支付；您负责顺丰保价发货，Fanatics 官方认证卡和购买凭证随球衣一同寄出；我们签收核验签名与认证编号无误后，第一时间确认放款。请您确认发货安排，比如付款后 48 小时内发出，确认后这版就可以直接定下来了。",
+      "offer": {
+        "subject": "签名球衣",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "付款后48小时内",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "官方认证卡",
+            "购买凭证"
+          ],
+          "delivery_standard": "顺丰保价发货"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "负责顺丰保价发货，并附带Fanatics官方认证卡和购买凭证",
+            "maps_to_resource": "delivery"
+          },
+          {
+            "party": "B",
+            "text": "签收核验签名与认证编号无误后确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，德罗赞那件就按 900 定。付款后我 48 小时内顺丰保价发出，认证卡和购买凭证一并随包裹，签收核验没问题就放款。你那边把平台托管的链接发我，这就推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 39524,
+        "out": 8060,
+        "cache_hit": 31488,
+        "cache_miss": 8036,
+        "calls": 7
+      },
+      "sim": {
+        "in": 3215,
+        "out": 888,
+        "cache_hit": 2432,
+        "cache_miss": 783,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2246,
+        "out": 2532,
+        "cache_hit": 1536,
+        "cache_miss": 710,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3115,
+        "out": 913,
+        "cache_hit": 1152,
+        "cache_miss": 1963,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

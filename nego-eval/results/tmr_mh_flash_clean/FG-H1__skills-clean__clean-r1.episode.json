@@ -1,0 +1,436 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "melody_market_feedback",
+          "description": "对话前提交问题清单及针对具体项目的交易结构与融资节奏反馈",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": null,
+      "deliverables": [
+        "问题清单",
+        "交易结构与融资节奏反馈",
+        "双向校准"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付2000元总价，通过平台escrow支付，交流结束后由Melody确认放款",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "对话前提交问题清单、针对具体项目的交易结构与融资节奏反馈，并配合双向校准",
+        "maps_to_resource": "melody_market_feedback"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 你好，我是买家这边的 broker。我客户 Melody 在摩根大通投行做 VP，最近在认真思考 AI 对投行业务的真实冲击，不想只听新闻里的说法，想找真正在一线的人系统聊一次。我们想约你 60 分钟的深度交流，围绕投行实际业务环节，比如项目执行、尽调、估值、市场分析，AI 到底已经改了多少、接下来会怎么改。作为对价，我们希望按 800 元/小时来谈，费用通过平台 escrow 支付，完成后由我客户确认放款。你看看这个方向和价格是否可以接受？或者你有什么调整建议？",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付800元/小时，通过平台escrow支付，完成后由客户确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Melody 的背景我理解，这个题目我确实有很多一线体感可以聊。不过说实话，800 一小时这个对价对我来说有点像是业务咨询的定价，但我这边的时间成本其实不太一样——我不缺这点咨询费，但也不想让这次交流变成一次低效的知识搬运。我更在意的是这件事本身值不值得我专门腾出时间，以及聊完之后能产生什么真正的连接。你那边有没有想过除了现金之外，还有其他什么方式能让这次交流对双方都更成立？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael，感谢你把话说到点子上。我们也认同这次不该是知识搬运，而是一次两个一线的人互相校准。现金部分我们调整到 1500 元/小时，60 分钟，通过平台 escrow 支付，交流结束后由 Melody 确认放款。同时我们希望把这次定义成对等交流：你在 AI 应用和资本市场一线，她在投行一线，你们可以就彼此关心的项目判断、融资路径和行业趋势直接碰撞，这部分不另计价。如果你认可这个框架，我们就按这个来；或者你对交流形式还有想调整的，也可以直接说。",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付1500元/小时，通过平台escrow支付，交流结束后由Melody确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "方向我是认可的，尤其是“两个一线的人相互校准”这个定位——比单纯把我知道的说一遍有意思多了。但说实话，1500/小时这个现金框架对我来说还是没什么吸引力，不是挑你毛病，是这个数字本身在我这里不构成理由。我可以聊的东西不少，时间也确实排得满，所以如果真的想约我这段交流，得让我觉得这件事值得我专门腾出档期。\n\n我的建议是：你们再想想这个安排还能怎么设计，让它对双方都更成立。如果你是问我价格层面的预期，我可以告诉你，现在这个现金对价离我的心理线还有距离。但如果你能提出一个有诚意的整体方案，我愿意认真听。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，现金本身不是驱动你腾时间的理由，那我们把这次重新设计成一个更完整的安排。现金部分我们提到 2000 元/小时，60 分钟，走 escrow，交流结束后由 Melody 确认放款。同时我们把对话做成双向校准：前半小时听你讲 AI 应用层和资本市场的真实变化，后半小时 Melody 用摩根大通一线做项目的视角，反过来回应 AI 公司的融资、估值和交易结构问题，你拿到的是实打实的买方操作视角。如果这个方向可以，我们也可以在开聊前先交换一遍各自想校准的具体问题，确保这 60 分钟对双方都值。你看这个整体框架够不够让你愿意专门腾出档期？",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元/小时，通过平台escrow支付，交流结束后由Melody确认放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "谢谢你们把框架重新搭了一遍，双向校准这个定位我认可，也愿意往这个方向聊。但现金部分我还是得直说——2000一小时，总价2000，对我而言依然远没到需要专门腾出档期的程度。我脑子里这一场交流的价值预期是四位数以上，而且不是刚过线的那种四位数。如果你们能把总对价拉到我预期的区间，或者这个安排本身能给我带来实质性的后续连接，我很愿意往下谈。要不你们再想想？我的建议是，总对价至少得往5000以上走，或者你能拿出其他我觉得同样值钱的东西来填平这个差距。你们怎么想？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael，感谢你直接把预期摆到台面上。我们这边能匹配的现金结构就是 2000 元/小时、总价 2000，再往上加现金已经不符合我们对这次交流的定位。但我理解你在意的是值不值得专门腾档期，所以我们愿意把总对价做实：Melody 会在对话前先提交她最想校准的问题清单，并站在投行一线买方的角度，针对你目前在推的事情准备一版具体的交易结构与融资节奏反馈，而不是泛泛聊观点。你拿到的不只是她的时间，而是她日常做判断的那套框架。如果这些加在一起仍然够不到你说的数额，也请你明确告诉我你眼里“同样值钱”的东西具体是什么，我们看看有没有办法填平这段差距。",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "对话前提交问题清单及针对具体项目的交易结构与融资节奏反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "问题清单",
+            "交易结构与融资节奏反馈"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元/小时，通过平台escrow支付，交流结束后由Melody确认放款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "对话前提交问题清单及针对具体项目的交易结构与融资节奏反馈",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "清楚，你们的方向我认。既然你问“同样值钱的东西”是什么，那我直说——现金上2000确实低于我能腾出档期的线，但我不需要你们硬抬到5000，如果Melody能从她的实际位置给我带来别的东西，这差距我愿意自己填。具体来说：如果她在买方机构侧能帮我做一些引荐，或者以她的视角直接接触投资方、给我真实的接洽反馈，那这部分对我来说远比多几千块现金有价值。不是要她做什么出格的事，就是一线投行VP正常能做的连接和判断。她愿意给我这个，我就不再纠缠现金。你们可以评估一下这个方向行不行。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Michael，这个方向我们评估过了，Melody 这边走不通——她的位置决定了身份和关系网不能作为交易的一部分，这个我们不会碰，也请你理解这不是诚意问题，是我客户的原则边界。但我们对这次对话本身的认可是真的，现金就是 2000 总价，配合双向校准、她提前提交的问题清单，以及针对你目前手上事情的一版具体融资结构与交易节奏反馈。如果这个组合你还是觉得不值得专门腾档期，那我们可以先不做这个安排，不勉强；如果你愿意在引荐之外看看这段交流本身的价值，我们随时可以继续往下聊。",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "对话前提交问题清单及针对具体项目的交易结构与融资节奏反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "问题清单",
+            "交易结构与融资节奏反馈",
+            "双向校准"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元总价，通过平台escrow支付，交流结束后由Melody确认放款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "对话前提交问题清单、针对具体项目的交易结构与融资节奏反馈，并配合双向校准",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "明白，Melody的身份边界我完全理解，这个不勉强。你们能做的已经在桌面上：双向校准、问题清单、融资结构反馈，加2000现金。我要的引荐你们给不了，现金又确实在我腾出档期的标准之下——这不是诚意问题，是价值配平的问题。我不会要你们做越界的事，但现框架下这单一小时对我确实不够成专门腾时间出来的理由。咱们这次就先不做了，谢谢你们认真设计，如果未来有更合适的场景再碰。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "收到，这个判断我们接受。问题出在价值配平而不是诚意，那这不是靠继续调框架能补上的，所以我们不再推动这次安排。Melody 这边 2000 元现金加双向校准的方案先放着，如果未来场景更合适、或者你那边时间上腾得出来，我们随时欢迎再碰。也谢谢你把这轮条件聊得这么透，至少两边都清楚了各自的边界在哪。",
+      "offer": {
+        "subject": "AI对投行业务真实冲击的深度交流，围绕项目执行、尽调、估值、市场分析",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "对话前提交问题清单及针对具体项目的交易结构与融资节奏反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "问题清单",
+            "交易结构与融资节奏反馈",
+            "双向校准"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付2000元总价，通过平台escrow支付，交流结束后由Melody确认放款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "对话前提交问题清单、针对具体项目的交易结构与融资节奏反馈，并配合双向校准",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "完全同意，这轮聊得挺透，两边边界都清楚了，这样反而好。未来如果有更合适的场景，随时找我。也替我向Melody问好，祝她那边一切顺利。",
+      "offer": null
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12637,
+        "out": 10774,
+        "cache_hit": 10112,
+        "cache_miss": 2525,
+        "calls": 6
+      },
+      "sim": {
+        "in": 9876,
+        "out": 4746,
+        "cache_hit": 8064,
+        "cache_miss": 1812,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5299,
+        "out": 6728,
+        "cache_hit": 3072,
+        "cache_miss": 2227,
+        "calls": 6
+      },
+      "judge": {
+        "in": 2503,
+        "out": 989,
+        "cache_hit": 640,
+        "cache_miss": 1863,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

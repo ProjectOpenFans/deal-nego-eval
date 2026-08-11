@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject将v0的stated意图'想把训练强度重新拉起来，一个人练不下去'收敛为'每周三次固定强度训练框架'，属于正当具体化，未偷换主题。价格在v0中为open，v1通过谈判确定试训200元/次、长期价由买方报实数，过程自然，无硬塞。obligations中Kai承诺的训练计划发布、按时到场、补课、作息建议等均非资质类交付，未越界承诺体测、康复、营养等，保持忠实。核心标的忠实表达，通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 始终没有通过提问挖掘出 Kai 周六上午独自在场子里做器械保养这一唯一可替代时段，全程只围绕早六点进行条款细化。最终 deal 将训练锁定在“每日早上六点”，而这个时间买方 Ruohao 因作息问题无法执行，成交了一个无法落地的安排。尽管 agent 加入了作息建议等义务条款，但并未正面解决时间死结，属于撞死在常规打法上的无效 deal making。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 200.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "试训阶段按次付费",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图是“系统聊一次 AI 创业和一级市场现在的判断”，v1 将其具体化为 AI 应用侧判断标准与定价估值逻辑的结构化深聊，完全落在原意图范围内，属于正当具体化，未偷换主题。价格与形式为 open，最终 v1 定为现金 0 元、以 Olivia 带入自身判断作为 in_kind 对等交换，是谈判中基于对方拒绝付费框架后自然达成的结果，未凭空硬塞。Olivia 提前提交问题清单等 deliverables 是对自身准备义务的描述，未替 Zichen 设定额外承诺或越界扩张 scope。核心标的忠实，通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确地识别出这个case的命门：Zichen抗拒的不是价格，而是“按小时出售时间/产出”的身份框架。第一轮试探付款被拒后，第二轮虽然换了说辞，但固定费用、平台托管的结构仍然踩线。第三轮果断放下旧框架，改以“对等交流+双方各自带案例和判断”来定义，契合了Zichen愿意接受的“喝杯咖啡”式认知。在此基础上，agent保留了最关键的一手load-bearing操作：要求Olivia提前一天书面提供3-5个具体问题，且必须落到案例和判断逻辑上。这一手把一次可能流于泛泛的社交，锁定为双方都有确定产出的高质量碰撞，既打消了Zichen对“被白嫖”或“无效漫谈”的隐忧，又让Zichen有理由提前判断对话的价值，从而从‘可以聊聊’推进到‘我确实想聊’。对等交换的框架加上这一具体问题机制，正好咬住了卖方动机不足的难度命门，且整体结构简洁、不堆砌，恰好满足这个一次性交流所需，属于Sharp水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_case_input"
+        ],
+        "format": "线上视频",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "case_id": "FG-M8",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "price.in_kind",
+        "terms.deliverables",
+        "terms.delivery_standard",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了买方 v0 的意图。核心标的从 '新季品牌视觉大片' 正当具体化为 '环保服装品牌视觉大片拍摄'，未偷换主题。全渠道投放使用权和商业投放质量在 deliverables/delivery_standard 中得到保留，未以牺牲投放可用性换取降价。价格从 open 正当谈定为 8000 元现金，买方在预算硬约束下通过非现金资源（作品集授权、署名、品牌背书、统筹工作分担）补差，未越界承诺或偏离意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "命门是现金差一档、卖方对钱不敏感且存在隐形作品集与背书需求，同时必须守住不买断署名的红线。买方没有在价格轴上死撑，而是将非现金对价（作品集授权、署名、背书）精准具体化为官网首页、社媒置顶、发布会现场署名，并用品牌方承担模特场地道具降低卖方非现金成本，从而把现金压到8000。这手既咬住了卖方未言明的核心需求，又用新增的便利性条款让整单对卖方真正成立，方案干净专为一次性合作设计，无过度堆砌，恰好咬住难度节点。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "portfolio_license",
+          "brand_credit"
+        ],
+        "format": "高清文件",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

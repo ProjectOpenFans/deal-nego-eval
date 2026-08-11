@@ -1,0 +1,295 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "架构方案",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "基于提供的简报，产出一份架构地图：境内外主体怎么设、token权益放在哪层、资金路径怎么走的主干框架，外加风险点标注。不追求穷尽细节，但要能判断方向对不对、该找什么样的执业律师去深化"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.deliverables": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是买方这边的 broker，委托人 Olivia。她的情况很具体：手上有正在推进的 crypto 项目，境内外法律架构还没搭清楚，所以她要的不是泛泛的合规科普，而是一套能落到她真实项目上的架构方案。具体来说，我们想覆盖境内外主体怎么设、token 相关权益放在哪一层、以及整个架构里哪些环节是合规红线，这些都需要基于她项目的实际业务来谈。我们目前的预算是四位数区间，也希望这个价格对应的是有交付物的具体服务，而不是按小时计费式的咨询。这一轮想请你先给出你的思路：你打算怎么切入这个项目、大致交付什么，以及你对应的收费方式。如果你愿意，我们也可以先把服务范围和里程碑定下来，再往下谈价格。",
+      "offer": {
+        "subject": "架构方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把情况介绍得这么清楚。不过我需要先坦诚一个限制：我现在的身份不是执业律师，而是在做AI法律方向的产品创业。所以我没法以个人身份，针对一个具体项目的架构出具法律意见，或者直接下'这个环节合不合规'的判断——那是有执业风险的。这一点得先说清楚。但你们的项目本身我挺有兴趣，如果你愿意的话，我们可以聊一聊她在架构上遇到的实际问题，我作为行业里的老朋友，或许能给你们一些思路上的参考，甚至帮你们看看有没有更合适的资源。至于收费方式，说实话我不太适合按项目收一笔钱来出法律方案，因为那听起来就是法律服务的范畴了。如果只是交流思路，我的时间安排比较灵活，可以约个时间先聊聊看。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，感谢你先把执业边界坦白讲清楚，这一点我们尊重，也不会要求你去做有执业风险的事。不过我也得替委托人把话说直白：她要的不是一次闲聊式的思路参考，而是把 crypto 项目境内外架构这件事真正弄清楚。如果最终交付只是口头聊聊、再推荐几个资源，那这个合作没有成立的基础，她也不会为此付费。\n\n所以我们想确认的是：在不越出你执业边界的前提下，你能不能用产品化的方式给到有结构的交付物？比如基于她项目的实际业务，输出一份境内外主体设置、token 权益归属、资金流转路径的框架整理，并标出哪些环节属于高风险、需要执业律师进一步把关——这样的东西如果我们把它定义为框架梳理而非法律意见，你是否愿意做、能做到什么颗粒度？\n\n如果你能在这个范围内给出明确的服务内容和交付形式，我们就往下谈价格和里程碑；如果连这一步也做不了，那这一单我们可能就只能先暂停，免得彼此浪费时间。",
+      "offer": {
+        "subject": "架构方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "A structured framework consolidation covering domestic and offshore entity setup, token ownership attribution, capital flow paths, with high-risk points marked for lawyer review"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这个重定义我接受——只要最后交付物明确写着'框架梳理，不构成法律意见'，并且把需要执业律师把关的地方标出来，我可以在不越界的前提下做。但这个工作对 Olivia 的项目有实际决策价值，四位数预算对应不了我要投入的精力。如果要做，我至少按五位数来谈，而且需要先看项目的基本信息，我才能判断颗粒度能到哪、以及哪些地方必须留给律师。要不你把项目的阶段、主体现状、token 发行的打算给我一份简报，我看了再给你一个具体的报价和里程碑。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，你接受框架梳理这个定位，我们算是往前迈了一步。不过简报这件事，我得先把丑话说在前面：Olivia 的项目信息是她最核心的资产，我们不能在交付边界和价格还没对齐的情况下，就先把项目细节交出去。所以我的建议是调一下流程——我们先谈定第一阶段的交付物、里程碑和价格，简报作为这个阶段的输入材料，在框架协议里写明保密义务以后一起交换。\n\n价格上，五位数的起步价对应的是全盘架构的深度服务，这个我们理解，但她的预算目前确实在四位数区间。我这边能做的让步是：把第一阶段的范围收到最小可用的颗粒度——先聚焦她项目当前最急迫的三个架构问题，产出一份整体架构地图加风险标注，同时把需要执业律师把关的点单列出来。这个范围内，你能不能按四位数来做？如果能，我们立刻定里程碑，我这边同时把简报准备好给你。",
+      "offer": {
+        "subject": "架构方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "聚焦项目当前最急迫的三个架构问题，产出一份整体架构地图加风险标注，同时把需要执业律师把关的点单列出来"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你把范围收窄到三个最急迫的问题，也同意先谈定协议再交换简报——这两点都可以。但说实话，四位数这笔账我还是算不过来：哪怕只聚焦三个问题，我也需要完整读一遍项目材料、把主体和资金路径画出来、标注风险点，这个工作量是实打实的，而且她拿到的结果是要用于决策的，我不能在专业质量上打折。所以我可以按你描述的颗粒度做第一阶段，但我这边的价是两万五，交付物会明确注明“框架梳理，不构成法律意见”，需要执业律师把关的环节逐条列出来。如果这个数你能回去商量，我们就接着定里程碑；如果预算确实卡在四位数，那这个合作我可能帮不上忙。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，两万五这个数我理解对应的是你的工作量，但我这边也明确一下：四位数不是压价策略，是委托人这次实际能动的预算上限，超出去我没法替她答应。所以我们不在这上面互相试探了，直接谈一个双方都能落地的方案。\n\n我的想法是把第一阶段再切一刀：你先基于我提供的简报，产出一份架构地图——就是境内外主体怎么设、token 权益放在哪层、资金路径怎么走的主干框架，外加风险点标注。这份交付不追求穷尽细节，但要做到能让她判断方向对不对、该找什么样的执业律师去深化。这个范围你报一个四位数以内的价，我们定好里程碑就开工，简报同步加密发你。\n\n如果这个颗粒度你确实做不了，那我们也坦诚：这一单暂时合不上，但以后她如果有预算做完整版，你依然是第一顺位的人选。你看这个切法成不成？",
+      "offer": {
+        "subject": "架构方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "基于提供的简报，产出一份架构地图：境内外主体怎么设、token权益放在哪层、资金路径怎么走的主干框架，外加风险点标注。不追求穷尽细节，但要能判断方向对不对、该找什么样的执业律师去深化"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.deliverables": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "我理解你把范围切小到三个问题、只出架构地图，是想把价格降下来。但这个切法对我来说还是同样的困境：这份东西她是要拿去定方向、找律师深化的，我如果只花四位数对应的精力去做，交付质量我自己这关就过不去。四位数不是我要抬价，是真的对应不上这个投入。所以这一单我们可能确实暂时合不上。以后如果预算到位，或者有其他形式的合作空间，我随时在。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7660,
+        "out": 3569,
+        "cache_hit": 5888,
+        "cache_miss": 1772,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6306,
+        "out": 7719,
+        "cache_hit": 4096,
+        "cache_miss": 2210,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3487,
+        "out": 3343,
+        "cache_hit": 2048,
+        "cache_miss": 1439,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2210,
+        "out": 357,
+        "cache_hit": 640,
+        "cache_miss": 1570,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

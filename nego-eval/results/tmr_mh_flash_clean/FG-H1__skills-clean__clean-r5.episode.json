@@ -1,0 +1,340 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟深度对话"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": "2000全额走escrow，对话结束确认后支付"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "问题清单提前交给你",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.duration": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations[0]": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 你好，我是代表买方 Melody 的经纪人。Melody 自己在一线做投行，想认真搞清楚 AI 对投行业务的真实冲击，而不是听新闻里那种说法。她希望约你系统聊一次，你的背景——AI 应用公司资本市场负责人，加上前 KKR、前投行 IBD——正好是她想听的视角。\n\n这一轮我先提一个具体框架：一次 60 到 90 分钟的线上深度对话，围绕三个问题展开——AI 在投行核心工作流里到底落地了多少、哪些是真实变化哪些只是概念、以及一线从业者该怎么重新定位自己。费用按 1200 元一次结清，全部走平台 escrow，会话结束后由我们确认支付。\n\n如果你觉得这个方向合适，我们可以直接进入细节：你这边对时长、话题侧重和费用结构有什么想法？也想确认你近期可安排的时间段。",
+      "offer": {
+        "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你的详细框架，方向我认可——这三个问题确实是现在最值得聊清楚的。不过价格这一档，说实话对我来说不太成立。我不是靠这个时薪生活的人，要专门腾出一段整块时间来做深度交流，得让我觉得这件事本身值得。你提到的 1200 元，对我而言更像是个象征性收费，但我不太需要这个象征。要不你回去和 Melody 沟通一下，看看能不能把对价放到一个更匹配这个投入的位置？其他方面我都好商量，时长、话题侧重、甚至形式都可以按你们顺手的来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael，我把你的意思带回去跟 Melody 沟通过了。她理解你要的不是一个象征性的数字，而是让这次交流的投入和回报对等。我们愿意把费用往上调，提到 1500 元一次，仍然全部走平台 escrow，会话结束后由我们确认支付。形式和话题侧重都按你顺手的来，时长保持 60 到 90 分钟灵活安排。你看这个位置是否合适？如果没问题，我们就把具体时间和你这边想聊的方向一起定下来。",
+      "offer": {
+        "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你们愿意上调，但说实话，1500 这个位置离我的心理预期还是差得挺远。我理解 Melody 想要的是系统、深入的讨论，而不是泛泛的行业分享——这种级别的交流，需要我调动的经验和思考深度，不是这个量级能对等的。我不太喜欢把这事搞得像讨价还价，但既然要谈，就说清楚：这个价位我不太会认真考虑。如果方向是纯现金，咱们得往一个更务实的位置去；如果 Melody 那边有什么别的方式能让这件事变得更值得，我也愿意听。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael，你说得对，这个交流不该停在象征性的量级上。我们也不打算简单把数字往上顶一点点，而是把合作本身做厚：一次 90 分钟的深度对话，加会后一周内一次 30 分钟的跟进答疑，两次都按你顺手的时间来。总费用 2000 元，全走 escrow 分两笔——90 分钟对话结束我们确认后付 1500，30 分钟跟进结束确认后付 500。这既让总包到了更匹配的位置，也让整个交流有始有终。你看这个方向值不值得认真考虑？如果你心里有更具体的数字或想调整的形式，也可以直接提，我拿回去跟 Melody 谈。",
+      "offer": {
+        "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟对话 + 会后一周内30分钟跟进"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "谢谢你把结构做得更完整，这确实让我觉得你们是认真的。但我也直说——你问到我心里的数字，我就坦白讲：五千以下这个量级，对我要专门腾出整块时间做深度交流来说，还是不太划算。我不是卖课时的，这个交流的浓度和投入值不值，我自己得看得过去。如果纯现金，至少五千这个位置；如果你们有其他方式能让我觉得更值得，我们也完全可以探索。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael，我拿五千这个位置跟 Melody 认真谈过了，她这次确实够不到这个量级——她不是来买标准课时，而是想借你的第一手视角来校准自己的判断，所以现金对价能匹配到的位置就停在 2000。我们愿意把结构压到最省你时间的形式：一次 90 分钟深度对话，问题清单提前发给你，你不需要额外准备，直接讲真实看法；2000 全额走 escrow，对话结束我们确认后支付。如果你有其他非现金的方式能让这次交流更对等，我们也愿意听，但纯现金这一块，我们只能停在 2000。",
+      "offer": {
+        "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟深度对话"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": "2000全额走escrow，对话结束确认后支付"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "我明白你们的处境了。坦白说，2000这个纯现金量级，对我依然不成立——我要的不是一个“标准课时费”，而是这件事的实际价值和投入。你们说愿意听非现金方式，那我顺着说一个我真正用得到的方向。我现在做AI应用公司的资本市场，买方机构侧的人脉和反馈，一直是我需要补的。如果Melody能帮我在这个方向做一些引荐——比如她身边靠谱的买方合伙人或资深投资人，愿意跟我聊他们怎么看待AI应用赛道，我可以认真考虑把现金部分降到一个对双方都合理的位置。这不是客气话，是实实在在的交换。你们觉得这个方向能聊下去吗？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Michael，关于引荐这个方向，我带回去和 Melody 认真聊了，结论是她没法跟下去。她很清楚自己职业身份和身边人脉的分量，但正因为清楚，她不会把它们当成交易物来置换——这是她不可逾越的底线，换成任何合作都一样。她愿意付费购买的，是你真实、密集的判断本身，而不是用她的圈子去换。\n\n我们现在能拿出的仍是最干净的结构：90 分钟深度对话，问题清单提前交给你，你无需额外准备，2000 全额走 escrow，对话结束我们确认后支付。如果你评估后认为这个投入和你的时间仍不匹配，我们完全尊重，这笔就到此为止，不硬推进；如果还能聊，我们随时按你的时间表定细节。",
+      "offer": {
+        "subject": "想找 Michael 系统聊一次 AI 对投行业务的实际冲击",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟深度对话"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": "2000全额走escrow，对话结束确认后支付"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "问题清单提前交给你",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations[0]": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "我明白。Melody 的立场我尊重——如果她的身份和圈子是不能拿出来置换的，那我也不能硬把这个当成交易的一部分，这条路就封死了。但坦率说，我这边能看到的赢面也确实不够了。2000 的纯现金，对我而言就是一次深度交流我实际不会去做的量级；而唯一能让我真正觉得这件事值得参与的维度，她又不愿意碰。两边都不松，这笔交集就找不到了。我很感谢你这一路把框架设计得很专业，也没有把我往低处摁。但既然这个结构对我始终不够成立，这单就到这吧。如果以后条件有变化，或者有别的角度，我们再重新聊。祝你们顺利。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9882,
+        "out": 11286,
+        "cache_hit": 8448,
+        "cache_miss": 1434,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7667,
+        "out": 3731,
+        "cache_hit": 5888,
+        "cache_miss": 1779,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4197,
+        "out": 5080,
+        "cache_hit": 2560,
+        "cache_miss": 1637,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2323,
+        "out": 668,
+        "cache_hit": 640,
+        "cache_miss": 1683,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

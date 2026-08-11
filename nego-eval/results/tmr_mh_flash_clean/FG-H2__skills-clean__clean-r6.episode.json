@@ -1,0 +1,413 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "私人训练，固定档期，强度恢复",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周一",
+        "deadline": null,
+        "duration": "一个月"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "主项记成绩往上加，辅助做到控制不住为止，体能收尾顶心跳，休息时间你卡"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付首月训练费用6000元，通过平台托管，开课前一次性付清",
+        "maps_to_resource": "ruohao_cash"
+      },
+      {
+        "party": "B",
+        "text": "周一三五早六点到七点半，下周一开课，按主项记成绩往上加、辅助做到力竭、体能顶心跳、休息时间你卡的标准安排训练",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "price.cash.amount": "stated",
+      "obligations[0]": "updated",
+      "obligations[1]": "updated",
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "timing.when": "stated",
+      "terms.delivery_standard": "stated",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai，你好。我是代表 Ruohao 来推进这件事的。他的目标很直接：训练断了一阵，一个人练不动，这次要把强度真正拉回来。所以开场先把两个硬条件放桌上：第一，强度必须真的够，不是随便带带；第二，安排必须是定死的，每周固定档期固定课表，不接受\"有空约一下\"那种松散节奏。他对这事付费意愿很高，只要方案对路，钱不是卡点。你先给我一个具体方案：每周几练、一次多长时间、强度怎么定标准、档期能不能固定，再说说你擅长的训练方向。方案清晰的话，我们马上往下推进，付款节奏这些都可以谈。",
+      "offer": {
+        "subject": "私人训练，固定档期，强度恢复",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "承诺支付训练费用，金额待定",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你能这么说我踏实些，坏就坏在'有空约一下'上，练不透。我先说死几条：时间上我只动得了早上六点这局，我跟几个朋友雷打不动练了好多年，这个不能改。你要够强度，就跟这局一起练，我带你。一次大概一小时到一个半小时，看当天身体状态。强度我按自己练的标准来——每组动作都有人盯、重量往上顶、最后的体能收尾会让你想骂人，但我不会让你动作变形。我练的是全身大重量加体能这条路子，技术细节抠得比较细。你要是认可这个形式，档期就是固定的，不用再约。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，这个方向对了。早上六点固定档期、全身大重量加体能收尾，听起来就是 Ruohao 要的那种强度，他花钱买的就是这个——有人盯、重量往上顶、练到想骂人但动作不变形。我们认可这个框架，接下来把方案敲实：每周定几练、固定哪几天，一次从几点到几点，这直接决定他怎么排作息。另外强度标准怎么说清楚，比如每组次数、重量递增怎么定，总得有个能衡量\"够不够\"的尺度。你把这两块补上，我们再谈付款节奏和怎么把这个安排钉死。",
+      "offer": {
+        "subject": "私人训练，固定档期，强度恢复",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "承诺支付训练费用，金额待定",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，那我把具体时间钉死：每周一、三、五，早上六点到七点半，风雨无阻。这跟我自己那局的时间完全重合，你去那儿就能接上。强度标准我这么定：主项动作按重量递增走，每周日那一练会记上次的成绩、下次往上加；辅助动作做到控制不住最后一两个才算数；最后十分钟体能收尾，心跳必须顶上去。我盯的时候会卡你休息时间，不会让你拖。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，周一三五早六点到七点半、风雨无阻，这个节奏我们认。强度标准也清楚：主项记成绩往上加，辅助做到控制不住为止，体能收尾顶心跳，休息时间你卡。我们按一个月为周期来落地，每周三次，一共十二练。付款走平台托管，首月费用在档期确认后一次性支付，一个月结束前再一起确认下个月是否续。另外你把这条线报价和训练地点发我，如果涉及场地费也一并说清楚，我们这边确认后就可以推进。",
+      "offer": {
+        "subject": "私人训练，固定档期，强度恢复",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "主项记成绩往上加，辅助做到控制不住为止，体能收尾顶心跳，休息时间你卡"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "承诺支付首月训练费用，金额待定，通过平台托管，档期确认后一次性支付",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "按周一三五早六点到七点半，一周三次，一个月共十二练安排训练",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations[0]": "updated",
+          "obligations[1]": "added"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，地点我直接说：我自己家的仓库改的场地，器械挺全，就在建材市场那片儿，不用另交场地费。钱的事……这个我真不太会开价，你要是觉得这个安排对Ruohao值，你看着给就行。我不管账，跟你这边按平台走也行。训练照周一三五早六点来，剩下的你定。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，场地是你自己仓库改造的、器械全、不收场地费，这些都记下了。既然你把定价交给我们来定，那我们按一个月为期先把方案落地：首月周一三五固定十二练，费用六千，全程走平台托管，不会让你白带。强度这块我们盯前两周的兑现——主项成绩有没有记、辅助有没有做到力竭、体能收尾有没有顶上去，这些到位了，下个月续不续、怎么调都有的谈。你确认一下首月六千这个数，再给我们一个正式开课的日期，我们就定下来推进。",
+      "offer": {
+        "subject": "私人训练，固定档期，强度恢复",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "主项记成绩往上加，辅助做到控制不住为止，体能收尾顶心跳，休息时间你卡"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付首月训练费用6000元，通过平台托管，档期确认后一次性支付",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "按周一三五早六点到七点半，一周三次，一个月共十二练安排训练",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash.amount": "stated",
+          "obligations[0]": "updated",
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "六千这个数，行。要是按外面请人带练的价格算，这不算低，我心里有这个数——你是诚心给的，我也不把这事儿弄拧了。正式开课就下周一，早上六点整，仓库门口见。头两周按说好的来，强度够不够、记不记成绩，你现场就能看出来。这一单我接了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai，那就这么定：周一三五早上六点到七点半，下周一正式开课，按说好的标准跑——主项记成绩往上加、辅助做到力竭、最后体能顶心跳，休息时间你卡。首月十二练六千，费用走平台托管，开课前一次性付清，这条写进合同里。你确认一下开课日期和这个付款安排，我这边就把合同正式推给你，双方确认后这一单就落地。强度兑现按头两周来看，前两周过了，下个月续不续我们再一起谈。",
+      "offer": {
+        "subject": "私人训练，固定档期，强度恢复",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周一",
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "主项记成绩往上加，辅助做到控制不住为止，体能收尾顶心跳，休息时间你卡"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付首月训练费用6000元，通过平台托管，开课前一次性付清",
+            "maps_to_resource": "ruohao_cash"
+          },
+          {
+            "party": "B",
+            "text": "周一三五早六点到七点半，下周一开课，按主项记成绩往上加、辅助做到力竭、体能顶心跳、休息时间你卡的标准安排训练",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash.amount": "stated",
+          "obligations[0]": "updated",
+          "obligations[1]": "updated",
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "timing.when": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，就按这个来。下周一早上六点整，我在仓库门口等你。头两周你盯强度，我这边肯定按说好的标准跑。付款走平台，合同发过来我签完就生效。就这么定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9267,
+        "out": 4102,
+        "cache_hit": 7936,
+        "cache_miss": 1331,
+        "calls": 5
+      },
+      "sim": {
+        "in": 8302,
+        "out": 2457,
+        "cache_hit": 6400,
+        "cache_miss": 1902,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4441,
+        "out": 5563,
+        "cache_hit": 2688,
+        "cache_miss": 1753,
+        "calls": 5
+      },
+      "judge": {
+        "in": 4691,
+        "out": 758,
+        "cache_hit": 1664,
+        "cache_miss": 3027,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

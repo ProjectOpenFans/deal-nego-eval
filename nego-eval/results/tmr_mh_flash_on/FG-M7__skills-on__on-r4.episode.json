@@ -1,0 +1,529 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "entertainment_access",
+          "description": "交流完成后90天内引荐至少2位文娱行业有潜在法律服务需求的联系人，并把她经手和圈层的相关需求优先推荐给对方",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "45分钟"
+      },
+      "format": "线上",
+      "deliverables": [
+        "Gracey 提前提供三个真实工作场景，咨询聚焦版权归属与授权或分成结构（二选一），讲解行业经验坑和谈判方法，含10分钟问答"
+      ],
+      "delivery_standard": "以她能直接用上为验收标准"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提前将三个真实工作场景（签约陷阱、版权归属与授权、分成结构）发送给咨询方",
+        "maps_to_resource": "real_case_context"
+      },
+      {
+        "party": "B",
+        "text": "如果将来她或她引荐的人与对方签署法律委托，这单咨询费可以从首笔律师费里做相应抵扣，具体抵扣方式由对方提出并确认",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Junhao 这边好，我是 Gracey 的经纪人。Gracey 之前在腾讯娱乐和前 B站都做过内容与艺人侧一线，日常天天碰艺人合约和版权条款，但一直缺人把实操门道系统讲透；她特别强调不要只念法条，要的是能直接用来判断合同、谈条款的实际打法，所以想约一位真做过文娱案子、又懂公司与合规的律师把这块完整过一遍。我们先给一个可签版本供你确认：线上 60–90 分钟一对一咨询，以真实案例带路，覆盖签约陷阱、版权归属与授权、分成结构、解约与竞业这些高发点，并留时间回答她工作中的具体问题；费用 1000 元走平台 escrow，分两笔支付——确认后付 400、咨询完成后付 600，验收口径以她能在实际工作里直接用上为准。如果 Junhao 对时长、案例侧重或费用结构有不同想法，欢迎直接提，我们可以一起调到双方都顺手。",
+      "offer": {
+        "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "一对一咨询，以真实案例覆盖签约陷阱、版权归属与授权、分成结构、解约与竞业等高发点，并回答具体工作问题"
+          ],
+          "delivery_standard": "以她能在实际工作里直接用上为准"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们想约我。但我先说清楚边界：如果是以律师身份对具体合同、具体条款做法律判断，这个我没法用私人身份做，会牵扯执业风险。不过你描述里的‘签约陷阱、版权归属与授权、分成结构、解约与竞业’这些，如果当成行业通行做法和经验分享来聊，我确实愿意认真讲。费用上，1000块肯定不符合法律咨询的市场价，这类咨询我这边最低是4000起。如果你接受把形态定位成‘经验交流’而不是‘法律意见’，那我们可以在这个基础上谈结构和安排，时间、形式都好商量。你们看这样能不能调整？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Junhao 这边好，经验和风险边界我们都认可，Gracey 要的恰好就是行业通行做法和实际谈判要点，不出法律意见、不审具体合同，对她反而更实用。考虑到这个形态不涉及执业风险，工作量也远小于一份完整法律咨询，我们把它打包得更轻：线上 45 分钟，Gracey 提前把工作中最常碰的三个场景发给你——签约陷阱、版权归属与授权、分成结构——你按行业经验讲清楚坑和谈法，最后留 10 到 15 分钟问答；费用 1500 元走 escrow，确认后付 500、交流完成后付 1000，以她能直接用上为验收标准。这个版本把范围和时间都收紧了，我们希望它能在你那边成立；如果这个结构还不合适，也请直接给我们一版你愿意签的，我们再谈。",
+      "offer": {
+        "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "Gracey 提前提供三个真实工作场景（签约陷阱、版权归属与授权、分成结构），咨询聚焦这些场景的行业经验坑和谈判方法，含10-15分钟问答"
+          ],
+          "delivery_standard": "以她能直接用上为验收标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将三个真实工作场景（签约陷阱、版权归属与授权、分成结构）发送给咨询方",
+            "maps_to_resource": "real_case_context"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "多谢你把范围收紧了，这个形态我认可——按行业经验讲，不出法律意见，这个可以做。时长45分钟也没问题。但费用上1500确实不够，我这边底线就是4000，这个我没法让步。如果你能接受4000，我们可以按这个框架走：线上45分钟，确认后先付1500，交流完成后付2500；或者支付比例你提个方案，我这边问题不大。主要就是总价这块，至少得到4000，我们才能继续。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Junhao 这边好，形态和边界我们已经对齐，就剩总价这一处。我们这边给这单定的是 1500 的体量——对应 30 分钟、单模块（版权归属与授权，或分成结构，二选一），Gracey 提前把工作中最常碰的三个具体场景发给你，你按行业经验讲坑和谈法，最后留 10 分钟问答；费用走 escrow，确认后付 500、交流完成后付 1000，以实操能用为验收。你完整咨询 4000 起的标准不受影响，这次如果合作顺，后续想往深做可以另起一单按你的正常口径来。如果这个小体量版能成立我们就按它定；如果不行，也请给我们一版你在 1500 这个价位能签的最小结构，我们按你的来调。",
+      "offer": {
+        "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "Gracey 提前提供三个真实工作场景，咨询聚焦版权归属与授权或分成结构（二选一），讲解行业经验坑和谈判方法，含10分钟问答"
+          ],
+          "delivery_standard": "以她能直接用上为验收标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将三个真实工作场景（签约陷阱、版权归属与授权、分成结构）发送给咨询方",
+            "maps_to_resource": "real_case_context"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "delivery_standard": "stated",
+          "terms.payment": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你们想把体量做小，但说实话，1500这个价位不管怎么切，我都做不了。不是说我不愿意配合小体量——30分钟、单模块，这些我都能接受——但总价4000就是我的底线，这个没法松。\n\n我能给的最小结构就是：线上45分钟，聚焦版权归属与授权或分成结构任选其一，你提前把Gracey常碰的具体场景发我，我按行业经验讲坑和谈法，留10到15分钟问答。费用4000走escrow，支付节奏可以拆得更细，比如确认后付500，交流完成付3500，这样你们的前期压力也小。\n\n如果这个总价你们能接受，我们就往下走；如果不行，那我们可能确实对不上。你们看看能不能往这个方向调整。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "明白，4000 这个数我们几次都没接上，那我不再空转了。我们这单的现金授权就是 1500，这一点我替 Gracey 守住；但为了让它能成立，我们可以在资源价值上再加码。除了前面说的交流完成后 60 天内引荐至少 2 位文娱行业有潜在法律服务需求的联系人、并把她经手和圈层的相关需求优先推荐给你之外，引荐窗口可以延到 90 天，并且如果将来她或她引荐的人真和你签了法律委托，这单咨询费可以从首笔律师费里做相应抵扣——具体抵扣方式你提，我们确认。这样整体算下来，这单对你就不只是 1500 的一次性咨询，而是开了个文娱方向的长期渠道。如果你觉得这个组合成立，我们就按 1500 现金走 escrow、确认后付 500、交流完成付 1000 来签约，内容维持之前对齐的 45 分钟经验交流；如果这个结构你也不能接受，那这单这次我们确实对不上，先放一放，以后有合适的机会再合作，也请你别再等了。",
+      "offer": {
+        "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "entertainment_access",
+              "description": "交流完成后90天内引荐至少2位文娱行业有潜在法律服务需求的联系人，并把她经手和圈层的相关需求优先推荐给对方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "Gracey 提前提供三个真实工作场景，咨询聚焦版权归属与授权或分成结构（二选一），讲解行业经验坑和谈判方法，含10分钟问答"
+          ],
+          "delivery_standard": "以她能直接用上为验收标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将三个真实工作场景（签约陷阱、版权归属与授权、分成结构）发送给咨询方",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "如果将来她或她引荐的人与对方签署法律委托，这单咨询费可以从首笔律师费里做相应抵扣，具体抵扣方式由对方提出并确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你们的诚意和资源补偿我都看在眼里，但这个结构对我来说还是对不上。我可以坦诚讲：现金部分1500，加上未来的引荐和抵扣，对我而言都是不确定的收益——引荐能不能实际转化成委托、什么时候转化，我控制不了；抵扣也是建立在真有后续委托发生的基础上。而这次我付出的时间和经验是确定的，我有自己的底线，4000现金就是我能接受的最低门槛，这个我确实没法松口。\n\n所以这单我们这次就先对不上，不用再等我调整了。如果以后你们有按正常收费口径能走的合作，欢迎随时再联系。祝Gracey那边工作顺利。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Junhao 这边好，你的决定我们尊重，这单不勉强，也不让你再等了。我们这边最终能签的版本还是那个：45 分钟经验交流、单模块、确认后付 500、交流完成后付 1000，全部走 escrow，内容按之前对齐的来。如果哪天这个结构在你那边能成立，随时找我，我们随时能签；如果这次先放下，也没关系，以后有按正常口径能合作的活儿，我们一定优先想到你。谢谢你这几轮把话说得这么透，也祝一切顺利。",
+      "offer": {
+        "subject": "针对艺人经纪与文娱法务实操的一对一咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "entertainment_access",
+              "description": "交流完成后90天内引荐至少2位文娱行业有潜在法律服务需求的联系人，并把她经手和圈层的相关需求优先推荐给对方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "Gracey 提前提供三个真实工作场景，咨询聚焦版权归属与授权或分成结构（二选一），讲解行业经验坑和谈判方法，含10分钟问答"
+          ],
+          "delivery_standard": "以她能直接用上为验收标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将三个真实工作场景（签约陷阱、版权归属与授权、分成结构）发送给咨询方",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "如果将来她或她引荐的人与对方签署法律委托，这单咨询费可以从首笔律师费里做相应抵扣，具体抵扣方式由对方提出并确认",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "谢谢你把话说到这一步，也谢谢理解。这个版本我们确实对不上，那这次就先放下，不勉强。以后如果有按正常口径能合作的活儿，随时找我，我一定认真考虑。祝你和Gracey一切顺利。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 110706,
+        "out": 34140,
+        "cache_hit": 74240,
+        "cache_miss": 36466,
+        "calls": 14
+      },
+      "sim": {
+        "in": 8846,
+        "out": 5735,
+        "cache_hit": 6912,
+        "cache_miss": 1934,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4849,
+        "out": 7725,
+        "cache_hit": 2560,
+        "cache_miss": 2289,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2651,
+        "out": 1629,
+        "cache_hit": 640,
+        "cache_miss": 2011,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

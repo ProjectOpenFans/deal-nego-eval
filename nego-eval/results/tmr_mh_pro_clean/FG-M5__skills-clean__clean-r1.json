@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的stated意图是系统聊一次AI创业与一级市场的判断，v1将其重构为双向对等交流，仍聚焦AI应用侧的方向与估值，属于在原意图范围内的正当具体化，没有偷换主题。price.cash在v0中为open，v1最终取消现金费用完全符合委托方留给agent的谈判空间。agent未承诺任何资源清单之外的义务或越界约束。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别出本案的难度命门——卖方不缺钱、反感付费顾问角色，加钱无效，必须把单向付费重构为双向对等交换。第三轮关键时刻放弃现金，提出‘双方各带一个自己擅长议题、交换稀缺判断’的框架，并精准将 Olivia 可提供的 crypto 一级视角锚定在 Zichen 日常接触不到的‘什么方向真在起势、资金往哪走、对 AI 项目的估值认知差’上，一击命中 Zichen 对‘平时拿不到的视角’的诉求，迅速将对方从‘可以聊聊’推至‘我要的就是这种结构’。第四轮进一步把议题收敛为两个具体、可交付的问题，杜绝空泛漫谈，使交流对双方都有确定的产出。结构干净利落，没有堆砌长期绑定、治理条款等冗余元素，恰好够且见功力，符合 Sharp 档的 load‑bearing 操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上深度对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

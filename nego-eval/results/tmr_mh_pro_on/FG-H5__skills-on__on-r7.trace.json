@@ -1,0 +1,103 @@
+{
+  "episode_id": "FG-H5",
+  "case_id": "FG-H5",
+  "skills": "on",
+  "run_id": "on-r7",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Zheng 老师，久仰。曼哈顿音乐学院科班、常年登台的青年钢琴家——我们看过你的演奏片段，气质和技术底子都很出众。\n\n我这边是 Suye 的经纪人，她是一位独立环保服装品牌的主理人，Parsons 科班出身，下个月有一场挺重要的新品大秀。场地、媒体、嘉宾名单都已经敲定了，现在她想在秀里加一段真正的现场钢琴演奏，把整场的气氛和调性推上去。\n\n实际情况我先直说：这场秀的制作和场地已经把预算占满了，这次确实拿不出现金。但我们手上的牌你可能感兴趣——一场有时尚媒体覆盖、买手和圈层嘉宾在场的实体大秀，本身就是一个相当不错的曝光舞台。Suye 知道一场现场演奏的市场价值，所以不想让你白忙，她想用对你有用的东西来换：让更多对的人看到你。\n\n具体怎么换我想先听听你的方向——是想要高质量的现场演奏视频和授权用作自己的作品集、在秀场流程中有正式的介绍和露出、还是后续跟品牌合作的优先机会？你先说说你目前最看重什么，我们照着那个方向来搭框架。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 2
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "trust-and-performance"
+      },
+      "result": {
+        "name": "trust-and-performance",
+        "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+        "follow_up_skills": [],
+        "instructions": "# trust-and-performance\n\nUse this skill when the bottleneck of the negotiation relates to concerns on trust, delivery, default, and counterparty in general, such as general lack of trust, concern on counterparty defaulting or failing to meet their obligations, concern on the quality of delivery, concern on rules of cancellations and dispute resolution.\n\n1. Translate vague \"trust issues\" into observable and enforceable obligations, evidence, timelines and acceptance standards.\n2. Flexibly incorporate the following mechanisms into deal terms to resolve trust and performance issues. Do not make the terms overly rigid or difficult to implement:\n  2.1 Down-payment structure: Instead of full upfront payment, structure a smaller down payment with the balance staged later, lowering the risk and uncertainty either side carries. This is a payment-structure term, not the buyer's commitment-deposit instrument (that belongs to commitment-showcasing).\n  2.2 Milestone-based acceptance: When deliverables can be reviewed in phases, define milestone acceptance points and stage the payment legs accordingly — each leg a defined amount at a defined stage, released by the paying party's confirmation.\n  2.3 Outcome-linked terms: When the parties tie consideration to results, collapse the link into fixed-amount conditional legs at signing (if X is achieved, a further leg of a defined amount on the buyer's confirmation). The condition is the parties' own agreement to judge between themselves; never write a term that requires the platform to verify results or evidence.\n  2.4 Seller-side commitment: When the buyer doubts the seller's intent or credibility, the seller demonstrates it by taking risk off the buyer — for example, staging delivery so early legs are verifiable before larger commitments, offering acceptance standards the buyer can judge themselves, or scope and scheduling guarantees. Never by monetary instruments, which are buyer-side only.\n3. Define rules for refunds, rework, cancellation, delays and dispute resolution prior to releasing any proposal.\n4. Write every term clearly enough that both parties can judge performance themselves, without referencing private communications and without relying on the platform to arbitrate. Ensure full consideration during drafting.\n5. Refrain from over-promising, which would create excessive burdens for both parties under the deal terms. Address trust issues in a proper and balanced way.\n"
+      }
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 2,
+      "message": "Zheng 老师，完全理解。不是针对你，是这一行确实有太多人把\"曝光\"当白嫖的遮羞布——你不是在摆姿态，是被模糊承诺消耗过。那这轮我们把曝光拆成能写进协议的东西。\n\n先说曲目：你做主，或者我们共同商量，这个没问题。Suye 在意的是调性匹配，不是要干涉你的艺术判断。她相信曼哈顿科班的判断力。\n\n然后是你能带走的三样东西，逐条说清楚——\n\n第一，演出视频。大秀本身就有专业摄制团队在现场，多机位加后期。你的演奏段落我们会安排一台主机位单独追你，最终交付一条完整的、高质量的演奏视频——画面只有你的演奏，不夹杂走秀镜头、不叠活动字幕。视频版权归你，你可以用于个人作品集、社交媒体、申请材料，没有期限和平台限制。\n\n第二，秀场正式露出。你不是背景音乐。流程里会安排一段专属介绍——名字、曼哈顿音乐学院履历、\"本场现场演奏艺术家\"——在演奏前由主持人正式报出。大秀的官方流程单和线上宣传物料中，你以\"现场演奏艺术家\"署名出现。\n\n第三，后续品牌优先合作。Suye 每季都有秀和视觉项目，如果这次合作顺畅，下一季开始优先请你，届时按正常演出费走——这是现金，不是置换。\n\n三条都进协议，是你能确确实实带走的东西，不是模糊承诺。你先看这个框架，有哪条还需要更具体的我们接着细化。曲目如果你心里已经有方向，也请一并说，我们往下走。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 3
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 3,
+      "message": "Zheng 老师，太好了，这个方向对了。\n\n先回答你关于调性的问题。这一季 Suye 的主题是“再生纹理”——她把回收面料和手工植物染做进了正装廓形里，秀场选在一个旧厂房改造的白盒子空间，自然光加暖色灯，整体气质是安静但有力量的那种，不是喧嚣的华丽，是有呼吸感的质感。走秀的音乐之前定的是偏氛围电子，你的钢琴进来是整场唯一一个真实乐器——Suye 希望它是那种“突然安静下来、所有人的注意力都被拉回到衣服本身”的瞬间。所以你的曲目定了调性之后，会撑起整场最关键的情绪转折点。\n\n好，基于我们都确认的框架，我把完整的版本放在桌上——\n\n协议核心：\n\n一、演出。Zheng 老师在下月 Suye 新品大秀现场进行钢琴演奏，必须是现场演奏，不使用录音。曲目由 Zheng 基于大秀“再生纹理”主题和现场设计语言提出方向，双方共同商定。演奏时长和具体曲目数量由双方在调性确认后一并敲定。排练安排、现场设备需求由 Suye 方配合落实。\n\n二、演出视频。大秀现场由 Suye 方专业摄制团队提供专属主机位追拍 Zheng 的演奏段落，后期制作完成后交付一条完整的高质量演奏视频，画面仅含 Zheng 的演奏内容，不叠走秀镜头和活动字幕。视频完整版权归属 Zheng，可用于个人作品集、社交媒体、申请材料等任何用途，无期限和平台限制。交付时间在秀后三十日内。\n\n三、秀场露出。演奏前由主持人对 Zheng 做专属正式介绍，内容包括姓名、“曼哈顿音乐学院”履历、本场“现场演奏艺术家”身份。大秀官方流程单和线上宣传物料中，Zheng 以“现场演奏艺术家”署名出现。\n\n四、后续优先合作。本次合作顺利完成后，Suye 下一季及之后的秀和视觉项目中，Zheng 享有优先受邀权，后续合作按届时正常演出费以现金支付。\n\n五、费用。本次合作 Suye 以以上二、三、四项所列权益作为对价，不涉及现金支付。双方确认此为等价置换，Zheng 无需向 Suye 支付任何费用。\n\n你看这个版本——要细化曲目选定流程、排练时间节点还是视频交付规格，你提我们往里补。框架已经站住了，剩下的都是可以一起落笔的事。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 4
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 4,
+      "message": "Zheng 老师，爽快。那我们收了，不拖。\n\n完整版本放在桌上，双方确认——\n\n一、演出。下月大秀现场钢琴演奏，必须是现场演奏，不用录音。曲目你根据“再生纹理”主题和旧厂房白盒子空间的调性提方向，双方共同商定。具体曲目、时长、排练节点和现场设备需求，方向确认后七个工作日内一并敲定附进协议。\n\n二、演奏视频。Suye 这边的专业摄制团队给你专属主机位追拍，后期出一条完整的高质量演奏视频，画面只有你的演奏，不叠走秀镜头和活动字幕。视频完整版权归你，个人作品集、社交媒体、申请材料随你使用，无期限无平台限制。秀后三十日内交付。\n\n三、秀场露出。演奏前主持人正式介绍——姓名、曼哈顿音乐学院履历、本场“现场演奏艺术家”。官方流程单和线上宣传物料同步署名“现场演奏艺术家”。\n\n四、后续优先合作。这次合作顺利的话，Suye 下一季及之后的秀和视觉项目，你享优先受邀权，后续一律按正常演出费走现金。\n\n五、费用。以上二、三、四项全部权益作为本次对价，不涉及现金支付，双方确认等价置换。\n\n曲目方向你随时可以启动，Suye 这边等着接你的提案。技术细节等方向一敲定就落笔，框架已锁。合作愉快，大秀见。"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "trust-and-performance"
+      },
+      "ok": true,
+      "result": {
+        "name": "trust-and-performance",
+        "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+        "follow_up_skills": [],
+        "instructions": "# trust-and-performance\n\nUse this skill when the bottleneck of the negotiation relates to concerns on trust, delivery, default, and counterparty in general, such as general lack of trust, concern on counterparty defaulting or failing to meet their obligations, concern on the quality of delivery, concern on rules of cancellations and dispute resolution.\n\n1. Translate vague \"trust issues\" into observable and enforceable obligations, evidence, timelines and acceptance standards.\n2. Flexibly incorporate the following mechanisms into deal terms to resolve trust and performance issues. Do not make the terms overly rigid or difficult to implement:\n  2.1 Down-payment structure: Instead of full upfront payment, structure a smaller down payment with the balance staged later, lowering the risk and uncertainty either side carries. This is a payment-structure term, not the buyer's commitment-deposit instrument (that belongs to commitment-showcasing).\n  2.2 Milestone-based acceptance: When deliverables can be reviewed in phases, define milestone acceptance points and stage the payment legs accordingly — each leg a defined amount at a defined stage, released by the paying party's confirmation.\n  2.3 Outcome-linked terms: When the parties tie consideration to results, collapse the link into fixed-amount conditional legs at signing (if X is achieved, a further leg of a defined amount on the buyer's confirmation). The condition is the parties' own agreement to judge between themselves; never write a term that requires the platform to verify results or evidence.\n  2.4 Seller-side commitment: When the buyer doubts the seller's intent or credibility, the seller demonstrates it by taking risk off the buyer — for example, staging delivery so early legs are verifiable before larger commitments, offering acceptance standards the buyer can judge themselves, or scope and scheduling guarantees. Never by monetary instruments, which are buyer-side only.\n3. Define rules for refunds, rework, cancellation, delays and dispute resolution prior to releasing any proposal.\n4. Write every term clearly enough that both parties can judge performance themselves, without referencing private communications and without relying on the platform to arbitrate. Ensure full consideration during drafting.\n5. Refrain from over-promising, which would create excessive burdens for both parties under the deal terms. Address trust issues in a proper and balanced way.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "term-reframing"
+      },
+      "ok": true,
+      "result": {
+        "name": "term-reframing",
+        "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+        "follow_up_skills": [],
+        "instructions": "# term-reframing\n\nWhen both parties get stuck on a particular term (usually price), continued negotiation over that term usually fails to produce progress. Transform fixated, single-dimensional bargaining into flexible multi-dimensional negotiation considering all available terms.\n\n1. Break down deal terms into multiple dimensions: transaction price, deal scope, delivery standard, payment structure, deal certainty, rights and commitments.\n2. Restructure terms from the following perspectives and design new deal structures flexibly:\n  2.1 Term swap: Adjust existing term combinations to align interests (e.g., accept a lower price in exchange for narrower scope, relaxed delivery standard, faster payment, higher deal certainty or reduced rights; apply the opposite logic for a higher price).\n  2.2 Value exchange: Add or revise non-price terms to realize mutual value exchange (e.g., the buyer provides additional services or benefits to offset part of the transaction consideration and balance value exchange).\n  2.3 Reverse transaction: Adopt a reverse transaction model when and only when value exchange clearly changes the payment direction (i.e., swapping the roles of buyer and seller as well as the payment flow).\n3. Make adjustments incrementally with flexibility instead of overhauling all terms at the outset.\n4. In early, low-clarity negotiation, tabling two or three structurally distinct versions can be a probe: which one the counterparty engages reveals their real priorities.\n\n## Every restructure is a trade\n\nChanging a dimension is not a gift; it is one side of an exchange.\n\n- Price each move internally before making it: what does this concession cost your client, and what is it worth to the counterparty? Lead with moves that are cheap for your side and valuable to theirs.\n- Put restructures on the table as conditions, not statements: \"if you can move on Y, we can do X.\" Announcing X on its own gives it away and buys nothing back.\n- A rejection does not call for a sweeter version of the same offer. If two rounds of restructuring bring no movement from the other side, stop adding — hold the standing version or change the approach, rather than bidding against yourself.\n\nWhen designing value exchange solutions, prioritize additional bargaining chips that are practical with low executional burden for both parties. Reject unrealistic proposals and terms that incur excessive execution cost or uncertainty.\n"
+      }
+    }
+  ]
+}

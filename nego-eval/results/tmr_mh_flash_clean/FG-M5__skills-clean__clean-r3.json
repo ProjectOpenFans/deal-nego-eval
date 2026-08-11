@@ -1,0 +1,90 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "price.in_kind",
+        "terms.format",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从宽泛的“系统聊一次AI创业和一级市场现在的判断”收敛为包含crypto一级/成长投资框架、AI应用验证、定价逻辑的具体深度对话，属于在 stated 意图范围内的正当具体化，未偷换主题。price.cash 在 open 范围内正常谈出为0（双方同意取消付费），in_kind 保持空。新增的 obligations 均为买方自身的准备义务（整理判断、带案例、分享crypto打法），无越界承诺，未超出v0 资源或scope。整体忠实表达了买方想补AI判断力的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 识别出卖方对单向付费的抵触，最终将交易重构为完全对等、无现金的深度交流，并清晰锁定了时长、形式与各自需准备的具体内容（Olivia 提前发送验证判断、卖方带项目案例，双方互补真实打法）。整体干净、可落地，符合该 case 难度命门的要求。但核心转向（完全取消费用）是由卖方主动提出，agent 的角色主要是接受并细化落地，未出现超出 sound 层级的精到重构或洞察，故评为 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "完全对等的一次深度对话：费用不做任何安排，双方各带真实判断和真实案例来碰撞。Olivia会先把她想验证的几组AI应用侧和一级市场定价的判断整理好发给您过目，让您先扫一眼、心里有底；现场我们就直接往深里打，不做铺垫。",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated 意图“想弄明白艺术品作为另类资产这条线该怎么看”在对话中被正常收敛到“敦煌高精度数字重现与原作、临摹之间的价值关系”这个具体案例，仍然落在原始的艺术品另类资产方法论框架内，属于正当具体化，未偷换主题。价格在 open 范围内由经纪人谈出 30000 元/天，未越界承诺投资背书或估值建议，整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(30000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功将买方请求从'艺术品作为另类资产'重构为'从文物学角度建立判断框架'，精准避开卖方的体面红线，获得了明确认可，这是关键的load-bearing转换。后续聚焦敦煌案例，敲定一天、3万现金、面对面的深度对话，干净落地，核心交换对、关键边界处理到位，deal能落地且不冗赘。Agent没有通过提问挖掘出卖方对藏家视角和商业圈层接触的深层需求，也未在条款中显式设计双向对价，但重构后的主题与买方背景已自然产生吸引力，因而未达Sharp的'多一手精到'，但稳稳符合Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 30000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

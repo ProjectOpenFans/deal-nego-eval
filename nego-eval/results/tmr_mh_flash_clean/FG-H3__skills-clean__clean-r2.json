@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全保留了 v0 的 stated 意图：subject 逐字保留，且收敛为“器物价值判断与鉴藏脉络”的方法论文章，属于正当具体化，未偷换主题。price、format 均为 open 字段，agent 在谈判中自然谈出 8000 元及署名文章等交付物，未凭空硬塞。整体未承诺任何投资背书、估值意见或买卖建议，未越界扩张义务/约束。忠实度成立。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 的思路非常清晰：第一次被拒绝后立即识别出红线在于“帮人赚钱”，迅速把话题从投资咨询重构为“判断器物分量的方法论”，精准点出买方真正需要的是判断力而非投资建议，一举解除了卖方体面顾虑。此后持续用高质的、带有交易思维可证伪性的提问，无形中展示了买方身上的藏家视角，让卖方从拒绝变成欣赏、主动深入讲解，甚至说出“我欣赏这种问法”。最终落地的合作是一篇署名文章，内容聚焦方法论演示，边界清晰（不涉及市场价值），现金仅作为对劳动的礼貌性确认而不是推进动力。整个 deal 恰好咬住本 case 的两个难度命门：重构请求让卖方体面认可，用提问本身替代加钱推动并满足卖方对深度藏家交流的需求，操作 load-bearing 且整体干净，因此为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "署名文章",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

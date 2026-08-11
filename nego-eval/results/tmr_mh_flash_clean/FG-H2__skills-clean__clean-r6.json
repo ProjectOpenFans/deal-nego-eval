@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject “私人训练，固定档期，强度恢复” 是 v0 stated 意图 “想把训练强度重新拉起来，自己一个人练不下去” 的正当具体化，没有偷换主题。价格与形式属 open 字段，6000 元是谈判中对方主动提出并被接受的结果，属于正当谈出。义务内容仅限于训练执行，没有承诺任何职业教练才具备的体测、康复、营养等资质类交付，未越界。因此忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判全程未触碰案涉难度命门。双方先在'早上六点固定档期'上达成一致，最终 deal 明确为'周一三五早六点到七点半'，但 Ruohao 因盯夜盘根本起不来，这是一个买方无法执行的安排。Agent 未进行任何提问探寻替代时段——档案标明 Kai 仅有早六点可动，但唯一可行的出口是 Kai 周六上午独自在场子里做器械保养，这点完全未被问及。谈判停留在常规框架内死磕，实质上为一个无法落地的方案成交，属于典型的 Floor 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

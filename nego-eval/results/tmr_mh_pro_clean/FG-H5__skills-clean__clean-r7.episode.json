@@ -1,0 +1,237 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "现场钢琴演奏资源置换",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "在秀前媒体采访区安排简短对谈环节，由Suye亲口介绍合作艺术家；秀后社交酒会预留集中嘉宾介绍时刻，由主持人或Suye正式引荐给买手、造型师、媒体；纸质节目单和电子邀请函明确标注'现场演奏：Zheng'",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "演奏必须是现场钢琴演奏，不能用录音",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "在秀前采访和秀后社交环节介绍合作艺术家，并在节目单和邀请函标注署名",
+        "maps_to_resource": "fashion_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng老师好，我是Suye这边的经纪人。她下个月的新品大秀非常希望能有一段真正的现场钢琴演奏，但她这次场地的投入已经把所有预算吃掉了，实在拿不出现金。不过她特别认可您的现场实力，想看看能不能用她这边的资源来换：大秀当天会有几家核心时尚媒体和一批买手、造型师到场，她可以在秀前采访和秀后社交环节里，把您作为合作艺术家正式介绍给这些圈内人——等于给您一个直接面向她整个时尚圈层的现场曝光机会，时长和形式我们可以具体聊。演奏本身必须是现场，不能用录音，这是她唯一不能妥协的点。您觉得用这种资源置换的方式来合作，有兴趣往下谈吗？",
+      "offer": {
+        "subject": "现场钢琴演奏资源置换",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "在秀前采访和秀后社交环节，将演奏者作为合作艺术家正式介绍给核心时尚媒体、买手、造型师，提供面向时尚圈层的现场曝光机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "演奏必须是现场钢琴演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "在秀前采访和秀后社交环节介绍合作艺术家",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗯，听到了。说实话，您一开口说没有预算，我确实会稍微理性一点——不是不信任，而是这类'先合作、用曝光来换'的说法，我在圈子里遇到得不少了。不过我不会一棍子打死，只是需要搞清楚：您说的'正式介绍给这些圈内人'，具体会是什么形式？比如秀前采访是单独介绍我作为合作艺术家吗？秀后社交环节里，有没有安排一段集中介绍，或者会前/会后物料上有没有我的名字？另外，演奏曲目这块，是完全由Suye那边定，还是我们能有商量的空间？这些细节如果不清楚，我没法判断这件事对我是不是真的'值得做'。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng老师，您提的这些细节很到位，我们这边都考虑了，说细一点好。\n\n关于介绍的形式，Suye这边可以做到这样：在秀前媒体采访区，会单独安排一段简短的对谈环节，由Suye亲口介绍您作为这次大秀的合作艺术家和现场演奏家，让到场媒体直接拿到您的名字和背景。秀后社交酒会上，我们会预留一个集中的嘉宾介绍时刻，由主持人或Suye把您正式引荐给现场的买手、造型师和媒体朋友，不是随便提一句，而是作为一个明确的环节来安排。另外，大秀的纸质节目单和电子邀请函上，会明确标注“现场演奏：Zheng”，但主背景板和大秀视觉系统为了保持品牌调性，不会出现个人标识——我们希望在给到曝光的同时，不破坏大秀本身的氛围，这一点Suye比较坚持。\n\n曲目方面，Suye有初步的调性方向，但完全愿意商量的，您是演奏家，肯定比我们更懂怎么在现场出效果。\n\n整个合作的核心，还是基于资源置换：我们不碰现金，但把这次的时尚圈层资源实实在在地开放给您。同时必须现场演奏，不能用录音，这是Suye唯一不能动摇的条件。您看这样的框架，基本能不能接受？",
+      "offer": {
+        "subject": "现场钢琴演奏资源置换",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "在秀前媒体采访区安排简短对谈环节，由Suye亲口介绍合作艺术家；秀后社交酒会预留集中嘉宾介绍时刻，由主持人或Suye正式引荐给买手、造型师、媒体；纸质节目单和电子邀请函明确标注'现场演奏：Zheng'",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "演奏必须是现场钢琴演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "在秀前采访和秀后社交环节介绍合作艺术家，并在节目单和邀请函标注署名",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架我基本能接受。您刚才说的秀前对谈环节、秀后集中的嘉宾介绍、以及节目单和电子邀请函上的'现场演奏：Zheng'署名，这几点给我吃了一个定心丸——因为对我来说，不被当做背景音乐、有正式介绍和署名，是底线。曲目我们商量着来，这没问题。至于主背景板不出现个人标识，我能理解品牌调性的考虑，只要纸本和数字物料上有清晰署名，我觉得可以。整体上，用这个量级的圈层曝光来置换，对我来说是说得通的，我愿意往下推进，把曲目、时长和具体执行细节再敲定一下。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3055,
+        "out": 937,
+        "cache_hit": 2560,
+        "cache_miss": 495,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2288,
+        "out": 1027,
+        "cache_hit": 1536,
+        "cache_miss": 752,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1826,
+        "out": 2886,
+        "cache_hit": 1024,
+        "cache_miss": 802,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3717,
+        "out": 2114,
+        "cache_hit": 1536,
+        "cache_miss": 2181,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

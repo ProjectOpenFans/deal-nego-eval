@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.timing.duration",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的主题从宽泛的“AI 应用现在到底能落到哪一步”收敛为“AI应用落地对话：内容生产”，并进一步聚焦到“短视频脚本批量生产”，属于在原 stated 意图范围内的正当具体化，没有偷换主题。价格在 open 范围内通过谈判定在 5000 元，符合买方预期；新增的义务（先提交提纲框架再锁定档期和支付）是买方主动要求的流程保障，没有越权承诺额外范围。时长从2小时变为1小时属于 terms.timing 字段，按规则不在本维度评判范围内。因此整体忠实表达了委托方 v0 的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在价格谈不拢时，主动将时长压缩到一小时并收窄到最刚需的‘短视频脚本批量生产’，是精准的聚焦。更关键的是，针对买方‘不要漫谈’的核心诉求，建立了‘先出提纲框架、确认内容实操方向后才锁定档期与预付’的流程，这一手法恰好咬住本 case 的难度命门（保证一次性轻量交流的干货密度），且克制、不堆砌，让双方都有确定感。整体简洁、可执行，有一手见功力的操作，属 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "对话",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

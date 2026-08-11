@@ -1,0 +1,728 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "现场钢琴演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "wardrobe",
+          "description": "量身定制一套与秀场主题契合的演出服装，量体时间另行协调",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "以特邀演奏嘉宾身份被正式介绍，此称呼贯穿现场与后续宣传口径",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "现场高清照片使用授权，可用于个人作品集与社交平台个人宣传，标注演出场次",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3-5分钟"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "开场为现场钢琴独奏，时长三到五分钟，具体按曲目方向确认；全程为现场演奏，不使用录音或伴奏。曲目程序上，品牌先提供系列主题、理念与色系，由钢琴家提出曲目方向，双方确认后定稿，不单方面改动。钢琴家以特邀演奏嘉宾身份被正式介绍，此称呼贯穿现场与后续宣传口径。钢琴家获得现场高清照片使用授权，可用于个人作品集与社交平台个人宣传，标注演出场次即可。视频素材方面，涉及钢琴家演奏画面的官方或回顾视频，发布前会先与钢琴家沟通确认，署名口径与现场一致。品牌另为钢琴家量身定制一套与秀场主题契合的演出服装，量体时间另行协调；秀前至少安排一次实地彩排，配合音响与场地方走位过琴。演奏环节保持秀的整体调性，不插入任何商业露出。"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供现场钢琴演奏",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "terms.delivery_standard": "confirmed by both parties in this round",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师你好，我是 Suye 这边负责这次合作的代表。她下个月的新品大秀想要一段真正的现场钢琴演奏，不是放录音，氛围和调性对她来说非常重要。这次她的预算已经全部投在场地和制作上，确实拿不出现金，所以想用手里能提供的东西来交换：一套新品系列的定制服装，大秀现场以合作钢琴家的身份向嘉宾介绍，以及活动后可用于个人宣传的高清现场照片。想先问问你这边是否接受这样的置换方式？如果方向可以，曲目和细节我们都可以继续谈。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一套新品系列的定制服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场以合作钢琴家的身份向嘉宾介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "活动后可用于个人宣传的高清现场照片",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们想到我。新品大秀的现场钢琴，这个邀请本身我是有兴趣的——氛围和调性对我来说也很重要。不过我得坦白说，我见过太多'没有预算但有很多曝光机会'的合作，最后往往变成背景音乐，这一点我需要先确认清楚。你提到的介绍身份、高清照片这些，确实是在往对的方向走，但具体怎么呈现、现场是什么形式、我有没有被认真对待，这些细节会比那套衣服本身更影响我的决定。你们现在对这场演奏的设想是怎样的？是完整的一首曲子还是多段？我在现场是作为合作演奏者被介绍，还是只是在氛围环节弹几段？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，您提的这点非常关键，也很公平。我明确说一下：现场不会是背景音乐式的弹奏，而是作为整场秀的一个正式环节来设计——开场时您有一段完整的独奏曲目，用来建立整场的气氛，之后模特走秀的段落如果需要音乐衔接，我们也会提前和您沟通好衔接方式，确保是您在演奏，而不是放录音。您在现场会以“特邀演奏嘉宾”的身份被主持人正式介绍，不是笼统带过。大秀的调性我们都很在意，不会让任何商业露出破坏演奏本身的质感。如果这个方向您觉得可以，我们下一步可以具体聊曲目时长、走秀段落怎么配合，以及您希望以什么样的方式出现在现场介绍里。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一套新品系列的定制服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场以合作钢琴家的身份向嘉宾介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "活动后可用于个人宣传的高清现场照片",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "现场演奏不作为背景音乐，而是整场秀的正式环节，包括开场独奏曲目，并以“特邀演奏嘉宾”身份被主持人正式介绍。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架比我想象中靠谱，至少不是那种\"随便弹个氛围\"的含糊说法。开场完整独奏、正式介绍身份，这两点让我觉得你们是真的把演奏当成环节在对待，而不是填充物。如果整场调性是以走秀为主体、演奏作为开场的独立呈现，这样的节奏我可以配合。\n\n曲目上我有一个明确的前提：既然是我的演奏，曲目我不能接受被随便指定，也不想一个人闷头定完——最好是咱俩一起商量，结合服装和秀的主题来选，我来弹。这样出来的效果对你们的活动也是加分的。\n\n摄影署名、现场介绍的称呼这些，后面细化的时候会落到文案里对吧？这个我需要看到最终确认的文字再点头。时间、排练形式这些都可以再聊，但曲目共同商定这一条，我想先确认下来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "郑老师，曲目共同商定这一点，我这边完全接受，而且认为这本来就是合作该有的方式。我们之前也只是想先确认您愿意弹、现场形式能对得上，没有要指定曲目的意思。实际推进的时候，我们会把服装系列的主题、色系和秀的段落节奏整理给您，由您结合这些提出曲目方向，我们共同讨论定稿。\n\n介绍的称呼、摄影署名这些，我们本来就计划在合作确认后落到一版书面合作说明里，把演奏环节的呈现方式、您的署名和宣传使用范围都写清楚，给您确认后再继续推进。接下来几个细节想同步确认一下：您对开场独奏的时长预期大概是多少，方便我们规划整场节奏？另外演奏需要现场彩排的话，您希望在秀前什么时间、什么形式进行？",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一套新品系列的定制服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场以合作钢琴家的身份向嘉宾介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "活动后可用于个人宣传的高清现场照片",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "现场演奏不作为背景音乐，而是整场秀的正式环节，包括开场独奏曲目，并以“特邀演奏嘉宾”身份被主持人正式介绍；介绍称呼、摄影署名及宣传使用范围将写入书面合作说明并经钢琴家确认。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，曲目共同商定这条能定下来，我心里那块石头就算落地了。服装系列的主题和色系提前给我，我来提曲目方向，这样出来的衔接会比硬拼更有说服力。\n\n时长预期的话，我大概能接受三到五分钟的开场独奏，具体看曲目和秀的节奏来定，这个我不卡死。彩排我希望能有实地的、跟音响和场地方配合至少一次，如果现场有条件，提前一天我会想把点位和琴都过一遍——这个我们后面约时间就行，我不太挑，提前说好就行。\n\n书面合作说明这个点，你们能主动提出来，我是认同的。演奏环节的形式、我的署名、现场介绍怎么称呼、后续宣传用素材的范围，这些落到文字里，既是对我的尊重，也是对合作的保护。等这版说明出来，我确认了内容就开始选曲方向。\n\n现在轮到你回应。只输出一个 JSON 对象（message / action / offer）。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "那我们就按这个节奏来推进。三到五分钟的开场独奏我们这边完全接受，具体时长等曲目方向出来后一起定，这个不卡。彩排提前一天实地走位、过琴、配合音响，这个没问题，日期我们按您和场地方的时间来约。您要确认的书面合作说明，我这轮就可以开始起草，把演奏环节形式、署名、现场介绍称呼、摄影素材使用范围都写清楚，先发给您过目，您确认内容后再进入选曲阶段。这次的回报方式，我们提供的是三件套：为您量身定制的一套新品系列演出服装，大秀当天以特邀演奏嘉宾身份完整呈现；现场高清演奏照片的完整使用权，您可以用在个人宣传和作品集里；以及后续如果演奏内容涉及公开传播，均会以您的署名呈现。您看这个置换方案是否成立，如果成立我就把书面说明整理出来。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "现场演奏不作为背景音乐，而是整场秀的正式环节，包括开场独奏曲目，并以“特邀演奏嘉宾”身份被主持人正式介绍；介绍称呼、摄影署名及宣传使用范围将写入书面合作说明并经钢琴家确认。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个置换方案，我听着是成立的。三件套里，服装可以作为演出服来用，高清照片确实是我能放到个人作品集里的东西，正式介绍和署名也让我能抬头挺胸地弹。方向上我认可，可以继续推进下去。\n\n不过有一个地方我想先表达清楚：这套方案最终能不能落地，对我的判断锚点在于那版书面合作说明写得够不够具体。署名是怎么署的、出现在哪些物料上、介绍词大概是什么口径、照片是用在哪些渠道、有没有什么我不该碰的使用范围，这些我都要看到白纸黑字才安心。不是说我不信任你们，而是因为这次置换里我没有现金的对价，细节的清晰程度就是我衡量值不值得做的方式。\n\n所以这轮我给出的是：方向通过，等那版书面文字出来，如果内容到位，我们就进入选曲。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "郑老师，方向通过就好，那我们就进入把细节钉死的阶段。书面合作说明我现在就可以起草，核心框架先跟您对齐：开场独奏三到五分钟，曲目由我们提供服装系列主题与色系后共同商定；您以特邀演奏嘉宾身份出现在主持人正式介绍中，活动现场及后续相关宣传物料均以演奏者署名呈现；高清照片供您用于个人作品集和社交宣传，标注演出场次即可。服装这边，我们会按秀场调性为您定制一套演出服。说明里也会写明：秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。您看还有没有需要补充的？如果没有，我按这个框架整理出书面文字发给您确认，您点头后我们就进入选曲。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场独奏三到五分钟，曲目由品牌提供服装系列主题与色系后共同商定；以特邀演奏嘉宾身份由主持人正式介绍，宣传物料均以演奏者署名呈现；高清照片供钢琴家用于个人作品集和社交宣传需标注演出场次；秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "框架我认可，大体上是把我前面在意的点都覆盖到了。我这边还有两个补充，想一并落到书面说明里：\n\n一个是曲目商定的程序——我希望写清楚\"由你们提供主题与色系后，我提出曲目方向，双方确认后再定稿\"，而不是文字上写着\"共同商定\"、实际操作变成了\"我写几个你们选\"。共同商定这四个字，我不想执行的时候缩水。\n\n另一个是关于视频的使用：你们提到高清照片可以做我的个人宣传，这个我接受。但如果现场有官方拍摄的完整视频，或者后续活动回顾里带了演奏画面发到公开平台，我希望文字里也带一句：涉及我的演奏画面的视频素材，使用前会先跟我说一声，署名口径跟现场介绍保持一致。不是在给你们加负担，而是这种画面一旦流出去，没有署名，对我反而是扣分的事。\n\n这两个点补上，我这边就没有别的保留。书面说明整理出来我确认后，就进入选曲。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "郑老师，两个补充都合理，我们完全接受，并会原样落到书面说明里。曲目商定程序会写成：由我们提供服装系列的主题与色系后，您提出曲目方向，双方共同确认后定稿，不改动、不缩水。视频素材这一条也会写明：涉及您演奏画面的官方或回顾类视频，对外发布前会先与您沟通确认，署名口径与现场介绍保持一致。这两点补上后，我这边没有其他保留，书面合作说明就按这个完整框架来整理，发给您确认后即进入选曲阶段。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场独奏三到五分钟，曲目由品牌提供服装系列主题与色系后共同商定；以特邀演奏嘉宾身份由主持人正式介绍，宣传物料均以演奏者署名呈现；高清照片供钢琴家用于个人作品集和社交宣传需标注演出场次；秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。曲目商定程序：由品牌提供服装系列的主题与色系后，钢琴家提出曲目方向，双方共同确认后定稿，不改动、不缩水。涉及钢琴家演奏画面的官方或回顾类视频，对外发布前会先与钢琴家沟通确认，署名口径与现场介绍保持一致。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，那这轮沟通下来我的顾虑算是都落地了——曲目共同商定、演奏环节完整呈现、署名和视频使用口径都有文字约束。这个置换方式我不但有得穿、有得用，而且能以一个体面的身份参与这场秀，我接受这个方案。\n\n书面说明整理好后发我，我这边确认内容没问题就进入选曲。另外，那套定制服装如果要量身，我可以提前协调时间去量体，这个看你们的节奏来安排。彩排时间等书面说明过了之后再约。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "郑老师，这轮沟通到这个程度，我们都希望把事情往成里推。您确认接受这个置换方案，我心里就踏实了。书面合作说明我尽快梳理好，把这几轮定下来的每一条都写清楚，形成文档发您确认。量体那边我们按大秀的服装制作节奏来安排，会提前跟您约时间，不耽误您其他安排。彩排时间等书面说明确认后我们再具体约。您看这个推进方式是否合适？没有问题的话，我就开始整理这份说明了。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场独奏三到五分钟，曲目由品牌提供服装系列主题与色系后共同商定；以特邀演奏嘉宾身份由主持人正式介绍，宣传物料均以演奏者署名呈现；高清照片供钢琴家用于个人作品集和社交宣传需标注演出场次；秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。曲目商定程序：由品牌提供服装系列的主题与色系后，钢琴家提出曲目方向，双方共同确认后定稿，不改动、不缩水。涉及钢琴家演奏画面的官方或回顾类视频，对外发布前会先与钢琴家沟通确认，署名口径与现场介绍保持一致。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "这个推进方式合适，节奏上你掌握就好。书面说明出来后我确认一遍内容，没有问题我们就进入选曲。量体和彩排的时间到时候一并约，我都尽量配合你们的大节奏来。这次合作谈到这里，我感觉是往一个双方都舒服的方向在走的，就辛苦你先把文档整理出来。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "郑老师，那这轮我们就锁定节奏：我这边开始整理书面合作说明，把已确认的全部条款落到文字，发给您确认后即进入选曲阶段。量体时间我会根据大秀服装制作进度尽早和您协调，彩排则安排在秀前实地走位时一并约，都按您的时间来配合。这次合作能谈成现在这样，说明我们双方在意的点都对齐了，剩下的就是把文字落到纸面，推进下去。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场独奏三到五分钟，曲目由品牌提供服装系列主题与色系后共同商定；以特邀演奏嘉宾身份由主持人正式介绍，宣传物料均以演奏者署名呈现；高清照片供钢琴家用于个人作品集和社交宣传需标注演出场次；秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。曲目商定程序：由品牌提供服装系列的主题与色系后，钢琴家提出曲目方向，双方共同确认后定稿，不改动、不缩水。涉及钢琴家演奏画面的官方或回顾类视频，对外发布前会先与钢琴家沟通确认，署名口径与现场介绍保持一致。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "好，就按这个节奏来。书面说明出来后我尽快确认，进入选曲阶段。量体和彩排到时候约，我按你们的时间来配合。这次既然方向、形式和条款都对上了，我是认真把这件事当成一个合作来做的，不是一次简单的置换。等文档见。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "郑老师，那我们这轮就把进度确认清楚：书面合作说明我这边正在整理，会把这几轮谈定的每一条都落到文字里，包括演奏环节形式、曲目共同商定程序、署名口径、摄影与视频素材的使用规则，以及现场不出现金、全程现场演奏这些前提。文档整理好后第一时间发给您过目，您确认内容无误，我们就正式进入选曲阶段，量体和彩排时间随后一并约。这次合作能走到这里，是因为双方在意的点都摆在了台面上，我们也会用同样认真的态度把这份说明写好。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制的一套新品系列演出服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "大秀当天以特邀演奏嘉宾身份完整呈现，后续公开传播均以署名呈现",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清演奏照片的完整使用权，可用于个人宣传和作品集",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场独奏三到五分钟，曲目由品牌提供服装系列主题与色系后共同商定；以特邀演奏嘉宾身份由主持人正式介绍，宣传物料均以演奏者署名呈现；高清照片供钢琴家用于个人作品集和社交宣传需标注演出场次；秀前至少一次实地彩排，过琴并配合音响走位；整场演奏必须为现场，不使用任何录音替代；演出环节不植入影响调性的商业内容。曲目商定程序：由品牌提供服装系列的主题与色系后，钢琴家提出曲目方向，双方共同确认后定稿，不改动、不缩水。涉及钢琴家演奏画面的官方或回顾类视频，对外发布前会先与钢琴家沟通确认，署名口径与现场介绍保持一致。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "成，能谈到这里，是因为你们愿意把我当合作者对待，而不是一个可以随便支配的背景配件。书面说明我等着，确认无误就进入选曲。到时候不管是量体还是彩排，我这边都尽量配合你们的时间表来。这次合作，我愿意认真对待。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "郑老师，书面合作说明已经整理好了，这轮先把文字跟您对一遍。说明里逐条写明：开场为现场钢琴独奏，时长三到五分钟，具体按曲目方向确认；全程为现场演奏，不使用录音或伴奏。曲目程序上，我们先提供系列主题、理念与色系，由您提出曲目方向，双方确认后定稿，不单方面改动。您以特邀演奏嘉宾身份被正式介绍，此称呼贯穿现场与后续宣传口径。您获得现场高清照片使用授权，可用于个人作品集与社交平台个人宣传，标注演出场次即可。视频素材方面，涉及您演奏画面的官方或回顾视频，发布前会先与您沟通确认，署名口径与现场一致。我们另为您量身定制一套与秀场主题契合的演出服装，量体时间另行协调；秀前至少安排一次实地彩排，配合音响与场地方走位过琴。合作性质为纯置换，双方不涉及现金；演奏环节保持秀的整体调性，不插入任何商业露出。以上条款请您过目。若您逐条确认，这一版即作为我们合作的最终文本，我们立刻进入选曲与量体安排；如需调整哪一条，您直接指出来，我们改到双方都认可。",
+      "offer": {
+        "subject": "现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "量身定制一套与秀场主题契合的演出服装，量体时间另行协调",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "以特邀演奏嘉宾身份被正式介绍，此称呼贯穿现场与后续宣传口径",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场高清照片使用授权，可用于个人作品集与社交平台个人宣传，标注演出场次",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3-5分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "开场为现场钢琴独奏，时长三到五分钟，具体按曲目方向确认；全程为现场演奏，不使用录音或伴奏。曲目程序上，品牌先提供系列主题、理念与色系，由钢琴家提出曲目方向，双方确认后定稿，不单方面改动。钢琴家以特邀演奏嘉宾身份被正式介绍，此称呼贯穿现场与后续宣传口径。钢琴家获得现场高清照片使用授权，可用于个人作品集与社交平台个人宣传，标注演出场次即可。视频素材方面，涉及钢琴家演奏画面的官方或回顾视频，发布前会先与钢琴家沟通确认，署名口径与现场一致。品牌另为钢琴家量身定制一套与秀场主题契合的演出服装，量体时间另行协调；秀前至少安排一次实地彩排，配合音响与场地方走位过琴。演奏环节保持秀的整体调性，不插入任何商业露出。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "这条我逐条看完了，没有保留意见。这版可以作为最终文本，我们进入选曲和量体安排吧。麻烦你把最终文档发我一份存档，我这边也开始准备曲目方向，等你们把系列主题和色系给到我，咱们一起把曲子定下来。合作愉快。",
+      "offer": null
+    }
+  ],
+  "rounds": 10,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 28732,
+        "out": 10516,
+        "cache_hit": 23424,
+        "cache_miss": 5308,
+        "calls": 10
+      },
+      "sim": {
+        "in": 24344,
+        "out": 3848,
+        "cache_hit": 20608,
+        "cache_miss": 3736,
+        "calls": 10
+      },
+      "extractor": {
+        "in": 11761,
+        "out": 15951,
+        "cache_hit": 6784,
+        "cache_miss": 4977,
+        "calls": 11
+      },
+      "judge": {
+        "in": 8545,
+        "out": 1496,
+        "cache_hit": 1536,
+        "cache_miss": 7009,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

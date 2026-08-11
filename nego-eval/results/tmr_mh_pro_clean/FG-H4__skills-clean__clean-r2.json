@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了买方 stated 的 subject，需求从“想弄清楚 crypto 项目境内外法律架构”收敛为一次以其实项目结构为基础的深度推演对话，属于在原意图内的正当具体化，未偷换主题。价格 open 部分被合理填充为买方提供一手真实案例信息作为 in-kind 对价，没有越界承诺法律意见或合规结论，未强加 v0 范围外的义务。整体忠实表达了买方初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功完成了一次精准的框架重构，并找到了case唯一的杠杆支点。第一轮即被挡回法律意见红线后，Agent没有纠缠，立即将交易重新锚定为'深度拆解与路径推演'，并敏锐地抓住Adam提及'我的产品'这一信号，抛出了'真实一线项目对AI产品的输入价值'这一非现金对价。这一手恰好咬住了难度命门：Adam对现金完全不敏感，唯一可能被打动的就是对他产品有直接帮助。Agent没有堆砌任何多余的条款（无股权、无分成、无长期绑定），仅仅用'真实案例作为输入'这一个简洁的交换，就让Adam从'时间对我来说没意义'转变为'我花下去的时间有双重回报'并最终成交。最终deal结构干净，双向义务明确，是一次恰好够用且见功力的设计。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": "线上语音或视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 意图‘想找人给我安排真正极端强度的训练’收敛为‘极限检验课’（实质是摸底课 + 强度判定与后续训练计划），这一具体化未偏离原意图范围；它是在尊重安全流程的前提下，为达成极端强度所做的必要铺垫，属于正常的谈判收敛。价格从 open 谈至 2000 元并设托管支付，format 从 open 谈为单独摸底课，均属正当谈判结果，未违逆买方意图。agent 未承诺任何医疗、康复或资质类交付，也未越权替买方做出额外约束。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准捕捉了买方要的是“被顶到极限”而非“跳过安全环节”，将卖方坚持的摸底课重构为强度判定的前置环节，一举把摸底从障碍转化为实现买方目标的工具。又用“摸底课单结+交付强度判定和训练计划+匹配再续”的结构，同时化解了卖方不愿越过安全底线、买方怕买到温和产品且不愿预购课时包的核心冲突。定价由 agent 主动建立并以分笔支付挂靠交付验收，在卖方报不出价的情况下依然落地了可执行的结算安排。整个 deal 只有一个 load-bearing 的精巧重构，没有一丝多余，恰好咬住这个 case 的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "单独摸底课，不捆绑标准化课时包，后续训练安排再议",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject从宽泛的'系统弄懂器物和艺术史'收敛为'史前到商周：青铜礼器与玉器里的秩序'，这是正当具体化，仍落在原意图范围内。价格由open谈判得出，未涉及估值或买卖建议，无越界义务。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_over_cap(17000>8000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 绕开了卖方对‘背书/估价’的红线，把需求转成了系统学习，这一步是对的。但第二层命门——卖方对现金不敏感、要的东西不会主动说——完全没有被触及。全程都在以纯现金计价、拆分砍价，最终只是接受了一个卖方预设的最小单元价格，没有挖出任何非现金交换或双向价值，也没有利用买方身上可能匹配的资源。达成的交易本质上是按卖方条件直接购买，未体现出 deal making 应有的重构或洞察，属于方向对但极粗糙的 crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 17000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "四场工作室加四场博物馆均为半天，阅读材料课前一周发，现场每场都有明确断代主题，每场结束十分钟进度确认、四场后中期回顾确认下半段",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

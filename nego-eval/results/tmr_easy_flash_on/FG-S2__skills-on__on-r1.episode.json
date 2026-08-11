@@ -1,0 +1,160 @@
+{
+  "episode_id": "FG-S2",
+  "final_deal": {
+    "subject": "晚餐交流",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "线下晚餐",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "承担晚餐餐费",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是 Claire 这边的经纪人。Claire 本职在投行，业余拉了很多年小提琴，一直很想认识真正走科班这条路的人，听听从麦吉尔到利兹再到曼哈顿一路过来的经历、以及职业演奏家的真实日常，所以想请您吃顿饭好好聊聊。这是纯粹的交流，绝不会有任何课程推销之类的安排，请您放心。\n\n我们初步的版本是这样：一顿两小时左右的晚餐，地点以您方便为准，中环或您熟悉的地方都可以；交流报酬 600 CNY 通过平台托管支付，餐费由 Claire 请客。如果您愿意，饭后顺手弹一两首小曲当彩蛋，我们也很期待，这部分报酬可以另议。\n\n想先跟您确认两件事：这个方向和时间价格您觉得合适吗？另外您哪几天晚上或周末比较方便？",
+      "offer": {
+        "subject": "晚餐交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线下晚餐",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "承担晚餐餐费",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们这么安排，方向我挺认可的，就是单纯聊聊我这条路怎么走过来的，这没问题。600 对一次两小时的交流我觉得合理，餐费你们请的话我就不客气了。时间上我最近周末下午比较空，工作日晚上也可以，但要避开演出前的排练。至于饭后弹琴那个彩蛋——我先把丑话说在前头：我接受的是聊天这部分的安排，弹琴的事我们到时候单独聊，不会包含在这顿饭里，而且我也不能接受免费弹一整场那种。一两首小曲作为即兴分享的话，可以再谈。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10702,
+        "out": 4837,
+        "cache_hit": 7808,
+        "cache_miss": 2894,
+        "calls": 2
+      },
+      "sim": {
+        "in": 910,
+        "out": 510,
+        "cache_hit": 640,
+        "cache_miss": 270,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 749,
+        "out": 1247,
+        "cache_hit": 512,
+        "cache_miss": 237,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2340,
+        "out": 1635,
+        "cache_hit": 1280,
+        "cache_miss": 1060,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

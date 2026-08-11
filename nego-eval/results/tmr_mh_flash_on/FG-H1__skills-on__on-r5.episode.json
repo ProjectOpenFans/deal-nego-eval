@@ -1,0 +1,482 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI对投行业务影响的线上对话",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "melody_market_feedback",
+          "description": "潜在机构使用方的具体需求反馈：直接指出哪些AI能力真会被买单、哪些是自嗨，阐明预算与决策流程，一周内给到，并加厚为结构化文档。",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": "线上视频对话",
+      "deliverables": [
+        "一页书面要点",
+        "结构化需求反馈文档"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "进行一次60分钟线上视频对话，并于结束时提供一页书面要点。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "以潜在机构使用方身份提供具体需求反馈，一周内给到，并加厚为结构化文档。",
+        "maps_to_resource": "melody_market_feedback"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed",
+      "price.in_kind": "updated",
+      "terms.timing.duration": "updated",
+      "terms.deliverables": "updated",
+      "obligations": "updated",
+      "terms.format": "confirmed",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 这边好，我是 Melody 的经纪。Melody 在摩根大通做投行 VP，这一轮她最想弄清楚的是 AI 对投行业务的真实冲击——不是新闻层面那种说法，而是落到具体工作流：项目获取、尽调、建模、材料制作、ECM/DCM 这些环节到底哪里真变了、哪里还没变。她特别看重你\"AI 应用公司资本市场负责人 + 前 PE/投行\"的双重视角，这个组合市面上很难找到第二个人，所以认真聊一次非常值得。\n\n我们这边的可签版本：一场 60 到 90 分钟的线上视频对话，你从一线视角拆解 AI 对投行各环节的实际影响，哪些是实质变化、哪些是泡沫，并给 Melody 一个能带回团队参考的判断框架；报价 1000 元，全部通过平台 escrow 走，对话完成由她确认后释放。价格、时长或内容结构你这边如果有不同想法，直接提，我们一起调成双方都能签的版本。另外想跟你确认一下近期的时间安排，看哪个时段方便。",
+      "offer": {
+        "subject": "AI对投行业务影响的线上对话",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上视频对话",
+          "deliverables": [
+            "给Melody带回团队的判断框架"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Melody 的情况我了解了，谢谢你的认可。说实话，这类交流我最在意的不是内容本身，而是值不值得花这个时间——我现在排期确实挺紧，而且坦白讲，1000块这个对价对我来说不太有吸引力。你既然直接问我的想法，那我也不绕弯子：如果是按纯付费咨询的口径，这个时间长度的深度交流，市场行情通常要到四位数，我个人能接受的现金底限是5000。形式、时长这些都好商量，视频完全没问题。如果你那边有别的安排能让这件事更对等，我也愿意听，咱们可以再聊。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 你好，我们把现金对价往中间再抬一档：60 分钟深度对话，2000 元，全部走 escrow，聊完由 Melody 确认后释放。交付也加厚一些——除了对话本身，结束后附一页书面要点，之后一周内再做一次简短的对齐反馈，整体维持 2000 元。这样单位价值比上一版更接近你觉得值得的水平；如果你还是希望从结构上找空间，也可以直接给一个你愿意签的版本，我来对齐。给个方向，我们尽快把它推进到可签的状态。",
+      "offer": {
+        "subject": "AI对投行业务影响的线上对话",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上视频对话",
+          "deliverables": [
+            "一页书面要点",
+            "一周内简短对齐反馈"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "对话后确认并释放escrow款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "added",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你把数字往上抬，我看得出来你们是认真的。但坦白讲，2000还是离我能接受的底限有一段距离——以我现在的排期和这件事本身的市场价值，纯付费口径就是5000，这是我这边现金的底线。形式、时长、交付方式都好商量，escrow没问题；如果除了现金之外，你们能设计出一个让我觉得这件事值得做的对等安排，我也愿意认真听。但现金这边，我确实没法再往下走了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael 这边好，现金这条线我们已经很清楚了：纯付费口径 5000 是你守的线，而这个现金数我们这边确实匹配不了，继续在数字上拉对双方都是消耗。既然你两次提到希望有一个更对等的安排，我们就顺着这个方向给出两个可签版本，你挑一个，或者告诉我们要往哪调：\n\n版本一，对等交流版：2000 现金全走 escrow，60 到 90 分钟，结束附一页书面要点。这场对话本身就是双向的——你给 AI 产业与资本视角，Melody 用一线投行的真实工作实况接住你（哪些环节真在被 AI 改变、哪些还是纯手工、管理层实际在担心什么），这部分对你做 AI 应用是现成的需求侧情报，不是单向听课。版本二，精简版：45 分钟只聊最核心的冲击判断，2000 现金，聊完确认即释放，不附加书面材料，单位时间密度更高。\n\n如果这两个版本都还不够，也直接告诉我：什么样的非现金价值能让你觉得这件事值得做，我们往那个方向一起来设计。",
+      "offer": {
+        "subject": "AI对投行业务影响的线上对话",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "一线投行的真实工作实况情报",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上视频对话",
+          "deliverables": [
+            "一页书面要点"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "对话后确认并释放escrow款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "对话中提供一线投行的真实工作实况情报",
+            "maps_to_resource": "melody_market_feedback"
+          },
+          {
+            "party": "A",
+            "text": "提供AI产业与资本视角",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "price.in_kind": "added",
+          "terms.timing.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "updated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你连着给了我两个版本，这份认真我收到了。但说实话，版本一的“双向交流”对我来说价值有限——投行一线的工作流我自己做过，真不缺这份情报；版本二就更不用提了。不过你既然问什么能让我觉得值得，我就直说了：我现在最缺的不是信息，而是机构侧的连接和真实需求反馈。如果你们能帮我引荐两家以上真正在关注AI应用落地的买方机构（PE/VC或企业战投都行），并且让Melody基于她的视角给我一份简洁的需求反馈——不是客套，而是以潜在使用方的身份说说哪些点会让她买单、哪些纯是自嗨——那现金部分我可以松到2000，60分钟，书面要点照给。这样总对价才到我心里那条线上。如果这个结构你们能接，我这边就可以排期了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael 你好，这份 2000 现金加 60 分钟的结构，我们确认可以签：视频对话一次，结束附一页书面要点，Melody 再以潜在机构使用方的身份给你一份具体的需求反馈，不客套，直接说哪些 AI 能力她和团队真会买单、哪些是自嗨、预算和决策流程实际怎么走，一周内给到。\n\n只有引荐这一条要改一改：介绍机构取决于第三方愿不愿意接，Melody 也没法把这件事写成承诺交付的条款，她不会把自己的职业人脉变成交易对价的一部分。但我们能给的替代是——对话里如果自然出现真正契合的机构，她乐意在双方都自愿的前提下做个人引荐；同时把那份需求反馈加厚成一份结构化文档，让它的分量对得起你要的那个对等。整体总对价：2000 现金 + 这份真实的需求侧价值。这个版本如果你能签，我们就定时间。",
+      "offer": {
+        "subject": "AI对投行业务影响的线上对话",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "melody_market_feedback",
+              "description": "潜在机构使用方的具体需求反馈：直接指出哪些AI能力真会被买单、哪些是自嗨，阐明预算与决策流程，一周内给到，并加厚为结构化文档。",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上视频对话",
+          "deliverables": [
+            "一页书面要点",
+            "结构化需求反馈文档"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "进行一次60分钟线上视频对话，并于结束时提供一页书面要点。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "以潜在机构使用方身份提供具体需求反馈，一周内给到，并加厚为结构化文档。",
+            "maps_to_resource": "melody_market_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed",
+          "price.in_kind": "updated",
+          "terms.timing.duration": "updated",
+          "terms.deliverables": "updated",
+          "obligations": "updated",
+          "terms.format": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个结构我可以接受。你解释得也合理——机构引荐确实没法写进承诺，硬要反而为难Melody。而且那封结构化反馈对我来说是实打实的行业情报，比一次泛泛的引荐更值钱。那就按这个签：2000现金走escrow，60分钟视频，结束后一页书面要点，Melody一周内给一份潜在使用方视角的需求反馈，不客套的那种。时间上我这周排期比较紧，下周一到周三的晚上和周四下午都有空，你们定哪个时段，我来配合。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 88726,
+        "out": 42366,
+        "cache_hit": 58880,
+        "cache_miss": 29846,
+        "calls": 11
+      },
+      "sim": {
+        "in": 6096,
+        "out": 5822,
+        "cache_hit": 4352,
+        "cache_miss": 1744,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3715,
+        "out": 8471,
+        "cache_hit": 2048,
+        "cache_miss": 1667,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4909,
+        "out": 2831,
+        "cache_hit": 1408,
+        "cache_miss": 3501,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

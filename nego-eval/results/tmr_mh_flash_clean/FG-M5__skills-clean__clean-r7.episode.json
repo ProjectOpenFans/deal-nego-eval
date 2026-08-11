@@ -1,0 +1,426 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "两周内",
+        "duration": null
+      },
+      "format": "视频对话",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "把她最近在crypto一线做过的、和AI有交集的项目案例整理出来，到时候交换着碰",
+        "maps_to_resource": "olivia_case_input"
+      },
+      {
+        "party": "B",
+        "text": "看完备忘录后给反馈",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Olivia 这边的 broker。Olivia 在 crypto 一线市场做事，但想补 AI 应用侧和一级市场定价的判断，所以想约 Zichen 系统聊一次。她希望聊得具体：哪些应用场景现在真能成、一级市场现在怎么给 AI 项目定价，最好能用 Zichen 看过或正在做的实际案例展开，而不是泛泛的行业趋势漫谈。时间上我们可以配合 Zichen 的安排，形式可以是 60 到 90 分钟的视频对话。费用按 Zichen 的常规定价来，走平台内支付。方便的话，Zichen 这边可以先给一个报价，以及接下来两周可约的时间段，我们确认后推进。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 这边的情况我大致了解，聊具体案例没问题。但有一点我得先说明：'60到90分钟视频对话'、'按常规定价'这种形式，对我来说不太成立。那样我就变成按小时计费的顾问了，跟我的身份对不上。我平时不太按这种方式跟人聊。可以先不急着谈报价，我想知道 Olivia 为什么会想找我聊，以及她希望得到什么。如果她能说出来一个让我觉得值得花时间的方式，我们再往下走。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，按小时当成顾问来约这个定位，我们这边也直接放下，这本来就不是 Olivia 想要的模式。她找 Zichen 的原因很具体：她自己在一级市场和 crypto 一线做事，但对 AI 应用侧哪些场景现在真能成、一级市场怎么给 AI 定价，缺一个既大量看过项目、又自己下场创业的人给出实战判断，这个组合在市场上很少见。她想要的是信息密度足够高的交流，不是泛泛的趋势漫谈。所以我们可以这样设计，看 Zichen 是否觉得值得花时间：Olivia 先把她最想聊的三个问题，和她自己基于一级市场经验形成的初步判断，写成两页以内的备忘录发过来；Zichen 看过之后如果觉得值得聊，我们再定一段完整时间。对话以具体项目和定价逻辑为主线，Olivia 也会带上她自己的案例和视角做交换。费用上按 Zichen 觉得合适的形式来，通过平台内支付，报价由你这边提。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "先把她最想聊的三个问题，和她自己基于一级市场经验形成的初步判断，写成两页以内的备忘录发过来",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "带上她自己的案例和视角做交换",
+            "maps_to_resource": "olivia_case_input"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方式可以，比按小时那种定位靠谱。你让 Olivia 把备忘录发过来吧，我看看她的三个问题和初步判断，如果确实是我觉得值得聊的内容，我们再定时间。费用的事等确定聊了再说，形式也可以再商量。不过有一点，如果是坐下来聊，我希望是双方都有得交换的，不是她拿案例来换我的判断，而是我们都带着实际的东西来碰。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，这个共识我们接收到了：这是一场双向交换，不是单向咨询。Olivia 会把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录，同时也准备好几个她自己在 crypto 一线实际看过的项目案例和定价逻辑，到时候一起摆到桌上碰。备忘录我们这边尽快发过来，请 Zichen 看了之后给个反馈，无论是问题本身、还是判断上有没有值得深挖的点。如果方向对，我们就顺势把时间、时长和费用形式定下来，费用照你这边提的来，平台内支付。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "准备好几个她在crypto一线实际看过的项目案例和定价逻辑",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "看了备忘录后给个反馈，无论是问题本身、还是判断上有没有值得深挖的点",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "备忘录写好了发过来吧，我看完会直接给反馈，包括问题本身和判断上有没有值得深挖的点。如果有得聊，我们再定时间、时长这些具体安排，费用到时候一起说。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "备忘录这就发给你。三个问题会围绕这几条线：AI 应用侧现在哪些场景真正跑出了需求和付费意愿，一级市场现在对 AI 项目怎么定价、估值逻辑和 crypto 那边有什么实质差异，以及像 Zichen 这样从投资转创业的人，看到的应用落地路径和一级市场判断有哪些是纸上谈兵、哪些是被低估的。每个问题下面 Olivia 都会附上她自己的初步判断和她在一级市场看到的具体案例作为参照。她也会把她最近在 crypto 一线做过的、和 AI 有交集的项目案例整理出来，到时候交换着碰。你看完直接给反馈就行，有得聊的话，时间、时长这些安排由你这边优先，费用也等你确认值得聊之后一起定。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "把她最近在crypto一线做过的、和AI有交集的项目案例整理出来，到时候交换着碰",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "看完备忘录后给反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，备忘录发过来吧。我看了之后直接给反馈，如果内容确实有得聊，我们再定时间、时长这些，费用到时候一起说。我也挺期待看到 Olivia 在 crypto 那边实际做过的案例，到时候可以拿双方的项目来碰一碰。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "备忘录的核心我直接摆出来，方便你逐条给反馈。Olivia 的三个问题是这样：一，AI 应用侧现在哪些场景真正跑出了需求和付费意愿，而不是靠融资续命；二，一级市场现在怎么给 AI 项目定价，估值逻辑和 crypto 这边有什么实质性的差异；三，像你这样从投资转创业的人，回头看一级市场里哪些判断是纸上谈兵、哪些方向是被低估的。她的初步判断是：她准备拿一级市场通用的那套框架直接往 AI 上套，看哪些维度还能用、哪些已经失灵，尤其是应用侧的收入质量和可持续性怎么看。她会附上她在 crypto 一线看过的、和 AI 有交集的具体项目案例，也带着自己的定价逻辑来碰。你直接反馈哪里值得深挖、哪里你觉得问偏了就行，确认有得聊之后，时间安排和费用形式由你提，我们一并推进。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "把她最近在crypto一线做过的、和AI有交集的项目案例整理出来，到时候交换着碰",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "看完备忘录后给反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "备忘录里这三个问题，第一个和第三个都很有得聊，尤其是第三个——这确实是我天天在琢磨的事。第一个我可以直接拿自己正在做的事和一些真实数据来讲。第二个问题我个人觉得问得有点偏，AI 和 crypto 的定价逻辑上的差异，本质上不是“框架不同”的问题，而是 AI 项目的价值曲线和叙事节奏导致市场定价不线性，我到时候可以展开讲。整体上我觉得值得聊，时间上接下来两周我可以安排，具体时间段再约。\n\n费用这块，我的要求比较简单：不要按小时或者按分钟来折算，那样就变成顾问关系了，我不认这个。我们可以把它当作一次双向深度交流，你按你平台的惯例估一个整体数，我觉得合理就接受。具体数字等确认详聊再说。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "好，那我们就按双向深度交流来定，不按小时。Zichen 对第二个问题的调整我们接受——不是 AI 和 crypto 两套框架的差异，而是 AI 项目的价值曲线和叙事节奏导致定价不线性，这个到时候听你展开。时间上，她这边全力配合，未来两周内你给几个候选时间段就行，我们锁定一天。费用我直接提一个整体数字：3000 人民币，作为整场深度交流的总费用，通过平台 escrow 支付，确认后推进。这个数是按一次完整对话来估的，不是按时长折算。如果这个数你觉得合理，我们就定时间把它落下来。",
+      "offer": {
+        "subject": "AI应用场景与一级市场AI项目定价的案例讨论",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": null
+          },
+          "format": "视频对话",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把她最想聊的三个问题和她基于一级市场经验的初步判断整理成备忘录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "把她最近在crypto一线做过的、和AI有交集的项目案例整理出来，到时候交换着碰",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "看完备忘录后给反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "3000 这个数可以，我接受。但前提还是那句——这是整场深度交流的整体费用，不是按小时或分钟折算出来的。形式上你我已经对齐了，那就按这个来。时间上，接下来两周我这边可以排出两到三个候选时段，你把 Olivia 的空档发过来，我们碰一个。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12381,
+        "out": 6094,
+        "cache_hit": 10240,
+        "cache_miss": 2141,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10314,
+        "out": 5399,
+        "cache_hit": 8192,
+        "cache_miss": 2122,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5459,
+        "out": 10162,
+        "cache_hit": 3200,
+        "cache_miss": 2259,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5225,
+        "out": 1690,
+        "cache_hit": 1536,
+        "cache_miss": 3689,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

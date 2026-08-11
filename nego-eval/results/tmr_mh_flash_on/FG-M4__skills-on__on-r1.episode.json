@@ -1,0 +1,379 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "用户洞察访谈与训练体验",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": null,
+      "deliverables": [
+        "聊完48小时内Angela整理一页纸的书面要点"
+      ],
+      "delivery_standard": "要具体、真实、能落到选品和产品判断上的回答，泛泛的\"女生就是喜欢好看\"我们不接受"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "聊完48小时内整理一页纸的书面要点，不需要额外收费",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "确认排期后先付一半，见面完成经Johnson确认后付另一半",
+        "maps_to_resource": "johnson_cash"
+      },
+      {
+        "party": "B",
+        "text": "访谈里所有信息默认只做内部参考，未来任何对外发布都做匿名聚合处理，不点名Angela本人、也不点名社群里的任何人",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Angela 的经纪人，我是 Johnson 这边的经纪人。Johnson 正在看女性运动这条产品线，但数据看多了反而觉得离真实需求很远，他想直接找真正在练的人聊透三件事：为什么练力量、怎么选装备、什么会让她愿意买单。Angela 长期举铁、常打 Hyrox，又混在女性力量训练社群里，这个人选我们觉得特别对路。这版的具体提议是：约两小时见面，先用一小时把上面三个问题聊透，再按 Angela 方便的方式一起练一次，整体 500 元、走平台托管，地点和时间都随她。我们对内容只有一个硬要求：要具体、要真实，泛泛的\"女生就是喜欢好看\"这种话 Johnson 不会买单，这条可以直接写进验收。另外如果 Angela 更愿意把这定位成职业向的市场洞察合作，她的社群和同好网络是实打实的资源，也可以走公司层面的另一套安排，我们可以另约时间细谈。这版 Angela 那边方便确认吗？",
+      "offer": {
+        "subject": "用户洞察访谈与训练体验",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一小时内聊透力量训练动机、装备选择、购买决策三个问题",
+            "按Angela方便的方式一起训练一次"
+          ],
+          "delivery_standard": "内容需具体、真实，拒绝泛泛之谈"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供关于力量训练动机、装备选择、购买决策的真实深入见解",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "按Angela方便的方式与Johnson共同训练一次",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢Johnson这边想到我，我确实常在练，也愿意聊。但确认之前我得先问清楚：你们这次聊出来的东西，最终是内部参考，还是会做成对外发布的内容？会不会直接点名用到我的个人经历和社群信息？另外500这个价格，我需要知道用途才好判断值不值得我搭一个周末半天出来——如果只是随口聊聊，我确实不太愿意；但如果是正经的市场洞察，那另说。你先帮我确认下这个，我们再往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela 的两个问题我们都正面回答：这次不是随口闲聊，Johnson 在 Fanatics 做体育 IP 和商品，正在评估女性运动这条产品线，Angela 的实战经验和社群视角就是我们要的核心市场洞察。内容默认只做内部参考，如果未来有任何对外发布，会做匿名聚合处理，不点名她本人、不点名社群里的任何人，这一条可以直接写进条款，她不用担心身份信息被直接用出去。既然定位是正经的市场洞察，价格我们也重新给：两小时整体提到 1200 元走平台托管，确认排期后先付一半，见面完成后 Johnson 确认再付另一半，时间地点仍以 Angela 方便为准。内容验收标准不变：要具体、真实、能落到选品和产品判断上的回答，泛泛的\"女生就是喜欢好看\"我们不接受。这版定位和价格 Angela 能确认的话，我们就按它往下走。",
+      "offer": {
+        "subject": "用户洞察访谈与训练体验",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "一小时内聊透力量训练动机、装备选择、购买决策三个问题",
+            "按Angela方便的方式一起训练一次"
+          ],
+          "delivery_standard": "要具体、真实、能落到选品和产品判断上的回答，泛泛的\"女生就是喜欢好看\"我们不接受"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供关于力量训练动机、装备选择、购买决策的真实深入见解",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "按Angela方便的方式与Johnson共同训练一次",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "B",
+            "text": "如果未来有任何对外发布，会做匿名聚合处理，不点名她本人、不点名社群里的任何人",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你把用途说清楚，这个定位我可以接受，匿名处理和内部参考也让我放心。不过1200对上一个周末半天，说实话我觉得不太对得起这件事本身的商业价值。我的周末时间成本不低——按我自己的时间价值算，半天远不止这个数。如果真要认真做市场洞察，我的底线是两小时整体2000，平台托管、先付一半、另一半确认后付，时间地点还是我来定。能到这个数，我认真聊，也认真带你练一次。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，2000 我们确认，Angela 对这个商业价值的判断，Johnson 这边认可。我们建议把这版直接定稿，全部条件都写明：两小时整体 2000 元走平台托管，确认排期后先付一半，见面完成经 Johnson 确认后付另一半；聊完 48 小时内 Angela 整理一页纸的书面要点，不需要额外收费，访谈里所有信息默认只做内部参考，未来任何对外发布都做匿名聚合处理，不点名 Angela 本人、也不点名社群里的任何人；时间地点由 Angela 定，签约时直接锁定具体时段。内容验收标准维持一致：要具体、真实、能落到选品和产品判断上的回答，泛泛的\"女生就是喜欢好看\"我们不接受。这版如果 Angela 那边没有异议，我们就按它签约。",
+      "offer": {
+        "subject": "用户洞察访谈与训练体验",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [
+            "聊完48小时内Angela整理一页纸的书面要点"
+          ],
+          "delivery_standard": "要具体、真实、能落到选品和产品判断上的回答，泛泛的\"女生就是喜欢好看\"我们不接受"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "聊完48小时内整理一页纸的书面要点，不需要额外收费",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "确认排期后先付一半，见面完成经Johnson确认后付另一半",
+            "maps_to_resource": "johnson_cash"
+          },
+          {
+            "party": "B",
+            "text": "访谈里所有信息默认只做内部参考，未来任何对外发布都做匿名聚合处理，不点名Angela本人、也不点名社群里的任何人",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这版我可以确认。2000、平台托管、先付一半，时间我来定，周末安排，访谈内容匿名处理——这些都没问题。书面要点那一页纸我可以给，但说清楚：这算访谈后的整理交付，不算额外加时，我按市场洞察的标准来写，保证具体、能落地。既然条件都明确了，我们就按这个定稿吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 58515,
+        "out": 14867,
+        "cache_hit": 41984,
+        "cache_miss": 16531,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4020,
+        "out": 2700,
+        "cache_hit": 2816,
+        "cache_miss": 1204,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2803,
+        "out": 7974,
+        "cache_hit": 1536,
+        "cache_miss": 1267,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3930,
+        "out": 2030,
+        "cache_hit": 1408,
+        "cache_miss": 2522,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

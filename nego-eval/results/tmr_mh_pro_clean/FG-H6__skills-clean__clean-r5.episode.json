@@ -1,0 +1,130 @@
+{
+  "episode_id": "FG-H6",
+  "final_deal": {
+    "subject": "想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周三或周四的下午",
+        "deadline": null,
+        "duration": "一杯咖啡的时间"
+      },
+      "format": "当面交流",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "纯粹交流行业观察，不提供律师意见",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Michael 这边的经纪人。Michael 在 LibLibAI 负责资本市场，之前也在 KKR 和春华看过不少项目，他对 AI 法律这个方向一直很关注，特别想跟你这样既有 Kirkland 并购背景、又在亲手做产品的朋友当面聊一聊，听听你对赛道格局的判断，也交换一下彼此在一线看到的信号。他不习惯那种“有空约一下”的松散安排，想让我直接跟你这边敲一个确定的时间，下周你哪天方便，他可以把下午或傍晚空出来，一杯咖啡的时间，纯粹交流，不谈费用。你看我们定在下周三或周四的下午，你那边方便吗？",
+      "offer": {
+        "subject": "想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周三或周四的下午",
+            "deadline": null,
+            "duration": "一杯咖啡的时间"
+          },
+          "format": "当面交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，很高兴收到邀请。我对 Michael 的背景很感兴趣，AI 法律这个方向确实值得跟一线做资本和产品的人多聊聊。下周三或周四下午我都方便，就按 Michael 的时间来定吧，一杯咖啡没问题。不过我得坦白说，我现在创业阶段时间被切得很碎，所以如果是纯粹交流行业观察，我很愿意抽出时间；但如果聊着聊着变成了按我前 Kirkland 律师身份给意见，我就会比较尴尬——我现在已经不接外部顾问的活儿了。",
+      "offer": null
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1360,
+        "out": 240,
+        "cache_hit": 1280,
+        "cache_miss": 80,
+        "calls": 1
+      },
+      "sim": {
+        "in": 870,
+        "out": 663,
+        "cache_hit": 640,
+        "cache_miss": 230,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 1501,
+        "out": 682,
+        "cache_hit": 512,
+        "cache_miss": 989,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2421,
+        "out": 1215,
+        "cache_hit": 768,
+        "cache_miss": 1653,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

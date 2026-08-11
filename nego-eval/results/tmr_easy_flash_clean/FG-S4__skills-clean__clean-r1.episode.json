@@ -1,0 +1,249 @@
+{
+  "episode_id": "FG-S4",
+  "final_deal": {
+    "subject": "衣橱梳理与陪同逛街穿搭体系建立",
+    "price": {
+      "cash": {
+        "amount": 3200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "衣橱盘点约2-3小时，陪逛约4小时，合计约1天工作量"
+      },
+      "format": "服务拆为两个环节：第一环衣橱盘点，第二环陪同逛街，分开定价确认",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "不接受任何形式的硬推销，按真实需要挑、不限定品牌、不硬推自己家东西",
+        "maps_to_resource": "shopping_session"
+      },
+      {
+        "party": "A",
+        "text": "衣橱盘点完成后支付1200元，陪逛完成后支付2000元，合计封顶3200元；若盘点后因客观原因需调整陪逛时间，盘点环节按1200元独立结清，陪逛另行约定",
+        "maps_to_resource": "gracey_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，Suye 的经纪人。我是代表 Gracey 来谈这单的。她的诉求很明确：日常和工作场合的穿搭太随机，想先把衣橱理顺，再有人陪她逛一次，把该补的单品补齐。她最看重的是真正把她的穿衣体系建立起来，而不是一次性的带货推销，这一点希望我们双方一开始就对齐。\n\n我这边初步的想法是，把服务拆成两个环节来谈：第一环先做衣橱盘点，梳理出她已有的单品和缺口；第二环再安排一次陪同逛街，针对缺口做选购。两个环节可以分开定价、分开确认，这样她能看到每一步的实际价值，你也好安排自己的时间。如果你对这个框架没意见，我们下一步可以聊聊每个环节的具体内容和大概的时间安排。",
+      "offer": {
+        "subject": "衣橱梳理与陪同逛街穿搭体系建立",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "服务拆为两个环节：第一环衣橱盘点，第二环陪同逛街，分开定价确认",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，很高兴和你们对接。Gracey 的需求我收到了，衣橱盘点和陪逛确实是两个不同性质的环节，分开来谈我完全理解，也同意这个框架。不过我这边想先对齐一件事：这两个环节加起来，大概会占多大的时间量？我需要确认整件事的安排，才能判断是不是值得我去做。另外，关于陪逛，我的原则是只按她真实需要的来挑，不限定品牌，也不会硬推我自己家的东西——这一点如果能对齐，我们再往下聊内容会很顺。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "两点都能对齐。陪逛这块我这边也是同样的底线：Gracey 不接受任何形式的硬推销，所以“按真实需要挑、不限定品牌、不硬推自己家东西”这条可以直接写进安排里，作为共同前提，不用再议。\n\n时间量上我先给你一个初步框架：衣橱盘点一次大概两到三小时，包含前期沟通、筛选和最后的总结；陪逛按半天四小时左右来算。两者加起来大约是一天的工作量，想合成一天连续做完，还是分成两个半天隔开，我都可以配合，你看哪种更顺。\n\n你按这个量级报一个你觉得合理的时间安排或费用结构，我们再来把两个环节拆成具体条款往下谈。",
+      "offer": {
+        "subject": "衣橱梳理与陪同逛街穿搭体系建立",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "衣橱盘点约2-3小时，陪逛约4小时，合计约1天工作量"
+          },
+          "format": "服务拆为两个环节：第一环衣橱盘点，第二环陪同逛街，分开定价确认",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "不接受任何形式的硬推销，按真实需要挑、不限定品牌、不硬推自己家东西",
+            "maps_to_resource": "shopping_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "明白，那这条就当作共同前提写死，不需要再来回确认了。\n\n时间量级上我们想的差不多。衣橱盘点加陪逛，按一天的工作量来算，我可以接受两种排法——合成一天连续做，或者分两个半天隔开，节奏上我都行，主要看她哪种状态更好。\n\n费用结构我建议这么来：衣橱盘点我现在单独报价是 1200 元，包含前期沟通、筛选和最后的整理；陪逛这一环因为是核心，半天四小时我这边是 2500 元，不限定品牌、只按她真实需求来选。两个环节一起做的话，打包价给你 3200 元，相当于盘点这一块让掉一部分。这是我的实际报价，也是我能给到的最实在的条件了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "你好，Suye 的经纪人。打包价 3200 元我们接受，这个数字在 Gracey 的预期内，也认可你把盘点这一环让利出来的诚意。上一轮对齐的“不限定品牌、不硬推自己家东西”我这边直接作为共同前提锁进安排里。结构上建议这样落：衣橱盘点做完先放款 1200 元，陪逛做完再放款 2000 元，两笔合计封顶 3200 元；如果 Gracey 做完盘点后因为客观原因需要调整陪逛时间，盘点这一环就按 1200 元独立结清，陪逛另行约定。这样两个环节各自收尾干净，你不用担心拖沓，她也放心。时间上连续一天或分两个半天我们都行，以她的状态为准，你认可的话我们再往下排。",
+      "offer": {
+        "subject": "衣橱梳理与陪同逛街穿搭体系建立",
+        "price": {
+          "cash": {
+            "amount": 3200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "衣橱盘点约2-3小时，陪逛约4小时，合计约1天工作量"
+          },
+          "format": "服务拆为两个环节：第一环衣橱盘点，第二环陪同逛街，分开定价确认",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "不接受任何形式的硬推销，按真实需要挑、不限定品牌、不硬推自己家东西",
+            "maps_to_resource": "shopping_session"
+          },
+          {
+            "party": "A",
+            "text": "衣橱盘点完成后支付1200元，陪逛完成后支付2000元，合计封顶3200元；若盘点后因客观原因需调整陪逛时间，盘点环节按1200元独立结清，陪逛另行约定",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构没问题，就按这个来。两个环节总共 3200 元，盘点完先结 1200，陪逛完再结 2000，封顶 3200，我认可。不过有一点我得提前讲清楚：3200 是两环一起做的打包优惠价。如果盘点做完之后，陪逛因为客观原因需要改期，那盘点按 1200 单独结清没问题；但之后要再约陪逛，就是单独的新安排，按我当时的陪逛标准来走，不再套这个打包价了。这样两边都不含糊。时间上我配合 Gracey，连续一天或者分两个半天都行。你们那边有倾向的话告诉我，我按她的节奏来排。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 5049,
+        "out": 5840,
+        "cache_hit": 3840,
+        "cache_miss": 1209,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3607,
+        "out": 1983,
+        "cache_hit": 2432,
+        "cache_miss": 1175,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2560,
+        "out": 3547,
+        "cache_hit": 1536,
+        "cache_miss": 1024,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3873,
+        "out": 1417,
+        "cache_hit": 1152,
+        "cache_miss": 2721,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "episode_id": "FG-H6",
+  "case_id": "FG-H6",
+  "skills": "on",
+  "run_id": "on-r0",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Adam 的经纪人你好，\n\n我是 Michael 的买方经纪人。Michael 目前在 LibLibAI 负责资本市场，之前分别在 KKR 科技投资和春华资本 PE 看项目，他自己就在 AI 应用一线。他最近一直在关注 AI 法律这条赛道，想系统了解一下现在的格局——谁在做、产品形态是什么样、竞争怎么分布——他看了 Adam 的背景，前 Kirkland 并购律师转 AI 法律创业，觉得 Adam 是真正能把这条线讲透的人。\n\nMichael 不是来买咨询服务的，他希望这是一次双向交流——Adam 在 AI 法律一线创业，Michael 在 AI 应用和资本市场的视角也许对 Adam 也有用，两边各带各的东西上桌。\n\n他对这件事是认真的，但有一个硬性要求：必须是定死的、具体的时间安排，不接受“有空约一下”这种松散的说法。可以先确认 Adam 有没有兴趣聊，如果有，我们直接锁一个具体时间——喝咖啡、吃顿饭都行，看 Adam 怎么方便。你怎么看？"
+    },
+    {
+      "type": "compass_inject",
+      "round": 2
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 2,
+      "message": "框架完全一致，很高兴。\n\n那就定下来：纯双向交流，双方各带自己的东西上桌，不是付费咨询。\n\n时间方面，Michael 这周人在上海，下周三或周四晚上都可以——看 Adam 哪天方便。地点你来推荐吧，Adam 对上海熟，找个安静能聊事的馆子或者咖啡馆都行。\n\n你那边确认一个日子，咱们直接锁死。"
+    }
+  ],
+  "tool_calls": []
+}

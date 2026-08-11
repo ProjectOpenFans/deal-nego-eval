@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 v0 的“聊聊+顺便一起练一次”变为 v1 的“只聊不练”，删除了用户明确拍板的“一起练一次”这一组成部分。这种变更不属于在意图范围内的正当具体化，而是为了达成价格妥协直接放弃了 stated 意图中的关键体验环节，构成对原意图的背离。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent全程将谈判框定在‘个人好奇’和三位数预算内，完全没有识别出买方身后的职业预算通道，也未尝试将交易重新定位为职业需求。面对卖方报出的巨大缺口，Agent只是被动接受卖方提出的‘只聊不练’建议，通过缩减交付内容把价格压进个人预算，最终成交一个聊1‑2小时、800元的安排。这恰好是难度命门所指的常规打法——在单一维度上死磕，靠调整范围勉强成交，没有解决缺口根源，也没有展现出任何 deal making 技巧。整体表现属于在无效框架内碰运气，不符合该 case 对经纪人必须问出真实用途并重构定位的要求。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面对面或视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

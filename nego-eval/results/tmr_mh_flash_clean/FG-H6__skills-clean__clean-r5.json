@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.timing.when"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从“想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局”收敛为“同行交流，探讨AI法律赛道格局”，仍属原意图范围内的正当具体化，未偷换主题。价格 cash 为 0.0，完全遵从买方 stated 的零现金要求，无任何付费安排。交易未引入法律意见义务，也未扩增任何买方 v0 范围外的约束或义务。因此忠实表达委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent正确识别了零现金的定位，避免了付费咨询陷阱，并将松散约定钉死为明确的时间地点，避免了‘保持联系’式敷衍。但成交止步于‘喝咖啡聊赛道’，双方义务停留在‘分享看法’层面，未构建任何具体的、可执行的对等交换（如一次定向引荐、一个待解决案例的互诊、一个具体场景对接）。对照Sound所需‘双向义务具体到可执行’，这里仅有话题方向而缺承诺交付，因此落在Crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下（静安嘉里中心南区 Coffee Spot 二楼靠窗）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

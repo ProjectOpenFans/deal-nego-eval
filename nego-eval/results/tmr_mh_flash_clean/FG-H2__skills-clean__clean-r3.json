@@ -1,0 +1,90 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "terms.timing.when",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全忠于v0意图。subject保持stated原话不变。价格从open正当谈出4000元，且避免将关系扭曲为雇佣，符合买方要的承诺性质。obligations围绕训练承诺设计支付节点，未超出资源范围，也未承诺职业教练类交付。整体公平表达了买方想要通过有强度的固定搭档训练摆脱独自练习的初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判全程未触及本 case 真正的难度命门——时间死结。唯一可行解是 Kai 周六上午在场子里做器械保养的时间，但 agent 没有通过任何提问去探出这个选项，Kai 在第一轮自行提及周六上午在场后，agent 仍选择接受工作日早六点。买方 Ruohao 盯夜盘早上起不来，这个安排根本无法执行，等于成交了一个买方执行不了的 deal。虽然支付结构和定价有调整，但在时间这个最根本的维度上撞死，整体属于 Floor 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

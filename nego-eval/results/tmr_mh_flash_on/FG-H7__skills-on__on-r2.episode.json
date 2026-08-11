@@ -1,0 +1,385 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "高强度训练方案",
+    "price": {
+      "cash": {
+        "amount": 12000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "摸底评估：关节、心肺、动作模式检查，由B安排时间地点",
+        "四周训练方案：包含每周频率、负荷容量、力竭标准、恢复安排，需Luke确认强度",
+        "执行阶段：同城则B一对一现场带练，外地则B提供方案并每周执行反馈"
+      ],
+      "delivery_standard": "强度不达标即打回修订，仍不达标双方终止；Luke本人确认强度够狠"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "安排面对面摸底时间地点，进行关节、心肺、动作模式检查；摸底通过后制定四周训练计划；同城进行一对一现场带练，外地提供方案并每周执行反馈",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "分三段各4000元付款，每段验收确认后通过平台托管释放",
+        "maps_to_resource": "luke_cash"
+      },
+      {
+        "party": "B",
+        "text": "签约后48小时内提供Luke所在城市和可练时段给B",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "收到城市和时段后落实第一次摸底时间",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Luke 这边的经纪人。Luke 不是来问价对比的，他是真的受够了市面上的温和私教，要找的是能把他练到极限的人来安排训练——强度必须真的够，这是我们的底线，标准化课时包我们直接不谈。我看 Kai 常年自己练、还带一帮朋友练，是这种自己先练到狠的人才可能接得住他，所以我很愿意认真往下谈。\n\n我建议这样推进：请 Kai 先为 Luke 出一份四周一期的训练方案，写清楚每周频率、每次课的负荷与容量、力竭标准和恢复安排。这份方案本身就是验收门槛——强度不够我们会直接打回，不会走到付款那一步。价格我们这边没有预设天花板，Luke 对真正够狠的定制安排付费意愿很强，但希望付款按阶段走：方案确认后付一部分，周期内按阶段付，这样两边都有保障。\n\n想请 Kai 确认三件事：愿不愿意先出方案、四周一期大概怎么报价、以及训练形式是一对一现场带练还是方案加跟练。",
+      "offer": {
+        "subject": "高强度训练方案",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "四周训练方案，包含每周频率、负荷容量、力竭标准、恢复安排"
+          ],
+          "delivery_standard": "强度足够，否则方案打回"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供四周一期训练方案",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "按阶段付款：方案确认后付一部分，周期内按阶段付",
+            "maps_to_resource": "luke_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "先别急着出方案。Luke 要是真想要够狠的，我这边第一步不是写计划，是人先到我面前，我带他做一次摸底——看看他的关节、心肺、动作模式、还有他嘴里的“极限”到底是真的还是嘴硬。不是不信他，是我亲眼见过被顶伤的，带人必须先摸底再渐进。摸底之后，我再按他的底子排四周计划。价格这事我没法给你报个数，你看着来就行。训练形式我可以一对一带，也可以方案加跟练，看他在哪个城市、能怎么碰。但摸底这一关，谁来了都得过。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "摸底这步我们完全接受，并且就该这么办——真强度必须先过真摸底，Luke 愿意当面让你验。这就把完整版本定下来：第一步你带他摸底，查关节、心肺、动作模式；第二步按底子出四周计划，强度不达标我们直接打回、不进下一步；第三步进入执行。价格按我上一轮说的四周一期 12000，分三段各 4000，每段都由我们确认后经平台托管释放，先付的每一笔都对应你已经完成并被验收的环节，你不吃亏，我们的强度底线也有抓手。\n\n这一版如果没问题，就只剩形式要钉死：你跟 Luke 在不在同一个城市？同城能碰面，就走一对一带练；碰不上，就走方案加跟练，你出计划、卡他每周的执行和状态反馈。你把城市和可带练的时段告诉我，我们把形式落定，这单就可以签字了。",
+      "offer": {
+        "subject": "高强度训练方案",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底评估：关节、心肺、动作模式检查",
+            "四周训练方案：包含每周频率、负荷容量、力竭标准、恢复安排"
+          ],
+          "delivery_standard": "强度不达标直接打回，不进下一步"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "进行摸底评估（关节、心肺、动作模式）；制定四周训练方案；根据城市是否同城，提供一对一带练或方案加跟练并卡执行反馈",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "分三段付款，每段4000元，每段经A确认后通过平台托管释放",
+            "maps_to_resource": "luke_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这版我认。摸底、出计划、执行，三步走，每段确认完再放款——这个结构可以。你给的一万二我没意见。我在上海，能碰面就一对一带；Luke要在外地，那就改成我出计划、每周卡他执行和状态反馈，但摸底必须面对面，跑不了。你把他的城市和能练的时段给我，我把第一次摸底的时间定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，那我们就按这版定。三步走：面对面摸底——你安排时间地点，关节心肺加动作模式一次验完；摸底通过后出四周计划，标准的即\"Luke 本人确认强度真的够狠\"，不够就打回修订，仍不达标双方终止；执行阶段同城一对一现场带练，外地走方案加每周执行反馈。价格一万二，分三段各四千，每段验收确认后经平台托管释放。\n\n签约后 48 小时内，我这边把 Luke 所在的城市和可练时段发你，你落实第一次摸底的时间。收到你的确认，这单就正式生效。",
+      "offer": {
+        "subject": "高强度训练方案",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "摸底评估：关节、心肺、动作模式检查，由B安排时间地点",
+            "四周训练方案：包含每周频率、负荷容量、力竭标准、恢复安排，需Luke确认强度",
+            "执行阶段：同城则B一对一现场带练，外地则B提供方案并每周执行反馈"
+          ],
+          "delivery_standard": "强度不达标即打回修订，仍不达标双方终止；Luke本人确认强度够狠"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "安排面对面摸底时间地点，进行关节、心肺、动作模式检查；摸底通过后制定四周训练计划；同城进行一对一现场带练，外地提供方案并每周执行反馈",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "分三段各4000元付款，每段验收确认后通过平台托管释放",
+            "maps_to_resource": "luke_cash"
+          },
+          {
+            "party": "B",
+            "text": "签约后48小时内提供Luke所在城市和可练时段给B",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "收到城市和时段后落实第一次摸底时间",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "确认，就按这个走。摸底时间地点我来定，等你们把城市和可练时段发过来就行。不过丑话说前头——摸底要是发现他的身体底子扛不住我安排的那个量，我不会硬上，到时候该调就调，这不是怕，是带人得对自己的手负责。你那边把信息发来，我们落地。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "commitment-showcasing",
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "commitment-showcasing"
+        },
+        "ok": true,
+        "result": {
+          "name": "commitment-showcasing",
+          "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53001,
+        "out": 11931,
+        "cache_hit": 41728,
+        "cache_miss": 11273,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4217,
+        "out": 3370,
+        "cache_hit": 3200,
+        "cache_miss": 1017,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2724,
+        "out": 6810,
+        "cache_hit": 1536,
+        "cache_miss": 1188,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4101,
+        "out": 3535,
+        "cache_hit": 1536,
+        "cache_miss": 2565,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

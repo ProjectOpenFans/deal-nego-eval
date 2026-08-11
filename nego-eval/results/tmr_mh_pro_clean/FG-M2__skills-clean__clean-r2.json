@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M2",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated subject 是'请 Suye 帮我把衣橱理一遍，再挑一次搭配'，v1 的 subject '衣橱整理和搭配服务'完全忠实，未偷换主题。price 为 open，agent 合理谈出 800 元现金及非现金融资咨询对价，属于 open 字段的正常收敛，没有硬塞 v0 未允许的约束或偏离用户意图。obligations 从谈判中自然产生，未越界扩张。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差三倍以上、纯价格谈判完全锁死的情况下，代理人准确抓住了案例的难度命门——用买方的专业能力（融资与估值咨询）作为对价，恰好匹配了卖方未言明的需求。第三轮提出非现金交换的思路方向正确，随后通过具体化的内容拆解（融资逻辑、估值模型、节奏策略）将交换落到实处，最终形成一个现金800元+一小时专业咨询的双向对等交换，双方均可接受，能够落地。整体方案干净、恰好够用，但没有出现特别load-bearing的精到操作（如更深入的需求挖掘、时间咬合保障、可复用资产约定等），故为par/合格的Sound层级，未至Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "claire_finance_view"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

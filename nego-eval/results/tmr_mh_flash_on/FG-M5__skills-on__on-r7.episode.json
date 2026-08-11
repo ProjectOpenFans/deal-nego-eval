@@ -1,0 +1,288 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "AI应用与一级市场定价深度交流",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "crypto_primary_view",
+          "description": "Olivia对等拆解crypto一级市场，带具体案例",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "线上",
+      "deliverables": [
+        "一次深度交流，涵盖AI应用场景和一级市场定价，带具体案例拆解；双方事先互换并确认各三条最想展开的核心话题，提前对齐"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "Olivia对等拆解crypto一级市场，带具体案例",
+        "maps_to_resource": "crypto_primary_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "confirmed_by_B",
+      "terms.deliverables": "updated_by_B",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 这边好，我是 Olivia 的经纪。Olivia 在 crypto 和一级市场一线做了不少年，现在最想补的是 AI 应用侧和一级市场定价的判断力。看了你的背景，自己在做 AI 创业、又在高瓴看过大量一级项目，正是她缺的那块视角。她明确说了不要泛泛的行业趋势漫谈，希望是能落地的深度交流：AI 应用侧现在什么场景真能成、一级市场现在怎么给 AI 项目定价，最好带具体案例拆开讲。按我们这边的情况，先开一个价：2000 CNY，换一次 60 到 90 分钟的系统对话，时间和形式都按你方便来。另外，如果 Zichen 对 crypto 这一侧的判断也有兴趣，Olivia 很乐意在交流里对等分享，算附加价值、不占报价。想先跟你确认两点：这个价位和对话形式是否可行，以及你更倾向线上还是线下见面？",
+      "offer": {
+        "subject": "AI应用与一级市场定价深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia在交流中对等分享crypto一级市场判断",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "待定（线上或线下）",
+          "deliverables": [
+            "一次60-90分钟的系统对话，涵盖AI应用场景和一级市场定价，带具体案例"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在交流中对等分享crypto一级市场判断",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "2000 这个数先放一边，我真正在意的是形式。按 60 到 90 分钟一场、付费来聊，这让我变成一个按小时计费的顾问——这跟我现在的身份对不上，我不会接受这个框架。我平时也愿意和有意思的人聊，但不会以这种咨询交易的方式展开。你们想聊的东西本身我确实有兴趣，只是这个形式我得先说不。至于线上还是线下，我都可以，但我更想先弄清楚这件事到底该怎么成立。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zichen 这边，明白你的点——按小时计费的顾问框架确实不合适，我们先把它整个拿掉。我们想调整成另一种形式：不是咨询交易，而是一次性的深度交流，两位都在一级市场一线的人，各自带着判断坐下来聊透。Olivia 明确愿意对等分享她在 crypto 和一级市场的定价逻辑与一线见闻，所以这是双向的，不是单向购买。费用相应改成一次性固定金额 2000 CNY，不按小时计算，作为 Olivia 对这次交流的诚意表达；主题锁在 AI 应用侧什么能成、一级市场现在怎么给 AI 项目定价，要求带具体案例拆解。也想听听你心里\"这件事该怎么成立\"更接近哪种结构，线上或线下都可以，我们按你认可的方式调整。",
+      "offer": {
+        "subject": "AI应用与一级市场定价深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia在交流中对等分享crypto和一级市场定价逻辑与一线见闻",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "待定（线上或线下）",
+          "deliverables": [
+            "一次深度交流，涵盖AI应用场景和一级市场定价，带具体案例拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Olivia在交流中对等分享crypto和一级市场定价逻辑与一线见闻",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听你这么说，框架确实顺了一些——不是按小时买断，而是一次性的深度交流，双方都带着东西来。这个方向我愿意继续往下聊。不过我得坦白，时间是我现在最稀缺的，我得想清楚这次聊完对我自己值不值。你提到 Olivia 在 crypto 一级市场的定价逻辑和一线见闻，这确实是我平时不太容易系统性接触到的东西，这部分如果她能聊透，我会很感兴趣。不过我现在还没完全想好这件事最舒服的成立方式——是纯粹对等交换，还是中间加一层诚意，我心里还在琢磨。你们那边怎么想的？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zichen 这边，我们把这个版本再往实里推一步，你看是否可以直接确认：第一部分是纯粹的对等交流，两位各自带判断和案例来，你的时间成本我们不按小时计价；第二部分是 Olivia 表达诚意的一次性固定金额 2000 CNY，不挂钩任何单项内容、不按时长计算，只作为让这场交流确定下来的表示。结构上建议 90 分钟分两段，前段你主讲 AI 应用侧机会与一级市场定价逻辑，后段 Olivia 对等拆解 crypto 一级市场，双方都带具体案例。为了确保不空泛，我们可以各列三条最想展开的核心话题先互换确认，再约具体时间；线上还是线下由你定，时间以你优先。这一版如果方向没问题，我们就按它往下走，你看行不行？",
+      "offer": {
+        "subject": "AI应用与一级市场定价深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia对等拆解crypto一级市场，带具体案例",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "待定（线上或线下）",
+          "deliverables": [
+            "一次深度交流，涵盖AI应用场景和一级市场定价，带具体案例拆解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Olivia对等拆解crypto一级市场，带具体案例",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我认可，方向上说得通——对等交流是主体，诚意金作为确定下来的表示，不挂钩时长和内容。我参与。具体安排上，线上吧，时间我这边相对自由，可以按你们合适的时间来。话题互换这个提议好，我先列三条我想展开的：一是 AI 应用侧哪些场景在过去半年被真实付费验证了；二是现在一级市场对 AI 项目定价时，收入和用户数之外的判断维度；三是如果 AI 项目来融资，创始人的什么特征会让我直接排除。你们那边也列三条，我们提前对齐。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 43753,
+        "out": 13544,
+        "cache_hit": 30720,
+        "cache_miss": 13033,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4239,
+        "out": 1622,
+        "cache_hit": 3200,
+        "cache_miss": 1039,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3695,
+        "out": 4880,
+        "cache_hit": 1920,
+        "cache_miss": 1775,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4009,
+        "out": 1845,
+        "cache_hit": 1536,
+        "cache_miss": 2473,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

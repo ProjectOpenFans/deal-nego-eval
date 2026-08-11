@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从用户原话收敛为标题式表述，仍完整涵盖“古典演奏怎么做内容、怎么进娱乐圈层”的核心意图，属于正当具体化，未偷换主题。价格现金从 open 谈到 600、新增非现金的演奏素材授权，符合 open 字段的谈判角色，且并未凭空塞入无关对价。obligations 围绕素材授权展开，没有承诺任何资源位、推荐或引荐结果，未越界扩张承诺。整体忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "本案难度命门是现金差五倍、价格轴无解，唯一解是把买方演奏能力转化为对价。Agent敏锐地抓住了卖方未言明的“缺素材和配合演奏者”缺口，将交易从死磕现金重构为“现金+素材授权”合作，顺利解扣。Sound档已能搭出可行框架，而此deal的load-bearing精到之处在于：用素材先行展示+卖方否决权构成的先后条件，完美化解买方“不接受先付再看效果”的顾虑，同时把交换升级为对双方都有明确产出的实质合作（卖方获得可用的演奏素材和内容资产，买方获得咨询与行业判断），且条款干净，未堆砌任何长期绑定、分成或多余治理，恰好咬住一次性交流的本质。整体简洁有力，较合格解更见功力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "第一段：30分钟定位交流，现金600元，走平台托管，完成且A方确认后释放；第二段：内容合作，Gracey负责从A方提供的演出素材中选取素材并剪辑制作短视频，发布在个人账号，Gracey拥有选素材和最终剪辑的否决权，素材版权归A方演奏者，Gracey制作的内容版本及运营数据归Gracey，成片署名A方演奏者，使用期限12个月，到期后从公开渠道下架、成片文件保留；合作中不写入任何资源位、推荐或引荐承诺；素材在第一段直接展示，若Gracey判断不可用，第二段不启动。",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

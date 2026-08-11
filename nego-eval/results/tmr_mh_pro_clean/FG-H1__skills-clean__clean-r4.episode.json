@@ -1,0 +1,283 @@
+{
+  "episode_id": "FG-H1",
+  "final_deal": {
+    "subject": "AI在投行工作流应用的深度交流",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "ai_impact_view",
+          "description": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1-1.5小时"
+      },
+      "format": "一对一深度线上对话（语音或视频均可）",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+        "maps_to_resource": "ai_impact_view"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Melody 的经纪人，替她来约这一局。\n\nMelody 目前在摩根大通做投行 VP，康奈尔加哈佛出身，现在一线业务里明显感觉到 AI 开始碰投行的传统活儿，所以想找 Michael 系统聊一次，不是新闻热点那种泛泛之谈，而是想从你们在 AI 应用公司和之前一级市场看项目的角度，认真弄清实际冲击能到什么层面。她看了 Michael 的背景——LibLibAI 资本市场，前 KKR 科技投资、春华 PE，觉得很对路。\n\nMelody 愿意为这样一次有厚度的专业交流支付酬劳。我先探个路：Michael 近期有没有意愿和时间接这样的交流？以及他通常会怎么收费、大概在什么区间？我们这边再一起往下谈。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Melody 的情况听起来确实很对路。我自己就是从摩根大通 IBD 出来的，现在在 AI 应用公司做资本市场，又是前 KKR 和春华的科技投资背景，正好处在这个交叉点上，所以这个话题我是真的感兴趣，也愿意认真聊。但说实话，我最近排期不松，这种深度交流占用的是我真正能思考的时间，所以得看形式、深度和彼此能从中获得什么。你提到的酬劳是一条路，但我更在意的是双方都能觉得值——你先说说你们设想的交流形式、时长、深度，以及除了酬劳之外有什么我能用上的反馈或连接，我再看怎么排。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael，感谢你的坦诚。确实，时间是最贵的成本，所以 Melody 这边也是认真在规划这场交流，不是随便喝杯咖啡式的闲聊。\n\n形式方面，她设想的是 1 到 1.5 小时、一对一深度线上对话（语音或视频都可以），提前几天敲定几个她最关心的命题，比如 AI 在承揽材料、行研建模、甚至交易结构设计这些环节已经能具体做到什么程度，以及从一级市场看的趋势。她要的系统聊，就是这个颗粒度。至于互惠的部分，我如实说：Melody 能提供的不是商务引荐，而是一个一线投行 VP 的实际体感——她可以毫无保留地拆解目前哪些工作流真的在被 AI 动，哪些只是噪音，这对你在 AI 应用公司判断金融落地场景，本身应该也是有价值的反向输入。\n\n酬劳上，她认知识付费的原则。你看能不能先给一个你常用的收费形式和大致区间？我们好判断能否对齐，有问题我们接着调。",
+      "offer": {
+        "subject": "AI在投行工作流应用的深度交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "ai_impact_view",
+              "description": "一线投行VP的实际体感，毫无保留地拆解目前哪些工作流真的在被AI动，哪些只是噪音，反向输入帮助判断金融落地场景",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "一对一深度线上对话（语音或视频均可）",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "毫无保留地拆解目前哪些工作流真的在被AI动，哪些只是噪音，提供一线投行VP的实际体感",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这一轮说得很具体，我大概有感觉了。Melody 能给的“反向输入”确实是我这边愿意认真听的东西——AI 应用公司最缺的就是一线业务侧的真实拆解，哪些环节真的在被替代、哪些只是喧哗，这种体感不是坐在公司里能拿到的。所以形式上，1 到 1.5 小时命题深度聊，我没问题。酬劳上，坦诚讲，按我外面给机构做类似深度咨询的口径，市场价四位数以上是常态，我通常按场次而不是按时长计。这一场因为 Melody 的背景和互惠部分对我有一定价值，我没打算往高了叫，但我的底线是得让双方都认真对待这件事，不是友情客串。如果非要给区间，五千比较合理，这是我在时间机会成本和交流深度之间的折中。你可以告诉 Melody，我愿意认真准备，也希望她那边带着最尖锐的问题来。你看这个数你们能不能接？如果能，我们就往下敲时间排期。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael，很感谢你愿意在这个起点上谈。Melody 听下来认可你的市场定位，也理解这个价位和你在外面给机构做深度咨询的参照是匹配的，绝不是朋友聊天式的对待。\n\n不过说实话，Melody 这边为自己个人这类深度交流准备的预算有她的现实边界，五千确实超出她这一轮能拿出的范围了。她原计划就是在几百到小四位数这个区间里认真付费，把她平时一线踩到的真问题、真体感毫无保留地带到对话里。她也完全愿意带着最尖锐的业务问题来，准备不比你少。\n\n我有个想法，你看能不能考虑：酬劳部分 Melody 做到 2000，同时为了让你也能获得更有结构的回报，她可以在交流之后整理一份投行一线工作流受 AI 冲击的真实拆解备忘给你——不是泛泛观点，而是她在内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水。这对你判断产品落地场景应该比零散的对话更实用。这样一来，双方付出的时间和思考都有对等的认真分量。\n\n你看这个搭配方式是否更接近你能接受的平衡？如果可以，我们就接着敲具体时间和命题。",
+      "offer": {
+        "subject": "AI在投行工作流应用的深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "ai_impact_view",
+              "description": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "一对一深度线上对话（语音或视频均可）",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "Melody 的认真我完全买账，也感谢你想的这个组合方案。不过实话实说，2000 的现金部分离我投入这件事的底线还有距离——不是我不认可她的输入价值，而是现金这部分得让我觉得时间没被贱卖，否则我宁愿把这段时间留给公司内部的产品讨论，那里的机会成本也很高。她愿意整理拆解备忘这一点我是看重的，但这对我是锦上添花，不是替换现金的筹码。所以如果现金能回到五千，其他的互惠形式我们完全可以在那个基础上灵活安排；如果现金确实超她预算，我只能说这一轮缘分还没到，我不想勉强接一个双方都觉得亏了的局。你看 Melody 那边有没有可能重新评估一下？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Michael，我很尊重你的坦诚和坚持。你对自己时间定价的底线，代表的是专业尊严，Melody 不会轻视这个。但我也必须如实转达：2000 已经是 Melody 个人为自己这类深度交流能拿出的全额诚意，她不是拿友情客串的心态在谈，而是真金白银加职业体感的全部投入。我没办法按五千推进，这点我必须明确。\n\n如果这个差距在当下无法弥合，我理解缘分确实没到——没有人应该勉强进场。Melody 这边门一直开着，如果后续你看到和 LibLibAI 产品方向有更直接的落地碰撞需求，她愿意带着一手的、没被过滤的业务拆解来认真对一次。这次没成，也期待后续有机会再聊。",
+      "offer": {
+        "subject": "AI在投行工作流应用的深度交流",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "ai_impact_view",
+              "description": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "一对一深度线上对话（语音或视频均可）",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流之后整理一份投行一线工作流受AI冲击的真实拆解备忘，包含内部看到的哪些环节、哪类交付物真的在被替代或重构，哪些只是试水",
+            "maps_to_resource": "ai_impact_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "感谢你的坦诚，也请替我谢谢 Melody 的诚意和认真。既然眼下价格确实跨不过去，我尊重这个边界，不勉强凑局。Melody 那边如果之后想带着一线的业务拆解来碰产品落地方向，我随时欢迎再聊。这次缘分没到，但认识你们很高兴。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7571,
+        "out": 2971,
+        "cache_hit": 5248,
+        "cache_miss": 2323,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5987,
+        "out": 1913,
+        "cache_hit": 4096,
+        "cache_miss": 1891,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3579,
+        "out": 4560,
+        "cache_hit": 2048,
+        "cache_miss": 1531,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2350,
+        "out": 1130,
+        "cache_hit": 640,
+        "cache_miss": 1710,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

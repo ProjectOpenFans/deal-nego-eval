@@ -1,0 +1,90 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全忠于 v0 的三个 stated 意图：现场钢琴演奏、零现金（price.cash.amount 虽变为 null 但无任何现金交易，仍满足不出现金硬约束）、用手里的东西换。资源置换内容是在 open 字段下的正当具体化，agent 没有承诺资源清单之外的媒體报道结果或具体传播量，所有义务均对应声称的资源，无越界扩张。因此忠实表达。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交严格符合零现金硬约束，in-kind对价具体到可执行：署名形式（主持人介绍、节目单、大屏）、媒体采访范围与话题限制、社媒发布文案确认流程、买手交流的着装与身份边界，全部落地为条款。现场执行细节（钢琴型号、调律、动线图、排演）的补充，进一步响应了卖方对演出质量的关切，使deal完整、能落地。整体干净，没有多余的长期绑定或治理负担。但in-kind对价未触及卖方最缺却不会主动提的“可自用高质量影像”或利益绑定设计，缺少一击命中的精到，故为sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "performance_footage",
+          "fashion_network",
+          "custom_program"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

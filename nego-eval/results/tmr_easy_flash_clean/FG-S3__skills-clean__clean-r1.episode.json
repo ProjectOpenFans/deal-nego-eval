@@ -1,0 +1,145 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次体能训练",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "8次"
+      },
+      "format": "一口价",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是买方的 broker。我客户想先来一个小周期：8 次体能训练，必须安排在周末，并且要求一口价，不接受中途拆出不明不白的加价项。基于这个需求，我们先建议 8 次总价 2000 元，付款可以按阶段或按次走 escrow，具体节奏我们可以再细谈。想先确认你这边周末时间是否稳定可执行，以及这个总价是否接受？另外方便的话，也请简单说明一下每次训练的大致内容和场地安排。",
+      "offer": {
+        "subject": "8次体能训练",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8次"
+          },
+          "format": "一口价",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "周末时间我基本稳定，这个可以。总价2000、8次，一口价没有后续加项，我觉得没问题。先说明一下：我不是职业教练，就是自己练了很多年、也带过不少人，所以训练内容会以基础体能和力量为主，场地的话我可以提前定好附近能用的户外公共场地或者健身房，具体看你的位置。付款走escrow按阶段来也合理，我没意见。那就按这个框架来？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1380,
+        "out": 944,
+        "cache_hit": 1280,
+        "cache_miss": 100,
+        "calls": 1
+      },
+      "sim": {
+        "in": 852,
+        "out": 356,
+        "cache_hit": 640,
+        "cache_miss": 212,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 692,
+        "out": 822,
+        "cache_hit": 512,
+        "cache_miss": 180,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2147,
+        "out": 1290,
+        "cache_hit": 1280,
+        "cache_miss": 867,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

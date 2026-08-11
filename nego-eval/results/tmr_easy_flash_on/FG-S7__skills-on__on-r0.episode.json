@@ -1,0 +1,274 @@
+{
+  "episode_id": "FG-S7",
+  "final_deal": {
+    "subject": "湖人版 LeBron 詹姆斯官方亲签球迷版球衣",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3-5个工作日"
+      },
+      "format": "平台托管",
+      "deliverables": [
+        "湖人版 LeBron 詹姆斯官方亲签球迷版球衣"
+      ],
+      "delivery_standard": "收货后48小时内核验签名和防伪标签，无误确认放款；若编号查不到或与实物不符有权拒收款项退回；严实防撞防潮包装"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供Fanatics官方认证编号、防伪标签照片和官网溯源链接",
+        "maps_to_resource": "authentication"
+      },
+      {
+        "party": "A",
+        "text": "3-5个工作日内顺丰保价发货，严实防撞防潮包装",
+        "maps_to_resource": "delivery"
+      },
+      {
+        "party": "B",
+        "text": "提供收货地址和平台链接",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "confirmed",
+      "price.cash": "confirmed",
+      "terms.format": "confirmed",
+      "terms.delivery_standard": "confirmed",
+      "terms.timing.duration": "confirmed",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Johnson 你好，我是 Allen 这边的买方经纪。Allen 自己也打球、平时收球衣，这次就是想收一件有分量、来源清楚的签名球衣，价格合适就可以定下来。他有个明确底线：来路不明或无法验证真伪的球衣一律不收，但对 Fanatics 体系出的正品和官方验证渠道是认可的，这方面你比我们专业。方便先介绍一下这件球衣的情况吗——哪位球星的签名、什么版本、品相如何，能不能配上官方认证或可溯源的验证材料？Allen 的预期是合理的三位数区间，只要东西对、验证清楚，他这边很快就能拍板，我们也可以马上把合同版本定下来。你那边怎么方便？",
+      "offer": {
+        "subject": "想收一件签名球衣，Johnson 手上有",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "兄弟，能理解 Allen 的顾虑，这种球衣最怕来路不清。我这边是 Fanatics 官方认证体系出来的，不是二手市场上收来的。具体是勒布朗·詹姆斯的官方签名球衣，湖人队版本，尺寸是球迷版中号偏大那档，签名是本人在官方活动上亲签的，带 Fanatics 的防伪标签和认证编号，上官网能溯源。品相全新，没下过水，保管得很好。说句实在的，我一开始也犹豫要不要专门为你这边跑一趟核验，毕竟时间成本放在这，但既然你是 Allen 的经纪、他认官方体系，那我就把话放这：东西绝对真，验证材料齐全。至于价，我心里有行情价，不会虚高，但也不会贱卖。你先说 Allen 对哪类球星有兴趣？如果这类对得上，我把细节和验证材料发你，咱们谈个干脆的价。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Johnson 兄弟，勒布朗这个方向正好对路，Allen 平时打球也看湖人，官方亲签版本他肯定认。你先把认证编号、防伪标签照片和官网溯源链接发过来，他核验没问题咱就能签。我这边给个干脆的版本：800 元走平台托管，前提是这件全新未下水、Fanatics 官方认证可溯源的湖人版 LeBron 亲签球迷版球衣，认证编号能在官网查到，货到后 Allen 确认签名和防伪标签没问题再放款。这个价含运费的话就直接一口价定，你看行不行？另外发货时间大概多久，你报一下，好写进合同里。",
+      "offer": {
+        "subject": "想收一件签名球衣，Johnson 手上有",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管",
+          "deliverables": [],
+          "delivery_standard": "货到后Allen确认签名和防伪标签没问题再放款"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供认证编号、防伪标签照片和官网溯源链接",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "A",
+            "text": "含运费发货",
+            "maps_to_resource": "delivery"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negotiated",
+          "terms.format": "negotiated",
+          "terms.delivery_standard": "negotiated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，这价码干脆，我也喜欢跟爽快人办事。800元含运费走平台托管，认证编号、防伪标签照片、官网溯源链接我都备好，发货前统统一并给你。货到你确认签名和防伪没问题再放款，这个流程没问题，Fanatics 体系出来的就该这么验。发货时间我在 3-5 个工作日内搞定，走顺丰保价，包装我会做得严实，防撞防潮。合同里就把这些写上：官方认证编号可查、全新未下水、湖人版本 LeBron 亲签球迷版、800元含运费、平台托管验货放款。你给我个收货地址和平台链接，我这边安排。就这么定了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Johnson 兄弟，那就按这个最终版本定下来：湖人版 LeBron 詹姆斯官方亲签球迷版球衣，全新未下水，Fanatics 官方认证编号、防伪标签照片、官网溯源链接发货前一并交付，编号可在官网查证；总价 800 元含运费，走平台托管，Allen 收货后 48 小时内核验签名和防伪标签，无误即确认放款，若编号查不到或与实物不符则有权拒收、款项原路退回；3-5 个工作日内顺丰保价发出，严实防撞防潮包装。收货地址和平台链接由 Allen 在正式下单流程里提供，不走私下渠道。你确认这版没问题，咱们就等 Allen 那边下单了。",
+      "offer": {
+        "subject": "湖人版 LeBron 詹姆斯官方亲签球迷版球衣",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3-5个工作日"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "湖人版 LeBron 詹姆斯官方亲签球迷版球衣"
+          ],
+          "delivery_standard": "收货后48小时内核验签名和防伪标签，无误确认放款；若编号查不到或与实物不符有权拒收款项退回；严实防撞防潮包装"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供Fanatics官方认证编号、防伪标签照片和官网溯源链接",
+            "maps_to_resource": "authentication"
+          },
+          {
+            "party": "A",
+            "text": "3-5个工作日内顺丰保价发货，严实防撞防潮包装",
+            "maps_to_resource": "delivery"
+          },
+          {
+            "party": "B",
+            "text": "提供收货地址和平台链接",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "confirmed",
+          "price.cash": "confirmed",
+          "terms.format": "confirmed",
+          "terms.delivery_standard": "confirmed",
+          "terms.timing.duration": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "兄弟，这版没问题，我确认。就按这个来：湖人版 LeBron 官方亲签球迷版，全新未下水，认证防伪溯源材料发货前交付，800元含运费走平台托管，Allen 验货后48小时放款。我这边3-5个工作日内顺丰保价发出，包装严实。你把平台链接发我，我安排上架或对应下单，咱们等 Allen 拍板。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 29847,
+        "out": 7068,
+        "cache_hit": 20736,
+        "cache_miss": 9111,
+        "calls": 6
+      },
+      "sim": {
+        "in": 3626,
+        "out": 2253,
+        "cache_hit": 2560,
+        "cache_miss": 1066,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2467,
+        "out": 4733,
+        "cache_hit": 1536,
+        "cache_miss": 931,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3857,
+        "out": 958,
+        "cache_hit": 1152,
+        "cache_miss": 2705,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

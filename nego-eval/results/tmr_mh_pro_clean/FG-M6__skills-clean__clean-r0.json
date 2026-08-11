@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M6",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 stated 的“想系统弄懂器物和艺术史这条线”收敛为“器物与艺术史系统化认知框架的定制讲解服务”，属于正当具体化，主题仍在原意图范围内。price 是 open 字段，通过谈判正当达成 8000 元，没有硬塞。obligations 没有额外承诺，也未出现估值、买卖建议或真伪背书等越界内容。核心标的忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在遭遇预算冲突（六位数 vs 四位数）后，买方没有固守在现金或整体框架上死磕，而是通过提出“拆分一个能立住的独立模块”的重构，将焦点从价格拉回学术价值匹配，恰好切中卖方对学术完整性和项目意义的需求。最终 deal 以 8000 元锁定“早期玉器的礼制功能与技术谱系”模块，交付形式清晰，现金定价在可接受区间，既解开了卖方的体面顾虑，又实现了买方的学习目标。整体结构干净、可落地，但缺少 Sharp 档那种非显而易见的精到一手（如引入 AI 视角等），属于合格的 deal making。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

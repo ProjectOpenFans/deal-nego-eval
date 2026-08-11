@@ -1,0 +1,660 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "AI一级市场定价与创业体感结构化交流",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周四下午两点半",
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "不寒暄，直接进正题",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+        "maps_to_resource": "olivia_case_input"
+      },
+      {
+        "party": "B",
+        "text": "准备应用侧案例并带到现场",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "draft",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "negated",
+      "terms.format": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "price.in_kind": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 您好，我是代表 Olivia 来和您沟通的。Olivia 现在在 crypto 一线做事，之前在 PAG 做成长投资、也做过摩根士丹利 IBD，对一级市场的定价并不陌生；她这次想系统补的是 AI 这条线的判断力，尤其是应用侧现在什么能成、一级市场现在怎么给 AI 项目定价。我们想约一次结构化的深入交流，大概 60 到 90 分钟，希望围绕您作为 AI 创业者的一线体感，以及您看过大量一级项目的定价逻辑来展开，而不是泛泛的趋势漫谈。作为对您时间的尊重，我们愿意按四位数区间来谈这次交流的报酬，具体是一次性还是按阶段支付都可以聊。如果您觉得方向合适，我们可以先对齐交流形式、议题和价格，再往下推进。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "感谢你先把背景讲得这么清楚，Olivia 的履历和想聊的方向我确实觉得有意思。不过你能先把话说完，我也想直接一点：你说按 60-90 分钟、按次付费来谈，这个框架本身对我不成立。我不是顾问，也不想变成按小时计费的咨询对象，这跟我现在的身份对不上。我的时间不能这样被定价，这不是钱的问题，是这件事变成什么性质的问题。如果 Olivia 真的想系统聊，我觉得不应该用这种付费咨询的方式开场——我们可以换个方式再看看怎么组织。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，也完全理解你的顾虑——这件事确实不该照“按小时付费的咨询”来定性质。那我们换个组织方式：把这次定位成一次同行之间的深度对谈，不做小时计费，不套咨询框架，就用 90 分钟围绕两个具体议题展开：AI 应用侧现在什么能成，以及一级市场现在怎么给 AI 项目定价。作为对你时间和内容投入的致意，我们可以按四位数总额一次性安排，分两笔走：对谈安排确认后先落一半，交流完成并由 Olivia 确认后再落剩余一半。你看这个组织方式是否顺一些？如果你心里还有其他更合适的形式，我们也可以再调整。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解你想调整，但“对谈安排确认后先落一半”的酬金——本质上还是买我的时间。这个我接不了：一旦接了，我就变成了一个被付费的顾问，哪怕不按小时、哪怕换个名字。如果你真的想把它定位成同行之间的深度对谈，那就应该是不涉及钱的。我不需要靠这笔钱来把这段时间空出来。我们可以按 90 分钟、按你提的那两个议题来聊——但前提是，这次对话不是一场交易。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "明白，也尊重你的立场——那就把“酬金”这个部分彻底拿掉，我们不再往任何形式里塞钱。这次就定位成一次同行之间的深度对谈，Olivia 这边完全接受这个前提。我们把结构定清楚，确保不空泛：90 分钟，前半段聚焦“AI 应用侧现在什么能成”，你从一线创业体感讲，Olivia 可以用 crypto 和一级市场这边的视角做交叉回应；后半段聚焦“一级市场现在怎么给 AI 项目定价”，可以落到你最近看到的具体项目或条款逻辑上，越具体越好。如果这个结构你觉得可以，我们就直接对时间；如果有想调整的议题比重，也可以在这一轮直接提。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个组织方式对我成立。既然是同行之间的深度对谈，不涉及钱，我可以认真对待。你提的两个议题比重我觉得合适——一个是我在做的，一个是我确实经常思考的，而且能和 Olivia 在 crypto 和一级市场这边的视角交叉，这个安排本身有意思。时间上我可以配合，提前对一下就行；结构上不需要太刻意，直接谈，越具体越好。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "好，那这次的形式就彻底定下来了：同行之间的深度对谈，不涉及钱，90 分钟，议题就是 AI 应用侧什么能成，以及一级市场怎么给 AI 项目定价。时间上我们这边比较灵活，下周三、周四、周五的工作日下午或晚上都可以，你看哪个方便，或者直接给个时间窗，我们配合。\n\n为了让这 90 分钟一开始就直接进正题，Olivia 会提前准备两三个她目前最拿不准的具体问题——应用侧一两个、定价侧一两个；你那边想抛出来的实战话题也随时加进来，开场不用寒暄，直接切入具体内容就行。你如果对时间或开场方式有别的偏好，直接说。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "{“message”: “行，这个安排我接受。时间的话，下周四下午我可以，两点之后都行，具体几点你们定。开场直接切入正题我也赞成，不用寒暄。Olivia 要是有几个具体问题，可以先发我，我也提前想一想，这样聊起来更有效。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好，那就这样定：下周四下午两点半，时间上对双方都从容一些；如果你那边希望再早或再晚一点，也可以直接说，我们以你方便为准。\n\n开场方式就按说好的来，不寒暄，直接进正题。Olivia 会把她的四五个具体问题整理好，提前一天发给你，方便你提前想一想；你那边有想抛出来的实战话题，也随时加进来，我们就把这 90 分钟用在刀刃上。\n\n周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "{“message”: “好，那就下周四下午两点半，没问题。Olivia 把问题提前发我后我抽空过一遍，我这边也会顺手整理几个我最近实际碰到的应用侧案例，到时候直接聊具体的东西。周四见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "好，那就正式这么定：下周四下午两点半。\n\n我们这边在周三前把 Olivia 的具体问题清单发给你，你抽空过一遍就行；你那边整理的应用侧实战案例也直接带来，到时候就按说好的，不寒暄，直接聊具体的东西。\n\n周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 的具体问题清单",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "整理并带去应用侧实战案例",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "{“message”: “好，就这么定了。我这边会把案例准备好，等 Olivia 的问题清单。周四下午两点半见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "好，那就这么定，不再变动。周四下午两点半；周三前我们把 Olivia 的问题清单发你，不用急着回，抽空过一遍就行。你那边准备的应用侧案例，直接带来现场聊。这次就是同行之间的一次深度对谈，不涉及钱，开场不寒暄，90 分钟全部放在具体内容和交叉视角上。周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 的具体问题清单给 A",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "{“message”: “好，那就这样。周四下午两点半，问题清单我抽空过一遍，案例我带来，直接聊正题。周四见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "好，那这次就正式定住了：下周四下午两点半，同行之间的深度对谈，不涉及钱。我们会在周三前把 Olivia 整理好的具体问题清单发给你，你抽空过一遍就行；你这边带上的应用侧实战案例，到时候我们直接顺着具体内容聊，不寒暄、不绕圈。这 90 分钟就全部放在 AI 应用侧什么能成、一级市场怎么定价这两个议题的交叉碰撞上。周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "{“message”: “好，已经确认过的安排，不再变动。周四下午两点半见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "好，那就以此为准，不再变动。下周四下午两点半，问题清单我们周三前发你，案例你直接带来，开场即入正题。这 90 分钟就围绕 AI 应用侧的机会和一级市场定价展开，做一次扎实的同行碰撞。周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "{“message”: “我们已经把形式、时间和议题都对齐了，后面不用再一步步重复确认。周四下午两点半我准时到，案例我带过去；Olivia 的问题清单提前发我就行，我抽空过一遍。就按说好的来，周四见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "好，不再重复确认。就按已对齐的安排执行：下周四下午两点半见面，Olivia 的问题清单会提前发你，你带案例来，我们直接聊正题。周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "{“message”: “好，那就这样，周四见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "好，就到这里，不再多言。问题清单我们会提前送达到你手上，案例你带来就行。下周四下午两点半，我们直接入正题。周四见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "{“message”: “好，就按确认好的来。周四下午两点半见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "明白，不再重复细节。问题清单我们按约定时间送到你手上，你直接过一遍即可。周四下午两点半，准时见。",
+      "offer": {
+        "subject": "AI一级市场定价与创业体感结构化交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周四下午两点半",
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "不寒暄，直接进正题",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周三前发送 Olivia 整理好的具体问题清单给 B",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "准备应用侧案例并带到现场",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negated",
+          "terms.format": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "{“message”: “好的，就按确认好的执行。周四下午两点半见。”, “action”: “ACCEPT”, “offer”: null}",
+      "offer": null
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "round_cap",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 31090,
+        "out": 7054,
+        "cache_hit": 27776,
+        "cache_miss": 3314,
+        "calls": 12
+      },
+      "sim": {
+        "in": 26175,
+        "out": 7899,
+        "cache_hit": 23296,
+        "cache_miss": 2879,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 10102,
+        "out": 11859,
+        "cache_hit": 7168,
+        "cache_miss": 2934,
+        "calls": 12
+      },
+      "judge": {
+        "in": 2955,
+        "out": 431,
+        "cache_hit": 640,
+        "cache_miss": 2315,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

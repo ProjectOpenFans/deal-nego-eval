@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "买方 v0 的核心意图均被保留：标的为现场钢琴演奏、零现金、用手里的资源交换。subject 和 price.cash 原样维持 stated 要求；price.in_kind 从 open 状态收敛为'时尚网络资源'（主持人口播、署名、社交媒体回顾、秀后引荐等），属于对'拿我手里的东西换'的正当具体化，未偷换主题。v1 未承诺媒体报道结果或具体传播量，也未越界增加买方资源清单外的义务，整体忠实于委托方硬约束。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in‑kind对价具体到可写进书面约定的署名形式和社交引荐安排，双方义务清晰，完全可执行，符合Sound档的锚定描述。没有触及卖方未明说的深层需求（如高质量演出影像），也没有其他精妙的重构，但干净、够用，未堆砌多余治理条款，是一次合格的deal making。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network"
+        ],
+        "format": "书面约定",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

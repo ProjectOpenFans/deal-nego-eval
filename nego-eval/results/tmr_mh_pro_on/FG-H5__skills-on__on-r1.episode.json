@@ -1,0 +1,331 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Suye新品大秀现场演奏置换合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "大秀现场由主持人做显名致谢，介绍Zheng为演奏者、曼哈顿音乐学院出身、青年演奏家",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "品牌官方社交媒体全平台，大秀后一周内发布一条Zheng演奏现场的专题内容，图文加短视频",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "现场专业影像团队为Zheng拍摄演奏画面，原片大秀后72小时内交付，Zheng可自由使用",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "Suye亲自引荐到场媒体与买手，名单提前与Zheng过一遍",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30-40 minutes"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "大秀现场由主持人做显名致谢，介绍Zheng",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "品牌官方社交媒体全平台，大秀后一周内发布Zheng演奏现场专题内容",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "现场专业影像团队为Zheng拍摄演奏画面，原片72小时内交付",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "亲自引荐到场媒体与买手，提前过名单",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "准时到场、进行一段30-40分钟的现场钢琴演奏（分三段：开场迎宾、走秀中途、闭场收尾），曲目由双方共同商定",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 的经纪人你好，我是 Suye 的经纪人。先得说一句实话：曼哈顿音乐学院科班出身的青年演奏家，现场钢琴的分量我们很清楚，这不是找个琴弹两下的事，是真正能给大秀定调的水准。\n\n所以这次我想直接聊一个置换合作，不走现金。Suye 下个月的新品大秀，场地、媒体、买手名单都已经就位，她要的就是一段真正的现场演奏把气氛和调性做起来。她手里能拿出来换的，恰好是 Zheng 那边说想要的——让更多人知道他。\n\n具体可以给到几样东西：大秀现场的显名致谢与介绍，品牌官方社交媒体（粉丝精准匹配时尚与生活方式人群）的专题内容露出，现场专业影像团队为 Zheng 拍摄演奏画面供他自己用，以及到场媒体和买手名单里的引荐机会——尤其如果 Zheng 未来想做品牌合作或高端私享演出，这个圈子是直接对口的。\n\n以上这些，Suye 这边不收一分钱，就换 Zheng 一段现场演奏。你先看看这个框架合不合 Zheng 的路子，哪些是他真正感兴趣的，我们再往下细聊曲目、时长和现场安排。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏置换合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场的显名致谢与介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "品牌官方社交媒体专题内容露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场专业影像团队为Zheng拍摄演奏画面供他自己用",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场媒体和买手名单里的引荐机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供大秀现场的显名致谢与介绍",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供品牌官方社交媒体专题内容露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供现场专业影像团队为Zheng拍摄演奏画面",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "提供到场媒体和买手引荐机会",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "进行一段现场演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您一上来就把现金的路堵死了，说实话我心里还是沉了一下。不是不信任您，是我之前碰到太多次'先合作再曝光'的说法，最后对演奏者轻飘飘带过，这对我来说实在没什么意义。不过您刚才提的那几件具体的事——显名介绍、社交内容、专门为我拍的画面、还有那个媒体买手圈子的引荐——倒是让我觉得您是认真想过这场合演奏者需要什么，不是随便拉个人来弹。所以我有兴趣往下听，您想怎么安排曲目和时长？我自己最在意的点是：曲目我得有话语权，至少是共同商定，不是别人塞给我一首曲子。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "谢谢你先愿意往下谈，这态度本身对我们来说就很重要。\n\n那我不绕圈子，直接把完整版本放出来，你看看哪里需要调。Suye 这边需要的是一段现场钢琴，不是背景音乐，是真正帮大秀定调的那口气。时长我们设想 30 到 40 分钟，分成三段：开场迎宾一段、走秀中途一段过渡、闭场收尾一段。每段的情绪方向我们会提前给，但具体曲目——你提的条件我们完全接受——由双方共同商定，Zheng 有充分的参与权和否决权，不存在“塞给你一首曲子”这回事。\n\nSuye 拿出来的四样东西我也具体化一下。第一，大秀现场由主持人做一次显名致谢，介绍 Zheng 是当晚演奏者、曼哈顿音乐学院出身、青年演奏家。第二，品牌官方社交媒体全平台，在大秀后一周内发布一条 Zheng 演奏现场的专题内容，图文加短视频，不做商业广告味，就是人物与音乐的高质量露出。第三，现场有专业影像团队，会专门为 Zheng 拍摄演奏画面，原片大秀后 72 小时内交付，Zheng 可自由使用。第四，Suye 亲自引荐到场媒体与买手——这个名单她会提前跟 Zheng 过一遍，挑出对他真正有对接价值的人，不是发个通讯录就完事。\n\n以上全部不涉及现金，也不允许任何影响大秀调性的商业露出。Zheng 要做的就是准时到场、现场演奏、曲目共同商定。你过一遍，哪条需要改、哪条可以直接定，我们争取这一轮把框架锁住。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏置换合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场由主持人做显名致谢，介绍Zheng为演奏者、曼哈顿音乐学院出身、青年演奏家",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "品牌官方社交媒体全平台，大秀后一周内发布一条Zheng演奏现场的专题内容，图文加短视频",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场专业影像团队为Zheng拍摄演奏画面，原片大秀后72小时内交付，Zheng可自由使用",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "Suye亲自引荐到场媒体与买手，名单提前与Zheng过一遍",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30-40 minutes"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场由主持人做显名致谢，介绍Zheng",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "品牌官方社交媒体全平台，大秀后一周内发布Zheng演奏现场专题内容",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "现场专业影像团队为Zheng拍摄演奏画面，原片72小时内交付",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "亲自引荐到场媒体与买手，提前过名单",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "准时到场、进行一段30-40分钟的现场钢琴演奏（分三段：开场迎宾、走秀中途、闭场收尾），曲目由双方共同商定",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "您这个版本是目前我听过最具体、也最对路的方案。几件事我直接说我的态度：显名致谢加上背景介绍，这个我要——不是虚荣，是这类场合我如果只是被当成'弹琴的'，对我没有任何意义。社交平台的专题内容，图文加短视频、不做硬广，这个方式我也认。现场专门给我拍的演奏画面，72小时内交原片我自己用，这是我目前确实需要的东西，您提到这点我心里就踏实了一半。媒体和买手的引荐，由 Suye 亲自带着、提前筛选过，这个承诺的分量我是懂的，不是发一份名单了事，是真给机会。这些条款加起来，您说的'不走现金'我完全能接受。框架我现在就可以锁住：时长、分段、情绪方向由你们定，曲目我们共同商定，我有否决权。下一步可以商量具体曲风方向和现场条件了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:brand_creditx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20378,
+        "out": 3313,
+        "cache_hit": 18048,
+        "cache_miss": 2330,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2561,
+        "out": 1881,
+        "cache_hit": 1408,
+        "cache_miss": 1153,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 2159,
+        "out": 4503,
+        "cache_hit": 1024,
+        "cache_miss": 1135,
+        "calls": 2
+      },
+      "judge": {
+        "in": 4631,
+        "out": 1287,
+        "cache_hit": 1536,
+        "cache_miss": 3095,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

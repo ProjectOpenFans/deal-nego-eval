@@ -1,0 +1,317 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "跨境交易架构咨询",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "启动后3天内提供素材，素材提供后7个工作日内交付文档",
+        "duration": "1-2小时"
+      },
+      "format": "平台托管",
+      "deliverables": [
+        "基于真实项目素材的架构拆解、路径推演和踩雷点标注的文档，标注研究性框架不构成法律意见，内含关键环节律师类型与文件指引",
+        "1-2小时深度沟通讲解判断依据"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供主体结构、代币设计、所处阶段等素材",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "启动确认后支付2000，收到文档确认后支付2000",
+        "maps_to_resource": "olivia_cash"
+      },
+      {
+        "party": "A",
+        "text": "保留的内容限于去标识化后的分析框架和逻辑链路，不得带出客户本人、公司、项目名称、链上地址、金额或具体对手方信息；客户提供的原始素材仅用于本次交付，不进入产品库",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "obligations": "stated",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是买方这边的代表。我的客户在 crypto 一级市场一线做事，手上有正在推进的真实项目和具体架构问题，她想找真正做过跨境交易的人把境内外架构这件事一次性理清。我们认可你的背景，也明确她不接受泛泛的合规科普，所以第一版我们提议一个聚焦范围：针对她实际项目出一份书面架构框架，覆盖境内合规路径和境外主体、资金与代币流通安排，再配一到两小时深度沟通把判断和理由讲透。总价 4000，走平台托管分两笔：确认启动付 2000，交付书面方案后付 2000。想先听听你对这个范围和节奏的看法，或者你更顺手的交付形式是什么，我们在这个框架里继续调。",
+      "offer": {
+        "subject": "跨境交易架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "书面架构框架报告",
+            "一到两小时深度沟通"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "先谢谢你们的信任，也谢谢把范围想得这么具体。但这件事我得先把边界说清楚：以私人身份对具体项目出具书面架构意见、下合规判断，这个形式我接不了。这不是价格问题，是执业风险——我走出律所之后不能这么干。不过我不觉得这事就没得聊。如果她需要的是把整个架构的逻辑彻底理顺：境内境外主体怎么摆、资金和代币走什么路径、哪些环节容易踩雷、应该在什么节点找什么样的执业律师敲定什么文件，这些我可以以「拆解框架+推演路径」的方式聊透，甚至可以整理成一份研究性的框架文档，但不会写成对具体项目的法律意见。换句话说：方案该有的逻辑和判断依据我们都能过，但最后那个『合规/不合规』的盖章，得留给执业律师。如果这个方向你们认可，我们再往下调时间和交付物。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，你提出的边界我们完全接受，方向按「拆解框架+推演路径」来定。为避免落入泛泛科普，我们把交付物这样钉死：以她真实项目的实际情况为底——她提供主体结构、代币设计、所处阶段等素材——你基于这些具体事实做架构拆解、路径推演和踩雷点标注，并在文档里写明每个关键环节应该在哪一步、找什么类型的执业律师、敲定什么文件；文档明确标注为研究性框架、不构成法律意见。价格维持 4000 走平台托管，启动确认后付 2000，她收到文档并确认后付 2000；节奏上她启动后 3 天内给素材，你 7 个工作日内出文档，再约 1 到 2 小时把判断依据讲透。这个版本如果你们认了，我们这一轮就能落定。",
+      "offer": {
+        "subject": "跨境交易架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "启动后3天内提供素材，素材提供后7个工作日内交付文档",
+            "duration": "1-2小时"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "基于真实项目素材的架构拆解、路径推演和踩雷点标注的文档，标注研究性框架不构成法律意见，内含关键环节律师类型与文件指引",
+            "1-2小时深度沟通讲解判断依据"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供主体结构、代币设计、所处阶段等素材",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "启动确认后支付2000，收到文档确认后支付2000",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架可以，边界也立得住——研究性框架、不构成法律意见，每个环节标注该找谁敲什么文件，这个交付我说得通，也愿意做。有真实素材做底，比我凭空搭框架好太多。\n\n价格和节奏我没问题。只有一个事我需要在这个框架里加进去：因为她给的是真实项目素材，我在写文档和推演路径的过程中，所有的分析、逻辑链路、踩雷点判断，会沉淀成一套结构化的研究素材。这部分我想保留下来——脱敏之后，用在我这边正在做的产品打磨上。对她是纯加分项，因为她实际上会在文档之外拿到一套更细的拆解逻辑。如果这个你们能认可，这一轮就可以落定。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，脱敏这块我们按这个口径定：你保留的是去标识化后的分析框架和逻辑链路，不能带出她本人、她的公司、项目的名称、链上地址、金额或具体对手方信息；她提供的原始素材仅用于本次交付，不进你的产品库。这个条件写进条款，对你未来使用也更干净。最终版本就是：以她真实项目素材为底做一份研究性框架文档，逐环节标注该在什么节点找什么类型的执业律师敲定什么文件，交付后再安排一到两小时把判断依据讲透；总价 4000 走平台托管，她确认启动后付 2000，她确认收到文档后付 2000，素材在启动后 3 天内给到，文档在 7 个工作日内交付。如果你认可这一版，我们就按它落定。",
+      "offer": {
+        "subject": "跨境交易架构咨询",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "启动后3天内提供素材，素材提供后7个工作日内交付文档",
+            "duration": "1-2小时"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "基于真实项目素材的架构拆解、路径推演和踩雷点标注的文档，标注研究性框架不构成法律意见，内含关键环节律师类型与文件指引",
+            "1-2小时深度沟通讲解判断依据"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供主体结构、代币设计、所处阶段等素材",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "启动确认后支付2000，收到文档确认后支付2000",
+            "maps_to_resource": "olivia_cash"
+          },
+          {
+            "party": "A",
+            "text": "保留的内容限于去标识化后的分析框架和逻辑链路，不得带出客户本人、公司、项目名称、链上地址、金额或具体对手方信息；客户提供的原始素材仅用于本次交付，不进入产品库",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这版我认可，按这个落定。脱敏口径写得清楚，我这边使用上也干净。素材到了我就开始，7个工作日内交付文档，然后约时间把判断依据讲透。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 43886,
+        "out": 12813,
+        "cache_hit": 30464,
+        "cache_miss": 13422,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4239,
+        "out": 1733,
+        "cache_hit": 2944,
+        "cache_miss": 1295,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2692,
+        "out": 6722,
+        "cache_hit": 1536,
+        "cache_miss": 1156,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4250,
+        "out": 1987,
+        "cache_hit": 1536,
+        "cache_miss": 2714,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

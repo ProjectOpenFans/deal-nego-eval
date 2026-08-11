@@ -1,0 +1,331 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "Olivia的crypto项目境内外法律架构咨询",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "结构化的项目场景和痛点简报",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "一次深度咨询，提前发材料，针对性准备，一次聊透",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供结构化的项目场景和痛点简报",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "根据简报提供针对性深度咨询",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 的经纪人。她在 crypto 一线做事，清华本科，之前在摩根士丹利 IBD 和 PAG 成长投资，对跨境金融架构并不陌生。她现在手上有真实推进中的 crypto 项目，想找真正懂的人把境内外法律架构一次性理清楚——不是泛泛的合规科普，而是能落到她具体项目上的架构思路。\n\n你在 Kirkland 做跨境并购架构，现在又在做 AI 法律产品，这个组合很难得。她想请教的大致方向是：境内实体和境外基金、DAO、发币主体之间怎么搭，各环节的合规边界在哪儿，以及实操里常见的坑。我想先听听你怎么看这个需求——你觉得你能覆盖到什么程度，大概是什么样的交付形式（比如一次深度咨询、分几次聊、还是带个初步架构方案），以及你这边预期的费用区间。我们这边对质量有要求，但也不想在形式上过度设计——先对齐期待，看看能不能碰出一个双方都愿意签的版本。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先说一下我这边能做的和不能做的，这样对齐快一些。你讲的这个组合——境内实体、境外基金、DAO、发币主体——我确实都很熟悉，在 Kirkland 做跨境架构的时候处理过不少类似的结构，现在自己在做 AI 法律产品也是沿着这条路在往前走，所以思路是完全可以聊的。但我必须提前讲明一点：以私人身份对具体方案出法律判断或者给人'这个架构合规'的结论，这个形式我不能做，有执业风险。我能做的是把各种架构路径、各环节的合规逻辑、以及实操里我们见过踩过的坑给你拆得很清楚，帮你和 Olivia 自己形成判断。如果这个形式你们能接受，那再往下谈节奏和费用。刚才你问到交付形式，我倾向先做一到两次深度咨询，把需求彻底对齐，有必要的话可以带一个初步的架构思路，但不出一纸法律意见书。费用区间的话，这种深度架构咨询我这边通常是在五位数起，具体看复杂度和时间投入。所以关键还是看你们能不能接受我前面说的那个边界——如果可以，我们再碰细节。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "边界我们接受。Olivia 要的就是把架构路径、合规逻辑和实操里踩过的坑拆清楚，帮她形成自己的判断，不是要一纸法律意见书——这一点完全对齐。\n\n费用上确实有距离。五位数起超出了我们这次的预算范围。我想从两个方向来碰，看能不能找到重合点。\n\n第一，缩范围换价格。如果从\"一到两次深度咨询加初步架构思路\"压缩成一次高度聚焦的深度咨询——Olivia 提前把项目结构和具体痛点发给你，你针对性准备，一次聊透，你觉得这个版本你这边大概是什么价位？\n\n第二，价值交换。你在做 AI 法律产品，Olivia 在一线跑 crypto 项目，对 crypto 领域的真实需求、架构痛点、用户行为模式有直接体感——如果你的产品方向和 crypto 有交集，她的 domain expertise 可能对你有用，可以作为对价的一部分来谈。\n\n你先看看这两个方向你哪个更有兴趣，或者你有别的结构想法也可以提。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "一次深度咨询的话，价格会在1.2万上下，再往下我就排不开了。不过说真的，我听到第二个方向的时候明显更有兴趣——Olivia在一线跑的这些真实需求、架构痛点和用户行为模式，如果和我的产品方向有交集，那这个交换就很有得谈。方便先展开一点吗？比如她现在项目的具体场景，或者她觉得最痛的点在哪个环节，我看看能不能直接对应到我在做的AI法律产品上。如果输入够我用的，这次咨询我可以当成交换的一部分，费用方面就不用走常规框架了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个方向能对上，太好了。Olivia 在一级市场一线跑，手上是真实推进中的 crypto 项目，她最痛的点恰恰就是你最关心的那层——境内实体、境外基金、DAO、发币主体这几块到底怎么拼，合规边界在哪儿，不是理论上的，而是她每天做决策时实际踩到的模糊地带。她在摩根士丹利和 PAG 的跨境背景意味着她提的问题不会浅，这些真实场景、决策逻辑和用户行为模式，对你做 AI 法律产品的需求侧洞察应该是有直接价值的。\n\n我的想法是这样：Olivia 在咨询前给你一份结构化的项目场景和痛点简报，你看了之后判断对你的产品输入有多大用。如果输入够你用，这次深度咨询就走纯交换，不走现金。如果你觉得只能部分覆盖，现金部分控制在四位数以内，具体金额你根据简报评估后再定。咨询形式就按你说的：一次聚焦的深度咨询，Olivia 提前发材料，你针对性准备，一次聊透。\n\n这个结构你觉得可以签吗？如果可以，我这边就让 Olivia 准备简报，你看了之后再定现金部分（如果有的话）的具体数字。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "结构化的项目场景和痛点简报",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "一次深度咨询，提前发材料，针对性准备，一次聊透",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供结构化的项目场景和痛点简报",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "根据简报提供针对性深度咨询",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个思路我可以接，先看简报再定。不过有一点我得直说：如果简报够我用，直接纯交换，这个没问题。但如果看下来价值不够充分，现金部分控制在四位数以内其实对我意义不大，到那种情况可能就不是钱的事了，排时间上对我来说就不太值当。所以关键还是看简报本身有没有真东西——如果Olivia能把她实际踩到的模糊地带、决策时的真实纠结写出来，那大概率是对我有用的。你先让她发，我看完再给你一个干脆的回应。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "框架对齐了，我这边可以收口。\n\n现在的版本很干净：Olivia 在咨询前给你一份结构化的项目场景与痛点简报，覆盖她实际踩到的架构模糊地带和决策时的真实纠结。你看完给一个干脆的回应——输入够你用，就一次深度咨询走纯交换，不走现金；用不上就算了，双方不拖不欠。咨询按你说的边界：拆架构路径、合规逻辑、实操坑点，帮她形成自己的判断，不出一纸法律意见书。形式是一次聚焦深度聊，Olivia 提前发材料，你针对性准备。\n\n这个版本你确认的话，我这边马上让 Olivia 开始准备简报发你。",
+      "offer": {
+        "subject": "Olivia的crypto项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "结构化的项目场景和痛点简报",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "一次深度咨询，提前发材料，针对性准备，一次聊透",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供结构化的项目场景和痛点简报",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "根据简报提供针对性深度咨询",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "none",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个版本我确认，很干净。你让 Olivia 把简报发过来，我看完给个爽快回应——够用就换，不够用也不勉强。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 62873,
+        "out": 8754,
+        "cache_hit": 47488,
+        "cache_miss": 15385,
+        "calls": 10
+      },
+      "sim": {
+        "in": 6398,
+        "out": 2292,
+        "cache_hit": 4864,
+        "cache_miss": 1534,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 4380,
+        "out": 5923,
+        "cache_hit": 2432,
+        "cache_miss": 1948,
+        "calls": 5
+      },
+      "judge": {
+        "in": 4782,
+        "out": 2173,
+        "cache_hit": 1536,
+        "cache_miss": 3246,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

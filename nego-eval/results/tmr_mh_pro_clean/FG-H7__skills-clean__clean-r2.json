@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全保留了 v0 的 stated 意图 '真正极端强度的训练'，且摸底课与极限周期大框架的收敛仍落在原意图范围内，无偷换主题。价格 800 元是双方在 open 字段下正当谈出，无越界承诺或强硬塞入。交付物与标准的约定均为服务于高强度训练，不违反任何限定。整体忠实代表委托人初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人A成功将摸底课重构为高压压力测试，化解了买方要强度、卖方要安全的直接冲突，并当场定下摸底课价格800元，避免了'你看着给'的定价失效。但最终deal仅达成了单次摸底课和后续提供周期框架的承诺，未涉及持续性安排的核心内容：后续周期的场次、强度推进方式、中止机制、结算与定价结构。卖方仍未解决整体周期报不出价的问题，买方也未锁定真正想要的极限训练安排。整体上，方向对但关键部分缺失，属于未完成的解决方案，因此定为crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

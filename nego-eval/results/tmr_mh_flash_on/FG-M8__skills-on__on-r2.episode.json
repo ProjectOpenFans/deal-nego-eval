@@ -1,0 +1,620 @@
+{
+  "episode_id": "FG-M8",
+  "final_deal": {
+    "subject": "Suye新季环保服装线品牌视觉拍摄",
+    "price": {
+      "cash": {
+        "amount": 8000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "季度内引荐不少于3位时尚圈和买手渠道的潜在拍摄客户，下季视觉优先合作权",
+          "from_party": "A"
+        },
+        {
+          "resource": "photo_shoot",
+          "description": "场地、模特、造型、妆发、新季服装全包，未按约到位由Suye承担对应费用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2个月"
+      },
+      "format": null,
+      "deliverables": [
+        "3张主视觉",
+        "源文件",
+        "授权文件"
+      ],
+      "delivery_standard": "达到商业投放标准"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "签约后3周内，交付不少于3位预筛合格的引荐客户，对方有明确拍摄需求、预算对得上、且已同意接洽",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供场地、模特、造型、妆发、新季服装全包，未按约到位由Suye承担对应费用",
+        "maps_to_resource": "photo_shoot"
+      },
+      {
+        "party": "A",
+        "text": "现金8000分两期走平台托管支付",
+        "maps_to_resource": "suye_cash"
+      },
+      {
+        "party": "A",
+        "text": "署名进所有投放渠道",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "下季视觉优先合作权",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "独占期2个月，期满后摄影师可永久将成片用于作品集和自宣",
+        "maps_to_resource": "portfolio_license"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Blair 你好，我是 Suye 的经纪人，这轮由我来代表她推进。Suye 的新季环保服装线想拍一组撑得住品牌调性的视觉大片，硬性要求是必须达到商业投放标准、能直接用于新季全渠道（电商、社媒、线下物料都算），这一点我们希望直接写进交付标准，而不是口头约定。\n\n我们初步的方案是：一组 6 张品牌视觉，含新季全渠道商业使用权和源文件交付，风格与场景想听你的专业建议；支付走平台托管、分两阶段——签约确认后付一部分，验收交付后结清，两边都有保障。价格我们这边按 5000 左右来谈，如果你有更大张数或带渠道适配裁切的完整版本，也可以报个价，我们按性价比来定。\n\n另外有个可以聊的增值项：Suye 手上有品牌大秀的场地、媒体和到场名单资源，如果你在意品牌曝光或时尚圈层的连接，这部分可以折算进合作，不一定全走现金。\n\n想先请教两件事：你常规一组商业视觉从拍摄到交付的周期和标准大概是怎样的？这个预算加全渠道使用权的组合，你那边能给出什么版本？",
+      "offer": {
+        "subject": "Suye新季环保服装线品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌大秀的场地、媒体和到场名单资源，提供品牌曝光或时尚圈层连接",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "一组6张品牌视觉，含新季全渠道商业使用权和源文件交付"
+          ],
+          "delivery_standard": "达到商业投放标准，能直接用于新季全渠道（电商、社媒、线下物料）"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，你把商业投放标准写进交付这一条我认可，这个本来就是行业基础，不是可以模糊的。周期上，一组6张商业大片从创意、拍摄到精修交付，常规2-3周；如果涉及渠道适配裁切，要再加3-5个工作日。标准就是能直接上线，源文件+授权文件一起给。但价格这块我直说，5000连成本都不够——商业级品牌大片的市场价是五位数，一组6张含全渠道商业使用权，我的底线是20000 CNY，这是硬性的。我不接低于这个的活。至于品牌曝光资源，那部分可以是加分项，但不能替代现金对价。如果你愿意按这个底价走，我可以把周期和交付标准细化；或者你有其他结构想聊，我也愿意听。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Blair 你好，20000 这个底线我记下了，价格上我不跟你硬掰，我们换个结构来谈。Suye 的硬要求只有一条——新季全渠道能直接投放，这条不动，其他都有得谈。我的提议是把单子切小：3 张主视觉，含全渠道商业使用权、源文件和授权文件，验收标准就是能直接上线，现金 8000 走平台托管、分两期——签约确认后付 3000，验收交付后付 5000，周期按你说的 2-3 周走。另外，Suye 品牌大秀的场地、媒体和到场名单资源可以并进这单，作为长期合作的起步，但不替代现金对价。如果 3 张这个包你接不了，也请你给一个你觉得在四位数现金加资源组合下可行的最小版本，我们照你的版本继续谈。",
+      "offer": {
+        "subject": "Suye新季环保服装线品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌大秀的场地、媒体和到场名单资源，提供品牌曝光或时尚圈层连接",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2-3周"
+          },
+          "format": null,
+          "deliverables": [
+            "3张主视觉，含全渠道商业使用权、源文件和授权文件"
+          ],
+          "delivery_standard": "达到商业投放标准，能直接上线"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我得跟你说实话：3张和6张对我的固定投入没有想象中差那么多——创意、置景、拍摄、后期统一性这些都是沉没成本。8000现金加资源，等于让我拿真金白银去换一个还没兑现的‘曝光’，这个我不做。 如果你真想推进，我可以给一个我能接的最小版本：3张主视觉，新季全渠道商业使用权限12个月，源文件+授权文件，现金15000，分两期走平台托管。同时把两项权益写进合同——我作为摄影师的署名，以及授权我把成片用于作品集和自宣。品牌大秀资源可以作为长期合作意向，但不算进这一单的现金对价。 这样对我来说，钱上比2万低，但我换到的是能写进履历的东西；对你来说，总成本比市场价低，而且拿到的是能直接投放的内容。你觉得这个结构说得通吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Blair，这轮我们把能对齐的都对齐：3张主视觉、商业投放标准写进交付、平台托管分两期、你的署名权和作品集使用权，这些都可以按你的版本来。卡住的只有现金一项，15000 对不上 Suye 这组视觉的预算包，我不想在这个数字上跟你来回磨，我们换个方式把价值对齐。\n\n我的版本是：3张主视觉，新季发布周期内（交付日起3个月）全渠道商业使用权，源文件加授权文件，你的署名进所有投放渠道，成片永久归你用于作品集和自宣；现金8000，签约确认后付3000、验收交付后付5000，全部走平台托管。窗口期一过，全部使用权归还给你，你可以自行重新授权甚至二次出售，我们不锁片子——你卖的是这3个月的投放价值，而不是买断，对你来说短期独家加长期自由，比12个月锁死更划算。大秀那部分按你说的，作为后续长期合作的起点，不进这单现金。\n\n如果你能按这个版本走，我们就把交付标准和验收清单细化、直接签；如果3张在这个现金包里确实做不了，也请你给一个你那边可行、能落在这个现金包里的最小版本，我们照你的来。",
+      "offer": {
+        "subject": "Suye新季环保服装线品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "品牌大秀的场地、媒体和到场名单资源，提供品牌曝光或时尚圈层连接",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3个月"
+          },
+          "format": null,
+          "deliverables": [
+            "3张主视觉",
+            "源文件",
+            "授权文件"
+          ],
+          "delivery_standard": "达到商业投放标准"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你给的结构我认真听了，确实比之前的版本像样——署名进所有渠道、成片归我用于作品集、窗口期后使用权还给我可以再授权再出售，这些对我来说不是虚的，是能长期积累的资产。所以我愿意在现金上大幅让步。但8000这个数还是太低了——它等于让我拿确定的拍摄成本和档期，去换一个不确定的二次销售可能。这单我做了，它就占用我2-3周，这段时间我本来可以接别的活。综合算下来，我能接受的下限是现金12000，加上你给的所有权益条件。12000加上署名、作品集、窗口期后归还使用权，这套组合对我来说才说得通。如果你能接受12000，我们现在就可以细化合同；如果这也不行，那咱们就到此为止。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Blair，你从20000一路让到12000，诚意我看到了，结构上我们其实已经很接近了。但12000这个现金数，Suye这组视觉的预算包确实到不了，我不想在这个数字上骗你说能。我能做的是把8000这单重新打包，让它对你的确定性不输给12000：现金8000走平台托管，签约确认即付4000、验收交付付4000，一半先落袋；排期给你灵活度，只约定新季上线前的交付截止日，具体拍摄日期由你安排，档期可以嵌进你的其他项目之间；验收以能直接上线为准，交付清单提前钉死，不以主观喜好拒收。权益上，署名进所有投放渠道、成片永久归你用于作品集和自宣都不变，独家使用权缩短为交付后2个月，期满全部归还你，你马上可以再授权、再出售。再加两条写进合同：这个季度内Suye给你引荐不少于3位时尚圈和买手渠道的潜在拍摄客户，下季视觉你有优先合作权——你要的长期资产，从口头变成可计数的承诺。如果这个8000的打包版你能接，我们马上细化交付清单和验收条款直接签；接不了，也请你给一个能落在这个现金包里的最小版本。",
+      "offer": {
+        "subject": "Suye新季环保服装线品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "季度内引荐不少于3位时尚圈和买手渠道的潜在拍摄客户，下季视觉优先合作权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2个月"
+          },
+          "format": null,
+          "deliverables": [
+            "3张主视觉",
+            "源文件",
+            "授权文件"
+          ],
+          "delivery_standard": "达到商业投放标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "署名进所有投放渠道",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "成片永久归摄影师用于作品集和自宣",
+            "maps_to_resource": "portfolio_license"
+          },
+          {
+            "party": "A",
+            "text": "季度内引荐不少于3位时尚圈和买手渠道潜在拍摄客户，下季视觉优先合作权",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你这次的结构确实有点意思了——独家期缩到2个月、成片永久归我、还有引荐客户的承诺，这些都让我觉得你是真的在想办法。但8000这个现金数，说实话还是够不着我的成本线，我不能因为未来可能有客户就先把档期填了，万一引荐的客户没成，我两头空。\n\n所以我想在你这套结构上做一个微调，让8000能成立：合同里除了引荐不少于3位潜在客户之外，再加上一条——如果6个月内这些引荐里没有至少1位和我签约拍摄，Suye方需要补付我4000元。这样一来，我的最低收益就是12000，引荐成了是增量，没成也有保底；对你来说，不用抬预算，只是把未来资源的承诺变成可兑现的条款。\n\n其他条件我都可以按你的来：现金8000分两期、独家期2个月、署名、作品集、优先权都写进合同。如果能加这一条，我们现在就可以细化交付清单和验收标准。你觉得呢？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Blair，框架我们俩已经走到这个地方了，差的只是你那一条补付4000的保底。这条我不能再接——Suye这组视觉的现金盘子就是8000，我不往上挂现金尾巴，也不瞒你。但你要的确定性，我用条款写给你：签约后3周内，Suye交付不少于3位预筛合格的引荐客户，对方有明确拍摄需求、预算对得上、且已同意接洽，不是随手甩名单；同时这单的生产资源包全包给Suye——场地、模特、造型、妆发、新季服装全部作为她的交付项写进合同，没按约到位就由她承担对应费用。你的拍摄现金支出直接省掉一大块，正好补上那4000的口子。其余全按你接受的版本：3张主视觉、全渠道投放标准、现金8000分两期走平台托管、独家期2个月后使用权归还你、署名进所有投放渠道、成片永久归你用于作品集和自宣、下季优先合作权。你确认这两条，我们就直接细化交付清单和验收条款，把合同签了。",
+      "offer": {
+        "subject": "Suye新季环保服装线品牌视觉拍摄",
+        "price": {
+          "cash": {
+            "amount": 8000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "季度内引荐不少于3位时尚圈和买手渠道的潜在拍摄客户，下季视觉优先合作权",
+              "from_party": "A"
+            },
+            {
+              "resource": "photo_shoot",
+              "description": "场地、模特、造型、妆发、新季服装全包，未按约到位由Suye承担对应费用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2个月"
+          },
+          "format": null,
+          "deliverables": [
+            "3张主视觉",
+            "源文件",
+            "授权文件"
+          ],
+          "delivery_standard": "达到商业投放标准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "签约后3周内，交付不少于3位预筛合格的引荐客户，对方有明确拍摄需求、预算对得上、且已同意接洽",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供场地、模特、造型、妆发、新季服装全包，未按约到位由Suye承担对应费用",
+            "maps_to_resource": "photo_shoot"
+          },
+          {
+            "party": "A",
+            "text": "现金8000分两期走平台托管支付",
+            "maps_to_resource": "suye_cash"
+          },
+          {
+            "party": "A",
+            "text": "署名进所有投放渠道",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "下季视觉优先合作权",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "独占期2个月，期满后摄影师可永久将成片用于作品集和自宣",
+            "maps_to_resource": "portfolio_license"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，这个结构我能接。你把生产资源包写进合同、由Suye承担，我就愿意把那个保底拿掉——场地、模特、造型、妆发、服装这些确实是实打实的成本，全包进去相当于把现金缺口补上了。引荐客户按你说的定义预筛到位，写进合同，也算一个可兑现的承诺。那我们就把这套定下来：3张主视觉，全渠道投放标准，现金8000分两期走平台托管，独家期2个月后使用权归还我，署名进所有投放渠道，成片永久归我用于作品集和自宣，下季优先合作权。我会把生产资源包的具体内容清单列进交付文件，哪项没按约到位就按合同由Suye承担对应费用。你细化成正式合同，我们就能签。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing",
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 109126,
+        "out": 39292,
+        "cache_hit": 82560,
+        "cache_miss": 26566,
+        "calls": 14
+      },
+      "sim": {
+        "in": 9686,
+        "out": 12667,
+        "cache_hit": 6912,
+        "cache_miss": 2774,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5091,
+        "out": 11456,
+        "cache_hit": 2560,
+        "cache_miss": 2531,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6971,
+        "out": 2785,
+        "cache_hit": 1280,
+        "cache_miss": 5691,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

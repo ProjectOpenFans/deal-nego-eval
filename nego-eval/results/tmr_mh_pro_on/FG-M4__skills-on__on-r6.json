@@ -1,0 +1,105 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "on-r6",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 in_kind 项（fanatics_goods）在谈判中被对方明确拒绝（B 第3轮表示不需要周边，只接受2000现金），最终方案也未再包含此项。v1 却仍保留该 in_kind，属于在未达成一致的情况下凭空硬塞，未能忠实反映双方通过 open 价格空间谈出的对价。其余部分（subject 具体化、cash 价格）忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第二轮就抓准了难度命门——主动问清并明确定位为“工作导向的内部策略”，一举打开了死结：信息用途说明消解了卖方红线顾虑，同时触发了买方职业预算通道，使对价从个人 800 上限跳至 2000 成交。后续索要细节框架并完整复述锁定方案，手法专业、干净，达成的 deal 站得住且能落地。整个过程没有死磕个人框架，也没有堆砌无关条款，处理了 key point，符合 Sound 的“合格且到位”标准。未看到 Sharp 所需的 load-bearing 精到重构（如对卖方身份的创意定位或让各方都感到体面的特别设计），因此定为 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": "深度对谈加共同训练",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "trust-and-performance",
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

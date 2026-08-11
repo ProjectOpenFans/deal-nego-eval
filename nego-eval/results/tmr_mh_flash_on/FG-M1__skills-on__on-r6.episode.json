@@ -1,0 +1,601 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上1对1交流",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "会后72小时内交付一支2-3分钟钢琴演奏短视频，Gracey拥有长期展示权",
+          "from_party": "A"
+        },
+        {
+          "resource": "zheng_recording",
+          "description": "7天内交付15分钟以上无剪辑演奏视频，专业收音与高清画面，授权Gracey永久免费商用",
+          "from_party": "A"
+        },
+        {
+          "resource": "zheng_performance",
+          "description": "如果Gracey需要，Zheng提供一场现场演奏或录制素材",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "7天内",
+        "duration": "60分钟"
+      },
+      "format": "线上1对1",
+      "deliverables": [
+        "会后72小时内，Zheng交付一支2-3分钟钢琴演奏短视频，Gracey拥有长期展示权",
+        "会后72小时内，Zheng交付一份按讨论内容定稿的30天可执行起步方案，Gracey拥有长期展示权",
+        "7天内，Zheng交付一支15分钟以上无剪辑演奏视频，专业收音与高清画面，Gracey拥有永久免费商用权"
+      ],
+      "delivery_standard": "专业收音与高清画面"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "交流完成后确认释放600元，走平台托管",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "会后72小时内交付一支2-3分钟钢琴演奏短视频，授权Gracey长期展示权",
+        "maps_to_resource": "zheng_recording"
+      },
+      {
+        "party": "B",
+        "text": "会后72小时内交付按讨论内容定稿的30天可执行起步方案，授权Gracey长期展示权",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "7天内交付一支15分钟以上无剪辑演奏视频，专业收音与高清画面，授权Gracey永久免费商用",
+        "maps_to_resource": "zheng_recording"
+      },
+      {
+        "party": "B",
+        "text": "在方案执行的前30天，所有公开提及标注Gracey为内容顾问",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "后续在内容案例或艺人合作方面给予Gracey优先合作权",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "如果Gracey需要，提供一场现场演奏或录制素材",
+        "maps_to_resource": "zheng_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 你好，我是买方经纪人，代表青年钢琴演奏家 Zheng。他是曼哈顿音乐学院科班出身、常年登台演出，但线下演出能触达的人有限，所以想认真请教内容这条路怎么做、以及怎么进入娱乐行业的视野——这正好落在你腾讯娱乐加 B 站的经验上。我们这边先给一个可签的框架：一场 60 分钟的线上 1 对 1 交流，请你围绕三块给到具体可执行的建议——古典演奏者做内容的定位与节奏、平台侧选人与分发的真实逻辑、从演出圈跨进娱乐圈的路径。费用按 500 元整谈，走平台托管，交流完成后由我们确认再释放，不需要先付一笔再看效果。如果你对时长、形式或价格有自己的想法，欢迎直接提；另外如果聊得合适，Zheng 的现场演奏与录制能力后续也有合作空间，这一点我们很开放。",
+      "offer": {
+        "subject": "线上1对1交流",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上1对1",
+          "deliverables": [
+            "古典演奏者做内容的定位与节奏、平台侧选人与分发的真实逻辑、从演出圈跨进娱乐圈的路径的建议"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认释放500元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "先谢谢你把这个框架列得这么清楚，也谢谢你们愿意把合作空间敞开。老实说，这类“聊一次怎么转型”的请求我收到过不少，但大多数我都没接——不是没诚意，而是它要占用我整块的时间，而且我得判断这事跟我的身份、跟我平时做的事对不对得上。500这个数字，对我个人来说很难构成一个“值得把时间排出来”的信号。你说的后续合作空间，我倒是有点好奇——你那边的合作具体是指什么方向？如果这个框架能让我觉得这件事真正有做头，我们可以换个方式谈，而不是按小时付费咨询来谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey，合作方向这件事我直接说具体，好让你判断值不值得上心。Zheng 手里有现成的演奏录像、录制能力，加上一个非常真实的跨圈诉求——曼哈顿科班出身的古典钢琴家，演出之外想把名字做出来，这在内容生态里是稀缺素材，恰好也落在你熟悉的选人与分发判断上。所以我建议把这次当成一次工作会，而不是按小时出售的咨询：Zheng 提前把内容想法和演奏素材整理好给你过目，聊完当场定一份 30 天可执行的内容起步方案，你花一整块时间，拿到的是真实素材加一个能落地的案例雏形，这比纯答疑有做头得多。钱的部分保持 500 元整，走平台托管，交流结束后由我们确认再释放，不做先付再看效果——这个价格买的是你一整块时间的专业判断，不是按小时计费。至于后续，如果有值得做的方向，无论是把古典跨圈做成内容案例，还是往艺人侧走，我们都非常愿意单独谈，不打包进这次。这个框架你觉得顺不顺？还是你心里有更想切入的方向？你开个方向，我们来调。",
+      "offer": {
+        "subject": "线上1对1交流",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上1对1",
+          "deliverables": [
+            "一份30天可执行的内容起步方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认释放500元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "Zheng提前整理内容想法和演奏素材给Gracey过目",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我认真看了你调整后的这个框架，说实话，比一开始的“付费咨询”像样多了。你让 Zheng 提前把素材和想法整理给我，聊完当场定一个 30 天的起步方案——这确实是我愿意花一整块时间去碰的内容，而不是单纯答疑。这一点我认可。\n\n但费用这块我必须坦诚：500 元对我来说不是一个能让我认真把时间排进日程的信号。你说得对，这不是按小时计费的问题，正是因为我觉得这件事有做头，我才愿意投入整块时间；可如果对价还在这个量级，那对我来说反而像是在用我的专业判断做一个低价补贴的事。我这边能接受的现金水平，心里大概在 3000 元整。如果你们能往这个方向靠，我就把这次当成一个真正的工作会来做；如果这个数字差得太远，那我们可能就得等后续合作空间真正落定了再聊了。\n\n你可以先看看这个数能不能接，我们再继续谈细节。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey，你上轮说得很实在：这件事有没有做头，比一次性的咨询费更重要，所以我们不打算硬往 3000 上凑，而是把这次的结构本身改一改。现金部分我们出到 600 元整，走平台托管、交流完成确认后释放；对应的，你拿到的不是一块时间，而是一个你拥有权益的案例：Zheng 提前把素材和跨圈故事整理给你，聊完当场定 30 天可执行的起步方案，这个方案与本次合作经双方确认后可以作为你的内容案例展示并署名；他还会专门为这个案例录制一段 2-3 分钟的钢琴演奏短视频，授权你用于案例与内容呈现；之后无论往内容案例还是艺人侧走，你都有优先合作权。这样你的一次工作会，会变成一个能写进履历、能持续长出后续项目的起点，整体价值比单纯一笔现金更合算。你看这个结构成不成立？如果哪一块你觉得价值还不够，你提，我们在这个框架里调。",
+      "offer": {
+        "subject": "线上1对1交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng录制一段2-3分钟的钢琴演奏短视频，授权Gracey用于案例与内容呈现",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上1对1",
+          "deliverables": [
+            "一份30天可执行的内容起步方案，经双方确认后可作为Gracey的内容案例展示并署名"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认释放600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "Zheng提前整理内容想法和演奏素材给Gracey过目",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "Gracey在内容案例与艺人合作方面享有优先合作权",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你把这个结构调整成这样，确实是动了心思的——工作会、案例署名、短视频授权、优先合作权，这些对我来说不是没吸引力。我确实愿意把这件事当成一个能长出后续项目的东西来做，而不是一次性的咨询。\n\n但话说回来，你给的这些权益，对我来说是“有可能长出东西”的预期，它不是已经落袋的价值。案例能做成什么样、能不能对外展示、优先合作权什么时候兑现——这些都取决于后面的执行和运气。所以它可以在现金之上加分，但没法把现金压到 600 这个位置。如果我把整块时间、专业判断和资源都投进去，换来的大部分是一个预期，这个账我觉得不太成立。\n\n我这边能给你的一个具体折中：现金部分 2000 元整，走平台托管，交流完成后确认释放；案例署名、演奏短视频授权、优先合作权这些权益我都保留。加上这些，整体才算是让我觉得“这次值得做”。如果这个数你觉得可以接受，我们马上往下谈细节；如果还是觉得太多，那可能我们就得再等一个更好的时机了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey 说得对，前面那些权益对你是\"可能长出来\"的预期，不是落袋的价值，单靠预期确实补不上现金差额。所以这轮我不堆新筹码，而是把这些权益全部改成写进合同的具体交付：会后 72 小时内，Zheng 交付一支 2-3 分钟的演奏短视频，加一份按我们讨论内容定稿的 30 天起步方案，视频和方案你拥有长期展示权，可以直接放进你的案例和对外内容里；他承诺按方案执行的前 30 天，所有公开提及都标注你为内容顾问；后续无论走内容案例还是艺人侧，你有明确的优先合作权，如果你需要，他还能为你的活动提供一场现场演奏或录制素材。现金维持 600 元整，走平台托管，交流完成后由我们确认再释放，不做先付再看效果。这样你投入的整块时间换回的，是有日期、有交付物、能直接拿出去展示的完整案例，而不只是一个期待。你看这个框架能不能成立？如果还有哪一块觉得不够，你指出来，我们在交付的确定性上继续补。",
+      "offer": {
+        "subject": "线上1对1交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "Zheng交付一支2-3分钟的钢琴演奏短视频，Gracey拥有长期展示权",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_performance",
+              "description": "如果Gracey需要，Zheng提供一场现场演奏或录制素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "72小时内",
+            "duration": "60分钟"
+          },
+          "format": "线上1对1",
+          "deliverables": [
+            "会后72小时内，Zheng交付一支2-3分钟的钢琴演奏短视频，Gracey拥有长期展示权",
+            "会后72小时内，Zheng交付一份按讨论内容定稿的30天起步方案，Gracey拥有长期展示权"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认释放600元，走平台托管",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "会后72小时内交付一支2-3分钟演奏短视频，并授权Gracey长期展示权",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "交付按讨论内容定稿的30天起步方案，授权Gracey长期展示权",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按方案执行的前30天，所有公开提及标注Gracey为内容顾问",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "后续在内容案例或艺人合作方面给予Gracey优先合作权",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "如果Gracey需要，提供一场现场演奏或录制素材",
+            "maps_to_resource": "zheng_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你这一轮把交付细节都落进了合同，我确实看到了诚意，尤其是你说到“现场演奏或录制素材”这一条——这正好是我这边真正用得上的东西。但“录制素材”这个词太泛了，如果我拿到的只是一段排练随手拍，那对我来说其实没有太多价值。\n\n如果你能把它具体成一个正式规格的东西，比如一段至少15分钟的无剪辑演奏视频，专业收音和画面，授权我永久免费商用，并且写进合同——那这笔账我心里就平了。这样的话，现金我可以接受600，加上你前面说的案例署名、短视频授权、优先合作权，这个整体我可以认真答应。\n\n你看这个规格你们能不能做到？如果能，我们今天就把它定下来。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Gracey，这个规格我们完全接得住——15分钟以上的无剪辑演奏、专业收音加高清画面，对Zheng来说就是一次认真完成的现场录制，没问题。那我们就把完整版本定下来签约：一场60分钟线上工作会，Zheng提前把素材和想法整理给你过目，会上围绕古典演奏者做内容、平台侧选人与分发逻辑、演出圈进娱乐圈层三块展开，当场定出30天可执行起步方案；会后72小时内交付定稿方案和一支2-3分钟演奏短视频，7天内交付15分钟以上无剪辑演奏视频，专业收音与高清画面，授权你永久免费商用，两者都写进合同；方案与视频你拥有长期展示权，Zheng执行前30天所有公开提及标注你为内容顾问，后续内容案例与艺人侧方向你享有优先合作权，需要时还可为你的活动提供现场演奏或录制素材。现金600元整，走平台托管，交流完成由我们确认后释放。以上全部确认的话，这一版我们就可以签。",
+      "offer": {
+        "subject": "线上1对1交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "会后72小时内交付一支2-3分钟钢琴演奏短视频，Gracey拥有长期展示权",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_recording",
+              "description": "7天内交付15分钟以上无剪辑演奏视频，专业收音与高清画面，授权Gracey永久免费商用",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_performance",
+              "description": "如果Gracey需要，Zheng提供一场现场演奏或录制素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "7天内",
+            "duration": "60分钟"
+          },
+          "format": "线上1对1",
+          "deliverables": [
+            "会后72小时内，Zheng交付一支2-3分钟钢琴演奏短视频，Gracey拥有长期展示权",
+            "会后72小时内，Zheng交付一份按讨论内容定稿的30天可执行起步方案，Gracey拥有长期展示权",
+            "7天内，Zheng交付一支15分钟以上无剪辑演奏视频，专业收音与高清画面，Gracey拥有永久免费商用权"
+          ],
+          "delivery_standard": "专业收音与高清画面"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认释放600元，走平台托管",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "会后72小时内交付一支2-3分钟钢琴演奏短视频，授权Gracey长期展示权",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "会后72小时内交付按讨论内容定稿的30天可执行起步方案，授权Gracey长期展示权",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "7天内交付一支15分钟以上无剪辑演奏视频，专业收音与高清画面，授权Gracey永久免费商用",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "在方案执行的前30天，所有公开提及标注Gracey为内容顾问",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "后续在内容案例或艺人合作方面给予Gracey优先合作权",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "如果Gracey需要，提供一场现场演奏或录制素材",
+            "maps_to_resource": "zheng_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，这版框架我觉得可以签。15分钟无剪辑、专业收音和画面的演奏视频，授权我永久免费商用，这个确实是我这边真正用得上的资产；加上案例署名、短视频授权、优先合作权这些写进合同，整体对价我心里是平的。现金600走平台托管、完成确认后释放，也没问题。我们按这个签约。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "interest-discovery",
+      "term-reframing",
+      "affordability-structuring",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:zheng_recordingx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 88449,
+        "out": 27748,
+        "cache_hit": 66816,
+        "cache_miss": 21633,
+        "calls": 13
+      },
+      "sim": {
+        "in": 9332,
+        "out": 10953,
+        "cache_hit": 6656,
+        "cache_miss": 2676,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5162,
+        "out": 13172,
+        "cache_hit": 2560,
+        "cache_miss": 2602,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6739,
+        "out": 1522,
+        "cache_hit": 1408,
+        "cache_miss": 5331,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S4",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 将原 stated 意图'想找 Suye 帮我看看衣橱、陪我逛一次选点东西'收敛为'衣橱咨询加陪逛服务'，仍落在原意图范围内，属于正常具体化，没有偷换主题。价格与形式均为 open 字段，在对话中通过谈判达成 4000 元及分两环节执行，属于正当谈出，无凭空硬塞。agent 未在资源清单外追加额外义务，也未将服务变为单一品牌带货。忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终deal形成了清晰的两段式结构（衣橱诊断+报告+半天陪逛），价格落在2500–4000区间（整体4000），支付方式明确（escrow分环节释放），站得住且可落地。符合sound档标准。但缺乏一手load-bearing的精到操作，如可复用产出、先盘点再决定是否陪逛等结构性优化，仅做成了常规可成交的安排，谈不上sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "分两个环节：先上门衣橱诊断并出整理建议，再约半天陪逛选品",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

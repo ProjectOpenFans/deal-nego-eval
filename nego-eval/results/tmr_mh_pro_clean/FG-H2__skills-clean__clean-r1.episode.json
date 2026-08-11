@@ -1,0 +1,270 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "工作日早上六点",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "每月预存300元至平台作为缺席惩罚金。当月无故缺勤超过约定次数，款项转为训练小组蛋白粉基金或由Kai决定用途；全勤则月底原路退回或滚存至下月。",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "terms.format": "open",
+      "obligations": "stated",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Kai，我是 Ruohao 这边的经纪人。他之前训练断了一阵，现在想把强度重新拉起来，自己去健身房实在练不下去，所以需要找一个能真正带他练的人。他最在意的一点是训练安排必须定死，不是那种“有空再约”的松散模式，强度也必须真够。想问一下你这边通常怎么安排训练，周期、频率、每次的时长和具体内容大概是什么样？另外价格方案也请你先给一个，他对这件事付费意愿很高，只要东西到位。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗯，Ruohao的情况我大概了解了。我先说我们的训练节奏——我和几个朋友有一个固定的训练局，工作日早上六点，雷打不动，一个半小时左右，强度你放心，不是那种随便练练的。但这个时间我没法动，白天我得在场子里盯着，走不开。所以你最需要在意的就是这个时间他能不能接受。至于什么周期、内容，我不提前排课表，来了就是跟我们一起走，我带着节奏。但是……你说价格方案这个，说实话我卡住了，这在我这儿就不是个生意，就是几个朋友一块儿练。你让我报价，我真报不出来，这个不用给钱吧，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，先说时间这个点——工作日早上六点，确实很早，但“雷打不动”这个固定性恰恰是 Ruohao 最需要的，他不会接受那种临时约的模式。这个时间我会马上转给他确认，他作息比较乱，我需要让他自己判断能不能长期跟上。不过强度方面，你说的“带着节奏跟你们一起走”只要是真的高强度，他反而会满意，因为他就是为了把强度拉起来。\n\n再说费用。我完全理解你这不是生意局，但你让我这边“看着来”，反而难办。Ruohao 的付费习惯是——他愿意付钱，而且付费本身就是一种双向约束：他付了钱会更认真，你收了钱也会更负责，哪怕收得不多。如果你实在报不出商业价，那我们往简单走：你给一个你觉得合理、不让你觉得变味儿的固定数，哪怕只是象征性的，这样我们好落成一个明确的约定，两边都有根绳子拴着，避免变成“随便来不来”。你觉得多少不会让你别扭？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我懂你说的“两边都有根绳子拴着”，这我认。但如果这个钱是直接装我兜里，我真的会觉得别扭，那等于把我跟 Ruohao 的关系整成教练跟学员了，这不是我的路数。要不这样——也算是个折中：如果你觉得必须有个数才能把约定落稳，那就每个月放个三百块，但这个钱不给我，放成我们这个训练小组共同的一个蛋白粉补给基金，大家一起用。这样既有个约束，我带他也不会觉得自己在卖课。你看这个结构对他那边行不行？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，时间的事我刚跟 Ruohao 通了气，他对自己作息能不能长期顶住早上六点还在评估，但“雷打不动”这个固定性对他吸引力很大，他今天内会给我确切答复。\n\n费用结构我想往回拉一下。你说的蛋白粉基金方向我理解你不想把这变成教练费，但三百块放进一个共同基金，Ruohao 怕的是约束力不够——他掏了钱但不是给你个人，他会觉得这根绳子拴在他自己那端松了。他希望的是，这笔钱直接交到你手上、由你支配，哪怕你转头全部拿来给组里买蛋白粉请大家喝，那也是从你手里出来，你会有“得对得住人家”的感觉。名字也不叫教练费、学费，就叫“带队费”或者你愿意认的随便什么名头，只要是个固定月费、直接给你。这样你既不用觉得自己在卖课，他也能认真对待。\n\n既然你刚才开了一个三百的口子，说明你也不排斥有个数。那我们往实在走：你直接说一个让你自己不别扭、又真能让你觉得有点责任感的月费数，比三百高一些也可以，Ruohao 对这件事的付费意愿本身不低，前提是强度和固定性能到位。你觉得多少合适？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你说“得对得住人家”这个我认，但如果钱直接交到我手上，哪怕叫“带队费”，我心里还是会过不去——因为这性质在我这儿就变了，我会觉得自己在收钱带人。这不是金额高低的问题，是这根线一踩，我跟 Ruohao 的关系就不是我想的那个东西了。所以我的意思是：如果他能接受早六点这个时间、能跟上我们的强度，那就直接来，不用非得拿钱绑住我，我自己的规矩就是来了就是自己人，我会盯他。你要是担心他没约束，那就看他自己能不能把早六点这个事顶住——这个本身就已经是最硬的约束了。另外还有个情况你可以告诉他：周六上午我一般会在场子里待两三个小时做器械保养、搬东西、补货，那个不算训练，就是我一个人干活。但如果他想周六来一起练，我不排斥，反正我人也在。时间上他多一个选择，强度也还是我说了算。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，我先把时间的事同步一下：Ruohao 对早六点的固定性完全认可，但对自己作息能不能长期稳定顶住还在认真评估，他说今天内给准信，我不替他抢答。周六上午你一个人在店里的那段，他说如果时间允许愿意去，但前提是早六点的主线先定下来，他不希望用周六代替主线强度。\n\n然后说费用结构。你踩的那根线我完全理解——关系一定位成付钱跟带人，你自己会别扭，这不是金额问题，是你心里那关。但 Ruohao 这边的约束需求也不是凭空来的，他之前几次断训都是因为没人盯、没有外部压力，纯靠自律撑不住。早六点虽然本身就是硬门槛，但对他来说还是“自己对自己”的约束，他需要的是外面还有一根绳子拴着。\n\n所以我提一个折法，不走“付钱给你”的逻辑：我们设一个“缺席惩罚金”而不是“带队费”。每个月 Ruohao 这边单独放一个固定数，比如还是你说的三百，放在平台预付，不直接给你。如果他当月无故缺勤超过约定次数，这笔钱就变成你们训练小组的蛋白粉基金或者你决定怎么用在组里；如果全勤，月底原路退回或者滚到下个月。这样钱不进你口袋，你也不觉得自己在收钱带人，但 Ruohao 有了一个实打实的财务后果，不至于又退回“算了今天不去”的模式。你觉得这个缺席惩罚的方向你能不能接受？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每月预存300元至平台作为缺席惩罚金。当月无故缺勤超过约定次数，款项转为训练小组蛋白粉基金或由Kai决定用途；全勤则月底原路退回或滚存至下月。",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个缺席惩罚金的方向我认。规矩我这样想：每月定三百押金放平台，Ruohao 一个月里无故缺勤不超过两次就算全勤，月底原路退回；如果超过两次，整笔钱就转成我们训练组的蛋白粉基金，我来安排买谁的、怎么分。这样钱不进我口袋，我又真会觉得有责任盯着他别白瞎那三百块——两边绳子都拴着了。等他今天内确认能顶住早六点，我们就按这个落。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7002,
+        "out": 2788,
+        "cache_hit": 5504,
+        "cache_miss": 1498,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6628,
+        "out": 3289,
+        "cache_hit": 4736,
+        "cache_miss": 1892,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3547,
+        "out": 4289,
+        "cache_hit": 2304,
+        "cache_miss": 1243,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5247,
+        "out": 1787,
+        "cache_hit": 1664,
+        "cache_miss": 3583,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

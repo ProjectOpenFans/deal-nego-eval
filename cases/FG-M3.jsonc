@@ -1,0 +1,261 @@
+// FG-M3 · 中 · Angela(买) × Suye(卖) — 追星应援物料的设计/打样
+// 难度来源：缺口是真实固定成本（开版打样）而非议价空间，砍价结构性无效。
+{
+  "meta": {
+    "case_id": "FG-M3",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": [
+      "cash-gap",
+      "order-scale-mismatch",
+      "resource-in-buyers-hands"
+    ],
+    "in_focus_group": true,
+    "skin_family": 6,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "user-led",
+    "tier_axis": "order-scale-mismatch+community-as-asset",
+    "probes": [
+      "cash-gap",
+      "fixed-cost-not-margin",
+      "community-as-consideration"
+    ],
+    "isolates": "中档，实物 + 服务混合单。Angela 想给应援组织做一批定制物料，Suye 有小批量生产链路。卡点是订单规模：Suye 按商业订单口径报价（起订量、打样费、开版费），而 Angela 是个人预算、量很小。纯砍价推不动 —— 开版成本是真实成本不是利润。出路在买方一侧：应援组织是几百人的真实社群，对一个独立环保品牌来说是有价值的种子客群与内容场景。Angela 不会想到自己的社群是资产。"
+  },
+  "input": {
+    "episode_id": "FG-M3",
+    "initial_deal": {
+      "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "angela",
+          "display_name": "Angela",
+          "education": [
+            "西北大学本科"
+          ],
+          "career": [
+            "摩根大通投资银行 VP"
+          ],
+          "location": "香港",
+          "age_band": "28-33",
+          "hobbies": [
+            "Hyrox",
+            "举铁",
+            "追星"
+          ],
+          "interests": [
+            "摩根大通 VP",
+            "Hyrox / 举铁",
+            "追星(刘雨昕)"
+          ],
+          "credentials": [
+            "Hyrox 常年参赛，举铁多年",
+            "摩根大通投资银行 VP",
+            "长期混女性力量训练社群与追星社群"
+          ],
+          "current_focus": "投行本职，业余在追星社群里组织应援"
+        },
+        "private": {
+          "intent": "想做一批像样的定制物料，之前找的供应商做出来很廉价",
+          "interests": [
+            "她在应援社群里有组织者的位置，这次是替社群办事",
+            "预算是大家凑的，不多",
+            "周中忙，主要周末"
+          ],
+          "value_perception": "追星相关她愿意到四位数，但这次是社群凑的钱，量也小",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "这一批的现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受做出来很廉价的东西"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "suye",
+          "display_name": "Suye",
+          "education": [
+            "Parsons"
+          ],
+          "career": [
+            "环保服装品牌 主理人"
+          ],
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": [
+            "网球"
+          ],
+          "interests": [
+            "环保服装品牌主理人",
+            "Parsons",
+            "网球"
+          ],
+          "credentials": [
+            "独立环保服装品牌主理人，自有小批量生产链路",
+            "Parsons 科班，时尚圈层与买手渠道",
+            "品牌大秀的场地、媒体与到场名单"
+          ],
+          "current_focus": "独立品牌主理人，有小批量生产链路"
+        },
+        "private": {
+          "intent": "可以做，但小单在她这里成本结构很难看",
+          "interests": [
+            "开版和打样是真实的固定成本，摊不到这么小的量上",
+            "她一直在找真实的种子用户群和内容场景 —— 独立品牌最缺的就是有人真的穿出去、拍出来",
+            "时间相对灵活"
+          ],
+          "value_perception": "按商业订单口径，这个量做下来她是亏的；不是她想赚多少，是固定成本摆在那",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 9000,
+              "currency": "CNY",
+              "note": "含开版打样的商业订单口径底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受为了压价而降低材质与工艺标准"
+            ],
+            "blocking_flags": [
+              "你会直接说明小单的成本结构问题 —— 开版、打样是固定成本，不是利润",
+              "对方只在价格上砍时，你不会松口，因为那会亏",
+              "你不会主动说'我需要种子用户和内容场景'，只有对方问到你这边想要什么、或者主动提出社群相关的东西时，你才会顺着说",
+              "如果对方能给出你真正用得上的东西，你愿意在开版费上做出实质让步"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "order-scale-mismatch+community-as-asset",
+      "tier_rationale": "中档。缺口是真实成本结构（开版打样摊不到小量上），不是议价空间，所以砍价必然失败。出路在买方一侧：应援社群是几百人的真实种子客群与内容场景，对独立品牌有实际价值。",
+      "conventional_deal_fails_why": "顺着'能不能便宜点'砍价：Suye 做下去是亏的，她不会松口。加量：Angela 没有预算也没有需求。降低材质：踩买方红线（不要廉价的东西）。价格轴上无解。",
+      "cash_zopa": "negative",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 4000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 9000,
+        "unit": "CNY",
+        "note": "对手方(卖方 Suye)按商业订单口径的底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 4000,
+        "unit": "CNY",
+        "note": "Angela 这一批的现金上限"
+      },
+      "seller_real_need": "Suye 缺的是真实的种子用户群与内容场景 —— 独立品牌最缺有人真的穿出去、拍出来。她不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "custom_production",
+          "label": "定制物料的设计与小批量生产"
+        },
+        {
+          "id": "sampling",
+          "label": "打样与开版"
+        },
+        {
+          "id": "material_upgrade",
+          "label": "材质与工艺"
+        },
+        {
+          "id": "angela_community",
+          "label": "应援社群的真实用户群与传播场景"
+        },
+        {
+          "id": "angela_content",
+          "label": "社群产出的实穿内容与影像"
+        },
+        {
+          "id": "angela_cash",
+          "label": "Angela 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "custom_production": 0,
+        "sampling": 0,
+        "material_upgrade": 0,
+        "angela_community": 0,
+        "angela_content": 0,
+        "angela_cash": 0
+      },
+      "creation_door": {
+        "description": "一跳门。缺口来自固定成本而非议价空间，砍价必死。唯一出路是让买方的社群成为对价的一部分：几百人的真实用户群 + 实穿内容，对独立环保品牌是有价值的种子场景。据此 Suye 可以在开版费上做实质让步（把开版当成自己的市场投入而非订单成本）。",
+        "route_out_trigger": "若 agent 只在价格上砍，Suye 会反复解释成本结构并拒绝；若同意降低材质，踩买方红线。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；数量、材质标准、交付时间与非现金义务须写清",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.deliverables",
+          "terms.timing.deadline",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：为应援组织定制一批像样的物料。subject 是 stated，须保留。价格与形式是 open。不得以降低材质与工艺为代价压价 —— 那违背委托方明确的质量要求。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：缺口来自真实的固定成本（开版打样），不是利润空间 —— 这意味着砍价在结构上就无效，agent 必须识别出这一点。出路是把买方的社群作为对价，让卖方把开版当作自己的市场投入。注意这是一次性订单，堆砌长期分销或代理条款应判低。",
+      "T0_floor": "谈崩；或全程砍价而卖方反复拒绝；或为了压价接受降低材质（踩买方红线）；或成交一个价格勉强但双方都不满意的安排。",
+      "T1_crude": "察觉到成本结构问题，提了一句'我们社群人挺多的'，但没说清能给什么、对品牌有什么用，最后仍然卡在价格上。",
+      "T2_sound": "把社群曝光/实穿内容作为对价的一部分放进交易，现金落在买方可承受范围，明确了物料规格、材质标准、数量、交付时间与社群侧的具体义务。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准指出开版费是卖方的一次性投入、而社群正是她缺的种子场景，从而让她把开版计入市场费用而非订单成本；或者用'首批小量 + 后续社群复购'的结构让固定成本有摊薄路径；或者把材质标准写成明确条款，一举保住买方红线与卖方的工艺底线。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "中档 case。判分核心：有没有识别出缺口来自固定成本、并用买方的社群资源解掉它。"
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周一早上六点",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "不单独开场，只让客户并进固定早练场",
+        "maps_to_resource": "space_access"
+      },
+      {
+        "party": "A",
+        "text": "你来带节奏",
+        "maps_to_resource": "pace_setting"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "confirmed this round",
+      "terms.timing.when": "stated",
+      "terms.format": "confirmed this round",
+      "obligations": "stated this round",
+      "acceptance": "B confirmed Monday 6am session",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我这边代表一位买家客户跟你聊。客户是做量化交易的，运动底子不差，篮球和健身一直有基础，但训练断了一阵子，现在想认真把强度拉回来，一个人去健身房确实练不动，所以需要一位能真正上强度、盯得住他的教练。两个硬条件我先讲清楚：第一，强度必须真的够，不能是松松垮垮的陪练式带训；第二，安排必须是定死的，不做\"有空约一下\"这种松散形式，训练计划和时间要提前锁死。客户对真正有效的训练付费意愿很高，四到五位数的投入都可以谈。想先听听你的训练思路、收费模式，以及你一般怎么保证强度和执行的落地。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "训练思路没什么花头，就是上重量、上强度，到了就干，不废话。我这边每天早上六点有一场，雷打不动，带的朋友练的也都挺狠，强度你不用担心。至于收费……说实话我没把自己当教练，平时也就是带身边人练，你要让我报个价，我真报不出来，你看着来就行。不过我先问问，你客户能起得来早六点吗？他在哪个位置？如果方便，直接来跟我那场一起练就行，时间也定死，我人一定在。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，早六点雷打不动这个调性正合我客户胃口，他要的就是定死的安排，不是看心情约。不过两件事得先跟你对齐：一是地点，客户人在上海，你那个场子在哪个区？他通不通得了早六点，得看实际距离。二是费用，你说\"看着来\"这个没法落地，客户也不会签一份没价格的安排，咱们得把数定下来。我这边可以提一个结构：先安排一次试训，你带他走一遍，让他感受强度是不是他要的；试训满意之后按月定死，每周三次早六点，训练计划提前一周锁死。你报一个你认可的月费或单次价，或者我这边出个数你来确认，咱们把这个定下来再说后面的事。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先试训一次，满意后按月定死，每周三次早六点，训练计划提前一周锁死",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated this round"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "场地在浦东，我这边是自家仓库改的训练空间，器械挺全，早六点这场稳得很。他要是能接受这个距离和早起的强度，直接来试一次没问题。但费用这块……我真没想过收钱这档子事，平时就是带着朋友练，一起练完各忙各的。你那边要非得定个价格，你出个你觉得合适的数，我看看合不合理就行。试训没问题，周一早上六点，随时过来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，就定周一早上六点，试训这场没问题。你先把浦东训练场的具体地址发我，我确认一下客户过去的通勤时间，免得他掐着点赶到反而影响你带训练的节奏。费用这边我直接给你一个明确的数，省得你我都悬着：试训单次按五百算；试训下来双方都觉得对路，就按月定死，每月六千，每周三次，训练安排提前一周锁死，爽约就得提前说明、另行补上。钱全部走平台托管，不打私账，每一笔都是确认后结算。你认可这个结构的话，我们就把周一试训定下来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训单次500元；试训满意后按月定死，每月6000元，每周三次，训练安排提前一周锁死，爽约需提前说明另行补上；费用全部走平台托管，确认后结算。",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated this round",
+          "terms.timing.when": "stated this round",
+          "terms.format": "updated this round"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "地址发你没问题，浦东这边，具体位置我微信给你，你让他看一下通勤。试训这场没毛病，周一早六点，人到就行。\n\n费用这头，我得跟你说实话——五千六千一个月这种数字，我听着不太得劲。我没打算把自己当职业教练来卖课，我就是每天早上六点在这个场子里练，谁跟得上就来，我带着节奏。你客户要是来了、觉得这套练法对路、能坚持，那我们就是一起练的搭档，不是客户和教练的关系。真要谈钱，那就当场地使用费吧，他愿意按市场价给点都行，但我不会安个'教练费'的名头。你出个数目我也不拦，毕竟场子里的器械维护、水电都得开销。\n\n所以周一先来试，其他的等练完再说，你看行不？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，那就定周一早六点试训，地址你微信发我，我转发给客户确认通勤。你按\"场地使用费\"来算，这个名义没问题，我们不纠结叫法，但费用不能是\"随便给点\"——客户要的是一份定死的安排，钱也必须是明确的数。我这边给个具体提案：试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。你看这个结构能不能认，认可我们就等周一试训见真章。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated this round",
+          "terms.timing.when": "stated this round",
+          "terms.format": "updated this round"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "address 我给客户，他通勤看没问题就定周一。你给的数我认：试训五百，后面按月六千、每周三次、时间定死、平台走账——这个结构行。我唯一的条件还是之前那句话：时间必须是我早六点那场，单独为他另开一场我不干，白天我得在场子里走不开。他愿意来，那就周一见真章。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai，费用这块我们算是定下来了：试训五百，之后按月六千、每周三次、都是你早六点那场、计划提前一周锁死、临时来不了提前说明并补练，全部走平台托管，不打私账。你那个不单独开场、只跟他并进你固定早练场的条件，客户能接受，他要的就是跟住一个有强度的固定安排。现在就剩最后一件实事：你把浦东场地的具体地址发我，我确认客户通勤能赶上早六点，没问题周一试训就正式锁死。客户这边的底线我再放一次：强度必须真的够，安排必须定死，你来带节奏，他负责跟上。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "不单独开场，只让客户并进固定早练场",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "你来带节奏",
+            "maps_to_resource": "pace_setting"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed this round",
+          "terms.timing.when": "stated",
+          "terms.format": "confirmed this round",
+          "obligations": "stated this round"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "地址是：浦东新区秀浦路889号，建材仓库，门口一排卷帘门，到了直接推门进就行。周一早上六点，我人在里边，器械都热好，你客户来了直接开练。试训五百、之后按月六千、每周三次、早六点固定场、计划提前锁死、平台走账——这些我都认。你先让他看看通勤，要是赶得上，这事儿就锁定了，周一见。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Kai，地址收到，秀浦路889号建材仓库，我确认下客户过去的时间，只要通勤赶得上，周一早上六点这场就正式锁定。到目前咱们对齐的全部条件：试训五百，之后每月六千、每周三次、并你早六点固定场、计划提前一周锁死、临时来不了提前说明并补练、所有费用走平台托管确认后结算。这些都是两边认下的数，不用再动。我这边尽快给你通勤确认的回复，没问题的话，周一里面见真章。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "试训单次五百；试训后双方都觉得对路，就按月定，每月六千，每周三次早六点，训练计划提前一周锁死，临时来不了提前说明并另定时间补上。所有费用走平台托管，每一笔到你确认后结算，不打私账。",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "不单独开场，只让客户并进固定早练场",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "你来带节奏",
+            "maps_to_resource": "pace_setting"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "confirmed this round",
+          "terms.timing.when": "stated",
+          "terms.format": "confirmed this round",
+          "obligations": "stated this round"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "行，那这事儿就锁了。我这边准备好，他通勤没问题的话，周一九点见——哦不，六点见。强度会拉满，但节奏跟得上，让他放心来。",
+      "offer": null
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12318,
+        "out": 5140,
+        "cache_hit": 10496,
+        "cache_miss": 1822,
+        "calls": 6
+      },
+      "sim": {
+        "in": 11268,
+        "out": 4914,
+        "cache_hit": 8704,
+        "cache_miss": 2564,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 6253,
+        "out": 8734,
+        "cache_hit": 3840,
+        "cache_miss": 2413,
+        "calls": 7
+      },
+      "judge": {
+        "in": 5457,
+        "out": 1129,
+        "cache_hit": 1664,
+        "cache_miss": 3793,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

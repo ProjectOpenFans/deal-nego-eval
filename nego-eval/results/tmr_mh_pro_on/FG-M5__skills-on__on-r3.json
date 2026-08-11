@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的price.cash为open，允许在谈判中确定金额，但最终对话明确走向不定价、不付费的双向交流，没有约定任何现金支付。v1却硬塞入2000元现金，且provenance标为stated，这既不是v0的意图，也不是真实谈判结果，属于对open字段的凭空虚造，未忠实表达委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "A在第3轮精准识别到卖方抵触的根源是结构性的“付费获取判断”，而非价格，于是一刀砍断付费框架，提出对等的双向交流。更关键的是，A不是笼统地说“互相学习”，而是具体点出Olivia的crypto一级定价视角与Zichen AI侧的判断“同构”，让卖方从“可以聊聊”变成“我也有兴趣聊”——这一手直接咬住了本case的难度命门：卖方缺乏动机、可交换的东西在买方身上但卖方不会主动提。最终deal干净：双方各带前沿干货交换问题方向，不定价不卡表，恰好满足一次性的深度对答案需求，不堆砌多余绑定。最终deal里保留了象征性2000元现金，略有画蛇添足，但未破坏整体重构的有效性和精准度，整体见功力，符合Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "crypto_primary_view",
+          "ai_market_read"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "term-reframing",
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

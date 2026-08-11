@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "on-r5",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了买方 stated 的“极端强度训练”意图，并将形式收敛为“摸底试训—方案输出—正式定制”的渐进推进方式，仍落在原意图范围内；没有偷换主题。价格与形式属于 open 字段，v1 中未指定固定金额、只约定了区间和托管支付，没有硬塞越界。agent 未承诺医疗/康复/资质交付，也未要求卖方跳过安全流程（相反确认了“摸底、动作节奏全由Kai控制、真实强度”。整体忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "AGENT精准抓住了难度命门：买方要的是“被顶到极限”而非“跳过安全”。第2轮一句“摸底不是降强度，恰恰是真正极端强度的前提”将卖方的安全底线重构为达成目标的路径，同时把卖方的“能扛多少就给多少”转化为对强度的承诺，这是整个deal的load-bearing转折。在此基础上把安排落地为先摸底、后出方案、节奏全归Kai、按节点托管支付的框架，既让买方看到真正的极端强度，又让卖方安全掌控。定价方面，面对卖方卡点，以“试训后72小时由Kai报总价、锁定四至五位数区间、托管分段放款”的结构解开了卖方报不出价与买方怕买到温和产品的双重焦虑。试训费用未精确锁定是微小瑕疵，但整体干净、关键一击到位，水准在Sound之上，属Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "试训",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

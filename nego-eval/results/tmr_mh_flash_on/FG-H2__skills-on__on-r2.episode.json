@@ -1,0 +1,219 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "定期高强度训练陪练",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每周一/三/五早上6:00",
+        "deadline": "一个月后",
+        "duration": "每次60-90分钟"
+      },
+      "format": "平台托管按月付",
+      "deliverables": [],
+      "delivery_standard": "完全跟Kai的编排节奏走，不另开课不加额外负担；Ruohao自行记录训练日志，Kai无需专门备课或出报告"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "记录训练日志（重量、次数、心率）",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "closed",
+      "terms.format": "closed",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Ruohao 的 broker。这单的诉求很明确：Ruohao 想把训练强度重新拉起来，一个人练不下去，所以他要的不是\"有空约一下\"的松散陪练，而是定死的安排——时间提前锁死、雷打不动，强度必须实打实够。这两条是他合作的前提，我们这边不会松。价格他反而没设限，更看重你能不能接住这个强度，所以想先听你这边能给什么形式：一周几次、每次多久、力量/体能/篮球专项怎么编排，强度怎么量化，以及对应的报价。我们初步想的是每周固定 3 次、每次 60-90 分钟，力量体能打底、穿插篮球专项，训练要有可衡量的进阶（重量、容量、心率这些）。这个框架你看接不接得住？框架对齐的话，我们希望尽快把具体课表和节奏定下来。",
+      "offer": {
+        "subject": "定期高强度训练陪练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "每次60-90分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你说到点上，一个人练确实容易泄。我这边本来就有固定的早场——工作日早上六点，和几个朋友一起，雷打不动。你要是能起得来，就跟着我一块儿练，我练什么、怎么带节奏，都实打实来，强度肯定够。但我先把丑话说前头：我不搞职业教练卖课那套，也不单独为你一个人另开一场。时间就锁在这个早场里，跟着我的节奏走。你要是觉得这种形式能接受，我们再往下聊具体怎么编排、怎么量化。钱的事不急，你看着来就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，这个框架我们定了。版本我这样提：每周固定三个早场，周一/三/五早上 6:00，加入你的晨练，每场 60-90 分钟，完全跟你的编排和节奏走，不给你另开课、也不加你额外负担。强度这块按你说的实打实来，Ruohao 自己记训练日志——重量、次数、心率——让进阶看得见，这也是他判断\"强度真的够\"的依据，你不用专门备课或出报告。费用我们出 4000/月，走平台托管按月付，先跑一个月，强度到位就续，不到位这一个月就当验证。三个早场合不合你现在的场次安排、时长和这个数行不行，你给个准话，行的话这版就可以定下来了。",
+      "offer": {
+        "subject": "定期高强度训练陪练",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一/三/五早上6:00",
+            "deadline": "一个月后",
+            "duration": "每次60-90分钟"
+          },
+          "format": "平台托管按月付",
+          "deliverables": [],
+          "delivery_standard": "完全跟Kai的编排节奏走，不另开课不加额外负担；Ruohao自行记录训练日志，Kai无需专门备课或出报告"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "记录训练日志（重量、次数、心率）",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "closed",
+          "terms.format": "closed"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这版我接得住。周一、三、五早上六点，正好落在我现有的训练局里，不另开场、不额外占我时间，这事性质没变，我还是照常练、照常带。强度你让他放心，我练起来不糊弄，自己记日志也行，能看见进步就行。钱的话……你给的数我不挑，先跑一个月看看，他要是觉得不够再调整。就这么定吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 19861,
+        "out": 8661,
+        "cache_hit": 17920,
+        "cache_miss": 1941,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2740,
+        "out": 1338,
+        "cache_hit": 2048,
+        "cache_miss": 692,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1675,
+        "out": 3085,
+        "cache_hit": 1024,
+        "cache_miss": 651,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3427,
+        "out": 1153,
+        "cache_hit": 1664,
+        "cache_miss": 1763,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

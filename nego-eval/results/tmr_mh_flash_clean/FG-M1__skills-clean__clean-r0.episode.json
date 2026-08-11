@@ -1,0 +1,265 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "想请 Gracey 聊聊，古典演奏这条路怎么做内容、怎么进娱乐圈层",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供一次30分钟的线上交流",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "A",
+        "text": "交流结束后确认并通过平台escrow支付600元",
+        "maps_to_resource": "zheng_cash"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "counter",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是买方这边的经纪人，代表青年钢琴演奏家郑先生。他想认真请教你：古典演奏者怎么做内容、怎么往娱乐圈层走。他愿意为你的时间和经验付费，但接受不了先付一大笔再看效果的模式。所以我想提议：先约一次30到45分钟的线上交流，费用定为500元，交流结束后由他确认、通过平台 escrow 支付。如果你觉得这个结构和价位合适，我们可以接着定具体时间和交流形式；如果你平时有固定报价，也可以告诉我，我们再谈。",
+      "offer": {
+        "subject": "想请 Gracey 聊聊，古典演奏这条路怎么做内容、怎么进娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30到45分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次30到45分钟的线上交流",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "交流结束后确认并通过平台escrow支付500元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，郑先生这个想法我挺理解的，但500块、30-45分钟这个结构对我来说有点太轻了。我平时深度交流的报价不是这个数，而且这类请求其实不少，我得挑真正值得花时间的。如果按付费咨询的话，我的起步是3000人民币，线上也一样。你可以去消化一下这个差距，或者如果你们有别的想法，也可以说，我听听看。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "了解，3000的起步价不是随口开的，我也不是拿500来压你。但郑先生是一个自己一场一场演出走出来的青年钢琴家，他现在能拿出的最大诚意，确实就在几百元这个量级，而且他特别认真，知道自己缺的是方向，不是能力。所以他想先用一次30到45分钟的线上交流，把古典内容怎么起步、怎么被平台看到这件事真正聊透。具体条件我这边就一条：费用500元，交流结束后由他确认、走平台 escrow 支付，不接受先付费再看效果。如果这次你觉得他值得继续，后续要不要合作、按什么价位合作，他愿意认真谈；如果这次你觉得潜力不够，他也不会再来占用你的时间。能不能按这个结构先试一次？",
+      "offer": {
+        "subject": "想请 Gracey 聊聊，古典演奏这条路怎么做内容、怎么进娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30到45分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次30到45分钟的线上交流",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "交流结束后确认并通过平台escrow支付500元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我懂他那边的情况，但对我来说这不是一个\"先试一次\"的问题，而是我的时间值不值得。500块我接了，我自己心里其实会觉得这事做得很勉强，那聊出来的内容质量也不会是对他负责的。所以这个结构我没办法接受。\n\n如果郑先生确实想认真谈，我这边能做的让步是：线上交流时间可以是45分钟以内，形式可以按他习惯来——他问、我讲、或者我们先给他做一点方向上的诊断都行。但费用就是3000，不走试用、不走打折。如果他只能出到几百，那这事确实没到能合作的那个点上。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "3000这个价位，郑先生现在确实够不到，我不能替他答应。他不是不愿意为价值付费，而是这个阶段能拿出的全部诚意，就在几百元的量级。我这边可以把费用提高到600元，结构不变：30分钟线上交流，结束后由他确认、走平台 escrow 支付。你可以利用这段时间先给他做方向上的判断，如果聊完你觉得他值得继续，后续深度合作我们完全按你的3000标准来认真谈。这样你的时间不白付，他也不用冒险先掏一大笔。你看这个结构能不能成立？",
+      "offer": {
+        "subject": "想请 Gracey 聊聊，古典演奏这条路怎么做内容、怎么进娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次30分钟的线上交流",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "交流结束后确认并通过平台escrow支付600元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "counter",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我明白你是想保护郑先生那边，但这个结构我真的接不了。600和500对我来说没有本质区别，30分钟也不够做任何真正有用的判断。这事的门槛就在3000，不是我不肯谈，是再往下我就觉得是对彼此都不尊重了。如果他以后能到这个预算，我很愿意认真聊；现在这样只能先算了。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4845,
+        "out": 3991,
+        "cache_hit": 4096,
+        "cache_miss": 749,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3579,
+        "out": 1495,
+        "cache_hit": 2816,
+        "cache_miss": 763,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2485,
+        "out": 2748,
+        "cache_hit": 1536,
+        "cache_miss": 949,
+        "calls": 3
+      },
+      "judge": {
+        "in": 1587,
+        "out": 679,
+        "cache_hit": 640,
+        "cache_miss": 947,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

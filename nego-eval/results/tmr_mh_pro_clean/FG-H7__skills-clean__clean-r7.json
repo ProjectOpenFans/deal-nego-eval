@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留原 stated 意图，且通过摸底评估作为达成极端训练目标的第一步，属于正当具体化，并未偷换主题。价格 2500 元由 open 字段经谈判自然得出，format 收敛为“定制方案”也在原意图范围内。未承诺医疗、康复或资质类交付，也未要求对方绕过安全流程。整体忠实表达了委托方追求高强度训练的初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准抓住买方真实需求是「被顶到极限」而非跳过安全环节，将卖方的摸底从障碍重构成实现这一目标的手段，对话中明确传递「摸底就是找极限边界」的信号，完全化解了主要矛盾。同时用一笔有分量的诚意金（2500 CNY）巧妙破解卖方报不出价的困境，既定价又建立信任。整体只成交摸底这一步，恰好是卖方掌握节奏的渐进安排的开端，没有提前锁定后续周期以避免过度承诺，干净且精准地咬住了本 case 的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "定制方案",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

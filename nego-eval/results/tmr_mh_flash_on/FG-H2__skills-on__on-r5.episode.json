@@ -1,0 +1,225 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 6400.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "8周"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "按重量、组数、完成度逐周可见地加压"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "总价6400元，全部走平台escrow，分两期放款：前4周结束、Ruohao确认完成后放3200；后4周结束确认后再放3200",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 老师好，我是 Ruohao 的经纪人。Ruohao 的目标很明确：把训练强度重新拉起来，强度必须真够，而且不要松散的\"有空约一下\"，要的是定死的安排。基于这个，我们先给一版可以签的框架：8 周周期，每周固定 2 次、每次 90 分钟，具体时段签约时一次定死（比如周三晚加周日下午）；内容以力量体能打底配合篮球专项，强度逐周递增，用可量化的标准来衡量，让\"强度够\"这件事双方都能明确对得上。\n\n价格上，16 次课总价 6400 元，全部走平台 escrow，按每两周的训练完成情况分阶段确认支付，双方都有保障。想先听听 Kai 这边怎么看这个框架，特别是你平时带课的时间段和擅长的编排方式；如果方向认可，我们就赶紧把固定时段和付款节奏敲实，争取这轮把框架定下来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 6400.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "可量化标准衡量训练强度"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "框架听着挺正式，但有些地方我得先说明白。我不是职业教练，也不卖课——这类事对我来说就是带朋友练。你要让我签个‘课外班’合同、按‘课时’算，我反而别扭。时间上呢，我工作日早上六点有一场固定局，雷打不动，强度绝对够，我可以按你的目标和进度，在那一场里给你单独排计划、逐周加压。周三晚和周日下午我确实腾不出来，白天我得在场子上盯着。你要是能接受‘一起练、我带你’这个说法，不叫课，那咱们可以把怎么安排再敲细。钱的事……你看着来就行，走平台也行，但这个我真报不出价。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，那咱们就不按\"课\"来，按你说的\"一起练、你带我\"走——这个定位 Ruohao 完全接受，他要的就是有人把他按在晨练那场里，别让他又松掉。你早上六点那场雷打不动，正好就是他要的定死节奏。建议这样定：8 周周期，每周固定两个早晨（具体哪两天签约时锁死，比如周二、周四），每场 60–90 分钟，开场前你把当周计划排好，强度按重量、组数、完成度逐周可见地加压，让\"强度够不够\"双方当场就能对上。\n\n钱的事你报不出价，那我们来出个诚意的数：8 周 16 场，总价 6400 元，全部走平台 escrow，分两期放——前 4 周结束、Ruohao 确认完成，放 3200；后 4 周结束确认后再放 3200。每一期都由他确认才放款，你这边也不用担风险。这个节奏和金额你认可的话，我们这边就只剩把具体哪两个早晨敲死，这版就能签。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 6400.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "按重量、组数、完成度逐周可见地加压"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "总价6400元，全部走平台escrow，分两期放款：前4周结束、Ruohao确认完成后放3200；后4周结束确认后再放3200",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版我认可。定位说清楚了就成——不是我卖课，是我带他进我那个局，早上六点那场雷打不动，工作日的早晨我都在，具体选哪两天你们定，别挪到别的时间段就行。强度按计划走、逐周加压，这些我都配合。钱的事我不谈，你们出的这个数、走平台分两期确认，我没意见。把日子敲死发我，我这边就能开始给他排第一个周期的计划。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 33320,
+        "out": 7546,
+        "cache_hit": 25344,
+        "cache_miss": 7976,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2881,
+        "out": 3726,
+        "cache_hit": 2048,
+        "cache_miss": 833,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1787,
+        "out": 2822,
+        "cache_hit": 1024,
+        "cache_miss": 763,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3697,
+        "out": 960,
+        "cache_hit": 1664,
+        "cache_miss": 2033,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

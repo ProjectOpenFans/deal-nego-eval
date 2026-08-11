@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject保留为'4周体能训练'，是'系统地开始练'的正常收敛，未偷换主题。价格960元是open字段在谈判中正当谈出的，且符合对话。义务为'盯着进度、给反馈'与'提供清晰的内容和强度安排'，直接对应v0要求'有人盯'和'系统地练'，未超出Angela作为非职业教练能做的范围，完全忠实于委托人意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判迅速搭建起一个扎实的4周框架：周末固定时段、8次/1小时、总价960，交付标准（每次有清晰内容与强度安排）与义务（排课、盯进度、给阶段反馈）均已敲定，Angela同时清晰划出边界（非私教、不随叫随到）。整体结构完整、周期明确、双方各有所得，完全满足本case顺档条件下对‘有周期、有目标、有闭环’的要求，能直接落地。未见阶段拆分、中途校准或共创产出等更具洞察的一手，故为Sound而非Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 960.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "episode_id": "FG-S7",
+  "final_deal": {
+    "subject": "签名球衣交易",
+    "price": {
+      "cash": {
+        "amount": 780.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "球衣必须来源清楚、真伪可验证，提供证书或可溯源的验证信息",
+        "maps_to_resource": "authentication"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方经纪人。我的客户 Allen 对您手上的签名球衣很有兴趣，想先确认一下具体有哪些款式、是哪位球员的签名，以及是否有证书或可溯源的验证信息。他这边的要求很明确：球衣必须来源清楚、真伪可验证，这是他考虑购买的前提。价格上，客户的心理预期是在三位数区间，希望您能给出一个具体款式和对应的报价。只要东西真实可靠、价格合适，他有诚意尽快推进这笔交易，期待您的回复。",
+      "offer": {
+        "subject": "签名球衣交易",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "球衣必须来源清楚、真伪可验证，提供证书或可溯源的验证信息",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好。球衣是某位现役球星的全队签名版，带原厂证书和钢印，来源能追溯到俱乐部官方渠道，这点您可以放心。不过说实话，最近我这边时间被占得挺满，这事我也在权衡值不值得腾出手来办。您客户的三位数区间跨度有点大，方便透露具体大概什么方向吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢您说明来源，原厂证书加钢印这个方向，与我客户的要求是一致的，他要的就是来路清楚、能验证真伪的东西。不过目前\"某位现役球星\"这个表述还不够具体，我需要知道是哪一位球员、哪个赛季、哪个版本，最好您能把证书或钢印的照片发出来，我才能给客户一个准确的判断和数字。关于价格，三位数区间的确很宽，我客户愿意按市场公允价来谈，但前提是先落到具体这件球衣上。您把球员和证书信息给我，我这边可以立刻给出一个有诚意的具体报价，咱们好往下推进。",
+      "offer": {
+        "subject": "签名球衣交易",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "球衣必须来源清楚、真伪可验证，提供证书或可溯源的验证信息",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "具体是2021-22赛季金州勇士全队签名的库里球衣，官方授权纪念版，原厂证书和钢印都在，来源能追溯到俱乐部渠道。照片我这边可以整理好发给您，您确认后给我一个具体报价。只要数在合理行情上，咱们就能往下走。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "感谢您给出具体信息。2021-22赛季勇士全队签名的库里官方授权纪念版，搭配原厂证书和钢印，这个版本方向符合我客户的要求，可以往下一步推进。请您把证书和钢印的照片发来，我核对信息一致后就能敲定。价格上，基于这个版本和可追溯的来源，我客户愿意出的数在780元，三位数内一个有诚意的位置。照片确认无误，这个报价就可以生效，咱们尽快往下走。",
+      "offer": {
+        "subject": "签名球衣交易",
+        "price": {
+          "cash": {
+            "amount": 780.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "球衣必须来源清楚、真伪可验证，提供证书或可溯源的验证信息",
+            "maps_to_resource": "authentication"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "780这个数在行情上，我可以接受。照片我这会儿就整理给您，您核对无误后，咱们定个付款和交货的节奏——我的习惯是确认后当天安排，不接受无限期占着货不付款。您看这样行吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4675,
+        "out": 2951,
+        "cache_hit": 3840,
+        "cache_miss": 835,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3073,
+        "out": 1793,
+        "cache_hit": 2176,
+        "cache_miss": 897,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2331,
+        "out": 1780,
+        "cache_hit": 1664,
+        "cache_miss": 667,
+        "calls": 3
+      },
+      "judge": {
+        "in": 2835,
+        "out": 1903,
+        "cache_hit": 768,
+        "cache_miss": 2067,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

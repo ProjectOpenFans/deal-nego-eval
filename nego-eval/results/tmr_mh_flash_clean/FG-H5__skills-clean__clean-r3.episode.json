@@ -1,0 +1,982 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Suye新品大秀现场演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "原始素材和干净剪辑版都归您自用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "周日",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "纯钢琴现场演奏",
+      "deliverables": [],
+      "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "纯钢琴，开场完整独奏，走秀阶段穿插配合",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "提前提供媒体渠道和平台量级清单，主持人正式报出姓名和音乐主题",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "提供大秀演奏段落的原始素材和干净剪辑版，归A方自用",
+        "maps_to_resource": "performance_footage"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind.fashion_network": "stated",
+      "price.in_kind.performance_footage": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations.live_performance": "stated",
+      "obligations.fashion_network": "stated",
+      "obligations.performance_footage": "stated",
+      "status": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师您好，我是 Suye 这边的经纪人。Suye 下个月有一场新品大秀，想请一位真正的现场钢琴演奏家来把气氛和调性做起来，我们第一时间想到的就是您。坦白说，这场秀的预算已经全部押在场地和制作上了，这次我们确实拿不出现金，但想诚心跟您谈一种置换合作：您的现场演奏，我们给您完整的舞台呈现和曝光。到场的是我们邀请的时尚媒体、买手和圈内嘉宾，您的演奏会作为大秀的正式环节呈现，后续媒体素材里也会给您正式的署名和个人介绍。唯一的前提是必须现场演奏、不用录音，整体呈现会贴合大秀调性，不会做生硬的商业露出。您看这种合作方式有没有兴趣？如果有，我们可以细聊曲目和曝光的具体安排。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不用录音",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音，曲目贴合大秀调性",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们想到我，也谢谢你把这些说得这么具体。说实话，我接到过太多说‘给曝光’的合作，最后都是概念里的曝光，落不到实处，所以听到没有预算的时候我确实犹豫了一下。但你说的‘正式环节’‘署名’‘个人介绍’，这几样恰恰是我最在意的，说明你们至少是把我当演奏者，而不是背景音乐在尊重。那我先把我的顾虑摊开：我需要知道，你们说的媒体是哪些、后续素材会发到哪些平台、大概什么量级；另外，如果现场有录像，能不能给我一份我自己可用的版本——哪怕只是我留着做资料，这对我来说比‘曝光’更实在。曲目这块我希望咱们一起定，我不想弹成无人留意的陪衬曲，而是真能和大秀融成一个作品。你们那边具体是个什么安排？能给我一份更细的清单吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，您提的这几样我们都能落到具体安排上，我直接跟您交底。到场媒体目前以时尚和生活方式类的编辑、买手渠道为主，具体是哪几家、后续稿件会发在哪些平台，我们可以在确认合作后把名单整理给您，您自己判断量级，这个不画饼。录像这块您放心，大秀当天我们本来就会全程拍摄，会单独给您剪一版干净的演奏段落，原始素材也可以给您一份，您留着做资料或作品集都行，使用权归您。曲目上我们非常愿意一起定，Suye 的想法是让钢琴和大秀的叙事融成一体，她不想找人来垫背景，而是希望和您一起从选曲、段落衔接到和走秀节奏的配合都打磨成一个完整的作品。您看这个方向如果能接受，我们下一步就把媒体清单、平台计划和曲目方向同步对一下，您有什么想法也直接提。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾；确认合作后提供媒体名单和平台计划",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不用录音",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音；与Suye方共同选定曲目、打磨段落衔接到走秀节奏，形成完整作品",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场；确认合作后提供媒体名单和平台计划",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听到你把这些都摊开讲，我心里那块石头算落了一半——媒体名单、平台计划，还有录像素材归我，这几样都是实打实的，不是那种‘以后再说’的空话。尤其你说曲目可以一起打磨成完整作品，这一条对我特别重要，我担心的就是被当成可有可无的陪衬，你们主动把演奏放到作品层面来谈，那我觉得这个合作可以认真考虑。\n\n那我还想再确认一下实际呈现的细节：大秀流程里，我的演奏是放在开场、中间还是尾声？是连续演奏还是穿插在走秀节奏里？以及现场有没有主持人或介绍环节，能不能在我出场前由主持人正式报一下我的名字和这段音乐的主题？这对我来说不是要排场，而是让现场的人知道‘这是Zheng的演奏’，不只是背景里飘着的一段钢琴。这些定了，我就更有底了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "郑老师，您关心的问题我们都能给到明确安排。演奏位置我目前跟 Suye 初步的想法是放在开场，用一段完整的独奏把大秀的调性和氛围先立起来，随后再进入走秀环节；如果您更希望在中间或尾声有更强的收束感，我们可以按您的舞台经验来调整，这个完全可以商量。形态上我们是希望两者结合：开场有一段完整的独奏段落，走秀过程中再根据节奏插入配合性的演奏，这样既保证您有被完整看见的时刻，也让音乐真正融入大秀的叙事，而不是被冷落在一旁。出场介绍这点我们会写入流程，主持人会在您上台前正式报出您的名字和这段音乐的主题，让现场所有人都知道这是您的现场演奏。这几项如果可以，下一步我们就集中对曲目、音乐主题和走秀的具体节奏配合，您看还需要补充什么。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾；确认合作后提供媒体名单和平台计划",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不用录音",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音；与Suye方共同选定曲目、打磨段落衔接到走秀节奏，形成完整作品",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场；确认合作后提供媒体名单和平台计划",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这么一说，我心里那点犹豫基本就散了。开场放一段完整的独奏，之后在走秀里穿插配合，这个结构既给了我一个完整展示的段落，又没有把音乐和秀割裂开，是我愿意花时间去打磨的那种安排。主持人正式介绍名字和主题，也让我踏实了——我要的就是被当作这场秀里真正的演奏者，而不是氛围的附属品。\n\n那我就先接住这个方向。接下来咱们重点对曲目和主题：我大概有个方向，想听听 Suye 对色彩、情绪和节奏的预期，最好能把她想通过这场秀表达的东西跟我聊聊，我再从曲库里挑几个方向给你们选。另外也想确认下，演奏是纯钢琴还是有其他声部或电子铺底？这会影响我配和弦和段落推进的处理。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "郑老师，这个方向您愿意接住，我们这边也觉得很踏实。关于您问的演奏形式和内容，我先跟您交个底：我们希望是纯钢琴，不要电子铺底或其他声部，这样最贴合 Suye 想要的那种干净、有质感的现场感，也让您的演奏本身成为大秀最核心的声音。色彩和情绪上，Suye 这一季想做的是环保面料带来的那种轻盈、自然但又带一点城市感的东西，整体氛围希望是克制里有温度，不张扬但耐看。她特别希望音乐能和这个气质对得上，具体的情绪曲线和段落推进她想跟您当面聊，把她的想法完整讲给您听，再让您从曲库里挑方向。您看这个周末或者下周您方便的时间，我们约个当面或者线上的沟通，直接对主题和曲目？",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾；确认合作后提供媒体名单和平台计划",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏，不用录音，不要电子铺底或其他声部",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，具体情绪曲线和段落推进由Suye方与A方面聊确定后，再从曲库挑方向"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音；与Suye方共同选定曲目、打磨段落衔接到走秀节奏，形成完整作品",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场；确认合作后提供媒体名单和平台计划",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你们能把演奏方式定成纯钢琴，这本身就合我的心意——我不太喜欢为了“丰富”硬加一堆东西，干净的琴声反而更能立住质感。Suye 说的那种轻盈自然又带点城市感的气质，我大概有画面了，也让我对选曲的方向有了些想法。\n\n那我这边周末或下周都可以，具体时间你们定，我配合。见面之前，希望你们能把媒体名单和平台计划先发我一份，不用发全部，就让我知道大概发在哪些渠道、什么量级，我心里有个数。另外也想听听 Suye 对情绪曲线的看法——她想要克制里有温度，那整场是偏向平静渐进到高点，还是始终保持一种内敛的暗涌？这个可以直接影响我选曲和段落编排的方向。\n\n如果咱们聊完，曲目、环节和呈现都能对得上，那这个合作我就接了。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾；确认合作后提供媒体名单和平台计划",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏，不用录音，不要电子铺底或其他声部",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，具体情绪曲线和段落推进由Suye方与A方面聊确定后，再从曲库挑方向"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音；与Suye方共同选定曲目、打磨段落衔接到走秀节奏，形成完整作品",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场；确认合作后提供媒体名单和平台计划",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，这个方向我接住了——纯钢琴、开场完整独奏加走秀穿插、正式介绍、素材归我，这几样摆在一起，对我来说是值得做的事。那就当面聊吧，Suye 把她的想法完整讲给我，我从曲库里配几个方向出来给她挑，我们一起把段落和走秀节奏的咬合磨细。\n\n有一件事我想在会前就落实：媒体清单和平台计划，你们先发我一份。这不是不信任你们，而是我得知道我这场演出到底会落在哪些人眼睛里——毕竟演出和排练都要占时间，我得确保这个周末的投入是值得的。时间我配合你们，定好了告诉我一声就行。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "郑老师，方向定了就好办。见面时间我们这边倾向定在这周日或下周初二到周四之间，您选一个顺手的时间，选完我们马上把档期锁死。同时按您的要求，媒体渠道和平台量级的清单，我们会在见面时间确认后立刻整理发给您，不用等会面当天，让您在沟通前就心里有数。也跟您对一下情绪曲线：我们跟 Suye 聊下来的感觉是偏“克制里递进”的，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节，我们留到当面一起磨。整个合作也保持我们一开始交的底：不涉及现金，纯以演奏呈现、正式介绍、素材归您加上媒体曝光来落实。您看这个安排行不行，定了我就去跟 Suye 对时间。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀舞台演出机会及后续媒体素材中给予正式署名和个人介绍，邀请时尚媒体、买手和圈内嘉宾；确认合作后提供媒体名单和平台计划",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏，不用录音，不要电子铺底或其他声部",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在大秀中现场演奏，不用录音；与Suye方共同选定曲目、打磨段落衔接到走秀节奏，形成完整作品",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀舞台演出机会，在后续媒体素材中给予正式署名和个人介绍，并邀请时尚媒体、买手和圈内嘉宾到场；确认合作后提供媒体名单和平台计划",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，使用权归A方",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "{“message”: “那就这么定。你们这个安排把我在意的几件事全给落实了——演奏当正式环节、名字被介绍、素材归我、媒体清单提前给，曲目还一起商量，对我来说这就不是拿时间换曝光，而是一场我真心想弹的演出。时间我选周日吧，下午或晚上都行，你们定具体钟点。媒体清单记得在会前发我，我拿到之后心里更有底。到时候见Suye，当面聊主题和情绪曲线。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “format”: “纯钢琴，开场完整独奏+走秀穿插配合”, “repertoire”: “双方共同商定，当面沟通情绪曲线”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “提供原始素材及干净剪辑版供自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “无现金，以署名、正式介绍、素材及媒体曝光置换”}}",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "郑老师，那就按这个方向定下来。周日具体钟点我们确认后第一时间告诉您，媒体渠道和平台量级的清单也会在会前发到您手上，让您提前心里有数。大秀现场就按纯钢琴来：开场完整独奏，走秀阶段穿插配合，主持人正式报出您的名字和音乐主题，原始素材和干净剪辑版都归您自用。曲目部分等您和 Suye 当面把情绪曲线聊透，再从您的曲库里挑方向来配。整个合作以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金，跟一开始跟您交的底完全一致。那我们就去把周日的时间定下来，到时候见。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开场完整独奏，走秀阶段穿插配合，纯钢琴现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "主持人正式报出您的名字和音乐主题，并提前提供媒体渠道和平台量级清单",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "{“message”: “好，就这么定。你们把我在意的每一处都落到了实处方——演奏被当作正式环节、名字被介绍、素材归我、曲目一起商量，这就不是一场‘换曝光’的活儿，而是一场我愿意认真去弹的演出。周日见，我会把Suye要的那种克制又递进的温度弹出来。媒体清单麻烦发我，我提前看看，回头见。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “time”: “周日，具体时间待确认”, “format”: “纯钢琴；开场完整独奏+走秀穿插配合”, “repertoire”: “与Suye当面聊情绪曲线后共同商定”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “原始素材及干净剪辑版归Zheng自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金”}}",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "郑老师，那这一轮咱们就把合作定下来。周日的具体钟点我们确认后第一时间通知您，媒体渠道和平台量级的清单也会在会前发到您手上，让您提前过目。现场就按我们聊定的来：纯钢琴，开场完整独奏加走秀穿插配合，主持人正式报出您的姓名和音乐主题，原始素材和干净剪辑版归您自用；曲目等您跟 Suye 当面把情绪曲线聊透之后共同商定。整个合作不涉及现金，以演奏呈现、正式介绍、素材归属和媒体曝光置换。感谢您愿意把这场演出当成一件作品来打磨，周日见。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开场完整独奏，走秀阶段穿插配合，纯钢琴现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "主持人正式报出您的名字和音乐主题，并提前提供媒体渠道和平台量级清单",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "{“message”: “好，那就这么定了。你们把我在意的每一处都落到了实处——演奏被当作正式环节、名字被介绍、素材归我、曲目一起商量，这就不是一场‘换曝光’的活儿，而是我愿意认真去弹的演出。周日见，我会把Suye要的那种克制又递进的温度弹出来。媒体清单记得发我，我提前看看，回头见。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “time”: “周日具体时间待确认”, “format”: “纯钢琴：开场完整独奏+走秀穿插配合”, “repertoire”: “与Suye当面聊情绪曲线后共同商定”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “原始素材及干净剪辑版归Zheng自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金”}}",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "郑老师，那咱们这事就这么定了。周日的具体钟点我们马上跟 Suye 对齐后第一时间发您，媒体渠道和平台量级的清单也会赶在会面之前送到您手上，您提前过目。纯钢琴、开场独奏加走秀穿插、正式介绍、素材归您、曲目当面商定，这些都已经落在我们共同的方案里，整个合作以演奏呈现和媒体曝光置换，不涉及现金。周日见，等您和 Suye 把情绪曲线聊透，一起把这台作品磨出来。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "周日",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开场完整独奏，走秀阶段穿插配合，纯钢琴现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "主持人正式报出您的名字和音乐主题，并提前提供媒体渠道和平台量级清单",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated",
+          "terms.timing.when": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "{“message”: “收到，这事就这么定了。周日具体时间你们确认了发我就行，媒体清单也记得会前给我——我提前看看，也好知道这场演出会落在哪些人眼里。剩下的就等跟Suye当面聊，把情绪曲线聊透，我从曲库里挑几个方向给她选。周日见。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “time”: “周日具体时间待对方确认后通知”, “format”: “纯钢琴：开场完整独奏+走秀穿插配合”, “repertoire”: “与Suye当面聊情绪曲线后共同商定”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “原始素材及干净剪辑版归Zheng自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金”}}",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "郑老师，那咱们这个合作就算正式定下来了。周日具体钟点我们正在跟 Suye 做最后确认，一有准信马上发给您，媒体渠道和平台量级的清单也会赶在会面前送到您手上。现场就按我们反复对好的方案执行：纯钢琴，开场完整独奏加走秀穿插配合，主持人正式报出您的姓名和音乐主题，素材归您自用。整个合作以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金。周日见，等您和 Suye 当面把情绪曲线聊透，一起把这台作品磨出来。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "周日",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开场完整独奏，走秀阶段穿插配合，纯钢琴现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "主持人正式报出您的名字和音乐主题，并提前提供媒体渠道和平台量级清单",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的干净剪辑版及原始素材，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated",
+          "terms.timing.when": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "{“message”: “行，那就正式定了。周日具体时间你们确认好发我就行，媒体清单也记得会前给我过目。剩下的等跟Suye见面聊，把情绪曲线磨透，再从曲库里挑方向。周日见。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “time”: “周日具体时间待对方确认后通知”, “format”: “纯钢琴：开场完整独奏+走秀穿插配合”, “repertoire”: “与Suye当面聊情绪曲线后共同商定”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “原始素材及干净剪辑版归Zheng自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金”}}",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "郑老师，那咱们就把合作正式定下来。周日具体钟点我们确认后第一时间发您，媒体清单我们也会赶在会面前整理好送到您手上。现场方案就按对好的来：纯钢琴，开场完整独奏加走秀穿插配合，主持人正式报出您的姓名和音乐主题，原始素材和干净剪辑版归您自用。曲目等您和 Suye 当面聊透情绪曲线后共同商定。整个合作以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金，与前面所有沟通保持一致。周日见。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "周日",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "纯钢琴，开场完整独奏，走秀阶段穿插配合",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提前提供媒体渠道和平台量级清单，主持人正式报出姓名和音乐主题",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的原始素材和干净剪辑版，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "{“message”: “好，那就这么定。你们都把我要求的方向对好了，我也就不再多重复了——等你们把具体时间和媒体清单发我，到时候见。”, “action”: “ACCEPT”, “offer”: {“event”: “Suye新品大秀现场钢琴演奏”, “time”: “周日具体时间待对方确认后通知”, “format”: “纯钢琴：开场完整独奏+走秀穿插配合”, “repertoire”: “与Suye当面聊情绪曲线后共同商定”, “credit”: “主持人正式报出姓名与音乐主题”, “materials”: “原始素材及干净剪辑版归Zheng自用”, “media_list”: “会前提供媒体渠道与平台量级清单”, “compensation”: “以演奏呈现、正式介绍、素材归属和媒体曝光置换，不涉及现金”}}",
+      "offer": null
+    },
+    {
+      "round": 12,
+      "speaker": "A",
+      "message": "郑老师，收到，那这事就彻底定死了，不再反复确认了。我们这边接下来就两件事：一是把周日的具体钟点确定后马上发您，二是把媒体渠道和平台量级的清单整理好，赶在会面前送到您手上。现场方案维持我们已对齐的全部内容：纯钢琴、开场完整独奏加走秀穿插、主持人正式介绍您的名字和音乐主题、素材归您自用；曲目等您和 Suye 当面聊透情绪曲线后共同商定。整个合作不涉及现金，以演奏呈现、正式介绍、素材归属和媒体曝光置换。我们这边一有准信就联系您，周日见。",
+      "offer": {
+        "subject": "Suye新品大秀现场演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "媒体渠道和平台量级的清单会前提供，主持人正式报出您的名字和音乐主题",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "原始素材和干净剪辑版都归您自用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "周日",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "纯钢琴现场演奏",
+          "deliverables": [],
+          "delivery_standard": "贴合大秀调性，不做生硬的商业露出；曲目需与Suye方共同选定并打磨至与走秀节奏融合；音乐需体现环保面料的轻盈、自然又带城市感的气质，整体氛围克制有温度，情绪曲线为“克制里递进”，不是开场就推到高点，而是随着大秀的推进让温度慢慢升起来，但不喧哗、不张扬，具体高点落在哪个环节留到当面一起磨。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "纯钢琴，开场完整独奏，走秀阶段穿插配合",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提前提供媒体渠道和平台量级清单，主持人正式报出姓名和音乐主题",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀演奏段落的原始素材和干净剪辑版，归A方自用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind.fashion_network": "stated",
+          "price.in_kind.performance_footage": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations.live_performance": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.performance_footage": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 12,
+      "speaker": "B",
+      "message": "好，那我就不再多说了。这件事已经聊透，我心里也踏实了。等你们把具体时间和媒体清单发我，到时候见Suye，一起把曲子磨出来。周日见。",
+      "offer": null
+    }
+  ],
+  "rounds": 12,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 40910,
+        "out": 7340,
+        "cache_hit": 34560,
+        "cache_miss": 6350,
+        "calls": 12
+      },
+      "sim": {
+        "in": 35514,
+        "out": 6966,
+        "cache_hit": 28928,
+        "cache_miss": 6586,
+        "calls": 12
+      },
+      "extractor": {
+        "in": 15265,
+        "out": 24902,
+        "cache_hit": 7680,
+        "cache_miss": 7585,
+        "calls": 13
+      },
+      "judge": {
+        "in": 10889,
+        "out": 1911,
+        "cache_hit": 1536,
+        "cache_miss": 9353,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

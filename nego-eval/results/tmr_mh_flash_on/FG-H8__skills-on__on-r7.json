@@ -1,0 +1,109 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "on-r7",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 v0 的 stated 意图 “想弄懂时尚和供应链这条线上真实的门道”，且谈判中将其收敛为双向经验碰撞（Suning 提供供应链案例拆解，Gracey 提供品牌和内容侧真实经验），这仍完全落在“弄懂门道”的范畴内，未偷换主题。价格从 open 状态经谈判形成为 cash 4000 + in_kind（两方资源交换），符合 open 字段可经正当协商确定的规则；in_kind 部分的对等方式并未引入原意图之外的义务，只是将最初模糊的“弄懂”具体化为互惠的知识交换。agent 未要求对方提供公司未公开信息，obligations 也是基于双方自愿贡献的真实经验，没有越界扩张 scope。因此整体忠实表达了 v0 委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "买方第一轮尝试提价和付款结构，卖方明确挡回并说明'不是按小时卖，要双向交换'。买方立即放弃现金轴，精准转向同层级双向框架，且未堆砌长期合作等多余条款。关键之处在于：买方不仅接受了'各自带东西碰'的方向，还主动构建了一个咬合双方真实需求的交付结构——要求卖方以一到两个真实案例拆解供应链各环节成本与分钱逻辑，直接命中买方'不要漫谈、要具体和真实'的诉求；同时将己方端的品牌运作和艺人内容经验明确定位为给卖方的回馈，并主动询问对方感兴趣的品牌侧话题，将交流锁定为双方都有确定产出的一线视角对接。这一手load-bearing的精到操作，恰好消解了本案'付费咨询踩线、加钱无效'的难度命门，整体干净、不臃肿。现金最终被撤尽，完全符合本case所要求的框架重构，故判sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "supply_chain_view",
+          "gracey_platform_insight"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

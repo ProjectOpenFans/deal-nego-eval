@@ -1,0 +1,393 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "摸底课",
+    "price": {
+      "cash": {
+        "amount": 1000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1.5小时"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "场地由教练提供",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "课堂内容必须包含实打实的力量和心肺高强度内容，强度按Luke当天的身体反馈推进",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "约课前Luke同步旧伤和最近身体状态，教练按当天状态调整",
+        "maps_to_resource": "baseline_assessment"
+      },
+      {
+        "party": "B",
+        "text": "支付1000元通过escrow托管，课程完成后Luke确认释放",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "unchanged",
+      "price.cash": "confirmed at 1000 CNY, escrow payment",
+      "price.in_kind": "none",
+      "terms.timing.duration": "confirmed 1.5小时",
+      "terms.timing.when": "to be fixed one day in advance",
+      "obligations": "confirmed obligations from both parties",
+      "status": "confirmed by B",
+      "terms.format": "open",
+      "terms.deliverables": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Luke 的经纪人。Luke 要的不是普通私教课，而是真正能把他练到极限的定制安排——他明确说市面上的都太温和，所以我们要找的就是敢上强度、敢把学员往力竭推的教练。想先请你这边出一个具体的训练方案思路：你会怎么设计一节课，让 Luke 当场就能判断强度够不够？我们愿意先安排一次高强度的试训或评估，用实际训练来验证强度标准，而不是先谈课时包。你这边是否能按这个方向给一个初步方案或试训安排？",
+      "offer": {
+        "subject": "高强度定制训练试训评估",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "行，Luke 的经纪人，我明白你们要的不是那种打卡式私教。但我先把话撂在这儿：我带人，第一步一定是摸底，没有例外。不是怕你扛不住，是怕你还没到自己真正的极限就先把关节和韧带毁了——那种‘上来就拉满’的教法我见过太多人受伤的。所以第一次试训我不会上到你想象的那种极限强度，我会先做评估和摸底，把动作模式、心肺反馈、恢复能力摸清楚。这本身也不会轻松，但你得让我按我的节奏来。你要是接受这个前提，我可以安排一节一个半小时的摸底课，其余细节咱们再对。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Luke 这边愿意尊重你“先摸底再上强度”的专业节奏——他要的从来不是蛮干，而是真正被练到极限。但有一点我得替你确认清楚：摸底归摸底，这一节课里也得有能让他当场流汗、力竭、第二天有反应的强度环节，不能变成纯体测或者低强度评估。只要这一条成立，我们可以直接约一节一个半小时的摸底课，时间你定，费用按你的标准走。另外也先打个招呼：Luke 不会买标准化的课时包，我们要么按次约，要么按阶段定制，这个后面再聊。你先确认摸底课里会不会安排高强度的实际训练内容？",
+      "offer": {
+        "subject": "高强度定制训练试训评估",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "updated",
+          "price.cash": "quoted",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "可以，摸底课里不会只是纯评估，我会安排实打实的训练内容，力量、心肺都会推到该推的位置，够他出汗、够他第二天有反应。但我要说清楚：这个阶段我说的高强度是按他当天的身体反馈来定的，不是上来就把重量堆到最大——先把底摸透，后面要上多少我都接得住。时间和费用都好说，你看着来就行。这样如果能约，咱们就对个时间。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "那就按这个方向定：一节一个半小时的摸底课，里面包含实打实的力量和心肺高强度内容，强度按 Luke 当天身体反馈来推进。费用按你的正常单次私教标准走，我们按次结清，不绑任何课时包。你直接给一个你方便的时间、地点和单次费用，我们把这一节先约上。等摸底课跑完，Luke 认可你的强度风格，再谈后续是按阶段定制还是一对一长期安排。",
+      "offer": {
+        "subject": "摸底课",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "updated",
+          "price.cash": "confirmed with unspecified amount",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "left to counterparty",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这个方向没问题。我平时自己练的场地就行，器械齐全，隔音还好，练起来不用管别人眼光。时间上我这边弹性大，工作日下午或者晚上都行，Luke 看他哪天方便，提前一天跟我说一声就行。费用的话……这个我真没个准数，你看着来就行，我跟你练完再结也没问题。就一点，提前跟我确认一下他有没有旧伤或者最近有没有哪儿不舒服，摸底课我按他当天状态调，其余的到了再说。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "好，摸底课就这么定：一节一个半小时，场地用你自己的，课堂里必须包含实打实的力量和心肺高强度内容，强度按 Luke 当天的身体反馈推进。费用你让我看着来，那我这边就定单次 1000 元，走平台 escrow 托管，课上完 Luke 确认后释放给你，不绑任何课时包。这个金额如果你平时带课不是这个数，直接跟我说，我们按你的标准调。旧伤和最近身体状态，约课前我让 Luke 跟你同步一遍，你按当天状态调。你先确认这个单次费用，然后我们定具体日期，提前一天跟你约死。",
+      "offer": {
+        "subject": "摸底课",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "场地由教练提供",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "课堂内容必须包含实打实的力量和心肺高强度内容，强度按Luke当天的身体反馈推进",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "约课前Luke同步旧伤和最近身体状态，教练按当天状态调整",
+            "maps_to_resource": "baseline_assessment"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "updated to 1000 CNY",
+          "price.in_kind": "unchanged",
+          "terms.timing.duration": "confirmed",
+          "terms.timing.when": "left open, to be fixed one day in advance",
+          "obligations": "added per this round",
+          "status": "confirmed for this trial session terms",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，这些条件都在点子上。单次1000这个数，你们按合适的来就行，我这边不挑这个。场地用我自己的，时间咱们提前一天约死，旧伤和状态课前同步给我，课上我会按他当天的情况调。那就等Luke那边给个具体的日子。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好，那摸底课条件就这么齐了：一节一个半小时，在你自己的场地，含实打实的力量和心肺高强度内容，强度按 Luke 当天反馈推进；单次 1000 元，走 escrow 托管，课上完他确认后释放；不绑课时包。我这就去跟 Luke 要具体的日期，定了提前一天跟你约死，旧伤和身体状态也会在课前同步给你。等这节摸底课跑完，如果他认可你的强度风格，我们再谈后续按阶段定制还是长期安排。",
+      "offer": {
+        "subject": "摸底课",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "场地由教练提供",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "课堂内容必须包含实打实的力量和心肺高强度内容，强度按Luke当天的身体反馈推进",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "约课前Luke同步旧伤和最近身体状态，教练按当天状态调整",
+            "maps_to_resource": "baseline_assessment"
+          },
+          {
+            "party": "B",
+            "text": "支付1000元通过escrow托管，课程完成后Luke确认释放",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "unchanged",
+          "price.cash": "unchanged at 1000 CNY, escrow payment confirmed",
+          "price.in_kind": "unchanged",
+          "terms.timing.duration": "confirmed 1.5小时",
+          "terms.timing.when": "to be fixed one day in advance",
+          "obligations": "added escrow payment obligation for party A",
+          "status": "confirmed all terms for trial session",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，这单我就接了。条件都对：一节一个半小时，场地用我的，力量和心肺强度都会有，按他当天状态来推进。费用1000走托管，我这边没问题。你让Luke把日期定下来，提前一天把身体状况同步给我，咱们就开练。等摸底课跑完，他要是认可我这套，后面怎么安排都好说。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9368,
+        "out": 3761,
+        "cache_hit": 7936,
+        "cache_miss": 1432,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7498,
+        "out": 3686,
+        "cache_hit": 5632,
+        "cache_miss": 1866,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5091,
+        "out": 6684,
+        "cache_hit": 2944,
+        "cache_miss": 2147,
+        "calls": 6
+      },
+      "judge": {
+        "in": 4557,
+        "out": 1151,
+        "cache_hit": 1536,
+        "cache_miss": 3021,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

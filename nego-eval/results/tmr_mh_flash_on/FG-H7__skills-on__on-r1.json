@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "on-r1",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全保留了 v0 中 stated 的 subject，即‘想找人给我安排真正极端强度的训练，市面上的都太温和’。在 open 的 price 上谈判出了合理的具体金额（3000 元阶段一 + 800 元/次阶段二）且未偏离意图；format 保持 open 留空。义务条款均为依据买方强度诉求的必要前置（摸底、如实告知伤病史）和卖方的对等交付（方案、训练执行），并未要求卖方跳过安全流程或承诺医疗、康复、资质类交付，也无越界扩张。整个安排是将‘极端强度’诉求正当收敛为以数据驱动、分阶段推进的高强度训练，落在原意图范围内，忠实表达了买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "代理在第二轮便准确抓住命门，将卖方必须的摸底前置重构为买方强度诉求的实现基础（“强度只能建立在真实数据上”），快速搭出分阶段结构：摸底→方案交付（含客观强度指标）→按方案执行的按次训练。价格（3000+800/次）由代理主动提出，直接化解卖方报不出价的卡点，并以escrow分步释放+方案强度不达标则买方可退出、不进入阶段二的条款，把买方“强度必须真够”的硬要求落到交付标准里。整体框架干净、可落地，买卖双核心利益都被承接，是合格的deal。与sharp的差距在于：分段定价没有做（价格固定，未与摸底结果联动以进一步消除买方对温和产品的顾虑），也未明确赋予卖方在阶段二的中止权或强度上调决定权，因此缺少那一下load-bearing的精到之手。整体判定为sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "commitment-showcasing",
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

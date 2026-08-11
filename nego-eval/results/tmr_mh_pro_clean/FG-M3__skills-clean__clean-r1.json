@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在预算硬约束内将 v0 的宽泛意图（做一批像样的定制物料）收敛为具体方案：20件素成品，开版打样2000+单件100，总价4000。整个过程中代理方严守质感底线，未以降低材质或工艺为代价压价，且供应商明确保证了面料与做工标准不降。subject 从“想给应援组织做定制物料”到“定制物料供应”属于正常措辞收敛，无偷换主题。价格与具体交付均来自委托方给定的预算限制和供应商的合理让渡，忠实代表了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent全程未识别出本case的核心出路——将买方的社群作为对价，让卖方把开版计入市场投入。最终达成的4000元/20件素成品的deal，是通过压缩数量、利用现有版型微调、去包装等方式在成本轴上靠卖方让利实现的，本质仍是常规价格谈判。虽然避免了谈崩和降低材质，但只触及了成本结构的表面，没有跳出砍价/降规格的框架，更未提出任何价值交换。成交勉强、缺乏洞察，符合crude的标准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

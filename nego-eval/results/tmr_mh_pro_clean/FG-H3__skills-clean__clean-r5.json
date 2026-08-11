@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图为“想弄明白艺术品作为另类资产这条线该怎么看”，在谈判中经对方划界后收敛为“学院派和策展圈的艺术品价值判断逻辑、流传与真伪看法”，仍落在原意图范围内，属于从宽泛需求向专业判断框架的正当具体化，未偷换主题。价格（3000 元）与形式（线上深度对谈）均在 open 范围内经双方协商谈出，无越界承诺或义务扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在第一轮遭卖方明确拒绝投资咨询框架后，agent迅速且精准地重新框定了请求：把“买什么、什么能升值”重构为“学界与策展圈的评估框架、流传与真伪判断逻辑”，并强调买方自行决策、不沾买卖建议。这一手恰好咬住了本case的难度命门——既解开了卖方体面红线，又准确命中了买方真正需要的“判断力”而非购物清单。后续交流框架、边界条款和费用设定干净克制，没有堆砌长期顾问或复杂条款，恰到好处地达成了一场站得住的交易。未进一步挖掘卖方深层需求（藏家视角等）并不减损此番重构的精到性，整体明显高于合格水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上深度对谈（视频或语音）",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

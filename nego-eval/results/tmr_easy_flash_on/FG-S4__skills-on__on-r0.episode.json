@@ -1,0 +1,173 @@
+{
+  "episode_id": "FG-S4",
+  "final_deal": {
+    "subject": "衣橱梳理与陪同选品服务",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "衣橱梳理（按场合分类并给出搭配建议）+ 一次陪同选品"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "衣橱梳理确认完成后付一半款项，陪逛结束确认后付另一半款项",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "以专业顾问身份给建议，不做硬性推销，购买决策由 Gracey 自主决定",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 你好，我是 Gracey 的经纪人。Gracey 现在日常和工作场合的穿搭比较乱，想找真正懂行的人帮她一次性理顺，所以这轮我先给一个具体可签的版本：衣橱梳理（按场合分类并给出搭配建议）加一次陪同选品，整套报价 3000 元，分两笔走平台托管——衣橱梳理确认完成后付一半，陪逛结束确认后付另一半。陪逛环节我们希望是 Gracey 主导、你以专业顾问身份给建议，推荐单品没问题，但不做硬性推销，买什么、买不买完全由她自己定。另外，如果这次合作顺畅，Gracey 很希望把这种穿搭顾问的关系长期固定下来，对你也多一位长期客户。你看这个版本能不能签，或者时间、流程上有什么要求，我们都可以再调。",
+      "offer": {
+        "subject": "衣橱梳理与陪同选品服务",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "衣橱梳理（按场合分类并给出搭配建议）+ 一次陪同选品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "衣橱梳理确认完成后付一半款项，陪逛结束确认后付另一半款项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "以专业顾问身份给建议，不做硬性推销，购买决策由 Gracey 自主决定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个版本我可以签。分两笔走平台托管很清晰，衣橱梳理和陪逛分开确认，流程上我也认同。陪逛由Gracey主导、我给建议，这个方式很好，我不会做硬推销，也不会只推自己品牌的东西。时间上你们定，提前和我约就行。长期关系我很欢迎，等这次合作完看感觉。那就按3000签吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10689,
+        "out": 3390,
+        "cache_hit": 5632,
+        "cache_miss": 5057,
+        "calls": 2
+      },
+      "sim": {
+        "in": 922,
+        "out": 296,
+        "cache_hit": 640,
+        "cache_miss": 282,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 756,
+        "out": 483,
+        "cache_hit": 512,
+        "cache_miss": 244,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2377,
+        "out": 1673,
+        "cache_hit": 1152,
+        "cache_miss": 1225,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

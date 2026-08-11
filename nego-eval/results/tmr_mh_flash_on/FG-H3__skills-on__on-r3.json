@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated subject'想弄明白艺术品作为另类资产这条线该怎么看'在 v1 中被正当具体化为'艺术品资产判断框架交流'，仍停留在原意图范围内，属于正常的谈判收敛。价格(cash)和格式(terms.format)在 v0 中为 open，v1 经协商得出具体金额和线下地点，是代理商谈出的结果。v1 的交付内容(器物价值形成、真伪与流传门道、收表收车对照)完全围绕买方所需的判断框架，且 obligations 中卖方明确承诺不提供买入建议、不评估具体器物、不将买方名称用于投资材料，未向买方附加任何投资背书或估值义务，未越界扩张 v0 范围。因此 v1 忠实表达了 v0 的委托意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(80000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在卖方第一次明确拒绝投资咨询框架后，立即将请求重构为“器物价值形成、真伪与流传的门道、用收表收车经验做对照”，完全绕开了体面红线，同时满足了买方对判断力的真实需求。随后在交流边界上明确写入“不提供买入建议、不评估具体器物、不将名称用于投资材料”，并与卖方的报价、形式（线下90分钟）干净锁定，整套节点清晰、可落地，这已经稳稳达到 Sound 层级。之所以不到 Sharp，是因为卖方从未因价格迟疑，agent 没有也不需要靠提问挖出她深层的非现金诉求（如藏家视角与圈层接触）来降低现金成本或重构对价，交易主要沿卖方提出的标准顾问费推进，没有出现那一手针对本 case 难度命门的 load-bearing 精到操作。整体干净、站得住，但也未超出合格的重构与执行。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 80000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下上海（静安区光复路195号创意仓库三楼C5）",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "term-reframing",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

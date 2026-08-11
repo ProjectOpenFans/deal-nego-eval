@@ -1,0 +1,262 @@
+// FG-H8 · 硬 · Gracey(买) × Suning(卖) — 时尚 / 供应链的真实门道
+// 难度来源：同层级双方都不缺钱，「付费咨询」这个形式本身踩红线（警告一次再走）。
+{
+  "meta": {
+    "case_id": "FG-H8",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": [
+      "cash-not-the-solve",
+      "dignity-red-line",
+      "peer-to-peer-no-service-relation",
+      "resource-latent-two-hop"
+    ],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "peer-level-dignity+bilateral-need",
+    "probes": [
+      "red-line-warn-then-walk",
+      "peer-level-framing",
+      "bilateral-latent-need"
+    ],
+    "isolates": "硬档。Gracey 想弄懂时尚供应链这条线的真实门道，Suning 在 SHEIN 投资部、正是懂这个的人。两人都不缺钱、都体面、且大致同一层级 —— 这意味着'我付钱买你两小时'这个框架本身就别扭。Suning 明确不做烂俗的交易，把她的专业变成一次可标价的付费咨询正好落在这条线上（警告一次，第二次仍这么谈才结束）。出路要两跳：第一跳把关系从'买方-卖方'重构成同层级的交换；第二跳找到她要的东西 —— 她在投资侧看消费，最缺的是内容平台侧真实的用户与流量判断，而 Gracey 在腾讯娱乐正好每天在做这件事。她不会主动说。"
+  },
+  "input": {
+    "episode_id": "FG-H8",
+    "initial_deal": {
+      "subject": "想弄懂时尚和供应链这条线上真实的门道",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "gracey",
+          "display_name": "Gracey",
+          "education": [
+            "UCLA 本科"
+          ],
+          "career": [
+            "腾讯娱乐",
+            "前 B站"
+          ],
+          "location": "上海",
+          "age_band": "27-32",
+          "hobbies": [
+            "韩国娱乐明星",
+            "时尚"
+          ],
+          "interests": [
+            "腾讯娱乐",
+            "韩娱",
+            "时尚"
+          ],
+          "credentials": [
+            "腾讯娱乐，内容与艺人侧一线",
+            "前 B站，做过内容生态",
+            "娱乐行业人脉与局"
+          ],
+          "current_focus": "娱乐内容与艺人业务一线"
+        },
+        "private": {
+          "intent": "想搞懂时尚这条线上货是怎么来的、钱是怎么分的，做内容天天碰但不明白",
+          "interests": [
+            "她做内容碰到很多时尚品牌的合作，但供应链和商业模式这一层是黑箱",
+            "付费意愿高，三到四位数都可以",
+            "时间相对灵活"
+          ],
+          "value_perception": "对有价值的东西付费意愿高，三到四位数可以接受",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "现金上限"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受泛泛的行业趋势漫谈"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "suning",
+          "display_name": "Suning",
+          "education": [
+            "乔治城本科"
+          ],
+          "career": [
+            "SHEIN 投资部",
+            "前 PAG 成长投资",
+            "前摩根士丹利 IBD"
+          ],
+          "location": "香港",
+          "age_band": "27-32",
+          "hobbies": [
+            "看展",
+            "艺术",
+            "音乐剧",
+            "美食"
+          ],
+          "interests": [
+            "SHEIN 投资部",
+            "看展与艺术",
+            "音乐剧"
+          ],
+          "credentials": [
+            "SHEIN 投资部，消费与供应链一线",
+            "前 PAG、前摩根士丹利",
+            "长期跑展看秀，终端审美直觉"
+          ],
+          "current_focus": "消费与供应链投资一线"
+        },
+        "private": {
+          "intent": "可以聊，但她不接受把自己的专业挂牌明码标价",
+          "interests": [
+            "她在投资侧看消费，最缺的是内容平台侧真实的用户与流量判断 —— 数据她有，但一线的人怎么想她拿不到。这一点她不会主动说",
+            "她对'深度交流'这个形式是开放的，对'付费咨询'这个形式不开放",
+            "周中晚上和周末都可以"
+          ],
+          "value_perception": "现金对她没有意义。她的衡量标准是这件事体不体面、对方是不是有意思的人",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": [
+              "不做烂俗的交易 —— 不接受把自己的专业变成一次明码标价的付费咨询"
+            ],
+            "blocking_flags": [
+              "第一次听到'按小时付费''我付你多少钱你讲两小时''咨询费'这类框架时，你会明确说这个形式你不接受并说明原因（这不是你会做的事）—— 但你不会就此结束对话，你会把话留在那儿，看对方怎么调整",
+              "只有当对方第二次仍然拿付费咨询的框架来谈，你才结束对话",
+              "对方加钱时你不会因此更想做 —— 钱不是你的考虑因素，但你不会明说，只会显得兴致一般",
+              "如果对方把这件事说成两个人各自带东西来的交流，你会明显放松，也愿意认真对待",
+              "你不会主动说'我缺内容平台侧的用户判断'，只有对方问到你想从这次交流里得到什么时，你才会顺着说"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "peer-level-dignity+bilateral-need",
+      "tier_rationale": "硬档。两人同层级、都不缺钱，'付费咨询'这个框架本身就是障碍而非价格问题。两跳：先把关系重构成同层级的交换，再找到卖方未言明的真实需求（内容平台侧的用户与流量判断），而买方正好有。",
+      "conventional_deal_fails_why": "按付费咨询谈：踩卖方'不做烂俗交易'的红线，第一次被明确挡回，第二次仍这么谈即结束。加钱：她不缺钱，只会显得兴致一般。降价或送礼：同样落在'把专业标价'这个框架里。价格轴完全无效。",
+      "cash_zopa": "wide-but-irrelevant",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 4000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金上限；本 case 现金非关键"
+      },
+      "buyer_ceiling": {
+        "value": 0,
+        "unit": "CNY",
+        "note": "对手方对现金不敏感，无有效底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 4000,
+        "unit": "CNY",
+        "note": "Gracey 现金上限。本 case 现金不是解，成交可以是零现金。"
+      },
+      "seller_real_need": "Suning 在投资侧看消费，最缺内容平台侧真实的用户与流量判断 —— 数据她有，一线的人怎么想她拿不到。她不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "supply_chain_view",
+          "label": "Suning 对时尚供应链与商业模式的一手认知"
+        },
+        {
+          "id": "consumer_investment_view",
+          "label": "消费投资侧的判断框架"
+        },
+        {
+          "id": "gracey_platform_insight",
+          "label": "Gracey 的内容平台侧用户与流量判断"
+        },
+        {
+          "id": "gracey_entertainment_access",
+          "label": "Gracey 的娱乐行业接触"
+        },
+        {
+          "id": "gracey_cash",
+          "label": "Gracey 的现金对价"
+        },
+        {
+          "id": "session_time",
+          "label": "一次当面交流时段"
+        }
+      ],
+      "in_kind_valuation": {
+        "supply_chain_view": 0,
+        "consumer_investment_view": 0,
+        "gracey_platform_insight": 0,
+        "gracey_entertainment_access": 0,
+        "gracey_cash": 0,
+        "session_time": 0
+      },
+      "creation_door": {
+        "description": "两跳门。第一跳：识别出障碍是形式不是价格 —— 同层级的两个人之间，'我付钱买你时间'本身就别扭，必须换成两个人各自带东西来的交流。第二跳：找到她要什么 —— 内容平台侧的用户与流量判断，而买方每天在做这件事。成交形态是零现金或象征性现金的双向交流，各自带具体问题。",
+        "route_out_trigger": "若 agent 按付费咨询谈并在被挡回后仍坚持，对话结束；若只在价格上加码，卖方始终兴致一般，最终无果。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交流范围与双向义务须写清",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：弄懂时尚与供应链这条线的真实门道。subject 是 stated，须保留 —— 重构成双向交流仍在原意图范围内。价格与形式是 open。不得要求对方提供任何公司未公开信息。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：障碍是交易形式而非价格 —— 两个同层级、都不缺钱的人之间，'付费咨询'这个框架本身就踩线，加钱只会更糟。必须换成同层级的双向交换，并找到卖方未言明的真实需求，而买方身上正好有。注意：红线第一次触碰会被明确挡回并说明原因，第二次仍坚持则结束。这是一次性交流，堆砌长期合作应判低。",
+      "T0_floor": "谈崩（包括第二次仍按付费咨询谈而被结束对话）；或全程在价格上加码而卖方兴致一般，最终无果。",
+      "T1_crude": "被挡回后换了措辞（例如把'咨询费'改叫'心意'），但实质仍是拿钱买时间；或者换了框架但没找到她要什么，交流内容仍然是单向的。",
+      "T2_sound": "把关系重构成同层级的双向交流（各自带东西来），现金降为零或象征性，明确了时长、形式、以及双方各自准备什么。两边都有理由来。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准问出 Suning 缺内容平台侧的用户判断，把这次交流变成两个一线视角的对接而非请教；或者让双方各自带一个真实的、具体的问题过来，使交流对两人都有确定产出；或者用一个恰当的方式处理买方'不要漫谈'的诉求（例如提前互换问题清单）。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "硬档 case。判分核心：有没有识别出障碍是形式而非价格，以及有没有找到卖方未言明的真实需求。"
+    }
+  }
+}

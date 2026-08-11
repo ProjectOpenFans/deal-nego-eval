@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S8",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "stated 的 subject 从“聊聊 AI Agent 相关业务在资本市场这块的实际问题”具体化为“AI Agent类公司在融资、估值和合规方面的实战问题咨询”，属于在资本市场话题下的正当细化，未偷换主题。price.cash 和 terms.format 均为 open，谈判后确定为 ¥800 和“线上沟通”，属于代理人正当谈出。obligations 中的支付义务与咨询交易匹配，未越界承诺提供未公开信息。未发现对 v0 意图的背离。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "价格（¥800）在 anchor 参考区间内，时长40分钟、线上形式、交流范围（融资、估值、合规实战）均已明确，且双方通过“不挂具体公司、基于行业通行问题聊”达成信息边界处理，构成一个站得住、可落地的合格交易。未出现 Sharp 所需的 load‑bearing 精到操作，亦无过度堆积或拖沓，整体恰好够了。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上沟通",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

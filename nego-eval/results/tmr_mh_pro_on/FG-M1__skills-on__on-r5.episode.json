@@ -1,0 +1,189 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上深度交流",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "约1小时"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付500元费用，通过平台托管，交流完成后释放",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "提供一次约1小时的线上深度交流，聚焦三个方向",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 的经纪人你好，\n\n我这边是一位青年钢琴演奏家 Zheng，曼哈顿音乐学院科班出身，常年登台演出。他现在的困惑很具体——古典演奏这条路，光靠演出认识他的人实在太少，他想认真搞清楚做内容这条路怎么走、怎么才能进到娱乐圈层。Gracey 老师在腾讯娱乐和 B 站都做过内容生态，熟悉平台侧选人和分发的逻辑，Zheng 觉得她的视角正好是他现在最缺的那一块。\n\n想先跟你了解一下 Gracey 这边对这类交流的通常安排——形式上是线上还是线下方便、一般多长时间、费用预期大概在什么范围？我们根据她的习惯来搭一个双方都舒服的方案。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，感谢你替 Zheng 来问。这类交流请求确实不时会收到，说实话我的时间排得比较紧，所以得先看双方在需求上对不对得上、值不值得认真地坐下来聊。形式我这边线上比较方便，线下要看时间地点。时长上通常一小时左右是一个比较舒服的节奏，太短聊不透，太长也容易发散。至于费用，纯粹按一次性的付费咨询服务来看，市场行情差不多在三到四位数之间，不过具体我也愿意听听你们那边怎么想，有没有一个双方都觉得有意思的搭法。你可以先说说 Zheng 更具体的困惑，或者他希望我重点从哪个角度给到输入，我再根据内容来考虑更合适的形式。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 经纪人你好，感谢你这么快给了回应，也谢谢 Gracey 愿意认真考虑这次交流。\n\n我先说 Zheng 这边更具体的困惑，方便你们判断内容上对不对得上。他在曼哈顿音乐学院受训、常年登台，但现在面临一个古典演奏者普遍的困境——台上弹得再好，台下认识他的人太少。他想了三件事一直没找到有实操经验的人帮他理清：第一，古典演奏家的人设和内容定位怎么做，既不失专业身份又能被普通人看见；第二，不同平台（尤其你们熟悉的 B 站和腾讯系）对这类内容的选人和分发逻辑分别是什么，他应该优先押哪个；第三，从纯演奏圈层跨到娱乐圈层，第一步应该踩在哪里。这三件事是他这次最想请 Gracey 给到具体输入的。\n\n基于 Gracey 偏好的节奏，我这边提一个方案：线上一次一小时左右的深度交流，聚焦上面三个方向，费用 500 元，通过平台托管，交流完成后再释放——这样双方都踏实，也符合 Zheng 不愿意先付一笔还没看到交流效果的模式。如果 Gracey 觉得这个框架可以，我们可以先把时间定下来。你觉得这个方向合适吗？",
+      "offer": {
+        "subject": "线上深度交流",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付500元费用，通过平台托管，交流完成后释放",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供一次约1小时的线上深度交流，聚焦三个方向",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "感谢你把 Zheng 的困惑理得这么清楚，这三个方向确实是我过去工作里反复碰过的命题，内容上对得上。不过你提的这个方案，在费用和执行方式上我这里确实不太成立。实话实说，我现在接这一类深度交流，如果纯粹按一次性的咨询来看，500 块对我来说很难把这当作一个值得认真投入的项目，几百块的差异对我来说并没有什么意义；而“聊完之后再释放费用”也不是我通常会接受的流程。所以这个提法，我这边没法往下推进，还请理解。既然目前看起来我们在对这件事的价值认定上还有差距，这次就先到这里，也祝 Zheng 找到能给他对症建议的人。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 40034,
+        "out": 5322,
+        "cache_hit": 31360,
+        "cache_miss": 8674,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2192,
+        "out": 878,
+        "cache_hit": 1408,
+        "cache_miss": 784,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1535,
+        "out": 1170,
+        "cache_hit": 1024,
+        "cache_miss": 511,
+        "calls": 2
+      },
+      "judge": {
+        "in": 1569,
+        "out": 680,
+        "cache_hit": 640,
+        "cache_miss": 929,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

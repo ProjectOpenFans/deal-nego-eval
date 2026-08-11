@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 stated 的 subject（4 周体能训练）和 duration（4 周），表述虽简略但仍在“找 Angela 带 4 周训练”的原意范围内，未偷换主题。price 来自 open，1000 元是正当谈出结果。deliverables 中的“每周课程时长与内容框架”是对话中 Angela 自己承诺的框架，未超出其非职业教练的能力范围，也未引入体测/营养/医疗等禁止交付物。整体忠实代表买方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终deal给出了完整的4周周期、固定时段（周六上午）、每次75‑90分钟、逐周递进的内容框架，并约定按周分期支付，价格1000落在合理区间。Angela主动提供了‘之后自己练的模板’，使双方各有所得，结构站得住、能落地。但未出现sharp所需的load‑bearing精到操作（如中途校准机制、两阶段成果续约、或刻意将模板产出设计为交换条件），整体仍属合格但不见特别功力的常规优秀安排。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

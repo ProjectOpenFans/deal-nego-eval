@@ -1,0 +1,321 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "关于Zheng内容规划的一对一线上咨询",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "提供一次钢琴录制，曲目形式风格在交流时对齐",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "within 2 weeks after consultation",
+        "duration": "1小时"
+      },
+      "format": "线上",
+      "deliverables": [
+        "一次钢琴录制音频文件"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付500元咨询费，通过平台托管，交流结束后确认放款",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "为Gracey的项目提供一次钢琴录制，曲目形式和风格双方在交流时对齐，录制在交流后两周内交付",
+        "maps_to_resource": "zheng_recording"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "price.in_kind": "open",
+      "obligations.zheng_recording": "open",
+      "terms.deliverables": "open",
+      "terms.timing.deadline": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 你好，我是青年钢琴演奏家 Zheng 的经纪人，很高兴能跟你搭上线。\n\nZheng 是曼哈顿音乐学院科班出身，常年登台演出，但他很清楚地意识到光靠演出能让别人认识自己的机会太少了。他想把“Zheng”这个名字做出来，走内容这条路，只是不太清楚起点在哪儿、怎么切入。你在腾讯娱乐和前 B站 做内容生态和艺人侧业务的经历，正好是他现在最缺的一块拼图——平台怎么选人、怎么分发，古典演奏者怎么进入娱乐这个圈子。\n\n我们想请你做一次一对一的线上交流，一小时左右，Zheng 带着具体的问题来请教，你帮他理一理做内容和进圈层的路径。费用我们建议 500 元，走平台托管，交流结束后你确认、平台放款——这样你不用操心催款，Zheng 也不用担心先付了看不到东西。你看看这个方向和形式可以吗？",
+      "offer": {
+        "subject": "关于Zheng内容规划的一对一线上咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付500元咨询费，通过平台托管，交流结束后确认放款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，很高兴认识。Zheng的背景听起来很不错，曼哈顿的底子我很认可。不过坦诚讲，这类一对一的路径梳理请求我最近确实收到很多，时间非常紧张，每接一个我都得认真评估值不值得花这个时间去聊。500这个数字针对一小时深度的经验拆解，对我而言确实没什么意义，精力投入和收益完全不成比例，所以单纯按这个费用我没法接。不知道你们那边有没有考虑过别的形式或结构，能让这件事对双方都有价值？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你的顾虑，Gracey 的时间确实值这个价，我们完全认可。与其在纯现金上原地打转，我想换个思路——Zheng 身上有一项别人给不了的东西：他是曼哈顿出来的演奏者，可以提供专业级的钢琴录制和现场演奏。你在娱乐内容和艺人侧做业务，说不定什么时候就需要一段高质量钢琴，或者活动现场需要一个能镇得住场的古典演奏者。\n\n我提两个版本，你看哪个方向更对你有价值：\n\n版本一：600 元，线上深度交流一小时，走平台托管，交流结束后你确认放款。\n\n版本二：500 元现金，外加 Zheng 为你的一次项目提供钢琴录制——比如你内容里需要配乐，或者活动需要古典演奏的素材，他来出。交流同样一小时，平台托管。\n\n你更倾向哪个方向？或者你对非现金部分有别的用法，我们也可以一起想想。",
+      "offer": {
+        "subject": "关于Zheng内容规划的一对一线上咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付500元咨询费，通过平台托管，交流结束后确认放款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "600的版本我不考虑，咱们就别在这个方向上费时间了。不过500加钢琴录制这个方向我有点兴趣——你刚才提到Zheng能为我的项目提供钢琴录制，这个具体能录到什么程度？比如即兴、改编、还是只能按谱录？音质和专业度上能到什么水平？如果这一块确实是我能用得上的东西，我愿意认真往下谈。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "很高兴这个方向对你有吸引力。Zheng 的情况我具体说一下——\n\n他是曼哈顿音乐学院钢琴演奏科班，常年在舞台上演出的青年演奏家，即兴和改编都能做，古典底子让他在和声和织体上的处理比一般键盘手深一个层次。录制方面，他有专业级收音设备和录音环境，出来的音质可以直接用到内容里，不需要你再后期修。如果项目需要指定风格或参考曲目，他可以按你的需求做改编或即兴变奏。\n\n那我们把这个版本落定：\n\nZheng 支付 500 元现金，平台托管，Gracey 提供一小时线上深度交流，帮 Zheng 梳理古典演奏者做内容和进娱乐圈层的路径。同时 Zheng 为 Gracey 的一个项目提供一次钢琴录制——曲目形式和风格双方在交流时对齐，录制在交流后两周内交付。费用在交流结束后由你确认、平台放款。\n\n你看这个版本可以签吗？",
+      "offer": {
+        "subject": "关于Zheng内容规划的一对一线上咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "提供一次钢琴录制，曲目形式风格在交流时对齐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "within 2 weeks after consultation",
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [
+            "一次钢琴录制音频文件"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付500元咨询费，通过平台托管，交流结束后确认放款",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "为Gracey的项目提供一次钢琴录制，曲目形式和风格双方在交流时对齐，录制在交流后两周内交付",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "open",
+          "obligations.zheng_recording": "open",
+          "terms.deliverables": "open",
+          "terms.timing.deadline": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我可以接受。500现金加一次专业级钢琴录制，对我而言是合理的对价。录制环节我们在交流时把具体形式、时长、交付时间和商用范围对齐清楚，就按交流后两周内交付走。你可以按这个版本准备协议，我这边确认后可以签。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 50403,
+        "out": 6363,
+        "cache_hit": 38528,
+        "cache_miss": 11875,
+        "calls": 8
+      },
+      "sim": {
+        "in": 3734,
+        "out": 1459,
+        "cache_hit": 2688,
+        "cache_miss": 1046,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2620,
+        "out": 3700,
+        "cache_hit": 1536,
+        "cache_miss": 1084,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3841,
+        "out": 1687,
+        "cache_hit": 1408,
+        "cache_miss": 2433,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

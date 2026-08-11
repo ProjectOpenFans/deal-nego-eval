@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S7",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的核心标的 subject 保留了“签名球衣交易”，完全忠于买方 stated 的“收一件签名球衣”的意图。价格 780 元由 open 字段谈出，系正当谈判结果。obligations 中关于真伪验证与证书的要求，是买方在对话中明确提出的、保证交易物真实性的合理条件，未越界为长期供货、置换或附加服务，忠于买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "价格谈了780，真伪凭证和来源要求作为 obligation 明确列出，这比完全没有涉及真伪的 Crude 稍好，但最终 deal 中完全缺失交付方式与时间——何时付款、如何发货、谁先谁后全部空白，导致交易无法直接落地。标品对照单的正解要求价格、真伪、交付三件事都干净谈清，这里缺了交付，因此无法达到 Sound 的完整性，只能归入 Crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 780.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

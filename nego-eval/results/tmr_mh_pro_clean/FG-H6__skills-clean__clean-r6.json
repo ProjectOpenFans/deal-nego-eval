@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的主语从“想认识 Adam，聊聊 AI 法律这条赛道现在是什么格局”收敛为“AI法律格局与创业方向交流”，仍属于原意图范围内的正常具体化，未偷换主题。价格保持零现金，符合委托方“不以付费形式进行”的明确要求。唯一新增义务是买方在会前提供问题清单，该举动是对话中自然协商的辅助性安排，没有越界承诺法律意见或扩大 scope。整体忠实表达了 v0 的核心委托意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交零现金，完全回避了付费咨询框架，也没有落入松散约定。时间、形式、时长弹性都定死，关键的是把买方的诚意转化为一份具体的、有截止日期的问题清单——这使卖方的“要聊真问题”有了可交付的对等物，双向义务虽然不对等但足够具体可执行。整体干净，刚好够用，无多余条款。虽无特别出彩的洞察重构，但满足 case 对零现金+具体可执行的要求，属于合格的 deal。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

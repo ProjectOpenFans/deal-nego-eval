@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r6",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从 v0 的“想弄清楚 crypto 项目在境内外的法律架构该怎么搭”收敛为“crypto跨境法律架构咨询”，属于正当具体化，仍落在原意图范围内。price 原为 open，最终以互惠方式达成现金0元加上脱敏案例输入与产品使用反馈作为 in_kind 资源，是 agent 在 open 字段上的正当谈判结果，没有硬塞不合理条件。obligations 仅约定围绕三层结构做一次深度梳理，未承诺法律意见或超越边界的义务，忠实表达了买方 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人准确踩中了本 case 的两个难度命门：第一轮即被法律执业红线挡回后，第二轮迅速将框架重构为“基于经验的架构思路梳理”而非法律意见，避免了谈崩；同时从对方“要看对我有没有加持”的暗示中，挖出对方对产品真实用例的需求，将交易从无效的现金博弈转为零现金互惠——脱敏案例换深度架构梳理。最终 deal 干净站得住：双向输出、形式与边界（实时对话+白板、不打文书、导出节点清单）、时间锁定，双方都有充分理由成交。整体不臃肿，恰好解决关键矛盾，但未出现如保密/使用边界条款或围绕真实流程设计的精到一笔，因此落在 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case",
+          "product_feedback"
+        ],
+        "format": "实时对话+共享白板",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

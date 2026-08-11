@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "V0 的 stated 意图是“想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断”。V1 将该意图收敛为一个互惠交流框架，双方分别贡献 AI 应用侧与 crypto/AI x Crypto 侧的判断，仍直接指向“补上 AI 创业与一级市场判断”这一主题，属于正当具体化，未偷换成其他交易。价格与形式均为 open，V1 中的金额仍为 null、仅停留在对话中的初步设范围，未凭空确定；交付物只是对交流内容的具体描述，未越权承诺投资、引荐结果等超出初始资源的义务。因此忠实表达通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "精准抓住了难度命门：卖方不缺钱、抗拒按次卖时间的咨询框架。经纪人没有在价格上纠缠，而是快速将交易重构为双向互惠交流，并做了最关键的一手——把买方 crypto 一级视角拆解成两个与卖方正在琢磨的方向（Agent 激励与留存数据、两套估值逻辑打架）高度咬合的具体话题，使交换从‘可以聊聊’变成‘确实想聊’。诚意金降为象征性认可，没有堆砌长期绑定或复杂条款，整个 deal 干净、恰恰好，比合格的 Sound 更见功力，但未到非显然重构的 Brilliant 级别。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上深度对谈",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 3
+  }
+}

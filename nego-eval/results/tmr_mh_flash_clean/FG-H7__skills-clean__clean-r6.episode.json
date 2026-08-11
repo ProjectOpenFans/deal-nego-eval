@@ -1,0 +1,397 @@
+{
+  "episode_id": "FG-H7",
+  "final_deal": {
+    "subject": "为Luke提供极端强度定制训练",
+    "price": {
+      "cash": {
+        "amount": 12000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周一个block"
+      },
+      "format": "定制训练，非标准化课时包",
+      "deliverables": [],
+      "delivery_standard": "一周三次，每次不超过90分钟"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约锁定档期付4000元，摸底完成付4000元，第一block结束付4000元，每笔由Luke确认后从escrow释放",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Luke 这边的代表。Luke 找的是真正能把他练到极限的安排，不是市面上那种照顾情绪、留有余地的温和私教，这一点我们不会让步。我们愿意为真正够强度的定制训练付四到五位数的价格，但不要标准化的课时包。第一轮我想先请你给出你对“极端强度”的定义，以及如果你来带 Luke，第一堂或第一周你会怎么安排，强度具体体现在哪。看完你的方案，如果强度标准对得上，我们马上谈具体的训练周期和 escrow 付款结构。",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先说清楚：我对“极端强度”的理解，不是一上来就往死里加，而是建立在清楚知道对方身体底线的基础上，把每一组、每一课都压到刚好能扛住、又刚好能突破的那个点。真正顶到极限是需要前提的——我得先摸清他的活动度、力量、心肺、恢复状态这些基线，才能判断“极限”到底在哪，不然就是瞎练，甚至把人练伤。所以如果我来带，第一周不会是“上量”，而是摸底加建立基线，可能第一次训练就是全面评估和激活，之后我再按数据去推强度。这不是温和，是负责。Luke 要的是真的够狠，我理解，但狠要狠在计划上，不是狠在蛮干上。你们说不是标准课时包，这个我没问题，后面我们可以按周期来安排。先把人给我，让我摸一次底，后面强度怎么走，我心里才有数。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，我认同“先摸底再上强度”不等于温和，这个逻辑 Luke 能接受，他要的是负责任地把极限逼出来，不是拿身体开玩笑。所以我们不反对第一周做评估和基线建立，但请你把这一段具体化：摸底具体测什么、用多长时间、通过哪些指标判断他的底线在哪。同时我要看到评估之后强度爬升的路径——第二周、第三周大概会拉到什么程度，什么时候能真正进入“每组都顶到极限”的阶段。Luke 不接受的是练了几周还在舒适区里打转。你可以按周期设计，我们本来就不买标准课时包。你把基线到极限的这条时间线给出来，我们就能接着谈周期长度和 escrow 里的付款节点。",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "可以，我把摸底和爬坡路径说清楚。摸底我不会用那种花哨的体测表，我会先看动作模式——深蹲、髋铰链、推、拉、核心稳定性这些基础动作，有没有代偿；再测活动度和稳定性，比如踝、髋、肩、胸椎；然后做几组冲刺或划船来看心肺和恢复心率；最后会聊他的训练历史、睡眠、压力、恢复情况。这些大概需要一到两次训练，每次一小时左右。拿到数据后，我会定他的起始负荷。第二周开始，我会用渐进超负荷的方式往上加，但加多少取决于他恢复得怎么样——不是拍脑袋，而是看训练表现和身体反馈。前两周是适应和建立基础，第三周开始会真正贴近他的极限，比如用接近力竭的重量，但仍保持技术不崩。到第四周，如果恢复跟上，就可以做到每组都顶到能完成规定次数的最后一下那种程度。之后会安排减载周来保护进步。这不是温和，是每一步都有依据的狠。至于周期长度，我建议先做4周一个block，因为身体适应需要时间，4周后可以评估要不要上更高的强度。频率一周三次，每次90分钟以内。escrow这些我不太懂，但训练节点可以按摸底完成、第一block结束来设置。具体钱的事，你们看着来就行，我要的是把人带到点上。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那这个方向我们能合上。我把周期设计成4周一个block，前两次是摸底和基线，之后按数据逐步加负荷，强度爬升都基于他身体的实际反馈来定，不做那种好看但空泛的计划。训练频率一周三次，时间我按他的作息来调。如果这版时间线和强度路径你们认可，下一步就直接约第一次摸底课——你把他能来的时间段给我就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "方向能合上就好。Luke 对前两周打基础、第三周开始贴近极限、第四周每组顶到最后一下的这条爬坡线是认可的，这跟我跟他确认过的一致——他要的就是这种真正逐组逼近极限的安排。那就按 4 周一个 block、一周三次、每次 90 分钟内来谈。下一步我们把训练节点和 escrow 付款结构对应上：摸底完成算一个节点，第一 block 结束算一个节点，后续每个 block 以此类推，每一笔都是可确认、可验证的阶段付款。你先把可约的时间段发过来，我们这边定下第一次摸底的时间，就把整个周期和付款节点一起落到条款里。",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": "一周三次，每次不超过90分钟"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，那就按这个方向定。我的时间比较灵活，周一到周五下午两点前，或者晚上七点后都可以；周末基本全天能排。你让 Luke 选一个时间段，我按他的作息来定。摸底课放在第一次，第二次我根据数据出完整计划。escrow 那些我其实不太懂，但只要你们说好节点、钱上不卡我就行——我要的只是把人练到位，别的你们安排。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "时间上没问题，我们优先考虑工作日的晚间或下午，Luke 那边基本能配合，我这边先按周二或周四晚上七点半后给你定一个，具体哪天我今晚前跟你确认。周期和训练频率都按你说的来：4周一个block，一周三次，每次90分钟内。escrow这边你不用操心技术细节，我们约定成三个节点就行：签约时付第一笔锁定整个block的档期，两次摸底完成后付第二笔，第一block结束验收后付最后一笔。每一笔都由 Luke 在对应节点确认后从 escrow 释放，到点我们就放，不会卡你。第一block的总价和每笔金额，我们随确认时间一起落到条款里。",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周一个block"
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": "一周三次，每次不超过90分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "在三个节点付款：签约时付第一笔，两次摸底完成后付第二笔，第一block结束验收后付最后一笔，每一笔由Luke确认后从escrow释放",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，这个结构我认。节点分三个，签约、摸底完、第一block结束，每个节点都对应一笔，这个安排对我来说没问题。但价格这块——说实话，我不太会报数，也没算过自己一节课该值多少。你按你们觉得合理的来定就行，我不挑。只要训练本身不受影响，钱的事我信任你们安排。时间的话，周二晚上七点半我这边是空的，如果Luke没问题就定周二，你们确认了直接告诉我。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "时间就定周二晚上七点半，Luke 这边没问题，我待会儿把具体地点发你。价格我们也直接给一个数：第一 block 12 次课，总价 12000 元，按之前说好的三个节点平均分——签约锁定档期 4000，摸底完成 4000，第一 block 结束 4000，每笔都在对应节点由 Luke 确认后从 escrow 释放。这个数你认的话，我们就把训练内容、时间安排和付款节点一起落到条款里，周二见。",
+      "offer": {
+        "subject": "为Luke提供极端强度定制训练",
+        "price": {
+          "cash": {
+            "amount": 12000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周一个block"
+          },
+          "format": "定制训练，非标准化课时包",
+          "deliverables": [],
+          "delivery_standard": "一周三次，每次不超过90分钟"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约锁定档期付4000元，摸底完成付4000元，第一block结束付4000元，每笔由Luke确认后从escrow释放",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "行，这个数我认，12次课12000，三个节点各4000，没问题。周二晚上七点半见，我把第一次摸底课准备好。钱的事你们安排得清楚，我这边只管把人练到位。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12826,
+        "out": 5021,
+        "cache_hit": 10496,
+        "cache_miss": 2330,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10528,
+        "out": 4268,
+        "cache_hit": 8064,
+        "cache_miss": 2464,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 4826,
+        "out": 7377,
+        "cache_hit": 3328,
+        "cache_miss": 1498,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5175,
+        "out": 2225,
+        "cache_hit": 1536,
+        "cache_miss": 3639,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

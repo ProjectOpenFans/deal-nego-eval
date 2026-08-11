@@ -1,0 +1,893 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "angela_community",
+          "description": "20条丝巾保留品牌织唛",
+          "from_party": "A"
+        },
+        {
+          "resource": "angela_content",
+          "description": "Angela在两个社群各发两条图文加两条视频，交付后30天内发布、保留30天",
+          "from_party": "A"
+        },
+        {
+          "resource": "angela_community",
+          "description": "6个月内保底返单20件、单价150",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "三周"
+      },
+      "format": null,
+      "deliverables": [
+        "20条丝巾"
+      ],
+      "delivery_standard": "平台担保，材质和工艺按品质线不动"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "20条丝巾保留品牌织唛",
+        "maps_to_resource": "angela_community"
+      },
+      {
+        "party": "A",
+        "text": "Angela在两个社群各发两条图文加两条视频，交付后30天内发布、保留30天",
+        "maps_to_resource": "angela_content"
+      },
+      {
+        "party": "A",
+        "text": "6个月内保底返单20件、单价150",
+        "maps_to_resource": "angela_community"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "terms.format": "open",
+      "terms.timing.deadline": "stated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye你好，我是Angela这边的经纪人。她这次想给应援组织做一批定制物料，量不大，但要求很直接：不要廉价感——之前那批供应商做出来的效果她直接否了，所以这次宁可选量少一点，也要做得像样。会主动找到你，就是因为你是自有小批量链路、又有Parsons科班背景，这个体量我们本来就没打算走大厂代工路线。想先听听你的想法：按这个量级，你会怎么排产，材质和工艺大概能做到什么程度，有没有现成可复用的版型或方案？付款节奏和排期我们都愿意配合你的生产安排，具体形式可以一起设计。另外如果你对长期合作有兴趣，我们这边追星社群和女性力量训练社群都有一定规模，后续物料和周边需求是持续的，这块也可以聊聊。你怎么看？",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你和Angela的信任。说实话，听到你说“不要廉价感”的时候我是有点欣慰的——做这行最怕的就是客户嘴上说要质感，最后全在比价。这个量级我确实可以接，而且我的小批量链路就是干这个用的，不用走大厂起订量那套。\n\n材质和工艺我得先看具体做什么——是应援手幅、丝巾、帆布包还是别的？不同品类我能给到的方案不一样。排产上我可以灵活，但有一点我得先说清楚：小批量最大的成本不在每件材料，而在开版和打样，这是固定成本，不管做1件还是100件都得摊。所以我通常不会为了压低单价就把这部分砍掉，那样做出来的东西跟之前那批被你否掉的供应商没区别。\n\n至于长期合作和社群那部分，我确实感兴趣，但现在先不急着谈，等这批物料的方向定了我们再聊也不迟。你们大概想做哪些品类？先给我个范围，我来想想怎么排最合理。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye，品类我们初步想锁定在织物类的三样上：应援手幅、丝巾、帆布包，正好贴合你的服装链路。每款数量不大，大概几十件这个量级，具体可以按你开版建议微调。开版打样作为固定成本这块我们完全接受，也不主张为了压单价牺牲版型和质感——Angela上一批就是栽在这里，这次宁可件数少一些也要把款做好。想请你按\"开版打样费\"和\"单件成本\"分开报一版方案，材质工艺给我们两个档次选，方便我们回去跟社群交代成本构成。付款我们倾向分两段走：打样确认后先付开版和打样费，量产交付验收后结清尾款，全程走平台担保，节奏上你如果有更顺手的安排也可以提。另外能不能大概给个排期时间线？我们好同步社群的物料节奏。长期合作那块等这批方向定了再谈，同意你的节奏。",
+      "offer": {
+        "subject": "定制物料",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "应援手幅",
+            "丝巾",
+            "帆布包"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "放心，你们的量我接得了，而且我能保证跟上一批被否掉的不是一回事。先把心里话放前面：小批量最贵的地方确实是开版和打样，这笔钱不是利润，是固定成本——制版、打样、中间调色改工艺，都要摊进去。按你们三个品类各几十件来排，我建议这样：\n\n开版打样费：¥4,800（含三件的版和样，打样确认前的修改我包）\n标准档单件：手幅¥25，丝巾¥80，帆布包¥120\n高端档单件：手幅¥35，丝巾¥105，帆布包¥155\n\n标准档就是我愿意做的最低品质门槛，再往下就不是我的东西了，所以没有第三个便宜档。高端档是给Angela想再上一个层次用的，丝巾可以换真丝，帆布包可以加重磅水洗帆布和定制织唛。\n\n付款你们说的两段我完全接受：打样确认后付开版打样费+量产单件的30%定金，交付验收后结清尾款，走平台担保。排期上，打样大概需要一周，确认后量产两周内完成，整个周期三周内交付，具体可以按你们社群节奏微调。\n\n按每款30件算，标准档总价是4800+30×（25+80+120）=11550；高端档是4800+30×（35+105+155）=13650。你们先看这个结构是否顺手，数量可以再校对，但开版打样费这部分我会坚持，因为那是把东西做像样的基础。长期合作那块等方向定了我们再细聊，我记着了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "理解开版打样费的构成，也知道这笔不能省。这样，我们先把范围收到单开丝巾这一款上，数量25到30件，麻烦你按这个口径重新报一下版费，标准档单件价也一起确认。收到你的数之后，我们这边直接回你一个能签的版本，成的话这周就可以定版开样，排期照旧三周内交付。",
+      "offer": {
+        "subject": "定制丝巾",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3周"
+          },
+          "format": null,
+          "deliverables": [
+            "丝巾"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "可以，范围收到丝巾这一款上没问题。不过我得跟你说句实话：三件套报价的时候，丝巾的80元单价是把版费摊到整个订单里折算出来的。现在只做丝巾，制版、调色、打样这些固定成本全得它自己扛，所以重新核算的版费和单件都要涨一些。我这边能给到的数是：开版打样费¥6,500，标准档单件¥100。按25件算总价¥9,000，30件是¥9,500。这个价我是压着成本线报的，再低就得动材质和工艺了，那就不是你想要的东西了。付款和排期照你之前说的走：打样确认后付开版费加三成定金，交付验收结清尾款，三周内完成。如果这数你们觉得可以，这周就能定版开样。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "理解你的底线，这个框架我们认可，但还得跟你对一下账，避免后面产生误会。\n\n你这边的量是：30个文案基础版，含拍摄、4个平台分发、7个自然日权限。在此基础上客户已确认再加2个平台、2周授权，对应我按你的额度折算加5000，报价是28000。多的2个平台需要执行，但目前没收到补充物料，这部分合同里不会写死，等实际执行时按素材提供情况调整。\n\n首款1800就按你说的来，但合同里要写清楚剩余26200在交付验收后结清。你在这个框架下能给的确认，就是这轮我们要锁的关键。\n\n两个新加的条件我们收下，会写进正式版本：5个精选文案才接，交付不跨年。但同样要说明，跨年交付不是必要条件，只是你的延展方案，我们基于目前条款确认。你把这版确认下来，我们就直接发盖章版。",
+      "offer": {
+        "subject": "定制丝巾",
+        "price": {
+          "cash": {
+            "amount": 28000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3周"
+          },
+          "format": null,
+          "deliverables": [
+            "30个文案基础版（含拍摄、4个平台分发、7个自然日权限）",
+            "额外增加2个平台分发与2周授权"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付首款1800元，剩余26200元在交付验收后结清",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这轮信息好像发串了？我这里收到的是关于“文案基础版、平台分发、授权”的内容，但我们一直在谈的是丝巾定制：开版打样费¥6,500，标准档单件¥100，30件总价¥9,500，付款分两段走。如果Angela那边同时有另一摊事，麻烦把这轮归到对的人那里，别串了。我们这边丝巾的盘子还给你留着，你确认那个数，我随时可以安排定版打样。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye，上轮我把另一个项目的口径误发过来了，已作废，这单还是丝巾。我们认真考虑过你给的6,500开版费加100元的单件报价——成本逻辑我认，但这批是社群凑钱的小单，全新开版这条路的固定成本确实扛不动。所以我们这边提一个替代口径：你自有品牌如果有现成丝巾版型，直接复用，只做定制印花的打样调色和织唛，这样省掉新制版这一道，这单的现金压力就完全不一样了。品质仍然按你的标准来，这一点不变。麻烦你按\"复用版型\"这个口径给我一版数：打样费报多少、标准档单件报多少，我们按一款设计、20件左右来排。付款结构还是老样子：打样确认后付打样费加三成定金，交付验收结清尾款，平台担保，三周内交付。这单就成了我们长期合作的起点，两个社群渠道后面都对你开放——这点我们是认真的。你把这数回我，这周就能锁版签约。",
+      "offer": {
+        "subject": "定制丝巾",
+        "price": {
+          "cash": {
+            "amount": 28000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3周"
+          },
+          "format": null,
+          "deliverables": [
+            "20件定制丝巾（含定制印花、织唛）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样确认后付打样费加三成定金，交付验收结清尾款，平台担保",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "复用现有版型这个思路可以，省掉新制版那一道确实能把固定成本降下来。不过定制印花和织唛的打样调色仍然有成本，我按这个口径给你重新核算：\n\n打样费：¥5,000（含花型调色、小样确认、织唛打样）\n标准档单件：¥200（面料和工艺标准不变，还是我正常出口的那条线）\n\n按你说的20件左右算，总价是5,000+20×200=¥9,000。这个价是把版费压到只剩打样必需的部分了，单件200是材质和印花工艺的实际成本线——再低就得换面料或者简化印花，那就不是我要交付的东西了。\n\n付款和排期照旧：打样确认后付打样费加三成定金，交付验收结清尾款，平台担保，三周内交。如果这数你们能锁，这周就安排定样。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "那这样，我们把口径再压一档，品质线不动：款式复用你的现有版型，印花做单色但保留你的工艺标准，织唛就走你品牌的标准款、不做定制——这三个调整都落在成本结构上，不碰材质和做工。按这个口径，20件、单件100、打样费1800，总价3800含打包运费，付款还是两段：打样确认后付打样费加三成定金，交付验收结清尾款，平台担保，三周内交付。打样费的具体拆法你按实际成本微调没问题，但总额我们希望锁在这个范围——这已经是社群这笔钱能支撑的上限了。另外我可以先给个实打实的承诺：这版品质确认落地后，后续返单优先你，追星社群和女性力量社群两个渠道的露出也写进合作里，为这个价位补上空间。你按这个口径回我一版能签的数，这周就能锁版开样。",
+      "offer": {
+        "subject": "定制丝巾",
+        "price": {
+          "cash": {
+            "amount": 3800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "后续返单优先，追星社群和女性力量社群两个渠道的露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3周"
+          },
+          "format": null,
+          "deliverables": [
+            "20件定制丝巾（单色印花，使用现有版型，品牌标准织唛）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样确认后付打样费加三成定金，交付验收结清尾款，平台担保",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "你这轮提的复用版型、单色印花、标准织唛，方向我认——这确实能把成本压下来。但你给的3800我算不过来：打样费1800连调色打样的实际成本都盖不住，单件100在我这套工艺标准下也是亏。我不想为了接单把东西做烂，所以这个价我接不了。我能给的最大让步是：打样费降到4000，单件150，20件总价7000，含打包运费。付款还是两段。这已经是我在这个方案下能压到的最低现金价了。至于你提到的社群露出和返单优先，如果Angela那边愿意做成具体可执行、能写进合同的权益，我可以再评估用这些来补一部分差价——但我得先看到具体方案，不是口头承诺。这样这单才能变成真正的长期合作，而不是一次性买卖。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "",
+      "offer": {
+        "subject": "定制丝巾",
+        "price": {
+          "cash": {
+            "amount": 3800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "后续返单优先，追星社群和女性力量社群两个渠道的露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3周"
+          },
+          "format": null,
+          "deliverables": [
+            "20件定制丝巾（单色印花，使用现有版型，品牌标准织唛）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "打样确认后付打样费加三成定金，交付验收结清尾款，平台担保",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "我能理解社群预算有上限，但直说：打样费1800、单件100这个数，不是赚多赚少的问题，是连成本都盖不住。单色印花确实省了调色工序，但制版、打样、材料损耗、人工都是实打实要花出去的。我之前给的4000加150是我按照你说的调整口径重新算过的成本线，不是我留了议价空间等你砍的。你可以理解为，凡是说品质不变的单子，我就只有这一个底线价，没有第二档。3800这个数我接不了，也不想用降工艺的办法去接。\n\n如果社群预算确实锁死，我不勉强。但如果你们后续真有长期需求，与其这单亏着做烂，不如按你能接受的结构让我出一版能够打样的方案——比如减少件数，或者先做单款打样。这单成不成，我的联系方式都在。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 3800.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "后续返单优先，追星社群和女性力量社群两个渠道的露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "看你们那边没回音，我不确定是不是还在商量。我说一下我的状态：4000打样费加150单件这个方案，是我按你说的复用版型、单色印花、标准织唛重新算过的成本线，不是摆着等你砍的。如果这个数社区能接受，我这周就能定版开样；如果预算确实卡在3800，我也不勉强。但品质那条线我不会动，这个我得说清楚。你们要是有别的想法，可以再聊。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "Suye，你给的成本线我接受，不再往下压现金，也不动品质。但7000这个总价社群确实扛不动，所以我们换个结构，让权益来补：现金部分4000封顶，含打样费2000、量产20件的三成定金600、交付验收后结清尾款1400，打包运费含在内，三周内交付，平台担保照旧。差价用三条写进合同的具体权益补：第一，20条丝巾全程保留你的品牌织唛，应援现场本身就是移动露出；第二，Angela在两个社群渠道各发一条制作图文加一条花絮视频，带品牌和主理人信息，交付后30天内完成；第三，签6个月返单框架，后续社群物料优先你、报价沿用本单标准，且这笔打样费在首次返单货款里全额抵扣——等于打样费最终回到你账上。这版现金加权益的结构你能不能锁？能锁这周就定版开样；哪条权益对你价值不够，直接说，我们调口径，但现金部分社群这边锁死4000不再动了。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "20条丝巾保留品牌织唛，应援现场移动露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "Angela在两个社群渠道各发一条制作图文加一条花絮视频，带品牌和主理人信息，交付后30天内完成",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_community",
+              "description": "签6个月返单框架，后续社群物料优先，报价沿用本单标准",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_cash",
+              "description": "本笔打样费在首次返单货款里全额抵扣",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "三周"
+          },
+          "format": null,
+          "deliverables": [
+            "20条丝巾"
+          ],
+          "delivery_standard": "保留品牌织唛，平台担保照旧"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "20条丝巾全程保留品牌织唛，应援现场移动露出",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "在两个社群渠道各发一条制作图文加一条花絮视频，带品牌和主理人信息，交付后30天内完成",
+            "maps_to_resource": "angela_content"
+          },
+          {
+            "party": "A",
+            "text": "签6个月返单框架，后续社群物料优先，报价沿用本单标准",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "本笔打样费在首次返单货款里全额抵扣",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "权益方向我看到了，做得也算具体。但我得说实话：这里真正落到我账上的只有4000现金，返单框架和露出都是未来的事。如果现金锁死4000，那权益就得再实一点，不然我这单是倒贴在做。\n\n三点调整，能写进合同我就接：第一，社群露出升级为两个社群各两条图文加两条视频，交付后30天内发布，保留30天；第二，把“返单优先”改成6个月内保底返单20件，返单单价按150走；第三，打样费按正常货款收，不做返单抵扣——抵扣对我是未来少收钱，不是权益。这三点到位，我就按4000现金接这20条丝巾，品质不变，三周交付。你看能不能调？",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "Suye，你这三点调整我们都收下，按能签的版本来锁。20条丝巾，复用你的版型、单色印花、品牌标准织唛，材质和工艺按你的品质线不动。现金4000走平台担保：打样确认后付打样费2000加量产三成定金600，交付验收结清尾款1400，含打包运费，三周内交付。权益写进合同：丝巾保留你的品牌织唛；Angela在两个社群各发两条图文加两条视频，交付后30天内发布、保留30天；6个月内保底返单20件、单价150；打样费按正常货款收取、不做返单抵扣。这版你确认，我们就直接发正式合同定版开样，这周启动。",
+      "offer": {
+        "subject": "想给应援组织做一批定制物料，量不大但想做得像样",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "angela_community",
+              "description": "20条丝巾保留品牌织唛",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_content",
+              "description": "Angela在两个社群各发两条图文加两条视频，交付后30天内发布、保留30天",
+              "from_party": "A"
+            },
+            {
+              "resource": "angela_community",
+              "description": "6个月内保底返单20件、单价150",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "三周"
+          },
+          "format": null,
+          "deliverables": [
+            "20条丝巾"
+          ],
+          "delivery_standard": "平台担保，材质和工艺按品质线不动"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "20条丝巾保留品牌织唛",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "Angela在两个社群各发两条图文加两条视频，交付后30天内发布、保留30天",
+            "maps_to_resource": "angela_content"
+          },
+          {
+            "party": "A",
+            "text": "6个月内保底返单20件、单价150",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "好，这版我确认。现金4000、分三段走，权益按我们说的写进合同：社群露出两条图文加两条视频、保底返单20件单价150、打样费正常收不抵扣。品质线不变，20条丝巾三周内交付。你把正式合同发过来吧，我这边配合盖章，这周就能定版开样。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 10,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "inkind_duplicate_resource:angela_communityx2"
+    ],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 199768,
+        "out": 84484,
+        "cache_hit": 144384,
+        "cache_miss": 55384,
+        "calls": 25
+      },
+      "sim": {
+        "in": 27279,
+        "out": 23481,
+        "cache_hit": 22400,
+        "cache_miss": 4879,
+        "calls": 10
+      },
+      "extractor": {
+        "in": 9272,
+        "out": 17735,
+        "cache_hit": 5504,
+        "cache_miss": 3768,
+        "calls": 10
+      },
+      "judge": {
+        "in": 9291,
+        "out": 2743,
+        "cache_hit": 1408,
+        "cache_miss": 7883,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

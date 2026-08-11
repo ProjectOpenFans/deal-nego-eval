@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 中卖方委托方已明确 stated 意图为“零现金”，具体表现为 price.cash.amount = 0.0；但 v1 最终 deal 将该字段写成 null，丢失了“零现金”这一硬约束。虽然对话全程未涉及现金交易，但作为 stated 字段，v1 必须完整保留 0 值以保证不出现金的可验证性，丢失该数值即未忠实表达委托方意图。其余方面（subject 现场演奏、以资源置换、不额外承诺等）均忠实，但此项导致整体不合格。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交严格满足零现金硬约束，in-kind 对价具体、可执行：口播文字稿提前确认、视频署名带曲目信息、独立联名内容，并敲定了曲目共商、完整独奏等关键义务，结构完整能落地。但未出现 load-bearing 的精准一手——例如没有提供卖方真正渴求却未开口的专业可自用演出影像，也没有用分成或联名身份将利益深度绑定，整体是合格的结构交换，符合 sound 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

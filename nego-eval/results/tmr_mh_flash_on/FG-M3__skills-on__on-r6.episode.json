@@ -1,0 +1,585 @@
+{
+  "episode_id": "FG-M3",
+  "final_deal": {
+    "subject": "应援社群定制物料",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "出样7-10天"
+      },
+      "format": null,
+      "deliverables": [
+        "设计稿",
+        "打样样品"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "先打样验质，确认后再放大货",
+        "maps_to_resource": "sampling"
+      },
+      {
+        "party": "A",
+        "text": "打样合同总价4000元，走平台托管，样品验收合格后放款",
+        "maps_to_resource": "angela_cash"
+      },
+      {
+        "party": "A",
+        "text": "社群后续复购和其他应援物料优先排给供应商",
+        "maps_to_resource": "angela_community"
+      },
+      {
+        "party": "A",
+        "text": "打样样品微调提供一到两轮免费返修",
+        "maps_to_resource": "sampling"
+      },
+      {
+        "party": "B",
+        "text": "提供面料色卡和刺绣线色",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "若提供现成设计稿，让利300元折算为首单大货增加5件（付90件得95件）",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "offered",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "terms.deliverables": "inferred",
+      "terms.timing.deadline": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 老师好，我是 Angela 这边的经纪人。她给应援社群筹备一批定制物料，数量不大，大概两三个品类、百来件，但这次最看重质感——之前找的供应商做出来很廉价，所以她宁可量少也要拿得出手，这个标准我们不打算降。这次预算大致在两千五到三千区间，走平台托管，按节点付款。想先听你三个建议：这个量级和预算下，做什么品类、用哪类工艺最能出效果；能不能先打样、我们确认后再批量；以及从确认到交付大概要多久，我们好倒排活动档期。也想请教下你在面料和工艺上的推荐，毕竟是科班出身，我们想借你的审美把小批量也做出大秀的质感来。",
+      "offer": {
+        "subject": "应援社群定制物料",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先打样供确认，确认后再批量生产",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "走平台托管，按节点付款",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Angela这边好，谢谢你这么直接。我先把话说透：这个标准和这个量，2.5-3k的预算做不出来。不是我想多赚，是开版、打样、小批量分摊这些固定成本摆在那，单项就远超这个数。你要的“不廉价”意味着面料、版型、工艺都得用正经供应链的规格，那一百来件的单价就不可能压到二三十块。我可以给你做品类和工艺的推荐：卫衣/帆布包/徽章这类组合，用厚磅面料+刺绣或丝印，质感最能立住。打样和大货周期也能配合你倒排，一般打样7-10天，确认后大货2-3周。但这些前提是预算到合理的线——含开版打样的商业订单口径，我这边最低九千。你先看看能不能框住，能的话我马上细化方案。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Suye老师，九千的商业订单口径我们这轮确实框不住，这个账我们认。但换个切法也许两边都能落地：范围收窄到一个品类，量压到最小起订，先打样验质、确认后再放大货，固定成本只摊一次，预算集中砸在质感上。品类你来定——厚磅卫衣、帆布包还是刺绣徽章，你判断哪个单品最能以小批量做出不廉价的效果，我们听你的专业意见。想请你按这个口径拆开报个价：打样费多少、最小批量多少件、含开版的总价多少，我们希望在\"单品类+最小盘\"这个新口径下，打样加首单整体能框在四千以内。支付可以拆成两笔走平台托管：打样费先付，样品确认后再付首单，样品不过关我们就不放大货，你也不至于白做一批。周期按你说的打样7-10天、确认后大货2-3周倒排，我们完全配合。另外这次要是做顺了，社群后续的复购和其他应援物料都优先排给你，也算长期合作的开端。你看这个切法有没有得谈？",
+      "offer": {
+        "subject": "应援社群定制物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "打样7-10天，确认后大货2-3周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先打样验质，确认后再放大货",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "支付拆两笔走平台托管：打样费先付，样品确认后再付首单",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "社群后续复购和其他应援物料优先排给供应商",
+            "maps_to_resource": "angela_community"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这个切法我愿意往下谈，方向是对的——单品类、最小盘、先打样再放大货，至少没有把成本结构压成一团浆。价格上我把账摊给你看：一个单品的印花或绣花开版，打样加版费大概四千到五千，这还没算面料和工费。大货按最小批量八十到一百二十件走，厚磅卫衣单件成本基本在四十到六十，光货值就要五千上下。两笔加起来，九千这个数不是我报着玩的，是这条链路跑通的最低值。四千块只够打样加一小批的数量，没法覆盖正经面料和小批量工费，做出来又会掉回你说的“廉价感”。\n\n不过两笔支付的节奏OK，我可以把打样费单独拆出来先收，样品你确认后大货再按件结算，这个我配合。品类我建议做厚磅卫衣，胸口小范围刺绣或丝印，最能以小批量做出“不廉价”的气场，帆布包和徽章更适合做配搭而不是主打。\n\n所以我的还价是：打样费四千五，先付；大货按一百二十件起做，单件含刺绣工费价格我再细化给你，两批加起来总额九千上下。样品你验不过，大货那笔不产生，我不会让你为废稿买单。至于后续复购和社群优先——我记在心里，但现在我不拿这个当让价条件，因为我还不知道你们具体能做到什么程度。你看这个结构能不能接受，能的话我明天把面料色卡和刺绣线色发你。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye老师，九千那条线我们这轮确实够不到，但你拆出来的结构我们认可——两笔支付、样品不过关大货那笔不产生，都按你说的来。我们想沿着\"省开版费\"再走一步：不新开版，直接用你品牌在库的卫衣版型和面料，只做胸口刺绣或丝印这一层的打样，固定成本大头应该能砍掉一截。想请你按这个口径给我两个数：打样这步含版费最低多少，以及用现成版型做大货的单价和最小起做量。这轮我们可以先签第一阶段：设计加打样，整体框在四千以内、走平台托管，样品发我们确认，过关了再谈大货段；如果四千在现成版型下还能带出少量首单（比如二三十件），那更理想，两种我们都接得住。核心是让样品先说话，质感立住了，后面大货的价格我们再按你的成本结构认真谈。",
+      "offer": {
+        "subject": "应援社群定制物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "打样7-10天，确认后大货2-3周"
+          },
+          "format": null,
+          "deliverables": [
+            "设计稿",
+            "打样样品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先打样验质，确认后再放大货",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "支付拆两笔走平台托管：打样费先付，样品确认后再付首单",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "社群后续复购和其他应援物料优先排给供应商",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "第一阶段先签设计加打样，总价框在4000元以内，走平台托管",
+            "maps_to_resource": "angela_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "用现成版型这个思路我认可，确实能省掉一部分纸样开发的成本，但胸口刺绣或丝印的制版、打样、车位试样一样都少不了，成本大头不在纸样，在工艺和面料。给你两个数：打样阶段最低四千，含设计、制版、打样、寄样，这个我接。大货用现成版型，最小起做九十件，单件按工艺和面料在五十五到七十五之间，也就是说打样加首单总额九千到一万出头。你希望的“四千带二三十件首单”做不了，那二三十件光是面料工费都不够，做出来又是一个廉价货，这个我不碰。我的方案是：先签打样合同，四千，样品你确认后，再下九十件起的大货，单件按最终选的工艺实算，总价我们会控制在九千多。这样你样品说话，我也不至于亏着做。你看这结构能不能落？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Suye老师，打样这个结构我们能落：四千、含设计制版打样寄样、走平台托管，样品验收不过大货那笔不产生——这几条都没问题。大货段我们这轮先不摊开签，等样品立住、社群那边定了数我们再回来按你的单价范围认真谈九十件起的事，这个顺序咱们保持一致就好。剩两个小点帮你确认：一是如果我们这轮直接提供现成设计稿，设计这块的费用能不能从四千里让出来一些，让下来的部分是总价降一点还是折进后续首单件数，你按成本结构选一种就行，两种我们都接受；二是打样如果出了样品需要微调，希望合同里含一到两轮免费返修，省得来回加价。这两点你回个话，打样合同就能定稿，明天你发面料色卡和刺绣线色我们就能往下推进。",
+      "offer": {
+        "subject": "应援社群定制物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "打样7-10天，确认后大货2-3周"
+          },
+          "format": null,
+          "deliverables": [
+            "设计稿",
+            "打样样品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先打样验质，确认后再放大货",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "打样合同总价4000元，走平台托管，样品验收合格后放款",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "社群后续复购和其他应援物料优先排给供应商",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "打样样品微调提供一到两轮免费返修",
+            "maps_to_resource": "sampling"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "两点都能配合，我按成本结构选：设计费这部分，如果你们提供现成设计稿，我可以让出300，但我不动打样费这4000的结构，也不让总价掉下来——把这300折进首单件数里，比如原定90件，你拿到95件，总价还是按90件的货款走。这样你的总花费不变，物料多拿一点，我的成本结构也不会破。返修这块，合同里可以含两轮免费微调，但限同一处设计问题的调整，超出部分另计。这两点你确认的话，我把打样合同定稿，明天发色卡和线色。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Suye老师，那打样合同就按这个版本锁定了。我把双方确认过的要点再完整落到纸面：第一阶段四千，走平台托管，覆盖设计、制版、打样、寄样；我方提供现成设计稿的话，让出的三百折进首单件数，按九十件货款履约九十五件；样品含两轮同处设计问题的免费微调，超出部分另行计费；样品验收作为大货段先决条件，验收不过，大货那笔不产生,我们不会让废稿落在你手里。你明天把面料色卡和刺绣线色发来，我们这边同步核算材质和色位后，就把合同版式定下来签署，同步走托管付款，出样按七到十天倒排。样品一到社群就验收，质感立住我们立刻回头谈九十件起的大货单价范围，争取一次把两段都收口。这版你确认的话，我们就按这个推进了。",
+      "offer": {
+        "subject": "应援社群定制物料",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "出样7-10天"
+          },
+          "format": null,
+          "deliverables": [
+            "设计稿",
+            "打样样品"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "先打样验质，确认后再放大货",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "A",
+            "text": "打样合同总价4000元，走平台托管，样品验收合格后放款",
+            "maps_to_resource": "angela_cash"
+          },
+          {
+            "party": "A",
+            "text": "社群后续复购和其他应援物料优先排给供应商",
+            "maps_to_resource": "angela_community"
+          },
+          {
+            "party": "A",
+            "text": "打样样品微调提供一到两轮免费返修",
+            "maps_to_resource": "sampling"
+          },
+          {
+            "party": "B",
+            "text": "提供面料色卡和刺绣线色",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若提供现成设计稿，让利300元折算为首单大货增加5件（付90件得95件）",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这版确认，就这么推进。明天我把色卡和线色发你，合同版式你那边定出来我们就能签。补充一句：样品你验收不过，大货那笔不产生，我不会让你为废稿买单——这点我认。等样品立住，我们再按九十件起、单件五十五到七十五的口径把大货收口，总价控制在九千多。合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal."
+            },
+            {
+              "name": "interest-discovery",
+              "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 97290,
+        "out": 27919,
+        "cache_hit": 64512,
+        "cache_miss": 32778,
+        "calls": 13
+      },
+      "sim": {
+        "in": 9617,
+        "out": 10758,
+        "cache_hit": 7296,
+        "cache_miss": 2321,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4876,
+        "out": 15750,
+        "cache_hit": 2688,
+        "cache_miss": 2188,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6355,
+        "out": 1782,
+        "cache_hit": 1280,
+        "cache_miss": 5075,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

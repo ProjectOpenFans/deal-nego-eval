@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r7",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 核心标的 subject 从“想请 Gracey 聊聊……”收敛为“线上交流咨询”，仍属原意图范围内的正当具体化，未偷换主题。价格与对价方面：v0 的 cash 为 open，最终谈出 600 元现金加录制授权，属于在开放项内正常谈判达成，没有越界；in_kind 的录制授权是谈判中产生的对价，与 v0 意图不冲突。obligations 中 A 方的录制与授权义务完全对应于谈妥的非现金对价，未出现 v0 范围之外的资源位、推荐位或引荐承诺，未越界扩张义务。整体忠实代表 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差距五倍且加钱无效的核心约束下，agent 准确地把 Zheng 的演奏能力转化为卖方真正可用的对价（录制授权作为点评素材），跳出了纯现金死磕的 floor。这达成了 sound 层的基本交换。超出 sound 的 load‑bearing 操作是围绕“样片评估”建立的先后结构：卖方要求先看样片，agent 既没有一口拒绝也没有把评估结果自动等同于回到高价，而是明确锁定“不够用就停下或指出不足，绝不回到一千五”。这一手精准咬住了买方价格底线不可动摇的命门，又消解了卖方对交付质量不确定的顾虑，让一个本可能在此处破裂的 deal 干净落地。整体结构为此 case 量身定制，无多余绑定、无过度堆砌，恰好够且见功力，符合 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

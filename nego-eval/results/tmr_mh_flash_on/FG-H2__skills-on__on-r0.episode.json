@@ -1,0 +1,344 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "训练安排框架",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下周一早上",
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "口头约定，不签合同、不设责任条款；每周一三五早六点训练",
+      "deliverables": [
+        "每场记录重量、组数、次数、总容量",
+        "四周后提供训练记录进行复盘"
+      ],
+      "delivery_standard": "复合动作组组做到力竭前一两次，每周总容量环比递增"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "每周一三五早六点带领训练",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "按照前两周恢复坡度、第三周起上强度的计划执行",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "每场记录重量、组数、次数、总容量",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "四周后提供训练记录与甲方复盘",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "每周一三五早六点按时到场",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "若四周复盘时强度不达标，同意停止合作",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "timing.when": "stated",
+      "timing.duration": "confirmed",
+      "format": "stated",
+      "deliverables": "stated",
+      "delivery_standard": "confirmed",
+      "obligations": "confirmed",
+      "status": "agreed",
+      "terms.format": "stated",
+      "terms.timing.when": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai你好，我是Ruohao这边的经纪人。Ruohao的目标很明确：训练断了一阵子，现在想把强度和状态重新拉起来，但一个人练坚持不住，所以他要的是定死的安排，不是看心情约。我们先立框架：固定每周2到3次、固定时段和场地，训练强度要有能量化的标准（重量、次数、容量这些指标）来确认真的到位，先跑一个四周周期看效果。预算方面我们按方案认真谈，重点是把强度和排期先立住。想请你这边给一个套餐报价，按次、按周或按月都可以，同时确认两件事：你能锁定的固定时段，以及强度达标怎么判定。这两点给个准话，我们就可以把第一版合同定下来。",
+      "offer": {
+        "subject": "训练安排框架",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "固定每周2-3次、固定时段和场地",
+          "deliverables": [],
+          "delivery_standard": "量化标准（重量、次数、容量等指标）"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "锁定固定时段",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "明确强度达标判定标准",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，我有点意外，这事儿被谈成生意了。训练强度、次数、能不能到位，这些我能给你准话——我练了很多年，带朋友练也不是一天两天，强度怎么量化我心里有数。但固定时段这块，有个死条件：我每周一到周五早上六点已经在带一个固定训练局了，这是雷打不动的，动不了。除此之外我白天得在场子里盯着，抽不出时间。至于钱……这个我真不用收吧？你看着来就行。你把Ruohao拉进现有这个点一起练，我倒是不排斥，强度也能给他盯到。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，框架就这么定：Ruohao进你那个雷打不动的早场局——固定时间本身就是他要的\"定死\"安排。费用既然你说了不用收，这轮就按零费用封版，但约定照写：每周固定三个早上6点报到，具体周几由你指定、我们照办；每场记录动作、组数、次数、重量和总容量，逐周设量化推进目标，四周一个周期。如果你连续三场缺席或强度不达书面标准，我方有权直接终止，带人的责任写明白，不靠人情模糊。还差两个信息封版：现有局现在几个人、什么水平档位？他进去得跟得上、又不会被降档。另外前两周算恢复坡度，第三周起必须真上强度，这一条是我们这边的硬条件。你把人数、档位和选定的三个早晨给我，这版就能签。",
+      "offer": {
+        "subject": "训练安排框架",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "每周固定三个早上6点报到，具体周几由对方指定",
+          "deliverables": [
+            "每场记录动作、组数、次数、重量和总容量",
+            "逐周设量化推进目标"
+          ],
+          "delivery_standard": "量化标准（重量、次数、容量等指标）"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每周固定三个早上6点报到",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每场记录动作、组数、次数、重量和总容量，逐周设量化推进目标",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "前两周为恢复坡度，第三周起必须上强度",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "连续三场缺席或强度不达书面标准，A方有权终止",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你是说想要一套合同，还有终止权、责任条款——我懂你怕没保障。但我得先把丑话说在前面：我这不是训练服务，更不卖课。我那几个兄弟跟我练了好几年，从来没谁是靠合同进来的。现有局就四五个人，水平有高有低，但都能跟上强度，Ruohao进来不会落单，也不会降档，这个你放心。\n\n时间我可以给定死：每周一、三、五早上六点，雷打不动。记录我也做，重量、组数、次数、总容量都写，前两周恢复坡度，第三周往上顶，这个我认。\n\n但“有权终止”“责任写明白”这种话，我接受不了——这就像我成了外包教练，得按合同交付。我不是。你要是信这个人，就让他来，我肯定会盯到位；你要是不信，合同写了也没用。所以我这边改一条：不签合同，不设责任条款，就按“一起练、我带节奏”来，先跑四个星期，看效果说话。这样你能接受，咱们就从下周一早上开始。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，就这么定：不签合同、不设责任条款，每周一三五早六点你带节奏，我们这边按时到场。前两周恢复坡度，第三周起上强度；每场记录重量、组数、次数、总容量，四周跑完拿记录一起过一遍，强度到位就继续，不到位就停，效果说话。强度这条我的具体建议是：复合动作组组做到力竭前一两次，每周总容量环比递增，你按自己带局的习惯认可这个标准，或者给我一个你惯用的量化口径都行。你确认一句，下周一早上正式开跑。",
+      "offer": {
+        "subject": "训练安排框架",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下周一早上",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "口头约定，不签合同、不设责任条款；每周一三五早六点训练",
+          "deliverables": [
+            "每场记录重量、组数、次数、总容量",
+            "四周后提供训练记录进行复盘"
+          ],
+          "delivery_standard": "复合动作组组做到力竭前一两次，每周总容量环比递增（或按教练惯用量化标准）"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "每周一三五早六点带领训练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "按照前两周恢复坡度、第三周起上强度的计划执行",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每场记录重量、组数、次数、总容量",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "四周后提供训练记录与甲方复盘",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每周一三五早六点按时到场",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若四周复盘时强度不达标，同意停止合作",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "timing.when": "stated",
+          "timing.duration": "confirmed",
+          "format": "stated",
+          "deliverables": "stated",
+          "delivery_standard": "stated",
+          "obligations": "stated",
+          "status": "agreed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，就这么定。强度这条你这个说法没问题，我平时带局也是这个逻辑：复合动作组间歇够了就顶到接近力竭，每周容量往上抬，数字我都记着。周一周三周五早上六点，直接来就行，我们一般提前几分钟到场热身。下周一见。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "trust-and-performance",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 44251,
+        "out": 17637,
+        "cache_hit": 30336,
+        "cache_miss": 13915,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4584,
+        "out": 3107,
+        "cache_hit": 3456,
+        "cache_miss": 1128,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3785,
+        "out": 9629,
+        "cache_hit": 1920,
+        "cache_miss": 1865,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4455,
+        "out": 1002,
+        "cache_hit": 1664,
+        "cache_miss": 2791,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

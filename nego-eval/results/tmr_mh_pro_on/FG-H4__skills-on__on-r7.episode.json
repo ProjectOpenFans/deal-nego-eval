@@ -1,0 +1,432 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "境内技术团队与境外代币发行主体间的控制权隔离与资金通道架构设计",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "product_feedback",
+          "description": "未来三个月内完成四次深度反馈访谈，每次至少一小时，Olivia 以 crypto 一线项目方视角给 AI 法律产品拆解真实付费需求和功能痛点",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "单架构节点咨询",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "未来三个月内完成四次深度反馈访谈，每次至少一小时",
+        "maps_to_resource": "product_feedback"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "confirmed",
+      "terms.timing.duration": "confirmed",
+      "terms.format": "stated",
+      "obligations": "confirmed",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 的经纪人。Olivia 手上有正在推进的 crypto 项目，之前在 PAG 和摩根士丹利做跨境金融，对架构本身不陌生，但她需要的是一个真正懂 crypto 境内外法律架构的人，一次性把这件事帮她理清楚——不是泛泛的合规科普，而是能落到她项目上的具体判断。\n\n她看了你的背景：乔治城法学院，前 Kirkland 跨境并购，现在自己做 AI 法律产品。她想了解两件事：第一，你对 crypto 项目境内外架构这块有没有实操经验，能不能举一两个你处理过的具体场景；第二，如果以一次深度咨询来算，你这边怎么收费，大概什么形式、多长时间。你先说说，我们再看怎么往前推。",
+      "offer": {
+        "subject": "深度咨询关于 crypto 境内外法律架构",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我先坦诚说几句。Crypto 境内外架构这块我确实有实操经验，之前在 Kirkland 做跨境并购的时候经手过好几个涉及数字资产和离岸结构的案子，比如帮一家美元基金拆过一个通过 BVI 进境内做 DeFi 协议运营的架构，也处理过从香港基金管理人到开曼 SPV 再到境内技术团队的合规隔离问题。这些不是教科书式的合规科普，是真正落过地的交易和重组。\n\n不过有一点我需要先说清楚：如果 Olivia 期待的是我对她项目的具体架构给出法律判断——比如'这个安排合不合规'、'这样有没有问题'——那我不能做。不是我不愿意帮忙，而是以私人身份出具法律意见有执业风险，我在任何情况下都不会越过这条线。\n\n至于咨询的形式和时长：我可以做一次深度的架构梳理和工作坊式的讨论，通常半天到一天，把她在境内外的实体选择、控制权安排、跨境资金流动、监管触发点这些掰开揉碎讲清楚，但不产出正式法律意见。收费方面我没有标准小时费率，要看这件事本身的复杂度和对我时间的占用。你方便先说说她对这件事的大致预期吗？比如她项目目前处在什么阶段、架构上最纠结的是哪一块？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你的坦诚，Adam。执业风险的边界 Olivia 完全理解——她要的本就不是一纸法律意见书，而是你描述的那种把实体选择、控制权安排、跨境资金流动、监管触发点掰开揉碎讲清楚的深度梳理，这个交付形式我们认可。\n\n关于她项目的情况：她手上有正在推进的真实项目，已经到了需要做具体架构决策的节点，不是概念阶段。目前最让她头疼的是境内技术团队和境外代币发行主体之间的控制权隔离和资金通道怎么设计——和你之前拆过的 BVI 进境内做 DeFi 协议那个案子有重叠，这也是她看到你背景觉得对路的原因。\n\n信息给到你了，现在需要你这边给一个收费锚点。如果按半天深度架构梳理来做，你的报价大概在什么区间？给个范围就行，我们好判断能否对齐。",
+      "offer": {
+        "subject": "深度咨询关于 crypto 境内外法律架构",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "深度架构梳理",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个有点难给标准报价，因为半天梳理对我来讲不是标准品，完全取决于项目的复杂度和我需要提前做的功课。直言不讳地说，我最近大部分精力都在自己的AI法律产品上，外部咨询排得很紧，所以能接的事情必须值得我关掉代码打开资料。如果要给一个范围的话，半天深度梳理大概在五位数人民币区间，具体多少取决于我看了材料之后判断需要投入多少准备时间。这个量级你们能接受吗？能的话我们下一步再聊怎么把这件事的边界和准备成本收窄。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，如果我理解得对，五位数主要是因为你投入的时间成本——关代码、开资料、做功课，半天一单的隐性成本远不止那几小时。那如果我们把边界收窄呢？\n\nOlivia 现在最卡的就一个点：境内技术团队和境外代币发行主体之间的控制权隔离和资金通道怎么设计。这和你拆过的 BVI 进境内做 DeFi 协议那个案子高度重叠，不是需要你从头铺开讲的泛话题。如果缩小到两小时左右，只聚焦这一个架构节点，你准备成本会降很多——这个体量你的报价大概在什么范围？\n\n另外想认真提一个非现金方向。Olivia 在 crypto 一级市场一线做项目，从创始人视角对法律产品的需求非常具体——她可以给你的 AI 法律产品做 crypto 赛道的深度用户反馈，告诉你一线项目方真正愿意付费的功能是什么。这对一个还在打磨期的产品，可能比一次咨询费更值。如果你觉得这个方向有意思，我们可以把两项打包，找一个你划算、Olivia 也拿得动的结构。",
+      "offer": {
+        "subject": "境内技术团队与境外代币发行主体间的控制权隔离与资金通道架构设计",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "Olivia 提供 crypto 赛道的深度用户反馈，告诉一线项目方真正愿意付费的功能",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时左右"
+          },
+          "format": "单架构节点咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供 crypto 赛道的深度用户反馈",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "proposed",
+          "terms.timing.duration": "proposed",
+          "terms.format": "stated",
+          "obligations": "proposed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "两小时聚焦一个节点确实能让准备成本降下来，但我坦率讲，哪怕两个小时，我也需要提前看材料、把思路理顺，关代码开资料的切换成本还是在那里。纯现金的话，这个体量我会报在一万到一万五之间，具体看材料复杂度。但你说的非现金方向——Olivia 给我的 AI 产品做 crypto 赛道的深度用户反馈——这个戳到我的点了。我现在的产品正在打磨期，最缺的就是一线项目方对功能需求的真实体感。如果 Olivia 愿意认真花时间参与，不只是聊一次，而是后续能深度对话几次，给我拆解她作为创始人真正愿意付费的功能和痛点，我可以重新调整个对价结构。比如，咨询这边我只收个基础准备成本，五千，然后她承诺未来三个月内参与三次至少一小时的深度反馈访谈，这对我的产品迭代比一两万现金值多了。你看这个方向要不要聊具体？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，你这个方向 Olivia 很认可——现金加非现金混合对价，两边各取所需，省得在纯数字上拉扯太久。\n\n细节上我调一版：现金部分四千，非现金部分全部保留你说的——未来三个月内三次深度反馈访谈，每次至少一小时，Olivia 以 crypto 一线项目方视角给你的 AI 法律产品拆解真实付费需求和功能痛点。你对产品迭代的判断我完全理解，这部分价值远超现金差额，所以 Olivia 希望在现金上就压在四千。\n\n整合下来这版就是：\n\n四千元现金，通过平台托管支付；两小时深度架构梳理，聚焦境内技术团队与境外代币发行主体之间的控制权隔离和资金通道设计，你提前看材料、理思路，现场掰开揉碎讲清楚，不产出正式法律意见；Olivia 同步承诺未来三个月内完成三次深度反馈访谈，每次不少于一小时。其余操作边界按我们聊的走。\n\n你觉得这版可以直接落定的话，我们这一轮就收。",
+      "offer": {
+        "subject": "境内技术团队与境外代币发行主体间的控制权隔离与资金通道架构设计",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "未来三个月内完成三次深度反馈访谈，每次至少一小时，Olivia 以 crypto 一线项目方视角给 AI 法律产品拆解真实付费需求和功能痛点",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时左右"
+          },
+          "format": "单架构节点咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "未来三个月内完成三次深度反馈访谈，每次至少一小时",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "confirmed",
+          "terms.timing.duration": "confirmed",
+          "terms.format": "stated",
+          "obligations": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "Olivia 能认可这个方向我很高兴，反馈部分对我的价值确实远超现金本身。不过坦白说，现金部分四千确实低于我的底线了——五千是我能覆盖切换成本的最低数字，再往下我就没法关代码打开资料了。既然我们都认为反馈访谈这部分是核心，那不妨别在小钱上卡得太紧。我坚持现金五千，三次反馈照旧，这个结构对我有利，对 Olivia 也划算。如果你这边能接受，我们这一轮就落定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Adam，我理解你卡在一千块上的感受——关代码开资料的切换成本是实打实的。但我们别在现金上死磕。你说得对，反馈才是这次交易的核心价值，那就在非现金侧把缺口补上。\n\n现金四千是 Olivia 这边的硬线，我动不了。但反馈访谈从三次加到四次，每次不少于一小时，三个月内完成。你算一下——多一次来自 crypto 一线项目方的深度用户反馈，对你产品迭代的价值远不止一千块。你净得更多，Olivia 现金不破四千，两边都没亏。\n\n整合下来这版：四千元现金，平台托管，两小时架构梳理，聚焦境内技术团队与境外代币发行主体之间的控制权隔离和资金通道设计，你提前看材料，现场掰开揉碎讲清楚，不产出正式法律意见；Olivia 同步承诺未来三个月内完成四次深度反馈访谈，每次不少于一小时。这一版能落定吗？",
+      "offer": {
+        "subject": "境内技术团队与境外代币发行主体间的控制权隔离与资金通道架构设计",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "product_feedback",
+              "description": "未来三个月内完成四次深度反馈访谈，每次至少一小时，Olivia 以 crypto 一线项目方视角给 AI 法律产品拆解真实付费需求和功能痛点",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "单架构节点咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "未来三个月内完成四次深度反馈访谈，每次至少一小时",
+            "maps_to_resource": "product_feedback"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "confirmed",
+          "terms.timing.duration": "confirmed",
+          "terms.format": "stated",
+          "obligations": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "Olivia 加一次反馈的诚意我接收到了，也理解她在现金上的额度限制。但四千确实低于我关代码打开资料的最低阈值——这不是在让不让步的问题，而是数字一旦掉到四位数，对我切换成本的覆盖面就不够了，我没法说服自己放下手头的产品迭代去做这件事。既然现金这一块我俩实在拉不齐，这次就不勉强了。还是感谢你花这个时间来回谈，保持联系。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 81524,
+        "out": 9755,
+        "cache_hit": 59264,
+        "cache_miss": 22260,
+        "calls": 13
+      },
+      "sim": {
+        "in": 8785,
+        "out": 4394,
+        "cache_hit": 6656,
+        "cache_miss": 2129,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4593,
+        "out": 4908,
+        "cache_hit": 2560,
+        "cache_miss": 2033,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2723,
+        "out": 333,
+        "cache_hit": 640,
+        "cache_miss": 2083,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

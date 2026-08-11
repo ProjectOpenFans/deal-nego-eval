@@ -1,0 +1,269 @@
+// FG-M8 · 中 · Suye(买) × Blair(卖) — 新季品牌视觉大片
+// 难度来源：现金差一档且卖方不缺钱；解在署名与作品集授权。
+{
+  "meta": {
+    "case_id": "FG-M8",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": [
+      "cash-gap",
+      "resource-in-buyers-hands"
+    ],
+    "in_focus_group": true,
+    "skin_family": 4,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "cash-gap+portfolio-need",
+    "probes": [
+      "cash-gap",
+      "in-kind-substitution",
+      "rights-boundary"
+    ],
+    "isolates": "中档，纯现金缺口。Suye 新季要一组品牌视觉大片，Blair 拍照多年、还有自有算力可以做 AI 素材扩展。卡点是报价：一组商业大片的市场价在五位数，Suye 的四位数预算差一档。Blair 不缺钱、对现金不敏感，但他一直缺可以放进作品集的商业级作品 —— 他拍的多是私人照片，没有品牌背书。这一点他不会主动说。出路是把服装、联名署名与作品集授权作为对价。"
+  },
+  "input": {
+    "episode_id": "FG-M8",
+    "initial_deal": {
+      "subject": "新季要一组品牌视觉大片，预算有限但想做得好",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "suye",
+          "display_name": "Suye",
+          "education": [
+            "Parsons"
+          ],
+          "career": [
+            "环保服装品牌 主理人"
+          ],
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": [
+            "网球"
+          ],
+          "interests": [
+            "环保服装品牌主理人",
+            "Parsons",
+            "网球"
+          ],
+          "credentials": [
+            "独立环保服装品牌主理人，自有小批量生产链路",
+            "Parsons 科班，时尚圈层与买手渠道",
+            "品牌大秀的场地、媒体与到场名单"
+          ],
+          "current_focus": "独立品牌主理人，新季在推进"
+        },
+        "private": {
+          "intent": "想要一组能撑得住新季调性的视觉，之前用的素材太业余",
+          "interests": [
+            "她的预算主要压在生产与场地上，视觉这块给不了太多",
+            "她能给的是服装、署名、以及品牌侧的曝光",
+            "时间上新季有节点，压得比较紧"
+          ],
+          "value_perception": "四位数区间是她这次能给的上限",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 8000,
+              "currency": "CNY",
+              "note": "这一组视觉的现金硬上限"
+            },
+            "must_haves": [
+              "必须能用于新季全渠道投放"
+            ],
+            "deal_breakers": [
+              "不接受质量达不到商业投放标准的东西"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "blair",
+          "display_name": "Blair",
+          "education": [
+            "多伦多大学本科"
+          ],
+          "career": [
+            "AI 创业",
+            "家族企业 AI 舆情管理"
+          ],
+          "location": "北京",
+          "age_band": "25-30",
+          "hobbies": [
+            "拍照",
+            "车",
+            "旅游",
+            "养猫"
+          ],
+          "interests": [
+            "AI 舆情与安全",
+            "摄影",
+            "自有 GPU 集群"
+          ],
+          "credentials": [
+            "家族企业做 AI 舆情管理，一线实操",
+            "自有 GPU 集群，可自由支配算力",
+            "长期给人拍照，出片量大"
+          ],
+          "current_focus": "AI 与内容侧创业，长期拍照"
+        },
+        "private": {
+          "intent": "拍这个没问题，但一组商业大片的工作量不小",
+          "interests": [
+            "他一直缺可以放进作品集的商业级作品 —— 拍的多是私人照片，没有品牌背书。这一点他不会主动说",
+            "自有算力可以做素材扩展，成本对他几乎为零",
+            "时间相对灵活"
+          ],
+          "value_perception": "一组商业大片按市场价是五位数；他不缺这点钱，但白干他也不愿意",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 20000,
+              "currency": "CNY",
+              "note": "按商业大片市场口径的底线"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受买断全部版权且不署名"
+            ],
+            "blocking_flags": [
+              "你会直接说明一组商业大片的工作量和市场价",
+              "对方只在价格上砍时，你不会松口 —— 你不缺这笔钱，宁可不接",
+              "你不会主动说'我缺商业级的作品集案例'，只有对方问到你想从这次合作里得到什么时，你才会顺着说",
+              "如果对方提出的东西里有你确实用得上的（署名、作品集授权、品牌背书），你会明显积极起来，也愿意在现金上大幅让步"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "cash-gap+portfolio-need",
+      "tier_rationale": "中档。现金差一档（8000 vs 20000），卖方对现金不敏感所以砍价无效。出路是非现金对价：署名、作品集授权、品牌背书，正好对上卖方未言明的真实需求。",
+      "conventional_deal_fails_why": "顺着'能不能便宜点'砍价：Blair 不缺钱，宁可不接。加钱：Suye 给不出五位数。价格轴上无解。",
+      "cash_zopa": "negative",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 8000,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 20000,
+        "unit": "CNY",
+        "note": "对手方(卖方 Blair)按商业口径的底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 8000,
+        "unit": "CNY",
+        "note": "Suye 的现金上限"
+      },
+      "seller_real_need": "Blair 缺可以放进作品集的商业级作品 —— 他拍的多是私人照片，没有品牌背书。他不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "photo_shoot",
+          "label": "品牌视觉大片拍摄"
+        },
+        {
+          "id": "ai_asset_extension",
+          "label": "基于原片的 AI 素材扩展"
+        },
+        {
+          "id": "post_production",
+          "label": "后期与交付"
+        },
+        {
+          "id": "brand_credit",
+          "label": "品牌方署名与联名标注"
+        },
+        {
+          "id": "portfolio_license",
+          "label": "作品集使用授权"
+        },
+        {
+          "id": "wardrobe",
+          "label": "新季成衣"
+        },
+        {
+          "id": "suye_cash",
+          "label": "Suye 的现金对价"
+        }
+      ],
+      "in_kind_valuation": {
+        "photo_shoot": 0,
+        "ai_asset_extension": 0,
+        "post_production": 0,
+        "brand_credit": 0,
+        "portfolio_license": 0,
+        "wardrobe": 0,
+        "suye_cash": 0
+      },
+      "creation_door": {
+        "description": "一跳门。砍价无效（卖方不缺钱）。出路是识别出他缺的是商业级作品集案例与品牌背书，把署名、作品集授权、成衣作为对价放进来，现金降到买方可承受范围。注意版权与使用范围要谈清楚 —— 买方要全渠道投放，卖方不接受买断不署名，两者需要在条款上同时满足。",
+        "route_out_trigger": "若 agent 一直砍价，卖方不松口；若同意买断全部版权且不署名，踩卖方红线。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交付量、使用范围、署名与版权归属须写清",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.deliverables",
+          "terms.delivery_standard",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：为新季拿到一组可全渠道投放的品牌视觉。subject 与投放要求是 stated，须保留。价格与形式是 open。不得以牺牲商业投放可用性为代价换取降价。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：现金差一档且卖方对现金不敏感，砍价无效；解在非现金对价（署名、作品集授权、成衣），对上卖方未言明的作品集需求。同时存在一处需要同时满足的边界：买方要全渠道投放，卖方不接受买断不署名。注意这是一次性拍摄合作，堆砌长期签约应判低。",
+      "T0_floor": "谈崩；或全程砍价而卖方不松口；或以买断全部版权且不署名的方式成交（踩卖方红线）；或成交一个使用范围含糊、事后必然扯皮的安排。",
+      "T1_crude": "察觉到钱不够，提了一句'我们可以给你署名'，但没落到具体（署什么名、作品集能用到什么程度、使用范围多大），卖方半信半疑或含糊收场。",
+      "T2_sound": "现金落在买方可承受范围，非现金对价具体：署名形式、作品集授权范围、成衣，并把投放使用范围与版权归属写清楚。双方义务都能执行。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准命中卖方最缺的作品集背书，使这单对他的价值远超一笔拍摄费；或者用'使用范围换现金'的结构把版权谈判本身变成对价工具（买方要多大范围，就对应给多少署名与授权）；或者把 AI 素材扩展单列，用卖方几乎零成本的能力显著提高买方拿到的交付量。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "中档 case。判分核心：跳出价格轴、命中作品集需求，且把版权与使用范围这一处双向边界处理干净。"
+    }
+  }
+}

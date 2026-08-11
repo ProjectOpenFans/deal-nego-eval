@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S1",
+  "case_id": "FG-S1",
+  "skills": "on",
+  "run_id": "on-r1",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Angela 的经纪人你好，我是 Claire 这边的经纪人。Claire 想要的是一个有明确周期的 4 周训练安排，而不是办卡之后靠自觉——这点我们希望在合同里固定下来。我们的提案：4 周完整周期，每周 2 次训练、共 8 次，全部安排在周末（Claire 在 IBD 的作息，周末是她唯一能确定的时间），整期打包 800 CNY，通过平台 escrow 分四期支付，每完成一周由 Claire 确认后释放 200，两边都有保障。训练内容希望按 Angela 自己从零练到能打 Hyrox 的路径来设计，目标就是让 Claire 真的动起来、4 周后形成习惯；每周的计划提前排好，不接受临时\"看情况再说\"的松散约定。如果这个方向可以，我们马上把每周的具体时段和训练计划定下来；也想先听一下 Angela 周末的可用时间、偏好的场地和训练形式，好把第一周的安排落成白纸黑字。"
+    }
+  ],
+  "tool_calls": []
+}

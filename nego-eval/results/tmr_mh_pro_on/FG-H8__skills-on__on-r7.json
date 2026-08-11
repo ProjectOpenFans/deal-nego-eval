@@ -1,0 +1,108 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "on-r7",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1版将v0 stated意图“想弄懂时尚和供应链这条线上真实的门道”具体化为“供应链逻辑梳理与深度对话”，仍落在原意图范围内，属于正常收敛。价格与形式属于open领域，由谈判自然得出零现金、以双向知识分享作为对价，未硬塞偏离内容。obligations仅涉及时间场地协调，未越界承诺v0范围外的义务。双方双向对谈、不带未公开信息的要求，整体忠实传达了v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "这个 deal 完全避开了‘付费咨询’陷阱，精准地把关系重构为同层级、带东西来的双向对谈，而且握住了 Suning 未言明的关键需求——她不要咖啡晚饭，要去机房/片场/样衣间‘闻味儿’、要看 Gracey 做判断的原始案例材料，不是提炼好的方法论。Agent 在第一轮被挡回后立即转向，第二轮就亮出了 Gracey 能反向提供的三个具体价值块，切中了 Suning 想看的‘需求侧全貌’；第三轮更直接把 Suning 要的‘原材料’‘零散信号’‘不加总结’和‘工作现场’钉死在条款里，让这次交流从单向付费输出变成两个一线视角的必要对接。没有多放任何冗余的长期合作、礼金或流程，干净利索，恰好够解开这个 case 的难度命门，属于见功力的一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "gracey_platform_insight",
+          "supply_chain_view",
+          "supply_chain_view"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

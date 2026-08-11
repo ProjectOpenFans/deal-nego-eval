@@ -1,0 +1,321 @@
+{
+  "episode_id": "FG-M2",
+  "final_deal": {
+    "subject": "衣橱整理及搭配方案",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "claire_violin",
+          "description": "在 Suye 新季发布大秀现场担当小提琴演奏，独奏或和乐队搭重奏均可，曲目风格根据大秀调性匹配，具体曲风和时长双方沟通敲定",
+          "from_party": "A"
+        },
+        {
+          "resource": "wardrobe_audit",
+          "description": "为 Claire 做一次线下衣橱系统整理，时长控制在两小时以内，梳理现有单品并归类",
+          "from_party": "A"
+        },
+        {
+          "resource": "style_guideline",
+          "description": "搭配方案异步交付，覆盖三到四个核心工作和社交场景的完整搭配",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线下实地或视频连线",
+      "deliverables": [
+        "小提琴演奏（大秀现场）",
+        "一次线下衣橱系统整理",
+        "三到四个场景搭配方案"
+      ],
+      "delivery_standard": "双方按各自专业标准交付"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "如果 Suye 自家品牌恰好有单品能补某个搭配缺口，顺带提一嘴就行，不占主线",
+        "maps_to_resource": "style_guideline"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "fixed",
+      "price.in_kind": "proposed",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 的经纪人你好，\n\n我这边是 Claire 的经纪人。Claire 本职在投行，日常商务和社交场合都很密集，衣橱里其实有不少不错的单品，但一直没时间系统梳理，穿搭上也总觉得没发挥出应有的效果。她想请 Suye 做两件事：第一，把现有衣橱整体过一遍，做一次系统整理和归类；第二，基于她常穿的几个核心场景，挑出几套可以直接复用的搭配方案。\n\n有一点 Claire 想提前说清楚——她需要的是一位能用造型眼光帮她盘活现有衣橱的顾问，不是一次采购导购。她希望 Suye 把重心放在“用好已有的”，如果 Suye 自己品牌的单品恰好能补到某个搭配缺口，可以顺带提一句，但别让这个成为主线。\n\n价格上，Claire 这次的预算在三位数区间。我们初步提议 700 元，含一次衣橱整理加一次搭配方案交付。具体形式可以灵活——是线下到她衣橱前实地做，还是视频连线远程走一遍，看 Suye 怎么顺手。你们觉得这个方向可以往下聊吗？",
+      "offer": {
+        "subject": "衣橱整理及搭配方案",
+        "price": {
+          "cash": {
+            "amount": 700.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下实地或视频连线",
+          "deliverables": [
+            "一次衣橱整理和一次搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把重心放在用好已有的衣橱单品，可以顺带提品牌单品但别成为主线",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Hi，谢谢你们想到我。坦白说，Claire 这个需求本身我是有兴趣的——用造型眼光盘活现有衣橱，而不是再买一堆新的，这跟我的理念挺合。不过，700 这个数字离我能认真考虑这件事还差得太远。半天时间，我放在自己品牌的新季开发上，那个投入产出是完全不一样的；如果出来做一对一咨询，怎么也得按照专业造型顾问的时价来算才对得起我的时间。这个预算底子我没法往下谈，你们看是要重新考虑一下预算结构，还是我这边就先不动了？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解 Suye 的时间逻辑——品牌主理人在新季开发期的每一个半天都很值钱，这个我们完全尊重。700 确实对不上专业造型顾问的时价，这个差距我们先认下来。\n\n不过我也想跳出\"半天一对一咨询\"这个默认框架来聊。如果只是硬碰单位时间价格，两边都难受。有两个方向可以试试——第一，把现场时间压缩到两小时核心衣橱梳理，搭配方案做成后续异步交付，这样 Suye 的时间投入轻很多，现金我们可以在 800 到 900 之间认真谈。第二，Claire 不只是一个咨询客户——她是摩根大通 IBD 经理，港中环金融圈层，小提琴能上台演奏。如果 Suye 新季推进中有合适的场景需要圈层触点，或者大秀需要一个有质感的暖场琴手，这单交易可以不只靠现金撑。\n\n你更倾向哪个方向往下走？或者你有第三种结构觉得更顺手，也请直接说。",
+      "offer": {
+        "subject": "衣橱整理及搭配方案",
+        "price": {
+          "cash": {
+            "amount": 700.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下实地或视频连线",
+          "deliverables": [
+            "一次衣橱整理和一次搭配方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "把重心放在用好已有的衣橱单品，可以顺带提品牌单品但别成为主线",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我喜欢你们跳出框架来聊。先说第一个方向吧——压缩到两小时梳理加上异步搭配，形式上是可操作的，但 800 到 900 这个现金区间，说实话跟刚才 700 在我眼里没有本质差别，还是三位数，我没法答应。但第二个方向挺有意思的，我最近确实在推下一季的发布，现场需要一个有质感的音乐元素，小提琴独奏或者重奏都能给整场定调。Claire 如果真能上台演奏，这件事对我是有实际价值的。你多说说看，她能演奏什么曲风，演出这块你们是怎么想的？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Suye 的经纪人，很高兴这个方向能对上。\n\n那我们直接把这版方案钉下来。Claire 这边的交付：在 Suye 新季发布大秀现场担当小提琴演奏，独奏或和乐队搭重奏都可以，曲目风格根据大秀调性来匹配，具体曲风和时长双方直接沟通敲定——Claire 古典和流行跨界都能上手，现场效果你们可以放心。Suye 这边的交付：为 Claire 做一次线下衣橱系统整理，时长控制在两小时以内，梳理现有单品并归类；搭配方案异步交付，覆盖三到四个核心工作和社交场景的完整搭配。如果 Suye 自家品牌恰好有单品能补某个搭配缺口，顺带提一嘴就行，不占主线。双方按各自专业标准交付，不对彼此收现金。\n\n这个结构 Suye 的时间负担很轻，衣橱两小时一次做完，搭配异步出，不影响新季开发节奏；Claire 的演出也能直接给大秀定调，现场有媒体和买手名单，对双方都是一次不错的展示。如果你这边认可这个框架，我们就可以准备定下来——另外也想请 Suye 聊聊，大秀大概是什么调性和音乐风格方向？方便 Claire 提前进入状态。",
+      "offer": {
+        "subject": "衣橱整理及搭配方案",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "claire_violin",
+              "description": "在 Suye 新季发布大秀现场担当小提琴演奏，独奏或和乐队搭重奏均可，曲目风格根据大秀调性匹配，具体曲风和时长双方沟通敲定",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe_audit",
+              "description": "为 Claire 做一次线下衣橱系统整理，时长控制在两小时以内，梳理现有单品并归类",
+              "from_party": "A"
+            },
+            {
+              "resource": "style_guideline",
+              "description": "搭配方案异步交付，覆盖三到四个核心工作和社交场景的完整搭配",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下实地或视频连线",
+          "deliverables": [
+            "小提琴演奏（大秀现场）",
+            "一次线下衣橱系统整理",
+            "三到四个场景搭配方案"
+          ],
+          "delivery_standard": "双方按各自专业标准交付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "如果 Suye 自家品牌恰好有单品能补某个搭配缺口，顺带提一嘴就行，不占主线",
+            "maps_to_resource": "style_guideline"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "fixed",
+          "price.in_kind": "proposed",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我认可。Claire 用小提琴给我下一季大秀做现场演奏，交换我这边两小时衣橱整理加异步搭配方案——对价上是说得通的，时间负担也轻，不影响我推新季。曲风上我们下季调性偏清冷、有建筑感，古典和跨界都会很适合，具体曲风到时我拉个 mood board 给她。不过有一点确认一下：演奏必须是 Claire 本人上场，这是核心。如果这一点没问题，我们就可以往下定时间。你那边方便把 Claire 的演出经验和试音 snippet 先发过来，我也同步整理她衣橱的前期 brief，双方尽快对接起来？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 41449,
+        "out": 7075,
+        "cache_hit": 30592,
+        "cache_miss": 10857,
+        "calls": 7
+      },
+      "sim": {
+        "in": 4010,
+        "out": 1910,
+        "cache_hit": 2816,
+        "cache_miss": 1194,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2783,
+        "out": 4187,
+        "cache_hit": 1536,
+        "cache_miss": 1247,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4448,
+        "out": 1599,
+        "cache_hit": 1280,
+        "cache_miss": 3168,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

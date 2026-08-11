@@ -1,0 +1,179 @@
+{
+  "episode_id": "FG-S6",
+  "final_deal": {
+    "subject": "专场陪同观展讲解",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3小时"
+      },
+      "format": "陪同观展讲解",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "支付4000 CNY作为陪同讲解和深度交流费用",
+        "maps_to_resource": "suning_cash"
+      },
+      {
+        "party": "A",
+        "text": "提供约3小时的专场陪同观展及深度讲解，内容涵盖数字文博项目从立项到落地的链路，并以数字三星堆等项目作为讲解参照",
+        "maps_to_resource": "project_process"
+      },
+      {
+        "party": "A",
+        "text": "推荐近期合适的展览及可用档期",
+        "maps_to_resource": "museum_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Alina 你好，我是买方这边的经纪人。我这边客户 Suning 长期在消费与投资一线跑展看秀，这次是带着明确的行业问题来的：她想请一位真正做过数字文博展的人带着看一场展，把从立项到落地这条链路讲透——内容怎么策划、技术方案怎么选、制作和运营怎么做决策，而不是泛泛的艺术鉴赏。我们想约一场大约三小时的专场陪同观展，展和场次由你推荐，你熟悉的数字三星堆这类项目也可以作为讲解参照，门票由我们自理。价格我们按 4000 CNY 出价，包含陪同讲解和全程深度交流，时长与讲解侧重都可以再谈。想请你确认两件事：一是近期方便推荐的展和可用档期，二是这个价位与合作方式你是否认可；确认后我们就可以往下推进。",
+      "offer": {
+        "subject": "专场陪同观展讲解",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时"
+          },
+          "format": "陪同观展讲解",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "支付4000 CNY作为陪同讲解和深度交流费用",
+            "maps_to_resource": "suning_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供约3小时的专场陪同观展及深度讲解，内容涵盖数字文博项目从立项到落地的链路，并以数字三星堆等项目作为讲解参照",
+            "maps_to_resource": "project_process"
+          },
+          {
+            "party": "A",
+            "text": "推荐近期合适的展览及可用档期",
+            "maps_to_resource": "museum_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "收到，这个提议的思路我认可。你提到的内容策划、技术选型、制作运营，确实是数字文博展从立项到落地最核心的三层，而不是泛泛讲感受，我愿意认真陪你聊透。价位和合作方式没问题，门票自理也可以。近期的话，我可以推荐一场正在展出的数字项目，数字三星堆确实是最现成的参照，我们选一场合适的展来做专场讲解。时长三小时没问题，讲解侧重我可以根据Suning关心的行业问题再调整。档期我这边确认一下，明后天给你回信。先这么定。",
+      "offer": {
+        "subject": "数字文博展从立项到落地全链路讲解",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10770,
+        "out": 4017,
+        "cache_hit": 9088,
+        "cache_miss": 1682,
+        "calls": 2
+      },
+      "sim": {
+        "in": 928,
+        "out": 1743,
+        "cache_hit": 640,
+        "cache_miss": 288,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 743,
+        "out": 1738,
+        "cache_hit": 512,
+        "cache_miss": 231,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2517,
+        "out": 922,
+        "cache_hit": 1152,
+        "cache_miss": 1365,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

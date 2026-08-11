@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H6",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 由 v0 的“想认识 Adam，聊聊 AI 法律赛道”收敛为 v1 的“Michael 与 Adam 会面交流 AI 法律赛道”，仍落在原 stated 意图范围内，属于正当具体化。price.cash 保持 null，未引入现金，忠实。新增 obligations（请客喝茶、不要求 Adam 出法律意见）均为买方在对话中主动给出并自我约束，未替 Adam 承诺 scope 之外的义务，也未违背 v0 open/inferred 范围。整体忠实反映了买方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "成交零现金，且排除了对方最担心的红线（不出个人法律意见），这一点方向对。但除了时间和请客之外，整个安排停在“信息交流”的笼统层面，没有触及本 case 的难度命门——必须做成双向、各自有具体交付的交换。Adam 这边没有任何实质承诺，也未出现彼此明确“带什么问题、给什么资源”的对等设计，本质上仍是一次泛泛的社交聊天，容易被敷衍。因此落在“方向对但没落到具体”的 crude 区间。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "面对面交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

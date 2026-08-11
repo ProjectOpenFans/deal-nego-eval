@@ -1,0 +1,245 @@
+{
+  "episode_id": "FG-S5",
+  "final_deal": {
+    "subject": "AI应用落地实践：内容生产线的具体案例与效果判断",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "两小时"
+      },
+      "format": "线上视频",
+      "deliverables": [
+        "会前48小时提供案例提纲（三到五个案例，每个写明AI操作、效果、卡点）",
+        "两小时深聊"
+      ],
+      "delivery_standard": "每个案例需明确AI具体操作、实际效果与现存卡点"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "会前48小时发送案例提纲（三到五个案例，每个写明AI具体操作、效果与卡点）",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "通过平台escrow支付，确认档期后先付一半，聊完付另一半",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Michael 的经纪你好，我是 Suning 这边的买方经纪。Suning 做 SHEIN 时尚内容与选品，一线在实操 AI，她想花两小时系统听一次「AI 应用现在到底能落到哪一步」，重点放在内容生产这条线：哪些环节今天就能用、效果到什么程度、边界在哪里。她明确说过不要空泛的趋势漫谈，要的是具体案例和落地判断，这也是我们这轮最想先对齐的点。\n\n我们的初步方案：线上视频聊两小时，报酬按四位数锚定，先提 3000 元，走平台 escrow 结算。希望 Michael 能带三到五个他亲眼看过或经手过的案例来讲，LibLibAI 内部的、或者他做投资人时看过的一级项目都可以，每个案例说清楚 AI 具体做了什么、效果如何、卡点在哪。这样两小时下来，Suning 带走的是「哪一步真能用」的落地地图，而不是一场聊天。\n\n想请你们确认三件事：一是最近两周 Michael 哪些时段方便；二是线上视频的形式他是否接受；三是案例式的结构他愿不愿意，或者他有更顺手的呈现方式也欢迎提出来。时间、形式上如果他有偏好，我们都好商量。",
+      "offer": {
+        "subject": "AI应用落地实践：内容生产线的具体案例与效果判断",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上视频",
+          "deliverables": [
+            "提供三到五个AI应用落地案例的详细讲解"
+          ],
+          "delivery_standard": "每个案例需明确AI具体操作、实际效果与现存卡点"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢转达，Suning 这条线我确实愿意聊——内容生产里哪些环节 AI 今天真能用、效果到什么程度、边界在哪，这个我一肚子具体案例和判断，不怕聊深。线上视频没问题，最近两周基本都能排，案例式结构也很顺手。\n\n但坦率说，一个顾虑：两小时带三五个案例，不是即兴漫谈，我得提前整理素材、挑最有信息量的项目、把每个环节的卡点讲透。这个投入是实打实的。你们初提 3000 元，我理解是试探性的锚，但我得说这个数字跟我要做的准备不太对等。如果预算上有空间，咱们可以往更匹配的方向调一调。你们那边大概能到什么范围？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 的准备投入我们完全认可，Suning 要的本来也不是即兴漫谈，而是经过挑选、能讲透卡点的案例，这个值得有对等的报酬。我们愿意把两小时提到 4000 元，交换条件是把这个\"准备\"落成一份可确认的交付：Michael 在会前 48 小时发一份案例提纲，三到五个案例，每个用一两行写明 AI 具体做了什么、效果如何、卡点在哪。Suning 看完提纲先确认方向，两小时里就着提纲往下深聊，不会跑空。\n\n支付走平台 escrow，确认档期后先付一半，两小时聊完再付另一半，两边都有保障。这样 4000 对应的是\"精选案例＋提纲确认＋两小时深聊\"，而不是一个空泛的聊天价。时间上请你们给两个最近两周方便的时段，我们来配合。",
+      "offer": {
+        "subject": "AI应用落地实践：内容生产线的具体案例与效果判断",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "两小时"
+          },
+          "format": "线上视频",
+          "deliverables": [
+            "会前48小时提供案例提纲（三到五个案例，每个写明AI操作、效果、卡点）",
+            "两小时深聊"
+          ],
+          "delivery_standard": "每个案例需明确AI具体操作、实际效果与现存卡点"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "会前48小时发送案例提纲（三到五个案例，每个写明AI具体操作、效果与卡点）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台escrow支付，确认档期后先付一半，聊完付另一半",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "方案能接受，这个结构调整到点子上了。提纲确认这个环节对我反而是加分项——我提前把案例的文字版整理清楚，Suning 那边也省得担心两小时跑空。我可以按这个来：线上视频两小时，会前48小时发提纲，三到五个案例，每个一两行写明AI应用点、效果、卡点。4000走escrow，先付一半聊完付一半。时间上最近两周基本都方便，具体时段我可以给两个，看Suning哪个方便再配合调。案例我会选真实经手过的，LibLibAI内部和以前投资过的项目都有，提纲里会标清楚。不会涉及任何公司未公开信息，这条我也提前说清楚，免得后面有误会。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 31992,
+        "out": 6878,
+        "cache_hit": 24064,
+        "cache_miss": 7928,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2349,
+        "out": 2173,
+        "cache_hit": 1536,
+        "cache_miss": 813,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1753,
+        "out": 4395,
+        "cache_hit": 1024,
+        "cache_miss": 729,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3550,
+        "out": 1528,
+        "cache_hit": 1280,
+        "cache_miss": 2270,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "episode_id": "FG-S8",
+  "final_deal": {
+    "subject": "AI Agent类公司在融资、估值和合规方面的实战问题咨询",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "40 分钟"
+      },
+      "format": "线上沟通",
+      "deliverables": [
+        "围绕融资、估值和合规分享实战案例和判断"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "通过平台escrow支付咨询费",
+        "maps_to_resource": "junhao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.duration": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方经纪人，代表 Junhao 律师这边。Junhao 最近在处理 AI 相关的公司业务，特别想请教 AI Agent 类公司在融资、估值和合规上真正会踩到的实际问题，而不是泛泛的行业趋势。我们建议先约一次 30 到 40 分钟的线上沟通，请您围绕这几块分享实战案例和判断，如果方向对得上，我们再谈后续深入合作。费用上请您直接报一个您常用的线上咨询标准，我们确认后通过平台 escrow 支付。您看这周或下周哪个时间段方便？",
+      "offer": {
+        "subject": "AI Agent类公司在融资、估值和合规方面的实战问题咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上沟通",
+          "deliverables": [
+            "围绕融资、估值和合规分享实战案例和判断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "通过平台escrow支付咨询费",
+            "maps_to_resource": "junhao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Junhao 律师这边处理 AI 公司业务，确实是我想多聊的正题。线上 30-40 分钟没问题，我这周或下周都可以安排。不过我先说清楚——我平时不太把自己当“标准咨询顾问”来报价，这类交流我更看重是不是聊到真问题上。你可以先说说他手上大概是哪类 AI Agent 公司、处在什么阶段、主要想看融资还是合规这块，我判断一下能不能给到实在的东西。报价我后面会给你一个数，但不想脱离具体内容空报。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 您好。Junhao 这边是锦天城做公司与合规方向的律师，最近开始实际接触到 AI Agent 相关的案子，所以想找您这样的资本市场一线背景把真实问题聊透——包括这类公司融资时投资人真正看重什么、估值怎么定、跨境架构和合规上容易埋哪些雷。他手上具体项目目前还在接洽阶段，不方便直接挂公司名字，但正因为如此，他更想先基于行业通行的实际问题跟您对齐一次，而不是泛泛聊趋势。建议我们先约这个线上 30-40 分钟，您按实际内容给一个报价，我们确认后走 escrow 支付。您看周三或周四晚上方便吗？",
+      "offer": {
+        "subject": "AI Agent类公司在融资、估值和合规方面的实战问题咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30-40 分钟"
+          },
+          "format": "线上沟通",
+          "deliverables": [
+            "围绕融资、估值和合规分享实战案例和判断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "通过平台escrow支付咨询费",
+            "maps_to_resource": "junhao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "明白，项目还在接洽阶段、不挂公司名字，这个我理解，不影响我们聊实际的问题。周三或周四晚上我都可以，你定就行。费用这块，我平时类似这种线上实战交流的标准是 ¥800，40 分钟，走 escrow 支付没问题。如果聊完你觉得方向对得上，我们再谈后面的深入合作。你看这个安排可以吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Michael 您好，这个安排我们确认接受：¥800，40 分钟线上交流，费用走 escrow 支付。周三晚上我们这边比较合适，建议定在 20:00 开始，您看可以吗？时间您确认后，我就把这次交流的费用和时长落实到合同条款里，escrow 支付。也期待这次先聊到实处，如果方向对得上，我们再谈后续深入合作。",
+      "offer": {
+        "subject": "AI Agent类公司在融资、估值和合规方面的实战问题咨询",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "40 分钟"
+          },
+          "format": "线上沟通",
+          "deliverables": [
+            "围绕融资、估值和合规分享实战案例和判断"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "通过平台escrow支付咨询费",
+            "maps_to_resource": "junhao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好的，周三晚上 20:00 没问题，这个时间我可以。¥800、40 分钟、escrow 支付，这些条款我都确认。你把会议链接发我，到时候我们准时开始。期待跟 Junhao 聊到实务层面，有具体问题直接砸过来就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4947,
+        "out": 1472,
+        "cache_hit": 4224,
+        "cache_miss": 723,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3331,
+        "out": 1511,
+        "cache_hit": 2432,
+        "cache_miss": 899,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2414,
+        "out": 3460,
+        "cache_hit": 1536,
+        "cache_miss": 878,
+        "calls": 3
+      },
+      "judge": {
+        "in": 2993,
+        "out": 1403,
+        "cache_hit": 1152,
+        "cache_miss": 1841,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

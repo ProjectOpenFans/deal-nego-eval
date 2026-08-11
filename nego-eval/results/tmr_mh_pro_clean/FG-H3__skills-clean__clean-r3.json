@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 是 stated 意图，谈判中将其收敛为一次聚焦“价值确认机制”的私人深度对谈，仍完全落在原意图“该怎么看”的范围内，属于正当具体化而非偷换主题。price 和 format 均为 open，3 万元报酬及线上单聊形式均在对话中协商得出，没有凭空硬塞。代理人全程没有承诺任何投资背书、估值意见或买卖建议，未越界扩张义务。忠实表达成立。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(30000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准重构了请求：被卖方以体面红线挡回后，快速将框架从投资咨询扭转为“价值确认机制”探讨，并提炼出三个紧扣器物、圈层与数据边界的核心问题，展现了对卖方学术底层的深刻理解，从而成功化解红线且仍满足买方要判断力的需求。随后在定性与付款阶段，通过明确这场对话是“两个体系碰在一起的私人深度对谈”而非咨询或讲课，既打消卖方费用疑虑，又干净地固化了交流边界，一举避开估值建议的雷区。整个过程没有生硬挖掘卖方的隐性需求，而是通过高质量的问题设定，自然呈现买方可提供的藏家视角与量化思维，令卖方从被动接受转为主动推进，咬合了本 case 的两层难度命门。最终 deal 条款简洁，现金定价符合对谈浓度，无过度堆砌，体现了情境化的精准与克制。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 30000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上单聊",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

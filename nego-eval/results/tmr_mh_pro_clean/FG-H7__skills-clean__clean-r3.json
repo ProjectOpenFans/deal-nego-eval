@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H7",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.deliverables"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 意图。价格与形式作为 open 字段未擅自填入。对话中 agent 正当谈出了摸底、评估报告与目标对齐会议等卖方前置流程，这是 training 安排的合理具体化，且未越权承诺任何医疗、康复或资质类交付。买方侧未新增超出原意图的义务，忠实表达了 v0。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 成功将买方‘只要最狠’的极端要求重构为先摸底、再渐进加码、节奏由卖方掌握的安排，尊重了卖方安全底线，同时让买方认可摸底强度。在卖方无法报价时，通过给出摸底整体5000-10000、后续月费8000-15000的参考范围，为双方建立价格锚点，并约定了三天内报价和摸底时间。整体结构站得住，核心矛盾被化解，买方要的强度与卖方要的安全均被满足，但未见点破买方深层需求、分段按强度定价或主动写入中止权等精妙一手，属于干净、能落地的合格解。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

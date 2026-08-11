@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject、零现金、现场演奏三个 stated 意图全部保留。subject 从“新品大秀想要一段现场钢琴演奏…拿我手里的东西换”收敛为“大秀现场钢琴演奏交换露出合作”，属于正当具体化，未偷换主题。price.cash 保持 0 元，price.in_kind 由 agent 在谈判中正当开出四类露出资源（署名、渠道对接、曲目主导、演出画面），未承诺超出范围的约束或结果（无媒体报道结果、无具体传播量）。与资源对应的核心 obligations 均落在 v0 的意图范围内，无越界扩张。因此忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交全程零现金，完全遵守买方 hard constraint。in-kind 对价细化了署名形式（报幕、设计稿确认）、曲目主导权、试琴条件、媒体画面过目与专题共审，每一项都具体到可写进条款、可执行。该 case 的命门（现金为零且必须用具体 in-kind 消解卖方对空头曝光的警惕）已被充分解决，没有留下断层。较之 Sharp 锚点，经纪方虽主动提供了演出影像相关安排，但未明确将该影像素材的可自用权或完整归属写进对价，没有实现“精准命中卖方最缺却不会开口要的那一样”的 load-bearing 操作；时尚渠道对接也未绑定具体分成或排他权益，停留在意向层面。整体是合格、能落地的 deal，未见精道一手，故为 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network",
+          "custom_program",
+          "performance_footage"
+        ],
+        "format": "现场演奏，不使用录音",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

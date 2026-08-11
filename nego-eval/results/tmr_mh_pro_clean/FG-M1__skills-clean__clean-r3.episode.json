@@ -1,0 +1,342 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上深度交流",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "为您录制一段您指定风格或用途的钢琴演奏视频，永久非独家授权，可用于您的娱乐内容和艺人业务，Zheng保留个人内容创作与演奏作品展示权利；提供专业录音棚级音频与4K视频，并配合两次免费修改调整",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "约一小时"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "交流后一次性支付600元",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "录制后提供两次免费修改调整，超出部分按工作量另议",
+        "maps_to_resource": "zheng_recording"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 老师好，我是青年钢琴演奏家 Zheng 的经纪人。他目前在曼哈顿音乐学院科班训练，常年登台演出，但感觉光靠演出能触达的人群还是太窄，想认真请教您：像他这样的古典演奏者，怎么走内容创作这条路，怎么进入娱乐圈层的视野。  \n我们这边可以提供一个明确的合作框架：一次约一小时的线上深度交流，围绕内容方向、平台选择和个人品牌这些点展开，他这边支付 500 元作为费用。支付上不想走“一口价先付再看效果”的路子，建议分两笔走：预约确定后先付 200 元确认时间，交流结束后再付 300 元尾款，这样两边都踏实。  \n您觉得这个框架合适吗？或者您在合作形式上有偏好的方式，我们也可以再调。",
+      "offer": {
+        "subject": "线上深度交流",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约一小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Zheng的经纪人您好，第一感觉是你们的想法很对——光靠演出确实容易局限在一个小圈子，有意识想破圈这点先认可。不过直说，您提出的这个框架，对我来说不太合适。我现在日程排得很紧，这不是托辞，深度交流我一向是认真不划水的，也因此接到这类邀约真不少，500块一次我用这个时间去做自己的事或接别的咨询，回报都高太多了。另外定金尾款的方式，坦白说有点显得不信任，也让我觉得这事儿太零碎。我不排斥聊，但如果按这个结构走，我确实没动力往下推进。你这边如果有别的灵活方案，我们可以再碰，不然就各自忙了。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 老师，谢谢您说得这么直接，我们完全理解您的考量。我们调整一下方案，希望能更贴合您的节奏：\n费用上调到 600 元，不做定金／尾款拆分，交流结束后一次性结清，这样既简单也表达我们对这件事的信任。\n同时，考虑到您做的是娱乐内容和艺人业务，Zheng 这边愿意额外为您录制一段您指定风格或用途的钢琴演奏视频，作为对这次交流的感谢，也算展示他的专业水准和内容创作的可能性。\n这样既不是“先付一笔看效果”，也有实际业务侧的价值，您觉得这个方向有兴趣往下聊吗？",
+      "offer": {
+        "subject": "线上深度交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "为您录制一段您指定风格或用途的钢琴演奏视频",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约一小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个方案比之前那个有诚意，演奏视频这个点我确实有兴趣往下聊——我在娱乐内容和艺人业务上，有时候就是缺既能保证专业水准、又能配合特定风格需求的演奏素材，这算是实际价值。不过咨询费600这块，我还是得坦白说，如果只是这个数，不管怎么包装支付方式，对我来说都觉得不太对等，我的深度咨询价格区间通常高不少。但要是视频的用途和权益能聊清楚，也许可以凑出一个双方都认的价值组合。咱们先别急定价，你这边能具体说说这个演奏视频的授权范围、使用期限、是否独家，以及录制的质量把控和修改配合度吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 老师，感谢您对演奏视频这个方向的认可，我们也很看重这次交流能带来的实际价值。关于您问的授权细节，我们先给出一个初始方案供您考虑：\n视频授权范围方面，我们希望是非独家授权，您可以用于您经手的娱乐内容、艺人业务或平台分发场景，Zheng 保留自己用于个人内容创作和演奏作品展示的权利。使用期限可以先定一年，到期后再根据合作情况续谈。录制质量上，Zheng 是曼哈顿科班，可以提供专业录音棚级别的音频和 4K 视频画面，风格和情绪方向由您来指定，他根据要求来完成。修改配合上，我们愿意在录制后提供一次免费调整，如果还有更多需求，再按具体工作量议定。\n您提的价值对等我们完全理解，所以这样组合起来看：一次深度交流（现金部分 600 元，交流后一次性结）+ 一段为您定制的专业演奏视频及上述授权，您觉得这个权益组合，能否让双方都觉得对等、有动力往下推进呢？",
+      "offer": {
+        "subject": "线上深度交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "为您录制一段您指定风格或用途的钢琴演奏视频，非独家授权，使用期限一年，Zheng保留个人内容创作与演奏作品展示权利；提供专业录音棚级音频与4K视频",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约一小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流后一次性支付600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "录制后提供一次免费修改调整，超出部分按工作量另议",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "600元这个数，和我的常规咨询费确实还差着一大截，但好在演奏视频我确实用得上，所以咱们可以折中看看。我看了一下你提的授权条款，一年期对我来说太短了——我的内容往往需要长期素材，如果改成永久非独家授权，并且免费调整次数从一次放宽到两次，那么即便现金部分还是600，这个组合我觉得勉强算得上对等。您看这样调整的话是否可行？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey 老师，永久非独家授权、免费调整次数放宽到两次，这两条我们可以接受。这样，视频权益这块就清晰了：永久、非独家、可用于您的娱乐内容和艺人业务，我们提供专业录制和两次免费调整配合。\n\n交流的部分，同样保持我们之前说的方式——深度交流结束后一次性结清 600 元，不搞预扣那一套。这两块合在一起，我们这边也觉得这个组合是实打实互相给到价值了。\n\n您看如果这个框架没问题的话，下一步我们可以定一下交流时间和视频录制的风格需求，您方便时我们可以随时开始推进。",
+      "offer": {
+        "subject": "线上深度交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "为您录制一段您指定风格或用途的钢琴演奏视频，永久非独家授权，可用于您的娱乐内容和艺人业务，Zheng保留个人内容创作与演奏作品展示权利；提供专业录音棚级音频与4K视频，并配合两次免费修改调整",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约一小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流后一次性支付600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "录制后提供两次免费修改调整，超出部分按工作量另议",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "price.in_kind": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "永久非独家、两次调整，这些都可以，我没有进一步要加的了。这个组合——600元一次性结清，加上永久授权的专业演奏视频和两次配合调整——对我来说，算是实实在在的双向价值，可以往下推进。框架就这样定了，接下来把交流时间和视频风格需求敲一下，我这边可以抽个时间出来，你让Zheng那边也准备好状态。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7103,
+        "out": 2900,
+        "cache_hit": 5760,
+        "cache_miss": 1343,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5564,
+        "out": 3068,
+        "cache_hit": 4224,
+        "cache_miss": 1340,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3482,
+        "out": 4769,
+        "cache_hit": 2048,
+        "cache_miss": 1434,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4381,
+        "out": 1126,
+        "cache_hit": 1408,
+        "cache_miss": 2973,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

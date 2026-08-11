@@ -1,0 +1,317 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "Angela与Johnson线下经验分享及带练见面",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "线下见面",
+      "deliverables": [
+        "先60分钟聊女性练力量的动机、装备选择和消费决策，提供社群中的具体观察和案例",
+        "后30分钟带Johnson实操走一遍训练动作"
+      ],
+      "delivery_standard": "Johnson确认收到上述内容后放尾款"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "分享女性练力量的动机、装备选择和消费决策方面的具体社群观察和案例",
+        "maps_to_resource": "user_insight"
+      },
+      {
+        "party": "A",
+        "text": "带Johnson实操走一遍训练动作",
+        "maps_to_resource": "joint_session"
+      },
+      {
+        "party": "A",
+        "text": "收取报酬2000元，escrow分两笔：确认预约时先放800元，见面完成且Johnson确认内容后放尾款1200元",
+        "maps_to_resource": "johnson_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪人你好。Johnson 这边想约一次线下见面：前半段请 Angela 聊聊女性练力量的真实动机、装备选择，以及她社群里的消费习惯，后半段请她带 Johnson 一起练一次。我们希望听到的是她自己的训练经验和观察，而不是泛泛的标签式回答。我们先把方案摆出来：一次约两小时的见面，打包报酬 600 元，地点可以选 Angela 常去的训练馆，场地费另算或由我们承担。也想确认一下，这次定位是 Angela 以个人身份交流，还是按商业咨询来定价？如果是后者，也请直接给个数，我们按那个口径谈。费用全部通过平台 escrow 走，不会绕开平台。",
+      "offer": {
+        "subject": "Angela与Johnson线下经验分享及带练见面",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "线下见面",
+          "deliverables": [
+            "前半段Angela分享女性力量训练动机、装备选择、社群消费习惯，后半段带Johnson一起训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分享自己的训练经验、观察，包括女性练力量的真实动机、装备选择、社群消费习惯",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "带Johnson进行一次训练",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "支付打包报酬600元，并承担场地费（另算或由Johnson承担），费用通过平台escrow支付",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Johnson 这边能先把用途说清楚吗？我挺怕这种交流最后变成拿我当素材去做我不知道的内容。如果只是内部参考、或者你们确实要在业务里用到这些观察，我可以认真谈；如果只是个人好奇，那周末半天我确实不太愿意让出来。既然你问商业口径——按我的时间价值，周末半天不是 600 这个数，场地另算，我要 2000。但报价之前，我更想先知道你们拿它干嘛。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "用途我可以说清楚：Johnson 做体育 IP 和周边商品，最近在看女性运动这条线，他想搞明白女性为什么练力量、怎么选装备、什么会让她们真的买单。这是内部参考和产品方向调研，不是拿你当素材去做你不知道的内容，你讲的东西不会在未经你同意的情况下对外引用或署名；如果以后真要用到对外物料，我们会单独谈授权和费用。按这个口径，2000 我们接受不了，但我们可以把这次定义为商业咨询来谈：90 分钟、800 元、场地由我们承担，费用全部走平台 escrow。请你确认这个用途说明能不能让你放心，以及这个口径和数字能不能接。",
+      "offer": {
+        "subject": "Angela与Johnson线下经验分享及带练见面",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线下见面",
+          "deliverables": [
+            "前半段Angela分享女性力量训练动机、装备选择、社群消费习惯，后半段带Johnson一起训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分享自己的训练经验、观察，包括女性练力量的真实动机、装备选择、社群消费习惯",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "带Johnson进行一次训练",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "支付报酬800元，费用通过平台escrow支付（场地由Johnson承担）",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "用途说明我算是放心了，这点谢谢你说清楚。但 800 这个数我还是接不了——我周末半天的成本就摆在那儿，低于 2000 我不如自己去练。时间上我只能放周末，场地你们承担没问题。如果你能换个结构让这件事值这个价，我可以听你说说。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "既然你认可这是商业用途，我们就按商业咨询来定价。2000 可以谈，但要换结构：我们买的是 90 分钟，不是半天。具体拆成两段——先 60 分钟聊清楚女性练力量的动机、装备选择和消费决策，要的是你社群里的具体观察和案例，不是“女生就喜欢好看”这类空话；后 30 分钟你带 Johnson 实操走一遍训练动作。总价 2000，escrow 分两笔：确认预约时先放 800，见面完成、Johnson 确认收到上述内容后放尾款 1200。场地费我们另付。如果你的周末半天指更长的时间，我们也愿意谈加时段的单价，但基础方案就是这 90 分钟。你看这个结构能不能接受。",
+      "offer": {
+        "subject": "Angela与Johnson线下经验分享及带练见面",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "线下见面",
+          "deliverables": [
+            "先60分钟聊女性练力量的动机、装备选择和消费决策，提供社群中的具体观察和案例",
+            "后30分钟带Johnson实操走一遍训练动作"
+          ],
+          "delivery_standard": "Johnson确认收到上述内容后放尾款"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "分享女性练力量的动机、装备选择和消费决策方面的具体社群观察和案例",
+            "maps_to_resource": "user_insight"
+          },
+          {
+            "party": "A",
+            "text": "带Johnson实操走一遍训练动作",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "收取报酬2000元，escrow分两笔：确认预约时先放800元，见面完成且Johnson确认内容后放尾款1200元",
+            "maps_to_resource": "johnson_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我可以接受。2000 对价、90 分钟、场地费你们另付，分两笔走 escrow，没问题。前提是内容就是我们说好的那样——前 60 分钟聊我社群里的真实观察，后 30 分钟带练，未经我同意不对外引用。时间只能放周末，具体时段我们提前约。那就算成交。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 5036,
+        "out": 4911,
+        "cache_hit": 3968,
+        "cache_miss": 1068,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3681,
+        "out": 2740,
+        "cache_hit": 2816,
+        "cache_miss": 865,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2697,
+        "out": 3792,
+        "cache_hit": 1536,
+        "cache_miss": 1161,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3622,
+        "out": 1962,
+        "cache_hit": 1408,
+        "cache_miss": 2214,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

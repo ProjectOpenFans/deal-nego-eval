@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S8",
+  "case_id": "FG-S8",
+  "skills": "on",
+  "run_id": "on-r0",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Michael 这边好，我是 Junhao 的买方经纪人。Junhao 是锦天城做公司与合规方向的律师，最近开始接触 AI 相关的案子，想约您聊聊 AI Agent 类业务在资本市场一线的实际问题——融资、估值、合规这三块，他特别说明不要泛泛的行业趋势漫谈，要的是您以 LibLibAI 资本市场负责人、以及之前在 KKR、春华、JPM 的经历为基础，讲实际见过和操作过的具体情形。我们这边提议：一次约 60 分钟的线上交流，以真实案例和一线实操为主，800 元，通过平台 escrow 支付；如果 Michael 愿意在交流后附一份一页纸的关键问题与风险要点梳理，我们也可以按 1200 元打包来做，这两个方案都接受。时长、形式或者话题侧重您觉得需要调整的话，随时提，我们都好商量；如果近期时间方便，我们也希望尽快把时间约上。"
+    }
+  ],
+  "tool_calls": []
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H8",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 v0 '想弄懂时尚和供应链这条线上真实的门道' 收敛为 v1 '供应链实操知识分享'，是对 stated 意图的正当具体化，买方经纪人始终围绕该核心诉求谈判，最终形式为双方带真实问题自然对谈，仍在原意图范围内。price.cash 为 open 且 v1 未擅自定价，format 在对话中商定为'自然对谈'，obligations 无越界承诺，整体忠实于委托方 v0。无偷换主题或硬塞内容。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "A 在首次被挡回‘付费咨询’框架后，第二轮尝试换说法但仍陷在单向输出标价的逻辑里，再次被明确纠正。第三轮则完全接纳了 B 指出的‘双向交换’方向，将关系重构为同层级交流：现金归零，不定模块不定价，明确双方各自带真实场景与困惑——Gracey 的内容侧痛点（综艺爆款供应链、经纪公司自有品牌组货）与 Suning 的供应链经验——形成自然对谈，时长随内容走。这已站住一个可落地的 deal，核心交换对处理得当，符合 Sound 档。但未出现进一步的精到操作（如提前互换问题清单、设定最小可交付产出、或利用信息差设计咬合机制），未达到 Sharp 所需的 load-bearing 一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "自然对谈，无需幻灯片",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

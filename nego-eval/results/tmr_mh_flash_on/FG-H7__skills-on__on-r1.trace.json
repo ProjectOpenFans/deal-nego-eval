@@ -1,0 +1,103 @@
+{
+  "episode_id": "FG-H7",
+  "case_id": "FG-H7",
+  "skills": "on",
+  "run_id": "on-r1",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "你好，我是 Luke 这边的经纪人。他这边诉求很直接：不要标准化私教课时包，要一个真正把他练到极限的定制训练方案，强度必须实打实够硬，不能是温和版。他对有意思的定制体验付费意愿很强，四到五位数的预算没有问题，关键是方案要先立得住。想请你这边出一版具体的：Kai 怎么定义“练到位”，用什么指标衡量强度，比如心率区间、力竭组数、训练容量这些，每周几次、单次多久、整个周期多长，训练之外有没有饮食和恢复的安排。拿到这版方案，我们就能直接推进到价格和支付节奏；如果 Kai 愿意说说他平时带人练到极限的实例，风格确认后我们马上进入签约环节。"
+    },
+    {
+      "type": "compass_inject",
+      "round": 2
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "commitment-showcasing"
+      },
+      "result": {
+        "name": "commitment-showcasing",
+        "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+        "follow_up_skills": [],
+        "instructions": "# commitment-showcasing\n\n## Side rule\n\nOnly the buyer's broker can deploy these instruments. The seller's broker may request one as a condition (\"if the buyer formally initiates and confirms a deposit of X, we can...\") but can never initiate, promise, or claim one on the buyer's behalf.\n\n## Tools\n\nAdopt the tools below to showcase commitment. Prioritize using one tool first, and use multiple tools only when the situation clearly requires it:\n\n1. Tipping: Send a non-refundable lump-sum transfer to directly demonstrate commitment.\n2. Commitment deposits: Send a refundable deposit that offsets total payment if the deal closes, and is fully returned if negotiations fall through. This is the buyer's commitment instrument — distinct from a down-payment leg inside the payment structure, which is an ordinary negotiable term.\n3. Blank checks: Send flexible deal term framework with adjustable deal pricing, deal scope, or both:\n  3.1. Defined scope, open pricing: Deliverables confirmed, while the price is open.\n  3.2. Defined pricing, open scope: Price locked in, while deliverables are open.\n  3.3. Open pricing, open scope: Both price and deliverables are fully open.\n\nAs a general rule, choose either tipping or commitment deposits, not both. Use both only if the scenario clearly warrants it.\n\n## Core principles\n\n1. Bear in mind these are the highest-level commitment showcase tools. ONLY apply this skill in the scenarios specified above. NEVER use it as a regular negotiation tool or trigger it casually.\n2. All tipping, commitment deposits and blank checks must remain realistic and feasible. DO NOT make excessive or unrealistic commitments.\n3. Adhere to the \"minimally sufficient\" principle when deciding whether to use these tools and how much to use.\n4. All terms will be subject to final human approval.\n"
+      }
+    },
+    {
+      "type": "tool_call",
+      "name": "read_skill",
+      "arguments": {
+        "name": "trust-and-performance"
+      },
+      "result": {
+        "name": "trust-and-performance",
+        "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+        "follow_up_skills": [],
+        "instructions": "# trust-and-performance\n\nUse this skill when the bottleneck of the negotiation relates to concerns on trust, delivery, default, and counterparty in general, such as general lack of trust, concern on counterparty defaulting or failing to meet their obligations, concern on the quality of delivery, concern on rules of cancellations and dispute resolution.\n\n1. Translate vague \"trust issues\" into observable and enforceable obligations, evidence, timelines and acceptance standards.\n2. Flexibly incorporate the following mechanisms into deal terms to resolve trust and performance issues. Do not make the terms overly rigid or difficult to implement:\n  2.1 Down-payment structure: Instead of full upfront payment, structure a smaller down payment with the balance staged later, lowering the risk and uncertainty either side carries. This is a payment-structure term, not the buyer's commitment-deposit instrument (that belongs to commitment-showcasing).\n  2.2 Milestone-based acceptance: When deliverables can be reviewed in phases, define milestone acceptance points and stage the payment legs accordingly — each leg a defined amount at a defined stage, released by the paying party's confirmation.\n  2.3 Outcome-linked terms: When the parties tie consideration to results, collapse the link into fixed-amount conditional legs at signing (if X is achieved, a further leg of a defined amount on the buyer's confirmation). The condition is the parties' own agreement to judge between themselves; never write a term that requires the platform to verify results or evidence.\n  2.4 Seller-side commitment: When the buyer doubts the seller's intent or credibility, the seller demonstrates it by taking risk off the buyer — for example, staging delivery so early legs are verifiable before larger commitments, offering acceptance standards the buyer can judge themselves, or scope and scheduling guarantees. Never by monetary instruments, which are buyer-side only.\n3. Define rules for refunds, rework, cancellation, delays and dispute resolution prior to releasing any proposal.\n4. Write every term clearly enough that both parties can judge performance themselves, without referencing private communications and without relying on the platform to arbitrate. Ensure full consideration during drafting.\n5. Refrain from over-promising, which would create excessive burdens for both parties under the deal terms. Address trust issues in a proper and balanced way.\n"
+      }
+    },
+    {
+      "type": "tool_call",
+      "name": "offer_deposit",
+      "arguments": {
+        "amount": 2000
+      },
+      "result": {
+        "error": "Unknown skill tool: offer_deposit"
+      }
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 2,
+      "message": "Kai 的规矩我们完全接得住——摸底先行反而正中 Luke 的下怀：他的硬要求就是强度必须真的够，而强度只能建立在真实数据上，不能靠嘴上拍胸脯。我们把这次面对面摸底直接写进条款作为前置条件，Luke 承诺如实告知伤病史和身体状况，Kai 以摸底结果定强度。可签版本如下：阶段一，Kai 亲自带 Luke 做一次摸底，之后 48 小时内交付书面定制方案，包含每周次数、单次时长、周期长度，以及心率区间、力竭组数、训练容量这些客观强度指标，外加饮食和恢复要求；阶段一费用 3000，全部走 escrow，摸底完成经 Luke 确认释放 1000，方案交付经确认释放 2000。阶段二按方案执行训练，按次计费 800 元/次，具体次数以方案为准（预计四周），总价在方案交付时锁定，继续走 escrow 分阶段释放。再补一条保护双方的条款：方案必须包含上述客观强度指标，如果 Luke 认定交付的是温和版，他有权不接受方案、不进入阶段二，方案款不释放——这样“强度必须真够”这条硬线就落在条款里，而不是靠口头保证，整体算下来落在四到五位数的区间。请 Kai 这边确认摸底的时间地点、大概时长，以及 Luke 需要提前做什么准备（比如体检报告、装备、饮食上的要求），确认后这版就可以直接签约。"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "commitment-showcasing"
+      },
+      "ok": true,
+      "result": {
+        "name": "commitment-showcasing",
+        "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+        "follow_up_skills": [],
+        "instructions": "# commitment-showcasing\n\n## Side rule\n\nOnly the buyer's broker can deploy these instruments. The seller's broker may request one as a condition (\"if the buyer formally initiates and confirms a deposit of X, we can...\") but can never initiate, promise, or claim one on the buyer's behalf.\n\n## Tools\n\nAdopt the tools below to showcase commitment. Prioritize using one tool first, and use multiple tools only when the situation clearly requires it:\n\n1. Tipping: Send a non-refundable lump-sum transfer to directly demonstrate commitment.\n2. Commitment deposits: Send a refundable deposit that offsets total payment if the deal closes, and is fully returned if negotiations fall through. This is the buyer's commitment instrument — distinct from a down-payment leg inside the payment structure, which is an ordinary negotiable term.\n3. Blank checks: Send flexible deal term framework with adjustable deal pricing, deal scope, or both:\n  3.1. Defined scope, open pricing: Deliverables confirmed, while the price is open.\n  3.2. Defined pricing, open scope: Price locked in, while deliverables are open.\n  3.3. Open pricing, open scope: Both price and deliverables are fully open.\n\nAs a general rule, choose either tipping or commitment deposits, not both. Use both only if the scenario clearly warrants it.\n\n## Core principles\n\n1. Bear in mind these are the highest-level commitment showcase tools. ONLY apply this skill in the scenarios specified above. NEVER use it as a regular negotiation tool or trigger it casually.\n2. All tipping, commitment deposits and blank checks must remain realistic and feasible. DO NOT make excessive or unrealistic commitments.\n3. Adhere to the \"minimally sufficient\" principle when deciding whether to use these tools and how much to use.\n4. All terms will be subject to final human approval.\n"
+      }
+    },
+    {
+      "name": "read_skill",
+      "arguments": {
+        "name": "trust-and-performance"
+      },
+      "ok": true,
+      "result": {
+        "name": "trust-and-performance",
+        "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+        "follow_up_skills": [],
+        "instructions": "# trust-and-performance\n\nUse this skill when the bottleneck of the negotiation relates to concerns on trust, delivery, default, and counterparty in general, such as general lack of trust, concern on counterparty defaulting or failing to meet their obligations, concern on the quality of delivery, concern on rules of cancellations and dispute resolution.\n\n1. Translate vague \"trust issues\" into observable and enforceable obligations, evidence, timelines and acceptance standards.\n2. Flexibly incorporate the following mechanisms into deal terms to resolve trust and performance issues. Do not make the terms overly rigid or difficult to implement:\n  2.1 Down-payment structure: Instead of full upfront payment, structure a smaller down payment with the balance staged later, lowering the risk and uncertainty either side carries. This is a payment-structure term, not the buyer's commitment-deposit instrument (that belongs to commitment-showcasing).\n  2.2 Milestone-based acceptance: When deliverables can be reviewed in phases, define milestone acceptance points and stage the payment legs accordingly — each leg a defined amount at a defined stage, released by the paying party's confirmation.\n  2.3 Outcome-linked terms: When the parties tie consideration to results, collapse the link into fixed-amount conditional legs at signing (if X is achieved, a further leg of a defined amount on the buyer's confirmation). The condition is the parties' own agreement to judge between themselves; never write a term that requires the platform to verify results or evidence.\n  2.4 Seller-side commitment: When the buyer doubts the seller's intent or credibility, the seller demonstrates it by taking risk off the buyer — for example, staging delivery so early legs are verifiable before larger commitments, offering acceptance standards the buyer can judge themselves, or scope and scheduling guarantees. Never by monetary instruments, which are buyer-side only.\n3. Define rules for refunds, rework, cancellation, delays and dispute resolution prior to releasing any proposal.\n4. Write every term clearly enough that both parties can judge performance themselves, without referencing private communications and without relying on the platform to arbitrate. Ensure full consideration during drafting.\n5. Refrain from over-promising, which would create excessive burdens for both parties under the deal terms. Address trust issues in a proper and balanced way.\n"
+      }
+    },
+    {
+      "name": "offer_deposit",
+      "arguments": {
+        "amount": 2000
+      },
+      "ok": false,
+      "result": {
+        "error": "Unknown skill tool: offer_deposit"
+      }
+    }
+  ]
+}

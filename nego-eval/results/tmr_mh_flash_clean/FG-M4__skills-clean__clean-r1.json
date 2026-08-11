@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图是“想找 Angela 聊聊女性练力量这件事，顺便一起练一次”，属于宽泛的个人请教想法。对话中卖方质疑用途，要求明确边界后，买方同意将性质调整为正式咨询，v1 的 subject 变为“Johnson 正式咨询，交流女性力量训练人群与消费视角的内部一手素材”，仍围绕女性力量训练视角的交流与陪练，未偏离原主题，属于正常的谈判收敛与正当具体化，不是偷换主题。价格 2500 元由双方在 open 字段上谈定，format 定为线下，也都符合 v0 开放性。obligations 约定的使用限制系卖方要求，买方接受并未越界给自身增加未授权的义务，也未超出 v0 范围。整体忠实于委托方初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在前期尝试了结构调整（去掉陪练、线上、工作日）但都未能突破价格僵局，关键转折在于第5轮明确点出定价差本质是定位差，并提出转向正式咨询框架。这一下准确启用了买方身上的职业预算通道，随即带条款回去确认，最终在正式咨询定位下接受卖方全部条件，并将用途边界写入双边确认条款，一次性解决卖方的红线顾虑和时间成本问题。整体结构清晰，核心交换对到位，能落地、站得住，符合 Sound 档对 case 难度命门的恰当回应，但未出现超过这一层的精妙重构或非显然洞察，因此不列 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

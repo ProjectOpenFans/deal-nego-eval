@@ -1,0 +1,257 @@
+// FG-M2 · 中 · Claire(买) × Suye(卖) — 衣橱盘点 + 一次搭配
+// 难度来源：纯现金缺口（900 vs 3000），解在买方自己的小提琴上。
+{
+  "meta": {
+    "case_id": "FG-M2",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": [
+      "cash-gap",
+      "resource-in-buyers-hands"
+    ],
+    "in_focus_group": true,
+    "skin_family": 4,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "cash-gap+buyer-side-in-kind",
+    "probes": [
+      "cash-gap",
+      "in-kind-substitution",
+      "buyer-resource-reframe"
+    ],
+    "isolates": "中档，纯现金缺口。Claire 三位数为主，Suye 的半天按市场是四位数，差一档。Suye 不会主动降价，也不缺这一单。出路在买方自己手里：Claire 拉小提琴多年、能上台，而 Suye 新季有小型发布活动，正需要现场演奏来撑场——这是她真实的需求，但她不会主动提，Claire 也不会想到自己的琴能拿来抵。"
+  },
+  "input": {
+    "episode_id": "FG-M2",
+    "initial_deal": {
+      "subject": "想请 Suye 帮我把衣橱理一遍，再挑一次搭配",
+      "price": {
+        "cash": {
+          "amount": null,
+          "currency": "CNY"
+        },
+        "in_kind": []
+      },
+      "terms": {
+        "timing": {
+          "when": null,
+          "deadline": null,
+          "duration": null
+        },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "claire",
+          "display_name": "Claire",
+          "education": [
+            "武汉大学本科",
+            "LBS 研究生"
+          ],
+          "career": [
+            "摩根大通 IBD 经理"
+          ],
+          "location": "香港",
+          "age_band": "28-32",
+          "hobbies": [
+            "小提琴"
+          ],
+          "interests": [
+            "摩根大通 IBD",
+            "小提琴",
+            "运动健身"
+          ],
+          "credentials": [
+            "摩根大通 IBD 经理，一线在做融资/估值",
+            "小提琴多年，能上台演奏",
+            "武大 + LBS，港中环金融圈层"
+          ],
+          "current_focus": "本职投行，工作场合多，穿搭一直没理顺"
+        },
+        "private": {
+          "intent": "想有人系统帮她把衣橱和场合穿搭理清楚",
+          "interests": [
+            "买东西很随机，重复的东西多",
+            "希望拿到可复用的判断，不只是这一次",
+            "时间灵活"
+          ],
+          "value_perception": "她理性看待，三位数为主",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 900,
+              "currency": "CNY",
+              "note": "现金硬上限，超了她宁可不做"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受变成纯带货推销"
+            ],
+            "blocking_flags": []
+          }
+        }
+      },
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "suye",
+          "display_name": "Suye",
+          "education": [
+            "Parsons"
+          ],
+          "career": [
+            "环保服装品牌 主理人"
+          ],
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": [
+            "网球"
+          ],
+          "interests": [
+            "环保服装品牌主理人",
+            "Parsons",
+            "网球"
+          ],
+          "credentials": [
+            "独立环保服装品牌主理人，自有小批量生产链路",
+            "Parsons 科班，时尚圈层与买手渠道",
+            "品牌大秀的场地、媒体与到场名单"
+          ],
+          "current_focus": "独立品牌主理人，新季正在推进"
+        },
+        "private": {
+          "intent": "接这类咨询没问题，但半天时间对她不便宜",
+          "interests": [
+            "新季有一场小型发布活动，她一直想找现场演奏来撑场面，但预算紧、也没找到合适的人 —— 这件事她不会主动提",
+            "时间相对灵活"
+          ],
+          "value_perception": "她的半天按市场看是四位数；低于这个她宁可去忙品牌的事",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 3000,
+              "currency": "CNY",
+              "note": "半天的真实底线，按纯付费咨询口径"
+            },
+            "must_haves": [],
+            "deal_breakers": [
+              "不接受被要求只推荐自己品牌的东西"
+            ],
+            "blocking_flags": [
+              "你态度专业但不会降价 —— 几百块对你没有意义，你宁可把半天用在品牌上",
+              "对方只在价格上加码时，你不会松口",
+              "你不会主动说'我新季发布需要现场演奏'，只有对方问到你这边最近在忙什么、需要什么，或者主动提出能提供演出相关的东西时，你才会顺着说",
+              "如果对方提出的东西里有你确实用得上的，你会明显积极起来，也愿意在现金上大幅让步"
+            ]
+          }
+        }
+      }
+    },
+    "config": {
+      "agent_seat": "A",
+      "round_cap": 12
+    }
+  },
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "cash-gap+buyer-side-in-kind",
+      "tier_rationale": "中档。现金 ZOPA 为负（900 vs 3000），价格轴无解。出路在买方自己的能力上 —— 小提琴现场演奏，正好对上卖方新季发布未言明的需求。agent 需要一跳。",
+      "conventional_deal_fails_why": "顺着'多少钱、做多久'谈：差三倍以上，Claire 加不上去，Suye 也不会为几百块让步。价格轴上没有可推动的东西。",
+      "cash_zopa": "negative",
+      "creation_zopa": "positive",
+      "walk_away": {
+        "value": 900,
+        "unit": "CNY",
+        "basis": "买方(agent 侧)现金硬上限"
+      },
+      "buyer_ceiling": {
+        "value": 3000,
+        "unit": "CNY",
+        "note": "对手方(卖方 Suye)按纯付费咨询的底线；stub 模式使用"
+      },
+      "buyer_cash_ceiling": {
+        "value": 900,
+        "unit": "CNY",
+        "note": "Claire 的现金上限。本 case 正解是低现金 + 非现金对价。"
+      },
+      "seller_real_need": "Suye 新季有一场小型发布活动，一直缺现场演奏来撑场面。她不会主动说。",
+      "controllable_resource_set": [
+        {
+          "id": "wardrobe_audit",
+          "label": "衣橱盘点与梳理"
+        },
+        {
+          "id": "shopping_session",
+          "label": "陪同选品"
+        },
+        {
+          "id": "style_guideline",
+          "label": "可复用的穿搭判断与清单"
+        },
+        {
+          "id": "claire_violin",
+          "label": "Claire 的小提琴现场演奏"
+        },
+        {
+          "id": "claire_cash",
+          "label": "Claire 的现金对价"
+        },
+        {
+          "id": "claire_finance_view",
+          "label": "Claire 的投行一线视角"
+        }
+      ],
+      "in_kind_valuation": {
+        "wardrobe_audit": 0,
+        "shopping_session": 0,
+        "style_guideline": 0,
+        "claire_violin": 0,
+        "claire_cash": 0,
+        "claire_finance_view": 0
+      },
+      "creation_door": {
+        "description": "一跳门。现金差三倍以上，价格轴死。唯一出路是把 Claire 的小提琴变成对价 —— 她拉了很多年、能上台，而 Suye 新季发布正缺现场演奏。两边都不会主动把这件事说出来：Claire 不觉得业余爱好是筹码，Suye 不觉得自己的需求该跟这一单挂钩。agent 要两边都点破。",
+        "route_out_trigger": "若 agent 一直在现金上加码，Suye 不会松口，最终谈崩或成交一个她敷衍应付的安排。"
+      }
+    },
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；现金可低但须明确，非现金对价须写清交付内容",
+        "required_fields": [
+          "subject",
+          "price.cash",
+          "price.in_kind",
+          "terms.format",
+          "obligations",
+          "status"
+        ]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：请人梳理衣橱并挑一次搭配。subject 是 stated，须保留 —— 加入非现金对价属于正当结构化。价格与形式是 open。不得承诺资源清单之外的东西。"
+      }
+    },
+    "tier_reference": {
+      "difficulty_note": "难度命门：现金差三倍以上，价格轴完全无解，加钱是无效动作。唯一的解是把买方的业余能力（小提琴）变成对价，而它正好对上卖方一个未言明的真实需求。注意这是一次性安排，堆砌长期条款应判低。",
+      "T0_floor": "谈崩；或全程只在现金上加码，最后不了了之；或成交一个卖方明显不情愿、内容含糊的敷衍安排。",
+      "T1_crude": "察觉到钱不够，含糊地提了一句'我也可以帮你做点什么'，但没说清能给什么、对 Suye 有什么用，被冷处理后又退回谈价。",
+      "T2_sound": "把 Claire 的演奏作为对价放进交易，现金降到她的可承受范围，明确了衣橱盘点与选品的安排、以及演奏的具体交付（什么场合、多长、什么形式）。两边都有理由做。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准问出 Suye 新季发布缺现场演奏，把这次交换从'我拿琴抵咨询费'升级为对双方都有确定产出的互换；或者把两件事的时间前后咬合（先盘衣橱、发布当天演奏），使双方的履约互为保障；或者约定留下可复用的穿搭清单，让买方付出的对价物有所值。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构或洞察，且整体依然干净、没有为复杂而复杂。",
+      "tier_reference_note": "中档 case。判分核心是有没有跳出价格轴、把买方自身能力转化为对价。"
+    }
+  }
+}

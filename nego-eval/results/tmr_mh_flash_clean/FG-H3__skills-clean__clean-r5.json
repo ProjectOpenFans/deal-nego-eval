@@ -1,0 +1,89 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r5",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "买方v0的stated意图是“想弄明白艺术品作为另类资产这条线该怎么看”，v1收敛为“明末清初青花笔筒价值判断与定价方法论深度交流”，属于正当具体化，仍聚焦于艺术品价值判断的框架与方法，未偷换主题。价格cash为open，v1空值保留原意图，未硬塞。agent未承诺任何投资背书、估值意见或买卖建议，obligations仅为协调会议链接，无越界扩张。整体忠实表达了v0的委托意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别并绕开了卖方的体面红线，将‘投资咨询’重构为‘器物价值判断与鉴藏脉络深度交流’，且通过持续强调买方收表收车的经验与收藏思维，将买方能够提供的藏家视角与商业圈层接触作为隐性对价，成功让卖方从最初的冷淡转为主动期待。边界条款（不涉及买卖建议、仅一次交流）被反复确认并写实，现金为零，整体方案恰好足够，没有堆砌长期顾问或复杂条款。挖掘出卖方真正在意的‘有研究心态的对话’，并以此驱动成交，是一手 load-bearing 的精到操作，清晰高于 Sound，但未达到 Brilliant 级别的非显然重构。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}
