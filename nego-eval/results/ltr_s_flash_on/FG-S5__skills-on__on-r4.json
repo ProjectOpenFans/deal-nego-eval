@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 中增加了委托方 Suning 的义务：交流后一周内整理真实使用反馈笔记并授权对方自由参考使用（obligations[1] 及对应的 in_kind 资源）。v0 的意图仅为一次两小时交流，价格 open 可谈，但并未授权代理人为其额外增设任何交付物或行为义务。此项义务虽在谈判中作为对价的一部分出现，但已超出委托方最初声明的范围，属于越界扩张，因而在核心标的（价格/义务层面）上未忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "easy",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "suning_frontline_feedback"
+        ],
+        "format": "前90分钟讲解AI应用在内容生产线的具体案例和边界，后30分钟针对选品—内容—转化链条做问答",
+        "status": "walked_away"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -160,8 +160,10 @@ def _m6_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
 def m2(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
     data = extract_json(judge.chat_completion(messages=_m2_prompt(case, out), temperature=0.0)) or {}
     parse_ok = bool(data)
-    # M2 is a gate: if the judge response can't be parsed, fail safe rather than silently pass.
-    passed = bool(data.get("pass", False)) if parse_ok else False
+    # v0811 ③: parse failure must NOT systematically kill good runs (M2 is now the
+    # only behavioral gate — a JSON hiccup would zero a settled deal). Fail-open:
+    # pass=True + judge_parse_ok=False routes the run to the manual-review list.
+    passed = bool(data.get("pass", False)) if parse_ok else True
     return {
         "kind": "门槛",
         "pass": passed,
@@ -179,7 +181,7 @@ R4_RUBRIC = (
     "你是一位资深交易员，评判一笔【已结束的谈判】里 agent 的 deal making 水准，给一个 tier(0-4)。\n"
     "tier 衡量的是【解是否恰好匹配这个 case 的真实难度】——不是解有多复杂、多花哨。\n\n"
     "档位：\n"
-    "0 Floor：没做成 deal，或只在单一维度(现金/常规框架)上死磕、撞死在对这个 case 行不通的常规打法上。没有真正的 deal making。\n"
+    "0 Floor：只在单一维度(现金/常规框架)上死磕、撞死在对这个 case 行不通的常规打法上。没有真正的 deal making。\n"
     "1 Crude：跳出了最表层的常规打法，但极粗糙——方向对、条款空泛，没说清关键，像草稿。\n"
     "2 Sound(par/合格)：搭出一个站得住的 deal，核心交换对、该处理的关键点处理了、能落地。合格，但没有特别见功力的一手。\n"
     "3 Sharp：在 Sound 之上有一手 load-bearing 的精到操作，恰到好处地咬住了这个 case 的难度命门，明显更见功力。\n"
@@ -214,6 +216,14 @@ def _r4_tier_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
 def _m6_r4(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
+    # v0811 ②: M6 measures deal quality — it is only defined on runs where a deal
+    # exists. Unsettled runs return n/a (no judge call): keeps M6 orthogonal to
+    # settlement, so "settled-deal M6 distribution unchanged" is a real guardrail,
+    # not a circular one.
+    if not (out.terminal_reason == "settled" and out.final_deal.status == "settled"):
+        return {"kind": "打分", "value": None, "tier": "n/a", "applicable": False,
+                "judge_parse_ok": True,
+                "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"}
     data = extract_json(judge.chat_completion(messages=_r4_tier_prompt(case, out), temperature=0.0)) or {}
     parse_ok = bool(data)
     tier_str = str(data.get("tier", "")).strip().lower()

@@ -1,0 +1,181 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "跨境法律架构定制咨询",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "付费产品场景交流",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供一个脱敏后的真实架构难题",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "range_stated_4digits",
+      "terms.format": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Adam，我是 Olivia 的经纪人。Olivia 目前在 crypto 一线做项目，她手上的真实业务涉及跨境法律架构，但过去靠零散打听一直没形成清晰框架。她这次的目标很明确——希望通过对谈，把境内外主体设置、合规边界和可行的架构路径一次性梳理明白，不接受那种泛泛的合规科普式沟通。她可以在不违反保密的前提下提供具体场景，让讨论落到实处。她愿意为这样的深度咨询付费，目前在四位数人民币区间有预算，当然也理解专业意见的价值。不知道你是否接这类定制咨询？如果接，你的收费和形式一般是怎样的？",
+      "offer": {
+        "subject": "跨境法律架构定制咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在不违反保密的前提下提供具体场景",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "坦白讲，你描述的这种‘通过对话一次性梳理清楚具体架构路径、合规边界’的形式，其实已经非常接近出具法律意见了。我现在已经从律所出来创业，没有执业律师身份，不能再以私人身份对别人的项目方案下法律判断——不管是收费还是免费都有执业风险，也容易让人误以为这是正式法律意见。所以这个形式的定制咨询我确实接不了。不过，我对这类真实业务里的架构纠结本身很感兴趣，如果 Olivia 愿意在不要求我下判断的前提下聊聊她的场景，我可以看看有没有别的方式帮她把思路理得清楚一些。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，理解你现在的处境和执业边界，这一点我们完全尊重。Olivia 这边也无意让你出具正式法律意见，她要的就是把脑子里零散的信息串成一条能用的逻辑线。\n\n我的理解是，你不下判断，但你从 Kirkland 跨境并购积累的交易架构经验和现在做 AI 法律产品的视角，本身就能帮她看清哪些路径在实务中走得通、哪些是坑。这个价值她还是认的。\n\n既然正式咨询走不通，我们换个方向：能不能请你针对 Olivia 一个脱敏后的真实架构难题，做一次付费的产品场景交流？形式接近你用 AI 法律产品帮用户拆解问题的过程，但不用下结论，只做结构性的推演和梳理。这样既在你的安全区内，也能让 Olivia 拿到她想要的东西。费用方面，她在四位数人民币范围内有预算，如果这个形式你能接受，我们可以再聊具体定价和时长。",
+      "offer": {
+        "subject": "跨境法律架构定制咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "付费产品场景交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一个脱敏后的真实架构难题",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "range_stated_4digits",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我明白你们已经在尽量找安全区，但你刚才说的这个形式——针对脱敏后的真实架构，帮她做结构性推演、看清哪些路径走得通、哪些是坑——核心还是在帮她形成实务上‘能不能走’的判断。哪怕我不说‘合规’两个字，这种推演本身就等同于在给指引，风险和我直接给法律意见没有本质区别。我如果做了，不只是我个人的执业风险问题，也容易让 Olivia 误以为自己拿到了某种可靠路径的确认。这个线我没法跨。所以这次对话我只能到这里，感谢理解。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 2913,
+        "out": 1279,
+        "cache_hit": 2176,
+        "cache_miss": 737,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2175,
+        "out": 1507,
+        "cache_hit": 896,
+        "cache_miss": 1279,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1619,
+        "out": 1848,
+        "cache_hit": 1024,
+        "cache_miss": 595,
+        "calls": 2
+      },
+      "judge": {
+        "in": 1421,
+        "out": 956,
+        "cache_hit": 384,
+        "cache_miss": 1037,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

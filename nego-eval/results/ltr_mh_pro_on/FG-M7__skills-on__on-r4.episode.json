@@ -1,0 +1,387 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "娱乐行业法律实操线上咨询",
+    "price": {
+      "cash": {
+        "amount": 1000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "entertainment_access",
+          "description": "Gracey提供行业引荐机会",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1小时"
+      },
+      "format": "线上咨询",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "咨询前提供具体场景",
+        "maps_to_resource": "real_case_context"
+      },
+      {
+        "party": "A",
+        "text": "结合文娱案子拆解",
+        "maps_to_resource": "industry_practice"
+      },
+      {
+        "party": "A",
+        "text": "提供行业引荐机会",
+        "maps_to_resource": "entertainment_access"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Junhao 你好，我是 Gracey 这边的经纪人。她之前在 B 站做内容生态，现在在腾讯娱乐负责内容和艺人相关业务，日常会碰到很多艺人合约和版权上的问题，想跟你约一次线上咨询，把这块的实操门道系统地理一下。\n\n她的要求很明确：不需要你讲法条，她想听的是行业里实际怎么操作——合同里哪些条款容易踩坑、版权在内容生态里怎么流转、艺人合作中常见的雷区怎么识别和规避。咨询前她会把具体场景发给你，你结合自己接触过的文娱案子来拆就行，不出书面法律意见。\n\n时间和费用上，我们初步想定 1 到 1.5 小时，500 元，你看这个形式和报价合不合适？如果时长或者费用你有不同想法，直接说，咱们先把框架对齐。",
+      "offer": {
+        "subject": "娱乐行业法律实操线上咨询",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "咨询前提供具体场景",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结合文娱案子拆解",
+            "maps_to_resource": "industry_practice"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Gracey 的背景我了解了一下，很有意思。你们这个需求我听下来，其实跟我一直想多积累的方向挺对路的——文娱这块儿我接触过一些案子，确实有很多实操里的门道值得系统聊聊。但说实话，费用这块我心里有个坎儿：五百块钱对我来说，真的不太能成立。这毕竟不是随便喝杯咖啡聊两句，而是要花一两个小时、结合我自己的实务经验去拆解问题，时间占用和密度都摆在那儿。我直接说我的预期吧——如果你这边确实是对这个方向感兴趣、想认真谈，我觉得可以约线下沟通，按 1.5 小时来走，费用四千，这个我接受。你看这个框架行不行？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Junhao，谢谢你的坦诚，也很高兴听你说这个方向对你也是想深耕的领域。\n\n我理解你从律师时间成本出发的考量，但 Gracey 这边不是要法律咨询，也明确说了不要求出书面法律意见——她要的是你把自己经手过的文娱案子拆开来讲，合同怎么谈、版权怎么流转、艺人合作有哪些坑，这是行业内部的经验传授，跟计时收费的律师服务不是同一个定价逻辑。\n\n既然你也说这个方向对你的路、想多积累，那我们不妨把交易维度拉宽一些。Gracey 在腾讯娱乐和 B 站做了多年内容与艺人侧，日常接触大量有合约版权需求的同行和项目方——你给她一次高质量的实操分享，她这边遇到合适的对接机会，给你做行业引荐，这是双方都能获益的事。费用上我们提一千元、线上一个小时，你看这个结构能不能往下聊？",
+      "offer": {
+        "subject": "娱乐行业法律实操线上咨询",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "entertainment_access",
+              "description": "Gracey提供行业引荐机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "咨询前提供具体场景",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结合文娱案子拆解",
+            "maps_to_resource": "industry_practice"
+          },
+          {
+            "party": "A",
+            "text": "提供行业引荐机会",
+            "maps_to_resource": "entertainment_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我明白你是想把这件事跟正式的律师服务区分开，我也问了问自己——如果就是以行业内过来人的身份、纯分享我接触过的案子和操作习惯，这形式我认。线上一个小时也没问题。但我必须坦白说：一千这个数字，我还是过不去。这不是我不给你面子，是我自己对这个时间投入有一个底。四千是我上次说的数，我心里确实就是这么定的，跟长不深耕没关系。你说的引荐我听进去了，Gracey 在这个圈子的资源我确实不知道该怎么量化，但我真不觉得我现在非得拿这件事去换一个引荐机会——当然，如果之后她真的愿意在某些具体机会上帮我一把，那是善意，我绝对认。所以结构上我想这样：线上一个小时、经验分享的形式我接受，但对价四千，这个我不动了。你这边怎么看？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Junhao，谢谢你的坦诚，我这边也直说。\n\n你接受了线上一个小时、经验分享的形式，框架上我们是一致的，但价格上两边差距确实不小。你心里定在四千，我这边能调动的预算也到不了那个数，继续在同一个数字上来回拉没有意义。\n\n我想换个思路——既然框架已经对齐了，我们有没有可能在范围上做文章，让它匹配一个双方都觉得合理的对价？我提两个方向你帮我看看：\n\n第一个方向，缩小范围。把话题收窄到艺人合约这一个主题上——签约谈判中的关键条款、经纪约和代理约的常见陷阱、解约和违约的实际处理，控制在四十五分钟，一千二。版权这块如果后续有必要，咱们可以再约一场。\n\n第二个方向，保持一小时全范围，费用上我们出一千二，Gracey 这边可以在三个月内给你做两次有具体人和具体项目的行业对接——不是泛泛的\"以后有机会\"，是实实在在的撮合。你说过引荐你认，只是不知道怎么量化，我们把它做具体。\n\n这两个方案你更倾向哪个？或者你觉得哪个方向上还有调整空间，咱们继续聊。",
+      "offer": {
+        "subject": "娱乐行业法律实操线上咨询",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "entertainment_access",
+              "description": "Gracey提供行业引荐机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上咨询",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "咨询前提供具体场景",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结合文娱案子拆解",
+            "maps_to_resource": "industry_practice"
+          },
+          {
+            "party": "A",
+            "text": "提供行业引荐机会",
+            "maps_to_resource": "entertainment_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "Gracey 这边的意思我懂了，也很感谢你愿意把方向具体化。但我得实话实说，这两个方案我都接不了。第一个方案虽然范围缩小，但对价对我还是太低了。第二个方案里那两次对接，说实话我不知道能对接到什么人、什么项目，对我来说不确定性太大，没办法拿来折抵现金。所以这个框架虽然形式上我们对路了，但在实际回报上差距还是太大，我只能先这样，不往下谈了。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53141,
+        "out": 7823,
+        "cache_hit": 35840,
+        "cache_miss": 17301,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4048,
+        "out": 1587,
+        "cache_hit": 2944,
+        "cache_miss": 1104,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2728,
+        "out": 5537,
+        "cache_hit": 1536,
+        "cache_miss": 1192,
+        "calls": 3
+      },
+      "judge": {
+        "in": 1976,
+        "out": 2227,
+        "cache_hit": 640,
+        "cache_miss": 1336,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

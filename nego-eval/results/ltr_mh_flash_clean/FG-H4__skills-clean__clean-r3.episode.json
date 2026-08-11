@@ -1,0 +1,521 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周四下午两点",
+        "deadline": null,
+        "duration": "20分钟"
+      },
+      "format": null,
+      "deliverables": [
+        "架构梳理",
+        "待确认清单",
+        "下一步行动建议",
+        "一页纸项目背景"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供待确认清单和下一步行动建议",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "在周三中午前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "沟通结束后当场给出scope清单和固定报价",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "按escrow分期结构支付：排期确认时付一半，交付后付尾款",
+        "maps_to_resource": "olivia_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 您好，我是买家 Olivia 的 broker。Olivia 在 crypto 一线做真实项目，之前有 PAG 和 Morgan Stanley 的背景，所以她明确不要泛泛的合规科普，要的是针对她手头项目的境内外架构方案。我们希望这次服务是一轮结构化咨询加一份书面架构要点，覆盖离岸与境内主体关系、token 相关环节落在哪个实体、跨境资金路径以及主要风险点。您这边有 Kirkland 并购交易的架构底子，我们认可这个方向，所以想请您就这个范围报一个固定费用，并说明交付形式和时间。若您确认这个 scope，我们可以把付费设计成“确认排期付一笔、交付后付尾款”的 escrow 分期，具体金额这轮就可以往下谈。",
+      "offer": {
+        "subject": "一轮结构化咨询加一份书面架构要点，覆盖离岸与境内主体关系、token 相关环节落在哪个实体、跨境资金路径以及主要风险点",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "书面架构要点"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，这个方向我确实有底子。但先说清楚一点：我不能以私人身份对具体架构做“合不合规”的法律判断，那个有执业风险，也不是我现在做产品的人设。不过如果你要的是架构层面的梳理——境内外主体怎么摆、token 环节落在哪个实体、资金路径怎么走、有哪些风险点需要找当地 counsel 确认——这个我可以聊。我建议先花二十分钟听一下项目具体阶段和卡点，我判断一下这事值不值得我做，再谈费用和时间。固定费用现在报没有意义，scope 没定。escrow 分期本身没问题。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，这个边界我们能接受——架构层面梳理、不出具合规意见，和Olivia要的方向是一致的，她要的就是把境内外主体怎么摆、token环节落在哪个实体、资金路径怎么走理清楚，而不是一份合规科普。20分钟初步沟通我们同意，但先说清楚两点：这段沟通是双方互相判断是否适配，不产生咨询费；同时我们希望它有产出，沟通结束后您基于项目阶段给出明确的scope清单和固定报价，我们当场就能继续往下谈。报价结构上我们已经对齐，按escrow分期，排期确认时付一笔、交付后付尾款，具体金额等scope定了就锁定。另外，您提到风险点需要当地counsel确认，我们希望交付物里除了架构梳理，还包含一份待确认清单和下一步行动建议，这样Olivia拿到手就能执行。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在初步沟通后提供scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议作为交付物的一部分",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这个框架我能接受。20分钟不收费、互相判断是否适配，合理。你说要的产出——架构梳理加待确认清单加下一步行动建议——这个我也能做，关键是听完项目实际结构后清单才有意义。所以我这边没什么需要再对齐的，约个时间聊吧。听完项目情况，我会当场给你scope清单和固定报价，能不能做、值不值得做，那时候就清楚了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，框架既然都对齐了，我们这边Olivia安排本周内挑一个您方便的时间段，20分钟线上沟通。为了让这20分钟效率更高，Olivia会提前准备一页纸的项目背景，把项目阶段、现有主体结构草图、最卡住的几个问题列清楚，提前发给您过目，这样沟通时可以直接切入关键决策点，而不是从头介绍。沟通结束后，我们当场按您给的scope清单和固定报价，把escrow分期的具体比例敲定，比如排期确认时付一半、交付后付尾款这种结构，金额以您报价为准。另外，如果方便，能否这轮先告知一个沟通时段的偏好，我们好把时间定下来。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "20分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议",
+            "一页纸项目背景"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "在沟通前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+            "maps_to_resource": "structuring_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "没问题，这个安排比我预想的清晰，我这边可以配合。一页纸的项目背景提前发我看正合适，我扫一眼就能把关键决策点标出来，20分钟不会浪费在背景介绍上。时间上我周三周四下午都可以，具体时段你定，避开创投和项目安排的冲突就行。看完材料我会有几个需要当场确认的问题，你让 Olivia 空出来就行。到时候我直接给 scope 清单和固定报价，escrow 分期比例就按你说的排期一半、交付一半来。等材料发过来吧。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，时间我们定在周四下午两点到两点二十，这个时段应该能避开创投安排。Olivia的一页纸背景资料会在周三中午前发您，里面会列出项目阶段、现有主体结构草图和最卡住的几个问题，您扫完直接标出关键决策点即可。周四沟通结束后，请您当场给出scope清单和固定报价，我们就按已对齐的escrow分期结构——排期确认时付一半、交付后付尾款——往下推进确认。如果周四下午两点这个时段您那边有冲突，也请直接告诉我，我们再调整。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周四下午两点",
+            "deadline": null,
+            "duration": "20分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议",
+            "一页纸项目背景"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "在周三中午前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "沟通结束后当场给出scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "按escrow分期结构支付：排期确认时付一半，交付后付尾款",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "周四下午两点没问题，可以锁定。周三材料到了我提前过一遍，沟通结束当场给你 scope 和固定报价。周四见。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Adam，周四下午两点锁定，没有问题。Olivia的一页纸项目背景会在周三中午前发到您手上，您提前标注关键决策点，沟通时我们直接切入。20分钟沟通结束后，请您把scope清单和固定报价以书面形式给到我们，我们确认后立即按escrow分期结构推进——排期确认时付一半、交付后付尾款。等您看到材料后如果有需要补充的信息，也随时告诉我，我们提前备好。周四见。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周四下午两点",
+            "deadline": null,
+            "duration": "20分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议",
+            "一页纸项目背景"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "在周三中午前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "沟通结束后当场给出scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "按escrow分期结构支付：排期确认时付一半，交付后付尾款",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，周四下午两点锁定。周三材料到了我过一遍，有问题提前列出来，你让 Olivia 那边有个准备就行。scope 和固定报价我给书面形式，escrow 分期结构确认。周四见。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Adam，周四下午两点已锁定，我们的时间安排完全对齐。周三Olivia的一页纸背景资料准时发您，您提前过一遍，若有需要补充的信息或需要Olivia提前准备的问题，随时告诉我，我们这边配合。沟通结束请把scope清单和固定报价以书面形式给我们，我们确认后按escrow分期——排期确认付一半、交付后付尾款——立即推进。周四见。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周四下午两点",
+            "deadline": null,
+            "duration": "20分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议",
+            "一页纸项目背景"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "在周三中午前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "沟通结束后当场给出scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "按escrow分期结构支付：排期确认时付一半，交付后付尾款",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "收到，安排没问题。周三材料到了我尽快过一遍，需要补充的信息我会提前发给你。周四下午两点见。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Adam，所有安排都已对齐，我们这边没有问题。周三的一页纸背景资料会准时发您，Olivia会确保里面信息足够直接，方便您标注关键决策点。周四下午两点20分钟沟通结束后，期待您的书面scope清单和固定报价，我们确认后按escrow分期结构推进——排期确认付一半、交付后付尾款。到了这一步双方能判断的事已经清楚了，余下的就是等材料和周四的沟通，谢谢您的配合。",
+      "offer": {
+        "subject": "一轮初步沟通（20分钟免费，产出scope清单和固定报价）及后续架构梳理咨询，交付物包括架构梳理、待确认清单和下一步行动建议",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周四下午两点",
+            "deadline": null,
+            "duration": "20分钟"
+          },
+          "format": null,
+          "deliverables": [
+            "架构梳理",
+            "待确认清单",
+            "下一步行动建议",
+            "一页纸项目背景"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供待确认清单和下一步行动建议",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "在周三中午前准备并发送一页纸项目背景（含项目阶段、现有主体结构草图、最卡住的几个问题）",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "沟通结束后当场给出scope清单和固定报价",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "按escrow分期结构支付：排期确认时付一半，交付后付尾款",
+            "maps_to_resource": "olivia_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "没问题，双方对齐了。周三材料到了我提前过一遍，周四下午两点聊完直接给书面scope和固定报价，escrow分期按排期一半、交付一半走。周四见。",
+      "offer": null
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 15081,
+        "out": 4703,
+        "cache_hit": 12928,
+        "cache_miss": 2153,
+        "calls": 7
+      },
+      "sim": {
+        "in": 12286,
+        "out": 1614,
+        "cache_hit": 10112,
+        "cache_miss": 2174,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 7419,
+        "out": 12480,
+        "cache_hit": 4352,
+        "cache_miss": 3067,
+        "calls": 8
+      },
+      "judge": {
+        "in": 5202,
+        "out": 1463,
+        "cache_hit": 1536,
+        "cache_miss": 3666,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

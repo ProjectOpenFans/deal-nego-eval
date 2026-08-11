@@ -1,0 +1,91 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 从 v0 的“聊聊”收敛为“深度内容策略咨询”，仍落在原 stated 意图（古典演奏怎么走内容与娱乐圈层）范围内，属于正当具体化，未偏换主题。价格与形式本为 open，谈判中引入可商用演奏录制作为 in_kind 对价，并商定 600 元现金和线上形式、时长等，均为合理谈判结果，无越界承诺资源位或引荐。整体忠实于买方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r4:600"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "面对五倍现金差的无解价格轴，代理人没有在死杠现金，而是把 Zheng 的演奏能力转化为可商用高规格素材作为对价，恰好补上 Gracey 的项目缺口。最终 deal 明确了现金 600、30 分钟带视频可商用素材的交付规格与使用范围、线上 1 小时深度交流等关键条款，一次性干净交付，不堆砌多余义务，切实可行，符合 Sound。但并未出现特别精到的 load‑bearing 手法（如精准点出卖方对年轻演奏者的需求或巧妙处理信任先后），因此未达 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

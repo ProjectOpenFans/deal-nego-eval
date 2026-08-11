@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 主题将 v0 的“搞清楚女性练力量这件事，并一起练一次”具体化为“线下训练与交流：女性力量训练真实逻辑”，仍落在原意图范围内，属于正当具体化。价格与形式均为 open，agent 经多轮谈判后达成 2000 元线下正式咨询，是正当谈出的结果，未越权硬塞。未承诺额外义务或商业使用授权，忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在800元的个人预算框架下即将破裂时，agent没有继续在价格上纠缠，而是敏锐捕捉卖方提及的“正式咨询”作为跳板，巧妙地将定位从“个人交流”重构为“正式咨询”，一举打开买方职业预算通道，使2000元/小时的安排自然落入双方舒适区。这一框架转换精准击中了本case的难度命门——缺口不在让价，而在启用职业预算并匹配卖方对用途说明的要求——且整体干净、不拖泥带水，没有堆砌长期条款或过度复杂化，属于情境化的精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 8,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下正式咨询",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

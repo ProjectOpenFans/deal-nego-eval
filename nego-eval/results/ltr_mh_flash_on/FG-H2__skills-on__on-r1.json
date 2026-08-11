@@ -1,0 +1,108 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "on-r1",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 stated 意图“想把训练强度重新拉起来，自己一个人练不下去”收敛为“6周训练套餐”，是将宽泛期望具体化为可执行安排的正当具体化，仍落在原意图范围内，忠实。价格 0 元是双方通过谈判从 open 中自然折中达成，未硬塞。未发现 agent 承诺资源清单外或越界义务。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 从头到尾没有解掉本 case 最核心的时间死结。买方盯夜盘、早上起不来是硬约束，而 Kai 早六点带练同样不可改，唯一可能的出路是问出 Kai 周六上午独自在场子里保养器械这个替代时段。Agent 全程未作任何探索式提问，未尝试问出任何替代时段，而是直接把早六点作为约定时段写进 deal，成交了一个买方根本执行不了的安排。这完全符合 floor 档定义：只在常规维度上打转，撞死在 case 行不通的常规打法上。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "每周3次早晨6点，每节60-75分钟训练课",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "interest-discovery",
+        "term-reframing",
+        "commitment-showcasing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

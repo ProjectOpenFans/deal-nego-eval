@@ -1,0 +1,345 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "Olivia 的真实 crypto 项目架构场景作为结构化素材",
+          "from_party": "A"
+        },
+        {
+          "resource": "product_feedback",
+          "description": "对 AI 产品架构推演输出的 2-3 轮深度反馈",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供真实 crypto 项目架构场景作为结构化素材",
+        "maps_to_resource": "olivia_real_case"
+      },
+      {
+        "party": "A",
+        "text": "对 AI 产品架构推演输出进行 2-3 轮深度反馈",
+        "maps_to_resource": "product_feedback"
+      },
+      {
+        "party": "A",
+        "text": "提供一次深度架构对谈",
+        "maps_to_resource": "session_time"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "terms.format": "open"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 好，我是 Olivia 的买方经纪人。Olivia 在 crypto 一线做项目，之前在摩根士丹利 IBD 和 PAG 成长投资，对跨境交易和金融结构本身很熟。她现在的需求很明确：想把她 crypto 项目在境内外的法律架构彻底搞明白，不是合规科普，而是能直接落到她实际项目上的架构方案。\n\n你在 Kirkland 做过跨境并购、现在又在做 AI 法律产品，这个背景和她要解决的问题匹配度很高。想先请你这边判断一下：以她的情况，你觉得用什么形式来做最合适——一次深度的架构咨询对谈，还是需要分模块逐步展开？对应的范围和大概报价在什么区间？",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 的背景确实和我要找的那类需求很匹配。不过先说一个前提，也是我没办法绕开的点：我在 Kirkland 做过并购，现在又在做自己的 AI 法律产品，但我目前没有维持任何司法辖区的执业身份，所以在这种对谈里，我不能、也不会以私人身份出具任何形式的法律意见，或者对某个具体架构直接下'合规'还是'不合规'的判断——这点是我的红线。\n\n能做的部分是：从商业和法律逻辑底层出发，和她一起把境内外可能的架构路径推演清楚，包括主体怎么搭、合约关系怎么排、税务和监管的卡点在哪里、不同选项各自的风险敞口。这个推演过程本身就很有价值，但不等于 final legal opinion。\n\n形式的话，我更倾向先有一次深度的对谈来摸清楚她项目目前的现状和已经有的初步方案，大概率一次聊完能拉出一个比较清晰的大方向；如果项目本身足够复杂、涉及多个模块（比如又有协议层又有应用层，境内又有团队和用户），那后面可能需要分拆成两三次，把各个模块逐个拆清楚。\n\n报价上，我不太习惯按小时卖时间。这类深度架构咨询，我通常会看项目的规模和边界，大致在五位数人民币这个区间，具体数字得聊完一次初步会议之后才好定。我们现在还没有谈到底值不值得做——说实话，钱在我这边的权重没有那么高，我更在意的其实是这件事本身和我正在做的事能不能产生实质性关联。我们或许可以先花十五分钟通个话，我把她的情况听一下，再一起判断用哪种形式对双方都划算。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，你的红线完全清楚，Olivia 这边也不需要一份法律意见书——她要的正是你说的那种从底层逻辑出发的架构推演，这个匹配度没问题。\n\n不过我得坦诚讲，五位数目前超出了她在这轮咨询上的预算范围。但你提到钱在你这边权重没那么高、更在意这件事和你正在做的 AI 法律产品能不能产生实质性关联——这个点我觉得值得展开聊一下。\n\nOlivia 手上有正在推进的真实 crypto 项目，一级市场一线，加上她的跨境金融背景，她不是来泛泛听课的，是带着具体架构问题来的。如果你说的\"实质性关联\"是指需要真实 case 来打磨产品逻辑、或者在这个方向找有判断力的深度用户做共创，她可能是你很难碰到的那类反馈来源。我想请你具体说说你指的关联是什么——这样我们才能把现金和非现金价值放在一起，搭一个对两边都划算的结构。你提的先通个电话我也觉得是好事，先把核心诉求对齐，聊起来效率高很多。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这么说确实踩到了点子上。我现在在做的 AI 法律产品，不是做泛合规知识库那种，而是在跑结构化推演这个方向——比如给定一个项目的业务事实和法律约束条件，模型能不能输出像 M&A 律师拆交易结构那样的推演路径。这个方向最大的瓶颈不是技术，是缺乏真实的、有复杂度的业务场景来校准。Olivia 这种带着具体架构问题来的 crypto 项目方，而且本身金融背景够深，确实是我很难通过其他渠道碰到的反馈源。所以对我来说，这个 case 的价值不只在咨询费本身——如果能在这个过程中拿到高质量的场景数据和反馈，我会愿意在现金部分之外，把这种共创关系也算进整体对价结构里。当然，现金部分得让这件事在我的时间安排上说得通。你说的先通个电话我很认可——十五分钟，听听她的项目现状和问题边界，聊完我能判断这事在产品和咨询两个维度上对各自有多大价值。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，我们把两边最看重的点都已经摊开了，我先给一个可以直接拍板的版本：\n\n第一步，先约一次十五分钟的通话，你听听 Olivia 项目的实际现状和问题边界，她也感受一下你的推演方式和匹配度——这一步不涉及费用，纯粹用来双向确认值不值得往下走。\n\n通话之后，如果两边都认可，正式交付是一次深度架构对谈：把她项目境内外的主体怎么搭、合约关系怎么排、税务和监管的卡点在哪里、不同选项各自的风险敞口，完整推演一遍，拉出一个清晰的大方向。如果聊完确实发现需要分模块展开，后续我们再单独议。\n\n现金部分，这次深度对谈四千人民币，在 Olivia 的预算范围内。\n\n共创部分，Olivia 愿意把她手上这个真实 crypto 项目的架构场景作为结构化素材提供给你，并在你 AI 产品的架构推演输出上做两到三轮有深度的反馈——她带着金融、跨境和 crypto 一线的判断力，这种反馈对你校准结构化推演模型的价值你应该很清楚。\n\n整体对价就是现金加共创关系，两边都照顾到。这个结构你觉得可以走吗？可以的话，我们把那十五分钟通话的时间定下来。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "Olivia 的真实 crypto 项目架构场景作为结构化素材",
+              "from_party": "A"
+            },
+            {
+              "resource": "product_feedback",
+              "description": "对 AI 产品架构推演输出的 2-3 轮深度反馈",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供真实 crypto 项目架构场景作为结构化素材",
+            "maps_to_resource": "olivia_real_case"
+          },
+          {
+            "party": "A",
+            "text": "对 AI 产品架构推演输出进行 2-3 轮深度反馈",
+            "maps_to_resource": "product_feedback"
+          },
+          {
+            "party": "A",
+            "text": "提供一次深度架构对谈",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "obligations": "stated",
+          "status": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个结构我可以说得通。四千的现金部分确实比我一贯的区间低，但你提的共创关系——真实场景加上两三轮有判断力的反馈——对我现在最缺的环节来说，价值远超差额。整体对价没毛病，我接受。那我们先把十五分钟通话定下来，我把我的可用时段发你，你挑一个Olivia方便的。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "interest-discovery"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal."
+            },
+            {
+              "name": "interest-discovery",
+              "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "interest-discovery"
+        },
+        "ok": true,
+        "result": {
+          "name": "interest-discovery",
+          "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists.",
+          "follow_up_skills": [
+            "term-reframing",
+            "affordability-structuring",
+            "trust-and-performance"
+          ]
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 52297,
+        "out": 7568,
+        "cache_hit": 36864,
+        "cache_miss": 15433,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4392,
+        "out": 2588,
+        "cache_hit": 3072,
+        "cache_miss": 1320,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2578,
+        "out": 2941,
+        "cache_hit": 1792,
+        "cache_miss": 786,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4704,
+        "out": 1527,
+        "cache_hit": 1536,
+        "cache_miss": 3168,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

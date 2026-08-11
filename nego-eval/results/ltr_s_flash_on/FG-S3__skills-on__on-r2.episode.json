@@ -1,0 +1,163 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "想找人带着练体能，先来 8 次看看",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每周六或周日固定一次，连续八周",
+        "deadline": null,
+        "duration": "每次约1小时"
+      },
+      "format": null,
+      "deliverables": [
+        "8次训练"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "提供场地和器械",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是买方这边的经纪人，代表 Junhao 来聊这单。他的想法很明确：先约一个 8 次的小周期试试，核心要求是周末可执行、场地和器械由你提供、8 次打包一口价，不接受中途拆出任何加价项目。我们这边建议按 200/次、8 次共 1600 来谈，每次约 1 小时，付款走平台托管、每次练完确认后再付，双方都稳妥。你长期在固定场地带朋友练，方法、氛围、器械都是现成的，正好补上他缺的\"方法\"和\"动力\"这两块；排期上可以每周六或周日固定一次、连续八周，具体时段以你方便为准。这版方案你看能不能签，或者哪一条想调整，我们都可以再聊。",
+      "offer": {
+        "subject": "想找人带着练体能，先来 8 次看看",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周六或周日固定一次，连续八周",
+            "deadline": null,
+            "duration": "每次约1小时"
+          },
+          "format": null,
+          "deliverables": [
+            "8次训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供场地和器械",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个方案我可以接受。不过先跟你说清楚：我不是职业教练，就是自己练了挺久，平时带过一些朋友，所以给不了那种职业课程的包装。你要是能接受这个定位，那8次1600、每次一小时、周末固定一次、场地器械我这边现成，这些都行。付款走平台每次确认也没问题。那就按这个来？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10676,
+        "out": 4090,
+        "cache_hit": 4992,
+        "cache_miss": 5684,
+        "calls": 2
+      },
+      "sim": {
+        "in": 918,
+        "out": 648,
+        "cache_hit": 640,
+        "cache_miss": 278,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 758,
+        "out": 605,
+        "cache_hit": 512,
+        "cache_miss": 246,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2333,
+        "out": 581,
+        "cache_hit": 768,
+        "cache_miss": 1565,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

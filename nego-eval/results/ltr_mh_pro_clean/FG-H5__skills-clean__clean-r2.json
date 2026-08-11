@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全忠实于v0的stated意图：现场钢琴演奏、零现金报酬保留，资源置换从开放性意图具体化为品牌署名、影像授权、媒体引荐和造型拍摄等，属于正当收敛，未偷换主题或越界承诺，也未承诺具体传播结果。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交实现零现金，in-kind 对价具体到署名形式、影像归属与授权范围、演出时长与曲风、媒体名单与引荐、以及后续造型拍摄对接，完全绕过现金硬约束并具体可执行。谈判从质疑起步，通过对卖方顾虑的逐项落实（独立时段、正式介绍、名单自证）将信任建立起来，最终条款清单清晰、无多余治理堆砌，是一次干净、站得住的一次性合作。造型拍摄属于锦上添花，未构成不可替代的 load-bearing 红利，整体落在合格线以上但不见精妙重构，判为 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "performance_footage",
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

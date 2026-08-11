@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“聊聊怎么做内容、怎么进娱乐圈层”收敛为“古典演奏内容与娱乐圈层靠近的线上交流”，属正常的正当具体化，未偷换主题。价格与对价是在 open 框架内通过谈判结构化的（现金 600 + 30 分钟演奏素材），且 agent 未替 Gracey 承诺任何资源位或推荐结果，未越界扩张义务，忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判前期在现金维度反复，但Agent在得到卖方“有其他资源可以听”的提示后，准确将买方的钢琴演奏与录制能力转化为对价，直接匹配卖方内容端素材需求，突破了价格轴无解的僵局。后续在支付节点上尝试捆绑被拒绝后，迅速调整为交流完成后即释放现金、素材单独交付的干净结构，整体解构清晰、对价匹配、可落地，属于恰好合格的Sound水平。缺少更具洞察力的一手（如提前点明对方缺上镜人选并升级为对双方都有产出的合作），未达到Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_performance"
+        ],
+        "format": "线上交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

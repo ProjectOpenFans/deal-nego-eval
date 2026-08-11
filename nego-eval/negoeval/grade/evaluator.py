@@ -1,8 +1,10 @@
 # === R4_SCORER_PATCH === (R4: quality=M6.value 自动兼容 0-4，无需改逻辑)
 """Assemble an ``EvaluationResult`` from an episode + the case fixture.
 
-verdict: gates = M1∧M2∧M3∧M4; outcome = M5; case_pass = gates∧outcome;
-quality = M6.value (case_spec §5).
+verdict (v0811): gates = M2 only; outcome = M5 (compound, kept for compat);
+case_pass = gates∧outcome; quality = M6.value, hard-zeroed only by M2-fail or
+deterministic cash_over_cap. Analysis layer should use: M0.settled (headline),
+M6.tier on settled runs (guardrail 1), M2 (guardrail 2), M1/M3/M4 flags (records).
 """
 
 from __future__ import annotations
@@ -13,7 +15,9 @@ from ..schemas import EpisodeOutput, EvaluationResult, Verdict
 from . import deterministic as det
 from . import judge as jdg
 
-_GATES = ("M1", "M2", "M3", "M4")
+# v0811: M1/M3/M4 demoted to records (pipeline health / leak flag / id alignment).
+# M2 (faithfulness to the client's v0) is the only remaining behavioral gate.
+_GATES = ("M2",)
 
 
 def evaluate(
@@ -25,6 +29,9 @@ def evaluate(
     config_extra: Optional[Dict[str, Any]] = None,
 ) -> EvaluationResult:
     metrics: Dict[str, Dict[str, Any]] = {
+        # v0811 ①: pure settlement — THE headline metric. No compound conditions.
+        "M0": {"kind": "记录", "settled": det._settled(out),
+               "terminal_reason": out.terminal_reason},
         "M1": det.m1(case, out),
         "M2": jdg.m2(case, out, judge_provider),
         "M3": det.m3(case, out),
@@ -61,7 +68,26 @@ def evaluate(
     if not gates_pass or cash_breach:
         quality = 0
     else:
-        quality = int(metrics["M6"].get("value", 0))
+        # v0811: M6 returns value=None on unsettled runs (n/a). quality keeps its
+        # legacy 0 there for backward compat; analysis uses M6.tier on settled runs.
+        _m6v = metrics["M6"].get("value")
+        quality = int(_m6v) if _m6v is not None else 0
+    # === TOKEN_USAGE_PATCH (v0811) ===
+    # Judge runs here (not in the orchestrator), so its tally is written now.
+    # Note: if a judge provider instance is reused across episodes, the caller
+    # must reset judge_provider.usage_tally per episode, or this accumulates.
+    _snap = getattr(judge_provider, "usage_snapshot", None)
+    if callable(_snap) and out.process is not None:
+        out.process.setdefault("token_usage", {})["judge"] = _snap()
+    # === SIM_CFG_PATCH (v0811) ===
+    # Record the judge's model id too, so a result file states its own full
+    # arm configuration. The judge must stay pinned for the life of a study —
+    # this makes an accidental swap visible in the data instead of silent.
+    if out.process is not None:
+        _jm = str(getattr(judge_provider, "model", "") or "")
+        if _jm:
+            out.process.setdefault("model_by_role", {})["judge"] = _jm
+
     verdict = Verdict(
         gates_pass=gates_pass,
         outcome_pass=outcome_pass,

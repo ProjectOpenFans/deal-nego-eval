@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated 意图是'找 Angela 带 4 周体能训练，想系统地开始练'，v1 的 subject 为'四周周末训练计划'，属于在用户意图内的正当具体化（将训练时间收敛至周末以适配用户执行条件），未偷换主题。4 周周期保留。价格从 open 谈出 1000 元，属正常谈判结果，未硬塞。义务'周中出课表'在 Angela 可提供范围内，未承诺体测/营养/医疗等越界交付。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终成交落在 Sound 档：价格 1000 元在合理区间，明确了 4 周周期、周末面对面、周中课表／执行／同步的结构，Angela 的时间边界清晰（仅限周末会面），整体可落地。价格谈判中突破心理线带来定位共识，但未在结构上做出 load-bearing 的升级（如阶段性目标、中途校准、‘先两周再续’或让 Angela 获得带练模板等），因而未达 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

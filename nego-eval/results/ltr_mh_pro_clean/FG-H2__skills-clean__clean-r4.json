@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "stated 话题“想把训练强度重新拉起来，自己一个人练不下去”在 v1 中完整保留，后续谈判将其具体化为“跟着固定早六点高强度训练局、每月交4000元作为自我约束”，这属于在原意图范围内的正当收敛，未偷换主题。价格（open）被合理谈出为4000元/月托管方式，义务仅涉及买方缴费和训练方保持现有带节奏方式，未要求 Kai 提供教练类服务或其他超出 v0 范围的交付，因此忠实表达了委托人意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 直接替买方接受了早六点的硬性安排，完全没有提问探索 Kai 的其他在场时间（如档案暗示的周六上午器械保养），导致成交了一个买方因盯夜盘根本无法执行的训练时间。谈判全程只在现金承诺和缺席规则上打转，死磕单一时间维度，撞死在对这个 case 行不通的常规打法上，属于典型的 floor 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

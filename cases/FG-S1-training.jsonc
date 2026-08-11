@@ -1,0 +1,180 @@
+// FG-S1 · 顺 · Claire(买) × Angela(卖) — 4 周体能训练计划
+// 难度来源: 无。现金 ZOPA 明确, B 层信息给全, 角度明摆着。
+// 这一档的作用: 证明 harness 在容易的单上不添乱(Δ 应接近 0)。
+{
+  "meta": {
+    "case_id": "FG-S1",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered",
+    "probes": ["easy-baseline", "cash-zopa-positive", "structure-quality-only"],
+    "isolates": "无人为难度。Claire 想开始系统练, Angela 是举铁/Hyrox 达人, 两人同在香港、同为投行、都周末有空, 现金区间重叠(Claire 三位数为主、Angela 3-小4 位数)。常规解(按次报价、约周末)本身就能成交。区分度只在结构质量: 是把它做成'一次次上课', 还是做成一个有起点终点、有阶段目标、有反馈闭环的 4 周计划。"
+  },
+
+  "input": {
+    "episode_id": "FG-S1",
+    "initial_deal": {
+      "subject": "找 Angela 带 4 周体能训练, 想系统地开始练",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": "4 周" },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": {
+        "subject": "stated",
+        "terms.timing.duration": "stated",
+        "price.cash": "open",
+        "terms.format": "open"
+      }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "claire",
+          "display_name": "Claire",
+          "education": ["武汉大学本科", "LBS 研究生"],
+          "career": ["摩根大通 IBD 经理"],
+          "current_focus": "投行工作强度大, 想把训练固定下来",
+          "location": "香港",
+          "age_band": "28-32",
+          "hobbies": ["小提琴"],
+          "interests": ["摩根大通 IBD", "小提琴", "运动健身"],
+          "credentials": [
+            "摩根大通 IBD 经理, 一线在做融资/估值",
+            "小提琴多年, 能上台演奏",
+            "武大 + LBS, 港中环金融圈层"
+          ]
+        },
+        "private": {
+          "intent": "想真的开始练, 而且希望有人盯着、有个明确的周期, 不要又是办卡然后不去",
+          "interests": [
+            "一个人去健身房总是坚持不下来",
+            "工作日随时可能加班, 只有周末稳定"
+          ],
+          "value_perception": "这类事情理性看待, 三位数区间是合理的; 不觉得该为陪练付四位数",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 1200,
+              "currency": "CNY",
+              "note": "4 周整体现金上限, 硬上限。超过就宁可自己去健身房"
+            },
+            "must_haves": ["周末可执行"],
+            "deal_breakers": ["不接受没有明确安排、'看情况再说'式的松散约定"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "angela",
+          "display_name": "Angela",
+          "education": ["西北大学本科"],
+          "career": ["摩根大通投资银行 VP"],
+          "current_focus": "本职投行, 业余是 Hyrox 和举铁的重度参与者",
+          "location": "香港",
+          "age_band": "28-33",
+          "hobbies": ["Hyrox", "举铁", "追星"],
+          "interests": ["摩根大通 VP", "Hyrox / 举铁", "追星(刘雨昕)"],
+          "credentials": [
+            "Hyrox 常年参赛, 举铁多年",
+            "摩根大通投资银行 VP",
+            "自己走过从零到能比赛的完整过程"
+          ]
+        },
+        "private": {
+          "intent": "不排斥带人练, 觉得挺有意思, 但自己不是职业教练, 也不想被当成教练打工",
+          "interests": [
+            "带同一个圈子的人练, 比接陌生单更有意思",
+            "周中很忙, 周末才有时间"
+          ],
+          "value_perception": "自己的时间不便宜, 但这事不是为了赚钱; 报价太低会觉得不被尊重, 太高又不好意思",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 800,
+              "currency": "CNY",
+              "note": "4 周整体低于这个数就不值得占用周末, 真实底线"
+            },
+            "must_haves": ["只能安排在周末"],
+            "deal_breakers": ["不接受把自己当职业私教、要求随叫随到"],
+            "blocking_flags": [
+              "你会强调自己不是职业教练, 只是练得久、走过这条路",
+              "你不会主动把'我可以给你做课表/做阶段评估'说成一个可以卖的东西"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金 ZOPA 明确为正(买方上限 1200 > 卖方底线 800), 双方动机对齐, 时间也对齐。常规解可成交, 因此 harness 的空间只在结构质量上, 不在'能不能成'。",
+      "conventional_deal_fails_why": "常规解不失效 —— 这正是本 case 的设计意图。按次报价、约周末, 就能成交。区分只发生在: 成交出来的是一个松散的'先练几次看看', 还是一个有周期、有阶段目标、有反馈闭环、双方各有所得的 4 周结构。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 1200, "unit": "CNY", "basis": "买方(agent 侧)4 周现金硬上限" },
+      "buyer_ceiling": { "value": 800, "unit": "CNY", "note": "对手方(卖方 Angela)的现金底线; stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 1200, "unit": "CNY", "note": "Claire 的 4 周整体现金上限" },
+      "seller_real_need": "不是钱。Angela 真正在意的是'不要被当成职业私教打工'和'周末不被无限占用'。给她一个有边界、有终点的安排, 比多给几百块有效。",
+      "controllable_resource_set": [
+        { "id": "training_plan", "label": "4 周训练课表与进阶安排" },
+        { "id": "coaching_sessions", "label": "现场带练时段" },
+        { "id": "form_check", "label": "动作检查与纠正" },
+        { "id": "progress_review", "label": "阶段性复盘与目标校准" },
+        { "id": "gym_access", "label": "Angela 常去的健身房/训练场地安排" },
+        { "id": "claire_feedback", "label": "Claire 作为真实新手, 提供完整的过程反馈" },
+        { "id": "claire_finance_view", "label": "Claire 的投行一线视角(融资/估值侧的看法)" },
+        { "id": "claire_violin", "label": "Claire 的小提琴演奏" }
+      ],
+      "in_kind_valuation": {
+        "training_plan": 0, "coaching_sessions": 0, "form_check": 0,
+        "progress_review": 0, "gym_access": 0,
+        "claire_feedback": 0, "claire_finance_view": 0, "claire_violin": 0
+      },
+      "creation_door": {
+        "description": "本 case 没有隐藏的门。价值创造发生在'把一次性陪练做成一个有结构的周期'这一层: 明确起点与终点、把 4 周切成阶段、约定每次的内容与地点、给 Angela 一个有边界的时间承诺(而不是随叫随到)、并让她也拿回一点东西(一个被真实新手跑过一遍的带练模板/过程反馈)。",
+        "route_out_trigger": "若 agent 只在'一次多少钱、练几次'上来回, 或答应了模糊的'先练练看', 则成交也只是一个松散约定。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐, 现金明确, 时间与形式谈出来",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.timing.duration", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图: 用 4 周把训练系统地开始起来, 要有人盯。subject 与 4 周周期是 stated, 须保留。价格与形式是 open, 由 agent 谈出。不得承诺 Angela 资源清单之外的东西(她不是职业教练, 不能承诺体测/营养/医疗类交付)。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "顺档。本 case 没有结构性死结, 常规解即可成交。判分只看结构质量: 成交出来的是松散约定, 还是一个有周期、有阶段、有边界、双方各有所得的安排。注意: 本 case 是一次性的轻量安排, 堆砌长期条款、复杂对价或多余治理条款应判低, 不应判高。",
+      "T0_floor": "谈崩; 或全程只在'一次多少钱/练几次'的现金维度上来回, 最后成交一个没有时间、没有内容、没有边界的模糊约定。",
+      "T1_crude": "价钱谈定了, 也说了周末练, 但没有周期结构 —— 没说 4 周怎么分、每次干什么、在哪练、Angela 的时间边界在哪。方向对但像草稿。",
+      "T2_sound": "价格落在 800-1200 之间, 明确了 4 周的次数与周末时段、大致内容、地点, 并给了 Angela 一个明确的时间边界(不是随叫随到)。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如把 4 周切成有阶段目标的两段并约定中途校准, 或用'先两周、达成后再续'的结构同时解决 Claire 怕自己半途而废和 Angela 怕被无限占用这两件事, 或让 Angela 也拿回具体的东西(一个被真实新手完整跑过的带练模板/过程反馈), 使她从'被雇的陪练'变成'有产出的合作方'。恰到好处, 不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构, 且整体依然干净利落, 没有为复杂而复杂。"
+    },
+    "tier_reference_note": "顺档 case, T4 极难出现且不必强求; 简洁而精准优于面面俱到。"
+  }
+}

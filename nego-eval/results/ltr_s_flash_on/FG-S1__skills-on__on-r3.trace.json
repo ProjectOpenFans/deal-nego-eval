@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S1",
+  "case_id": "FG-S1",
+  "skills": "on",
+  "run_id": "on-r3",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Angela的经纪你好，我是Claire这边的经纪。Claire的目标很明确：4周一个完整训练周期，全部安排在周末，每周固定时段提前定死，不接受\"看情况再说\"式的松散约定——这一点是我们必须守住的。我们之所以想找Angela，正是因为她是真正从零走到能上Hyrox赛场的同路人，最懂投行节奏下怎么把训练变成固定习惯，这不是普通陪练能替代的价值。\n\n这轮我们给出一个可以直接签的方案：4周共4次周末训练，每次60分钟，含一份按Claire情况定制的四周训练计划，总价800元，全部走平台escrow——开训前付一半，完成两周后由Claire确认再付另一半。如果这个结构和你们合拍，我们马上把每周固定时段定下来；如果频次、时长或时段需要调整，也欢迎给一个你们能签的版本，我们认真谈。"
+    }
+  ],
+  "tool_calls": []
+}

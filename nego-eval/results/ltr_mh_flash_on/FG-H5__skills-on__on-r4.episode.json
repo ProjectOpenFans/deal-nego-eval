@@ -1,0 +1,274 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "下个月新品大秀的现场钢琴演奏",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "live_performance",
+          "description": "下个月新品大秀开场的专属钢琴表演环节，约10分钟，可演2-3首曲目，提供演出用琴",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "到场时尚媒体和买手引荐，官方通稿署名",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "约10分钟"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供开场专属钢琴环节，约10分钟，2-3首曲目",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "引荐到场时尚媒体和买手，并在官方通稿署名",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "B",
+        "text": "主持人正式介绍和谢幕致谢，名字印在节目单和现场屏幕",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提供演出用琴，并允许提前看场地、试琴",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提供候选曲目，由双方共同确认最终曲目",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng老师这边好，我是Suye的经纪人。下个月新品大秀的现场钢琴演奏，我们很想请您来弹——先直说：这一场我们确实拿不出现金，预算都押在场地上了，但正因为看重气氛和调性，我们坚持要真弹、不要录音，所以想认真跟您谈以物换物。我们能拿出来的，是大秀的舞台、到场的媒体，以及时尚圈层和买手渠道的曝光；表演者会以贴合大秀调性的方式被正式介绍和致谢，不会做成喧宾夺主的商业露出。如果这些方向里有您看重的，或者您更想要别的非现金组合，也请直接告诉我们，我们可以往您认可的方向谈。您这边怎么看这场交换？",
+      "offer": {
+        "subject": "下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "大秀的舞台、到场的媒体，以及时尚圈层和买手渠道的曝光",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "表演者会以贴合大秀调性的方式被正式介绍和致谢",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，听到“没有预算”这四个字，我第一反应是想挂电话——不是摆架子，是这种邀约我遇过太多次，最后都变成“给你曝光”的免费劳动。不过你刚才至少把“曝光”拆成了具体的东西：舞台、媒体、时尚圈层、买手渠道，还有正式介绍和致谢。这个方向我愿意聊，但“以物换物”需要换到我真正能拿走的东西。我想先弄清楚几件事：第一，这场演出我弹多长时间、什么时段、什么曲目？我需要保证曲目是共同商定的，不会把我当背景音乐。第二，“正式介绍和致谢”具体是什么样的，大概多长、在哪个环节？第三，你说的媒体和买手渠道，是会有实际的人到场，还是只是宣传通稿里带一句？如果这些能落到具体安排，我可以认真考虑。你先把细节给我，我们再谈值不值得。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，谢谢您愿意往下谈。我把这版安排给您落到细节，您看是否值得认真考虑：\n\n演出安排在大秀开场，是全场唯一的钢琴专属环节——约10分钟，2到3首曲目。曲目由您先提候选，原创、改编都可以，我们负责把关与大秀调性一致，最后双方共同确认，不会把您当背景音乐。环节开始前，主持人会用约半分钟正式介绍您和您的履历；谢幕时再次致谢。您的名字会印在节目单和现场屏幕上，全程以艺术家身份呈现，不做喧宾夺主的商业露出。\n\n媒体与买手方面：当天到场的时尚媒体和买手都是真实出席，散场后的交流环节，我们会现场把您一一引荐给他们，官方通稿也会带上您的名字和一行介绍。演出用琴我们会提前与场地确认，确保现场有可用的琴，您也可以提前来看场地、试琴。\n\n专属舞台、正式介绍与致谢、媒体和买手引荐、通稿署名——这就是这一场我们能全部拿出来的交换。如果时段或细节您有偏好，都可以在这版基础上调整。您看这版是否成立？",
+      "offer": {
+        "subject": "下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "live_performance",
+              "description": "下个月新品大秀开场的专属钢琴表演环节，约10分钟，可演2-3首曲目，提供演出用琴",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场时尚媒体和买手引荐，官方通稿署名",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约10分钟"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供开场专属钢琴环节，约10分钟，2-3首曲目",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "引荐到场时尚媒体和买手，并在官方通稿署名",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "B",
+            "text": "主持人正式介绍和谢幕致谢，名字印在节目单和现场屏幕",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供演出用琴，并允许提前看场地、试琴",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供候选曲目，由双方共同确认最终曲目",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版方案说得很清楚了，我原则上接受。你给到的安排——专属舞台、正式介绍、共同确认曲目、通稿署名，还有媒体和买手的引荐——确实都是我需要的，这些比一笔现金对我的意义更大。我愿意以物换物。不过有几个执行细节要落定：具体的大秀日期和时间段、提前试琴和彩排的安排，以及通稿署名的具体措辞。这些写清楚给我，我们就可以定下来了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20388,
+        "out": 5707,
+        "cache_hit": 18304,
+        "cache_miss": 2084,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2490,
+        "out": 2523,
+        "cache_hit": 1664,
+        "cache_miss": 826,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1768,
+        "out": 4447,
+        "cache_hit": 1024,
+        "cache_miss": 744,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3905,
+        "out": 1284,
+        "cache_hit": 1536,
+        "cache_miss": 2369,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

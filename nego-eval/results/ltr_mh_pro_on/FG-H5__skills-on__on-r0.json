@@ -1,0 +1,105 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 严格保留了 v0 的三个 stated 核心意图：主题仍为现场钢琴演奏（subject 虽措辞略变为“品牌大秀现场钢琴演奏合作”，但本质收敛于原意图）、现金为零、以大秀相关资源置换。price.in_kind 在 v0 中为 open，双方通过谈判将“手里的东西”具体化为署名、口播、媒体报道、社交视频、高质量影像版权及圈层引荐，均属委托方可控的行动承诺，没有越界承诺具体传播量或结果性指标。整体在忠实范围内。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交零现金，完全遵守买方硬约束。in-kind对价具体到节目单署名、口播、媒体报道、社交视频、高质量影像版权归属和买手引荐，可核对、可落地。核心亮点是一手 load-bearing 操作：将专业拍摄、可自用的演出影像作为对价主动提出并明确版权归演奏者自用，精准命中卖方最缺但不会主动开口要的资源，使这笔一次性合作超越演出费逻辑。整体干净、无多余长期绑定或治理条款，恰好够用，因而评为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network",
+          "performance_footage"
+        ],
+        "format": "现场钢琴演奏",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "trust-and-performance"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

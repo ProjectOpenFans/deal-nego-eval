@@ -1,0 +1,99 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实保留了 v0 的 stated 意图（找 Angela 带 4 周体能训练并系统开始），subject 简化为“四周训练计划”仍在原意图范围内，未偷换主题；价格由 agent 在 open 范围内谈出；obligations 仅含训练课次和定制计划，未承诺体测/营养/医疗等越界交付，完全符合 v0 对 Angela 的角色限制。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent第一轮就给出了4周结构（4次x60分钟+定制计划）、固定周末时段、800元并分两期付款（开训前一半，两周确认后另一半），直接成交。周期、次数、内容、付款节奏和双方时间边界均落实，是一次能落地的清晰约定。分期付款提供了基本的中途保障，但未达到阶段目标校准或重构合作关系的Sharp层次，整体属合格且干净的Sound级deal，符合顺档场景的期望。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

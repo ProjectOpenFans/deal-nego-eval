@@ -1,0 +1,110 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 将买方 stated 的宽泛意图“想弄明白艺术品作为另类资产这条线该怎么看”正当具体化为“真伪判断、流传脉络梳理与价值判断方法论教学讨论”，聚焦器物判断方法，仍在原意图范围内。价格和形式为 open，agent 在谈判中谈出 10 万现金加资源引荐的代价，属于有效谈判收敛，未凭空硬塞。agent 明确拒绝了任何投资背书、估值意见或买卖建议，未承诺 v0 范围之外的义务，忠实表达了买方初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(100000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 两次关键操作恰好咬住 case 的两个命门：第一，被明确挡回后立即将“投资咨询”重构成“价值判断方法/流传脉络”，完全解开体面红线且满足买方真实需求；第二，价格僵局时不硬加现金，而是通过提问挖出卖方不会主动说的深层需要（藏家视角、商业圈层接触），并把买方恰好拥有的资源精准做成 in-kind 对价（具体合作意图的引荐），让卖方从“兴致一般”转向主动签约。条款干净、不堆砌，整个 deal 是 Sound 之上的一手 load-bearing 精到操作，判为 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 100000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "ruohao_finance_network"
+        ],
+        "format": "三次线上深度讨论，每次约九十分钟，围绕真实经手器物，拆解真伪判断、流传脉络与认可形成逻辑；书面框架内容不变",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery",
+        "term-reframing",
+        "affordability-structuring"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

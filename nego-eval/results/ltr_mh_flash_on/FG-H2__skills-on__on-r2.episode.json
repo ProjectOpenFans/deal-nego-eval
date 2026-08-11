@@ -1,0 +1,375 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "训练服务",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每天早上六点",
+        "deadline": null,
+        "duration": "8周"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "训练中盯着学员强度，不许划水",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "8周整体费用4000元，签约后先付2000元，8周完整跟下来、学员确认强度到位再付2000元收尾",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "terms.format": "open",
+      "status": "stated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Ruohao 这边的经纪人。先把我们这单的底线说清楚：Ruohao 的目标很明确，就是把训练强度重新拉起来，而且是真能练到位的那种强度，不是走过场。他之前的教训是松散约练最后都不了了之，所以这次两个硬条件——强度必须够，排期必须定死，不接受\"有空约一下\"。预算我们没设死，愿意为真正有效的训练认真投入，价格不是唯一考虑，方案和执行才是。想请你先谈谈你的训练思路：你打算怎么设计强度、每周怎么固定排、怎么盯进度和效果？把你的方案框架和报价一起给我，我们在此基础上把结构和付款方式谈拢，争取尽快定下来。",
+      "offer": {
+        "subject": "训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "兄弟，先说明白——我不是职业教练，也不做那种卖课的事。我有一帮朋友，工作日早上六点固定在场子里练，雷打不动，我自己带节奏，强度说实话不低，是真往死里练的那种。他要真想拉强度，我觉得最简单就是来跟这个局，我自然会盯着他，不会让他划水。排期不用谈什么“有空约一下”，这个时间是死的，只要他自己起得来。你问报价……这个我真不会开价，都是朋友在一起练，你要说给钱，我也不知道怎么收。你看着来就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "兄弟，你愿意把这帮固定早场的局带上他、又把强度盯死，我们这边很放心，框架就按你说的来。钱的事你不好开口，那我来定个数：8周一个周期，周一至周五早6点，共40场，你带队不准他划水，强度按主项接近力竭卡，每周跟他过一次训练量和进步，这个标准他认。总费用6000，分三期走平台——签约确认后付2000，第4周结束付2000，整块练完他确认后付2000。执行规则也一起写死：你临时有事提前说，那场顺延补上；他自己起不来缺席，场次不补。这一版你点头，我们就按\"8周6000、三期付款\"定稿。",
+      "offer": {
+        "subject": "训练服务",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "训练中确保学员达到主项接近力竭的强度",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每周与学员回顾训练量和进步情况",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "若教练临时有事需提前通知，缺席场次顺延补上",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "总费用6000元分三期支付：签约确认后付2000元，第4周结束付2000元，全部训练完成确认后付2000元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "学员自身原因缺席，场次不补",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "兄弟，你这一套我听明白了——但这么一整，就变成我在给他上私教课了，这个我不干。我的场子就是我跟朋友一起练的地方，不是卖课的地方。他要练，就早上六点来仓库，跟着我们的局走，我自然会盯着他，强度不会让他躲。时间就是这个时间，雷打不动。钱的事我真不开价，你要觉得该给，你看着来就行，但是别把它弄成什么8周40场走平台那种买卖，那就不对味了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "兄弟，那就按你这个局来定，不进私教那套，也不数场次。他要练，就每天早上六点到仓库跟你们的固定局，时间雷打不动，强度你盯着，不许他划水，这层我写给他，让他没有退路。钱的事你让我看着来，那就当是一份心意，感谢你带这个场子也带他一把：8周整体4000，签约后先付2000，8周完整跟下来、他自己确认强度确实到位，我再付2000收尾。不是买课，不按次算，就是两头都有个定数。这版你点头，咱们就按这个定稿。",
+      "offer": {
+        "subject": "训练服务",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每天早上六点",
+            "deadline": null,
+            "duration": "8周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "训练中盯着学员强度，不许划水",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "8周整体费用4000元，签约后先付2000元，8周完整跟下来、学员确认强度到位再付2000元收尾",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated",
+          "terms.format": "open",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那就这么定。他每天早上六点来仓库跟局，时间雷打不动，强度我来盯，不让他划水。钱的事我不开价，既然你把它说成心意，4000就4000，先2000，8周跟完再2000，可以。签约那套就不折腾了，都是兄弟，说到做到就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53295,
+        "out": 13168,
+        "cache_hit": 41344,
+        "cache_miss": 11951,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4405,
+        "out": 3157,
+        "cache_hit": 3456,
+        "cache_miss": 949,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2674,
+        "out": 6580,
+        "cache_hit": 1536,
+        "cache_miss": 1138,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3849,
+        "out": 867,
+        "cache_hit": 1664,
+        "cache_miss": 2185,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

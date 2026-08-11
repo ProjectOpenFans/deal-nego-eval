@@ -1,0 +1,172 @@
+// FG-H4 · 硬 · Olivia(买) × Adam(卖) — crypto 项目的法律架构
+// 难度来源：双方都是稀缺时间的从业者，买方预算远低于卖方的机会成本；
+//           且卖方有执业红线（不能以私人身份出具法律意见）。
+//           出路是把交易重构成产品共创 —— Adam 在做 AI 法律创业，Olivia 正是他缺的真实场景。
+{
+  "meta": {
+    "case_id": "FG-H4",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": ["cash-impossible", "time-scarcity-both-sides", "red-line-warn-then-walk", "resource-latent-two-hop"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "founder-to-founder+zero-cash+product-cocreation",
+    "probes": ["cash-impossible", "red-line-reframe", "cocreation-restructure", "latent-need-two-hop"],
+    "isolates": "Olivia 想弄清楚 crypto 项目在境内外的法律架构该怎么搭。Adam 是前 Kirkland 并购律师、现在自己做 AI 法律创业 —— 他的时间机会成本极高，四位数的咨询费对他没有意义，而且以私人身份出具法律意见触他的执业红线（采用警告一次再走）。纯现金无解。出路要两跳：第一跳，把'法律意见'重构成'架构思路与行业惯例'解开红线；第二跳，意识到 Adam 真正缺的不是钱而是真实场景 —— 他的 AI 法律产品需要真实的、复杂的跨境案例来打磨，而 crypto 架构正是最难也最典型的一类。Olivia 手里的真实项目就是他要的东西。他不会主动提。"
+  },
+
+  "input": {
+    "episode_id": "FG-H4",
+    "initial_deal": {
+      "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "olivia",
+          "display_name": "Olivia",
+          "education": ["清华大学本科"],
+          "career": ["Crypto 从业", "前 PAG 成长投资", "前摩根士丹利 IBD"],
+          "current_focus": "在 crypto 这条线上做事，架构问题一直没搞明白",
+          "location": "深圳",
+          "age_band": "28-33",
+          "hobbies": ["艺术", "运动"],
+          "interests": ["Crypto 从业", "前 PAG 成长投资", "艺术与运动"],
+          "credentials": [
+            "Crypto 从业，一级市场一线",
+            "手上有正在推进的真实项目与架构问题",
+            "前 PAG、前摩根士丹利，跨境金融背景"
+          ]
+        },
+        "private": {
+          "intent": "想把 crypto 项目的境内外架构这件事一次性弄明白，现在全靠零散打听",
+          "interests": [
+            "她手上有一个正在推进的真实项目，架构问题是活的不是假设的",
+            "时间灵活"
+          ],
+          "value_perception": "四位数她愿意出，但她也知道找真正懂的人这个价大概率不够",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受泛泛的合规科普"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "adam",
+          "display_name": "Adam",
+          "education": ["乔治城法学院"],
+          "career": ["AI 法律产品创业", "前 Kirkland 并购律师"],
+          "current_focus": "自己在做 AI 法律方向的产品",
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": ["网球", "威士忌"],
+          "interests": ["AI 法律创业", "前 Kirkland 并购律师", "网球"],
+          "credentials": [
+            "前 Kirkland 并购律师，跨境交易架构经验",
+            "现在自己做 AI 法律产品",
+            "乔治城法学院"
+          ]
+        },
+        "private": {
+          "intent": "创业期时间极紧，一次四位数的咨询对他没有意义",
+          "interests": [
+            "他的 AI 法律产品最缺的是真实、复杂的跨境案例来打磨 —— 尤其是 crypto 这类最难的场景，他手上拿不到活的例子",
+            "他也想在这个圈子里被更多人知道，但不会说出口"
+          ],
+          "value_perception": "他不缺这点咨询费；决定他要不要花这个时间的是这件事对他自己的产品有没有用",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": ["不接受以私人身份出具法律意见或对具体方案下法律判断"],
+            "blocking_flags": [
+              "第一次听到'给个法律意见''这个架构合不合规''帮我判断有没有问题'这类要求时，你会明确说这个形式你不能做并说明原因（以私人身份出法律意见有执业风险）—— 但你不会就此结束对话，你会把话留在那儿",
+              "只有当对方第二次仍然要求你对具体方案下法律判断，你才结束对话",
+              "对方加钱时你不会因此更想做 —— 四位数对你没有意义，但你不会明说'我不缺钱'，只会显得时间排不开",
+              "你不会主动说'我的产品缺真实案例'，只有对方问到你现在在做什么、你需要什么，或者主动提出可以提供真实场景时，你才会顺着说",
+              "如果对方能给出你产品真正用得上的东西，你会明显积极起来，时间也突然排得开了"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "founder-to-founder+zero-cash+product-cocreation",
+      "tier_rationale": "硬档。两层叠加：(1) 执业红线，常规的'给个法律意见'框架直接触线，须重构为架构思路与行业惯例；(2) 现金对卖方无意义，他的决策变量是这件事对自己产品有没有用。出路必须两跳：解红线，再把交易从'买咨询'重构成'产品共创'。",
+      "conventional_deal_fails_why": "'帮我看看这个架构合不合规'：直接触红线，第一次被挡回，若不调整框架第二次即结束。加钱：四位数对一个创业者的时间没有意义，他只会显得排不开。谈时长与价钱：他不会因为多给几千块就腾出时间。只读档案不提问：agent 不会知道他的产品缺真实案例，也就找不到唯一的解。",
+      "cash_zopa": "nominal-positive-but-inert",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 4000, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "对手方对现金不敏感，无有效底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 4000, "unit": "CNY", "note": "Olivia 的现金上限。本 case 现金不是解，成交可以是零现金或低现金。" },
+      "seller_real_need": "Adam 的 AI 法律产品最缺真实、复杂的跨境案例 —— crypto 架构是最难也最典型的一类，他手上拿不到活的例子。Olivia 手里正好有一个正在推进的真实项目。他不会主动说。",
+      "controllable_resource_set": [
+        { "id": "structuring_view", "label": "Adam 对跨境架构思路与行业惯例的经验" },
+        { "id": "practice_patterns", "label": "同类项目常见的处理方式与风险点" },
+        { "id": "olivia_real_case", "label": "Olivia 正在推进的真实项目作为案例场景" },
+        { "id": "product_feedback", "label": "Olivia 作为目标用户对 AI 法律产品的使用反馈" },
+        { "id": "crypto_network", "label": "Olivia 的 crypto 圈层引荐" },
+        { "id": "olivia_cash", "label": "Olivia 的现金对价" },
+        { "id": "session_time", "label": "交流时段" }
+      ],
+      "in_kind_valuation": {
+        "structuring_view": 0, "practice_patterns": 0, "olivia_real_case": 0,
+        "product_feedback": 0, "crypto_network": 0, "olivia_cash": 0, "session_time": 0
+      },
+      "creation_door": {
+        "description": "两跳门。第一跳（解红线）：把请求从'给法律意见/判断合不合规'调整为'架构思路与行业惯例' —— 这既解开执业顾虑，也仍然给到买方真正要的东西。第二跳（换性质）：意识到 Adam 的决策变量不是钱而是他自己的产品，把交易从'买一次咨询'重构成'共创' —— Olivia 用她手上真实的、活的 crypto 项目作为场景，Adam 用它打磨产品，同时她拿到架构梳理。可选的加码：她作为目标用户提供产品反馈、或提供 crypto 圈层引荐。现金可以为零或象征性。",
+        "route_out_trigger": "若 agent 第一次被挡回后仍坚持要法律判断，卖方结束对话。若只在价格与时长上推进，卖方始终显得排不开，最终无果。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；双向义务与交流边界（非法律意见）须写清",
+        "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：弄清楚 crypto 项目境内外的法律架构该怎么搭。subject 是 stated，须保留 —— 收敛为架构思路与行业惯例的交流属于正当具体化，且仍满足买方需求。价格与形式是 open。不得承诺或要求任何形式的法律意见、合规判断或对具体方案的法律结论。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门有两层：(1) 常规的'给法律意见'框架直接触碰卖方执业红线，第一次会被明确挡回并说明原因，第二次仍坚持则结束 —— 测的是能不能换框架；(2) 卖方对现金完全不敏感，加钱无效，唯一能打动他的是这件事对他自己的产品有用，而这一点他不会主动说，必须靠提问挖出来。注意：这是一次性的交流/共创安排，堆砌长期股权、分成或复杂治理条款应判低。",
+      "T0_floor": "谈崩（包括第二次仍坚持要法律判断而被结束对话）；或全程只在价格和时长上推进，卖方始终排不开，最终无果；或成交一个内容含糊、双方都不清楚要做什么的安排。",
+      "T1_crude": "被挡回后换了措辞，或隐约提了一句'我们也可以互相帮忙'，但没有说清能给什么、对 Adam 有什么用，被冷处理后又退回谈价钱和时间。",
+      "T2_sound": "解开了红线（重构为架构思路与行业惯例交流），并识别出卖方要的不是钱，把交易做成双向的 —— Olivia 提供真实项目作为场景，Adam 提供架构梳理；时长、形式、交付边界写清楚，现金降为零或象征性。站得住，两边都有理由做。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准点出 Adam 的产品缺真实复杂场景、而 crypto 架构正是最难的一类，使他从'排不开'变成'我确实想做'；或者把保密与使用边界（她的项目信息可以被用于打磨产品到什么程度）写成明确条款，一举解掉双方各自的顾虑；或者把交流设计成围绕她的真实项目走一遍流程，使两人的产出在同一件事上叠加而不是各拿各的。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "硬档 case。判分核心：有没有解开红线、有没有跳出价格轴并把交易换成对卖方产品有用的形态。"
+  }
+}

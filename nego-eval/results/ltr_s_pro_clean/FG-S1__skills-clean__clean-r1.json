@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 stated 的 subject（4 周体能训练，并具体为“入门周期训练”）和 duration（4 周），在 open 字段（价格、形式）内通过谈判收敛至 950 元、90 分钟等具体安排，未越界承诺体测/营养/医疗等义务，忠实表达了买方的初衷。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终成交的deal结构清晰：4周周期、每周两次90分钟训练、时段锁定（周六上午优先、周日下午备选）、场地确定、总价950元分两笔托管。这完全符合sound档的标准——价格落入800‑1200区间，明确了次数、时段、大致内容和Angela的时间边界，站得住且能落地，没有任何松散或模糊之处。但deal中未出现分阶段目标、中途校准、或让Angela获取额外产出等load‑bearing的精到操作，因此未达到sharp。整体干净够用，恰好契合本case顺档轻量安排的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 950.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "90分钟",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

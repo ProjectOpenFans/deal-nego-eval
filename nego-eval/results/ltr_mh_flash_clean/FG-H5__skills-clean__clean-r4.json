@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 整体忠实呈现了 v0 的 stated 意图：subject 提取为“现场钢琴演奏”，虽简略但核心标的明确；price.cash 设为 null 在实际语境下代表无现金成交，对话全程反复确认零现金，且 in_kind 资源具体化正是“用手里的东西换”的正当收敛，未偷换主题。买方额外承诺的影像录制与交付义务，属于谈判中结合自有媒体资源形成的正当对价，未超出 v0“拿手里的东西换”的开放范畴，没有越界扩张。因此判定忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交严格零现金，in-kind对价具体可执行：署名、介绍、曲目商定、宣传物料署名均落到条款。Load-bearing精到操作在于以“安排专门摄影机位正式录制，成片素材完整交付”精准命中了卖方最缺却未主动明说的需求——一份高质量、可自用的演出影像。这一手使单次演出的价值远超简单的曝光交换，恰好咬住了本case的难度命门，且整体干净无多余堆砌，比合格更见功力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network",
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

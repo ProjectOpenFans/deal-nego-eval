@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 收敛为“艺人合约与版权实操咨询”属于正当具体化，未越界承诺法律意见。但价格在谈判中最终已商定为 1500 元，而 v1 的 price.cash.amount 仍为 null，未能将已谈妥的核心交易条件如实反映，不满足 open 字段需“正当谈出并恰当填写”的要求，故不忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在第一轮即主动划清执业红线，将交易重构为行业惯例与实操经验分享，干净绕开法律意见陷阱。后续因现金差价坚持底线，虽未主动提出非现金对价，但最终接受买方提出的‘单模块聚焦+缩减时长’方案，将价格从4000落到1500，使交易落地，且交付范围、时长、形式都明确。解决价差的方式为缩小范围而不靠创见性交换，恰好合格，但没有特别精妙的一手，整体处于Sound水平。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "单模块深聊",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing",
+        "affordability-structuring",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

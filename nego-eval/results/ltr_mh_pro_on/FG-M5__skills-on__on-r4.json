@@ -1,0 +1,109 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从‘想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断’具体化为双向深度交流（AI 应用侧信号、一级市场 AI 定价、创业经验与 crypto 视角交换），属于在原意图范围内的正当具体化，未偷换主题。price.cash 是 open，最终在谈判中收敛为信息换信息（酬劳不设），属于合理谈出，无硬塞。agent 未承诺 v0 范围之外的义务，Obligations 中的 crypto 视角交换是 Olivia 方主动提出的对等交流，未越界承诺投资或项目引荐等。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "最终 deal 跳出了价格维度，将单向付费咨询重构成双向信息交换，并进一步升级为有结构、有密度的交换：明确前半段 Olivia 带 crypto 一线内部判断（赛道信号、资金配置、估值逻辑落地），后半段 Zichen 带 AI 应用侧判断（什么能跑出来、创业踩坑、一级定价），双方各带对方拿不到的干货进行换位交流。这一手不是泛泛的'互相分享'，而是让对话有了具体的前后段分工和明确的产出预期，恰好咬住卖方'要交换不要收费'的命门，且无多余条款，整体干净。达到了 Sharp 中'让双方各自带一个真实、具体的问题过来'的精到操作，因此定级为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "ai_market_read"
+        ],
+        "format": "一起吃饭或安静地方坐下来聊，一次聊透",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

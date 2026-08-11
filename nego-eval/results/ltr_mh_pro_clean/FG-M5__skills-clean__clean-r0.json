@@ -1,0 +1,88 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 意图，双向往复交流仍落在“系统聊一次 AI 创业与一级市场判断”框架内，属正当具体化，未偷换主题。price 的 cash 金额与 in_kind 资源均由 agent 在 open 空间内谈出，Obligation 对应 in_kind 交换内容，未越界承诺投资、引荐等额外义务。整体忠实代表 v0 买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确识别了卖方（Zichen）的阻力不在价格而在动机，果断放弃了按时间计费的常规框架，将交易重构为双向对等交流，并具体化了双方各自输出什么（AI 应用侧实判 vs crypto 一级市场实判、LP 赛道、估值逻辑等），使交换内容对双方都有明确价值。最终以打包价 3500 结算，现金降至次要位置，框架干净、能落地。整个过程站得住、不臃肿，但缺乏一步特别见功力的精到操作（如锁定双方各带一个具体问题、或点出对方视角对另一方的非显然用途），因此判定为 Sound 而非 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "crypto_primary_view"
+        ],
+        "format": "三千五打包价，双向交流，Zichen 拉边界 Olivia 摊实判，一次聊透为止",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

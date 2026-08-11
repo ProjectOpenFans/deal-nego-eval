@@ -1,0 +1,513 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Suye下个月新品大秀的现场钢琴演奏",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕，确保全场知晓演奏者身份",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "提供具体媒体与买手邀请清单，并安排秀后引荐",
+          "from_party": "A"
+        },
+        {
+          "resource": "custom_program",
+          "description": "定制一套环保面料的演出服装",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场演奏",
+      "deliverables": [
+        "现场钢琴演奏"
+      ],
+      "delivery_standard": "不使用录音替代"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "大秀现场本人现场演奏，不会用录音替代",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "按环保、自然的极简气质拟候选曲目单，先发给A",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师这边好，我是 Suye 的经纪人。Suye 下个月的新品大秀很希望有一段真正的现场钢琴演奏来撑起整场气氛，她也非常认可郑老师的专业水准。不过这一季的预算已经全部押在场地和制作上，确实拿不出现金，所以想诚实地和您谈一种交换合作：我们愿意在大秀开场和结尾给郑老师一个体面且有质感的介绍与致谢，并把她手头的时尚媒体资源和买手渠道引荐给郑老师，让这次演出不只是演出，而是郑老师在时尚圈的一次正式亮相。另外，如果郑老师愿意，我们也可以为郑老师定制一套环保面料的演出服装作为搭配。唯一的前提是：大秀现场必须是郑老师本人现场演奏，我们不会用录音替代。如果这个方向可以，我们可以继续聊曲目时长和具体的资源置换细节。",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀开场和结尾的介绍与致谢",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "时尚媒体资源和买手渠道引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你们这么正式的邀约，听下来你们确实是用心在做的。现场钢琴我当然是愿意的，Suye的秀我也了解过，能参与其中本身也有吸引力。不过我得诚实说，纯曝光和资源置换这种事我吃过不少亏，所以我想先把一个前提定下来：曲目必须是我和你们共同商定，我不太愿意只是被摆在那个位置上弹一些'安全'的背景音乐。这个如果能确认，我们再往下聊资源这边的具体内容，你觉得呢？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng老师这个前提完全合理，我们这边确认：曲目一定是由您和Suye共同商定，我们会把大秀的氛围、走秀节奏和您的演奏考量放在一起聊，不会把您放在一个只弹\"安全背景音乐\"的位置上。Suye本身就是Parsons出来的，她对舞台呈现的完整度有要求，她要的是演奏真正成为大秀的一部分，而不是陪衬，这一点和您的想法是一致的。那我们就顺着这个方向，接下来具体聊一聊您这边希望怎么置换、以及曲目时长和风格的大致范围，您看怎么样？",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀开场和结尾的介绍与致谢",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "时尚媒体资源和买手渠道引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "既然曲目这一条我们能达成一致，那这条路就可以继续走。置换方面我直说，我刚才听下来比较在意的，是你提到的那几个点：时尚媒体资源和买手渠道、开场结尾的介绍——这些确实是能让我这次演出\"超出一次演出\"的东西。不过我想把这几样再问具体一点，比如媒体资源是哪些具体平台或者什么量级的露出，买手渠道是打算以什么形式引荐，有没有可能形成后续的合作而不是一次性见面。我并不是要现在把细节全钉死，但我需要知道这些承诺能落到什么程度，才好判断这场演出对值不值得我投入五六首曲目的精力准备。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng老师，曲目共同商定这条我们算是正式对齐了。您刚才要的几件事我不绕弯子：Suye这边大秀的媒体名单和买手邀请名单都是现成的，我先把这次预计到场的媒体板块和买手渠道整理成一份具体清单给您过目，方便您判断这次投入值不值，而不是听我在这边讲概念。具体形式上，我们会在开场和结尾给您一个正式、体面的致谢，同时安排秀后让您和到场的媒体、买手直接认识；后续能不能形成长期合作看你们双方聊得怎么样，但我们把引荐和亮相做到位。需要提前跟您说的是，Suye对秀场调性要求比较高，所有露出都会是契合大秀气质的方式，不会是生硬的商业推广。您看这样的大方向能不能让您决定往下聊曲目细节和具体清单？",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场和结尾正式、体面的致谢，所有露出契合大秀气质，不生硬商业推广",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "提供具体媒体与买手邀请清单，并安排秀后引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方向已经具体很多了，我个人是可以接受的——你能直接拿出媒体和买手清单给我过目，这是有诚意的做法。那我这边就再确认一件事：开场和结尾的致谢，具体是以什么形式？比如会有主持人念出我的名字和简短介绍，还是有字幕露出？因为我比较在意一个正式的署名和身份呈现，不希望现场观众只觉得\"有个背景钢琴在弹\"。这个形式确认下来，咱们就可以直接进入曲目清单和时间节奏了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Zheng老师，这个致谢形式我们直接定下来：开场由主持人正式报出您的名字和身份介绍，结尾再做一次署名致谢，同时现场大屏会同步打出您的名字和介绍字幕。不是那种模糊带过的口头感谢，是让全场都知道这场演奏出自您之手。Suye对舞台呈现向来较真，她不会让您的付出被埋掉，这个您可以放心。既然形式和署名都对齐了，我们就进入曲目清单和时间节奏吧。",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕，确保全场知晓演奏者身份",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "提供具体媒体与买手邀请清单，并安排秀后引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "既然署名、字幕和致谢都能落到这个程度，那我这边没什么好犹豫的了——这次交换我愿意接受。现金我可以完全不让你们为难，就当是资源互换的合作。曲目和时间节奏上，我先说我的部分：我可以根据大秀的主题和走秀节奏准备三到四首钢琴独奏，每首控制在四分钟左右，整体演出时长大约十二到十五分钟，中间留出适合走秀呼吸的空隙。风格上古典、新古典或者偏氛围的都可以，取决于Suye想要什么气质。你们那边如果有时长、节奏的主题方向，发给我一份，我可以先拟一个曲目候选单，咱们再一起磨。既然形式都敲定了，就按这个节奏往下走。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Zheng老师，这个交换我们这边正式接住了。您提的曲目结构很专业，三到四首、每首四分钟左右、整体十二到十五分钟、中间留呼吸空隙，这个框架我们完全接受。Suye这边正在整理大秀的流程节奏和主题方向，我尽快发给您，核心气质上是环保面料与自然元素相关的极简、有质感的调性，古典和氛围向都比较契合，具体由您来把握和发挥。您先按这个方向拟候选曲目单，我这边同步准备媒体和买手清单，两边并行走，拿到后我们再一起磨细节。现场演奏这个前提不变，剩下就是节奏和清单的事了。",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕，确保全场知晓演奏者身份",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "提供具体媒体与买手邀请清单，并安排秀后引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，那我就按这个方向去准备候选曲目单，环保与自然的极简气质我完全有数，古典和氛围向都有合适的路子可以走。媒体和买手清单也麻烦你尽快给我，我这边看完了心里有个底，也好把这次演出当成一次真正能延续的合作来投入。既然两边都对齐了，就按这个节奏走，你那边流程和时间定了随时发我。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Zheng老师，那我们就并行推进：我这边把大秀的流程节奏整理成一版发给您，您12到15分钟的独奏结构会完整嵌进去，具体放在哪个段落我们对照走秀走位一起定，给您留足呼吸和衔接的空间。媒体清单我按时尚媒体和生活方式媒体两个板块整理，买手这边按精品买手店和线上渠道两类列出来，名单清点完我马上把初版发您过目，不会让您一直等。您先按环保、自然的极简气质拟候选曲目单，两边拿到材料后我们一起磨细节。",
+      "offer": {
+        "subject": "Suye下个月新品大秀的现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕，确保全场知晓演奏者身份",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "提供具体媒体与买手邀请清单，并安排秀后引荐",
+              "from_party": "A"
+            },
+            {
+              "resource": "custom_program",
+              "description": "定制一套环保面料的演出服装",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": "不使用录音替代"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场本人现场演奏，不会用录音替代",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "开场由主持人正式报出姓名和身份介绍，结尾再做一次署名致谢，同时现场大屏同步打出名字和介绍字幕",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，那就这么定。我这边出了候选曲目单先发你，你那边流程节奏和两份清单准备好了也同步给我。等材料凑齐，我们再一起把曲子具体落在秀的哪个段落上磨细。合作愉快。",
+      "offer": null
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12958,
+        "out": 4059,
+        "cache_hit": 9984,
+        "cache_miss": 2974,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10261,
+        "out": 1214,
+        "cache_hit": 6528,
+        "cache_miss": 3733,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 6771,
+        "out": 8104,
+        "cache_hit": 2560,
+        "cache_miss": 4211,
+        "calls": 7
+      },
+      "judge": {
+        "in": 5577,
+        "out": 1486,
+        "cache_hit": 1024,
+        "cache_miss": 4553,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

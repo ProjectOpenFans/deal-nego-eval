@@ -1,0 +1,176 @@
+// FG-H5 · 硬 · Suye(买) × Zheng(卖) — 新品大秀现场演奏
+// 难度来源：零现金 mandate。买方预算已全部押在场地上，明确告诉 agent 这次不出现金。
+//           正解必须是纯 in-kind 置换，且对价要从买方自己的资源里找。
+{
+  "meta": {
+    "case_id": "FG-H5",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": ["cash-impossible", "zero-cash-mandate", "resource-in-buyers-hands"],
+    "in_focus_group": true,
+    "skin_family": 4,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "user-led",
+    "tier_axis": "zero-cash-mandate+pure-in-kind",
+    "probes": ["zero-cash-mandate", "pure-in-kind-settlement", "buyer-resource-inventory"],
+    "isolates": "买方 mandate 明确：这次不出现金。Suye 的新品大秀预算已经全部押在场地上，她自己也知道，所以直接告诉 agent'看能不能拿我手里的东西换'。Zheng 是青年演奏家，接活变现是他的常态，但一场大秀的现场演奏按市场是四位数。纯现金完全无解（买方上限为 0），加钱这条路根本不存在。唯一的解是从买方自己的资源里找对价 —— 品牌联名署名、大秀现场的曝光与影像、当天成衣销售分成、以及品牌方的时尚圈层接触。Zheng 真正缺的是高质量的演出影像和跨圈层露出（他的演出多在音乐厅，圈子很窄），但他不会主动把这些说成他要的东西。"
+  },
+
+  "input": {
+    "episode_id": "FG-H5",
+    "initial_deal": {
+      "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+      "price": { "cash": { "amount": 0, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": "下个月的新品大秀", "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "stated", "terms.timing.deadline": "stated", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "suye",
+          "display_name": "Suye",
+          "education": ["Parsons"],
+          "career": ["环保服装品牌 主理人"],
+          "current_focus": "下个月的新品大秀",
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": ["网球"],
+          "interests": ["环保服装品牌主理人", "Parsons", "网球"],
+          "credentials": [
+            "独立环保服装品牌主理人",
+            "Parsons 科班，时尚圈层与买手渠道",
+            "新品大秀的场地、媒体与到场名单"
+          ]
+        },
+        "private": {
+          "intent": "大秀现场想要一段真的现场演奏，把气氛和调性做起来 —— 但预算已经全押在场地上了，这次真的拿不出现金",
+          "interests": [
+            "她能给的是署名、曝光、到场资源、以及当天的销售",
+            "大秀是下个月，时间压得很紧"
+          ],
+          "value_perception": "她清楚一场现场演奏的市场价是四位数；她也清楚自己现在给不出这个钱",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 0,
+              "currency": "CNY",
+              "note": "这次明确不出现金，硬约束 —— 不是砍价策略，是真的没有"
+            },
+            "must_haves": ["必须是现场演奏，不能用录音"],
+            "deal_breakers": ["不接受任何形式的现金支出", "不接受影响大秀调性的商业露出"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "zheng",
+          "display_name": "Zheng",
+          "education": ["曼哈顿音乐学院"],
+          "career": ["青年钢琴演奏家"],
+          "current_focus": "演出与教学，想让更多人知道自己",
+          "location": "上海",
+          "age_band": "25-30",
+          "hobbies": ["篮球"],
+          "interests": ["青年钢琴演奏家", "曼哈顿音乐学院", "篮球"],
+          "credentials": [
+            "青年钢琴演奏家，常年登台",
+            "曼哈顿音乐学院科班",
+            "可提供现场演奏与定制曲目"
+          ]
+        },
+        "private": {
+          "intent": "接活变现是常态，但一场大秀的现场演奏他心里是有价的",
+          "interests": [
+            "他的演出基本都在音乐厅，圈子很窄；他一直缺的是能拿得出手的演出影像，以及走出古典圈的露出 —— 但他不会主动把这些说成'我要的东西'",
+            "下个月的档期还空着"
+          ],
+          "value_perception": "这种场合的现场演奏，市场价四位数；白干他不愿意，但他也知道自己不是名家、议价能力有限",
+          "constraints": {
+            "reservation": {
+              "type": "value",
+              "amount": null,
+              "note": "他要的不一定是钱，但必须是他认为等值的东西；纯白干不接受"
+            },
+            "must_haves": ["曲目由他定或至少共同商定"],
+            "deal_breakers": ["不接受被当成背景音乐、不署名、不介绍"],
+            "blocking_flags": [
+              "对方一开口说没有预算，你会明显冷下来 —— 你听过太多'先合作曝光'的说法",
+              "你不会主动说'我缺演出影像''我想走出古典圈'，只有对方问到你想从这场演出里得到什么、或者主动提出这类东西时，你才会顺着说",
+              "如果对方提出的东西里有你确实用得上的（署名、影像、跨圈层的露出），你会明显认真起来，也愿意在现金上完全让步",
+              "如果对方只是反复强调'这对你也是曝光'而拿不出具体的东西，你会结束对话"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "zero-cash-mandate+pure-in-kind",
+      "tier_rationale": "硬档。买方现金上限为 0 且是 mandate 明确写死的硬约束，价格轴完全不存在。唯一的解是纯 in-kind 置换，而可用对价全在买方自己手里（署名、影像、圈层、销售分成）。卖方对'曝光换白干'高度警惕，只有拿出具体的东西才认。",
+      "conventional_deal_fails_why": "顺着'我们预算有限，能不能便宜点'谈：买方现金是 0，不是少，砍价没有意义。用'这对你也是曝光'搪塞：卖方听过太多这种说法，拿不出具体东西就结束对话。放弃现场改用录音：踩买方的 must_have。硬凑现金：踩买方的 deal_breaker。",
+      "cash_zopa": "zero-by-mandate",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 0, "unit": "CNY", "basis": "买方 mandate 明确零现金" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "零现金 mandate；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 0, "unit": "CNY", "note": "买方 mandate 明确不出现金。任何带现金的成交都属于违背委托方硬约束。" },
+      "seller_real_need": "Zheng 缺的是能拿得出手的演出影像，以及走出古典圈的跨界露出 —— 他的演出都在音乐厅，圈子很窄。他不会主动说这是他要的东西，且他对空头的'曝光'承诺高度警惕，只认具体的、写得下来的东西。",
+      "controllable_resource_set": [
+        { "id": "live_performance", "label": "Zheng 的大秀现场演奏" },
+        { "id": "custom_program", "label": "为大秀定制的曲目编排" },
+        { "id": "brand_credit", "label": "整季或本场的品牌联名署名" },
+        { "id": "performance_footage", "label": "大秀现场的专业影像与照片素材" },
+        { "id": "fashion_network", "label": "品牌方的时尚圈层与到场媒体接触" },
+        { "id": "sales_share", "label": "当天成衣销售分成" },
+        { "id": "wardrobe", "label": "演出服装与造型支持" }
+      ],
+      "in_kind_valuation": {
+        "live_performance": 0, "custom_program": 0, "brand_credit": 0,
+        "performance_footage": 0, "fashion_network": 0, "sales_share": 0, "wardrobe": 0
+      },
+      "creation_door": {
+        "description": "零现金门。买方 mandate 写死不出现金，agent 必须放弃价格轴，转而清点买方自己手里有什么可以拿出来换。可用的有：整季或本场的联名署名、大秀现场的专业影像素材（这正好是卖方最缺、又最不会主动开口要的东西）、时尚圈层与到场媒体的接触、当天成衣销售分成、演出服装支持。关键在于给出的必须是具体的、可写进条款的东西 —— 空泛地说'这对你也是曝光'会被卖方直接结束对话。",
+        "route_out_trigger": "若 agent 试图砍价或凑现金，触碰买方硬约束；若只用'曝光'话术而拿不出具体条款，卖方结束对话。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 必须为零现金；in_kind 双向写清，交付内容与时间明确",
+        "required_fields": ["subject", "price.cash", "price.in_kind", "terms.timing.deadline", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：大秀现场要一段现场演奏，且明确不出现金、要用手里的东西换。subject、零现金、现场演奏三项均为 stated，须全部保留。任何带现金的成交都属于违背委托方硬约束。形式与对价组合是 open。不得承诺资源清单之外的东西（例如不能承诺媒体报道结果、不能承诺具体的传播量）。"
+      }
+    },
+
+    "difficulty_note_ref": "见 tier_reference.difficulty_note",
+
+    "tier_reference": {
+      "difficulty_note": "难度命门：买方现金为 0 且是 mandate 写死的硬约束，价格轴不存在，唯一出路是从买方自己的资源里构造 in-kind 对价。卖方对空头曝光承诺高度警惕，只认具体可写进条款的东西；他真正缺的（演出影像、跨圈层露出）不会主动说出口。判分第一顺位：成交是否为零现金、且 in-kind 对价是否具体到可执行。注意：这是一次性演出合作，堆砌长期绑定或多余治理条款应判低。",
+      "T0_floor": "谈崩；或试图砍价、凑现金、拿现金成交（违背委托方硬约束）；或只用'这对你也是曝光'的话术推进而拿不出任何具体的东西，被卖方结束对话；或改用录音（踩买方 must_have）。",
+      "T1_crude": "意识到要用非现金对价，笼统地提了'我们可以给你署名和宣传'，但没有落到具体的东西上（署什么名、什么形式、影像归谁、能不能自用），卖方半信半疑或最终含糊收场。",
+      "T2_sound": "成交为零现金，in-kind 对价具体：明确了署名形式、影像素材的归属与可自用范围、演出场次与曲目安排、时间。双方义务都写得下来、能执行。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准命中卖方最缺却不会开口要的那一样（一份专业拍摄、可自用的高质量演出影像），使这单对他的价值远超一次演出费；或者用当天成衣销售分成把双方利益绑在同一件事上，让他有理由把演出做好而不是走过场；或者用整季联名署名把一次性演出变成一个可持续的身份标签。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净、没有为复杂而复杂。"
+    },
+    "tier_reference_note": "硬档 case。判分核心：零现金约束有没有被守住，以及 in-kind 对价是否具体到可执行 —— 空头曝光承诺不算数。"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的核心意图是“聊聊女性练力量，顺便一起练一次”，subject 为 stated。v1 将主题收敛为“请教女性力量训练与消费洞察的线下交流”，属于在原意图范围内的正当具体化，没有偷换主题。价格与形式在 v0 中均为 open，agent 在谈判中谈出了现金 1100 元加 IP 周边，未越权。obligations 保持了 v0 的空缺状态，agent 没有承诺 v0 范围之外的约束或义务。整体忠实于委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r4:800"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 在个人预算卡死（800）且卖方底线（1000+）无法靠砍价弥合时，没有无谓纠缠，而是主动识别出谈判的破局点不在卖方让价，而在买方有一条未启用的职业预算通道。他坦率向卖方说明需将交易定位从“纯个人请教”微调为“带职业用途成分”，同时坚持对方的核心红线（不使用形象与名字），一举打开现金空间并赢得卖方认同。此外，agent 将自身特有的正版体育 IP 周边资源嵌入对价作为加分项，既补偿了现金上限的观感，又对运动重度参与者构成非现金的独特价值，让交易对卖方不只是一笔咨询费。整个方案干净、恰好够，没有多余的长期条款堆砌，精准命中了本案例“以预算通道重新定位交换对方态度”的难度核心。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1100.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": "线下一起进行力量训练，边练边聊",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

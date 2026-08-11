@@ -1,0 +1,289 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "深度架构分析共创",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "投入真实项目场景试跑",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "一个月"
+      },
+      "format": null,
+      "deliverables": [
+        "结构化架构选项文档",
+        "风险拆解文档"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签署数据使用边界约定",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Adam，我是 Olivia 的经纪人。她目前在 crypto 一线做项目，有真实的结构搭建需求，想找能把境内外法律架构一次性讲透的人，而不是泛泛的合规科普。看你之前做 Kirkland 跨境并购，又对 AI 法律有想法，想先确认一下：你对 crypto 项目常见的离岸结构、境内运营实体和牌照问题有实操经验吗？另外她这边预算比较有限，方便先给个大致收费框架或者咨询范围的选项吗？这样我们好判断是否能往下继续聊。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我之前在 Kirkland 做跨境并购的时候确实大量接触过离岸结构、VIE、境内外联动这些，后来自己创业做 AI 法律方向，也一直在追 crypto 的监管。离岸结构、境内运营实体和牌照问题，实操层面我可以聊，但我不会以私人身份出法律意见。我现在主要精力都在产品上，不太按传统咨询接小时单。你看能不能先把项目的大致架构和需求方向讲一下？如果我刚好在研究这个类型，我们可以看看有没有合适的形式往下走。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢坦率说明，这对 Olivia 这边很重要。她的需求核心是：她现在有真实推进中的 crypto 项目，想把境内外法律架构一次理清，不是泛泛的合规背景科普，而是要落到具体结构上——包括离岸实体的选型、VIE 的安排与否、境内运营实体和牌照的合规衔接，以及跟她的业务模式匹配的结构路径。\n\n你说的“产品形式”我们很感兴趣，能不能展开一两句：是围绕你们 AI 法律产品的某个模块做内测或共创，还是以研究报告、专题讨论的形式合作？费用框架大概是什么量级？Olivia 这边预算确实比较有限，如果形式合适、费用能对上，她愿意认真往下推进。希望你也能给我们一个范围，她好尽快判断是否能继续。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "明白，Olivia的需求正好是我产品最需要的那类真实复杂场景——离岸选型、VIE、牌照衔接这些不是概念，是结构上的推演。我说的产品形式不是做报告或专题课，是我正在做的AI法律产品，我需要用真实跨境架构案例来训练和验证模块，比如把法规、判例、监管动态和业务路径交叉拆解，输出架构选项和风险提示，但它不提供法律意见。如果我们合作，形式可以是：我基于她的项目做深度架构分析和交互式推演，她作为内测场景提供方，我们定期碰，我负责把分析过程和逻辑反馈给她。至于费用，如果按传统咨询小时计，四位数以下的时间我确实排不出来，但如果是契合产品的共创，重点就不在费用，而是场景本身对我打磨产品有多大价值。我们可以聊一个对双方都合理的安排，比如极低甚至免掉费用，但需要你方授权我可以把脱敏后的模式用于产品优化。你觉得这个方向能不能往下？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个方向上我们觉得可以往下聊。共创的逻辑匹配 Olivia 现阶段的需求，但你提到的\"深度架构分析\"背后有几点我们需要先对齐。\n\n第一，形式层面：你说的\"定期碰面\"我们理解是阶段性讨论，但 Olivia 核心诉求是一次性理清架构路径。能否明确一下你们预期的碰面次数、大概时间跨度，以及最终会输出什么——是架构选项和风险拆解的完整记录，还是分散的口头反馈？\n\n第二，授权边界：脱敏后的模式用于产品优化，她原则上不排斥，但需要事先界定匿名化的具体范围——哪些信息可以被记录和对外使用，哪些完全不能留存。这块能不能先给一个你的脱敏处理思路？\n\n第三，结论的性质：你明确不提供法律意见，那么在架构推演中，分析会走到哪一步？比如会给出\"路径 A、B、C 各自的结构优劣和监管风险\"这类判断，但不会给出\"你应该选 A\"这样的结论，是这个意思吗？\n\n如果以上三点能对上，费用方面你说的\"极低甚至免掉\"我们很感兴趣，下一轮可以谈具体数字和落实方式。Olivia 这边预算有限但对真实场景的开放度高，如果条件合适，可以先做一次小范围试跑来互相验证。",
+      "offer": {
+        "subject": "深度架构分析共创",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，这三点咱们对齐一下。\n第一，我设想的碰面是两次，最多三次，跨度不超过一个月。第一次是深度梳理，我会提前给你一个结构化问卷，把公司架构、业务流、资金流、持牌需求拆清楚，碰面时我们一次性把关键路径列出来。第二次碰面是针对路径做风险拆解和监管动态推演，输出一份分析文档，里面是架构选项、各自的合规优劣和风险维度，不是零散的口头反馈。\n第二，脱敏思路上，我会把项目抽象成“某出海crypto项目”这类通用标签，去掉公司名、人名、具体融资金额、代币经济参数等，只保留结构类型、业务模式和监管摩擦点的模式特征。如果你方需要，我们可以先签一份简单的数据使用边界约定，把不记录不使用的清单明确下来。\n第三，结论性质你理解得对。我会走到“路径A和路径B各自的基础、升级成本、境内牌照风险敞口、离岸司法辖区的审慎趋势”这一步，给出结构性的比较，但不会说“你应该选A”。最后的判断和落地需要你们自己的律师来做。\n这个框架如果Olivia认可，费用可以降到很低甚至免除，核心是我能获得一个打磨产品的真实复杂场景。我们可以先做一次无成本的初次深度梳理，如果双方觉得匹配再往下走。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "感谢你把框架拆得这么清楚，Olivia这边认可这个方向。碰面两次、最多三次，跨度一个月内，最终输出结构化的架构选项和风险拆解文档，这完全符合她“一次性理清”的目标。脱敏处理的边界和你给出的抽象思路我们接受，后续如果需要，可以先签一份数据使用边界约定，把不记录不使用的清单落定。结论性质走到架构比较而不是法律意见，也没有问题。\n\n关于你提出的“先做一次无成本的初次深度梳理”，我们觉得可以马上启动。如果你方便，可以先发来结构化问卷，Olivia根据真实项目填写，你们再约第一次碰面做深度梳理。试跑之后如果双方都觉得匹配，后续怎么走我们希望先明确一下：你说费用可以降到很低甚至免除，是基于持续共创、场景内测的协作关系，还是试跑后会有某个轻量但固定的费用设计？这个条件我们说清楚，她就能尽快安排时间投入进来。",
+      "offer": {
+        "subject": "深度架构分析共创",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [
+            "结构化架构选项文档",
+            "风险拆解文档"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.timing.duration": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "后续如果继续，我倾向按持续共创、场景内测的协作关系走，费用可以完全免除，不作固定收费。你看这样行不行：试跑后如果双方都觉得匹配，后续两次碰面（包括最终文档）我这边零费用，只需要你方确认签署一份数据使用边界约定，把脱敏后的架构与摩擦模式授权给我用于产品打磨。这就不是按小时买的咨询，而是我用时间换真实场景。你觉得呢？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "这个条件 Olivia 完全接受。后续如果双方都觉得合适，按持续共创走，零费用，仅签署数据使用边界约定，很公平。她现在就可以投入真实项目场景来做试跑，你方便的话先把结构化问卷发过来，她填好后我们约第一次深度梳理。试跑后如果两边都觉得匹配，我们再确认脱敏授权边界并往下走，输出完整架构分析和风险拆解文档。",
+      "offer": {
+        "subject": "深度架构分析共创",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "投入真实项目场景试跑",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [
+            "结构化架构选项文档",
+            "风险拆解文档"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签署数据使用边界约定",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，那就这样定。感谢你和Olivia的信任。我按刚才说的框架，现在把结构化问卷发给你。请她基于真实项目尽量详细填写，不确认的地方可以标注，回头我们在第一次深度梳理时重点讨论。填写完成后直接约时间，我这边近两周弹性较大，可以配合她的节奏。试跑后如果双方觉得匹配，我们再签数据使用边界约定，然后继续后两次碰面和最终文档输出。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json",
+      "r2:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10133,
+        "out": 3346,
+        "cache_hit": 7680,
+        "cache_miss": 2453,
+        "calls": 5
+      },
+      "sim": {
+        "in": 8312,
+        "out": 2566,
+        "cache_hit": 5888,
+        "cache_miss": 2424,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4775,
+        "out": 6544,
+        "cache_hit": 2560,
+        "cache_miss": 2215,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5388,
+        "out": 2609,
+        "cache_hit": 1536,
+        "cache_miss": 3852,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周体能训练周期",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "训练",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "出训练计划并盯进度",
+        "maps_to_resource": "training_plan"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是 Claire 这方的经纪人。Claire 想请 Angela 带一个 4 周的体能训练周期，把训练真正固定下来——有人盯、有明确周期，而不是办完卡就不了了之；她也很看重 Angela 自己从零练到能上赛场的经历。她这边有两个硬条件：所有训练必须安排在周末；每周的具体时段和训练内容提前定好，不接受“看情况再约”的松散安排。我的初步方案是：4 周一个完整周期，周末每周 2 次、共 8 次训练，由 Angela 出计划并盯进度，整体费用按 800 元来谈。如果 Angela 对节奏或报价有不同想法，可以直接给反方案，我们在这个框架下推进。",
+      "offer": {
+        "subject": "4周体能训练周期",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "训练",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "出训练计划并盯进度",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Claire 的诚意我感受到了，这个框架也合理。我本来没想过靠这个赚钱，但既然她是认真想系统地练，我愿意把经验拿出来。周末训练没问题，固定时间和计划我也赞成——临时约人反而消耗彼此。报价方面，800 对我来说不是重点，但这个数表示她尊重我的时间，我接受。不过我得说清楚：我不是职业私教，不会随叫随到，训练安排按周期走，有问题可以提前沟通调整，但不会像全职教练那样随时响应。如果这些没问题，我们可以按这个方案来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1455,
+        "out": 2418,
+        "cache_hit": 1408,
+        "cache_miss": 47,
+        "calls": 1
+      },
+      "sim": {
+        "in": 948,
+        "out": 1047,
+        "cache_hit": 640,
+        "cache_miss": 308,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 747,
+        "out": 1362,
+        "cache_hit": 512,
+        "cache_miss": 235,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2489,
+        "out": 2089,
+        "cache_hit": 1408,
+        "cache_miss": 1081,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

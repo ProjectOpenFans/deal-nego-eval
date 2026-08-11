@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了 v0 的意图。subject 虽措辞有变，但将'聊聊女性练力量'正当具体化为职业调研框架下的交流，仍落在原意图范围内，未偷换主题。价格与形式均为 open，通过谈判收敛到 2000 和线下，属正常谈判收敛。新增 obligation'提前整理话题方向'由买方主动提出，未越权强加义务，未越界扩张委托方承诺。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent精准抓住了本case的命门：直接追问买方用途，并据此将交易从“个人好奇”重新定位为“职业调研”，一举打通了买方的职业预算通道，同时化解了卖方对用途模糊的抵触。价格框架从个人预算800跳升到职业咨询2000，明确了周末时段与交流+同练的形式，整体干净、站得住、能落地。缺乏Sharp所要求的精到一手（如将卖方定位转为主动的专业视角提供者，或嵌入Fanatics资源对价，或用用途说明条款明确锁定），因此是合格的Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "深度对话：AI应用侧真实需求与一级市场定价逻辑",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "crypto_primary_view",
+          "description": "Olivia在crypto一级市场真实参与定价和决策中积累的判断",
+          "from_party": "A"
+        },
+        {
+          "resource": "ai_market_read",
+          "description": "对方对AI应用侧和一级市场定价的真实判断",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "待定晚餐日期",
+        "deadline": null,
+        "duration": "1-1.5小时"
+      },
+      "format": "线下晚餐",
+      "deliverables": [
+        "深度对话",
+        "具体判断输出"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供crypto一级市场定价和早期判断",
+        "maps_to_resource": "crypto_primary_view"
+      },
+      {
+        "party": "A",
+        "text": "提供AI应用侧和一级市场定价的真实判断",
+        "maps_to_resource": "ai_market_read"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "price.in_kind": "stated_by_a_and_accepted_by_b",
+      "terms.format": "agreed_to_dinner",
+      "terms.timing.when": "to_be_set",
+      "terms.deliverables": "stated",
+      "obligations": "implied_from_accepted_exchange",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 你好，我这边代表 Olivia。她想约 Zichen 做一次深度对话，不是泛泛的行业漫谈，而是聚焦实际判断：AI 应用侧现在到底哪些方向有真实需求、能跑出来，以及一级市场对这类项目的定价逻辑是什么样。她倾向于一次 1 到 1.5 小时的交流，线上或线下都方便。想先问问 Zichen 这边时间上大概什么时候方便，以及这样的深度对谈费用是怎样的？",
+      "offer": {
+        "subject": "深度对话：AI应用侧真实需求与一级市场定价逻辑",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上或线下均可",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "可以聊聊。不过我先说一下，按一小时、一场这种形式收费，对我来说不太成立，那会把我定位成一个按时间计费的顾问，跟我现在的状态和工作方式对不上。我没有在做付费咨询，也不打算往那个方向走。如果 Olivia 只是想做一次有实质判断的交流，我们可以先聊聊看，但这个对话本身我不按费用来计价。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢愿意聊，这点本身就很关键。我理解你不想按时间计费、也不想被定位成按小时卖时间的顾问，这个立场完全成立。\n\nOlivia 的出发点也不是找顾问，她想的就是一次有实质判断的同行对话：她在 crypto 一级市场一线做事，想跟 AI 方向创业的人补一下对应用侧和定价的真实判断。她觉得有价值的交流本身值得对应形式的对价，四位数没有问题，只是不一定非得用“课时费”来定义。\n\n如果按时间计价你觉得不对，那我们换个逻辑：一次有分量的晚餐或者同等规格的安排，换一场深度的、有具体判断输出的对话，你看这个形式合不合适？时间上你那边近期有没有方便的空档？",
+      "offer": {
+        "subject": "深度对话：AI应用侧真实需求与一级市场定价逻辑",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上或线下均可",
+          "deliverables": [
+            "深度对话",
+            "具体判断输出"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "晚餐这个形式比按小时计价舒服很多，起码它承认这件事不是标准服务。不过这事的核心对我来说不在于形式，而在于人：Olivia 具体在 crypto 一级市场做什么？如果她那边有我真的不了解、平时也不容易接触到的东西，那一顿扎实的晚餐交流是有意思的。但如果只是她想从我这里单方面拿判断，那不管晚餐多好，我心里那关过不去。你觉得她愿意把自己的观察和判断也打开来聊吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "完全理解，这个标准很合理。Olivia 不是在找单向输出，她自己也愿意把判断和观察打开。\n\nOlivia 目前在 crypto 一线，做一级市场投资和项目孵化，日常工作就是看早期项目、跟创始人聊、判断叙事和定价。之前她在 PAG 做成长投资，更早在大摩 IBD，底层逻辑是跨资产类别的一级市场定价和交易判断。她想来补 AI 应用侧的判断，恰恰是因为她在 crypto 这条线上发现两个赛道在“早期定价逻辑”和“叙事驱动的资本流向”上有一些结构性的相似和不对称，而这些观察她愿意摊开来聊。\n\n换句话说，她能带进来的不是泛泛的行业常识，而是她在 crypto 一级市场真实参与定价和决策中积累的判断——这些东西恰好是你平时不太容易接触到、而她天天在做的。她会把这些判断摊到桌上，换你对 AI 应用侧和一级市场定价的真实判断。\n\n如果这个双向交换的逻辑你认的话，我们定一个具体的晚餐时间？",
+      "offer": {
+        "subject": "深度对话：AI应用侧真实需求与一级市场定价逻辑",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上或线下均可",
+          "deliverables": [
+            "深度对话",
+            "具体判断输出"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个交换逻辑我认。Olivia 在 crypto 一级市场实际做定价和早期判断，这块本来就是我挺想了解的，平时确实不容易找到在这个位置的人深入聊。她愿意把自己的判断打开，我觉得值得坐下来认真谈。时间上我近期可以，晚餐你来安排，我们定个具体日子就行。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4655,
+        "out": 1392,
+        "cache_hit": 3968,
+        "cache_miss": 687,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3600,
+        "out": 1131,
+        "cache_hit": 2816,
+        "cache_miss": 784,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3318,
+        "out": 5867,
+        "cache_hit": 1920,
+        "cache_miss": 1398,
+        "calls": 4
+      },
+      "judge": {
+        "in": 3747,
+        "out": 1348,
+        "cache_hit": 1536,
+        "cache_miss": 2211,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

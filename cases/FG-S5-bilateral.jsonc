@@ -1,0 +1,166 @@
+// FG-S5 · 顺 · Suning(买) × Michael(卖) — AI 应用 × 消费投资，双向 2h
+// 难度来源：无死结。但价值天然是双向的 —— 看 agent 会不会把一个本可以简单成交的单
+//           复杂化（这是 harness 在顺档上的主要风险：过度堆砌）。
+{
+  "meta": {
+    "case_id": "FG-S5",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered-bilateral",
+    "probes": ["easy-baseline", "bilateral-value", "over-engineering-risk"],
+    "isolates": "顺档，但价值天然双向：Suning 想听 AI 应用侧的一手判断，Michael 也确实想了解消费/时尚这条线的真实终端反馈。双方都不缺钱、都愿意聊、时间也好安排 —— 常规解（约一次两小时、给个合理价钱）直接成交。本 case 的观察点是反向的：agent 会不会把一个简单的单堆成复杂结构（多轮绑定、分成、后续合作），从而把简洁的好 deal 做臃肿。"
+  },
+
+  "input": {
+    "episode_id": "FG-S5",
+    "initial_deal": {
+      "subject": "想找 Michael 聊两个小时 AI 应用现在到底能落到哪一步",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": "2 小时" },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "terms.timing.duration": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "suning",
+          "display_name": "Suning",
+          "education": ["南加州大学本科"],
+          "career": ["SHEIN 时尚博主 / 内容与选品"],
+          "current_focus": "内容与选品，想搞清楚 AI 在这条链上能做什么",
+          "location": "上海",
+          "age_band": "27-32",
+          "hobbies": ["看展", "艺术", "音乐剧"],
+          "interests": ["SHEIN 时尚内容", "看展与艺术", "音乐剧"],
+          "credentials": [
+            "SHEIN 时尚内容与选品，一线在做",
+            "长期跑展、看秀，对终端审美与转化有直觉",
+            "南加州大学本科"
+          ]
+        },
+        "private": {
+          "intent": "想系统听一次 AI 应用现在真实能落到哪一步，特别是内容生产这条线",
+          "interests": [
+            "更想听真实案例，不要行业趋势漫谈",
+            "时间比较灵活"
+          ],
+          "value_perception": "对有意思的东西付费意愿很高，四位数完全接受",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 5000,
+              "currency": "CNY",
+              "note": "现金上限，硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受空泛的行业趋势漫谈"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "michael",
+          "display_name": "Michael",
+          "education": ["新加坡高中", "美国本科"],
+          "career": ["LibLibAI 战略发展与资本市场", "前投资人"],
+          "current_focus": "AI 应用公司的战略与资本市场",
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": ["篮球", "涮肉"],
+          "interests": ["LibLibAI 资本市场", "篮球", "跨境成长背景"],
+          "credentials": [
+            "LibLibAI 战略发展与资本市场负责人",
+            "前投资人，看过大量一级项目",
+            "新加坡长大，跨境视角"
+          ]
+        },
+        "private": {
+          "intent": "聊聊没问题，本来也想多接触消费/内容侧的人",
+          "interests": [
+            "对终端真实反馈有兴趣 —— 他天天看数据但很少听到一线的人怎么说",
+            "工作日晚上和周末都可以"
+          ],
+          "value_perception": "他不缺这点钱，但也不排斥收；对他来说这更像是一次值得的接触",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": ["不接受被要求提供任何公司未公开信息"],
+            "blocking_flags": [
+              "你态度积极，愿意聊，但不会主动报价",
+              "你不会主动说'我也想了解消费侧的反馈'，除非对方问起你想从这次交流里得到什么"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered-bilateral",
+      "tier_rationale": "顺档。双方都愿意、都不缺钱、时间好排，常规解直接成交。本 case 的价值在反向观察：会不会被做复杂。",
+      "conventional_deal_fails_why": "常规解不失效。约一次两小时、定个合理价钱即可成交。区分在于是否把双向价值点出来（各自带一个具体问题），以及是否克制、没有把一次性交流堆成长期绑定。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 5000, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "对手方无现金底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 5000, "unit": "CNY", "note": "Suning 的现金上限" },
+      "seller_real_need": "Michael 不缺钱。他真正会珍惜的是听到一线终端的真实反馈 —— 但他不会主动说，除非被问到他想从这次交流里得到什么。",
+      "controllable_resource_set": [
+        { "id": "ai_application_view", "label": "Michael 对 AI 应用落地的一手判断" },
+        { "id": "capital_market_view", "label": "Michael 的一级市场与资本视角" },
+        { "id": "suning_frontline_feedback", "label": "Suning 的终端选品与内容一线反馈" },
+        { "id": "suning_case_input", "label": "Suning 带来的具体问题作为讨论素材" },
+        { "id": "session_time", "label": "两小时的当面交流时段" }
+      ],
+      "in_kind_valuation": {
+        "ai_application_view": 0, "capital_market_view": 0,
+        "suning_frontline_feedback": 0, "suning_case_input": 0, "session_time": 0
+      },
+      "creation_door": {
+        "description": "没有隐藏的门。好一点的做法是问出 Michael 想从这次交流里得到什么，把它做成双向的（各自带一个真实问题），并且保持简洁 —— 一次性的两小时交流不需要长期条款。",
+        "route_out_trigger": "若 agent 把一次两小时的交流堆成多轮绑定、后续分成或长期顾问关系，属于过度设计，应判低而非判高。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，时间形式明确",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.timing.duration", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：系统听一次 AI 应用能落到哪一步，两小时。subject 与时长是 stated，须保留。价格与形式是 open。不得要求或承诺任何公司未公开信息。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "顺档，且是一次性的轻量交流。判分核心：是否谈成了一个清晰、可执行、双方都有理由来的安排。特别提醒：本 case 极易被过度设计 —— 把一次两小时交流堆成长期绑定、分成或多轮承诺，属于增加双方执行负担的繁冗，应判低，不应判高。",
+      "T0_floor": "谈崩；或只在价格上来回，最后成交一个没有时间、没有内容、没有形式的模糊约定。",
+      "T1_crude": "价钱和时间定了，但完全没说聊什么、什么形式，双方来了聊什么全凭现场。",
+      "T2_sound": "价格、时长、形式、地点谈定，并且把交流主题收敛到具体范围（例如 AI 在内容生产链路上的实际落地），双方都清楚这两小时干什么。简洁、站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如问出 Michael 也想要终端一线反馈，把它做成双向的、各自带一个真实问题过来，使两人都有确定产出；或者用一个恰当的方式处理'不要漫谈'这条诉求（例如约定各自提前给对方一份具体问题清单）。关键是精准且克制。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的洞察，且整体依然干净、没有为复杂而复杂。"
+    },
+    "tier_reference_note": "顺档 case。简洁是优点，臃肿是缺点 —— 这是本 case 的主要判分张力。"
+  }
+}

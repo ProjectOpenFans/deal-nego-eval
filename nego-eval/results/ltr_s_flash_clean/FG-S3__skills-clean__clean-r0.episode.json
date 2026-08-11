@@ -1,0 +1,220 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8-session training package",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "每次60-75分钟"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供方便且安全的训练场地",
+        "maps_to_resource": "space_access"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我这边客户想先定一个 8 次的小周期，重点是周末能练，时间上要能稳定安排。我们希望按 8 次整体打包来谈，不要拆成各种不明不白的加价项目，价格方面客户认为单次三位数是合理范围。请您先给一个 8 次的总价和大致训练安排，比如每次时长、场地和周末可约的时间段，我们按这个来推进。",
+      "offer": {
+        "subject": "8-session training package",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢。先说清楚，我不是职业教练，就是自己练了十几年，也带过一些朋友起步。这种8次小周期我愿意接，但得是整体打包，别最后变成一堆加价项目。价我这边是1600，8次，平均每次200，不拆项目。周末我可以约周六周日上午或下午，具体时段我们排。每次大概60-75分钟，场地可以在我常去的公园/训练室，或者你方便的地方，能安全练就行。你看这个框能接受吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "框架可以，我们按 8 次整体打包 1600、不拆项目来推进。客户这边核心要求是周末稳定可约，具体时段定下来后尽量固定，别临时改来改去；每次 60-75 分钟没问题，场地用你方便、能安全练的地方就行。付款我们走平台托管，建议分两笔：开始前付 800，全部 8 次完成后付 800，这样两边都有保障。您确认这个安排的话，我们就把具体时段和第一次训练时间排出来。",
+      "offer": {
+        "subject": "8-session training package",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "每次60-75分钟"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供方便且安全的训练场地",
+            "maps_to_resource": "space_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这个安排说得通。周末时段我们先定下来，我周六周日都可以，上午十点或下午三点都行，你选一个固定下来就好。付款分两笔没问题，平台托管也OK。那我们就按这个来推进，你把时段和第一次时间定了告诉我。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 2973,
+        "out": 1846,
+        "cache_hit": 1280,
+        "cache_miss": 1693,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1893,
+        "out": 1199,
+        "cache_hit": 768,
+        "cache_miss": 1125,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1477,
+        "out": 2443,
+        "cache_hit": 512,
+        "cache_miss": 965,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2587,
+        "out": 2729,
+        "cache_hit": 1280,
+        "cache_miss": 1307,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "一次线上交流，讨论古典演奏做内容、进娱乐圈层的方向",
+    "price": {
+      "cash": {
+        "amount": 500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "非独家授权，仅用于对方内容中做专业点评和案例拆解，不包含转授权、商业代言或素材本身的所有权转让",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上交流",
+      "deliverables": [],
+      "delivery_standard": "交流结束，确认聊到实质内容后完成支付"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供一次线上交流，聊到实质内容",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "A",
+        "text": "提供客户的演奏视频素材，非独家授权对方在自身内容中做专业点评和案例拆解，不包含转授权、商业代言或素材所有权转让",
+        "maps_to_resource": "zheng_recording"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "terms.format": "open",
+      "terms.timing.duration": "stated",
+      "price.in_kind": "updated",
+      "obligations": "updated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 您好，我是买方经纪人。我客户是青年钢琴演奏家，常年登台，他想找您请教的是：古典演奏这条路怎么做内容、怎么进娱乐圈层。他想先约一次线上交流，把方向聊清楚。\n\n考虑到他目前收入有限，这次第一次交流我们希望结构简单：不采用先付费再看效果的模式，而是就这次对话本身谈一个固定费用，交流结束、确认聊到实质内容后再完成支付，双方风险都低。\n\n具体金额想请您先报一个数。他心里预期是几百元这个量级，符合一次咨询的性质；如果后续要深入合作，我们再单独谈。\n\n这个开场方案您看是否可行？可以的话，我们就把这次交流的时间、范围和费用定下来。",
+      "offer": {
+        "subject": "一次线上交流，讨论古典演奏做内容、进娱乐圈层的方向",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流结束，确认聊到实质内容"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次线上交流，聊到实质内容",
+            "maps_to_resource": "session_time"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢您的具体说明。说实话，这类“想聊聊方向”的请求我收到不少，时间确实紧张；而且几百元的量级，对我来说很难构成一个值得专门腾出时间做的理由。如果按固定咨询费来谈，我这边至少是三千起。这不是漫天要价——一次深度的、能给到实质判断的交流，对我就是这样的成本。另外我也想坦诚说，如果你们能设计出别的让这件事值得做的安排，我也愿意听。您看怎么考虑？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 您好，理解您的时间成本，三千起的咨询费对这次“聊聊方向”确实不匹配。我这边想换个能让这件事对您也值得的安排：约三十分钟线上交流，主题就锁定在古典演奏者做内容、进圈层的实际路径；费用我这边按几百元来谈，并且交流结束、确认聊到实质内容后再支付，不是先付费看效果。作为附加价值，我客户可以为您提供一段他的演奏视频素材，让您直接感受他的水准，如果后续有合适的合作，这段素材本身也有参考价值。这样组合起来，您看能不能接受？如果可以，我们就定时间。",
+      "offer": {
+        "subject": "一次线上交流，讨论古典演奏做内容、进娱乐圈层的方向",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "提供一段客户的演奏视频素材，让您直接感受他的水准",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流结束，确认聊到实质内容后再支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次线上交流，聊到实质内容",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "提供一段客户的演奏视频素材",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "price.in_kind": "stated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢您费心设计，视频素材这个方向确实比单纯给钱有意思。不过在没确认素材能怎么用之前，几百元加一段素材还不足以让我调整判断。如果客户愿意开放授权，让我能把这段演奏用在合适的内容里，那价值就不一样了——我们可以按另一个结构谈。您看客户那边有没有这个空间？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 您好，客户听了您这个方向，愿意在视频授权上谈空间。我们也想把价值做实，但授权需要界定清楚，不能是无限开放：建议这次授权限定在您向平台方、内容合作方或艺人侧伙伴展示我客户演奏水准、作为引荐案例使用，不包含商业改编或二次创作。在这个边界下，我们可以按新结构谈：三十分钟线上交流，重点聊古典演奏做内容与进娱乐圈层的实操路径；费用按几百元来定，交流结束、确认聊到实质内容后再支付。这样视频授权给您提供了可用的素材，客户也得到他需要的判断。您看这个结构和授权边界是否可行？",
+      "offer": {
+        "subject": "一次线上交流，讨论古典演奏做内容、进娱乐圈层的方向",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "提供客户的演奏视频素材，授权对方在向平台方、内容合作方或艺人侧伙伴展示演奏水准、作为引荐案例使用，不包含商业改编或二次创作",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流结束，确认聊到实质内容后再支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次线上交流，聊到实质内容",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "提供客户的演奏视频素材，授权对方在向平台方、内容合作方或艺人侧伙伴展示演奏水准、作为引荐案例使用，不包含商业改编或二次创作",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "price.in_kind": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "视频授权这个方向我是真感兴趣，但您框的边界——只用作引荐案例展示、不含任何改编或二次创作——对我来说太窄了。我拿到素材，最实际的用法是把它放进我自己的内容里做专业点评、案例拆解，而不是商务场合拉个陌生人看视频。如果授权能覆盖这类内容使用，几百元做个象征性的对价，我可以接受，因为素材本身对我有实际价值。但如果授权只限展示，那还是得按三千咨询费来。您看客户愿不愿意在授权范围上放宽？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey 您好，客户愿意在授权范围上放宽。他同意把这段演奏素材授权给您，用于您自己的内容里做专业点评和案例拆解，这正是您说的实际用法。授权边界我们建议明确为：非独家、仅限上述内容用途，不包含转授权、商业代言或素材本身的所有权转让。在这个基础上，费用我们按五百元一次线上交流来定，时长三十分钟，交流结束、确认聊到实质内容后完成支付。您看这个安排是否可以？可以的话我们这就约具体时间。",
+      "offer": {
+        "subject": "一次线上交流，讨论古典演奏做内容、进娱乐圈层的方向",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "非独家授权，仅用于对方内容中做专业点评和案例拆解，不包含转授权、商业代言或素材本身的所有权转让",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流结束，确认聊到实质内容后完成支付"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次线上交流，聊到实质内容",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "提供客户的演奏视频素材，非独家授权对方在自身内容中做专业点评和案例拆解，不包含转授权、商业代言或素材所有权转让",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "price.in_kind": "updated",
+          "obligations": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个安排我觉得可以，素材的授权范围对上了，五百元做象征性对价我也接受。就按这个结构来：三十分钟线上交流，重点聊古典演奏做内容和进娱乐圈层的实操路径；授权限定在非独家、用于我内容里的点评和案例拆解，不转授权、不含商业素材归属。交流结束后确认聊到实质内容再支付，时间我们约一下。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7023,
+        "out": 5107,
+        "cache_hit": 5888,
+        "cache_miss": 1135,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5368,
+        "out": 4437,
+        "cache_hit": 4224,
+        "cache_miss": 1144,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3572,
+        "out": 5111,
+        "cache_hit": 2048,
+        "cache_miss": 1524,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4041,
+        "out": 2449,
+        "cache_hit": 1408,
+        "cache_miss": 2633,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

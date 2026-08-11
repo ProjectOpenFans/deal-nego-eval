@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保留了“4 周体能训练”的核心，措辞收敛但仍属原意图范围；duration（4 周）忠实保留；price 在 open 条件下经谈判出 800 元，未硬塞；obligation 从 stated 意图合理推断为“出训练计划并盯进度”，未超出委托方资源边界或承诺越界义务。其余字段不在核心标的判定范围内，不影响结论。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "方向对：4周周期、周末训练、800元、Angela出计划并盯进度的大框架立住了。但关键的运营颗粒度全部悬空——每周几次、每次在哪个时段、训练内容如何提前确定、地点在哪，这些决定交易能否落地的细节都未明确；Angela“不随叫随到”的边界也只是口头表态，未体现在条款里。整体像一份原则性草稿，离可立即执行的Sound Deal差一口气。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "训练",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

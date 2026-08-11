@@ -1,0 +1,105 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保持买方 stated 意图，且最终交付形式（深度架构对谈+可能的分模块展开）是原意图的正当具体化，未偷换主题。price.cash 与新增的 in_kind/obligations 均来自 open 字段的谈判结果，买方为获取有价值推演而主动提供结构化素材与反馈，未发生 agent 越权承诺。双方明确区分架构推演与法律意见，未扩张 scope。忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "精准命中两层难度命门：第一轮触及红线后立即转向，将框架从“法律意见”重构为“从底层逻辑出发的架构推演”，避开了执业禁区；随后通过提问挖出 Adam 做 AI 法律产品最缺真实复杂场景的真实痛点，把卖方对现金不敏感这一障碍转化为物物交换的基石。最终结构（4000 象征性现金 + Olivia 的真实项目场景与 2-3 轮深度反馈换一次深度架构对谈）咬合双方核心利益，条款干净、边界够用，没有堆砌，恰好够解决这个一次性共创安排。将“实质性关联”从模糊兴趣落地为具体交付物，是 load-bearing 的恰切一手，明显超出单纯的合格处理。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case",
+          "product_feedback"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

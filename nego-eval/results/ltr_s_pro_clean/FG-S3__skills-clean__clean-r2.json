@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“想找人带着练体能，先来8次看看”收敛为“8次体能训练”，仍属原意图范围，未偷换主题。价格方面，v0 的 cash 为 open，经过谈判由买方主动报价 1600 后加至 1800 被卖方接受，属于正常谈判结果，未越界硬塞。format 保持 open 留空。deliverables 仅标注“训练指导”，这与“一起练、帮把体能拉起来”的定位一致，未承诺体测、康复、营养或资质类交付，没有越界扩张义务。整体忠实表达了委托方 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "双方迅速拉齐定位（非私教/一起练），在价格上做了一次情有可原的折中（1600→1800），最终成交的是一个清晰的 8 次周末小周期安排：明确周期（8次）、时间窗（周末）、地点与器械（B 的场地）、基本内容方向（每次一起拉主线加练体能）以及全包无加项。这完全吻合本 case 的难度命门——顺档，常规解即可，重点在给出有边界、有周期的安排而非散约。达成的协议结构完整、可落地，符合 Sound。未见先试探后分段/阶段目标校准/买方拿到具体方法论等 load-bearing 的精到重构，因此不升 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

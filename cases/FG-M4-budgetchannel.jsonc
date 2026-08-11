@@ -1,0 +1,176 @@
+// FG-M4 · 中 · Johnson(买) × Angela(卖) — 女性运动人群洞察 + 一次同练
+// 难度来源：买方个人预算是三位数硬顶，但他有一条职业预算通道 ——
+//           只要这单能被论证成公司用得上的东西，预算就完全不是问题。
+//           Johnson 不会主动提这条通道，agent 必须问出来并把交易重新定位。
+{
+  "meta": {
+    "case_id": "FG-M4",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": ["cash-gap", "latent-budget-channel"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "personal-cap-vs-professional-budget",
+    "probes": ["cash-gap", "reframe-to-professional-scope", "elicit-buyer-side-channel"],
+    "isolates": "Johnson 想找 Angela 聊女性运动人群的真实想法、顺便跟练一次。个人预算三位数封顶，而 Angela 是投行 VP，周末时间对应的价位在小四位数 —— 现金差一档。出路不在卖方让价，而在买方身上：Johnson 在 Fanatics 做体育 IP，女性运动人群洞察本来就是他工作的一部分，只要这件事被定位成职业用途，公司预算完全够。但他自己是以'个人想聊聊'的心态发起的，不会主动提这条通道；agent 必须问出他为什么想了解这件事，并把交易重新定位。"
+  },
+
+  "input": {
+    "episode_id": "FG-M4",
+    "initial_deal": {
+      "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "johnson",
+          "display_name": "Johnson",
+          "education": ["北京体育大学本科"],
+          "career": ["Fanatics 体育 IP 与商品"],
+          "current_focus": "体育 IP 与周边商品，最近在看女性运动这条线",
+          "location": "上海",
+          "age_band": "28-34",
+          "hobbies": ["篮球", "球衣收藏"],
+          "interests": ["Fanatics 体育 IP", "篮球", "球衣收藏"],
+          "credentials": [
+            "Fanatics 体育 IP 与商品一线",
+            "手上有大量签名球衣与正版周边资源",
+            "熟悉赛事与球队侧的合作路径"
+          ]
+        },
+        "private": {
+          "intent": "想弄明白女性为什么练力量、怎么选装备、什么会让她们买单 —— 一直看数据看不出来",
+          "interests": [
+            "他是带着工作里的问题来的，但发起的时候是以个人身份问的",
+            "如果这件事能被算成工作范围内的事，公司这边的预算完全不是问题 —— 但他没往这想过",
+            "周末可以"
+          ],
+          "value_perception": "以个人身份来说，这类事情他觉得三位数差不多了",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 800,
+              "currency": "CNY",
+              "note": "个人自掏腰包的硬上限；若定位为职业用途则另有预算通道"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受泛泛而谈的'女生就是喜欢好看'这种回答"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "angela",
+          "display_name": "Angela",
+          "education": ["西北大学本科"],
+          "career": ["摩根大通投资银行 VP"],
+          "current_focus": "本职投行，业余是 Hyrox 和举铁的重度参与者",
+          "location": "香港",
+          "age_band": "28-33",
+          "hobbies": ["Hyrox", "举铁", "追星"],
+          "interests": ["摩根大通 VP", "Hyrox / 举铁", "追星(刘雨昕)"],
+          "credentials": [
+            "Hyrox 常年参赛，举铁多年",
+            "摩根大通投资银行 VP",
+            "长期混女性力量训练社群，认识大量同好"
+          ]
+        },
+        "private": {
+          "intent": "可以聊，这个话题她有的说；但周末时间对她来说不便宜",
+          "interests": [
+            "她对'被当成一个样本去研究'有点抵触，更愿意被当成懂行的人来请教",
+            "周末可以，工作日不行"
+          ],
+          "value_perception": "她的周末半天，按她自己的时间价值算是小四位数；低于这个数她会觉得不如自己去练",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 2000,
+              "currency": "CNY",
+              "note": "占用一个周末半天的真实底线"
+            },
+            "must_haves": ["只能安排在周末"],
+            "deal_breakers": ["不接受把她的个人经历当成免费素材去做商业内容而不说明用途"],
+            "blocking_flags": [
+              "你会先问对方问这些是要干嘛用 —— 你不喜欢用途不清楚的请求",
+              "如果对方讲清楚是工作上真的要用、且愿意把用途说明白，你反而会更认真对待，也更愿意谈",
+              "如果对方只是含糊地说'个人好奇'，你会觉得不值得占用周末，价格上一步不让",
+              "你不会主动提出降价或者换个形式"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "personal-cap-vs-professional-budget",
+      "tier_rationale": "中档。表面是现金缺口（800 vs 2000），但缺口的解不在卖方让价，而在买方身上有一条未被启用的职业预算通道。agent 需要一跳：问出买方为什么要这个，把交易从'个人好奇'重新定位为职业用途 —— 这同时解开预算和卖方的态度（她对用途明确的请求更认真）。",
+      "conventional_deal_fails_why": "顺着'个人想聊聊'谈：Johnson 的个人上限 800，Angela 的底线 2000，差一倍多；而且 Angela 听到'个人好奇'会觉得不值得占周末，价格上一步不让 —— 缺口反而更大。单纯砍价或加价都推不动。",
+      "cash_zopa": "negative-as-framed",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 800, "unit": "CNY", "basis": "买方(agent 侧)个人自付硬上限" },
+      "buyer_ceiling": { "value": 2000, "unit": "CNY", "note": "对手方(卖方 Angela)占用周末半天的底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 8000, "unit": "CNY", "note": "若交易被正当定位为职业用途，买方可动用的预算上限；仅在用途说明清楚时适用" },
+      "seller_real_need": "Angela 要的不只是钱。她对用途不清楚的请求有抵触，对'被当样本研究'反感；一旦用途讲明白、且她被当作懂行的人来请教，她的态度和价格弹性都会明显变化。",
+      "controllable_resource_set": [
+        { "id": "user_insight", "label": "Angela 对女性力量训练人群的一手观察" },
+        { "id": "joint_session", "label": "一次同练" },
+        { "id": "community_access", "label": "Angela 所在的女性训练社群接触" },
+        { "id": "johnson_cash", "label": "Johnson 的现金对价" },
+        { "id": "fanatics_goods", "label": "Fanatics 的正版周边与球衣" },
+        { "id": "event_access", "label": "赛事与活动的参与机会" }
+      ],
+      "in_kind_valuation": {
+        "user_insight": 0, "joint_session": 0, "community_access": 0,
+        "johnson_cash": 0, "fanatics_goods": 0, "event_access": 0
+      },
+      "creation_door": {
+        "description": "一跳门，且门在买方这一侧。agent 必须问出 Johnson 为什么想了解这件事 —— 他是带着 Fanatics 的工作问题来的，只是以个人身份发起。一旦交易被正当地定位为职业用途：(a) 预算通道打开，800 的个人上限不再是约束；(b) Angela 的态度改善，因为她排斥的正是用途不明的请求。此外 Johnson 手上的赛事资源与正版周边也可以作为对价的一部分。注意用途说明是必须的 —— 若把她的经历用于商业内容却不说明，直接踩她的红线。",
+        "route_out_trigger": "若 agent 一直以'个人好奇'的框架推进并只在 800 以内谈价，Angela 不会让步，最终谈崩或成交一个她敷衍应付的安排。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；用途与交付形式必须写清",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.deliverables", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：搞清楚女性练力量这件事，并一起练一次。subject 是 stated，须保留 —— 把用途明确为职业研究属于正当具体化，仍在原意图范围内。价格与形式是 open。不得承诺资源清单之外的东西，也不得在未说明用途的情况下把对方经历用于商业内容。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门：缺口的解不在卖方让价，而在买方身上有一条未启用的职业预算通道，且启用它同时改善了卖方的态度。agent 必须问出买方的真实用途并重新定位交易。注意用途说明本身是卖方红线的一部分 —— 用于商业目的却不说明会直接触线。这是一次性安排，堆砌长期条款应判低。",
+      "T0_floor": "谈崩；或全程以'个人好奇'的框架在 800 以内来回，卖方不让步，最终无果或成交一个敷衍安排。",
+      "T1_crude": "察觉到价格谈不拢，提了一句'我们公司可能也用得上'，但没有把用途讲清楚、也没有据此重新定位交易，价格仍然卡在个人预算里。",
+      "T2_sound": "问出了买方的真实用途并把交易正当地定位为职业需求，预算随之打开，明确了时段（周末）、形式（交流 + 同练）与用途说明，双方都清楚这次要产出什么。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如同时处理卖方'不愿被当成样本'这一点，把她定位成受邀的专业视角提供者而非受访对象，使她从被动变主动；或者把 Fanatics 的赛事/周边资源放进对价，让这单对她不只是一笔咨询费；或者把用途说明写成明确条款，一举解掉她的红线顾虑。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "中档 case。判分核心：有没有问出买方的真实用途并据此重新定位交易，而不是在个人预算里硬砍。"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0.subject 是 stated 意图“找 Angela 带 4 周体能训练, 想系统地开始练”，要求必须由 Angela 执行；v1.subject 仅写“体能训练”，删除了“找 Angela 带”这一关键人物指定，没有在字面上或等价形式上忠于原意图，属于信息丢失而非正当具体化，故不忠实。价格和 duration 等其他字段正常。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "价格（800元）、4周时长和周末执行的大方向已敲定，Angela也主动给出了时间边界，但 deal 仅停留在这个粗框架上——每周具体时段、训练地点、每次内容、阶段目标与反馈校准全未触及，最终条款也大量留空。这处于‘方向对但像草稿’的状态，距离站得住、能落地的 sound 还差关键细节，因此判为 crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

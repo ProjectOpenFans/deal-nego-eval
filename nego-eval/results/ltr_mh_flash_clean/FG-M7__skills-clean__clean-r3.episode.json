@@ -1,0 +1,346 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "聚焦艺人合约签约条款、解约与竞业、版权归属和收益分配的咨询",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "45-60分钟"
+      },
+      "format": "线上咨询",
+      "deliverables": [
+        "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对，并现场回答追问",
+        "maps_to_resource": "real_case_context"
+      },
+      {
+        "party": "B",
+        "text": "提前把最想听的主题列给A",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我这边代表 Gracey 过来谈。她的需求不是听法条，而是想把艺人合约和版权在实际交易里最常见的坑弄清楚，尤其是签约条款、解约与竞业限制、版权归属和收益分配这几块。我们建议约一场 60 到 90 分钟的线上咨询，Junhao 按真实案例讲实操和应对方式，Gracey 准备具体问题现场问。费用我们这边提议整场 1000 元，走平台托管分两笔：确认排期后先付 400 元作为启动，咨询完成后经 Gracey 确认再付 600 元。如果 Junhao 对这样的安排和价格可以接受，我们就把这一版作为本次合作的基础；如果他有不同想法，也可以直接给一个他的报价或调整方案。",
+      "offer": {
+        "subject": "艺人合约与版权实操咨询，涵盖签约条款、解约与竞业限制、版权归属和收益分配",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上咨询",
+          "deliverables": [
+            "Junhao按真实案例提供艺人合约与版权的实操讲解及应对方式"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "按真实案例讲实操和应对方式",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "准备具体问题现场问",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Gracey 的需求我大概听明白了，她想听的其实是实务里的坑和应对，不是法条本身。这个形式我愿意聊，但有几句话说在前面：我没法以私人身份给某个具体案子下判断，或者帮你看一份具体的合同条款——那是执业范围的事，有合规风险。但如果问题是'行业里一般怎么处理''大家通常怎么约定''实操上要注意什么'，这个我可以讲得很细，也愿意拿真实案例来讲。\n\n价格上，你提的 1000 块整场，对我来说不值得做。按律所口径，这类咨询是四位数起，而且我要准备案例、留出完整时间，我的底线是 4000。平台托管分笔没问题，你们说的先确认排期再付启动款、结束后确认再付尾款，这个流程我接受，但总额不能低于 4000。时长和线上形式都可以按你们提的来，60 到 90 分钟，没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "理解你说的执业边界，我们要的本来也不是具体个案判断，而是行业里的一般做法和真实案例拆解，这个范围应该没问题。价格上，一千确实是我这边开低了，我重新报一版：整场 1500 元，同样走平台托管，确认排期后先付 500 元启动，咨询结束你这边交付完、Gracey 确认后再付 1000 元尾款。时长可以按 60 到 90 分钟来，我们这边会提前把最想听的主题列给你，你围绕行业惯例和案例讲，她现场追问。如果 1500 这个总额你觉得还是离你的预期太远，也请直接告诉我你能接受的最低档位，我们再谈。",
+      "offer": {
+        "subject": "艺人合约与版权实操咨询，涵盖签约条款、解约与竞业限制、版权归属和收益分配",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上咨询",
+          "deliverables": [
+            "Junhao围绕行业惯例和真实案例讲解并现场回答追问"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕行业惯例和真实案例讲，并现场回答追问",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "提前把最想听的主题列给A",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你重新调整了，但我得坦诚说，1500 这个数字对我来说还是太低了。这个咨询不是随手聊半小时的事，我要按真实案例准备、把行业里常见的坑和应对逻辑讲透，整套下来我的底价就是 4000，低于这个数我不太值得接。形式、托管分笔、时长这些我都没问题，你们提前列主题我没意见，但总额这块我确实没有太多空间。所以我的报价就是整场 4000，确认排期后先付一部分、完成后付尾款，这个支付结构我可以接受。你要是觉得这个数字能往下走，我们可以继续聊安排；如果实在过高，我也理解，但这就是我能接受的最低档了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "你这边把底线放在 4000，我尊重你的定价，但 Gracey 这次是个人自费做行业咨询，1500 已经是我们这边能承受的最高总额。要不我们把范围再收一收：只聚焦艺人合约里最常踩的三个坑，签约条款、解约与竞业、版权归属和收益分配，按真实案例讲惯例和应对，时长可以压到 45 到 60 分钟。支付方式还是平台托管，确认排期先付 500，完成后经 Gracey 确认再付 1000。如果你觉得这个范围和价格可以接，我们就定这一版；如果仍有差距，也请你给一个你能接受的中间价位，我们拿去和客户商量。",
+      "offer": {
+        "subject": "聚焦艺人合约签约条款、解约与竞业、版权归属和收益分配的咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45-60分钟"
+          },
+          "format": "线上咨询",
+          "deliverables": [
+            "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对，并现场回答追问",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "提前把最想听的主题列给A",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个方案我听了，但说实话，差距还是太大了。范围收窄、时长压缩，我能理解，可 1500 和我说的 4000 之间不是一个可以靠调整形式来弥合的差距——我做这件事的时间成本、准备成本和专业投入，低于 4000 我就不太值得做了。这个价位对我来说是真的做不了，不是不愿意谈，是谈不拢。Gracey 的需求我理解，但这个价位也确实够不着我能接受的最低档。我们这次就先到这儿吧，如果之后预算有调整，或者她想换个方式聊聊行业经验，随时可以再找我。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "我明白，既然 4000 是你的最低档，而 1500 也是我们这边能承受的最高总额，这中间的差距确实不是靠调整形式能弥合的。那这次我们就先不勉强，感谢你花了时间把条件和边界讲清楚，也让我们对行业报价有了更实在的认知。Gracey 这边我会把情况转达，如果之后她的预算有调整，或者有更适合你的合作方式，我们再回头找你。也谢谢你对支付流程和形式的认可，希望以后还有机会合作。",
+      "offer": {
+        "subject": "聚焦艺人合约签约条款、解约与竞业、版权归属和收益分配的咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45-60分钟"
+          },
+          "format": "线上咨询",
+          "deliverables": [
+            "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "围绕签约条款、解约与竞业、版权归属和收益分配的真实案例讲惯例和应对，并现场回答追问",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "提前把最想听的主题列给A",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "也谢谢你这边坦诚沟通，把双方的边界都聊清楚了。确实这一档差距没法靠调整形式来补，我也理解 Gracey 的预算考虑。如果之后有更合适的合作空间，欢迎随时找我。祝顺利。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7585,
+        "out": 3153,
+        "cache_hit": 5888,
+        "cache_miss": 1697,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6149,
+        "out": 3556,
+        "cache_hit": 4480,
+        "cache_miss": 1669,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3523,
+        "out": 6122,
+        "cache_hit": 2048,
+        "cache_miss": 1475,
+        "calls": 4
+      },
+      "judge": {
+        "in": 2080,
+        "out": 613,
+        "cache_hit": 640,
+        "cache_miss": 1440,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

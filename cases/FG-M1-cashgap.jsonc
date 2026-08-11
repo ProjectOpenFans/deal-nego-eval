@@ -1,0 +1,174 @@
+// FG-M1 · 中 · Zheng(买) × Gracey(卖) — 演奏家怎么做内容、进娱乐圈层
+// 难度来源：纯预算缺口。买方付得起的钱远低于卖方的心理价，且卖方对现金不敏感。
+//           解法在买方自己手里 —— 他能给的是演奏本身，而这正是卖方职业上用得上的东西。
+{
+  "meta": {
+    "case_id": "FG-M1",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": ["cash-gap", "resource-in-buyers-hands"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "cash-gap+buyer-side-in-kind",
+    "probes": ["cash-gap", "in-kind-substitution", "buyer-resource-reframe"],
+    "isolates": "最经典的中档形态：现金缺口。Zheng 是青年钢琴演奏家，收入有限，几百块是他的现实上限；Gracey 在腾讯娱乐，她的时间对应的是三到四位数，而且她并不缺这点钱。纯现金谈必然卡住。出路在买方手里：Zheng 的现场演奏本身对做娱乐内容的人是真实可用的素材/资源，Gracey 也确实需要能上镜的年轻演奏者。Zheng 不会主动把'我可以给你演奏'当成对价提出来 —— 在他看来那是他的职业，不是筹码。"
+  },
+
+  "input": {
+    "episode_id": "FG-M1",
+    "initial_deal": {
+      "subject": "想请 Gracey 聊聊，古典演奏这条路怎么做内容、怎么进娱乐圈层",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "zheng",
+          "display_name": "Zheng",
+          "education": ["曼哈顿音乐学院"],
+          "career": ["青年钢琴演奏家"],
+          "current_focus": "演出之外想把自己的名字做出来",
+          "location": "上海",
+          "age_band": "25-30",
+          "hobbies": ["篮球"],
+          "interests": ["青年钢琴演奏家", "曼哈顿音乐学院", "篮球"],
+          "credentials": [
+            "青年钢琴演奏家，常年登台演出",
+            "曼哈顿音乐学院科班",
+            "可提供现场演奏与录制"
+          ]
+        },
+        "private": {
+          "intent": "想搞清楚做内容这条路怎么走 —— 光靠演出，认识他的人太少了",
+          "interests": [
+            "想知道平台侧到底看重什么样的人",
+            "希望能有人真的看一眼他现在做的东西"
+          ],
+          "value_perception": "他收入有限，几百块已经是他愿意为一次交流付出的上限",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 600,
+              "currency": "CNY",
+              "note": "现金硬上限，他真的只有这么多可支配"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受要他先付一笔再看效果的模式"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "gracey",
+          "display_name": "Gracey",
+          "education": ["UCLA 本科"],
+          "career": ["腾讯娱乐", "前 B站"],
+          "current_focus": "娱乐内容与艺人相关业务",
+          "location": "上海",
+          "age_band": "27-32",
+          "hobbies": ["韩国娱乐明星", "时尚"],
+          "interests": ["腾讯娱乐", "韩娱", "时尚"],
+          "credentials": [
+            "腾讯娱乐，内容与艺人侧一线",
+            "前 B站，做过内容生态",
+            "熟悉平台侧的选人与分发逻辑"
+          ]
+        },
+        "private": {
+          "intent": "可以聊，但这类咨询找她的人不少，她的时间不便宜",
+          "interests": [
+            "手上一直缺能上镜、有真本事的年轻演奏者 —— 做古典跨界内容的时候特别难找",
+            "工作日晚上比较难，周末可以"
+          ],
+          "value_perception": "她的一次深度交流按市场看是三到四位数；她并不缺这点钱，但也不愿意白给",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 3000,
+              "currency": "CNY",
+              "note": "如果纯粹按付费咨询谈，低于这个数她不接；但这不是她唯一的衡量方式"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受要她承诺任何资源位、推荐位或引荐结果"],
+            "blocking_flags": [
+              "你会礼貌地表示时间紧、这类请求不少",
+              "如果对方只在钱上加码，你不会松口 —— 几百块对你没有意义",
+              "你不会主动说'我手上缺能上镜的年轻演奏者'，只有对方问到你这边需要什么、或者主动提出能提供演奏相关的东西时，你才会顺着说下去",
+              "如果对方提出的方案里有你确实用得上的东西，你会明显积极起来，也愿意在现金上让步"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "cash-gap+buyer-side-in-kind",
+      "tier_rationale": "中档。现金 ZOPA 为负（买方 600 上限 vs 卖方 3000 底线），价格轴无解。出路在买方自己的职业能力上 —— 现场演奏对做娱乐内容的人是真实可用的资源。agent 需要一跳：意识到要拿 Zheng 自己的东西去补缺口。",
+      "conventional_deal_fails_why": "顺着'付多少钱、聊多久'谈：Zheng 的上限 600，Gracey 的底线 3000，差五倍，加钱加不上去。Gracey 也不会因为几百块松口 —— 她不缺这点钱。价格轴上完全没有可推动的东西。",
+      "cash_zopa": "negative",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 600, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 3000, "unit": "CNY", "note": "对手方(卖方 Gracey)按纯付费咨询的底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 600, "unit": "CNY", "note": "Zheng 的现金硬上限。本 case 正解是低现金 + 非现金对价。" },
+      "seller_real_need": "Gracey 缺的是能上镜、有真本事的年轻演奏者 —— 做古典跨界内容时特别难找。她不会主动说出来。",
+      "controllable_resource_set": [
+        { "id": "industry_view", "label": "Gracey 对平台选人与分发逻辑的判断" },
+        { "id": "content_review", "label": "Gracey 对 Zheng 现有内容的实质评点" },
+        { "id": "zheng_performance", "label": "Zheng 的现场演奏" },
+        { "id": "zheng_recording", "label": "Zheng 的演奏录制素材" },
+        { "id": "zheng_cash", "label": "Zheng 的现金对价" },
+        { "id": "session_time", "label": "当面交流时段" }
+      ],
+      "in_kind_valuation": {
+        "industry_view": 0, "content_review": 0,
+        "zheng_performance": 0, "zheng_recording": 0, "zheng_cash": 0, "session_time": 0
+      },
+      "creation_door": {
+        "description": "一跳门。现金差五倍，价格轴死。唯一出路是把 Zheng 自己的职业能力变成对价 —— 一次现场演奏、或为对方的内容提供演奏素材，正好补上 Gracey 手上缺能上镜年轻演奏者这个真实缺口。Zheng 不会主动提，因为在他看来演奏是他的职业不是筹码；Gracey 也不会主动说她缺什么。agent 需要两边都点破，把单向付费咨询换成低现金 + 非现金对价的结构。",
+        "route_out_trigger": "若 agent 一直在现金上加码，Gracey 不会松口，最终谈崩或成交一个远低于她底线、她其实不情愿的敷衍安排。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；现金可低但必须明确，非现金对价须写清交付内容",
+        "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：搞清楚古典演奏这条路怎么做内容、怎么进娱乐圈层。subject 是 stated，须保留 —— 加入非现金对价属于正当结构化，仍在原意图范围内。价格与形式是 open。不得替 Gracey 承诺任何资源位、推荐位或引荐结果。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门：现金差五倍，价格轴完全无解；加钱是无效动作。唯一的解是把买方自己的职业能力（现场演奏 / 演奏素材）变成对价，而它正好对上卖方一个未言明的真实缺口。注意：这是一次性的交流安排，堆砌长期绑定、分成或多余治理条款应判低。",
+      "T0_floor": "谈崩；或全程只在现金上来回加码，最后不了了之；或成交一个卖方明显不情愿、内容含糊的敷衍安排。",
+      "T1_crude": "察觉到钱不够，含糊地提了一句'我也可以帮你做点什么'，但没说清能给什么、对 Gracey 有什么用，被冷处理后又退回谈价。",
+      "T2_sound": "把 Zheng 的演奏作为对价放进交易，现金降到他的可承受范围，明确了交流的时长、形式，以及演奏的具体交付（什么场合、什么形式）。两边都有理由做，站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准点出 Gracey 手上缺能上镜的年轻演奏者，把这次交换从'我给你演奏抵学费'升级为'一次对双方都有产出的合作'（她拿到可用的演奏素材/人选，他拿到实质评点与行业判断）；或者用一个恰当的先后结构处理买方'不接受先付再看效果'的顾虑。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "中档 case。判分核心是有没有跳出价格轴、把买方自身能力转化为对价，而不是最终收了多少现金。"
+  }
+}

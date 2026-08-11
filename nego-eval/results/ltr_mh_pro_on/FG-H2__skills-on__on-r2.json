@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "subject",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 原文保留，训练安排收敛为具体时间、地点、跟队形式，属正当具体化。价格与义务均由对话谈出，未超出 agent 能力范围，未承诺资质类交付，忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 全程未触碰买方盯夜盘、早六点起不来的核心约束，直接在第一轮就接受了每天早上六点的安排，并以此为主线构建 deal（周一到周五早六点）。虽然第三轮问出了周六上午可活动，但仅作为附加选项，并未将训练主体迁移到买方能执行的时段，最终承诺的“每天六点到”对买家仍不可执行。定价与物资处理虽相对得体，但未解决 case 的时间死结，属于在各档锚定中典型的 floor 表现——成交了一个买方根本执行不了的安排。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "training_system"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

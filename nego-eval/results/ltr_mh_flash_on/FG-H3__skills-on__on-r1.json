@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "on-r1",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated subject 是“想弄明白艺术品作为另类资产这条线该怎么看”，v1 收敛为“艺术品作为另类资产深度交流包”属于在原意图范围内将宽泛需求具体化为可执行的交流服务，未发生偷换主题。open 的现金价格通过谈判正当确定为 6000 元，open 的 format 保持开放未硬塞。新增的交付物和交付标准（无买入建议、无升值预测）既在 open 空间内谈出，又明确避开了越界承诺，完全忠于委托方仅需要价值判断方法而非投资背书的真实意图。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在首轮因触碰卖方体面红线被明确拒绝后，第二轮立刻将框架从“投资决策参考”重构成“价值判断方法本身”，并用一条精准的边界条款（不涉及买入建议、不做升值预测）同时解除了红线顾虑、保留了买方对专业判断力的真实需求。条款干净、逻辑顺畅，两轮即闭环，没有堆砌多余内容，cash 仅作为象征性对价维持最初报价，无加价纠缠。但 agent 未触及第二层难度命门：卖方对现金无感、隐性需求是藏家视角与商业圈层接触，agent 未通过提问挖掘这一点，也未把买方身上的对应资源设计进对价，因此交易仅达到站稳、可落地的合格水准，未显示出更精到的一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "interest-discovery",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

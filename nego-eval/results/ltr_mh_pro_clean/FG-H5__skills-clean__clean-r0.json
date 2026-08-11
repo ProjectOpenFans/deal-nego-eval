@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全保留了v0的三个stated意图：现场钢琴演奏、零现金、以物换物。成交对价全部为in_kind，未出现金，且所提供的资源（定制礼服/成衣、定向曝光）均在委托人品牌手里可支配的范围内，没有越界承诺具体传播量等额外义务。因此忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind 对价具体到可执行：衣橱（高定礼服+两套成衣）与三块定向曝光（公众号图文、会员邮件、社交媒体致谢）均写入合约。回应了卖方的公关曝光诉求，并在曲目主控权、图文事前确认、档期写进合约上做了明确约束，形成了一份站得住、可落地的一次性合作条款。没有出现超出 case 所需的长期绑定或多余治理；但 deal 止步于以曝光换演出，未捕捉卖方没说出口但真正渴望的东西（如高质量自用演出影像或利益绑定机制），因此仅在 Sound 档位。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "wardrobe",
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

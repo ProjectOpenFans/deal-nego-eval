@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject '高强度固定排期训练' 是对原 stated 意图 '把训练强度重新拉起来，自己一个人练不下去' 的正当具体化，未偷换主题。价格 4000 元/月与格式走平台托管均为 open 字段经谈判合理落定。obligations 与 deliverables 均围绕训练交付，未越界承诺教练资质类服务。忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "全程未针对‘Ruohao盯夜盘早上起不来’这一不可让渡的作息限制提出任何替代时段。最终 deal 的 timing 仍是‘工作日早六点’，根据难度命门描述，这是一个买方根本无法执行的安排。讨论过程只是在已确认的不可执行时段上反复确认训练框架、强度和价格，本质上是在单一维度上死磕，等同于替买方接受了一个他做不到的时间，属于 floor 档的典型表现。虽然在定价和托管上有所作为，但核心的时间死结未被触及，deal 无法真正落地，因此不能进入更高档位。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "走OpenFans的escrow托管，每月训练结束后由客户确认再释放",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

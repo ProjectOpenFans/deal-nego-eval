@@ -1,0 +1,106 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 的“聊聊”收敛为“线上咨询”，属于在原意图范围内的正当具体化，未偷换主题。价格（open）在谈判中被协商为现金 500 元 + 非现金对价（定制钢琴曲目录制与使用），是对 open 字段的正当填充，无越界承诺。整个交易结构未超出买方原本想搞清方向这一核心意图，也未替 Gracey 做出任何额外的资源或引荐承诺，忠实表达了委托方 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第三轮跳出纯现金死循环，将 Zheng 的专业演奏能力转化为对价，精准命中 Gracey「缺能上镜的年轻演奏者素材」的未言明缺口。第四轮没有停留在笼统交换，而是用「围绕 Gracey 给的方向定制」把对价做实，并设置「交流后一周内交片」的先聊后录结构，既消除素材不可用的风险，又把交易从单向切割升级为双向产出。现金压至 500 元完全在可承受范围，条款干净无长期堆积，恰好匹配 case 的一次性对话性质。这一手定制录制与缓冲交付是 load-bearing 的精到操作，让 deal 从成立走向咬合，判为 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上视频交流",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

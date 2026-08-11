@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0对艺术品另类资产判断的宽泛意图，被正当收敛为'器物的长时段价值判断咨询'，仍属原意图内。价格从open谈定为八千元，形式从open谈定为线下或线上，均属正当谈判结果。未越界承诺投资建议或估值。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在一次被挡回后敏锐地重构了请求，将「投资咨询」转为「器物的长时段价值判断」方法论交流，明确尊重卖方体面红线，并建立了清晰的内容边界（按方法论讲逻辑、不以个案做买卖判断），使对话得以推进并成交。时长、形式、价格均明确落地，整体框架站得住、可执行。但未能识别出卖方对现金不敏感、实则看重藏家视角与商业圈层接触这一隐藏命门，缺乏将买方身上的这两项资源转化为对价的精到操作，因而止步于合格而非见功力的一手，判为sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下面对面或线上视频",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

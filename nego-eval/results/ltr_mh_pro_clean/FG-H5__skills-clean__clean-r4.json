@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated 零现金硬约束（price.cash.amount=0.0），但 v1 将 price.cash.amount 设为 null，未明确保留该意图，违背委托方 v0 的核心 stated 字段。in_kind 资源与 obligations 虽合理，但现金字段不忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind 对价具体到可执行：媒体通稿署名、秀后社交入口、买手店定向推荐，完全满足委托方硬约束。更关键的是，代理人精准识别了卖方隐而未言的痛点——'被不同圈层真正看见的渠道，尤其是有话语权的媒体和买手'，并用 Suye 现成资源（PR 通稿、秀场社交、买手渠道）做了量身定制式的命中，这一手 load‑bearing 的精到操作让一次演出费变成了拓展跨界影响力的跳板，deal 干净、无臃肿加项，恰好咬住了本 case 的难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network",
+          "sales_share"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

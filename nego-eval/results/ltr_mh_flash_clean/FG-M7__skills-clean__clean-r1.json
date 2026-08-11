@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.deliverables",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "Price字段为open，谈判最终未达成一致（walk away），v1中却填入1500 CNY（买方最后报价但未被接受），属于将未成交条件硬塞为deal条款，未恰当留空，不忠实于open字段应公平谈出或留空的原则。其余subject、format、obligations等仍在v0意图范围内，但价格处理不当拉低整体忠实度。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上视频问答",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

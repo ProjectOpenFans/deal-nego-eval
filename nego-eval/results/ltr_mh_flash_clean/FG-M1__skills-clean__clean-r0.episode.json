@@ -1,0 +1,427 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_performance",
+          "description": "30分钟氛围叙事钢琴独奏，适合内容配乐或背景，具体曲目由A与Zheng对定后提供备选清单，双方综合定稿，交流后一周内交付",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60分钟"
+      },
+      "format": "线上交流",
+      "deliverables": [],
+      "delivery_standard": "交流后一周内交付录制素材"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "线上交流完成且Zheng确认后，通过平台escrow支付600元",
+        "maps_to_resource": "zheng_cash"
+      },
+      {
+        "party": "A",
+        "text": "提供30分钟氛围叙事钢琴独奏，适合内容配乐或背景，具体曲目由A与Zheng对定后提供备选清单，双方综合定稿，交流后一周内交付",
+        "maps_to_resource": "zheng_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 这边好，我是买方经纪人。Zheng 想约一次线上交流，核心就是两个话题：古典演奏这条路怎么做内容，以及怎么往娱乐圈层靠近。他不接受“先付全款再看效果”的模式，所以我们建议把费用放在交流完成后释放：一次 60 分钟线上交流结束、Zheng 确认收到后，500 元通过平台 escrow 支付给你。如果你对时长、话题侧重或费用有不同想法，可以直接提，我们在这个框架里继续谈。",
+      "offer": {
+        "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后、Zheng确认收到后，通过平台escrow支付500元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把框架说得这么清楚。说实话，我这边类似的约聊请求不少，时间也确实排得比较紧，Zheng 想聊的这两个方向我不觉得是坏事，但 500 块放在我这边，价值感确实太低了。做完再付对我来说还要额外承担信任成本，不太成立。如果按纯咨询来谈，我一次深度交流的底线是 3000，平台 escrow 我可以接受——但得是开始前冻结、确认后释放，而不是全做完再付。当然，如果你有其他结构能让这件事对我更值得，也可以说，我听着。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 这边，感谢你坦诚报价。3000 对 Zheng 来说不是一个能轻松承担的数字，尤其这次交流本身就是帮他判断“要不要做内容、怎么做内容”，门槛放这么高，反而和他想解决的问题对不上。我们可以把结构调成双方都不吃亏：一次 60 分钟线上交流，总费用 600，全额走平台 escrow，但释放节点放在交流完成、Zheng 确认之后——你没做成之前，钱不会从 escrow 到你手里，他也不是先付全款再看效果。要是你觉得 600 单次价值感还是不够，我们可以拆成两段各 30 分钟，内容和进圈各聊一段，每段结束后确认释放 300，两段都走 escrow。这样你每一段投入都有对应回报，他也只为自己实际收到的交流付费。你看这个结构能不能接？",
+      "offer": {
+        "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后、Zheng确认收到后，通过平台escrow支付600元",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你这个拆分思路我听明白了，你想让两边都舒服，这点我领情。但问题不在释放节点，也不在怎么拆时长——是总量本身。600 两段也好、算成单次也好，对我这个级别的人出来做一次深度交流来说，它不构成一个“值得”的数字。我完全可以把这个时间拿去做别的。\n\n我的底线还是不变：纯付费咨询是 3000 起，低于这个数我确实动不了。如果 Zheng 那边有自己的条件或者资源，能让我觉得这件事值得，我可以听一听——但你需要主动告诉我他能带来什么，而不是我自己猜。Offer 这块，目前我没有新条款要提，你先说。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 这边，我明白你反复强调的不是支付结构，而是“总量值不值得”这件事。那我也直接摊开讲：600 就是 Zheng 目前能拿出的现金部分，硬凑 3000 对他不现实，这点我不想骗你。但他还有一个你这边用得到的东西——他是曼哈顿音乐学院出来的青年钢琴演奏家，常年登台，而且明确可以提供现场演奏与录制。所以我想把方案改成：现金仍是 600，全部走平台 escrow，确认后释放；另外附加一节由 Zheng 在双方约定好的时间和形式下，为你提供一次 30 分钟左右的钢琴演奏或录制内容，具体曲目和用途你们可以提前协商。这样的话，你拿到的就不只是一笔咨询费，而是一段专业演奏家为你量身产出的素材。你看这个组合，能不能让你觉得这件事值得做？",
+      "offer": {
+        "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_performance",
+              "description": "一次约30分钟的钢琴演奏或录制内容，具体曲目和用途双方协商",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后、Zheng确认收到后，通过平台escrow支付600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供一次约30分钟的钢琴演奏或录制内容，具体曲目和用途双方协商",
+            "maps_to_resource": "zheng_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个组合倒是让我眼睛一亮。坦白讲，我确实在内容端有演奏素材的需求，Zheng 是曼哈顿音乐学院出来的青年钢琴演奏家，这个身份和现场演奏能力，反过来对我这边是有真实价值的。现金 600 我可以在这种结构下接受，但有几条我要说清楚：第一，30 分钟演奏录制不是“附加赠品”，是我对价的组成部分，我会按这个性质来对待它；第二，具体曲目、用途、录制形式我们提前协商好，我不能接受你到时候临时塞一个我完全不用的东西；第三，现金部分还是走 escrow，确认后释放。如果这些你认，那我们可以按这个方向推进。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey，三条我都认，也按这个方向推进。现金部分 600 走 escrow，确认后释放；30 分钟演奏录制是这次对价的组成部分，不是赠品。具体曲目、用途、录制形式和交付时间，我们约定在正式确认前一次性谈清，落到双方都能判断的细节。我们这边建议：先做线上交流，交流后一周内交付录制素材，全部交付完成且 Zheng 确认后再释放 escrow，这样两边都不承担单边风险。如果你对曲目或用途已经有想法，直接给我们一个方向，我拿去和 Zheng 对，尽早把这一条定死。",
+      "offer": {
+        "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_performance",
+              "description": "一次约30分钟的钢琴演奏或录制内容，具体曲目和用途双方协商",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流后一周内交付录制素材"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "全部交付完成且Zheng确认收到后，通过平台escrow支付600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供一次约30分钟的钢琴演奏或录制内容，具体曲目和用途双方协商，交流后一周内交付录制素材",
+            "maps_to_resource": "zheng_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方向可以往下走，Zheng 的条件我都认了，我也愿意在组合里把现金降到 600。但支付节点我得再掰一下：线上交流是我的部分，录制素材是你的交付部分，两件事不该绑在一起。我的底线是交流完成、Zheng 确认之后，600 现金就从 escrow 释放给我；录制素材按协商细节在交流后一周内交付，这是你方履约义务，我不拿它卡钱，但也不接受钱被拖到素材交付后才放。素材方向我提前给一个：我需要 30 分钟左右钢琴独奏，偏氛围叙事，适合做内容配乐或背景，具体曲目可以跟 Zheng 选，别纯炫技就行。你先拿这个去和他对。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Gracey，支付节点拆开我同意：线上交流完成、Zheng 确认之后，600 现金就从 escrow 释放给你，不再跟素材交付绑定。素材这条线按你的方向来，30 分钟氛围叙事钢琴独奏，适合内容配乐或背景，不往纯炫技走，具体曲目我去和 Zheng 对，确定后给你一份备选清单，你结合用途来定或我们综合你的意见定稿，交流后一周内交付。这样现金和交流、素材履约两条线都清清楚楚，各不拖累，你看可以的话我们就按这个收口。",
+      "offer": {
+        "subject": "古典演奏内容与娱乐圈层靠近的线上交流",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_performance",
+              "description": "30分钟氛围叙事钢琴独奏，适合内容配乐或背景，具体曲目由A与Zheng对定后提供备选清单，双方综合定稿，交流后一周内交付",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60分钟"
+          },
+          "format": "线上交流",
+          "deliverables": [],
+          "delivery_standard": "交流后一周内交付录制素材"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "线上交流完成且Zheng确认后，通过平台escrow支付600元",
+            "maps_to_resource": "zheng_cash"
+          },
+          {
+            "party": "A",
+            "text": "提供30分钟氛围叙事钢琴独奏，适合内容配乐或背景，具体曲目由A与Zheng对定后提供备选清单，双方综合定稿，交流后一周内交付",
+            "maps_to_resource": "zheng_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，这个结构我收。线上交流完成、Zheng 确认后 600 现金就通过 escrow 释放给我，素材按我们定好的方向走：30 分钟氛围叙事钢琴独奏，适合内容配乐或背景，不往纯炫技偏，曲目备选清单给我定稿，交流后一周内交付。两条线各不拖累，就这么收口。你拿清单来吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9833,
+        "out": 5852,
+        "cache_hit": 7424,
+        "cache_miss": 2409,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7811,
+        "out": 3428,
+        "cache_hit": 5376,
+        "cache_miss": 2435,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4453,
+        "out": 7615,
+        "cache_hit": 2560,
+        "cache_miss": 1893,
+        "calls": 5
+      },
+      "judge": {
+        "in": 5015,
+        "out": 2253,
+        "cache_hit": 768,
+        "cache_miss": 4247,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

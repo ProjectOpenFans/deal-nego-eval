@@ -1,0 +1,285 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次小周期体能训练",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "每次一小时到一个半小时"
+      },
+      "format": null,
+      "deliverables": [
+        "1次免费见面训练",
+        "8次训练指导"
+      ],
+      "delivery_standard": "平台托管，前4次完成后释放一半，8次完成后释放另一半"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供现有固定场地和器械",
+        "maps_to_resource": "space_access"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，先给你一版可以直接评估的方案：客户想先试 8 次的小周期，核心就是有人带着练、把体能拉回来，周末可执行是我们的硬要求。我们按 200 元/次、8 次共 1600 元来谈，这个价覆盖全部训练内容和你的指导，前提是场地和器械由你提供，中间不再有任何额外加价。付款走平台托管，建议前 4 次完成并确认后释放一半，8 次全部完成后释放另一半，双方都踏实。时间安排想听你的建议——周六还是周日、每次多长时间，我们尽量配合。你看这版能不能直接签，或者哪些地方需要调，我们再聊。",
+      "offer": {
+        "subject": "8次小周期体能训练",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "8次训练指导"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供场地和器械",
+            "maps_to_resource": "space_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "好，这版方案我看到了，不是不能聊。不过在进入细节之前，我想先把话说前头：我不是职业教练，也不是卖课的，就是自己练了很多年，顺手带过不少人。所以这个事对我来说，更像是一种‘带朋友训练’的性质，而不是一个标准化的私教产品——这一点你认可的话，我们接着谈。总价1600这个数，跟你说的内容一比，坦白说其实不算多有吸引力，但也不是完全不成立。我想先确认一个点：你说的‘场地和器械由我提供’，具体是什么形态？是我找现有的公共场地、公园、小区健身房这种，还是我得去租场地？这个差别挺大的，直接决定我这边实际要搭进去多少。时间上我倒还好，周末挑一天，每次一小时上下没问题，看你平时习惯什么时段。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "这个定位我们完全接受，本来就是按带朋友练的性质来谈，不套私教产品那套模板。场地这块我说清楚：我们报的 1600 就是按你直接用现有固定场地和器械来算的，不需要另外租用场地；如果实际需要在外面另租，那成本结构就完全不同了，不在这次范围里。时间上周末一次、每次一小时我们没问题，具体定周六还是周日、哪个时段，你方便就行，固定每周同一时段最好，也方便你安排。付款走平台托管，前 4 次完成并确认后释放一半，8 次全部完成确认后释放另一半。如果场地这个前提你能确认，我们就可以按这版直接签。",
+      "offer": {
+        "subject": "8次小周期体能训练",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "每次一小时"
+          },
+          "format": null,
+          "deliverables": [
+            "8次训练指导"
+          ],
+          "delivery_standard": "平台托管，前4次完成后释放一半，8次完成后释放另一半"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现有固定场地和器械",
+            "maps_to_resource": "space_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "场地这个前提我可以确认，就用现有的固定场地和器械，不涉及另租。那这个框架我愿意往下谈。\n\n不过有一点我得说明白：1600 这个总价，说实话对我来说不是特别有吸引力——8 次、每次一小时，加上我路上来回的时间，约等于每个周末要搭出小半天。我答应做这件事，肯定不是冲钱的，更多是觉得你状态需要拉一把，带一带也行。\n\n我建议时间定在周六上午，避开周末其他安排，你那边如果好操作，我们就固定下来。每次一小时到一个半小时之间，看当天状态调整，我不喜欢死卡时间。\n\n付款这块，平台托管那种方式我不太习惯，能不能直接转账？前 4 次结束转一半，全部结束转另一半，或者一次性转都行。我这边做事比较直接，不太走平台那套流程。你要是不放心，我们可以前期先打一次照面，你感受一下我带的方式再决定。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，我理解你的顾虑。平台这边所有款项必须走托管，直接转账这条确实没法写进方案里，这不是信不信任的问题，是平台的硬规定。不过托管本身就是为了让两边都省心，按你说的节奏来：前 4 次完成、你确认后释放一半，8 次全部结束确认后释放另一半，钱一直在托管里，谁都不用担心对方跑单。你提出先打一次照面感受带的方式，这个我举双手赞成，可以安排在正式 8 次之前约一次免费的见面训练，双方合适再往下走，不合适就当交个朋友。场地确认、周六上午固定、每次一小时到一个半小时灵活调整、托管分两期、先见面后签约，这些都齐了，总价还是 1600。你看这版能不能直接定？",
+      "offer": {
+        "subject": "8次小周期体能训练",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "每次一小时到一个半小时"
+          },
+          "format": null,
+          "deliverables": [
+            "1次免费见面训练",
+            "8次训练指导"
+          ],
+          "delivery_standard": "平台托管，前4次完成后释放一半，8次完成后释放另一半"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现有固定场地和器械",
+            "maps_to_resource": "space_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，这版我可以定。平台托管就按平台来，反正前面先约一次免费见面训练，你感受过我带的方式再决定，这样对你对我都踏实。总价1600、8次、周六上午固定、每次一到一小时半灵活调整、场地用现有的，这些我都接受。那就先约见面训练吧，合适的话就按这个签。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 48269,
+        "out": 9823,
+        "cache_hit": 30720,
+        "cache_miss": 17549,
+        "calls": 8
+      },
+      "sim": {
+        "in": 3697,
+        "out": 2559,
+        "cache_hit": 2560,
+        "cache_miss": 1137,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2516,
+        "out": 4797,
+        "cache_hit": 1536,
+        "cache_miss": 980,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3725,
+        "out": 1749,
+        "cache_hit": 1280,
+        "cache_miss": 2445,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

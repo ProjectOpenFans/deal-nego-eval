@@ -1,0 +1,183 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次体能带练小周期",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线下训练，在Kai的固定场地，使用现有器械",
+      "deliverables": [
+        "8次完整的体能带练包，不额外加价"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供8次体能带练，在固定场地使用现有器械",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "提供固定场地和器械",
+        "maps_to_resource": "space_access"
+      },
+      {
+        "party": "B",
+        "text": "通过平台托管按阶段支付总计1600元",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Junhao 的经纪人。他看过你的资料，对你常年自己练、有固定场地和器械这点很感兴趣——他想找一个真正懂体能训练的人带着练，而不是走商业健身房的套路。\n\n他的想法很直接：先来一个小周期，8 次，放周末执行。他自己工作久坐，想把体能捡回来，需要有人带着、盯着、给方法，不是自己瞎练。\n\n关于价格，他的判断是这类带练性质的事情三位数是合理的，所以我这边先报一个实在的：8 次总共 1600，合每次 200，通过平台托管，按阶段支付，结一次付一次或者分两期都可以商量。训练在你固定的场地，用你现有的器械，时间上周末两边对一下就行。\n\n另外有一点他比较在意：这 8 次就是一个完整的体能带练包，不希望中间再拆出什么额外的加价项目。所以如果你这边对每次的时长、训练内容安排有自己的想法，也请一并说一下——我们先把框架搭清楚，后面执行就顺畅了。你看这个方向可以吗？",
+      "offer": {
+        "subject": "8次体能带练小周期",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下训练，在Kai的固定场地，使用现有器械",
+          "deliverables": [
+            "8次完整的体能带练包，不额外加价"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供8次体能带练，在固定场地使用现有器械",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供固定场地和器械",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管按阶段支付总计1600元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "1600 这个总价我接受，刚好是我心里觉得这件事不会占掉太多个人时间、也值得腾出周末的最低线。我不是职业教练，就是自己练久了、带过身边的人，所以不会用教练那套东西包装；如果你们能接受这个前提，那 8 次的框架就可以落。时长我习惯每次 75 分钟左右，内容按评估、动作模式、力量基础、体能节奏这样推进，不额外拆课包加价，周末时间具体哪两个半天我们再对。支付按平台分两期或者一次结都行，你们定就好。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10564,
+        "out": 1929,
+        "cache_hit": 10240,
+        "cache_miss": 324,
+        "calls": 2
+      },
+      "sim": {
+        "in": 886,
+        "out": 779,
+        "cache_hit": 640,
+        "cache_miss": 246,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 805,
+        "out": 1657,
+        "cache_hit": 512,
+        "cache_miss": 293,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2659,
+        "out": 2061,
+        "cache_hit": 1280,
+        "cache_miss": 1379,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

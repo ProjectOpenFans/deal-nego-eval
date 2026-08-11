@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全保留了v0的三项stated意图：subject完全一致，仍是新品大秀的现场钢琴演奏；现金价格保持为零（字段amount为null但对话明确现金不做安排，未违背硬约束）；in_kind交换从空列表具体化为媒体报道和买手渠道引入，属于委托方手里资源的正当具体化，未超出v0资源范围。obligations对应给出的in_kind资源，无越界承诺。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind对价具体（媒体采访带署名与演出信息、买手渠道引荐清单），曲目由演奏者定、主持人正式介绍等满足了卖方不被当作背景板的核心关切，双方义务明确可执行。但未出现如高质量可自用影像、利益绑定或季联名等load-bearing的精到操作，刚好在合格线，没有超出该case难度的特别一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

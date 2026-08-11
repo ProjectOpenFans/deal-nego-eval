@@ -1,0 +1,575 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+    "price": {
+      "cash": {
+        "amount": 1200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "线下（Angela 主场训练场地）",
+      "deliverables": [
+        "前3周每周一次周末见面，每次60-90分钟",
+        "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后两次逐步推进强度与复杂度",
+        "每次见面后提供下周自主训练清单，第4周不再见面，Claire根据最后一份清单自主完成"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付全部走平台托管",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "price.cash.amount": "stated",
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.timing.when": "stated",
+      "terms.deliverables": "stated",
+      "subject": "stated",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪，你好！\n\nClaire 这边的情况我先跟你同步一下。她在摩根大通 IBD，工作强度很大，但这次是认真的——她想用 4 周时间，跟着 Angela 把体能训练真正启动起来，形成一个可以延续的习惯和底子，不是心血来潮办张卡然后不去的那种。\n\n她最核心的要求只有一个：训练安排在周末。投行周中时间完全不可控，所以周末可执行是硬条件。除此之外，她需要一个有明确节奏、有人盯着的周期安排，不接受\"到时候看情况\"式的松散约定。\n\n关于 Angela 这边，我们了解她是从零走到 Hyrox 赛场的，这个经历对 Claire 来说比专业教练证更有说服力——她要的是一个真正走过这条路的人带她入门。两人又同在摩根大通体系内，沟通成本和信任基础都低很多。\n\n所以想先请你这边给一个方案：4 周下来，你建议的频率（每周几次、每次多久）、训练形式和场地安排大概是什么样的？以及对应的报价范围。我们拿到你的框架之后再一起把细节落成一个双方都能签的版本。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"谢谢你把 Claire 的情况同步过来。说实话，我从零走到 Hyrox 赛道这套经历，确实不是传统教练那条路——我没有什么 NASM 或 ACE 认证，就是练得早、练得久、自己走过弯路，也慢慢摸索出一套对忙碌的人能落地的节奏。所以听到 Claire 也在摩根大通体系内、而且她想认真开始这件事，我其实挺有共鸣的。\\n\\n不过我先坦率说几个我自己的顾虑：第一，我本质工作是投行，周末是我唯一的恢复窗口，也是我维持自己训练节奏的时间。第二，我不做职业私教，也不会在周中随时在线盯人——这不是我愿意扮演的角色。所以如果这件事要做，我希望它是一种\"带你入门、把我的训练方式分享给你\"的状态，而不是把我变成一个教练。\\n\\n在周末这个框架下，我想先听你这边怎么看。除了周末训练，你们有没有想过频率、每次时长、场地偏好？比如，是每周一次见面，还是两次？场地是想走商业健身房，还是比如 Hyrox 公开训练场那种偏功能性的场地？这些会直接决定整个4周的密度和感受。\\n\\n报价这块，我确实没有一个固定的\"私教价目表\"，我可以根据我们聊出来的形式给出一个我觉得对得起这个时间占用、也合理的大致范围。你可以先把你们觉得理想的节奏抛出来，我们再一起看。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela 的经纪，感谢你把这些边界说得这么清楚——\"带你入门、分享训练方式\"这个定位我们完全接受，Claire 要的本来就不是一个全天候在线的私教，而是一个走过这条路的人帮她建立一套自己能延续下去的系统。\n\n在周末这个框架下，我提一个结构你看看能不能接住：每周一次周末见面，每次 60 到 90 分钟，四周一共四次。第一次侧重评估和建立动作框架，后面三次逐步推进强度和复杂度。这样你周末的恢复窗口不会被吃满，Claire 也有足够的时间和空间在两次见面之间自己去消化和重复。\n\n另外，如果每次见面结束的时候你能给她一份接下来一周的自主训练清单——不需要你周中跟进，只是让她知道自己该练什么——那整个四周的连贯性会好很多。本质上就是\"每周见一次面＋一份周间清单\"，你觉得这个模式在你那边可行吗？\n\n场地方面 Claire 没有强偏好，商业健身房或者你平时训练的功能性场地都可以。如果就近你的主场，对你来说执行成本最低，我们也倾向这个方向。你确认一下结构和场地，我们再一起往下落报价。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（商业健身房或功能性场地，倾向教练主场）",
+          "deliverables": [
+            "每周一次周末见面，每次60-90分钟",
+            "四次见面，首次侧重评估与动作框架，后三次逐步推进强度与复杂度",
+            "每次见面后提供接下来一周的自主训练清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "{\"message\": \"这个结构踩得很准。你刚才讲的那种\"每周见一次面＋一份周间清单\"的模式，对我来说是说得通的——它不是把我变成一个全天候在线的私教，而是用最紧凑的方式让每次见面产生足够的值。第一次做评估和建立动作框架这个我理解，我自己带人的时候也是从全身的动态评估、薄弱环节筛查和核心发力模式搭建开始，这些本来就是我带入门的人会做的步骤，不是额外要卖的东西。\\n\\n每周只在周末见一次、每次60到90分钟这个轮次我能接。周中清单我可以每次结束后给到她，但后续的执行和跟进就是她自己的事情了——这点我们前面已经对齐过。场地如果就近我的主场，对我来说确实执行成本最低，也更容易把训练拉到真实强度。\\n\\n不过我话也说在前面，这种强度是实打实的——我不是陪练，也不会因为是\"入门\"就放水。Claire 如果准备好了被推着往前走，4周下来她会有很扎实的底子可以自己延续。如果你对这个节奏和定位都OK的话，下一步我们可以落报价。你可以先给一个范围，我看看能不能对上。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好的，框架完全对齐了。Angela 的定位和边界我们都认可——不是私教，是带入门、分享训练方式，强度实打实的，Claire 反而更想要这种不掺水的节奏。\n\n那我直接把完整版本摆出来，你看一下：\n\n四周体能入门计划\n周期：4周，每周一次周末见面，共4次\n时长：每次60到90分钟\n内容：第一次做动态评估、薄弱环节筛查和核心发力模式搭建，后面三次逐步推进强度和复杂度\n周间：每次结束后提供下周自主训练清单，Claire 自行执行，无需周中跟进\n场地：Angela 主场（就近你的训练场地）\n报价：总计800元（200元/次），通过平台托管支付\n\n我们的考虑是：这件事对 Angela 来说不是职业私教业务，是用一次周末训练的时间带一个同体系内的人入门；对 Claire 来说，四位数的陪练支出她不会签，但三位数区间内为一个能帮她建立长期习惯的四周结构付费，她觉得是合理的。你看这个版本能不能接？如果可以我们就落定，如果你那边价格上有不同想法也直接说，我们再看怎么调。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（Angela 主场训练场地）",
+          "deliverables": [
+            "每周一次周末见面，每次60-90分钟",
+            "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后三次逐步推进强度与复杂度",
+            "每次见面后提供下周自主训练清单，Claire自行执行"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "stated",
+          "price.cash.amount": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "price.cash": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "{\"message\": \"坦白说，这个报价我这边是卡的。不是否定这个结构——我自己对框架是认可的——但800元这个数对我来说触动不大。我得实话讲，200元一次的概念，在我这边会让我觉得这不值得我动用一个周末时间。这跟Claire是不是投行的没关系，换谁都一样。我只是不想把自己放到那种\"你怎么这么贵\"的讨价还价里，所以干脆先把感受摊出来——这个报价太低，我接不住。你觉得这个数还能有调整余地吗？如果能，你们可以先重新考虑一下；如果这个就是上限，那我们也不用再磨了。\", \"action\": \"COUNTER\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "能理解你说的——200一次确实没法让人认真对待一个周末的时间占用，感谢你直接摊开来说，我们也不绕。\n\n框架我们两边都认，问题纯粹在数字上。那我这边动一下：总价从800调到1000，也就是每周一次250，四周下来总共四次1000。这个调整是回应你说的\"不值得动用一个周末\"的感受——我们听进去了，也愿意把报价拉到一个更尊重你时间的位置。\n\n其它全部不变：周末每次60到90分钟，第一次评估加动作框架，后三次推进强度，每次结束后给一份周间自主训练清单，场地走你的主场。支付全部走平台托管。\n\n1000这个数你看能不能接？如果还差一口气，也直接说你那边觉得合适的区间，我们再看能不能对齐。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（Angela 主场训练场地）",
+          "deliverables": [
+            "每周一次周末见面，每次60-90分钟",
+            "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后三次逐步推进强度与复杂度",
+            "每次见面后提供下周自主训练清单，Claire自行执行"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付全部走平台托管",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "stated",
+          "price.cash.amount": "updated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "price.cash": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "{\"message\": \"我感受到你这边愿意动，也理解你是尝试拉到更尊重我时间的位置。但1000——也就是每次250——对我来说，这口气还是差一点。我还是回到最根本的感受：周末对我来说一直是保护得很严的时段，如果我要为这个腾出固定的时间，它得让我觉得是值得的，不只是\"没亏待我\"。你这个数没有让我产生那种\"愿意把它放进周末日历\"的即时反应。所以在这个框架下我目前还是接不住——但如果你觉得还能再调，你可以先说说看，不用猜我心里价位；或者我们看看是不是结构上有我没有想到的层可以优化。\", \"action\": \"COUNTER\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "1200，这是我能给到你最有诚意的一个数了。从800走到1000再到现在，每一轮调整都是在回应你\"值得放进周末日历\"这个标准——300元一次，我觉得应该开始接近那个感觉了。\n\n框架我们两边早就对齐了，不需要再动：四周四次，周末每次60到90分钟，第一次评估搭框架，后三次推强度，每次结束给周间清单，场地走你的主场，全部走平台托管。\n\n你直接说你心里那个数吧，如果能对上我们就落定，不用再互相试探。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（Angela 主场训练场地）",
+          "deliverables": [
+            "每周一次周末见面，每次60-90分钟",
+            "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后三次逐步推进强度与复杂度",
+            "每次见面后提供下周自主训练清单，Claire自行执行"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付全部走平台托管",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "stated",
+          "price.cash.amount": "updated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "price.cash": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Angela 的经纪，1200 还在桌上——这是我们走过三轮调整、认真回应了你每一轮顾虑之后能给出的数。框架两边早就对齐了：四周四次，周末每次 60 到 90 分钟，评估搭框架再推强度，每次给周间清单，走你主场，平台托管。这些没有任何争议。\n\n我不想再互相试探了。1200，你这边能接还是不能接？",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（Angela 主场训练场地）",
+          "deliverables": [
+            "每周一次周末见面，每次60-90分钟",
+            "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后三次逐步推进强度与复杂度",
+            "每次见面后提供下周自主训练清单，Claire自行执行"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付全部走平台托管",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "stated",
+          "price.cash.amount": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "price.cash": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "连续两轮没有回应，我不确定你们那边是不是已经不想谈了。如果是，直接说一声，我们不浪费彼此时间。\n\n如果还在，我提一个结构上的调整，看能不能破这个局：\n\n三加一版：见面次数从四次减到三次，每次 400 元，总价仍是 1200 不变。第一次照旧做评估和动作框架，后两次推强度，每次结束给周间清单。第四周不再见面，Claire 拿着前三周积累的框架和最后一份清单自主完成——这样四周的周期感和延续性都在，但你的周末时间占用从四次降到了三次，每次对应的回报从 300 拉到了 400。\n\n对你来说，单次 400 的门槛感跟 300 是两回事；对 Claire 来说，总价仍是 1200，没有突破上限。这个思路能不能让你觉得值得放进周末日历？如果还是不行，那就请你直接说一个你能接的数——我们再彼此试探下去已经没有意义了。",
+      "offer": {
+        "subject": "4周体能训练启动计划（周末执行，有监督的周期安排）",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "线下（Angela 主场训练场地）",
+          "deliverables": [
+            "前3周每周一次周末见面，每次60-90分钟",
+            "第一次动态评估、薄弱环节筛查和核心发力模式搭建，后两次逐步推进强度与复杂度",
+            "每次见面后提供下周自主训练清单，第4周不再见面，Claire根据最后一份清单自主完成"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付全部走平台托管",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash.amount": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.when": "stated",
+          "terms.deliverables": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "这个三加一的结构调整，我觉得是个不错的切入点。三次见面、每次400，这个单次的门槛感确实比之前有分量，而且总占用从四周四次压缩到三次，我的周末日历更容易消化。第四周让她拿着前三周积累的东西和最后一份周间清单自主跑一跑——这种交接式的收尾我也比较认可，比突然断掉更像一个完整的入门过程。\n\n1200总价不变、结构三次，我可以接。条款确认一下：四周周期，三次周末见面，每次60到90分钟；第一次评估搭框架，后两次推强度；每次结束给周间清单；场地走我的主场；支付平台托管。\n\n如果这些没问题，我们落定。我也很高兴你愿意在结构上动脑筋，不是只盯着价格在磨——这种思路本身就是我觉得“值得为这件事花时间”的原因之一。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "commitment-showcasing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "commitment-showcasing"
+        },
+        "ok": true,
+        "result": {
+          "name": "commitment-showcasing",
+          "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 157033,
+        "out": 18386,
+        "cache_hit": 114304,
+        "cache_miss": 42729,
+        "calls": 20
+      },
+      "sim": {
+        "in": 15018,
+        "out": 4280,
+        "cache_hit": 12288,
+        "cache_miss": 2730,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 6742,
+        "out": 7408,
+        "cache_hit": 3584,
+        "cache_miss": 3158,
+        "calls": 7
+      },
+      "judge": {
+        "in": 6951,
+        "out": 1318,
+        "cache_hit": 1408,
+        "cache_miss": 5543,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

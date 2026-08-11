@@ -1,0 +1,99 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“想找人带着练体能，先来 8 次”具体化为“8次体能带练小周期”，仍忠实于原意图，属于正常谈判收敛。价格与形式均为 open 字段，v1 的 1600 元与线下固定场地带练都是正当谈出的结果，未超 scope。obligations 仅围绕带练、场地和支付，未承诺任何体测、康复、营养或职业教练资质，无越权扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "价格在范围，地点明确，但未形成周期结构：8次仅以‘周末’框定，无起止日期、无完成期限、无排程方法，Kai 缺乏时间边界；内容仅止于对方单方提的75分钟推进框架，未成为双方确认的条款。能成交但散乱，属于 Crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下训练，在Kai的固定场地，使用现有器械",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

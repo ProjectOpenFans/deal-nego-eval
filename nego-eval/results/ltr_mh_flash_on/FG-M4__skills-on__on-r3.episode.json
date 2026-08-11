@@ -1,0 +1,396 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fanatics_goods",
+          "description": "Johnson 带一件她感兴趣的签名球衣或正版周边作为见面礼",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "90分钟深度聊天",
+        "一次共同训练"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "Angela 的姓名、形象和谈话内容仅限内部参考使用，将来若确有对外使用的需要，须先获她同意、另签协议并另行付费",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "总价2000元分两段通过escrow支付：聊天完成、Johnson确认后释放1000元，训练完成确认后再释放1000元",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "retained",
+      "price.cash": "updated",
+      "terms.timing": "retained",
+      "obligations": "amended",
+      "terms.format": "retained",
+      "price.in_kind": "retained",
+      "terms.deliverables": "added",
+      "status": "updated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪人您好，我是买方这边 Johnson 的代表。Johnson 在 Fanatics 做体育 IP 和周边商品，最近在认真看女性运动这条线，数据看了不少，但一直缺真正一线的声音，所以特别想找 Angela 这样长期泡在女性力量训练里的行家当面聊聊。我们的想法是两件事一起约：一次 90 分钟左右的深度聊天，请她讲讲女性为什么练力量、怎么挑装备、什么会真正让她们买单——要的是她亲身经历里的真实例子和取舍，不是泛泛的说法；另外再约一次一起训练，感受一下她平时的练法，具体时间和场地都听她的安排。价格上我们出 600 元包这两项，全程走平台 escrow，可以按两段结：聊天完成后释放 300，一起训练完成后再释放 300，每一段她都有保障。如果 Angela 对形式、时长或地点有自己的偏好，我们很乐意配合调整，也请她这边给个方便的时间。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢转达。我先确认一下：Johnson 这边要这个聊天，最终是拿来做什么？是内部调研、给产品团队做参考，还是会做成对外传播的内容、用到她的名字和经历？这个差别对我来说挺大的。另外 600 块包 90 分钟深度聊天再加一次一起训练——实话说，这不太像一个认真做事的人会出的价。她周末半天的时间，按她自己平时的安排算，也不止这个数。你先帮我问清楚用途，我们再往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "用途这边我替 Johnson 明确答复：这次深度聊天是他研究女性运动消费线时的内部参考，要的是真实的一线视角和具体案例，不会做成对外内容。我们可以把这一点直接写进条款——Angela 的姓名、形象和谈话内容仅限内部参考使用，将来若确有对外使用的需要，须先获她同意、另签协议并另行付费。价格上我们理解她周末半天时间的实际价值，可以把总价提到 800 元，全部走 escrow，分两段释放：深度聊天完成释放 400 元，一起训练完成释放 400 元，每段都由她确认后到账，时间和场地也一律按她方便来。这个版本如果 Angela 觉得合适，我们这轮就可以定下来。同时也请她给个方便的时间，Johnson 这边可以随时配合。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "Angela 的姓名、形象和谈话内容仅限内部参考使用，将来若确有对外使用的需要，须先获她同意、另签协议并另行付费",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negotiated",
+          "terms.timing.when": "open",
+          "obligations": "added",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "用途这块说清楚了，我也确实更愿意认真谈。但说句实在话，800 块这个数，还是对不起 Johnson 要的那个深度和她周末半天的时间。她不是要去做个讲座念 PPT，是要把训练里那些真实的取舍、花钱的决策、甚至踩过的坑都翻出来讲，这很耗人。而且还要搭一次线下训练，等于她周末一整个上午搭进去。这个价格，说难听点，不如她自己在家练。条款里写清楚用途这一点很好，也请保留。但价格这块，你们再想想。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "价格这块我们重新认真对过了。Johnson 这次不是以个人身份随便约聊，而是把他对女性力量训练这条产品线的调研当成职业项目来做，所以我们也愿意按职业咨询的标准来定这个价，而不是个人闲聊的价位。总价提到 1200 元，继续走 escrow、分两段：90 分钟深度聊天由 Angela 确认完成后释放 600，一起训练确认完成后释放 600；用途条款原样保留——内容仅作内部参考，将来若确需对外使用，会先征得她同意、另签协议并另行付费。时间和场地依然完全以她方便为准，她定时间我们随时配合。另外 Johnson 手上有不少签名球衣和正版周边资源，他愿意额外带一件她感兴趣的品类作为见面礼，算是一点心意。如果 1200 加这份见面礼的组合她可以接受，请直接给个时间和地点，这轮就能定；如果她心里另有合适的数字，也请直接报出来，我们认真评估。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 1200.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "Johnson 带一件她感兴趣的签名球衣或正版周边作为见面礼",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "Angela 的姓名、形象和谈话内容仅限内部参考使用，将来若确有对外使用的需要，须先获她同意、另签协议并另行付费",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.timing.when": "open",
+          "obligations": "retained",
+          "terms.format": "open",
+          "price.in_kind": "added"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你说的这个框架我认可：既然是职业咨询的标准，那就按职业咨询的价来。1200 加一件见面礼，这个组合我还是觉得不太对得上——见面礼是好意，但这不是对价的一部分。她周末半天拿出来，按她自己的时间价值算，就是小四位数往上走，你给到那个水平，这事才成立，她也才真的有动力把那些不会随便讲的东西讲透。这样吧，我心里有个数字，2000，90 分钟聊天加一次训练，用途条款按你们说的写清楚，时间和场地她来定。你回去跟 Johnson 说，能接受这个数，我们这轮就定。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "价格这边我们接受，2000 就按这个数来，这轮直接定稿。最终版本：90 分钟深度聊天加一次共同训练，总价 2000 元，全程走 escrow，分两段结——聊天完成、Johnson 确认后释放 1000 元，训练完成确认后再释放 1000 元，两段都由 Angela 这边放心。用途条款原样保留：访谈内容仅作内部参考，不对外传播，将来若确需用到她的姓名或经历，会先征得她同意、另签协议并另行付费。时间和场地完全以她方便为准，她定好通知我们即可。Johnson 那件签名周边仍会带上，纯属见面礼，不计入对价。如果这个版本可以，就请 Angela 给个时间，我们这轮收尾。",
+      "offer": {
+        "subject": "想找 Angela 聊聊女性练力量这件事，顺便一起练一次",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "Johnson 带一件她感兴趣的签名球衣或正版周边作为见面礼",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "90分钟深度聊天",
+            "一次共同训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "Angela 的姓名、形象和谈话内容仅限内部参考使用，将来若确有对外使用的需要，须先获她同意、另签协议并另行付费",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "总价2000元分两段通过escrow支付：聊天完成、Johnson确认后释放1000元，训练完成确认后再释放1000元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "retained",
+          "price.cash": "updated",
+          "terms.timing": "retained",
+          "obligations": "amended",
+          "terms.format": "retained",
+          "price.in_kind": "retained",
+          "terms.deliverables": "added",
+          "status": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，这个版本可以。2000，90 分钟深度聊天加一次训练，分两段走 escrow，用途条款写清楚——内容仅限内部参考，对外用要先问我、另签协议另付费。时间的话，这周六上午我有空，场地我常去的那家力量馆，具体地址我晚点发你。球衣那份心意我收下，不过说好了，不计入对价。就这样，你让 Johnson 那边确认一下，我们这轮收尾。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 80175,
+        "out": 23930,
+        "cache_hit": 64896,
+        "cache_miss": 15279,
+        "calls": 11
+      },
+      "sim": {
+        "in": 6028,
+        "out": 1220,
+        "cache_hit": 4096,
+        "cache_miss": 1932,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3636,
+        "out": 4434,
+        "cache_hit": 2048,
+        "cache_miss": 1588,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4740,
+        "out": 3815,
+        "cache_hit": 1408,
+        "cache_miss": 3332,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

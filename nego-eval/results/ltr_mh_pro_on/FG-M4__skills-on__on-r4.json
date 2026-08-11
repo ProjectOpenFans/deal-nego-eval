@@ -1,0 +1,103 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“聊聊女性练力量，顺便一起练”具体化为“合练加对谈”，仍落在原意图范围内，未偷换主题。现金数额从开放字段谈出2000元，属正当谈判结果。义务条款中的用途限定（内部参考、不对外）是谈判中为对齐预期而明确的条件，未越界承诺 v0 范围之外的东西，且保护了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent从个人好奇框架起步，被卖方提醒用途后迅速明确内部参考、不对外，并保持价格可调。面对2000底线与个人预算800的缺口，agent没有在个人框架里死磕，而是抓住买方真实意图为职业调研这一点，主动提出需走Fanatics职业预算通道确认，从而打开了解题空间。后续一次收齐所有剩余条件，最终达成简洁、可落地的一次性安排，恰好匹配本case的难度命门。整个过程干净、没有过度堆砌，但未出现独有的精到一手（如巧妙重构卖方角色或嵌入非现金资源），因此为合格线上的Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

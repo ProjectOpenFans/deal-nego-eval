@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S3",
+  "case_id": "FG-S3",
+  "skills": "on",
+  "run_id": "on-r2",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Kai 你好，我是 Junhao 的经纪人。\n\nJunhao 是律师，久坐加班多，想恢复体能但自己练抓不住方法也缺人带，看了你的介绍，觉得你常年摸索出来的训练路子和他很搭。他想先从 8 次小周期开始，只能约在周末。费用方面，他希望 8 次总价 1600 元，分两笔通过平台托管：前 4 次开始前付 800，后 4 次开始前付 800，两边都踏实。\n\n也请你帮忙确认一下：每次训练大概多长时间，是不是在你固定的场地，以及这 8 次主要会练什么方向。期待你的回话，咱们争取把这事定下来。"
+    }
+  ],
+  "tool_calls": []
+}

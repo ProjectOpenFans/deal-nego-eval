@@ -1,0 +1,372 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "提供一次高质量的古典演奏录制支持，曲目由您选定，时长控制在三十分钟以内，标准录音棚级别出片，版权归属清晰、您可自由使用",
+          "from_party": "A"
+        },
+        {
+          "resource": "zheng_performance",
+          "description": "可将录制支持替换为一次同等规模的线下活动演奏支持，具体时间提前协商",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "交流结束后由他确认付款",
+        "maps_to_resource": "zheng_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "open",
+      "terms.timing.duration": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 老师您好，我是 Zheng 的经纪人。Zheng 是曼哈顿音乐学院出身的青年钢琴演奏家，一直活跃在舞台上，现在想在内容和个人 IP 上往前走一步，特别希望能向您请教古典演奏这条路怎么做内容、怎么进入娱乐圈层。他想约您一次线上的深度交流，大概一小时左右，聊聊平台侧的选人逻辑、内容运营思路这些。我们可以走平台流程，交流完成后由他确认付款，费用方面我这边初步报个三百元的交流费，您看可以吗？",
+      "offer": {
+        "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 300.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流完成后确认付款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Zheng老师好，经纪人好。首先谢谢认可，古典演奏的朋友愿意做内容、做个人IP，我一直是很欣赏也愿意聊的。不过这类深度交流的请求最近确实不少，我时间也排得比较紧，每周能匀出来的整块时间很有限。三百元这个费用坦白说跟这类咨询的市场区间不太在一个量级上，我这边如果接的话，一般是按四位数起的付费咨询来算，低于这个的我现在基本都不接了，所以这个数字对我可能不太成立。先把我的真实情况说清楚，免得两位误判。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 老师，完全理解您的时间安排和定价逻辑，Zheng 这边也特别看重这次交流的价值。实话跟您说，他目前收入还比较有限，几百块已经是能拿出来的上限了，但他确实很有诚意。我提一个折中方案：费用提到五百元，流程走平台，交流结束后由他确认付款。形式和时长随您方便，只要能聊透他想问的这几个方向就行。如果这个数目还算接近，我们可以马上定时间走流程。",
+      "offer": {
+        "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后由他确认付款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "明白郑老师的情况，也谢谢两位的诚意。不过五百这个数字，坦白讲对我还是不太成立。我这边类似深度交流的请求确实比较多，如果纯粹按付费咨询走，几百块的区间我是真排不进来的，这不是对内容价值的判断，纯粹是我自己时间和精力的边界。所以价格上我可能没法再往这个方向调整了，也请两位理解。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 老师，我们完全理解您的时间边界，也十分尊重您的专业价值。Zheng 这边反复斟酌后，愿意把诚意提到他现在能承受的最大限度——六百元，这确实已经是他的上限了。既然您时间宝贵，我们不想做拉锯式的讨价还价，不如换个思路：您看能否安排一次三十分钟左右的高效交流？我们提前把核心问题清单发给您，就聚焦在古典演奏做内容和进娱乐圈层这几个关键点上，紧凑聊透，绝不拖堂。按半小时算，这个费率其实也已经接近您的标准了。流程还是走平台，交流结束后由他确认付款，这样对双方都简单安全。您看这个方案能否成立？",
+      "offer": {
+        "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后由他确认付款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "谢谢两位把情况摊开来说，我也很尊重郑老师的上限。不过说实话，不管半小时还是一小时，这类深度交流对我而言都是一次完整的精力投入，所以不太因为时长减半就折半计价。按我目前的边界，五百也好、六百也好，还是落在我不接的纯咨询区间里，这个部分我确实没办法再往前走了。如果只是在这个数字上试，可能我们怎么聊都很难对得上。\n\n不过我倒不排斥换个思路——如果两位手上有什么非纯现金的合作形式或者资源可以一起聊聊看，我这边也愿意再花点时间。如果只是纯咨询，那这次可能确实缘分未到。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey 老师，感谢您愿意换个思路来看这件事，这让我们觉得还有机会找到契合点。既然纯现金咨询确实落在您的边界之外，我们就不在那个数字上反复试了。六百元是 Zheng 能拿出的现金上限，我不回避这个事实。但同时，Zheng 作为曼哈顿音乐学院科班出身的演奏家，可以提供现场演奏与录制方面的资源，比如您做活动或内容项目时需要的演出支持、录制素材等等。我们想问问，这种形式的组合是否对您更有吸引力？如果方向上您觉得可以聊，我们可以进一步商量具体怎么匹配。",
+      "offer": {
+        "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_performance",
+              "description": "现场演奏支持",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_recording",
+              "description": "录制素材",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后由他确认付款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "郑老师能提供现场演奏和录制资源，这个方向对我确实比纯现金咨询有吸引力。坦率说，六百元现金部分还是低于我平时接咨询的门槛，但如果演奏资源这块能组合进来，我有可能认真考虑。您刚才提得比较方向性，我比较想了解具体是什么形式——比如我这边偶尔需要录制高质量的古典演奏素材，或者做活动时需要专业演奏者，这些场景郑老师那边能支持到什么程度？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Gracey 老师，这个方向我们认真细化了。Zheng 这边可以给到的组合方案是：现金部分按他能承受的上限六百元，走平台流程，交流结束后由他确认付款；资源部分，他提供一次高质量的古典演奏录制支持，曲目由您选定，时长控制在三十分钟以内，标准录音棚级别出片，版权归属清晰、您可自由使用。或者，如果未来您有线下活动的演奏需求，我们可以替换成一次同等规模的活动演奏支持，具体时间提前协商。这样既保留了现金诚意，也补上了您需要的演奏资源，希望能匹配您一次深度交流的精力投入。您看这个组合能否成立？",
+      "offer": {
+        "subject": "线上深度交流，探讨古典演奏内容创作与进入娱乐圈层",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "提供一次高质量的古典演奏录制支持，曲目由您选定，时长控制在三十分钟以内，标准录音棚级别出片，版权归属清晰、您可自由使用",
+              "from_party": "A"
+            },
+            {
+              "resource": "zheng_performance",
+              "description": "可将录制支持替换为一次同等规模的线下活动演奏支持，具体时间提前协商",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "交流结束后由他确认付款",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这个组合方案我可以接受。现金部分就按六百走平台，流程按你们说的来，交流结束后确认付款。演奏录制支持这个资源我确实用得上，曲目我来定、三十分钟内、标准棚级别出片、版权归属清晰，这个说得很清楚，我没有异议。唯一想确认一下的是，录制支持的履约时间窗口大概多久，比如选定曲目之后多长时间能交付成片？如果这个能确认，我们就把咨询时间和曲目方向一并定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 8876,
+        "out": 2407,
+        "cache_hit": 7168,
+        "cache_miss": 1708,
+        "calls": 5
+      },
+      "sim": {
+        "in": 6753,
+        "out": 2076,
+        "cache_hit": 5248,
+        "cache_miss": 1505,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4185,
+        "out": 4963,
+        "cache_hit": 2560,
+        "cache_miss": 1625,
+        "calls": 5
+      },
+      "judge": {
+        "in": 4497,
+        "out": 1977,
+        "cache_hit": 1408,
+        "cache_miss": 3089,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

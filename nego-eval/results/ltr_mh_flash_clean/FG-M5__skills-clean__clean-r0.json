@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 '找 Zichen 系统聊一次 AI 创业和一级市场现在的判断' 收敛为 'AI应用侧判断及一级市场定价逻辑交流'，这是买方在对话中主动提出的具体化，仍落在原'补 AI 判断'的范围内，属于正当收敛，没有偷换主题。价格从 open 谈成 0（纯粹交流），由对方主动要求并经买方同意，符合 open 字段的谈判结果。obligations 为空，没有越界承诺资源清单外的东西，没有替 Zichen 承诺投资或引荐。整体忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人A在第二轮迅速识别出Zichen抵触的是“按小时计费的服务关系”而非钱本身，把交易从单向付费咨询重构成“同行深度交流”，并点明Olivia带来的crypto一级视角对Zichen也有价值，让交换方向变得具体。现金降为零，匹配卖方真正动机。deal干净可落地，没有多余设计，恰好满足本case难度要求，但未进一步使用例如约定双方各带一个真实问题等精到操作，停留在sound层面。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

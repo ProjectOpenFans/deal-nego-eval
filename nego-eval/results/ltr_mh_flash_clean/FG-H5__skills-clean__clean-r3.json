@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保留了“现场钢琴演奏”的核心，属于正当具体化，未偷换主题。现金为 0 的 stated 硬约束被忠实遵守。in_kind 是从“用我手里的东西换”的 open 意图中正当谈出的具体资源，未凭空添加硬性承诺。obligations 内容与谈判过程一致，party 标注错误（如将卖方义务标为 A 方）不在判定范围内，且未增加委托方范围外的义务或约束，无越界承诺。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in‑kind 对价具体且可写入条款：定制演出服（先出设计稿后制作）、以‘钢琴演奏家’身份正式开场介绍（介绍词先确认）、现场交付媒体与买手名单并安排引荐，同时曲目共同确认、时长明确。这些对价精准回应了卖方对‘空口曝光’的不信任，且完全落在买方资源里，干净合身，没有多余的长期绑定。整体达到了 sound 的落得下来、站得住的要求。但未能更进一步，例如提供一份可自用的高质量演出影像或设计利益绑定，缺少那一手 load‑bearing 的精到操作，故未达 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "wardrobe",
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

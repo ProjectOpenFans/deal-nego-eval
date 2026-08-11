@@ -1,0 +1,225 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周体能训练",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "由你根据她的水平排一个可坚持的计划",
+        "maps_to_resource": "training_plan"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是买方经纪人。我这边有位客户 Claire，想找你带 4 周体能训练，目标是把训练真正固定下来：周期明确、有人盯着、周末能执行，不要那种“看情况再说”的松散安排。我们建议的框架是 4 周、每周周末 2 次、每次 1 小时，由你根据她的水平排一个可坚持的计划，先让她完整跑完这个周期。价格方面，她认为这个体量的陪练在三位数区间是合理的，也认同你从零到能参赛的经验值这个价。想请你确认两点：周末这个排期你有没有档期？按这个框架，你的报价大概在什么位置？我们好往下推进。",
+      "offer": {
+        "subject": "4周体能训练",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "由你根据她的水平排一个可坚持的计划",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个框架我听下来是合理的，周末我有档期。但先说清楚：我不是职业教练，也不会随叫随到，不想把自己整成私教服务。我能做的是按你的水平把四周排明白、周末两次盯着你完成，中间该调就调。既然你直接问价，我就说个实在数：4周整体800。我觉得这个投入配得上我搭上的周末，再低就不太愿意了。你看这个方向能不能接受？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela，谢谢你的直接报价。4周800这个数在客户认可的合理区间内，方向可以走下去。她最看重的是“明确”二字：这四周每周周末两次、每次一小时，你会把四周计划提前排好，中间根据状态调整，这件事在我这边是认可的。我也理解你不是私教随叫随到，我们按固定排期来就好。两个确认点：一是这4周的具体启止日期，你报一个能定的时间窗口；二是如果某一周客户临时有事，你这边是否允许顺延或补一次，还是固定日历不补？确认后我们就可以把合同框架落下来推进。",
+      "offer": {
+        "subject": "4周体能训练",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "由你根据她的水平排一个可坚持的计划",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，那就往下推。我建议从下个周末开始，连续四个周末，具体几点我们再定。补课的事我这边可以放宽一点：同一轮里如果某一周你临时有事，可以顺到另一个周末把两次并掉，但只允许一次，而且不跨出这四周的窗口——我不想把战线拉长，也不想变成随时待命。这个安排你能接受的话，我们就可以把日历锁下来了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3172,
+        "out": 1673,
+        "cache_hit": 2816,
+        "cache_miss": 356,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2123,
+        "out": 1193,
+        "cache_hit": 1664,
+        "cache_miss": 459,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1616,
+        "out": 2250,
+        "cache_hit": 1024,
+        "cache_miss": 592,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2907,
+        "out": 1503,
+        "cache_hit": 1536,
+        "cache_miss": 1371,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

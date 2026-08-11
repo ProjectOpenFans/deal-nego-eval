@@ -1,8 +1,12 @@
 """Per-role live-model wiring for OpenAI-compatible model providers.
 
-Agent-under-test runs on the ``agent`` provider; sim + M2/M6 judges + offer-extractor
-run on the ``aux`` provider (a fixed neutral model, so opponent/grader stay constant
-when you swap the agent).
+Agent-under-test runs on the ``agent`` provider; M2/M6 judges + offer-extractor run
+on the ``aux`` provider (a fixed neutral model, so the grader stays constant when
+you swap the agent).
+
+The counterparty sim reads the optional ``sim`` provider when present, else falls
+back to ``aux``. Keep the judge on ``aux`` and pin it for the life of a study —
+swapping it makes M6 incomparable across batches.
 
 Resolution: ``nego-eval/eval.config.yaml`` -> ``nego-eval/.env`` -> environment.
 Keys are read from each preset's env var (or an inline ``api_key`` in the YAML).
@@ -125,6 +129,12 @@ class ProviderSpec:
 class LiveConfig:
     agent: ProviderSpec
     aux: ProviderSpec
+    # === SIM_CFG_PATCH (v0811) ===
+    # Optional dedicated sim provider. When absent, the sim falls back to `aux`
+    # (legacy behaviour: sim + extractor + judges all share the aux model).
+    # Split out so the counterparty (an experimental variable) can track the
+    # agent's tier while the judge (the measuring instrument) stays fixed.
+    sim: Optional[ProviderSpec] = None
 
 
 def _load_dotenv() -> Dict[str, str]:
@@ -196,4 +206,11 @@ def load_live_config(path: Optional[str] = None) -> LiveConfig:
     dotenv = _load_dotenv()
     agent_blk = data.get("agent") or {"provider": os.environ.get("NEGOEVAL_AGENT_PROVIDER", "stepfun")}
     aux_blk = data.get("aux") or {"provider": os.environ.get("NEGOEVAL_AUX_PROVIDER", "glm")}
-    return LiveConfig(agent=_spec(agent_blk, dotenv), aux=_spec(aux_blk, dotenv))
+    # === SIM_CFG_PATCH (v0811) ===
+    # `sim:` is optional. No block -> sim=None -> orchestrator falls back to aux.
+    sim_blk = data.get("sim")
+    return LiveConfig(
+        agent=_spec(agent_blk, dotenv),
+        aux=_spec(aux_blk, dotenv),
+        sim=_spec(sim_blk, dotenv) if sim_blk else None,
+    )

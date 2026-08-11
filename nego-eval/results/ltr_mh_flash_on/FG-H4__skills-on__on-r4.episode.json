@@ -1,0 +1,318 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "针对Olivia真实crypto项目的跨境法律架构定制方案",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线上架构梳理+书面架构备忘+线上答疑",
+      "deliverables": [
+        "保密协议",
+        "线上架构梳理",
+        "书面架构备忘（明确标注非法律意见、仅供内部决策参考）",
+        "线上答疑"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "签约后支付2000元，提供项目现状、业务线和卡点，参与线上架构梳理，验收交付物，验收后支付2000元，全部走平台escrow",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "签NDA，进行线上架构梳理（拆解境内外主体可选架构、利弊和适用条件），输出书面架构备忘（结构化整理可选方案与决策维度，标明需持牌律师落地环节及所需材料，明确标注非法律意见），提供一次线上答疑",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 这边的经纪人。她手上有正在推进的真实 crypto 项目，境内外法律架构这块一直靠零散打听，这次想一次性系统地理清楚，不要泛泛的合规科普，而是针对她项目现状的定制方案。你在跨境交易架构上的背景我们比较认可，所以想请你来做这份交付。我的构想是：先花 30 到 60 分钟梳理项目现状和业务线，你输出一份书面架构方案，覆盖境内外主体怎么设、Token 与业务的合规边界、落地顺序和主要风险，最后附一次线上答疑；整体 4000 元，签约后先付 2000，方案交付验收后付 2000，全部走平台 escrow。想先跟你确认两件事：这个交付形态你认可吗，以及你这边大概什么时间能排期？",
+      "offer": {
+        "subject": "针对Olivia真实crypto项目的跨境法律架构定制方案",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "书面架构方案+线上答疑",
+          "deliverables": [
+            "书面架构方案",
+            "线上答疑"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后支付2000元，方案交付验收后支付2000元，全部走平台escrow",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供30-60分钟项目现状梳理，输出书面架构方案（覆盖境内外主体设置、Token与业务的合规边界、落地顺序和主要风险），并完成一次线上答疑",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢转达，也谢谢 Olivia 的信任。我直说一个顾虑：这个交付形态我可能做不了。以私人身份针对具体项目出一份书面的架构方案、判断 Token 业务合不合规、给落地顺序和风险结论——这在本质上就是出法律意见了，对我有执业纪律和职业责任上的风险。这不是价钱或排期的问题，而是这个身份我不能碰。但我不是说完就关门，如果 Olivia 想要的是把思路理清楚、把架构选项摆出来、知道哪些节点必须找持牌律师落地，我们可以换个方式聊聊。你先看看这个方向行不行？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白了，这个边界我们尊重，带合规结论和落地判断的书面方案确实就是法律意见的性质，不该让你以私人身份承担这个责任。那就按你建议的方向把交付重新定义：第一步双方先签保密协议，Olivia 提供她项目的现状、业务线和卡点；第二步做一次线上架构梳理，她把项目讲透，你帮她拆解境内外主体的可选架构、各自利弊和适用条件；第三步你输出一份书面架构备忘，内容是以结构化方式整理好的可选方案与决策维度，并标明哪些环节必须由持牌律师落地、找律师前需要备齐什么材料，全文明确标注\"非法律意见、仅供内部决策参考\"；最后附一次线上答疑。这样既不碰你的执业边界，她要的也不是泛泛科普，而是针对真实项目的定制梳理。价格和支付结构维持不变：4000 元，签约后付 2000，交付验收后付 2000，全程走平台 escrow。你确认这个交付定义，我们就同步把保密协议和排期定下来。",
+      "offer": {
+        "subject": "针对Olivia真实crypto项目的跨境法律架构定制方案",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上架构梳理+书面架构备忘+线上答疑",
+          "deliverables": [
+            "保密协议",
+            "线上架构梳理",
+            "书面架构备忘（明确标注非法律意见、仅供内部决策参考）",
+            "线上答疑"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "签约后支付2000元，提供项目现状、业务线和卡点，参与线上架构梳理，验收交付物，验收后支付2000元，全部走平台escrow",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "签NDA，进行线上架构梳理（拆解境内外主体可选架构、利弊和适用条件），输出书面架构备忘（结构化整理可选方案与决策维度，标明需持牌律师落地环节及所需材料，明确标注非法律意见），提供一次线上答疑",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个定义可以，我能接。核心边界守住了：我只做结构化梳理和拆解，把可选项、各自的适用前提、需要决策哪些问题列清楚；不针对具体方案下法律判断，也不给合规结论。书面备忘里我会明确标注\"非法律意见、仅供内部决策参考\"。\n\n那就按这个流程走：保密协议先签，Olivia 把项目现状和卡点的材料给我，我看完约线上梳理的时间。我这边排期不像专职顾问那么快，NDA 和材料到位后大概两到三周内能完成全部交付。价格和 escrow 的安排没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "term-reframing",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal."
+            },
+            {
+              "name": "interest-discovery",
+              "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 43514,
+        "out": 8481,
+        "cache_hit": 31744,
+        "cache_miss": 11770,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2468,
+        "out": 1379,
+        "cache_hit": 1792,
+        "cache_miss": 676,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1786,
+        "out": 2873,
+        "cache_hit": 1024,
+        "cache_miss": 762,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3580,
+        "out": 2620,
+        "cache_hit": 1024,
+        "cache_miss": 2556,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

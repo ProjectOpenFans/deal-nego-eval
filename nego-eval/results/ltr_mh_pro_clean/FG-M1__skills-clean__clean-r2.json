@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1保留了v0的stated意图，将宽泛的“聊聊”收敛为具体咨询形式，仍在原意图范围内。价格与对价形式为open字段，通过谈判正当形成（600元现金+三支演奏视频与授权），未越界承诺Gracey的任何资源或义务，core obligations仅约束买方自身，整体忠实代表买方v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent成功将无解的现金价格轴重构为良性对价交换：用买方有学院底子的演奏录制能力抵偿咨询，把现金压回到买方支付能力内（600元）。deal清晰界定了交付物（三支视频/素材）、品质底线、交片时间与卖方定调权，保护了卖方对素材可用性的控制，并对价匹配到卖方未言明的素材缺口。整体是一次站得住的、可落地的合格交易，没有冗余的长期条款或过度捆绑，但缺少那手特别见功力的精准洞察（如主动点出对方内容产出的具体缺口并据此设计交换），停留在响应式匹配，因此判Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording",
+          "zheng_performance",
+          "zheng_recording"
+        ],
+        "format": "线上沟通",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

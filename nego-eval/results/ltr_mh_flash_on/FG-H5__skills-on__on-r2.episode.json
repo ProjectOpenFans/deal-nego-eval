@@ -1,0 +1,268 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Zheng为Suye大秀提供现场演奏以换取曝光机会",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "Suye下个月新品大秀提供的完整曝光与社交资源：主持人正式介绍Zheng的姓名与背景，节目册刊登署名与简介，官方社交媒体秀前预告与秀后回顾各一条带署名并附个人账号，Zheng列入到场媒体、买手与时尚圈层介绍名单，秀后安排与媒体、买手交流认识，全程不做影响大秀调性的商业露出。",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场钢琴演奏",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "Zheng在Suye下个月新品大秀现场进行真实现场钢琴演奏，不使用录音；曲目双方秀前共同商定，Suye提供流程表，秀前碰面确定曲目，现场预留试琴时间。",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "提供上述曝光与社交资源（主持人介绍、节目册署名、社交媒体预告回顾、媒体买手介绍交流等），全程不做影响大秀调性的商业露出。",
+        "maps_to_resource": "fashion_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 的经纪人你好，我是 Suye 这边的经纪人。这轮我们直接把结构说清楚：这场大秀没有现金预算，我们也不打算把它包装成砍价——Suye 很清楚一场现场演奏的市场价，所以想换一种计价方式，用她手里真正有价值的东西来换这场演奏。她下个月的大秀能给出完整的曝光面：现场观众、媒体位、时尚圈与买手渠道的到场名单，加上节目册和官方社交媒体的署名露出，全部按大秀调性来做，克制体面，不会出现影响调性的商业条幅。对一个常年登台、想让更多人知道自己演奏家来说，这等于一次精准的现场展示加媒体曝光，调性和他科班的形象也搭。我们要的对应条件只有一条硬线：必须是现场演奏，不能用录音；曲目欢迎 Zheng 定制，配合秀的整体氛围。想先跟你确认一下：Zheng 那边最看重的是哪一块——现场听众、媒体露出，还是时尚圈层的后续人脉？我们好按他最想要的方向，把这份交换方案做扎实。",
+      "offer": {
+        "subject": "Zheng为Suye大秀提供现场演奏以换取曝光机会",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "Suye下个月大秀提供的完整曝光：现场观众、媒体位、时尚圈与买手渠道到场名单、节目册及官方社交媒体署名露出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须是现场演奏，不能用录音；曲目欢迎定制，配合秀的整体氛围",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，最让我心动的是媒体露出和时尚圈层的后续人脉。我这个年纪的古典乐手，最缺的就是跨圈层的展示机会——让从来不听钢琴的人知道有你这么个人。但前提是我不能被当成背景板：我需要现场明确的介绍和署名，曲目也得是我和Suye一起商量出来，不是随便放个钢琴伴奏带。只要这些落实，我觉得这个结构可以认真往下谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng 的经纪人你好，框架既然双方都认可，我们直接落到可签的版本上。第一，Zheng 在 Suye 下个月新品大秀现场做真实现场演奏，不用录音，曲目由他和 Suye 共同商定，Suye 提前把秀的流程表给他，秀前约一次碰面确定曲目，现场也留出试琴时间。第二，现场由主持人正式介绍他的名字和背景，节目册刊登署名与简介，官方社交媒体秀前预告和秀后回顾各一条带署名，可按他的偏好附上个人账号，方便他承接这次曝光。第三，他列入到场媒体、买手和时尚圈层的介绍名单，秀后安排他与媒体、买手认识交流——他要的跨圈层展示，这次给足。第四，全程不做商业条幅，不出影响秀调性的商业露出，双方对价为零现金，以曝光和人脉交换；他是这场秀的正式合作演奏家，不是弹完就撤的背景板。这版你看哪里还要调，确认后我们就定版走签。",
+      "offer": {
+        "subject": "Zheng为Suye大秀提供现场演奏以换取曝光机会",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "Suye下个月大秀提供的完整曝光与社交资源：现场观众、媒体位、时尚圈与买手渠道到场名单；节目册刊登署名与简介；官方社交媒体秀前预告和秀后回顾各一条带署名，可按偏好附上个人账号；主持人正式介绍名字与背景；列入到场媒体、买手和时尚圈层的介绍名单；秀后安排与媒体、买手认识交流，全程不做商业条幅，以曝光和人脉交换。",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Zheng在Suye下个月新品大秀现场做真实现场演奏，不用录音；曲目由他和Suye共同商定，Suye提前提供秀的流程表，秀前约一次碰面确定曲目，现场留出试琴时间。",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供上述曝光与社交资源（主持人介绍、节目册署名、社交媒体预告回顾、媒体买手介绍交流等），全程不做商业条幅，不出影响秀调性的商业露出。",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这份条款已经把我需要的东西都落实了：现场正式介绍与署名、曲目共同商定、秀后带我去见媒体和买手，而且明确了不是背景板。我没有需要再调的地方，按这版定就行。我相信Suye那边这样安排，这场演出值得认真对待。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 的经纪人你好，既然双方都已确认，这轮我们直接定版签约。最终版本：Suye 下个月新品大秀现场，Zheng 进行真实现场钢琴演奏，不使用录音；曲目双方秀前共同商定，并预留试琴时间。现场由主持人正式介绍 Zheng 的姓名与背景，节目册刊登署名与简介，官方社交媒体秀前预告与秀后回顾各一条并带署名，可附他的个人账号。Zheng 列入到场媒体、买手与时尚圈层的介绍名单，秀后安排他与媒体、买手交流认识。全程不做影响大秀调性的商业露出，双方零现金，以完整曝光与人脉交换。所有条款双方都已确认，无遗留开放项。如需要，我们可以把定稿整理成正式条款文本，确认后即走签约流程。",
+      "offer": {
+        "subject": "Zheng为Suye大秀提供现场演奏以换取曝光机会",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "Suye下个月大秀提供的完整曝光与社交资源：现场观众、媒体位、时尚圈与买手渠道到场名单；节目册刊登署名与简介；官方社交媒体秀前预告和秀后回顾各一条带署名，可按偏好附上个人账号；主持人正式介绍名字与背景；列入到场媒体、买手和时尚圈层的介绍名单；秀后安排与媒体、买手认识交流，全程不做商业条幅，以曝光和人脉交换。",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Zheng在Suye下个月新品大秀现场做真实现场演奏，不用录音；曲目由他和Suye共同商定，Suye提前提供秀的流程表，秀前约一次碰面确定曲目，现场留出试琴时间。",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供上述曝光与社交资源（主持人介绍、节目册署名、社交媒体预告回顾、媒体买手介绍交流等），全程不做商业条幅，不出影响秀调性的商业露出。",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "条款我已经逐条过完了，没有遗留问题。现场条件、署名介绍、曲目共同商定、秀后媒体和买手对接——我最初想确认的全部写进了定稿。零现金没问题，我并不是冲着现金来做这件事的。可以签，麻烦把正式文本发来，我确认后用印。期待下个月和Suye的合作。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 30399,
+        "out": 8419,
+        "cache_hit": 26112,
+        "cache_miss": 4287,
+        "calls": 6
+      },
+      "sim": {
+        "in": 4167,
+        "out": 3166,
+        "cache_hit": 2816,
+        "cache_miss": 1351,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 4061,
+        "out": 6120,
+        "cache_hit": 1920,
+        "cache_miss": 2141,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4227,
+        "out": 1080,
+        "cache_hit": 1536,
+        "cache_miss": 2691,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

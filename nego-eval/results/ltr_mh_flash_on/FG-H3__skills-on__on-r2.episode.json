@@ -1,0 +1,246 @@
+{
+  "episode_id": "FG-H3",
+  "final_deal": {
+    "subject": "艺术价值判断深度对谈",
+    "price": {
+      "cash": {
+        "amount": 5000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时左右"
+      },
+      "format": null,
+      "deliverables": [
+        "一次2小时左右深度对谈，以真实器物案例为主线，讲透价值、真伪、流传和双重认可逻辑，包含20-30分钟现场演示",
+        "一份书面要点（框架加案例）供留存"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "进行一次2小时左右深度对谈，包含案例讲解和20-30分钟现场演示，并提供书面要点（框架加案例）",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "A",
+        "text": "支付5000元人民币至平台escrow，对谈完成后确认释放",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "explicit",
+      "terms.duration": "explicit",
+      "terms.deliverables": "explicit",
+      "obligations": "explicit",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Alina 你好，我是买家 Ruohao 的经纪人，这轮由我代表他推进。Ruohao 自己在量化基金一线做交易，长期收表收车，对\"什么东西留得住、怎么判断价值\"有真实手感，所以他明确不接受泛泛的艺术鉴赏科普——他要的是一条能落地的分析框架：艺术品的价值到底怎么形成、什么标的能穿越周期留下来、普通人从哪里获取真正的信息差。我们看中你的，恰恰是你北大考古文博的科班训练加上 Cam Lab 数字文博项目的一线经验，这正是市面上大多数讲艺术投资的人给不了的视角。想请你先出个可执行版本：比如一次 1.5 到 2 小时的深度对谈，用真实案例把价值判断的底层逻辑讲透——器物与艺术史怎么读、市场怎么定价、什么信号能筛掉泡沫，形式、大纲、时长都由你来定，预算我们按实质内容来谈、不做预设。你给个方案和报价，我们马上往下推进。",
+      "offer": {
+        "subject": "艺术价值判断深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5-2小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把需求说得这么清楚。说实话，我很感谢你认可我的背景，但我得先把话说明白：你刚才描述的这套——‘什么标的能穿越周期’‘怎么筛掉泡沫’‘普通人从哪里获取信息差’——这是投资咨询的框架，这个形式我不能接。我的专业训练是用来理解一件东西为什么好、它怎么被流传、被相信、被质疑，不是用来帮人判断买什么能升值的。否则我就是在拿我的学术信用给投资决策做背书，这是我不会做的一件事。但如果你愿意把问题换一个方向——比如怎么判断一件器物的价值、真伪与流传，为什么某些东西会被博物馆和藏家双重认可——我很乐意认真聊，也能讲出真实案例来。你看看这个方向是不是你要的？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Alina，这个边界我们完全理解也完全接受——你不出具投资判断，这本来就该买方自己拿主意。Ruohao 是量化交易出身，他要的从来不是\"买什么能涨\"的代打结论，而是看懂价值怎么形成、真伪与流传怎么读的那套框架；你说的\"价值、真伪、流传，以及博物馆与藏家双重认可背后的逻辑\"，正好就是\"什么东西留得住\"这个问题的答案本身，只是不含预测成分，我们接受这个方向。我这边给一个可签的版本：一次 2 小时左右的深度对谈，以真实器物案例为主线，把一件东西为什么\"好\"、真伪与流传怎么读、双重认可怎么形成讲透，最后留 20-30 分钟，拿具体器物现场演示这套判断框架怎么用；会后你再给一份书面要点（框架加案例）供他留存，不要泛泛科普，要能落地的干货。费用 5000 元，全部走平台 escrow，对谈完成由他确认后释放；线上还是线下、什么时间由你定。你看这个版本能不能签？",
+      "offer": {
+        "subject": "艺术价值判断深度对谈",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时左右"
+          },
+          "format": null,
+          "deliverables": [
+            "一次2小时左右深度对谈，以真实器物案例为主线，讲透价值、真伪、流传和双重认可逻辑，包含20-30分钟现场演示",
+            "一份书面要点（框架加案例）供留存"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "进行一次2小时左右深度对谈，包含案例讲解和20-30分钟现场演示，并提供书面要点（框架加案例）",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "支付5000元人民币至平台escrow，对谈完成后确认释放",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "explicit",
+          "terms.duration": "explicit",
+          "terms.deliverables": "explicit",
+          "obligations": "explicit",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这个版本可以。方向对了——我们谈的是器物的价值判断、真伪与流传，而不是买什么会升值。我愿意按真实案例来讲，最后现场演示判断框架也没问题。书面要点我会给，但里面不会出现任何'是否值得买入'或'预期收益'这类表述，只梳理判断路径和逻辑，这一点我先跟你确认清楚。时间和线上线下由我定的话，那我来安排，费用按你说的走 escrow，没问题。你们把合同或合作框架发我看看，我们往下推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 35243,
+        "out": 9050,
+        "cache_hit": 22016,
+        "cache_miss": 13227,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2631,
+        "out": 2675,
+        "cache_hit": 1792,
+        "cache_miss": 839,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1751,
+        "out": 2785,
+        "cache_hit": 1024,
+        "cache_miss": 727,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3679,
+        "out": 2306,
+        "cache_hit": 1536,
+        "cache_miss": 2143,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

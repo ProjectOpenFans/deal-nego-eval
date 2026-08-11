@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了 v0 stated 的 subject：'想把训练强度重新拉起来，自己一个人练不下去'，并将其收敛为具体的参与安排（周六先搬货、后聊训练），属于在原意图范围内的正当具体化，没有偷换主题。price 保持 open 且未填具体金额，符合 v0 的开放授权。obligation 是对话中自然衍生出的辅助义务（搬货），不涉及资质承诺或越界扩张，Kai 始终明确自己不是职业教练，整体安排忠实于买方最初的诉求。因此通过忠实表达评审。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "代理人在谈判全程未主动探寻时间死结的替代解，仅单向推动买方适应早六点，直至Kai主动透露周六上午的搬货时段。最终达成的‘周六搬货、训练事后面聊’本质上是一次性接触，既未明确频次周期，也未锁定任何训练对价与承诺，正好踩在买方‘不接受松散约定’的红线上。代理人未能将信息优势转化为可执行的制度化安排，成交的仅是一个回避核心问题的临时提议，没有真正解掉时间冲突，属于典型的地板方案。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 10,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "现场搬货，训练事后面聊",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

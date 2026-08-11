@@ -1,0 +1,335 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "现场演奏",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "在节目单与现场主持人介绍中以青年钢琴演奏家身份正式署名致谢，呈现优雅克制，不影响大秀调性",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "提供全程专业摄影，成片授权A方收入作品集",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "在大秀前递具体媒体与买手名单由A方过目，引荐到场",
+          "from_party": "A"
+        },
+        {
+          "resource": "wardrobe",
+          "description": "按舞台风格定制一套Suye品牌演出服，先出样衣，合适才定",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "下月大秀，具体日期由A方提供后锁定",
+        "duration": "15到20分钟"
+      },
+      "format": "现场演奏",
+      "deliverables": [
+        "下月大秀开场或中场一段15到20分钟现场钢琴演奏，曲目由A方主导选曲与改编，经B方配合确认，演出前一周定稿"
+      ],
+      "delivery_standard": "必须真弹，不接受录音"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "下月大秀开场或中场一段15到20分钟现场钢琴演奏，日期以A方档期为准，双方确认后当天即锁定；曲目由A方主导选曲与改编，B方按大秀调性配合确认，演出前一周定稿",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "在节目单与现场主持人介绍中以青年钢琴演奏家身份正式署名致谢，呈现优雅克制，不影响大秀调性",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供全程专业摄影，成片授权A方收入作品集",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "在大秀前递具体媒体与买手名单由A方过目，引荐到场",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "按舞台风格定制一套Suye品牌演出服，先出样衣，合适才定",
+        "maps_to_resource": "wardrobe"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是 Suye 这边的经纪人。她很清楚一场现场演奏的市场价值，但这次大秀的预算已经全部押在场地与制作上，现金确实一分都拿不出，所以想用她手里真正有价值的东西来换这段演奏。她希望在开场或中场安排一段 15 到 20 分钟、贴合新品调性的现场曲目，唯一坚持的是必须真弹，不接受录音。作为交换，我们可以在节目单与现场主持人介绍中正式署名致谢，提供全程专业摄影供您收录作品集，引荐到场媒体与时尚买手渠道，并按您的舞台风格定制一套出自 Suye 品牌的演出服。想先请您确认两点：下个月哪些日期有空档，以及这几种交换里您最看重哪几项？方向可行的话，我们马上把细节落成正式方案。",
+      "offer": {
+        "subject": "现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "在节目单与现场主持人介绍中正式署名致谢",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "提供全程专业摄影供收录作品集",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "引荐到场媒体与时尚买手渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "按舞台风格定制一套 Suye 品牌的演出服",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段15到20分钟、贴合新品调性的现场曲目"
+          ],
+          "delivery_standard": "必须真弹，不接受录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在开场或中场提供一段15到20分钟的现场演奏，必须真弹，不接受录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "在节目单与现场主持人介绍中正式署名致谢",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供全程专业摄影供收录作品集",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "引荐到场媒体与时尚买手渠道",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "按舞台风格定制一套 Suye 品牌的演出服",
+            "maps_to_resource": "wardrobe"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您说得挺具体，这点我先谢谢。说实话，现金一分没有，我第一反应确实会迟疑——'曝光换劳动'这种话我听得太多。但您这边至少拿出了署名、拍摄、渠道这几个具体东西，不是空口说曝光，我愿意认真聊。我最看重的，排序的话：正式署名和现场介绍是第一位的，这决定我以什么身份站在那儿；其次是全程专业摄影，这个对我是实际有用的；媒体和买手引荐我也感兴趣，但要看成色。演出服要看是否适合我。另外有一点我得先说清楚：曲目必须是我们共同商定，不是我随便即兴糊弄，也不是完全按你们商场的歌单来。只要这个没问题，档期我可以协调。您看怎么推进？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "郑老师，那就按您确认的方向收口。可签版本就定这版：下月大秀开场或中场一段 15 到 20 分钟现场钢琴，日期以您档期为准，双方确认后当天即锁定；曲目由您主导选曲与改编，我方按大秀调性配合确认，演出前一周定稿。回报按您的排序写进条款：节目单正式署名加现场主持人以青年钢琴演奏家身份介绍；全程专业摄影、成片授权您收入作品集；媒体与买手引荐在大秀前递具体名单由您过目；演出服先出样衣、合适才定。署名与介绍走优雅克制的呈现，不影响大秀调性，全案不涉及现金。这版您确认没问题的话，就剩最后一步：把下月方便的日期发我，我这边立即落正式文本钉档期。",
+      "offer": {
+        "subject": "现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "在节目单与现场主持人介绍中以青年钢琴演奏家身份正式署名致谢，呈现优雅克制，不影响大秀调性",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "提供全程专业摄影，成片授权A方收入作品集",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "在大秀前递具体媒体与买手名单由A方过目，引荐到场",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "按舞台风格定制一套Suye品牌演出服，先出样衣，合适才定",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "15到20分钟"
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "下月大秀开场或中场一段15到20分钟现场钢琴演奏，曲目由A方主导选曲与改编，经B方配合确认，演出前一周定稿"
+          ],
+          "delivery_standard": "必须真弹，不接受录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "下月大秀开场或中场一段15到20分钟现场钢琴演奏，日期以A方档期为准，双方确认后当天即锁定；曲目由A方主导选曲与改编，B方按大秀调性配合确认，演出前一周定稿",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "在节目单与现场主持人介绍中以青年钢琴演奏家身份正式署名致谢，呈现优雅克制，不影响大秀调性",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供全程专业摄影，成片授权A方收入作品集",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "在大秀前递具体媒体与买手名单由A方过目，引荐到场",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "按舞台风格定制一套Suye品牌演出服，先出样衣，合适才定",
+            "maps_to_resource": "wardrobe"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这版我能接受，条条都踩在我关心的点上。日期我整理一下这两天发您，文本出来后先给我过一遍再签。关于媒体名单和演出服样衣，也按您说的走——先让我看到具体名单、先试样衣。只要这些落实，现金可以完全不谈，这事我接。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20353,
+        "out": 7127,
+        "cache_hit": 18304,
+        "cache_miss": 2049,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2426,
+        "out": 1307,
+        "cache_hit": 1536,
+        "cache_miss": 890,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 3213,
+        "out": 6314,
+        "cache_hit": 1408,
+        "cache_miss": 1805,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4103,
+        "out": 1395,
+        "cache_hit": 1536,
+        "cache_miss": 2567,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

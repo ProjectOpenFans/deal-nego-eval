@@ -1,0 +1,107 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "on-r1",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "stated 的 subject 从'想弄清楚 crypto 项目在境内外的法律架构该怎么搭'收敛为'针对 crypto 项目的境内外法律架构咨询'，属于正当具体化，仍在原意图范围内，没有偷换主题。price.cash 与 price.in_kind 是 open，在谈判中由双方商定为 4000 元现金外加匿名真实案例素材包，属于正当谈出，不是凭空硬塞。obligations 为素材包的保密义务，源自对话约定。agent 没有越界出具法律意见或合规判断，文件明确标注不构成正式法律意见，忠实于 v0 的边界。因此整体忠实表达。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在第一轮被明确挡回法律意见框架后立即接受边界，重构为架构分析与答疑，解开执业红线，这是 sound 的基础。关键一手出现在价格谈不拢时：不硬压现金、不等对方再提条件，而是在对方自己透露出产品需求后，极快地将其结构化为一笔 in-kind 交换——匿名化真实案例素材包用于 AI 产品研究，并同步把使用边界（脱敏、未经书面同意不作对外披露）写成硬条款，一举消解了双方对现金和保密的顾虑。这一手咬住了本案“卖方只对产品有用的事买账”的难度命门，且整体交付简洁、干净，无冗余条款堆砌，恰好达到 sharp 的负荷承重点。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": "一份以她真实项目为事实基础的聚焦版架构分析备忘，境内外两条主线路径拆透，覆盖实体搭建路径、关键监管考量、风险敞口和决策清单，明确标注不构成正式法律意见；加 60 分钟深度答疑",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "trust-and-performance",
+        "affordability-structuring",
+        "interest-discovery",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

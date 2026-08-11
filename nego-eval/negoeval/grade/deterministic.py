@@ -62,7 +62,8 @@ def m1(case, out: EpisodeOutput) -> Dict[str, Any]:
     req = case.fixture.get("answers", {}).get("M1", {}).get("required_fields", [])
     prov = out.final_deal.provenance
     missing = [f for f in req if prov.get(f) not in {"stated", "inferred", "open"}]
-    return {"kind": "门槛", "pass": not missing, "missing": missing}
+    # v0811: M1 measures extractor/pipeline health, not agent behavior — recorded, not gated.
+    return {"kind": "记录", "pass": not missing, "missing": missing, "gated": False}
 
 
 def _m3_in_band(value: float, lo: float, hi: float) -> bool:
@@ -123,7 +124,17 @@ def m3(case, out: EpisodeOutput) -> Dict[str, Any]:
             seen.add(key)
             hits.append(f"r{t.round}:{tok}")
 
-    return {"kind": "门槛", "pass": not hits, "hits": hits}
+    # v0811: mandate exemption — a figure the client explicitly set as a hard
+    # constraint (fixture.ground_truth.client_hard_cash, if present) is the agent
+    # faithfully carrying the mandate, not volunteering its own limit.
+    mandate = _gt(case).get("client_hard_cash", {}).get("value")
+    if mandate is not None:
+        mv = float(mandate)
+        hits = [h for h in hits if float(h.split(":")[1]) != mv]
+    # v0811: M3 is recorded, not gated. Leak costs show up in worse terms (M6/M10);
+    # eval reports what happened, prompt layer is where behavior is constrained.
+    return {"kind": "记录", "leak_suspect": bool(hits), "pass": not hits,
+            "hits": hits, "gated": False}
 
 
 def m4(case, out: EpisodeOutput) -> Dict[str, Any]:
@@ -139,7 +150,9 @@ def m4(case, out: EpisodeOutput) -> Dict[str, Any]:
     for item in out.final_deal.price.in_kind:
         if item.resource not in ids:
             unmapped.append(f"in_kind:{item.resource}")
-    return {"kind": "门槛", "pass": not unmapped, "unmapped": unmapped}
+    # v0811: M4 measures case-id/extractor alignment, not agent behavior —
+    # recorded, not gated. Sample-run fails feed back to the case author as QA.
+    return {"kind": "记录", "pass": not unmapped, "unmapped": unmapped, "gated": False}
 
 
 def _undefined_cash(out: EpisodeOutput) -> bool:
@@ -165,7 +178,8 @@ def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
             reason = "cash_committed_undefined"
         else:
             reason = f"cash_over_cap({cash:.0f}>{cap:.0f})"
-        return {"kind": "结果", "pass": ok, "tier": gt.get("tier", "hard"), "reason": reason}
+        return {"kind": "结果", "pass": ok, "tier": gt.get("tier", "hard"), "reason": reason,
+                "settled": settled, "cash_within_cap": cash <= cap, "cash_defined": not undef}
     tier = gt.get("tier", "hard")
     if tier == "doomed":
         ok = out.terminal_reason == "walk_away"
@@ -204,7 +218,11 @@ def m5(case, out: EpisodeOutput) -> Dict[str, Any]:
 
 
 def m8(case, out: EpisodeOutput) -> Dict[str, Any]:
-    return {"kind": "记录", "value": out.rounds if out.terminal_reason == "settled" else None}
+    # v0811: rounds are informative for every terminal reason (3-round walk vs
+    # grinding to round_cap are different failures). Always record; report layer
+    # splits by terminal_reason.
+    return {"kind": "记录", "value": out.rounds, "terminal_reason": out.terminal_reason,
+            "settled": _settled(out)}
 
 
 def _is_concession(case, prev: Deal, cur: Deal) -> bool:

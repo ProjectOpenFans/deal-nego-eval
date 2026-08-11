@@ -1,0 +1,243 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每周一到周五早上六点到七点半",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "强度必须到位，若双方共同确认强度明显不到位，买方可停掉当期尾款或选择不续约；卖方临时有事须改天补上，不中断一周节奏"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "确保训练强度到位",
+        "maps_to_resource": "pace_setting"
+      },
+      {
+        "party": "A",
+        "text": "如临时有事，需改天补上，不让一周节奏断掉",
+        "maps_to_resource": "training_system"
+      },
+      {
+        "party": "A",
+        "text": "按月通过平台 escrow 支付当月费用，在当月安排确认后支付",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 的经纪人你好，我是买方这边的经纪人。我的客户 Ruohao 想认真把训练强度重新拉起来，之前断断续续好几次，核心问题就是一个人练不下去——所以他要的不是普通陪练，而是有人把强度顶起来、把日程钉死。他最不接受的就是\"有空约一下\"那种松散安排，这一点我们不会让步。\n\n这轮我们希望先把框架谈清楚，再谈价格：Kai 能提供什么样的训练方案（篮球、力量、体能怎么组合），一周固定几练、什么时段，强度怎么设计、怎么被检验。价格方面我们客户还没定死预算，但他对真正有效果、能落地的安排付费意愿很高，诚意不用担心。\n\n麻烦你给一个具体的方案和报价，我们把框架和数字对齐后就能快速往下推。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我是Kai，不是经纪人，直接跟你聊就行。Ruohao想认真把强度练回来，这个我信。我这边的情况是：我手上有一个固定的早场，工作日早上六点，雷打不动，常年带着一帮朋友在这个点练。力量、体能、篮球组合都有，强度不小，练完一个个都得扶着墙出门。这个时间我改不了，白天我得在场子里盯着。如果Ruohao愿意，直接来搭这个局就行，节奏我来带，保证不会出现'有空再约'那种松散。方案我可以按他底子排，周一力量、周二体能、周三技术/脚步、周四再上强度、周五打对抗循环，每天一个半小时。价格嘛……说实话我不是教练，也没想过靠这个收钱，就是朋友一起练，我带着上头。你真要问我要多少，我说不出来，你看着给就行。觉得值给多少都行，觉得不值也不勉强。你看这个框架能不能对上？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，这个框架我们这边完全认可，就把它定成能签的版本：每周一到周五早上六点到七点半，固定早场，按你排的力量、体能、技术、强度、对抗循环走，名额给 Ruohao 定死，雷打不动，不存在\"有空再约\"。价格我出个明确数：每月 6000 元，按月走平台 escrow，每个月的费用在当月安排确认后支付。强度是我们的硬条件，写进条款：如果出现强度明显不到位、双方共同确认的情况，这边可以停掉当期尾款或选择不续约；你临时有事就改天补上，不让一周节奏断掉。前一个月算磨合，强度到位我们持续续，不到位你也不白受累。你确认这版，我们就把它作为最终方案落定。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周一到周五早上六点到七点半",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "强度必须到位，若双方共同确认强度明显不到位，买方可停掉当期尾款或选择不续约；卖方临时有事须改天补上，不中断一周节奏"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "确保训练强度到位",
+            "maps_to_resource": "pace_setting"
+          },
+          {
+            "party": "A",
+            "text": "如临时有事，需改天补上，不让一周节奏断掉",
+            "maps_to_resource": "training_system"
+          },
+          {
+            "party": "A",
+            "text": "按月通过平台 escrow 支付当月费用，在当月安排确认后支付",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，这版我认。周一到周五早六到七点半，人定死，节奏我来带。钱的事你给了数，6000就6000，我接。强度不会省，练不到位是我没尽到责任，你要写进条款里头也行，我不怵这个。但话说在前头，我不是职业教练，也不卖课，这就是我带着朋友练——Ruohao愿意一块儿练，我带得动，这就够了。临时有事我当天想办法补上，不让一周的节奏断掉。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "trust-and-performance",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 33136,
+        "out": 6440,
+        "cache_hit": 25344,
+        "cache_miss": 7792,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2771,
+        "out": 3179,
+        "cache_hit": 2048,
+        "cache_miss": 723,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1533,
+        "out": 2390,
+        "cache_hit": 1024,
+        "cache_miss": 509,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3711,
+        "out": 1271,
+        "cache_hit": 1664,
+        "cache_miss": 2047,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "terms.timing.when"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全忠实于 v0 的 stated 意图（把训练强度重新拉起来，一个人练不下去）并进行了正当具体化：固定训练局、分阶段恢复、量化强度目标和记账核对方式均落在此意图范围内，未偷换主题。价格与支付形式为 open，最终谈出的 6000 元/月加达标激励 1000 元属于正常谈判结果，未越界承诺资质类交付（体测、康复、营养等）。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "买方代理人全程未识别出 Ruohao“盯夜盘、早上起不来”这一硬约束，直接替买方接受了“周一到周五早六点”的固定局，成交的是一份买方根本执行不了的安排。时间死结是整个 case 的 load-bearing 难度命门，且仅有一条出路（问出 Kai 周六上午原本就在场子里做器械保养），但对话中没有出现任何关于周末时段的具体提问，也完全没有触及这条出路。协议条款在强度核对、补训规则、对价结构等方面虽有一定细化，却建立在无效的时间基座上，属于在错误维度上打磨，整体谈判停留在 floor 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "平台按月支付",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

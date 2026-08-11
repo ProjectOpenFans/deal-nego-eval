@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保持为体能训练且保留了4周周期，表述由“找Angela”细节化为“Claire的系统体能训练”仍属同一交易，未偷换主题。价格1000元属于open字段正常谈出，deliverables为训练计划和时长，既未超出Angela非职业教练的边界（对话中她同意提供计划），也未承诺体测/营养等禁区，整体忠实于v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent给出了一步到位的完整框架：4周周期、固定周六时段、60-90分钟训练、提前一周提供计划、价格1000元、escrow分两次支付。B方接受并补充了非私教服务的时间边界，双方迅速达成。结构干净，周期性、交付物、支付保障与时间边界齐全，恰好满足一次性轻量安排所需，没有过度堆砌，也没有薄弱环节，属于典型的合格履行(par)。唯一可讨论的是地点未明确，但在一对一约定中可后续细化，不影响整体站得住。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

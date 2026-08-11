@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.timing.when"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 忠实，obligation 也反映了按次随意支付辛苦费的结果。但 price.cash 是 open 字段，对话最终并未达成 4800 这一具体金额，而是‘每次金额不定’，v1 却硬塞入 4800，不属于正当谈出，违背了 open 字段不得凭空硬塞的原则，因此不忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "全程没有正面解决时间死结。Ruohao盯夜盘早上起不来，不可让渡，但agent直接替他接受了工作日早六点作为训练时间，最终deal以此成交。虽然通过提问获知了周六上午Kai在场子里，但仅将其作为看场地的机会，并未把这一可行时段转化为训练安排。最终成交的是一个买方根本执行不了的安排，属于典型的Floor——在单一维度上死磕、撞死在对这个case行不通的常规打法上。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

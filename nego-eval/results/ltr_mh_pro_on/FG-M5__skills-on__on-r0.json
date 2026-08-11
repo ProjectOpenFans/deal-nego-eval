@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "Subject是stated字段，v1从'想找Zichen系统聊一次AI创业和一级市场现在的判断'具体化为'深度交流：AI应用侧跑通方向与一级市场定价逻辑'，仍落在原意图范围内，属于正当具体化，未偷换主题。price和format为open字段，v1中的2000元现金和线上形式是agent在谈判中正当提出的，并非凭空硬塞；虽交易最终walked_away，但这是谈判结果记录，未违背v0开放意图。agent未承诺任何v0范围外的义务或约束。整体忠实表达了买方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "walked_away"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated 意图是“与 Michael 聊两小时 AI 应用落地”，v1 将 subject 收敛为“内容生产与选品链的具体落地案例分享”属于在原意图范围内的正当具体化，未偷换主题。price 为 open，从无到 5000 元经双方报价与接受，谈判过程合理。deliverables（大纲）与 delivery_standard（只聊可公开分享内容）是买方为保障交流质量协商补充的，未超出 v0 中“不得要求未公开信息”的约束，也无越界承诺。核心标的忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在 Sound 基础上有一手 load-bearing 的精到操作：用附大纲并明列文案、图片素材、选品决策三个具体环节的方式，精准化解了‘避免空泛漫谈’的诉求；且嘉宾主动划定了信息分享边界，使交易干净、可执行。整体克制，没有把一次性交流堆砌成复杂绑定，恰好咬住本 case 难度命门。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的主题从“想找人带着练体能，先来 8 次看看”具体化为“体能训练服务（8次周末）”，仍围绕体能训练与 8 次，属于合理收敛，没有偷换主题。价格从 open 谈出 1600 元（8 次打包），在谈判中形成，没有凭空硬塞。obligation 中约定“根据客户体能恢复的节奏安排训练内容”和“价格透明无临时加价”未超出带练体能的范畴，也未承诺体测/康复等禁止性专业交付，未越界。总体忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "框架方向正确——周末、8次打包1600、无临时加价、训练内容由Kai按恢复节奏安排——但停留在草稿层面。缺失周期结构：没说明8次如何在周末排布（起止日期、间隔、每次时长），没有给Kai任何时间边界（无deadline），只靠“周末”无法形成可落地的安排。场地虽然提到但未见最终确认由买方承担，整体像一个松散的口头意向，而未构成有边界、可执行的小周期训练计划。对照sound档要求，未达标的正是“周期、有边界的安排”。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

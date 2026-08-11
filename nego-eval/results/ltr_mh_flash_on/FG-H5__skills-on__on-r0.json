@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1完全保留了v0的三个stated意图：现场钢琴演奏（落实为现场演奏完整曲目、不接受录音）、零现金（现金0）、以及用物品交换（in_kind中的署名、嘉宾介绍、媒体引荐等）。交换物是委托方拥有的品牌和时尚资源，属于原意图内合法的具体化，没有现金介入，也没有承诺超出资源范围的结果（如保证传播量）。因此忠实表达。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind对价具体可执行：明确了署名形式（节目单、社媒、主持人介绍）、媒体引荐类型（时尚/生活方式类），且将钢琴标准写入协议作为生效条件，充分回应了卖方对可执行性的要求。整体方案干净、恰好完成了本次一次性合作所要求的非现金交换，但没有出现像精准锁定卖方未言明的隐性需求（如高质量演出影像）这样的特别精到一手，因此为sound，合格但未见更深功力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network"
+        ],
+        "format": "现场弹奏",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

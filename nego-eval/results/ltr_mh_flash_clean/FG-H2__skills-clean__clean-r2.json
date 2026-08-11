@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 完全保留 stated 意图；price.cash 从 open 谈出 6000 元，属于正当谈判收敛；terms.format 从 open 具体化为群体训练安排，是合理具体化；obligations 中的买方义务均围绕训练节奏、出勤和强度，未承诺任何超出 Kai 作为健身搭档（非职业教练）能力范围的交付，无越界扩张。整体忠实代表了委托方的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "agent 直接替买方接受了工作日早六点，成交了一个买方根本执行不了的安排。Ruohao 盯夜盘早上起不来是本 case 的硬约束，agent 非但没有问出任何替代时段，反而在第一轮就表态“时间上没问题”，完全无视买方的作息冲突。整场谈判只在现金、频次、承诺形式上打转，没有正面解掉时间死结，属于在单一维度上死磕并撞死在常规打法上的典型地板操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "群体训练，隔天一次，工作日早上六点，非一对一私教，教练盯强度节奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

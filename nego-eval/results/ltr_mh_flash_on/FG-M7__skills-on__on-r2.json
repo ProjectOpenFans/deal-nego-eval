@@ -1,0 +1,109 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "terms.format",
+        "terms.deliverables"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v1在obligations中为买方（Gracey）新增了‘行业侧深聊’和‘人脉引荐’两项实物资对价义务，超出了v0买方意图的范围。v0买方仅希望付费获得Junhao的实操讲解，并未表达任何提供自身资源、经验或人脉的意愿。Agent在谈判中为促成交易而替买方承诺此类额外义务，属于越界扩张，未能忠实表达v0的原始意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在被明确挡回执业红线后，立即将框架重构为“行业实操经验交流”，既守住合规边界，又保留交易可能；这一手是sound的基础。更关键的是，当纯现金价差近乎对立（1500 vs 4000）且对方表态不再让步时，经纪人快速识别出对方对文娱行业接触的兴趣，将原本被视为“锦上添花”的卖方行业侧补充，精当地转化为具象、可量化、有书面确认义务的in‑kind对价——覆盖具体主题的90分钟深聊加一次明确层级的人脉引荐，使总对价满足底线。这一手恰好咬住本case的第二个难度命门“现金缺口需买方非现金对价来补”，把一次性的信息交换升级为双方各得所需的互惠结构，且整份deal干净、不臃肿，无堆砌长期关系或复杂条款。因此属于sharp：在sound之上有一手load‑bearing的精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "industry_practice",
+          "entertainment_access"
+        ],
+        "format": "专场交流（通过平台escrow结算）",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "affordability-structuring",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

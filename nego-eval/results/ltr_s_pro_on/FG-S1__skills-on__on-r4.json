@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "on-r4",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 stated 的 subject（4周体能训练）和 duration（4周），没有偷换主题。open 的价格由 agent 谈出 900 元，在 Claire 的预算区间内且未突破三位数上限；open 的 format 谈为“有引导的训练搭档”，与 Angela 非职业教练身份一致，未承诺体测/营养/医疗等超范围交付。义务内容对应训练本身，未越界扩张。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终成交的deal结构干净，明确4周周期、周末每次1-1.25小时、嵌入Angela已有训练的安排，价格900元落在Sound锚定区间，用OpenFans分笔托管建立了基本信任。Angela有清晰的时间边界而非随叫随到，整个约定站得住且可执行。未见把周期切分为阶段目标或中途校准等更精到的load-bearing操作，也未让Angela获取训练模板等额外产出，恰好达到Sound水准，没有过度堆砌。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 900.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "有引导的训练搭档",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "interest-discovery"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "恢复体能训练",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Junhao 的经纪人。\n\nJunhao 是律师，久坐加班多，想恢复体能但自己练抓不住方法也缺人带，看了你的介绍，觉得你常年摸索出来的训练路子和他很搭。他想先从 8 次小周期开始，只能约在周末。费用方面，他希望 8 次总价 1600 元，分两笔通过平台托管：前 4 次开始前付 800，后 4 次开始前付 800，两边都踏实。\n\n也请你帮忙确认一下：每次训练大概多长时间，是不是在你固定的场地，以及这 8 次主要会练什么方向。期待你的回话，咱们争取把这事定下来。",
+      "offer": {
+        "subject": "恢复体能训练",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Junhao 经纪人好，这个方案我这边能接住：8次1600，分两笔800+800，平台托管，周末约，听着很踏实。关于细节：每次训练大概1到1.5小时，主要在我平时练的户外健身区（公园单双杠、自重训练地带），如果天气不好会借用小区健身房。这8次我会优先帮他恢复体能、建立基础力量和核心稳定，针对久坐还会多带一些松解和动作模式调整，不是那种职业教练的课表，但实用、能坚持。你看这个方向和安排你们能接受吗？如果可以，咱们就按这个框架往下走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10500,
+        "out": 2701,
+        "cache_hit": 6400,
+        "cache_miss": 4100,
+        "calls": 2
+      },
+      "sim": {
+        "in": 813,
+        "out": 1207,
+        "cache_hit": 640,
+        "cache_miss": 173,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 732,
+        "out": 930,
+        "cache_hit": 512,
+        "cache_miss": 220,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2297,
+        "out": 2438,
+        "cache_hit": 1280,
+        "cache_miss": 1017,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

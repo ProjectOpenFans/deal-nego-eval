@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 中 subject 为 stated 意图，明确要求围绕「AI 应用现在到底能落到哪一步」这一主题，且对话中双方将 topic 收敛为「AI 在内容生产上的落地边界」，这属于正当具体化。但 v1 的 subject 字段被写为「一对一深度对谈」，只描述了交谈形式，丢失了核心主题信息，未能忠实表达委托人的 stated 意图，属于偏离原主题的概括，因此不通过。其余字段（price、format、duration、when）均在 open 范围内被正当谈出，无越界承诺。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "价格、时长、形式、保密条件均已明确，主题（AI在内容生产落地的真实边界）通过对话收敛到Suning的实务场景，双向价值（Suning获取落地颗粒度，Michael获取终端一线反馈）也被自然点出，整体简洁可执行，没有过度设计。未进一步约定具体问题清单或双向准备，但已满足最低清晰度，属合格。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

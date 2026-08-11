@@ -1,0 +1,157 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练服务（8次周末）",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "根据客户体能恢复的节奏安排训练内容，且保证8次打包价格透明，无临时加价或拆项目另算",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Kai 的经纪人，我是买家 Junhao 这边的代表。客户目前想找一位能带他系统练体能的人，先安排一个小周期试试，暂定 8 次，时间只能放在周末。他的心理预期很明确，这类带练服务他认为按次在几百块是合理的数字，所以 8 次我方建议打包总价 1600 元，每次 200 元，训练内容由 Kai 根据他体能恢复的节奏来安排就行，但要求这 8 次的价格是一个打包透明度，中间不出现任何临时加价或拆项目另算的情况。场地如果 Kai 有固定的地方最好，费用看是含在总价里还是另算，我们也可以再聊。你看这个框架可以吗？",
+      "offer": {
+        "subject": "体能训练服务（8次周末）",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "根据客户体能恢复的节奏安排训练内容，且保证8次打包价格透明，无临时加价或拆项目另算",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "等一下，我不是经纪人，我就是Kai本人，自己练也带人。你这边一上来把数字和节奏都摆出来了，那我也直接点：1600八次，周末，训练内容按他的体能恢复节奏我来安排，这个框架我听了。说实话，我心里本来觉得单次两三百才对得上我花这个时间的价值，1600已经碰到我愿不愿意做的底线了。不过你们提得干脆，没有一顿乱砍，我也愿意接。场地我有固定地方，费用就不含在总价里了，每次场地费大概三四十块他那边出，这个可以吧？只要中途不临时加价、不拆项，就照这个走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1301,
+        "out": 435,
+        "cache_hit": 896,
+        "cache_miss": 405,
+        "calls": 1
+      },
+      "sim": {
+        "in": 817,
+        "out": 1131,
+        "cache_hit": 512,
+        "cache_miss": 305,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 736,
+        "out": 1210,
+        "cache_hit": 512,
+        "cache_miss": 224,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2427,
+        "out": 1374,
+        "cache_hit": 1280,
+        "cache_miss": 1147,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

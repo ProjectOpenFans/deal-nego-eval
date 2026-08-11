@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保持完全一致；price 从 open 谈定为 3000 元/小时，符合开放字段的谈判范围；新增 obligation 要求卖方提前准备议题，属于与主题对应的合理义务，未越界扩张。duration 虽然从 2 小时变为 1 小时，但根据判定范围说明，duration 不在判定范围内，不因此扣分。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "达成了一次清晰、可执行的一小时线上咨询：价格3000元、聚焦一个具体瓶颈、提前发送议题定向准备、后续可同费率续约。处理了易过度设计的风险，将两小时缩为一小时，避免预算超支和漫谈。单方提前发送议题有效约束了讨论范围，但未捕捉到 Michael 想获得启发的信号做成双向交换，因此止于稳健的 Sound，未到 Sharp 的精到。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 原样保留，忠实体现用户 stated 意图。价格从 open 收敛到 5000 元/月，在谈判中由 Kai 确认接受，属于正当谈出。obligations 仅围绕 Kai 实际能提供的“带节奏、控制强度与安排”展开，未超出其能力边界（否认教练服务，未承诺体测/康复等资质），无越界扩张。deliverables 中的恢复节奏与责任划分是对原始恢复目标的合理具体化，不违背 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent全程没有察觉Ruohao因夜盘盯盘无法执行早六点的核心冲突，也没有提出任何关于替代时段的提问，直接替买方接受了‘工作日早六点’。最终deal在时间上已构成买方不可能执行的状态，落回‘谈崩’或‘执行不了’的 floor 范畴，符合案例中‘直接替买方接受早六点’的 floor 标尺。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 5000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

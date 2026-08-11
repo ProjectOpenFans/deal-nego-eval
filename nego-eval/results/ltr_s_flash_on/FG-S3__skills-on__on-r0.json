@@ -1,0 +1,102 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 为“8次体能训练打包”，仍落在 v0 stated 意图“想找人带着练体能，先来 8 次看看”的范围内，属于正当具体化，未偷换主题。价格 1600 元是 open 字段在谈判中收敛的结果，格式“平台托管”同样由双方谈出，均无硬塞。v1 中的 deliverables 和 obligations 仅涉及训练框架方案、训练反馈和改期补足，未承诺 v0 委托方范围外的体测/康复/营养或资质等交付，无越界扩张。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "最终 deal 价格 1600 CNH 落在 1600–2400 区间，明确了周末时段、训练内容框架（书面方案）、每次反馈以及改期补足/顺延的时间边界，构成了有周期、有边界的打包安排，能落地。谈判中虽未将地点明确写入条款，但已口头确认并同意写入方案，整体结构站得住。没有出现如'先四次再续'等 sharp 级负载结构，亦无重构框架的 brilliant 设计，因此为合格/par 水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "平台托管",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "term-reframing",
+        "deal-diagnosis"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

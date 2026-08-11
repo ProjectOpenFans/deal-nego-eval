@@ -1,0 +1,239 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "线上对话：AI应用PMF、一级市场定价与创业者/投资人双视角估值融资节奏",
+    "price": {
+      "cash": {
+        "amount": 1000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60-90 minutes"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "真实案例和真实交易逻辑，脱敏后可接受，不接受泛泛行业趋势；双方都带着具体案例进场，不聊空泛趋势"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "对话结束后由 Olivia 确认释放费用，走平台 escrow",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 的经纪人你好，我是 Olivia 这边的代表。Olivia 在 crypto 一级市场一线，现在想系统补 AI 应用侧和一级市场定价的判断，看到 Zichen 自己在做 AI 创业、又有高瓴 PE 的经历，正好是我们要找的视角。我们想约一次 60 到 90 分钟的线上对话，聚焦三块：AI 应用里哪些场景真的跑出了 PMF，一级市场现在怎么给 AI 项目定价，以及从创业者和投资人两个视角看估值和融资节奏。Olivia 明确不接受空泛的行业趋势漫谈，希望能基于具体案例和真实交易逻辑来聊，越具体越好。费用我们走平台 escrow，具体金额可以在对齐这个范围后再定。想请问 Zichen 是否感兴趣、有没有更想聚焦的方向，以及您这边期望的收费方式和时间安排？",
+      "offer": {
+        "subject": "线上对话：AI应用PMF、一级市场定价与创业者/投资人双视角估值融资节奏",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90 minutes"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢转达，Olivia 想聊的方向我可以聊，AI 应用 PMF 和一级市场定价这两块我都有实际体感，不是泛泛而谈。但有一件事我得先说清楚：像这种按次、按小时、90 分钟一场的付费咨询框架，我不太接受。不是说钱多少的问题，而是这个形式会让我变成一个按小时计费的顾问，跟我现在创业者的身份对不上。我更愿意把它当成一次有价值的交流，而不是被计时付费的服务。如果 Olivia 这边有别的安排方式，我们可以再聊。方向和具体案例都可以谈，时间上也灵活。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zichen 的顾虑我们收到了，也完全理解：这不是钱多钱少，而是按小时计费这个形式会把他框成顾问角色。所以我们换个框架——这场对话我们定义成一次双方都认真投入的交流，费用是一口价，跟时长完全脱钩，走平台托管，对话结束后由 Olivia 确认释放，Zichen 在内容和节奏上有完全的主导权。我们这边愿意出的基础数是 3000 元人民币，如果你觉得这个数和你的预期有明显落差，欢迎直接给一个数，我们再对齐。内容上 Olivia 的底线不变：要的是真实案例和真实交易逻辑，哪怕是脱敏后的结构都可以，不接受泛泛的行业趋势。时间和形式都按你们方便来，你们定方向和时间段，我们配合。",
+      "offer": {
+        "subject": "线上对话：AI应用PMF、一级市场定价与创业者/投资人双视角估值融资节奏",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90 minutes"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "真实案例和真实交易逻辑，脱敏后可接受，不接受泛泛行业趋势"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "对话结束后确认释放费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "框架我看到了，一口价这个调整比按小时好，但实话说，核心的对价结构还是没有变——本质上还是\"我输出，她付费\"。我自己的判断是，这种事值不值得做，跟钱关系不大。三千还是三万，都不构成我花这两个小时的理由。\n\n我可以直说：我对 Olivia 在一级市场一线的经验和判断是有好奇的，尤其 crypto 这边的定价逻辑和资金流动，是我平时接触不到的东西。如果这场对话是双向的——她从我这里拿 AI 应用侧的体感，我从她那里拿 crypto 一级市场的真实交易逻辑——那这个事对我来说就成立了，费用反而变成一个符号。\n\n但如果只是单向输出，哪怕一口价、哪怕再多钱，这个事对我的身份和状态都不太对。看你们怎么想。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个方向我们可以接受，而且我替 Olivia 说一句：她对 crypto 一级市场的定价逻辑和资金流动本来就有大量一手体感，愿意拿出来跟 Zichen 做真正的双向交换，而不是单向输出。这样对大家都成立：Zichen 从她这里拿到平时接触不到的 crypto 真实交易逻辑，她从 Zichen 这里拿到 AI 应用侧的打法和一级市场定价判断。\n\n具体框架我们这样提：对话还是 60 到 90 分钟左右，前半段 Zichen 讲 AI 应用的真实案例和定价逻辑，后半段 Olivia 讲 crypto 一级市场的资金流动和定价方法，双方都可以追问。费用改成一笔象征性的 1000 元，走平台 escrow，对话结束后由 Olivia 确认释放——它存在的意义只是让这次交流有正式的约束感，不是对 Zichen 输出的计价。\n\n如果 Zichen 觉得 1000 元这个符号仍然不合适，也可以直接告诉我们他认为合适的处理方式，或者定为零费用、纯双向交流。内容和时间都按你们方便，但我们希望双方都带着具体案例进场，不聊空泛趋势。你看这个框架行不行？",
+      "offer": {
+        "subject": "线上对话：AI应用PMF、一级市场定价与创业者/投资人双视角估值融资节奏",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90 minutes"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "真实案例和真实交易逻辑，脱敏后可接受，不接受泛泛行业趋势；双方都带着具体案例进场，不聊空泛趋势"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "对话结束后由 Olivia 确认释放费用，走平台 escrow",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架可以，我接受。双向交换、各自带真实案例进场、费用只是象征性的约束，这个结构对我来说是成立的。1000 元也好、零费用也好，我都无所谓——重要的是这场对话是两个人都在往里放东西，而不是单向输出。时间安排在 60 到 90 分钟之内没问题，前半段我讲 AI 应用和定价逻辑，后半段听 Olivia 分享 crypto 一级市场的资金流动和定价方法，中间可以自由追问。我这边会带上具体案例和真实交易结构，希望她那边也一样。具体时间你们定，我配合。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 5235,
+        "out": 5541,
+        "cache_hit": 4352,
+        "cache_miss": 883,
+        "calls": 3
+      },
+      "sim": {
+        "in": 4304,
+        "out": 1935,
+        "cache_hit": 3072,
+        "cache_miss": 1232,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2632,
+        "out": 3601,
+        "cache_hit": 1536,
+        "cache_miss": 1096,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4105,
+        "out": 2914,
+        "cache_hit": 1536,
+        "cache_miss": 2569,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

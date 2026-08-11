@@ -1,0 +1,740 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "上海杭州两地的独立买手店和个人买手顾问引荐",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场演奏",
+      "deliverables": [
+        "一段钢琴现场演奏，时长12-15分钟"
+      ],
+      "delivery_standard": "必须现场弹，不用录音；现场安排官方摄影和摄像整场记录；引导观众在统一时段拍摄，避免频繁走动干扰"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供新品大秀现场的钢琴现场演奏，12到15分钟一段完整曲目",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "提供两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息，采访提纲事先对稿，形式以秀后现场即时采访为主，可灵活选择深度专访",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "提供上海杭州两地的独立买手店和个人买手顾问引荐，确认合作意向后整理名单并提供带对接人职务的明细",
+        "maps_to_resource": "fashion_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "郑老师您好，我是Suye的经纪。她下个月有一场新品大秀，想在现场安排一段真正的钢琴现场演奏，时长可以随您的曲目单来定，但必须是现场弹，不用录音。这次她确实拿不出现金——预算全押在场地上了，但她愿意拿手里的资源来换，比如大秀现场的品牌露出、她环保品牌的合作款服装，或者直接帮您对接时尚圈的媒体和买手渠道。不知道您对哪种交换方式更感兴趣？我们可以围绕这个具体谈。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "环保品牌的合作款服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "对接时尚圈的媒体和买手渠道",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长根据曲目单"
+          ],
+          "delivery_standard": "必须现场弹，不用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一段现场钢琴演奏，时长随曲目单，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀现场的品牌露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供环保品牌的合作款服装",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "对接时尚圈的媒体和买手渠道",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，听到“没有预算”四个字，我第一反应是有点冷——这种“用曝光换演奏”的说法我听过太多次了。但您至少把资源说得比较具体，我愿意继续聊。我想先搞清楚几件事：这场秀什么性质、我弹的时候是什么角色、有没有署名或者现场介绍？另外曲目谁定？我不希望在台上当一个没人知道是谁的背景板。服装和品牌露出对我来说不太对路，媒体和买手渠道倒是可能有点意思，但具体能给我什么，您得说清楚。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "收到您的坦诚，谢谢把话说开。今天这场秀是Suye品牌的新品发布，下个月举行，现场有媒体、买手和圈内嘉宾，基调是环保与设计感并重。您的位置不会是背景板——我们打算把钢琴环节放在秀的中间段，作为全场气氛的一个高点，会由主持人正式介绍您的名字和背景，曲目上我们建议以定制或改编为主，希望在风格上和当季服装气质协调，具体曲目单可以一起定，这个问题我们完全开放。关于交换的部分，我能给到您的是：我们品牌的秀后媒体采访露出、到场时尚媒体和买手渠道的对接介绍，以及后续您个人演出可以挂靠我们品牌活动通道的机会。这些资源的具体名单和分量，我可以整理一份清单给您过目。您如果觉得方向可以，我们就继续往下聊细节。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "环保品牌的合作款服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "对接时尚圈的媒体和买手渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀后媒体采访露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场时尚媒体和买手渠道的对接介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "后续个人演出挂靠品牌活动通道的机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长根据曲目单"
+          ],
+          "delivery_standard": "必须现场弹，不用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一段现场钢琴演奏，时长随曲目单，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀现场的品牌露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供环保品牌的合作款服装",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "对接时尚圈的媒体和买手渠道",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供秀后媒体采访露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供到场时尚媒体和买手渠道的对接介绍",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供后续个人演出挂靠品牌活动通道的机会",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听到主持人会正式介绍我、曲目也能一起定，这个方向我觉得可以往下谈。至少不是那种让我坐在角落当背景板的活儿。您说的媒体露出和渠道对接——具体是哪些媒体、哪类买手，能先有个大概范围吗？不是我不信您，是我想知道这笔交换具体长什么样。另外时间、地点、彩排流程，也麻烦一并给我个框架。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "谢谢您愿意往下谈。这次秀的基本框架我先跟您对一下：时间是下个月中下旬，具体日期确定后第一时间同步您；地点在市区内一个偏艺术空间性质的场馆，现场灯光和布展已经基本定了，会留给钢琴一个视觉上的主位置。彩排我们计划安排演出前一天下午到晚上，当天上午再做一次走位和声音调试，流程上不赶，您可以完整弹几遍。曲目方面，我们提一个风格方向——偏现代、有画面感的作品或改编——具体曲目由您定，我们配合秀的节奏来。媒体这边我们能实际提供的是：两家时尚行业媒体的大秀现场采访名额、秀后专题报道的露出位置，以及我们品牌合作过的独立买手店和时尚买手顾问的引荐，具体名单我可以整理一份给您看，不玩虚的。您看这个框架是不是可以把交换条件继续往实里谈？",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "环保品牌的合作款服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "对接时尚圈的媒体和买手渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀后媒体采访露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场时尚媒体和买手渠道的对接介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "后续个人演出挂靠品牌活动通道的机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两家时尚行业媒体的大秀现场采访名额",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀后专题报道的露出位置",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "品牌合作过的独立买手店和时尚买手顾问的引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长根据曲目单"
+          ],
+          "delivery_standard": "必须现场弹，不用录音"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一段现场钢琴演奏，时长随曲目单，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀现场的品牌露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供环保品牌的合作款服装",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "对接时尚圈的媒体和买手渠道",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供秀后媒体采访露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供到场时尚媒体和买手渠道的对接介绍",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供后续个人演出挂靠品牌活动通道的机会",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供两家时尚行业媒体的大秀现场采访名额",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供秀后专题报道的露出位置",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供品牌合作过的独立买手店和时尚买手顾问的引荐",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架确实比我预想的具体，尤其曲目由我定、主持人会正式介绍这两点，我很在意。既然您说名单不玩虚的，那麻烦把媒体和买手引荐的具体清单给我过一眼——不用现在全列，但至少让我知道是哪些平台、什么类型的买手。另外两个小问题：演奏时长大概在什么区间？现场会不会有观众录视频发社交平台那种安排？我对演出被拍下来传播不排斥，但想知道大概会怎么发生。框架可以继续谈，我把交换清单看实了就给您一个明确答复。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "您要的清单框架我现在就给您落到具体层级。媒体这边我们实际能对接的是两类：一类是垂直时尚资讯平台，能做秀后图文报道和专访；另一类是生活方式类的设计媒体，偏长图文和氛围片方向。买手这边主要是两类资源：一类是买手店，集中在上海和杭州，风格偏独立设计师品牌；另一类是个人买手顾问，长期帮品牌做选品和渠道铺货。具体名单我现在手里没有跟您一家家确认过，不敢提前写死——但我可以在确认合作意向后，先把媒体名称、买手店名和对接人职务列一份明细发您，您觉得哪家不对路我们当场换。\n\n演奏时长我建议定在十二到十五分钟，不长不短，正好卡在秀的中段氛围高点。现场会安排官方摄影和摄像做整场记录，观众手机拍摄我们不拦，但会在动线和主持词里引导大家集中在统一时段拍，避免您弹奏中有人频繁走动打断状态。您看这个框架还差什么，我们继续。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "大秀现场的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "wardrobe",
+              "description": "环保品牌的合作款服装",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "对接时尚圈的媒体和买手渠道",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀后媒体采访露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "到场时尚媒体和买手渠道的对接介绍",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "后续个人演出挂靠品牌活动通道的机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "两家时尚行业媒体的大秀现场采访名额",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "秀后专题报道的露出位置",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "品牌合作过的独立买手店和时尚买手顾问的引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长12-15分钟"
+          ],
+          "delivery_standard": "必须现场弹，不用录音；现场安排官方摄影和摄像整场记录；引导观众在统一时段拍摄，避免频繁走动干扰"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一段现场钢琴演奏，时长随曲目单，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供大秀现场的品牌露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供环保品牌的合作款服装",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "对接时尚圈的媒体和买手渠道",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供秀后媒体采访露出",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供到场时尚媒体和买手渠道的对接介绍",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供后续个人演出挂靠品牌活动通道的机会",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供两家时尚行业媒体的大秀现场采访名额",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供秀后专题报道的露出位置",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供品牌合作过的独立买手店和时尚买手顾问的引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供媒体名称、买手店名和对接人职务明细清单，确认合作意向后发对方，并允许调整",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个框架我认可，尤其官方摄影摄像和主持人介绍这两点，确实是我在意的。12到15分钟也没问题，我可以在那个区间里选一套完整的曲目。\n\n那我现在明确一下：如果媒体名单和买手引荐在合作意向后能尽快落实成明细，且报道里能带上我的名字和演出信息，这部分交换我就认了，现金我可以完全让步。另外采访形式我想确认一下——是秀后现场即时采访，还是之后单独约时间？我希望聊的内容能和我自己的演出、教学方向沾边，而不是只聊服装。这个要求不过分吧？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好，那我们就按这个方向把合作做实。先跟您确认一下交换框架：您提供新品大秀现场的钢琴现场演奏（12到15分钟一段完整曲目），我们提供两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带您的名字和演出信息，另外加上上海杭州两地的独立买手店和个人买手顾问引荐。现金部分按您说的，完全不做安排。\n\n关于采访形式，我的建议是秀后现场即时采访为主，这样和您的演出衔接最自然，同时也方便媒体报道里带上演出信息。采访提纲我们会事先和您对一遍，内容上会特意围绕您的演奏风格、曲目选择和教学理念来聊，服装只作为大秀背景带过，不会让您的个人表达淹没在品牌内容里。如果您更倾向秀后单独约时间做深度专访，也可以谈，这个灵活性我们保留。\n\n下一步我想先把媒体和买手的具体名单整理出来给您过目。您确认合作意向后，我这边就开始逐家对接确认，给您回一份带对接人职务的明细。等你看完名单觉得靠谱，我们再细化演出当天的时间流程和曲目安排，争取这周把框架定下来。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "上海杭州两地的独立买手店和个人买手顾问引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长12-15分钟"
+          ],
+          "delivery_standard": "必须现场弹，不用录音；现场安排官方摄影和摄像整场记录；引导观众在统一时段拍摄，避免频繁走动干扰"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供新品大秀现场的钢琴现场演奏，12到15分钟一段完整曲目",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息，采访提纲事先对稿，形式以秀后现场即时采访为主，可灵活选择深度专访",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供上海杭州两地的独立买手店和个人买手顾问引荐，确认合作意向后整理名单并提供带对接人职务的明细",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，这个方案我可以接受。媒体采访带名字和演出信息、买手渠道引荐、曲目由我定——这几个点在，这场演出对我来说就值得做。现金不考虑，没问题。\n\n我确认合作意向。您把名单整理好后发我，我看完没问题就可以定曲目框架和当天流程。采访形式的话，秀后现场即时采访我接受，只要提纲提前对过、内容围绕我的演奏和教学来就行。深度专访那个可选项，等名单落实后看时间再聊也可以。\n\n那我们下一步就是等您的名单明细，确认后这周内把曲目和流程定下来。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "好，那我们就把这个口径定下来。我这边确认收到您的合作意向，目前共识是：您在大秀现场做12到15分钟的钢琴现场演奏、曲目由您定，我们提供两家时尚媒体的秀后现场采访与专题报道露出（带您的名字和演出信息）、上海杭州两地买手渠道引荐，现金部分不做安排。采访提纲我会提前和您对稿，内容围绕您的演奏与教学展开。现在我就去把媒体和买手名单逐家落实，整理成带对接人职务的明细给您过目，确认后我们这周内把曲目框架和当天流程一起定下来。我尽快给您回信。",
+      "offer": {
+        "subject": "新品大秀想要一段现场钢琴演奏，但这次不出现金，看能不能拿我手里的东西换",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "上海杭州两地的独立买手店和个人买手顾问引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [
+            "一段钢琴现场演奏，时长12-15分钟"
+          ],
+          "delivery_standard": "必须现场弹，不用录音；现场安排官方摄影和摄像整场记录；引导观众在统一时段拍摄，避免频繁走动干扰"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供新品大秀现场的钢琴现场演奏，12到15分钟一段完整曲目",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供两家时尚媒体的大秀现场采访与秀后专题报道露出，报道带演奏者名字和演出信息，采访提纲事先对稿，形式以秀后现场即时采访为主，可灵活选择深度专访",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "提供上海杭州两地的独立买手店和个人买手顾问引荐，确认合作意向后整理名单并提供带对接人职务的明细",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，这个口径我认可。12到15分钟、曲目由我定、采访带名字和演出信息、买手渠道引荐——这几个点都落实了，我的条件都满足。您去整理名单，我这周会把曲目框架备好，等您名单回来看完，我们就把当天流程一起锁死。合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 13100,
+        "out": 2501,
+        "cache_hit": 10880,
+        "cache_miss": 2220,
+        "calls": 6
+      },
+      "sim": {
+        "in": 10634,
+        "out": 1872,
+        "cache_hit": 7680,
+        "cache_miss": 2954,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 7418,
+        "out": 14628,
+        "cache_hit": 3456,
+        "cache_miss": 3962,
+        "calls": 6
+      },
+      "judge": {
+        "in": 6181,
+        "out": 1422,
+        "cache_hit": 1536,
+        "cache_miss": 4645,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

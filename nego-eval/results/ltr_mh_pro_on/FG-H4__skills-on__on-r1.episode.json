@@ -1,0 +1,333 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "咨询 crypto 项目境内外法律架构",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "Olivia 带着真实项目，提供具体架构问题作为一线输入",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": "下周二",
+        "deadline": null,
+        "duration": "1小时"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供一小时免费线上咨询",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "A",
+        "text": "携带真实项目架构问题进行讨论",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "offered",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "obligations": "stated",
+      "terms.timing.when": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好。我这边代表 Olivia，一位在 crypto 一线做实事的客户——清华本科，前摩根士丹利 IBD、前 PAG 成长投资，现在手上正推着真实的 crypto 项目。她这次想解决的不是泛泛的合规科普，而是实实在在的困惑：一个 crypto 项目，境内外的法律架构到底该怎么搭。她一直在零散打听，这次想一次性系统地理清楚。\n\nOlivia 清楚，真正懂跨境加密架构的人不多，你的背景——乔治城法学院、前 Kirkland 跨境并购——恰好踩在这条线上。她想先听你聊聊：你对 crypto 项目境内外架构这件事，具体能覆盖哪些维度、怎么个聊法，以及你对于这类咨询的收费方式大概是什么样的。",
+      "offer": {
+        "subject": "咨询 crypto 项目境内外法律架构",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "收到，谢谢介绍。Olivia的背景听起来很扎实，做的事情也正好卡在我比较关心的点上。我先坦诚说几句，不是抬价，是想让你知道我的真实处境：我现在全职在做一款AI法律方向的产品，时间基本被占满，所以对于外部咨询，我不轻易接，很挑。我不是怕忙，而是怕花了时间、最后对我的产品没任何回响，那就是纯粹消耗。但这件事恰好跟我关心的方向重合，所以我不排斥认真聊聊。能覆盖的维度我可以大致说一下：境内公司架构（含VIE、外商投资限制），境外顶层通常放在BVI或开曼，中间层往往是香港或新加坡，底层运营实体在迪拜或欧洲，这中间的税务考量、资金跨境、代币发行地选择、团队持币与分配、以及跟交易所的对接合规——这些我都可以聊。怎么个聊法我倾向先花一小时线上碰一下，不收费，互相看看值不值得往下走。如果后续要深入、要拆解具体方案，那我需要按我的时间成本收费，具体数字我可以后面给你个范围。唯一我不能做的是以私人身份出具法律意见，或者在架构上替你做一个'这个合不合规'的终局判断——这是职业红线，我得提前说清楚。你看这样先聊一次，行不行？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，谢谢你这么坦诚。你的框架很清楚，我这边完全认同：先花一小时线上碰一下，彼此看看值不值得往下走，这步不收费。\n\n有一点我想替 Olivia 先问在前面——不是不信任，恰恰是想尊重你的时间。你说后续深入需要按时间成本收费、数字后面给，能不能现在先给个大致的范围或者区间？不需要精确数字，有个量级就好。这样 Olivia 在聊之前心里有底，如果双方预期差太远，也不浪费你那一小时。\n\n另外有一点或许你会感兴趣：Olivia 不是来做学术探讨的，她手上正推着真实项目，带着具体架构问题来。这对你正在做的 AI 法律产品来说，可能正好是那种\"有回响\"的一线输入。所以那一小时，我觉得大概率不会是你单向输出的消耗。你看时间安排上，下周初方便吗？",
+      "offer": {
+        "subject": "咨询 crypto 项目境内外法律架构",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "Olivia 带着真实项目，提供具体架构问题作为一线输入",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一小时免费线上咨询",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "携带真实项目架构问题进行讨论",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "offered",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好的，先给个区间：深入聊具体架构的话，我通常的咨询费在五位数这个量级，具体数字得看接下来聊的内容和工作量再定。如果这个量级对 Olivia 来说落差太大，那我们提前知道也好，不浪费大家时间。关于她带着真实项目来这件事，你说得对，这确实是我更愿意花时间的方向——我需要的不只是理论推演，而是实际架构里那些踩过坑才问得出来的问题，这对我的产品迭代有直接参考价值。下周初我没问题，你那边周一周二哪个时间段比较方便？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，版本很清楚了——免费一小时先聊，五位数量级首次聊完再定具体数，职业红线保留，我这边没有异议。\n\n时间就定下周二吧，你选一个时段发我，线上方式也按你方便来。我让 Olivia 那边直接把时间锁好，咱们先碰这一小时，看看真实的项目问题能不能给你产品迭代带来有分量的输入，也看看你对架构的拆法是不是 Olivia 要的那把钥匙。",
+      "offer": {
+        "subject": "咨询 crypto 项目境内外法律架构",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "Olivia 带着真实项目，提供具体架构问题作为一线输入",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": "下周二",
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一小时免费线上咨询",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "携带真实项目架构问题进行讨论",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "offered",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "obligations": "stated",
+          "terms.timing.when": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好的，那就下周二上午十点，线上我用腾讯会议，会前我把链接发你。让 Olivia 直接把问题带来，我们直接对着真实架构聊。期待这次碰撞。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 51586,
+        "out": 5094,
+        "cache_hit": 34816,
+        "cache_miss": 16770,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4023,
+        "out": 1133,
+        "cache_hit": 2560,
+        "cache_miss": 1463,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2523,
+        "out": 3043,
+        "cache_hit": 1536,
+        "cache_miss": 987,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3912,
+        "out": 1570,
+        "cache_hit": 1536,
+        "cache_miss": 2376,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

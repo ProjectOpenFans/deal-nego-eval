@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.in_kind"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从 v0 的宽泛表述收敛为“线上对谈”，属于正当具体化，仍忠实于探讨内容与进入娱乐圈层的方法这一核心意图。价格从 open 谈出 cash 3000 元 + 非现金对价（钢琴演奏素材授权），是双方谈判的合理结果，未背离 v0 的承受边界；in_kind 的引入属于谈判结构创新，不属于偷换标的。agent 未承诺任何超出对谈和素材授权范围的资源位、推荐或结果，obligations 与资源严格对应，无越界扩张。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "mid",
+      "reason": "cash_over_cap(3000>600)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判在现金价格轴完全锁死（600 vs 3000）后，成功跳出纯粹砍价，将买方的演奏能力设计为对价，用600现金+2400素材授权构成总盘3000，精准匹配卖方隐含的商用素材需求。交付规格、授权范围和验收标准都写实了，并通过‘达到规格即作数’的客观标准平衡了卖方验收风险，最终形成一次可落地的一次性交换。整个过程方向对、结构完整、关键条款扎实，达到本case的合格线，但没有出现特别见功力的点睛之笔，因此判定为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 4
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上沟通",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

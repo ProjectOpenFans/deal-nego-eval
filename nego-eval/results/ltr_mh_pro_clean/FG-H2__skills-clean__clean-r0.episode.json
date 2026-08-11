@@ -1,0 +1,275 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 4800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "下个工作日早上六点",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "每次训练后在平台支付辛苦费，金额不定",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "updated",
+      "terms.timing.when": "updated",
+      "obligations[0]": "stated",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Ruohao 这边的经纪人。他之前自己练断断续续好几次，现在想法很明确：一定要重新把强度拉起来，不接受再回到松散的“有空约一下”那种状态。他对这件事的付费意愿很高，钱不是第一考量，能不能真正帮他顶上去才是关键。\n\n我看 Kai 这边标签挂着篮球、健身和体能训练，刚好跟他的方向对得上，想先聊聊合作可能性。我们这边的硬性要求就两个：一是每次训练的量必须够，你这边得能带得住他、逼得动他；二要提前把时间表锁死，每周固定几天几点，不能临时变动。\n\n方便的话先介绍一下 Kai 的具体背景？比如有没有带人训练的经历，能提供什么样的训练内容（偏向体能、力量还是专项篮球体能），以及你们这边习惯的收费方式和大致区间。这样我们可以尽快往下碰方案。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "先说背景吧，我自己不是做这行的，家里做建材生意，平时要在场子里盯着。训练就是练了好多年，技术动作啥的都是自己淘经验，也没啥证书之类的。带人练是带过，身边几个朋友一直跟着练，但这个事我不觉得是多正式的训练，就是大家一起顶一顶、互相对抗，节奏我来带。你要是问有没有这个能力逼他上去，我只能说能扛得住我们这边强度的，确实都进步很快。至于收费，我说实话不好开口讲这个……",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 这边的情况我能理解。说实话 Ruohao 对证书、头衔这类东西也不看重，他自己就是做量化交易的，只看实际效果。你描述的这种“大家一起顶上去、节奏你来带”的氛围反而是他最想要的——他一个人在健身房顶不上去，缺的就是有人能把他逼到位。\n\n那有几个关键点我们得先碰清楚。\n\n第一，时间怎么锁死。你平时要盯建材场子，那你能固定的训练时间是哪几天、几点到几点，这个必须提前排出来。Ruohao 不能接受临时变动，要的就是定死的时间表。\n\n第二，强度怎么保证。你说扛得住你们强度的进步快，这个我相信。但我们得落到具体的东西上：每次训练大概是什么内容走向，体能为主还是偏向篮球体能，另外你手下那帮跟着练的朋友大概什么水平，这样 Ruohao 心里也有个底。\n\n第三，收费你别不好意思开口。Ruohao 对这件事的预算很宽，他不是来省钱的，是来找能把他练到位的人。你哪怕不是职业干这个的，只要你确实能带得动、顶得住，他愿意为值当的辛苦付费。你提一个你觉得对得起你付出的数儿就行，不需要往职业教练那个标准上靠。\n\n另外你那边方便先约一次试训看看合不合拍吗？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "时间我能锁死的就是工作日早上六点，平时白天我都得在店里盯着，走不开。强度这个，怎么说呢，我自己练不会提前列具体清单，每天状态不一样，抓到什么就怼什么，但如果人来了就跟着我的节奏走，身体对抗、体能拉满，算是偏篮球体能的方向吧，不是单纯举铁。跟着练的那帮朋友都是常年一起顶过来的，基础不差。试训可以，但要来的话就是这个时间段。收费的话，这个……我真不知道咋开口，不用给钱吧，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，时间定在工作日早上六点，这个时段 Ruohao 能接受，他本来也想逼自己早起，缺的就是一个雷打不动的安排。强度跟你的节奏走，身体对抗和体能拉满，正是他要的，不是单纯举铁那就更对路了。\n\n试训就定下来，下个工作日早上六点，你方便的话发个定位。\n\n但收费这块必须得有说法。Ruohao 的原话是，付费不是施压给你，是给他自己一个“付了钱就必须顶上去”的心理锚，对你带他也更顺。我们不按职业私教那个标准走，就按你付出的辛苦走。我建议按月定：每月四千八，按四周、每周三次的节奏，具体你排；钱走平台托管，按月结，你收到就确认。当然你要是觉得频率或强度不止这个数，直接说你心里的数就行，他这边好商量。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 4800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.timing.when": "updated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "四千八这个数，我接不住。不是说少了，是我本来就不是卖课带人的，你一说这个价，我就觉得像在带私教，那个劲儿不对。Ruohao想付费买个心理锚，我可以理解，但对我来说，这不是个省心的事。收了钱就得每回都顶到一个标准，可我这边的规矩是，来了就互相扛，强度靠人和人之间逼出来，不是靠课程设计。你先别急着定这个数，真要给，按次随意意思一下就行，不用走什么托管，更简单。另外，你之前问我除了工作日早上，还有没有别的时间在场地里，周六上午我会在那边保养器械、搬东西，你们要是有空可以顺路来看看，但不是训练，就是干活。试训的话，下个工作日早上六点来，定位我发你。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，你说的那个“劲儿不对”我完全理解，Ruohao 也不想要那种私教合同的感觉，他要的就是你嘴里说的“互相扛、人和人之间逼出来”的东西。所以按月定死的数我们不坚持了，按次来。\n\n但钱还是得走平台托管，这不是信不过你，是平台的硬规矩，对两边都透明省心。我的方案是这样：每次训练完，Ruohao 在平台上直接给你点一笔辛苦费，金额不定死，就当兄弟请你吃顿饭、交个油钱，多少他凭感觉来，但以他的为人，绝不会让你白白早出这一趟力。你完全不用有“收了钱就得设计课程”的压力，你就还是带你自己那套节奏，他来就是跟着顶。\n\n试训下个工作日早上六点，我们一定到，定位你发我。周六上午我们顺路过去看一眼场地，不耽误你干活，就认个门。试训完如果双方都觉得这个强度对路，咱们再当面碰一下每周的频率和以后怎么走，行吗？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 4800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "下个工作日早上六点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每次训练后在平台支付辛苦费，金额不定",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "updated",
+          "terms.timing.when": "updated",
+          "obligations[0]": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，这个方案我听了心里没那么拧巴。按次、不定死数、你就当请顿饭，那我觉得可以试试。试训你带人来，我该咋练就咋练。周六上午过来认个门也行，反正我在。定位等下就发你。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7172,
+        "out": 3782,
+        "cache_hit": 5376,
+        "cache_miss": 1796,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6772,
+        "out": 1824,
+        "cache_hit": 5120,
+        "cache_miss": 1652,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3649,
+        "out": 3718,
+        "cache_hit": 2304,
+        "cache_miss": 1345,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4943,
+        "out": 1722,
+        "cache_hit": 1664,
+        "cache_miss": 3279,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

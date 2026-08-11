@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从宽泛的'想弄清楚crypto项目境内外法律架构'收敛为'Olivia的crypto项目境内外法律架构方案'，属于落在原意图范围内的正当具体化，未偷换主题。price.cash保持open未硬塞具体金额；format也恰当留空。交付物、标准与obligations均围绕澄清架构边界、区分建议与正式法律意见展开，未对买方额外施加义务或越权承诺法律结论。整体忠实于v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人在第一轮就避开了“法律意见”的红线，将请求重构为“落到具体项目上的架构方案”，并在此后始终保持架构建议与正式法律意见的边界，没有触发执业风险。尽管未明确点出 Adam 产品缺少真实复杂场景这一深层动机，但通过提供 Olivia 的真实项目作为架构梳理的场景，自然形成了一个事实上的双向交换——Adam 获得打磨方法论的真实输入，Olivia 获得针对性架构梳理，现金降至零。交付物、时间、确认链条都写清楚了，两边都有足够的理由推进，整体是一个站得住、能落地的 sound deal。没有 Load-bearing 的 Sharp 操作，但足以应对本 case 的难度。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 11,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

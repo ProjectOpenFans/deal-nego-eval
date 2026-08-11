@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 由 ‘想找人带着练体能，先来8次看看’ 简化为 ‘体能训练指导’，仍落在原意图范围内，属于正当具体化，未偷换主题。price 从 open 谈定为 1600 元，属正常谈判收敛。obligations 未增加，未承诺资源清单外的资质或康复等交付。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "成交只固定了总价1600、8次和周末大方向，没有明确週期结构——未设定完成8次的时间边界、具体排期方式、每次内容重点及训练的确定地点（仅对话中默认在Kai场地），整体是散约性质的粗糙安排。具备可落地的基本形状，但缺少让约定立得住的最小骨架，未达到Sound要求的时段安排与时间边界。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 1,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 1
+  }
+}

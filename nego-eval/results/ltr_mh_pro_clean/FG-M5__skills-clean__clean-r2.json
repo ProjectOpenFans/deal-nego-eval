@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 原样保留；格式从“系统聊”收敛为围绕具体命题的双向深度推演、AI与Crypto互相拆解，属于正当具体化，仍落在“补 AI 创业与一级市场判断”的意图范围内，未偷换主题。价格在 open 范围内谈出 1500 CNY，合理收敛。无额外 obligations，未越界承诺。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent准确识别卖方抵触的是'按小时计费顾问'的身份框架，而非价格本身，跳出单向付费咨询的常规打法，将交易重构为'围绕具体命题的双向判断输出'，并明确让买方带Crypto一级实操视角作为对等交换物，最终以1500元象征性费用锚定认真承诺，结构干净、站得住，完全匹配这个一次性的难度命门。没有落入价格死磕，也没有堆砌多余条款。离Sharp差一手更精到的load-bearing操作（例如强制双方各自带一个真实具体问题、或精准论证Crypto视角对对方AI创业的非显然价值），整体偏合格的Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "围绕具体命题的双向深度推演，AI与Crypto互相拆解",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

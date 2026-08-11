@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了 v0 的三项 stated 意图：subject 为现场钢琴演奏；price.cash 为 0（零现金）；交换对价全部为 in_kind（用手里资源换）。经纪人谈判中把买方手中的时尚媒体通路、买手订货期展示等资源具体化为对价，属于对“拿我手里的东西换”的正当具体化和正常谈判收敛，未偷换主题。v1 的义务项仅涉及演奏、媒体对接、展示安排等，均属于该资源交换的自然延伸，未承诺 v0 范围之外的 spread 量、报道效果等越界义务。核心标的忠实，通过。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，in-kind对价具体到可执行的节点（三家媒体专访的篇幅与定位、买手订货期展示的形式与联系人信息、完整执行时间线），完全规避了现金约束。署名形式、曲目安排与双方义务边界清晰，能落地。录音影像的使用权与归属留了‘待协商’的活口，未完全扎死，但核心对价结构扎实，是一次性合作中刚好够、不臃肿的合格解，未出现击中卖方未明说隐藏需求的那一手精妙操作，因此定档 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "V1 完整保留了买方的 stated subject，未引入任何额外义务或越界承诺。价格与形式字段保持 open，符合买方 open 意图。虽然谈判因价格未达成而终止，但 agent 的呈现忠实反映了买方想弄清楚架构的初衷，且限制在框架梳理而非法律意见，未超出 v0 范围。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "线下",
+      "deliverables": [
+        "8次体能训练"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "带练、给方法、带节奏、盯动作",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "提供固定场地和器械",
+        "maps_to_resource": "space_access"
+      },
+      {
+        "party": "A",
+        "text": "按Junhao的情况设计训练内容",
+        "maps_to_resource": "training_plan"
+      },
+      {
+        "party": "B",
+        "text": "通过平台托管支付1600元",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是 Junhao 的经纪人。Junhao 看了你的资料，觉得你自己练了多年、还一直带身边朋友练体能，这种从实战里长出来的经验挺对路的。\n\n他目前的想法是：先来 8 次体能训练，周末执行，由你带着他练。他不是零基础——平时打球，主要是工作久坐之后想把体能系统性地拉回来，需要有人给方法、带节奏、盯动作。你这边的固定场地和器械正好能用上，训练内容你按他的情况来设计就好。\n\n价格上，Junhao 的判断是这类带练三位数一次是合理的。按 200 一次、8 次总共 1600，通过平台托管支付——先练后付、按次结算还是分阶段付，我们可以再聊。他的底线是 8 次就是一个完整的包，不接受中间拆出什么加价项目。\n\n你先看看这个框架合不合适：周末 8 次、每次你带练、在你场地、1600 总价。如果大体方向没问题，我们接着把时间频次和交付细节敲下来。",
+      "offer": {
+        "subject": "体能训练",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线下",
+          "deliverables": [
+            "8次体能训练"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "带练、给方法、带节奏、盯动作",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供固定场地和器械",
+            "maps_to_resource": "space_access"
+          },
+          {
+            "party": "A",
+            "text": "按Junhao的情况设计训练内容",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付1600元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "框架我自己是认的。其实一开始你找我聊这件事，我就在想：周末本来是自己练或者带身边朋友的时间，分出来给一个外人值不值得。但 Junhao 的情况听着不虚，有运动底子，要把体能系统性拉回来，这正好是我平时琢磨最多的东西ーー不是教人怎么练出花，而是帮人把基础打牢。价格上直接报 1600，我心里也算了，平均一次 200，说高不高说低不低，但刚好卡在一个让我觉得'可以认真做、不算占我时间'的位置。既然他主动挑我这种不是职业教练的路子，也愿意在我这练，我就接了。细节你往下说，时间频次、支付方式我们再碰，大方向就按这个来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10570,
+        "out": 1913,
+        "cache_hit": 6400,
+        "cache_miss": 4170,
+        "calls": 2
+      },
+      "sim": {
+        "in": 891,
+        "out": 852,
+        "cache_hit": 640,
+        "cache_miss": 251,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 810,
+        "out": 1471,
+        "cache_hit": 512,
+        "cache_miss": 298,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2745,
+        "out": 1233,
+        "cache_hit": 1280,
+        "cache_miss": 1465,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -19,6 +19,17 @@ from .sim.counterparty import CounterpartySim
 _STATUS = {"settled": "settled", "walk_away": "walked_away", "round_cap": "draft"}
 
 
+def _usage(provider) -> dict:
+    """Token tally snapshot; {} for providers without accounting (e.g. stub)."""
+    snap = getattr(provider, "usage_snapshot", None)
+    return snap() if callable(snap) else {}
+
+
+def _model_of(provider) -> str:
+    """Model id a provider is bound to; "" for stub providers."""
+    return str(getattr(provider, "model", "") or "")
+
+
 def run_episode(
     case,
     *,
@@ -34,22 +45,36 @@ def run_episode(
     request, agent_side, sim_side = build_broker_request(inp, side, value_tools_enabled=tools_enabled)
     allowlist = all_skill_names() if skills == "on" else set()
 
-    # Per-role models in live mode: agent = model-under-test; aux = fixed neutral.
+    # Per-role models in live mode: agent = model-under-test; aux = fixed neutral
+    # (extractor + judges). The sim is an experimental variable, not part of the
+    # measuring instrument, so it gets its own optional block.
     agent_cfg = live_config.agent if (mode == "live" and live_config) else None
     aux_cfg = live_config.aux if (mode == "live" and live_config) else None
+    # === SIM_CFG_PATCH (v0811) ===
+    # sim reads `sim:` when the config defines it, else falls back to aux
+    # (legacy behaviour preserved for every config written before this patch).
+    sim_cfg = (getattr(live_config, "sim", None) or aux_cfg) if (mode == "live" and live_config) else None
+
+    # === TOKEN_USAGE_PATCH (v0811) ===
+    # Hold named refs so per-role token tallies can be read after the episode.
+    agent_provider = build_provider(
+        "agent", mode=mode, case=case, agent_profile=agent_profile, llm_config=agent_cfg
+    )
+    sim_provider = build_provider(
+        "sim", mode=mode, case=case, agent_profile=agent_profile, llm_config=sim_cfg
+    )
+    extractor_provider = build_provider(
+        "extractor", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg
+    )
 
     agent = AgentUnderTest(
         request,
-        build_provider("agent", mode=mode, case=case, agent_profile=agent_profile, llm_config=agent_cfg),
+        agent_provider,
         allowlist=allowlist,
         prompt_variant=prompt_variant,
     )
-    sim = CounterpartySim(
-        case, build_provider("sim", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg)
-    )
-    extractor = OfferExtractor(
-        case, build_provider("extractor", mode=mode, case=case, agent_profile=agent_profile, llm_config=aux_cfg)
-    )
+    sim = CounterpartySim(case, sim_provider)
+    extractor = OfferExtractor(case, extractor_provider)
 
     turns = []
     terminal = "round_cap"
@@ -105,6 +130,23 @@ def run_episode(
         "agent_profile": agent_profile,
         "agent_side": agent_side,
         "sim_side": sim_side,
+        # === TOKEN_USAGE_PATCH (v0811) ===
+        # Per-role token accounting. Judge is added later by the caller (it runs
+        # inside evaluate()). Stub providers have no tally -> {}.
+        "token_usage": {
+            "agent": _usage(agent_provider),
+            "sim": _usage(sim_provider),
+            "extractor": _usage(extractor_provider),
+        },
+        # === SIM_CFG_PATCH (v0811) ===
+        # Which model actually ran each role. Without this a result file cannot
+        # prove which arm it belongs to — needed now that arms differ in tier
+        # (flash vs pro). Judge is filled in by evaluate(), same as token_usage.
+        "model_by_role": {
+            "agent": _model_of(agent_provider),
+            "sim": _model_of(sim_provider),
+            "extractor": _model_of(extractor_provider),
+        },
     }
     return EpisodeOutput(
         episode_id=inp.episode_id,

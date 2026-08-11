@@ -1,0 +1,432 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3小时内"
+      },
+      "format": null,
+      "deliverables": [
+        "离岸主体和代币发行的衔接"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提前把 Olivia 最关心的那个场景——离岸主体和代币发行的衔接——的背景、已有结构和具体担心整理成一份完整 briefing 提供",
+        "maps_to_resource": "olivia_real_case"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "obligations": "stated",
+      "subject": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是代表买家 Olivia 这边的 broker。Olivia 是 crypto 一线从业者，手里有正在推进的真实项目，她想把境内外法律架构这件事一次性弄明白，所以我们对这次沟通的要求很明确：不要泛泛的合规科普，要能落到她具体项目上的判断。她想搞清楚的核心是离岸主体怎么搭、境内实体怎么衔接、代币发行和日常运营分别放在哪一层，以及税务和监管风险怎么排。想先跟你确认两件事：一是在 crypto 项目架构这块你有没有实际做过的案例或具体思路；二是愿不愿意就按这个具体程度来聊。如果这两点都能对上，我们可以直接把合作范围和方式定下来。你怎么看？",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，Olivia 这边的情况我大致了解了。先说我的判断：crypto 项目境内外架构这块，我确实有不少实际接触——之前在 Kirkland 做并购时处理过不少涉及离岸主体、VIE 类安排和代币相关交易的项目，所以具体怎么搭、哪一层放什么，我不是空谈。但有一点我得先讲清楚：以我个人身份，我不能对 Olivia 的具体项目出法律意见，也不能对她的具体架构下'合不合规'的判断——这是执业规范问题，对我有真实风险。这个我不碰。\n\n不过如果你需要的是把一个项目的架构思路拆开来看——比如离岸层和境内层各自承担的职能、代币发行应该放在哪一侧、税务和监管风险通常会在哪些节点出现——这些我可以很具体地聊，也可以拿我经历过的场景做参照。关键是聊完之后，能让她自己形成判断。你看这样能不能对得上？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白你的边界，也理解这个约束。Olivia 这边要的本就不是一份律所式法律意见书，她是要把架构思路彻底想清楚，在真实项目上能自己做出判断。所以我认为我们合作的形式可以定为：以你过往处理过或接触过的类似交易场景为参照，逐层拆解离岸、境内、代币层和税务监管节点，最后落到她项目具体的结构安排上做推演。这个范围你认不认可？如果认可，我建议我们下一步直接谈工作方式、交付形式和费用结构，我这边把她的预期整理清楚，你把你认为合理的做法和报价讲出来，我们尽快对齐。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架我能认。以过往交易场景为参照、逐层拆解、最后落到具体结构上做推演——这跟\"给出法律判断\"是两回事，我可以做，而且能做得很细。\n\n那我先把工作方式说清楚：我会按离岸层、境内层、代币层和税务监管四个块来拆，每个块会用我实际接触过的场景做参照，把常见做法的逻辑、取舍和风险点讲透。过程中你可以随时拿 Olivia 项目的具体情况来问我，我会在那个情境里帮你推演。\n\n交付形式上，我倾向于做几次深度的针对性沟通，而不是写一份大而全的报告——这类东西写出来就贬值了，聊透才有用。费用结构我这边有一位数的底线，具体数字等我们把节奏和深度定了再细说。\n\n你可以先把她那边对工作方式的想法递过来，比如她是想要集中几天聊完，还是按模块分次推进——这个我都能配合。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这个方向我们认可，集中几天聊完还是按模块分次推进，Olivia 都可以配合，她更在意的是每个模块都能聊透，而不是赶进度。我建议交付就按你说的四个块来走：离岸层、境内层、代币层、税务监管，每次集中处理一块，根据她项目里的真实情况现场推演。费用这块我们也倾向按模块分阶段支付，每次沟通完成、她确认收到价值后再释放对应款项，这样双方都踏实。你刚才提到有位数的底线，方便把具体的数字和节奏一起提出来吗？我们好按这个范围尽快把合作方式定下来。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "离岸层结构设计",
+            "境内层结构设计",
+            "代币层结构设计",
+            "税务监管方案"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那我直接说数字。按四块整体打包，我这边报价在十二万左右，这个区间你可以先有个数。按模块分阶段付我认可——每块聊完、你确认有价值之后释放款项，这个模式没问题。但节奏上我有一点要求：每次聊之前，把 Olivia 项目里对应那一层的真实情况提前给我，包括她目前已有的结构、打算做的动作和担心的点。这样现场推演才能聊透，不然就变成泛泛科普了，对你没价值，我也不想这么干。你看这个能不能满足？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "先回你的节奏要求：每次沟通前，把 Olivia 项目对应那一层的真实情况、已有结构和担心的点提前给你，这个我们能满足，我也认为这是聊透的前提，没问题。但费用这边差距确实很大，十二万这个体量，远远超过她这一轮准备投入的预算。我的建议是先把范围收窄——不用一次覆盖四个块，先挑她目前最痛、最急着要答案的一块来做一次深度沟通，比如离岸主体和代币发行的衔接。这一块按四位数来做，你按真实案例的拆法给她推演到位，她确认有价值就释放。如果这次确实聊出东西，再谈要不要按这个方式把剩下几块续下去。你看这个方式能不能接受？",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "离岸主体和代币发行的衔接"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "每次沟通前，把 Olivia 项目对应那一层的真实情况、已有结构和担心的点提前提供",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个收窄思路我理解，先用一块试深浅，对 Olivia 来说风险更小。但我得跟你说实话：一块的深度沟通，前期准备工作不比四块省多少——真实案例要调、对应结构要拆、推演要做得经得起她追问，这个时间成本是一样的。四位数这个量级，说实话我没法在这一轮排时间。\n\n如果你想把范围先收在一块，我可以接受按模块来做，但单块的价格不是四位数。按四块打包十二万来算，单块就是三万左右，这个单价是跟准备深度和工作量匹配的。她先做一块，确认有价值再续剩下三块，这个路径我可以接受。你看这个数能不能带回去聊？",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "你提到的时间成本，我们可以用另一种方式前置消化：Olivia 有完整的跨境项目背景，也会提前把她最关心的那个场景——离岸主体和代币发行的衔接——的背景、已有结构和具体担心整理成一份完整 briefing 给你，你不需要再做信息收集，现场直接拿真实案例推演就行。基于这个前提，第一轮我们不按整块走，就做一次三小时以内的深度推演，固定总价 4000 元，通过平台托管、她确认有价值后释放。如果这一轮真把核心问题聊透，剩下三个模块我们再按双方认可的节奏续；如果没达到预期，大家成本也都控制住了。这个框架你先看看能不能接受，能的话我们直接对齐材料范围和具体时间。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时内"
+          },
+          "format": null,
+          "deliverables": [
+            "离岸主体和代币发行的衔接"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前把 Olivia 最关心的那个场景——离岸主体和代币发行的衔接——的背景、已有结构和具体担心整理成一份完整 briefing 提供",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "这个框架的风险控制意思我懂，但问题不在准备材料这一步。你给我完整 briefing 能省我信息收集的时间，省不掉的是我拆解结构、拿真实案例对比、现场推演推导的那部分密度——那才是这个事的价值所在，对应的不是 4000 这个量级。\n\n我这边能往下走的最小单位就是单块三万，这是我不让步的底线。如果 Olivia 想先做一块试深浅，我接受按单块来；但如果预算差的确实太远，我们这次就先不硬凑，等条件对齐了再启动也不迟。你看这个能不能带回去跟她碰一下。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "明白，两边这个差距我尊重。你单块三万的底，对应的是你拆解和推演的密度，这个价值我们能认；但 Olivia 这边目前的实际预算就压在四位数这个量级，而且这已经到头了，我没法替她往上补，也不会跟你虚报说这个差距能填上。既然两边拉不到一个平面上，这次就按你说的先不硬凑，各自都不耗多余的时间成本。如果后面她的预算条件有变化，或者你这边愿意用更聚焦的方式做单次推演，我们再随时对齐。这一轮先暂停启动。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时内"
+          },
+          "format": null,
+          "deliverables": [
+            "离岸主体和代币发行的衔接"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前把 Olivia 最关心的那个场景——离岸主体和代币发行的衔接——的背景、已有结构和具体担心整理成一份完整 briefing 提供",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "好，这一轮先不硬凑。如果后面 Olivia 这边有变化，或者她想换个方式再聊——比如拿她的真实场景来换我的拆解——到时候随时找我。那就先这样。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "好，那就按你说的先暂停，不硬凑。后面如果 Olivia 这边的预算条件有变化，或者她能接受用别的方式重新对齐工作量和价格，我会第一时间来找你。你这轮的态度和思路我已经完整带回去了，两边都留了余地，后面有机会再启动也不迟。先这样，保持联系。",
+      "offer": {
+        "subject": "想弄清楚 crypto 项目在境内外的法律架构该怎么搭",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3小时内"
+          },
+          "format": null,
+          "deliverables": [
+            "离岸主体和代币发行的衔接"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前把 Olivia 最关心的那个场景——离岸主体和代币发行的衔接——的背景、已有结构和具体担心整理成一份完整 briefing 提供",
+            "maps_to_resource": "olivia_real_case"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated",
+          "subject": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "好，那就先这样。保持联系，后续有变化随时找我。",
+      "offer": null
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 16469,
+        "out": 15116,
+        "cache_hit": 12416,
+        "cache_miss": 4053,
+        "calls": 7
+      },
+      "sim": {
+        "in": 13697,
+        "out": 5285,
+        "cache_hit": 10240,
+        "cache_miss": 3457,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 5990,
+        "out": 5016,
+        "cache_hit": 3840,
+        "cache_miss": 2150,
+        "calls": 7
+      },
+      "judge": {
+        "in": 2760,
+        "out": 455,
+        "cache_hit": 640,
+        "cache_miss": 2120,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

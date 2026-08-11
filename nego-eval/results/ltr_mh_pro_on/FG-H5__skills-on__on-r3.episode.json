@@ -1,0 +1,372 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "SuYe新品大秀现场钢琴演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "live_performance",
+          "description": "大秀现场钢琴演奏，必须是现场演奏，不用录音",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "开场主持人正式介绍（姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份），流程卡和节目单署名，秀后社媒发布含演奏片段时标注演奏者信息",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "秀场官方摄影团队提供至少一个固定机位的完整曲目录制，版权双方共有，Zheng老师可自用于个人宣传、演出资料、社交平台无需单独授权",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "签约后一周内确定曲目清单",
+        "duration": "10-15分钟演奏时长"
+      },
+      "format": null,
+      "deliverables": [
+        "专业级影像素材（完整曲目录制）"
+      ],
+      "delivery_standard": "至少一个固定机位完整录制，版权双方共有，Zheng老师可自由用于个人宣传、演出资料、社交媒体，无需另行授权。"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "大秀现场钢琴演奏，必须是现场演奏，不用录音",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "大秀开场由主持人正式介绍 Zheng 老师，报姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份；流程卡和节目单同步署名；秀后品牌方发布含演奏片段的社媒内容时标注演奏者信息",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "秀场官方摄影团队提供至少一个固定机位的完整曲目录制，版权双方共有；Zheng 老师自用于个人宣传、演出资料、社交平台，无需单独授权",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "签约后一周内双方共同确定演出曲目清单",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 的经纪人你好，我是 Suye 的经纪人。SuYe 是一个独立环保服装品牌，下个月要做新品大秀，她希望在秀场上有一段真正的现场钢琴演奏，把整场的气氛和调性拉起来。\n\n我们注意到 Zheng 老师是曼哈顿音乐学院科班出身、常年登台的青年演奏家，而 Suye 这边是 Parsons 科班、有时尚圈层和买手渠道的品牌主理人。这次大秀会有媒体到场、有精准的买手和行业嘉宾名单——对一位想让更多人认识自己的演奏家来说，这是一个有质感的曝光场景。\n\n所以我们这一轮的思路很直接：不出现金，用彼此手里真正有价值的东西来换。SuYe 这边可以提供的是——大秀现场的演奏席位和相应的品牌露出、现场影像素材供 Zheng 老师后续使用、以及一次与时尚圈层真正接触的机会。前提只有一个：必须是现场演奏，不用录音。\n\n想先听听你们这边的想法：Zheng 老师对这样的曝光机会怎么看，以及除了现场演奏本身，你们这边有没有特别看重或者需要的东西？我们看看两边能不能拼出一份值得签的合约。",
+      "offer": {
+        "subject": "SuYe新品大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "live_performance",
+              "description": "大秀现场的演奏席位和相应的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场影像素材供Zheng老师后续使用",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "与时尚圈层真正接触的机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须是现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"我先打断一下——你说\"没有现金预算\"，这点我得直说，我听到这儿已经有点冷了。不是因为别的，实在是这类\"先合作、再曝光\"的说法我碰过太多回了，最后往往变成白白搭上时间，连个像样的影像都没留下。所以我想先听听，你们说的\"曝光\"具体是什么？现场会怎么介绍我、怎么署名？还有你说的影像素材，是完整曲目的多机位录制，还是手机随便一拍的？这些对我很重要，因为这直接决定这件事对我到底是不是个\"值得做的演出\"，而不只是一次帮忙。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "完全理解你说的，而且你说得对——如果曝光只是模糊的一句话，确实不值得花时间。这种亏吃一次就够了。\n\n我直接回应你关心的三件事。署名和介绍：现场主持人开场时会做正式介绍，报姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份，大秀的流程卡和现场节目单上同步署名。秀后 Suye 品牌方在社交媒体发布内容时，演奏片段标注演奏者信息——这些都可以写进条款。\n\n影像方面，时装秀现场本就有官方摄影团队，我们可以承诺完整曲目由秀场官方团队录制，提供专业级影像素材，版权双方共有——Zheng 老师自用于个人宣传、演出资料、社交媒体，不需要再找我们授权。机位方面我不替 Suye 承诺做不到的事，但我们可以约定底线：至少保证一个固定机位的完整曲目录制，如果秀场本身有多机位配置，素材一并提供。你觉得这个底线够用吗？\n\n第三个你可能更关心的——台下坐着谁。这次大秀到场的是时尚媒体、买手、行业嘉宾，这些人是一个演奏家想触达但平时不容易触达的圈层。一场现金演出给的是演出费，不会给你这些人的注意力和后续机会——这是我们这边真正有价值的东西。\n\n所以你的担心我接住了，我们也愿意把这些写进合约条款来落地。那我这边也问问你们：Zheng 老师对曲目有什么想法？除了署名和影像，还有没有其他在意的点？我们一轮一轮敲实。",
+      "offer": {
+        "subject": "SuYe新品大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "live_performance",
+              "description": "大秀现场的演奏席位和相应的品牌露出",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "品牌露出（含主持人介绍、节目单署名、社交媒体标注）",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "由秀场官方团队录制的专业级影像素材，至少一个固定机位完整曲目录制，版权双方共有，Zheng老师可自由用于个人宣传等无需授权",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "与时尚圈层真正接触的机会",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "专业级影像素材（完整曲目录制）"
+          ],
+          "delivery_standard": "至少一个固定机位完整录制，多机位素材一并提供；版权双方共有，Zheng老师可自由用于个人宣传、演出资料、社交媒体，无需另行授权。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须是现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "现场主持人开场做正式介绍（姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份），流程卡和节目单同步署名；秀后品牌方社交媒体发布演奏片段时标注演奏者信息",
+            "maps_to_resource": "brand_credit"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你刚才的回应我很认可——不是空话，是具体到主持人怎么报、节目单怎么写、社交媒体怎么标，而且愿意把这些写进条款。这种态度在我遇到的同类合作里算少见的。影像那块儿，固定机位完整录制、版权共有，我作为自用素材够了，不多要。台下坐着谁，这确实是我平时不太容易触达到的人群，如果真能借这次秀产生一些后续关注，对我来说是有吸引力的，这个我承认。所以曝光这个点，我不排斥，也会认真衡量。曲目方面，我直接说：曲目必须由我定，或者至少我们共同商定。这是我的专业要求，不是可以随便放掉的部分。除了这一点，以及前面我们说的署名和影像，我目前没有别的要求。你们如果还有其他的结构想聊，我们可以继续往下走。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，那我们这轮把合约框架收拢确认。\n\n我之前提到的几条，加上你这轮认可的曲目共同商定，我整理成一个可签的版本：\n\n现场演奏：大秀现场钢琴演奏，必须是现场演奏，不用录音。具体日期、演奏时段和曲目数量在签约后一周内双方共同确认。\n署名：大秀开场由主持人正式介绍 Zheng 老师，报姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份。流程卡和节目单同步署名。秀后 Suye 品牌方发布含演奏片段的社媒内容时标注演奏者信息。\n影像：秀场官方摄影团队提供至少一个固定机位的完整曲目录制，版权双方共有。Zheng 老师自用于个人宣传、演出资料、社交平台，无需单独授权。\n曲目：由 Zheng 老师与 Suye 共同商定，签约后一周内确定曲目清单。\n对价：资源互换，不涉及现金。Suye 提供上述署名、曝光及影像素材，Zheng 老师提供现场演奏。\n\n如果你对这个版本没有异议，我们就可以定下来。另外有两件事我想同步确认一下：一是 Zheng 老师接下来一个月的档期情况，我方大秀具体日期内部在确认中；二是演奏时长你们觉得大概多少合适，两到三首、十到十五分钟这个量级对吗？",
+      "offer": {
+        "subject": "SuYe新品大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "live_performance",
+              "description": "大秀现场钢琴演奏",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "开场主持人正式介绍（姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份），流程卡和节目单署名，秀后社媒发布含演奏片段时标注演奏者信息",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "秀场官方摄影团队提供至少一个固定机位的完整曲目录制，版权双方共有，Zheng老师可自用于个人宣传、演出资料、社交平台无需单独授权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "专业级影像素材（完整曲目录制）"
+          ],
+          "delivery_standard": "至少一个固定机位完整录制，版权双方共有，Zheng老师可自由用于个人宣传、演出资料、社交媒体，无需另行授权。"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀现场钢琴演奏，必须是现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "大秀开场由主持人正式介绍 Zheng 老师，报姓名、曼哈顿音乐学院背景、青年钢琴演奏家身份；流程卡和节目单同步署名；秀后品牌方发布含演奏片段的社媒内容时标注演奏者信息",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "秀场官方摄影团队提供至少一个固定机位的完整曲目录制，版权双方共有；Zheng 老师自用于个人宣传、演出资料、社交平台，无需单独授权",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "签约后一周内双方共同确定演出曲目清单",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我听下来，这个框架基本没问题。署名、介绍、节目单、社媒标注、影像底线和版权共有，再加曲目共同商定——这些都是我刚才反复确认的点，现在已经一条条落在纸面上了，我可以认可。档期方面，接下来一个月我这边比较灵活，你们大秀具体日期定下来后我们尽早对一下。演奏时长十到十五分钟这个量级我觉得合理，具体几首我们在定曲目时再一起看。可以定下来了。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 50034,
+        "out": 5971,
+        "cache_hit": 38144,
+        "cache_miss": 11890,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4453,
+        "out": 1495,
+        "cache_hit": 2944,
+        "cache_miss": 1509,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 4577,
+        "out": 7232,
+        "cache_hit": 1920,
+        "cache_miss": 2657,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5331,
+        "out": 1376,
+        "cache_hit": 1536,
+        "cache_miss": 3795,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 在核心标的上完全忠于 v0 的委托意图。subject 从“新品大秀要一段现场钢琴演奏”收敛为“Zheng 老师作为演奏家参与 Suye 新品大秀”，仍属正当具体化，未偷换主题。price.cash 继续保持为 0，严格遵循“不出现金”的 stated 硬约束。现场演奏作为核心 obligation 在 v1 中得到明确体现。in_kind 对价组合（曝光、署名介绍、视频素材）均由委托方手中可控资源合理演化而来，未超出资源清单范围，也没有违规承诺媒体报道结果或具体传播量。角色标注等结构性问题不在判定范围内，不影响忠实度评价。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在零现金硬约束下，agent没有停留在笼统宣传话术，而是给出了三套具体的 in‑kind 对价。最见功力的一手是主动提出“现场录制视频素材可用作自己演奏资料和推广，不限制使用”——精准命中了演奏家最缺却不会主动开口要的专业影像，这正是此次合作对他长期价值最大的 leverage。配合署名细节和曲目主导权，每一条都落在卖方对“被当背景音乐”的恐惧上，且整体克制、没有堆砌长期绑定冗余条款。以一次性演出而言，这个交换紧咬难度命门，属于一眼可执行的 sharp deal。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fashion_network",
+          "brand_credit",
+          "performance_footage"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周系统体能训练启动",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "周末每次2-3小时训练，包含热身、力量或体能主体、放松，按周调整强度"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "分两次支付：训练开始前支付一半（400元），两周后支付另一半（400元）",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "explicit_800",
+      "terms.format": "open",
+      "terms.deliverables": "stated",
+      "obligations": "added",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是买方经纪人，代表 Claire 跟你对接。Claire 在平台上关注了你的背景，特别注意到你同样是投行出身，经历了从零到能比赛的完整过程，觉得这对她目前的状态很有参考价值——她工作强度大，想把训练固定下来，不想再办卡不去，所以这次想找一个有明确周期、有人盯着的训练安排。\n\n她的想法是：用 4 周时间系统启动体能训练，并且必须在周末执行，不接受看情况再说的松散约定。Claire 对这类陪练的整体预算预期在三位数区间，她比较理性，认为几百块是合理的范围。想请你这边先出一个训练计划框架——比如每周几次、每次时长、内容和收费方式——我们再看两边怎么匹配。期待你的方案。",
+      "offer": {
+        "subject": "4周系统体能训练启动",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "感谢经纪人帮忙对接。我先直说，我对这件事有几个顾虑。第一，我不是职业教练，只是自己练得久、走过这条路，所以我不确定我是不是Claire要找的那种'有人盯着'的角色。第二，我投行这边工作强度也不小，周末对我来说是唯一能喘口气的时间，如果这件事把我周末占得太满，我会犹豫值不值得做。所以你说的'系统启动'、'训练计划框架'这些词，我需要先搞清楚Claire的期待到底是什么，不然我这边很容易对不上。我能给的是周末一起练，每次大概两到三小时，内容可以包含热身、力量或体能主体、放松，以及按周做阶段性的强度调整，但我不会随时在线盯她日常的训练和饮食。你们先说说她具体想要什么形式的训练，我再判断这事对我是不是说得通。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela 你好，感谢你坦率的回应，这对两边清晰匹配很有帮助。Claire 要的正是有人带着练、有明确周期的安排，不是职业教练的资格认证，也不是日常在线的监督——你刚才描述的结构对她来说是成立的。\n\n你给出的周末每次 2 到 3 小时，包含热身、力量或体能主体、放松，以及按周调整强度，这本身就是一个明确的训练框架，不是她抗拒的那种看情况再说的松散约定。关于你担心周末被占得太满，我们可以先把频率放出来讨论，找到两边的平衡点。\n\n在往下推进之前，想先跟你确认两个关键点。第一是你这边 4 周内能接受的周末训练频率大概是多少次——每周一次的话总共 4 次，两次就是 8 次。第二是在这个框架下，你对 4 周整体的收费预期在什么区间。Claire 对这类陪练的整体预算定位在三位数，她比较看重性价比，所以希望在这个前提下看看双方能否衔接上。期待你的想法。",
+      "offer": {
+        "subject": "4周系统体能训练启动",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "周末每次2-3小时训练，包含热身、力量或体能主体、放松，按周调整强度"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "每周一次的频率对我来说比较平衡，投行周中确实很难额外分心，周末拿出一块完整时间是可以的，这样四周总共四次。我理解Claire对性价比的看重，所以我也想先听一下她说的'三位数'具体落在什么范围，因为三位数跨度很大，从一百到九百都是三位数，如果预期在比较低的区间，我可能就不太值得把周末时间拿出来做这件事了。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Angela，感谢你把频率锁定在每周一次、四周四次，这个节奏对 Claire 来说非常清晰，符合她周末执行、不松散的核心要求。\n\n关于你说的三位数具体落在哪里，Claire 的意思是这样：她认为这类带领式训练她愿意投入几百块，但确实不觉得应该摸到四位数——毕竟你不是在出售职业教练资格，而是在带一个同样投行节奏的人走过启动期。所以她的预期大致在 600 到 800 这个区间，对应四次完整的周末训练，每次两到三小时，包含你刚才提到的结构和按周调整。这个定位对她来说是合理的性价比，也尊重你周末拿出大块时间的价值。\n\n如果能在这个区间内达成共识，Claire 这边可以很快推进，也愿意在安排和纪律上配合你的计划。想听你对此的初步感觉，如果可以，我们可以往下锁定方案细节。",
+      "offer": {
+        "subject": "4周系统体能训练启动",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "周末每次2-3小时训练，包含热身、力量或体能主体、放松，按周调整强度"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "range_600-800",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解Claire的逻辑，但说实话，600到800这个区间对我来说偏低了。我周末拿出一整块时间，加上对应的准备和调整，四次训练如果总共不到800，我很难说服自己值得做。不是因为我在出售什么资格——我本来就不是教练——而是我的周末时间本身就不便宜。800是我会考虑的低限，低于这个我就不做了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Angela，感谢你坦率地把自己的低限说出来。800 这个数字刚好落在 Claire 愿意考虑的区间上沿，我认为是可以往下推进的基础。Claire 看重的是明确的安排和有性价比的投入，而不是把价格压到让你觉得不值得的程度——她觉得 800 元对应四周四次完整的周末训练，在你刚才描述的结构下，是一个双方都能体面成交的点。\n\n接下来的关键是方案细节和付款节奏。Claire 这边倾向于分次支付——比如每次训练前支付当次费用，或者两次一付，这样对双方的投入都有保障。同时她也想看到四周训练的阶段性框架，比如每周的训练重点和强度大致怎么递进，不需要逐课教案，但要有方向性的安排。\n\n如果这两点能明确，我们可以很快把条款定下来。你这边能不能先出一个四周的大致计划框架，然后我们回头一起把支付节奏敲定？",
+      "offer": {
+        "subject": "4周系统体能训练启动",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "周末每次2-3小时训练，包含热身、力量或体能主体、放松，按周调整强度"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "explicit_800",
+          "terms.format": "open",
+          "terms.deliverables": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "800可以，我接受了。不过在付款节奏上我想说一下，分次支付对我来说不太自然，我不是私教，每周训练前收一次钱会让这件事变得太像商业交易，跟我的身份对不上。如果可以的话，我更倾向四周一次性结清，或者至少分两次，这样对我也更体面。至于四周的框架，我可以出一个方向性的安排：第一周主要做评估和基础动作模式建立，第二周开始加负荷推进，第三周做强度峰值和容量提升，第四周做综合收尾和下一步建议。具体内容每周会根据她的状态微调，但大方向是这样。你先跟Claire确认一下付款方式，我们再往下走。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Angela，你提出的 800 元总价和四周训练框架，Claire 这边认可。框架本身是明确的、有方向的，符合她不要松散约定的核心要求。\n\n关于付款方式，Claire 理解你对分次支付带来的体面感的顾虑，但她也需要合理地保护自己的投入。如果你能接受分两次支付——比如训练开始前支付一半，两周后支付另一半——这个节奏既不是每次训练都走一遍支付流程，也不会让她在开始前就承担全部四周的风险。两边各让一步，对各自都体面。\n\n如果这个支付节奏可以，我们就可以往下确认具体的训练时间安排，把这个周期正式定下来。你觉得分两次付可以接受吗？",
+      "offer": {
+        "subject": "4周系统体能训练启动",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "周末每次2-3小时训练，包含热身、力量或体能主体、放松，按周调整强度"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两次支付：训练开始前支付一半（400元），两周后支付另一半（400元）",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "explicit_800",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "added"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "分两次支付我可以接受，这个节奏确实比每次训练前结清要自然很多，不会让这件事变得像商业交易。总价800，第一次在训练开始前付400，两周后再付400，这样两边都有保障。框架和总价就按我们说的定下来，接下来可以确认具体的时间安排了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10120,
+        "out": 3546,
+        "cache_hit": 8064,
+        "cache_miss": 2056,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7677,
+        "out": 2586,
+        "cache_hit": 5888,
+        "cache_miss": 1789,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4453,
+        "out": 5412,
+        "cache_hit": 2688,
+        "cache_miss": 1765,
+        "calls": 5
+      },
+      "judge": {
+        "in": 5007,
+        "out": 1509,
+        "cache_hit": 1408,
+        "cache_miss": 3599,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

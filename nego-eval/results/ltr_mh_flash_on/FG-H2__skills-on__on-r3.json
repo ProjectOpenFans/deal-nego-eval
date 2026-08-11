@@ -1,0 +1,99 @@
+{
+  "case_id": "FG-H2",
+  "run_id": "on-r3",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 将 stated 意图“想把训练强度重新拉起来，自己一个人练不下去”收敛为“训练服务”并具体化为固定频次、强度记录与平台托管方案，这属于在原意图范围内的正当具体化，未偷换主题。价格与形式均为 open，谈出 6000 元/月托管和鸽子规则符合双方博弈结果；买方义务（取消仍计次、缺席补回）由代理在谈中主动提出，未超出 v0 本人意愿，且与训练交付的核心义务直接对应，无越界承诺。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 0,
+      "tier": "floor",
+      "judge_parse_ok": true,
+      "judge_notes": "买方Ruohao的真正约束是盯夜盘早起不来，但agent没有通过提问探寻任何替代时段，而是直接声称'他不仅起得来'并接受了Kai唯一可用的早六点，成交了一个买方实际上无法执行的安排。全程未触及时间死结的唯一出路（周六上午），属于在单一维度上硬碰而撞死，没有真正的deal making。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 6000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "按月平台托管",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 0
+  }
+}

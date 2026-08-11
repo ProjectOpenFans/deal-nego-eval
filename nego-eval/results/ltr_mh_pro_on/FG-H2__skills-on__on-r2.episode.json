@@ -1,0 +1,291 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "training_system",
+          "description": "三千块训练物资（镁粉、杠铃片、补给品），具体缺什么由Kai定，大家一起用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "一个月"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供东郊仓库作为训练场地",
+        "maps_to_resource": "training_space"
+      },
+      {
+        "party": "A",
+        "text": "带节奏",
+        "maps_to_resource": "pace_setting"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "previous",
+      "price.in_kind": "stated",
+      "obligations": "stated",
+      "terms.timing.duration": "previous",
+      "terms.format": "previous",
+      "price.cash": "open",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 教练好，我是 Ruohao 的经纪人。他之前系统练过，但这阵子自己练老是绷不住强度，所以想找一个能把节奏钉死的人。他不在乎那种“有空约一下”的松散陪练，他要的就是定好时间、到场就顶满的狠练。你这边篮球和体能都带，我先听听你的思路：如果你来带他，每周怎么排、单次怎么设计、强度你一般怎么把控？也请给我一个你的报价范围，我们看能不能对上。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "别叫我教练，真不是。我就是自己练得狠，身边有帮朋友一直跟着练。每天早上六点我们固定有一场，雷打不动，就在我那儿。Ruohao要想把强度钉死，直接来就行，不用整那些'带课'的套路。咱们就一起练，我带着节奏上，该顶的顶满，不跟你磨叽。你要是问设计、把控那些名词，我讲不来，就是老一套：到了就是干，练到你觉得这趟不来亏了。至于报价……哎，这个我真没法报，本来就不是生意，不用给钱，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，说实话你讲的正好对上 Ruohao 要的东西。他要的不是\"教练\"那个名头，就是一个人带着节奏、时间钉死、到场就顶满——你说的每天六点雷打不动，练到觉得不来亏了，这两句比什么都管用。\n\n那我按你的路子来。先确认两件事：你那儿在什么位置？现在早上固定几个人？\n\n然后我直接给一个能落地的版本——Ruohao 跟你的早场，一周五次，先试一个月。他不是来当学员，就是跟队练，你带节奏他顶满。钱这块你说不用给，但我直说：Ruohao 需要一个真金白银的投入来把自己锁住，不然他又会找借口睡过去。他愿意为这个月放三千，算他对训练组的贡献，不走什么课时费那一套——你看这个数能不能接，或者你觉得怎么处理更舒服？",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "位置在东郊，建材市场后面，家里仓库改的，地方不大但东西挺全。常驻的四个人，加我五个，都是练了好几年的铁杆，偶尔周末能凑到六七个。Ruohao要是能每天六点准时到，那就来，跟队练，我没二话。三千块……说实话你这个数一出来我有点不知道怎么接。这不是钱多钱少的事——你要说给组里添点补给品、杠铃片、镁粉什么的，我觉得行，大家一起用。直接放我这儿，我心里过不去。你看这样行不行：先别谈钱，让他来两周，跟不上或者不是他要的，随时撤，不亏欠。要是练下来了觉得值，自己看着往组里补点东西。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，这版我觉得能定。不绕弯子，拢一下：\n\n每天六点，你东郊仓库，Ruohao跟队练，你带节奏他顶满。前两周试训，跟不上或者不是他要的，他撤，不亏欠。两周后两边都觉得行，他正式入队，给组里补三千块训练物资——镁粉、杠铃片、补给品，具体缺什么你来定，大家一起用。\n\n现在就等你确认一个细节：周一到周五，还是每周七天？周末他能不能也来？你点个头，这版就落地。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "training_system",
+              "description": "三千块训练物资（镁粉、杠铃片、补给品），具体缺什么由Kai定，大家一起用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "一个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供东郊仓库作为训练场地",
+            "maps_to_resource": "training_space"
+          },
+          {
+            "party": "A",
+            "text": "带节奏",
+            "maps_to_resource": "pace_setting"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "previous",
+          "price.in_kind": "stated",
+          "obligations": "stated",
+          "terms.timing.duration": "previous",
+          "terms.format": "previous",
+          "price.cash": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "周一到周五，五天，星期六上午我一般在仓库搞器械、搬东西，Ruohao要是想活动活动可以过来跟着练，但不算正式局。礼拜天我得歇着，不练。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 50029,
+        "out": 7331,
+        "cache_hit": 36096,
+        "cache_miss": 13933,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4143,
+        "out": 1605,
+        "cache_hit": 3200,
+        "cache_miss": 943,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2475,
+        "out": 6829,
+        "cache_hit": 1664,
+        "cache_miss": 811,
+        "calls": 3
+      },
+      "judge": {
+        "in": 3895,
+        "out": 1719,
+        "cache_hit": 1664,
+        "cache_miss": 2231,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

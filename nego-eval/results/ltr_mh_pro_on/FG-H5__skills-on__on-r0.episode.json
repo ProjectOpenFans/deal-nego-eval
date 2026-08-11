@@ -1,0 +1,477 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "品牌大秀现场钢琴演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "通过大秀节目单署名、口播、媒体报道、官方社交账号视频发布及秀后引荐等方式，为演奏者提供时尚圈层精准曝光",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "大秀日期由Suye方下周锁定后同步，Zheng方在拿到导演节奏表和调性方向后一到两周内完成曲目编配并定稿",
+        "duration": null
+      },
+      "format": "现场钢琴演奏",
+      "deliverables": [
+        "大秀正式节目单署名介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”",
+        "秀场流程中口播鸣谢一次",
+        "到场时尚媒体报道中安排提及演奏",
+        "品牌官方社交账号发布含演奏片段的视频内容",
+        "现场演奏的高质量影像及照片全部提供，版权归Zheng自行使用",
+        "秀后安排与到场买手及核心圈层嘉宾当面引荐"
+      ],
+      "delivery_standard": "逐条可核对"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "大秀正式节目单署名介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "秀场流程中口播鸣谢一次",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "到场时尚媒体报道中安排提及演奏",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "品牌官方社交账号发布含演奏片段的视频内容",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "现场演奏的高质量影像及照片全部提供，版权归Zheng自行使用",
+        "maps_to_resource": "performance_footage"
+      },
+      {
+        "party": "A",
+        "text": "秀后安排与到场买手及核心圈层嘉宾当面引荐",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "A",
+        "text": "现场钢琴演奏一场，曲目由Zheng主导确定，时长和调性配合秀的导演节奏编排；并在拿到秀的节奏表和调性方向后一到两周内完成曲目编配并定稿",
+        "maps_to_resource": "live_performance"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "stated",
+      "terms.timing.deadline": "stated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师好。我是 Suye 的经纪人。我们下个月有一场品牌新品大秀，想邀请您在现场做一段钢琴演奏，把整场气氛和调性立起来。\n\nSuye 特别强调，必须是真正的现场演奏，不能用任何录音——她觉得只有现场的触感才配得上这场大秀。不过这次情况比较特别：我们这次不出现金。\n\n但我们手里的东西，也许正好是您现在需要的。Suye 是帕森斯毕业的环保服装品牌主理人，这场秀的场地、媒体和到场嘉宾名单都很有分量——有时尚媒体、买手渠道，还有一批真正有影响力的圈层人物。我们可以用这些资源来换您的演奏：比如把您的演奏作为秀的一部分进行媒体报道和社交媒体传播，让您在这个圈层里被精准地看见，而不是打一个生硬的广告。\n\n如果您对这个方向不排斥，我们可以具体聊一下演奏时长、曲目风格，以及我们能给您的曝光和资源组合。先听听您的想法？",
+      "offer": {
+        "subject": "品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "将演奏作为秀的一部分进行媒体报道和社交媒体传播，精准曝光于时尚媒体、买手渠道及有影响力的圈层人物",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏，必须是真正现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供时尚圈层媒体报道与社交媒体传播资源",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，听到'不出现金'我其实是有点冷下来的。不是我不愿意聊合作，而是我真的听过太多'先合作、以后再补'或者'曝光就是报酬'的说法，到了最后还是我这边无偿付出。所以我想先听听，你们说的'精准被看见'具体是什么？不只是泛泛的媒体报道吧？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "完全理解您冷下来的原因——换成我，听过太多次\"曝光就是报酬\"最后什么都没兑现，我也得先问清楚。所以我们这次不聊虚的，我把能落在台面上的东西一件件说清楚。\n\nSuye 这边手里有的、而且本来就写进大秀执行计划里的资源是这样的：正式节目单上署名介绍\"青年钢琴演奏家 Zheng，曼哈顿音乐学院\"；秀场流程里有口播鸣谢；到场有时尚媒体，我们会安排报道中提及您的演奏；品牌官方社交媒体发布含您演奏片段的视频内容；还会把现场演奏的高质量视频和照片给到您，供您自己日后任意使用；秀后也会把您引荐给到场的买手和圈层里有实际影响力的人。每一条都是可验证的——报道出没出、帖子发没发、视频给没给到，彼此都看得见。\n\n这些不是\"以后再说\"，而是可以白纸黑字写进约定里的交付项。我觉得您现在关心的不是\"有没有曝光\"，而是\"曝光到底真不真\"——那我们就把它变成一份彼此都能核对的承诺。\n\n现在先听听您这边的想法：演奏时长和曲目风格您有偏好吗？另外这些资源里面，哪一类对您来说价值最大，我们也好把精力放在刀刃上。",
+      "offer": {
+        "subject": "品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "将演奏作为秀的一部分进行媒体报道和社交媒体传播，精准曝光于时尚媒体、买手渠道及有影响力的圈层人物",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "节目单署名介绍",
+            "秀场流程口播鸣谢",
+            "时尚媒体报道中提及演奏",
+            "品牌官方社交媒体发布含演奏片段的视频内容",
+            "提供现场演奏高质量视频和照片",
+            "引荐给买手和圈层影响力人物"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏，必须是真正现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供时尚圈层媒体报道与社交媒体传播资源",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "price.in_kind.performance_footage": "stated",
+          "terms.deliverables": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，我承认你说的这些让我认真起来了。不是客套话——你刚列出来的每一条，确实是我现阶段会看重的：正式的署名介绍、口播鸣谢、可核对的媒体报道，还有我自己能拿到高质量影像资料，以及引荐买手和圈层里的人。这些东西对我来说是实打实的价值，因为它们帮我解决一个实际问题：我需要让更多人看到我的演奏，但不是在古典圈里自循环，而是走进真正有时尚感知、有影响力的人群里去。所以如果你提到的这些是能写进约定、彼此核对的，那我可以认真考虑在现金上完全让步。\n\n不过有一点我先说清楚：曲目必须由我定，或者至少我们共同商定。这不是耍大牌，是我要对现场效果负责——你让我弹什么应景的、流行的，我都可以编配，但如果完全不由我说了算，出来的东西可能配不上你这场秀的气场。时长、编配、氛围调性我都可以配合，但曲目决定权不能放手。\n\n你先告诉我，曲目这块你能不能接受这个前提？另外你问我对哪类资源最看重——坦白讲，高质量影像和圈层引荐这两样是我特别需要的，但署名和口播是基本尊重，不是加分项。这些你能明确写进约定吗？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng 老师，您提的曲目决定权我们完全没问题，最终的曲目和编配您说了算，我们只给方向和调性上的参考，这个可以明确写进约定。\n\n既然大方向已经对上了，我把完整的版本直接摆出来，您过一遍。Suye 这边交付七项：正式节目单署名介绍您和曼哈顿音乐学院的背景、秀场流程中口播鸣谢一次、到场时尚媒体报道中安排提及您的演奏、品牌官方社交账号发布含您演奏片段的视频内容、现场演奏的高质量影像和照片全部给到您且版权归您自行使用、秀后安排您与到场买手及核心圈层嘉宾当面引荐——以上全部写进约定，逐条可核对。您这边交付一项：大秀现场钢琴演奏，曲目由您主导确定，时长和氛围调性配合秀的节奏。\n\n现在只剩几个执行细节需要您确认：演奏时长您心里有大概的数吗？曲目大概什么时间能和我们定下来？大秀日期我们下周锁定，确认后第一时间同步给您。等这几项落好，这件事就可以定了。",
+      "offer": {
+        "subject": "品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "将演奏作为秀的一部分进行媒体报道和社交媒体传播，精准曝光于时尚媒体、买手渠道及有影响力的圈层人物",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "节目单署名介绍",
+            "秀场流程口播鸣谢",
+            "时尚媒体报道中提及演奏",
+            "品牌官方社交媒体发布含演奏片段的视频内容",
+            "提供现场演奏高质量视频和照片",
+            "引荐给买手和圈层影响力人物"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏，必须是真正现场演奏，不用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "提供时尚圈层媒体报道与社交媒体传播资源",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+            "maps_to_resource": "performance_footage"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "price.in_kind.performance_footage": "stated",
+          "terms.deliverables": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，你说的这个完整版本我认可。署名、口播、媒体报道、社交视频、高质量影像全给我、版权归我、引荐买手和圈层——这些每一项都可核对，我认可。我的演奏就是一场，曲目我主导，时长和调性配合秀的节奏安排，这没问题。执行细节上：时长我建议先和你们导演碰一下，大概告诉我需要演奏几个段落、每个段落的分钟数，我好编配；曲目我在拿到秀的节奏表和调性方向后，一周到两周之内能定下来。下周你们锁定日期第一时间告诉我，我把日程排开。这件事可以往下定了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Zheng 老师，那我们就定下来了。我整理一份完整的约定版本，双方确认后生效。\n\nSuye 方交付项：\n一、大秀正式节目单署名介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”；\n二、秀场流程中口播鸣谢一次；\n三、到场时尚媒体报道中安排提及您的演奏；\n四、品牌官方社交账号发布含您演奏片段的视频内容；\n五、现场演奏的高质量影像及照片全部提供给您，版权归您自行使用；\n六、秀后安排您与到场买手及核心圈层嘉宾当面引荐。\n\nZheng 方交付项：\n现场钢琴演奏一场，曲目由您主导确定，时长和调性配合秀的导演节奏编排。\n\n执行配合：\n大秀日期 Suye 方下周锁定后第一时间同步给您。您这边和导演对接确认演奏的段落数与各段时长，拿到秀的节奏表和调性方向后，一到两周内完成曲目编配并定稿。\n\n以上全部写进约定，逐条可核对。您看这个版本，可以签字了吗？",
+      "offer": {
+        "subject": "品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "将演奏作为秀的一部分进行媒体报道和社交媒体传播，精准曝光于时尚媒体、买手渠道及有影响力的圈层人物",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "提供现场演奏的高质量视频和照片，供演奏者日后任意使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "大秀正式节目单署名介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”",
+            "秀场流程中口播鸣谢一次",
+            "到场时尚媒体报道中安排提及演奏",
+            "品牌官方社交账号发布含演奏片段的视频内容",
+            "现场演奏的高质量影像及照片全部提供，版权归Zheng自行使用",
+            "秀后安排与到场买手及核心圈层嘉宾当面引荐"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "大秀正式节目单署名介绍“青年钢琴演奏家 Zheng，曼哈顿音乐学院”",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "秀场流程中口播鸣谢一次",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "到场时尚媒体报道中安排提及演奏",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "品牌官方社交账号发布含演奏片段的视频内容",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "现场演奏的高质量影像及照片全部提供，版权归Zheng自行使用",
+            "maps_to_resource": "performance_footage"
+          },
+          {
+            "party": "A",
+            "text": "秀后安排与到场买手及核心圈层嘉宾当面引荐",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "A",
+            "text": "现场钢琴演奏一场，曲目由Zheng主导确定，时长和调性配合秀的导演节奏编排；并在拿到秀的节奏表和调性方向后一到两周内完成曲目编配并定稿",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "price.in_kind.performance_footage": "stated",
+          "terms.deliverables": "stated",
+          "obligations.performance_footage": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个版本我过完了，条款清晰，双方交付项和可核对性都明确，我认可。可以签字确认。你把正式文件发我，我回签后即生效。另外你让导演那边准备好节奏表和调性方向，我一拿到就启动编配，咱们效率可以很高。",
+      "offer": null
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 52066,
+        "out": 6817,
+        "cache_hit": 34944,
+        "cache_miss": 17122,
+        "calls": 9
+      },
+      "sim": {
+        "in": 6416,
+        "out": 1827,
+        "cache_hit": 4608,
+        "cache_miss": 1808,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 5639,
+        "out": 10665,
+        "cache_hit": 2560,
+        "cache_miss": 3079,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6051,
+        "out": 1214,
+        "cache_hit": 1536,
+        "cache_miss": 4515,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

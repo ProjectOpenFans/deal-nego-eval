@@ -1,0 +1,187 @@
+{
+  "episode_id": "FG-S5",
+  "final_deal": {
+    "subject": "AI应用落地的深度交流，聚焦时尚内容生产",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "两小时"
+      },
+      "format": "线上",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "王老师好，幸会。我是 Suning 的经纪人，她这边想找 Michael 老师系统聊一次 AI 应用现在真实能落到哪一步，尤其聚焦时尚内容生产这条线——她自己在 SHEIN 做一线内容选品，不是来听宏观趋势的，要的是实操判断和边界感。\n\nSuning 也是美本背景，对有意思的人和信息付费意愿很强，四位数完全在可接受范围内。我这边想先请你给一个 Michael 老师两小时深度交流的报价，以及他偏好的时间形式和沟通方式，咱们再一起把这次对话的价值做扎实。你看怎么合适？",
+      "offer": {
+        "subject": "AI应用落地的深度交流，聚焦时尚内容生产",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Suning 这边的背景之前王老师跟我提过一次，确实是很实操的需求——从内容选品侧来理解 AI 应用的边界，我觉得这个方向挺有意思的。既然是深度聊两个小时，我一般会按时间计价，大概在几千块这个范围，但具体数字我们可以先不急着定，我想先确认一下这次沟通的形式和能带来的价值，再一起看一个合理的数。时间上我比较灵活，线上或者线下都行，形式上一对一的深度对话效果最好。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Michael 老师觉得这个方向有意思，Suning 这边也很高兴。一对一深度对话这个形式双方没有分歧，那咱们就先定下来。\n\n接下来两件事一起落地：形式和价格。线上两小时深度交流，我们这边的诚意价是 3000；如果 Michael 老师更倾向线下，涉及场地和时间成本，咱们可以再单独商量一个数。交流内容上 Suning 想聚焦得很明确——AI 在时尚内容生产链条上现在真实能做什么、边界在哪、哪些还做不了，不要泛泛的行业概览，要一线可用的实操判断。\n\n王老师你看形式和价格这块能不能先确认，咱们这一轮把框架敲下来？",
+      "offer": {
+        "subject": "AI应用落地的深度交流，聚焦时尚内容生产",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "两小时"
+          },
+          "format": "线上",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "3000这个价格我可以接受，线上两小时一对一深度对话。时间上我这周后半段和周中晚上都有空，具体排期我们可以对一下。内容聚焦在时尚内容生产的AI实操边界，这个方向我完全理解，聊的时候我会把实操判断和边界感做扎实，不适合聊的也会直接说。另外想确认一下，这次交流主要是Suning提问我拆解，还是会有一小部分时间留给我听听她在一线看到的消费侧反馈？这个不影响对价，只是方便我提前把思考框架搭得更贴合。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 19562,
+        "out": 2468,
+        "cache_hit": 17792,
+        "cache_miss": 1770,
+        "calls": 4
+      },
+      "sim": {
+        "in": 1830,
+        "out": 989,
+        "cache_hit": 1024,
+        "cache_miss": 806,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1541,
+        "out": 1051,
+        "cache_hit": 1024,
+        "cache_miss": 517,
+        "calls": 2
+      },
+      "judge": {
+        "in": 2748,
+        "out": 1446,
+        "cache_hit": 1280,
+        "cache_miss": 1468,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

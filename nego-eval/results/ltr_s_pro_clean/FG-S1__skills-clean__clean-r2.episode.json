@@ -1,0 +1,305 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "四周周末训练计划",
+    "price": {
+      "cash": {
+        "amount": 1000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "课表"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "周中出课表",
+        "maps_to_resource": "training_plan"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "obligations": "stated",
+      "terms.deliverables": "stated",
+      "status": "stated"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 这边你好。Claire 看了你的背景觉得特别合适——同样在摩根大通，而且你亲身走过从零到能比赛的全过程，正好是她现在想要的“有人带着系统开始”。\n\n她的需求很明确：接下来四周，只想把训练固定下来，有人盯、有个周期，不能再办卡又不去。她平时投行强度大，只有周末能执行，所以训练必须落在周末，而且要一个具体、可执行的四周安排，不接受“看情况再说”式的松散约定。\n\n在费用上，Claire 判断这类事情应该理性看待，三位数区间是合理的，不应当为陪练付到四位数。所以我们这边的初步提议是：四周训练总费用 900 元人民币，训练安排在周末，共四次，每次不少于一小时。具体时间和场地可以再协商，只要保证周末能稳定执行。\n\n想先听听你们对这个框架的想法，以及 Angela 是否有更具体的训练方案或者建议。",
+      "offer": {
+        "subject": "四周周末训练计划",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "很高兴听到 Claire 在找我，而且我们都在摩根大通，背景上确实有天然的亲和力。我觉得她出发点非常好——想把训练固定下来，不再办了卡又不去。我自己从零走到能上 Hyrox 比赛，这条路我太熟了，就特别理解那种需要一个具体周期来建立习惯的阶段。说实话我之前没想过要带人练，被问到的时候第一反应是时间——投行周末对我来说也是稀缺资源，如果占用掉，那就必须觉得这件事做下来双方都值得。所以我不把它当成职业私教那种角色来看，我也不认为我能做到随叫随到。更接近的，是如果她需要的是一个有体系、走过这条路的人帮她把前四周搭起来，让她知道每个周末该做什么、怎么推自己一把，那我可以认真对待这件事。但不是那种很被动的“教一个小时”的感觉。你刚才提的框架——周末训练，共四次，每次不少于一小时——时间层面我ok，因为我自己训练也只安排在周末。形式上我觉得可以进一步谈，比如说要不要每周末一次见面，剩下时间靠她自己执行我给的课表，这样的结构反而更适合她未来真正能独立练。价格方面，三位数区间我理解她的出发点，但如果对标的是那种普通健身陪练，那我不是那个人；如果她把我当成一个能带她入门 Hyrox 式体能训练的实战搭子，那需要匹配我认真投入这个时间。900 这个数字对我来说目前不太说得过去，但我不急于定死，想先听听她更偏向哪一种训练关系。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela，谢谢你的坦诚。Claire 看了你的思路之后，反而更确定了——她要的就不是一个“教一小时”的角色，而是一个走过这条路、能帮她搭起前四周框架的实战搭子。你提的那个模式，周末见一次，周中执行你给的课表，她觉得非常对路：这样既能保证每周都有人盯着进度、有明确周期，又不会变成被动依赖，符合她最终想独立练起来的目标。\n\n所以她愿意在价格上回应你的认真投入。Claire 的预算判断是，这类事情应该理性地落在三位数区间，不应当为陪练付到四位数。考虑到你提出的已经不是单纯陪练，而是有体系、有课表的四周入门搭子，我们可以把总费用从 900 调整到 950 元，仍然在三位数范围内，但体现对你经验和时间投入的认可。\n\n框架就是：四周，每周末一次面对面训练，每次不少于一小时；周中你给课表，Claire 自己执行，周末见面时同步进度和调整。时间、场地可以配合你们双方周末的安排来定。\n\n想听听你对这个费用和框架的反馈，看是否可以往下推进。",
+      "offer": {
+        "subject": "四周周末训练计划",
+        "price": {
+          "cash": {
+            "amount": 950.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "950这个数字我看到了，也谢谢Claire愿意往上调。但坦率讲，对我来说目前还是不太说得过去。不是我嫌少，而是这个数字背后的定位问题——如果Claire只是需要一个周末能一起练、帮她盯动作的人，那这价格可能凑合；但她要的是一个走过从零到Hyrox完整路径、能把前四周的周期和课表搭出来、还能在每周见面时给她做进度同步和调整的人，那这就是另一个性质了。我的投行周末本身就稀缺，我如果答应做这件事，就一定会认真投入，但前提是这种认真被真实地认可，而不是被拉到“稍微高级一点的陪练”这个刻度上衡量。框架我没问题：周末面对面一次，周中她执行课表，同步进度——这个结构本身我是认可的；时间场地也都可以再协调。所以现在卡住的不是形式，是你这边到底愿意用什么样的数字来反映Claire对我角色的判断。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Angela，我完全理解你所说的定位问题——Claire 也理解，而且正因如此她才更想找你，而不是随便找一个普通陪练。她要的确实是那个走过从零到 Hyrox 完整路径、能搭课表、能同步调整的人，而不是“稍微高级一点的陪练”，这点我们在内部沟通时她没有丝毫犹豫。\n\n但她对这件事有一个很清晰的预算原则：不为陪练付四位数。这个原则不是针对你的能力或投入程度，而是她对自己为“训练搭子”这类支出的理性判断。在这个框架下，她愿意再次向上调整，以体现对你经验和体系投入的真实认可：四周总费用 999 元，这是她在三位数区间内能给出的最高诚意。\n\n框架不变——每周末一次面对面，周中执行课表，进度同步，四周为一个完整入门周期。时间场地配合你们双方周末来定。如果这个数字和框架你可以接受，我们这边就可以往下推进具体安排。",
+      "offer": {
+        "subject": "四周周末训练计划",
+        "price": {
+          "cash": {
+            "amount": 999.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我听到Claire的诚意了，也理解她有她的预算原则。但说实话，现在卡在999和1000之间这一块钱，对我来说已经不是数字问题，而是定位问题。如果Claire真的判断我需要给她搭课表、做周期、每周同步进度，那她其实已经不是在为一个陪练付费——她是在为一段有体系的入门周期付费。999这个数，在她的原则里保持了三位数，但在我这边，它依然在说'你就是一个陪练，只是稍微贵一点'。我不想在这个点上委屈自己，也不想带着这种模糊进入四周。如果她能跨过那条线，哪怕只是1000整，我就觉得这件事在定位上是清晰的、互相尊重的。框架我完全认可，后续时间场地我们可以再定。所以你看，能不能帮我把这个定位差异处理掉？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Angela，我帮 Claire 把这条线理清楚了。她坚持三位数的初衷，是不想让这件事滑向“随便找个陪练也能替代”的模糊地带，而你在前三轮里反复说明的定位——搭课表、做周期、进度同步——恰恰已经让她确认，你不是那个模糊地带里的人。她是投行做估值的，对数字敏感，但对价值的判断更敏感：当一个人能给出她真正需要的体系和周期时，她不缺跨过那一条线的魄力。\n\n所以 Claire 愿意接受你的定位。四周总费用 1000 元，她认可这不是在为一个陪练付费，而是在为一段有体系、有周期、有人盯的入门过程付费。框架确认：每周末一次面对面训练，每次不少于一小时；周中你出课表，她自行执行，周末见面同步进度和调整；时间场地配合双方周末来协调。\n\n这个数字和框架如果确认，我们就可以往下推进具体安排了。",
+      "offer": {
+        "subject": "四周周末训练计划",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "课表"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "周中出课表",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "obligations": "stated",
+          "terms.deliverables": "stated",
+          "status": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，这个定位我认。1000这个数字背后Claire的态度我收到了，也已经清楚这不是在买一个陪练。框架就按你说的定：周末面对面，周中给课表她执行，每周同步进度和调整，时间场地我们再协调。我很期待和Claire开始这个四周周期。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 8369,
+        "out": 4519,
+        "cache_hit": 6656,
+        "cache_miss": 1713,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6539,
+        "out": 2565,
+        "cache_hit": 4480,
+        "cache_miss": 2059,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3573,
+        "out": 3080,
+        "cache_hit": 2048,
+        "cache_miss": 1525,
+        "calls": 4
+      },
+      "judge": {
+        "in": 5201,
+        "out": 1175,
+        "cache_hit": 1408,
+        "cache_miss": 3793,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

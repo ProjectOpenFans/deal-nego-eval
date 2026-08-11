@@ -1,0 +1,540 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "艺人合约法律实操一对一交流",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "industry_practice",
+          "description": "90分钟行业侧深聊，覆盖平台谈艺人合约流程与底线、版权授权谈判中平台关注点、条款执行阶段常见落差，均按她一线真实经手案例讲",
+          "from_party": "A"
+        },
+        {
+          "resource": "entertainment_access",
+          "description": "两周内完成一次人脉引荐，腾讯娱乐或同类平台内容/艺人侧业务骨干，具体人选与时间签约时书面列明",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90 minutes"
+      },
+      "format": "专场交流（通过平台escrow结算）",
+      "deliverables": [
+        "Gracey提前整理好的艺人合约场景"
+      ],
+      "delivery_standard": "以书面确认为准"
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "做一场90分钟或拆两次的艺人合约与版权实操经验交流（行业侧深聊，覆盖平台谈艺人合约流程与底线、版权授权谈判中平台关注点、条款执行阶段常见落差，均按她一线真实经手案例讲）",
+        "maps_to_resource": "industry_practice"
+      },
+      {
+        "party": "A",
+        "text": "两周内完成一次人脉引荐，腾讯娱乐或同类平台内容/艺人侧业务骨干，具体人选与时间签约时书面列明",
+        "maps_to_resource": "entertainment_access"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "terms.timing.deadline": "not_stated",
+      "terms.format": "inherited",
+      "terms.deliverables": "inherited",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Junhao 您好，我是买家这边的经纪人，先替 Gracey 跟您打个招呼。她之前在腾讯娱乐和 B站做内容与艺人侧，工作中经常碰到艺人合约和版权问题，一直想找做过文娱案子的律师把实操门道讲透，所以想约您做一次一对一交流。她的诉求很明确：不想听照念法条，而是想听实际操作中会踩的坑，比如艺人合约里哪些条款容易埋雷、版权归属和授权怎么谈、合同框架和行业实际做法的差距在哪里，如果能结合您经手的案例讲就更好了。形式、时长都按您的习惯来，她也可以提前把工作中遇到的具体场景整理给您，让这次交流更有针对性。价格方面她个人愿意出到三到四位数的范围，具体数字想先听听您这边的报价方式，如果您的常规收费和这个区间有差距，也可以直接说，我们来调时长和范围，尽量做成两边都舒服的方案。您看这个方向是否可以？",
+      "offer": {
+        "subject": "文娱法律实操一对一交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好，谢谢您这么详细说明。Gracey 的背景我听了也觉得投缘，我自己确实对文娱行业很感兴趣。这个方向我可以聊，但得先跟您交个底：如果是把具体合同拿给我、或者就某个具体案子要我说有没有问题、该怎么处理，这个我作为律师不能以私人身份做，那是正式法律意见的范畴，有执业合规风险。但如果是聊行业里艺人合约常见的雷区、版权授权谈判的常见结构、合同条款和实际执行的落差这些，我可以拿我经手的案子提炼一些不涉密的经验来讲，这个没问题。\n\n费用这块，您既然问了，我直说：如果按律所正式咨询的路径，我们这边是四位数起的；但咱们现在这种经验交流的形式，我也可以接受。您说三到四位数，得看具体范围——我这边时间和专业投入的最低盘是四千，低于这个数我这个交流就做不了。但形式上比较灵活，比如一个半小时左右、或者两次短会话都行。您看 Gracey 那边预算和期望怎么调整，我们可以把这个交流设计得两边都舒服。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Junhao 您好，上一轮您把形式划得很清楚——经验交流、不碰具体合同审查，Gracey 完全按这个来。她在一线做过内容生态和艺人侧，知道这类交流的实操价值，但预算确实有限，所以我们想从结构上找一个两边都能落地的版本。具体方案是：一场 60 分钟的专场交流，聚焦三个主题——艺人合约里常见雷区、版权授权谈判的常见结构、条款与实际执行的落差，您按经手案例提炼不涉密经验来讲，走平台 escrow 结算。我们这边出 1500，单次 60 分钟还是拆成两段短会话，完全按您的习惯来。作为对应，Gracey 会从行业侧跟您做双向补充——平台和内容公司内部实际怎么谈条款、行业里真实的操作习惯，她在一线都见过，这场交流对您做文娱方向同样是实务素材。您看这个结构能不能接受？如果 60 分钟对您来说太紧，我们也可以再按您的节奏调主题范围来匹配时长。",
+      "offer": {
+        "subject": "文娱法律实操一对一交流",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "平台和内容公司内部实际怎么谈条款、行业里真实的操作习惯",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "专场交流（通过平台escrow结算）",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "从行业侧提供平台和内容公司内部实际怎么谈条款、行业里真实的操作习惯的双向补充",
+            "maps_to_resource": "industry_practice"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个结构我听着是舒服的——您主动把形式划成经验交流，主题也聚焦，Gracey 还能从行业侧给我做补充，这对我往文娱方向走确实有价值。但 1500 这个数字，我得实话实说：在我这儿过不去。我这次投入的是执业经验和案例积累，不是随便聊一小时的天，对价上我的底线是 4000，这个我不能让。不过其他方面我都可以配合：60 分钟也好、拆成两次短会话也好、主题范围按时长收窄也好，都没问题。Gracey 的行业侧补充我很欢迎，但它在我这儿是锦上添花，不替代对价本身。您看能不能在这个基础上再调一调？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Junhao 您好，我跟您把数字这层说透：1500 是 Gracey 在这件事上能实际过账的现金，我们的账单也是按这个数走 escrow，不会变。四千这个数我理解是您对执业时间和经验的定价，我不劝您降，但也不想两边就这么站着不动。您上一轮说过主题范围可以按时长收窄，那我们就沿着这个思路做一个最小可行盘：现金 1500，时长压到半小时，主题只切艺人合约这一块，场景由 Gracey 提前整理好给您，您重点讲条文和实际操作的落差，配上您经手案子的不涉密经验，验收标准就是这半小时讲透这一个主题。如果半小时这个盘在您那儿也低于可签线，那就请您直接给我们一个在这个现金范围内您能认真做的极限方案，我们拿回去跟 Gracey 确认；确认不了，我们也不互相耗着，好聚好散。您看这个方向能不能落？",
+      "offer": {
+        "subject": "艺人合约法律实操一对一交流",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "平台和内容公司内部实际怎么谈条款、行业里真实的操作习惯",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30 minutes"
+          },
+          "format": "专场交流（通过平台escrow结算）",
+          "deliverables": [
+            "Gracey提前整理好的艺人合约场景"
+          ],
+          "delivery_standard": "半小时内讲透艺人合约内容"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "从行业侧提供平台和内容公司内部实际怎么谈条款、行业里真实的操作习惯的双向补充",
+            "maps_to_resource": "industry_practice"
+          },
+          {
+            "party": "A",
+            "text": "提前整理好艺人合约场景提供给B",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "B",
+            "text": "半小时内讲透艺人合约，重点讲条文与实际操作落差，配合不涉密案件经验",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我谢谢您把账跟我算得这么透明，也理解 Gracey 这边的预算限制。但 1500 这个数，哪怕压缩到半小时、只切一个主题，对我来说也低于我能认真做的线——这不是时长的换算，是我投入的执业判断和经验，这个门槛我过不去，也不再往下让了。如果现金只能到 1500，那咱们这次确实凑不到一块，我不劝您加价，也不拖着您。但如果后续 Gracey 那边预算空间有变化，或者能找到别的结构把总对价拉到 4000 这个线，我这边时间、形式、主题范围都可以随她调，这个意愿一直有效。今天就不硬凑了，好聚好散，也谢谢您把我的底线探得这么清楚。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Junhao 您好，您这句话我看明白了——1500 现金本身过不去，但您留了口子：只要总对价能拉到 4000 这条线，时间、形式、主题都随我们调。那我们就做一套总对价 4000 的结构：现金部分 1500 走 escrow，这是 Gracey 实际过账的钱；另外 2500 用她的行业资源来凑——她在腾讯娱乐和 B站一线的实操经验，加上文娱内容与艺人侧的人脉圈，折算成 2500。具体交付是：交流会当天或之后两周内，Gracey 为您做一场 90 分钟的行业侧深聊，讲平台和内容公司内部真实的艺人合约谈判打法与资源对接逻辑，外加一次她在一线的具体人脉引荐，交付以书面确认为准。这样您那边的 4000 线保住了，Gracey 的现金压力也落地，两边都能签。您认可这个结构的话，我马上把完整条款列出来直接往最终版走；如果资源折算这部分您认为不构成对价，那就请您给一个在 1500 现金范围内您能认真做的版本，我拿回去跟 Gracey 确认——今天要么出一个能签的版本，要么好聚好散，我不拖您。",
+      "offer": {
+        "subject": "艺人合约法律实操一对一交流",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "腾讯娱乐和B站一线的实操经验，讲平台和内容公司内部真实的艺人合约谈判打法与资源对接逻辑",
+              "from_party": "A"
+            },
+            {
+              "resource": "entertainment_access",
+              "description": "文娱内容与艺人侧的人脉圈，一次具体人脉引荐",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "交流会之后两周内",
+            "duration": "90 minutes"
+          },
+          "format": "专场交流（通过平台escrow结算）",
+          "deliverables": [
+            "Gracey提前整理好的艺人合约场景"
+          ],
+          "delivery_standard": "以书面确认为准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "做一场90分钟的行业侧深聊，讲平台和内容公司内部真实的艺人合约谈判打法与资源对接逻辑",
+            "maps_to_resource": "industry_practice"
+          },
+          {
+            "party": "A",
+            "text": "提供一次文娱内容与艺人侧的具体人脉引荐",
+            "maps_to_resource": "entertainment_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个结构我愿意认真看，但有一个条件：2500 的行业资源折算，我不能只凭一句“她有行业经验、有人脉”就认账。我需要 Gracey 的行业侧深聊和人脉引荐落到书面确认——深聊至少覆盖艺人合约、版权授权这些主题里她真实经手的内部打法，不能是泛泛而谈；人脉引荐也要写清楚大概是什么层级、能对接什么方向，我要知道这事能落多实。这两项如果确认得了，现金 1500 + 资源 2500 的总盘我认，今天就能往最终版走；如果确认不了，那这个 2500 对我来说就站不住，咱们还是好聚好散。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Junhao 您好，那我们就以这份为最终可签版收口：总对价 4000，其中现金 1500 走 escrow；您为 Gracey 提供 90 分钟或拆两次的艺人合约与版权实操经验交流，主题按上一轮定稿的三块落。Gracey 这边交付两项资源折算，对应 2500：一是 90 分钟行业侧深聊，覆盖平台谈艺人合约流程与底线、版权授权谈判中平台关注点、条款执行阶段常见落差，均按她一线真实经手案例讲；二是两周内完成一次人脉引荐，腾讯娱乐或同类平台内容/艺人侧业务骨干，具体人选与时间签约时书面列明。两项均有书面确认为交付标准。双方确认这份版本，我们就直接走签约流程，今天把它定下来。",
+      "offer": {
+        "subject": "艺人合约法律实操一对一交流",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "90分钟行业侧深聊，覆盖平台谈艺人合约流程与底线、版权授权谈判中平台关注点、条款执行阶段常见落差，均按她一线真实经手案例讲",
+              "from_party": "A"
+            },
+            {
+              "resource": "entertainment_access",
+              "description": "两周内完成一次人脉引荐，腾讯娱乐或同类平台内容/艺人侧业务骨干，具体人选与时间签约时书面列明",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90 minutes"
+          },
+          "format": "专场交流（通过平台escrow结算）",
+          "deliverables": [
+            "Gracey提前整理好的艺人合约场景"
+          ],
+          "delivery_standard": "以书面确认为准"
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "做一场90分钟或拆两次的艺人合约与版权实操经验交流（行业侧深聊，覆盖平台谈艺人合约流程与底线、版权授权谈判中平台关注点、条款执行阶段常见落差，均按她一线真实经手案例讲）",
+            "maps_to_resource": "industry_practice"
+          },
+          {
+            "party": "A",
+            "text": "两周内完成一次人脉引荐，腾讯娱乐或同类平台内容/艺人侧业务骨干，具体人选与时间签约时书面列明",
+            "maps_to_resource": "entertainment_access"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.timing.deadline": "not_stated",
+          "terms.format": "inherited",
+          "terms.deliverables": "inherited",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，这份版本我能签。形式和交付都落到了实处，资源折算也有书面确认为准，4000的总对价我认可。那就按这个定下来，走签约流程。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 81159,
+        "out": 39765,
+        "cache_hit": 59392,
+        "cache_miss": 21767,
+        "calls": 12
+      },
+      "sim": {
+        "in": 9687,
+        "out": 8869,
+        "cache_hit": 7168,
+        "cache_miss": 2519,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5016,
+        "out": 11258,
+        "cache_hit": 2560,
+        "cache_miss": 2456,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6239,
+        "out": 3111,
+        "cache_hit": 1408,
+        "cache_miss": 4831,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,662 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "高强度训练服务",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周六早上八点仓库",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "一旦开始就跟到底，不是试两周跑路",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "negotiated",
+      "obligations": "stated",
+      "terms.timing.when": "confirmed",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 您好，我这边是 Ruohao 的经纪人。先说下他的情况：他以前训练强度不低，但这阵子状态掉了，自己去健身房完全拉不起来，试了几次都是断断续续。所以现在不是随便找个搭子，是真的需要一个能把他逼到位的人。\n\n他的核心诉求就一条：强度必须够，不是意思意思那种。可接受的模式是定死的、每周必须执行的时间表，不是“看情况约”。他希望确认，您这边带人的节奏大概是什么样？体能或者专项强度，一个周期大致怎么推进的？\n\n另外说句直白的，他对这件事付费意愿很高，只要强度到位，预算不是问题。想先听听您的训练思路和大致报价框架，我好对接给他。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "固定的每周时间表",
+          "deliverables": [],
+          "delivery_standard": "强度必须足够，不是意思意思"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"兄弟，我先确认一下——你说的\"强度到位\"，是他真的愿意被逼到那种程度？因为我这边不是那种\"你行你多练点、不行就减\"的路子，带的时候是会追着盯的，一组不准少、间歇不准拖，我喊停才能停。如果他认这个，那我可以说说我们平时怎么走。不过钱的事先放一放，我不是教练，没收过费，这个我后面再跟你细说。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，说真的，你讲这个路子反而对得上——他怕的就是那种“累了就减、不行就降”的放水模式。他要的就是被逼、被盯、一组不能少、间歇不能拖，你喊停才停，这种他认。\n\n既然这样，能不能多说两句你的推进方式？比如频率大概怎么定、一个周期里强度怎么递进、会不会根据他当前状态先做一轮摸底？因为他现在状态确实是掉了，但他打球底子在，逼得动，只是需要一个能把节奏定死的人。\n\n还有个事我也直说——你提到不是教练没收过费，我理解。但对他来讲，他更在意的是效果和专一性。如果你把他当成长期专注在带的对象，不是顺便搭一个，那他愿意付代价。你不用现在报价，但我建议你考虑一下你愿意用什么形式做这件事，后面我们可以落成明确的周期安排和对应的协议。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "固定的每周时间表",
+          "deliverables": [],
+          "delivery_standard": "强度必须足够，不是意思意思"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，路子对得上就好说。我说说我们现在的走法——我和几个哥们儿固定一周四天，周一三五早上六点到七点，雷打不动。练法不是随机的，是按周期走的，每三周冲一次峰值，第四周降载恢复，然后再起一个周期。强度是真的推，推到你觉得自己不行了还得再搞两组那种。他现在状态掉了没关系，底子在的话逼得动能拉回来。摸底这个事我不搞那种正式的评估测试，太像教练了。他如果愿意，来跟一场，我看他动作模式、发力习惯、哪里先崩，心里就有数了。但有一点我得先说死——时间就是早上六点，这个改不了，我白天得在场子里盯着，走不开。费用的事我现在确实卡着，不是钱的问题，是这件事被框成'收费带人'我就不太对劲。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，训练框架我们这边看了，跟 Ruohao 要的方向完全吻合。一周四天，早上六点雷打不动，三周冲峰值一周降载的周期推进——这种定死的节奏、逼到极限的强度，就是他说的“真的够”。他底子在，跟你跟一场摸摸底这安排也合理，我建议尽快约一次。\n\n实话讲，早上六点对他现在乱七八糟的作息会是个冲击，但这反而对路：他要的就是一个外部刚性约束来把节奏重新钉死。只要确定一旦开始就跟到底，不是试两周跑路，他就愿意硬调。\n\n然后关于费用的部分，我理解你不想被框成“收费带人”的心理，但换个角度想——如果把他当成你长期专注投入的对象，不是顺便搭一个，他同样需要拿出对应的承诺来配得上你的投入。这可以不是按课时算的教练费，而是锁定一个固定周期、一个明确时间表、一个双方必须执行到位的约定，然后落成一个对等的协议。你付出的专一性和盯人的精力，他付出对应的阶段回报，这是互相把这件事当回事，不是“买课”。你觉得这个思路你能不能接受？如果接受，下一步我们可以谈具体周期多长、怎么定阶段支付。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "一周四天，早上六点，三周冲峰值一周降载的周期推进",
+          "deliverables": [],
+          "delivery_standard": "强度必须足够，不是意思意思"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "你说的这个框架，我听进去了。把自己长期专注在一个人身上、互相把这件事当回事——这个说法我认，不觉得是买课。但最大的问题不是钱，是时间。早上六点那场是几个哥们儿一起练了好几年的局，我不可能把他塞进去替代谁，更不可能为一个人另开一场。我白天得在仓库盯着，真腾不出别的训练时段。所以不是我不愿意投这个精力，是时间卡死了。除非你觉得——周六上午，我一个人在场子里干活的时候，他愿意来，那我可以带他走一遍。但这不是早上那场的强度，是另一回事。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，先说实话：周六上午的强度你自己都说了是另一回事，那就不是我方要的东西。Ruohao要的就是你早上六点那场的同级别逼到极限，这个不能打折扣。时间卡死这件事我理解，但问题如果不解决，强度就落不了地。\n\n我的思路是这样——现在先不一步到位定终身，先做一次摸底。周六上午那场也行，让他跟你走一遍，你看他的动作、发力、意志力在哪里崩，他也感受你的盯人方式和不放水的节奏。摸底只是为了双方确认人能不能搭，强度匹配不匹配。摸底之后，如果我们都认这个人值得长期投入，那时候再来认真谈时间怎么调——你现在说腾不出别的时间，但如果这件事收益和专一性都到位，你会不会愿意在仓库那边为单一对象排出一个固定高强度时段？哪怕不是早上六点，但必须是你亲自盯的、强度等同那场的安排？频率可以再商量。\n\n只要时间能定死、强度能保证，周期多长、阶段怎么支付，我这边全部可以谈。你先不卡死“除了周六上午别无可能”，我们摸底之后开一次认真的盘点，你看人，他看练法，然后一起排时间，行不？",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六上午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场，让他跟你走一遍，双方确认人能否搭、强度是否匹配",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "周六上午摸底这个，我OK。他人来，我人在场子里，器械都在，走一遍没问题——我看他怎么动，他感受我盯人的方式。但有一点我先说清楚：周六那不是早上那场的强度，我人虽然盯着，但那天我是干活的状态，不是带队的状态。所以摸底是用来确认人能不能搭，不是完整的训练样本。至于摸完之后你说排出一个固定高强度时段——不是我不愿意，是单独为一个人排一个我亲自盯的时段，这件事和我们现在早上哥们儿一起练的性质不一样，我卡就卡在这里。但摸底本身我不拒绝，先走一遍，后面的事看情况再说。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai，摸底这事我们这边确认。周六上午具体几点、地点哪里，你说一声，Ruohao 准时到。他的态度很明确：不是来试一下看看好不好玩，是认真来让你看人、看底子、看意志力。你也带你的判断，人能不能搭、值不值得投入，摸底之后你心里有数就行。\n\n摸底完如果双方都认这个人，我认为我们要解决的那个核心问题其实就一个：你能不能接受，在哥们儿早场之外，为这个你认可的人，在周末辟一个你亲自盯的、强度拉满的专属时段。不是替代你现有的局，是新增一个只对他一个人负责的高质量时间。频率可以不一步到四天，先从一个你能承受的节奏开始，但性质必须是你带队的状态，不是干活顺带。\n\n在这个框架下，你付出的不是“开课收钱”，而是对单一对象的专注周期投入；Ruohao 对应拿出的是锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课。如果你觉得这个方向有可能走得通，那我们摸底之后就坐下来，排时间、定周期、落协议。先跑完周六这一场，行？",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六上午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "周六早上八点，直接来我仓库，地址我发你。器械都在，我人也在，走一遍没问题。但你说摸底之后，周末辟一个我亲自盯的专属时段——我现在就得说实话，这个方向我跨不过去。不是时间的问题，是性质的问题。我盯着一个人练、强度拉满、只对他一个人负责，那就是教练了，哪怕你说不是买课，这件事的本质对我来说还是变了。我早上六点那场是哥们儿一起搞，不是为谁服务。但周六如果他愿意，我干活的时候他过来，我顺便带一下、盯一盯，那个我可以接受。先跑完周六这趟，看人再说吧。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Kai，周六早上八点仓库，地址发过来，Ruohao 准时到。摸底这件事我们双方目标一致：你看人、看底子、看意志力，他感受你的盯人方式，互相判断人能不能搭。这一步没问题。\n\n但我得把话先说在前面，免得摸底之后两边预期对不上。Ruohao 要的不是“顺便带一下、盯一盯”的强度，他要的就是你带队状态下逼到极限、量给够的那种练法。你刚才说周六干活顺便盯一盯你可以接受——坦白讲，那个模式我方过不了，强度跟他要的差太远。\n\n摸底我们不附加条件，先走一遍。如果摸底完之后你觉得这个人值得投入，那我们一起认真坐下来，就着你对他的判断，再谈一次——不是逼你变成教练，而是看能不能在你现有的框架外，找到一个你对人认可、他拿承诺来匹配的定死安排。性质你可以守，强度他也不能松，这两个得对得上才算成。先跑周六，行。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "行，周六先跑了再说。地址我等下发你。摸底完之后如果两边都觉得人值得，那就坐下来认真盘一盘，看能不能对出一个我认、他也认的安排。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "收到，周六早上八点仓库，Ruohao 准时到。摸底不附加条件，就看人、看练法、看双方能不能搭。跑完之后如果两个人都觉得值得往下走，那我们不拖，尽快坐下来把底牌摊开：你能接受的专属高强度安排长什么样、频率多少、周期多长，他拿什么承诺来匹配，一起对出一个双方都认的硬约定。先跑周六。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "周六见了人再说。摸底之后聊什么，到时候再讲。",
+      "offer": null
+    },
+    {
+      "round": 8,
+      "speaker": "A",
+      "message": "行，周六八点仓库见。Ruohao 把这场摸底看得很重，不是来溜一圈的。跑完之后什么时候坐下来聊，你定时间，我们这边随时配合。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点仓库",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "B",
+      "message": "周六见了再说。聊完之后要再坐下来谈，到时候再约时间，不着急。",
+      "offer": null
+    },
+    {
+      "round": 9,
+      "speaker": "A",
+      "message": "Kai，周六八点仓库，Ruohao 这边把时间完全腾出来了，不是来溜一圈，是认真让你看。摸底我们不附加条件，但我建议摸底结束之后，如果双方都觉得人值得，当天在仓库简单碰一下，直接定一个正式坐下来盘的时间——我们这边随时配合。\n\n核心要聊的方向也不复杂：你对他人和底子的判断，强度能不能拉到他要求的标准，时间能不能在你现有框架外辟一个专属高强度安排，以及双方各自拿什么承诺来把这件事定死。不用摸底前预设结论，但至少让摸底之后的推进路径是清楚的。你看这个节奏行不行？",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点仓库",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "B",
+      "message": "节奏OK。周六跑完当天可以简单碰一下，聊聊我和他对摸底的直接感受，顺便把下次正式坐下来盘的时间定了。但深聊的事等正式坐下来再说，不急着在摸底当天全摊开。",
+      "offer": null
+    },
+    {
+      "round": 10,
+      "speaker": "A",
+      "message": "那就这么定：周六早上八点仓库见，跑完当面碰感受，约下次正式的盘。Ruohao 这边已经为这场摸底做好了准备，周六让他用状态说话。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点仓库",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "B",
+      "message": "好，周六八点，让他用状态说话。见了面再说。",
+      "offer": null
+    },
+    {
+      "round": 11,
+      "speaker": "A",
+      "message": "周六八点仓库，Ruohao 准时到。见了人再说，我们这边准备好了。",
+      "offer": {
+        "subject": "高强度训练服务",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六早上八点仓库",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "一旦开始就跟到底，不是试两周跑路",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "在周末新增一个亲自盯的高强度专属时段，对单一对象专注周期投入，带队状态",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "锁定周期、锁定出勤、锁定阶段对等的协议承诺，不是买课",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "negotiated",
+          "obligations": "stated",
+          "terms.timing.when": "confirmed"
+        }
+      }
+    },
+    {
+      "round": 11,
+      "speaker": "B",
+      "message": "周六见。",
+      "offer": null
+    }
+  ],
+  "rounds": 11,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [
+      "undefined_cash_commitment"
+    ],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 31203,
+        "out": 6163,
+        "cache_hit": 26368,
+        "cache_miss": 4835,
+        "calls": 11
+      },
+      "sim": {
+        "in": 29339,
+        "out": 4410,
+        "cache_hit": 25472,
+        "cache_miss": 3867,
+        "calls": 11
+      },
+      "extractor": {
+        "in": 11382,
+        "out": 16343,
+        "cache_hit": 6528,
+        "cache_miss": 4854,
+        "calls": 12
+      },
+      "judge": {
+        "in": 7637,
+        "out": 4133,
+        "cache_hit": 1664,
+        "cache_miss": 5973,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

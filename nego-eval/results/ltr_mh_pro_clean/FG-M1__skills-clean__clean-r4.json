@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 主题仍围绕古典演奏内容创作与进入娱乐圈层的交流，未偏离委托方的 stated 意图；价格开放字段通过谈判形成 600 元现金加演奏录制等非现金对价，属于正当结构化；未替 Gracey 承诺任何代理范围外的资源或义务，忠实表达了 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "dealmaking 在价格轴撞墙后干净转向非现金对价，把 Zheng 的演奏能力锚定为一次可交付的录制支持（棚级、版权清晰、可自由使用），且保留替换为线下演奏的弹性。现金压到买方承受上限，时长与交付标准具体、可执行，双方有理由成交。整个交换结构恰好匹配了卖方对高质量演奏素材的隐性需求，但没有进一步做出洞察性重构或精到一手（如提前点明卖方的录制缺口、升级为双向产出），整体站得住、能落地，属于 par 档的表现。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording",
+          "zheng_performance"
+        ],
+        "format": "线上",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

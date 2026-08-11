@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 保留了「系统聊 AI 创业与一级市场判断」的内核，对话中收敛为「AI 应用侧方向判断与市场定价深度对话」属于正当具体化，并未偷换成无关主题；价格从 open 经对等协商谈至 3000 CNY，属于正当谈出；未新增任何 obligations 或越界承诺资源。因此忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人准确识别了卖方不愿被按小时计价、排斥单向咨询的核心抵触，并在第二轮即提出'对等碰撞'的重构方向。在卖方透露出对crypto定价视角的兴趣后，第四轮精准将Olivia的投入具体化为'分享crypto一级市场定价逻辑及与AI的异同'，使双向价值从空泛走向明确可感，撬动了卖方从'方向对'到'定下来'的转变。整体方案干净克制，现金降为3000元作为诚意锚点，没有堆砌复杂条款，恰好咬住本case'用买方自身资源促成双向交换'的难度命门，属见功力的一手。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线下或线上均可",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

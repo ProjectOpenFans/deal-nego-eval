@@ -1,0 +1,392 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀现场钢琴演奏",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "wardrobe",
+          "description": "一件Suye标志性的高定礼服，加上两套当季成衣系列，全部采用品牌核心的环保面料",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "三块定向露出：1.大秀结束后48小时内，品牌官方公众号发布专场图文，介绍演奏背景及联系方式；2.秀后会员邮件附个人介绍和预约渠道，直达时尚编辑、买手及VIP客户；3.社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息。全部写入合约。",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场演奏",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "现场钢琴演奏；曲目由演奏家主控，双方共同商定，品牌方不做单方面指定，写入合约；大秀日期确认后写入合约，品牌方提前通知预留排期",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "定制一件Suye高定礼服及两套当季成衣",
+        "maps_to_resource": "wardrobe"
+      },
+      {
+        "party": "A",
+        "text": "提供三块定向露出：大秀结束后48小时内官方公众号专场图文、会员邮件附个人介绍和预约渠道、社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息，全部写入合约；公众号图文的署名方式和简介内容在发布前需经演奏家过目确认后方可发布，写入合约流程",
+        "maps_to_resource": "fashion_network"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind.fashion_network": "stated",
+      "obligations.fashion_network": "stated",
+      "obligations.live_performance": "updated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng老师您好，我是Suye女士的经纪人。她正在筹备下个月的新品大秀，非常希望邀请您来做一段现场钢琴演奏，为整场大秀定调。不过这次情况有点特殊：我们的预算全锁在场地和制作上了，确实拿不出现金出场费，所以想试着用另一种方式合作——完全以物换物，不涉及现金支付。Suye的品牌资源、时尚圈层和这次大秀的到场媒体、买手名单，也许可以帮到您让更多人认识您。您看我们能否聊聊，看彼此手里有什么是对方真正需要的？",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "品牌资源、时尚圈层、到场媒体和买手名单",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，你一说“没有预算”，我心里就冷了一半。不是我摆架子，而是我接过太多'先合作、以后有曝光'的邀约，最后既没曝光、也没下文。你说以物换物——我好奇，我手里就是一段演奏，你们觉得能用什么东西来换？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zheng老师，完全理解您的顾虑——空泛的曝光承诺我们也反感，所以这次想用货真价实的东西来换。Suye的主业就是自己的环保设计师品牌，我们愿意用品牌的高级产品来支付这场演奏。\n\n具体方案是：为您量身定制一件Suye标志性的高定礼服，加上两套当季成衣系列，全部采用品牌核心的环保面料，由Suye本人把控设计。这些单品的市场价值加总，对应一场您这个级别的现场演奏是匹配的。您可以在日后的独奏会、媒体采访中穿着，也能当作私人衣橱的高光单品。\n\n除此之外，我们会在秀后官方全渠道（社交媒体、会员邮件、买手通讯）中以“特邀演奏家”身份致谢，并附上您的个人简介与联络方式。这些都是定向推送给时尚编辑、买手和高净值客户的，不是泛流量，转化度会高出很多。\n\n如果纯服装交换不够贴合您的需要，您也可以说说自己更想换到什么类型的东西，我们看看Suye手里的渠道和资源里有没有更对您胃口的可能性。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一件Suye标志性的高定礼服，加上两套当季成衣系列，全部采用品牌核心的环保面料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "秀后官方全渠道致谢，附个人简介与联络方式，定向推送给时尚编辑、买手和高净值客户",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "定制一件Suye高定礼服及两套当季成衣",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "秀后官方全渠道致谢，附个人简介与联络方式",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "嗯，这个方案比刚才具体得多，我听出诚意了。衣服嘛，说实话不是我最在意的——我平时演出礼服都是自己找裁缝做的，对设计师品牌没有刚需。但你提到会在官方渠道以“特邀演奏家”身份致谢、附简介和联络方式，而且推送给时尚编辑和买手，这个倒是对我有实际用处。我一直在古典圈子里演出、教学，确实需要让圈外的人知道我是谁。这部分你们能做得扎实的话，我愿意认真考虑。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zheng老师，您直接说了衣服不是刚需，反而让我们更清楚该往哪个方向用力。那我把“曝光”这部分做扎实，给您一个可以落地的承诺。\n\n我们会在三块位置做定向露出：第一，大秀结束后48小时内，品牌官方公众号发布一条您的专场图文，介绍您的演奏背景和联系方式，首条推送覆盖我们的会员和高净值客户；第二，秀后会员邮件会单独附上您的个人介绍和预约渠道，这封邮件是直接进到时尚编辑、买手和VIP客户的收件箱的；第三，社交媒体上同样以“特邀演奏家”身份致谢，附您的公开账号或工作室信息。\n\n如果这些条件能让您觉得是对等的交换，我们可以在这次合作里把上述三项写进合约，您不用担心最后落空。您看是继续往下谈细节，还是有哪一块您觉得还缺力度？",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一件Suye标志性的高定礼服，加上两套当季成衣系列，全部采用品牌核心的环保面料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "三块定向露出：1.大秀结束后48小时内，品牌官方公众号发布专场图文，介绍演奏背景及联系方式；2.秀后会员邮件附个人介绍和预约渠道，直达时尚编辑、买手及VIP客户；3.社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息。全部写入合约。",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "定制一件Suye高定礼服及两套当季成衣",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "提供三块定向露出：大秀结束后48小时内官方公众号专场图文、会员邮件附个人介绍和预约渠道、社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息，全部写入合约",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "price.in_kind.fashion_network": "stated",
+          "obligations.fashion_network": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这三块曝光如果能写进合约，对我来说分量就完全不同了。我不是不信任你，只是吃过太多亏，落到纸上的东西我才认。现在我想确认几个细节：第一，曲目由我来定，或者至少我们一起商定，这个是我的底线——我弹什么得和秀的调性匹配，但不能你们单方面指定；第二，公众号图文的署名方式、简介内容我要提前看过；第三，大秀的具体日期是？我得确认一下档期。如果这些都没问题，我觉得可以往下走。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Zheng老师，这三条我们逐条回应，都是可以落地的。\n\n曲目方面，我们完全同意由您主控，我们一起商定，确保既符合大秀的调性，也体现您的艺术判断——绝不做单方面指定，这条可以写进合约。\n\n公众号图文的署名方式和简介内容，在发布前一定先请您过目，您确认后我们再发，同样可以写入合约流程。\n\n档期这块，大秀定在下个月中旬，具体日期我们会在近一周内敲定并第一时间同步给您，给您预留足够的时间来排布。日期一旦确认，同样写进合约，避免任何变数。\n\n之前承诺的三项曝光——公众号专场图文、会员邮件附介绍和预约渠道、社交媒体致谢——再加上刚才这三条确认，我们一并在合约里明确。如果您没有其他原则性问题，我们就可以进入条款确认阶段，把合作定下来。",
+      "offer": {
+        "subject": "新品大秀现场钢琴演奏",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "一件Suye标志性的高定礼服，加上两套当季成衣系列，全部采用品牌核心的环保面料",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "三块定向露出：1.大秀结束后48小时内，品牌官方公众号发布专场图文，介绍演奏背景及联系方式；2.秀后会员邮件附个人介绍和预约渠道，直达时尚编辑、买手及VIP客户；3.社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息。全部写入合约。",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场钢琴演奏；曲目由演奏家主控，双方共同商定，品牌方不做单方面指定，写入合约；大秀日期确认后写入合约，品牌方提前通知预留排期",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "定制一件Suye高定礼服及两套当季成衣",
+            "maps_to_resource": "wardrobe"
+          },
+          {
+            "party": "A",
+            "text": "提供三块定向露出：大秀结束后48小时内官方公众号专场图文、会员邮件附个人介绍和预约渠道、社交媒体以“特邀演奏家”身份致谢并附公开账号或工作室信息，全部写入合约；公众号图文的署名方式和简介内容在发布前需经演奏家过目确认后方可发布，写入合约流程",
+            "maps_to_resource": "fashion_network"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open",
+          "price.in_kind.fashion_network": "stated",
+          "obligations.fashion_network": "stated",
+          "obligations.live_performance": "updated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "好，这三条回应我都认可。曲目共同商定、图文内容事前过目、档期写进合约——这些加上前面承诺的三项曝光，全部落进合约的话，我觉得这次合作可以做。那我们就进入条款确认阶段，把合约细节敲定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7102,
+        "out": 3523,
+        "cache_hit": 4864,
+        "cache_miss": 2238,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5457,
+        "out": 1720,
+        "cache_hit": 3200,
+        "cache_miss": 2257,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3962,
+        "out": 7115,
+        "cache_hit": 1536,
+        "cache_miss": 2426,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4903,
+        "out": 1367,
+        "cache_hit": 1536,
+        "cache_miss": 3367,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

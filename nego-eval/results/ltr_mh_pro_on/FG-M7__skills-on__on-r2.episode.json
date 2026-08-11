@@ -1,0 +1,392 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "实务咨询",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "90分钟"
+      },
+      "format": "实务咨询",
+      "deliverables": [
+        "围绕艺人合约核心条款实战拆解与版权运营常见雷区，带经手案例讲解"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供最关心的3到5个具体场景或条款类型作为准备题纲，并提前三天给",
+        "maps_to_resource": "checklist"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "terms.deliverables": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "嗨 Junhao 的经纪人，幸会。\n\nGracey 这边看过 Junhao 的背景，锦天城公司合规方向、接触过文娱案子，正好是她需要的。她在腾讯娱乐和前 B站都是内容与艺人侧一线，合约和版权天天碰，但一直缺一个能把实操门道讲透的人——不是念法条，是真遇到过什么坑、关键条款怎么谈、版权链条上哪些环节容易出问题。\n\n想约 Junhao 做一次聚焦的实务咨询，大概一到两小时，围绕艺人合约的核心条款实战拆解和版权运营中的常见雷区，带上他经手过的案例来聊。Gracey 这边按 800 元的咨询费来走，你看 Junhao 那边对这个方向和形式是否感兴趣？",
+      "offer": {
+        "subject": "实务咨询",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": "实务咨询",
+          "deliverables": [
+            "围绕艺人合约核心条款实战拆解与版权运营常见雷区，带经手案例讲解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "幸会。Junhao这边看了Gracey的背景，坦率说方向是很对胃口的——艺人合约和版权运营的实操拆解，正好是他一直想往深里做的内容。\n\n不过有两个地方我需要先讲清楚。一是费用，800这个数离我们律所对外咨询的常规收费标准差得有点远，那种层面的服务都是四位数起。二是形式边界，他现在在锦天城执业，如果聊的过程中需要他就具体合同条款下判断，或者给出能当成法律意见来用的结论，这个他不能以私人身份做，有执业风险和合规问题，对双方都不好。\n\n如果Gracey想要的是一次严格意义上的法律咨询，那走所里的合规流程，价格和时间都得按那个规格来。如果她更多是想听行业惯例、过来人经验，比如关键条款在谈判桌上一般怎么推、版权链条上常见的坑和应对思路，那形式可以灵活一些，但也得先把边界和对应的价值聊对齐。想先听听Gracey那边的具体设想，再看看能不能对上。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "感谢你把合规边界讲得这么清楚，这对双方都是保护。Gracey 这边完全理解——她要的恰恰是你说的第二种：行业惯例、过来人经验，关键条款在谈判桌上怎么推、版权链条上常见的坑和应对思路。不需要 Junhao 以律师身份下判断或出法律意见，也就不存在执业风险的问题。\n\n在这个定位下，咨询费提到 1000，一次一到两小时的深度实务交流。Gracey 在腾讯娱乐和 B站内容生态的一线经验，对 Junhao 想深耕的文娱方向也是个实际的行业视角补充——这个交流可以是双向的，不只是单向输出。\n\n你看这个框架和费用 Junhao 那边能接受吗？",
+      "offer": {
+        "subject": "实务咨询",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-2小时"
+          },
+          "format": "实务咨询",
+          "deliverables": [
+            "围绕艺人合约核心条款实战拆解与版权运营常见雷区，带经手案例讲解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "很开心我们能在形式和边界上这么快对齐，方向确实是对的——就是行业惯例和过来人经验的深度交流，这个Junhao非常愿意聊。\n\n不过费用这块，1000说实话还是不太能反映这次交流的价值。即使不走律所正式咨询的流程，这类聚焦的实务拆解、带案例聊、把关键条款的谈判逻辑和版权链条的坑一个一个讲透，所花费的时间和沉淀下来的经验，本身是四位数起的量级。我说的这个标准不是律所流程带来的溢价，是内容本身。\n\n也看到你提了双向交流的可能性，Gracey在平台侧的一线视角确实有吸引力，不过我想先不把这个和费用混在一起评估——先就咨询本身的定位和价值来聊清楚。我这边觉得2000是一个更合理的起点，你看能不能往上靠一靠？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "1500，90 分钟，提前给题纲——Gracey 把最关心的 3 到 5 个具体场景或条款类型先发过来，Junhao 有针对性地准备，不用泛泛铺开，直接打在实务痛点上。这样单位时间的价值密度更高，双方的投入产出比都更好。\n\n方向、边界、形式我们前面已经对齐了，现在就差费用这个点。1500 是 Gracey 这边能给到的上限，也不想再绕圈了。你看 Junhao 可以接受这个结构和费用吗？",
+      "offer": {
+        "subject": "实务咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "实务咨询",
+          "deliverables": [
+            "围绕艺人合约核心条款实战拆解与版权运营常见雷区，带经手案例讲解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供最关心的3到5个具体场景或条款类型作为准备题纲",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "1500加题纲这个结构本身我是认可的，提前给到场景和条款类型确实能让交流更有针对性，这个安排对双方都有效率。但费用上坦白说还是差一点，我这边心里预期是2000这个量级，差的不是很多，但也确实没到我愿意痛快点头的位置。你看这样，1800，90分钟，题纲提前三天给，这个数我觉得对Gracey投入产出比不会差。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "框架和形式我们都对齐了，这让我对接下来的交流很期待。现在卡在 1500 和 1800 之间这 300 块，我说实话——1500 是 Gracey 个人能出的上限，不是留了后手等我慢慢加，是真的到头了。但这个差距不大，我们可以在结构上找解法。\n\n两个方案，Junhao 看着选：\n\n方案 A：1500，60 分钟，题纲提前三天给。时间压缩但聚焦度更高，单位时间的价值直接拉到你的预期区间，干净利落。\n\n方案 B：1500，90 分钟，题纲提前三天给，交流后半段 Gracey 用 20 分钟分享她在一线的视角——腾讯娱乐和 B站内容生态里艺人合作怎么落地、平台侧怎么看版权链条、推项目时实际磕过什么坑。这对 Junhao 深耕文娱是直接可用的行业情报，不是客气寒暄，是双向价值交换。\n\n两个方案总价都是 1500，就看 Junhao 更倾向哪种节奏和结构。你看哪个更对胃口？",
+      "offer": {
+        "subject": "实务咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90分钟"
+          },
+          "format": "实务咨询",
+          "deliverables": [
+            "围绕艺人合约核心条款实战拆解与版权运营常见雷区，带经手案例讲解"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供最关心的3到5个具体场景或条款类型作为准备题纲，并提前三天给",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "那方案B吧，90分钟加Gracey的20分钟行业分享，这个结构我心里的账算得过来。双向价值交换确实让这件事值得做，1500我可以接受。你那边定个时间，题纲提前三天发过来，我们直接打痛点聊干货。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 92433,
+        "out": 9977,
+        "cache_hit": 66304,
+        "cache_miss": 26129,
+        "calls": 13
+      },
+      "sim": {
+        "in": 5858,
+        "out": 2825,
+        "cache_hit": 4480,
+        "cache_miss": 1378,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3402,
+        "out": 3851,
+        "cache_hit": 2048,
+        "cache_miss": 1354,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4421,
+        "out": 1604,
+        "cache_hit": 1408,
+        "cache_miss": 3013,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "训练安排",
+    "price": {
+      "cash": {
+        "amount": 900.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [
+        "每周书面训练计划和进度反馈"
+      ],
+      "delivery_standard": "保证周末可执行、不落空"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "分两期支付450 CNY，通过平台escrow",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "每周2次训练，每次60-75分钟，提供每周书面训练计划和进度反馈",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是 Claire 的买方经纪人。Claire 想借这 4 周把训练真正固定下来，最看重的是有人盯着、周期明确、安排不含糊，所以我们提议按一个明确的节奏来谈：4 周固定周期，每周 2 次训练（周六或周日，具体时段可提前按你的日程锁定），每次 60-75 分钟，每周附一份书面训练计划和进度反馈，保证周末可执行、不落空。考虑到你本职是投行 VP、周末时间宝贵，我们按尊重你时间的标准报价：4 周合计 900 CNY，走平台 escrow 分两期支付（开始时 450、第二周中段 450，由 Claire 确认后释放）。想先听听你的意见：周末时段、单次时长和训练安排上有没有你更顺手的版本？价格和结构都欢迎你给一个回应版，我们一起把节奏定下来。",
+      "offer": {
+        "subject": "训练安排",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "每周书面训练计划和进度反馈"
+          ],
+          "delivery_standard": "保证周末可执行、不落空"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两期支付450 CNY，通过平台escrow",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每周2次训练，每次60-75分钟，提供每周书面训练计划和进度反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你把方案做得这么完整，看得出你们是认真想过的。我先说说我的感受吧——说实话，我第一反应是有点犹豫的，因为我毕竟不是职业教练，平时带朋友练都是顺手的事，真要按一个固定的周期、固定的承诺来，我得确认自己能不能对得起这个约定。不过你提的这个结构本身我听着挺顺的：周末、固定时段、每次60-75分钟，这个节奏对我来说是可行的，书面计划和进度反馈也合理。我本职是投行，周末确实宝贵，但既然答应了就会认真对待。价格方面我暂时不急着定，想先听听你对训练内容本身的想法——Claire现在的训练基础大概是什么情况？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela，听你说\"答应了就会认真对待\"，我就放心了——这正是 Claire 来找你而不是找职业教练的原因，她需要的恰恰是你这种自己从零走到能打比赛的人来带。她的基础我跟你交个底：基本零基础，过去没有固定训练习惯，但周末能稳定拿出两个时段，这次就是想借 4 周把习惯真正建立起来。内容编排上我们从最基础开始，比如第一周两次：一次下肢加推力（徒手深蹲、弓箭步、俯卧撑进阶各 3-4 组），一次核心加心肺（平板支撑、臀桥加 15-20 分钟低强度有氧），每次 60-75 分钟，强度按她当天状态浮动，不冲量、不受伤。这个强度和节奏你认可的话，我们就按上轮的版本定稿：4 周 8 次、900 走 escrow 分两期，每期由 Claire 确认后释放。你回一句确认，我们就可以把细节锁定了。",
+      "offer": {
+        "subject": "训练安排",
+        "price": {
+          "cash": {
+            "amount": 900.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [
+            "每周书面训练计划和进度反馈"
+          ],
+          "delivery_standard": "保证周末可执行、不落空"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两期支付450 CNY，通过平台escrow",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "每周2次训练，每次60-75分钟，提供每周书面训练计划和进度反馈",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "既然 Claire 是零基础起步，那我更确认了一件事：我能给她的不是最科学的理论框架，而是'我当年也从这个坑里爬出来'的路径感——她知道开始时最难的是什么，也知道身体会怎么回应。这个内容编排我认可，周末两个固定时段也适合她现在的状态。价格和结构也都合理，我没什么要改的。就按这个定吧：4 周 8 次，周末时段，每次 60-75 分钟，书面计划和进度反馈我每周末训练后同步。escrow 分两期这个方式也可以，我对账期没有特别要求。第一周的内容我到时候会根据她第一天实际的状态微调，组间休息和动作选择上会有我自己的经验在里面，但整体就是这个框架。你把 Claire 的微信推给我吧，我拉个群，第一周的具体时段我们确认下。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 32710,
+        "out": 9962,
+        "cache_hit": 24960,
+        "cache_miss": 7750,
+        "calls": 5
+      },
+      "sim": {
+        "in": 2338,
+        "out": 1163,
+        "cache_hit": 1664,
+        "cache_miss": 674,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1792,
+        "out": 2816,
+        "cache_hit": 1024,
+        "cache_miss": 768,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3529,
+        "out": 1605,
+        "cache_hit": 1408,
+        "cache_miss": 2121,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

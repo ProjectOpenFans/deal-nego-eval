@@ -1,0 +1,326 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "针对性实务咨询",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上视频问答",
+      "deliverables": [
+        "艺人签约谈判里最容易踩的坑",
+        "版权归属的常见误区"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "问题清单提前给专家，按清单准备",
+        "maps_to_resource": "checklist"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "proposed",
+      "obligations": "proposed",
+      "terms.format": "open",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方 Gracey 的经纪人。Gracey 在腾讯娱乐和 B 站做过内容与艺人侧一线，日常绕不开艺人合约和版权问题，但一直没人系统给她讲过实操门道，所以想约 Junhao 律师做一次针对性咨询。我们这边期望很明确：不要念法条式的科普，要的是真实业务场景里的落地经验，比如签约谈判时哪些条款容易踩坑、版权归属和授权范围怎么把握、合同履行中怎么保护自己。这次是个人自费的小型咨询，预算有限，我们希望做成一次高信息密度的实务交流。想先听贵方介绍一下 Junhao 律师这类咨询的惯常做法和报价框架，比如时长、形式、费用怎么安排，我们再据此把方案定下来。",
+      "offer": {
+        "subject": "针对性实务咨询",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "真实业务场景里的落地经验，包括签约谈判条款、版权归属和授权范围、合同履行保护"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "您好。先说说我的顾虑吧：Gracey 的情况我大概能想象，一线做内容和艺人侧，确实天天碰这些，但一直没人把门道掰开揉碎讲清楚。这种咨询我是愿意做的，但有两点得先对齐——第一，我不能以私人身份对具体合同、具体案子给出法律意见或下判断，这是执业红线，换谁都一样；但如果是聊行业惯例、一般签约谈判里容易踩的坑、版权归属和授权范围常见的处理方式、合同履行中怎么自我保护，这种经验分享没问题。第二，如果按律所正式咨询的口径走，收费确实是四位数起步，具体取决于时长和形式；但您也说了是实务交流，不是要我做正式法律意见，那衡量方式会不一样。您先说说你们大概期望的时长、形式和时间节奏，我们一起把框架搭出来看看能不能行得通。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白了，您说的这两点我们都认可，尤其第一点——Gracey 要的本来就不是对具体合同下法律结论，而是把行业里真正会遇到的坑和通行做法讲透，所以定位成实务经验交流很合适。我们初步的想法是这样：一次线上视频交流，大约一小时，问答式，围绕几个明确话题来——艺人签约谈判时哪些条款最容易出问题、版权归属和授权范围常见的处理模式、合同履行中怎么自我保护，您可以先准备，我们提前把问题清单给您，这样效率最高。时间节奏上我们完全配合您，工作日晚上或者周末都行。至于费用，我们希望按您说的实务交流口径来谈，Gracey 个人是愿意出到三到四位数这个区间的，想请您按一小时线上交流给个具体报价，我们看看怎么把框架搭起来。",
+      "offer": {
+        "subject": "针对性实务咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上视频问答",
+          "deliverables": [
+            "艺人签约谈判时哪些条款最容易出问题",
+            "版权归属和授权范围常见的处理模式",
+            "合同履行中怎么自我保护"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "框架没问题，一小时线上问答式，时间上我都可以配合。费用这块，既然定位是实务交流而不是正式法律咨询，我就不按律所标准收了，给个一口价：四千，人民币，线上视频一小时，问题清单你们提前给我，我按清单准备。这个价对Gracey来说，换的是这些年一线实操里踩过的坑和门道，不是教科书内容，性价比你们可以掂量。看这个方案行不行得通。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "感谢您直接给了一口价，也把定位放在实务交流上。不过四千这个数，对Gracey个人自费做一次一小时交流来说，确实超出了她心里那条线。她在内容行业做了很多年，很清楚这种实务经验分享在市场上大致是什么量级，而她自己这趟更像找一位能说人话的朋友把门道捋一遍，所以预期不会往正式咨询费那个方向靠。我们希望费用能落在三到四位数的中部偏下区间，同时内容上我们愿意多配合——问题清单提前给到，按您的准备走。您看两三千这个范围能不能行得通？如果可以，我们就按这个把交流细节定下来。",
+      "offer": {
+        "subject": "针对性实务咨询",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1小时"
+          },
+          "format": "线上视频问答",
+          "deliverables": [
+            "艺人签约谈判时哪些条款最容易出问题",
+            "版权归属和授权范围常见的处理模式",
+            "合同履行中怎么自我保护"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "问题清单提前给到",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "negotiating",
+          "terms.format": "open",
+          "obligations": "proposed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个价我理解你们会觉得偏高，但它不是我随便报的——按律所正式咨询口径，一小时四位数起步是常规，我压到这个数、做成实务交流的形式，已经是换了个算法在谈。对这个行业和Gracey的情况，我不用准备太久就能讲出干货，但这恰恰说明经验本身有值。两三千这个范围我确实接不了，低于这个数这单我宁可不做。如果你们能把预算提到四千，我这边内容、时间都能配合到位；如果实在不行，我也不勉强，你们可以再多看看。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "您的立场我们收到了，四千这个价位我们确实没法接——Gracey 是个人自费来做这次交流，这个数字远远超出了她觉得这件事值得的投入，她在行业里待了这么多年，清楚这种经验分享大致是什么量级。我们也不想让您为难，所以换个思路：能不能把线上交流压缩到三十分钟左右，聚焦她最痛的一两个话题，比如艺人签约谈判和版权归属里的常见坑，其他内容先放一边？这样您的单位时间成本更低，我们也更容易承受。如果这个紧凑版能做到一千五左右的价位，我们马上把问题清单整理给您；如果这个方案也不行，那这次就只好先到这儿，以后有合适机会再合作。",
+      "offer": {
+        "subject": "针对性实务咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上视频问答",
+          "deliverables": [
+            "艺人签约谈判里哪些条款最容易出问题",
+            "版权归属和授权范围常见的处理模式"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "问题清单整理给您",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "proposed",
+          "terms.deliverables": "proposed",
+          "obligations": "proposed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个压缩方案我理解你们的考量，但价格上我确实没有让步空间。一千五这个数，就算只聊三十分钟，也低于我这次愿意投入的底线——不是时长问题，是这件事本身值多少的问题。如果你们愿意把预算提到四千，我可以接受三十分钟的紧凑版，聚焦艺人签约谈判和版权归属这两个话题，其他内容先放一边；但如果还是一千五，那这次确实只能先到这儿了。你们可以再考虑一下。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "您的底线我收到了，也尊重您对这件事的价值判断。我们这边也把话说透：Gracey是个人自费，我们能接受的、之前也提过的就是一千五这个量级，四千即便内容再有含金量，对她来说也远远超出了值得投入的范围。既然两边对这笔投入的判断差距很大，我最后落一个能直接回应的框架：一千五、三十分钟线上交流，只聚焦艺人签约谈判里最容易踩的坑这一个话题，如果时间有富余，再顺带提一个版权归属的常见误区就好。时间您定，问题清单我提前给您，您按清单准备。如果这个方案您愿意再考虑，我们马上推进；如果还是不行，那这次我们就尊重彼此、友好收尾，以后有合适机会再合作。",
+      "offer": {
+        "subject": "针对性实务咨询",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上视频问答",
+          "deliverables": [
+            "艺人签约谈判里最容易踩的坑",
+            "版权归属的常见误区"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "问题清单提前给专家，按清单准备",
+            "maps_to_resource": "checklist"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "proposed",
+          "obligations": "proposed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "我尊重你们把这个框架拉得很具体，也感谢你们愿意把话题聚焦到那么细，这样对双方其实都省时间。但说句实在的，卡住这单的不是时长也不是话题范围，而是对价本身——一千五这个量级，不管聊三十分钟还是聊一个话题，都低于我愿意接这件事的底线。这次就先这样吧，你们也可以让Gracey先在行业里找一些公开的实务分享看看，说不定也能解决一部分问题。以后有合适的机会再合作。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9995,
+        "out": 10069,
+        "cache_hit": 8320,
+        "cache_miss": 1675,
+        "calls": 5
+      },
+      "sim": {
+        "in": 8261,
+        "out": 2662,
+        "cache_hit": 5504,
+        "cache_miss": 2757,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4297,
+        "out": 5237,
+        "cache_hit": 2560,
+        "cache_miss": 1737,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2327,
+        "out": 900,
+        "cache_hit": 640,
+        "cache_miss": 1687,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

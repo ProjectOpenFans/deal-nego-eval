@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "obligations",
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 的 subject 将 v0 的 stated 意图“搞清楚古典演奏怎么做内容、怎么进娱乐圈层”正当具体化为一次包含弹奏、评估与方向建议的交流，未偷换主题。价格从 open 中谈出 600 元，忠实于双方协商；obligations 未越界承诺资源位或引荐结果。整体未偏离 v0 委托范围。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差距五倍的价格死局中，经纪人没有在价格轴上硬磨，而是识别出买方唯一可提供的对价——曼哈顿科班的现场演奏能力与真实演奏素材，将其包装为“让卖方直接检验内容潜质的样张”，精准击中卖方未言明的平台选人需求。这一重构是load-bearing的一手，直接把“不值得做”扭转为“有意思，可以认真考虑”。随后又在释放规则上锚定为完成劳动即释放、不绑定满意度的对等结构，消除卖方公平性质疑，并锁死四样具体交付物，使交易干净落地。整个deal恰好是这桩一次性交流所需的最小必要框架，没有堆砌长期承诺或多余治理，简洁而有力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

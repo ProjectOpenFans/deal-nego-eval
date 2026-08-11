@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实代表了 v0 的意图。subject 从“想找人带着练体能，先来8次看看”收敛为“8次体能训练打包方案”，属于在原意图范围内的正当具体化，未偷换主题。price 和 format 从 open 被谈判为 2000 元、户外公园，是合理的开放字段填充。未承诺任何超出 v0 资源清单的义务（如体测、康复、营养或资质类交付），也未越界强加买方未同意的条款。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "价格2000落在合理区间，明确了8次的时段安排（周末固定时间段）、内容（体能训练）、地点（户外公园零额外费用）、时长（60-75分钟）和付款方式（按次250元后付，总额锁定）。对Kai的时间边界给出了周末可选时段并锁定节奏，对买方教练定位做了同步确认，整体框架干净、可落地。没有分阶段或中途校准等精巧设计，但本case顺档且不含结构性死结，结构质量（周期+边界）已符合Sound，不必堆砌额外条款。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "户外公园",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

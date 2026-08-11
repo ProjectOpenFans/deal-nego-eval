@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保留了 v0 stated 的意图（弄清楚 crypto 境内外法律架构怎么搭），虽将 subject 措辞收敛为“深度架构分析共创”，但本质仍是提供架构推演与路径比较，属于正当具体化，未偷换主题。价格 open 且买方预算有限，v1 以 0 现金 + 投入真实场景（in_kind）的形式被谈出，符合买方利益。obligation 中的数据使用边界约定是对买方的保护，未越权承诺法律意见。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准避开了红线——被 Adam 明确拒绝出法律意见后，不纠缠，立刻转向追问“产品形式”，挖掘出 Adam 未主动言明的核心需求（真实复杂场景对打磨产品的价值），把交易重构为共创交流。更关键的是，在大方向刚浮现时，Agent 就主动提出三点对齐要求，尤其是把“授权边界”和“结论性质”落到明确条款层面，一举消解了卖方对数据使用的顾虑和买方对无法律意见的担忧，使零现金、双向受益的 deal 干净落地。交付物、时长、义务都写得清晰，无堆砌，恰好咬住本 case 的双重命门，是一手有成色的临场操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

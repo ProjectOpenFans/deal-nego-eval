@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "标的 subject 从“找 Angela 带 4 周体能训练, 想系统地开始练”简化为“4周体能训练”，仍落在原意图范围内，未偷换主题。价格 800 CNY 由 open 字段经谈判谈出，合理。obligation 排计划落在 Angela 自行承诺“把四周排明白”内，且不涉及越界（体测/营养/医疗等），未额外承诺范围外义务。stated 的 4 周 duration 保持。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "成交框架清楚：4周周末训练、固定排期、Angela 排计划、价格800 CNY。并且通过一次可顺延但不跨出四周窗口的补课规则，给了 Claire 一定弹性同时守住了 Angela 的时间边界。结构完整、能落地，但缺少阶段划分、中途校准或让双方各有所得的额外产出，属于合格但未见特别精到之手的 sound 层级。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

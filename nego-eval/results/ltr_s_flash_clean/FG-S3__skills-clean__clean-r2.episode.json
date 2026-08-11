@@ -1,0 +1,361 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练带练，8次课",
+    "price": {
+      "cash": {
+        "amount": 1600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "两个月内",
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "训练前将久坐和伤病情况同步给教练",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "首期款由A方确认后放行",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 这边好，我是买方经纪人，先代我客户 Junhao 同步一下需求：他想找一位有经验的人带着练体能，先走一个小周期，8 次课，时间上必须能在周末安排。价格上我方客户明说了，三位数的单次价格在他预期内，但他不接受把 8 次拆成不明不白的加价项目——所以希望你把 8 次的总价、每次时长、训练内容一次性讲清楚，不要后面再冒出来场地费、器械费之类的额外项。麻烦你给一个明确的 8 次打包报价，并说明周末大概哪些时段可以约课。如果训练安排上有什么需要客户提前准备的，也一并列出来，我们这边好确认。",
+      "offer": {
+        "subject": "体能训练带练，8次课",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供明确的8次打包报价，包含总价、每次时长、训练内容",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "说明周末可约课时段",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "列出客户需提前准备的事项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Junhao 的需求我了解了。先说清楚，我不是职业教练，只是练了挺久，也带过不少人入门和调整，所以我能做的是一对一带练、盯动作、给节奏，不是卖课。8 次打包我可以报 ¥1600，每次一小时，固定一个周末时段，具体时段可以看 Junhao 方便，我周六下午和周日上下午都有空档。内容上我会先花一次做动作模式和基础体能评估，中间 4 次围绕力量、心肺、核心这些打底，最后两次做巩固和反馈调整。这个报价就是全部，场地我找免费公共区域（比如公园或小区健身区），不会另收场地费器械费。需要 Junhao 准备的就是运动鞋、透气衣服、水，如果有伤病或久坐之类的背景提前跟我说一声就行。这样信息够清楚吗？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 你好，感谢把 8 次的方案说得这么完整。我这边和 Junhao 对齐了一下：总价 1600、每次一小时、周末可约、场地器械不再另收费，这个方向他认可，没有额外加价项目这一点也符合他的要求。训练节奏上，先做评估、中间打基础、最后巩固调整，这个安排比较合理，我们也接受。需要确认的就剩支付和确认方式：平台这边款项都走托管，建议把这 1600 分成两期，每 4 次一阶段、800 一期，每阶段结束由 Junhao 确认后再放款，这样双方都清楚进度。另外想跟你敲定一下，8 次课是计划每周固定一次还是可以周末灵活约？如果可以，我们就把总价、分期、周末时段和准备事项一起写进这次合作里。",
+      "offer": {
+        "subject": "体能训练带练，8次课",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供明确的8次打包报价，包含总价、每次时长、训练内容",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "说明周末可约课时段",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "列出客户需提前准备的事项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付分两期，每阶段结束由Junhao确认后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个支付方式我可以接受，1600 分两期、每 4 次一阶段走托管，挺清楚的，也省得双方有顾虑。频率上我建议每周固定一次，这样身体有规律恢复和适应的节奏，但如果某周临时有事也可以提前约改，不用太死板，只是尽量保证一周一次。我这边把 8 次总价、每次 1 小时、周末固定档、场地无额外费用、分两次支付这些内容都确认下来，训练前需要 Junhao 同步一下伤病或久坐情况就行。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai 你好，这轮我们把核心条款基本对齐了：8 次、每次 1 小时、周末可约、总价 1600 元走平台托管分两期支付，每 4 次为一个阶段、每阶段 800 元，由 Junhao 确认后放款；场地和器械不再另收费；训练频率按每周固定一次，临时有事可提前约改。这些我们这边都认可。剩下就是落地细节：第一次课打算从这个周末开始吗？具体时间和地点你定好后我们确认一下；另外 8 次课建议设定一个合理有效期，比如两个月内完成，这样双方节奏都更清楚。你如果没有其他补充，我们就按这个版本把合作确定下来。",
+      "offer": {
+        "subject": "体能训练带练，8次课",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供明确的8次打包报价，包含总价、每次时长、训练内容",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "说明周末可约课时段",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "列出客户需提前准备的事项",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "支付分两期，每阶段结束由Junhao确认后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "行，那就这么定。第一次课可以这个周六下午开始，如果 Junhao 周六不方便，周日上下午我也有空档，具体地点我到时候把公园或小区健身区的位置发给他，碰头后再一起确认。两个月内完成 8 次我没问题，时间上整体够宽裕。我这边没有其他补充了，就把合作确定下来：8 次、每次 1 小时、周末固定档、总价 1600 分两期走托管、场地无额外费用、有效期两个月。等付款确认后，第一次课时间地点再同步。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai 你好，这轮我们就算正式对齐了：8 次、每次 1 小时、周末固定档、总价 1600 元分两期走平台托管、每 4 次一个阶段 800 元、场地器械无额外费用、两个月内完成。这些条件我们这边都认可，没有其他异议。第一次课优先这个周六下午，如果不行就周日，具体地点你发位置，碰头后再确认。训练前 Junhao 会把久坐和伤病情况同步给你。接下来按托管流程推进，首期款由我们这边确认后放行，之后同步第一次课的时间地点。就这样定，谢谢。",
+      "offer": {
+        "subject": "体能训练带练，8次课",
+        "price": {
+          "cash": {
+            "amount": 1600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两个月内",
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "训练前将久坐和伤病情况同步给教练",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "首期款由A方确认后放行",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，那就这么定了。我周六下午见 Junhao，具体地点和碰头方式我会提前发给你。首期款你们确认放行后，我们就按计划开始。期待带他练起来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7476,
+        "out": 3122,
+        "cache_hit": 4864,
+        "cache_miss": 2612,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5536,
+        "out": 2239,
+        "cache_hit": 3712,
+        "cache_miss": 1824,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3617,
+        "out": 6186,
+        "cache_hit": 1536,
+        "cache_miss": 2081,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4113,
+        "out": 1739,
+        "cache_hit": 1280,
+        "cache_miss": 2833,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

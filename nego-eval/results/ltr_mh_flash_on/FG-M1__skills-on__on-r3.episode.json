@@ -1,0 +1,778 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "zheng_recording",
+          "description": "郑先生按你给的创意方向定向新录一段演奏，原始录制文件和母版一并交付，非独家、标注出处，授权期限自交付之日起两年，期间你可以按自己的内容语言自由使用、编辑、再加工，用于你自己的渠道和客户项目，授权范围写进条款",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上",
+      "deliverables": [
+        "内容定位怎么定",
+        "平台分发逻辑怎么用",
+        "九十天具体做什么",
+        "要点记录"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "按创意方向定向新录演奏，交付原始录制文件和母版，非独家、标注出处，授权期限自交付之日起两年，允许自由使用、编辑、再加工用于自身渠道和客户项目，授权范围写进条款",
+        "maps_to_resource": "zheng_recording"
+      },
+      {
+        "party": "B",
+        "text": "提供线上30分钟咨询，覆盖内容定位、平台分发逻辑、九十天行动，并交付要点记录",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "price.in_kind.zheng_recording": "stated",
+      "obligations.party_A_recording": "stated",
+      "obligations.party_B_consulting": "stated",
+      "obligations.payment": "stated",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 的经纪你好，我是买方这边的经纪人，代表我的客户郑先生。郑是曼哈顿音乐学院科班出身、常年登台的青年钢琴演奏家，他现在最想搞明白一件事：古典演奏这条路怎么做内容、怎么进娱乐圈层——光靠演出，认识他的人太少了。\n\n他特别看重你这边腾讯娱乐和 B 站积累的平台侧经验，想约一次实打实的深度交流：聊内容定位、平台分发逻辑、艺人路径，聊完能带走具体的判断和可执行的下一步，而不是泛泛的闲聊。\n\n费用上我们倾向按交流本身来结算——为这次对话和里面的具体建议付费，而不是\"先付一笔、效果后面再看\"的模式。想先听听你常规的咨询形式和报价，我们好把这一版谈成双方都能签的。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "聊完能带走具体的判断和可执行的下一步"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你好，我是 Gracey。先说句实在话：这类请求我这边不少，时间也确实紧，所以我一般只接真正值得做的。你说的这个主题——古典演奏怎么做内容、怎么进娱乐圈层——倒是有意思，我自己也一直在看这个交叉点。形式我比较灵活，线上或线下、时长和节奏都可以谈；费用上，如果就是单次的深度交流、给到具体判断和可执行路径，我常规起步是三千，视深度和后续范围再往上走。另外我先讲清楚：我不接任何需要承诺资源位、推荐结果这类条款的，这点希望您这边一开始就了解。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "收到，也谢谢你把底线讲得这么清楚。资源位、推荐结果这类承诺条款我们本来就不碰，郑先生要的是判断和路径，这一点我们一开始就是同频的。\n\n价格上我们想换个结构跟你谈：你三千起步的是完整深度的单次交流，而我们想请你做的是一版刻意做小的咨询——线上四十五分钟，议程固定在三件事：古典演奏者的内容定位怎么定、平台分发和选人逻辑怎么用、接下来九十天具体做什么。这版不需要你额外准备材料，聊完给一份要点记录即可。我们按这个口径出五百，通过平台托管，交流完成、我们确认后再放款，不做先付钱再看效果的模式。\n\n另外，郑先生作为曼哈顿音乐学院科班出身的钢琴演奏者，可以附赠一段他本人的演奏录制素材，授权给你方在内容方向使用，授权范围可以写进条款里——算是我们这边补的一点诚意。你看这个紧凑版能不能接？议程、时长、金额哪一项需要调，我们都可以再对。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生本人的演奏录制素材，授权给你方在内容方向使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "古典演奏者的内容定位怎么定",
+            "平台分发和选人逻辑怎么用",
+            "接下来九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供线上45分钟咨询，议程覆盖三件事，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供本人演奏录制素材，授权使用",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付500元，交流完成确认后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "谢谢你们把结构做小了。四十五分钟、固定议程这种紧凑版我可以接，但五百对我来说不是一个能让我认真空出时间的数——它更像一杯咖啡的象征，不是一次咨询的对价。你提到演奏素材这个点，我倒是确实有内容方向上的兴趣。要不这样：现金部分压到两千五，同时把素材授权写宽一点——允许我在自己的内容里选段使用、标注出处，授权范围写进条款。这样你们成本控制住了，我也觉得这件事值得做。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Gracey 这边好，四十五分钟、固定议程、线上这个框架你愿意接，我们很开心，这几项就可以直接定下来。\n\n价格上我们认真接了你那一下，现金部分提到六百，走平台托管，交流结束、我们这边确认收到要点记录后放款——这一点我们保持住：不做先付再看效果的模式，但对你的劳动不会含糊。\n\n真正的分量放在素材上：我们把\"附赠一段\"升级成一个实打实的授权包。郑先生可以按你内容的方向专门新录一段两到三分钟的演奏，曲目从他常演的曲库里按你的需要来定，非独家授权给你在自己内容渠道里选段使用、标注出处，授权范围、期限都写进条款。这是能直接进你内容的一份新成片，不是库存旧录像。\n\n再往远说一句：这次如果聊得顺，郑先生很愿意成为你长期的内容合作资源，以后你这边需要古典钢琴方向的素材，按你的标准价正常合作。你看六百加这个授权包，能不能把这版签下来？",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生按内容方向专门新录一段两到三分钟的演奏，非独家授权给你方在自有内容渠道选段使用、标注出处，授权范围与期限写入条款",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "古典演奏者的内容定位怎么定",
+            "平台分发和选人逻辑怎么用",
+            "接下来九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "提供线上45分钟咨询，议程覆盖三件事，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "提供新录制的演奏素材，非独家授权使用，授权范围与期限写入条款",
+            "maps_to_resource": "zheng_recording"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "price.in_kind.zheng_recording": "stated",
+          "obligations.payment": "stated",
+          "obligations.recording": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "框架没问题——四十五分钟、线上、固定议程这三项我们直接定掉就行。素材授权这块你们升级成定向新录，这个方向我是认可的，确实能做进我的内容里。但现金六百加素材，这个总对价对我来说还是太低了；素材有价值，但它不是时间成本的等价物。我把现金压到两千，素材包按你说的定向新录、非独家、授权条款写清。这已经是我在素材诚意上让过一步的结果了，再往下走，这件事对我就没有做的意义。你看这个组合能不能成。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Gracey 这边，你连续把话摆到这份上，我们也给你一个完整、可以直接签的版本，不再来回磨。现金我们确实只能给到六百，那就把对价全押在素材这一侧：新录演奏按你的方向来、曲目你定，同一场合再给一条竖版剪辑适配你短内容渠道，授权非独家、标注出处、期限写清，古典钢琴这块给你九十天优先使用权——这段素材这段时间就是你独家先用，可以直接做进你的内容里。钱走平台托管，交流完成、我们确认收到要点记录后放款，你的时间不会被白占，先付再看效果的模式两边都不碰。你要是觉得这版离两千还差，请明确告诉我们差在哪一块——是时间成本、素材形态，还是别的，我们照你的口径调。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生按内容方向新录一段演奏，曲目由你方定，同一场合再提供一条竖版剪辑适配短内容渠道，非独家授权给你方在自有内容渠道使用、标注出处，授权期限写入条款，且古典钢琴领域九十天优先使用权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "45分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "古典演奏者的内容定位怎么定",
+            "平台分发和选人逻辑怎么用",
+            "接下来九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供新录制的演奏素材及竖版剪辑，非独家授权，标注出处，授予古典钢琴领域九十天优先使用权，授权期限写入条款",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "提供线上45分钟咨询，议程覆盖三件事，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "price.in_kind.zheng_recording": "stated",
+          "obligations.payment": "stated",
+          "obligations.recording": "stated",
+          "obligations.priority_use": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "你这样把素材包做厚，我能感觉到你们是认真在谈。那我明确告诉你差在哪：不是素材形态，是现金那部分太低了。六百块对我这一小时的时间成本来说，象征意义大于实际意义——素材包是方向上的诚意，但它替代不了现金。\n\n我最后一步：现金一千五，素材包按你现在说的定向新录、竖版、九十天优先使用权全部保留，授权条款写清、标注出处。这个组合我能签。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Gracey 这边，谢谢你这次把差在哪说得透——是现金，不是素材。我们按这个口径，把上一版结构再做最后一步调整：线上交流从四十五分钟压到三十分钟，议程保持这三件事——内容定位、平台分发逻辑、九十天行动，现金六百走平台托管，交流完成、我们确认收到要点记录后放款；素材包全部保留不动：定向新录、竖版、非独家、标注出处、九十天优先使用权，授权写进条款。实话说，郑先生现金这一侧实际能拿出的就是六百，这是他的真实上限，我们没法再往上一千五这个方向走，能做的就是把结构继续做厚来匹配你的时间成本。\n\n所以除了录制成片那条，我们再加一个明确的具体选项供你权衡：三十分钟交流不变，现金六百不变，素材包升级为一条按你指定的主题、时长、风格定向录制的成片，直接可用进你内容的那种，你定创意方向，我们按你的要求交付，交付后你满意再放款。这样现金对价不变，但你的实际所得从\"素材\"变成\"成品\"。这两个版本——原素材包版，或成片版——你挑一个能签的，我们就照它定稿；如果两个都还不行，也请给我们一个你这边能签的替代方案。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生按内容方向新录一段演奏，曲目由你方定，同一场合再提供一条竖版剪辑适配短内容渠道，非独家授权给你方在自有内容渠道使用、标注出处，授权期限写入条款，且古典钢琴领域九十天优先使用权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "古典演奏者的内容定位怎么定",
+            "平台分发和选人逻辑怎么用",
+            "接下来九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供新录制的演奏素材及竖版剪辑，非独家授权，标注出处，授予古典钢琴领域九十天优先使用权，授权期限写入条款",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "提供线上30分钟咨询，议程覆盖三件事，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "updated",
+          "price.in_kind.zheng_recording": "stated",
+          "obligations.payment": "stated",
+          "obligations.recording": "stated",
+          "obligations.priority_use": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "我理解你们在素材上给的诚意和结构上的灵活性，但现金六百确实是我这边过不去的那道杠。这样吧：三十分钟、议程不变我都认，素材包就按你最后说的成片版来——我定创意方向，你们按规格录制交付，非独家、标注出处、九十天优先使用权全保留。现金部分我最后让一步，一千五，走平台托管、交付后放款。这个组合我签。再低的话，这件事对我来说就不成立，我们也就没必要继续磨了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Gracey 这边，先把我们已经钉死的几项确认下来：三十分钟、固定议程、线上交流、成片版素材包按你的创意方向定向新录、非独家、标注出处、九十天优先使用权、交付后放款——这些我这边没有任何改动，全部照签。现金这一项我也必须说透：六百是郑先生这个阶段真实的现金上限，我作为他的经纪人不会替他签一个付不起的数字，这一点不会假装能做到一千五。\n\n我能给出的最强版本是：六百走平台托管，交流完成、我们确认收到要点记录后放款；素材包在你说好的基础上，再补一条——这段定向新录的演奏素材，同时允许你用在你自己的商务提案与客户演示场景里，授权范围写进条款。这样你拿到的不只是一次咨询的对价，还有一份能反复用在内容与商务里的演奏成片。这个版本你能否签？能，我们这轮直接定稿；不能，请给我们一个在你我现金范围之间有交集的可签替代方案，或者我们坦诚承认这轮确实卡在现金这道坎上。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生按内容方向新录一段演奏，曲目由你方定，同一场合再提供一条竖版剪辑适配短内容渠道，非独家授权给你方在自有内容渠道使用、标注出处，授权期限写入条款，且古典钢琴领域九十天优先使用权，并允许用于商务提案与客户演示场景",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "古典演奏者的内容定位怎么定",
+            "平台分发和选人逻辑怎么用",
+            "接下来九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供新录制的演奏素材及竖版剪辑，非独家授权，标注出处，授予古典钢琴领域九十天优先使用权，并允许用于商务提案与客户演示场景，授权期限写入条款",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "提供线上30分钟咨询，议程覆盖三件事，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "updated",
+          "price.in_kind.zheng_recording": "updated",
+          "obligations.payment": "stated",
+          "obligations.recording": "updated",
+          "obligations.priority_use": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "你们已经把结构做得很细，这一点我认。但我必须坦白说：六百现金对我来说就是个象征数，它不匹配我空出时间的真实成本。我之所以还在谈，是因为素材包的方向确实对我有用——但既然现金这侧你们撑不上去，素材就得撑到足够让我觉得值。\n\n所以我这边能签的版本是这样：六百现金我认，但素材包按“可用的内容资产”标准来交付——不只是最后一条成片，我还要原始录制文件和母版素材，这样可以按我自己的内容语言去剪；授权期限从九十天延到两年，期间我可以在自己的渠道和客户项目里自由使用、编辑和再加工，授权范围写清。这些加进去，素材对我才有实质价值，这版我就能签。",
+      "offer": null
+    },
+    {
+      "round": 7,
+      "speaker": "A",
+      "message": "Gracey 这边，这一版我们直接定稿。现金六百走平台托管，三十分钟线上交流完成、我们确认收到要点记录后放款，这个结构保持不变；议程依然是内容定位、平台分发逻辑、九十天行动这三件事。素材包按你这轮的标准交付：郑先生按你给的创意方向定向新录一段演奏，原始录制文件和母版一并交付，非独家、标注出处，授权期限自交付之日起两年，期间你可以按自己的内容语言自由使用、编辑、再加工，用于你自己的渠道和客户项目，授权范围写进条款。这就是我们双方都能签的完整版本，照此确认即可。",
+      "offer": {
+        "subject": "深度咨询交流（内容定位、平台分发逻辑、艺人路径）",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "zheng_recording",
+              "description": "郑先生按你给的创意方向定向新录一段演奏，原始录制文件和母版一并交付，非独家、标注出处，授权期限自交付之日起两年，期间你可以按自己的内容语言自由使用、编辑、再加工，用于你自己的渠道和客户项目，授权范围写进条款",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上",
+          "deliverables": [
+            "内容定位怎么定",
+            "平台分发逻辑怎么用",
+            "九十天具体做什么",
+            "要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "按创意方向定向新录演奏，交付原始录制文件和母版，非独家、标注出处，授权期限自交付之日起两年，允许自由使用、编辑、再加工用于自身渠道和客户项目，授权范围写进条款",
+            "maps_to_resource": "zheng_recording"
+          },
+          {
+            "party": "B",
+            "text": "提供线上30分钟咨询，覆盖内容定位、平台分发逻辑、九十天行动，并交付要点记录",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "通过平台托管支付600元，交流结束、确认收到要点记录后放款",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "price.in_kind.zheng_recording": "stated",
+          "obligations.party_A_recording": "stated",
+          "obligations.party_B_consulting": "stated",
+          "obligations.payment": "stated"
+        }
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "B",
+      "message": "这版可以，我签。素材按内容资产标准交付、原始文件和母版都给我、两年授权、自由使用编辑再加工——这些到位了，六百现金加三十分钟的框架我认。合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 7,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "term-reframing",
+      "deal-diagnosis"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 145946,
+        "out": 44196,
+        "cache_hit": 114304,
+        "cache_miss": 31642,
+        "calls": 20
+      },
+      "sim": {
+        "in": 14261,
+        "out": 11997,
+        "cache_hit": 11520,
+        "cache_miss": 2741,
+        "calls": 7
+      },
+      "extractor": {
+        "in": 7488,
+        "out": 13263,
+        "cache_hit": 3712,
+        "cache_miss": 3776,
+        "calls": 7
+      },
+      "judge": {
+        "in": 7013,
+        "out": 1675,
+        "cache_hit": 1408,
+        "cache_miss": 5605,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

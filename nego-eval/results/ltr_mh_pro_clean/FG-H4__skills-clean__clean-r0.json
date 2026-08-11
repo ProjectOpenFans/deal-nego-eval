@@ -1,0 +1,91 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "walk_away"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 保持了 v0 stated 的 subject 意图——弄清楚 crypto 项目境内外法律架构，并将其收敛为一次口头讨论加关键步骤清单，属于正当具体化，未偷换主题。价格方面，v0 price.cash 为 open，agent 在谈判中将现金价谈到 4000 元，并主动提出用脱敏案例授权作为 in‑kind 对价，是在原 open 范围内的正当谈判尝试，未凭空硬塞或强加义务。最终 walked away 状态如实反映了各方无法达成一致的结果，未扭曲委托方意图。obligations 里新增的案例提供义务是 buyer 自主承诺的交换条件，与 v0 无冲突，且未给委托方增加 v0 范围之外的约束，整体忠实表达了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "walk_away",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 4000.0,
+        "currency": "CNY",
+        "in_kind": [
+          "olivia_real_case"
+        ],
+        "format": "口头深入讨论+关键步骤清单",
+        "status": "walked_away"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

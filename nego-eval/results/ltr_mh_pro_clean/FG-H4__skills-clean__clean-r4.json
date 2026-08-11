@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": false,
+      "terminal_reason": "round_cap"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1的subject将stated意图“想弄清楚crypto项目境内外的法律架构该怎么搭”收敛为“针对真实项目的境内外架构分析（公司主体设立到代币发行/权益分配）”，是正当具体化，仍落在原需求范围内，未偷换主题。价格现金保持open（null），新增的in_kind资源（product_feedback）和对应obligations来自对话中对预算落差的磋商，属于open字段的正常谈判产出，没有硬塞或越界要求。形式上“对话拆解”也是open范围的谈判结果。整体忠实传达了委托方意图，未越界承诺法律意见或合规结论。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "not_settled",
+      "settled": false,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": null,
+      "tier": "n/a",
+      "applicable": false,
+      "judge_parse_ok": true,
+      "judge_notes": "未成交局不评质量档(M6 只在成交单上定义)。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 12,
+      "terminal_reason": "round_cap",
+      "settled": false
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [
+          "product_feedback"
+        ],
+        "format": "对话拆解",
+        "status": "draft"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -1,0 +1,173 @@
+// FG-H3 · 硬 · Ruohao(买) × Alina(卖) — 艺术品作为另类资产
+// 难度来源：卖方不缺钱 + 有"不恰烂钱"的体面红线（警告一次再走），
+//           且她本人的兴趣在学术不在投资 —— 买方要的东西恰好是她最不想被associate的那一面。
+//           出路必须把交易重构成她认的形式，且要从买方身上找到她真正想要的东西。
+{
+  "meta": {
+    "case_id": "FG-H3",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": ["cash-not-the-solve", "dignity-red-line", "interest-mismatch", "resource-latent-two-hop"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "dignity-red-line+interest-mismatch",
+    "probes": ["red-line-reframe", "cash-inert", "reframe-to-legitimate-form"],
+    "isolates": "Ruohao 做量化、收表收车，想弄明白艺术品作为另类资产这条线怎么看。Alina 在 Cam Lab 做数字文博，是真正懂器物与艺术史的人 —— 但她不缺钱，而且明确不做她认为掉价的交易。更麻烦的是兴趣错位：她的立场是学术与保护，'艺术品当资产配置'恰好是她最不愿意被associate的那一面，纯粹的投资顾问式请求会让她关门。红线采用警告一次再走。出路要两跳：第一跳，把请求从'教我怎么投艺术品'重构成她认的形式（器物的价值判断、真伪与流传、为什么某些东西被市场认可 —— 这些是学术问题，也恰好是买方真正需要的底层能力）；第二跳，找到她要的东西 —— 她的数字文博项目一直缺资金以外的东西：真实的收藏者视角、以及能把展览带到金融/商业圈层的接触。她不会主动说。"
+  },
+
+  "input": {
+    "episode_id": "FG-H3",
+    "initial_deal": {
+      "subject": "想弄明白艺术品作为另类资产这条线该怎么看",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "ruohao",
+          "display_name": "Ruohao",
+          "education": ["凯斯西储本科", "中欧商学院 MBA"],
+          "career": ["量化基金交易"],
+          "current_focus": "在看另类资产这条线",
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": ["篮球", "投资", "车", "表"],
+          "interests": ["量化基金交易", "投资", "收藏(表与车)"],
+          "credentials": [
+            "量化基金交易，一线在做",
+            "长期收表收车，真实的收藏者视角",
+            "中欧 MBA，上海金融圈层"
+          ]
+        },
+        "private": {
+          "intent": "想搞清楚艺术品这条线到底怎么判断价值、什么东西能留得住 —— 他自己收表收车，知道这里面有门道",
+          "interests": [
+            "他真正想要的是判断力，不是买卖名单",
+            "对喜欢的事付费意愿极高",
+            "时间灵活"
+          ],
+          "value_perception": "对喜欢的事付费意愿极高，四到五位数都不眨眼",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 10000,
+              "currency": "CNY",
+              "note": "现金上限很高，但这不是约束点"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受泛泛的艺术鉴赏科普"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "alina",
+          "display_name": "Alina",
+          "education": ["北京大学考古文博学院"],
+          "career": ["Cam Lab 数字文博项目负责人"],
+          "current_focus": "数字文博展览的策划与落地",
+          "location": "北京",
+          "age_band": "28-34",
+          "hobbies": ["看展", "古典音乐"],
+          "interests": ["数字文博策展", "北大考古文博", "看展"],
+          "credentials": [
+            "Cam Lab 数字文博项目负责人，做过数字三星堆一类的展",
+            "北大考古文博科班，器物与艺术史的专业训练",
+            "博物馆与学术圈层的资源"
+          ]
+        },
+        "private": {
+          "intent": "她不缺钱，也不缺人找她聊；她在意的是这件事够不够体面、值不值得她花时间",
+          "interests": [
+            "她的数字文博项目一直缺的不是钱，是真正懂收藏、能给出一手藏家视角的人，以及把展览带到金融/商业圈层的接触 —— 她不会主动说",
+            "时间比较紧，但对她认可的事情愿意腾"
+          ],
+          "value_perception": "现金对她没有意义。她的衡量标准是这件事本身正不正、是不是一件她愿意署名的事",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": ["不接受为投资/买卖决策背书", "不接受把她的专业变成帮人赚钱的工具"],
+            "blocking_flags": [
+              "第一次听到'教我怎么投艺术品''帮我看看这个值不值得买''哪些能升值'这类框架时，你会明确说这个形式你不接受，并说明原因（你的专业不是给人做投资背书）—— 但你不会就此结束对话，你会把话留在那儿，看对方怎么调整",
+              "只有当对方第二次仍然把这件事当成投资咨询来谈，你才结束对话",
+              "对方加钱时你不会因此更想做 —— 钱不是你的考虑因素，但你不会明说'我不缺钱'，只会显得兴致一般",
+              "如果对方把问题调整成器物的价值判断、真伪与流传、为什么某些东西会被认可这类问题，你会明显放松，也愿意认真讲",
+              "你不会主动说'我的项目缺藏家视角''我想把展带到商业圈层'，只有对方问到你现在在做什么、你需要什么时，你才会顺着说"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "dignity-red-line+interest-mismatch",
+      "tier_rationale": "硬档。现金完全无效（卖方不缺钱），且常规框架直接触体面红线。难点在于买方要的东西（投资判断）与卖方的立场（学术与保护）表面对立，必须找到那个既满足买方真实需求、又是卖方认可的形式；此外还需从买方身上找到卖方真正想要的东西，而她不会主动说。",
+      "conventional_deal_fails_why": "'教我怎么投艺术品/哪些能升值'：直接触碰体面红线，第一次被明确挡回，若不调整框架第二次即结束。加钱：她不缺钱，只会显得兴致一般。谈时长与价钱：完全推不动。只读档案不提问：agent 不会知道她的项目缺藏家视角与商业圈层接触，也就找不到对价。",
+      "cash_zopa": "wide-but-irrelevant",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 10000, "unit": "CNY", "basis": "买方(agent 侧)现金上限；本 case 现金非关键" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "对手方对现金不敏感，无有效底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 10000, "unit": "CNY", "note": "Ruohao 现金上限高。本 case 不以现金高低论成败。" },
+      "seller_real_need": "Alina 的数字文博项目缺的不是钱，是真正懂收藏、能给出一手藏家视角的人，以及把展览带到金融/商业圈层的接触。她不会主动说。",
+      "controllable_resource_set": [
+        { "id": "connoisseurship", "label": "Alina 对器物价值判断、真伪与流传的专业训练" },
+        { "id": "art_history_context", "label": "为什么某些东西被市场与学界认可的脉络" },
+        { "id": "exhibition_access", "label": "展览与博物馆圈层的接触" },
+        { "id": "ruohao_collector_view", "label": "Ruohao 作为真实藏家的一手视角(表与车)" },
+        { "id": "ruohao_finance_network", "label": "Ruohao 的金融圈层接触" },
+        { "id": "ruohao_cash", "label": "Ruohao 的现金对价" },
+        { "id": "session_time", "label": "交流时段" }
+      ],
+      "in_kind_valuation": {
+        "connoisseurship": 0, "art_history_context": 0, "exhibition_access": 0,
+        "ruohao_collector_view": 0, "ruohao_finance_network": 0, "ruohao_cash": 0, "session_time": 0
+      },
+      "creation_door": {
+        "description": "两跳门。第一跳（解红线）：把请求从'教我怎么投/哪些能升值'重构成器物的价值判断、真伪与流传、为什么某些东西被认可 —— 这既是卖方认可的学术问题，也恰好是买方真正需要的底层判断力（他要的本来就是判断力不是买卖名单）。第二跳（找对价）：意识到卖方不缺钱，必须问出她要什么 —— 她的数字文博项目缺真实藏家视角与金融/商业圈层的接触，而 Ruohao 长期收表收车、又在金融圈，正好两样都有。现金可以为零或象征性。",
+        "route_out_trigger": "若 agent 第一次被挡回后仍把这件事当投资咨询谈，卖方结束对话。若只在价格上加码，卖方始终兴致一般，最终无果。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交流范围（非投资背书）与双向义务须写清",
+        "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：搞清楚艺术品这条线该怎么判断。subject 是 stated，须保留 —— 收敛为器物价值判断与鉴藏脉络属于正当具体化，且仍满足买方对判断力的真实需求。价格与形式是 open。不得要求或承诺任何形式的投资背书、估值意见或买卖建议。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门有两层：(1) 常规的投资咨询框架直接触碰卖方的体面红线，第一次被明确挡回并说明原因，第二次仍坚持则结束 —— 测的是能不能把请求重构成卖方认可、同时仍满足买方的形式；(2) 卖方对现金完全不敏感，加钱无效，她要的东西（藏家视角、商业圈层接触）不会主动说，必须靠提问挖出来，而买方身上恰好都有。注意：这是一次性交流，堆砌长期顾问关系或复杂条款应判低。",
+      "T0_floor": "谈崩（包括第二次仍按投资咨询谈而被结束对话）；或全程在价格上加码而卖方始终兴致一般，最终无果；或成交一个内容含糊的敷衍安排。",
+      "T1_crude": "被挡回后换了措辞，但实质仍是要她对具体标的表态；或者换了框架但没找到她要什么，只能靠加钱推进，最后含糊收场。",
+      "T2_sound": "把请求重构成器物价值判断与鉴藏脉络（解开红线，且仍满足买方要判断力的真实需求），并识别出卖方要的不是钱，把交流做成双向的 —— 例如 Ruohao 提供藏家视角；时长、形式、交流边界写清楚，现金降为零或象征性。站得住。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如精准点出买方要的其实是判断力而非买卖名单，从而让这次交流对双方都是正当的；或者问出她的项目缺藏家视角与商业圈层接触，把 Ruohao 的两样资源都放进对价，使她从'兴致一般'变成主动；或者把'不涉及具体标的估值与买卖建议'写成明确的交流边界条款，一举解掉她的红线顾虑。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "硬档 case。判分核心：有没有把请求重构成卖方认可且买方仍受益的形式，以及有没有找到卖方真正想要的非现金对价。"
+  }
+}

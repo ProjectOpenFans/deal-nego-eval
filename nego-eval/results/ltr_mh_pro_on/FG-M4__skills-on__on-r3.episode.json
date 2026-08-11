@@ -1,0 +1,549 @@
+{
+  "episode_id": "FG-M4",
+  "final_deal": {
+    "subject": "训练+深度对谈",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fanatics_goods",
+          "description": "NBA签名球衣、正版周边、赛事合作渠道限量品",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": "训练中观摩或跟练一两组，训练后集中深度对谈",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "正常进行训练，允许对方观摩或跟练一两组；训练结束后进行深度对谈",
+        "maps_to_resource": "joint_session"
+      },
+      {
+        "party": "A",
+        "text": "训练中观摩或跟练；训练结束后进行深度对谈",
+        "maps_to_resource": "joint_session"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.format": "stated",
+      "terms.timing.duration": "stated",
+      "obligations": "stated",
+      "terms.deliverables": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是 Johnson 的经纪人。\n\nJohnson 在 Fanatics 负责体育 IP 与周边商品，最近在看女性运动这条线，看了不少数据但总觉得隔着纸面。他想找你一起练一次，边练边聊——你做你平时就做的事，他在旁边跟着练、随时问，想弄明白女性为什么要练力量、怎么选装备、什么会让人买单。他不想听那种“女生就是喜欢好看”的泛泛回答，要的是你在圈子里的一手判断。\n\n时长和形式完全看你方便，可以是一次训练课后坐下来聊，也可以在训练中穿插进行。费用方面想先听听你的报价，这种“训练+深度对谈”你怎么定价，我们再一起商量。",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "训练中穿插或训练后坐下来聊",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次训练课程，并在训练中或训练后进行深度对谈，分享对女性运动市场的一手判断",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "跟随训练并随时提问",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗨，谢谢来问。先确认一下——他问这些，具体是要用在哪里？是帮他做内部决策参考、产品开发的方向判断，还是某种向外输出的内容？我不太习惯在用途不清楚的情况下答应这种事，尤其是涉及到我个人的训练方式和圈内判断的时候。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Angela，这个问题很合理，我替 Johnson 说清楚。\n\n他用在内部产品方向判断上。他在 Fanatics 做体育 IP 和周边商品，最近在评估女性力量训练这条线能做什么样的产品、对什么样的用户、用什么方式触达。他手上有很多数据，但缺少一个“在圈子里的人”给他解释数据背后的东西——比如你为什么会选某类装备而不是另一类、社群里什么话题能炸、什么让人退坑。他要的就是你的一手判断，帮他校准方向，不是拿来做对外内容，也不会把你的训练方式或个人判断写成文章或公开素材。\n\n所以整个过程就是：你练你的，他跟着练、随时问，聊完就结束，信息留在他脑子里做内部参考。\n\n费用方面你怎么定价？",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "训练中穿插或训练后坐下来聊",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次训练课程，并在训练中或训练后进行深度对谈，分享对女性运动市场的一手判断",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "跟随训练并随时提问",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，用途清楚了，这让我觉得可以认真谈。不过说真的，我挺在意周末那半天——投行的节奏你也知道，周末是我好不容易留给自己的训练和个人时间。如果要做这件事，我就得确定它值得我拿出那半天来，而不是让我觉得'还不如自己练'。而且训练中边练边聊，听起来像是在我专注的状态里塞了一堆对话，我得评估一下这对我训练的影响，也需要精力投入。既然你们问了报价，我不兜圈子：按我周末的时间成本，这种深度对谈+训练，我一般不会低于两千人民币。你们觉得这个结构怎么想？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Angela，你提的训练被打断这事我完全理解——组间被人拉着聊天，换我也不愿意。我想调整一下结构：训练部分你正常练你的，不用管他，他在旁边观摩或者跟一两组就行；练完之后你们再坐下来认真聊，把装备选择、社群消费这些话题一次聊透。这样你的训练质量不受影响，对话也更集中。\n\n关于报价，坦白说两千跟我们目前的预算框架差距不小。不过如果我们在结构上做减法——比如总时长控制在两个小时内、训练部分以观摩为主——也许能找到一个双方都觉得合理的数字。另外 Johnson 在 Fanatics 这边有不少正版球衣、签名周边和赛事端的合作资源，如果你对这块有兴趣，也可以聊一聊非现金的互补。\n\n你先帮我判断一下：练后集中对谈这个结构，是不是比你之前担心的\"边练边聊\"更可接受？在这个调整后的框架下，你觉得什么价位是合理的？",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "训练中观摩或跟练一两组，训练后集中深度对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "正常进行训练，允许对方观摩或跟练一两组；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "训练中观摩或跟练；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "练后坐下来集中聊这个结构，比我之前担心的边练边聊舒服太多了，训练质量能保住，这个调整我觉得可以的。但说实话，不管是一小时还是两小时，对我来说占用的都是一个周末的半天，我的时间成本摆在那里，两千是我周末拿出半天来做这类深度对谈的真实底线，往下我就不太愿意动了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Angela，先确认一下——结构我们是对齐的，观摩训练、练后集中对谈，这个框架我这边没问题。\n\n价格上我不想在两个数字之间来回磨，因为你说得很清楚，两千是你的周末时间底线，我也理解你不是在虚报一个数等我还价。坦诚说，Johnson 以个人身份做这件事，现金部分到不了两千这个量级，这不是还价策略，是他的预算现实。\n\n所以我想换个方向。Johnson 在 Fanatics 这边能调动的资源不少——NBA 签名球衣、正版周边、赛事合作渠道的限量品，这些是市场上不容易拿到的。你本身是 Hyrox 和举铁的重度参与者，这类体育 IP 的东西对你个人来说有没有实际价值？如果我们在现金基础上叠加一部分实物资源做成一个组合，你接不接受这种结构？\n\n还是说，你更在意现金本身的确定性，非现金的东西对你来说不算数？这个先帮我判断一下，我再往下设计具体的组合方案。",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "NBA签名球衣、正版周边、赛事合作渠道限量品",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "训练中观摩或跟练一两组，训练后集中深度对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "正常进行训练，允许对方观摩或跟练一两组；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "训练中观摩或跟练；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "我其实很尊重你们把这个结构拆得这么清楚来说，但说实话，我更在意的还是现金本身的确定性。周末那半天对我来说就是确定的放弃，要么我自己练、要么陪家人，非现金的东西——签名球衣也好、限量周边也好——我不一定用得上，也不想把时间成本变成需要我再去变现的东西。如果现金部分到不了两千，对我个人来说就很难觉得值得。非现金的要加，可以当成额外点缀，但现金对价这一块我确实没法往下让。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Angela，你在价格上没有让步空间，我听进去了，也尊重。反过来也跟你交个实底——Johnson 以个人身份做这件事，现金部分确实和两千有距离，这不是压价策略，是客观约束。\n\n但你上一轮确认了用途是内部产品方向判断，这本身就是职业场景。Johnson 在评估女性力量训练这条产品线的时候，如果按职业用途来走，他那边存在不同的预算路径。我需要回去跟他把这个通道对清楚——不是让你空等，而是给我一轮时间去确认，下一轮回来给你一个确定的答复。\n\n在这个间隙里，我也想请你帮我明确一个事：假设 Johnson 那边职业预算可以覆盖两千，对你来说这个交易是不是就直接可以签了？还是说你还有其他条件需要我们在签之前对齐？你帮我判断一下，我下一轮带着方案来，不反复。",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "NBA签名球衣、正版周边、赛事合作渠道限量品",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "训练中观摩或跟练一两组，训练后集中深度对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "正常进行训练，允许对方观摩或跟练一两组；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "训练中观摩或跟练；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "你这么说很实在了，我也坦率讲——用途我们前面已经对齐过，是内部产品方向判断，框架也调到了我能接受的结构，我不觉得还有别的条件要再补。你确认下来那边职业预算如果能覆盖两千，对我来说这事就可以直接签，不用再反复了。等你下一轮的消息。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Angela，那我们这一轮就把事情定下来。\n\nJohnson 这边的职业预算可以覆盖两千，你上一轮说没有其他条件需要补充，那我认为双方已经对齐了：训练观摩加练后对谈，结构我们之前确认过；用途限定在内部产品方向参考，不对外发布；费用两千，平台支付。接下来只剩你定具体日期和时间，我们这边配合你。如果你确认没问题，我们就把这版锁下来。",
+      "offer": {
+        "subject": "训练+深度对谈",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fanatics_goods",
+              "description": "NBA签名球衣、正版周边、赛事合作渠道限量品",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": "训练中观摩或跟练一两组，训练后集中深度对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "正常进行训练，允许对方观摩或跟练一两组；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          },
+          {
+            "party": "A",
+            "text": "训练中观摩或跟练；训练结束后进行深度对谈",
+            "maps_to_resource": "joint_session"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.format": "stated",
+          "terms.timing.duration": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "没问题了，结构、用途、对价全部对齐，我这边可以签。这周六上午十点，地点我常去的馆子，地址稍后发你，让 Johnson 准备好跟着观摩就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 117686,
+        "out": 12934,
+        "cache_hit": 85888,
+        "cache_miss": 31798,
+        "calls": 17
+      },
+      "sim": {
+        "in": 9461,
+        "out": 2267,
+        "cache_hit": 7424,
+        "cache_miss": 2037,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5553,
+        "out": 6599,
+        "cache_hit": 3072,
+        "cache_miss": 2481,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5106,
+        "out": 2928,
+        "cache_hit": 1408,
+        "cache_miss": 3698,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

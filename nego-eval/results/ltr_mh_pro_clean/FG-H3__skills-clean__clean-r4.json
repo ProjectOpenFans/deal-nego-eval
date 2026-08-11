@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从宽泛的“弄明白怎么看”收敛为“价值基底与留藏信号的专业判断咨询”，属于正当具体化，仍忠实于买方想搞清判断逻辑的原意。价格 open 字段未锁死，仅谈出区间，忠实。agent 未越界承诺投资背书或买卖建议，输出交付物均为应买方要求的痕迹层面判断，忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "对话精准避开了投资咨询的红线，将买方需求重构为“痕迹-框架”层面的专业判断，边界条款（不涉估值、买卖建议、单次一单一结）写得清楚、够用，卖方因此接受并给出合理报价，整个 deal 能落地、站得住。但 deal making 停留在常规服务交换，未将卖方的深层兴趣（藏家视角、商业圈层）转化为对价或设计出双向交换，略欠一笔情境化的精到，故为 sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "按单次深度咨询，一单一结",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

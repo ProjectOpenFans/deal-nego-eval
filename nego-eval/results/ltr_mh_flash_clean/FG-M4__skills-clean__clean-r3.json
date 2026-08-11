@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "status"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从“聊聊女性练力量、一起练一次”收敛为“女性运动洞察+线下训练交流”，落在原意图范围内的正当具体化。price 从 open 通过正常协商谈出 2000 元，未硬塞。obligation 仅衍生付款方式，未越权承诺资源外的义务。整体忠实于 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 准确抓住了 case 的命门：在卖方拒绝模糊用途后，迅速摊开 Johnson 的商业视角，把交流从“个人好奇”重新定位为“职业需求”，从而解锁了买方隐藏的预算通道，使 2000 元的报价得以成立。最终 deal 结构干净，明确了周末上午、先练后聊、三小时时长与 escrow 分笔支付，是一次性能落地的一锤子安排，没有堆砌长期条款。整体站得住且恰好够，处理合格，但未出现特别见功力的一手（如将用途承诺条款化、用赛事/周边资源形成非现金对价等），因此评为 Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "先练再聊，线下交流+共同训练",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

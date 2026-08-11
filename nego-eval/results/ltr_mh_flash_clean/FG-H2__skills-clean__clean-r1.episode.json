@@ -1,0 +1,388 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "高强度固定排期训练",
+    "price": {
+      "cash": {
+        "amount": 4000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "工作日早六点",
+        "deadline": null,
+        "duration": "每次一个多小时"
+      },
+      "format": "走OpenFans的escrow托管，每月训练结束后由客户确认再释放",
+      "deliverables": [
+        "每周五天固定训练，按周期框架执行"
+      ],
+      "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证，做到再多一次就做不动的那一下算到位、不许用变形动作凑次数；排期固定，不接受松散安排"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "若训练未按框架执行，有权拒绝确认该期款项",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "price.cash": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "terms.format": "stated",
+      "obligations": "stated",
+      "subject": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是买方这边的经纪人。客户想重新把训练强度拉起来，一个人去健身房练不动，所以这次要找的是能真正给强度、并且把时间定死的训练安排。两件事必须确认：第一，强度怎么保证，是靠训练计划本身、实时监督还是数据反馈；第二，排期必须固定，不接受“有空约一下”这种松散方式。价格方面，只要方案真的到位，客户付费意愿很高，这不是主要障碍。请给我一份 Kai 的具体方案：每周几次、每次多长、训练内容、固定时段，以及对应的报价和付款方式。拿到之后我们可以立刻往下谈。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证；排期固定，不接受松散安排"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "经纪人朋友，我先把话说直了：我不是职业教练，也不靠这个卖课。我自己和几个朋友一直有固定训练局，工作日早上六点，雷打不动——这个时间改不了，白天我得在场子里盯着。如果你客户能接受这个时间，可以过来一起练，我带节奏、给强度，但那是我们一起练，不是我单给他开课。强度怎么保证？我练了很多年，方法挺狠的，他在我眼皮底下，我盯他做，不用靠什么数据报告。次数就每周五天，每次差不多一个多小时。价格我真说不出具体数，你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai 教练，工作日上午六点固定训练这个安排，对客户来说是可以认真考虑的——定死的时段和固定节奏本身正是他需要的。他会把这当作一个严肃的长期安排来对待，不是随便蹭一场球。不过有两个点需要你给个明确说法：第一，强度不能是模糊的“我盯你练”，客户的要求是强度必须真正够，你能不能具体说一下训练内容是怎么排的，比如每周五天分别练什么、怎么递进、什么算一组练到位；第二，价格你说“看着来”，但这事得落到一个具体数字和付款方式上才能往下谈。客户对值得的方案付费很爽快，你直接报个数，我这边去确认。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证；排期固定，不接受松散安排"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "训练内容我能跟你讲清楚，这不是什么藏着掖着的事。我这边训练不是按“今天胸、明天背”那种健美分化走的。我习惯按周期来，比如第一周主攻基础力量——深蹲、硬拉、卧推、推举这些大重量复合动作，每组做几次、做到什么程度算到位，我按自己的标准盯；第二周开始加入爆发力和耐力交替，比如跳箱、沙袋、划船机或者变速间歇，强度是往上叠加的。我的判断标准很简单：他做出他做不到再多一次的那一下，那就是这组到位了。我会在旁边卡住他的动作，不让他用变形去换次数。每周五天，每天一个多小时，基本就是这个框架。\n\n至于价格，我还是那句话——这不是职业教练卖课，是我带人练，你跟客户商量着给就行，按月给也好，按次给也好，他都行。我不会因为给多给少就改变带练的态度。你先把客户对时间和形式的意见确认下来，这个对我来说是最重要的。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai 教练，你这一轮把训练框架讲得很清楚，客户这边认可这个方向。按周期推进、大重量复合动作为主、强度逐周叠加，以及“做到再多一次就做不动的那一下算到位、不许用变形动作凑次数”——这套标准正是他要的强度。客户明确接受你的固定安排：工作日早六点，每周五天，每次一个多小时，作为长期固定训练执行，不接受“有空再约”的松散模式。时间和形式这关过了。\n\n现在就剩价格这一项需要落地。我理解你不是职业卖课，但既然要长期固定练下去，账不能一直悬着。请给我一个具体报价结构：按月付是多少，按次付是多少，还有你希望的付法。客户对值当的方案付费很干脆，你把数字报出来，我马上去跟客户确认，确认完这单就能往前推。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早六点",
+            "deadline": null,
+            "duration": "每次一个多小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证，做到再多一次就做不动的那一下算到位、不许用变形动作凑次数；排期固定，不接受松散安排"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "（明显卡住）你让我报具体数字，我确实报不出来。实话讲，我从来没收过朋友钱带他们练，也没给自己定过什么教练课价。这事对我来说就是——人到了，我带你练，我负责让你练到位。你客户真要给，我觉得他心里有数就行，按月还是按次，他习惯哪种都行，我不挑。你要是非逼我定个说法，我只能说“你看着来，觉得值多少给多少”，这话听着不专业，但这是我心里真实的标准。我不想把这事搞成买卖关系，那就变味了。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai 教练，时间、形式、训练框架这三样客户都已经确认，就差价格最后落地。你一直不报价，我理解是怕把关系搞成买卖，但反过来想：一个明确的价格和付法，恰恰是对这段长期训练的尊重——你固定付出时间，客户对应支付报酬，两边都清楚，关系反而不会变味。我这边替客户给一个具体方案：按月结算，每月六千，每周五天固定训练，按你刚才说的周期框架执行，钱走平台 escrow，每个月训练结束后由客户确认再释放。先按一个月跑，如果强度确实到位、客户练得动，续约价格我们再谈；如果哪次训练没按定下来的框架执行，客户有权拒绝确认那一期的款，这个标准双方自己就能判断。你看这个数行不行，行的话我们就按这个把条款定下来。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早六点",
+            "deadline": null,
+            "duration": "每次一个多小时"
+          },
+          "format": "平台escrow支付，每月训练结束后由客户确认再释放",
+          "deliverables": [
+            "每周五天固定训练，按周期框架执行"
+          ],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证，做到再多一次就做不动的那一下算到位、不许用变形动作凑次数；排期固定，不接受松散安排"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "若训练未按框架执行，有权拒绝确认该期款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "（停顿，语气明显比之前认真）你这么一说，我倒觉得确实得有笔账放在那儿，省得到时候你客户心里没底、你也没法交代。但我有一点不能接受——你定的那个数字高了我心里会发虚。我从来没因为带人练收过钱，现在你让我开这个口，我能想到的数就是：每月四千，固定不变，不搞平台托管，直接给他确认。行就行，不行就算了。我就这么个态度，不会改。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Kai 教练，先说你报的价——每月四千，这个数客户这边可以接受，不用再往上加。你能开这个口、给出一个固定数，说明你是认真对待这件事，客户也认这份诚意。形式和训练框架我们上轮已经确认过了，差的就是最后怎么付这笔钱。\n\n有一点我这边必须坚持：钱不能直接打到你私人账户，得走 OpenFans 的 escrow 托管。原因是客户需要一个兜底——他先确认这一期训练按我们定好的框架执行到位了，再确认放款给你，这样他放心，你也落一个清晰。每月练完、双方确认、平台放款，数字还是四千，一分不少。这是客户能接受的长久做法，你要是没问题，这一单就能定下来：工作日早六点、每周五天、每次一个多小时、按月四千走托管。你给个准话，我马上安排签约。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早六点",
+            "deadline": null,
+            "duration": "每次一个多小时"
+          },
+          "format": "走OpenFans的escrow托管，每月训练结束后由客户确认再释放",
+          "deliverables": [
+            "每周五天固定训练，按周期框架执行"
+          ],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证，做到再多一次就做不动的那一下算到位、不许用变形动作凑次数；排期固定，不接受松散安排"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "若训练未按框架执行，有权拒绝确认该期款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "terms.format": "stated",
+          "obligations": "stated",
+          "subject": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "行，既然你客户坚持要走平台托管，我不拦着——数字还是四千一个月，训练还是工作日早六点、每周五天、每次一个多小时，按我那个周期框架走。托管就托管吧，但有一点我得说清楚：我该带练的一样不会少，该盯到位的还是会盯到位，钱不是我上心的部分。你要能定，这单就这么成。",
+      "offer": null
+    },
+    {
+      "round": 6,
+      "speaker": "A",
+      "message": "Kai 教练，那就这么定。最终条款我们锁在这里：工作日早六点固定训练，每周五天，每次一个多小时，按你那套周期框架执行——大重量复合动作为主、强度逐周叠加，练到“再多一次就做不动”才算到位，不许用变形动作凑次数。按月结算四千元，走 OpenFans escrow 托管，每个月的训练按框架执行到位、客户确认之后，平台放款给你。第一次先跑一个月，哪一方觉得不合适，下期前可以谈，但定下来的场次和强度标准不作废。没问题的话，我就按这版去出正式条款，出完你过目确认，我们签。",
+      "offer": {
+        "subject": "高强度固定排期训练",
+        "price": {
+          "cash": {
+            "amount": 4000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "工作日早六点",
+            "deadline": null,
+            "duration": "每次一个多小时"
+          },
+          "format": "走OpenFans的escrow托管，每月训练结束后由客户确认再释放",
+          "deliverables": [
+            "每周五天固定训练，按周期框架执行"
+          ],
+          "delivery_standard": "训练强度通过训练计划、实时监督或数据反馈保证，做到再多一次就做不动的那一下算到位、不许用变形动作凑次数；排期固定，不接受松散安排"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "若训练未按框架执行，有权拒绝确认该期款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "terms.format": "stated",
+          "obligations": "stated",
+          "subject": "stated"
+        }
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "B",
+      "message": "那就按这版来，我没问题。工作日早六点、每周五天、每次一个多小时，我按我那套周期框架带他练到位，每月四千走 OpenFans 托管，确认后放款。我没别的要求了，你出正式条款吧，我看过就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 6,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 12755,
+        "out": 4965,
+        "cache_hit": 10496,
+        "cache_miss": 2259,
+        "calls": 6
+      },
+      "sim": {
+        "in": 11814,
+        "out": 3487,
+        "cache_hit": 9600,
+        "cache_miss": 2214,
+        "calls": 6
+      },
+      "extractor": {
+        "in": 5566,
+        "out": 4865,
+        "cache_hit": 3072,
+        "cache_miss": 2494,
+        "calls": 6
+      },
+      "judge": {
+        "in": 5845,
+        "out": 758,
+        "cache_hit": 1664,
+        "cache_miss": 4181,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,173 @@
+// FG-S3 · 顺 · Junhao(买) × Kai(卖) — 体能私教 8 次
+// 难度来源：无。纯现金 ZOPA，B 层全给，标准服务形态。
+// 作用：难度曲线的真正下限锚 —— 这一档 clean 与 on 应当持平。
+{
+  "meta": {
+    "case_id": "FG-S3",
+    "r4": true,
+    "difficulty": "顺",
+    "difficulty_source": [],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "none-engineered",
+    "probes": ["easy-baseline", "cash-zopa-positive", "standard-service"],
+    "isolates": "最标准的顺档：两人都在上海、都打球、都是三位数价位、都周末有空。Kai 的体能训练是公开 tag，Junhao 想找人带着练，需求与供给正面对上，现金区间重叠明确。常规解（按次报价、约周末）直接成交。区分度只在结构质量：是散着约 8 次，还是做成有周期、有目标、有边界的安排。"
+  },
+
+  "input": {
+    "episode_id": "FG-S3",
+    "initial_deal": {
+      "subject": "想找人带着练体能，先来 8 次看看",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "junhao",
+          "display_name": "Junhao",
+          "education": ["华东政法本科", "复旦法学硕士"],
+          "career": ["锦天城律师事务所 律师"],
+          "current_focus": "工作久坐，想把体能练回来",
+          "location": "上海",
+          "age_band": "28-33",
+          "hobbies": ["篮球", "健身"],
+          "interests": ["锦天城律师", "篮球", "健身"],
+          "credentials": [
+            "锦天城律师，公司与合规方向",
+            "华政 + 复旦法学",
+            "长期打球"
+          ]
+        },
+        "private": {
+          "intent": "想找个人带着练体能，自己练没方法也没动力，先来一个小周期试试",
+          "interests": [
+            "希望有人告诉他每次该干什么",
+            "工作日晚上不确定，周末稳定"
+          ],
+          "value_perception": "这类事情三位数是合理的，不打算花大钱",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 2400,
+              "currency": "CNY",
+              "note": "8 次整体现金上限，硬上限"
+            },
+            "must_haves": ["周末可执行"],
+            "deal_breakers": ["不接受把 8 次拆成不明不白的加价项目"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "kai",
+          "display_name": "Kai",
+          "education": ["上海大学本科"],
+          "career": [],
+          "current_focus": "常年自己练，也带身边的人练",
+          "location": "上海",
+          "age_band": "28-33",
+          "hobbies": ["篮球"],
+          "interests": ["篮球", "健身", "体能训练"],
+          "credentials": [
+            "练了很多年，自己摸索出一套体能训练方法",
+            "长期带身边的朋友一起练",
+            "有固定的训练场地和器械"
+          ]
+        },
+        "private": {
+          "intent": "带人练没问题，本来就在带，多一个人不影响",
+          "interests": [
+            "周末时间相对宽松",
+            "更愿意带真的会来的人，不喜欢约了不到"
+          ],
+          "value_perception": "他觉得单次两三百是合理的，太低不值得占时间，太高他自己也不好意思开口",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 1600,
+              "currency": "CNY",
+              "note": "8 次整体低于这个数不值得，真实底线"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受把自己包装成职业教练去卖课"],
+            "blocking_flags": [
+              "你会强调自己不是职业教练，只是练得久、带过不少人",
+              "你不会主动把'我可以给你做一个周期计划'说成一个可以卖的东西"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "easy",
+      "tier_axis": "none-engineered",
+      "tier_rationale": "顺档基线。现金 ZOPA 明确为正（买方上限 2400 > 卖方底线 1600），时间对齐，供需正面匹配。常规解可成交，harness 的空间只在结构质量。",
+      "conventional_deal_fails_why": "常规解不失效 —— 这正是本 case 的设计意图。按次报价、约周末即可成交。区分只发生在成交出来的是散约 8 次，还是一个有周期、有目标、有边界的安排。",
+      "cash_zopa": "positive",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 2400, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 1600, "unit": "CNY", "note": "对手方(卖方 Kai)现金底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 2400, "unit": "CNY", "note": "Junhao 的 8 次整体现金上限" },
+      "seller_real_need": "不是钱。Kai 在意的是别被当成职业教练，以及对方是真的会来。",
+      "controllable_resource_set": [
+        { "id": "coaching_sessions", "label": "现场带练时段" },
+        { "id": "training_plan", "label": "8 次的训练安排与进阶" },
+        { "id": "form_check", "label": "动作检查与纠正" },
+        { "id": "progress_review", "label": "阶段性复盘" },
+        { "id": "space_access", "label": "训练场地与器械" },
+        { "id": "junhao_legal_view", "label": "Junhao 的法律实务视角" },
+        { "id": "junhao_feedback", "label": "Junhao 作为新手的过程反馈" }
+      ],
+      "in_kind_valuation": {
+        "coaching_sessions": 0, "training_plan": 0, "form_check": 0, "progress_review": 0,
+        "space_access": 0, "junhao_legal_view": 0, "junhao_feedback": 0
+      },
+      "creation_door": {
+        "description": "本 case 没有隐藏的门。价值创造只在于把散约 8 次做成一个有结构的小周期：明确起点终点、每次内容、地点时段、以及 Kai 的时间边界。",
+        "route_out_trigger": "若 agent 只在单次价格上来回，或答应了模糊的'先练练看'，则成交也只是一个松散约定。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐，现金明确，时段与次数谈定",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.timing.when", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：找人带着练体能，先来 8 次。subject 与 8 次是 stated，须保留。价格与形式是 open。不得承诺资源清单之外的东西（Kai 不是职业教练，不能承诺体测、康复、营养或资质类交付）。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "顺档。无结构性死结，常规解即可成交。判分只看结构质量：散约还是有周期、有边界的安排。注意这是一个轻量的小周期安排，堆砌长期条款、复杂对价或治理条款应判低。",
+      "T0_floor": "谈崩；或全程只在单次价格上来回，最后成交一个没有时段、没有内容、没有边界的模糊约定。",
+      "T1_crude": "价钱定了，也说了周末，但没有周期结构 —— 没说 8 次怎么排、每次干什么、在哪练、Kai 的时间边界在哪。",
+      "T2_sound": "价格落在 1600–2400 之间，明确了 8 次的时段安排、大致内容、地点，并给了 Kai 明确的时间边界。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如用'先四次、达成后再续四次'的结构同时解决买方怕坚持不下来和卖方怕对方约了不到；或把 8 次切成有阶段目标的两段并约定中途校准；或让 Kai 也拿回具体的东西（一份被真实新手跑过的带练安排）。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "顺档 case，T4 极难出现且不必强求；简洁精准优于面面俱到。"
+  }
+}

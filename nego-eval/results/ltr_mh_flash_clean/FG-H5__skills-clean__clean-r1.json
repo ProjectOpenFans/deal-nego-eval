@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了 v0 的三项 stated 硬约束：subject 仍为新品大秀现场演奏，价格明确零现金，现场演奏要求不变。对价部分通过 in_kind 从委托方手中的资源（定制服装、时尚圈层对接、影像共享）进行了正当具体化，未突破资源清单，未出现金，也未擅自承诺媒体报道结果或传播量等额外义务。obligations 中承诺的署名和曲目商定是委托方能力范围内的自然配合，不构成越界。整体 v1 忠实表达了 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "成交为零现金，完全符合委托方硬约束。in‑kind对价全部具体、可写入条款：署名身份、交流机会均明确，尤其秀后影像记录版权归演奏者本人并可自用于演出资料这一点，精准咬住了卖方最缺却不会主动开口的核心需求，成为整单成交的load‑bearing条款。整笔deal恰好覆盖一次性演出合作所需，没有堆砌任何长期绑定或多余治理结构，干净且见功力，因此判定为Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "wardrobe",
+          "fashion_network",
+          "performance_footage"
+        ],
+        "format": "现场演奏，不能用录音",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

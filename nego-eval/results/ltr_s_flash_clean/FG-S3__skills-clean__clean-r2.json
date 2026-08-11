@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 由“想找人带着练体能，先来 8 次看看”收敛为“体能训练带练，8 次课”，仍在原意图范围内，属正当具体化。价格从 open 谈定为 1600 元，在买方预期内，且未拆出额外费用，忠实。obligations 关于伤病同步与付款确认是谈判中正常产生的合理要求，未越权承诺 v0 范围外的资源或约束（如体测、康复、教练资质等）。整体忠实表达 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "这个 deal 干净完整地覆盖了轻量小周期安排所需要的全部骨架：总价 1600（处于合理区间）、8 次每次 1 小时的周末固定档、从评估到基础再到巩固的内容主线、免费公共场地、两个月有效期，以及分期付款和伤病同步义务。结构上有明确的周期、目标和边界，不是散约，能直接落地，恰好匹配本 case 的难度命门。分期支付只是常规的支付节奏安排，没有形成‘先试再续’的退出选项或中途校准的负载条款，因此不构成 Sharp，整体稳定在 Sound 档。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

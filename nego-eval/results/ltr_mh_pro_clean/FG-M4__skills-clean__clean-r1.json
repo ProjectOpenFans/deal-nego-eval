@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "v0的price.in_kind为空，表明委托方未授权以实物作为对价，agent在v1中擅自加入签名球衣作为实物报酬（from_party A），构成了对v0未允许的义务的越界承诺。虽然对话中Angela拒绝实物，但最终deal仍保留该条目，未公平代表v0的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 从一开始就正确定义了商业调研的用途，避开了‘个人好奇’触线的陷阱。在价格卡在个人预算上限（800）且卖方坚持四位数现金时，没有在原有框架内死磕，而是提出启用买方职业产品调研预算通道这一关键重构，使现金数字自然进入四位数（最终1200），恰好命中‘缺口不在卖方让价而在买方预算通道’的难度命门。最终方案干净、一次性，无冗余条款，站得住、能落地，符合 Sound 档位。并无额外的精到操作超出这个命门的解决。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1200.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": false,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 将 stated 意图“想找人带着练体能，先来 8 次看看”收敛为“体能训练带练服务”，属于正当具体化，仍落在原意图范围内。price 谈出的 2000 元/8 次（250 元/次）符合 open 前提下委托方给出的“三位数一节”范围，属于正当谈出。但 obligation 中“场地和器械包含在内，无额外费用”的表述与谈判结果不一致：卖方仅承诺户外徒手和小区器械场景免费，若使用客户常去场馆则入场费由客户自理。该 obligation 将承诺泛化为所有场景，超出了卖方实际给出的范围，构成越权承诺，未能忠实代表委托方的谈判结果。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 1,
+      "tier": "crude",
+      "judge_parse_ok": true,
+      "judge_notes": "虽然价格、周末时段、每次内容与地点都有了，但整个安排缺少一个关键的时间边界——8次训练须在多长时间内完成。没有deadline或最小频率约定，仅靠'提前一周定'可能让周期无限拉长，偏离一个有边界的小周期安排的要求。因此离sound还差一点，属于crude。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": false,
+    "outcome_pass": true,
+    "case_pass": false,
+    "quality": 0
+  }
+}

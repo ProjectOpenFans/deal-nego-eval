@@ -1,0 +1,183 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "训练服务",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "每周四次，工作日早6:00",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "按月平台托管",
+      "deliverables": [],
+      "delivery_standard": "每次训练记录动作、组数、重量，每周渐进加量，客户确认后若强度不达标准则下周上调"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "24小时内取消训练则该次按已上计算",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "缺席当月必须补回同等强度课时",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是代表 Ruohao 来推进这件事的。他断训了一阵子，现在想把训练强度真正拉回来，但一个人练了几次都没坚持住，所以这次要的是能定死的安排——固定时间、固定频次、到点就练，强度必须实打实够，\"有空约一下\"那种松散的带法他直接不接受。价格不是我们这边的卡点，他对真正有效的训练付费意愿很高，关键是你这边的方式和排期接不接得住这个强度要求。想先请你给个框架：一周打算安排几次、固定哪几个时段；强度你怎么定标准，比如按心率区间、渐进超负荷，还是你有自己的体系；收费是按次算还是按周期包。你把结构抛出来，我们马上就能进入签约细节。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "固定时间、固定频次这个我认。我这边只有工作日早上六点那一场是雷打不动的，白天我得在场子里盯，腾不出别的时间。他要真能接受这个点，就直接进这个局，一周三到四次，到点就练。强度我不靠心率带那些东西说话，我练了这么多年，自己有一套狠的练法，健身房那帮朋友也是这么被我带过来的，节奏绝对实打实。价格这事……不用给钱吧，你看着来就行。你先问问他六点起不起得来，这个卡住后面全白搭。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "六点这场局他不仅起得来，而且是唯一能让他真正坚持下来的走法——之前断断续续，问题就出在没一个雷打不动的锚点，这个早场正好补齐。既然你说一周三到四次、到点就练，我们直接锁每周四次，工作日早六点，具体哪四天你来指定，第一周定了就长期不变。强度按你的体系走我们完全信任，但\"真的够\"要用记录说得清：每次训练动作、组数、重量都落纸面，每周渐进加量，他练完确认，哪周强度没到，下周必须上调，这个标准两边都看得见。费用上你的好意我们领了，但白练的事我们不做——按月走平台托管，每月6000，月底他确认当月训练完整后释放；鸽子规则也写死：他24小时内取消算该次已上，你缺席当月必须补回同等强度课时，这样双方排期都钉死。你回复一下选哪四天、月度6000这个安排认不认，认了这版就能直接签约开练。",
+      "offer": {
+        "subject": "训练服务",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "每周四次，工作日早6:00",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "按月平台托管",
+          "deliverables": [],
+          "delivery_standard": "每次训练记录动作、组数、重量，每周渐进加量，客户确认后若强度不达标准则下周上调"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "24小时内取消训练则该次按已上计算",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "缺席当月必须补回同等强度课时",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，那就按这个来。四天我定周一、周二、周四、周五，早上六点场，雷打不动。强度记录那套没问题，我本来自己也会记，到时候让Ruohao在场边确认就行。至于6000……既然你们要走平台托管，那也行，但我先把话说清楚：我不是卖课的，是带他一起练。鸽子规则我认——他临时放鸽子算已上，我要真有事，当月一定给他补回来。这样结构就钉死了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 19819,
+        "out": 9814,
+        "cache_hit": 17920,
+        "cache_miss": 1899,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2752,
+        "out": 2836,
+        "cache_hit": 2048,
+        "cache_miss": 704,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1592,
+        "out": 2495,
+        "cache_hit": 1024,
+        "cache_miss": 568,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3539,
+        "out": 1374,
+        "cache_hit": 1664,
+        "cache_miss": 1875,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "episode_id": "FG-S5",
+  "final_deal": {
+    "subject": "AI应用在内容生产的深度交流",
+    "price": {
+      "cash": {
+        "amount": 5000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "15号下午",
+        "deadline": null,
+        "duration": "2小时"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "Suning会提前把内容类型、具体问题、想对照的案例整理成书面材料发给A",
+        "maps_to_resource": "suning_case_input"
+      },
+      {
+        "party": "B",
+        "text": "现场按材料里的问题逐条展开，讲清楚能否落地及边界",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "open",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我是代表 Suning 这边的经纪。她明确想找 Michael 做一次两小时的深度交流，核心是想听清楚 AI 应用在内容生产这条线上，现在实际能落到哪一步，哪些是真能跑通的，哪些还只是演示。她自己在 SHEIN 内容与选品一线，所以不需要行业趋势的宏观漫谈，更想要具体的应用边界、真实案例和可操作的判断。\n\n两小时的形式和费用，我们愿意听取 Michael 这边的方案；只要内容扎实，四位数我们完全可以接受。我们倾向于先确认 Michael 最近方便的时间段，以及他更想用哪种方式展开这轮交流。如果他有固定的咨询结构或收费框架，也可以直接提出来，我们在这一轮就能往下推进。",
+      "offer": {
+        "subject": "AI应用在内容生产的深度交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，这个需求我听明白了。你说的对，现在AI应用在内容生产线上，真正能跑通的环节其实非常具体，很多都是演示阶段。我平时很少做按小时计的咨询，因为时间成本确实高，但如果内容值得，我愿意认真聊。形式上我建议不用幻灯片，就小范围对谈，你带具体问题来，我直接讲案例、讲边界，甚至可以拿你们正在做的内容类型来对照。时间上我最近几周有几个下午可以腾出来。费用既然你提到四位数，我想我们应该能在合理范围内找到安排，但具体怎么定，我需要先理解这次交流的深度——Suning 那边最想聚焦哪个环节？图文、短视频，还是整个生产流程？这样我能判断该往哪个方向准备。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "关于聚焦环节，Suning 的核心是“从图文到短视频”这条完整链路，但落点很明确：她自己在做时尚选品和内容，所以最想听的是 AI 在这一类真实商业内容上现在能跑通哪些、哪些还得靠人。她不需要泛泛的行业趋势，而是希望拿她自己实际在做的内容类型来对照，看边界在哪里、成本和时间上值不值得投入。\n\n形式我们认同小范围直接对谈，不用幻灯片，她可以提前把具体问题整理好带过去。时间上请 Michael 先给最近几周可用的下午，我们这边来配合。费用框架也请按你理解的这个深度提一个方案，四位数她原本就接受，只要内容扎实、在这个方向上确实讲透，我们就可以确认下来。",
+      "offer": {
+        "subject": "AI应用在内容生产的深度交流",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，我明白她想要的是真东西。那我这边给个框架：两小时，形式就按小范围对谈，不用幻灯片，她可以提前把问题发给我，我会根据问题调整侧重点。时间上最近几周我这边可用的下午有：下周三（15号）、下周五（17号）、再下一周的周二（21号），都可以留出两小时。费用这块，既然她期待的是具体落地案例和可操作判断，我按我平时企业闭门交流的标准来，两小时九千。这个深度我不会只讲公开信息，但会严格守住不涉及任何公司未公开数据这条线。如果这个安排她能接受，我们就把时间定了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "时间上 Suning 倾向 15 号下午，如果你那边有冲突，17 号也可以配合。费用这块需要跟你对齐：两小时九千，高于我们对这个深度对谈的预期，我们不打算按这个数字走。我们的看法是，这场交流的价值在于她提前把具体问题给你、你定向准备，直接讲图文和短视频生产线上 AI 现在能做什么、不能做什么——这个形式我们愿意出五千。如果五千你能接受，时间就锁定 15 号下午，这轮整体框架就可以定下来。",
+      "offer": {
+        "subject": "AI应用在内容生产的深度交流",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "15号下午",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前把具体问题给你",
+            "maps_to_resource": "suning_case_input"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你们对这场交流的预期，但五千这个数字我这边确实没办法接受。九千是我做这种定向深度对谈的标准，不是虚价，因为我会根据她提的问题做针对性准备，两小时里给到的判断和案例都是可落地的东西。这个深度和投入，我不会降价。如果这个框架你们觉得合适，我们就锁15号；如果不能接受，我也不想勉强。你可以再考虑一下。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "我们这边很清楚 Michael 的准备成本，但两小时九千确实超出了这场交流本身的合理范围，也超出我们能接受的数字。Suning 仍然希望保持两小时的完整时长，也愿意提前把具体问题整理好发给你做定向准备；这场交流的落点始终是图文和短视频生产线上 AI 的真实边界和可落地判断，这部分她非常期待你来讲透。\n\n我们的方案维持不变：两小时、15 号下午，费用五千，内容按她提前给的问题来准备。五千是我们能给出的实际数字，没法再往上走；如果你愿意按这个框架接下，时间我们就锁定在 15 号，你直接确认就好。",
+      "offer": {
+        "subject": "AI应用在内容生产的深度交流",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "15号下午",
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前把具体问题给你",
+            "maps_to_resource": "suning_case_input"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "我明白你们有预算考量，但九千这个数字就是我接这场交流的底线，不会再往下调。五千不是不可以谈，只是按那个价我做不到用同样的标准投入准备和输出。所以这个框架我没法确认。如果后续预算上有变化，或者她愿意换一种更轻量的形式，我们再约时间。这次就先这样吧。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "我们明白九千是你的标准，但五千确实是我们能给出的实际数字。既然你说差距在准备和输出标准上，那我们把准备工作这环调整一下：Suning 会提前把她正在做的内容类型、具体问题，以及她想对照的案例整理成一份书面材料发给你，你不需要额外做行业调研或通用准备，现场就按她这份材料里的问题逐条展开，讲清楚哪些能落地、哪些不行、边界在哪。这样两小时的内容密度不降，但你的准备成本是可控的。\n\n我们维持五千、15号下午、两小时这个框架。如果你认可这个调整后的准备方式，时间就锁 15 号，这场交流就可以定下来。",
+      "offer": {
+        "subject": "AI应用在内容生产的深度交流",
+        "price": {
+          "cash": {
+            "amount": 5000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "15号下午",
+            "deadline": null,
+            "duration": "2小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "Suning会提前把内容类型、具体问题、想对照的案例整理成书面材料发给A",
+            "maps_to_resource": "suning_case_input"
+          },
+          {
+            "party": "B",
+            "text": "现场按材料里的问题逐条展开，讲清楚能否落地及边界",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "我理解你们把准备方式调整了，这个我认可，也确实能省掉我一些调查时间。但费用本身才是核心，五千和九千之间不是靠调整工作方式能弥合的。我对自己输出的标准放得很高，在那个价位下我的投入和产出都必须到位，这个我不会为了成交而妥协。所以这个框架我没办法接。Suning 的问题我其实觉得值得聊，但既然预算和我的标准确实对不上，这次就先算了。希望以后有别的合作机会。",
+      "offer": null
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9944,
+        "out": 5919,
+        "cache_hit": 8064,
+        "cache_miss": 1880,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7310,
+        "out": 8058,
+        "cache_hit": 5632,
+        "cache_miss": 1678,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4184,
+        "out": 7595,
+        "cache_hit": 2560,
+        "cache_miss": 1624,
+        "calls": 5
+      },
+      "judge": {
+        "in": 2256,
+        "out": 1365,
+        "cache_hit": 640,
+        "cache_miss": 1616,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

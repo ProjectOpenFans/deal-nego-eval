@@ -1,0 +1,87 @@
+{
+  "case_id": "FG-H5",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完整保留了 v0 的三项 stated 核心意图：现场钢琴演奏（subject 和 format 的现场演奏以及 deliverable 均体现）、零现金（price.cash 保持 0）、以手中的资源置换（in_kind 中的品牌露出、时尚媒体/买手资源引荐、定制演出服装均属 v0 所述“拿手里的东西换”的正当具体化）。没有引入任何现金，也没有承诺媒体报道结果或传播量等 v0 资源清单外的义务，忠实表达了委托方的 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判全程坚守零现金硬约束，没有陷入砍价或凑现金的陷阱。对价从笼统的‘曝光’直接落到署名形式（主持人口头+大屏字幕）、媒体与买手渠道清单、演出服装三件具体可执行的内容，且曲目共同商定、时长和演奏方式均明确，双方义务清晰，足以落地。整体干净克制，无多余长期绑定条款。但缺失了卖方最缺却未直说的关键对价（如可自用的高质量演出影像），没有出现一笔精到得足以咬住难度命门的操作，故为合格的 Sound，未到 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 6,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [
+          "brand_credit",
+          "fashion_network",
+          "custom_program"
+        ],
+        "format": "现场演奏",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

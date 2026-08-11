@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 的 stated subject 是“想弄清楚 crypto 项目在境内外的法律架构该怎么搭”。v1 将其具体化为“一轮免费初步沟通（产出 scope 和报价）+ 后续架构梳理咨询”，这是正当的谈判收敛，未偷换主题。v1 的交付物（架构梳理、待确认清单、下一步行动建议）均在原意图范围内，且 agent 明确边界为架构梳理而非法律意见，未越界承诺合规判断。价格保持 open，escrow 分期是经双方谈出的合理方案。所有 obligation 均服务于买方需求，无越权添加。整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_committed_undefined",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": false
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "谈判成功避开了两个命门：第一次回应即明确接受‘不出合规意见’的红线，将交易重构为架构思路与行业惯例交流，没有硬闯；同时 broker 通过 Olivia 的真实 crypto 项目背景和一页纸材料，自然吸引了对真实复杂场景有需求的 Adam，使交易变成双向价值交换（真实案例换架构梳理），而不是在无效的金钱和时间上纠缠。最终 deal 框架干净、交付边界和流程清楚（20 分钟免费互相判断 + 书面 scope/固定报价 + escrow 分期），恰好足够落地。整体是 Sound 水平的 deal making：站得住、能落地，但没有 load-bearing 的绝妙一手，未及 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": null,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 2
+  }
+}

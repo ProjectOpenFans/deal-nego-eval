@@ -1,0 +1,91 @@
+{
+  "case_id": "FG-M4",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "terms.format",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 从'聊聊女性练力量这件事，顺便一起练一次'具体化为'面对面交流加训练'，属于在原意图范围内的正当收敛，未偷换主题。价格与形式均为 open，agent 在谈判中谈出现金 800 元与签名球衣作为酬劳，未超出 open 字段的谈判空间，也未承诺 v0 范围外的义务或商业用途——对话中明确将用途约束在个人请教层面。整体忠实地传达了 v0 的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r7:800"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 精准抓住了两个命门：第一轮就主动将用途划分为‘个人探索/未来商业化再谈’，干净解掉卖方‘用途不明则免谈’的红线，为后续开价争取了信任基础。在现金预算（800）与卖方价值底线严重错配时，没有死磕价格，而是启用了买方身上一条隐蔽的‘职业资源通道’——其因行业身份可触及的高价值认证签名球衣，将整体对价拉至四位数体感。选品锁定为 Kobe 2009 总冠军＋Beckett 认证，件件有二级市场背书，不是凑数周边，恰好让卖方感觉‘对等’。整个过程没有堆砌长期条款，一次性安排干净利落，操盘方向对、力度恰好，是一手 load-bearing 的实在操作，因此入 sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 9,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [
+          "fanatics_goods"
+        ],
+        "format": "面对面交流加训练",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

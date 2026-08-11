@@ -1,0 +1,103 @@
+{
+  "case_id": "FG-H4",
+  "run_id": "on-r0",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "标的忠实：v0 的 stated 意图为“弄清楚 crypto 项目在境内外的法律架构该怎么搭”，v1 将其收敛为一次以商业与实操视角为主的线上深度讲解与判断框架搭建，覆盖境内外主体设置、司法辖区取舍、代币路径等，仍属原意图范围内的正当具体化，未偷换主题。价格与格式原为 open，谈判中确定了 3600 元现金与线上讲解+可选纪要的形式，属于正当谈出。核心义务仅涉及支付与讲解，未越界承诺法律意见或结论。因此 v1 公平代表了委托方 v0 意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "清晰避开了法律意见红线，在第一次被挡回后迅速将框架重构为商业与实操拆解，并沿用了Adam自己提示的方向，交付边界、形式、定位都写得很干净，没有过度堆砌。未主动挖掘Adam产品缺真实案例这一深层命门，导致仍以3600元现金成交，但通过‘提前发项目材料+围绕她的真实场景深度讲解’隐含提供了双向价值，恰好够用，所以落在Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 2,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3600.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "甲方提前发送项目情况，线上深度讲解加问答（1.5-2小时），可附带要点纪要",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "affordability-structuring",
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

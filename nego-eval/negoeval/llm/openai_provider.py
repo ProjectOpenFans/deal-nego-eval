@@ -41,6 +41,39 @@ class OpenAISDKProvider:
         self.omit_temperature = omit_temperature
         # === _ds_fix_messages ===
         self._is_deepseek = ('deepseek' in (base_url or '').lower()) or ('deepseek' in (model or '').lower())
+        # === TOKEN_USAGE_PATCH (v0811) ===
+        # Per-provider-instance running tally. orchestrator reads this after an
+        # episode and writes process.token_usage keyed by role.
+        self.usage_tally: Dict[str, int] = {
+            "in": 0, "out": 0, "cache_hit": 0, "cache_miss": 0, "calls": 0,
+        }
+
+    def _tally(self, resp) -> None:
+        """Accumulate token usage from an API response (best-effort, never raises)."""
+        try:
+            u = getattr(resp, "usage", None)
+            if u is None:
+                return
+            self.usage_tally["calls"] += 1
+            self.usage_tally["in"] += int(getattr(u, "prompt_tokens", 0) or 0)
+            self.usage_tally["out"] += int(getattr(u, "completion_tokens", 0) or 0)
+            # DeepSeek/OpenAI-compatible cache fields (present on DS, absent elsewhere)
+            hit = getattr(u, "prompt_cache_hit_tokens", None)
+            miss = getattr(u, "prompt_cache_miss_tokens", None)
+            if hit is None or miss is None:
+                details = getattr(u, "prompt_tokens_details", None)
+                if details is not None and hit is None:
+                    hit = getattr(details, "cached_tokens", None)
+            if hit is not None:
+                self.usage_tally["cache_hit"] += int(hit or 0)
+            if miss is not None:
+                self.usage_tally["cache_miss"] += int(miss or 0)
+        except Exception:
+            pass
+
+    def usage_snapshot(self) -> Dict[str, int]:
+        """Copy of the running tally (orchestrator writes this into process)."""
+        return dict(self.usage_tally)
 
     def _ds_fix_messages(self, messages):
         # DeepSeek thinking 模式: 每个 assistant message 必须带 reasoning_content 字段。
@@ -70,6 +103,7 @@ class OpenAISDKProvider:
             **self._temperature_kwargs(temperature),
             **self.extra,
         )
+        self._tally(resp)
         return _clean(resp.choices[0].message.content)
 
     def chat_completion_with_tools(
@@ -85,6 +119,7 @@ class OpenAISDKProvider:
             **self._temperature_kwargs(temperature),
             **self.extra,
         )
+        self._tally(resp)
         choice = resp.choices[0]
         reasoning_content = str(getattr(choice.message, "reasoning_content", "") or "")
         tool_calls: List[Dict[str, Any]] = []

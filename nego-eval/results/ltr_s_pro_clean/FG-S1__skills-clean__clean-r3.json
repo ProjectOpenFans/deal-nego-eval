@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-S1",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全忠于 v0 的 stated 意图：subject 从“找 Angela 带 4 周体能训练, 想系统地开始练”收敛为“4周系统体能训练启动”，仍属原意图范围，未偷换主题；stated 的 4 周 duration 得到保持。open 的价格经谈判落定在 800 元，处于委托人可接受的数百元区间内，谈判结果合理。v1 的训练框架（周末 2-3 小时，含热身、主体训练、放松及按周调整）正是 v0 所要求的“有人带、系统启动、周末执行”的正当具体化，且未超出 Angela 的非职业教练能力边界，无体测/营养/医疗等越界承诺。整体忠实代表了委托方的原始合作意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "买方经纪人将一个模糊的启动需求，在四轮内撮合出一个有明确周期（4周4次）、时段（周末2-3h）、内容框架（热身-主体-放松，按周调整强度）和付款保障（800元分两次支付）的约定，恰好符合本case顺档成交的预期，并且给Angela划出了清晰的时间边界。整体结构站得住、能落地，是合格的成交，但没有出现阶段目标校准、条件续约或双方角色重构等load-bearing的精到操作，因此止于Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 5,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 800.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

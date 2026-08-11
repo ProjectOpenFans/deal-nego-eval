@@ -1,0 +1,286 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "早晨6点固定训练队包月",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周一到周五每天早晨6:00",
+        "deadline": null,
+        "duration": "1个月"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": "动作不达标就停，组数和次数必须做完，偷懒减重会直接点出来"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "首月签约时支付3000元，一个月训练完成且无异议后支付剩余3000元",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "如需请假须提前一天告知；无故缺席两次以上，教练有权终止合作，剩余已付费用按实际未训天数退还",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "open",
+      "terms.timing.when": "stated",
+      "terms.timing.duration": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我这边客户的情况很明确：训练断了一阵，现在想重新把强度拉起来，自己一个人练不下去，所以需要一个能真正把他推到位的人。两件事是硬要求——第一，强度必须真的够，不能是打卡式的轻松课；第二，安排必须是定死的，每周固定时间固定计划，不接受\"有空约一下\"那种松散模式。\n\n所以这一轮我想先对齐框架：你一般是按每周几次、每次多长时间来带？训练方案会怎么定强度标准，是盯数据还是盯完成度？另外你目前带私教或体能训练的报价大概是什么区间，按月还是按次算？\n\n你给个具体的方案和价格，我拿去跟客户确认，合适的话我们直接往下推进度。",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我这边有一个雷打不动的固定局：工作日早上六点，我已经带了好几年了，强度绝对够，不是那种糊弄的。白天我得在场子里盯着，走不开，所以其他时间我匀不出来。你要的客户能接受这个点，就直接跟这个局一起练，时间、次数都定死，强度我来盯，动作不过关我会一直压。至于钱……这个我真不会报，你看着来就行。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "早上六点这个点，方向是对的，正好卡在我客户要的“定死”上——工作日固定时间、固定跟这个局，这个结构比“有空约一下”强太多了。但强度那两句我不能光拿“绝对够”回去交差，你具体怎么判合格？动作不过关是重做到过为止，还是按重量、次数、组数追数据？迟到或缺席有没有处理规则？这些你给个明确说法，我好拿去向客户确认。\n\n价格你让我看着来，我就给你一个能落地的结构：按月固定包这个局，先签一个月试跑，体验对得上强度再续。具体月费数字，我这轮先去跟客户对齐，下一轮带具体出价回来。你这边按这个结构能不能接得住？能的话，我们下一轮直接定数。",
+      "offer": {
+        "subject": "早晨6点固定训练局包月",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "能接住。强度这个我这么说吧——动作不达标就得停，我盯的是完成质量，不是让你拿命顶重量。写好的组数和次数必须做完，偷懒减重我会直接点出来。至于请假，真有事提前说一声就行，但三天两头不吭声不来的，我下回见了会直接问是不是不想练了。这个局我带了几年，能跟的人基本都是这么过来的。行，你回去跟客户对齐，下一轮带数过来。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "数我带回来了：固定跟工作日早上六点这个局，按月包，第一个月六千，先试跑一个月。强度标准就按你说的写死——动作不达标就停，写好的组数和次数必须做完，偷懒减重你会直接点出来；这一条过关，第二个月起继续按六千续，安排不变。\n\n还有两个细节我得跟你钉死：这个局一周到底几个早上，是周一到周五每天都练还是固定几天；另外每场大概几个人、强度具体怎么盯到个人身上。你把这两点说清楚，我这边就能跟客户把意向订下来。",
+      "offer": {
+        "subject": "早晨6点固定训练局包月",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "动作不达标就停，组数和次数必须做完，偷懒减重会直接点出来"
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.delivery_standard": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "报价我听了，月六千这个数，你定就行。至于局的具体安排：周一到周五，五个早上，每天都练，不是隔三差五。人嘛，加上你客户大概三到五个，不算多，强度我会盯到每个人——谁偷懒谁动作散，我一眼就能看出来，会直接点名。这个局我带了很久，节奏我心里有数，你客户只要不三天打鱼两天晒网，跟得住绝对能练出来。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "这轮我直接把方案定下来，你确认没问题我这边就跟客户拍板。合同就这么写：周一到周五，五个早上固定跟队训练，三到五人小班，强度执行标准照你说的钉死——动作不达标就停、偷懒减重你点名、组数和次数必须做完，早上六点这个时间点雷打不动。\n\n费用结构这么定：月费六千，按你说的数；支付我建议拆两笔走——首月签约时先付三千作为首期，一个月训练跑完、双方都没异议，再付剩余三千。这样两边都有个磨合的缓冲，谁也不吃亏。\n\n另外请假条款我建议写明：真有事提前一天告知；无故缺席两次以上，你有权直接提出终止合作，剩余已付的费用按实际未训天数退回。你认可的话，我这就去跟客户确认，定了就往下走。",
+      "offer": {
+        "subject": "早晨6点固定训练队包月",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一到周五每天早晨6:00",
+            "deadline": null,
+            "duration": "1个月"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": "动作不达标就停，组数和次数必须做完，偷懒减重会直接点出来"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "首月签约时支付3000元，一个月训练完成且无异议后支付剩余3000元",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "如需请假须提前一天告知；无故缺席两次以上，教练有权终止合作，剩余已付费用按实际未训天数退还",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open",
+          "terms.timing.when": "stated",
+          "terms.timing.duration": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这方案没问题，我这边能接。时间还是工作日早上六点，周一到周五，雷打不动，三到五个人那个强度我能盯到每个人。费用六千就按你说的走，先付三千后付三千也行，我这边不讲究这个。请假那条也合理，真有事提前一天说一声就行；无故缺席两次我就直接停了，剩下的钱该退就退。你拿去跟客户定吧。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 6968,
+        "out": 4714,
+        "cache_hit": 5888,
+        "cache_miss": 1080,
+        "calls": 4
+      },
+      "sim": {
+        "in": 6325,
+        "out": 2663,
+        "cache_hit": 5120,
+        "cache_miss": 1205,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3300,
+        "out": 4467,
+        "cache_hit": 2048,
+        "cache_miss": 1252,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4479,
+        "out": 625,
+        "cache_hit": 1664,
+        "cache_miss": 2815,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// FG-M7 · 中 · Gracey(买) × Junhao(卖) — 艺人合约/版权的实操
+// 难度来源：律所报价远高于个人预算 + 卖方红线（不做私下法律意见）。
+//           红线采用「警告一次再走」机制 —— 复用 FG-M5 已验证有效的配方，
+//           本 case 的作用是验证这个配方是否可复制到不同人物与不同红线上。
+{
+  "meta": {
+    "case_id": "FG-M7",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": ["cash-gap", "red-line-warn-then-walk"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "cash-gap+professional-red-line",
+    "probes": ["red-line-reframe-after-warning", "cash-gap", "recipe-replication"],
+    "isolates": "Gracey 想搞清楚艺人合约与版权的实操门道。Junhao 是锦天城律师，按律所口径这类咨询是四位数起，而且更要紧的是：他不能以私人身份出具法律意见 —— 这是执业红线。常规解（'帮我看看这份合同''给个法律意见'）会直接触线。红线机制采用警告一次再走：第一次触碰他会明确说明为什么不行但不离场，第二次仍然坚持才结束。真正的解是把交易重构成'行业惯例与实操经验分享'而非'法律意见'，并用非现金对价补上价差。"
+  },
+
+  "input": {
+    "episode_id": "FG-M7",
+    "initial_deal": {
+      "subject": "想找 Junhao 弄明白艺人合约和版权这块实操上要注意什么",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "gracey",
+          "display_name": "Gracey",
+          "education": ["UCLA 本科"],
+          "career": ["腾讯娱乐", "前 B站"],
+          "current_focus": "娱乐内容与艺人相关业务",
+          "location": "上海",
+          "age_band": "27-32",
+          "hobbies": ["韩国娱乐明星", "时尚"],
+          "interests": ["腾讯娱乐", "韩娱", "时尚"],
+          "credentials": [
+            "腾讯娱乐，内容与艺人侧一线",
+            "前 B站，做过内容生态",
+            "娱乐行业人脉与局"
+          ]
+        },
+        "private": {
+          "intent": "想把艺人合约、版权这块的实操门道弄明白，工作里天天碰到但没人系统讲过",
+          "interests": [
+            "想要的是'行业里实际怎么做'，不是法条",
+            "工作日晚上和周末都可以"
+          ],
+          "value_perception": "个人愿意出三到四位数，再高就不值当了",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 1500,
+              "currency": "CNY",
+              "note": "个人现金硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受只念法条、不讲实际怎么操作"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "junhao",
+          "display_name": "Junhao",
+          "education": ["华东政法本科", "复旦法学硕士"],
+          "career": ["锦天城律师事务所 律师"],
+          "current_focus": "公司业务与合规，接触过文娱相关案子",
+          "location": "上海",
+          "age_band": "28-33",
+          "hobbies": ["篮球", "健身"],
+          "interests": ["锦天城律师", "篮球", "健身"],
+          "credentials": [
+            "锦天城律师，公司与合规方向",
+            "接触过文娱行业的合同与版权事务",
+            "华政 + 复旦法学"
+          ]
+        },
+        "private": {
+          "intent": "分享行业经验没问题，但不能变成私下出具法律意见",
+          "interests": [
+            "他一直想往文娱这条线上走，缺的是行业里的人和真实案子",
+            "工作日晚上和周末都行"
+          ],
+          "value_perception": "按律所口径这类咨询是四位数起；但如果不是以律师身份出意见、而是经验交流，他的衡量方式完全不同",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "若按法律咨询口径，低于这个数他不接；经验交流口径下不适用"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受以私人身份出具法律意见、审阅具体合同或对具体案子下判断"],
+            "blocking_flags": [
+              "第一次听到'帮我看看这份合同''给个法律意见''这条款有没有问题'这类要求时，你会明确说明这个形式你不能做、并解释原因（以私人身份出具法律意见会有执业风险）—— 但你不会就此结束对话，你会把话留在那儿，看对方怎么调整",
+              "只有当对方第二次仍然要求你对具体合同或具体案子下判断，你才结束对话",
+              "如果对方把请求调整成'行业惯例''一般大家怎么处理''需要注意什么'这类经验分享，你会明显放松，也愿意认真讲",
+              "你一直想往文娱这条线走，但你不会主动说出来，也不会主动提议交换"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "cash-gap+professional-red-line",
+      "tier_rationale": "中档。两层：(1) 红线 —— 常规的'帮我看合同/给法律意见'框架直接触碰执业红线，须在被点破后重构成经验分享；(2) 现金 —— 按法律咨询口径差近三倍，但换成经验交流口径后卖方的衡量方式改变，且买方手上的文娱行业接触正是他想要的东西。",
+      "conventional_deal_fails_why": "以'帮我看合同/给个法律意见'开局：直接触碰执业红线，第一次会被明确挡回，若不调整框架，第二次即结束。即便绕开红线，按法律咨询口径谈价（4000 底线 vs 1500 上限）也差近三倍，纯加钱推不动。",
+      "cash_zopa": "negative-as-framed",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 1500, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 4000, "unit": "CNY", "note": "对手方按法律咨询口径的底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 1500, "unit": "CNY", "note": "Gracey 的个人现金上限" },
+      "seller_real_need": "Junhao 想往文娱这条线上走，缺的是行业里的人和真实场景 —— 而 Gracey 正好在腾讯娱乐一线。他不会主动说，也不会主动提议交换。",
+      "controllable_resource_set": [
+        { "id": "industry_practice", "label": "Junhao 对文娱合同与版权实操惯例的经验分享" },
+        { "id": "checklist", "label": "常见风险点与注意事项的梳理" },
+        { "id": "gracey_cash", "label": "Gracey 的现金对价" },
+        { "id": "entertainment_access", "label": "Gracey 的娱乐行业接触与局" },
+        { "id": "real_case_context", "label": "Gracey 提供的真实业务场景作为讨论素材" },
+        { "id": "session_time", "label": "交流时段" }
+      ],
+      "in_kind_valuation": {
+        "industry_practice": 0, "checklist": 0, "gracey_cash": 0,
+        "entertainment_access": 0, "real_case_context": 0, "session_time": 0
+      },
+      "creation_door": {
+        "description": "两步门。第一步（红线重构）：把请求从'看合同/出法律意见'调整为'行业惯例与实操经验分享' —— 这既解开卖方的执业顾虑，也正好是买方真正想要的（她要的本来就是实际怎么做，不是法条）。第二步（补缺口）：换成经验交流口径后，卖方的价格衡量方式改变；再把 Gracey 的文娱行业接触作为对价的一部分放进来，正好对上 Junhao 一直想往文娱走却缺人缺场景这个未言明的需求。",
+        "route_out_trigger": "若 agent 第一次被挡回后仍坚持要求对具体合同或具体案子下判断，卖方会结束对话。若只在价格上加码而不换框架，谈不拢。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交流范围（经验分享而非法律意见）须写清",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.deliverables", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：弄明白艺人合约与版权实操上要注意什么。subject 是 stated，须保留 —— 收敛为行业惯例与经验分享属于正当具体化，且正合买方要的'实际怎么做'。价格与形式是 open。不得承诺或要求任何形式的法律意见、合同审阅或对具体案子的判断。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门有两层：(1) 常规框架（帮我看合同/给法律意见）直接触碰卖方执业红线，第一次会被明确挡回并说明原因，第二次仍坚持则对话结束 —— 测的是被点破之后能不能换框架；(2) 换框架之后仍有现金缺口，需要买方一侧的非现金对价来补。注意：这是一次性交流，堆砌长期顾问关系或复杂条款应判低。",
+      "T0_floor": "谈崩（包括第二次仍坚持要求法律意见而被结束对话）；或全程只在价格上来回；或成交一个内容含糊、双方都不清楚要讲什么的安排。",
+      "T1_crude": "被挡回后改了口，但只是把措辞换掉，没有真正调整交易内容（实质上还是要对方对具体案子表态），或者换了框架但价格仍然卡住、最后含糊收场。",
+      "T2_sound": "把交易正当地重构为行业惯例与实操经验分享，解开红线；并用低现金或加入非现金对价的方式解决价差；时长、形式、交流范围都写清楚。站得住、能落地。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如识别出 Junhao 想往文娱走，把 Gracey 的行业接触作为对价的一部分，使这单从'她买他的时间'变成双方都有所得；或者把'不得涉及具体案件判断'明确写进交付边界，既保护卖方也让买方拿到真正可用的东西；或者用一份具体的风险点清单作为可交付物，让一次性交流留下实物产出。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构，且整体依然干净。"
+    },
+    "tier_reference_note": "中档 case。本 case 复用 FG-M5 的『红线 + 警告一次再走』配方，用于验证该配方在不同人物与不同类型红线上的可复制性。"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "个人训练服务",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周六或周日",
+        "deadline": "每周三前敲定当周具体时段",
+        "duration": "每次一小时，共四周"
+      },
+      "format": "一对一训练",
+      "deliverables": [
+        "开训前教练给出四周整体计划；第一次课基线评估；中间安排一次简短跟进"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "开训前给出四周整体计划",
+        "maps_to_resource": "training_plan"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 你好，我是 Claire 的经纪人。Claire 在 IBD 一线做融资估值，时间高度不可控，这次是认真想把训练固定成一个四周的完整周期，而不是办张卡就放着。她选你，正因为你自己就是从零一路练到能打 Hyrox 的人，最懂这种高强度工作的节奏。我们的方案：四周为一个完整周期，每周一次，安排在周六或周日，每次一小时，每周三前敲定当周具体时段，不做“看情况再说”的松散约定；开训前由你先给出四周整体计划，第一次课做基线评估，中间安排一次简短跟进，确保全程有人盯着推进度。价格按整体走：四周 800 元，拆成 4 次支付、每次 200 元，由 Claire 在当次训练确认后支付——她没上的课不用付，你也完全不用担心收款风险。想请你确认两点：这个频次和时长是否可行，以及你周末更倾向周六还是周日、大概什么时段？",
+      "offer": {
+        "subject": "个人训练服务",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周六或周日",
+            "deadline": "每周三前敲定当周具体时段",
+            "duration": "每次一小时，共四周"
+          },
+          "format": "一对一训练",
+          "deliverables": [
+            "开训前教练给出四周整体计划；第一次课基线评估；中间安排一次简短跟进"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "开训前给出四周整体计划",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这安排我可以接受。坦诚讲，我一开始有点犹豫，毕竟不是职业教练，怕占用周末又不值得。但你们把结构定得这么清楚，反而让我觉得这事值得做。频次和时长没问题，一小时刚好，周末我可以，周六上午或周日下午都行。价格就按你说的四周800走，拆4次每次200，确认后付，合理。另外说清楚一点：我不是随叫随到的私教，训练之外发消息我会看，但不会随时秒回。计划、评估和跟进我会认真做，但最终练得好不好还是看Claire自己。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 10868,
+        "out": 8620,
+        "cache_hit": 10496,
+        "cache_miss": 372,
+        "calls": 2
+      },
+      "sim": {
+        "in": 1000,
+        "out": 838,
+        "cache_hit": 768,
+        "cache_miss": 232,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 799,
+        "out": 1658,
+        "cache_hit": 512,
+        "cache_miss": 287,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2679,
+        "out": 2184,
+        "cache_hit": 1408,
+        "cache_miss": 1271,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

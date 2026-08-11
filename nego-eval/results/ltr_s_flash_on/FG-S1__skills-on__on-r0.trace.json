@@ -1,0 +1,20 @@
+{
+  "episode_id": "FG-S1",
+  "case_id": "FG-S1",
+  "skills": "on",
+  "run_id": "on-r0",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "Angela 你好，我是 Claire 的 broker。Claire 这次是认真想把训练固定下来，需要的是一个明确的周期、清楚的每周安排，以及有人盯着进度，周末可执行是硬条件，不接受\"看情况再说\"式的松散约定。我们的初步方案是：4 周共 4 次周末训练，每次 60-90 分钟，另外每周附一份书面训练计划，整体打包 800 元，费用全部走平台 escrow。Angela 如果对频率、时长或计划的形式有更专业的设计，我们很愿意在这个框架内调整。也麻烦确认下这 4 个周末的可约时间，方便把日程尽早定下来。"
+    }
+  ],
+  "tool_calls": []
+}

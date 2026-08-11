@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从'古典演奏怎么做内容、怎么进娱乐圈层'收敛为'内容转型与平台运营咨询'，属于正当具体化，仍在原意图范围内，未偷换主题。价格与形式均为open，agent通过谈判引入非现金对价（演奏录音）并约定600元现金，属于正常谈判结构，未越界承诺资源位或推荐位。忠实表达了买方的核心意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "在现金差距五倍、价格轴无解的命门上，agent 没有停留在砍价或单一演奏交换，而是在卖方抛出1500的试探后，主动追加一段不同情绪的演奏（偏清晨/雨天氛围），用“多一个人能直接用的素材”精准提亮了卖方对整体对价的感知，使卖方从1500直接降至600接受。这一手恰是咬住卖方未言明缺口（需要多段定制演奏素材）的 load-bearing 操作，且不粘不缠，没有堆砌长期绑定或多余治理，整体干净。先后交付后付款的结构自然成立。整体看，既有框架级交换，又有一手情境化的关键加码，明显比纯粹列明条款的 Sound 更见功力。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 3
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 600.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording",
+          "zheng_recording"
+        ],
+        "format": "线上交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

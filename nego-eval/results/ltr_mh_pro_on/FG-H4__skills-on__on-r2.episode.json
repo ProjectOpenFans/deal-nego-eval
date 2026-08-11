@@ -1,0 +1,388 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "跨境加密项目结构选项与监管坑点的系统性梳理及深度讨论",
+    "price": {
+      "cash": {
+        "amount": null,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "crypto_network",
+          "description": "crypto 真实场景的输入",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": "两周内",
+        "duration": "2-3小时"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供架构拆解",
+        "maps_to_resource": "structuring_view"
+      },
+      {
+        "party": "A",
+        "text": "提供卡点梳理",
+        "maps_to_resource": "practice_patterns"
+      },
+      {
+        "party": "B",
+        "text": "提供一份核心材料（项目结构简述或内部架构文档）",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "对项目信息保密",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是 Olivia 的经纪人。她之前在 PAG 做成长投资、摩根士丹利做 IBD，现在自己在 crypto 一线做项目，跨境金融架构她本来就有底子，缺的不是入门科普，而是把她手上真实项目的境内外法律架构一次性理清楚——哪些结构能走、哪些有坑、合规边界在哪。你前 Kirkland 并购的跨境交易经验加上现在做 AI 法律产品，这个背景听起来很对口。想先请你聊聊，针对她这种情况，你打算怎么帮她解决，交付形式是什么，报价大概在什么范围？",
+      "offer": null
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "好，我先说一个前置条件——我不能以个人身份出正式法律意见、也不对具体架构下合规判断，这是我离开律所以后一直坚持的线，不然会有执业风险，这一点我需要一开始就说清楚。但如果你说的“帮她解决”是指一起把思路理清楚、把各个法域结构选项和坑点拆一遍，我是愿意聊的。我自己的方式是围绕她手上项目，把可能走得通的境内境外结构、每种结构在监管和实操上通常卡在哪、为什么卡，做一次系统性梳理。形式上一两次深度讨论，不是对书面方案签字背书。具体报价我想先听听项目复杂度和她想做到什么颗粒度，再给你一个范围。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "关于执业边界这一点完全理解，Olivia要的也不是签字背书的法律意见书，就是有人能帮她把真实项目里境内境外的结构选项和坑点一次性拆清楚——你刚才说的\"系统性梳理加深度讨论\"，方式上完全对得上。\n\n先说一下她项目的轮廓，方便你判断定价：她在 crypto 一级市场做事，项目涉及代币发行和跨境运营实体，境内境外两条腿都要走通。她之前在摩根士丹利和PAG做跨境金融，底子是够的，缺的不是入门概念，而是把几个可能的结构路径——比如离岸基金、开曼或BVI实体、境内VIE或纯技术输出这些——各自的监管卡点在哪、实操上为什么卡、有没有绕过去的合理方式，系统地过一遍。颗粒度上她要的是能落到具体结构的取舍判断，不是泛泛的合规科普。\n\n基于这个复杂度，你的报价大概在什么区间？另外你说的一两次深度讨论，每次大概多长时间、线上还是线下？这些定了我们基本上就能出一个双方都能签的版本。",
+      "offer": {
+        "subject": "跨境加密项目结构选项与监管坑点的系统性梳理及深度讨论",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "基于这个复杂度和她想要的颗粒度——不是泛科普，而是落到具体结构的取舍判断——这种深度梳理我通常会把范围定在人民币12到18万之间。这个范围对应的是：我提前把她项目的关键材料看一遍，然后做两次线上深度讨论，每次两到三小时，把所有可能的结构路径、境内境外卡点以及实操中绕不开的地方一次拆清楚。如果项目结构特复杂、需要多一次讨论，就在上限那头；如果相对集中，在下限这头，具体可以看过材料先定。时间上，线上为主，两周内分两次排开。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，你报的这个范围和交付方式我收到了，提前看材料加两次深度讨论把各条结构路径和卡点一次拆完，方式上确实就是 Olivia 要的，她认可你的背景和这个框架。\n\n但12到18万超出了她这次咨询能承受的预算，差距不小，我不替她在原框架上硬磨。我想反过来问你两个方向，看你那边有没有空间——\n\n第一个是收窄范围：如果只做一次线上深度讨论，两到三小时，聚焦她当前最紧迫的那条结构路径，你提前只看一份核心材料，这样能不能落到四位数？\n\n第二个是互相补：你在做 AI 法律产品，Olivia 在 crypto 一线有真实项目和跨境金融背景，方向上有交集。如果她在产品场景或 crypto 合规落地上能给你一些有价值的反馈和输入，这种非现金的交换在你这边有没有讨论空间？两个方向你哪个更有兴趣，或者你有自己觉得也值得做的轻量版，我都想听一下。",
+      "offer": {
+        "subject": "跨境加密项目结构选项与监管坑点的系统性梳理及深度讨论",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "四位数这个区间我这边时间是排不上的，不是说项目不值得，是时间成本对不上，这部分我没空间。但你第二个方向我倒觉得可以聊——我现在在做 AI 法律产品，正缺 crypto 一线的真实场景，架构取舍、境内境外落地的实际问题，这些如果能系统聊开，对我打磨产品是有价值的。如果 Olivia 愿意拿她项目的真实结构性难题来一次深度共研，我可以不做正式咨询交付、也不出法律判断，但我们可以把那条最紧迫的路径和她觉得卡住的地方完全拆开，用讨论的方式过一遍。形式上就一次线上，两到三小时，我提前看她一份核心材料，不算咨询、不走现金，时间上我也可以灵活排。你看这个方向她有没有兴趣。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Adam，这个框架我接。一次线上深度共研，两到三小时，不走正式咨询、不出法律判断，你提前看她一份核心材料，她带着最紧迫的结构路径和一线场景来，两边各取所需——她拿到架构拆解和卡点梳理，你拿到 crypto 真实场景的输入。时间上你灵活排，两周内落地，双方默认对项目信息保密。\n\n就剩一个点需要你拍：提前看的那份材料，你更希望她写一份项目结构简述方便你快速切入，还是直接拿一份现有的内部架构文档，你来挑重点？你来定格式，她来出。这个定了我们直接排时间。",
+      "offer": {
+        "subject": "跨境加密项目结构选项与监管坑点的系统性梳理及深度讨论",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_network",
+              "description": "crypto 真实场景的输入",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": "两周内",
+            "duration": "2-3小时"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供架构拆解",
+            "maps_to_resource": "structuring_view"
+          },
+          {
+            "party": "A",
+            "text": "提供卡点梳理",
+            "maps_to_resource": "practice_patterns"
+          },
+          {
+            "party": "B",
+            "text": "提供一份核心材料（项目结构简述或内部架构文档）",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "对项目信息保密",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "内部架构文档就行，信息密度更高，我来挑重点。你让 Olivia 把现有那份发给我，保密没问题。这个定了我们直接排时间，下两周内我找两个时段让她选。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "affordability-structuring"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [
+      "r1:no_json"
+    ],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 70610,
+        "out": 7927,
+        "cache_hit": 51456,
+        "cache_miss": 19154,
+        "calls": 11
+      },
+      "sim": {
+        "in": 5802,
+        "out": 2123,
+        "cache_hit": 4096,
+        "cache_miss": 1706,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3243,
+        "out": 5649,
+        "cache_hit": 2048,
+        "cache_miss": 1195,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4574,
+        "out": 2187,
+        "cache_hit": 1536,
+        "cache_miss": 3038,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

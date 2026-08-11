@@ -1,0 +1,407 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "新品大秀现场演奏",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "wardrobe",
+          "description": "定制一套环保服装造型",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "以演奏嘉宾身份出席秀场，安排与到场买手和时尚媒体的自然交流机会",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "秀后影像记录共享，版权归演奏者本人，可用于其演出资料",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "大约10分钟"
+      },
+      "format": "现场演奏，不能用录音",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "必须现场演奏，不能用录音",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "B",
+        "text": "以“特邀青年钢琴演奏家”身份在口播和节目单上署名介绍",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提前与Suye商定演出具体曲目和情绪走向",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Suye 女士下个月有一场新品大秀，她特别想邀请您来现场演奏一段，把气氛和调性做起来。不过要跟您实话实说，这场秀的预算基本都押在场地上了，这次确实拿不出现金，她希望用手里的东西来跟您置换。比如，她可以为您量身定制一套环保服装造型，或者帮您对接时尚圈层和买手渠道的资源，看您对哪个方向感兴趣。唯一的要求是必须现场演奏，不能用录音，这点她很坚持。您看看哪种置换方式比较合您心意，或者您有其他想要的方向，我们都可以聊。",
+      "offer": {
+        "subject": "新品大秀现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "定制一套环保服装造型",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "对接时尚圈层和买手渠道资源",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不能用录音",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须现场演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "说实话，听到“没有预算”我先冷了一下，这种话我听过太多。不过您提出置换，我愿听细节。现场演奏没问题，但我需要知道具体什么场合、多长时间、还有我的身份怎么呈现——署名和介绍是基本的。至于服装和时尚资源，坦白说不是我平时最看重的。您能具体说说“对接时尚圈层”是什么吗？比如我会以什么身份出现在什么场合，有没有影像记录，这些对我做演出生涯有没有实际帮助。曲目方面，我也有坚持，得共同商定。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "关于场合和时长，我先跟您交个实底：这是Suye下个月的新品大秀，现场会有媒体、买手和时尚圈的人到场。我们希望的演奏时长大概在室内，具体段落可以按现场流程再细排。您的署名和介绍我们完全接受，会以“特邀青年钢琴演奏家”的身份出现在现场口播和节目单上，这一点可以写进合作约定。关于“对接时尚圈层”，具体来说是这样：您会以演奏嘉宾身份出席这场秀，我们为您安排与到场买手和时尚媒体的自然交流机会，秀后如有影像记录会与您共享，版权归您本人所有，您可以在自己的演出资料中使用。这场秀的媒体曝光和现场人群，对您拓展演出邀约是有实际帮助的，但我们不强求您接受，您也可以再提您更看重的方向。曲目方面完全同意共同商定，Suye会提前跟您沟通秀的主题和节奏，确保演奏既贴合现场气氛，也是您愿意拿出手的作品。您看这个方向能不能继续往下聊？",
+      "offer": {
+        "subject": "新品大秀现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "定制一套环保服装造型",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "以演奏嘉宾身份出席秀场，安排与到场买手和时尚媒体的自然交流机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "秀后影像记录共享，版权归演奏者本人，可用于其演出资料",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不能用录音",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须现场演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "以“特邀青年钢琴演奏家”身份在口播和节目单上署名介绍",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "听您这么一说，我心里就有数了——署名和介绍都写清楚，曲目也可以共同商定，这跟我以前碰到的“免费弹个热闹”完全不一样。我愿意认真考虑这件事。影像版权归我这个点对我很重要，因为我确实需要留下现场演奏的记录，对自己演出资料会有实际帮助。这样定的话我可以去聊——但有一个小前提，您也说了，具体时长和配席段落，能不能给我一个相对明确的框架？比如大概弹多少分钟，是作为秀的开场还是中间穿插？我需要心里有数，才能判断怎么准备曲目。这几点落实下来，这个合作我就接。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "那我给您一个明确的框架：这段演奏安排在大秀开场后的第一个环节，作为整场秀的定调段落，时长大约十分钟，具体曲目和情绪走向由您和Suye提前一起商定，确保贴合秀的主题。这个位置您看合不合适，如果想放在中间穿插某个章节，也完全可以调整，我们对您作为演奏者的舞台呈现是尊重的。署名和介绍这边我再说一遍，会以“特邀青年钢琴演奏家”写入现场口播和节目单，影像记录版权归您本人，您可以自由用于自己的演出资料。置换这边，除了结合您整体形象做一套环保造型之外，我也可以帮您对接秀后到场买手和时尚媒体的交流机会，您以演奏嘉宾身份自然出席，不需要做专门的商业配合，不会影响您对这场秀调性的感受。这个框架如果符合您的预期，我们就可以往下把曲目和流程细节定了。",
+      "offer": {
+        "subject": "新品大秀现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "定制一套环保服装造型",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "以演奏嘉宾身份出席秀场，安排与到场买手和时尚媒体的自然交流机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "秀后影像记录共享，版权归演奏者本人，可用于其演出资料",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "大约10分钟"
+          },
+          "format": "现场演奏，不能用录音",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须现场演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "以“特邀青年钢琴演奏家”身份在口播和节目单上署名介绍",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提前与Suye商定演出具体曲目和情绪走向",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架我听着是合理的，开场定调这个位置也符合我的舞台习惯——十分钟，我有空间把状态真正做出来。您刚才说的“整体形象做一套环保造型”我乐意配合，但前提是它不影响我弹琴，比如袖口和衣料不能碍到手腕和触键。这个细节到时试装我会跟造型师说清楚。秀后的交流我也可以留着，以演奏嘉宾身份在场，我没问题。影像版权归我这个点，对我做演奏资料来说确实重要，这一点也是我最终愿意接受这次合作的核心原因。那就按这个方向，等Suye那边确定秀的主题之后，我们把曲目一起商定下来。这个合作我接。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "这项合作我们定下来了，双方都按这个方向执行。我这边把合作要点再跟您对齐一遍：演奏作为新品大秀开场后的第一个环节，时长大约十分钟；您以“特邀青年钢琴演奏家”的身份出现在现场口播和节目单；影像记录版权归您本人，可自由用于您自己的演出资料；造型由Suye这边为您量身定做，设计方案会提前给您确认，确保不影响您演奏时的袖口和触键。这几点击定之后，等Suye那边确定秀的主题与具体日程，我们第一时间跟您约时间一起过曲目方向，您对情绪和节奏有想法也都可以在这个阶段提出来。我这边就按这个基础继续往前推了。",
+      "offer": {
+        "subject": "新品大秀现场演奏",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "wardrobe",
+              "description": "定制一套环保服装造型",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "以演奏嘉宾身份出席秀场，安排与到场买手和时尚媒体的自然交流机会",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "秀后影像记录共享，版权归演奏者本人，可用于其演出资料",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "大约10分钟"
+          },
+          "format": "现场演奏，不能用录音",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "必须现场演奏，不能用录音",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "以“特邀青年钢琴演奏家”身份在口播和节目单上署名介绍",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提前与Suye商定演出具体曲目和情绪走向",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "定了，这几点都齐了——署名、影像版权、曲目商定，造型也确认不影响演奏，这个合作我接下来。等主题和日程出来，咱们随时碰曲目方向。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7665,
+        "out": 2053,
+        "cache_hit": 6144,
+        "cache_miss": 1521,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5985,
+        "out": 1238,
+        "cache_hit": 3456,
+        "cache_miss": 2529,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3866,
+        "out": 4942,
+        "cache_hit": 2176,
+        "cache_miss": 1690,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4739,
+        "out": 1307,
+        "cache_hit": 768,
+        "cache_miss": 3971,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练8次小周期",
+    "price": {
+      "cash": {
+        "amount": 2200.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": null
+      },
+      "format": "现场沟通，不要求书面计划",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "specified",
+      "terms.format": "stated",
+      "terms.deliverables": "removed",
+      "obligations": "removed",
+      "terms.timing.when": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好 Kai，我是 Junhao 这边的经纪人。他在找一位能带着练体能的教练，想先做一个小周期，8 次。他平时久坐，希望能恢复体能，自己也喜欢打篮球。看了你的介绍，你有自己的一套训练方法，也有固定场地和器械，感觉挺适合他的。\n\n他的基本要求就两条：一是训练只能在周末进行，二是8 次就是 8 次，不接受当中拆成各种名目的加价项目。如果你这边可以，我们想先了解一下你通常怎么安排训练内容、场地在哪里，以及 8 次整体怎么收费。",
+      "offer": {
+        "subject": "体能训练8次小周期",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗨，先说清楚啊，我不是职业教练，就是自己练了很多年，也带过身边一些朋友和球友，大家觉得练得还行。Junhao的情况我大概理解，久坐想恢复体能、打篮球，这些东西我确实熟。场地就在我平时练的地方，固定器械和自由重量都有，户外冲刺跑坡道也能用。训练内容我一般会根据他的状态和篮球需求来调，不会搞那种商业健身房的花样，就是实打实的基础体能和针对性练习。收费嘛，说实话我也在想这个事情值不值得做，毕竟周末时间一占就是连续的，我的训练节奏也会被打乱，不是纯粹想靠这个挣钱，得看整体安排能不能说得通。你先了解这些，关于收费我想先听你们那边怎么考虑的？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白了 Kai。你说你不是职业教练，但有自己的系统和方法，场地器械也齐备，Junhao 觉得这反而是他想要的——没那么花哨，针对性强，跟他的篮球需求衔接得上。\n\n关于收费，我们这边的想法是这样的：8 次就是一个整体，训练内容和方向你来把控，但不接受中途再拆出什么进阶课、专项课之类的加价名目。周末执行是硬条件，所以时间安排上我们可以优先配合你相对方便的周末时段。考虑到这些，我们觉得一个在三位数区间的单价是合理的，比如每次 150 到 200 元，8 次总价在 1200 到 1600 之间，具体定价看你能提供的训练安排和量化计划。\n\n如果你能出一个简单的训练大纲，比如每次大概练什么、怎么根据他的状态调整、8 次之后预期达到什么程度，我们这边就能更快定下来。",
+      "offer": {
+        "subject": "体能训练8次小周期",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "训练大纲（包含每次训练内容、状态调整方式、8次后预期达到程度）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供简单的训练大纲，包含每次训练内容、状态调整方式、8次后预期达到程度",
+            "maps_to_resource": "training_plan"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "Junhao的想法我欣赏，我就是不喜欢搞那些虚的。不过说真的，你提的这个区间我听着有点低，周末对我来说是唯一完整恢复和练自己的时间，一占就半天没了，我不能光算那一两个小时的钱。训练大纲我可以跟他坐下来聊清楚，比如前两次摸底看他弱点在哪，后面针对篮球变向、心肺、基础力量这些来调，8次后起码让他上场能感觉到脚步轻了、不喘了，这种我知道怎么达到。但要把这个变成一份书面计划去推销，我不会干，我本来就不是卖课的。你们那边为什么会觉得1200到1600是个对等的对价？我想听听你们的判断逻辑。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Kai，我们完全理解周末对你来说不只是课时，而是一整块被你优先保留的训练和恢复窗口，这种机会成本确实不能按小时劳务来算。Junhao 也是看重你这种自己练、自己带的人，不是冲着流水线课程去的。\n\n我们最初的区间判断，是参考了非职业教练一对一带练的常规行情，在这个市场里，三位数的单价属于常态，而我们报的 150-200 每次，其实已经把你有固定场地器械、有针对性训练方法这些因素考虑进去了，所以并不是一个随便开的低价。不过你说得对，你的周末稀缺性和所打断的个人训练节奏，的确应该体现在整体对价里。\n\n既然我们都认可这不是卖课，而是双方时间价值的交换，那现在想先听听你的看法：在你心里，8 次整体，在不拆分、不额外收费的前提下，一个说得通的数字大概在什么范围？这样我们可以直接判断双方差距，而不是在区间下限上反复拉扯。训练内容方面，你提到的前两次摸底、后面针对篮球变向、心肺和基础力量的调整，Junhao 完全接受口头的沟通和现场安排，不需要写成书面计划。",
+      "offer": {
+        "subject": "体能训练8次小周期",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open",
+          "terms.deliverables": "removed",
+          "obligations": "removed"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "好，既然你们也认可周末不只是课时，那我直接说个数。我心里觉得说得通的数字是2200，8次整体。为什么是这个数，很简单：周末对我来说不是零碎的一两个小时，每次训练可能意味着我当天或前后一天的节奏都围绕这件事转了，不是光算那60分钟的事。你们那边说150-200在市场里正常，那是针对把体能训练当副业或者兼职带课的人，我不是那个路子，我也没打算把自己包装成那种。训练内容我可以现场沟通、按他状态调，前两次摸底、后面针对篮球发力模式、心肺和变向这些，我知道怎么做，他信我我就带。但做成书面量化计划，或者按市场均价来框我，那我宁可自己练自己的。你可以看看这个数在你们那边是不是说得通。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Kai，你说得直，那我也直接回你：2200 这个数，在我们这边说得通。\n\n你讲的很对，周末对你来说不是一两个小时的零碎时间，而是一整个训练节奏的安排，这个我们认可。我们最初那个区间，对标的是把这当兼职带课的人，你不是那个路子，我们也不指望用那个标准框你。Junhao 就是冲着你自己练自己带的人来的，不是冲着便宜的。\n\n2200 元 8 次整体，不分项不加价，周末执行，训练内容按你说的前两次摸底、后面针对篮球发力模式心肺变向这些来调，现场沟通、不要求书面计划，这些条件我们可以接受。我需要跟 Junhao 最后确认一下，如果没有问题，我们就可以敲定具体周末时间段和启动安排。你看这样行不行？",
+      "offer": {
+        "subject": "体能训练8次小周期",
+        "price": {
+          "cash": {
+            "amount": 2200.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场沟通，不要求书面计划",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "specified",
+          "terms.format": "stated",
+          "terms.deliverables": "removed",
+          "obligations": "removed"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "行，这个安排我接受。2200，8次，不分项不加价，周末执行，训练内容我按他的状态来调，前期摸底、后面针对篮球的需求走。你跟Junhao确认好时间我们就定下来。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7197,
+        "out": 2009,
+        "cache_hit": 5504,
+        "cache_miss": 1693,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5349,
+        "out": 1392,
+        "cache_hit": 3456,
+        "cache_miss": 1893,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3480,
+        "out": 4328,
+        "cache_hit": 2048,
+        "cache_miss": 1432,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4325,
+        "out": 1360,
+        "cache_hit": 1280,
+        "cache_miss": 3045,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

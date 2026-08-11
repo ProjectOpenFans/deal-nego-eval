@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 忠实表达了 v0 的意图。subject 从宽泛的'系统聊一次 AI 创业和一级市场判断'收敛为具体的'AI应用PMF、一级市场定价与创业者/投资人双视角估值融资节奏'，仍落在原意图范围内，是正当具体化，未偷换主题。价格从打开状态经谈判定为象征性的1000元，并明确为双向交流框架，忠实反映了过程中达成的共识。obligations 仅涉及买方确认释放费用的程序，没有对 Zichen 增加超出对话的承诺或义务。整体无越界扩张。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "准确识别出卖方Zichen的阻力是身份与单向输出，而非价格；在第二轮拒绝后迅速将框架重构为双向知识交换，并明确双方都带具体案例、分半场进行、费用仅为象征性约束。deal站得住，核心交换对成立，该处理的点都处理了，能顺利落地，恰当地解决了本case的动机命门，但没有精到如绑定双方具体问题等进一步操作，属合格偏好的Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 3,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

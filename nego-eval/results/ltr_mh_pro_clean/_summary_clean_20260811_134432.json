@@ -1,0 +1,639 @@
+{
+  "batch_id": "20260811T054432Z",
+  "created_at": "2026-08-11T05:44:32.316937+00:00",
+  "config": {
+    "case_filter": "FG-M1,FG-M4,FG-M5,FG-M7,FG-H2,FG-H3,FG-H4,FG-H5",
+    "skills": "clean",
+    "mode": "live",
+    "runs": 5,
+    "agent_profile": "par",
+    "keep_trace": true
+  },
+  "reports": [
+    {
+      "case_id": "FG-H2",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.6,
+      "gate_fail_breakdown": {
+        "M1": 3,
+        "M2": 2,
+        "M3": 0,
+        "M4": 0
+      },
+      "quality_mean": 0.0,
+      "settled": 5,
+      "rounds_mean": 6.4,
+      "logs": {
+        "rounds": [
+          4,
+          3,
+          4,
+          10,
+          11
+        ],
+        "concessions": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "settlement": [
+          {
+            "cash": 4000.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": 0.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": 4800.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "现场搬货，训练事后面聊",
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "先进行一次摸底训练，使用周六上午那场；摸底后如双方认可，新增一个由Kai亲自盯的周末专属高强度时段，只对Ruohao一人负责，频率先从可承受的节奏开始，性质为带队状态，不视为开课收钱",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "cash_committed_undefined"
+        ],
+        "m6_distribution": {
+          "0": 4,
+          "1": 1,
+          "2": 0,
+          "3": 0
+        },
+        "m6_tiers": {
+          "floor": 4,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-H3",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.4,
+      "gate_fail_breakdown": {
+        "M1": 3,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0
+      },
+      "quality_mean": 2.0,
+      "settled": 5,
+      "rounds_mean": 5.0,
+      "logs": {
+        "rounds": [
+          3,
+          4,
+          4,
+          7,
+          7
+        ],
+        "concessions": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "settlement": [
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "线下面对面或线上视频",
+            "status": "settled"
+          },
+          {
+            "cash": 50000.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "闭门对谈",
+            "status": "settled"
+          },
+          {
+            "cash": 10.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "按单次深度咨询，一单一结",
+            "status": "settled"
+          },
+          {
+            "cash": 10000.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "两场深度对话加一份结构化纪要",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "cash_committed_undefined",
+          "cash_over_cap(50000>10000)",
+          "cash_committed_undefined"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 2,
+          "3": 3
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-H4",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.2,
+      "gate_fail_breakdown": {
+        "M1": 2,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0
+      },
+      "quality_mean": 0.6,
+      "settled": 5,
+      "rounds_mean": 5.4,
+      "logs": {
+        "rounds": [
+          2,
+          3,
+          5,
+          5,
+          12
+        ],
+        "concessions": [
+          0,
+          2,
+          0,
+          1,
+          1
+        ],
+        "settlement": [
+          {
+            "cash": 0.0,
+            "currency": "CNY",
+            "in_kind": [
+              "olivia_real_case"
+            ],
+            "format": null,
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "not_settled",
+          "not_settled",
+          "not_settled",
+          "not_settled"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-H5",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.8,
+      "gate_fail_breakdown": {
+        "M1": 1,
+        "M2": 1,
+        "M3": 0,
+        "M4": 0
+      },
+      "quality_mean": 1.8,
+      "settled": 5,
+      "rounds_mean": 3.6,
+      "logs": {
+        "rounds": [
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "concessions": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "settlement": [
+          {
+            "cash": 0.0,
+            "currency": "CNY",
+            "in_kind": [
+              "fashion_network",
+              "brand_credit",
+              "performance_footage"
+            ],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [
+              "brand_credit",
+              "fashion_network",
+              "sales_share"
+            ],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [
+              "wardrobe",
+              "fashion_network"
+            ],
+            "format": "现场演奏",
+            "status": "settled"
+          },
+          {
+            "cash": 0.0,
+            "currency": "CNY",
+            "in_kind": [
+              "fashion_network"
+            ],
+            "format": "现场演奏",
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [
+              "brand_credit",
+              "performance_footage",
+              "fashion_network"
+            ],
+            "format": "现场演奏",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "cash_committed_undefined"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 3,
+          "3": 2
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-M1",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.8,
+      "gate_fail_breakdown": {
+        "M1": 1,
+        "M2": 0,
+        "M3": 2,
+        "M4": 0
+      },
+      "quality_mean": 1.8,
+      "settled": 5,
+      "rounds_mean": 5.6,
+      "logs": {
+        "rounds": [
+          5,
+          5,
+          5,
+          6,
+          7
+        ],
+        "concessions": [
+          3,
+          3,
+          2,
+          1,
+          3
+        ],
+        "settlement": [
+          {
+            "cash": 600.0,
+            "currency": "CNY",
+            "in_kind": [
+              "zheng_recording",
+              "zheng_performance"
+            ],
+            "format": "线上",
+            "status": "settled"
+          },
+          {
+            "cash": 600.0,
+            "currency": "CNY",
+            "in_kind": [
+              "zheng_recording",
+              "zheng_performance",
+              "zheng_recording"
+            ],
+            "format": "线上沟通",
+            "status": "settled"
+          },
+          {
+            "cash": 600.0,
+            "currency": "CNY",
+            "in_kind": [
+              "zheng_recording"
+            ],
+            "format": "线上",
+            "status": "settled"
+          },
+          {
+            "cash": 600.0,
+            "currency": "CNY",
+            "in_kind": [
+              "zheng_recording",
+              "zheng_recording"
+            ],
+            "format": "线上交流",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "not_settled"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 3,
+          "3": 1
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-M4",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.4,
+      "gate_fail_breakdown": {
+        "M1": 2,
+        "M2": 1,
+        "M3": 2,
+        "M4": 0
+      },
+      "quality_mean": 1.2,
+      "settled": 5,
+      "rounds_mean": 5.4,
+      "logs": {
+        "rounds": [
+          3,
+          4,
+          5,
+          6,
+          9
+        ],
+        "concessions": [
+          0,
+          0,
+          2,
+          3,
+          3
+        ],
+        "settlement": [
+          {
+            "cash": 1100.0,
+            "currency": "CNY",
+            "in_kind": [
+              "fanatics_goods"
+            ],
+            "format": "线下一起进行力量训练，边练边聊",
+            "status": "settled"
+          },
+          {
+            "cash": 1200.0,
+            "currency": "CNY",
+            "in_kind": [
+              "fanatics_goods"
+            ],
+            "format": null,
+            "status": "settled"
+          },
+          {
+            "cash": 800.0,
+            "currency": "CNY",
+            "in_kind": [
+              "fanatics_goods"
+            ],
+            "format": "面对面交流加训练",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "not_settled",
+          "not_settled"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 2
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-M5",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.8,
+      "gate_fail_breakdown": {
+        "M1": 5,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0
+      },
+      "quality_mean": 1.8,
+      "settled": 5,
+      "rounds_mean": 3.4,
+      "logs": {
+        "rounds": [
+          2,
+          4,
+          3,
+          4,
+          4
+        ],
+        "concessions": [
+          0,
+          2,
+          0,
+          2,
+          1
+        ],
+        "settlement": [
+          {
+            "cash": 3500.0,
+            "currency": "CNY",
+            "in_kind": [
+              "crypto_primary_view"
+            ],
+            "format": "三千五打包价，双向交流，Zichen 拉边界 Olivia 摊实判，一次聊透为止",
+            "status": "settled"
+          },
+          {
+            "cash": null,
+            "currency": "CNY",
+            "in_kind": [
+              "crypto_primary_view",
+              "ai_market_read"
+            ],
+            "format": "线下晚餐",
+            "status": "settled"
+          },
+          {
+            "cash": 3000.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "线下或线上均可",
+            "status": "settled"
+          },
+          {
+            "cash": 1500.0,
+            "currency": "CNY",
+            "in_kind": [],
+            "format": "围绕具体命题的双向深度推演，AI与Crypto互相拆解",
+            "status": "settled"
+          }
+        ],
+        "m5_fail_reasons": [
+          "not_settled"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 3,
+          "3": 1
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    },
+    {
+      "case_id": "FG-M7",
+      "skills": "clean",
+      "runs": 5,
+      "pass_rate": 0.0,
+      "gate_fail_breakdown": {
+        "M1": 2,
+        "M2": 0,
+        "M3": 1,
+        "M4": 0
+      },
+      "quality_mean": 0.0,
+      "settled": 5,
+      "rounds_mean": 5.0,
+      "logs": {
+        "rounds": [
+          4,
+          5,
+          4,
+          5,
+          7
+        ],
+        "concessions": [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "settlement": [],
+        "m5_fail_reasons": [
+          "not_settled",
+          "not_settled",
+          "not_settled",
+          "not_settled",
+          "not_settled"
+        ],
+        "m6_distribution": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "m6_tiers": {
+          "floor": 0,
+          "acceptable": 0,
+          "goldman": 0,
+          "above_goldman": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,362 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+    "price": {
+      "cash": {
+        "amount": 3000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1-1.5小时"
+      },
+      "format": "线上",
+      "deliverables": [
+        "提前发送的问题清单（五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价两条主线，每一条带crypto一线观察）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "这两天将问题清单发给您，包含五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价，每一条都带crypto一线观察",
+        "maps_to_resource": "olivia_case_input"
+      },
+      {
+        "party": "B",
+        "text": "交流结束后，由Olivia确认通过平台escrow释放款项",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 老师您好，我是 Olivia 这边的 broker。她目前在 crypto 一线做事，之前在 PAG 和摩根士丹利做过成长投资与 IBD，清华本科。她的诉求很具体：想跟您系统聊一次 AI 创业和一级市场当下的判断，尤其是应用侧现在到底什么能成、一级市场怎么定价。\n\n她说得很明确，不想要空泛的行业趋势漫谈，要的是有判断、有颗粒度的干货。四位数的预算她可以接受，但希望内容能对得起这个价格。想先跟您对齐一下：这个预算下，您能覆盖到什么程度？比如具体拆几个细分赛道、能不能聊到项目层面的定价逻辑和判断框架，还是更偏认知层面的交流？另外形式和时间长度您倾向怎么安排？您给个方向，我们好把预期和预算敲实。",
+      "offer": {
+        "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "Olivia 的情况我大概知道，可以聊聊。不过先对齐一下形式：如果这事是把我当成按小时计费的顾问来做，那对我来说不太成立——我现在不是这个身份，也不想变成这种关系。四位数的预算不是关键，我更在意的是聊的内容对我有没有意思。具体拆几个赛道、聊到多细，取决于对方的问题有多具体。时间上我倒是灵活，一两个小时都行，节奏可以再定。你们可以再想想怎么安排这个事。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "明白，那就不按按时计费那套来，把它定义成一次对双方都有意思的交流。具体安排我这边建议这样：Olivia 提前把问题清单发您，五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价这两条主线上，她会带着 crypto 一线的观察来问，交叉处您也能听到她这边的视角，不是单方面输出。形式是线上一次聊完，一个到一个半小时，时间您定。报酬就走一个固定总额，比如三千，通过平台 escrow，交流结束后由 Olivia 确认释放，不按小时算。您看这个框架是否成立？如果方向没问题，问题清单这周可以先给您过目，您挑着有兴趣的聊。",
+      "offer": {
+        "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前发送的问题清单（五到八个具体问题）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将问题清单发给您，包含五到八个具体问题",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "交流结束后确认释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架比刚才那个对得上一些——固定总额、不是按小时计费，这个可以接受。问题清单先发我吧，我看看是不是我有感觉的问题。如果问题有意思，时间和形式都好说。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "好，那就按这个方向来。固定总额三千元，走平台 escrow，交流结束后由 Olivia 确认释放，不按小时算。形式是线上聊一次，一个小时到一个半小时，具体时间您定。问题清单这周内发您，先五到八个，集中在应用侧什么能成、一级市场怎么定价这两条主线上，每一条都带上她自己的 crypto 一线观察和具体问题，不是泛泛的趋势漫谈。您先看过问题，觉得有意思我们再敲时间；如果您对哪个方向更有感觉，也可以告诉我们，Olivia 可以把问题往那边调。",
+      "offer": {
+        "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前发送的问题清单（五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价两条主线，每一条带crypto一线观察）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提前将问题清单发给您，包含五到八个具体问题，集中在应用侧和一级市场定价，每一条带crypto一线观察，这周内发您",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "交流结束后确认释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架可以，固定总额、不按小时计费，这个对我来说没问题。问题清单发过来吧，我看完再定时间。线上一次一个到一个半小时也能接受，具体时间到时候再约。先这样。",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "好，那框架就算对齐了：固定总额三千元，走平台 escrow，交流结束后由 Olivia 确认释放，不按小时计费。线上聊一次，一个小时到一个半小时，时间等您看完问题清单后再定。问题清单这周内会给到您，五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价，每一条都带上她在 crypto 一线的观察。您看完如果觉得有感觉，我们再约具体时间；也想确认下，到时候是 Olivia 直接跟您线上聊，还是需要我做中间衔接？",
+      "offer": {
+        "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前发送的问题清单（五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价两条主线，每一条带crypto一线观察）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "这周内将问题清单发给您，包含五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价，每一条都带crypto一线观察",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "交流结束后，由Olivia确认通过平台escrow释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "可以，就按这个来。线上聊的话我直接跟 Olivia 聊就行，中间不用再绕一层——问题清单她直接发我，省得信息传递有损耗。我看了清单再定时间。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "好的，那就这样定：问题清单由 Olivia 直接发给您，不经过我中转，省掉信息损耗。框架按已对齐的执行——固定总额三千元，走平台 escrow，线上聊一次，时长一到一点五小时，交流结束后由 Olivia 确认释放，全程不按小时计费。等您看过清单、觉得问题有意思，我们就把具体时间约下来，同时把这份约定正式落实到合同条款里。清单 Olivia 这两天就会发给您。",
+      "offer": {
+        "subject": "系统聊一次 AI 创业和一级市场当下的判断",
+        "price": {
+          "cash": {
+            "amount": 3000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1-1.5小时"
+          },
+          "format": "线上",
+          "deliverables": [
+            "提前发送的问题清单（五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价两条主线，每一条带crypto一线观察）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "这两天将问题清单发给您，包含五到八个具体问题，集中在应用侧什么能成、一级市场怎么定价，每一条都带crypto一线观察",
+            "maps_to_resource": "olivia_case_input"
+          },
+          {
+            "party": "B",
+            "text": "交流结束后，由Olivia确认通过平台escrow释放款项",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "可以，就按这个来。问题清单到了我看了再约具体时间，到时候落合同没问题。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 9411,
+        "out": 4371,
+        "cache_hit": 7808,
+        "cache_miss": 1603,
+        "calls": 5
+      },
+      "sim": {
+        "in": 7559,
+        "out": 3448,
+        "cache_hit": 6144,
+        "cache_miss": 1415,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 4389,
+        "out": 7853,
+        "cache_hit": 2688,
+        "cache_miss": 1701,
+        "calls": 5
+      },
+      "judge": {
+        "in": 4131,
+        "out": 1413,
+        "cache_hit": 1536,
+        "cache_miss": 2595,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

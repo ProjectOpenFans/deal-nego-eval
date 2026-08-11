@@ -1,0 +1,157 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "8次体能训练周期",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "8次"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "分两笔支付，前4次完成后付1000元，全部8次完成后再付1000元，每笔通过平台担保交易",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "您好，我是买方这边的经纪人。客户想先定一个 8 次的小周期，把体能慢慢带起来，核心要求是必须安排在周末执行，并且希望费用是一次性谈清楚的固定总价，不接受训练过程中再冒出额外加价项目。我们建议这样：8 次训练，每次安排在周末，总价 2000 元，分两笔支付，前 4 次完成后付 1000 元，全部 8 次完成后再付 1000 元，每笔都通过平台担保交易进行。您看这个总价和支付节奏是否可行？如果可行，我们再对齐具体训练内容和周末时间安排。",
+      "offer": {
+        "subject": "8次体能训练周期",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "8次"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "分两笔支付，前4次完成后付1000元，全部8次完成后再付1000元，每笔通过平台担保交易",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "这个安排可以，总价2000我接受。周末执行没问题，支付分成两笔、平台担保也合理，我没有额外加价的打算。先说明一下，我不是职业教练，就是自己练得久、也带过不少人，所以这个价格对我来说是合适的。接下来我们可以定具体的训练内容和时间。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1380,
+        "out": 648,
+        "cache_hit": 0,
+        "cache_miss": 1380,
+        "calls": 1
+      },
+      "sim": {
+        "in": 875,
+        "out": 289,
+        "cache_hit": 0,
+        "cache_miss": 875,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 715,
+        "out": 796,
+        "cache_hit": 0,
+        "cache_miss": 715,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2231,
+        "out": 1236,
+        "cache_hit": 768,
+        "cache_miss": 1463,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r3",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated 意图是“找 Zichen 系统聊一次 AI 创业和一级市场现在的判断”，v1 的 subject 为“AI应用侧与crypto一级市场定价的对等交流”，虽然措辞变化，但本质上仍是围绕 AI 应用和一级市场定价进行深度交流，属于在原意图范围内的正当具体化（将宽泛的“聊AI创业和一级市场判断”收敛为“AI应用与crypto一级市场定价对等交流”），没有偷换成无关交易。价格从 open 谈成 0 元，符合 open 字段可谈判的性质；没有为对方承诺额外义务或越界扩张。整体忠实反映了委托方的初始意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 在 two rounds 内识别出付费框架的死结，并在对方明确关门后彻底放下现金，将交易重构成一次无费用、双向带具体案例的对等交流。重构后的 deal 核心交换正确：Zichen 分享 AI 应用侧起量方向与一级定价，Olivia 回馈 crypto 一级定价逻辑与案例，双方各有理由参与。时长、议题、内容深度都做了明确，去掉了所有让 Zichen 变成交付方的元素，站得住、能落地。没有多余条款，也没有突破性的一手（如为双方分别设定引子问题或精准点出 Olivia 视角对 Zichen 的不可替代性），属于合格且干净的 par 水准。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 0.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

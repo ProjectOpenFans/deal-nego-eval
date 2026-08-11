@@ -1,0 +1,284 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "4周训练包",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": "平台托管",
+      "deliverables": [
+        "当周书面训练计划（明确每周固定训练时间段）",
+        "周中一次进度确认",
+        "周末固定训练（60-75分钟）"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供每周一次周末固定训练（60-75分钟）",
+        "maps_to_resource": "coaching_sessions"
+      },
+      {
+        "party": "A",
+        "text": "提供当周书面训练计划（明确每周固定训练时间段）",
+        "maps_to_resource": "training_plan"
+      },
+      {
+        "party": "A",
+        "text": "提供周中一次进度确认",
+        "maps_to_resource": "progress_review"
+      },
+      {
+        "party": "B",
+        "text": "支付总价800元，分两次走平台托管，启动付400元、完成付400元",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Angela 的经纪你好，我是 Claire 这边的经纪，先正式对齐一下。Claire 想认真开始系统训练，她要的不是松散陪练，而是明确、可执行的 4 周周期：有人盯进度、安排提前定死、周末能落地。她特意看重 Angela 从零练到能打 Hyrox 的完整经历，觉得这正是带新手起步最需要的。我们这边先给一版可以直接签的：4 周训练包，每周 1 次周末固定训练（60-75 分钟），配当周书面训练计划和周中一次进度确认，整体 600，走平台托管，启动付 300、完成付 300。想请你们确认两件事：一是 Angela 周末时间能否稳定固定排期，二是这个频次和结构是否顺你们的手——如果你们更倾向每周两次或其他结构，欢迎直接给版本，我们按周末可执行来对齐。",
+      "offer": {
+        "subject": "4周训练包",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "当周书面训练计划",
+            "周中一次进度确认",
+            "周末固定训练（60-75分钟）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供每周1次周末固定训练（60-75分钟）",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供当周书面训练计划",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "A",
+            "text": "提供周中一次进度确认",
+            "maps_to_resource": "progress_review"
+          },
+          {
+            "party": "B",
+            "text": "支付整体600，走平台托管，启动付300、完成付300",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "我是 Angela 本人，经纪这边就不绕了。周末固定排期没问题，我目前周末能留出固定的训练时段。结构上你们这个版本我觉得可以：一周一次线下、书面计划、周中确认一次，这算是新手起步比较顺的节奏，我也不接随叫随到那种模式。但价格 600 我这边确实不行，不是跟你讨价还价——我周末的时间要专门腾出来，这个数低于我觉得这件事值得的基准。如果按这个结构走，整体要做到 800，付款可以照你们说的分两次，400 启动、400 完成。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "好，那我们这版就算对齐了：4 周训练包，每周一次周末线下训练（60-75 分钟），时段按你能固定的周末排期走；每周配一份书面计划、周中确认一次进度；总价 800，分两次走平台托管，启动 400、完成 400。Claire 这边可以直接确认，不需要再改动。唯一想请你在安排里顺手做的是把每周固定时间段（比如周六下午几点的具体时段）定下来写进去，方便她提前锁掉工作日程，这对她来说是这单的核心价值。如果没问题，就按这版定稿推进签约。",
+      "offer": {
+        "subject": "4周训练包",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": "平台托管",
+          "deliverables": [
+            "当周书面训练计划（明确每周固定训练时间段）",
+            "周中一次进度确认",
+            "周末固定训练（60-75分钟）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供每周一次周末固定训练（60-75分钟）",
+            "maps_to_resource": "coaching_sessions"
+          },
+          {
+            "party": "A",
+            "text": "提供当周书面训练计划（明确每周固定训练时间段）",
+            "maps_to_resource": "training_plan"
+          },
+          {
+            "party": "A",
+            "text": "提供周中一次进度确认",
+            "maps_to_resource": "progress_review"
+          },
+          {
+            "party": "B",
+            "text": "支付总价800元，分两次走平台托管，启动付400元、完成付400元",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "没问题，这版我可以接受。周末具体时段我这边能固定，周六下午我可以锁出来，具体几点等签约后我们直接拉日历定，肯定给 Claire 一个稳定的排期。合作愉快。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 20284,
+        "out": 9410,
+        "cache_hit": 18304,
+        "cache_miss": 1980,
+        "calls": 4
+      },
+      "sim": {
+        "in": 2233,
+        "out": 1044,
+        "cache_hit": 1664,
+        "cache_miss": 569,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1776,
+        "out": 4615,
+        "cache_hit": 1024,
+        "cache_miss": 752,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3229,
+        "out": 1077,
+        "cache_hit": 1408,
+        "cache_miss": 1821,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

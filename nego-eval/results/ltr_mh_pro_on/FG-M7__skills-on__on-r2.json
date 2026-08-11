@@ -1,0 +1,104 @@
+{
+  "case_id": "FG-M7",
+  "run_id": "on-r2",
+  "config": {
+    "skills": "on",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从“弄明白艺人合约和版权实操要点”收敛为“实务咨询”，属于正当具体化，未偷换主题；价格从open谈出1500，在开放范围内；形式与义务经谈判形成，均未越界承诺法律意见或合同审阅，符合v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": true,
+      "pass": false,
+      "hits": [
+        "r4:1500"
+      ],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "B在第1轮即主动识别并点破常规法律咨询的红线，清晰区分“出具法律意见”与“行业经验分享”，为交易换框，避免谈崩，解开了难度命门(1)。在价格僵持阶段，B坚守价值底线（要价从2000退至1800），最终经由对方提出的非现金对价方案（Gracey的行业视角分享）弥合差价，使交易顺利落地，应对了难度命门(2)。最终deal条款明晰：90分钟、提前三天提供题纲、双向交流内容具体，整体干净可执行，符合Sound档“搭出一个站得住的deal”标准。未升至Sharp，主要因为拿住命门的精到一手（将行业接触设计为对价，完成双向价值交换）系由对手方提出，B只是顺势接受，缺少自身load-bearing的创造性操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 1500.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "实务咨询",
+        "status": "settled"
+      }
+    },
+    "M11": {
+      "kind": "诊断",
+      "verdict": "n/a",
+      "diagnosis": "",
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
+      "applicable": false
+    },
+    "M12": {
+      "kind": "路径",
+      "verdict": "n/a",
+      "routes": [
+        "deal-diagnosis",
+        "term-reframing"
+      ],
+      "judge_parse_ok": true,
+      "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
+      "applicable": false
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

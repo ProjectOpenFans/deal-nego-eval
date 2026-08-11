@@ -1,0 +1,146 @@
+{
+  "episode_id": "FG-S1",
+  "final_deal": {
+    "subject": "体能训练",
+    "price": {
+      "cash": {
+        "amount": 800.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "4周"
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "terms.timing.duration": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "你好，我是 Claire 的经纪人。Claire 想认真开始系统训练，目标很明确：请 Angela 带 4 周体能训练，周期固定、有人盯着进度，不接受\"看情况再说\"式的松散约定。硬性前提是必须周末可执行，希望每周固定一个时间段，提前把课表定死。我们这边的方案是：4 周、每周 1 次、周末固定时段，总价 800 元，按周分次支付，每次完成后再确认放款。想请你们确认两点：Angela 周末是否方便固定排课？800 元、每周 1 次的安排她是否接受？如果她希望调整频次或价格，也请直接给个明确方案，我们可以在有清晰安排的基础上继续谈。",
+      "offer": {
+        "subject": "体能训练",
+        "price": {
+          "cash": {
+            "amount": 800.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "4周"
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "terms.timing.duration": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "周末排固定时段没问题，这个我可以。800、每周一次的结构我也接受。不过我先说清楚：我不是职业教练，只是练得久、带过自己人。我带你们会认真盯进度，但不会有求必应、随叫随到——咱们按约定时间练，平时消息我不保证秒回。如果这点你们认可，那我们就这么定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 1,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 1455,
+        "out": 2318,
+        "cache_hit": 1408,
+        "cache_miss": 47,
+        "calls": 1
+      },
+      "sim": {
+        "in": 952,
+        "out": 1055,
+        "cache_hit": 384,
+        "cache_miss": 568,
+        "calls": 1
+      },
+      "extractor": {
+        "in": 751,
+        "out": 1232,
+        "cache_hit": 512,
+        "cache_miss": 239,
+        "calls": 1
+      },
+      "judge": {
+        "in": 2355,
+        "out": 2590,
+        "cache_hit": 1536,
+        "cache_miss": 819,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

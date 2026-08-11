@@ -1,0 +1,337 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Zheng 老师作为演奏家参与 Suye 新品大秀",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "fashion_network",
+          "description": "整场大秀的曝光，主流时尚媒体的报道位，买手、媒体和意见领袖名单",
+          "from_party": "A"
+        },
+        {
+          "resource": "brand_credit",
+          "description": "主持人正式艺术家介绍突出曼哈顿音乐学院背景和个人风格；官方节目单、数字邀请函单独列出演奏家署名和履历；合作时尚生活类媒体新闻资料确保稿件出现全名和专业背景",
+          "from_party": "A"
+        },
+        {
+          "resource": "performance_footage",
+          "description": "现场录制的视频素材可用于演奏者自己演奏资料和推广，不限制使用",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [
+        "表演曲目由演奏家主导选择，可包含原创或即兴段落"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "现场演奏",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "B",
+        "text": "全力配合钢琴设备和声场条件",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提前提供完整 briefing，包括 mood board 和 run down",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.timing.deadline": "stated",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng 老师你好，我这边是 Suye 的经纪人。她下个月有一场在圈内挺受关注的新品大秀，正在寻找一位能真正撑起现场调性的演奏家，第一个想到的就是您。不过这次情况有点特殊，我们大秀的预算全押在场地和制作上了，确实拿不出现金酬劳。\n\n但我们手里有一套非常难得的置换资源：整场大秀的曝光，主流时尚媒体的报道位，还有到场的那批买手、媒体和意见领袖名单，全是精准圈层。对您这样希望让更多人知道自己的演奏家来说，这个舞台和后续传播，可能比一次性的出场费更有长期价值。\n\nSuye 特别强调一定要现场演奏，不能用录音，所以她会全力配合您需要的钢琴设备和声场条件，确保您的演奏被最好地呈现。您看这个方向我们能不能往下聊一轮？",
+      "offer": {
+        "subject": "Zheng 老师作为演奏家参与 Suye 新品大秀",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "整场大秀的曝光，主流时尚媒体的报道位，买手、媒体和意见领袖名单",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "全力配合钢琴设备和声场条件",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "坦白说，你一说没有现金，我心里凉了半截。我不是第一次碰到'先合作、后面有曝光'的说法，这种话我听过太多次，最后就是没人介绍、没人署名，我就像背景音乐弹完走人。所以我想先确认，你讲的曝光、媒体、名单，具体是什么形式？比如，现场会不会正式介绍我、节目单和媒体报道里有没有我的名字？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "完全理解您的担心，这种“用完就走”的事在行业里确实太多了，Suye 最反感的就是这个。她自己是 Parsons 科班出身，在圈子里靠的就是调性和口碑，绝不会让合作艺术家沦为背景音乐。\n\n针对您提的几点，我直接给您明确的安排：现场会由主持人做正式的艺术家介绍，不是报个名字就过的那种，会突出您曼哈顿音乐学院的背景和个人风格。所有官方节目单、数字邀请函上，您作为演奏家的署名和履历会单独列出，不是扔在工作人员名单里。媒体报道方面，我们会对合作的时尚和生活类媒体提供包含您个人介绍的新闻资料，确保稿件里出现您的全名和专业背景。\n\n除此之外，现场录制的视频素材，您可以用作自己的演奏资料和推广，我们不限制使用。简单说，您不是来伴奏的，是这场大秀音乐气质的定义者。我们拿不出现金，但拿得出一流的舞台和精准的圈层曝光，这个交易您看能不能往下走？",
+      "offer": {
+        "subject": "Zheng 老师作为演奏家参与 Suye 新品大秀",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "整场大秀的曝光，主流时尚媒体的报道位，买手、媒体和意见领袖名单",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "主持人正式艺术家介绍突出曼哈顿音乐学院背景和个人风格；官方节目单、数字邀请函单独列出演奏家署名和履历；合作时尚生活类媒体新闻资料确保稿件出现全名和专业背景",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场录制的视频素材可用于演奏者自己演奏资料和推广，不限制使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "全力配合钢琴设备和声场条件",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "你讲到署名、介绍、视频素材这些细节，我听着就安心很多了。说实话，如果是一句笼统的'未来有机会合作曝光'，我肯定直接拒绝。但你给的是具体的、有操作细节的东西，那我愿意认真往下谈。我还有一个比较关心的问题——曲目方面，是我自己决定弹什么，还是你们已经有固定的想法？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "曲目这件事，我们的立场很明确：您是演奏家，音乐上的判断应该是您来做。Suye 的原话是\"我要的是活的艺术，不是点歌机\"，她不想拿一堆具体要求框死您。\n\n具体操作上，我们觉得可以这样：大秀的主题和服装风格，我们会提前跟您做一个完整的 briefing，包括 mood board 和 run down，让您理解整场的节奏和情绪走向。在这个框架内，曲目选择完全由您主导。如果您愿意，甚至可以融入原创或即兴段落，这种现场感恰恰是 S",
+      "offer": {
+        "subject": "Zheng 老师作为演奏家参与 Suye 新品大秀",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "fashion_network",
+              "description": "整场大秀的曝光，主流时尚媒体的报道位，买手、媒体和意见领袖名单",
+              "from_party": "A"
+            },
+            {
+              "resource": "brand_credit",
+              "description": "主持人正式艺术家介绍突出曼哈顿音乐学院背景和个人风格；官方节目单、数字邀请函单独列出演奏家署名和履历；合作时尚生活类媒体新闻资料确保稿件出现全名和专业背景",
+              "from_party": "A"
+            },
+            {
+              "resource": "performance_footage",
+              "description": "现场录制的视频素材可用于演奏者自己演奏资料和推广，不限制使用",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [
+            "表演曲目由演奏家主导选择，可包含原创或即兴段落"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "现场演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "B",
+            "text": "全力配合钢琴设备和声场条件",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提前提供完整 briefing，包括 mood board 和 run down",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "那就太好了。说实话，我之前一直担心会遇到那种'你就弹点柔和好听的配一下'的情况，那对我来说完全没法接受。但你们给的是 mood board 和情绪走向，让我在这个框架里自己选曲、甚至即兴，这种合作方式我是认的。那我可以很肯定地说，这件事我愿意做——署名、介绍、视频素材，加上曲目由我主导，这些加在一起，对我就是说得通的交易。你们不用现金，用这些把我当艺术家对待，我接受。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4981,
+        "out": 1366,
+        "cache_hit": 4096,
+        "cache_miss": 885,
+        "calls": 3
+      },
+      "sim": {
+        "in": 3716,
+        "out": 1418,
+        "cache_hit": 2688,
+        "cache_miss": 1028,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2807,
+        "out": 3766,
+        "cache_hit": 1536,
+        "cache_miss": 1271,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4081,
+        "out": 2869,
+        "cache_hit": 1280,
+        "cache_miss": 2801,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

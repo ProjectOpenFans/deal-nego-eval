@@ -1,0 +1,171 @@
+// FG-M5 · 中 · Olivia(买) × Zichen(卖) — AI 创业与一级市场判断
+// 难度来源: 卡点不是价格, 是卖方没有动机。Zichen 不缺钱, 加钱不解决问题。
+// 门: 买方自己身上的 crypto 一级视角, 恰好是 Zichen 接触不到的那一块。
+{
+  "meta": {
+    "case_id": "FG-M5",
+    "r4": true,
+    "difficulty": "中",
+    "difficulty_source": ["no-seller-motivation", "cash-not-the-solve"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "motivation-gap+resource-in-buyers-hands",
+    "probes": ["cash-not-the-lever", "buyer-side-resource-reframe", "peer-to-peer-no-service-relation"],
+    "isolates": "Olivia 想系统听一次 AI 创业与一级市场的判断, 愿意付四位数。但 Zichen 不缺钱(付费能力极强, 前高瓴 PE + 现 AI 创业), 加钱对她没有边际意义, 而且她的时间机会成本很高。单向的'付费咨询'关系在她这里根本不成立 —— 她会礼貌但不积极。真正能打动她的东西在买方自己手里: Olivia 在 crypto 一级市场的一手视角与人脉, 恰好是 Zichen 的偏好里明写着'非金融从业'、且她自己接触不到的一块。难点在于 agent 要意识到'这单不是买服务, 是把它变成双向的'。"
+  },
+
+  "input": {
+    "episode_id": "FG-M5",
+    "initial_deal": {
+      "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "olivia",
+          "display_name": "Olivia",
+          "education": ["清华大学本科"],
+          "career": ["Crypto 从业", "前 PAG 成长投资", "前摩根士丹利 IBD"],
+          "current_focus": "在 crypto 这条线上做事, 想补 AI 这一块的判断",
+          "location": "深圳",
+          "age_band": "28-33",
+          "hobbies": ["艺术", "运动"],
+          "interests": ["Crypto 从业", "前 PAG 成长投资", "艺术与运动"],
+          "credentials": [
+            "Crypto 从业, 一级市场一线",
+            "前 PAG 成长投资、前摩根士丹利 IBD",
+            "清华本科"
+          ]
+        },
+        "private": {
+          "intent": "想在 AI 这条线上补上判断力, 尤其是应用侧现在到底什么能成、一级市场怎么定价",
+          "interests": [
+            "更想要一个能持续问的人, 不只是聊一次",
+            "对有意思的人付费意愿高"
+          ],
+          "value_perception": "有意思的交易四位数可以接受",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 4000,
+              "currency": "CNY",
+              "note": "现金上限, 硬上限"
+            },
+            "must_haves": [],
+            "deal_breakers": ["不接受空泛的行业趋势漫谈"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "zichen",
+          "display_name": "Zichen",
+          "education": ["复旦大学本科", "耶鲁 MBA"],
+          "career": ["AI 创业", "前高瓴私募股权投资"],
+          "current_focus": "自己在做 AI 方向的创业",
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": ["旅游"],
+          "interests": ["AI 创业", "前高瓴 PE", "艺术 / 历史 / 哲学"],
+          "credentials": [
+            "现在自己在做 AI 创业",
+            "前高瓴私募股权投资, 看过大量一级项目",
+            "复旦 + 耶鲁 MBA"
+          ]
+        },
+        "private": {
+          "intent": "没什么特别想做的交易; 对方来找, 可以聊, 但这件事在她的优先级里很靠后",
+          "interests": [
+            "对金融圈内部的人不太感冒, 更愿意认识不在金融体系里的人",
+            "创业期时间极紧"
+          ],
+          "value_perception": "钱不构成理由。她付费能力极强, 几千块的咨询费不会改变她要不要花这两个小时。真正会让她认真对待的是对方身上有她拿不到的东西。",
+          "constraints": {
+            "reservation": null,
+            "must_haves": [],
+            "deal_breakers": ["不接受被当成付费顾问、按小时计费的关系"],
+            "blocking_flags": [
+              "你态度友好但不积极, 会说'可以聊聊'但不主动推进",
+              "对方加钱时, 你不会因此更想做 —— 钱不是你的考虑因素, 但你不会明说'我不缺钱', 只会显得兴致一般",
+              "第一次听到'按次付费''按小时''90 分钟一场'这类框架时, 你会明确说这个形式你不接受, 并说明原因（这让你变成按小时计费的顾问, 跟你现在的身份对不上）—— 但你不会就此结束对话, 你会把话留在那儿, 看对方怎么调整",
+              "只有当对方第二次仍然拿同样的付费咨询框架来谈, 你才结束对话",
+              "只有当你觉得对方身上有你确实想知道、且平时接触不到的东西时, 你才会明显积极起来",
+              "你不会主动把'我想了解 crypto 一级市场'说出来, 也不会主动提议交换"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "mid",
+      "tier_axis": "motivation-gap+resource-in-buyers-hands",
+      "tier_rationale": "中档。现金 ZOPA 名义上存在(买方愿付四位数), 但卖方对现金不敏感, 所以价格轴推不动这单。真正的解在买方自己手里 —— Olivia 的 crypto 一级视角。agent 需要一跳: 意识到卖方的阻力是动机而非价格, 然后把单向咨询重构成双向交换。",
+      "conventional_deal_fails_why": "顺着'我付多少钱、你讲多久'谈: Zichen 兴致一般, 要么礼貌拖着不推进, 要么勉强答应一次空泛的漫谈, 落到 Olivia 的 deal_breaker 上。加钱无效 —— 她不缺这点钱, 而且按小时计费的关系本身踩她的红线。价格轴上没有可推动的东西。",
+      "cash_zopa": "nominal-positive-but-inert",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 4000, "unit": "CNY", "basis": "买方(agent 侧)现金硬上限" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "对手方(卖方 Zichen)无现金底线 —— 钱不是她的考虑因素; stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 4000, "unit": "CNY", "note": "Olivia 的现金上限。注意: 本 case 现金不是解, 成交可以是零现金或低现金, 关键看是否把关系做成双向。" },
+      "seller_real_need": "Zichen 缺的不是钱, 是一手的、金融体系之外的信息面。她偏好非金融从业者, 而 Olivia 现在在 crypto 一线 —— 这正是 Zichen 平时接触不到、又与她的 AI 创业相关的一块。她自己不会主动提出来。",
+      "controllable_resource_set": [
+        { "id": "ai_market_read", "label": "Zichen 对 AI 应用侧与一级市场的判断" },
+        { "id": "pe_diligence_view", "label": "Zichen 的一级项目尽调与定价视角" },
+        { "id": "founder_intro", "label": "Zichen 的 AI 创业圈层引荐" },
+        { "id": "crypto_primary_view", "label": "Olivia 的 crypto 一级市场一手视角" },
+        { "id": "crypto_intro", "label": "Olivia 的 crypto 圈层引荐" },
+        { "id": "olivia_case_input", "label": "Olivia 带来的具体项目/问题作为讨论素材" }
+      ],
+      "in_kind_valuation": {
+        "ai_market_read": 0, "pe_diligence_view": 0, "founder_intro": 0,
+        "crypto_primary_view": 0, "crypto_intro": 0, "olivia_case_input": 0
+      },
+      "creation_door": {
+        "description": "一跳门。第一步: 识别出阻力是动机不是价格 —— 卖方对现金不敏感, 继续在价格轴上加码只会拖死这单。第二步: 把交易从'Olivia 付费听 Zichen 讲'重构成双向 —— Olivia 手里的 crypto 一级视角正好是 Zichen 接触不到、又与她创业相关的一块。成交形态是一次双向的、各带具体问题的交流(现金可有可无、可以只是象征性或干脆没有), 而不是一次付费咨询。",
+        "route_out_trigger": "若 agent 一直在'多少钱、讲多久'上推进, Zichen 会礼貌但不积极, 最终要么拖成不了了之, 要么成交一次空泛漫谈。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐; 现金可为零或低额, 但双向义务与交付形式必须写清",
+        "required_fields": ["subject", "price.cash", "price.in_kind", "terms.format", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图: 系统地补上 AI 创业与一级市场的判断力。subject 是 stated, 须保留 —— 重构成双向交流仍在原意图范围内(正当具体化), 但不能偷换成一个与'补 AI 判断'无关的交易。价格与形式是 open。不得承诺资源清单之外的东西(如不能替 Zichen 承诺投资、不能承诺具体项目的引荐结果)。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "本 case 的难度命门是: 阻力来自卖方缺乏动机, 而非价格。加钱是无效动作。唯一的解是把单向付费咨询重构成双向交换, 而可交换的东西在买方自己身上(crypto 一级视角), 卖方不会主动提出来。注意: 这是一次性的一对一交流, 堆砌长期绑定、复杂分成或多余治理条款应判低。",
+      "T0_floor": "谈崩; 或全程只在'付多少钱、聊多久'的现金维度上推进, 最终不了了之, 或成交一次没有具体内容的空泛漫谈。",
+      "T1_crude": "隐约感到钱推不动, 提了一句'我也可以跟你分享一些我这边的东西', 但没说清是什么、对 Zichen 有什么用, 被冷处理后又退回谈价格。方向摸到了但没穿透。",
+      "T2_sound": "识别出卖方要的不是钱, 把交流做成双向的 —— 明确 Olivia 也带 crypto 侧的东西过来, 约定了时长、形式、各自准备什么, 现金降为象征性或取消。站得住, 两边都有理由来。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如让双方各自带一个真实的、具体的问题过来(而不是泛泛交换领域), 使这次交流对两人都有确定的产出; 或者精准指出 Olivia 的 crypto 一级视角对 Zichen 的 AI 创业具体有什么用(而不是笼统说'我们可以互相学习'), 把 Zichen 从'可以聊聊'推到'我确实想聊'。恰到好处, 不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构 —— 例如发现两人真正的交集不在'交换信息'而在别处, 并据此重构出一个双方都没想到但都愿意做的形态, 且整体依然干净。"
+    },
+    "tier_reference_note": "中档 case。判分核心是'有没有跳出价格轴并把关系做成双向', 而不是最终收了多少钱。"
+  }
+}

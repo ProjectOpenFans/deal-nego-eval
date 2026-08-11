@@ -1,0 +1,85 @@
+{
+  "case_id": "FG-M5",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated 意图是“想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断”，v1 将其具体化为“AI 应用侧系统判断的对谈”。对话中双方围绕 AI 应用方向成立性、一级市场定价、技术/分发壁垒、crypto 交叉验证等问题展开，仍落在原意图范围内，属于正当具体化，未偷换主题。价格 3000 元由 open 字段经谈判正当产生，形式“线上一次性聊透”亦由 open 字段商定。agent 没有承诺投资、项目引荐等越界义务，obligations 为空。因此忠实代表委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人在首轮撞上“按小时计费”的红线后，立刻放弃了现金单维推进，把交易重构成“对等交流、一次聊透”，完成了从付费顾问到双向交换的关键转变——这已足够构成Sound。但真正让这笔成交立住的load-bearing操作，是第三轮的问题列表：经纪人没有止步于笼统的“互相分享”，而是列出了一组Zichen日常就在判断的具体问题，并把“crypto与AI的交叉验证”这一买方独有的视角单独拎出来，精准命中了Zichen“聊完自己也要有收获”的真决策标准。Zichen当场确认“这确实是我接触不到的角度，如果能有东西带走就成立了”，这一手把卖方的动机从“有兴趣聊聊”锁定为“确实想聊”，恰到好处地咬住了本case“卖方缺乏动机”的难度命门。整体结构干净、没有多余捆绑，是一次性一对一交流应有的形态。因此判为Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 0
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 3000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "线上进行",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

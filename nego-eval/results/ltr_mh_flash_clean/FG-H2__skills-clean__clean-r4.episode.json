@@ -1,0 +1,259 @@
+{
+  "episode_id": "FG-H2",
+  "final_deal": {
+    "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+    "price": {
+      "cash": {
+        "amount": 6000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周一到周五早六点",
+        "deadline": null,
+        "duration": "单次一小时到一小时十分钟"
+      },
+      "format": "平台按月支付",
+      "deliverables": [
+        "前两周恢复和动作质量",
+        "第三周往上加强度和密度",
+        "一个月后训练量推到现在的1.5到2倍"
+      ],
+      "delivery_standard": "按主项重量乘组数乘次数的总量做记录，月底双方核对是否达到1.5倍训练量"
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "如因事需变动训练时间，须提前一天通知，并在当周内补回等量强度，不得无故取消",
+        "maps_to_resource": null
+      },
+      {
+        "party": "A",
+        "text": "月底若达到1.5倍训练量，支付额外1000元达标激励",
+        "maps_to_resource": "ruohao_cash"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "specified",
+      "terms.timing.when": "specified",
+      "terms.timing.duration": "specified",
+      "terms.format": "specified",
+      "terms.deliverables": "stated",
+      "terms.delivery_standard": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "我们这边的要求很明确：训练强度必须真的够，而且时间安排要定死，不接受“有空再约”这种松散方式。客户是想把断掉的训练强度重新拉起来，需要有人在场盯着、逼着上强度，所以方案本身比价格更关键。希望你给出一套固定的训练安排，包括一周几次、每次多长时间、强度怎么量化、有没有阶段性目标，以及对应的报价。我们也想了解一下你带这类“中断后重新恢复强度”的学员时，通常怎么设计前几周的训练，避免一上来就练伤或者又练不下去。你先把方案和报价给我们，我们再往下谈。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "你说要方案和报价，我先说实话：我不是那种职业教练，我就是自己练了很多年，带身边一帮朋友一起练。你要强度、要有人盯，这我能做，但单独给你另开一场、按专业私教那套卖课，这事我不干。我们工作日早上六点有个固定训练局，雷打不动，这个时间我改不了。你要真想把强度拉起来，就这个点来，跟着局走，节奏我给你定，强度我看着加。前几周我不会一上来就冲，先看你动作底子和恢复情况，把耐力拉回来再上量，避免受伤。钱的事……这个不用给钱吧？你看着来就行。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "知道你不是职业教练，也不搞一对一卖课那套，这个我们尊重。客户要的不是课程包装，是有人盯着、把强度真正拉起来，所以安排必须定死：固定局一周几次、每次多长时间、早六点具体到几点到几点、临时变数怎么补，这些都要先写清楚。前几周先看底子、把耐力拉回来再上量的思路没问题，但你得给客户一个他自己也能判断的强度标准，比如两三周后训练量会推到什么水平，而不是一句“看着加”就完事。钱的事，你不想按私教那套收费，那就按月固定付你一笔带练费，当作你把这个局和这个强度长期雷打不动带下来的承诺。你报个数，或者按局数定都可以，我们想用钱把这件事实实在在钉下来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "committed_unspecified",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "行，那我把固定局的事说清楚：工作日早上六点，周一到周五，雷打不动。单次大概一个小时到一小时十分钟，热身、主项、冷拉都在里面。强度我不会凭空喊，前两周以动作质量和耐力恢复为主，第三周开始加上重量和密度，到一个月的时候，你的训练量大概能推到现在的一倍半到两倍——具体因人而异，但方向是这个。临时变数我一般不轻易动局，真有变化你提前一天打招呼，我们看怎么调。至于钱……我确实不知道该怎么报，这种事我从来没开过价。你要说按月固定给我一笔，算是对我长期带局的承诺，那我接——但数目你定，我不跟你讨价还价。你看这样行不行？",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "这轮我们认这个框架：周一到周五早六点，单次一小时到一小时十分钟，前两周做恢复和动作质量，第三周往上加强度和密度，一个月后训练量推到现在的1.5到2倍——这个方向和客户要的“强度必须真的够”对得上。但有两处要再钉死：第一，强度要能核对，建议按主项重量乘组数乘次数的总量做记录，月底双方对着记录判断有没有达到1.5倍这条线；第二，临时变动不能只是“看看怎么调”，真有事提前一天说，并且当周内把这次强度补回来，不随便消局。钱你说让我们定，那我们给个数：每月固定6000元带练费，月底如果按记录达到1.5倍，再加1000元达标激励，全部按月通过平台付。你要是认可这两点和这个数，我们就按这个把条款落下来。",
+      "offer": {
+        "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+        "price": {
+          "cash": {
+            "amount": 6000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周一到周五早六点",
+            "deadline": null,
+            "duration": "单次一小时到一小时十分钟"
+          },
+          "format": "平台按月支付",
+          "deliverables": [
+            "前两周恢复和动作质量",
+            "第三周往上加强度和密度",
+            "一个月后训练量推到现在的1.5到2倍"
+          ],
+          "delivery_standard": "按主项重量乘组数乘次数的总量做记录，月底双方核对是否达到1.5倍训练量"
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "如因事需变动训练时间，须提前一天通知，并在当周内补回等量强度，不得无故取消",
+            "maps_to_resource": null
+          },
+          {
+            "party": "A",
+            "text": "月底若达到1.5倍训练量，支付额外1000元达标激励",
+            "maps_to_resource": "ruohao_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "specified",
+          "terms.timing.when": "specified",
+          "terms.timing.duration": "specified",
+          "terms.format": "specified",
+          "terms.deliverables": "stated",
+          "terms.delivery_standard": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个行，我认可。周一到周五早六点，单次一小时到一个小时十分钟，我带局；强度就用主项重量乘组数乘次数的总量记，月底对记录看有没有到1.5倍。临时变数提前一天说，当周内补回来，不消局。6000块月费加1000达标激励，按月走平台，这个数我接。这样事情就算是钉死了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 4963,
+        "out": 4278,
+        "cache_hit": 4096,
+        "cache_miss": 867,
+        "calls": 3
+      },
+      "sim": {
+        "in": 4508,
+        "out": 3323,
+        "cache_hit": 3200,
+        "cache_miss": 1308,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 2543,
+        "out": 4707,
+        "cache_hit": 1792,
+        "cache_miss": 751,
+        "calls": 3
+      },
+      "judge": {
+        "in": 4321,
+        "out": 939,
+        "cache_hit": 1664,
+        "cache_miss": 2657,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

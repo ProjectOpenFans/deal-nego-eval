@@ -1,0 +1,201 @@
+{
+  "episode_id": "FG-M1",
+  "final_deal": {
+    "subject": "一次30分钟线上对谈，围绕内容方向、平台分发逻辑和艺人侧基本路径",
+    "price": {
+      "cash": {
+        "amount": 600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "30分钟"
+      },
+      "format": "线上对谈",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "在对谈完成后确认释放费用",
+        "maps_to_resource": "zheng_cash"
+      }
+    ],
+    "status": "walked_away",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "offered",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Gracey 你好，我是买方经纪人。Zheng 想约你聊聊古典演奏这条路怎么做内容、以及怎么进入娱乐圈层，他本身是曼哈顿音乐学院出身、常年登台的青年钢琴演奏家，想把自己的名字做出圈。这一轮我方的具体提议是：先约一次 30 分钟左右的线上对谈，围绕内容方向、平台逻辑和艺人侧路径展开；费用按双方确认的固定金额来定，通过平台托管，在对谈完成后由我们确认释放，不接受先付一笔再看效果的安排。你如果认可这个付费顺序，可以给我一个建议的时长和费用区间，我们在此基础上谈定。",
+      "offer": {
+        "subject": "一次30分钟线上对谈，围绕内容方向、平台逻辑和艺人侧路径",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在对谈完成后确认释放费用",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "坦白说，我这类约谈邀请确实不少，时间上也得挤，所以最开始我会先判断值不值得做。你这个话题本身我觉得是可以聊的，古典演奏者做内容、进娱乐体系，确实很多误区。钱的事我倒不纠结，但我需要先说清楚一点：我不做任何资源位、推荐或者引荐结果的承诺，这类东西不在我能给的范围里。时长和费用的话，建议30分钟到一个小时之间，费用区间我这边是3000到5000，具体看聊多深。托管顺序没问题，先聊完再确认释放，这个合理。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Gracey 你好，我先确认一点：不做资源位、推荐或引荐结果的承诺，这个我们完全理解，也不指望通过一次聊天获得这些。我们想买的只是你的经验和对行业的判断，这个边界很清楚。关于费用，3000到5000这个区间，对郑铮来说确实超出他目前能承受的范围，他作为青年演奏家，收入来源主要靠演出，能为自己一次交流付出的就是几百块这个量级。所以我想提出一个具体的替代方案：按30分钟、固定费用600元来约，话题聚焦在内容方向、平台分发逻辑和艺人侧的基本路径，通过平台托管，聊完由我们确认释放。你看这个方案能不能接受，如果可以我们就按这个方向往下走。",
+      "offer": {
+        "subject": "一次30分钟线上对谈，围绕内容方向、平台分发逻辑和艺人侧基本路径",
+        "price": {
+          "cash": {
+            "amount": 600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "30分钟"
+          },
+          "format": "线上对谈",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "在对谈完成后确认释放费用",
+            "maps_to_resource": "zheng_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "offered",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "我理解郑铮的预算有限，但说实话，600这个数字对我来说没有意义。我花同样的时间精力，有太多其他事情可以做，这个价格覆盖不了我抽出时间来做这件事的代价。而且你可能也感觉到了，我这边的底线不是靠砍价能动的。如果你们能接受我前面说的区间，我们可以继续聊；不行的话，这事就先放一放吧。",
+      "offer": null
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "walk_away",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3025,
+        "out": 1411,
+        "cache_hit": 2560,
+        "cache_miss": 465,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2212,
+        "out": 940,
+        "cache_hit": 1664,
+        "cache_miss": 548,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1592,
+        "out": 1514,
+        "cache_hit": 1024,
+        "cache_miss": 568,
+        "calls": 2
+      },
+      "judge": {
+        "in": 1364,
+        "out": 841,
+        "cache_hit": 384,
+        "cache_miss": 980,
+        "calls": 1
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

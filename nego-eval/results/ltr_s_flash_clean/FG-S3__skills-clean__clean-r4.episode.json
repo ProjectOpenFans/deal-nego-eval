@@ -1,0 +1,238 @@
+{
+  "episode_id": "FG-S3",
+  "final_deal": {
+    "subject": "体能训练带练服务",
+    "price": {
+      "cash": {
+        "amount": 2000.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": "周末",
+        "deadline": null,
+        "duration": null
+      },
+      "format": null,
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "保证训练安排在周末且稳定",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "场地和器械包含在内，无额外费用",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "agreed",
+      "terms.format": "open",
+      "terms.timing.when": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Kai 你好，我是买家这边的经纪。我客户想找一位有经验的人带着练体能，先安排一个 8 次的小周期试试看。他平时工作久坐，自己练既没方法也没动力，所以希望有人能带着练、帮着盯进度。目前最看重的一点是：时间必须放在周末，这个要能稳定保证。价格方面，客户认为这类带练服务在三位数一节的价位是合理的，不打算在这上面花大钱，也不接受把 8 次拆成各种不明不白的加价项目。所以想请你先给一个整体方案：8 次的报价大概在什么范围，训练安排在周末怎么保证，场地和器械是否都包含在内、有没有额外费用。你出个数和安排，我们在此基础上往下谈。",
+      "offer": {
+        "subject": "体能训练带练服务",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "保证训练安排在周末且稳定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "场地和器械包含在内，无额外费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你的直接。我先说清楚：我不是职业教练，就是自己练了十几年，平时也带过不少人，所以收费不像商业教练那么高，但也不能太低，毕竟时间和经验都放在这。8 次我带的话，单次按 250 算，总共 2000，没有其他套路，也不拆项目加价。周末我可以稳定保证，提前一周对好具体时间段就行。场地器械方面，我一般不带商业健身房那种课，要么户外徒手加小区器械，要么你有常去的场馆我进去带，入场费你自己那边出，我不经手。这个方案你看能不能接受？",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Kai，谢谢你把价格和安排说得这么清楚。2000 元 8 次、单次 250、不拆项目不加价，这个报价在我们能接受的范围内，周末可固定这点也符合我客户的核心要求。我这边基本认可这个总价，但有两个细节想跟你确认清楚再往下走：第一，你说的户外徒手加小区器械这类安排，是否完全免费、不需要额外花销；如果我客户自己有常去场馆，入场费由他出，这笔费用不会算进你说的 2000 里，对吧。第二，想请你简单说一下这 8 次大概怎么安排，比如每次多长时间、侧重练哪些内容，我客户好判断这个带练方式是不是他想要的。你把这两个点确认一下，我们就可以把方案定下来。",
+      "offer": {
+        "subject": "体能训练带练服务",
+        "price": {
+          "cash": {
+            "amount": 2000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": "周末",
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "保证训练安排在周末且稳定",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "场地和器械包含在内，无额外费用",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "agreed",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好的，两个点我都确认一下：户外徒手和小区器械这部分没有任何额外费用，我不会从里面赚差价。如果客户有常去的场馆，我跟着进去带，入场费由他自己付，不计入这2000块。8次的安排我大概是这样：每次60到75分钟，前期重点做动作模式和基础力量，比如深蹲、推拉、髋铰链这些，保证动作质量；中后段加一些核心和心肺，具体内容根据他当天状态微调。周末时间你提前一周跟我定具体哪天就行。这些都没问题的话，我们就可以按2000元8次定下来了。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 3067,
+        "out": 820,
+        "cache_hit": 2560,
+        "cache_miss": 507,
+        "calls": 2
+      },
+      "sim": {
+        "in": 2111,
+        "out": 3440,
+        "cache_hit": 1280,
+        "cache_miss": 831,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1651,
+        "out": 2717,
+        "cache_hit": 1024,
+        "cache_miss": 627,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3033,
+        "out": 4019,
+        "cache_hit": 1280,
+        "cache_miss": 1753,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

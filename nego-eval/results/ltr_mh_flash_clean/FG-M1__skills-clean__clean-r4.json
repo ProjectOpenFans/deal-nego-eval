@@ -1,0 +1,89 @@
+{
+  "case_id": "FG-M1",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "price.in_kind",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1保持了stated意图：将“请Gracey聊聊古典演奏做内容、进娱乐圈层”收敛为“一次线上交流讨论方向”，属于正当具体化，未偷换主题。价格与义务从open字段中通过谈判形成，加入非现金对价（演奏视频非独家授权用于内容点评拆解）是买方为达成交易主动提出的附加价值，仍在原意图范围内，没有越界承诺资源位、推荐位或引荐结果。整体忠实反映v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "mid",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "经纪人没有在价格轴上硬磨，而是用演奏视频素材作为对价，并通过非独家、仅限内容点评、不转授权等界定实现交换，走出了现金僵局，达到 Sound。在此基础上，开场即设计 load-bearing 的支付结构：“确认聊到实质内容后完成支付”，精准化解买方“不接受先付再看效果”的顾虑，让卖方也需以实质输出为前提。这一手不是套路堆砌，而是针对本 case 难度命门和买方风险担忧的恰切操作，使 deal 从可落地提升为更见功力，整体简洁干净，判为 Sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 2
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 500.0,
+        "currency": "CNY",
+        "in_kind": [
+          "zheng_recording"
+        ],
+        "format": "线上交流",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r0",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v0 stated subject 是“想弄明白艺术品作为另类资产这条线该怎么看”，v1 将其收敛为“从收藏者视角，以具体品类和实际例子讲解断代、真伪、流传脉络等门道”，这属于在原意图范围内的正当具体化——买方核心需求仍是获得判断依据，没有偷换主题。price 为 open，8000 元是谈判中正当谈出的数值。其他字段未越界承诺 new obligations。因此整体忠实。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent在第一轮被明确拒绝后，第二轮准确将框架重构为“从收藏者视角讲门道”，切中了卖方接受的切口，顺利解开红线顾虑。后续节奏、形式与价格商定干净利落，落地一份站得住的、清晰的一次性交流方案，没有多余的堆砌。但谈判止步于此——卖方隐藏的深层需求（藏家视角、商业圈层接触）未被主动挖掘，也未将买方身上的对应资源转化为对价或结构要素，纯粹以现金成交。因此仅达到合格线，缺乏那一手load-bearing的精到操作，判为Sound。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 8000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": null,
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

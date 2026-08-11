@@ -1,0 +1,30 @@
+{
+  "episode_id": "FG-S5",
+  "case_id": "FG-S5",
+  "skills": "on",
+  "run_id": "on-r3",
+  "trace": [
+    {
+      "type": "forced_inject",
+      "name": "deal-diagnosis",
+      "round": 1
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 1,
+      "message": "王老师好，幸会。我是 Suning 的经纪人，她这边想找 Michael 老师系统聊一次 AI 应用现在真实能落到哪一步，尤其聚焦时尚内容生产这条线——她自己在 SHEIN 做一线内容选品，不是来听宏观趋势的，要的是实操判断和边界感。\n\nSuning 也是美本背景，对有意思的人和信息付费意愿很强，四位数完全在可接受范围内。我这边想先请你给一个 Michael 老师两小时深度交流的报价，以及他偏好的时间形式和沟通方式，咱们再一起把这次对话的价值做扎实。你看怎么合适？"
+    },
+    {
+      "type": "compass_inject",
+      "round": 2
+    },
+    {
+      "type": "round_message",
+      "side": "buyer_broker",
+      "round": 2,
+      "message": "Michael 老师觉得这个方向有意思，Suning 这边也很高兴。一对一深度对话这个形式双方没有分歧，那咱们就先定下来。\n\n接下来两件事一起落地：形式和价格。线上两小时深度交流，我们这边的诚意价是 3000；如果 Michael 老师更倾向线下，涉及场地和时间成本，咱们可以再单独商量一个数。交流内容上 Suning 想聚焦得很明确——AI 在时尚内容生产链条上现在真实能做什么、边界在哪、哪些还做不了，不要泛泛的行业概览，要一线可用的实操判断。\n\n王老师你看形式和价格这块能不能先确认，咱们这一轮把框架敲下来？"
+    }
+  ],
+  "tool_calls": []
+}

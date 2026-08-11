@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r2",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject 原句保留，且对话将'怎么看'收敛为学术视角的器物流传与价值建构梳理，属于正当具体化，仍在 stated 意图范围内。price 和 format 从 open 谈出 10000 元、两场深度对话加结构化纪要，均为谈判自然结果，未强塞越界义务。整个 v1 未承诺任何投资背书、估值意见或买卖建议，忠实表达了买方 v0 的意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "hard",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 第一次被挡回后精准重构框架：将请求从“资产投资建议”转换为“流传体系与价值建构的学术梳理”，完全避开卖方体面红线，同时仍满足买方需要判断力的真实需求。随后通过提问识别出卖方隐性诉求——她需要藏家视角与商业圈层接触——并将买方的量化交易/收藏实战视角作为对价回馈，使交流从“兴致一般”转变为双向吸引，直接咬住case第二层命门。最终deal只含两场对话+结构化纪要，现金仅作象征性对价，边界、期限、交付标准均清晰，干净不臃肿，体现了恰到好处的精到操作。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 7,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 10000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "两场深度对话加一份结构化纪要",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 3
+  }
+}

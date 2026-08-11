@@ -1,0 +1,83 @@
+{
+  "case_id": "FG-H3",
+  "run_id": "clean-r1",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": true,
+      "missing": [],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "v1 完全保留了 v0 的 stated 意图“想弄明白艺术品作为另类资产这条线该怎么看”，并通过谈判具体化为器物成色判断与鉴藏脉络，属于正当收敛，并未偷换主题。价格与形式均为 open 字段，在对话中由服务方提出并经双方确认，定价 3 万元、平台托管等安排是正常谈出的结果，未凭空硬塞。买方义务（提供器物方向、案例、实物线索）均服务于深度交流的落地，未超出 v0 的 scope，也未要求或承诺任何投资背书、估值意见或买卖建议，整体忠实反映了委托方意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": false,
+      "tier": "hard",
+      "reason": "cash_over_cap(30000>10000)",
+      "settled": true,
+      "cash_within_cap": false,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 3,
+      "tier": "sharp",
+      "judge_parse_ok": true,
+      "judge_notes": "Agent 面对卖方以体面红线明确拒绝投资框架，立刻将请求精准重构成“器物怎么判断、为什么有价值”的成色判断，点出买方要的其实是判断力而非买卖名单，一次解掉正当性疑虑，这是关键一手。随后用两步走结构、写死“不做买卖判断、只讲器物的成色标准”的边界条款，彻底化解红线顾虑。卖方对现金不敏感，Agent 未在价格上纠缠，而是承接卖方的准备需求，承诺提供藏家视角的实物线索，使交流从单向讲授变成双向的成色对话，干净落地。虽未主动挖出卖方隐性需求，但重构与边界条款的 load-bearing 操作已让 deal 恰好咬住难度命门，整体正当且不堆砌。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 30000.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "整笔走平台托管，到深度交流安排时放行",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": false,
+    "case_pass": false,
+    "quality": 0
+  }
+}

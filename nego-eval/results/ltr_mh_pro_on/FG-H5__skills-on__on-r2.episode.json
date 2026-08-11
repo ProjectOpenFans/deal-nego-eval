@@ -1,0 +1,338 @@
+{
+  "episode_id": "FG-H5",
+  "final_deal": {
+    "subject": "Suye独立环保服装品牌大秀现场钢琴演奏合作",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "brand_credit",
+          "description": "纸质流程单标注“钢琴独奏｜Zheng 青年钢琴演奏家（曼哈顿音乐学院）”；电子邀请函及现场物料保底署名一致；演奏前由主秀主持人正式引介，姓名、曼哈顿音乐学院背景、演奏家身份及合作调性完整介绍；秀场大屏同步出字",
+          "from_party": "A"
+        },
+        {
+          "resource": "fashion_network",
+          "description": "大秀结束后Suye亲自引荐到场时尚媒体及买手，不少于三位核心联系人，一对一介绍；Zheng演奏家资料和现场演奏影像纳入Suye品牌后续买手渠道及合作方推介素材，保持独立署名；Zheng享有后续季度性品牌活动演出优先合作邀请权",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "3到5分钟"
+      },
+      "format": "现场演奏，不能使用录音",
+      "deliverables": [
+        "现场钢琴演奏"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供现场钢琴演奏",
+        "maps_to_resource": "live_performance"
+      },
+      {
+        "party": "A",
+        "text": "在大秀流程单、电子邀请函及现场物料署名，主持人引介并大屏出字",
+        "maps_to_resource": "brand_credit"
+      },
+      {
+        "party": "A",
+        "text": "大秀结束后引荐不少于三位核心时尚媒体及买手，一对一介绍；将演奏家资料与现场演奏影像纳入后续买手渠道及合作方推介素材",
+        "maps_to_resource": "fashion_network"
+      },
+      {
+        "party": "B",
+        "text": "后续季度性品牌活动演出需求，Zheng享有优先合作邀请权",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "obligations": "stated",
+      "terms.timing.deadline": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zheng的经纪人你好，我是Suye的经纪人。\n\nSuye下个月有一场独立环保服装品牌的新品大秀，场地和嘉宾都定好了，现在想加一段现场钢琴演奏，必须是现场演奏，不能用录音。不过这次情况比较特别——大秀预算全押在场地上，确实拿不出现金，所以我们想换一种合作方式。\n\n你出演奏，我们出舞台和圈层。大秀当天的到场名单里有时尚媒体、买手和圈内嘉宾，你在秀场会有得体的署名和介绍，保持演奏者的专业质感，不打商业硬广。Suye自己是Parsons科班出身，作为独立品牌主理人，她这边的买手渠道和后续资源也可以开放对接。\n\n方向上就是资源换资源，你看我们能不能先把这个框架定下来，然后再一起把具体内容搭清楚？",
+      "offer": {
+        "subject": "Suye独立环保服装品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "秀场得体的署名和介绍，保持演奏者的专业质感，不打商业硬广",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "Suye的买手渠道和后续资源开放对接",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "现场演奏，不能使用录音",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "{\"message\": \"Suye经纪人你好，感谢你们的邀请和诚意。我听完了，有些地方我需要先确认清楚，再往下走。你说的\"得体的署名和介绍\"具体是什么形式？我经历过太多场合嘴上说\"会介绍\"，结果现场主持人也就是念一句\"接下来请欣赏一段音乐\"，连名字都没提。我需要明确——署名是不是会出现在流程单、邀请函或者秀场大屏上？介绍是不是会在演奏前由主持人正式说出我的名字和背景？还有，这次演奏的性质，是整段独立呈现，还是充当模特走秀时的背景音？这一点对我很重要，如果不搞清楚，我没办法往下聊。\", \"action\": \"CONTINUE\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "我理解，这些不是小事，绝对不能含含糊糊就往下走。我也跟你对一下Suye这边的考虑，然后你帮我看看是不是足够清楚。\n\n署名和呈现，我们这边确认可以做三件事：第一，流程单上会标注\"钢琴独奏｜Zheng 青年钢琴演奏家\"，附带你曼哈顿音乐学院的背景；第二，演奏前由主秀主持人正式引介，名字、学院、演奏家身份，以及与本次大秀合作的调性都会完整给到；第三，秀场大屏同步出字，内容跟流程单一致。邀请函因为大部分已经发出，纸质部分我确实要跟团队确认档期，但电子版和现场物料一定能保底到位，这一点不会落空。\n\n演奏的位置，Suye的意思很明确——这次不是把钢琴当氛围音垫着用的。她会把开场三到五分钟的环节独立留出来，做一个属于Zheng的演奏段落。台下的媒体和嘉宾在落座入场的最后一程，灯光和情绪都被你这一段收住，然后再顺势切入走秀。性质上就是一个独立呈现，不是背景。\n\n如果你觉得这个框架是靠谱的，我们下一轮可以直接把时长、曲目方向、以及后续买手渠道和时尚圈资源对接的方式一起摆出来搭干净。",
+      "offer": {
+        "subject": "Suye独立环保服装品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "流程单标注'钢琴独奏｜Zheng 青年钢琴演奏家'并附带曼哈顿音乐学院背景；演奏前由主秀主持人正式引介；秀场大屏同步出字；邀请函电子版与现场物料保底到位",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "Suye的买手渠道和后续资源开放对接",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3到5分钟"
+          },
+          "format": "现场演奏，不能使用录音",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.timing.deadline": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架比我预想的要清晰得多，感谢你把细节摊开来讲。署名、介绍、独立段落，这三点如果都能按你说的落地，那这件事的基调是对得上的——它不是把我当背景音，而是在给我一个完整的呈现空间，这对我是底线，也是我判断值不值得投入的核心。框架我认，可以往下搭具体内容。时长、曲目方向，还有你说的买手渠道和资源对接的形态，我们可以接着谈。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "框架认了，那这一轮我不绕弯，直接把完整版本搭出来，你看完告诉我哪一条需要调。\n\n现场演奏与呈现部分：Zheng在Suye新品大秀开场环节独立呈现一段三到五分钟的钢琴独奏，不做背景音，性质是完整的独立段落。曲目方向由双方共同确认，契合品牌调性，不走商业广告曲风。必须现场演奏，不用录音。\n\n署名与露出部分：纸质流程单标注\"钢琴独奏｜Zheng 青年钢琴演奏家（曼哈顿音乐学院）\"。电子邀请函及现场物料同步保底署名，内容与流程单一致。演奏前由主秀主持人正式引介，姓名、曼哈顿音乐学院背景、演奏家身份，以及与本次大秀的合作调性完整给出。秀场大屏同步出字，内容同上。\n\n资源对接部分：大秀结束后，Suye亲自引荐到场时尚媒体及买手，不少于三位核心联系人，形式是一对一介绍，不是群发名片。Zheng的演奏家资料和现场演奏影像，双方确认可用版本后，纳入Suye品牌后续买手渠道及合作方推介素材，保持Zheng的专业形象和独立署名。另外，Suye后续季度性品牌活动中的演出需求，Zheng享有优先合作邀请权。\n\nZheng这边需要确认两项：一是大秀日期在下月，具体日期定下来后第一时间同步，请确认你可到场，以及是否需要提前一天到现场走台试琴。二是请给出两到三个你愿意演奏的曲目方向，我们从品牌调性角度做匹配选择。\n\n这一版没有现金进出，你出演奏和现场，我们出舞台、圈层和渠道。你看一遍，能签我们就不拖了。",
+      "offer": {
+        "subject": "Suye独立环保服装品牌大秀现场钢琴演奏合作",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "brand_credit",
+              "description": "纸质流程单标注“钢琴独奏｜Zheng 青年钢琴演奏家（曼哈顿音乐学院）”；电子邀请函及现场物料保底署名一致；演奏前由主秀主持人正式引介，姓名、曼哈顿音乐学院背景、演奏家身份及合作调性完整介绍；秀场大屏同步出字",
+              "from_party": "A"
+            },
+            {
+              "resource": "fashion_network",
+              "description": "大秀结束后Suye亲自引荐到场时尚媒体及买手，不少于三位核心联系人，一对一介绍；Zheng演奏家资料和现场演奏影像纳入Suye品牌后续买手渠道及合作方推介素材，保持独立署名；Zheng享有后续季度性品牌活动演出优先合作邀请权",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "3到5分钟"
+          },
+          "format": "现场演奏，不能使用录音",
+          "deliverables": [
+            "现场钢琴演奏"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供现场钢琴演奏",
+            "maps_to_resource": "live_performance"
+          },
+          {
+            "party": "A",
+            "text": "在大秀流程单、电子邀请函及现场物料署名，主持人引介并大屏出字",
+            "maps_to_resource": "brand_credit"
+          },
+          {
+            "party": "A",
+            "text": "大秀结束后引荐不少于三位核心时尚媒体及买手，一对一介绍；将演奏家资料与现场演奏影像纳入后续买手渠道及合作方推介素材",
+            "maps_to_resource": "fashion_network"
+          },
+          {
+            "party": "B",
+            "text": "后续季度性品牌活动演出需求，Zheng享有优先合作邀请权",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "obligations": "stated",
+          "terms.timing.deadline": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这一版我看过了，条款清晰，没有踩我底线的地方，我接受。曲目方向我提三个，你们从品牌调性里选最契合的：一是德彪西的《月光》，安静但有力，开场能压住氛围；二是萨蒂的《裸体歌舞》第一首，简约、有机，和环保主题有语言上的呼应；三是菲利普·格拉斯的《变形记》第二段，极简主义线条，现代感强，和时装节奏能走在一起。关于到场，日期定下来我第一时间标记，我需要提前一天到现场走台、试琴，确保音响和钢琴状态。这个前提如果可以，我们就按这一版推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 30361,
+        "out": 5295,
+        "cache_hit": 25728,
+        "cache_miss": 4633,
+        "calls": 6
+      },
+      "sim": {
+        "in": 4190,
+        "out": 1568,
+        "cache_hit": 2816,
+        "cache_miss": 1374,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 3066,
+        "out": 6844,
+        "cache_hit": 1536,
+        "cache_miss": 1530,
+        "calls": 3
+      },
+      "judge": {
+        "in": 5123,
+        "out": 1855,
+        "cache_hit": 1536,
+        "cache_miss": 3587,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

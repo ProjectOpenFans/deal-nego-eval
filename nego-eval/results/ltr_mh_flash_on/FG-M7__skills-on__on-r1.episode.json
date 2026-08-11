@@ -1,0 +1,568 @@
+{
+  "episode_id": "FG-M7",
+  "final_deal": {
+    "subject": "60分钟线上实务分享：版权归属谈判、授权链条核查、艺人合约高频陷阱，含真实案例讲解、15分钟问答及一页实操清单",
+    "price": {
+      "cash": {
+        "amount": 1500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "industry_practice",
+          "description": "授权Junhao将分享内容经去标识化处理后沉淀为文娱实务素材，用于后续客户沟通或内容输出；使用前由Junhao过目，确认既不暴露Gracey身份，也不涉及以私人身份对具体文件下判断",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "60 minutes"
+      },
+      "format": "online",
+      "deliverables": [
+        "一页实操清单"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供60分钟线上实务分享，讲透版权归属谈判、授权链条核查、艺人合约高频陷阱，全程用真实案例做类比拆解，留15分钟问答，不对任何具体文件下结论",
+        "maps_to_resource": "session_time"
+      },
+      {
+        "party": "A",
+        "text": "用真实案例进行讲解",
+        "maps_to_resource": "real_case_context"
+      },
+      {
+        "party": "A",
+        "text": "结束后附一页实操清单留档",
+        "maps_to_resource": "checklist"
+      },
+      {
+        "party": "A",
+        "text": "支付总价1500元走平台托管，确认排期时付500元，分享完成经对方确认后付1000元",
+        "maps_to_resource": "gracey_cash"
+      },
+      {
+        "party": "A",
+        "text": "授权Junhao将去标识化处理后的分享内容沉淀为文娱实务素材，用于后续客户沟通或内容输出；使用前由Junhao过目，确认既不暴露Gracey身份，也不涉及以私人身份对具体文件下判断",
+        "maps_to_resource": "industry_practice"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Junhao 的经纪您好，我是买方 Gracey 的经纪。Gracey 在腾讯娱乐和 B 站做过内容与艺人侧一线，日常天天碰艺人合约和版权，缺的是有人把实操门道系统讲透；她明确不接受只念法条，要的是真实操作里的经验和坑。我们这边先给一个可签版本：Junhao 提供一次 90 分钟线上实务咨询，围绕艺人合约的关键条款与常见陷阱、版权归属、转让和授权的实操要点，用真实案例带她过一遍，并留出问答时间处理她手头的具体场景，结束后附一页纸实操清单给她留档。总价 1000 元走平台托管，可拆两笔：确认排期时 300 元，咨询完成并由她确认后付 700 元，双方都有保障。想先请教 Junhao 平时咨询的惯常形式和时长，以及近期有没有合适的文娱案例可以举例；如果这个版本可行，我们就按它推进，不合适也欢迎给一个能签的替代方案。",
+      "offer": {
+        "subject": "线上实务咨询：艺人合约关键条款与版权归属实操，含真实案例讲解、问答及一页纸实操清单",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90 minutes"
+          },
+          "format": "online",
+          "deliverables": [
+            "一页纸实操清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供一次90分钟线上实务咨询",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "用真实案例进行讲解",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结束后附一页纸实操清单",
+            "maps_to_resource": "checklist"
+          },
+          {
+            "party": "A",
+            "text": "支付总价1000元，分两笔：确认排期时300元，咨询完成并确认后付700元，走平台托管",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，这个需求我大概听懂了。先厘清一点：如果是以律师身份给具体合同做审查、对某个条款有没有问题下结论，这个我私人身份做不了——执业风险摆在那儿，不是谦辞。但如果你要的是行业里的经验门道、常见坑，比如版权归属怎么谈、授权链条怎么核，这些我可以认真聊。你提的'处理她手头的具体场景'，我可以拿真实案例做类比，但不能直接帮她判断她手上的那份合同。另外你给的结构和价格，我一听就知道是按'律师咨询'的框架来的；1000这个数在正式咨询口径下我没办法接。你要不要先想一下，我们把它定义成纯经验分享、不碰具体文件，其他时间和形式都好谈。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Junhao 的经纪您好，这个边界我们完全接受，而且本来就是我们想要的方向：Gracey 要的是实操门道，不是让 Junhao 对她的合同下结论，风险边界划清楚反而更好推进。按纯经验分享、不碰具体文件的口径，我给一版可签的：Junhao 提供 90 分钟线上实务分享，讲透三块——版权归属谈判怎么谈、授权链条怎么核、艺人合约常见陷阱与坑，全程用真实案例做类比拆解，末尾留 20 分钟问答，对她工作中遇到的具体场景讲通用思路和一般判断方法、不对任何具体文件下结论，结束后附一页实操清单留档。价格 1000 元走平台托管，确认排期时付 300 元，分享完成经她确认后付 700 元，每笔都按完成节点走，Junhao 不存在收不到尾款的风险。如果这个版本成立，我们按它推进；时间形式想调，也欢迎直接给一版能签的替代方案。",
+      "offer": {
+        "subject": "线上实务咨询：艺人合约关键条款与版权归属实操，含真实案例讲解、问答及一页纸实操清单",
+        "price": {
+          "cash": {
+            "amount": 1000.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "90 minutes"
+          },
+          "format": "online",
+          "deliverables": [
+            "一页纸实操清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供90分钟线上实务分享，讲透版权归属谈判、授权链条核查、艺人合约常见陷阱与坑，全程用真实案例做类比拆解，末尾留20分钟问答，对具体场景讲通用思路和一般判断方法、不对任何具体文件下结论",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "用真实案例进行讲解",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结束后附一页实操清单留档",
+            "maps_to_resource": "checklist"
+          },
+          {
+            "party": "A",
+            "text": "支付总价1000元走平台托管，确认排期时付300元，分享完成经对方确认后付700元，每笔按完成节点走",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "框架没问题，方向也对了，而且你愿意把边界划这么清楚，省了我很多解释。时间和形式我也都OK，90分钟、案例类比、通用思路，这些对我来说都是舒服的讲法。唯一的问题是价格。1000这个数，说句实在话，在我这边的价值体系里对应不了这90分钟的分量——我不是拿法条念给你听，是拿这些年真踩过的坑、真谈下来的条款跟你讲。按经验分享的口径，我可以不按律所咨询的标准收，但我也不能低到1000。我的底线是4000，走平台托管没问题，支付节奏你说的两笔拆分我也能接受。你能接就按这个推进，不能接的话我们可以再聊聊看有没有别的结构。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Junhao 的经纪您好，上一版我们还在等您确认：内容收成 60 分钟精华场，版权归属谈判、授权链条核查、艺人合约高频陷阱三块照讲，真实案例类比不变，问答 15 分钟，一页实操清单照附，全程不碰具体文件；价格 1500 元走平台托管，确认排期付 500，分享完成经她确认后付 1000，尾款有平台托管和完成节点双保障。这个版本是我们能推进的上限，也对应了 Gracey 对这次一次咨询的预期；她是真心想学实操门道，不是来压价的。如果您觉得 1500 对不上这 90 分钟的分量，那我们把时长收到 60 分钟、内容不缩水，这个平衡点请您这边再衡量一下：能签我们就按 60 分钟 1500 推进，不能签也请给一版你们能接受的结构，我们继续谈。",
+      "offer": {
+        "subject": "60分钟线上实务分享：版权归属谈判、授权链条核查、艺人合约高频陷阱，含真实案例讲解、15分钟问答及一页实操清单",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "online",
+          "deliverables": [
+            "一页实操清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供60分钟线上实务分享，讲透版权归属谈判、授权链条核查、艺人合约高频陷阱，全程用真实案例做类比拆解，留15分钟问答，不对任何具体文件下结论",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "用真实案例进行讲解",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结束后附一页实操清单留档",
+            "maps_to_resource": "checklist"
+          },
+          {
+            "party": "A",
+            "text": "支付总价1500元走平台托管，确认排期时付500元，分享完成经对方确认后付1000元，尾款有平台托管和完成节点双保障",
+            "maps_to_resource": "gracey_cash"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "我理解你们在努力找一个双方都能落的位置，内容结构和边界我也认可，甚至60分钟确实够把三块讲透——这些我都没意见。问题还是落在价格上：1500 对应的是正式咨询里很基础的一次收费，但我要讲的不是一个小时的法条，是把文娱这条线里真正会踩的坑、真正能落地的谈法讲出来。我不愿意把这个东西做cheap。我的位置其实从上轮开始就没变过：4000，整体时长你压到60分钟可以，问答15分钟也可以，支付拆分按你说的走。如果4000这个数超出你们这次预算，我们可以聊其他结构，但要在价格这个基础上想办法，而不是往下砍。你那边有没有别的思路？",
+      "offer": null
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Junhao 的经纪您好，既然双方都有诚意推进，我们给一个不砍价格、而是换结构的方案：现金部分仍是以 1500 元走平台托管，确认排期付 500、分享完成经她确认后付 1000，这笔对应 Junhao 的现场时间和经验输出；同时，这段内容经去标识化处理、不暴露 Gracey 任何身份信息后，授权 Junhao 将全过程沉淀为自己的文娱实务素材，用于他后续的客户沟通或内容输出。这样他拿到的就不只是一次课酬，而是一份能反复使用的资产，4000 的价值口径用现金加这个授权一起立住。录制授权这一项我需要先跟 Gracey 本人确认意愿，确认后写进条款；如果这个方向对 Junhao 不成立，也请直接给一版你们能签的结构，我们继续谈。",
+      "offer": {
+        "subject": "60分钟线上实务分享：版权归属谈判、授权链条核查、艺人合约高频陷阱，含真实案例讲解、15分钟问答及一页实操清单",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "授权Junhao将分享内容经去标识化处理后沉淀为文娱实务素材，用于后续客户沟通或内容输出",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "online",
+          "deliverables": [
+            "一页实操清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供60分钟线上实务分享，讲透版权归属谈判、授权链条核查、艺人合约高频陷阱，全程用真实案例做类比拆解，留15分钟问答，不对任何具体文件下结论",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "用真实案例进行讲解",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结束后附一页实操清单留档",
+            "maps_to_resource": "checklist"
+          },
+          {
+            "party": "A",
+            "text": "支付总价1500元走平台托管，确认排期时付500元，分享完成经对方确认后付1000元，尾款有平台托管和完成节点双保障",
+            "maps_to_resource": "gracey_cash"
+          },
+          {
+            "party": "A",
+            "text": "经Gracey本人确认后，授权Junhao将去标识化处理后的分享内容沉淀为文娱实务素材，用于后续客户沟通或内容输出",
+            "maps_to_resource": "industry_practice"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "这个方向终于让我觉得对——你没有砍价格，而是试图给我一个能反复沉淀的东西，我认。而且我也不瞒你说，文娱这条线我是想走的，所以这个素材如果真能去标识化之后归我使用，那1500现金加这个授权，在我这里立得住。但有两个前提，得写进条款才算成立：第一，授权必须是这次交易的一部分，如果Gracey那边确认不了，那1500现金单走我不接，因为这对应不了这场分享的分量；第二，沉淀使用之前要给我过目一遍，确认不暴露她身份、也不会让我以私人身份对任何具体文件下判断。这两条能写进去，我就按这个结构推进：60分钟、三块内容照讲、15分钟问答、一页实操清单，现金1500按平台托管、确认排期500、完成后1000走。",
+      "offer": null
+    },
+    {
+      "round": 5,
+      "speaker": "A",
+      "message": "Junhao 的经纪您好，所有条件我们按您的要求全部写入，这版就是最终可签版本：60 分钟线上实务分享，版权归属谈判、授权链条核查、艺人合约高频陷阱三块照讲，全程真实案例类比，15 分钟问答只讲通用思路，不碰具体文件、不对任何合同下结论，结尾附一页实操清单。现金 1500 元走平台托管，确认排期付 500，分享完成经 Gracey 确认后付 1000。去标识化授权为本次交易不可拆分的组成部分：内容经处理后归 Junhao 沉淀使用，使用前由 Junhao 过目，确认既不暴露 Gracey 身份、也不涉及以私人身份对具体文件下判断。Gracey 这边已确认完整接受授权条款，两个前提也都成立。没有任何遗留项的话，就按这版签约，Junhao 确认排期时间即可推进。",
+      "offer": {
+        "subject": "60分钟线上实务分享：版权归属谈判、授权链条核查、艺人合约高频陷阱，含真实案例讲解、15分钟问答及一页实操清单",
+        "price": {
+          "cash": {
+            "amount": 1500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "industry_practice",
+              "description": "授权Junhao将分享内容经去标识化处理后沉淀为文娱实务素材，用于后续客户沟通或内容输出；使用前由Junhao过目，确认既不暴露Gracey身份，也不涉及以私人身份对具体文件下判断",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60 minutes"
+          },
+          "format": "online",
+          "deliverables": [
+            "一页实操清单"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供60分钟线上实务分享，讲透版权归属谈判、授权链条核查、艺人合约高频陷阱，全程用真实案例做类比拆解，留15分钟问答，不对任何具体文件下结论",
+            "maps_to_resource": "session_time"
+          },
+          {
+            "party": "A",
+            "text": "用真实案例进行讲解",
+            "maps_to_resource": "real_case_context"
+          },
+          {
+            "party": "A",
+            "text": "结束后附一页实操清单留档",
+            "maps_to_resource": "checklist"
+          },
+          {
+            "party": "A",
+            "text": "支付总价1500元走平台托管，确认排期时付500元，分享完成经对方确认后付1000元",
+            "maps_to_resource": "gracey_cash"
+          },
+          {
+            "party": "A",
+            "text": "授权Junhao将去标识化处理后的分享内容沉淀为文娱实务素材，用于后续客户沟通或内容输出；使用前由Junhao过目，确认既不暴露Gracey身份，也不涉及以私人身份对具体文件下判断",
+            "maps_to_resource": "industry_practice"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "B",
+      "message": "好，这版我认，没什么要改的了。两个前提——授权作为交易组成部分、使用前我过目确认——都写进条款，现金1500走托管，节奏按你说的来，那就按这版签。你那边把合同或者托管链接发我，确认排期时间就行，我这边随时配合。就这么定。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 5,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "affordability-structuring",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "list_skills",
+        "arguments": {},
+        "ok": true,
+        "result": {
+          "skills": [
+            {
+              "name": "affordability-structuring",
+              "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability."
+            },
+            {
+              "name": "commitment-showcasing",
+              "description": "Buyer-broker-only skill. Governs the special monetary instruments — tipping, commitment deposits, and blank checks — by which the buyer showcases commitment. Trigger when and only when the buyer is highly motivated to make a deal, willing to spend generously to speed things up, or required to signal commitment to move the negotiations forward. These instruments express the buyer's commitment only; they cannot resolve doubts about the seller's credibility or intent (that is trust-and-performance territory). NEVER use it as a regular negotiation tool or trigger it casually."
+            },
+            {
+              "name": "deal-diagnosis",
+              "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal."
+            },
+            {
+              "name": "interest-discovery",
+              "description": "Separates the counterparty's stated demand from their real underlying interest, and holds the negotiation frame when a strong counterparty pushes back. Use when the counterparty's stated need may be a self-misdiagnosis of a deeper problem, or when a strong, dismissive counterparty is dragging the deal onto a conventional track that structurally cannot work. Engage only when there are concrete signs the stated demand mismatches their actual situation or resources — not as a default assumption that a hidden interest always exists."
+            },
+            {
+              "name": "term-reframing",
+              "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement."
+            },
+            {
+              "name": "trust-and-performance",
+              "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms."
+            }
+          ]
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 97269,
+        "out": 31066,
+        "cache_hit": 72960,
+        "cache_miss": 24309,
+        "calls": 13
+      },
+      "sim": {
+        "in": 9328,
+        "out": 7477,
+        "cache_hit": 7168,
+        "cache_miss": 2160,
+        "calls": 5
+      },
+      "extractor": {
+        "in": 5264,
+        "out": 9422,
+        "cache_hit": 2560,
+        "cache_miss": 2704,
+        "calls": 5
+      },
+      "judge": {
+        "in": 6169,
+        "out": 1114,
+        "cache_hit": 1024,
+        "cache_miss": 5145,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

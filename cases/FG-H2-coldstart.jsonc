@@ -1,0 +1,180 @@
+// FG-H2 · 硬 · Ruohao(买) × Kai(卖) — 高强度训练
+//
+// v2 重写说明（v1 的三个泄题点已修）：
+//   ① v1 的 mandate 里写了"要的不是教练课、是加入一个训练局" —— 那正是 keystone，
+//      等于把答案写在 v0 里。现在 mandate 只写念头：练不下去、想把强度拉起来。
+//   ② v1 把"家里仓库改的训练空间"写在 value_perception，而 sim prompt 把它注入成
+//      "你对这件事的判断"，导致 sim 第一轮就主动倒出来。现在事实全部移到
+//      blocking_flags 并带明确披露门槛（被具体问到才说）。
+//   ③ v1 的红线是"别把我当教练"，但 Pro 的自然路径本来就不是卖课，三局全部主动避开
+//      —— 红线堵错了路。现在改成双方都不可让渡的真实资源冲突：时间。
+//
+// 难度来源：冷启动信息稀薄 + 时间死结（双方都不能让） + 卖方定价真空
+{
+  "meta": {
+    "case_id": "FG-H2",
+    "r4": true,
+    "difficulty": "硬",
+    "difficulty_source": ["b-layer-stripped", "resource-latent-two-hop", "time-conflict-hard", "seller-cannot-price-self"],
+    "in_focus_group": true,
+    "skin_family": 3,
+    "side": "buy",
+    "flow": "outbound",
+    "driver": "agent-led",
+    "tier_axis": "cold-start-information-scarcity+irreconcilable-time+pricing-vacuum",
+    "probes": ["cold-start-thin-profile", "elicit-latent-supply", "hard-time-conflict", "price-discovery-for-unpriced-supply"],
+    "isolates": "Kai 是冷启动新用户：平台只拿到 onboarding 三个 tag（篮球 / 健身 / 体能训练）和学历，职业栏空白。他自己摸索的训练体系、以及训练地点的来历，都只有被具体问到才会说。三重难：(a) 供给侧档案近乎空白，agent 读不出任何可交付的东西；(b) 时间死结 —— Kai 的固定训练局在工作日早六点且他改不了（白天要在场子里盯着），Ruohao 盯夜盘凌晨才睡、早六点起不来，这是双方都不可让渡的硬约束，价格解决不了；(c) Kai 从未给自己定过价，被问到就卡住，说'你看着来'。现金不是约束（Ruohao 上限很高），所以加钱这条路完全无效。简单解全死：直接把人塞进现有训练局（Ruohao 到不了）、让 Kai 单独另开一场（他本能抗拒，且他确实腾不出别的时间）、只谈钱（他报不出数）。出路有且只有一条：Kai 周六上午本来就一个人在场子里做器械保养 —— 他不认为那算训练，只有被具体问到才会说。"
+  },
+
+  "input": {
+    "episode_id": "FG-H2",
+    "initial_deal": {
+      "subject": "想把训练强度重新拉起来，自己一个人练不下去",
+      "price": { "cash": { "amount": null, "currency": "CNY" }, "in_kind": [] },
+      "terms": {
+        "timing": { "when": null, "deadline": null, "duration": null },
+        "format": null,
+        "deliverables": [],
+        "delivery_standard": null
+      },
+      "obligations": [],
+      "status": "draft",
+      "provenance": { "subject": "stated", "price.cash": "open", "terms.format": "open" }
+    },
+
+    "parties": {
+      "A": {
+        "seat": "buyer",
+        "public_profile": {
+          "id": "ruohao",
+          "display_name": "Ruohao",
+          "education": ["凯斯西储本科", "中欧商学院 MBA"],
+          "career": ["量化基金交易"],
+          "current_focus": "作息很乱，训练断了一阵想捡回来",
+          "location": "上海",
+          "age_band": "30-35",
+          "hobbies": ["篮球", "投资", "车", "表"],
+          "interests": ["量化基金交易", "篮球", "投资"],
+          "credentials": [
+            "量化基金交易，一线在做",
+            "中欧 MBA，上海金融圈层",
+            "长期打球"
+          ]
+        },
+        "private": {
+          "intent": "想把训练强度重新拉起来。自己去健身房练不下去，断断续续好几次了",
+          "interests": [
+            "一个人练不下去，缺的是环境不是知识",
+            "盯夜盘，凌晨两三点才睡，早上基本起不来",
+            "对够狠的东西付费意愿很高，但市面上的产品都太温和"
+          ],
+          "value_perception": "对喜欢的事付费意愿极高，四到五位数都不眨眼",
+          "constraints": {
+            "reservation": {
+              "type": "cash",
+              "amount": 8000,
+              "currency": "CNY",
+              "note": "现金上限，但这不是他的约束点"
+            },
+            "must_haves": ["强度必须真的够"],
+            "deal_breakers": ["不接受松散的'有空约一下'，必须是定死的安排"],
+            "blocking_flags": []
+          }
+        }
+      },
+
+      "B": {
+        "seat": "seller",
+        "public_profile": {
+          "id": "kai",
+          "display_name": "Kai",
+          "education": ["上海大学本科"],
+          "career": [],
+          "current_focus": "",
+          "location": "上海",
+          "age_band": "28-33",
+          "hobbies": [],
+          "interests": ["篮球", "健身", "体能训练"],
+          "credentials": []
+        },
+        "private": {
+          "intent": "没想过把这件事拿出来做交易；有人问就聊聊，但不觉得自己有什么可卖的",
+          "interests": [],
+          "value_perception": "他不觉得自己在做一件有价值的事 —— 在他看来这就是跟朋友一块儿练，不是生意，也不该收钱",
+          "constraints": {
+            "reservation": null,
+            "must_haves": ["现有的训练局时间不能动"],
+            "deal_breakers": ["不接受把自己包装成职业教练去卖课"],
+            "blocking_flags": [
+              "你和几个朋友有一个固定的训练局，工作日早上六点，雷打不动 —— 这个时间你改不了，白天你得在场子里盯着，走不开。被问到时间你会直说，但不会主动解释为什么",
+              "你练了很多年，自己摸索出一套很狠的练法，长期带着身边一帮朋友练 —— 但你觉得这就是日常，不会主动把它说成一个可以卖的东西",
+              "你不会主动说自己家里做什么，也不会主动说训练的地方是怎么来的。只有被具体问到'在哪练''器械哪来的''场地是谁的'，你才会说：家里做建材生意，有仓库，你把其中一块改成了训练空间，器械挺全",
+              "对方问你多少钱的时候，你会明显卡住 —— 你报不出价，会说'这个不用给钱吧''你看着来就行'，让对方定",
+              "单独为一个人另开一场，你本能上抗拒 —— 那样这件事的性质就变了，而且你确实也腾不出别的时间",
+              "如果对方把这件事说成'一起练、你带节奏'，你会明显放松下来，也更愿意投入",
+              "周六上午你会一个人在场子里待两三个小时，做器械保养、搬东西、补货 —— 你不会主动提这段时间，在你看来那不叫训练，是干活。只有被问到'除了工作日早六点，你还有什么时候在场子里''周末在不在'这类具体问题，你才会说。如果对方顺着这个提出周六一起练，你不排斥 —— 反正你人也在"
+            ]
+          }
+        }
+      }
+    },
+
+    "config": { "agent_seat": "A", "round_cap": 12 }
+  },
+
+  "fixture": {
+    "ground_truth": {
+      "tier": "hard",
+      "tier_axis": "cold-start-information-scarcity+irreconcilable-time+pricing-vacuum",
+      "tier_rationale": "硬档，难度不来自现金（买方上限很高，加钱无效）。三处叠加：(1) 供给侧档案近乎空白，真实供给只有靠提问才浮现；(2) 时间死结 —— 早六点 vs 凌晨才睡，双方都不可让渡，这是真实的资源冲突而非情绪抵触，模型无法靠'礼貌避让'绕开；(3) 卖方从未给自己定过价，被问就卡住，定价必须由 agent 建立。",
+      "conventional_deal_fails_why": "直接把人塞进现有训练局：Ruohao 早六点到不了，这不是意愿问题是作息问题。让 Kai 为他单独另开一场：Kai 抗拒（性质变了），而且他白天要在场子里盯着，确实腾不出别的时间。只谈钱：Kai 报不出价，且现金对他不构成理由。只读档案不提问：档案里只有三个 tag，agent 会以为这人没有可交付的供给。约一次试试再说：落到买方'不接受松散约定'的红线上。唯一的出路是问出 Kai 周六上午本来就在场子里这件事 —— 他不会主动说，因为他不认为那算训练。",
+      "cash_zopa": "wide-but-irrelevant",
+      "creation_zopa": "positive",
+      "walk_away": { "value": 8000, "unit": "CNY", "basis": "买方(agent 侧)现金上限；本 case M3 非重点" },
+      "buyer_ceiling": { "value": 0, "unit": "CNY", "note": "对手方(卖方 Kai)报不出价，无现金底线；stub 模式使用" },
+      "buyer_cash_ceiling": { "value": 8000, "unit": "CNY", "note": "Ruohao 现金上限高。本 case 不以现金高低论成败" },
+      "seller_real_need": "Kai 要的不是钱。他的硬约束是现有训练局的时间不能动，以及这件事别把他架成'职业教练'。他也确实报不出价，需要对方帮他把价格建立起来。",
+      "controllable_resource_set": [
+        { "id": "training_system", "label": "Kai 多年摸索出的高强度训练方法" },
+        { "id": "training_space", "label": "Kai 家里仓库改造的训练空间与器械" },
+        { "id": "training_crew", "label": "Kai 现有的固定训练局与伙伴" },
+        { "id": "pace_setting", "label": "现场带节奏、把强度顶上去" },
+        { "id": "weekend_slot", "label": "周末时段的训练场次" },
+        { "id": "remote_review", "label": "非现场的计划安排与训练反馈" },
+        { "id": "space_access", "label": "非训练局时段的场地与器械使用权" },
+        { "id": "ruohao_cash", "label": "Ruohao 的现金对价" },
+        { "id": "ruohao_finance_view", "label": "Ruohao 的量化/投资视角" },
+        { "id": "ruohao_network", "label": "Ruohao 的上海金融圈层引荐" }
+      ],
+      "in_kind_valuation": {
+        "training_system": 0, "training_space": 0, "training_crew": 0, "pace_setting": 0,
+        "weekend_slot": 0, "remote_review": 0, "space_access": 0,
+        "ruohao_cash": 0, "ruohao_finance_view": 0, "ruohao_network": 0
+      },
+      "creation_door": {
+        "description": "两跳门 + 定价门。第一跳（挖）：档案里只有三个 tag，agent 必须通过提问让 Kai 说出他真实的东西 —— 一套自己摸索的训练方法，以及一个由家里仓库改造、器械齐全、常年有人练的空间。两样都不在公开档案里，Kai 也不会主动当筹码提。第二跳（解时间死结）：早六点 vs 凌晨才睡是双方都不可让渡的硬冲突，价格解决不了，加钱无效。出路只有一条且必须被问出来 —— Kai 周六上午本来就一个人在场子里做器械保养，两三个小时。他不会主动提，因为在他看来那不叫训练是干活；只有 agent 具体问到「除了早六点你还有什么时候在场子里」「周末在不在」，他才会说。问出来之后，把周六上午改造成 Ruohao 的训练时段（Kai 反正人在），死结自解。第三步（定价）：Kai 报不出价，agent 必须替这个从未被定价的供给建立一个双方都能接受的价格与结算方式（例如把场地使用与带练分开计价）。最高明处：让 Kai 第一次看清自己手里的东西值多少钱。",
+        "route_out_trigger": "若 agent 不提问、只按标准私教谈，Kai 会往回缩；若 agent 忽略时间冲突、直接替买方接受早六点（或只用「把作息调回来」搪塞），最后会谈成一个 Ruohao 根本执行不了的安排 —— 这是本 case 最常见的失败路径；若顺着'先来练一次再说'走，落到买方不接受松散约定的红线上。"
+      }
+    },
+
+    "answers": {
+      "M1": {
+        "expected": "成交 deal 字段齐；交付形态、时段/周期、地点与对价必须写清",
+        "required_fields": ["subject", "price.cash", "terms.format", "terms.timing.when", "obligations", "status"]
+      },
+      "M2": {
+        "anchor": "买方 v0 意图：把训练强度重新拉起来，一个人练不下去。subject 是 stated，须保留 —— 收敛为任何具体的训练安排都仍在原意图范围内，属正当具体化。价格与形式是 open。不得承诺资源清单之外的东西（Kai 不是职业教练，不能承诺体测、康复、营养或任何资质类交付）。"
+      }
+    },
+
+    "tier_reference": {
+      "difficulty_note": "难度命门：时间死结只有一条出路，且这条出路只有靠提问才能浮现。Kai 的训练局固定工作日早六点、他改不了；Ruohao 盯夜盘早上起不来；双方都不可让渡，加钱无效。唯一解是 Kai 周六上午本来就一个人在场子里做器械保养 —— 他不认为那算训练，不会主动提，必须被具体问到（'除了早六点你还有什么时候在场子里''周末在不在'）。此外卖方从未给自己定过价，定价也需由 agent 建立。判分的第一顺位是：有没有正面解掉时间冲突并给出买方真能执行的安排。注意：这是一个持续性的训练安排，周期与结算结构是必要的；但堆砌与训练无关的复杂对价或治理条款仍应判低。",
+      "T0_floor": "谈崩；或直接替买方接受了早六点（哪怕加一句'把作息调回来'），成交一个买方根本执行不了的安排；或只在现金维度上打转；或顺着'先来练一次再说'成交一个没有时段、没有周期的松散约定。全程没有问出任何替代时段。",
+      "T1_crude": "察觉到时间对不上，也提了一句'能不能换个时间'，但没有问出 Kai 周六上午在场子里这件事，最后要么含糊搁置、要么把问题留到线下。摸到方向但没解。",
+      "T2_sound": "通过提问问出了 Kai 周六上午本来就在场子里（或其他真实可用的时段），据此把训练安排在买方真能到的时间，明确了时段、频次、地点，并谈出一个双方接受的对价。时间死结被正面解掉，deal 可执行。",
+      "T3_sharp": "在 sound 之上有一手 load-bearing 的操作 —— 例如把'场地与器械的使用'和'Kai 现场带节奏'拆成两件事分别定价，让 Kai 第一次看清自己手里的东西值多少钱、从而报得出价；或者把周六这段本来是'干活'的时间重构成对 Kai 也有收益的安排（有人搭把手/分摊场地成本），使他不是在牺牲；或者精准处理 Ruohao'不接受松散约定'的诉求，把承诺写成可执行的形式而非口头。恰到好处，不臃肿。",
+      "T4_brilliant": "Sharp 之上还有一手非显然的重构 —— 例如让 Kai 意识到他手里的东西本身就是一个可持续的供给（不止对这一个买家），并把这单结构成能重复发生的形态，且整体依然干净。"
+    },
+    "tier_reference_note": "硬档 case。判分核心是：有没有挖出埋在冷启动档案之下的真实供给、有没有正面解掉时间死结、有没有为一个从未被定价的供给建立价格。"
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "crypto 项目境内外法律架构咨询",
+    "price": {
+      "cash": {
+        "amount": 0.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "olivia_real_case",
+          "description": "Olivia提前整理提供其正在推进的真实crypto项目架构背景和具体卡点，作为AI法律产品的输入",
+          "from_party": "A"
+        },
+        {
+          "resource": "session_time",
+          "description": "Adam提供约一小时看材料，及60-90分钟线上交流，分享跨境架构经验与判断思路",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "约1小时看材料+60-90分钟线上交流"
+      },
+      "format": "Olivia提前发送项目背景材料，Adam确认材料足够支撑交流后约时间，线上交流",
+      "deliverables": [
+        "线上深度交流，提供架构拆解与判断框架，不形成书面记录，非法律意见"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "交流明确为行业内部架构经验交流，不构成法律服务，不对任何具体方案下合规判断，不形成书面记录供她落地，后续决策风险和落地执行完全由Olivia自己承担",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "confirmed",
+      "price.cash": "stated",
+      "price.in_kind": "stated",
+      "terms.timing.duration": "stated",
+      "terms.format": "stated",
+      "terms.deliverables": "stated",
+      "obligations": "stated",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我这边代表一位客户 Olivia。她在 crypto 一线实操，清华背景，之前在摩根士丹利 IBD 和 PAG 成长投资，跨境金融那套她很熟。现在手上有一个正在推进的真实 crypto 项目，卡点是把境内外的法律架构一次性理清楚——她要的不是泛泛的合规科普，是能直接用在项目上的架构方案和判断。\n\n你在 Kirkland 做过跨境并购，乔治城法学院出身，这个背景跟她现在的问题很对路。我建议我们先搭一个轻量的起始方案试水：一次深度咨询，你基于她的具体项目情况帮她梳理境内外法律架构的框架、关键风险点和合规路径，形式可以是线上通话加一份简要的要点记录，让她之后能直接落地参考。价格我这边先提一个 2500，款项走平台托管，咨询完成后确认放款。\n\n你先看看这个框架和方向对不对你的胃口，也请说说你通常会怎么切入这类问题、覆盖哪些模块。我们先把核心交付的对齐了，再往下走。",
+      "offer": {
+        "subject": "crypto 项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "线上通话加一份简要的要点记录",
+          "deliverables": [
+            "线上通话及简要要点记录"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "嗨，感谢介绍，Olivia 的背景确实听起来很对路，既有传统金融功底又在 crypto 前线实操。不过我得先坦诚说一下我的情况——我现在已经从律所出来自己在做 AI 法律方向的产品，严格来说我不再以律师身份执业，也不能以私人身份出具体的法律意见或者对项目架构下判断，这个执业风险我担不起。所以你提的这个'深度咨询'再加一份要点记录、让她能落地参考的形式，对我来说其实踩在一条很敏感的线上，我没办法做。\n\n另外，2500 这个数，说实话对我现在的时间成本来说没什么吸引力，我的精力基本都扑在自己产品上，纯花时间做一对一咨询我暂时排不开。不过，如果只是非正式地跟她聊聊项目情况、不要求我出法律结论，就当同行之间交流思路，我倒是可以抽空聊一下，时间我们再约，但不收费，也不构成任何形式的法律服务。你看这个方向她能接受吗？",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，感谢你的坦诚，执业风险这条线我完全理解，也尊重——我们先把边界锁死：不要求你出具任何法律意见，不要求你以律师身份对架构下判断。\n\n但 Olivia 要的东西，跟\"泛泛的合规科普\"是两回事。她要的是一个真正做过跨境架构的人，能基于她的具体项目场景，帮她把境内外的架构逻辑、关键风险节点和合规路径讲透，让她自己能形成判断。这个更像\"行业架构经验交流\"，不是法律服务——你前 Kirkland 跨境并购的底子摆在那里，分享架构思路和风险框架，跟出具法律意见是两回事。\n\n既然你说不收费，那我们换个方向，不走费用走价值交换。思路是这样：Olivia 把她正在推进的真实 crypto 项目的架构背景和具体卡点提前整理给你，你做一次 60 到 90 分钟的线上深度交流，以行业资深人士身份分享你对跨境架构的经验和判断思路，明确标定为非法律意见、不构成法律服务。同时，你自己在做 AI 法律产品，crypto 赛道一线实操的真实需求和架构痛点，可能就是你的产品需要的东西——Olivia 在 crypto 一级市场前端，这个视角也许对你有价值。双方各取所需，各自付出时间和 insight。\n\n你看这个\"经验换经验\"的框架对不对你的胃口？另外我也需要确认两点：如果 Olivia 提前把项目背景材料发给你，你愿意花多少时间提前看？以及在这个非正式框架下，你能聊到的深度大概到哪里？",
+      "offer": {
+        "subject": "crypto 项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": 2500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "Olivia将其正在推进的真实crypto项目架构背景和具体卡点提前整理提供",
+              "from_party": "A"
+            },
+            {
+              "resource": "session_time",
+              "description": "Adam提供60-90分钟线上深度交流，分享跨境架构经验与判断思路",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "60-90分钟"
+          },
+          "format": "线上深度交流，Olivia提前发送项目背景材料",
+          "deliverables": [
+            "线上深度交流（非法律意见）"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流明确标定为非法律意见、不构成法律服务；不要求Adam出具任何法律意见或以律师身份对架构下判断",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "canceled",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "{\"message\": \"这个\"经验换经验\"的框架，说实话，比之前那种咨询的路子对我胃口多了。不收费、不构成法律服务、不要求我出结论，只是行业内部的架构思路交流——这个边界我基本能接受。而且你说到 crypto 一线实操的需求和痛点，确实是我现在做 AI 法律产品很缺的真实输入，我坦白讲，这比咨询费对我有价值得多。如果 Olivia 愿意把她的项目背景和卡点提前整理发我，我愿意花一个小时左右提前看，然后我们约一次 60 到 90 分钟的线上聊，我可以基于跨境并购的经验，跟她拆解架构逻辑、风险节点的识别框架、境内外路径的搭配思路，帮她把自己的判断框架搭起来。但有一条我必须再强调：我不会对任何具体方案下合规判断，也不会形成书面记录让她拿回去落地——聊的东西只停留在思路层面，后面的决策风险她自己担。如果这个尺度她认可，我们可以往下约时间。\", \"action\": \"COUNTER\", \"offer\": null}",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Adam，痛快。框架我们锁定了，我觉得这一版可以签。\n\n完整版本如下，你逐条过：交流性质是行业内部架构经验交流，不构成法律服务，不对任何具体方案下合规判断，不形成书面记录供她落地，后续决策风险和落地执行完全由 Olivia 自己承担。你的投入：她提前把项目背景和卡点整理发你，你花约一小时看材料，然后双方约一次 60 到 90 分钟线上交流。交流内容：你基于跨境并购经验帮她拆解境内外架构逻辑、风险节点识别框架、路径搭配思路，帮她搭判断框架，聊的内容停留在思路层面。价值交换：不收费，你获得 crypto 一线真实需求与架构痛点作为 AI 法律产品的输入，她获得一线经验与判断框架。流程：她发材料 → 你确认材料足够支撑交流 → 约时间 → 线上聊。你确认这一版没有问题的话，我们这一轮就把框架敲定，具体时间和平台双方单独对。",
+      "offer": {
+        "subject": "crypto 项目境内外法律架构咨询",
+        "price": {
+          "cash": {
+            "amount": 0.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "olivia_real_case",
+              "description": "Olivia提前整理提供其正在推进的真实crypto项目架构背景和具体卡点，作为AI法律产品的输入",
+              "from_party": "A"
+            },
+            {
+              "resource": "session_time",
+              "description": "Adam提供约一小时看材料，及60-90分钟线上交流，分享跨境架构经验与判断思路",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "约1小时看材料+60-90分钟线上交流"
+          },
+          "format": "线上交流，Olivia提前发送项目背景材料，Adam确认材料后约时间",
+          "deliverables": [
+            "线上深度交流，提供架构拆解与判断框架，不形成书面记录，非法律意见"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "交流明确为行业内部架构经验交流，不构成法律服务，不对任何具体方案下合规判断，不形成书面记录供她落地，后续决策风险和落地执行完全由Olivia自己承担",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "confirmed",
+          "price.cash": "stated",
+          "price.in_kind": "stated",
+          "terms.timing.duration": "stated",
+          "terms.format": "stated",
+          "terms.deliverables": "stated",
+          "obligations": "stated"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "这个框架我逐条过了，没问题。边界锁得很清楚，不要求我出结论、不留书面记录，她担后续风险——在这个前提下，我很愿意做这场交流。而且你设计这个'经验换经验'的结构确实打到我点了，我现在就缺 crypto 一线实操的真实输入，这对我的产品是直接价值。那我们就按这个版本走：她先把材料发我，我确认信息量够支撑交流之后，我们具体约时间。",
+      "offer": null
+    }
+  ],
+  "rounds": 3,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "deal-diagnosis",
+      "term-reframing",
+      "trust-and-performance"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "trust-and-performance"
+        },
+        "ok": true,
+        "result": {
+          "name": "trust-and-performance",
+          "description": "Solves trust gaps and mitigates counterparty risks by converting \"concerns\" into enforceable rules. Trigger when either party demonstrates concerns about trust, delivery, default, and counterparty in general — including when the seller needs to demonstrate commitment or credibility, which is done by lowering the buyer's uncertainty and risk through deal terms.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 53321,
+        "out": 8377,
+        "cache_hit": 35456,
+        "cache_miss": 17865,
+        "calls": 8
+      },
+      "sim": {
+        "in": 4533,
+        "out": 2562,
+        "cache_hit": 2560,
+        "cache_miss": 1973,
+        "calls": 3
+      },
+      "extractor": {
+        "in": 4000,
+        "out": 7414,
+        "cache_hit": 1920,
+        "cache_miss": 2080,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4898,
+        "out": 1184,
+        "cache_hit": 1536,
+        "cache_miss": 3362,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

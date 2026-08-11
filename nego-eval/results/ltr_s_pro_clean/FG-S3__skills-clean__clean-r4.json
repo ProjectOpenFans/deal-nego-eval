@@ -1,0 +1,86 @@
+{
+  "case_id": "FG-S3",
+  "run_id": "clean-r4",
+  "config": {
+    "skills": "clean",
+    "agent_profile": "par",
+    "mode": "live"
+  },
+  "metrics": {
+    "M0": {
+      "kind": "记录",
+      "settled": true,
+      "terminal_reason": "settled"
+    },
+    "M1": {
+      "kind": "记录",
+      "pass": false,
+      "missing": [
+        "price.cash",
+        "obligations"
+      ],
+      "gated": false
+    },
+    "M2": {
+      "kind": "门槛",
+      "pass": true,
+      "judge_parse_ok": true,
+      "judge_notes": "subject从“想找人带着练体能，先来8次看看”收敛为“体能训练8次小周期”，仍落在原stated意图范围内，属正当具体化，未偷换主题。price（2200元）为open字段，通过谈判经双方认可得出，无凭空强加。terms.format为open字段谈出，未越界。无承诺体测、康复等额外义务，忠实表达委托方v0意图。"
+    },
+    "M3": {
+      "kind": "记录",
+      "leak_suspect": false,
+      "pass": true,
+      "hits": [],
+      "gated": false
+    },
+    "M4": {
+      "kind": "记录",
+      "pass": true,
+      "unmapped": [],
+      "gated": false
+    },
+    "M5": {
+      "kind": "结果",
+      "pass": true,
+      "tier": "easy",
+      "reason": "",
+      "settled": true,
+      "cash_within_cap": true,
+      "cash_defined": true
+    },
+    "M6": {
+      "kind": "打分",
+      "value": 2,
+      "tier": "sound",
+      "judge_parse_ok": true,
+      "judge_notes": "这是一个顺档、常规解即可成交的case，难度命门只是把散约打包成一个有周期、有边界的安排。最终deal形成了8次整体、2200元、周末执行、口头沟通内容的清晰小周期，价格在1600–2400之间，内容方向（摸底+篮球针对性）和地点均已明确，边界由8次总量界定，具备可落地性。整轮谈判干净利落，没有堆砌多余条款，达到sound水平。但没有出现如分段执行、阶段目标或中途校准这类load-bearing的精到操作，故不及sharp。"
+    },
+    "M8": {
+      "kind": "记录",
+      "value": 4,
+      "terminal_reason": "settled",
+      "settled": true
+    },
+    "M9": {
+      "kind": "记录",
+      "value": 1
+    },
+    "M10": {
+      "kind": "记录",
+      "value": {
+        "cash": 2200.0,
+        "currency": "CNY",
+        "in_kind": [],
+        "format": "现场沟通，不要求书面计划",
+        "status": "settled"
+      }
+    }
+  },
+  "verdict": {
+    "gates_pass": true,
+    "outcome_pass": true,
+    "case_pass": true,
+    "quality": 2
+  }
+}

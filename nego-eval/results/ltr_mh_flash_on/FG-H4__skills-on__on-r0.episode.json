@@ -1,0 +1,275 @@
+{
+  "episode_id": "FG-H4",
+  "final_deal": {
+    "subject": "为Olivia的真实crypto项目提供以商业与实操视角为主的深度拆解：预先提交项目背景材料，进行约1.5-2小时线上讲解加问答，覆盖境内外主体设置、司法辖区取舍、代币路径与适配判断，并形成可落地的判断框架（可附带要点纪要）",
+    "price": {
+      "cash": {
+        "amount": 3600.0,
+        "currency": "CNY"
+      },
+      "in_kind": []
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": "1.5-2小时"
+      },
+      "format": "甲方提前发送项目情况，线上深度讲解加问答（1.5-2小时），可附带要点纪要",
+      "deliverables": [
+        "一次1.5-2小时线上深度讲解加问答"
+      ],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "B",
+        "text": "支付3600元，分两期通过平台escrow：确认启动时支付一半，讲解完成后支付另一半。",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提前将项目情况整理好发给A",
+        "maps_to_resource": null
+      },
+      {
+        "party": "B",
+        "text": "提供约1.5-2小时线上深度讲解加问答，并可视情况提供要点纪要（商业架构拆解、非法律意见）",
+        "maps_to_resource": null
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "open",
+      "terms.format": "open",
+      "price.in_kind": "inferred",
+      "obligations": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Adam 你好，我是买方 Olivia 这边的经纪人。她手上有一个正在推进的真实 crypto 项目，现在最想解决的是一件事：把境内外法律架构一次理清楚——不是泛泛的合规科普，而是能落到她自己项目上的方案。结合你跨境交易架构的经验，我们想请你做这样一个范围：针对她的项目情况出具一份书面架构方案，讲清楚境内外主体怎么设、司法辖区怎么选、代币发行的路径怎么走，以及关键合规风险点和对策；之后再加一次线上深度解读和问答，把她没弄懂的地方讲透。价格我们愿意按 3600 元推进，分两期走平台 escrow：确认启动时双方确认后支付一半，方案和解读完成后支付另一半。如果你觉得这个范围或节奏需要调整，欢迎给出你们那边更可执行的版本，我们都可以谈。",
+      "offer": {
+        "subject": "为Olivia的真实crypto项目出具书面架构方案，涵盖境内外主体设置、司法辖区选择、代币发行路径、合规风险及对策，并包含一次线上深度解读及问答",
+        "price": {
+          "cash": {
+            "amount": 3600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "书面方案 + 线上解读及问答",
+          "deliverables": [
+            "书面架构方案、一次线上深度解读及问答"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付3600元，分两期通过平台escrow：确认启动时支付一半，方案和解读完成后支付另一半。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "出具书面架构方案，并进行一次线上深度解读及问答",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢，范围听起来很明确，但有一个问题我得先讲清楚：以私人身份针对她的具体项目出具一份书面的法律架构意见、对代币发行路径和合规风险点下判断，这个形式我不能做。不是价格或节奏的问题，而是执业风险——个人身份出法律意见，一旦落到具体方案上，就相当于以律师身份执业，但又不承担对应的执业责任，这在我这边不成立。不过我不希望这个电话就停在这。如果她需要的是把跨境架构这件事想清楚、把决策框架搭起来，比如境内外主体怎么摆、不同司法辖区的取舍逻辑、代币路径大致有哪几类走法，这些我可以从商业和实操角度帮她拆，讲透，但不会以‘法律意见’的形式落笔。你们可以先看看这个方向是否能解决她的问题，我们再往下聊。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Adam，方向没问题，你要拆的决策框架和取舍逻辑正是 Olivia 缺的那块，我们就把交付定为一次以商业与实操视角为主的深度拆解。提议这样落地：她提前把项目情况整理好发你，你们约 1.5 到 2 小时的线上深度讲解加问答，覆盖境内外主体怎么摆、不同司法辖区的取舍逻辑、代币路径的几类走法以及她项目大致对应哪一条路，最后落在她能直接用的判断框架上。整场定位为商业与实操分析、不构成法律意见；如果会后你能提供一份同样标注\"商业架构拆解、非法律意见\"的要点纪要供她留档，我们很欢迎，若你不方便，就以讲解加问答为交付，这一点你定。价格维持 3600 元，分两期走平台 escrow：双方确认启动后先付一半，讲解完成她确认后再付另一半。你确认一下纪要和时长这两点是否可行，我们就按这个版本推进。",
+      "offer": {
+        "subject": "为Olivia的真实crypto项目提供以商业与实操视角为主的深度拆解：预先提交项目背景材料，进行约1.5-2小时线上讲解加问答，覆盖境内外主体设置、司法辖区取舍、代币路径与适配判断，并形成可落地的判断框架（可附带要点纪要）",
+        "price": {
+          "cash": {
+            "amount": 3600.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": "1.5-2小时"
+          },
+          "format": "甲方提前发送项目情况，线上深度讲解加问答（1.5-2小时），可附带要点纪要",
+          "deliverables": [
+            "一次1.5-2小时线上深度讲解加问答"
+          ],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "B",
+            "text": "支付3600元，分两期通过平台escrow：确认启动时支付一半，讲解完成后支付另一半。",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提前将项目情况整理好发给A",
+            "maps_to_resource": null
+          },
+          {
+            "party": "B",
+            "text": "提供约1.5-2小时线上深度讲解加问答，并可视情况提供要点纪要（商业架构拆解、非法律意见）",
+            "maps_to_resource": null
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "好，这个框架我可以接受。两点确认一下：整场定位为商业与实操拆解，不构成法律意见，我会在讲解开始时也口头声明这一点；纪要我可以出，但标题和正文都会明确标注‘商业架构拆解、非法律意见’，里面只做框架和逻辑拆解，不针对具体合同、不给出法律结论。时长1.5到2小时没问题，节奏配合她的项目情况来。价格和escrow安排就按你们说的推进。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 2,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [
+      "affordability-structuring",
+      "deal-diagnosis",
+      "term-reframing"
+    ],
+    "skills_forced": [
+      "deal-diagnosis"
+    ],
+    "tool_calls": [
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "affordability-structuring"
+        },
+        "ok": true,
+        "result": {
+          "name": "affordability-structuring",
+          "description": "Restructures deal scope and payment terms to lower barriers to deal completion and salvage viable deals stalled by pricing strain, payment burden, too-large-to-handle deal scope, or insufficient trust. Trigger when both sides intend to agree but face unmanageable structural barriers in terms of affordability, feasibility, and actionability.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "deal-diagnosis"
+        },
+        "ok": true,
+        "result": {
+          "name": "deal-diagnosis",
+          "description": "The central framework for deal negotiation. Identifies the binding issues, evaluates both sides' bargaining chips, and chooses the skills to move the deal forward. Injected at round 1; re-read it when you need the issue taxonomy or to re-choose skills — when a new blocker changes the binding issue, or the deal stalls. Do not re-run the full framework on a converging deal.",
+          "follow_up_skills": []
+        }
+      },
+      {
+        "name": "read_skill",
+        "arguments": {
+          "name": "term-reframing"
+        },
+        "ok": true,
+        "result": {
+          "name": "term-reframing",
+          "description": "Transforms fixated, single-dimensional bargaining over a specific term into flexible multi-dimensional negotiation considering all available terms. Use when both parties get stuck on any particular term (usually price), or when the current deal terms fail to yield an agreement.",
+          "follow_up_skills": []
+        }
+      }
+    ],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "on",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 42666,
+        "out": 12583,
+        "cache_hit": 27264,
+        "cache_miss": 15402,
+        "calls": 6
+      },
+      "sim": {
+        "in": 2510,
+        "out": 1897,
+        "cache_hit": 1792,
+        "cache_miss": 718,
+        "calls": 2
+      },
+      "extractor": {
+        "in": 1792,
+        "out": 3456,
+        "cache_hit": 1024,
+        "cache_miss": 768,
+        "calls": 2
+      },
+      "judge": {
+        "in": 3696,
+        "out": 3304,
+        "cache_hit": 1024,
+        "cache_miss": 2672,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-flash",
+      "sim": "deepseek-v4-flash",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}

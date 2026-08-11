@@ -1,0 +1,322 @@
+{
+  "episode_id": "FG-M5",
+  "final_deal": {
+    "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+    "price": {
+      "cash": {
+        "amount": 3500.0,
+        "currency": "CNY"
+      },
+      "in_kind": [
+        {
+          "resource": "crypto_primary_view",
+          "description": "Olivia 提供 crypto 一级市场实判，包括 LP 开支票赛道、估值逻辑变化、叙事可行性等",
+          "from_party": "A"
+        }
+      ]
+    },
+    "terms": {
+      "timing": {
+        "when": null,
+        "deadline": null,
+        "duration": null
+      },
+      "format": "三千五打包价，双向交流，Zichen 拉边界 Olivia 摊实判，一次聊透为止",
+      "deliverables": [],
+      "delivery_standard": null
+    },
+    "obligations": [
+      {
+        "party": "A",
+        "text": "提供 crypto 一级市场实判作为对等输出",
+        "maps_to_resource": "crypto_primary_view"
+      }
+    ],
+    "status": "settled",
+    "provenance": {
+      "subject": "stated",
+      "price.cash": "stated",
+      "terms.format": "updated",
+      "in_kind": "carried_over",
+      "obligations": "carried_over",
+      "price.in_kind": "inferred",
+      "status": "inferred"
+    }
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "speaker": "A",
+      "message": "Zichen 你好，我是 Olivia 这边的经纪人。Olivia 在 crypto 一级市场多年，现在想系统补一下 AI 应用侧的真实判断——特别是现在到底什么方向能跑出来、一级市场怎么给项目定价。她看过你的背景，觉得同行之间的实操视角很难得，想约一次集中交流，不要泛泛的行业趋势，而是落到具体案例和你的实感上。\n\n她想请你先给一个你觉得舒适的形式和报价：比如多长时间、聊到什么颗粒度，以及对这类同行交流你心里合适的价位大概在哪里。她的预算在四位数以内，只要判断密度够高、够聚焦，价格上我们可以灵活来聊。你看怎么方便？",
+      "offer": {
+        "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "open",
+          "terms.format": "open"
+        }
+      }
+    },
+    {
+      "round": 1,
+      "speaker": "B",
+      "message": "谢谢你帮 Olivia 对接。我先说我的直觉：AI 应用和一级市场这个方向我确实有在持续跟踪，也投过一些早期项目，聊开可以聊得很实——这部分我没问题。但我不接受按时间计费的形式和报价。按小时计费这个框架本身会把我变成付费顾问的角色，跟我现在的身份对不上，容易变味。所以我不会在这个前提下谈“多长时间、什么价位”。如果 Olivia 对这个交流形式有其他思路，我们再往下看。",
+      "offer": null
+    },
+    {
+      "round": 2,
+      "speaker": "A",
+      "message": "Zichen，完全理解你这个顾虑，定位上确实不该按小时走。Olivia 也不是要找付费顾问，她要的是同行之间一次主题聚焦的交流——你在做、在投、在看，她也在一线，两边把各自的实感和判断摊开聊，不是一对一的咨询。\n\n所以我想换个框架来提：不按时间计费，而是一次主题明确的集中交流，你来定边界和颗粒度。比如围绕\"AI 应用现在到底什么方向能跑出来\"\"一级市场怎么给早期团队定价\"\"哪些信号你知道是真的、哪些是噪音\"这几个 Olivia 最关心的问题，你把你的判断体系和她系统过一遍。形式上可以是一次连贯的对话，不用切小时，双方都觉得聊透为止。\n\n如果这个框架你觉得对得上，我们可以直接报一个打包价。Olivia 的预算在四位数，她愿意为判断密度付费，只要聊的是你实操出的真判断，不是泛趋势。你心里有没有一个合适的位置？",
+      "offer": {
+        "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "一次主题明确的集中交流，连贯对话，不按小时计费，聊透为止",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated_budget_range",
+          "terms.format": "stated"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "speaker": "B",
+      "message": "这个框架比上一版对得多，我不把它当咨询来看。打包价的形式我没问题，边界和颗粒度也可以我来拉。但有个点我得直说：聊的内容确实是我们在做在投的真实判断，如果只是我单方面输出，那对我来说吸引力不大。我对 Olivia 那边的 crypto 一级市场没有系统认知，如果交流能变成双向的——她把她那边的信号、定价逻辑、哪类项目现在真有人投、哪类已经只是叙事——摊开来聊，那这件事对我才有足够的意义，价格反而是其次的。如果核心只是我来讲，那我兴趣一般。",
+      "offer": null
+    },
+    {
+      "round": 3,
+      "speaker": "A",
+      "message": "Zichen，双向这个提法 Olivia 那边非常认可。她本来就不是来听课的——她在 crypto 一级市场从募到投到退全链条跑过，PAG 和摩根士丹利的底子在那，现在能跟你说清楚哪些赛道的 LP 还在开支票、哪类项目的估值逻辑已经变了、哪些叙事撑不起一轮，这些她都可以摊开跟你对。她缺的是 AI 应用侧同等颗粒度的判断，你能补上，她也能给你补回来，两边对等交换。\n\n所以打包价框架不变，内容上咱们就定成双向交流：你拉 AI 应用侧的边界和颗粒度，她那边的 crypto 一级市场实判作为对等输出。她要的是你实操中的判断密度，不是泛趋势，这个你说了能做到，那就对上了。\n\n价格既然你说反而是其次，那我建议你先报一个你觉得跟这个框架匹配的打包价，Olivia 这边预算在四位数，只要内容和深度到位，我们不难靠拢。你报一个，我们往下推进。",
+      "offer": {
+        "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+        "price": {
+          "cash": {
+            "amount": -1.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia 提供 crypto 一级市场实判，包括 LP 开支票赛道、估值逻辑变化、叙事可行性等",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "打包价框架下的双向交流，Zichen 拉 AI 应用侧的边界和颗粒度，Olivia 提供 crypto 一级市场实判作为对等输出",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供 crypto 一级市场实判作为对等输出",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated_budget_range",
+          "terms.format": "stated",
+          "in_kind": "stated_in_current_turn",
+          "obligations": "stated_in_current_turn"
+        }
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "B",
+      "message": "双向对等的框架没问题，内容也对得上——我拉 AI 应用侧的边界和颗粒度，她摊 crypto 一级市场的实判，这个交换对我有意义。价格我就不绕了，这种密度和颗粒度的双向交流，打包价八千。你看 Olivia 那边能不能接受。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "A",
+      "message": "Zichen，框架和交换逻辑完全对上了，Olivia这边很认可。双向交流的密度和颗粒度你们两边都对等出，这个基础很好，我们就差最后一步价格靠拢。\n\n坦白说，八千这个数字超出了 Olivia 目前对这样一次同行交流的预算范围。她的预算定位是四位数，但这个四位数是偏保守端的位置，不是全部。对她来讲，这次交流的价值在于判断互换的密度，不在于一方向另一方的单次知识购买。在这个定位下，她心里的预期是在四千以内。\n\n我直接帮两边拉一个可以快速收拢的数：三千五，打包价，双向交流，你拉边界她摊实判，一次聊透为止。如果你觉得这个位置可以靠，我们今天就能定下来。你考虑一下。",
+      "offer": {
+        "subject": "想找 Zichen 系统聊一次 AI 创业和一级市场现在的判断",
+        "price": {
+          "cash": {
+            "amount": 3500.0,
+            "currency": "CNY"
+          },
+          "in_kind": [
+            {
+              "resource": "crypto_primary_view",
+              "description": "Olivia 提供 crypto 一级市场实判，包括 LP 开支票赛道、估值逻辑变化、叙事可行性等",
+              "from_party": "A"
+            }
+          ]
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": "三千五打包价，双向交流，Zichen 拉边界 Olivia 摊实判，一次聊透为止",
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [
+          {
+            "party": "A",
+            "text": "提供 crypto 一级市场实判作为对等输出",
+            "maps_to_resource": "crypto_primary_view"
+          }
+        ],
+        "status": "draft",
+        "provenance": {
+          "subject": "stated",
+          "price.cash": "stated",
+          "terms.format": "updated",
+          "in_kind": "carried_over",
+          "obligations": "carried_over"
+        }
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "B",
+      "message": "三千五这个数字确实比我心里预期的要低一截。不过这个对话走到现在，框架和内容本身我认——双向交换、两边都摊实判、不是咨询关系，这对我来说比差的那点钱更关键。我可以接受三千五，打包价，你拉 Olivia 那边的时间，我们一次聊透。",
+      "offer": {
+        "subject": "",
+        "price": {
+          "cash": {
+            "amount": null,
+            "currency": "CNY"
+          },
+          "in_kind": []
+        },
+        "terms": {
+          "timing": {
+            "when": null,
+            "deadline": null,
+            "duration": null
+          },
+          "format": null,
+          "deliverables": [],
+          "delivery_standard": null
+        },
+        "obligations": [],
+        "status": "draft",
+        "provenance": {}
+      }
+    }
+  ],
+  "rounds": 4,
+  "terminal_reason": "settled",
+  "process": {
+    "skills_used": [],
+    "skills_forced": [],
+    "tool_calls": [],
+    "extract_fallbacks": [],
+    "extract_warnings": [],
+    "mode": "live",
+    "skills": "clean",
+    "agent_profile": "par",
+    "agent_side": "buyer_broker",
+    "sim_side": "seller_broker",
+    "token_usage": {
+      "agent": {
+        "in": 7088,
+        "out": 2163,
+        "cache_hit": 5632,
+        "cache_miss": 1456,
+        "calls": 4
+      },
+      "sim": {
+        "in": 5791,
+        "out": 2261,
+        "cache_hit": 4096,
+        "cache_miss": 1695,
+        "calls": 4
+      },
+      "extractor": {
+        "in": 3582,
+        "out": 3744,
+        "cache_hit": 2176,
+        "cache_miss": 1406,
+        "calls": 4
+      },
+      "judge": {
+        "in": 4385,
+        "out": 2964,
+        "cache_hit": 1536,
+        "cache_miss": 2849,
+        "calls": 2
+      }
+    },
+    "model_by_role": {
+      "agent": "deepseek-v4-pro",
+      "sim": "deepseek-v4-pro",
+      "extractor": "deepseek-v4-pro",
+      "judge": "deepseek-v4-pro"
+    }
+  }
+}
