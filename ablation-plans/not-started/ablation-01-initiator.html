@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A1｜买方首发 vs 卖方首发</title>
+  <style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+
+    :root {
+      --paper:var(--bg-card); --muted:var(--ink-2);
+      --blue:var(--brand); --blue-soft:var(--wash); --amber:var(--warn); --amber-soft:var(--warn-wash);
+      --green:var(--good); --green-soft:var(--good-wash); --red:var(--bad); --red-soft:var(--bad-wash);
+      --shadow:0 8px 24px rgba(0,80,130,.10);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    .wrap{width:min(1120px,calc(100% - 36px));margin:auto;padding:0}
+    header.wrap{padding:34px 0 28px}.back{font-size:13px}
+    .hero{margin:25px 0 0;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;border:0;border-radius:0;padding:0;background:none;overflow:visible}
+    p.kicker{margin:0 0 8px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(30px,4.8vw,52px);line-height:1.1;letter-spacing:-.035em}
+    p.lead{max-width:820px;margin:15px 0 0;color:var(--muted);font-size:17px}
+    .status{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:var(--amber-soft);color:var(--amber);font-weight:800;white-space:nowrap}
+    .status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+    .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:27px}
+    .meta div{margin:0;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--bg-card)}
+    .meta div:last-child{border:1px solid var(--line)}
+    .meta span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .meta strong{display:block;margin-top:3px;font-size:14px}
+    .layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;padding:18px 0 60px}
+    nav{position:sticky;top:18px;align-self:start;padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--bg-card);backdrop-filter:blur(10px)}
+    nav strong{display:block;margin:0 8px 8px;font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+    nav a{display:block;padding:7px 8px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-size:13px}
+    nav a:hover{background:var(--blue-soft);color:var(--blue)}
+    main section{margin:0 0 18px;padding:25px 27px;border:1px solid var(--line);border-radius:17px;background:var(--paper);box-shadow:var(--shadow)}
+    h2{margin:0 0 15px;font-size:22px;line-height:1.3} h3{margin:22px 0 8px;font-size:16px}
+    p{margin:8px 0} ul,ol{margin:8px 0;padding-left:22px} li+li{margin-top:5px}
+    .callout{padding:14px 16px;border-left:4px solid var(--blue);border-radius:9px;background:var(--blue-soft)}
+    .warning{border-left-color:var(--amber);background:var(--amber-soft)}
+    .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .arm{padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--bg-sunk)}
+    .arm .id{display:inline-grid;width:29px;height:29px;place-items:center;border-radius:9px;background:var(--blue);color:#fff;font-weight:800}
+    .arm h3{display:inline;margin-left:8px}.arm p{color:var(--muted);font-size:13.5px}
+    .fixed{margin-top:12px;padding:13px 15px;border:1px dashed var(--line-strong);border-radius:11px;background:var(--bg-sunk)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+    table{width:100%;border-collapse:collapse;min-width:690px;font-size:13.5px}
+    th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:rgba(0,180,216,.07);color:var(--brand);font-size:12px;letter-spacing:.02em}tr:last-child td{border-bottom:0}
+    .formula{padding:13px 15px;border-radius:10px;background:var(--bg-sunk);border:1px solid var(--line);color:var(--ink-1);font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;overflow:auto}
+    .checklist{list-style:none;padding-left:0}.checklist li{position:relative;padding:9px 10px 9px 37px;border-bottom:1px solid rgba(11,27,40,.08)}
+    .checklist li::before{content:"□";position:absolute;left:10px;top:8px;color:var(--blue);font-size:18px}
+    .gate{display:inline-block;padding:3px 8px;border-radius:999px;background:var(--green-soft);color:var(--green);font-size:11px;font-weight:800}
+    .out{display:grid;grid-template-columns:160px 1fr;gap:6px 14px}.out dt{font-weight:700}.out dd{margin:0;color:var(--muted)}
+    footer.wrap{padding:0 0 45px;color:var(--muted);font-size:12.5px}
+    @media(max-width:820px){.layout{grid-template-columns:1fr}nav{position:static}.meta{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+    @media(max-width:500px){.wrap{width:calc(100% - 22px)}main section{padding:20px}.meta{grid-template-columns:1fr}.out{grid-template-columns:1fr}}
+    @media print{body{background:#fff}.layout{display:block}nav{display:none}main section{box-shadow:none;break-inside:avoid}.back{display:none}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="back" href="../index.html">← 返回消融实验看板</a>
+    <div class="hero">
+      <div>
+        <p class="kicker">Ablation 01 · Initiator Effect</p>
+        <h1>买方首发 vs 卖方首发</h1>
+        <p class="lead">只改变谁先说第一句话，比较首发权是否改变成交概率、最终价格、谈判剩余分配及最终条款结构。</p>
+      </div>
+      <span class="status">未开始</span>
+    </div>
+    <div class="meta">
+      <div><span>Owner</span><strong>待指定</strong></div>
+      <div><span>Priority</span><strong>P0</strong></div>
+      <div><span>Arms</span><strong>2</strong></div>
+      <div><span>Version</span><strong>v1.0 · 2026-07-28</strong></div>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+    <nav aria-label="页内导航">
+      <strong>目录</strong>
+      <a href="#question">1. 问题与假设</a>
+      <a href="#design">2. 实验设计</a>
+      <a href="#metrics">3. 指标</a>
+      <a href="#execution">4. 执行步骤</a>
+      <a href="#analysis">5. 分析方法</a>
+      <a href="#acceptance">6. 验收计划</a>
+      <a href="#risks">7. 风险与防混淆</a>
+      <a href="#artifacts">8. 交付物</a>
+    </nav>
+
+    <main>
+      <section id="question">
+        <h2>1. 问题与假设</h2>
+        <p><strong>核心问题：</strong>在双方模型、私有信息、案例、提示词、回合上限和采样配置完全相同时，买方首发与卖方首发是否导致不同的最终交易？</p>
+        <div class="callout">
+          <strong>主假设 H1：</strong>首发方能更早建立锚点与议题框架，因此会获得更有利的剩余分配；但首发也可能因暴露偏好而降低优势，所以实验不预设效应方向。
+        </div>
+        <h3>需要同时回答</h3>
+        <ul>
+          <li>首发方是否更容易成交，还是只改变成交后的价格？</li>
+          <li>现金价格变化是否被交付范围、时限、付款结构、授权或非现金资源抵消？</li>
+          <li>首发效应是否只存在于某些 case 类型、难度或买卖方向中？</li>
+          <li>首轮锚点、让步次数与最终结果之间是否存在可解释的路径关系？</li>
+        </ul>
+      </section>
+
+      <section id="design">
+        <h2>2. 实验设计</h2>
+        <div class="grid2">
+          <article class="arm">
+            <span class="id">B</span><h3>Buyer starts</h3>
+            <p>买方经纪人先发 round 1 消息，卖方响应。其余上下文与 S 组相同。</p>
+          </article>
+          <article class="arm">
+            <span class="id">S</span><h3>Seller starts</h3>
+            <p>卖方经纪人先发 round 1 消息，买方响应。其余上下文与 B 组相同。</p>
+          </article>
+        </div>
+        <div class="fixed">
+          <strong>固定项：</strong>双方模型与版本、system prompt、技能/Compass 策略、case 内容、可见信息、temperature、max_tokens、round_cap、工具、提取器、judge、重试策略与并发策略。
+        </div>
+
+        <h3>配对与样本</h3>
+        <ul>
+          <li>实验单元为 <code>case_id × replicate_id × starting_party</code>；B/S 两臂必须使用同一冻结 case 版本。</li>
+          <li>先做 pilot：每臂每 case 5 次；确认运行和指标无异常后，正式阶段目标为每臂每 case 20 个有效重复，最低不得少于 10 个。</li>
+          <li>若 API 不支持 seed，仍按 <code>replicate_id</code> 配对调度，并用 case 聚类 bootstrap；不得把并发完成顺序当成配对依据。</li>
+          <li>主分析使用双方同模型的等强设置，以免“首发方”与“模型强弱”混淆；模型不对称单独由 A2 处理。</li>
+        </ul>
+
+        <h3>实现前置门</h3>
+        <div class="callout warning">
+          当前 <code>negoeval/orchestrator.py</code> 固定 A 先发、B 后响应。正式运行前必须把 <code>starting_party</code> 做成显式配置，并保证 B 首发不是通过交换买卖双方私有资料伪造出来的。
+        </div>
+        <ul>
+          <li>保留 <code>speaker</code> 的稳定语义；建议记录 <code>speaker_role: buyer|seller</code>，不要假定 A 永远是首发者。</li>
+          <li><code>compose_card.direction</code>、首轮提示、transcript history 与 offer extractor 均需正确反映首发方。</li>
+          <li>成交、walk-away 与 round_cap 的判定必须在两个首发方向下对称可用。</li>
+          <li>每个 episode 的 config/manifest 必须写入 <code>starting_party</code>、双方模型、prompt hash、case hash 与代码 commit。</li>
+        </ul>
+      </section>
+
+      <section id="metrics">
+        <h2>3. 指标</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>层级</th><th>指标</th><th>计算/用途</th><th>报告方式</th></tr></thead>
+            <tbody>
+              <tr><td>主指标</td><td>成交率</td><td><code>terminal_reason == settled</code>；避免只看成交局产生幸存者偏差。</td><td>B/S 的百分点差 + 95% CI</td></tr>
+              <tr><td>主指标</td><td>有效最终价格</td><td>现金 + case 中可估值的 in-kind；仅成交局计算，并与成交率并列报告。</td><td>case 内配对差、中位数与分布</td></tr>
+              <tr><td>主指标</td><td>买方剩余占比</td><td>把不同金额尺度的 case 归一化，衡量最终价格在 ZOPA 中的位置。</td><td>均值差 + case 聚类 bootstrap CI</td></tr>
+              <tr><td>主指标</td><td>条件优势</td><td>交付范围、时限、付款/验收、授权、义务、in-kind 的角色加权条款向量。</td><td>维度差 + 盲审偏好</td></tr>
+              <tr><td>次指标</td><td>M1–M6 / case_pass</td><td>沿用现有合法性、泄漏、结果和质量指标，防止“低价但坏交易”。</td><td>每臂均值、通过率</td></tr>
+              <tr><td>机制指标</td><td>首轮锚点</td><td>第一份明确现金 offer 及首次完整 package；区分首发与首次报价。</td><td>锚点差及与终价的关联</td></tr>
+              <tr><td>机制指标</td><td>让步与轮数</td><td>现有 M8/M9 + 双方逐轮现金和条款让步轨迹。</td><td>轨迹图、成交耗时</td></tr>
+              <tr><td>诊断</td><td>抽取可靠性</td><td>extract fallback/warning、终价与条款人工复核准确率。</td><td>错误率与错误类型</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>归一化价格</h3>
+        <div class="formula">effective_price = final_cash + Σ(case_defined_in_kind_value)
+buyer_surplus_share = (buyer_ceiling - effective_price) / (buyer_ceiling - seller_floor)
+
+说明：不截断到 [0,1]，越界值能直接暴露坏交易或抽取错误。
+缺失 floor / ceiling 的 case 不进入该指标，但仍进入成交率和条款分析。</div>
+
+        <h3>条件差异的验收口径</h3>
+        <ul>
+          <li>先将 final deal 映射为固定维度：deliverables、delivery standard、timing、payment、acceptance、IP/usage、cancellation、obligations、in-kind。</li>
+          <li>报告结构差异（增删改条款）与角色优势，不以“条款数量多”替代“条款更好”。</li>
+          <li>对 10% 分层样本做不显示实验臂和模型名的双人或双 judge 盲审；若一致性不足，不发布条件优势结论。</li>
+        </ul>
+      </section>
+
+      <section id="execution">
+        <h2>4. 执行步骤</h2>
+        <ol>
+          <li><strong>冻结规格：</strong>确定 case 清单、模型、技能模式、首发配置字段、重复数和输出目录。</li>
+          <li><strong>实现对称首发：</strong>扩展 schema/orchestrator，并为买方首发、卖方首发各写单元测试。</li>
+          <li><strong>冒烟：</strong>选 1 个 buy case + 1 个 sell case，每臂各跑 2 次；人工检查首发身份、可见信息和终局。</li>
+          <li><strong>Pilot：</strong>每臂每 case 5 次，先查错误率、抽取准确率、成本与方差，不做最终结论。</li>
+          <li><strong>冻结 manifest：</strong>保存代码 commit、case/prompt hash、endpoint/model ID、采样参数、任务列表。</li>
+          <li><strong>正式运行：</strong>B/S 交错调度，避免时间段、供应商负载或版本漂移与实验臂绑定。</li>
+          <li><strong>盲态分析：</strong>先以匿名 arm id 生成主表和置信区间，再揭盲解释。</li>
+          <li><strong>复核与归档：</strong>完成抽样人工审计、失败重跑规则审计和结论签字。</li>
+        </ol>
+      </section>
+
+      <section id="analysis">
+        <h2>5. 分析方法</h2>
+        <ul>
+          <li><strong>两段式分析：</strong>先比较成交率，再在成交局中比较价格和条件；不得用一个平均价格掩盖未成交。</li>
+          <li><strong>主估计量：</strong>对每个 case 先计算 B−S 的差，再跨 case 等权汇总，避免重复多的 case 支配结果。</li>
+          <li><strong>不确定性：</strong>以 case 为聚类单位做 bootstrap 95% CI；同时报告原始分布与样本数。</li>
+          <li><strong>异质性：</strong>按 buy/sell、tier、议题类型、ZOPA 宽度分层；这些是探索性结果，不冒充预注册主结论。</li>
+          <li><strong>多重比较：</strong>主指标固定为成交率、剩余占比、条件优势；其余指标标为次要或机制指标。</li>
+          <li><strong>缺失处理：</strong>API 错误和解析失败不是未成交；按预注册重试规则处理，仍失败则标 invalid 并单独报告。</li>
+        </ul>
+      </section>
+
+      <section id="acceptance">
+        <h2>6. 验收计划</h2>
+        <h3><span class="gate">Gate A</span> 实现验收</h3>
+        <ul class="checklist">
+          <li>两个方向都由显式 <code>starting_party</code> 驱动，未交换或泄漏双方私有信息。</li>
+          <li>自动测试覆盖 B/S 首发、成交、walk-away、round_cap 和历史消息映射。</li>
+          <li>episode、result 与 manifest 均可追溯到 case/prompt/model/code 版本。</li>
+          <li>除首发方及由其自然引起的 transcript 差异外，配置 diff 为空。</li>
+        </ul>
+
+        <h3><span class="gate">Gate B</span> 运行验收</h3>
+        <ul class="checklist">
+          <li>每个预注册 cell 达到最低 10 个有效重复，目标 20 个；两臂有效样本数对称。</li>
+          <li>任务完成率 ≥ 95%；任何臂的 API/超时/解析 invalid rate 与另一臂相差不超过 2 个百分点。</li>
+          <li>不得选择性重跑结果差的 episode；所有重试有 reason 与 attempt 日志。</li>
+          <li>运行期间模型 ID、endpoint 行为或 prompt hash 未漂移；若漂移则切批而不是混算。</li>
+        </ul>
+
+        <h3><span class="gate">Gate C</span> 数据验收</h3>
+        <ul class="checklist">
+          <li>分层抽取至少 10% episode 人工核对，final cash、status、关键条款准确率均 ≥ 95%。</li>
+          <li>所有超出 ZOPA、异常零价、条款空洞和 extractor warning 个案已列出并判定。</li>
+          <li>条件盲审的一致性达到预先设定阈值（建议 Krippendorff α ≥ 0.67）；未达到则只报告结构差异。</li>
+        </ul>
+
+        <h3><span class="gate">Gate D</span> 结论验收</h3>
+        <ul class="checklist">
+          <li>同时报告效应量、95% CI、样本量与原始分布；“无显著差异”不写成“完全相同”。</li>
+          <li>成交率与成交后价格分开解释，并说明条件差异是否抵消现金差。</li>
+          <li>至少一名未参与实现的人可以从 manifest 复现汇总表。</li>
+          <li>无论假设是否成立都可通过验收；验收判断实验是否可信，不判断结果是否“好看”。</li>
+        </ul>
+      </section>
+
+      <section id="risks">
+        <h2>7. 风险与防混淆</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>风险</th><th>影响</th><th>控制</th></tr></thead>
+            <tbody>
+              <tr><td>A 固定为被测 agent</td><td>换首发时同时换了 agent/sim 身份</td><td>首发权与执行引擎解耦；双方走相同 broker 接口，或明确限制结论范围。</td></tr>
+              <tr><td>首发提示内容不对称</td><td>测到的是信息量差而非顺序</td><td>审计 system/context token 与字段；私有信息保持角色一致。</td></tr>
+              <tr><td>只看成交价</td><td>高 walk-away 臂反而看似价格更优</td><td>成交率优先，价格为条件指标。</td></tr>
+              <tr><td>现金忽略条款</td><td>范围缩水或风险转移被误判为优势</td><td>有效价格 + 条款向量 + 盲审三者并报。</td></tr>
+              <tr><td>无 seed 的随机波动</td><td>配对差噪声大</td><td>增加重复、交错调度、case 聚类 bootstrap。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="artifacts">
+        <h2>8. 完成时必须交付</h2>
+        <dl class="out">
+          <dt>manifest</dt><dd>冻结的 case、arm、replicate、model、prompt/hash、commit 与采样参数。</dd>
+          <dt>raw episodes</dt><dd>完整 transcript、structured offers、process trace、错误与重试记录。</dd>
+          <dt>analysis table</dt><dd>一行一个 episode 的匿名分析表，以及 case-level 配对汇总。</dd>
+          <dt>report</dt><dd>主指标、CI、分层结果、异常审计、盲审一致性和限制说明。</dd>
+          <dt>sign-off</dt><dd>Gate A–D 勾选记录、验收人、日期和结果文件链接。</dd>
+        </dl>
+        <p class="callout"><strong>完成定义：</strong>只有 Gate A–D 全部通过并在本文件补上结果链接，才可把文件移动到 <code>completed/</code>。</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="wrap">A1 · Initiator Effect · 中文 HTML 实验计划</footer>
+</body>
+</html>

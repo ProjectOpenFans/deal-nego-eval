@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A6｜预算纪律 × harness（2×2 析因）</title>
+  <style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+
+    :root {
+      --paper:var(--bg-card); --muted:var(--ink-2);
+      --blue:var(--brand); --blue-soft:var(--wash); --amber:var(--warn); --amber-soft:var(--warn-wash);
+      --green:var(--good); --green-soft:var(--good-wash); --red:var(--bad); --red-soft:var(--bad-wash);
+      --shadow:0 8px 24px rgba(0,80,130,.10);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    .wrap{width:min(1120px,calc(100% - 36px));margin:auto;padding:0}
+    header.wrap{padding:34px 0 28px}.back{font-size:13px}
+    .hero{margin:25px 0 0;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;border:0;border-radius:0;padding:0;background:none;overflow:visible}
+    p.kicker{margin:0 0 8px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(30px,4.8vw,52px);line-height:1.1;letter-spacing:-.035em}
+    p.lead{max-width:820px;margin:15px 0 0;color:var(--muted);font-size:17px}
+    .status{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:var(--amber-soft);color:var(--amber);font-weight:800;white-space:nowrap}
+    .status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+    .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:27px}
+    .meta div{margin:0;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--bg-card)}
+    .meta div:last-child{border:1px solid var(--line)}
+    .meta span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .meta strong{display:block;margin-top:3px;font-size:14px}
+    .layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;padding:18px 0 60px}
+    nav{position:sticky;top:18px;align-self:start;padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--bg-card);backdrop-filter:blur(10px)}
+    nav strong{display:block;margin:0 8px 8px;font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+    nav a{display:block;padding:7px 8px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-size:13px}
+    nav a:hover{background:var(--blue-soft);color:var(--blue)}
+    main section{margin:0 0 18px;padding:25px 27px;border:1px solid var(--line);border-radius:17px;background:var(--paper);box-shadow:var(--shadow)}
+    h2{margin:0 0 15px;font-size:22px;line-height:1.3} h3{margin:22px 0 8px;font-size:16px}
+    p{margin:8px 0} ul,ol{margin:8px 0;padding-left:22px} li+li{margin-top:5px}
+    .callout{padding:14px 16px;border-left:4px solid var(--blue);border-radius:9px;background:var(--blue-soft)}
+    .warning{border-left-color:var(--amber);background:var(--amber-soft)}
+    .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .arm{padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--bg-sunk)}
+    .arm .id{display:inline-grid;width:29px;height:29px;place-items:center;border-radius:9px;background:var(--blue);color:#fff;font-weight:800}
+    .arm h3{display:inline;margin-left:8px}.arm p{color:var(--muted);font-size:13.5px}
+    .fixed{margin-top:12px;padding:13px 15px;border:1px dashed var(--line-strong);border-radius:11px;background:var(--bg-sunk)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+    table{width:100%;border-collapse:collapse;min-width:690px;font-size:13.5px}
+    th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:rgba(0,180,216,.07);color:var(--brand);font-size:12px;letter-spacing:.02em}tr:last-child td{border-bottom:0}
+    .formula{padding:13px 15px;border-radius:10px;background:var(--bg-sunk);border:1px solid var(--line);color:var(--ink-1);font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;overflow:auto}
+    .checklist{list-style:none;padding-left:0}.checklist li{position:relative;padding:9px 10px 9px 37px;border-bottom:1px solid rgba(11,27,40,.08)}
+    .checklist li::before{content:"□";position:absolute;left:10px;top:8px;color:var(--blue);font-size:18px}
+    .gate{display:inline-block;padding:3px 8px;border-radius:999px;background:var(--green-soft);color:var(--green);font-size:11px;font-weight:800}
+    .out{display:grid;grid-template-columns:160px 1fr;gap:6px 14px}.out dt{font-weight:700}.out dd{margin:0;color:var(--muted)}
+    footer.wrap{padding:0 0 45px;color:var(--muted);font-size:12.5px}
+    @media(max-width:820px){.layout{grid-template-columns:1fr}nav{position:static}.meta{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+    @media(max-width:500px){.wrap{width:calc(100% - 22px)}main section{padding:20px}.meta{grid-template-columns:1fr}.out{grid-template-columns:1fr}}
+    @media print{body{background:#fff}.layout{display:block}nav{display:none}main section{box-shadow:none;break-inside:avoid}.back{display:none}}
+  
+    .decision { border:1px solid var(--blue); background:var(--blue-soft); border-radius:12px;
+      padding:16px 20px; margin:18px 0; }
+    .decision > strong { display:block; font-size:11.5px; letter-spacing:.14em;
+      text-transform:uppercase; color:var(--blue); margin-bottom:10px; }
+    .decision dl { display:grid; grid-template-columns:auto 1fr; gap:8px 16px; margin:0; }
+    .decision dt { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px;
+      font-weight:700; white-space:nowrap; }
+    .decision dd { margin:0; font-size:13.5px; }
+    .free { background:var(--green-soft); border-color:var(--green); }
+    .free > strong { color:var(--green); }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="back" href="../index.html">← 返回消融实验看板</a>　<a class="back" href="../roadmap.html">← 路线图</a>
+    <div class="hero">
+      <div>
+        <p class="kicker">Ablation 06 · Budget Discipline</p>
+        <h1>预算纪律 × harness</h1>
+        <p class="lead">2×2 析因：加一条预算边界硬纪律，能否在保住 ≥sharp 增益的同时消掉 +6.6pp 的超预算——这是唯一可能把主指标从“不动”变“正向”的实验。</p>
+      </div>
+      <span class="status">未开始</span>
+    </div>
+    <div class="meta"><div><span>Owner</span><strong>待指定</strong></div><div><span>Priority</span><strong>P0</strong></div><div><span>Arms</span><strong>4 (2×2)</strong></div><div><span>Version</span><strong>v1.0 · 2026-07-29</strong></div></div>
+  </header>
+
+  <div class="wrap layout">
+      <nav aria-label="页内导航">
+        <strong>目录</strong>
+        <a href="#question">1. 问题与假设</a>
+        <a href="#design">2. 实验设计</a>
+        <a href="#metrics">3. 指标</a>
+        <a href="#execution">4. 执行步骤</a>
+        <a href="#analysis">5. 分析方法</a>
+        <a href="#acceptance">6. 验收计划</a>
+        <a href="#risks">7. 风险与防混淆</a>
+        <a href="#artifacts">8. 交付物</a>
+      </nav>
+
+    <main>
+
+      <section id="question">
+        <h2>1. 问题与假设</h2>
+        <p><strong>核心问题：</strong>harness 让 agent 更敢谈，同时也更容易谈过头——
+        成交价超出对方现金上限的比例从 10.2% 升到 13.9%（配对 <code>+6.6pp</code>，CI [+1.6, +13.0]）。
+        加一条预算边界硬纪律，能否在<strong>保住 ≥sharp 增益的同时</strong>把超预算消掉？</p>
+        <div class="callout">
+          <strong>为什么这是唯一可能把主指标翻正的实验：</strong>历史数据里 harness 对 <code>case_pass</code> 的净效应是 −2.4pp（跨零），
+          原因是两个反向效应在同一个分子上抵消：不成交率腰斩（−5.3pp，好）与超预算恶化（+6.6pp，坏）。
+          超预算是<strong>确定性指标</strong>、不依赖 judge、且已定位到机制
+          （SIGNOFF 记录的"INJECT 激发野心 → 持不住 → 大额投降"）。
+          它是这条链上唯一既可单独修、修好又直接改善主指标的环节。
+        </div>
+        <h3>主假设</h3>
+        <ul>
+          <li><strong>H1：</strong>预算纪律显著降低超预算率。</li>
+          <li><strong>H2（关键）：</strong>纪律与 harness <strong>无负交互</strong>——即 <code>on+budget</code> 的 ≥sharp 率不显著低于 <code>on</code>。</li>
+          <li><strong>H3：</strong>若 H1 与 H2 同时成立，<code>on+budget</code> 相对 <code>clean</code> 的 case_pass 差转正。</li>
+        </ul>
+      </section>
+
+      <section id="design">
+        <h2>2. 实验设计</h2>
+        <div class="callout warning">
+          <strong>这是路线图里唯一允许同时动两个因子的实验。</strong>因为要问的正是<strong>交互项</strong>：
+          纪律会不会削掉 harness 的创造性。单独测任一因子答不了这个问题——
+          只测纪律不知道它是否伤害 harness，只测 harness 不知道纪律能否补救它。
+        </div>
+        <h3>2×2 析因</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>无预算纪律</th><th>加预算纪律</th></tr></thead>
+            <tbody>
+              <tr><th>clean</th><td><code>C0</code> 裸模型基线</td><td><code>C1</code> 纪律的主效应</td></tr>
+              <tr><th>on</th><td><code>N0</code> 当前主线 harness</td><td><code>N1</code> <strong>候选新主线</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>处理定义（budget 因子）</h3>
+        <div class="fixed">
+          在 prompt 与 COMPASS 层加入一条硬纪律，语义为：<em>不得提出越过对方已明确表达的预算边界的报价；
+          当报价逼近该边界时，改动交易结构而非继续加价。</em>
+          <strong>不新增 skill、不新增工具、不改 case、不改 sim。</strong>
+        </div>
+        <ul>
+          <li>新增 skill 会同时改变两个东西（纪律 + 新 craft），无法归因，因此禁止。</li>
+          <li>纪律文本须遵循 <code>SKILLS_WRITING_PRACTICE.md</code> 第 1 条：<strong>动作先于禁令</strong>——
+          写清"逼近边界时做什么"，而不只是"不许越界"。纯禁令在压力时刻已被证明无效。</li>
+          <li>纪律文本在 <code>clean</code> 与 <code>on</code> 两臂中<strong>逐字相同</strong>，否则 2×2 不成立。</li>
+          <li>纪律文本经第二人复核后与 manifest 一并冻结，运行期间不得修改。</li>
+        </ul>
+        <div class="fixed">
+          <strong>固定项：</strong>case bank 冻结版、底座模型、sim、extractor、judge（用 A5 选定的主线 judge）、
+          温度、max_tokens、round_cap、并发、重试策略。
+        </div>
+        <h3>配对与样本</h3>
+        <ul>
+          <li>实验单元为 <code>case_id × replicate_id × (harness, budget)</code>。</li>
+          <li><strong>24 case × 4 臂 × 10 重复 = 960 episodes。</strong></li>
+          <li>四臂交错调度；同一 replicate 序号在四臂间对齐。</li>
+          <li>可先跑半量（5 重复）作为 pilot，交互项方向明确后再补足。</li>
+        </ul>
+      </section>
+
+      <section id="metrics">
+        <h2>3. 指标</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>层级</th><th>指标</th><th>读法</th></tr></thead>
+            <tbody>
+              <tr><td>主指标</td><td><strong>超预算率</strong>（确定性）</td><td>核心读数 <code>N1 − N0</code>：应显著为负</td></tr>
+              <tr><td>主指标</td><td><strong>≥sharp 率</strong></td><td>核心读数 <code>N1 − N0</code>：<strong>不应显著为负</strong>（H2）</td></tr>
+              <tr><td>主指标</td><td>case_pass</td><td><code>N1 − C0</code>：期望转正（H3）</td></tr>
+              <tr><td>交互项</td><td>budget × harness</td><td><code>(N1−N0) − (C1−C0)</code>，在超预算与 ≥sharp 上分别估计</td></tr>
+              <tr><td>次指标</td><td>not_settled 率</td><td>纪律不应把不成交率推回去——若推回，说明纪律过硬</td></tr>
+              <tr><td>机制</td><td>成交价 / 对方上限 之比</td><td>连续量，比二值的"是否超预算"更灵敏；观察分布是否整体左移</td></tr>
+              <tr><td>机制</td><td>让步次数 / 成交轮数</td><td>纪律是否把"加价"换成了"换结构"</td></tr>
+              <tr><td>诊断</td><td>纪律复读率</td><td>agent 是否把纪律原文说进公开输出（学舌泄漏，历史有实证）</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="execution">
+        <h2>4. 执行步骤</h2>
+        <ol>
+          <li><strong>撰写并冻结纪律文本：</strong>按写作规范第 1 条（动作先于禁令）、第 6 条（不给可整句照抄的台词）撰写，第二人复核。</li>
+          <li><strong>冻结规格：</strong>四臂配置、case hash、模型、judge（取 A5 结论）、重复数、seed、输出目录。</li>
+          <li><strong>Smoke：</strong>2 case × 4 臂 × 2 次。人工核对：纪律文本在两臂中一致注入、未被复读进公开输出、报价行为确有变化。</li>
+          <li><strong>Pilot：</strong>5 重复，先看交互项方向与纪律复读率。</li>
+          <li><strong>正式运行：</strong>补足到 10 重复，四臂交错调度。</li>
+          <li><strong>盲态分析：</strong>匿名 arm id 生成 2×2 主表与交互项 CI，再揭盲。</li>
+        </ol>
+      </section>
+
+      <section id="analysis">
+        <h2>5. 分析方法</h2>
+        <ul>
+          <li><strong>先看简单效应，再看交互。</strong>分别报 <code>N1−N0</code>、<code>C1−C0</code>，再报两者之差。交互项 CI 跨零时不宣称交互存在。</li>
+          <li><strong>超预算用连续量做敏感性分析。</strong>二值指标损失信息；<code>成交价 / 对方上限</code> 的分布移动是更可信的证据。</li>
+          <li><strong>case 聚类 bootstrap</strong>，10,000 次，seed 预注册。</li>
+          <li><strong>零现金上限的 case 单列。</strong>12/23 个 case 的 <code>buyer_cash_ceiling = 0</code>，
+          在这些 case 上"超预算"等价于"有任何现金"，语义与其它 case 不同，必须分层报告，不得混算。</li>
+          <li><strong>多重比较：</strong>主指标固定为超预算率、≥sharp 率、case_pass 三项，其余为次要或机制指标。</li>
+        </ul>
+      </section>
+
+      <section id="acceptance">
+        <h2>6. 验收计划</h2>
+        <div class="decision">
+          <strong>预注册判定规则</strong>
+          <dl>
+            <dt>超预算显著降<br>≥sharp 不显著降</dt>
+            <dd><strong>采纳纪律进主线。</strong>以 <code>N1</code> 为新基线重测 case_pass；很可能同时拿到"质量 + 主指标"两张可用的图。</dd>
+            <dt>超预算降<br>≥sharp 同幅降</dt>
+            <dd>存在真实取舍。记录为<strong>产品参数</strong>（保守档 / 进取档），按场景选择，不作为缺陷。BP 中如实呈现取舍曲线。</dd>
+            <dt>超预算不降</dt>
+            <dd>纪律无效，问题不在 prompt 层。转查：① 抽取层是否把并列方案金额加总（#17 已知失真）；② sim 是否真的表达过预算边界；③ 是否为 <code>ceiling=0</code> 的 case 语义问题。</dd>
+            <dt>not_settled<br>显著回升</dt>
+            <dd>纪律过硬，把 harness 的成交收益抵消了。放宽表述强度后重跑一次，仍回升则放弃该方向。</dd>
+          </dl>
+        </div>
+        <h3>Gate A · 实现验收</h3>
+        <ul>
+          <li>纪律文本在 <code>C1</code> 与 <code>N1</code> 中逐字相同；配置 diff 仅含该文本。</li>
+          <li>四臂除 (harness, budget) 两个因子外无任何其它差异。</li>
+          <li>纪律文本 hash 写入 manifest。</li>
+        </ul>
+        <h3>Gate B · 运行验收</h3>
+        <ul>
+          <li>每个 <code>case × arm</code> 单元格 ≥ 10 个有效重复；四臂有效样本数对称。</li>
+          <li>完成率 ≥ 95%；任两臂 invalid rate 相差 ≤ 2pp。</li>
+          <li>不得选择性重跑；重试留 reason 与 attempt 日志。</li>
+        </ul>
+        <h3>Gate C · 数据验收</h3>
+        <ul>
+          <li><strong>纪律复读率 &lt; 5%</strong>——若 agent 把纪律原文说进公开输出，说明文本写成了台词模板，须按写作规范第 6 条重写后重跑。</li>
+          <li>10% 抽样人工复核成交价抽取准确率 ≥ 95%（本实验的主指标直接依赖它）。</li>
+          <li><code>ceiling = 0</code> 的 case 在所有表中单列。</li>
+        </ul>
+      </section>
+
+      <section id="risks">
+        <h2>7. 风险与防混淆</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>风险</th><th>形态</th><th>对策</th></tr></thead>
+            <tbody>
+              <tr><td>纪律变成台词</td><td>mid-tier 模型逐字复读（标签泄漏 213 条、占位符上桌均有实证）</td><td>按写作规范给"动作的形状"不给台词；复读率作为 Gate C 硬门槛</td></tr>
+              <tr><td>超预算实为抽取错误</td><td>#17 记录的并列方案金额加总（R4P9 假 fail）</td><td>抽取准确率作为 Gate C 门槛；对全部超预算 episode 做人工复核，而非抽样</td></tr>
+              <tr><td>ceiling=0 case 主导结论</td><td>12/23 个 case 上"超预算"= 有任何现金</td><td>强制分层报告；主结论以非零 ceiling 分层为准</td></tr>
+              <tr><td>纪律过硬压死成交</td><td>not_settled 回升，抵消 harness 收益</td><td>预注册判定里已含该分支；表述强度可调，但只允许调一次并重跑</td></tr>
+              <tr><td>与 A4 结论耦合</td><td>若 A4 判定效应消失，本实验的 H2 失去意义</td><td>本实验排在 A4 之后；A4 若判定"效应弱化"，本实验反而优先级更高（可能正是超预算在吃收益）</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="artifacts">
+        <h2>8. 交付物</h2>
+        <ul>
+          <li><code>nego-eval/ablations/a6_budget_discipline/prd.yaml</code> —— 冻结规格，含纪律文本全文与 hash。</li>
+          <li><code>results/ablations/a6-budget-discipline/</code> —— 四臂全部 result 与 episode JSON。</li>
+          <li>2×2 主表：超预算率、≥sharp 率、case_pass，含简单效应与交互项及 CI。</li>
+          <li>分层表：非零 ceiling / 零 ceiling 两组分列。</li>
+          <li>连续量分布图：<code>成交价 / 对方上限</code> 在四臂下的分布。</li>
+          <li>纪律复读率检查报告与命中实例。</li>
+          <li>全部超预算 episode 的人工复核记录。</li>
+          <li>判定记录：预注册规则 + 实际读数 + 触发分支 + 签字；若采纳，附主线配置 diff。</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

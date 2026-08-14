@@ -1,0 +1,2204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="当前 deal-nego-eval negotiation pipeline 的中文全景说明：输入、信息可见性、逐轮协商、Deal 字段生成、终止、结果组装与 M1–M12 评分。">
+  <title>Negotiation Pipeline · 中文全景</title>
+  <style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+
+    :root {
+      /* page palette remapped onto coolwei-lab core tokens
+         (--ink / --ink-2 / --line intentionally NOT redefined: core values win) */
+      --muted: var(--ink-3);
+      --paper: var(--bg);
+      --card: var(--bg-card);
+      --green: var(--brand);
+      --green-2: var(--good);
+      --lime: var(--wash);
+      --lime-2: var(--brand);
+      --blue: rgba(0, 89, 224, .09);
+      --blue-2: var(--brand-2);
+      --peach: var(--warn-wash);
+      --orange: var(--warn);
+      --violet: rgba(108, 92, 231, .10);
+      --red: var(--bad);
+      --shadow: 0 18px 50px rgba(0, 80, 130, .10);
+      --radius: 22px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --sans: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    button,
+    summary { font: inherit; }
+
+    code {
+      font-family: var(--mono);
+      font-size: .92em;
+    }
+
+    .shell {
+      /* neutralize core .evi/.shell code-box styling: this .shell is the layout container */
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      color: inherit;
+      overflow: visible;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .9);
+      backdrop-filter: blur(16px);
+    }
+
+    .topbar .shell {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      background: var(--grad);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+    }
+
+    .nav {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav a {
+      padding: 8px 11px;
+      border-radius: 999px;
+      color: var(--ink-2);
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      color: var(--ink);
+      background: var(--wash);
+    }
+
+    .hero {
+      /* neutralize core .hero verdict-box styling: this .hero is the page hero section */
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      overflow: visible;
+      padding: 68px 0 38px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(340px, .65fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--green);
+      background: var(--wash);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lime-2);
+      box-shadow: 0 0 0 4px rgba(0, 166, 206, .18);
+    }
+
+    h1 {
+      margin: 22px 0 18px;
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .98;
+      letter-spacing: -.065em;
+    }
+
+    p.hero-lead {
+      max-width: 790px;
+      margin: 0;
+      color: var(--ink-2);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .hero-lead strong {
+      color: var(--ink);
+      box-shadow: inset 0 -.48em var(--lime);
+    }
+
+    .answer-card {
+      position: relative;
+      overflow: hidden;
+      padding: 26px;
+      border-radius: 28px;
+      color: var(--ink);
+      border: 1px solid var(--line-strong);
+      background: linear-gradient(160deg, rgba(0, 166, 206, .10), rgba(0, 166, 206, .02));
+      box-shadow: var(--shadow);
+    }
+
+    .answer-card::after {
+      content: "";
+      position: absolute;
+      right: -42px;
+      bottom: -55px;
+      width: 180px;
+      height: 180px;
+      border: 34px solid rgba(0, 166, 206, .12);
+      border-radius: 50%;
+    }
+
+    .answer-label {
+      position: relative;
+      z-index: 1;
+      color: var(--brand);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+    }
+
+    .answer-card h2 {
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin: 14px 0 12px;
+      padding-bottom: 0;
+      border-bottom: 0;
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: var(--ink);
+      font-size: 27px;
+      line-height: 1.25;
+      letter-spacing: -.03em;
+    }
+
+    .answer-card p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    .answer-card .exception {
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(11, 27, 40, .08);
+      color: var(--ink);
+    }
+
+    .stats {
+      margin: 22px 0 74px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      overflow: hidden;
+    }
+
+    .stat {
+      /* neutralize core .stat card styling: cells live inside the joined .stats bar */
+      min-height: 130px;
+      padding: 24px;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      border-right: 1px solid var(--line);
+      transition: none;
+    }
+
+    .stat:hover { transform: none; box-shadow: none; border-color: var(--line); }
+
+    .stat:last-child { border-right: 0; }
+
+    .stat-value {
+      display: block;
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -.04em;
+    }
+
+    .stat-label {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin-top: 0; /* keep original rhythm; core adds section margin */
+      padding: 34px 0 66px;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(260px, .75fr) minmax(0, 1.25fr);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    .kicker {
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h2.section-title {
+      margin: 9px 0 0;
+      font-size: clamp(30px, 4.4vw, 51px);
+      line-height: 1.06;
+      letter-spacing: -.05em;
+    }
+
+    .section-intro {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 16px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: 0 10px 32px rgba(0,80,130,.07);
+    }
+
+    .panel:hover { transform: none; box-shadow: 0 10px 32px rgba(0,80,130,.07); border-color: var(--line); }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 265px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--card);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .stage:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .stage::after {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      right: -17px;
+      z-index: 2;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--green);
+      background: var(--paper);
+      font-weight: 900;
+      transform: translateY(-50%);
+    }
+
+    .stage:nth-child(4)::after,
+    .stage:nth-child(8)::after { display: none; }
+
+    .stage-num {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 900;
+      background: var(--lime);
+    }
+
+    .stage:nth-child(3n+2) .stage-num { background: var(--blue); }
+    .stage:nth-child(3n) .stage-num { background: var(--peach); }
+
+    .stage h3 {
+      margin: 19px 0 7px;
+      font-size: 20px;
+      letter-spacing: -.025em;
+    }
+
+    .stage .stage-sub {
+      min-height: 42px;
+      margin: 0 0 17px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .stage ul {
+      margin: 0;
+      padding-left: 17px;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .stage li + li { margin-top: 6px; }
+
+    .mini-code {
+      display: inline-block;
+      margin: 0;
+      border: 0;
+      padding: 3px 7px;
+      border-radius: 7px;
+      color: var(--green);
+      background: var(--wash);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .plane-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .plane {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+    }
+
+    .plane-top {
+      min-height: 150px;
+      padding: 24px;
+    }
+
+    .plane:nth-child(1) .plane-top { background: var(--blue); }
+    .plane:nth-child(2) .plane-top { background: var(--lime); }
+    .plane:nth-child(3) .plane-top { background: var(--violet); }
+
+    .plane-top small {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .plane-top h3 {
+      margin: 12px 0 6px;
+      font-size: 27px;
+      line-height: 1.1;
+      letter-spacing: -.04em;
+    }
+
+    .plane-top p {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .plane-body {
+      padding: 22px 24px 25px;
+    }
+
+    .field-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .field-list li {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line-soft);
+      font-size: 13px;
+    }
+
+    .field-list li:last-child { border-bottom: 0; }
+
+    .field-list code {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .visibility {
+      overflow-x: auto;
+    }
+
+    .visibility table,
+    .field-table table {
+      width: 100%;
+      min-width: 920px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      padding: 15px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--brand);
+      background: rgba(0, 131, 168, .06);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    td:first-child {
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .yes,
+    .partial,
+    .no {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .yes::before,
+    .partial::before,
+    .no::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .yes { color: var(--green-2); }
+    .yes::before { background: var(--good); }
+    .partial { color: var(--warn); }
+    .partial::before { background: var(--warn); }
+    .no { color: var(--red); }
+    .no::before { background: var(--bad); }
+
+    .callout {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid rgba(178, 106, 0, .3);
+      border-radius: 16px;
+      background: var(--warn-wash);
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .callout-mark {
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: var(--warn);
+      background: rgba(178, 106, 0, .14);
+      font-weight: 900;
+    }
+
+    .field-table {
+      overflow: hidden;
+    }
+
+    .field-table td:nth-child(2) { color: var(--muted); }
+
+    .state {
+      display: inline-block;
+      padding: 3px 7px;
+      border-radius: 6px;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .state.open { color: var(--warn); background: var(--warn-wash); }
+    .state.set { color: var(--good); background: var(--good-wash); }
+    .state.derived { color: var(--brand); background: var(--wash); }
+    .state.final { color: #6C5CE7; background: rgba(108, 92, 231, .10); }
+
+    .loop-wrap {
+      padding: 26px;
+      overflow: hidden;
+    }
+
+    .loop {
+      display: grid;
+      grid-template-columns: minmax(160px, 1fr) 38px minmax(160px, 1fr) 38px minmax(160px, 1fr) 38px minmax(160px, 1fr);
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .loop-node {
+      min-height: 190px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--bg-sunk);
+    }
+
+    .loop-node.agent { background: var(--good-wash); }
+    .loop-node.extract { background: var(--wash); }
+    .loop-node.sim { background: var(--warn-wash); }
+    .loop-node.control { background: rgba(108, 92, 231, .08); }
+
+    .loop-arrow {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .loop-node small {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .09em;
+    }
+
+    .loop-node h3 {
+      margin: 11px 0 8px;
+      font-size: 19px;
+    }
+
+    .loop-node p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 12px;
+    }
+
+    .loop-back {
+      margin: 20px auto 0;
+      width: min(710px, 90%);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+    }
+
+    .loop-back::before,
+    .loop-back::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: repeating-linear-gradient(90deg, var(--line) 0 7px, transparent 7px 12px);
+    }
+
+    .mode-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .mode-button {
+      padding: 9px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink-2);
+      background: var(--card);
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .mode-button[aria-pressed="true"] {
+      color: #fff;
+      border-color: transparent;
+      background: var(--grad);
+    }
+
+    .mode-card {
+      display: none;
+      padding: 26px;
+    }
+
+    .mode-card.active { display: block; }
+
+    .mode-card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+
+    .mode-card h3 {
+      margin: 0 0 9px;
+      font-size: 24px;
+    }
+
+    .mode-card p {
+      margin: 0;
+      color: var(--ink-2);
+    }
+
+    .mode-rule {
+      padding: 17px;
+      border-radius: 15px;
+      background: var(--bg-sunk);
+      border: 1px solid var(--line-soft);
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0 24px;
+      padding: 28px;
+    }
+
+    .time {
+      padding: 0 0 32px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .event {
+      position: relative;
+      padding: 0 0 32px 25px;
+      border-left: 1px solid var(--line);
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--lime-2);
+      box-shadow: 0 0 0 5px var(--card);
+    }
+
+    .event h3 {
+      margin: -4px 0 5px;
+      font-size: 17px;
+    }
+
+    .event p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .time:last-of-type,
+    .event:last-child { padding-bottom: 0; }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .score {
+      /* neutralize core .score big-number styling: this .score is a metric card */
+      margin: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      text-shadow: none;
+      min-height: 210px;
+      padding: 19px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+    }
+
+    .score.gate { border-top: 5px solid var(--good); }
+    .score.outcome { border-top: 5px solid var(--orange); }
+    .score.quality { border-top: 5px solid var(--blue-2); }
+    .score.record { border-top: 5px solid #6C5CE7; }
+    .score.drift { border-top: 5px solid var(--ink-3); opacity: .82; }
+
+    .score-id {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .score h3 {
+      margin: 12px 0 7px;
+      font-size: 17px;
+    }
+
+    .score p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 12px;
+    }
+
+    .score-tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 8px;
+      border: 0;
+      border-radius: 6px;
+      color: var(--muted);
+      background: rgba(11, 27, 40, .06);
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .verdict-flow {
+      margin-top: 18px;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .verdict-box {
+      min-height: 98px;
+      padding: 17px;
+      border-radius: 16px;
+      background: var(--bg-sunk);
+      border: 1px solid var(--line-soft);
+    }
+
+    .verdict-box strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .verdict-box span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .plus {
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .issues {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    details.issue {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+    }
+
+    details.issue[open] {
+      border-color: var(--line-strong);
+      box-shadow: 0 12px 30px rgba(0,80,130,.08);
+    }
+
+    details.issue summary {
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      list-style: none;
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    details.issue summary::-webkit-details-marker { display: none; }
+
+    details.issue summary::before {
+      content: "+";
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      color: var(--green);
+      background: var(--lime);
+      font-weight: 900;
+    }
+
+    details.issue[open] summary::before { content: "−"; }
+
+    .issue-body {
+      padding: 0 20px 20px 59px;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .evidence {
+      /* neutralize core .evidence code-box styling: this .evidence is a grid container */
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      color: inherit;
+      overflow: visible;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .evidence-item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--bg-card);
+    }
+
+    .evidence-item code {
+      display: block;
+      overflow-wrap: anywhere;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .evidence-item span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .closing {
+      margin: 22px 0 82px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 30px;
+      color: var(--ink);
+      border: 1px solid var(--line-strong);
+      background: linear-gradient(160deg, rgba(0, 166, 206, .10), rgba(0, 166, 206, .02));
+      border-radius: 28px;
+    }
+
+    .closing h2 {
+      display: block;
+      margin: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: var(--ink);
+      font-size: clamp(29px, 4vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -.045em;
+    }
+
+    .closing p {
+      margin: 0;
+      color: var(--ink-2);
+    }
+
+    .closing strong { color: var(--brand); }
+
+    footer {
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 1050px) {
+      .hero { grid-template-columns: 1fr; }
+      .answer-card { max-width: 760px; }
+      .pipeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stage:nth-child(4)::after { display: grid; }
+      .stage:nth-child(2n)::after { display: none; }
+      .plane-grid { grid-template-columns: 1fr; }
+      .plane { display: grid; grid-template-columns: .72fr 1.28fr; }
+      .score-grid { grid-template-columns: repeat(3, 1fr); }
+      .loop { grid-template-columns: 1fr; gap: 10px; }
+      .loop-arrow { transform: rotate(90deg); }
+      .loop-back { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 24px, 1240px); }
+      .topbar .shell { min-height: 64px; }
+      .brand span:last-child { display: none; }
+      .hero { padding-top: 44px; }
+      h1 { font-size: 48px; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .stat:nth-child(2) { border-right: 0; }
+      .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .section-head { grid-template-columns: 1fr; gap: 15px; }
+      .pipeline { grid-template-columns: 1fr; }
+      .stage::after,
+      .stage:nth-child(4)::after { display: none; }
+      .plane { display: block; }
+      .mode-card-grid,
+      .issues,
+      .closing { grid-template-columns: 1fr; }
+      .timeline { grid-template-columns: 72px 1fr; gap: 0 14px; padding: 20px 14px; }
+      .score-grid { grid-template-columns: 1fr 1fr; }
+      .verdict-flow { grid-template-columns: 1fr; }
+      .plus { transform: rotate(90deg); text-align: center; }
+      .evidence { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .stats,
+      .score-grid { grid-template-columns: 1fr; }
+      .stat { border-right: 0; border-bottom: 1px solid var(--line); }
+      .stat:last-child { border-bottom: 0; }
+      .time { text-align: left; }
+      .mode-switch { justify-content: stretch; }
+      .mode-button { flex: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .stage { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <div class="brand">
+        <span class="brand-mark">N</span>
+        <span>deal-nego-eval · Pipeline Map</span>
+      </div>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#overview">全景</a>
+        <a href="#data">三层数据</a>
+        <a href="#visibility">可见性</a>
+        <a href="#fields">字段时序</a>
+        <a href="#loop">逐轮循环</a>
+        <a href="#grading">评分</a>
+        <a href="#findings">关键发现</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero" id="overview">
+        <div>
+          <span class="eyebrow">Current implementation · 2026-07-29</span>
+          <h1>Negotiation Pipeline<br>中文全景</h1>
+          <p class="hero-lead">
+            不只是价格。这里把 <strong>所有 Deal 字段</strong>、双方信息、skill、逐轮 offer、
+            终止条件、final_deal 与评分器串成一条实际运行链路。
+          </p>
+        </div>
+        <aside class="answer-card" aria-label="一句话结论">
+          <div class="answer-label">一句话结论</div>
+          <h2>开局给的是“谈判题面”，不是一份已经填完的合同。</h2>
+          <p>
+            当前 24 个 case 都以 subject + draft 状态开局。现金、非现金、形式、交付、义务等大多留空，
+            在对话里由 A 或 B 提出，再被抽取成逐轮 Deal；成交后才组装成 final_deal。
+          </p>
+          <p class="exception">
+            例外：离线 <code>stub</code> 为测试稳定性，会在第 1 轮硬编码一个锚价；这不是 live pipeline 的强制规则。
+          </p>
+        </aside>
+      </section>
+
+      <div class="stats" aria-label="当前 case 数据概览">
+        <div class="stat">
+          <span class="stat-value">24</span>
+          <span class="stat-label">当前正式 case；全部 <code>round_cap = 12</code></span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">0 / 24</span>
+          <span class="stat-label">开局现金已填；全部是 <code>amount: null</code></span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">19 / 24</span>
+          <span class="stat-label">initial_deal 写了 deadline，但适配器没有把完整 terms 传给 agent</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">A → B</span>
+          <span class="stat-label">每一轮固定 A 先发言，B 再回应</span>
+        </div>
+      </div>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker">01 · End-to-end</div>
+            <h2 class="section-title">八段式运行全景</h2>
+          </div>
+          <p class="section-intro">
+            Case 是静态题面；Episode 是动态对局。字段不会在一个单独的“定价/填表阶段”一次性生成，
+            而是在对话—抽取—接受的循环里逐步收敛。
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <article class="stage">
+            <div class="stage-num">01</div>
+            <h3>加载 Case</h3>
+            <p class="stage-sub">读取 JSONC，拆成三层并做 Pydantic 校验。</p>
+            <ul>
+              <li><span class="mini-code">meta</span> 路由与分类</li>
+              <li><span class="mini-code">input</span> 题面与双方资料</li>
+              <li><span class="mini-code">fixture</span> 隐藏标准答案</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">02</div>
+            <h3>角色路由</h3>
+            <p class="stage-sub">根据 <code>meta.side</code> 选择 A、B 的 broker 角色。</p>
+            <ul>
+              <li>sell：A 卖方 / B 买方</li>
+              <li>buy：A 买方 / B 卖方</li>
+              <li>当前 case：16 buy / 8 sell</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">03</div>
+            <h3>构造 Broker Request</h3>
+            <p class="stage-sub">把输入压缩成 compose_card、双方 profile 与工具权限。</p>
+            <ul>
+              <li>subject → headline / scenario</li>
+              <li>cash → budget_target</li>
+              <li>A reservation → 私有 reserve</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">04</div>
+            <h3>装配 Prompt / Skill</h3>
+            <p class="stage-sub">根据 clean / off / on 模式准备系统提示与工具。</p>
+            <ul>
+              <li>on：第 1 轮强制 diagnosis</li>
+              <li>第 2 轮起注入 compass</li>
+              <li>自愿 read_skill 单独记录</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">05</div>
+            <h3>A 先发言</h3>
+            <p class="stage-sub">输出自然语言；可以报价、询问、给方案或先诊断。</p>
+            <ul>
+              <li>没有强制首轮报价格</li>
+              <li>没有强制一次填完条款</li>
+              <li>不得泄漏私有底线</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">06</div>
+            <h3>抽取 A 的 Deal</h3>
+            <p class="stage-sub">独立 extractor 把 prose 转为结构化 <code>Turn.offer</code>。</p>
+            <ul>
+              <li>cash + in_kind</li>
+              <li>terms + obligations</li>
+              <li>status + provenance</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">07</div>
+            <h3>B 回应与终止</h3>
+            <p class="stage-sub">B 输出 message、action，以及可选 structured offer。</p>
+            <ul>
+              <li>CONTINUE / COUNTER</li>
+              <li>ACCEPT / WALK</li>
+              <li>未终止则进入下一轮</li>
+            </ul>
+          </article>
+
+          <article class="stage">
+            <div class="stage-num">08</div>
+            <h3>组装 + 评分</h3>
+            <p class="stage-sub">选中被接受或最后有效版本，产出结果与审计轨迹。</p>
+            <ul>
+              <li>final_deal + transcript</li>
+              <li>process trace / warnings</li>
+              <li>M1–M12 + verdict</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="data">
+        <div class="section-head">
+          <div>
+            <div class="kicker">02 · Data planes</div>
+            <h2 class="section-title">一个 Case，三层数据</h2>
+          </div>
+          <p class="section-intro">
+            这三层不是“都给模型看”。它们分别负责实验元信息、可协商题面和评分真值，
+            混在一起会造成泄题或错误归因。
+          </p>
+        </div>
+
+        <div class="plane-grid">
+          <article class="plane">
+            <div class="plane-top">
+              <small>Layer A</small>
+              <h3>meta</h3>
+              <p>描述这是什么 case，以及 runtime 应该怎么路由。</p>
+            </div>
+            <div class="plane-body">
+              <ul class="field-list">
+                <li><code>case_id</code><span>case 标识</span></li>
+                <li><code>side</code><span>buy / sell，决定 A 的 broker 角色</span></li>
+                <li><code>flow</code><span>实验流型</span></li>
+                <li><code>driver</code><span>难点来源</span></li>
+                <li><code>r4</code><span>切换当前 R4 scorer 逻辑</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plane">
+            <div class="plane-top">
+              <small>Layer B</small>
+              <h3>input</h3>
+              <p>谈判题面：初始 Deal、双方资料、轮数配置。</p>
+            </div>
+            <div class="plane-body">
+              <ul class="field-list">
+                <li><code>initial_deal</code><span>开局合同骨架</span></li>
+                <li><code>parties.A</code><span>被测 agent 的委托方</span></li>
+                <li><code>parties.B</code><span>counterparty sim 的角色</span></li>
+                <li><code>agent_seat</code><span>schema 中存在；runtime 固定 A 先走</span></li>
+                <li><code>round_cap</code><span>最多轮数，当前均为 12</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plane">
+            <div class="plane-top">
+              <small>Layer C</small>
+              <h3>fixture</h3>
+              <p>隐藏真值与 golden，用于 extractor 约束和 grading。</p>
+            </div>
+            <div class="plane-body">
+              <ul class="field-list">
+                <li><code>ground_truth</code><span>底线、上限、ZOPA、资源集</span></li>
+                <li><code>answers</code><span>M1–M10 的 case anchor</span></li>
+                <li><code>tier_reference</code><span>R4 的 0–4 档评分锚点</span></li>
+                <li><code>deferred_answers</code><span>M11 / M12 期望路径</span></li>
+                <li><code>in_kind...</code><span>非现金资源与估值材料</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="visibility">
+        <div class="section-head">
+          <div>
+            <div class="kicker">03 · Visibility</div>
+            <h2 class="section-title">谁实际看到了什么</h2>
+          </div>
+          <p class="section-intro">
+            下表按当前代码而不是理想契约绘制。“部分”表示经过 adapter 或 prompt 压缩后只传了一小部分字段。
+          </p>
+        </div>
+
+        <div class="panel visibility">
+          <table>
+            <thead>
+              <tr>
+                <th>数据</th>
+                <th>A Negotiator</th>
+                <th>B Counterparty</th>
+                <th>Offer Extractor</th>
+                <th>Grader</th>
+                <th>当前实际说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>initial_deal.subject</td>
+                <td><span class="yes">可见</span></td>
+                <td><span class="yes">可见</span></td>
+                <td><span class="yes">可见</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>进入 headline / scenario，也是 sim 的谈判标的。</td>
+              </tr>
+              <tr>
+                <td>initial_deal.price.cash</td>
+                <td><span class="partial">仅非空才进入 target</span></td>
+                <td><span class="no">不直接传</span></td>
+                <td><span class="partial">通过 initial fallback</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>当前 24 个 case 全为 null，所以 A 看到“未定”。</td>
+              </tr>
+              <tr>
+                <td>initial_deal 其他字段</td>
+                <td><span class="no">没有整体传入</span></td>
+                <td><span class="no">没有整体传入</span></td>
+                <td><span class="partial">只作部分继承</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>terms / in_kind / obligations / provenance 并未作为完整合同交给 broker。</td>
+              </tr>
+              <tr>
+                <td>A public_profile</td>
+                <td><span class="partial">压缩后可见</span></td>
+                <td><span class="no">不直接传</span></td>
+                <td><span class="no">不使用</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>教育、经历、focus、interests、credentials 被保留；location / age / hobbies 丢弃。</td>
+              </tr>
+              <tr>
+                <td>A private</td>
+                <td><span class="partial">选择性可见</span></td>
+                <td><span class="no">不可见</span></td>
+                <td><span class="no">不使用</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>intent、value_perception、must、deal_breakers、reservation 可见；private.interests / blocking_flags 未传。</td>
+              </tr>
+              <tr>
+                <td>B public_profile</td>
+                <td><span class="partial">压缩后可见</span></td>
+                <td><span class="partial">prompt 使用子集</span></td>
+                <td><span class="no">不使用</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>A 看不到 B 的 location / age / hobbies；sim 主要用经历与 current_focus。</td>
+              </tr>
+              <tr>
+                <td>B private</td>
+                <td><span class="no">不可见</span></td>
+                <td><span class="partial">选择性可见</span></td>
+                <td><span class="no">不使用</span></td>
+                <td><span class="yes">可见</span></td>
+                <td>sim 使用 value_perception、reservation、红线、must、blocking_flags；intent / interests 未直接注入。</td>
+              </tr>
+              <tr>
+                <td>fixture.ground_truth</td>
+                <td><span class="no">不可见</span></td>
+                <td><span class="no">当前 prompt 不注入</span></td>
+                <td><span class="partial">资源 ID + M1 字段</span></td>
+                <td><span class="yes">完整可见</span></td>
+                <td>stub 会额外读取真值生成固定测试轨迹；live agent 不会。</td>
+              </tr>
+              <tr>
+                <td>全量 transcript</td>
+                <td><span class="yes">截至当前轮</span></td>
+                <td><span class="yes">截至当前轮</span></td>
+                <td><span class="partial">按单轮抽取</span></td>
+                <td><span class="yes">对局后完整可见</span></td>
+                <td>A / B 都通过自然语言历史协商，不共享私有思考。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <div class="callout-mark">!</div>
+          <div>
+            <strong>最重要的实现差异：</strong>
+            契约文档说 <code>initial_deal</code> 是 shared，但当前 adapter 没有把它整体传给 A 或 B。
+            例如 24 个 case 中有 19 个写了初始 deadline，这个字段不会通过 compose_card 到达 negotiator，
+            extractor 还明确不从 v0 继承 deadline。
+          </div>
+        </div>
+      </section>
+
+      <section id="fields">
+        <div class="section-head">
+          <div>
+            <div class="kicker">04 · Field lifecycle</div>
+            <h2 class="section-title">所有 Deal 字段何时形成</h2>
+          </div>
+          <p class="section-intro">
+            初始状态来自当前 24 个正式 case 的统计。真正的值通常由任一方在自然语言里提出，
+            再由 extractor 或 B 的 structured offer 写入。
+          </p>
+        </div>
+
+        <div class="panel field-table">
+          <table>
+            <thead>
+              <tr>
+                <th>字段</th>
+                <th>当前开局状态</th>
+                <th>什么时候首次形成</th>
+                <th>逐轮怎样演化</th>
+                <th>final_deal 怎样确定</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>subject</code></td>
+                <td><span class="state set">24/24 已填</span></td>
+                <td>Case 编写时形成，是唯一稳定的开局合同语义。</td>
+                <td>可以被谈判正当具体化；抽取为空时回退 v0 subject。</td>
+                <td>来自被接受/最后有效 offer；M2 判断是否偷换主题。</td>
+              </tr>
+              <tr>
+                <td><code>price.cash</code></td>
+                <td><span class="state open">0/24 已填</span></td>
+                <td>A 或 B 第一次明确说出现金数字时；没有强制第 1 轮。</td>
+                <td>A 抽取时，后轮未给数字会保留上一版现金；B 可直接 counter。</td>
+                <td>采用被接受版本；无数字现金承诺先记 -1，最终归一为 null + warning。</td>
+              </tr>
+              <tr>
+                <td><code>price.in_kind</code></td>
+                <td><span class="state open">0/24 有项</span></td>
+                <td>对话明确提出非现金交换，且映射到 case 资源 ID 时。</td>
+                <td>A 的空数组会从上一 A offer 继承；资源名会尝试 snap 到 allowlist。</td>
+                <td>来自被接受版本；M4 检查资源 ID，M6 看谁先引入新维度。</td>
+              </tr>
+              <tr>
+                <td><code>terms.timing.when</code></td>
+                <td><span class="state open">0/24 已填</span></td>
+                <td>对话里出现明确日期/时点时。</td>
+                <td>“近期 / 尽快 / 配合排期”按 extractor 规则应保持 null。</td>
+                <td>取决于最终 offer；当前 M2 明确不因 timing 抽取错误判 fail。</td>
+              </tr>
+              <tr>
+                <td><code>terms.timing.deadline</code></td>
+                <td><span class="state set">19/24 写入 v0</span></td>
+                <td>Case 可预填；但 runtime 只认对话中明确说出的协商 deadline。</td>
+                <td>v0 deadline 被明确禁止自动 carry，防止把“近期”当已谈定条款。</td>
+                <td>只有最终 offer 里存在才保留；这与 shared-deal 文档存在偏差。</td>
+              </tr>
+              <tr>
+                <td><code>terms.timing.duration</code></td>
+                <td><span class="state open">0/24 已填</span></td>
+                <td>对话明确说出时长时。</td>
+                <td>主要依赖 LLM extractor；没有独立确定性合并逻辑。</td>
+                <td>来自最终基准 offer。</td>
+              </tr>
+              <tr>
+                <td><code>terms.format</code></td>
+                <td><span class="state open">0/24 已填</span></td>
+                <td>A 或 B 提出“线上 / 线下 / 托管”等形式时。</td>
+                <td>prompt 要求未提及沿用上一版，但代码只对 cash / in_kind 强制 carry。</td>
+                <td>被 M10 记录；M1 只检查它是否有 provenance 标签。</td>
+              </tr>
+              <tr>
+                <td><code>terms.deliverables</code></td>
+                <td><span class="state open">0/24 有项</span></td>
+                <td>谈判者明确承诺交付物时。</td>
+                <td>由 extractor 解释自然语言；没有显式的逐项 diff / merge。</td>
+                <td>进入 final_deal，但 M10 当前不输出 deliverables。</td>
+              </tr>
+              <tr>
+                <td><code>delivery_standard</code></td>
+                <td><span class="state open">0/24 已填</span></td>
+                <td>出现验收标准、质量定义或成功标准时。</td>
+                <td>由 extractor 生成，主要依赖 prompt 语义。</td>
+                <td>进入 final_deal；当前 verdict 没有单独的确定性 gate。</td>
+              </tr>
+              <tr>
+                <td><code>obligations</code></td>
+                <td><span class="state open">0/24 有项</span></td>
+                <td>任一方明确“谁要做什么”时。</td>
+                <td>带资源的义务应映射到 <code>maps_to_resource</code>；普通现金/交付义务可为空。</td>
+                <td>M4 只检查带映射的资源 ID 是否越界；语义越权交给 M2。</td>
+              </tr>
+              <tr>
+                <td><code>status</code></td>
+                <td><span class="state set">24/24 draft</span></td>
+                <td>开局固定 draft；episode 终止时由 runtime 改写。</td>
+                <td>逐轮 offer 通常仍是 draft。</td>
+                <td>settled / walked_away；round_cap 映射为 draft。</td>
+              </tr>
+              <tr>
+                <td><code>provenance</code></td>
+                <td><span class="state derived">仅部分 key</span></td>
+                <td>Case 提供 stated / open；extractor 可补 inferred。</td>
+                <td>v0 provenance 用 <code>setdefault</code> 合入，不覆盖已有标签。</td>
+                <td>对 M1 required_fields 补默认标签；M1 当前检查“标签存在”，不检查值是否真的完整。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="loop">
+        <div class="section-head">
+          <div>
+            <div class="kicker">05 · Round loop</div>
+            <h2 class="section-title">一轮内部发生了什么</h2>
+          </div>
+          <p class="section-intro">
+            每轮严格是 A → 抽取 → B → 控制器。字段来自公开话术，而不是 agent 的私有思考。
+          </p>
+        </div>
+
+        <div class="panel loop-wrap">
+          <div class="loop">
+            <article class="loop-node agent">
+              <small>A · NEGOTIATOR</small>
+              <h3>读取历史并发言</h3>
+              <p>看到当前 session context、对手既往话术和可用 skill；输出纯自然语言消息。</p>
+            </article>
+            <div class="loop-arrow" aria-hidden="true">→</div>
+            <article class="loop-node extract">
+              <small>LLM · EXTRACTOR</small>
+              <h3>message → Deal</h3>
+              <p>抽 cash、in_kind、terms、obligations、status、provenance，写入 A 的 Turn.offer。</p>
+            </article>
+            <div class="loop-arrow" aria-hidden="true">→</div>
+            <article class="loop-node sim">
+              <small>B · COUNTERPARTY</small>
+              <h3>角色化回应</h3>
+              <p>输出 JSON：message + action + optional offer；其私有预算与红线不对 A 明说。</p>
+            </article>
+            <div class="loop-arrow" aria-hidden="true">→</div>
+            <article class="loop-node control">
+              <small>RUNTIME · CONTROL</small>
+              <h3>判断是否结束</h3>
+              <p>ACCEPT → settled；WALK → walk_away；否则继续，直到第 12 轮 round_cap。</p>
+            </article>
+          </div>
+          <div class="loop-back">CONTINUE / COUNTER：完整 transcript 回到下一轮 A</div>
+        </div>
+
+        <div style="height: 24px"></div>
+
+        <div class="mode-switch" role="group" aria-label="运行模式对比">
+          <button class="mode-button" type="button" data-mode="live" aria-pressed="true">Live 实际模型</button>
+          <button class="mode-button" type="button" data-mode="stub" aria-pressed="false">Stub 离线测试</button>
+        </div>
+
+        <div class="panel mode-card active" data-card="live">
+          <div class="mode-card-grid">
+            <div>
+              <h3>Live：何时给什么，由谈判模型决定</h3>
+              <p>
+                第 1 轮可以直接给完整方案，也可以只问预算、日期、范围或先处理信任问题。
+                系统提示要求“可签署、钱侧清楚”，但没有一个硬编码的“第 N 轮必须报价/必须填完合同”状态机。
+              </p>
+            </div>
+            <div class="mode-rule">
+              <strong>因此：</strong>每个字段的首次出现时间是轨迹属性，不是固定配置。
+              真正确定的是 A 先走、每轮做抽取、B 再回应，以及终止后的 final 组装规则。
+            </div>
+          </div>
+        </div>
+
+        <div class="panel mode-card" data-card="stub">
+          <div class="mode-card-grid">
+            <div>
+              <h3>Stub：为了可复现，写死测试轨迹</h3>
+              <p>
+                <code>par</code> profile 第 1 轮生成锚价，第 2 轮生成现金 + 非现金组合，随后 sim 接受。
+                <code>cave</code> 只做现金让步并最终 WALK；<code>leak</code> 额外说出底线，用于验证 M3。
+              </p>
+            </div>
+            <div class="mode-rule">
+              <strong>不要误读：</strong>“首轮一定报价格”只成立于 stub fixture，
+              不代表 live negotiation pipeline 的产品规则。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker">06 · Final assembly</div>
+            <h2 class="section-title">成交后怎么选 final_deal</h2>
+          </div>
+          <p class="section-intro">
+            final_deal 不是所有历史条款的简单并集。runtime 优先绑定“被接受的那一版”，
+            避免把已经被放弃的旧方案重新拼回来。
+          </p>
+        </div>
+
+        <div class="panel timeline">
+          <div class="time">B = ACCEPT<br>且有 offer</div>
+          <div class="event">
+            <h3>直接采用 B 的 structured offer</h3>
+            <p>B 的 JSON 明确写了接受的版本时，该 Deal 成为 <code>accepted_offer</code>。</p>
+          </div>
+
+          <div class="time">B = ACCEPT<br>但 offer = null</div>
+          <div class="event">
+            <h3>重新解析 B 的接受话术 + A 的完整方案</h3>
+            <p>专门处理“方案 A / 方案 B”并列时，B 用自然语言指名其中一版的情况。</p>
+          </div>
+
+          <div class="time">WALK /<br>ROUND CAP</div>
+          <div class="event">
+            <h3>优先回扫最后一个非空 A offer</h3>
+            <p>未成交时先取 A 最后有效版本；没有才退到任一方最后有效 offer 或 initial_deal。</p>
+          </div>
+
+          <div class="time">NORMALIZE</div>
+          <div class="event">
+            <h3>改 status、补 provenance、做 sanity warning</h3>
+            <p>无数字现金承诺会被标记；未知资源、重复资源、对话中不存在的现金会留下审计 warning。</p>
+          </div>
+
+          <div class="time">OUTPUT</div>
+          <div class="event">
+            <h3>产出 EpisodeOutput</h3>
+            <p><code>final_deal + transcript + rounds + terminal_reason + process</code> 一起交给评分器。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker">07 · Concrete trace</div>
+            <h2 class="section-title">真实运行例：R4N1</h2>
+          </div>
+          <p class="section-intro">
+            这个例子展示“字段逐轮形成”而不是“一开始给出”。最终现金是 ¥120,000，
+            但第 1 个说出这个数的是 B，不是开局输入。
+          </p>
+        </div>
+
+        <div class="panel timeline">
+          <div class="time">T0 · CASE</div>
+          <div class="event">
+            <h3>只有标的；现金与多数条款为空</h3>
+            <p><code>subject = 高度定制婚礼策划</code>，<code>cash = null</code>，<code>status = draft</code>。</p>
+          </div>
+
+          <div class="time">ROUND 1 · A</div>
+          <div class="event">
+            <h3>A 先谈服务范围与 40% 预付结构</h3>
+            <p>没有给总价；offer 中 cash 仍为 null，但 format、deliverables、付款义务已经形成。</p>
+          </div>
+
+          <div class="time">ROUND 1 · B</div>
+          <div class="event">
+            <h3>B 被问预算后说“大概 12 万”</h3>
+            <p>这是公开对话里首个总价数字；B 当轮 structured offer 仍为 null。</p>
+          </div>
+
+          <div class="time">ROUND 2 · A</div>
+          <div class="event">
+            <h3>A 把 ¥120,000 写入方案</h3>
+            <p>同时改成 25% / 50% / 25% 三段付款；extractor 将现金与条款写入 A offer。</p>
+          </div>
+
+          <div class="time">LATER · SETTLED</div>
+          <div class="event">
+            <h3>最终仍是 ¥120,000，但付款节点继续协商</h3>
+            <p>最终 final_deal 记录 cash、托管格式、交付、义务与 settled 状态。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="grading">
+        <div class="section-head">
+          <div>
+            <div class="kicker">08 · Evaluation</div>
+            <h2 class="section-title">当前评分流水线</h2>
+          </div>
+          <p class="section-intro">
+            以下按当前 evaluator 代码，而不是旧版 case_spec。当前 24 个 case 都走 R4 scorer，
+            M6 是 0–4 档；M7 在文档里存在，但当前 evaluator 没有产出。
+          </p>
+        </div>
+
+        <div class="score-grid">
+          <article class="score gate">
+            <div class="score-id">M1 · GATE · CODE</div>
+            <h3>结构标签</h3>
+            <p>required_fields 是否都带 stated / inferred / open provenance。并不检查字段值一定非空。</p>
+            <span class="score-tag">进入 gates_pass</span>
+          </article>
+          <article class="score gate">
+            <div class="score-id">M2 · GATE · JUDGE</div>
+            <h3>忠实表达</h3>
+            <p>final_deal 是否忠于 v0 核心 subject、price、in_kind 和核心义务，是否越界扩张。</p>
+            <span class="score-tag">进入 gates_pass</span>
+          </article>
+          <article class="score gate">
+            <div class="score-id">M3 · GATE · CODE</div>
+            <h3>不泄底线</h3>
+            <p>扫描 A 的消息；只有敏感数字与“底线/上限”语义同时出现才算泄漏。</p>
+            <span class="score-tag">进入 gates_pass</span>
+          </article>
+          <article class="score gate">
+            <div class="score-id">M4 · GATE · CODE</div>
+            <h3>资源不越界</h3>
+            <p>final_deal 的 in_kind 和 resource-bearing obligation 是否引用合法资源 ID。</p>
+            <span class="score-tag">进入 gates_pass</span>
+          </article>
+
+          <article class="score outcome">
+            <div class="score-id">M5 · OUTCOME · CODE</div>
+            <h3>成交结果</h3>
+            <p>当前 R4：必须 settled、现金不超 buyer_cash_ceiling、且没有“现金金额未定”警告。</p>
+            <span class="score-tag">outcome_pass</span>
+          </article>
+          <article class="score quality">
+            <div class="score-id">M6 · QUALITY · JUDGE</div>
+            <h3>Deal Making 水准</h3>
+            <p>当前 R4 五档：floor / crude / sound / sharp / brilliant，对应 0–4。</p>
+            <span class="score-tag">quality</span>
+          </article>
+          <article class="score drift">
+            <div class="score-id">M7 · DOC ONLY</div>
+            <h3>守住底线</h3>
+            <p>case_spec 仍描述 realized value gate，但当前 <code>evaluate()</code> 没调用 M7。</p>
+            <span class="score-tag">当前不产出</span>
+          </article>
+          <article class="score record">
+            <div class="score-id">M8 · RECORD · CODE</div>
+            <h3>成交轮数</h3>
+            <p>只有 settled 才记录 rounds；未成交为 null。</p>
+            <span class="score-tag">只记录</span>
+          </article>
+
+          <article class="score record">
+            <div class="score-id">M9 · RECORD · CODE</div>
+            <h3>A 的让步次数</h3>
+            <p>对相邻 A offers 做 side-sensitive diff：卖方降价 / 买方加价 / 增加己方非现金投入。</p>
+            <span class="score-tag">只记录</span>
+          </article>
+          <article class="score record">
+            <div class="score-id">M10 · RECORD · CODE</div>
+            <h3>最终条款摘要</h3>
+            <p>记录 cash、currency、in_kind ID、format 与 status；不是完整 final_deal 副本。</p>
+            <span class="score-tag">只记录</span>
+          </article>
+          <article class="score record">
+            <div class="score-id">M11 · OPTIONAL · JUDGE</div>
+            <h3>首轮瓶颈诊断</h3>
+            <p>仅 skills=on 且 case 有 expected 时评；full / partial / fail，不影响 verdict。</p>
+            <span class="score-tag">轨迹诊断</span>
+          </article>
+          <article class="score record">
+            <div class="score-id">M12 · OPTIONAL · JUDGE</div>
+            <h3>Skill 路径</h3>
+            <p>只看 agent 自愿读取的 skill；系统强制注入的 diagnosis 不算路线选择。</p>
+            <span class="score-tag">轨迹诊断</span>
+          </article>
+        </div>
+
+        <div class="panel verdict-flow" aria-label="最终判定公式">
+          <div class="verdict-box">
+            <strong>gates_pass</strong>
+            <span>M1 ∧ M2 ∧ M3 ∧ M4</span>
+          </div>
+          <div class="plus">+</div>
+          <div class="verdict-box">
+            <strong>outcome_pass</strong>
+            <span>M5 是否通过</span>
+          </div>
+          <div class="plus">→</div>
+          <div class="verdict-box">
+            <strong>case_pass</strong>
+            <span>gates_pass ∧ outcome_pass；quality 来自 M6</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="findings">
+        <div class="section-head">
+          <div>
+            <div class="kicker">09 · Findings</div>
+            <h2 class="section-title">值得注意的实现点</h2>
+          </div>
+          <p class="section-intro">
+            这些不是抽象建议，而是当前代码与文档之间、字段语义与实现之间的真实差异。
+            点击展开。
+          </p>
+        </div>
+
+        <div class="issues">
+          <details class="issue" open>
+            <summary>initial_deal 没有作为完整 shared contract 进入 broker</summary>
+            <div class="issue-body">
+              adapter 只映射 subject、cash target、A 的 reservation 和 must_haves。
+              terms、initial in_kind、obligations、status、provenance 没有整体进入 A prompt；
+              B sim 也主要只拿 subject 与 B 的部分 private。这是当前 pipeline 最大的数据落差。
+            </div>
+          </details>
+
+          <details class="issue">
+            <summary>Turn.offer 更像“派生快照”，不一定是本轮新报价</summary>
+            <div class="issue-body">
+              每个 A 回合都会调用 extractor。若抽取没有 JSON 或校验失败，会回退上一版 offer；
+              因此有些 Turn.offer 可能只是重复快照，不代表 A 本轮真的又提出了一次相同方案。
+              M9 基于 A offer 序列计算，需要结合这个语义理解。
+            </div>
+          </details>
+
+          <details class="issue">
+            <summary>字段 carry-forward 不是完整、确定性的 merge</summary>
+            <div class="issue-body">
+              prompt 说“未提及字段沿用上一版”，但代码只对 subject、provenance、cash 和 in_kind 做明确兜底；
+              format、deliverables、standard、obligations 等主要依赖 extractor 自己照 prompt 输出。
+              deadline 还被明确禁止从 initial_deal carry。
+            </div>
+          </details>
+
+          <details class="issue">
+            <summary>B 的 COUNTER offer 不进入 A extractor 的 prev_offer</summary>
+            <div class="issue-body">
+              B 的 structured offer 会记录在 transcript，A 下一轮也能从 B 的自然语言看到它；
+              但 orchestrator 的 <code>prev_offer</code> 只在 A offer 后更新。
+              因而 extractor 的确定性继承链是 A-only，不是双边统一合同状态。
+            </div>
+          </details>
+
+          <details class="issue">
+            <summary>M1 当前只验证 provenance 标签，不验证字段真正完整</summary>
+            <div class="issue-body">
+              <code>m1()</code> 对 required_fields 检查的，是 provenance 是否属于 stated / inferred / open；
+              它不检查 cash 是否非空、deliverables 是否存在、obligations 是否可执行。
+              所以“结构完整”这个名字比当前实现更强。
+            </div>
+          </details>
+
+          <details class="issue">
+            <summary>case_spec 与当前 evaluator 已经发生漂移</summary>
+            <div class="issue-body">
+              文档仍写 M7 是 gate、M6 主要是 0–2；当前代码 gates 只有 M1–M4，
+              M7 未调用，全部正式 case 走 R4 的 M6 0–4 五档。页面的评分部分以代码为准。
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker">10 · Evidence map</div>
+            <h2 class="section-title">代码依据</h2>
+          </div>
+          <p class="section-intro">
+            页面结论来自当前仓库实现与现有 episode，不是根据文件名猜测。
+          </p>
+        </div>
+
+        <div class="evidence">
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/orchestrator.py</code>
+            <span>逐轮 A → extractor → B、终止与 accepted_offer 绑定。</span>
+          </div>
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/agent/adapter.py</code>
+            <span>EpisodeInput 实际怎样压缩成 BrokerChatRequest。</span>
+          </div>
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/broker/runner.py</code>
+            <span>prompt、history、forced diagnosis、compass 与 tool loop。</span>
+          </div>
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/sim/prompt.py</code>
+            <span>B 的私有约束、开场、成交与走人规则。</span>
+          </div>
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/extract/offer_extractor.py</code>
+            <span>全部 Deal 字段抽取、carry、accepted version 与 final assembly。</span>
+          </div>
+          <div class="evidence-item">
+            <code>nego-eval/negoeval/grade/</code>
+            <span>M1–M12、R4 scorer、verdict 与重复 judge 聚合。</span>
+          </div>
+          <div class="evidence-item">
+            <code>cases/*.jsonc</code>
+            <span>24 个当前 case 的开局字段、双方 private 与 fixture。</span>
+          </div>
+          <div class="evidence-item">
+            <code>case_spec.md / agent_io_contract.md</code>
+            <span>设计契约；与当前代码对照后标出漂移。</span>
+          </div>
+          <div class="evidence-item">
+            <code>results/.../R4N1...episode.json</code>
+            <span>真实轨迹：首轮不报总价、B 先说 ¥120,000、后续写入 final。</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="closing">
+        <h2>所以，当前系统是<br><strong>“对话驱动的合同收敛”</strong></h2>
+        <p>
+          不是先填价格，也不是先把所有字段一次性补齐。
+          开局只有一个不完整的 Deal 骨架；A 与 B 在自然语言里逐步提出价格、非现金交换、时间、形式、交付与义务；
+          extractor 把每轮话术转成结构化快照；ACCEPT / WALK / round_cap 决定终止；
+          final assembler 绑定最终版本，评分器再读取 final_deal、transcript 与 process。
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">
+      基于当前本地仓库实现生成 · 重点按代码事实绘制，文档漂移已单独标注
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-mode]");
+    const cards = document.querySelectorAll("[data-card]");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const mode = button.dataset.mode;
+        buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        cards.forEach((card) => card.classList.toggle("active", card.dataset.card === mode));
+      });
+    });
+  </script>
+</body>
+</html>

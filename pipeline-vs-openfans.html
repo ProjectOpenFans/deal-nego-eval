@@ -1,0 +1,2223 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="deal-nego-eval 与 openfans-agent src/negotiation 的中文架构对比：目标、参与者、输入、状态、字段、价格、skill、工具、终止、合同、评分和对齐建议。">
+  <title>Negotiation Pipeline 对比 · Eval vs OpenFans</title>
+  <style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+
+    :root {
+      /* page palette remapped onto coolwei-lab core tokens
+         (--ink / --ink-2 / --line intentionally NOT redefined: core values win)
+         lab = brand cyan · prod = bad pink · shared = good green */
+      --muted: var(--ink-3);
+      --paper: var(--bg);
+      --card: var(--bg-card);
+      --lab: var(--brand);
+      --lab-dark: var(--brand);
+      --lab-soft: rgba(0, 166, 206, .10);
+      --prod: var(--bad);
+      --prod-dark: var(--bad);
+      --prod-soft: rgba(217, 58, 87, .09);
+      --shared: var(--good);
+      --shared-dark: var(--good);
+      --shared-soft: var(--good-wash);
+      --gold: var(--warn);
+      --warning: var(--warn);
+      --warning-soft: var(--warn-wash);
+      --danger: var(--bad);
+      --danger-soft: var(--bad-wash);
+      --navy: var(--bg-sunk);
+      --radius: 22px;
+      --shadow: 0 20px 55px rgba(0, 80, 130, .10);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --sans: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    button, summary { font: inherit; }
+
+    code {
+      font-family: var(--mono);
+      font-size: .91em;
+    }
+
+    .shell {
+      /* neutralize core .evi/.shell code-box styling: this .shell is the layout container */
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      color: inherit;
+      overflow: visible;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .9);
+      backdrop-filter: blur(16px);
+    }
+
+    .topbar .shell {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: -.015em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 30px;
+      position: relative;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      width: 22px;
+      height: 22px;
+      border-radius: 8px;
+      transform: rotate(12deg);
+    }
+
+    .brand-mark::before { left: 0; background: var(--lab); }
+    .brand-mark::after { right: 0; background: var(--prod); mix-blend-mode: multiply; }
+
+    .nav {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav a {
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--ink-2);
+      font-size: 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav a:hover { background: var(--wash); }
+
+    .hero {
+      /* neutralize core .hero verdict-box styling: this .hero is the page hero section */
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      overflow: visible;
+      padding: 70px 0 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--wash);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, var(--lab) 0 50%, var(--prod) 50%);
+    }
+
+    h1 {
+      /* solid ink here: the lab/prod colored spans are this page's identity */
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: var(--ink);
+      max-width: 1060px;
+      margin: 22px 0 18px;
+      font-size: clamp(45px, 7.4vw, 88px);
+      line-height: .98;
+      letter-spacing: -.065em;
+    }
+
+    h1 .lab-text { color: var(--lab-dark); }
+    h1 .prod-text { color: var(--prod-dark); }
+
+    p.hero-lead {
+      max-width: 900px;
+      margin: 0;
+      color: var(--ink-2);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .verdict {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      border: 1px solid var(--line-strong);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .verdict-side {
+      min-height: 250px;
+      padding: 29px;
+      color: var(--ink);
+    }
+
+    .verdict-side.lab { background: linear-gradient(160deg, rgba(0, 166, 206, .14), rgba(0, 89, 224, .04)); }
+    .verdict-side.prod { background: linear-gradient(160deg, rgba(217, 58, 87, .12), rgba(217, 58, 87, .02)); }
+
+    .verdict-side small {
+      display: block;
+      opacity: .72;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .verdict-side h2 {
+      display: block;
+      margin: 13px 0 12px;
+      padding-bottom: 0;
+      border-bottom: 0;
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: var(--ink);
+      max-width: 470px;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
+
+    .verdict-side p {
+      max-width: 520px;
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    .verdict-bottom {
+      grid-column: 1 / -1;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--ink);
+      background: rgba(11, 158, 110, .10);
+      border-top: 1px solid var(--line-soft);
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .verdict-bottom b { color: var(--good); }
+
+    .stats {
+      margin: 24px 0 72px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+    }
+
+    .stat {
+      /* neutralize core .stat card styling: cells live inside the joined .stats bar */
+      min-height: 125px;
+      padding: 20px;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      border-right: 1px solid var(--line);
+      transition: none;
+    }
+
+    .stat:hover { transform: none; box-shadow: none; border-color: var(--line); }
+
+    .stat:last-child { border-right: 0; }
+
+    .stat strong {
+      display: block;
+      font-size: 25px;
+      line-height: 1.1;
+      letter-spacing: -.035em;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    section { margin-top: 0; padding: 35px 0 66px; } /* keep original rhythm; core adds section margin */
+
+    .section-head {
+      margin-bottom: 27px;
+      display: grid;
+      grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+      gap: 42px;
+      align-items: end;
+    }
+
+    .kicker {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .kicker.lab { color: var(--lab); }
+    .kicker.prod { color: var(--prod); }
+    .kicker.shared { color: var(--shared); }
+
+    .section-title {
+      margin: 9px 0 0;
+      font-size: clamp(31px, 4.5vw, 52px);
+      line-height: 1.04;
+      letter-spacing: -.05em;
+    }
+
+    .section-intro {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 15px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: 0 11px 32px rgba(0,80,130,.07);
+    }
+
+    .panel:hover { transform: none; box-shadow: 0 11px 32px rgba(0,80,130,.07); border-color: var(--line); }
+
+    .scope-note {
+      padding: 18px 20px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 13px;
+      color: var(--ink-2);
+      border-color: rgba(178, 106, 0, .3);
+      background: var(--warn-wash);
+      font-size: 13px;
+    }
+
+    .scope-mark {
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--warn);
+      background: rgba(178, 106, 0, .14);
+      font-weight: 900;
+    }
+
+    .lanes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .lane {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+    }
+
+    .lane-head {
+      min-height: 150px;
+      padding: 25px;
+    }
+
+    .lane.lab .lane-head { background: var(--lab-soft); }
+    .lane.prod .lane-head { background: var(--prod-soft); }
+
+    .lane-badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .lane.lab .lane-badge { color: var(--lab-dark); background: rgba(0, 166, 206, .12); }
+    .lane.prod .lane-badge { color: var(--prod-dark); background: rgba(217, 58, 87, .10); }
+
+    .lane h3 {
+      margin: 15px 0 7px;
+      font-size: 29px;
+      line-height: 1.08;
+      letter-spacing: -.04em;
+    }
+
+    .lane-head p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .flow-list {
+      list-style: none;
+      margin: 0;
+      padding: 24px;
+      counter-reset: flow;
+    }
+
+    .flow-list li {
+      counter-increment: flow;
+      position: relative;
+      min-height: 74px;
+      padding: 4px 0 20px 54px;
+      border-left: 1px solid var(--line);
+      margin-left: 17px;
+    }
+
+    .flow-list li:last-child {
+      min-height: 45px;
+      padding-bottom: 0;
+      border-left-color: transparent;
+    }
+
+    .flow-list li::before {
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      left: -18px;
+      top: 0;
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .lane.lab .flow-list li::before { background: var(--lab); }
+    .lane.prod .flow-list li::before { background: var(--prod); }
+
+    .flow-list strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .flow-list span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .actor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .actors {
+      padding: 24px;
+    }
+
+    .actors h3 {
+      margin: 0 0 20px;
+      font-size: 20px;
+      letter-spacing: -.025em;
+    }
+
+    .actor-chain {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .actor {
+      min-height: 145px;
+      padding: 17px;
+      border-radius: 16px;
+      background: var(--bg-sunk);
+    }
+
+    .actor.primary.lab { background: var(--lab-soft); }
+    .actor.primary.prod { background: var(--prod-soft); }
+    .actor.shared { background: var(--shared-soft); }
+
+    .actor small {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .07em;
+    }
+
+    .actor strong {
+      display: block;
+      margin: 10px 0 6px;
+      font-size: 14px;
+    }
+
+    .actor p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 11px;
+    }
+
+    .filterbar {
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter {
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink-2);
+      background: var(--card);
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .filter[aria-pressed="true"] {
+      color: #fff;
+      border-color: transparent;
+      background: var(--grad);
+    }
+
+    .matrix,
+    .crosswalk {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+
+    th, td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--brand);
+      background: rgba(0, 131, 168, .06);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    td:first-child {
+      width: 150px;
+      font-weight: 900;
+    }
+
+    td:nth-child(2) { background: rgba(0, 166, 206, .05); }
+    td:nth-child(3) { background: rgba(217, 58, 87, .04); }
+
+    .tag {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 3px 7px;
+      border: 0;
+      border-radius: 6px;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .tag.diff { color: var(--danger); background: var(--danger-soft); }
+    .tag.same { color: var(--shared-dark); background: var(--shared-soft); }
+    .tag.gap { color: var(--warning); background: var(--warning-soft); }
+
+    tr[hidden] { display: none; }
+
+    .sequence-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .sequence {
+      padding: 24px;
+    }
+
+    .sequence h3 {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+
+    .seq {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 0 15px;
+    }
+
+    .seq-time {
+      padding: 0 0 26px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .seq-event {
+      position: relative;
+      padding: 0 0 26px 20px;
+      border-left: 1px solid var(--line);
+    }
+
+    .seq-event::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px var(--card);
+    }
+
+    .sequence.lab .seq-event::before { background: var(--lab); }
+    .sequence.prod .seq-event::before { background: var(--prod); }
+
+    .seq-event strong {
+      display: block;
+      margin-top: -4px;
+      font-size: 13px;
+    }
+
+    .seq-event span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .seq-time:last-of-type,
+    .seq-event:last-child { padding-bottom: 0; }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .price-side {
+      min-height: 330px;
+      padding: 28px;
+    }
+
+    .price-side:first-child {
+      border-right: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(0, 166, 206, .08), transparent 70%);
+    }
+
+    .price-side:last-child {
+      background: linear-gradient(135deg, rgba(217, 58, 87, .07), transparent 70%);
+    }
+
+    .price-side h3 {
+      margin: 0 0 9px;
+      font-size: 24px;
+      letter-spacing: -.035em;
+    }
+
+    .price-big {
+      display: block;
+      margin: 19px 0 11px;
+      font-size: 33px;
+      font-weight: 950;
+      letter-spacing: -.045em;
+    }
+
+    .price-side:first-child .price-big { color: var(--lab-dark); }
+    .price-side:last-child .price-big { color: var(--prod-dark); }
+
+    .price-side p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .formula {
+      margin-top: 18px;
+      padding: 13px 15px;
+      overflow-x: auto;
+      border: 1px solid var(--line-soft);
+      border-radius: 13px;
+      color: var(--ink-1);
+      background: var(--navy);
+      font-family: var(--mono);
+      font-size: 11px;
+      white-space: pre-line;
+    }
+
+    .state-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .state-card {
+      padding: 24px;
+    }
+
+    .state-card h3 {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+
+    .state-row {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .state-pill {
+      padding: 8px 11px;
+      border: 0;
+      border-radius: 9px;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .state-card.lab .state-pill { color: var(--lab-dark); background: var(--lab-soft); }
+    .state-card.prod .state-pill { color: var(--prod-dark); background: var(--prod-soft); }
+    .state-pill.human { color: var(--warning); background: var(--warning-soft); }
+    .state-arrow { color: var(--muted); font-weight: 900; }
+
+    .state-card p {
+      margin: 17px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .risk-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    details.risk {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+    }
+
+    details.risk[open] {
+      border-color: var(--line-strong);
+      box-shadow: 0 11px 28px rgba(0,80,130,.08);
+    }
+
+    details.risk summary {
+      padding: 17px 19px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      list-style: none;
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    details.risk summary::-webkit-details-marker { display: none; }
+
+    details.risk summary::before {
+      content: "+";
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      color: var(--warn);
+      background: rgba(178, 106, 0, .14);
+      font-weight: 900;
+    }
+
+    details.risk[open] summary::before { content: "−"; }
+
+    .risk-body {
+      padding: 0 19px 19px 57px;
+      color: var(--ink-2);
+      font-size: 12.5px;
+    }
+
+    .blueprint {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      color: var(--ink);
+      background: var(--navy);
+    }
+
+    .blueprint-head {
+      padding: 30px 32px 24px;
+      border-bottom: 1px solid rgba(11, 27, 40, .08);
+    }
+
+    .blueprint-head h3 {
+      margin: 0;
+      font-size: 29px;
+      letter-spacing: -.04em;
+    }
+
+    .blueprint-head p {
+      max-width: 820px;
+      margin: 9px 0 0;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .blueprint-body {
+      padding: 28px 32px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .bp-side,
+    .bp-core {
+      min-height: 260px;
+      padding: 22px;
+      border: 1px solid rgba(11, 27, 40, .08);
+      border-radius: 19px;
+    }
+
+    .bp-side.lab { background: rgba(0, 166, 206, .09); }
+    .bp-side.prod { background: rgba(217, 58, 87, .07); }
+    .bp-core { background: rgba(11, 158, 110, .08); }
+
+    .bp-side small,
+    .bp-core small {
+      color: var(--ink-3);
+      font-family: var(--mono);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .09em;
+    }
+
+    .bp-side h4,
+    .bp-core h4 {
+      margin: 11px 0 12px;
+      font-size: 18px;
+    }
+
+    .bp-side ul,
+    .bp-core ul {
+      margin: 0;
+      padding-left: 17px;
+      color: var(--ink-2);
+      font-size: 12px;
+    }
+
+    .bp-side li + li,
+    .bp-core li + li { margin-top: 7px; }
+
+    .priority {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .priority-item {
+      padding: 17px;
+      border: 1px solid var(--line-soft);
+      border-radius: 15px;
+      background: var(--bg-card);
+    }
+
+    .priority-item b {
+      display: block;
+      color: var(--good);
+      font-family: var(--mono);
+      font-size: 10px;
+    }
+
+    .priority-item span {
+      display: block;
+      margin-top: 7px;
+      color: var(--ink-2);
+      font-size: 11px;
+    }
+
+    .evidence {
+      /* neutralize core .evidence code-box styling: this .evidence is a grid container */
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      color: inherit;
+      overflow: visible;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .evidence-item {
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--bg-card);
+    }
+
+    .evidence-item code {
+      display: block;
+      overflow-wrap: anywhere;
+      font-size: 10.5px;
+      font-weight: 850;
+    }
+
+    .evidence-item.lab code { color: var(--lab-dark); }
+    .evidence-item.prod code { color: var(--prod-dark); }
+
+    .evidence-item span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .closing {
+      margin: 20px 0 80px;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 30px;
+      border: 1px solid var(--line-strong);
+      border-radius: 28px;
+      background: linear-gradient(120deg, rgba(0, 166, 206, .12), rgba(108, 92, 231, .07) 48%, rgba(217, 58, 87, .09));
+      color: var(--ink);
+    }
+
+    .closing h2 {
+      display: block;
+      margin: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: var(--ink);
+      font-size: clamp(31px, 4.2vw, 48px);
+      line-height: 1.07;
+      letter-spacing: -.05em;
+    }
+
+    .closing p {
+      margin: 0;
+      color: var(--ink-1);
+    }
+
+    .closing strong { color: var(--good); }
+
+    footer {
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 1050px) {
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .stat:nth-child(3) { border-right: 0; }
+      .stat:nth-child(-n+3) { border-bottom: 1px solid var(--line); }
+      .actor-chain { grid-template-columns: 1fr; }
+      .actor { min-height: auto; }
+      .blueprint-body { grid-template-columns: 1fr; }
+      .bp-side, .bp-core { min-height: auto; }
+    }
+
+    @media (max-width: 780px) {
+      .shell { width: min(100% - 24px, 1240px); }
+      .topbar .shell { min-height: 62px; }
+      .brand span:last-child { display: none; }
+      .hero { padding-top: 46px; }
+      h1 { font-size: 49px; }
+      .verdict,
+      .lanes,
+      .actor-grid,
+      .sequence-grid,
+      .state-grid,
+      .risk-grid,
+      .closing { grid-template-columns: 1fr; }
+      .verdict-bottom { grid-column: auto; }
+      .section-head { grid-template-columns: 1fr; gap: 14px; }
+      .price-grid { grid-template-columns: 1fr; }
+      .price-side:first-child {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .priority { grid-template-columns: 1fr; }
+      .evidence { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .stats { grid-template-columns: 1fr; }
+      .stat { border-right: 0; border-bottom: 1px solid var(--line); }
+      .stat:last-child { border-bottom: 0; }
+      .seq { grid-template-columns: 62px 1fr; gap: 0 10px; }
+      .evidence { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Negotiation Pipeline · Architecture Diff</span>
+      </div>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#scope">范围</a>
+        <a href="#architecture">架构</a>
+        <a href="#matrix">逐项对比</a>
+        <a href="#fields">字段</a>
+        <a href="#timing">时序</a>
+        <a href="#risks">差距</a>
+        <a href="#blueprint">对齐方案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero">
+        <span class="eyebrow">Code-level comparison · 2026-07-29</span>
+        <h1>
+          同叫 Negotiation，<br>
+          <span class="lab-text">一个是实验室</span>，
+          <span class="prod-text">一个是成交引擎</span>
+        </h1>
+        <p class="hero-lead">
+          对比 <code>deal-nego-eval/nego-eval</code> 与
+          <code>openfans-agent/src/negotiation</code> 的实际运行代码。
+          它们共享 broker / skill 的设计语言，但优化目标、参与者、状态机和最终产物完全不同。
+        </p>
+
+        <div class="verdict">
+          <article class="verdict-side lab">
+            <small>deal-nego-eval</small>
+            <h2>评测实验场：控制变量、记录轨迹、事后评分</h2>
+            <p>
+              单个被测 agent A 对阵 case 驱动的 B simulator。每轮把自然语言抽成结构化 Deal，
+              episode 结束后用隐藏 ground truth 计算 M1–M12。
+            </p>
+          </article>
+          <article class="verdict-side prod">
+            <small>openfans-agent · src/negotiation</small>
+            <h2>产品成交引擎：双边经纪、裁判收口、真人授权</h2>
+            <p>
+              买卖双方各有 broker，每轮都发言；独立 judge 负责继续、生成合同或 NoDeal，
+              定金/小费/blank check 可暂停到真人确认，合同还能进入 update negotiation。
+            </p>
+          </article>
+          <div class="verdict-bottom">
+            <span>结论：</span>
+            <b>不应把二者视为同一个 pipeline 的“测试版 / 生产版一比一镜像”。</b>
+          </div>
+        </div>
+      </section>
+
+      <div class="stats" aria-label="关键差异摘要">
+        <div class="stat">
+          <strong>A + Sim</strong>
+          <span>Eval 的对局主体；只测 A</span>
+        </div>
+        <div class="stat">
+          <strong>Broker × 2 + Judge</strong>
+          <span>OpenFans 每轮的真实参与者</span>
+        </div>
+        <div class="stat">
+          <strong>12 vs 20</strong>
+          <span>当前默认回合上限</span>
+        </div>
+        <div class="stat">
+          <strong>逐轮 Deal vs 最终 Contract</strong>
+          <span>结构化数据形成时机不同</span>
+        </div>
+        <div class="stat">
+          <strong>事后评分 vs 轮内裁决</strong>
+          <span>Judge 是否改变谈判进程</span>
+        </div>
+      </div>
+
+      <section id="scope">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">00 · Comparison scope</div>
+            <h2 class="section-title">先把比较对象说清</h2>
+          </div>
+          <p class="section-intro">
+            OpenFans 仓库里还有一个 <code>eval/nego</code> 目录，它与当前独立 benchmark 有共同来源，
+            但那不是产品谈判 runtime。这里真正比较的是生产模块 <code>src/negotiation</code>。
+          </p>
+        </div>
+
+        <div class="panel scope-note">
+          <div class="scope-mark">!</div>
+          <div>
+            <strong>三者关系：</strong>
+            <code>deal-nego-eval/nego-eval</code> 与
+            <code>openfans-agent/eval/nego</code> 是近亲评测 harness，目前已有若干分叉；
+            <code>openfans-agent/src/negotiation</code> 则是另一套产品架构。
+            因此本页用“Eval”指当前独立仓库，用“OpenFans”指生产 runtime。
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">01 · Architecture lanes</div>
+            <h2 class="section-title">两条完整主链</h2>
+          </div>
+          <p class="section-intro">
+            Eval 的终点是 EvaluationResult；OpenFans 的终点是可以进入产品生命周期的
+            ContractReady / HumanActionRequired / NoDeal。
+          </p>
+        </div>
+
+        <div class="lanes">
+          <article class="lane lab">
+            <div class="lane-head">
+              <span class="lane-badge">Benchmark lane</span>
+              <h3>Case → Episode → Score</h3>
+              <p>以可重复评测为中心，隐藏真值贯穿模拟器、抽取器和评分器。</p>
+            </div>
+            <ol class="flow-list">
+              <li>
+                <strong>加载 JSONC Case</strong>
+                <span>meta + EpisodeInput + fixture / ground_truth</span>
+              </li>
+              <li>
+                <strong>把 A 适配为一个 broker</strong>
+                <span>initial_deal 与 parties 被压缩成 BrokerChatRequest</span>
+              </li>
+              <li>
+                <strong>A 先发言</strong>
+                <span>skills=on 时首轮强制注入 diagnosis</span>
+              </li>
+              <li>
+                <strong>OfferExtractor 抽 A 的 Deal</strong>
+                <span>每轮 message → structured Turn.offer</span>
+              </li>
+              <li>
+                <strong>B simulator 回应</strong>
+                <span>CONTINUE / COUNTER / ACCEPT / WALK + optional offer</span>
+              </li>
+              <li>
+                <strong>组装 EpisodeOutput</strong>
+                <span>final_deal + transcript + process trace</span>
+              </li>
+              <li>
+                <strong>事后评分</strong>
+                <span>M1–M12、verdict、批量报告</span>
+              </li>
+            </ol>
+          </article>
+
+          <article class="lane prod">
+            <div class="lane-head">
+              <span class="lane-badge">Product lane</span>
+              <h3>Compose → Negotiate → Contract</h3>
+              <p>以双边成交为中心，真人授权、价值工具和合同版本贯穿多轮。</p>
+            </div>
+            <ol class="flow-list">
+              <li>
+                <strong>ComposeCard / 当前合同进入 API</strong>
+                <span>initial 从卡片起，update 从 Contract + ModificationList 起</span>
+              </li>
+              <li>
+                <strong>决定谁先手</strong>
+                <span>card owner 先；无法推断时默认买方先</span>
+              </li>
+              <li>
+                <strong>买卖双方 broker 依次发言</strong>
+                <span>两边都是 first-class LLM，不是 simulator</span>
+              </li>
+              <li>
+                <strong>独立 judge 每轮裁决</strong>
+                <span>判断继续谈，或调用 finalize_contract</span>
+              </li>
+              <li>
+                <strong>阶段状态机收口</strong>
+                <span>Generating / ContractReady / HumanActionRequired / NoDeal</span>
+              </li>
+              <li>
+                <strong>产品端持有会话状态</strong>
+                <span>messages、contract、value-tool ledger、contract_history</span>
+              </li>
+              <li>
+                <strong>可进入合同审阅与再谈</strong>
+                <span>assistant 产 ModificationList，再以 update 模式开新 session</span>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">02 · Actors</div>
+            <h2 class="section-title">参与者不是同一套</h2>
+          </div>
+          <p class="section-intro">
+            这决定了两边的行为分布本来就不会相同：Eval 追求对手可控，
+            OpenFans 追求双方都能代理真实委托人并被裁判收口。
+          </p>
+        </div>
+
+        <div class="actor-grid">
+          <div class="panel actors">
+            <h3><span style="color:var(--lab)">Eval</span> · 单侧被测</h3>
+            <div class="actor-chain">
+              <article class="actor primary lab">
+                <small>TEST SUBJECT</small>
+                <strong>A Negotiator</strong>
+                <p>唯一被测 agent；成绩归因于 A。</p>
+              </article>
+              <article class="actor">
+                <small>HARNESS</small>
+                <strong>B Simulator</strong>
+                <p>看 B 的隐藏约束，按 case 角色接受、还盘或走人。</p>
+              </article>
+              <article class="actor shared">
+                <small>POST-HOC</small>
+                <strong>Extractor + Graders</strong>
+                <p>抽结构、读 ground truth、episode 后评分。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel actors">
+            <h3><span style="color:var(--prod)">OpenFans</span> · 双侧协商</h3>
+            <div class="actor-chain">
+              <article class="actor primary prod">
+                <small>PARTY 1</small>
+                <strong>Buyer Broker</strong>
+                <p>代表买方，能在授权范围内发起定金、小费。</p>
+              </article>
+              <article class="actor primary prod">
+                <small>PARTY 2</small>
+                <strong>Seller Broker</strong>
+                <p>代表卖方，回应公开方案与共享账本。</p>
+              </article>
+              <article class="actor shared">
+                <small>IN-LOOP</small>
+                <strong>Judge</strong>
+                <p>每轮读双方公开话术，负责生成最终合同。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matrix">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">03 · Comparison matrix</div>
+            <h2 class="section-title">逐项对比</h2>
+          </div>
+          <p class="section-intro">
+            可筛选查看架构、数据、时序、工具和输出。默认显示全部。
+          </p>
+        </div>
+
+        <div class="filterbar" role="group" aria-label="对比表筛选">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="filter" type="button" data-filter="architecture" aria-pressed="false">架构</button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">数据</button>
+          <button class="filter" type="button" data-filter="timing" aria-pressed="false">时序</button>
+          <button class="filter" type="button" data-filter="tools" aria-pressed="false">Skill / 工具</button>
+          <button class="filter" type="button" data-filter="output" aria-pressed="false">输出 / 评分</button>
+        </div>
+
+        <div class="panel matrix">
+          <table>
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th>deal-nego-eval</th>
+                <th>OpenFans src/negotiation</th>
+                <th>判断</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-domain="architecture">
+                <td>核心目标</td>
+                <td>隔离谈判能力、跑可重复 episode、量化好坏。</td>
+                <td>替真实买卖双方推进一笔可签合同。</td>
+                <td><span class="tag diff">不同目标函数</span></td>
+              </tr>
+              <tr data-domain="architecture">
+                <td>对局结构</td>
+                <td>单侧 A vs harness B；B 是角色模拟器。</td>
+                <td>buyer_broker + seller_broker + 每轮 judge。</td>
+                <td><span class="tag diff">非对称 vs 双边</span></td>
+              </tr>
+              <tr data-domain="data">
+                <td>起点</td>
+                <td>Case JSONC：meta / input / fixture。</td>
+                <td>ComposeFinalCard，或已有 Contract + ModificationList。</td>
+                <td><span class="tag diff">实验题面 vs 产品授权</span></td>
+              </tr>
+              <tr data-domain="data">
+                <td>隐藏信息</td>
+                <td>A/B 各有 private；fixture 有 walk-away、cash cap、资源集和评分锚。</td>
+                <td>没有 case ground truth；card owner 可见 private reserve，双方看公开 card 与市场档案。</td>
+                <td><span class="tag diff">真值模型不同</span></td>
+              </tr>
+              <tr data-domain="data">
+                <td>用户档案</td>
+                <td>PublicProfile + Private；adapter 实际只传部分字段。</td>
+                <td>UserInfo 可带评分、挂牌、历史出价、历史成交、portfolio。</td>
+                <td><span class="tag gap">产品市场上下文更强</span></td>
+              </tr>
+              <tr data-domain="timing">
+                <td>谁先手</td>
+                <td>A 固定先发；meta.side 只决定 A 是买方还是卖方。</td>
+                <td>ComposeCard owner 先手；历史 opener 可保持；否则买方先。</td>
+                <td><span class="tag diff">固定 vs 动态</span></td>
+              </tr>
+              <tr data-domain="timing">
+                <td>一轮结构</td>
+                <td>A → extractor → B → termination check。</td>
+                <td>opener broker → responder broker → judge。</td>
+                <td><span class="tag diff">抽取器 vs 轮内裁判</span></td>
+              </tr>
+              <tr data-domain="timing">
+                <td>回合上限</td>
+                <td>当前 24 个 case 均为 12。</td>
+                <td>配置默认 max_session_rounds=20；update_round 最多 3。</td>
+                <td><span class="tag diff">实验固定 vs 产品配置</span></td>
+              </tr>
+              <tr data-domain="data">
+                <td>逐轮 offer</td>
+                <td>每个 A message 都调用 LLM extractor；B offer 可选。</td>
+                <td>broker 只发自然语言；没有 per-turn structured offer schema。</td>
+                <td><span class="tag gap">产品缺逐轮结构</span></td>
+              </tr>
+              <tr data-domain="data">
+                <td>最终合同</td>
+                <td>rich Deal：subject、cash、in-kind、timing、deliverables、standard、obligations、provenance。</td>
+                <td>compact Contract：price、currency、time、location、scope、terms、version。</td>
+                <td><span class="tag gap">产品 schema 更扁平</span></td>
+              </tr>
+              <tr data-domain="tools">
+                <td>Skill 时机</td>
+                <td>skills=on：第 1 轮强制注入 deal-diagnosis，第 2 轮起 compass；A 独享。</td>
+                <td>第 1 轮 plain path；第 2 轮起双方看到 catalog，自愿 read_skill，并接 judge blocker nudge。</td>
+                <td><span class="tag diff">首轮强制 vs 次轮自愿</span></td>
+              </tr>
+              <tr data-domain="tools">
+                <td>价值工具</td>
+                <td>本地 tool surface 实际只有 list_skills / read_skill；value_tool_policy 形状存在但未执行资金动作。</td>
+                <td>deposit、tip、blank check 有 policy、ledger、pending human action 与状态机。</td>
+                <td><span class="tag gap">能力未对齐</span></td>
+              </tr>
+              <tr data-domain="tools">
+                <td>真人参与</td>
+                <td>没有；用户授权由 case private / ground truth 模拟。</td>
+                <td>资金动作可暂停为 HumanActionRequired；assistant 还能整理修改、接受或拒绝合同。</td>
+                <td><span class="tag diff">纯仿真 vs approval-driven</span></td>
+              </tr>
+              <tr data-domain="timing">
+                <td>成交决定</td>
+                <td>B simulator 的 ACCEPT / WALK 直接终止。</td>
+                <td>Judge 调 finalize_contract；NoDeal 仅在超出上限时开放。</td>
+                <td><span class="tag diff">对手决定 vs 第三方收口</span></td>
+              </tr>
+              <tr data-domain="output">
+                <td>状态</td>
+                <td>settled / walk_away / round_cap；final Deal status 是 settled / walked_away / draft。</td>
+                <td>Generating / ContractReady / HumanActionRequired / NoDeal；assistant 另有四态。</td>
+                <td><span class="tag diff">Episode 状态 vs 产品状态机</span></td>
+              </tr>
+              <tr data-domain="output">
+                <td>Judge 的位置</td>
+                <td>episode 结束后 M2/M6/M11/M12 做评分，不改变对局。</td>
+                <td>每轮参与，既能 finalize，也会把 blocker 私下 nudge 回下一轮 broker。</td>
+                <td><span class="tag diff">观测者 vs 控制器</span></td>
+              </tr>
+              <tr data-domain="output">
+                <td>主要产物</td>
+                <td>EpisodeOutput + EvaluationResult + CaseReport。</td>
+                <td>Contract + messages_to_append + detail + value_tool_state + debug_trace。</td>
+                <td><span class="tag diff">分数 vs 可执行状态</span></td>
+              </tr>
+              <tr data-domain="output">
+                <td>持久化责任</td>
+                <td>writer 把 episode / result 写入结果目录。</td>
+                <td>API 本身无服务端 session store；客户端回传完整 transcript 与 ledger，Demo runner 负责 session / contract_history。</td>
+                <td><span class="tag diff">文件结果 vs 客户端状态</span></td>
+              </tr>
+              <tr data-domain="architecture">
+                <td>再谈 / 改约</td>
+                <td>一个 episode 结束即完成，没有 contract version lifecycle。</td>
+                <td>assistant → ModificationList → mode=update → 新 contract version；支持 resume。</td>
+                <td><span class="tag gap">Eval 未覆盖生命周期</span></td>
+              </tr>
+              <tr data-domain="architecture">
+                <td>共同点</td>
+                <td>Broker public/private 边界、整数报价、多议题、skill catalog、自然语言 transcript。</td>
+                <td>同样使用这些原则，且生产 prompt 更完整地落到 money / mandate / judge。</td>
+                <td><span class="tag same">设计语言共享</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="fields">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">04 · Field crosswalk</div>
+            <h2 class="section-title">字段如何对得上</h2>
+          </div>
+          <p class="section-intro">
+            两边没有一个无损的一一映射。Eval 的 Deal 更适合测“多议题质量”，
+            OpenFans 的 Contract 更适合 UI 展示和版本化，但会压扁非现金与义务语义。
+          </p>
+        </div>
+
+        <div class="panel crosswalk">
+          <table>
+            <thead>
+              <tr>
+                <th>交易语义</th>
+                <th>Eval · Initial / Final Deal</th>
+                <th>OpenFans · Compose / Contract</th>
+                <th>映射损失</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>交易标的</td>
+                <td><code>subject</code></td>
+                <td><code>headline / scenario / provider_deliverable</code> → <code>scope</code></td>
+                <td>可映射，但 subject 的 provenance 消失。</td>
+              </tr>
+              <tr>
+                <td>现金</td>
+                <td><code>price.cash.amount + currency</code></td>
+                <td><code>budget_target / ComposePrice</code> → <code>contract.price + currency</code></td>
+                <td>最终现金可映射；opening target 与 final price 是两种语义。</td>
+              </tr>
+              <tr>
+                <td>非现金交换</td>
+                <td><code>price.in_kind[]</code>，有 resource ID 与 from_party。</td>
+                <td>没有独立字段，只能写进 <code>scope</code> 或 <code>terms</code> 文本。</td>
+                <td><span class="tag gap">高损失</span> 无法稳定统计资源、来源和估值。</td>
+              </tr>
+              <tr>
+                <td>时间</td>
+                <td><code>timing.when / deadline / duration</code></td>
+                <td><code>datetime_window / duration</code> → 单个 <code>contract.time</code></td>
+                <td>三个时间维度被合并成一段字符串。</td>
+              </tr>
+              <tr>
+                <td>地点 / 形式</td>
+                <td><code>terms.format</code>，地点没有独立字段。</td>
+                <td><code>service_mode + location</code> → <code>contract.location</code></td>
+                <td>产品侧地点更明确，Eval 的 format 语义更宽。</td>
+              </tr>
+              <tr>
+                <td>交付物</td>
+                <td><code>deliverables[] + delivery_standard</code></td>
+                <td><code>provider_deliverable</code> → <code>scope / terms</code></td>
+                <td>数组与验收标准被压成自由文本。</td>
+              </tr>
+              <tr>
+                <td>双方义务</td>
+                <td><code>obligations[]</code>，包含 party 与 resource mapping。</td>
+                <td><code>principal_obligations</code> 起步，最终进入 <code>terms</code>。</td>
+                <td><span class="tag gap">高损失</span> 无法逐方、逐资源做确定性校验。</td>
+              </tr>
+              <tr>
+                <td>状态</td>
+                <td><code>Deal.status</code> + <code>terminal_reason</code></td>
+                <td><code>BrokerStage</code> + 合同是否存在。</td>
+                <td>概念可映射，但 HumanActionRequired 在 Eval 没有对应物。</td>
+              </tr>
+              <tr>
+                <td>来源 / 版本</td>
+                <td><code>provenance[field]</code></td>
+                <td><code>contract.version + change_summary + contract_history</code></td>
+                <td>Eval 追踪“值从哪来”；产品追踪“合同变了几版”，不是同一维度。</td>
+              </tr>
+              <tr>
+                <td>资金动作</td>
+                <td>Deal 可以描述付款结构，但没有真正 value-tool ledger。</td>
+                <td><code>value_tool_policy + value_tool_state.ledger + pending_human_actions</code></td>
+                <td>OpenFans 有独立、可审计、带真人确认的状态。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="timing">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">05 · Round timing</div>
+            <h2 class="section-title">一轮的时序差异</h2>
+          </div>
+          <p class="section-intro">
+            最关键的不是“谁多一个模型”，而是结构化合同在哪个时点出现，
+            以及裁判是否在循环里改变下一轮。
+          </p>
+        </div>
+
+        <div class="sequence-grid">
+          <article class="panel sequence lab">
+            <h3>Eval · A-driven round</h3>
+            <div class="seq">
+              <div class="seq-time">STEP 1</div>
+              <div class="seq-event">
+                <strong>A 读取历史并发言</strong>
+                <span>A 始终是本轮先手。</span>
+              </div>
+              <div class="seq-time">STEP 2</div>
+              <div class="seq-event">
+                <strong>Extractor 立即生成 A offer</strong>
+                <span>结构化 Deal 在公开对手回应前就形成。</span>
+              </div>
+              <div class="seq-time">STEP 3</div>
+              <div class="seq-event">
+                <strong>B simulator 回应</strong>
+                <span>可给 structured offer，也可只给 message。</span>
+              </div>
+              <div class="seq-time">STEP 4</div>
+              <div class="seq-event">
+                <strong>按 B action 终止或继续</strong>
+                <span>没有轮内 judge；评分在 episode 之后。</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel sequence prod">
+            <h3>OpenFans · Broker-to-broker round</h3>
+            <div class="seq">
+              <div class="seq-time">STEP 1</div>
+              <div class="seq-event">
+                <strong>Card owner / historical opener 发言</strong>
+                <span>首轮不开放 skill 与 value tools。</span>
+              </div>
+              <div class="seq-time">STEP 2</div>
+              <div class="seq-event">
+                <strong>另一方 broker 回应</strong>
+                <span>双方都在同一公开 transcript 中表达方案。</span>
+              </div>
+              <div class="seq-time">STEP 3</div>
+              <div class="seq-event">
+                <strong>Judge 读取双方整轮</strong>
+                <span>只看公开话术、card / contract、mods 与共享 ledger。</span>
+              </div>
+              <div class="seq-time">STEP 4</div>
+              <div class="seq-event">
+                <strong>继续 / finalize / 暂停 / NoDeal</strong>
+                <span>若继续，judge blocker 会私下变成下一轮 skill nudge。</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">06 · Price & skills</div>
+            <h2 class="section-title">价格与 Skill 的时机正好相反</h2>
+          </div>
+          <p class="section-intro">
+            这是让 Eval 结果难以直接代表产品行为的最大来源之一。
+          </p>
+        </div>
+
+        <div class="panel price-grid">
+          <article class="price-side">
+            <h3>Eval</h3>
+            <span class="price-big">价格通常开局为空</span>
+            <p>
+              当前 24 个 case 的 <code>initial_deal.price.cash.amount</code> 全为 null。
+              Live agent 可首轮报价，也可先问范围、预算或处理阻塞；没有固定定价阶段。
+              只有 offline stub 为测试稳定性，会在第 1 轮硬编码锚价。
+            </p>
+            <div class="formula">price: null
+round 1: model decides
+skills=on: diagnosis injected immediately</div>
+          </article>
+          <article class="price-side">
+            <h3>OpenFans</h3>
+            <span class="price-big">有 target 就引导首轮开价</span>
+            <p>
+              若 ComposeCard 带 <code>budget_target</code>，代码确定性算出一个保守下界，
+              再把“第 1 轮应直接围绕公开 target 开价”的 guidance 注入 owner；
+              对手也看到公开锚点。真正的话术仍由模型生成，私有 reserve 只给 card owner。
+            </p>
+            <div class="formula">conservative = max(target × 0.85, target − 1000)
+opening_floor = round_down_100(conservative)
+round 1: plain path · no skills/tools</div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">07 · State machines</div>
+            <h2 class="section-title">终止与人类介入</h2>
+          </div>
+          <p class="section-intro">
+            Eval 只有 episode 终态；OpenFans 还有“合同已谈定但资金动作待真人确认”的中间态，
+            并支持后续合同审阅和改约。
+          </p>
+        </div>
+
+        <div class="state-grid">
+          <article class="panel state-card lab">
+            <h3>Eval episode</h3>
+            <div class="state-row">
+              <span class="state-pill">running</span>
+              <span class="state-arrow">→</span>
+              <span class="state-pill">settled</span>
+              <span class="state-pill">walk_away</span>
+              <span class="state-pill">round_cap</span>
+            </div>
+            <p>
+              B 的 ACCEPT / WALK 或第 12 轮触顶决定终止。之后一次性组装 final_deal 并评分。
+            </p>
+          </article>
+          <article class="panel state-card prod">
+            <h3>OpenFans negotiation + review</h3>
+            <div class="state-row">
+              <span class="state-pill">Generating</span>
+              <span class="state-arrow">→</span>
+              <span class="state-pill">ContractReady</span>
+              <span class="state-pill human">HumanActionRequired</span>
+              <span class="state-pill">NoDeal</span>
+            </div>
+            <p>
+              待确认资金动作优先于 ContractReady。确认后可 resume；合同还可经 assistant
+              形成 ModificationList，再以 update 模式生成 v+1。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="risks">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">08 · Representation gaps</div>
+            <h2 class="section-title">直接拿 Eval 代表产品，会错在哪里</h2>
+          </div>
+          <p class="section-intro">
+            以下差距会让模型排名、失败原因和字段质量出现系统性偏差。点击展开。
+          </p>
+        </div>
+
+        <div class="risk-grid">
+          <details class="risk" open>
+            <summary>首轮策略分布不同</summary>
+            <div class="risk-body">
+              Eval on-arm 在第 1 轮就强制加载 diagnosis，而 OpenFans 第 1 轮禁止 skill / value tool，
+              并在有 budget_target 时强引导公开锚价。相同模型在两边的首轮行为并不等价。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>对手不是同一种“人”</summary>
+            <div class="risk-body">
+              Eval 的 B 被 reservation、blocking_flags 与 case 规则约束，主要负责提供稳定难度；
+              OpenFans 的另一方是完整 broker，会主动优化自己的方案、读市场资料、用 skill。
+              A-vs-sim 成绩不能直接外推到 broker-vs-broker。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>Judge 在产品里会改变路径</summary>
+            <div class="risk-body">
+              Eval judge 是事后观察者；OpenFans judge 每轮指出 blocker，并通过私有 nudge 影响下一轮 broker。
+              这会缩短或改变对局，属于 closed-loop controller，不是纯 scorer。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>产品合同丢失多议题结构</summary>
+            <div class="risk-body">
+              in-kind、逐方义务、交付标准和 provenance 在 NegotiationContract 里没有独立字段，
+              只能混入 scope / terms。Eval 能精确检查 M4/M9，产品 transcript 目前不能直接复现这些指标。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>资金动作与付款规则不一致</summary>
+            <div class="risk-body">
+              OpenFans 明确禁止把分期、托管、放款写进合同，唯一例外是走 ledger 的 deposit / tip；
+              Eval prompt 仍提到这些工具，但本地 runtime 实际没有对应 tool executor，
+              部分 case 还把付款结构当可谈条款。两边的“好 deal”定义可能冲突。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>成交定义不同</summary>
+            <div class="risk-body">
+              Eval 的 B 说 ACCEPT 就可 settled；OpenFans 必须由 judge 调 finalize_contract，
+              且 price、currency、time、location、scope、terms 均不得为空或带 placeholder。
+              产品的成交门槛更偏合同可执行性。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>Update lifecycle 没被 benchmark 覆盖</summary>
+            <div class="risk-body">
+              产品包含 assistant 审阅、must/should/nice、条件报价、撤回规则、合同版本、resume 与 human action；
+              当前 Eval 只测从零开始的一次 episode，无法发现改约阶段的授权丢失与版本回滚。
+            </div>
+          </details>
+          <details class="risk">
+            <summary>OpenFans /start 不是 matching engine</summary>
+            <div class="risk-body">
+              当前生产路由的 negotiation/start 只生成 deal_id，candidates 恒为空；
+              Demo 实际由上游已有 buyer / seller profile 发起 broker session。Eval 则由 case 预先固定对手，
+              所以两边都没有真正覆盖“候选匹配质量”，只是方式不同。
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="blueprint">
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">09 · Alignment blueprint</div>
+            <h2 class="section-title">建议：共用核心，不合并外壳</h2>
+          </div>
+          <p class="section-intro">
+            最稳的方向不是让产品直接跑 benchmark orchestrator，也不是把评分器塞进产品主循环；
+            而是抽出共享谈判核心，由 EvalAdapter 与 ProductAdapter 分别承载实验和业务差异。
+          </p>
+        </div>
+
+        <div class="blueprint">
+          <div class="blueprint-head">
+            <h3>Negotiation Core + 两个 Adapter</h3>
+            <p>
+              共享 schema、prompt 规则、skill registry、首轮锚价、价值工具和合同校验；
+              评测侧保留 sim / extractor / graders，产品侧保留 API / judge / human approval / lifecycle。
+            </p>
+          </div>
+          <div class="blueprint-body">
+            <article class="bp-side lab">
+              <small>EVAL ADAPTER</small>
+              <h4>实验专属</h4>
+              <ul>
+                <li>Case / ground truth</li>
+                <li>Counterparty simulator</li>
+                <li>Offer telemetry / extractor</li>
+                <li>M1–M12 graders</li>
+                <li>batch / repeat / report</li>
+              </ul>
+            </article>
+            <article class="bp-core">
+              <small>SHARED NEGOTIATION CORE</small>
+              <h4>真正应该同源的部分</h4>
+              <ul>
+                <li>Canonical Contract / Offer schema</li>
+                <li>Buyer / seller prompt rules</li>
+                <li>Price anchoring policy</li>
+                <li>Skill timing + registry</li>
+                <li>Value-tool policy / ledger semantics</li>
+                <li>Finalize validation + public/private boundary</li>
+              </ul>
+            </article>
+            <article class="bp-side prod">
+              <small>PRODUCT ADAPTER</small>
+              <h4>业务专属</h4>
+              <ul>
+                <li>ComposeCard / UserInfo</li>
+                <li>Two live brokers + judge</li>
+                <li>HumanActionRequired</li>
+                <li>Assistant / ModificationList</li>
+                <li>Contract version lifecycle</li>
+              </ul>
+            </article>
+          </div>
+          <div class="blueprint-body" style="padding-top:0;display:block">
+            <div class="priority">
+              <div class="priority-item">
+                <b>P0 · SCHEMA</b>
+                <span>先定义无损 Canonical Offer：保留 in-kind、party obligations、standards、source，并能投影成产品简版 Contract。</span>
+              </div>
+              <div class="priority-item">
+                <b>P0 · EQUIVALENCE ARM</b>
+                <span>在 benchmark 新增“product-equivalent”臂：双 broker + 每轮 judge + 第 2 轮 skill + opening target guidance。</span>
+              </div>
+              <div class="priority-item">
+                <b>P0 · MONEY</b>
+                <span>要么把真实 value-tool ledger 接进 Eval，要么从 Eval prompt 移除不存在的资金工具承诺，避免假能力。</span>
+              </div>
+              <div class="priority-item">
+                <b>P1 · TELEMETRY</b>
+                <span>产品每轮产出非公开 structured offer snapshot，支持 concession、scope diff、resource audit，而不改变公开话术。</span>
+              </div>
+              <div class="priority-item">
+                <b>P1 · LIFECYCLE EVAL</b>
+                <span>增加 initial → review → update → resume → human confirmation 的多阶段 benchmark，不只测一次性成交。</span>
+              </div>
+              <div class="priority-item">
+                <b>P1 · SHARED TESTS</b>
+                <span>为价格锚、private reserve、mandate 不丢失、finalize placeholder、pending money gate 建跨仓契约测试。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="kicker shared">10 · Evidence map</div>
+            <h2 class="section-title">代码依据</h2>
+          </div>
+          <p class="section-intro">
+            对比以当前代码为准；旧文档里回合上限等描述有漂移时，采用 runtime / config 的实际值。
+          </p>
+        </div>
+
+        <div class="evidence">
+          <div class="evidence-item lab">
+            <code>deal-nego-eval/nego-eval/negoeval/orchestrator.py</code>
+            <span>A → extractor → B、终止与 EpisodeOutput。</span>
+          </div>
+          <div class="evidence-item lab">
+            <code>deal-nego-eval/nego-eval/negoeval/agent/adapter.py</code>
+            <span>Case input 实际怎样映射到被测 broker。</span>
+          </div>
+          <div class="evidence-item lab">
+            <code>deal-nego-eval/nego-eval/negoeval/extract/offer_extractor.py</code>
+            <span>逐轮 Deal 与 final_deal 组装。</span>
+          </div>
+          <div class="evidence-item lab">
+            <code>deal-nego-eval/nego-eval/negoeval/grade/</code>
+            <span>M1–M12 与最终 verdict。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/broker_runtime.py</code>
+            <span>双 broker + judge 的单轮编排与阶段解析。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/broker_session.py</code>
+            <span>run_until_terminal、多轮 transcript 与 ledger 传递。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/broker_prompts.py</code>
+            <span>card owner、private reserve、首轮价格 guidance。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/broker_turns.py</code>
+            <span>第 2 轮 skill / value tools、judge blocker nudge。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/broker_judge.py</code>
+            <span>轮内收口、finalize / no-deal gating。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/schemas.py</code>
+            <span>Contract、ModificationList、BrokerStage、value-tool state。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/src/negotiation/assistant_runtime.py</code>
+            <span>单侧合同审阅、接受 / 拒绝 / ReadyToUpdate。</span>
+          </div>
+          <div class="evidence-item prod">
+            <code>openfans-agent/eval/demo-v3-console/src/lib/{negotiateRun,dealRunner}.ts</code>
+            <span>客户端 session、resume、contract_history 与后台运行。</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="closing">
+        <h2>最短结论</h2>
+        <p>
+          <strong>Eval 更懂“这一手谈得好不好”，OpenFans 更懂“这笔合同怎样安全落地”。</strong>
+          当前最大的结构断层是：Eval 有丰富逐轮 Deal 但没有产品闭环；
+          OpenFans 有双边、裁判、真人授权和改约闭环，但最终 Contract 太扁平，也没有逐轮结构化 offer。
+          最值得做的不是互相替换，而是把中间的 Offer / Contract、price policy、skill timing、
+          money ledger 与 finalize validation 变成真正共享的核心。
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">
+      基于本地仓库当前实现生成 · 比较对象：deal-nego-eval/nego-eval ↔ openfans-agent/src/negotiation
+    </div>
+  </footer>
+
+  <script>
+    const filters = document.querySelectorAll("[data-filter]");
+    const rows = document.querySelectorAll("tbody tr[data-domain]");
+
+    filters.forEach((button) => {
+      button.addEventListener("click", () => {
+        const domain = button.dataset.filter;
+        filters.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        rows.forEach((row) => {
+          row.hidden = domain !== "all" && row.dataset.domain !== domain;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

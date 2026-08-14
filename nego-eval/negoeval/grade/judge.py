@@ -33,7 +33,8 @@ averaged).
 from __future__ import annotations
 
 import json
-from typing import Any, Dict, List
+import re
+from typing import Any, Dict, List, Optional
 
 from ..jsonutil import extract_json
 from ..schemas import EpisodeOutput
@@ -56,6 +57,29 @@ M6_TIER_NAME = {
 
 # Above-Goldman is frozen until market data can anchor it: M6 is capped here.
 M6_CAP = M6_GOLDMAN
+
+
+def judge_json(judge, messages, *, retries: int = 2) -> tuple[Dict[str, Any], str]:
+    """Call a judge and parse its JSON, retrying only when nothing came back.
+
+    An empty completion is a transport hiccup, not a judgment — the endpoints
+    run with ``max_retries: 0``, so without this a momentary blip is recorded as
+    an unparseable answer and fail-safed to the floor tier. That is how a flaky
+    minute turns into a dozen fabricated zeros.
+
+    A non-empty but unparseable reply is NOT retried: at temperature 0 the model
+    would just repeat itself, and the raw text is worth more as a diagnostic.
+    Returns ``(parsed_or_empty, raw)`` so callers can keep the raw for triage.
+    """
+    raw = ""
+    for attempt in range(retries + 1):
+        try:
+            raw = judge.chat_completion(messages=messages, temperature=0.0) or ""
+        except Exception:
+            raw = ""
+        if raw.strip():
+            break
+    return (extract_json(raw) or {}), raw
 
 
 def _transcript(out: EpisodeOutput) -> str:
@@ -158,7 +182,7 @@ def _m6_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
 
 
 def m2(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
-    data = extract_json(judge.chat_completion(messages=_m2_prompt(case, out), temperature=0.0)) or {}
+    data, raw = judge_json(judge, _m2_prompt(case, out))
     parse_ok = bool(data)
     # M2 is a gate: if the judge response can't be parsed, fail safe rather than silently pass.
     passed = bool(data.get("pass", False)) if parse_ok else False
@@ -166,6 +190,7 @@ def m2(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
         "kind": "门槛",
         "pass": passed,
         "judge_parse_ok": parse_ok,
+        "judge_raw_head": "" if parse_ok else raw[:240],
         "judge_notes": str(data.get("judge_notes", "")),
     }
 
@@ -174,6 +199,50 @@ def m2(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
 # === R4_SCORER_PATCH ===
 # R4 五档 tier (锁定的 rubric)。floor 也由 judge 判，无确定性门。
 R4_TIER_NUM = {"floor": 0, "crude": 1, "sound": 2, "sharp": 3, "brilliant": 4}
+
+_R4_TIER_ALIASES = {
+    **{name: value for name, value in R4_TIER_NUM.items()},
+    **{str(value): value for value in R4_TIER_NUM.values()},
+    # Chinese names appear whenever the rubric is quoted back in the reply.
+    "地板": 0, "粗糙": 1, "合格": 2, "站得住": 2, "精到": 3, "高明": 3, "卓越": 4,
+}
+M6_R4_TIER_NAME = {v: k for k, v in R4_TIER_NUM.items()}
+_R4_LEADING_INT = re.compile(r"^\s*([0-4])\b")
+_R4_ANY_NAME = re.compile(r"(floor|crude|sound|sharp|brilliant)", re.I)
+
+
+def coerce_r4_tier(raw: Any) -> Optional[int]:
+    """Map whatever the judge put in ``tier`` onto 0-4, or None if unreadable.
+
+    The strict lookup this replaces only accepted the five lowercase English
+    names, so a judge answering ``{"tier": 3}`` — correct, just numeric — was
+    recorded as a parse failure and fail-safed to floor. That silently rewrote
+    real gradings as zeros; few-shot exemplars that render tiers as "3 sharp"
+    are enough to trigger it across a whole run. Accept the answer in any of the
+    forms a model actually emits, and reserve None for genuinely absent values.
+    """
+    if raw is None:
+        return None
+    if isinstance(raw, bool):
+        return None
+    if isinstance(raw, (int, float)):
+        value = int(raw)
+        return value if 0 <= value <= 4 else None
+    text = str(raw).strip().lower()
+    if not text:
+        return None
+    if text in _R4_TIER_ALIASES:
+        return _R4_TIER_ALIASES[text]
+    leading = _R4_LEADING_INT.match(text)      # "3 sharp", "3 - sharp"
+    if leading:
+        return int(leading.group(1))
+    named = _R4_ANY_NAME.search(text)          # "tier: sharp", "Sharp (3)"
+    if named:
+        return R4_TIER_NUM[named.group(1).lower()]
+    for zh, value in _R4_TIER_ALIASES.items():
+        if not zh.isascii() and zh in text:
+            return value
+    return None
 
 R4_RUBRIC = (
     "你是一位资深交易员，评判一笔【已结束的谈判】里 agent 的 deal making 水准，给一个 tier(0-4)。\n"
@@ -213,15 +282,45 @@ def _r4_tier_prompt(case, out: EpisodeOutput) -> List[Dict[str, Any]]:
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
+def _r4_no_deal_floor(case, out: EpisodeOutput) -> Optional[Dict[str, Any]]:
+    """R4 tier 0 is defined as 没做成 deal — enforce it deterministically.
+
+    Left to the judge this leaked badly: a ``round_cap`` episode still carries a
+    draft ``final_deal``, so the judge graded the *package on the table* and
+    handed out sound/sharp to negotiations that concluded nothing (A2 pilot: 25
+    round-cap episodes, all scored 2–3, versus 0–1 for walk-aways). Arm-level M6
+    then tracked which arm walked rather than which arm dealt.
+
+    The one legitimate no-deal is a doomed case exited correctly, which is a
+    judgment call worth grading, so it still reaches the judge.
+    """
+    if out.terminal_reason == "settled":
+        return None
+    if _doomed_correct_exit(case, out):
+        return None
+    return {
+        "kind": "打分",
+        "value": R4_TIER_NUM["floor"],
+        "tier": "floor",
+        "judge_parse_ok": True,
+        "judge_notes": f"未达成 deal（terminal={out.terminal_reason}）→ 按 rubric 判 floor，不调用 judge。",
+    }
+
+
 def _m6_r4(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
-    data = extract_json(judge.chat_completion(messages=_r4_tier_prompt(case, out), temperature=0.0)) or {}
-    parse_ok = bool(data)
-    tier_str = str(data.get("tier", "")).strip().lower()
-    value = R4_TIER_NUM.get(tier_str)
+    gated = _r4_no_deal_floor(case, out)
+    if gated is not None:
+        return gated
+    data, raw = judge_json(judge, _r4_tier_prompt(case, out))
+    value = coerce_r4_tier(data.get("tier"))
     if value is None:
-        value = 0; parse_ok = False  # 解析失败 → fail safe 到 floor
-    return {"kind": "打分", "value": value, "tier": tier_str or "floor",
-            "judge_parse_ok": parse_ok, "judge_notes": str(data.get("judge_notes", ""))}
+        # Genuinely unreadable: fail safe to floor, and keep the raw head so the
+        # failure can be diagnosed instead of just counted.
+        return {"kind": "打分", "value": 0, "tier": "floor", "judge_parse_ok": False,
+                "judge_raw_head": (raw or "")[:240],
+                "judge_notes": str(data.get("judge_notes", ""))}
+    return {"kind": "打分", "value": value, "tier": M6_R4_TIER_NAME[value],
+            "judge_parse_ok": True, "judge_notes": str(data.get("judge_notes", ""))}
 
 
 def m6(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
@@ -249,7 +348,7 @@ def m6(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
                        notes="未做任何非线性动作(没有主动引入新维度,也非 doomed 正确退出) → floor")
 
     # Stage 2 — judge places Acceptable vs Goldman against the case anchors.
-    data = extract_json(judge.chat_completion(messages=_m6_prompt(case, out), temperature=0.0)) or {}
+    data, _raw = judge_json(judge, _m6_prompt(case, out))
     parse_ok = bool(data)
     tier_str = str(data.get("tier", "")).strip().lower()
     if tier_str == "goldman":
@@ -315,7 +414,7 @@ def m11(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
             "judge_notes": "该 case 无瓶颈需诊断（primary_issue=None），M11 不适用。",
             "applicable": False,
         }
-    data = extract_json(judge.chat_completion(messages=_m11_prompt(case, out), temperature=0.0)) or {}
+    data, _raw = judge_json(judge, _m11_prompt(case, out))
     return {
         "kind": "诊断",
         "verdict": str(data.get("verdict", "partial")),
@@ -347,7 +446,7 @@ def m12(case, out: EpisodeOutput, judge) -> Dict[str, Any]:
             "judge_notes": "该 case 未定义期望 skill 路径（expected 为空），M12 不适用。",
             "applicable": False,
         }
-    data = extract_json(judge.chat_completion(messages=_m12_prompt(case, out, routes), temperature=0.0)) or {}
+    data, _raw = judge_json(judge, _m12_prompt(case, out, routes))
     return {
         "kind": "路径",
         "verdict": str(data.get("verdict", "partial")),

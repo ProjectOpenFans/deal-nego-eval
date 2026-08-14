@@ -1,0 +1,68 @@
+version: 1
+experiment_id: a2-model-asymmetry
+title: A2 模型能力不对称消融
+base_config: ../../configs/eval.clean.glm52-qwen36.yaml
+result_root: ../../results/ablations/a2-model-asymmetry
+
+models:
+  glm52:
+    source_role: buyer_negotiator
+    expected_model: GLM-5.2-NVFP4
+  qwen36:
+    source_role: buyer_counterparty
+    expected_model: Qwen3.6-27B-NVFP4
+  extractor:
+    source_role: offer_extractor
+    expected_model: Qwen3.6-27B-NVFP4
+  referee:
+    source_role: offer_extractor
+    expected_model: Qwen3.6-27B-NVFP4
+  judge_glm:
+    source_role: buyer_negotiator
+    expected_model: GLM-5.2-NVFP4
+  judge_qwen:
+    source_role: offer_extractor
+    expected_model: Qwen3.6-27B-NVFP4
+
+arms:
+  GG: {buyer: glm52, seller: glm52}
+  GQ: {buyer: glm52, seller: qwen36}
+  QG: {buyer: qwen36, seller: glm52}
+  QQ: {buyer: qwen36, seller: qwen36}
+
+stages:
+  smoke:
+    cases: [R4N1, R4P2]
+    repeats: 1
+  pilot:
+    cases: [R4N1, R4N3, R4N5, R5C12, R4P2, R4P4, R5C2, R5C9]
+    repeats: 3
+  full:
+    cases: ["*"]
+    repeats: 3
+
+execution:
+  prompt_variant: clean
+  skills: false
+  round_cap: 12
+  workers: 4
+  max_attempts: 3
+  retry_delays_seconds: [5, 15]
+  negotiator_temperature: 0.3
+  negotiator_max_tokens: 2048
+  auxiliary_temperature: 0.0
+  referee_max_tokens: 512
+  extractor_max_tokens: 1024
+  judge_max_tokens: 1536
+  judge_repeats: 3
+  bootstrap_samples: 10000
+  bootstrap_seed: 20260729
+
+gates:
+  min_completion_rate: 0.95
+  pilot_max_arm_invalid_rate_gap: 0.05
+  full_max_arm_invalid_rate_gap: 0.02
+  min_terminal_cash_audit_accuracy: 0.95
+  require_routing_match: true
+  forbid_selective_rerun: true
+

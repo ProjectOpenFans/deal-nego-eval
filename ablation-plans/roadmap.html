@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>消融实验路线图 · 从 v2 审计结论到可执行实验序列</title>
+<style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+
+:root{
+  color-scheme: light;
+  --paper:var(--bg-card); --muted:var(--ink-2);
+  --blue:var(--brand); --blue-soft:var(--wash); --amber:var(--warn); --amber-soft:var(--warn-wash);
+  --green:var(--good); --green-soft:var(--good-wash); --red:var(--bad); --red-soft:var(--bad-wash);
+  --gray-soft:rgba(11,27,40,.08); --shadow:0 8px 24px rgba(0,80,130,.10);
+}
+*{box-sizing:border-box}
+.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:0}
+header{padding:56px 0 30px}
+.eyebrow{margin:0 0 10px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.back{display:inline-block;margin-bottom:20px;font-size:13.5px;text-decoration:none}
+h1{margin:0;font-size:clamp(30px,4.6vw,50px);line-height:1.1;letter-spacing:-.035em}
+.lede{max-width:820px;margin:18px 0 0;color:var(--muted);font-size:17px}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0 0}
+.metric{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--bg-card)}
+.metric strong{display:block;font-size:24px;line-height:1.2}
+.metric span{color:var(--muted);font-size:12.5px}
+main.wrap{padding-bottom:90px}
+section{margin-top:52px}
+h2{font-size:26px;letter-spacing:-.02em;margin:0 0 8px;padding-bottom:12px}
+h2 .n{color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.14em;margin-right:12px;vertical-align:2px}
+h3{font-size:18px;margin:30px 0 10px}
+p{margin:0 0 14px;max-width:80ch}
+.note{color:var(--muted);font-size:14px;border:0;background:none;border-radius:0;padding:0;margin:0 0 14px}
+
+/* origin table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:var(--shadow);margin:20px 0 26px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+th{background:rgba(0,180,216,.07);text-align:left;padding:12px 14px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);font-weight:700;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.6}
+tbody tr:last-child td{border-bottom:0}
+td.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;white-space:nowrap;background:none;border:0;border-radius:0;padding:11px 14px}
+.pos{color:var(--green);font-weight:700}.neg{color:var(--red);font-weight:700}.amb{color:var(--amber);font-weight:700}
+
+/* waves */
+.wave{border:1px solid var(--line);border-radius:16px;background:var(--paper);box-shadow:var(--shadow);margin-bottom:22px;overflow:hidden}
+.wave-head{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.wave-head .w{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--grad);padding:3px 9px;border-radius:99px}
+.wave-head h3{margin:0;font-size:19px}
+.wave-head .cost{margin-left:auto;font-size:12.5px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+.wave-body{padding:6px 22px 18px}
+
+.exp{border-top:1px solid var(--line);padding:20px 0}
+.exp:first-child{border-top:0}
+.exp-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.exp-head .id{font-family:ui-monospace,Menlo,monospace;font-size:12px;font-weight:800;color:#fff;background:var(--blue);padding:3px 8px;border-radius:6px}
+.exp-head .id.q{background:rgba(11,27,40,.12);color:var(--ink)}
+.exp-head h4{margin:0;font-size:17.5px}
+.exp-head .pill{font-size:11.5px;padding:2px 9px;border-radius:99px;font-weight:700;border-color:transparent}
+.pill.free{background:var(--green-soft);color:var(--green)}
+.pill.p0{background:var(--red-soft);color:var(--red)}
+.pill.p1{background:var(--amber-soft);color:var(--amber)}
+.pill.p2{background:var(--gray-soft);color:var(--muted)}
+.kv{display:grid;grid-template-columns:104px 1fr;gap:4px 14px;font-size:13.5px;margin-top:8px}
+.kv dt{color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.04em;padding-top:2px}
+.kv dd{margin:0}
+.arms{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--gray-soft);padding:8px 12px;border-radius:8px;display:inline-block;margin-top:4px}
+.rule{background:var(--blue-soft);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin-top:10px}
+.rule b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.plan-link{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;text-decoration:none}
+.plan-link::after{content:" →"}
+
+.callout{border:1px solid var(--green);background:var(--green-soft);border-radius:14px;padding:20px 24px;margin:24px 0}
+.callout b,.callout b:first-child{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.callout p:last-child{margin-bottom:0}
+.warncall{border:1px solid var(--amber);background:var(--amber-soft);border-radius:14px;padding:20px 24px;margin:24px 0}
+.warncall b{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+.warncall p:last-child{margin-bottom:0}
+
+ol.rules{max-width:80ch;padding-left:22px}
+ol.rules li{margin-bottom:9px}
+footer.wrap{padding:26px 0 60px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);margin-top:60px}
+@media(max-width:820px){.summary{grid-template-columns:repeat(2,1fr)}.kv{grid-template-columns:1fr}.kv dt{padding-top:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="back" href="index.html">← 返回消融实验看板</a>
+  <p class="eyebrow">Ablation Roadmap · v1.0 · 2026-07-29</p>
+  <h1>从 v2 审计结论到<br>可执行的实验序列</h1>
+  <p class="lede">
+    v2 审计在 1,917 局历史数据上找到了一个稳健的正效应，也证伪了一句核心话术，并留下六个必须靠实验才能关掉的问题。
+    本页把这些问题拆成 <strong>8 个新消融实验</strong>，排成 <strong>四个波次</strong>，
+    每个实验只动一个变量、带预注册判定规则。原则：<strong>一次只测一件事，先测能让其它实验有意义的那件。</strong>
+  </p>
+  <div class="summary">
+    <div class="metric"><strong>8</strong><span>新增实验</span></div>
+    <div class="metric"><strong>4</strong><span>波次</span></div>
+    <div class="metric"><strong>1</strong><span>零对局成本</span></div>
+    <div class="metric"><strong>A4</strong><span>唯一阻塞项</span></div>
+  </div>
+</div></header>
+
+<main class="wrap">
+
+<section>
+<h2><span class="n">01</span>每个实验从哪条结论来</h2>
+<p>不做"觉得该测的"实验。下表每一行左边是 v2 审计里一条已经量化的发现，右边是关掉它所需的那一个实验。没有对应发现的实验不进入路线图。</p>
+<div class="tw"><table>
+<thead><tr><th>v2 审计发现</th><th>实测值</th><th>它留下的问题</th><th>实验</th></tr></thead>
+<tbody>
+<tr><td>harness 提升 deal 质量</td><td class="mono pos">≥sharp +12.2pp<br>CI [+6.7,+16.7]</td><td>在 v2 版本上还成立吗？</td><td class="mono">A4</td></tr>
+<tr><td>效应 pre-v2 有、post-v2 无</td><td class="mono neg">post-v2 ΔM6 −0.015<br>CI [−0.223,+0.175]</td><td>是 case 加难，还是 skill 改坏？</td><td class="mono">A4 阶段二</td></tr>
+<tr><td>质量结论全压在 LLM judge 上</td><td class="mono neg">跨 judge 一致率 0.426</td><td>+12.2pp 是不是 judge artifact？</td><td class="mono">A5</td></tr>
+<tr><td>成交价超对方预算上限恶化</td><td class="mono neg">+6.6pp<br>CI [+1.6,+13.0]</td><td>加预算硬纪律能否保住质量、同时修主指标？</td><td class="mono">A6</td></tr>
+<tr><td>对手 sim 被注入"松口答案"</td><td class="mono neg">22/23 case</td><td>效应能否在不知道答案的对手身上幸存？</td><td class="mono">A7</td></tr>
+<tr><td>case 按被测模型反向调参</td><td class="mono neg">17/23 带 diagonal_note</td><td>效应能否外推到未调参的新 case？</td><td class="mono">A8</td></tr>
+<tr><td>模型间极差几乎未压缩</td><td class="mono amb">36pp → 33pp</td><td>harness 是补偿器还是乘数？</td><td class="mono">A9</td></tr>
+<tr><td>评测把产品没有的情报免费发放</td><td class="mono neg">6 个字段 → 产品有 1 个</td><td>"心理 agent"值多少分？</td><td class="mono">A10</td></tr>
+<tr><td>完整 prompt 不配 skill 反而有害</td><td class="mono neg">off−clean −10.0pp<br>CI [−18.8,−2.4]</td><td>是 prompt 的哪一部分在害？</td><td class="mono">A11</td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+<h2><span class="n">02</span>排序原则</h2>
+<ol class="rules">
+<li><strong>先做能让其它实验有意义的那个。</strong>如果 v2 版本上效应已经没了，A6–A10 全都在测一个不存在的东西。所以 A4 是唯一的阻塞项，其余一律排在它后面。</li>
+<li><strong>零对局成本的优先插队。</strong>凡是只改判分、不改对局的实验（A5，以及 A8/A10 的部分分析），都能<strong>复用 A4 产出的 transcript</strong>，边际成本接近零。这类实验必须紧跟在产出语料的那次跑批后面，否则等于白白重跑一遍对局。</li>
+<li><strong>一次只动一个变量。</strong>唯一的例外是 A6，它是 2×2 析因设计——因为要问的正是"预算纪律与 harness 之间有没有交互"，这个问题本身要求两个因子同时在场。</li>
+<li><strong>内部效度先于外部效度。</strong>A5/A6 修的是"这个数准不准"，A7/A8 修的是"这个数能不能外推"。前者不过关时，后者没有意义。</li>
+<li><strong>预注册判定规则，写在跑之前。</strong>每个实验下面的「判定」框是签署内容，不是跑完再补的解释。<code>forbid_selective_rerun</code> 沿用 A2 的门槛。</li>
+</ol>
+
+<div class="callout">
+<b>本路线图最重要的一条工程决定</b>
+<p><strong>A4 必须保存全部 transcript（<code>keep_trace: true</code>，episode JSON 全留）。</strong>
+A5 的判分脱钩、A8 的 held-out 对照分析、A10 的部分分析，都建立在"固定对局、只换判分/只换分析口径"之上。
+一次 480 局的对局成本，可以支撑三到四个后续实验。如果 A4 跑成一次性的、丢掉 transcript，后面每个实验都要重新付一次对局成本。</p>
+<p class="note" style="margin-top:8px">现行 <code>configs/eval.clean.glm52-qwen36.yaml</code> 里 <code>keep_trace: false</code>。这是 A4 冻结配置前必须改的一行。</p>
+</div>
+</section>
+
+<section>
+<h2><span class="n">03</span>波次与实验</h2>
+
+<!-- ===== WAVE 0 ===== -->
+<div class="wave">
+  <div class="wave-head"><span class="w">Wave 0</span><h3>基线重建 —— 在此之前一切结论悬空</h3><span class="cost">≈ 480 episodes</span></div>
+  <div class="wave-body">
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A4</span><h4>v2 版本上的 harness 效应回归确认</h4><span class="pill p0">P0 · 阻塞项</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>把 v2 审计里那个 +12.2pp 放到今天的 prompt / skill / case 上，它还在吗？</dd>
+      <dt>为什么现在</dt><dd>历史效应的 95% 置信区间几乎全部由 v2 之前的批次贡献；v2 之后只有 46 个配对单元格且 CI 跨零。而 v2 版本才是要上线的那一版。<strong>BP 里能不能写这个数，只由这次实验决定。</strong></dd>
+      <dt>臂</dt><dd><span class="arms">clean（裸模型 + 平台基本规则）　vs　on（完整 prompt + skill 库 + COMPASS）</span></dd>
+      <dt>固定项</dt><dd>case bank（v2 冻结版）、底座模型、sim、extractor、judge、温度、round_cap、并发。两臂唯一差异是 skill/prompt 变体。</dd>
+      <dt>样本</dt><dd>24 case × 2 臂 × 10 重复 = 480 episodes。<span class="note">v2 审计中 post-v2 只有 46 个配对单元格，是 CI 跨零的主因之一；10 重复把每个 case 的单元格方差压到可判定水平。</span></dd>
+      <dt>主指标</dt><dd><strong>≥sharp 率的配对差</strong>（case 聚类 bootstrap 10k，seed 预注册）。次指标：case_pass、not_settled 率、超预算率、成交轮数。</dd>
+      <dt>阶段二</dt><dd><strong>仅在阶段一判定为"效应消失"时触发</strong>：{v1 skills, v2 skills} × {v1 cases, v2 cases} 四臂交叉，分离"case 加难"与"skill 改坏"。这两个诊断指向完全相反的行动，不能靠事后解释区分。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      <strong>Δ≥sharp 的 CI 下界 &gt; 0</strong> → 效应确认，数字可进 BP（须附三条限定），放行 Wave 1–2。<br>
+      <strong>CI 跨零但点估计 ≥ +5pp</strong> → 效应弱化。先跑 A6（超预算可能在吃掉一部分收益），A6 后重测本实验。<br>
+      <strong>CI 跨零且点估计 &lt; +5pp</strong> → 判定为 v2 中效应丢失。立即触发阶段二，BP 中撤下该数字，改用"off 臂 −10pp"作为主论据。
+    </div>
+    <a class="plan-link" href="not-started/ablation-04-v2-regression.html">完整计划</a>
+  </div>
+
+  </div>
+</div>
+
+<!-- ===== WAVE 1 ===== -->
+<div class="wave">
+  <div class="wave-head"><span class="w">Wave 1</span><h3>零对局成本 —— 复用 A4 的 transcript</h3><span class="cost">0 新对局 · 仅重判分</span></div>
+  <div class="wave-body">
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A5</span><h4>Judge 脱钩与校准</h4><span class="pill free">零对局成本</span><span class="pill p0">P0</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>+12.2pp 是 agent 行为真的变好了，还是判分器的偏好？换一个与 sim / extractor 无关的更强 judge，效应是否幸存？</dd>
+      <dt>为什么现在</dt><dd>主指标 case_pass 不动，全部说服力压在 M6 档位上；而 M6 由 judge 给，且现行 judge 与对手 sim、抽取器<strong>是同一个模型</strong>（Qwen3.6-27B），历史跨 judge 众数一致率仅 0.426。这是整条论证链上最细的一环。</dd>
+      <dt>设计</dt><dd><strong>固定 A4 的全部 transcript，只更换判分模型。</strong>差异因此是纯 judge 行为，零混淆。<span class="arms">judge 臂：qwen36（现行基线）· 不同家族强模型 A · 不同家族强模型 B · 三 judge 众数</span></dd>
+      <dt>主指标</dt><dd>① 每个 judge 在 <code>judge_golden.json</code>（9 条人工审定）上的精确命中与 ±1 命中；② 跨 judge 的 tier 众数一致率；③ <strong>Δ≥sharp 在每个 judge 下分别重算</strong>；④ 自偏好检测（judge 是否给自家家族的 agent 局打高分）。</dd>
+      <dt>已有资产</dt><dd><code>judge_calibration.py</code> 已实现一致性 / 校准 / 自偏好三项测量，无需新建。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      <strong>效应在 ≥2 个独立 judge 下 CI 下界均 &gt; 0</strong> → 判分不是 artifact，A4 结论可发布。<br>
+      <strong>只在原 judge 下成立</strong> → 判定为判分器偏好，撤下该数字，改用确定性指标（not_settled、超预算、轮数）作主论据。<br>
+      <strong>任一 judge 的 golden 命中率 &lt; 6/9</strong> → 该 judge 不进入结论，并在附录披露。
+    </div>
+    <a class="plan-link" href="not-started/ablation-05-judge-decoupling.html">完整计划</a>
+  </div>
+
+  </div>
+</div>
+
+<!-- ===== WAVE 2 ===== -->
+<div class="wave">
+  <div class="wave-head"><span class="w">Wave 2</span><h3>把内部效度补齐 —— 三个独立实验，可并行</h3><span class="cost">≈ 960 + 480 + 320 episodes</span></div>
+  <div class="wave-body">
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A6</span><h4>预算纪律 × harness（2×2 析因）</h4><span class="pill p0">P0 · 唯一可能把主指标翻正的实验</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>harness 带来的"更敢谈"同时带来了"更容易谈过头"（超预算 +6.6pp，CI [+1.6,+13.0]）。加一条预算边界硬纪律，能否在<strong>保住 ≥sharp 增益的同时</strong>消掉超预算？如果能，case_pass 的 −2.4pp 很可能翻正。</dd>
+      <dt>为什么是 2×2</dt><dd>这是路线图里唯一允许同时动两个因子的实验，因为要问的正是<strong>交互项</strong>：纪律是否会削掉 harness 的创造性。单独测任一因子答不了这个问题。</dd>
+      <dt>臂</dt><dd><span class="arms">clean · clean+budget · on · on+budget</span></dd>
+      <dt>处理定义</dt><dd>budget = 在 prompt / COMPASS 层加入一条硬纪律：不得提出越过对方已明确表达的预算边界的报价；接近边界时须改动结构而非加价。<strong>不新增 skill</strong>——新增 skill 会同时改变两个东西。</dd>
+      <dt>样本</dt><dd>24 case × 4 臂 × 10 重复 = 960 episodes</dd>
+      <dt>主指标</dt><dd>超预算率（确定性，不依赖 judge）、≥sharp 率、case_pass。核心读数是 <strong>on+budget 相对 on 的两个方向：超预算应降，≥sharp 不应降。</strong></dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      <strong>超预算显著下降 且 Δ≥sharp 的下降不显著</strong> → 采纳纪律进主线，重测 case_pass，很可能拿到"质量 + 主指标"双图。<br>
+      <strong>超预算下降但 ≥sharp 同幅下降</strong> → 存在真实取舍，记录为产品参数（保守 / 进取两档），不作为缺陷。<br>
+      <strong>超预算不降</strong> → 纪律无效，问题不在 prompt 层，转查抽取层与 sim 的预算表达。
+    </div>
+    <a class="plan-link" href="not-started/ablation-06-budget-discipline.html">完整计划</a>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A7</span><h4>Sim 去脚本化</h4><span class="pill p1">P1 · 外部效度</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>22/23 个 case 把"只有当 agent 做出 X 才松口"直接注入了对手的 system prompt。把答案句拿掉之后，harness 效应还在吗？M6 的确定性闸还有区分度吗？</dd>
+      <dt>臂</dt><dd><span class="arms">sim-scripted（现状）· sim-clean（去答案句）· sim-active（去答案句 + 允许主动提非现金结构 + 允许合理时点走人）</span></dd>
+      <dt>实现</dt><dd>清理 <code>blocking_flags</code> 中的解题机理句，仅保留姿态与约束；<code>sim/prompt.py</code> 的代码注释已标出这笔欠账。sim-active 另需放开"发起方必须是对方""不要过早离场"两条。</dd>
+      <dt>主指标</dt><dd>Δ≥sharp 在三档对手下分别重算；M6 stage-1 确定性闸的通过率（现状下近乎必过，若去脚本后仍近乎必过，说明闸门本身无鉴别力）。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      <strong>效应在 sim-clean 下幸存</strong> → 可以对外称 benchmark，效应不依赖答案泄漏。<br>
+      <strong>效应仅在 sim-scripted 下存在</strong> → 判定为脚本命中率而非谈判能力，全部对外表述降级为"内部诊断指标"。<br>
+      <strong>闸门通过率在三档下无差异</strong> → M6 stage-1 闸失效，需重新设计。
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A8</span><h4>Held-out case 外推检验</h4><span class="pill p1">P1 · 外部效度</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>17/23 个 case 带 <code>diagonal_note</code>，写着"目标顶住 5.2""预期裸的掉档、harness 救回"。效应有多少是设计目标本身？</dd>
+      <dt>设计</dt><dd>新写 <strong>8 个 held-out case</strong>：作者在写作期间<strong>不得查看任何模型输出</strong>，写完即冻结、不得按结果回调难度。与已调参的 16 个 case 构成两个分层。</dd>
+      <dt>主指标</dt><dd>Δ≥sharp 在 held-out 分层 vs 已调参分层上分别估计；两者之差即"调参贡献"。</dd>
+      <dt>纪律要求</dt><dd>case 作者与 skill 作者应尽量不同；写作过程留痕（起草时间戳早于任何相关 run）。这是本实验唯一真正的执行难点。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      <strong>held-out 上 CI 下界 &gt; 0</strong> → 效应可外推，这是唯一可以对外发布的数字。<br>
+      <strong>held-out 上跨零而已调参分层显著</strong> → 效应主要来自题目设计。对外只能表述为"在我们设计的压力测试集上"。<br>
+      两分层之差须与效应量一同报告，不得只报总体。
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<!-- ===== WAVE 3 ===== -->
+<div class="wave">
+  <div class="wave-head"><span class="w">Wave 3</span><h3>机制与战略 —— 决定叙事，不决定数字能否用</h3><span class="cost">按需排期</span></div>
+  <div class="wave-body">
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A9</span><h4>harness × 底座能力交互</h4><span class="pill p1">P1 · 决定 BP 的核心比喻</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>"中端 + harness ≈ 前沿"已被证伪（极差 36pp → 33pp）。替代假说是<strong>"harness 是均匀乘数、会随底座升级放大"</strong>——历史数据显示各档 Δ 稳定在 13–15pp，但那是跨 run、跨 case 版本读出来的，混杂严重。本实验在受控条件下直接验证。</dd>
+      <dt>臂</dt><dd><span class="arms">4 底座（弱 / 中 / 中强 / 前沿）× 2 臂（clean / on），同一座位、同一 sim、同一 case 冻结版</span></dd>
+      <dt>主指标</dt><dd>Δ≥sharp 对底座能力的回归斜率。<strong>斜率 &lt; 0</strong> = 补偿器（弱模型收益更大）；<strong>斜率 ≈ 0</strong> = 均匀乘数；<strong>斜率 &gt; 0</strong> = 放大器。</dd>
+      <dt>与 A2 的区别</dt><dd>A2 测的是<strong>两个座位之间</strong>的模型不对称；A9 测的是<strong>同一座位</strong>上 harness 收益与底座能力的关系。两者不可互相替代。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      斜率的 CI 不含 0 且为正 → 可讲"这个资产会跟着模型升级一起放大"，这是比原话术更强也更真的叙事。<br>
+      斜率 CI 含 0 → 讲"在各能力档位上稳定加约 N pp"，仍然可用。<br>
+      <strong>任何情况下都不得复活"中端 + harness = 前沿"</strong>——除非弱模型 on 臂真的追平强模型 clean 臂。
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="id">A10</span><h4>情报降级阶梯</h4><span class="pill p1">P1 · 把最大的产品落差变成路线图</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>评测把 <code>intent · interests · value_perception · reservation · must_haves · deal_breakers</code> 六个字段当输入免费发放，而产品的用户档案里最多只有其中一个（<code>budget_reserve_private</code>，还须用户主动说破）。<strong>那个"心理 agent"到底值多少分？</strong></dd>
+      <dt>臂</dt><dd><span class="arms">L0 全量情报（现状）· L1 去掉对手 blocking_flags · L2 再去掉己方 must_haves / deal_breakers · L3 只剩产品真实拥有的字段</span></dd>
+      <dt>主指标</dt><dd>≥sharp 率与 case_pass 随情报档位的下降曲线。<strong>L0 − L3 的落差就是意图萃取模块的价值上限。</strong></dd>
+      <dt>BP 用法</dt><dd>"在产品当前的情报水平下我们是 X 分，补上意图推断后能到 Y 分——Y−X 就是我们要用平台数据买回来的东西。"把一个弱点直接翻译成路线图与估值逻辑。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      本实验<strong>不设成败</strong>，任何单调下降的曲线都是有用结果。<br>
+      唯一的失败模式是<strong>曲线平坦</strong>——那说明这些字段本来就没被 agent 使用，届时应转而检查 prompt 是否真的消费了这些输入。
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="id q">A11</span><h4>Prompt 成分拆解（off 臂为何有害）</h4><span class="pill p2">P2 · 可选</span></div>
+    <dl class="kv">
+      <dt>要回答</dt><dd>完整 broker prompt 不配 skill 时，case_pass 比裸模型低 10.0pp（CI [−18.8,−2.4]），且 crude 档率三臂最高。是 prompt 的哪一段在害？</dd>
+      <dt>臂</dt><dd><span class="arms">clean · +mandate 段 · +money rules 段 · +output/纪律段 · full off</span>（逐段累加）</dd>
+      <dt>价值</dt><dd>诊断性为主。若能定位到具体段落，"prompt 不够、得配 skill"这条论据会从统计结论升级为机制解释——那是尽调里最难被反驳的一种证据。</dd>
+    </dl>
+    <div class="rule"><b>预注册判定</b>
+      定位到单一段落贡献 &gt; 半数损害 → 该段落进入改写清单，并作为 BP 的机制说明。<br>
+      损害均匀分布 → 结论为"行为期望抬高但方法缺失"的整体效应，维持现有表述。
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="id q">A1 / A2 / A3</span><h4>已有的三个计划</h4><span class="pill p2">既有</span></div>
+    <dl class="kv">
+      <dt>A2 · 模型不对称</dt><dd>四臂 GG / GQ / QG / QQ。与 A9 互补：A2 解耦<strong>座位之间</strong>的模型差，A9 解耦<strong>harness 与底座</strong>的关系。A2 的 GG/QQ 臂是"绝对分数可否归因"的前提。</dd>
+      <dt>A1 · 首发方</dt><dd>需先实现 <code>starting_party</code> 显式配置。优先级低于 Wave 0–2：它回答的是协议对称性问题，不影响 harness 结论。</dd>
+      <dt>A3 · Compass 注入频率</dt><dd>属于 harness 内部调优。<strong>应排在 A4 之后</strong>——若 A4 判定效应在 v2 中丢失，A3 的搜索空间会完全不同。</dd>
+    </dl>
+  </div>
+
+  </div>
+</div>
+</section>
+
+<section>
+<h2><span class="n">04</span>全局纪律（所有实验适用）</h2>
+<div class="tw"><table>
+<thead><tr><th>项目</th><th>要求</th><th>来源</th></tr></thead>
+<tbody>
+<tr><td>配对单位</td><td>(实验, 臂, case, 重复序号) 四元组；比较只在同 case 内做，跨 case 等权汇总</td><td>v2 审计方法节</td></tr>
+<tr><td>不确定性</td><td>按 <strong>case</strong> 聚类的 bootstrap，10,000 次，seed 预注册。不得按单元格重抽样</td><td>同上</td></tr>
+<tr><td>M6 报法</td><td>报<strong>档位率</strong>（≥sound / ≥sharp），不报均值。序数尺度求均值不合法，且与 <code>judge.py</code> 自身约定冲突</td><td>judge.py docstring</td></tr>
+<tr><td>终局拆分</td><td><code>round_cap</code> 与 <code>walk_away</code> 必须分开统计，不得合并进同一个 fail 桶</td><td>v1 审计 P1-7</td></tr>
+<tr><td>溯源</td><td>每个 episode 写入 config sha256、各角色 model ID、case hash、代码 commit</td><td>v2 config 已支持</td></tr>
+<tr><td>transcript 保留</td><td><code>keep_trace: true</code>，episode JSON 全留 —— 后续重判分实验的前提</td><td>本路线图 §02</td></tr>
+<tr><td>重跑纪律</td><td><code>forbid_selective_rerun: true</code>；所有重试留 reason 与 attempt 日志；API 失败 ≠ 未成交</td><td>A2 prd.yaml</td></tr>
+<tr><td>完成率门槛</td><td>任务完成率 ≥ 95%；任一臂的 invalid rate 与另一臂相差 ≤ 2pp</td><td>A2 prd.yaml</td></tr>
+<tr><td>盲态分析</td><td>先以匿名 arm id 生成主表与置信区间，再揭盲解释</td><td>A1 计划</td></tr>
+</tbody></table></div>
+
+<div class="warncall">
+<b>一条容易犯的错</b>
+<p>不要因为 A4 结果好看就跳过 A5–A8 直接进 BP。A4 只解决"效应在当前版本上是否存在"，
+它不解决"这个数是不是判分器给的"（A5）、"是不是因为对手知道答案"（A7）、"是不是因为题目是照着它出的"（A8）。
+<strong>这三个问题在技术尽调里必然被问到，而且提问者手上拿的是你自己的仓库。</strong>
+先把它们跑完，比事后解释便宜得多。</p>
+</div>
+</section>
+
+<section>
+<h2><span class="n">05</span>建议排期</h2>
+<div class="tw"><table>
+<thead><tr><th>顺序</th><th>实验</th><th>新对局</th><th>产出</th><th>阻塞谁</th></tr></thead>
+<tbody>
+<tr><td class="mono">1</td><td><strong>A4</strong> v2 回归</td><td class="mono">480</td><td>决定数字能否进 BP；产出主 transcript 语料</td><td class="mono">全部</td></tr>
+<tr><td class="mono">2</td><td><strong>A5</strong> judge 脱钩</td><td class="mono pos">0</td><td>决定 A4 的数是不是 artifact</td><td class="mono">对外发布</td></tr>
+<tr><td class="mono">3</td><td><strong>A6</strong> 预算纪律</td><td class="mono">960</td><td>可能把主指标从"不动"变"正向"</td><td class="mono">—</td></tr>
+<tr><td class="mono">4</td><td><strong>A7</strong> sim 去脚本 ‖ <strong>A8</strong> held-out</td><td class="mono">480 + 320</td><td>决定能否称 benchmark</td><td class="mono">对外发布</td></tr>
+<tr><td class="mono">5</td><td><strong>A9</strong> 底座交互 ‖ <strong>A2</strong> 座位不对称</td><td class="mono">按设计</td><td>决定 BP 的核心比喻</td><td class="mono">—</td></tr>
+<tr><td class="mono">6</td><td><strong>A10</strong> 情报降级</td><td class="mono">按设计</td><td>把产品落差变成路线图</td><td class="mono">—</td></tr>
+<tr><td class="mono">7</td><td><strong>A11</strong> prompt 拆解 ‖ <strong>A3</strong> Compass ‖ <strong>A1</strong> 首发</td><td class="mono">按设计</td><td>调优与机制解释</td><td class="mono">—</td></tr>
+</tbody></table></div>
+<p class="note">"‖" 表示可并行。第 1–2 步是一个不可分割的单元：A4 跑完当天就应该用同一批 transcript 跑 A5，中间不要插入其它工作，否则 transcript 与代码版本会漂移。</p>
+</section>
+
+</main>
+<footer class="wrap">
+路线图 v1.0 · 2026-07-29 · 依据 <a href="../analysis/eval_pipeline_review_v2_zh.html">审计报告 v2</a>（1,917 局重算）与 <a href="../analysis/reanalyze_zip_v2.py">reanalyze_zip_v2.py</a><br>
+状态流转沿用看板约定：<code>not-started → ongoing → completed</code>，移动文件而非复制。
+</footer>
+</body>
+</html>

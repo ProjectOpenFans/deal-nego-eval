@@ -1,0 +1,118 @@
+version: 1
+experiment_id: a4-v2-regression
+title: A4 v2 版本 harness 效应回归确认
+plan: ../../../ablation-plans/not-started/ablation-04-v2-regression.html
+base_config: ../../configs/eval.clean.glm52-qwen36.yaml
+result_root: ../../results/ablations/a4-v2-regression
+
+# 本实验存在的理由：审计 v2 在 1,917 局历史数据上测得 on-clean 的 ≥sharp 率
+# +12.2pp（case 聚类 95% CI [+6.7, +16.7]），但该效应几乎全部由 v2 之前的批次
+# 贡献；v2 之后仅 46 个配对单元格，ΔM6 = -0.015 (CI [-0.223, +0.175])。
+# 复算脚本：analysis/reanalyze_zip_v2.py
+
+models:
+  negotiator:
+    source_role: buyer_negotiator
+    expected_model: GLM-5.2-NVFP4
+  counterparty:
+    source_role: buyer_counterparty
+    expected_model: Qwen3.6-27B-NVFP4
+  extractor:
+    source_role: offer_extractor
+    expected_model: Qwen3.6-27B-NVFP4
+  judge:
+    source_role: offer_extractor
+    expected_model: Qwen3.6-27B-NVFP4
+
+# 阶段一：两臂。唯一差异是 prompt 变体与 skill 注入。
+arms:
+  # 引号必需：YAML 1.1 会把裸 on/off/yes/no 解析成布尔值。
+  "clean":
+    prompt_variant: clean
+    skills: false
+    inject: none
+  "on":
+    prompt_variant: full
+    skills: true
+    inject: [inject_r1, compass_r2plus]
+
+# 阶段二：仅在阶段一判定 effect_lost 时触发（见 decision_rules）。
+# 分离“case 加难”与“skill 改坏”两个互斥解释。
+conditional_stage_two:
+  trigger: effect_lost
+  design: crossed
+  factors:
+    skills_version: [v1, v2]
+    cases_version: [v1, v2]
+
+stages:
+  smoke:
+    cases: [R4N1, R4P2]
+    repeats: 2
+  full:
+    cases: ["*"]
+    repeats: 10
+
+execution:
+  round_cap: 12
+  workers: 4
+  max_attempts: 3
+  retry_delays_seconds: [5, 15]
+  negotiator_temperature: 0.3
+  negotiator_max_tokens: 2048
+  auxiliary_temperature: 0.0
+  extractor_max_tokens: 1024
+  judge_max_tokens: 1536
+  judge_repeats: 3
+  bootstrap_samples: 10000
+  bootstrap_seed: 20260729
+  # 必须为 true：A5(judge 脱钩) 与 A8(held-out 分层) 直接复用本实验的 transcript。
+  # base_config 中该项为 false，冻结前必须覆盖。
+  keep_trace: true
+
+# 单元格配对 + 按 case 聚类的 bootstrap。不得按单元格重抽样。
+analysis:
+  pairing_unit: [case_id, replicate_id, arm]
+  cluster_unit: case_id
+  primary_metrics: [ge_sharp_rate, ge_sound_rate]
+  secondary_metrics: [case_pass, not_settled_rate, over_budget_rate]
+  mechanism_metrics: [rounds_to_settle, concessions, voluntary_skill_routes]
+  diagnostic_metrics: [judge_parse_fail_rate, extract_warning_rate, m1_fail_rate]
+  # M6 是序数尺度：报档位率，不报均值（见 negoeval/grade/judge.py docstring）。
+  forbid_m6_mean: true
+  # round_cap 与 walk_away 不得合并进同一个 fail 桶。
+  split_terminal_reasons: true
+  strata:
+    - tier_axis
+    - side
+    - has_diagonal_note
+    - zero_cash_ceiling
+
+# 跑之前签署，不得事后修改。
+decision_rules:
+  effect_confirmed:
+    when: ge_sharp_delta_ci_low > 0
+    action: 数字可进 BP，须同时披露三条限定（judge 未脱钩 / 对手被注入答案 / case 已调参）；放行 Wave 1-2
+  effect_weakened:
+    when: ci_crosses_zero and ge_sharp_delta >= 0.05
+    action: 先跑 A6（超预算可能在吃掉收益），A6 后重测本实验；期间 BP 不引用该数字
+  effect_lost:
+    when: ci_crosses_zero and ge_sharp_delta < 0.05
+    action: 触发阶段二交叉实验；BP 撤下该数字，主论据改用 off 臂 -10.0pp
+
+gates:
+  # 前置门：CHANGES.md checklist 上“哨兵命中率回归验证”一项仍未打勾。
+  require_sentinel_regression_check: true
+  require_keep_trace: true
+  min_completion_rate: 0.95
+  max_arm_invalid_rate_gap: 0.02
+  min_repeats_per_cell: 10
+  min_terminal_cash_audit_accuracy: 0.95
+  manual_audit_fraction: 0.10
+  forbid_selective_rerun: true
+  blind_analysis_before_unblinding: true
+
+handoff:
+  # A4 完成当天启动 A5，避免 transcript 与代码版本漂移。
+  next: a5-judge-decoupling
+  deliver: [episode_json_manifest, episode_hashes, frozen_config_sha256]

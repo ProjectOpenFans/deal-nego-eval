@@ -56,7 +56,9 @@ class ExperimentConfig(StrictConfigModel):
     name: str
     mode: Literal["stub", "live"] = "live"
     cases: CaseSelection
-    arms: List[Literal["clean", "on", "off"]] = Field(
+    # `-cap` variants (A6) append the value-capture directive to the same base
+    # prompt; the skills axis is unchanged.
+    arms: List[Literal["clean", "on", "off", "clean-cap", "on-cap"]] = Field(
         default_factory=lambda: ["clean"], min_length=1
     )
     runs_per_case: int = Field(default=1, ge=1)

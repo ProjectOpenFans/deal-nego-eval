@@ -257,3 +257,43 @@ def test_m3_passes_buy_side_probe_quote_without_ceiling_language():
     )
     res = m3(p3, out)
     assert res["pass"] is True, res
+
+
+# --- regression: a correct grading must never be discarded -------------------
+# The strict lookup this replaced only accepted five lowercase English names, so
+# a judge answering {"tier": 3} was recorded as a parse failure and fail-safed
+# to floor — rewriting real gradings as zeros. Few-shot exemplars rendering
+# tiers as "3 sharp" were enough to trigger it across 23% of a 384-episode run.
+import pytest
+
+from negoeval.grade.judge import coerce_r4_tier
+from negoeval.jsonutil import extract_json
+
+
+@pytest.mark.parametrize("raw,expected", [
+    (3, 3), ("3", 3), (2.0, 2), ("sharp", 3), ("Sharp", 3), ("  SHARP ", 3),
+    ("3 sharp", 3), ("3 - sharp", 3), ("tier: sharp", 3), ("Sharp (3)", 3),
+    ("精到", 3), ("floor", 0), (0, 0), (4, 4), ("brilliant", 4),
+    (None, None), ("", None), ("unknown", None), (7, None), (True, None),
+])
+def test_coerce_r4_tier(raw, expected):
+    assert coerce_r4_tier(raw) == expected
+
+
+@pytest.mark.parametrize("raw,tier", [
+    ('{"tier":3}', 3),
+    ('```json\n{"tier":"sharp"}\n```', "sharp"),
+    ('前言 {"tier": 2, "judge_notes": "ok",} 后话', 2),
+    ('{"tier": 3, "judge_notes": "理由被 max_tokens 截断在这', 3),   # truncated
+    ('{“tier”: 2}', 2),                                            # smart quotes
+    ('{"tier": 3 // 行内注释\n}', 3),
+    ("{'tier': 1}", 1),                                            # single quotes
+    ('{"tier": 2, "ok": True}', 2),                                # python literal
+])
+def test_extract_json_tolerates_real_llm_output(raw, tier):
+    assert (extract_json(raw) or {}).get("tier") == tier
+
+
+def test_extract_json_still_returns_none_on_garbage():
+    assert extract_json("完全没有 JSON 的一段话") is None
+    assert extract_json("") is None

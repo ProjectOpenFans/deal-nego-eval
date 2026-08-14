@@ -18,6 +18,8 @@ from ..dealnorm import coerce_deal
 from ..jsonutil import extract_json
 from ..schemas import Deal
 
+_PROV_VALUES = {"stated", "inferred", "open"}
+
 _PROV_DEFAULTS = {
     "subject": "stated",
     "price.cash": "inferred",
@@ -72,6 +74,8 @@ class OfferExtractor:
             "字段：subject, price{cash{amount,currency}, in_kind[{resource,description,from_party}]}, "
             "terms{timing{when,deadline,duration},format,deliverables,delivery_standard}, "
             "obligations[{party,text,maps_to_resource}], status, provenance。"
+            "provenance 的值【只能】是 stated / inferred / open 三者之一——"
+            "不要用 inherited / updated / confirmed 等描述字段状态的词。"
             f"in_kind.resource 与 obligations.maps_to_resource 必须取自：{self.resource_ids}。"
             "未提及的字段沿用上一版。"
             "【只抽真实出现的内容】只抽本轮发言里【真实明确出现】的条款,不要补全、不要脑补。"
@@ -170,6 +174,8 @@ class OfferExtractor:
             "字段：subject, price{cash{amount,currency}, in_kind[{resource,description,from_party}]}, "
             "terms{timing{when,deadline,duration},format,deliverables,delivery_standard}, "
             "obligations[{party,text,maps_to_resource}], status, provenance。"
+            "provenance 的值【只能】是 stated / inferred / open 三者之一——"
+            "不要用 inherited / updated / confirmed 等描述字段状态的词。"
             "未在本轮明确出现的字段沿用上一版。"
             "【绝不加总】绝不把两个方案的金额相加;附加佣金/返点若属于 B 未选中的方案,绝不计入 cash。"
             "【无数字的现金承诺】若被接受的方案承诺现金但无具体数字(如'按刊例价'),cash.amount 填 -1。只输出 JSON。"
@@ -268,6 +274,32 @@ class OfferExtractor:
                 self.warnings.append(f"obl_unknown_resource:{ob.maps_to_resource}")
 
     def _ensure_provenance(self, deal: Deal) -> None:
+        """Fill missing provenance tags and coerce off-enum ones.
+
+        M1 accepts only ``stated`` / ``inferred`` / ``open``. Left to itself the
+        extractor invents状态-flavoured tags for fields carried across rounds —
+        ``inherited``, ``updated``, ``confirmed``, ``counter``, ``stated_range``
+        — and because the key *is* present, a fill-if-missing pass walks past
+        them and M1 fails on a deal that is otherwise complete. That hit the
+        skills-on arm hardest (longer offers carry more fields forward), so the
+        artifact read as an arm effect.
+
+        ``stated_*``/``inferred_*``/``open_*`` collapse to their prefix;
+        anything else falls back to the field default — exactly what an absent
+        key would have produced. Every coercion is recorded for audit.
+        """
         for field in self.required_fields:
-            if field not in deal.provenance:
+            value = deal.provenance.get(field)
+            if value in _PROV_VALUES:
+                continue
+            if value is None:
                 deal.provenance[field] = _PROV_DEFAULTS.get(field, "inferred")
+                continue
+            prefix = str(value).split("_", 1)[0]
+            coerced = (
+                prefix
+                if prefix in _PROV_VALUES
+                else _PROV_DEFAULTS.get(field, "inferred")
+            )
+            deal.provenance[field] = coerced
+            self.warnings.append(f"provenance_coerced:{field}:{value}->{coerced}")

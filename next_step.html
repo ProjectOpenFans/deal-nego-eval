@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>下一步 · 成本已实测，利润还差一个真人变量</title>
+<style>
+/* == COOLWEI-LAB CORE :: GENERATED, DO NOT EDIT == */
+/* ============================================================
+   COOLWEI AI LAB · REPORT DESIGN SYSTEM (light)
+   Single source of truth. Coolwei brand accents (#00B4D8→#0080ff
+   cyan-blue gradient, 网景盛世AI实验室) on a white canvas:
+   white cards, cyan hairlines, soft shadows, system sans.
+
+   Do not edit this block inside a generated page — edit
+   analysis/assets/coolwei-lab.css and run analysis/apply_style.py
+   ============================================================ */
+
+:root{
+  /* canvas */
+  --bg:#ffffff; --bg-alt:#f6fafc; --bg-card:#ffffff; --bg-sunk:#f4f9fb;
+  /* brand */
+  --brand:#0083A8; --brand-2:#0059E0; --brand-deep:#003c78;
+  --grad:linear-gradient(45deg,#00A6CE,#0066F0);
+  --grad-3:linear-gradient(45deg,#0096C2,#0060EC,#0096C2);
+  /* hairlines & shadow */
+  --line:rgba(0,131,168,.22); --line-strong:rgba(0,131,168,.5); --line-soft:rgba(11,27,40,.08);
+  --glow:0 2px 14px rgba(0,131,168,.22); --glow-lg:0 12px 34px rgba(0,80,130,.13);
+  --wash:rgba(0,166,206,.08);
+  /* type */
+  --ink:#0B1B28; --ink-1:rgba(11,27,40,.92); --ink-2:rgba(11,27,40,.72); --ink-3:rgba(11,27,40,.48);
+  /* semantic — tuned for contrast on white */
+  --good:#0B9E6E; --warn:#B26A00; --bad:#D93A57; --violet:#6C5CE7;
+  --good-wash:rgba(11,158,110,.09); --warn-wash:rgba(178,106,0,.09); --bad-wash:rgba(217,58,87,.08);
+  --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink-1); font-family:var(--sans);
+  font-size:16.5px; line-height:1.85; overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 18% 0%, rgba(0,166,206,.08) 0%, transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(0,89,224,.05) 0%, transparent 46%);
+  background-repeat:no-repeat;
+}
+
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- shell ---------- */
+.wrap,.container{max-width:1180px;margin:0 auto;padding:0 24px 130px}
+
+/* ---------- masthead ---------- */
+.mast,.page-header{position:relative;padding:96px 0 40px;overflow:hidden;animation:fadeInUp .8s ease-out}
+.mast::after,.page-header::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--line-strong),transparent);
+}
+.kicker,.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--brand);margin-bottom:18px;display:block;
+}
+h1,.page-title{
+  font-size:clamp(30px,4.6vw,52px);line-height:1.18;font-weight:700;margin-bottom:16px;
+  background:var(--grad-3);background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+}
+h1 em,h1 .a,h1 .r,h1 .g{font-style:normal}
+.dek,.lede,.page-subtitle,.hero-lead{font-size:18px;color:var(--ink-2);max-width:70ch;line-height:1.8}
+.meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;
+  color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px;
+}
+.meta div,.meta-item{padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.meta div:last-child,.meta-item:last-child{border:0}
+.meta b{color:var(--brand);font-weight:600;display:block;letter-spacing:.06em}
+
+/* ---------- sections ---------- */
+section{margin-top:84px;position:relative}
+h2,.section-title{
+  font-size:30px;font-weight:700;padding-bottom:12px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+h2 .n,.section-head .n{
+  font-family:var(--mono);font-size:12px;letter-spacing:.18em;flex:none;
+  -webkit-text-fill-color:var(--brand);color:var(--brand);
+}
+h3{font-size:21.5px;font-weight:600;margin:38px 0 14px;color:var(--ink)}
+h4{font-size:17px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+p{margin-bottom:15px;max-width:80ch}
+p.lead,.section-intro,.sec-desc{font-size:17.5px;color:var(--ink-2)}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:80ch}
+li{margin-bottom:8px}
+b,strong{color:var(--ink);font-weight:600}
+a{color:var(--brand);text-decoration:none;transition:color .25s}
+a:hover{color:var(--brand-2)}
+code,.mono{
+  font-family:var(--mono);font-size:.88em;color:#006C8F;
+  background:var(--wash);padding:1.5px 6px;border-radius:4px;border:1px solid var(--line);
+}
+
+/* ---------- tables ---------- */
+.tw,.table-wrap,.tbl-wrap{
+  overflow-x:auto;margin:18px 0 24px;border:1px solid var(--line);
+  border-radius:14px;background:var(--bg-card);box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th{
+  background:rgba(0,131,168,.06);text-align:left;padding:13px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.8}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:var(--wash)}
+td.num,.num{font-family:var(--mono);white-space:nowrap}
+tr.hl td{background:rgba(11,158,110,.07)}
+tr.hlr td{background:rgba(217,58,87,.06)}
+tr.hla td{background:rgba(178,106,0,.07)}
+
+/* ---------- semantic text ---------- */
+.bad,.neg,.no{color:var(--bad)}
+.warn,.amber,.partial{color:var(--warn)}
+.good,.pos,.yes{color:var(--good)}
+.dim,.muted{color:var(--ink-3)}
+.sig{font-family:var(--mono);font-size:12px;color:var(--good)}
+
+/* ---------- cards ---------- */
+.card,.panel,.mcard,.syn-card,.state-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:26px;
+  position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;
+  box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.card:hover,.panel:hover,.mcard:hover,.syn-card:hover{
+  transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg);
+}
+.card-head,.card-title{font-size:16.5px;font-weight:600;color:var(--ink);margin-bottom:8px}
+
+/* ---------- pills / tags / badges ---------- */
+.tag,.pill,.badge,.chip,.state-pill,.score-tag,.lane-badge,.product-badge{
+  display:inline-block;background:var(--wash);color:var(--brand);
+  padding:4px 13px;border-radius:20px;font-size:12.5px;font-family:var(--mono);
+  border:1px solid rgba(0,131,168,.3);white-space:nowrap;line-height:1.7;
+}
+.tag.good,.pill.good,.badge.good{background:var(--good-wash);color:var(--good);border-color:rgba(11,158,110,.35)}
+.tag.warn,.pill.warn,.badge.warn{background:var(--warn-wash);color:var(--warn);border-color:rgba(178,106,0,.35)}
+.tag.bad,.pill.bad,.badge.bad{background:var(--bad-wash);color:var(--bad);border-color:rgba(217,58,87,.35)}
+
+/* ---------- hero verdict ---------- */
+.hero{
+  border:1px solid rgba(11,158,110,.35);border-radius:18px;padding:28px;margin:10px 0 24px;
+  background:linear-gradient(160deg,rgba(11,158,110,.08),rgba(11,158,110,.015));position:relative;overflow:hidden;
+}
+.hero.a{border-color:rgba(178,106,0,.35);background:linear-gradient(160deg,rgba(178,106,0,.08),rgba(178,106,0,.015))}
+.hero.r{border-color:rgba(217,58,87,.35);background:linear-gradient(160deg,rgba(217,58,87,.07),rgba(217,58,87,.015))}
+.hero.b{border-color:var(--line-strong);background:linear-gradient(160deg,rgba(0,166,206,.08),rgba(0,166,206,.015))}
+.hero .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--good);margin-bottom:12px}
+.hero.a .lbl{color:var(--warn)} .hero.r .lbl{color:var(--bad)} .hero.b .lbl{color:var(--brand)}
+.hero .big{font-size:clamp(30px,5.2vw,48px);line-height:1;font-weight:700;color:var(--good);margin-bottom:6px}
+.hero.a .big{color:var(--warn)}
+.hero.r .big{color:var(--bad)}
+.hero.b .big{color:var(--brand)}
+.hero .ci{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-bottom:12px}
+.hero p{font-size:15.5px;margin:0;color:var(--ink-2)}
+
+/* ---------- scoreboard ---------- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:42px 0 10px}
+.cell{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.cell:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.cell .q{font-size:14px;color:var(--ink-2);min-height:4.4em;line-height:1.6}
+.score{font-size:42px;line-height:1;margin:12px 0 4px;font-weight:700;color:var(--brand)}
+.score span{font-size:16px;color:var(--ink-3);font-weight:400}
+.score .was{font-family:var(--mono);font-size:11px;letter-spacing:.08em;display:block;margin-top:5px;color:var(--ink-3)}
+.s-red .score{color:var(--bad)}
+.s-amber .score{color:var(--warn)}
+.s-green .score{color:var(--good)}
+.s-blue .score{color:var(--brand)}
+.cell .why{font-size:13.5px;color:var(--ink-3);line-height:1.65;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.boardnote{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+
+/* ---------- evidence / callouts ---------- */
+.evi,.evidence,.mini-code,.shell{
+  border:1px solid var(--line);background:var(--bg-sunk);border-radius:12px;
+  padding:16px 20px;margin:12px 0 16px;font-family:var(--mono);font-size:13px;
+  line-height:1.85;color:var(--ink-2);overflow-x:auto;
+}
+.evi .k{color:var(--brand);letter-spacing:.13em;font-size:10px;display:block;margin-bottom:6px;text-transform:uppercase}
+.evi.r .k{color:var(--bad)} .evi.a .k{color:var(--warn)} .evi.g .k{color:var(--good)}
+.evi b{color:var(--ink)}
+.evi q{color:#006C8F;quotes:"「" "」"}
+
+.dd,.dg,.da,.callout,.note,.caveat,.warncall{
+  border-radius:12px;padding:17px 21px;margin:16px 0 0;font-size:15px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--wash);
+}
+.dd b:first-child,.dg b:first-child,.da b:first-child,.callout b:first-child{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  display:block;margin-bottom:5px;
+}
+.dd{background:var(--bad-wash);border-color:rgba(217,58,87,.3)} .dd b{color:var(--bad)}
+.dg{background:var(--good-wash);border-color:rgba(11,158,110,.3)} .dg b{color:var(--good)}
+.da{background:var(--warn-wash);border-color:rgba(178,106,0,.3)} .da b{color:var(--warn)}
+.callout b:first-child,.note b:first-child{color:var(--brand)}
+
+/* ---------- pull quote ---------- */
+.pull{
+  font-size:22.5px;line-height:1.65;color:var(--ink);padding:24px 26px;margin:30px 0;max-width:70ch;
+  border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;
+  background:linear-gradient(100deg,rgba(0,166,206,.07),transparent 70%);
+}
+.pull small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.pull.g{border-left-color:var(--good);background:linear-gradient(100deg,rgba(11,158,110,.07),transparent 70%)}
+.pull.g small{color:var(--good)}
+
+/* ---------- split / stat grid ---------- */
+.split,.grid2,.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 22px}
+.grid,.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 22px}
+.split>div,.stat,.metric{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:15px;padding:20px 18px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(0,80,130,.05);
+}
+.split>div:hover,.stat:hover,.metric:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--glow-lg)}
+.split .t,.stat-label,.metric-label,.flabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;
+}
+.split .v,.stat-value,.metric-value{font-size:33px;font-weight:700;line-height:1;margin-bottom:5px;color:var(--brand)}
+.split .c{font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.split .n{font-size:13.5px;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px;line-height:1.6}
+
+/* ---------- distribution bars ---------- */
+.dist{margin:16px 0 22px}
+.drow{display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;margin-bottom:6px}
+.drow .nm{font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.drow .tr{height:24px;display:flex;background:rgba(11,27,40,.05);border-radius:6px;overflow:hidden}
+.drow .seg{height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700;overflow:hidden}
+.lg,.legend{display:flex;gap:13px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;justify-content:flex-end}
+.lg i,.legend i{width:9px;height:9px;display:inline-block;margin-right:5px;vertical-align:-1px;border-radius:2px}
+
+/* ---------- plots (inline SVG) ---------- */
+.plotwrap{
+  border:1px solid var(--line);background:var(--bg-card);border-radius:14px;
+  padding:18px 14px 8px;margin:18px 0 24px;overflow-x:auto;box-shadow:0 6px 22px rgba(0,80,130,.06);
+}
+.plotwrap svg{display:block;min-width:660px;width:100%;height:auto}
+.plotcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:12px 8px 6px;border-top:1px solid var(--line-soft);margin-top:10px;line-height:1.7}
+
+/* ---------- toc ---------- */
+.toc{border:1px solid var(--line);background:var(--bg-card);border-radius:15px;padding:18px 22px;margin:34px 0 0;box-shadow:0 4px 18px rgba(0,80,130,.05)}
+.toc b{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:9px}
+.toc a{display:inline-block;margin:0 18px 7px 0;font-size:15px}
+
+/* ---------- buttons ---------- */
+.btn,.plan-link,.back{
+  display:inline-block;padding:11px 28px;border-radius:26px;font-size:15px;
+  background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(0,131,168,.3);
+  transition:transform .3s,box-shadow .3s;
+}
+.btn:hover,.plan-link:hover,.back:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(0,131,168,.45);color:#fff}
+.btn.secondary{background:transparent;color:var(--brand);border:1px solid rgba(0,131,168,.55);box-shadow:none}
+.btn.secondary:hover{background:var(--wash)}
+
+/* ---------- footer ---------- */
+footer,.footer{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);line-height:2;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .board,.split,.grid2,.grid-two{grid-template-columns:1fr}
+  .meta div,.meta-item{border:0;padding-right:0;margin-right:18px}
+  .wrap,.container{padding:0 16px 90px}
+  h2,.section-title{font-size:24px}
+  .mast,.page-header{padding:64px 0 30px}
+}
+/* == COOLWEI-LAB CORE :: END == */
+.gloss td:first-child{font-family:var(--mono);color:var(--brand);white-space:nowrap;font-size:12.5px}
+.step-cost{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin-top:10px}
+.eq{font-family:var(--mono);font-size:14px;line-height:2;background:var(--bg-sunk);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:14px 0;overflow-x:auto}
+.eq .u{color:var(--bad);border-bottom:1px dashed var(--bad)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="mast">
+<div class="kicker">DEALHOUSE · NEGO EVAL · NEXT STEP</div>
+<h1>成本已实测，<em>利润</em>还差一个真人变量</h1>
+<p class="dek">写给非项目成员的一页摘要。自动化评测已经验证了「谈判 harness」的价值、算清了每局成本；但评测里的「成交」是 AI 裁判判定的，<b>不代表真人会签</b>——所以真实利润还是未知数。下一步：三条路把真人放回环里。</p>
+<div class="meta">
+<div><b>2026-08-03</b>数据截至 A13 轮</div>
+<div><b>480 局对照 + 912 局重判</b>已完成的评测量</div>
+<div><b>3 个 AI 裁判交叉</b>目前的判分方式（无真人）</div>
+<div><b>3 条路 · 强→弱</b>真人真单 · 盲评标注 · M6 代理</div>
+</div>
+</div>
+
+<section id="s0">
+<h2><span class="n">SEC 00</span>先把五个词说明白</h2>
+<div class="tw"><table class="gloss">
+<tbody>
+<tr><td>harness</td><td>我们给模型外挂的<b>谈判工作流</b>——技能库、出价规则、底线守护。这是产品的核心资产。对照实验里「clean」= 同一个模型裸用；「on」= 装上 harness。</td></tr>
+<tr><td>评测成交率</td><td>一局 AI 对 AI 谈判里<b>合同谈拢</b>、且 AI 裁判认可的比例——双方都是 AI，<b>不等于真人双方接受</b>。</td></tr>
+<tr><td>关键条款穿透率</td><td>成了的单子里，我方最在意的那条底线条款（例如「原图不外发」）被写进最终协议的比例。<b>产品北极星指标</b>。</td></tr>
+<tr><td>M6</td><td>AI 裁判按事先写死的量规，给最终协议打的综合质量分（0–4 档）。</td></tr>
+<tr><td>κ（kappa）</td><td>换算系数：AI 判定「能成」的单子里，<b>真人</b>也愿意接受的比例。<b>目前完全未知</b>——利润算不出来，卡的就是它。</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section id="s1">
+<h2><span class="n">SEC 01</span>我们做了什么</h2>
+<p class="lead">AI 分别扮演谈判双方，在 24 个真实改编案例上反复对局；同一模型分「裸用 / 装 harness」两臂对照，由 3 个不同家族的 AI 裁判按预注册量规交叉打分。</p>
+<div class="board">
+<div class="cell s-blue"><div class="q">主对比</div><div class="score">432<span> 局</span><span class="was">24 case × 9 次重复 × 2 臂</span></div><div class="why">同模型 clean vs on 的核心对照。</div></div>
+<div class="cell s-blue"><div class="q">模型 × harness 矩阵</div><div class="score">480<span> 局</span><span class="was">3 个国产模型 × 2 臂（A9+A13）</span></div><div class="why">Qwen3.6-27B 与 DeepSeek-V4-Flash 各 120 局/臂新跑；GLM 沿用主对比 432 局，合成 3 模型 × 2 臂矩阵。</div></div>
+<div class="cell s-green"><div class="q">新尺子重判</div><div class="score">912<span> 局</span><span class="was">+ 214 对盲评（A12）</span></div><div class="why">换更严的量规重判全部历史局，防「尺子偏我方」。</div></div>
+<div class="cell s-green"><div class="q">裁判交叉</div><div class="score">3×3<span> 矩阵</span><span class="was">3 池 × 3 家族裁判</span></div><div class="why">含 DeepSeek 裁判判自家对局——未发现自我偏favor（盲评 0.478）。</div></div>
+</div>
+<div class="boardnote">对局、判分全自动，无人工干预——这既是效率，也是下面所有「未知」的来源</div>
+</section>
+
+<section id="s2">
+<h2><span class="n">SEC 02</span>验证了什么（图优先，连同反面一起说）</h2>
+<p class="lead">点 = 效应量，横线 = 95% 置信区间：<b>横线穿过 0 = 不显著</b>（空心点）；整条在 0 一侧 = 显著（绿 = 好方向，红 = 坏方向）。</p>
+<!--PLOT:FOREST-->
+<div class="plotwrap"><svg viewBox="0 0 900 582" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,PingFang SC,Microsoft YaHei,sans-serif"><circle cx="314" cy="16" r="5" fill="#0B9E6E"/><text x="324" y="20" font-size="12.5" fill="#3D5468">显著 · 好方向</text><circle cx="424" cy="16" r="5" fill="#D93A57"/><text x="434" y="20" font-size="12.5" fill="#3D5468">显著 · 坏方向/落后</text><circle cx="574" cy="16" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="584" y="20" font-size="12.5" fill="#3D5468">不显著（区间跨 0）</text><line x1="306.0" y1="38" x2="306.0" y2="548" stroke="#E3EBF1"/><text x="306.0" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">-40</text><line x1="383.3" y1="38" x2="383.3" y2="548" stroke="#E3EBF1"/><text x="383.3" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">-30</text><line x1="460.6" y1="38" x2="460.6" y2="548" stroke="#E3EBF1"/><text x="460.6" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">-20</text><line x1="537.9" y1="38" x2="537.9" y2="548" stroke="#E3EBF1"/><text x="537.9" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">-10</text><line x1="615.2" y1="38" x2="615.2" y2="548" stroke="#0B1B28" stroke-width="1.3" stroke-dasharray="4 3" opacity=".55"/><text x="615.2" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">0</text><line x1="692.5" y1="38" x2="692.5" y2="548" stroke="#E3EBF1"/><text x="692.5" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">+10</text><line x1="769.8" y1="38" x2="769.8" y2="548" stroke="#E3EBF1"/><text x="769.8" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">+20</text><line x1="847.1" y1="38" x2="847.1" y2="548" stroke="#E3EBF1"/><text x="847.1" y="566" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">+30</text><text x="878" y="580" font-size="12" fill="#7C8FA3" text-anchor="end">效应量（百分点，on − clean）</text><text x="0" y="68" font-size="14.5" font-weight="700" fill="#0083A8">A · 成交率效应（装上 harness 的变化）</text><text x="292" y="99" font-size="13.5" fill="#3D5468" text-anchor="end">Qwen3.6-27B（技能 0.8 次/局）</text><line x1="492.8" y1="95" x2="711.8" y2="95" stroke="#74879A" stroke-width="2.2"/><line x1="492.8" y1="90.5" x2="492.8" y2="99.5" stroke="#74879A" stroke-width="2"/><line x1="711.8" y1="90.5" x2="711.8" y2="99.5" stroke="#74879A" stroke-width="2"/><circle cx="602.3" cy="95" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="602.3" y="86" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">-1.7</text><text x="292" y="129" font-size="13.5" fill="#3D5468" text-anchor="end">GLM-5.2（技能 2.2 次/局）</text><line x1="629.5" y1="125" x2="744.0" y2="125" stroke="#0B9E6E" stroke-width="2.2"/><line x1="629.5" y1="120.5" x2="629.5" y2="129.5" stroke="#0B9E6E" stroke-width="2"/><line x1="744.0" y1="120.5" x2="744.0" y2="129.5" stroke="#0B9E6E" stroke-width="2"/><circle cx="686.8" cy="125" r="5" fill="#0B9E6E"/><text x="686.8" y="116" font-size="12" fill="#0B9E6E" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+9.3</text><text x="292" y="159" font-size="13.5" fill="#3D5468" text-anchor="end">DeepSeek-V4-Flash（技能 3.2 次/局）</text><line x1="653.8" y1="155" x2="847.1" y2="155" stroke="#0B9E6E" stroke-width="2.2"/><line x1="653.8" y1="150.5" x2="653.8" y2="159.5" stroke="#0B9E6E" stroke-width="2"/><line x1="847.1" y1="150.5" x2="847.1" y2="159.5" stroke="#0B9E6E" stroke-width="2"/><circle cx="750.5" cy="155" r="5" fill="#0B9E6E"/><text x="750.5" y="146" font-size="12" fill="#0B9E6E" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+17.5</text><text x="0" y="192" font-size="14.5" font-weight="700" fill="#0083A8">B · 关键条款穿透率（GLM 池 · 全部局，3 个裁判）</text><text x="292" y="223" font-size="13.5" fill="#3D5468" text-anchor="end">qwen36 裁判</text><line x1="604.4" y1="219" x2="733.3" y2="219" stroke="#74879A" stroke-width="2.2"/><line x1="604.4" y1="214.5" x2="604.4" y2="223.5" stroke="#74879A" stroke-width="2"/><line x1="733.3" y1="214.5" x2="733.3" y2="223.5" stroke="#74879A" stroke-width="2"/><circle cx="672.5" cy="219" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="672.5" y="210" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+7.4</text><text x="292" y="253" font-size="13.5" fill="#3D5468" text-anchor="end">glm52 裁判</text><line x1="633.0" y1="249" x2="747.6" y2="249" stroke="#0B9E6E" stroke-width="2.2"/><line x1="633.0" y1="244.5" x2="633.0" y2="253.5" stroke="#0B9E6E" stroke-width="2"/><line x1="747.6" y1="244.5" x2="747.6" y2="253.5" stroke="#0B9E6E" stroke-width="2"/><circle cx="690.3" cy="249" r="5" fill="#0B9E6E"/><text x="690.3" y="240" font-size="12" fill="#0B9E6E" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+9.7</text><text x="292" y="283" font-size="13.5" fill="#3D5468" text-anchor="end">dsv4flash 裁判</text><line x1="611.6" y1="279" x2="715.4" y2="279" stroke="#74879A" stroke-width="2.2"/><line x1="611.6" y1="274.5" x2="611.6" y2="283.5" stroke="#74879A" stroke-width="2"/><line x1="715.4" y1="274.5" x2="715.4" y2="283.5" stroke="#74879A" stroke-width="2"/><circle cx="665.3" cy="279" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="665.3" y="270" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+6.5</text><text x="0" y="316" font-size="14.5" font-weight="700" fill="#0083A8">C · 追平前沿裸用（相对 GLM 裸用的成交率差）</text><text x="292" y="347" font-size="13.5" fill="#3D5468" text-anchor="end">Qwen3.6 + harness（反例）</text><line x1="340.3" y1="343" x2="554.4" y2="343" stroke="#D93A57" stroke-width="2.2"/><line x1="340.3" y1="338.5" x2="340.3" y2="347.5" stroke="#D93A57" stroke-width="2"/><line x1="554.4" y1="338.5" x2="554.4" y2="347.5" stroke="#D93A57" stroke-width="2"/><circle cx="442.7" cy="343" r="5" fill="#D93A57"/><text x="442.7" y="334" font-size="12" fill="#D93A57" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">-22.3</text><text x="292" y="377" font-size="13.5" fill="#3D5468" text-anchor="end">DeepSeek-V4F + harness（追平）</text><line x1="498.5" y1="373" x2="679.6" y2="373" stroke="#74879A" stroke-width="2.2"/><line x1="498.5" y1="368.5" x2="498.5" y2="377.5" stroke="#74879A" stroke-width="2"/><line x1="679.6" y1="368.5" x2="679.6" y2="377.5" stroke="#74879A" stroke-width="2"/><circle cx="590.8" cy="373" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="590.8" y="364" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">-3.1</text><text x="0" y="410" font-size="14.5" font-weight="700" fill="#0083A8">D · 反面指标</text><text x="292" y="441" font-size="13.5" fill="#3D5468" text-anchor="end">话术盲评 · qwen36 判（vs 50%）</text><line x1="576.2" y1="437" x2="691.2" y2="437" stroke="#74879A" stroke-width="2.2"/><line x1="576.2" y1="432.5" x2="576.2" y2="441.5" stroke="#74879A" stroke-width="2"/><line x1="691.2" y1="432.5" x2="691.2" y2="441.5" stroke="#74879A" stroke-width="2"/><circle cx="637.9" cy="437" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="637.9" y="428" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+2.9</text><text x="292" y="471" font-size="13.5" fill="#3D5468" text-anchor="end">话术盲评 · glm52 判（vs 50%）</text><line x1="547.6" y1="467" x2="655.6" y2="467" stroke="#74879A" stroke-width="2.2"/><line x1="547.6" y1="462.5" x2="547.6" y2="471.5" stroke="#74879A" stroke-width="2"/><line x1="655.6" y1="462.5" x2="655.6" y2="471.5" stroke="#74879A" stroke-width="2"/><circle cx="602.0" cy="467" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="602.0" y="458" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">-1.7</text><text x="292" y="501" font-size="13.5" fill="#3D5468" text-anchor="end">话术盲评 · dsv4flash 判（vs 50%）</text><line x1="595.0" y1="497" x2="679.2" y2="497" stroke="#74879A" stroke-width="2.2"/><line x1="595.0" y1="492.5" x2="595.0" y2="501.5" stroke="#74879A" stroke-width="2"/><line x1="679.2" y1="492.5" x2="679.2" y2="501.5" stroke="#74879A" stroke-width="2"/><circle cx="637.5" cy="497" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="637.5" y="488" font-size="12" fill="#7C8FA3" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+2.9</text><text x="292" y="531" font-size="13.5" fill="#3D5468" text-anchor="end">贴底线成交率（越低越好）</text><line x1="625.9" y1="527" x2="694.0" y2="527" stroke="#D93A57" stroke-width="2.2"/><line x1="625.9" y1="522.5" x2="625.9" y2="531.5" stroke="#D93A57" stroke-width="2"/><line x1="694.0" y1="522.5" x2="694.0" y2="531.5" stroke="#D93A57" stroke-width="2"/><circle cx="654.5" cy="527" r="5" fill="#D93A57"/><text x="654.5" y="518" font-size="12" fill="#D93A57" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">+5.1</text></svg><div class="plotcap">图 1 · 全部核心效应量（on − clean，百分点）与 95% 置信区间（case 聚类 bootstrap ×10,000）。空心点 = 区间跨 0（不显著）；实心绿 = 显著且方向对我们有利；实心红 = 显著的坏方向 / 显著落后。D 组「话术盲评」是盲评偏好率与 50%（无偏好）的差值。</div></div>
+<!--/PLOT:FOREST-->
+<h3>剂量-响应：模型越会用工具，harness 收益越大</h3>
+<p>把上图 A 组的三个成交率效应按「每局技能调用次数」排开——收益跟随工具使用强度单调上升。这就是「模型智力跃迁才让这件事成立」的核心曲线（BP slide 1）。</p>
+<!--PLOT:DOSE-->
+<div class="plotwrap"><svg viewBox="0 0 560 316" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,PingFang SC,Microsoft YaHei,sans-serif"><line x1="62" y1="244.0" x2="536" y2="244.0" stroke="#E3EBF1"/><text x="54" y="248.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">-20</text><line x1="62" y1="204.0" x2="536" y2="204.0" stroke="#E3EBF1"/><text x="54" y="208.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">-10</text><line x1="62" y1="164.0" x2="536" y2="164.0" stroke="#0B1B28" stroke-dasharray="4 3" opacity=".55" stroke-width="1.3"/><text x="54" y="168.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">0</text><line x1="62" y1="124.0" x2="536" y2="124.0" stroke="#E3EBF1"/><text x="54" y="128.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">+10</text><line x1="62" y1="84.0" x2="536" y2="84.0" stroke="#E3EBF1"/><text x="54" y="88.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">+20</text><line x1="62" y1="44.0" x2="536" y2="44.0" stroke="#E3EBF1"/><text x="54" y="48.0" font-size="12" fill="#7C8FA3" text-anchor="end" font-family="ui-monospace,Menlo,monospace">+30</text><polyline points="161.8,170.7 336.4,127.0 461.2,94.0" fill="none" stroke="#0083A8" stroke-width="2" opacity=".65"/><line x1="161.8" y1="227.3" x2="161.8" y2="114.0" stroke="#74879A" stroke-width="2.2"/><line x1="157.8" y1="227.3" x2="165.8" y2="227.3" stroke="#74879A" stroke-width="2"/><line x1="157.8" y1="114.0" x2="165.8" y2="114.0" stroke="#74879A" stroke-width="2"/><circle cx="161.8" cy="170.68" r="5" fill="#fff" stroke="#74879A" stroke-width="2"/><text x="171.8" y="174.7" font-size="13" fill="#3D5468" text-anchor="start" font-weight="600">Qwen3.6-27B -1.7</text><text x="161.8" y="286" font-size="12.5" fill="#3D5468" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">0.8</text><line x1="336.4" y1="156.6" x2="336.4" y2="97.3" stroke="#0B9E6E" stroke-width="2.2"/><line x1="332.4" y1="156.6" x2="340.4" y2="156.6" stroke="#0B9E6E" stroke-width="2"/><line x1="332.4" y1="97.3" x2="340.4" y2="97.3" stroke="#0B9E6E" stroke-width="2"/><circle cx="336.4" cy="126.96000000000001" r="5" fill="#0B9E6E"/><text x="346.4" y="131.0" font-size="13" fill="#3D5468" text-anchor="start" font-weight="600">GLM-5.2 +9.3</text><text x="336.4" y="286" font-size="12.5" fill="#3D5468" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">2.2</text><line x1="461.2" y1="144.0" x2="461.2" y2="44.0" stroke="#0B9E6E" stroke-width="2.2"/><line x1="457.2" y1="144.0" x2="465.2" y2="144.0" stroke="#0B9E6E" stroke-width="2"/><line x1="457.2" y1="44.0" x2="465.2" y2="44.0" stroke="#0B9E6E" stroke-width="2"/><circle cx="461.2" cy="94.0" r="5" fill="#0B9E6E"/><text x="451.2" y="98.0" font-size="13" fill="#3D5468" text-anchor="end" font-weight="600">DeepSeek-V4F +17.5</text><text x="461.2" y="286" font-size="12.5" fill="#3D5468" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">3.2</text><text x="299" y="308" font-size="13" fill="#7C8FA3" text-anchor="middle">每局技能调用次数（实测，工具使用强度）</text><text x="14" y="20" font-size="13" fill="#7C8FA3">成交率效应（pp）</text></svg><div class="plotcap">图 2 · 剂量-响应：harness 的成交率收益随模型工具使用强度单调上升。竖线 = 95% CI。</div></div>
+<!--/PLOT:DOSE-->
+<div class="tw"><table>
+<thead><tr><th>结论</th><th>状态</th></tr></thead>
+<tbody>
+<tr class="hl"><td><b>harness 提升评测成交率，幅度由模型的工具使用强度决定</b>（图 1 · A 组，图 2）</td><td class="good">成立（剂量-响应）</td></tr>
+<tr><td><b>弱模型 + harness 追平强模型裸用</b>（成交量口径）：DeepSeek-V4-Flash 装上 harness 后与 GLM 裸用差距不显著；反例 Qwen 落后 22pp（图 1 · C 组）</td><td class="good">分模型成立</td></tr>
+<tr><td><b>关键条款穿透率提升</b>，3 个裁判方向与幅度一致（图 1 · B 组）</td><td class="good">成立</td></tr>
+<tr><td><b>收口更快</b>：成交所需轮数少 1.42 轮（95% CI −2.04 … −0.85，约省 21%），GLM/Qwen 两池均显著</td><td class="good">成立</td></tr>
+</tbody>
+</table></div>
+<div class="da"><b>反面与反例，一起如实说</b>「话术更漂亮」没有发生：三个裁判的盲评全部横跨 0（图 1 · D 组），DeepSeek 池方向为负；贴底线成交显著上升（图 1 · D 组末行，模型越弱越重）——已列为下一版 harness 的 gatekeeping 改进项；不吃工具的 Qwen3.6 没有任何收益。harness 的价值在「成更多单、守住底线、收口更快」，不在话术。且全部指标都是 AI 裁判口径。</div>
+</section>
+
+<section id="s3">
+<h2><span class="n">SEC 03</span>成本账：分子已实测，分母还没有</h2>
+<p class="lead"><b>每局成本</b>（分子）已用 A13 日志实测钉死；但「每成一单成本」的分母 = 评测成交率 × κ，而 κ（真人接受率）未知。下图第二行刻度按 <b>κ=10% 假设</b>给出量级示例——例如我们 ≈$0.47/真人成交单，仍远低于任何合理客单价。</p>
+<div class="hero">
+<div class="h a"><small>flash 模型 + harness</small><div class="big">$0.047</div><small>每「评测判定成交」一单（牌价）；κ=10% 假设下 ≈ $0.47/真人成交</small></div>
+<div class="h r"><small>前沿模型裸用（Opus 5 档）</small><div class="big">≥10.5×</div><small>给前沿按 100% 成交算，每单成本仍是我们的十倍以上</small></div>
+<div class="h b"><small>倍数对 κ 稳健</small><div class="big">κ&gt;10%</div><small>只要真人接受率不低于约 10%（Fable 5 口径约 5%），成本优势就翻不了盘</small></div>
+</div>
+<!--PLOT:COST-->
+<div class="plotwrap"><svg viewBox="0 0 900 242" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,PingFang SC,Microsoft YaHei,sans-serif"><line x1="306.0" y1="26" x2="306.0" y2="176" stroke="#E3EBF1"/><text x="306.0" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.03</text><text x="306.0" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.3</text><line x1="382.2" y1="26" x2="382.2" y2="176" stroke="#E3EBF1"/><text x="382.2" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.05</text><text x="382.2" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.5</text><line x1="485.5" y1="26" x2="485.5" y2="176" stroke="#E3EBF1"/><text x="485.5" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.1</text><text x="485.5" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$1</text><line x1="588.9" y1="26" x2="588.9" y2="176" stroke="#E3EBF1"/><text x="588.9" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.2</text><text x="588.9" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$2</text><line x1="725.5" y1="26" x2="725.5" y2="176" stroke="#E3EBF1"/><text x="725.5" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$0.5</text><text x="725.5" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$5</text><line x1="828.9" y1="26" x2="828.9" y2="176" stroke="#E3EBF1"/><text x="828.9" y="194" font-size="12" fill="#7C8FA3" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$1</text><text x="828.9" y="214" font-size="12" fill="#0083A8" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">$10</text><text x="8" y="194" font-size="11.5" fill="#7C8FA3">$/评测成交</text><text x="8" y="214" font-size="11.5" fill="#0083A8">κ=10% 假设 → $/真人成交</text><text x="868" y="236" font-size="12" fill="#7C8FA3" text-anchor="end">美元（log 刻度，牌价）· 上排 = 评测口径，下排 = 假设仅 10% 被真人接受（×10）</text><text x="292" y="55" font-size="13.5" fill="#3D5468" text-anchor="end">DeepSeek-V4F + harness（我们的路线）</text><rect x="306" y="42" width="66.9" height="18" rx="4" fill="#0B9E6E" opacity=".88"/><text x="380.9" y="55" font-size="13" fill="#0B1B28" font-family="ui-monospace,Menlo,monospace">$0.047</text><text x="292" y="89" font-size="13.5" fill="#3D5468" text-anchor="end">DeepSeek-V4F 裸用</text><rect x="306" y="76" width="90.4" height="18" rx="4" fill="#0083A8" opacity=".88"/><text x="404.4" y="89" font-size="13" fill="#0B1B28" font-family="ui-monospace,Menlo,monospace">$0.055</text><text x="292" y="123" font-size="13.5" fill="#3D5468" text-anchor="end">Claude Opus 5 裸用 · 100% 成交假设</text><rect x="306" y="110" width="416.5" height="18" rx="4" fill="#D93A57" opacity=".88"/><text x="730.5" y="123" font-size="13" fill="#0B1B28" font-family="ui-monospace,Menlo,monospace">$0.49　<tspan font-weight="700">×10.5</tspan></text><text x="292" y="157" font-size="13.5" fill="#3D5468" text-anchor="end">Claude Fable 5 裸用 · 100% 成交假设</text><rect x="306" y="144" width="519.9" height="18" rx="4" fill="#D93A57" opacity=".88"/><text x="817.9" y="157" font-size="13" fill="#fff" text-anchor="end" font-family="ui-monospace,Menlo,monospace">$0.98　<tspan font-weight="700">×21</tspan></text></svg><div class="plotcap">图 3 · 每成一单的模型成本对比（log 轴）。『成交』= AI 对局里合同谈拢（双方都是 AI），不是真人双方接受——第二行刻度给出 κ=10% 假设口径（仅 10% 被真人接受，读数 ×10，倍数不变），κ 实测是下一步盲评的产出。前沿两条按「每局都成交」的最有利假设；token 量为 A13 日志实测，DeepSeek 价格为占位牌价。</div></div>
+<!--/PLOT:COST-->
+<p><b>为什么倍数现在就敢说，而利润不敢：</b>倍数结论由牌价差驱动——即使把前沿模型按「每局都被真人接受」这种最有利假设算，我们这边只要 κ &gt; ~10% 就仍然便宜一个量级。但<b>绝对利润</b>（每单赚多少）需要 κ 的具体数值，没有真人就是未知数。</p>
+<div class="da"><b>诚实条款：</b>① DeepSeek 价格暂用占位牌价，待 coolwei 实际账单替换；② 输入 token 由字符数估算（±30%），倍数结论由价差驱动、不受影响；③ 若按「每命中一条关键条款」口径算，本池成本持平（$0.113 vs $0.116）——成本优势目前只在「成单」口径成立；④ <b>「成交」是 AI 裁判判定的口径</b>，真实利润见下一节。</div>
+</section>
+
+<section id="s4">
+<h2><span class="n">SEC 04</span>真实利润 = 未知数，缺的就是 human in the loop</h2>
+<div class="dd">
+<b>我们算出的成交率不代表真人会签这单。</b>整条利润链里，只有一个变量不能用机器补：
+<div class="eq">
+真实每单成本　=　每局成本 ÷ ( 评测成交率 × <span class="u">κ</span> )<br>
+真实每单利润　=　客单收入 × 抽成　−　真实每单成本<br>
+<span class="u">κ</span> = 真人愿意接受「评测判定成交」条款的比例　←　<b>目前没有任何测量</b>
+</div>
+每局成本 ✅ 已实测；评测成交率 ✅ 已实测（AI 口径）；κ ❌ 空白。κ 不补上，任何「每单赚 X 元」的说法都是编的。下面三条路按证据强度从强到弱，专门补这个洞。
+</div>
+</section>
+
+<section id="s5">
+<h2><span class="n">SEC 05</span>补上真人的三条路（按证据强度：强 → 弱）</h2>
+<div class="grid2">
+<div class="card"><span class="tag good">最强 · 真单实做</span><h3>1 · 真实 profile，真实成交</h3>
+<p>找 3–5 位真实摄影师 / 模特，用<b>本人真实 profile 和真实需求</b>建档，我们的 agent 帮他们把真实合作单谈下来（先不上平台，人肉交付），<b>本人拍板签不签</b>。</p>
+<p><b>产出：</b>真实成交案例 + 每单真实成本——这几单的利润是记账，不是估算。n 小，定位「存在性证明」+ BP 案例页。</p>
+<div class="step-cost">人情 + 答谢 · 滚动收集 · 可与下面两条并行</div></div>
+
+<div class="card"><span class="tag good">较强 · 人工标注</span><h3>2 · 盲评标注：如果你是当事人，接不接</h3>
+<p>招 25–30 位标注者（含注意力检查），双盲看「（真实或构造的）他人 profile + 匿名最终条款」，只答一件事：<b>假如你是这一方，接不接受</b>。60 份 deal × 每份 5 人。判据收数前写死：M6 单调 / 穿透命中 ≥+10pp / 两臂话术预计打平 / 校准斜率 &gt; 0。</p>
+<p><b>产出：</b>κ 的第一个测量值 + M6↔真人接受的相关——唯一能出统计显著性的路。</p>
+<div class="step-cost">~¥2,500 · 1 周 · 60 deal × 5 人</div></div>
+
+<div class="card"><span class="tag warn">较弱 · 建模外推</span><h3>3 · 用 M6 当代理，把成交率算出来</h3>
+<p>先用方法 2 的数据拟合「M6 / 穿透命中 → 真人接受概率」的校准模型，再把这个模型<b>回灌到全部 912 局历史评测</b>上，为每种配置（模型 × harness）估算出「预计真人成交率」和利润区间，进 BP 的收入测算。</p>
+<p><b>诚实脚注永远带着：</b>盲评的口头接受率偏高（假设性偏差），所以序和臂间差可信、绝对水平要用方法 1 的真单锚定后整体平移。</p>
+<div class="step-cost">¥0（复用方法 2 数据）· 收数后 1 天 · 依赖方法 2</div></div>
+
+<div class="card"><span class="tag">支撑 · 分子精度</span><h3>4 · 成本账收尾</h3>
+<p>把占位牌价换成 coolwei 真实账单价；orchestrator 直接落 usage 字段（不再从日志反推）；补齐 GLM 池 token 数据；跑一版前沿模型裸用对照 120 局（~$60）拿实测点。</p>
+<div class="step-cost">~$120 API · 3 天 · 不阻塞前三条</div></div>
+</div>
+<div class="boardnote">方法 3 依赖方法 2 的数据；方法 1 独立、可立即启动滚动收集</div>
+</section>
+
+<section id="s6">
+<h2><span class="n">SEC 06</span>两周后，三页 BP 各自站在什么证据上</h2>
+<div class="tw"><table>
+<thead><tr><th>slide</th><th>叙事</th><th>证据</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td>模型智力跃迁为这件事打底，现在是最佳时机</td><td class="good">已有：剂量-响应曲线（工具使用 0.8→2.2→3.2 次/局 ↔ 成交效应 −1.7→+9.3→+17.5pp）。可选补一个 2024 老模型点钉死下限。</td></tr>
+<tr><td class="num">2</td><td>有 / 无 harness 的直接成本节省</td><td class="warn">已有第一版：价差 10–21×、$/成交 −15%、κ&gt;10% 稳健性论证。两周内补：真实账单价 + 前沿实测点。</td></tr>
+<tr class="hl"><td class="num">3</td><td>真人证明确实促成 deal done，利润可算</td><td class="bad">目前为空（最大缺口）。两周内补：方法 1 的 2–5 张真单（利润记账）+ 方法 2 的 κ 与相关性 + 方法 3 的收入测算模型。</td></tr>
+</tbody>
+</table></div>
+<div class="pull g"><small>一句话</small>能自动算的全算完了：效应显著、成本便宜 10–21×。剩下唯一算不出来的是「真人签不签」——所以这两周的全部重心，就是用真单、标注、校准模型三条路把 κ 补上。</div>
+<p><a class="btn" href="analysis/human_grounding_plan_zh.html">完整测量方案 →（实验设计 · 预注册判据 · 预算 · 排期 · 威胁清单）</a></p>
+</section>
+
+<div class="footer">口径：全部效应量 = case 聚类 bootstrap ×10,000 的 95% CI；✓ = 区间不跨零；n.s. = 不显著。反例（Qwen 无收益）、反面结论（话术全灭、贴底线成交上升）、价格假设与「AI 裁判口径 ≠ 真人成交」的边界均已在正文如实列出。数据截至 2026-08-03（A13 轮）。</div>
+
+</div>
+</body>
+</html>

@@ -46,10 +46,17 @@ def run_episode(
 ) -> EpisodeOutput:
     inp = case.input
     side = case.side
-    tools_enabled = skills == "on"
-    prompt_variant = "clean" if skills == "clean" else "full"
+    # A6 adds a `-cap` suffix (clean-cap / on-cap) that appends the value-capture
+    # directive. It is orthogonal to the skills axis, so strip it before deciding
+    # tools and the allowlist and pass it through only on the prompt variant.
+    capture = skills.endswith("-cap")
+    base_skills = skills[: -len("-cap")] if capture else skills
+    tools_enabled = base_skills == "on"
+    prompt_variant = "clean" if base_skills == "clean" else "full"
+    if capture:
+        prompt_variant += "-cap"
     request, agent_side, sim_side = build_broker_request(inp, side, value_tools_enabled=tools_enabled)
-    allowlist = all_skill_names() if skills == "on" else set()
+    allowlist = all_skill_names() if tools_enabled else set()
 
     agent_cfg = sim_cfg = extractor_cfg = None
     if mode == "live" and live_config:

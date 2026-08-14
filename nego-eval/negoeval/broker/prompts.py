@@ -120,14 +120,43 @@ This is where you are most likely to fail and it matters most: do not quietly ab
 - **Language: write your entire reply in natural, spoken Simplified Chinese (简体中文), regardless of the language of these instructions or of the counterparty's messages. Never put English, JSON, or Markdown in your reply.**"""
 
 
+# A6 · value-capture directive.
+#
+# The platform earns a percentage of what actually moves through escrow, so a
+# zero-cash deal earns nothing and a deal priced at the bottom of what the payer
+# could bear leaves fee revenue on the table. This directive tells the broker to
+# price at the top of what the counterparty can genuinely execute — and only
+# there, because a figure the payer cannot actually pay is not upside, it is a
+# deal that dies at payment time.
+#
+# Written per SKILLS_WRITING_PRACTICE: an action, not a prohibition; the branch
+# condition is observable in the transcript; no copy-pasteable line.
+# Byte-identical in both arms — the 2x2 is invalid if the text differs.
+VALUE_CAPTURE_DIRECTIVE = """
+
+# Pricing the deal
+- Once the other side has shown they want this deal, your job stops being "find a number they accept" and becomes "find the highest number they can actually carry". Those are different numbers, and the first one is usually well below the second.
+- Read what they can carry from what they have shown you — the budget they named, the scale of what they are buying, what they have paid before — not from the first figure they offered. An opening figure is a position, not a ceiling.
+- Move up by adding delivered value, not by re-asking. Each step up in price should arrive attached to something they get that they did not have in the previous version.
+- Never write a payment they cannot execute. A figure above what the paying side can actually pay is not a better deal — it collapses at payment and produces nothing. When you are unsure whether they can carry it, size the leg to what they have demonstrated, and put the rest in a later stage tied to a defined trigger.
+- A deal that moves no money is worth less than a deal that moves money, to both sides and to the platform holding it. If you land on a non-cash structure, make sure it is because cash genuinely was not the right instrument here — not because the number was uncomfortable to ask for."""
+
+
 def broker_system_prompt(side: str, variant: str = "full") -> str:
-    if variant == "clean":
-        if side == "seller_broker":
-            return CLEAN_SELLER_BROKER_SYSTEM_PROMPT
-        return CLEAN_BUYER_BROKER_SYSTEM_PROMPT
-    if side == "seller_broker":
-        return SELLER_BROKER_SYSTEM_PROMPT
-    return BUYER_BROKER_SYSTEM_PROMPT
+    """``variant`` may carry the A6 ``-cap`` suffix (e.g. ``clean-cap``)."""
+    capture = variant.endswith("-cap")
+    base_variant = variant[: -len("-cap")] if capture else variant
+    if base_variant == "clean":
+        prompt = (
+            CLEAN_SELLER_BROKER_SYSTEM_PROMPT
+            if side == "seller_broker"
+            else CLEAN_BUYER_BROKER_SYSTEM_PROMPT
+        )
+    elif side == "seller_broker":
+        prompt = SELLER_BROKER_SYSTEM_PROMPT
+    else:
+        prompt = BUYER_BROKER_SYSTEM_PROMPT
+    return prompt + VALUE_CAPTURE_DIRECTIVE if capture else prompt
 
 
 CLEAN_SELLER_BROKER_SYSTEM_PROMPT = (_BROKER_DIR / "clean_seller_prompt.txt").read_text(encoding="utf-8")
